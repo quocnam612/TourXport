@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+
+\usepackage{hcmus-report-template}
+
+% Disable indentation on new paragraphs
+\setlength{\parindent}{0pt}
+
+% Line spacing 1.5
+\renewcommand{\baselinestretch}{1.5}
+
+% Optional: graphic path
+% \graphicspath{PATH_TO_GRAPHIC_FOLDER}
+
+% To use Times font family, uncomment this row
+% \usepackage{mathptmx}
+
+% To use roman section / subsection, uncomment these rows
+% \renewcommand{\thesection}{\Roman{section}}
+% \renewcommand{\thesubsection}{\thesection.\Roman{subsection}}
+
+% Define course name, report name and report title.
+\newcommand{\coursename}{Tư duy tính toán}
+\newcommand{\reporttitle}{Project: Smart Tourism System}
+
+\newcommand{\studentname}{Phạm Anh Tuấn - 24120238 \\ Nguyễn Anh Đức - 24120289 \\ Nguyễn Đức Anh Khôi - 24120076 \\ Võ Minh Khang - 24120336 \\ Nguyễn Quốc Nam - 24120098 \\ Phan Văn Việt - 24120244 \\ Nguyễn Anh Thái - 24120224}
+\newcommand{\teachername}{ThS. }
+
+% Header
+\lhead{\reporttitle}
+\rhead{
+Trường Đại học Khoa học Tự nhiên - ĐHQG HCM\\
+\coursename
+}
+
+% Footer
+% Customize the footer text if desired. Leaving it empty hides the footer.
+\newcommand{\leftfooter}{}
+\lfoot{\leftfooter}
+
+% ============ DOCUMENT ============
+\begin{document}
+
+\pagenumbering{roman}
+\input{content/title.tex}
+
+\input{content/member.tex}
+\pagebreak
+\tableofcontents
+\pagebreak
+\listoftables
+\pagebreak
+\listoffigures
+\pagebreak
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\input{content/I-GioiThieu}
+
+
+% References
+\input{ref/ref.tex}
+
+\end{document}
