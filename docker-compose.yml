@@ -1,0 +1,18 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "${PORT_BACKEND:-3000}:3000" # Lấy từ .env, nếu không có thì mặc định 3000
+    env_file: .env
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    develop:
+      watch:
+        - action: sync
+          path: ./backend
+          target: /app
+          ignore:
+            - node_modules
+        - action: rebuild
+          path: ./backend/package.json
