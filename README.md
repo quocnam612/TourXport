@@ -6,7 +6,7 @@ An AI tour generation Flutter app that plans everything you need to know for you
 
 1. Docker
 2. Flutter
-3. .env file (look at .env.example for more info)
+3. `.env` file (look at `.env.example` file for more info)
 
 # **Build & Debug**
 
