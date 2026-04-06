@@ -1,25 +1,47 @@
-name: tour_x_port
-description: "A new Flutter project."
-publish_to: 'none'
+name: frontend
+description: TourXport - Khám phá Việt Nam
 
+publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.11.4
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.8
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  flutter_lints: ^6.0.0
 
 flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/
     - assets/icons/
+    - assets/images/
+    - assets/fonts/
+
+  fonts:
+    - family: Numans
+      fonts:
+        - asset: assets/fonts/Numans-Regular.ttf
+          weight: 400
+
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+
+    - family: Lato
+      fonts:
+        - asset: assets/fonts/Lato-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Lato-Bold.ttf
+          weight: 600
+
+    - family: Nunito Sans
+      fonts:
+        - asset: assets/fonts/NunitoSans.ttf
+          weight: 800
