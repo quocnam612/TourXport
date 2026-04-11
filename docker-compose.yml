@@ -21,8 +21,7 @@ services:
     build: ./ai_backend
     expose:
       - "8000" # Chỉ mở nội bộ
-    env_file:
-      - ./ai_backend/.env
+    env_file: .env
     develop:
       watch:
         - action: sync
