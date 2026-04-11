@@ -2,7 +2,7 @@ services:
   backend:
     build: ./backend
     ports:
-      - "${PORT_BACKEND:-3000}:3000" # Lấy từ .env, nếu không có thì mặc định 3000
+      - "${PORT_BACKEND:-3000}:3000"
     env_file: .env
     volumes:
       - ./backend:/app
