@@ -16,3 +16,17 @@ services:
             - node_modules
         - action: rebuild
           path: ./backend/package.json
+
+  ai_backend:
+    build: ./ai_backend
+    expose:
+      - "8000" # Chỉ mở nội bộ
+    env_file:
+      - ./ai_backend/.env
+    develop:
+      watch:
+        - action: sync
+          path: ./ai_backend/src
+          target: /app/src
+        - action: rebuild
+          path: ./ai_backend/requirements.txt
