@@ -5,6 +5,7 @@ import '../api/api.dart';
 import '../utils/auth_feedback.dart';
 import '../widgets/anim_builder.dart';
 import 'sign_up.dart';
+import 'dashboard.dart';
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({super.key});
@@ -52,7 +53,38 @@ class _SignInScreenState extends State<SignInScreen>
           context,
           'Đăng nhập thành công — chào ${userName ?? 'bạn'}!',
         );
-        // TODO: lưu token (data['token']), điều hướng Dashboard
+        // Điều hướng tới Dashboard sau khi đăng nhập thành công
+        if (mounted) {
+          Navigator.pushAndRemoveUntil(
+            context,
+            PageRouteBuilder(
+              pageBuilder: (_, __, ___) => HomeScreen(
+                userName: userName ?? 'bạn',
+              ),
+              transitionDuration: const Duration(milliseconds: 600),
+              reverseTransitionDuration: const Duration(milliseconds: 400),
+              transitionsBuilder: (_, animation, __, child) {
+                return FadeTransition(
+                  opacity: CurvedAnimation(
+                    parent: animation,
+                    curve: Curves.easeInOut,
+                  ),
+                  child: SlideTransition(
+                    position: Tween<Offset>(
+                      begin: const Offset(0, 0.05),
+                      end: Offset.zero,
+                    ).animate(CurvedAnimation(
+                      parent: animation,
+                      curve: Curves.easeOutCubic,
+                    )),
+                    child: child,
+                  ),
+                );
+              },
+            ),
+            (route) => false,
+          );
+        }
         return;
       }
 

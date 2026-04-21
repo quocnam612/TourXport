@@ -8,7 +8,7 @@ class AnimBuilder extends AnimatedWidget {
 
   const AnimBuilder({
     super.key,
-    required Animation<double> animation,
+    required Listenable animation,
     required this.builder,
     this.child,
   }) : super(listenable: animation);
