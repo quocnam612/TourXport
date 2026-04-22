@@ -290,7 +290,7 @@ class _SignInScreenState extends State<SignInScreen>
                             curve: Curves.easeInOutCubic,
                             left: _useEmail ? (380 * s / 2) + 5 : 5,
                             top: 5,
-                            width: (380 * s / 2) - 5,
+                            width: (380 * s / 2) - 10,
                             height: 40 * s,
                             child: AnimatedContainer(
                               duration: const Duration(milliseconds: 250),
@@ -314,6 +314,7 @@ class _SignInScreenState extends State<SignInScreen>
                             top: 0,
                             bottom: 0,
                             child: GestureDetector(
+                              behavior: HitTestBehavior.opaque,
                               onTap: () => setState(() => _useEmail = false),
                               child: Center(
                                 child: AnimatedDefaultTextStyle(
@@ -338,6 +339,7 @@ class _SignInScreenState extends State<SignInScreen>
                             top: 0,
                             bottom: 0,
                             child: GestureDetector(
+                              behavior: HitTestBehavior.opaque,
                               onTap: () => setState(() => _useEmail = true),
                               child: Center(
                                 child: AnimatedDefaultTextStyle(
@@ -685,9 +687,11 @@ class _SignInScreenState extends State<SignInScreen>
                   fontSize: 18 * s,
                   color: Colors.white.withOpacity(0.5),
                 ),
-                contentPadding: EdgeInsets.symmetric(
-                  horizontal: 20 * s,
-                  vertical: 14 * s,
+                contentPadding: EdgeInsets.only(
+                  left: 20 * s,
+                  right: 20 * s,
+                  top: 12 * s,
+                  bottom: 16 * s,
                 ),
                 border: InputBorder.none,
                 suffixIcon: isPassword

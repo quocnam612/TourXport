@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import '../widgets/anim_builder.dart';
+import 'place_detail.dart';
 
 // ─────────────────────────────────────────────
 //  DATA MODEL
@@ -71,6 +72,9 @@ class _HomeScreenState extends State<HomeScreen>
   // ── Page / swipe state ──
   int _currentIndex = 0;
   int _previousIndex = 0;
+
+  // ── Favorites ──
+  final Set<String> _favorites = {};
 
   // ── Background crossfade controller ──
   late final AnimationController _bgFadeController;
@@ -143,119 +147,108 @@ class _HomeScreenState extends State<HomeScreen>
         fit: StackFit.expand,
         children: [
 
-          // ══════════════════════════════════
-          //  LAYER 1 – Background cũ (previous)
-          // ══════════════════════════════════
-          Positioned.fill(
-            child: Image.asset(
-              _destinations[_previousIndex].bgBlurPath,
-              fit: BoxFit.cover,
-              errorBuilder: (_, __, ___) => Container(
-                color: const Color(0xFF1C302D),
-              ),
-            ),
-          ),
-
-          // Blur layer cho previous background
-          Positioned.fill(
-            child: BackdropFilter(
-              filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
-              child: Container(color: Colors.transparent),
-            ),
-          ),
-
-          // ══════════════════════════════════
-          //  LAYER 2 – Background mới (current) crossfade + blur
-          // ══════════════════════════════════
-          Positioned.fill(
-            child: AnimBuilder(
-              animation: _bgFade,
-              builder: (context, child) => Opacity(
-                opacity: _bgFade.value,
-                child: child,
-              ),
-              child: Stack(
-                fit: StackFit.expand,
-                children: [
-                  Image.asset(
-                    _destinations[_currentIndex].bgBlurPath,
-                    fit: BoxFit.cover,
-                    errorBuilder: (_, __, ___) => Container(
-                      color: const Color(0xFF1C302D),
-                    ),
-                  ),
-                  // Blur overlay
-                  BackdropFilter(
-                    filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
-                    child: Container(color: Colors.transparent),
-                  ),
-                ],
-              ),
-            ),
-          ),
-
-          // ══════════════════════════════════
-          //  LAYER 3 – Dark gradient overlay
-          // ══════════════════════════════════
-          Positioned.fill(
-            child: Container(
-              decoration: const BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  stops: [0.0, 0.3, 0.7, 1.0],
-                  colors: [
-                    Color(0x55000000),
-                    Color(0x10000000),
-                    Color(0x30000000),
-                    Color(0xBB000000),
-                  ],
-                ),
-              ),
-            ),
-          ),
-
-          // ══════════════════════════════════
-          //  LAYER 4 – UI Content
-          // ══════════════════════════════════
-          SafeArea(
-            child: Column(
-              children: [
-
-                // ── TOP BAR ──
-                _buildTopBar(),
-
-                const SizedBox(height: 16),
-
-                // ── TITLE ──
-                _buildTitle(),
-
-                const SizedBox(height: 20),
-
-                // ── REGION TABS ──
-                _buildRegionTabs(),
-
-                const SizedBox(height: 24),
-
-                // ── CARD CAROUSEL ──
-                Expanded(
-                  child: _buildCardCarousel(size),
-                ),
-
-                const SizedBox(height: 16),
-              ],
-            ),
-          ),
-
-          // ══════════════════════════════════
-          //  LAYER 5 – Bottom Nav Bar
-          // ══════════════════════════════════
+          _buildPreviousBackground(),
+          _buildCurrentBackground(),
+          _buildDarkOverlay(),
+          _buildUIContent(size),
           Positioned(
             left: 24,
             right: 24,
             bottom: 20,
             child: _buildBottomNav(),
           ),
+        ],
+      ),
+    );
+  }
+
+  // ── Layout Components ──
+
+  Widget _buildPreviousBackground() {
+    return Positioned.fill(
+      child: Stack(
+        fit: StackFit.expand,
+        children: [
+          Image.asset(
+            _destinations[_previousIndex].bgBlurPath,
+            fit: BoxFit.cover,
+            errorBuilder: (_, __, ___) => Container(
+              color: const Color(0xFF1C302D),
+            ),
+          ),
+          BackdropFilter(
+            filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+            child: Container(color: Colors.transparent),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildCurrentBackground() {
+    return Positioned.fill(
+      child: AnimBuilder(
+        animation: _bgFade,
+        builder: (context, child) => Opacity(
+          opacity: _bgFade.value,
+          child: child,
+        ),
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            Image.asset(
+              _destinations[_currentIndex].bgBlurPath,
+              fit: BoxFit.cover,
+              errorBuilder: (_, __, ___) => Container(
+                color: const Color(0xFF1C302D),
+              ),
+            ),
+            BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+              child: Container(color: Colors.transparent),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildDarkOverlay() {
+    return Positioned.fill(
+      child: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            stops: [0.0, 0.3, 0.7, 1.0],
+            colors: [
+              Color(0x55000000),
+              Color(0x10000000),
+              Color(0x30000000),
+              Color(0xBB000000),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildUIContent(Size size) {
+    return SafeArea(
+      child: Column(
+        children: [
+          _buildTopBar(),
+          const SizedBox(height: 8),
+          _buildTitle(),
+          const SizedBox(height: 12),
+          _buildSearchBar(),
+          const SizedBox(height: 12),
+          _buildRegionTabs(),
+          const SizedBox(height: 12),
+          Expanded(
+            child: _buildCardCarousel(size),
+          ),
+          const SizedBox(height: 16),
         ],
       ),
     );
@@ -293,10 +286,11 @@ class _HomeScreenState extends State<HomeScreen>
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Hello,\n${widget.userName}',
+                  'Xin chào,\n${widget.userName}!',
                   style: const TextStyle(
                     fontFamily: 'Montserrat',
-                    fontSize: 13,
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
                     color: Colors.white,
                     height: 1.3,
                   ),
@@ -337,11 +331,11 @@ class _HomeScreenState extends State<HomeScreen>
           child: Align(
             alignment: Alignment.centerLeft,
             child: Text(
-              'Chào mừng đến\nvới TourXport',
+              'Trải nghiệm chuyến đi\ncùng TourXport',
               style: TextStyle(
                 fontFamily: 'Montserrat',
-                fontSize: 30,
-                fontWeight: FontWeight.w400,
+                fontSize: 24,
+                fontWeight: FontWeight.w600,
                 color: Colors.white,
                 height: 1.2,
                 shadows: [
@@ -352,6 +346,74 @@ class _HomeScreenState extends State<HomeScreen>
                   ),
                 ],
               ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSearchBar() {
+    return FadeTransition(
+      opacity: _cardEntrance,
+      child: SlideTransition(
+        position: Tween<Offset>(
+          begin: const Offset(0, 0.2),
+          end: Offset.zero,
+        ).animate(_cardEntrance),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 24),
+          child: Container(
+            height: 56,
+            decoration: BoxDecoration(
+              color: Colors.white.withOpacity(0.18),
+              borderRadius: BorderRadius.circular(20),
+              border: Border.all(color: Colors.white.withOpacity(0.35)),
+            ),
+            child: Row(
+              children: [
+                const SizedBox(width: 16),
+                Icon(Icons.search_rounded, color: Colors.white.withOpacity(0.9), size: 24),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: TextField(
+                    style: const TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontSize: 14,
+                      color: Colors.white,
+                    ),
+                    decoration: InputDecoration(
+                      hintText: 'Tìm kiếm điểm đến, tour...',
+                      hintStyle: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 14,
+                        color: Colors.white.withOpacity(0.5),
+                      ),
+                      border: InputBorder.none,
+                      contentPadding: EdgeInsets.zero,
+                      isDense: true,
+                    ),
+                    cursorColor: const Color(0xFFB5956A),
+                  ),
+                ),
+                Container(
+                  width: 44,
+                  height: 44,
+                  margin: const EdgeInsets.all(6),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFB5956A),
+                    borderRadius: BorderRadius.circular(16),
+                    boxShadow: [
+                      BoxShadow(
+                        color: const Color(0xFFB5956A).withOpacity(0.4),
+                        blurRadius: 12,
+                        offset: const Offset(0, 4),
+                      ),
+                    ],
+                  ),
+                  child: const Icon(Icons.tune_rounded, color: Colors.white, size: 22),
+                ),
+              ],
             ),
           ),
         ),
@@ -392,7 +454,7 @@ class _HomeScreenState extends State<HomeScreen>
                     const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 decoration: BoxDecoration(
                   color: isSelected
-                      ? const Color(0xFF2E8BFF)
+                      ? Colors.white
                       : Colors.black.withOpacity(0.4),
                   borderRadius: BorderRadius.circular(24),
                 ),
@@ -402,7 +464,7 @@ class _HomeScreenState extends State<HomeScreen>
                     fontFamily: 'Montserrat',
                     fontSize: 13,
                     fontWeight: isSelected ? FontWeight.w600 : FontWeight.w400,
-                    color: Colors.white,
+                    color: isSelected ? Colors.black : Colors.white,
                   ),
                 ),
               ),
@@ -437,12 +499,16 @@ class _HomeScreenState extends State<HomeScreen>
                 // Scale & vertical offset cho parallax
                 final scale = (1 - diff * 0.08).clamp(0.0, 1.0);
                 final verticalOffset = diff * 20.0;
+                final opacity = (1 - diff * 0.6).clamp(0.4, 1.0);
 
                 return Transform.translate(
                   offset: Offset(0, verticalOffset),
                   child: Transform.scale(
                     scale: scale,
-                    child: child,
+                    child: Opacity(
+                      opacity: opacity,
+                      child: child,
+                    ),
                   ),
                 );
               },
@@ -474,13 +540,52 @@ class _HomeScreenState extends State<HomeScreen>
           children: [
 
             // Card image
-            Image.asset(
-              dest.imagePath,
-              fit: BoxFit.cover,
-              errorBuilder: (_, __, ___) => Container(
-                color: const Color(0xFF2A4A3E),
-                child: const Center(
-                  child: Icon(Icons.image, color: Colors.white38, size: 60),
+            Hero(
+              tag: 'hero_img_${dest.name}',
+              child: Image.asset(
+                dest.imagePath,
+                fit: BoxFit.cover,
+                errorBuilder: (_, __, ___) => Container(
+                  color: const Color(0xFF2A4A3E),
+                  child: const Center(
+                    child: Icon(Icons.image, color: Colors.white38, size: 60),
+                  ),
+                ),
+              ),
+            ),
+
+            // Favorite button (top-left)
+            Positioned(
+              top: 14,
+              left: 14,
+              child: GestureDetector(
+                onTap: () {
+                  setState(() {
+                    if (_favorites.contains(dest.name)) {
+                      _favorites.remove(dest.name);
+                    } else {
+                      _favorites.add(dest.name);
+                    }
+                  });
+                },
+                child: Container(
+                  width: 42,
+                  height: 42,
+                  decoration: BoxDecoration(
+                    color: Colors.black.withValues(alpha: 0.3),
+                    shape: BoxShape.circle,
+                    border: Border.all(color: Colors.white.withValues(alpha: 0.2)),
+                  ),
+                  child: AnimatedSwitcher(
+                    duration: const Duration(milliseconds: 250),
+                    transitionBuilder: (child, animation) => ScaleTransition(scale: animation, child: child),
+                    child: Icon(
+                      _favorites.contains(dest.name) ? Icons.favorite : Icons.favorite_border,
+                      key: ValueKey<bool>(_favorites.contains(dest.name)),
+                      color: _favorites.contains(dest.name) ? const Color(0xFFE74C3C) : Colors.white,
+                      size: 22,
+                    ),
+                  ),
                 ),
               ),
             ),
@@ -559,7 +664,23 @@ class _HomeScreenState extends State<HomeScreen>
                   // Arrow button
                   GestureDetector(
                     onTap: () {
-                      // TODO: Navigate to detail screen
+                      Navigator.push(
+                        context,
+                        PageRouteBuilder(
+                          pageBuilder: (_, __, ___) => PlaceDetailScreen(destination: dest),
+                          transitionDuration: const Duration(milliseconds: 600),
+                          reverseTransitionDuration: const Duration(milliseconds: 600),
+                          transitionsBuilder: (_, animation, __, child) {
+                            return FadeTransition(
+                              opacity: CurvedAnimation(
+                                parent: animation,
+                                curve: Curves.easeOut,
+                              ),
+                              child: child,
+                            );
+                          },
+                        ),
+                      );
                     },
                     child: Container(
                       width: 52,
@@ -569,10 +690,16 @@ class _HomeScreenState extends State<HomeScreen>
                         borderRadius: BorderRadius.circular(16),
                         boxShadow: [
                           BoxShadow(
-                            color:
-                                const Color(0xFFB5956A).withValues(alpha: 0.4),
-                            blurRadius: 12,
-                            offset: const Offset(0, 4),
+                            color: const Color(0xFFB5956A).withValues(alpha: 0.8),
+                            blurRadius: 20,
+                            spreadRadius: 2,
+                            offset: const Offset(0, 0),
+                          ),
+                          BoxShadow(
+                            color: const Color(0xFFB5956A).withValues(alpha: 0.4),
+                            blurRadius: 35,
+                            spreadRadius: 8,
+                            offset: const Offset(0, 0),
                           ),
                         ],
                       ),

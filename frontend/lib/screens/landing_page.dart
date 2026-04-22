@@ -120,288 +120,301 @@ class _LandingPageState extends State<LandingPage>
       body: Stack(
         fit: StackFit.expand,
         children: [
-          /// 🌄 Background image
-          Image.asset(
-            'assets/images/halong.jpg',
-            fit: BoxFit.cover,
-          ),
+          _buildBackgroundImage(),
+          _buildShimmerOverlay(),
+          _buildGradientOverlay(),
+          _buildContent(context),
+        ],
+      ),
+    );
+  }
 
-          /// ✨ Animated shimmer overlay — subtle moving light
-          AnimBuilder(
-            animation: _shimmerController,
-            builder: (context, _) {
-              return Container(
-                decoration: BoxDecoration(
-                  gradient: RadialGradient(
-                    center: Alignment(
-                      math.sin(_shimmerController.value * 2 * math.pi) * 0.3,
-                      math.cos(_shimmerController.value * 2 * math.pi) * 0.2 -
-                          0.3,
-                    ),
-                    radius: 1.2,
-                    colors: const [
-                      Color(0x18FFFFFF),
-                      Color(0x00FFFFFF),
+  // ── Layout Components ──
+
+  Widget _buildBackgroundImage() {
+    return Image.asset(
+      'assets/images/halong.jpg',
+      fit: BoxFit.cover,
+    );
+  }
+
+  Widget _buildShimmerOverlay() {
+    return AnimBuilder(
+      animation: _shimmerController,
+      builder: (context, _) {
+        return Container(
+          decoration: BoxDecoration(
+            gradient: RadialGradient(
+              center: Alignment(
+                math.sin(_shimmerController.value * 2 * math.pi) * 0.3,
+                math.cos(_shimmerController.value * 2 * math.pi) * 0.2 - 0.3,
+              ),
+              radius: 1.2,
+              colors: const [
+                Color(0x18FFFFFF),
+                Color(0x00FFFFFF),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _buildGradientOverlay() {
+    return Container(
+      decoration: const BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          stops: [0.0, 0.35, 0.65, 1.0],
+          colors: [
+            Color(0x22000000),
+            Color(0x08000000),
+            Color(0x55000000),
+            Color(0xAA000000),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildContent(BuildContext context) {
+    return SafeArea(
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          final availableW = constraints.maxWidth;
+          final availableH = constraints.maxHeight;
+          // Constrain content width on wide screens
+          final contentMaxW = availableW > 600 ? 420.0 : availableW;
+          final horizontalPad = (availableW - contentMaxW) / 2 + 32;
+
+          return SingleChildScrollView(
+            physics: const AlwaysScrollableScrollPhysics(),
+            child: ConstrainedBox(
+              constraints: BoxConstraints(minHeight: availableH),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const SizedBox(height: 24),
+                      _buildLogo(),
+                      const SizedBox(height: 8),
                     ],
                   ),
-                ),
-              );
-            },
-          ),
-
-          /// 🎨 Gradient overlay – softer bottom to avoid dark feel
-          Container(
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                stops: [0.0, 0.35, 0.65, 1.0],
-                colors: [
-                  Color(0x22000000),
-                  Color(0x08000000),
-                  Color(0x55000000),
-                  Color(0xAA000000),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: horizontalPad),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        _buildTitle(),
+                        const SizedBox(height: 12),
+                        _buildSubtitle(),
+                        const SizedBox(height: 24),
+                        _buildButton(context),
+                        const SizedBox(height: 20),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
+          );
+        },
+      ),
+    );
+  }
+
+  Widget _buildLogo() {
+    return SlideTransition(
+      position: _logoSlide,
+      child: FadeTransition(
+        opacity: _logoFade,
+        child: Container(
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            boxShadow: [
+              BoxShadow(
+                color: const Color(0xFFD4AF7A).withOpacity(0.3),
+                blurRadius: 50,
+                spreadRadius: 10,
+              ),
+            ],
           ),
+          child: Image.asset(
+            'assets/images/logo.png',
+            width: 250,
+            height: 250,
+          ),
+        ),
+      ),
+    );
+  }
 
-          /// 📱 Content – responsive layout (cuộn được trên cửa sổ thấp / web / Windows)
-          SafeArea(
-            child: LayoutBuilder(
-              builder: (context, constraints) {
-                final availableW = constraints.maxWidth;
-                final availableH = constraints.maxHeight;
-                // Constrain content width on wide screens
-                final contentMaxW = availableW > 600 ? 420.0 : availableW;
-                final horizontalPad = (availableW - contentMaxW) / 2 + 32;
+  Widget _buildTitle() {
+    return SlideTransition(
+      position: _titleSlide,
+      child: FadeTransition(
+        opacity: _titleFade,
+        child: Column(
+          children: [
+            Text(
+              'KHÁM PHÁ',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontFamily: 'Montserrat',
+                color: AppColors.textPrimary,
+                fontSize: 30,
+                fontWeight: FontWeight.w400,
+                letterSpacing: 6,
+                shadows: [
+                  Shadow(
+                    color: const Color(0x55000000),
+                    blurRadius: 8,
+                    offset: const Offset(0, 2),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 4),
+            Text(
+              'VIỆT NAM',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontFamily: 'Montserrat',
+                color: AppColors.textPrimary,
+                fontSize: 44,
+                fontWeight: FontWeight.w600,
+                letterSpacing: 5,
+                shadows: [
+                  Shadow(
+                    color: const Color(0x88000000),
+                    blurRadius: 12,
+                    offset: const Offset(0, 4),
+                  ),
+                  Shadow(
+                    color: const Color(0x44000000),
+                    blurRadius: 24,
+                    offset: const Offset(0, 8),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 
-                return SingleChildScrollView(
-                  physics: const AlwaysScrollableScrollPhysics(),
-                  child: ConstrainedBox(
-                    constraints: BoxConstraints(minHeight: availableH),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            const SizedBox(height: 24),
+  Widget _buildSubtitle() {
+    return SlideTransition(
+      position: _subtitleSlide,
+      child: FadeTransition(
+        opacity: _subtitleFade,
+        child: const Text(
+          'Tìm điểm đến phù hợp cho bạn\nvới TourXport',
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontFamily: 'Montserrat',
+            color: AppColors.textSecondary,
+            fontSize: 16,
+            fontWeight: FontWeight.w400,
+            height: 1.7,
+            letterSpacing: 0.3,
+          ),
+        ),
+      ),
+    );
+  }
 
-                            /// 🔰 Logo – fades in from top, larger
-                            SlideTransition(
-                              position: _logoSlide,
-                              child: FadeTransition(
-                                opacity: _logoFade,
-                                child: Image.asset(
-                                  'assets/images/logo.png',
-                                  width: 180,
-                                  height: 180,
-                                ),
-                              ),
-                            ),
-                            const SizedBox(height: 8),
-                          ],
-                        ),
-
-                    /// 📍 Bottom Content
-                    Padding(
-                      padding: EdgeInsets.symmetric(horizontal: horizontalPad),
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          /// ✨ Title – slides up
-                          SlideTransition(
-                            position: _titleSlide,
-                            child: FadeTransition(
-                              opacity: _titleFade,
-                              child: Column(
-                                children: [
-                                  Text(
-                                    'KHÁM PHÁ',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      fontFamily: 'Montserrat',
-                                      color: AppColors.textPrimary,
-                                      fontSize: 30,
-                                      fontWeight: FontWeight.w400,
-                                      letterSpacing: 6,
-                                      shadows: [
-                                        Shadow(
-                                          color: const Color(0x55000000),
-                                          blurRadius: 8,
-                                          offset: const Offset(0, 2),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  const SizedBox(height: 4),
-                                  Text(
-                                    'VIỆT NAM',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      fontFamily: 'Montserrat',
-                                      color: AppColors.textPrimary,
-                                      fontSize: 44,
-                                      fontWeight: FontWeight.w600,
-                                      letterSpacing: 5,
-                                      shadows: [
-                                        Shadow(
-                                          color: const Color(0x88000000),
-                                          blurRadius: 12,
-                                          offset: const Offset(0, 4),
-                                        ),
-                                        Shadow(
-                                          color: const Color(0x44000000),
-                                          blurRadius: 24,
-                                          offset: const Offset(0, 8),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
+  Widget _buildButton(BuildContext context) {
+    return SlideTransition(
+      position: _buttonSlide,
+      child: FadeTransition(
+        opacity: _buttonFade,
+        child: AnimBuilder(
+          animation: _buttonPulseController,
+          builder: (context, child) {
+            final pulseValue = _buttonPulseController.value * 0.15 + 0.85;
+            return Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color(0xFF2D6A4F).withOpacity(0.3 * pulseValue),
+                    blurRadius: 20 * pulseValue,
+                    spreadRadius: 2 * pulseValue,
+                    offset: const Offset(0, 4),
+                  ),
+                ],
+              ),
+              child: child,
+            );
+          },
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 400),
+            child: SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    PageRouteBuilder(
+                      pageBuilder: (_, __, ___) => const SignInScreen(),
+                      transitionDuration: const Duration(milliseconds: 500),
+                      reverseTransitionDuration: const Duration(milliseconds: 400),
+                      transitionsBuilder: (_, animation, __, child) {
+                        return FadeTransition(
+                          opacity: CurvedAnimation(
+                            parent: animation,
+                            curve: Curves.easeInOut,
                           ),
-
-                          const SizedBox(height: 12),
-
-                          /// 📄 Subtitle – slides up (delayed)
-                          SlideTransition(
-                            position: _subtitleSlide,
-                            child: FadeTransition(
-                              opacity: _subtitleFade,
-                              child: const Text(
-                                'Tìm điểm đến phù hợp cho bạn\nvới TourXport',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontFamily: 'Montserrat',
-                                  color: AppColors.textSecondary,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w400,
-                                  height: 1.7,
-                                  letterSpacing: 0.3,
-                                ),
-                              ),
-                            ),
+                          child: SlideTransition(
+                            position: Tween<Offset>(
+                              begin: const Offset(0, 0.08),
+                              end: Offset.zero,
+                            ).animate(CurvedAnimation(
+                              parent: animation,
+                              curve: Curves.easeOutCubic,
+                            )),
+                            child: child,
                           ),
-
-                          const SizedBox(height: 24),
-
-                          /// 🚀 Button – slides up with pulse glow
-                          SlideTransition(
-                            position: _buttonSlide,
-                            child: FadeTransition(
-                              opacity: _buttonFade,
-                              child: AnimBuilder(
-                                animation: _buttonPulseController,
-                                builder: (context, child) {
-                                  final pulseValue =
-                                      _buttonPulseController.value * 0.15 +
-                                          0.85;
-                                  return Container(
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(30),
-                                      boxShadow: [
-                                        BoxShadow(
-                                          color: const Color(0xFF2D6A4F)
-                                              .withOpacity(0.3 * pulseValue),
-                                          blurRadius: 20 * pulseValue,
-                                          spreadRadius: 2 * pulseValue,
-                                          offset: const Offset(0, 4),
-                                        ),
-                                      ],
-                                    ),
-                                    child: child,
-                                  );
-                                },
-                                child: ConstrainedBox(
-                                  constraints:
-                                      const BoxConstraints(maxWidth: 400),
-                                  child: SizedBox(
-                                    width: double.infinity,
-                                    child: ElevatedButton(
-                                      onPressed: () {
-                                        Navigator.push(
-                                          context,
-                                          PageRouteBuilder(
-                                            pageBuilder: (_, __, ___) =>
-                                                const SignInScreen(),
-                                            transitionDuration:
-                                                const Duration(
-                                                    milliseconds: 500),
-                                            reverseTransitionDuration:
-                                                const Duration(
-                                                    milliseconds: 400),
-                                            transitionsBuilder:
-                                                (_, animation, __, child) {
-                                              return FadeTransition(
-                                                opacity: CurvedAnimation(
-                                                  parent: animation,
-                                                  curve: Curves.easeInOut,
-                                                ),
-                                                child: SlideTransition(
-                                                  position: Tween<Offset>(
-                                                    begin:
-                                                        const Offset(0, 0.08),
-                                                    end: Offset.zero,
-                                                  ).animate(CurvedAnimation(
-                                                    parent: animation,
-                                                    curve:
-                                                        Curves.easeOutCubic,
-                                                  )),
-                                                  child: child,
-                                                ),
-                                              );
-                                            },
-                                          ),
-                                        );
-                                      },
-                                      style: ButtonStyle(
-                                        backgroundColor: MaterialStateProperty.resolveWith((states) {
-                                          if (states.contains(MaterialState.hovered)) {
-                                            return Colors.black.withOpacity(0.9);
-                                          }
-                                          return AppColors.buttonDark.withOpacity(0.85);
-                                        }),
-                                        foregroundColor: MaterialStateProperty.all(AppColors.textPrimary),
-                                        padding: MaterialStateProperty.all(
-                                            const EdgeInsets.symmetric(vertical: 14)),
-                                        shape: MaterialStateProperty.all(
-                                          RoundedRectangleBorder(
-                                            borderRadius: BorderRadius.circular(30),
-                                          ),
-                                        ),
-                                        elevation: MaterialStateProperty.all(0),
-                                      ),
-                                      child: const Text(
-                                        'BẮT ĐẦU NGAY',
-                                        style: TextStyle(
-                                          fontFamily: 'Montserrat',
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.w600,
-                                          letterSpacing: 2.0,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-
-                          const SizedBox(height: 20),
-                        ],
-                      ),
+                        );
+                      },
                     ),
-                  ],
+                  );
+                },
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.resolveWith((states) {
+                    if (states.contains(MaterialState.hovered)) {
+                      return Colors.black.withOpacity(0.9);
+                    }
+                    return AppColors.buttonDark.withOpacity(0.85);
+                  }),
+                  foregroundColor: MaterialStateProperty.all(AppColors.textPrimary),
+                  padding: MaterialStateProperty.all(const EdgeInsets.symmetric(vertical: 22)),
+                  shape: MaterialStateProperty.all(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                  ),
+                  elevation: MaterialStateProperty.all(0),
+                ),
+                child: const Text(
+                  'BẮT ĐẦU NGAY',
+                  style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontSize: 20,
+                    fontWeight: FontWeight.w600,
+                    letterSpacing: 2.0,
+                  ),
                 ),
               ),
-            );
-              },
             ),
           ),
-        ],
+        ),
       ),
     );
   }
