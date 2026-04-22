@@ -13,7 +13,7 @@ client = AsyncOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 class PromptRequest(BaseModel):
     prompt: str
 
-@app.post("/api/v1/ai/generate")
+@app.post("/api/v1/ai/generate")P
 async def generate_response(request: PromptRequest):
     """
     Endpoint nhận prompt từ người dùng và trả về kết quả từ gpt-4o-mini.

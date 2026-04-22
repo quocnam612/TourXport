@@ -4,6 +4,7 @@ import mongoose from 'mongoose';
 
 import config from './config/config.js'; 
 import authRoutes from './routes/authRoutes.js';
+import locationsRoutes from './routes/locationsRoutes.js';
 
 const app = express();
 
@@ -13,6 +14,7 @@ app.use(cors({origin: config.cors.allowedOrigins}));
 
 // API routes
 app.use('/auth', authRoutes);
+app.use('/locations', locationsRoutes);
 
 mongoose.connect(config.database.uri)
 .then(() => {
