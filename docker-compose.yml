@@ -2,7 +2,7 @@ services:
   backend:
     build: ./backend
     ports:
-      - "${PORT_BACKEND:-3000}:3000" # Lấy từ .env, nếu không có thì mặc định 3000
+      - "${PORT_BACKEND:-3000}:3000"
     env_file: .env
     volumes:
       - ./backend:/app
@@ -21,8 +21,7 @@ services:
     build: ./ai_backend
     expose:
       - "8000" # Chỉ mở nội bộ
-    env_file:
-      - ./ai_backend/.env
+    env_file: .env
     develop:
       watch:
         - action: sync

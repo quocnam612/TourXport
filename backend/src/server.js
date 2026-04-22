@@ -1,36 +1,29 @@
-import { MongoClient, ServerApiVersion } from 'mongodb';
 import express from 'express';
-import dotenv from 'dotenv';
+import cors from 'cors';
+import mongoose from 'mongoose';
 
-dotenv.config();
+import config from './config/config.js'; 
+import authRoutes from './routes/authRoutes.js';
+import locationsRoutes from './routes/locationsRoutes.js';
 
 const app = express();
-const port = process.env.PORT_BACKEND || 3000;
-const uri = process.env.MONGO_URI;
 
-const client = new MongoClient(uri, {
-    serverApi: {
-        version: ServerApiVersion.v1,
-        strict: true,
-        deprecationErrors: true,
-    }
+// Middlewares
+app.use(express.json());
+app.use(cors({origin: config.cors.allowedOrigins}));
+
+// API routes
+app.use('/auth', authRoutes);
+app.use('/locations', locationsRoutes);
+
+mongoose.connect(config.database.uri)
+.then(() => {
+    console.log('✅ Connected to MongoDB Atlas');
+    app.listen(config.port, () => {
+        console.log(`🚀 Server running on http://localhost:${config.port}`);
+        console.log(`🌍 Environment: ${config.env}`);
+    });
+})
+.catch((err) => {
+    console.error('❌ Database connection error:', err.message);
 });
-
-async function startServer() {
-    try {
-        await client.connect();
-        await client.db("admin").command({ ping: 1 });
-        console.log("✅ Kết nối MongoDB Atlas thành công!");
-
-        // Khởi động server Express sau khi đã kết nối DB
-        app.listen(port, () => {
-        console.log(`🚀 Server đang quẩy tại http://localhost:${port}`);
-        });
-
-    } catch (err) {
-        console.error("❌ Lỗi khởi động hệ thống:", err);
-        process.exit(1); // Thoát nếu không kết nối được DB
-    }
-}
-
-startServer();
