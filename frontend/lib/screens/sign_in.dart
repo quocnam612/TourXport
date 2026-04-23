@@ -1,5 +1,4 @@
-import 'dart:math' show max;
-
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import '../api/api.dart';
 import '../utils/auth_feedback.dart';
@@ -101,13 +100,13 @@ class _SignInScreenState extends State<SignInScreen>
 
   // ── Animations ──
   late final AnimationController _entranceController;
+  late final Animation<double> _headerFade;
   late final Animation<double> _panelSlide;
-  late final Animation<double> _titleFade;
-  late final Animation<double> _tabFade;
-  late final Animation<double> _fieldsFade;
-  late final Animation<double> _buttonFade;
-  late final Animation<double> _socialFade;
-  late final Animation<double> _bottomFade;
+  late final Animation<double> _contentFade;
+
+  // Sheet controller for parallax
+  final DraggableScrollableController _sheetCtrl = DraggableScrollableController();
+  double _sheetFraction = 0.62;
 
   @override
   void initState() {
@@ -118,48 +117,27 @@ class _SignInScreenState extends State<SignInScreen>
       duration: const Duration(milliseconds: 1200),
     );
 
-    // Panel slides up from bottom
+    _headerFade = CurvedAnimation(
+      parent: _entranceController,
+      curve: const Interval(0.0, 0.4, curve: Curves.easeOut),
+    );
+
     _panelSlide = CurvedAnimation(
       parent: _entranceController,
-      curve: const Interval(0.0, 0.45, curve: Curves.easeOutCubic),
+      curve: const Interval(0.0, 0.5, curve: Curves.easeOutCubic),
     );
 
-    // Title
-    _titleFade = CurvedAnimation(
+    _contentFade = CurvedAnimation(
       parent: _entranceController,
-      curve: const Interval(0.15, 0.45, curve: Curves.easeOut),
+      curve: const Interval(0.2, 0.7, curve: Curves.easeOut),
     );
 
-    // Tab bar
-    _tabFade = CurvedAnimation(
-      parent: _entranceController,
-      curve: const Interval(0.25, 0.55, curve: Curves.easeOut),
-    );
-
-    // Input fields
-    _fieldsFade = CurvedAnimation(
-      parent: _entranceController,
-      curve: const Interval(0.35, 0.65, curve: Curves.easeOut),
-    );
-
-    // Button
-    _buttonFade = CurvedAnimation(
-      parent: _entranceController,
-      curve: const Interval(0.45, 0.75, curve: Curves.easeOut),
-    );
-
-    // Social + bottom
-    _socialFade = CurvedAnimation(
-      parent: _entranceController,
-      curve: const Interval(0.55, 0.85, curve: Curves.easeOut),
-    );
-
-    _bottomFade = CurvedAnimation(
-      parent: _entranceController,
-      curve: const Interval(0.65, 0.95, curve: Curves.easeOut),
-    );
-
+    _sheetCtrl.addListener(_onSheetChanged);
     _entranceController.forward();
+  }
+
+  void _onSheetChanged() {
+    setState(() => _sheetFraction = _sheetCtrl.size);
   }
 
   @override
@@ -167,6 +145,8 @@ class _SignInScreenState extends State<SignInScreen>
     _inputController.dispose();
     _passwordController.dispose();
     _entranceController.dispose();
+    _sheetCtrl.removeListener(_onSheetChanged);
+    _sheetCtrl.dispose();
     super.dispose();
   }
 
@@ -175,82 +155,99 @@ class _SignInScreenState extends State<SignInScreen>
     final screenW = MediaQuery.sizeOf(context).width;
     final contentW = screenW > 600 ? 500.0 : screenW;
     final s = contentW / 412;
-    // Vị trí thấp nhất ~833*s + tagline 2 dòng — đủ cao để không overflow trên Windows/web
-    final minScrollHeight = 920 * s;
 
     return Scaffold(
       resizeToAvoidBottomInset: true,
-      body: SafeArea(
-        child: Stack(
-          children: [
-            // ── Background image
-            Positioned.fill(
-              child: Image.asset(
-                'assets/images/login_bg.jpg',
-                fit: BoxFit.cover,
-              ),
-            ),
+      body: Stack(
+        children: [
+          // ── Background image with parallax
+          _buildHeroImage(s),
 
-            // ── Dark overlay panel (animated slide up)
-            AnimBuilder(
-              animation: _panelSlide,
-              builder: (context, child) {
-                final slideOffset = (1 - _panelSlide.value) * 100;
-                return Positioned(
-                  left: 0,
-                  right: 0,
-                  top: 227 * s + slideOffset,
-                  height: 712 * s,
-                  child: Opacity(
-                    opacity: _panelSlide.value.clamp(0.0, 1.0),
-                    child: child,
-                  ),
-                );
-              },
+          // ── Draggable panel with green transparent overlay
+          _buildDraggablePanel(s),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildHeroImage(double s) {
+    return Positioned.fill(
+      child: Stack(
+        fit: StackFit.expand,
+        children: [
+          Image.asset(
+            'assets/images/login_bg.jpg',
+            fit: BoxFit.cover,
+          ),
+          // Light blur on the background
+          BackdropFilter(
+            filter: ImageFilter.blur(sigmaX: 3, sigmaY: 3),
+            child: Container(color: Colors.transparent),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildDraggablePanel(double s) {
+    return AnimatedBuilder(
+      animation: _panelSlide,
+      builder: (context, child) {
+        final screenH = MediaQuery.of(context).size.height;
+        final slideOffset = (1 - _panelSlide.value) * screenH;
+        return Opacity(
+          opacity: _panelSlide.value.clamp(0.0, 1.0),
+          child: Transform.translate(
+            offset: Offset(0, slideOffset),
+            child: child,
+          ),
+        );
+      },
+      child: DraggableScrollableSheet(
+        controller: _sheetCtrl,
+        initialChildSize: 0.62,
+        minChildSize: 0.62,
+        maxChildSize: 0.92,
+        builder: (context, scrollCtrl) {
+          return ClipRRect(
+            borderRadius: const BorderRadius.vertical(top: Radius.circular(36)),
+            child: BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
               child: Container(
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      const Color(0xFF1C302D).withOpacity(0.55),
-                      const Color(0xFF1C302D).withOpacity(0.80),
+                      Colors.black.withOpacity(0.50),
+                      Colors.black.withOpacity(0.55),
                     ],
                   ),
-                  borderRadius: const BorderRadius.vertical(
-                    top: Radius.circular(30),
+                  borderRadius: const BorderRadius.vertical(top: Radius.circular(36)),
+                  border: Border(
+                    top: BorderSide(color: Colors.white.withOpacity(0.1), width: 1),
                   ),
                 ),
-              ),
-            ),
+                child: FadeTransition(
+                  opacity: _contentFade,
+                  child: ListView(
+                    controller: scrollCtrl,
+                    padding: EdgeInsets.fromLTRB(24 * s, 12, 24 * s, MediaQuery.viewInsetsOf(context).bottom + 24),
+                    children: [
+                      // Drag handle
+                      Center(
+                        child: Container(
+                          width: 42, height: 5,
+                          margin: const EdgeInsets.only(bottom: 20),
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(0.2),
+                            borderRadius: BorderRadius.circular(3),
+                          ),
+                        ),
+                      ),
 
-            Positioned.fill(
-              child: LayoutBuilder(
-                builder: (context, constraints) {
-                  final viewportH = constraints.maxHeight;
-                  final scrollContentH = max(minScrollHeight, viewportH);
-                  return SingleChildScrollView(
-                    physics: const AlwaysScrollableScrollPhysics(),
-                    padding: EdgeInsets.only(
-                      bottom: MediaQuery.viewInsetsOf(context).bottom + 12,
-                    ),
-                    child: Align(
-                      alignment: Alignment.topCenter,
-                      child: SizedBox(
-                        width: contentW,
-                        height: scrollContentH,
-                        child: Stack(
-                          clipBehavior: Clip.none,
-                          children: [
-
-                  // ── Title "Đăng nhập"
-                  Positioned(
-                    left: 0,
-                    right: 0,
-                    top: 248 * s,
-                    child: FadeTransition(
-                      opacity: _titleFade,
-                      child: Center(
+                      // Title
+                      Center(
                         child: Text(
                           'Đăng nhập',
                           style: TextStyle(
@@ -262,177 +259,47 @@ class _SignInScreenState extends State<SignInScreen>
                           ),
                         ),
                       ),
-                    ),
-                  ),
+                      SizedBox(height: 24 * s),
 
-                  // ── Tab: Điện thoại / Email
-                  Positioned(
-                    left: 16 * s,
-                    right: 16 * s,
-                    top: 305 * s,
-                    height: 50 * s,
-                    child: FadeTransition(
-                      opacity: _tabFade,
-                      child: Stack(
-                        children: [
-                          // Nền tối
-                          Positioned.fill(
-                            child: Container(
-                              decoration: BoxDecoration(
-                                color: Colors.black.withOpacity(0.5),
-                                borderRadius: BorderRadius.circular(40),
-                              ),
-                            ),
-                          ),
-                          // Pill trắng active — animated
-                          AnimatedPositioned(
-                            duration: const Duration(milliseconds: 250),
-                            curve: Curves.easeInOutCubic,
-                            left: _useEmail ? (380 * s / 2) + 5 : 5,
-                            top: 5,
-                            width: (380 * s / 2) - 10,
-                            height: 40 * s,
-                            child: AnimatedContainer(
-                              duration: const Duration(milliseconds: 250),
-                              decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.9),
-                                borderRadius: BorderRadius.circular(40),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: Colors.black.withOpacity(0.25),
-                                    blurRadius: 8,
-                                    offset: const Offset(0, 4),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                          // Điện thoại label
-                          Positioned(
-                            left: 0,
-                            width: 380 * s / 2,
-                            top: 0,
-                            bottom: 0,
-                            child: GestureDetector(
-                              behavior: HitTestBehavior.opaque,
-                              onTap: () => setState(() => _useEmail = false),
-                              child: Center(
-                                child: AnimatedDefaultTextStyle(
-                                  duration: const Duration(milliseconds: 200),
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat',
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 18 * s,
-                                    color: _useEmail
-                                        ? Colors.white
-                                        : const Color(0xFF1C302D),
-                                  ),
-                                  child: const Text('Điện thoại'),
-                                ),
-                              ),
-                            ),
-                          ),
-                          // Email label
-                          Positioned(
-                            left: 380 * s / 2,
-                            right: 0,
-                            top: 0,
-                            bottom: 0,
-                            child: GestureDetector(
-                              behavior: HitTestBehavior.opaque,
-                              onTap: () => setState(() => _useEmail = true),
-                              child: Center(
-                                child: AnimatedDefaultTextStyle(
-                                  duration: const Duration(milliseconds: 200),
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat',
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 18 * s,
-                                    color: _useEmail
-                                        ? const Color(0xFF1C302D)
-                                        : Colors.white,
-                                  ),
-                                  child: const Text('Email'),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
+                      // ── Tab: Điện thoại / Email
+                      _buildTabBar(s),
+                      SizedBox(height: 24 * s),
 
-                  // ── Email / Phone field
-                  Positioned(
-                    left: 16 * s,
-                    right: 16 * s,
-                    top: 376 * s,
-                    height: 79 * s,
-                    child: FadeTransition(
-                      opacity: _fieldsFade,
-                      child: AnimatedSwitcher(
+                      // ── Email / Phone field
+                      AnimatedSwitcher(
                         duration: const Duration(milliseconds: 300),
                         transitionBuilder: (child, animation) {
-                          return FadeTransition(
-                            opacity: animation,
-                            child: child,
-                          );
+                          return FadeTransition(opacity: animation, child: child);
                         },
                         child: _buildField(
                           key: ValueKey<bool>(_useEmail),
-                          label:
-                              _useEmail ? 'Địa chỉ Email' : 'Số điện thoại',
+                          label: _useEmail ? 'Địa chỉ Email' : 'Số điện thoại',
                           hint: _useEmail ? 'abc@gmail.com' : '0123456789',
                           controller: _inputController,
                           keyboardType: _useEmail
                               ? TextInputType.emailAddress
                               : TextInputType.phone,
-                          bgOpacity: 0.18,
                           s: s,
                         ),
                       ),
-                    ),
-                  ),
+                      SizedBox(height: 16 * s),
 
-                  // ── Password field
-                  Positioned(
-                    left: 16 * s,
-                    right: 16 * s,
-                    top: 469 * s,
-                    height: 79 * s,
-                    child: FadeTransition(
-                      opacity: _fieldsFade,
-                      child: _buildField(
+                      // ── Password field
+                      _buildField(
                         label: 'Mật khẩu',
                         hint: '123abc',
                         controller: _passwordController,
                         isPassword: true,
-                        bgOpacity: 0.18,
                         s: s,
                       ),
-                    ),
-                  ),
+                      SizedBox(height: 28 * s),
 
-                  // ── Tiếp tục button
-                  Positioned(
-                    left: 17 * s,
-                    right: 17 * s,
-                    top: 581 * s,
-                    height: 50 * s,
-                    child: FadeTransition(
-                      opacity: _buttonFade,
-                      child: _buildContinueButton(s),
-                    ),
-                  ),
+                      // ── Tiếp tục button
+                      _buildContinueButton(s),
+                      SizedBox(height: 24 * s),
 
-                  // ── Divider "Đăng nhập bằng"
-                  Positioned(
-                    left: 16 * s,
-                    right: 16 * s,
-                    top: 648 * s,
-                    child: FadeTransition(
-                      opacity: _socialFade,
-                      child: Row(
+                      // ── Divider "Đăng nhập bằng"
+                      Row(
                         children: [
                           Expanded(
                             child: Divider(
@@ -441,8 +308,7 @@ class _SignInScreenState extends State<SignInScreen>
                             ),
                           ),
                           Padding(
-                            padding:
-                                EdgeInsets.symmetric(horizontal: 10 * s),
+                            padding: EdgeInsets.symmetric(horizontal: 10 * s),
                             child: Text(
                               'Đăng nhập bằng',
                               style: TextStyle(
@@ -461,43 +327,31 @@ class _SignInScreenState extends State<SignInScreen>
                           ),
                         ],
                       ),
-                    ),
-                  ),
+                      SizedBox(height: 16 * s),
 
-                  // ── Social buttons
-                  Positioned(
-                    left: 16 * s,
-                    right: 16 * s,
-                    top: 691 * s,
-                    height: 70 * s,
-                    child: FadeTransition(
-                      opacity: _socialFade,
-                      child: Row(
-                        children: [
-                          _buildSocialBtn(
-                            label: 'Tiếp tục với Google',
-                            iconAsset: 'assets/icons/gg_logo.png',
-                            s: s,
-                          ),
-                          SizedBox(width: 10 * s),
-                          _buildSocialBtn(
-                            label: 'Tiếp tục với Facebook',
-                            iconAsset: 'assets/icons/fb_logo.png',
-                            s: s,
-                          ),
-                        ],
+                      // ── Social buttons
+                      SizedBox(
+                        height: 70 * s,
+                        child: Row(
+                          children: [
+                            _buildSocialBtn(
+                              label: 'Tiếp tục với Google',
+                              iconAsset: 'assets/icons/gg_logo.png',
+                              s: s,
+                            ),
+                            SizedBox(width: 10 * s),
+                            _buildSocialBtn(
+                              label: 'Tiếp tục với Facebook',
+                              iconAsset: 'assets/icons/fb_logo.png',
+                              s: s,
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
-                  ),
+                      SizedBox(height: 20 * s),
 
-                  // ── "Bạn chưa có tài khoản?"
-                  Positioned(
-                    left: 0,
-                    right: 0,
-                    top: 782 * s,
-                    child: FadeTransition(
-                      opacity: _bottomFade,
-                      child: Row(
+                      // ── "Bạn chưa có tài khoản?"
+                      Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
@@ -555,17 +409,10 @@ class _SignInScreenState extends State<SignInScreen>
                           ),
                         ],
                       ),
-                    ),
-                  ),
+                      SizedBox(height: 16 * s),
 
-                  // ── Tagline
-                  Positioned(
-                    left: 0,
-                    right: 0,
-                    top: 833 * s,
-                    child: FadeTransition(
-                      opacity: _bottomFade,
-                      child: Text(
+                      // ── Tagline
+                      Text(
                         '"Hạnh phúc không phải là điểm đến\nmà là cả một hành trình."',
                         textAlign: TextAlign.center,
                         style: TextStyle(
@@ -575,22 +422,108 @@ class _SignInScreenState extends State<SignInScreen>
                           letterSpacing: 0.3,
                           color: Colors.white,
                           height: 1.5,
-                          // fontStyle: FontStyle.italic,
                         ),
                       ),
-                    ),
+                    ],
                   ),
-
-                          ],
-                        ),
-                      ),
-                    ),
-                  );
-                },
+                ),
               ),
             ),
-          ],
-        ),
+          );
+        },
+      ),
+    );
+  }
+
+  // ── Tab bar ──
+  Widget _buildTabBar(double s) {
+    return SizedBox(
+      height: 50 * s,
+      child: Stack(
+        children: [
+          // Nền tối
+          Positioned.fill(
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.black.withOpacity(0.5),
+                borderRadius: BorderRadius.circular(40),
+              ),
+            ),
+          ),
+          // Pill trắng active — animated
+          AnimatedPositioned(
+            duration: const Duration(milliseconds: 250),
+            curve: Curves.easeInOutCubic,
+            left: _useEmail ? (MediaQuery.sizeOf(context).width - 48 * s) / 2 + 5 : 5,
+            top: 5,
+            width: (MediaQuery.sizeOf(context).width - 48 * s) / 2 - 10,
+            height: 40 * s,
+            child: AnimatedContainer(
+              duration: const Duration(milliseconds: 250),
+              decoration: BoxDecoration(
+                color: Colors.white.withOpacity(0.9),
+                borderRadius: BorderRadius.circular(40),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.25),
+                    blurRadius: 8,
+                    offset: const Offset(0, 4),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          // Điện thoại label
+          Positioned(
+            left: 0,
+            width: (MediaQuery.sizeOf(context).width - 48 * s) / 2,
+            top: 0,
+            bottom: 0,
+            child: GestureDetector(
+              behavior: HitTestBehavior.opaque,
+              onTap: () => setState(() => _useEmail = false),
+              child: Center(
+                child: AnimatedDefaultTextStyle(
+                  duration: const Duration(milliseconds: 200),
+                  style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18 * s,
+                    color: _useEmail
+                        ? Colors.white
+                        : const Color(0xFF1C302D),
+                  ),
+                  child: const Text('Điện thoại'),
+                ),
+              ),
+            ),
+          ),
+          // Email label
+          Positioned(
+            left: (MediaQuery.sizeOf(context).width - 48 * s) / 2,
+            right: 0,
+            top: 0,
+            bottom: 0,
+            child: GestureDetector(
+              behavior: HitTestBehavior.opaque,
+              onTap: () => setState(() => _useEmail = true),
+              child: Center(
+                child: AnimatedDefaultTextStyle(
+                  duration: const Duration(milliseconds: 200),
+                  style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18 * s,
+                    color: _useEmail
+                        ? const Color(0xFF1C302D)
+                        : Colors.white,
+                  ),
+                  child: const Text('Email'),
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -601,6 +534,7 @@ class _SignInScreenState extends State<SignInScreen>
       onTap: _isLoading ? null : _handleLogin,
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
+        height: 50 * s,
         decoration: BoxDecoration(
           color: Colors.black.withOpacity(0.5),
           borderRadius: BorderRadius.circular(40),
@@ -618,7 +552,7 @@ class _SignInScreenState extends State<SignInScreen>
         ),
         alignment: Alignment.center,
         child: _isLoading
-          ? SizedBox(width: 24, height: 24, child: CircularProgressIndicator(color: Colors.white, strokeWidth: 2))
+          ? const SizedBox(width: 24, height: 24, child: CircularProgressIndicator(color: Colors.white, strokeWidth: 2))
           : Text(
           'Tiếp tục',
           style: TextStyle(
@@ -641,7 +575,6 @@ class _SignInScreenState extends State<SignInScreen>
     required TextEditingController controller,
     bool isPassword = false,
     TextInputType keyboardType = TextInputType.text,
-    required double bgOpacity,
     required double s,
   }) {
     return Column(
@@ -660,68 +593,67 @@ class _SignInScreenState extends State<SignInScreen>
         ),
         SizedBox(height: 6 * s),
         // Input box
-        Expanded(
-          child: Container(
-            decoration: BoxDecoration(
-              color: Colors.white.withOpacity(bgOpacity),
-              borderRadius: BorderRadius.circular(40),
-              border: Border.all(
-                color: Colors.white.withOpacity(0.25),
-                width: 1,
-              ),
+        Container(
+          height: 50 * s,
+          decoration: BoxDecoration(
+            color: Colors.white.withOpacity(0.18),
+            borderRadius: BorderRadius.circular(40),
+            border: Border.all(
+              color: Colors.white.withOpacity(0.25),
+              width: 1,
             ),
-            child: TextField(
-              controller: controller,
-              obscureText: isPassword && _obscurePassword,
-              keyboardType: keyboardType,
-              textAlignVertical: TextAlignVertical.center,
-              style: TextStyle(
+          ),
+          child: TextField(
+            controller: controller,
+            obscureText: isPassword && _obscurePassword,
+            keyboardType: keyboardType,
+            textAlignVertical: TextAlignVertical.center,
+            style: TextStyle(
+              fontFamily: 'Montserrat',
+              fontSize: 18 * s,
+              color: Colors.white,
+            ),
+            decoration: InputDecoration(
+              hintText: hint,
+              hintStyle: TextStyle(
                 fontFamily: 'Montserrat',
                 fontSize: 18 * s,
-                color: Colors.white,
+                color: Colors.white.withOpacity(0.5),
               ),
-              decoration: InputDecoration(
-                hintText: hint,
-                hintStyle: TextStyle(
-                  fontFamily: 'Montserrat',
-                  fontSize: 18 * s,
-                  color: Colors.white.withOpacity(0.5),
-                ),
-                contentPadding: EdgeInsets.only(
-                  left: 20 * s,
-                  right: 20 * s,
-                  top: 12 * s,
-                  bottom: 16 * s,
-                ),
-                border: InputBorder.none,
-                suffixIcon: isPassword
-                    ? Padding(
-                        padding: EdgeInsets.only(right: 8 * s),
-                        child: IconButton(
-                          icon: AnimatedSwitcher(
-                            duration: const Duration(milliseconds: 200),
-                            transitionBuilder: (child, animation) {
-                              return ScaleTransition(
-                                scale: animation,
-                                child: child,
-                              );
-                            },
-                            child: Icon(
-                              _obscurePassword
-                                  ? Icons.visibility_off
-                                  : Icons.visibility,
-                              key: ValueKey<bool>(_obscurePassword),
-                              color: Colors.white.withOpacity(0.6),
-                              size: 22 * s,
-                            ),
-                          ),
-                          onPressed: () => setState(
-                            () => _obscurePassword = !_obscurePassword,
+              contentPadding: EdgeInsets.only(
+                left: 20 * s,
+                right: 20 * s,
+                top: 12 * s,
+                bottom: 16 * s,
+              ),
+              border: InputBorder.none,
+              suffixIcon: isPassword
+                  ? Padding(
+                      padding: EdgeInsets.only(right: 8 * s),
+                      child: IconButton(
+                        icon: AnimatedSwitcher(
+                          duration: const Duration(milliseconds: 200),
+                          transitionBuilder: (child, animation) {
+                            return ScaleTransition(
+                              scale: animation,
+                              child: child,
+                            );
+                          },
+                          child: Icon(
+                            _obscurePassword
+                                ? Icons.visibility_off
+                                : Icons.visibility,
+                            key: ValueKey<bool>(_obscurePassword),
+                            color: Colors.white.withOpacity(0.6),
+                            size: 22 * s,
                           ),
                         ),
-                      )
-                    : null,
-              ),
+                        onPressed: () => setState(
+                          () => _obscurePassword = !_obscurePassword,
+                        ),
+                      ),
+                    )
+                  : null,
             ),
           ),
         ),

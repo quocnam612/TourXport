@@ -199,7 +199,7 @@ class _LandingPageState extends State<LandingPage>
                   Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      const SizedBox(height: 24),
+                      const SizedBox(height: 12),
                       _buildLogo(),
                       const SizedBox(height: 8),
                     ],
@@ -245,8 +245,8 @@ class _LandingPageState extends State<LandingPage>
           ),
           child: Image.asset(
             'assets/images/logo.png',
-            width: 250,
-            height: 250,
+            width: 160,
+            height: 160,
           ),
         ),
       ),
@@ -340,7 +340,7 @@ class _LandingPageState extends State<LandingPage>
             final pulseValue = _buttonPulseController.value * 0.15 + 0.85;
             return Container(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30),
+                borderRadius: BorderRadius.circular(50),
                 boxShadow: [
                   BoxShadow(
                     color: const Color(0xFF2D6A4F).withOpacity(0.3 * pulseValue),
@@ -354,7 +354,7 @@ class _LandingPageState extends State<LandingPage>
             );
           },
           child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 400),
+            constraints: const BoxConstraints(maxWidth: 280),
             child: SizedBox(
               width: double.infinity,
               child: ElevatedButton(
@@ -394,10 +394,10 @@ class _LandingPageState extends State<LandingPage>
                     return AppColors.buttonDark.withOpacity(0.85);
                   }),
                   foregroundColor: MaterialStateProperty.all(AppColors.textPrimary),
-                  padding: MaterialStateProperty.all(const EdgeInsets.symmetric(vertical: 22)),
+                  padding: MaterialStateProperty.all(const EdgeInsets.symmetric(vertical: 16, horizontal: 32)),
                   shape: MaterialStateProperty.all(
                     RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30),
+                      borderRadius: BorderRadius.circular(50),
                     ),
                   ),
                   elevation: MaterialStateProperty.all(0),
@@ -406,7 +406,7 @@ class _LandingPageState extends State<LandingPage>
                   'BẮT ĐẦU NGAY',
                   style: TextStyle(
                     fontFamily: 'Montserrat',
-                    fontSize: 20,
+                    fontSize: 16,
                     fontWeight: FontWeight.w600,
                     letterSpacing: 2.0,
                   ),

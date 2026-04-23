@@ -331,11 +331,11 @@ class _HomeScreenState extends State<HomeScreen>
           child: Align(
             alignment: Alignment.centerLeft,
             child: Text(
-              'Trải nghiệm chuyến đi\ncùng TourXport',
+              'Chào mừng đến với TourXport',
               style: TextStyle(
                 fontFamily: 'Montserrat',
-                fontSize: 24,
-                fontWeight: FontWeight.w600,
+                fontSize: 30,
+                fontWeight: FontWeight.w400,
                 color: Colors.white,
                 height: 1.2,
                 shadows: [
@@ -364,17 +364,17 @@ class _HomeScreenState extends State<HomeScreen>
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 24),
           child: Container(
-            height: 56,
+            height: 48,
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.18),
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(color: Colors.white.withOpacity(0.35)),
+              color: Colors.black.withOpacity(0.40),
+              borderRadius: BorderRadius.circular(16),
+              border: Border.all(color: Colors.white.withOpacity(0.15)),
             ),
             child: Row(
               children: [
-                const SizedBox(width: 16),
-                Icon(Icons.search_rounded, color: Colors.white.withOpacity(0.9), size: 24),
-                const SizedBox(width: 12),
+                const SizedBox(width: 14),
+                Icon(Icons.search_rounded, color: Colors.white.withOpacity(0.7), size: 22),
+                const SizedBox(width: 10),
                 Expanded(
                   child: TextField(
                     style: const TextStyle(
@@ -387,7 +387,7 @@ class _HomeScreenState extends State<HomeScreen>
                       hintStyle: TextStyle(
                         fontFamily: 'Montserrat',
                         fontSize: 14,
-                        color: Colors.white.withOpacity(0.5),
+                        color: Colors.white.withOpacity(0.4),
                       ),
                       border: InputBorder.none,
                       contentPadding: EdgeInsets.zero,
@@ -397,21 +397,14 @@ class _HomeScreenState extends State<HomeScreen>
                   ),
                 ),
                 Container(
-                  width: 44,
-                  height: 44,
-                  margin: const EdgeInsets.all(6),
+                  width: 38,
+                  height: 38,
+                  margin: const EdgeInsets.all(5),
                   decoration: BoxDecoration(
-                    color: const Color(0xFFB5956A),
-                    borderRadius: BorderRadius.circular(16),
-                    boxShadow: [
-                      BoxShadow(
-                        color: const Color(0xFFB5956A).withOpacity(0.4),
-                        blurRadius: 12,
-                        offset: const Offset(0, 4),
-                      ),
-                    ],
+                    color: Colors.white.withOpacity(0.12),
+                    borderRadius: BorderRadius.circular(12),
                   ),
-                  child: const Icon(Icons.tune_rounded, color: Colors.white, size: 22),
+                  child: Icon(Icons.tune_rounded, color: Colors.white.withOpacity(0.7), size: 20),
                 ),
               ],
             ),
