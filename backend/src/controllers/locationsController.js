@@ -74,7 +74,7 @@ export const searchLocations = async (req, res) => {
     }
 };
 
-export const getNearby = async (req, res) => {
+export const getNearbyLocations = async (req, res) => {
     try {
         const { city, category } = req.query;
 

@@ -8,7 +8,7 @@ import {
 
 const router = express.Router();
 
-router.get('/', getAllLocations);
+router.get('/', getLocations);
 // router.get('/nearby', getNearbyLocations);
 router.get('/:id', getLocationById);
 router.post('/search', searchLocations);
