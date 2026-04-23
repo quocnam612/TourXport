@@ -3,8 +3,15 @@ import 'package:flutter/material.dart';
 
 class PlaceDetailScreen extends StatefulWidget {
   final dynamic destination;
+  final Rect? cardRect;
+  final bool isFavorite;
 
-  const PlaceDetailScreen({super.key, required this.destination});
+  const PlaceDetailScreen({
+    super.key, 
+    required this.destination,
+    this.cardRect,
+    this.isFavorite = false,
+  });
 
   @override
   State<PlaceDetailScreen> createState() => _PlaceDetailScreenState();
@@ -38,15 +45,16 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
       
       _headerFade = CurvedAnimation(
         parent: parentAnim,
-        curve: const Interval(0.0, 0.5, curve: Curves.easeOut),
+        curve: const Interval(0.4, 1.0, curve: Curves.easeOut),
       );
+      // Giao diện trượt lên ĐỒNG THỜI với lúc ảnh phóng to (phase 2: 0.4 -> 1.0)
       _panelSlide = CurvedAnimation(
         parent: parentAnim,
-        curve: const Interval(0.0, 1.0, curve: Curves.easeOutCubic),
+        curve: const Interval(0.4, 1.0, curve: Curves.easeOutCubic),
       );
       _contentFade = CurvedAnimation(
         parent: parentAnim,
-        curve: const Interval(0.0, 1.0, curve: Curves.easeOut),
+        curve: const Interval(0.6, 1.0, curve: Curves.easeOut),
       );
     }
   }
@@ -66,73 +74,247 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
   Widget build(BuildContext context) {
     final dest = widget.destination;
     final screenH = MediaQuery.of(context).size.height;
-    const Color bgColor = Color(0xFF1C302D);
+    final screenW = MediaQuery.of(context).size.width;
+    final Color panelColor = Colors.black.withOpacity(0.15);
+    final parentAnim = _routeAnimation ?? const AlwaysStoppedAnimation(1.0);
 
     return Scaffold(
-      backgroundColor: bgColor,
+      backgroundColor: Colors.transparent, 
       body: Stack(
         children: [
-          _buildHeroImage(dest, screenH, bgColor),
+          // Nền đen
+          FadeTransition(
+            opacity: parentAnim,
+            child: Container(color: Colors.black),
+          ),
+          
+          // Dummy Hero để bắt framework kích hoạt cơ chế ẩn card tự động ở dashboard!
+          Positioned(
+            top: 0, left: 0,
+            child: Hero(
+              tag: 'card_hero_${dest.name}',
+              child: const SizedBox(width: 1, height: 1),
+            ),
+          ),
+          
+          // Custom Cinematic Image Animation (2 nhịp)
+          _buildCinematicImage(dest, screenH, screenW, parentAnim),
+          
+          // Gradient bóng đen ở trên cùng (Fade theo nhịp 2)
+          Positioned(
+            top: 0, left: 0, right: 0, height: 140,
+            child: FadeTransition(
+              opacity: _headerFade,
+              child: Container(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [Colors.black.withValues(alpha: 0.5), Colors.transparent],
+                  ),
+                ),
+              ),
+            ),
+          ),
+          
           _buildTopBar(context),
-          _buildDraggablePanel(dest, bgColor),
-          _buildBottomCTA(bgColor),
+          
+          // Panel giao diện trượt lên ĐỒNG THỜI với phase 2!
+          _buildDraggablePanel(dest, panelColor),
+          _buildBottomCTA(),
         ],
       ),
     );
   }
 
-  // ── Layout Components ──
+  Widget _buildCinematicImage(dynamic dest, double screenH, double screenW, Animation<double> parentAnim) {
+    if (widget.cardRect == null) {
+      return Positioned.fill(
+        child: Image.asset('${dest.imagePath}', fit: BoxFit.cover),
+      );
+    }
 
-  Widget _buildHeroImage(dynamic dest, double screenH, Color bgColor) {
-    return Builder(
-      builder: (context) {
-        final t = ((_sheetFraction - 0.58) / (0.92 - 0.58)).clamp(0.0, 1.0);
-        final imageHeight = screenH * (0.48 - t * 0.18);
-        return SizedBox(
-          height: imageHeight,
-          width: double.infinity,
-          child: Stack(
-            fit: StackFit.expand,
-            children: [
-              Hero(
-                tag: 'hero_img_${dest.name}',
-                flightShuttleBuilder: (flightContext, animation, flightDirection, fromContext, toContext) {
-                  return AnimatedBuilder(
-                    animation: animation,
-                    builder: (context, child) {
-                      final curvedAnim = CurvedAnimation(parent: animation, curve: Curves.easeOutCubic);
-                      final radius = flightDirection == HeroFlightDirection.push
-                          ? lerpDouble(28, 0, curvedAnim.value)!
-                          : 28.0;
-                      return ClipRRect(
-                        borderRadius: BorderRadius.circular(radius),
-                        child: Image.asset(dest.imagePath, fit: BoxFit.cover),
-                      );
-                    },
-                  );
-                },
-                child: Image.asset(dest.imagePath, fit: BoxFit.cover),
-              ),
-              Container(
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      stops: const [0.0, 0.4, 0.85, 1.0],
-                      colors: [
-                        Colors.black.withOpacity(0.3),
-                        Colors.transparent,
-                        Colors.transparent,
-                        bgColor,
-                      ],
-                    ),
-                  ),
-                ),
-              ],
+    return AnimatedBuilder(
+      animation: parentAnim,
+      builder: (context, child) {
+        final val = parentAnim.value;
+        final cardRect = widget.cardRect!;
+        
+        // Cố định khi hoàn thành (kèm Parallax khi kéo panel)
+        if (val == 1.0) {
+          final t = ((_sheetFraction - 0.58) / (0.92 - 0.58)).clamp(0.0, 1.0);
+          final double offsetY = -t * 50; 
+          
+          return Positioned.fill(
+            child: Transform.translate(
+              offset: Offset(0, offsetY),
+              child: Image.asset('${dest.imagePath}', fit: BoxFit.cover),
             ),
           );
-        },
-      );
+        }
+
+        double currentTop, currentLeft, currentWidth, currentHeight, currentRadius;
+        double cardInfoOpacity = 1.0;
+        
+        // Nhịp 1 (0.0 -> 0.4): Đẩy nguyên card lên GIỮA màn hình
+        if (val <= 0.4) {
+          // Dùng easeInOutCubic thay vì easeOutCubic để lúc quay về (pop) cũng mượt mà chậm dần!
+          final p1 = Curves.easeInOutCubic.transform(val / 0.4);
+          final targetTop = (screenH - cardRect.height) / 2;
+          
+          currentTop = lerpDouble(cardRect.top, targetTop, p1)!;
+          currentLeft = cardRect.left;
+          currentWidth = cardRect.width;
+          currentHeight = cardRect.height;
+          currentRadius = 28.0;
+          cardInfoOpacity = 1.0;
+        } 
+        // Nhịp 2 (0.4 -> 1.0): Từ giữa màn hình phóng to ra TOÀN màn hình
+        else {
+          final p2 = Curves.easeInOutCubic.transform((val - 0.4) / 0.6);
+          final startTop = (screenH - cardRect.height) / 2;
+          
+          currentTop = lerpDouble(startTop, 0, p2)!;
+          currentLeft = lerpDouble(cardRect.left, 0, p2)!;
+          currentWidth = lerpDouble(cardRect.width, screenW, p2)!;
+          currentHeight = lerpDouble(cardRect.height, screenH, p2)!;
+          currentRadius = lerpDouble(28.0, 0.0, p2)!;
+          
+          // Phai mờ giao diện card (chữ, nút) nhanh hơn tốc độ phóng to ảnh để ảnh sạch sẽ
+          cardInfoOpacity = lerpDouble(1.0, 0.0, (p2 * 2).clamp(0.0, 1.0))!;
+        }
+
+        return Positioned(
+          top: currentTop,
+          left: currentLeft,
+          width: currentWidth,
+          height: currentHeight,
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(currentRadius),
+              boxShadow: val <= 0.4 ? [
+                BoxShadow(
+                  color: Colors.black.withValues(alpha: 0.4),
+                  blurRadius: 24,
+                  offset: const Offset(0, 12),
+                ),
+              ] : null,
+            ),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(currentRadius),
+              child: Stack(
+                fit: StackFit.expand,
+                children: [
+                  Image.asset('${dest.imagePath}', fit: BoxFit.cover),
+                  
+                  // Giao diện card sao chép y hệt từ dashboard
+                  if (cardInfoOpacity > 0)
+                    Opacity(
+                      opacity: cardInfoOpacity,
+                      child: Stack(
+                        fit: StackFit.expand,
+                        children: [
+                          // Bottom gradient
+                          Positioned(
+                            left: 0, right: 0, bottom: 0, height: 180,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                  begin: Alignment.topCenter,
+                                  end: Alignment.bottomCenter,
+                                  colors: [Colors.transparent, Colors.black.withValues(alpha: 0.75)],
+                                ),
+                              ),
+                            ),
+                          ),
+                          
+                          // Info text
+                          Positioned(
+                            left: 20, right: 20, bottom: 20,
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      const Row(
+                                        children: [
+                                          Icon(Icons.pin_drop_rounded, color: Color(0xFFB5956A), size: 24),
+                                          SizedBox(width: 4),
+                                        ],
+                                      ),
+                                      const SizedBox(height: 4),
+                                      Text(
+                                        '${dest.name}',
+                                        style: const TextStyle(
+                                          fontFamily: 'Montserrat',
+                                          fontSize: 26,
+                                          fontWeight: FontWeight.w800,
+                                          color: Colors.white,
+                                          shadows: [Shadow(color: Color(0x88000000), blurRadius: 8)],
+                                        ),
+                                      ),
+                                      const SizedBox(height: 4),
+                                      Text(
+                                        '${dest.price}',
+                                        style: TextStyle(
+                                          fontFamily: 'Montserrat',
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w400,
+                                          color: Colors.white.withOpacity(0.9),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          
+                          // Arrow button
+                          Positioned(
+                            bottom: 20, right: 20,
+                            child: Container(
+                              width: 52, height: 52,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFB5956A),
+                                borderRadius: BorderRadius.circular(16),
+                              ),
+                              child: const Center(
+                                child: Icon(Icons.arrow_forward_ios, color: Colors.white, size: 20),
+                              ),
+                            ),
+                          ),
+                          
+                          // Favorite button
+                          Positioned(
+                            top: 14, left: 14,
+                            child: Container(
+                              width: 42, height: 42,
+                              decoration: BoxDecoration(
+                                color: Colors.black.withValues(alpha: 0.3),
+                                shape: BoxShape.circle,
+                                border: Border.all(color: Colors.white.withValues(alpha: 0.2)),
+                              ),
+                              child: Icon(
+                                widget.isFavorite ? Icons.favorite : Icons.favorite_border, 
+                                color: widget.isFavorite ? const Color(0xFFE74C3C) : Colors.white, 
+                                size: 22
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                ],
+              ),
+            ),
+          ),
+        );
+      },
+    );
   }
 
   Widget _buildTopBar(BuildContext context) {
@@ -145,9 +327,20 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               _glassCircle(Icons.arrow_back_ios_new, () => Navigator.pop(context)),
-              _glassCircle(
-                _isBookmarked ? Icons.bookmark : Icons.bookmark_border,
-                () => setState(() => _isBookmarked = !_isBookmarked),
+              Row(
+                children: [
+                  _glassCircle(
+                    Icons.share_rounded,
+                    () {
+                      // Tính năng chia sẻ sẽ được xử lý tại đây
+                    },
+                  ),
+                  const SizedBox(width: 12),
+                  _glassCircle(
+                    _isBookmarked ? Icons.bookmark : Icons.bookmark_border,
+                    () => setState(() => _isBookmarked = !_isBookmarked),
+                  ),
+                ],
               ),
             ],
           ),
@@ -156,18 +349,17 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     );
   }
 
-  Widget _buildDraggablePanel(dynamic dest, Color bgColor) {
+  Widget _buildDraggablePanel(dynamic dest, Color panelColor) {
     return AnimatedBuilder(
       animation: _panelSlide,
       builder: (context, child) {
         final screenH = MediaQuery.of(context).size.height;
-        final slideOffset = (1 - _panelSlide.value) * screenH;
-        return Opacity(
-          opacity: _panelSlide.value.clamp(0.0, 1.0),
-          child: Transform.translate(
-            offset: Offset(0, slideOffset),
-            child: child,
-          ),
+        // Chỉ dịch chuyển phần chiều cao thực tế của panel (khoảng 60% màn hình) 
+        // để panel bắt đầu xuất hiện ngay lập tức cùng lúc với hiệu ứng phóng to ảnh
+        final slideOffset = (1 - _panelSlide.value) * (screenH * 0.6);
+        return Transform.translate(
+          offset: Offset(0, slideOffset),
+          child: child,
         );
       },
       child: DraggableScrollableSheet(
@@ -176,17 +368,21 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
         minChildSize: 0.58,
         maxChildSize: 0.92,
         builder: (context, scrollCtrl) {
-          return Container(
-            decoration: BoxDecoration(
-              color: bgColor.withOpacity(0.97),
-              borderRadius: const BorderRadius.vertical(top: Radius.circular(36)),
-              boxShadow: [
-                BoxShadow(color: Colors.black.withOpacity(0.5), blurRadius: 30, offset: const Offset(0, -8)),
-              ],
-            ),
-            child: FadeTransition(
-              opacity: _contentFade,
-              child: ListView(
+          return ClipRRect(
+            borderRadius: const BorderRadius.vertical(top: Radius.circular(36)),
+            child: BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: panelColor,
+                  borderRadius: const BorderRadius.vertical(top: Radius.circular(36)),
+                  border: Border(
+                    top: BorderSide(color: Colors.white.withOpacity(0.15), width: 1),
+                  ),
+                ),
+                child: FadeTransition(
+                  opacity: _contentFade,
+                  child: ListView(
                 controller: scrollCtrl,
                 padding: const EdgeInsets.fromLTRB(24, 12, 24, 120),
                 children: [
@@ -204,7 +400,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        dest.name,
+                        '${dest.name}',
                         style: const TextStyle(
                           fontFamily: 'Montserrat',
                           fontSize: 28, fontWeight: FontWeight.w700,
@@ -214,11 +410,11 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                       const SizedBox(height: 6),
                       Row(
                         children: [
-                          const Icon(Icons.location_on, color: Color(0xFFE74C3C), size: 16),
+                          const Icon(Icons.pin_drop_rounded, color: Color(0xFFB5956A), size: 22),
                           const SizedBox(width: 4),
-                          Text(dest.province, style: TextStyle(
+                          Text('${dest.province}', style: const TextStyle(
                             fontFamily: 'Montserrat', fontSize: 14,
-                            color: Colors.white.withOpacity(0.7),
+                            color: Colors.white,
                           )),
                         ],
                       ),
@@ -253,37 +449,36 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                 ],
               ),
             ),
+              ),
+            ),
           );
         },
       ),
     );
   }
 
-  Widget _buildBottomCTA(Color bgColor) {
+  Widget _buildBottomCTA() {
     return Positioned(
       bottom: 0, left: 0, right: 0,
       child: AnimatedBuilder(
         animation: _panelSlide,
         builder: (context, child) {
-          final screenH = MediaQuery.of(context).size.height;
-          final slideOffset = (1 - _panelSlide.value) * screenH;
+          final slideOffset = (1 - _panelSlide.value) * 150.0;
           return Transform.translate(
             offset: Offset(0, slideOffset),
             child: child,
           );
         },
-        child: FadeTransition(
-          opacity: _contentFade,
-          child: Container(
-            padding: const EdgeInsets.fromLTRB(24, 16, 24, 30),
-            decoration: BoxDecoration(
+        child: Container(
+          padding: const EdgeInsets.fromLTRB(24, 16, 24, 30),
+          decoration: BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                bgColor.withOpacity(0.0),
-                bgColor.withOpacity(0.95),
-                bgColor,
+                Colors.transparent,
+                Colors.black.withOpacity(0.4),
+                Colors.black.withOpacity(0.8),
               ],
             ),
           ),
@@ -317,7 +512,6 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
             ),
           ),
         ),
-      ),
       ),
     );
   }
@@ -474,7 +668,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
             borderRadius: BorderRadius.circular(16),
             child: SizedBox(
               width: 130,
-              child: Image.asset(dest.imagePath, fit: BoxFit.cover),
+              child: Image.asset('${dest.imagePath}', fit: BoxFit.cover),
             ),
           ),
         )),

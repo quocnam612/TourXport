@@ -521,9 +521,16 @@ class _HomeScreenState extends State<HomeScreen>
   }
 
   Widget _buildDestinationCard(Destination dest) {
-    return Container(
-      margin: const EdgeInsets.only(bottom: 80, left: 6, right: 6),
-      decoration: BoxDecoration(
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 80, left: 6, right: 6),
+      child: Builder(
+        builder: (cardContext) {
+          return Hero(
+            tag: 'card_hero_${dest.name}',
+            flightShuttleBuilder: (_, __, ___, ____, _____) => const SizedBox.shrink(),
+            placeholderBuilder: (context, size, child) => Opacity(opacity: 0.0, child: child),
+            child: Container(
+              decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(28),
         boxShadow: [
           BoxShadow(
@@ -540,16 +547,13 @@ class _HomeScreenState extends State<HomeScreen>
           children: [
 
             // Card image
-            Hero(
-              tag: 'hero_img_${dest.name}',
-              child: Image.asset(
-                dest.imagePath,
-                fit: BoxFit.cover,
-                errorBuilder: (_, __, ___) => Container(
-                  color: const Color(0xFF2A4A3E),
-                  child: const Center(
-                    child: Icon(Icons.image, color: Colors.white38, size: 60),
-                  ),
+            Image.asset(
+              dest.imagePath,
+              fit: BoxFit.cover,
+              errorBuilder: (_, __, ___) => Container(
+                color: const Color(0xFF2A4A3E),
+                child: const Center(
+                  child: Icon(Icons.image, color: Colors.white38, size: 60),
                 ),
               ),
             ),
@@ -626,8 +630,8 @@ class _HomeScreenState extends State<HomeScreen>
                         // Location pin
                         const Row(
                           children: [
-                            Icon(Icons.location_on,
-                                color: Color(0xFFE74C3C), size: 18),
+                            Icon(Icons.pin_drop_rounded,
+                                color: Color(0xFFB5956A), size: 24),
                             SizedBox(width: 4),
                           ],
                         ),
@@ -664,20 +668,26 @@ class _HomeScreenState extends State<HomeScreen>
                   // Arrow button
                   GestureDetector(
                     onTap: () {
+                      final renderBox = cardContext.findRenderObject() as RenderBox?;
+                      Rect? cardRect;
+                      if (renderBox != null) {
+                        final offset = renderBox.localToGlobal(Offset.zero);
+                        cardRect = offset & renderBox.size;
+                      }
+
                       Navigator.push(
                         context,
                         PageRouteBuilder(
-                          pageBuilder: (_, __, ___) => PlaceDetailScreen(destination: dest),
-                          transitionDuration: const Duration(milliseconds: 600),
-                          reverseTransitionDuration: const Duration(milliseconds: 600),
+                          opaque: false,
+                          pageBuilder: (_, __, ___) => PlaceDetailScreen(
+                            destination: dest,
+                            cardRect: cardRect,
+                            isFavorite: _favorites.contains(dest.name),
+                          ),
+                          transitionDuration: const Duration(milliseconds: 800),
+                          reverseTransitionDuration: const Duration(milliseconds: 800),
                           transitionsBuilder: (_, animation, __, child) {
-                            return FadeTransition(
-                              opacity: CurvedAnimation(
-                                parent: animation,
-                                curve: Curves.easeOut,
-                              ),
-                              child: child,
-                            );
+                            return child;
                           },
                         ),
                       );
@@ -714,9 +724,13 @@ class _HomeScreenState extends State<HomeScreen>
               ),
             ),
           ],
-        ),
-      ),
-    );
+        ), // Stack
+      ), // ClipRRect
+    ), // Container
+    ); // Hero
+    },
+  ), // Builder
+  ); // Padding
   }
 
   Widget _buildBottomNav() {
