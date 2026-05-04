@@ -1,16 +1,26 @@
 import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
+import '../api/api.dart';
+import '../models/destination.dart';
+
 class PlaceDetailScreen extends StatefulWidget {
-  final dynamic destination;
+  final Destination destination;
   final Rect? cardRect;
-  final bool isFavorite;
+  final bool isSaved;
+  final bool isLiked;
+  final String? authToken;
+  final bool useSimpleTransition;
 
   const PlaceDetailScreen({
-    super.key, 
+    super.key,
     required this.destination,
     this.cardRect,
-    this.isFavorite = false,
+    this.isSaved = false,
+    this.isLiked = false,
+    this.authToken,
+    this.useSimpleTransition = false,
   });
 
   @override
@@ -18,7 +28,8 @@ class PlaceDetailScreen extends StatefulWidget {
 }
 
 class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
-  bool _isBookmarked = false;
+  late bool _isSaved;
+  late bool _isLiked;
   bool _showFullDesc = false;
 
   Animation<double>? _routeAnimation;
@@ -33,6 +44,8 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
   @override
   void initState() {
     super.initState();
+    _isSaved = widget.isSaved;
+    _isLiked = widget.isLiked;
     _sheetCtrl.addListener(_onSheetChanged);
   }
 
@@ -42,25 +55,89 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     if (_routeAnimation == null) {
       _routeAnimation = ModalRoute.of(context)?.animation;
       final parentAnim = _routeAnimation ?? const AlwaysStoppedAnimation(1.0);
-      
-      _headerFade = CurvedAnimation(
-        parent: parentAnim,
-        curve: const Interval(0.4, 1.0, curve: Curves.easeOut),
-      );
-      // Giao diện trượt lên ĐỒNG THỜI với lúc ảnh phóng to (phase 2: 0.4 -> 1.0)
-      _panelSlide = CurvedAnimation(
-        parent: parentAnim,
-        curve: const Interval(0.4, 1.0, curve: Curves.easeOutCubic),
-      );
-      _contentFade = CurvedAnimation(
-        parent: parentAnim,
-        curve: const Interval(0.6, 1.0, curve: Curves.easeOut),
-      );
+
+      if (widget.useSimpleTransition) {
+        _headerFade = CurvedAnimation(
+          parent: parentAnim,
+          curve: Curves.easeOut,
+        );
+        _panelSlide = CurvedAnimation(
+          parent: parentAnim,
+          curve: Curves.easeOutCubic,
+        );
+        _contentFade = CurvedAnimation(
+          parent: parentAnim,
+          curve: Curves.easeOut,
+        );
+      } else {
+        _headerFade = CurvedAnimation(
+          parent: parentAnim,
+          curve: const Interval(0.4, 1.0, curve: Curves.easeOut),
+        );
+        _panelSlide = CurvedAnimation(
+          parent: parentAnim,
+          curve: const Interval(0.4, 1.0, curve: Curves.easeOutCubic),
+        );
+        _contentFade = CurvedAnimation(
+          parent: parentAnim,
+          curve: const Interval(0.6, 1.0, curve: Curves.easeOut),
+        );
+      }
     }
   }
 
   void _onSheetChanged() {
     setState(() => _sheetFraction = _sheetCtrl.size);
+  }
+
+  Future<void> _toggleSaved() async {
+    final token = widget.authToken?.trim();
+    if (token == null || token.isEmpty) {
+      _showMessage('Bạn cần đăng nhập để lưu địa điểm');
+      return;
+    }
+
+    final dest = widget.destination;
+
+    try {
+      final response = _isSaved
+          ? await apiDeleteJson(
+              '/auth/saved-places',
+              {'name': dest.name},
+              token: token,
+            )
+          : await apiPostJson(
+              '/auth/saved-places',
+              dest.toJson(),
+              token: token,
+            );
+
+      final data = tryDecodeJsonObject(response.body);
+      if (!mounted) return;
+
+      if (response.statusCode == 200 && data?['success'] == true) {
+        setState(() => _isSaved = !_isSaved);
+        _showMessage(
+          _isSaved ? 'Đã lưu ${dest.name}' : 'Đã bỏ lưu ${dest.name}',
+        );
+      } else {
+        _showMessage(data?['message'] as String? ?? 'Không cập nhật được trạng thái lưu');
+      }
+    } catch (_) {
+      if (mounted) {
+        _showMessage('Không kết nối được server để cập nhật trạng thái lưu');
+      }
+    }
+  }
+
+  void _toggleLike() {
+    setState(() => _isLiked = !_isLiked);
+  }
+
+  void _showMessage(String message) {
+    ScaffoldMessenger.of(context)
+      ..hideCurrentSnackBar()
+      ..showSnackBar(SnackBar(content: Text(message)));
   }
 
   @override
@@ -75,59 +152,74 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     final dest = widget.destination;
     final screenH = MediaQuery.of(context).size.height;
     final screenW = MediaQuery.of(context).size.width;
-    final Color panelColor = Colors.black.withOpacity(0.15);
+    final Color panelColor = Colors.black.withOpacity(0.38);
     final parentAnim = _routeAnimation ?? const AlwaysStoppedAnimation(1.0);
 
-    return Scaffold(
-      backgroundColor: Colors.transparent, 
-      body: Stack(
-        children: [
-          // Nền đen
-          FadeTransition(
-            opacity: parentAnim,
-            child: Container(color: Colors.black),
-          ),
-          
-          // Dummy Hero để bắt framework kích hoạt cơ chế ẩn card tự động ở dashboard!
-          Positioned(
-            top: 0, left: 0,
-            child: Hero(
-              tag: 'card_hero_${dest.name}',
-              child: const SizedBox(width: 1, height: 1),
-            ),
-          ),
-          
-          // Custom Cinematic Image Animation (2 nhịp)
-          _buildCinematicImage(dest, screenH, screenW, parentAnim),
-          
-          // Gradient bóng đen ở trên cùng (Fade theo nhịp 2)
-          Positioned(
-            top: 0, left: 0, right: 0, height: 140,
-            child: FadeTransition(
-              opacity: _headerFade,
-              child: Container(
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [Colors.black.withValues(alpha: 0.5), Colors.transparent],
+    return WillPopScope(
+      onWillPop: () async {
+        Navigator.pop(context, {
+          'isSaved': _isSaved,
+          'isLiked': _isLiked,
+        });
+        return false;
+      },
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
+        body: Stack(
+          children: [
+            if (!widget.useSimpleTransition)
+              FadeTransition(
+                opacity: parentAnim,
+                child: Container(color: Colors.black),
+              ),
+
+            if (!widget.useSimpleTransition)
+              Positioned(
+                top: 0, left: 0,
+                child: Hero(
+                  tag: 'card_hero_${dest.name}',
+                  child: const SizedBox(width: 1, height: 1),
+                ),
+              ),
+
+            widget.useSimpleTransition
+                ? _buildSimpleImage(dest, parentAnim)
+                : _buildCinematicImage(dest, screenH, screenW, parentAnim),
+
+            // Gradient bóng đen ở trên cùng (Fade theo nhịp 2)
+            Positioned(
+              top: 0, left: 0, right: 0, height: 140,
+              child: FadeTransition(
+                opacity: _headerFade,
+                child: Container(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [Colors.black.withValues(alpha: 0.5), Colors.transparent],
+                    ),
                   ),
                 ),
               ),
             ),
-          ),
-          
-          _buildTopBar(context),
-          
-          // Panel giao diện trượt lên ĐỒNG THỜI với phase 2!
-          _buildDraggablePanel(dest, panelColor),
-          _buildBottomCTA(),
-        ],
+
+            _buildTopBar(context),
+
+            // Panel giao diện trượt lên ĐỒNG THỜI với phase 2!
+            _buildDraggablePanel(dest, panelColor),
+            _buildBottomCTA(),
+          ],
+        ),
       ),
     );
   }
 
-  Widget _buildCinematicImage(dynamic dest, double screenH, double screenW, Animation<double> parentAnim) {
+  Widget _buildCinematicImage(
+    Destination dest,
+    double screenH,
+    double screenW,
+    Animation<double> parentAnim,
+  ) {
     if (widget.cardRect == null) {
       return Positioned.fill(
         child: Image.asset('${dest.imagePath}', fit: BoxFit.cover),
@@ -288,23 +380,6 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                             ),
                           ),
                           
-                          // Favorite button
-                          Positioned(
-                            top: 14, left: 14,
-                            child: Container(
-                              width: 42, height: 42,
-                              decoration: BoxDecoration(
-                                color: Colors.black.withValues(alpha: 0.3),
-                                shape: BoxShape.circle,
-                                border: Border.all(color: Colors.white.withValues(alpha: 0.2)),
-                              ),
-                              child: Icon(
-                                widget.isFavorite ? Icons.favorite : Icons.favorite_border, 
-                                color: widget.isFavorite ? const Color(0xFFE74C3C) : Colors.white, 
-                                size: 22
-                              ),
-                            ),
-                          ),
                         ],
                       ),
                     ),
@@ -317,6 +392,21 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     );
   }
 
+  Widget _buildSimpleImage(Destination dest, Animation<double> parentAnim) {
+    return Positioned.fill(
+      child: FadeTransition(
+        opacity: CurvedAnimation(
+          parent: parentAnim,
+          curve: Curves.easeOut,
+        ),
+        child: Image.asset(
+          dest.imagePath,
+          fit: BoxFit.cover,
+        ),
+      ),
+    );
+  }
+
   Widget _buildTopBar(BuildContext context) {
     return SafeArea(
       child: FadeTransition(
@@ -326,7 +416,13 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              _glassCircle(Icons.arrow_back_ios_new, () => Navigator.pop(context)),
+              _glassCircle(
+                Icons.arrow_back_ios_new,
+                () => Navigator.pop(context, {
+                  'isSaved': _isSaved,
+                  'isLiked': _isLiked,
+                }),
+              ),
               Row(
                 children: [
                   _glassCircle(
@@ -336,9 +432,20 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                     },
                   ),
                   const SizedBox(width: 12),
-                  _glassCircle(
-                    _isBookmarked ? Icons.bookmark : Icons.bookmark_border,
-                    () => setState(() => _isBookmarked = !_isBookmarked),
+                  _glassCircleAnimatedIcon(
+                    isActive: _isLiked,
+                    activeIcon: Icons.favorite,
+                    inactiveIcon: Icons.favorite_border,
+                    onTap: _toggleLike,
+                    activeColor: const Color(0xFFE74C3C),
+                  ),
+                  const SizedBox(width: 12),
+                  _glassCircleAnimatedIcon(
+                    isActive: _isSaved,
+                    activeIcon: Icons.bookmark_rounded,
+                    inactiveIcon: Icons.bookmark_border_rounded,
+                    onTap: _toggleSaved,
+                    activeColor: const Color(0xFFD4AF7A),
                   ),
                 ],
               ),
@@ -349,7 +456,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     );
   }
 
-  Widget _buildDraggablePanel(dynamic dest, Color panelColor) {
+  Widget _buildDraggablePanel(Destination dest, Color panelColor) {
     return AnimatedBuilder(
       animation: _panelSlide,
       builder: (context, child) {
@@ -377,7 +484,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                   color: panelColor,
                   borderRadius: const BorderRadius.vertical(top: Radius.circular(36)),
                   border: Border(
-                    top: BorderSide(color: Colors.white.withOpacity(0.15), width: 1),
+                    top: BorderSide(color: Colors.white.withOpacity(0.22), width: 1),
                   ),
                 ),
                 child: FadeTransition(
@@ -390,7 +497,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                     child: Container(
                       width: 42, height: 5,
                       decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.2),
+                        color: Colors.white.withOpacity(0.32),
                         borderRadius: BorderRadius.circular(3),
                       ),
                     ),
@@ -518,7 +625,11 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
 
 
   // ── Glass circle button ──
-  Widget _glassCircle(IconData icon, VoidCallback onTap) {
+  Widget _glassCircle(
+    IconData icon,
+    VoidCallback onTap, {
+    Color iconColor = Colors.white,
+  }) {
     return GestureDetector(
       onTap: onTap,
       child: ClipOval(
@@ -531,7 +642,44 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
               color: Colors.white.withOpacity(0.15),
               border: Border.all(color: Colors.white.withOpacity(0.25)),
             ),
-            child: Icon(icon, color: Colors.white, size: 20),
+            child: Icon(icon, color: iconColor, size: 20),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _glassCircleAnimatedIcon({
+    required bool isActive,
+    required IconData activeIcon,
+    required IconData inactiveIcon,
+    required VoidCallback onTap,
+    required Color activeColor,
+  }) {
+    return GestureDetector(
+      onTap: onTap,
+      child: ClipOval(
+        child: BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
+          child: Container(
+            width: 46,
+            height: 46,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: Colors.white.withOpacity(0.15),
+              border: Border.all(color: Colors.white.withOpacity(0.25)),
+            ),
+            child: AnimatedSwitcher(
+              duration: const Duration(milliseconds: 220),
+              transitionBuilder: (child, animation) =>
+                  ScaleTransition(scale: animation, child: child),
+              child: Icon(
+                isActive ? activeIcon : inactiveIcon,
+                key: ValueKey<bool>(isActive),
+                color: isActive ? activeColor : Colors.white,
+                size: 20,
+              ),
+            ),
           ),
         ),
       ),
@@ -564,9 +712,9 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 16),
         decoration: BoxDecoration(
-          color: accent.withOpacity(0.08),
+          color: accent.withOpacity(0.16),
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(0.2)),
+          border: Border.all(color: accent.withOpacity(0.34)),
         ),
         child: Column(
           children: [
@@ -579,7 +727,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
             const SizedBox(height: 2),
             Text(label, style: TextStyle(
               fontFamily: 'Montserrat', fontSize: 11,
-              color: Colors.white.withOpacity(0.5),
+              color: Colors.white.withOpacity(0.8),
             )),
           ],
         ),
@@ -601,18 +749,18 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
       children: highlights.map((h) => Container(
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
         decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.06),
+          color: Colors.white.withOpacity(0.13),
           borderRadius: BorderRadius.circular(20),
-          border: Border.all(color: Colors.white.withOpacity(0.12)),
+          border: Border.all(color: Colors.white.withOpacity(0.2)),
         ),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(h.$1, size: 16, color: Colors.white.withOpacity(0.7)),
+            Icon(h.$1, size: 16, color: Colors.white.withOpacity(0.9)),
             const SizedBox(width: 6),
             Text(h.$2, style: TextStyle(
               fontFamily: 'Montserrat', fontSize: 13,
-              color: Colors.white.withOpacity(0.85),
+              color: Colors.white,
             )),
           ],
         ),
@@ -638,7 +786,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
           overflow: TextOverflow.ellipsis,
           style: TextStyle(
             fontFamily: 'Montserrat', fontSize: 14,
-            color: Colors.white.withOpacity(0.6), height: 1.7,
+            color: Colors.white.withOpacity(0.84), height: 1.7,
           ),
         ),
         const SizedBox(height: 6),
@@ -681,9 +829,9 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.05),
+        color: Colors.white.withOpacity(0.11),
         borderRadius: BorderRadius.circular(18),
-        border: Border.all(color: Colors.white.withOpacity(0.08)),
+        border: Border.all(color: Colors.white.withOpacity(0.18)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -721,7 +869,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
           const SizedBox(height: 10),
           Text(text, style: TextStyle(
             fontFamily: 'Montserrat', fontSize: 13,
-            color: Colors.white.withOpacity(0.6), height: 1.5,
+            color: Colors.white.withOpacity(0.82), height: 1.5,
           )),
         ],
       ),

@@ -25,11 +25,44 @@ String get apiBaseUrl {
 
 final http.Client _client = http.Client();
 
-Future<http.Response> apiPostJson(String path, Map<String, dynamic> body) {
-  final uri = Uri.parse('${apiBaseUrl}$path');
+Map<String, String> _buildHeaders({String? token}) {
+  return {
+    'Content-Type': 'application/json',
+    if (token != null && token.trim().isNotEmpty)
+      'Authorization': 'Bearer ${token.trim()}',
+  };
+}
+
+Future<http.Response> apiGet(String path, {String? token}) {
+  final uri = Uri.parse('$apiBaseUrl$path');
+  return _client.get(
+    uri,
+    headers: _buildHeaders(token: token),
+  );
+}
+
+Future<http.Response> apiPostJson(
+  String path,
+  Map<String, dynamic> body, {
+  String? token,
+}) {
+  final uri = Uri.parse('$apiBaseUrl$path');
   return _client.post(
     uri,
-    headers: {'Content-Type': 'application/json'},
+    headers: _buildHeaders(token: token),
+    body: jsonEncode(body),
+  );
+}
+
+Future<http.Response> apiDeleteJson(
+  String path,
+  Map<String, dynamic> body, {
+  String? token,
+}) {
+  final uri = Uri.parse('$apiBaseUrl$path');
+  return _client.delete(
+    uri,
+    headers: _buildHeaders(token: token),
     body: jsonEncode(body),
   );
 }

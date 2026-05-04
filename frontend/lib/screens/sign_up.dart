@@ -1,4 +1,5 @@
 import 'dart:math' show max;
+import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import '../api/api.dart';
@@ -183,39 +184,6 @@ class _SignUpScreenState extends State<SignUpScreen>
               ),
             ),
 
-            // ── Overlay gradient (animated)
-            AnimBuilder(
-              animation: _panelSlide,
-              builder: (context, child) {
-                final slideOffset = (1 - _panelSlide.value) * 80;
-                return Positioned(
-                  left: 0,
-                  right: 0,
-                  top: 107 * s + slideOffset,
-                  height: 832 * s,
-                  child: Opacity(
-                    opacity: _panelSlide.value.clamp(0.0, 1.0),
-                    child: child,
-                  ),
-                );
-              },
-              child: Container(
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [
-                      const Color(0xFF1C302D).withOpacity(0.55),
-                      const Color(0xFF1C302D).withOpacity(0.82),
-                    ],
-                  ),
-                  borderRadius: const BorderRadius.vertical(
-                    top: Radius.circular(30),
-                  ),
-                ),
-              ),
-            ),
-
             Positioned.fill(
               child: LayoutBuilder(
                 builder: (context, constraints) {
@@ -234,6 +202,51 @@ class _SignUpScreenState extends State<SignUpScreen>
                         child: Stack(
                           clipBehavior: Clip.none,
                           children: [
+                  // ── Overlay gradient + blur (animated)
+                  AnimBuilder(
+                    animation: _panelSlide,
+                    builder: (context, child) {
+                      final slideOffset = (1 - _panelSlide.value) * 80;
+                      return Positioned(
+                        left: 0,
+                        right: 0,
+                        top: 107 * s + slideOffset,
+                        height: 832 * s,
+                        child: Opacity(
+                          opacity: _panelSlide.value.clamp(0.0, 1.0),
+                          child: child,
+                        ),
+                      );
+                    },
+                    child: Container(
+                      decoration: const BoxDecoration(
+                        borderRadius: BorderRadius.vertical(
+                          top: Radius.circular(30),
+                        ),
+                      ),
+                      child: ClipRRect(
+                        borderRadius: const BorderRadius.vertical(
+                          top: Radius.circular(30),
+                        ),
+                        child: BackdropFilter(
+                          filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              gradient: LinearGradient(
+                                begin: Alignment.topCenter,
+                                end: Alignment.bottomCenter,
+                                colors: [
+                                  Colors.black.withOpacity(0.34),
+                                  Colors.black.withOpacity(0.58),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+
                   // ── Title "Tạo tài khoản"
                   Positioned(
                     left: 0,
@@ -400,7 +413,7 @@ class _SignUpScreenState extends State<SignUpScreen>
                           ),
                           alignment: Alignment.center,
                           child: _isLoading 
-                            ? SizedBox(width: 24, height: 24, child: CircularProgressIndicator(color: Colors.white, strokeWidth: 2))
+                            ? const SizedBox(width: 24, height: 24, child: CircularProgressIndicator(color: Colors.white, strokeWidth: 2))
                             : Text(
                             'Đăng ký',
                             style: TextStyle(

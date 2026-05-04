@@ -1,4 +1,5 @@
 import 'dart:math' show max;
+import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import '../api/api.dart';
@@ -49,6 +50,7 @@ class _SignInScreenState extends State<SignInScreen>
       if (response.statusCode == 200 && data?['success'] == true) {
         final user = data?['user'];
         final userName = user is Map ? user['name'] as String? : null;
+        final authToken = data?['token'] as String?;
         showAuthSuccessToast(
           context,
           'Đăng nhập thành công — chào ${userName ?? 'bạn'}!',
@@ -60,6 +62,7 @@ class _SignInScreenState extends State<SignInScreen>
             PageRouteBuilder(
               pageBuilder: (_, __, ___) => HomeScreen(
                 userName: userName ?? 'bạn',
+                authToken: authToken,
               ),
               transitionDuration: const Duration(milliseconds: 600),
               reverseTransitionDuration: const Duration(milliseconds: 400),
@@ -191,39 +194,6 @@ class _SignInScreenState extends State<SignInScreen>
               ),
             ),
 
-            // ── Dark overlay panel (animated slide up)
-            AnimBuilder(
-              animation: _panelSlide,
-              builder: (context, child) {
-                final slideOffset = (1 - _panelSlide.value) * 100;
-                return Positioned(
-                  left: 0,
-                  right: 0,
-                  top: 227 * s + slideOffset,
-                  height: 712 * s,
-                  child: Opacity(
-                    opacity: _panelSlide.value.clamp(0.0, 1.0),
-                    child: child,
-                  ),
-                );
-              },
-              child: Container(
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [
-                      const Color(0xFF1C302D).withOpacity(0.55),
-                      const Color(0xFF1C302D).withOpacity(0.80),
-                    ],
-                  ),
-                  borderRadius: const BorderRadius.vertical(
-                    top: Radius.circular(30),
-                  ),
-                ),
-              ),
-            ),
-
             Positioned.fill(
               child: LayoutBuilder(
                 builder: (context, constraints) {
@@ -242,6 +212,50 @@ class _SignInScreenState extends State<SignInScreen>
                         child: Stack(
                           clipBehavior: Clip.none,
                           children: [
+                  // ── Dark overlay panel (animated slide up)
+                  AnimBuilder(
+                    animation: _panelSlide,
+                    builder: (context, child) {
+                      final slideOffset = (1 - _panelSlide.value) * 100;
+                      return Positioned(
+                        left: 0,
+                        right: 0,
+                        top: 227 * s + slideOffset,
+                        height: 712 * s,
+                        child: Opacity(
+                          opacity: _panelSlide.value.clamp(0.0, 1.0),
+                          child: child,
+                        ),
+                      );
+                    },
+                    child: Container(
+                      decoration: const BoxDecoration(
+                        borderRadius: BorderRadius.vertical(
+                          top: Radius.circular(30),
+                        ),
+                      ),
+                      child: ClipRRect(
+                        borderRadius: const BorderRadius.vertical(
+                          top: Radius.circular(30),
+                        ),
+                        child: BackdropFilter(
+                          filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              gradient: LinearGradient(
+                                begin: Alignment.topCenter,
+                                end: Alignment.bottomCenter,
+                                colors: [
+                                  Colors.black.withOpacity(0.34),
+                                  Colors.black.withOpacity(0.58),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
 
                   // ── Title "Đăng nhập"
                   Positioned(
@@ -618,7 +632,7 @@ class _SignInScreenState extends State<SignInScreen>
         ),
         alignment: Alignment.center,
         child: _isLoading
-          ? SizedBox(width: 24, height: 24, child: CircularProgressIndicator(color: Colors.white, strokeWidth: 2))
+          ? const SizedBox(width: 24, height: 24, child: CircularProgressIndicator(color: Colors.white, strokeWidth: 2))
           : Text(
           'Tiếp tục',
           style: TextStyle(
