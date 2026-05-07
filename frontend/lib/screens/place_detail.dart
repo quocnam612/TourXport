@@ -323,33 +323,23 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
-                                Row(
-                                  children: [
-                                    const Icon(Icons.pin_drop_rounded, color: Color(0xFFB5956A), size: 24),
-                                    const SizedBox(width: 8),
-                                    Expanded(
-                                      child: Text(
-                                        dest.name,
-                                        style: const TextStyle(
-                                          fontFamily: 'Montserrat',
-                                          fontSize: 26,
-                                          fontWeight: FontWeight.w800,
-                                          color: Colors.white,
-                                          shadows: [Shadow(color: Color(0x88000000), blurRadius: 8)],
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                                      const SizedBox(height: 4),
-                                      Text(
-                                        dest.price,
-                                        style: TextStyle(
-                                          fontFamily: 'Montserrat',
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.w400,
-                                          color: Colors.white.withOpacity(0.9),
-                                        ),
+                                      Row(
+                                        children: [
+                                          const Icon(Icons.pin_drop_rounded, color: Color(0xFFB5956A), size: 24),
+                                          const SizedBox(width: 8),
+                                          Expanded(
+                                            child: Text(
+                                              dest.name,
+                                              style: const TextStyle(
+                                                fontFamily: 'Montserrat',
+                                                fontSize: 26,
+                                                fontWeight: FontWeight.w800,
+                                                color: Colors.white,
+                                                shadows: [Shadow(color: Color(0x88000000), blurRadius: 8)],
+                                              ),
+                                            ),
+                                          ),
+                                        ],
                                       ),
                                     ],
                                   ),
@@ -674,21 +664,6 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
             ),
             child: Row(
               children: [
-                Column(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Text('Giá từ', style: TextStyle(
-                      fontFamily: 'Montserrat', fontSize: 13,
-                      color: Colors.white70,
-                    )),
-                    Text(widget.destination.price, style: const TextStyle(
-                      fontFamily: 'Montserrat', fontSize: 20,
-                      fontWeight: FontWeight.w700, color: Color(0xFFD4AF7A),
-                    )),
-                  ],
-                ),
-                const SizedBox(width: 24),
                 Expanded(
                   child: GestureDetector(
                     onTap: () {},
@@ -702,15 +677,27 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                         boxShadow: [
                           BoxShadow(
                             color: const Color(0xFFB5956A).withOpacity(0.4),
-                            blurRadius: 20, offset: const Offset(0, 8),
+                            blurRadius: 20,
+                            offset: const Offset(0, 8),
                           ),
                         ],
                       ),
-                      child: const Center(
-                        child: Text('Đặt ngay', style: TextStyle(
-                          fontFamily: 'Montserrat', fontWeight: FontWeight.w700,
-                          fontSize: 16, color: Colors.white, letterSpacing: 1,
-                        )),
+                      child: const Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Icons.directions_rounded, color: Colors.white, size: 24),
+                          SizedBox(width: 10),
+                          Text(
+                            'Đường đi',
+                            style: TextStyle(
+                              fontFamily: 'Montserrat',
+                              fontWeight: FontWeight.w700,
+                              fontSize: 16,
+                              color: Colors.white,
+                              letterSpacing: 1,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),

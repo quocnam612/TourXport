@@ -7,6 +7,7 @@ import '../models/destination.dart';
 import '../widgets/anim_builder.dart';
 import 'place_detail.dart';
 import 'saved_place.dart';
+import 'survey_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   final String userName;
@@ -1274,7 +1275,41 @@ class _HomeScreenState extends State<HomeScreen>
               children: List.generate(items.length, (i) {
                 final isActive = _navIndex == i;
                 return GestureDetector(
-                  onTap: () => setState(() => _navIndex = i),
+                  onTap: () {
+                    if (i == 2) {
+                      // Mở khảo sát khi nhấn vào nút Explore (Safari-like)
+                      Navigator.push(
+                        context,
+                        PageRouteBuilder(
+                          pageBuilder: (_, __, ___) => SurveyScreen(
+                            authToken: widget.authToken,
+                          ),
+                          transitionDuration: const Duration(milliseconds: 500),
+                          reverseTransitionDuration: const Duration(milliseconds: 400),
+                          transitionsBuilder: (_, animation, __, child) {
+                            return FadeTransition(
+                              opacity: CurvedAnimation(
+                                parent: animation,
+                                curve: Curves.easeInOut,
+                              ),
+                              child: SlideTransition(
+                                position: Tween<Offset>(
+                                  begin: const Offset(0, 0.05),
+                                  end: Offset.zero,
+                                ).animate(CurvedAnimation(
+                                  parent: animation,
+                                  curve: Curves.easeOutCubic,
+                                )),
+                                child: child,
+                              ),
+                            );
+                          },
+                        ),
+                      );
+                    } else {
+                      setState(() => _navIndex = i);
+                    }
+                  },
                   child: AnimatedContainer(
                     duration: const Duration(milliseconds: 250),
                     padding: const EdgeInsets.all(10),
