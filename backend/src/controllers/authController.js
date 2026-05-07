@@ -99,4 +99,54 @@ export const register = async (req, res) => {
             error: error.message
         });
     }
-}
+};
+
+export const getSavedPlaces = async (req, res) => {
+    try {
+        const user = await UserDB.findById(req.user.id);
+        if (!user) {
+            return res.status(404).json({ success: false, message: 'User not found' });
+        }
+        res.json({ success: true, savedPlaces: user.savedPlaces || [] });
+    } catch (err) {
+        res.status(500).json({ success: false, message: err.message });
+    }
+};
+
+export const addSavedPlace = async (req, res) => {
+    try {
+        const place = req.body;
+        if (!place || !place.name) {
+            return res.status(400).json({ success: false, message: 'Invalid place data' });
+        }
+
+        const user = await UserDB.findByIdAndUpdate(
+            req.user.id,
+            { $addToSet: { savedPlaces: place } },
+            { new: true }
+        );
+
+        res.json({ success: true, savedPlaces: user.savedPlaces });
+    } catch (err) {
+        res.status(500).json({ success: false, message: err.message });
+    }
+};
+
+export const removeSavedPlace = async (req, res) => {
+    try {
+        const { name } = req.body;
+        if (!name) {
+            return res.status(400).json({ success: false, message: 'Place name is required' });
+        }
+
+        const user = await UserDB.findByIdAndUpdate(
+            req.user.id,
+            { $pull: { savedPlaces: { name: name } } },
+            { new: true }
+        );
+
+        res.json({ success: true, savedPlaces: user.savedPlaces });
+    } catch (err) {
+        res.status(500).json({ success: false, message: err.message });
+    }
+};

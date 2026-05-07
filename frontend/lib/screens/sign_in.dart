@@ -163,6 +163,9 @@ class _SignInScreenState extends State<SignInScreen>
       resizeToAvoidBottomInset: true,
       body: Stack(
         children: [
+          // ── Background image with parallax
+          _buildHeroImage(s),
+
           // ── Draggable panel with green transparent overlay
           _buildDraggablePanel(s),
         ],

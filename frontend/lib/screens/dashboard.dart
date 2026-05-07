@@ -1165,28 +1165,29 @@ class _HomeScreenState extends State<HomeScreen>
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                const Row(
+                                Row(
                                   children: [
-                                    Icon(Icons.pin_drop_rounded,
+                                    const Icon(Icons.pin_drop_rounded,
                                         color: Color(0xFFB5956A), size: 24),
-                                    SizedBox(width: 4),
-                                  ],
-                                ),
-                                const SizedBox(height: 4),
-                                Text(
-                                  dest.name,
-                                  style: const TextStyle(
-                                    fontFamily: 'Montserrat',
-                                    fontSize: 26,
-                                    fontWeight: FontWeight.w800,
-                                    color: Colors.white,
-                                    shadows: [
-                                      Shadow(
-                                        color: Color(0x88000000),
-                                        blurRadius: 8,
+                                    const SizedBox(width: 8),
+                                    Expanded(
+                                      child: Text(
+                                        dest.name,
+                                        style: const TextStyle(
+                                          fontFamily: 'Montserrat',
+                                          fontSize: 26,
+                                          fontWeight: FontWeight.w800,
+                                          color: Colors.white,
+                                          shadows: [
+                                            Shadow(
+                                              color: Color(0x88000000),
+                                              blurRadius: 8,
+                                            ),
+                                          ],
+                                        ),
                                       ),
-                                    ],
-                                  ),
+                                    ),
+                                  ],
                                 ),
                                 const SizedBox(height: 4),
                                 Text(

@@ -286,35 +286,35 @@ class SavedPlacesSection extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
-                              dest.name,
-                              style: const TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 24,
-                                fontWeight: FontWeight.w800,
-                                color: Colors.white,
-                              ),
-                            ),
-                            const SizedBox(height: 6),
                             Row(
                               children: [
                                 const Icon(
                                   Icons.pin_drop_rounded,
                                   color: Color(0xFFB5956A),
-                                  size: 20,
+                                  size: 24,
                                 ),
-                                const SizedBox(width: 4),
+                                const SizedBox(width: 8),
                                 Expanded(
                                   child: Text(
-                                    dest.province,
-                                    style: TextStyle(
+                                    dest.name,
+                                    style: const TextStyle(
                                       fontFamily: 'Montserrat',
-                                      fontSize: 13,
-                                      color: Colors.white.withOpacity(0.92),
+                                      fontSize: 24,
+                                      fontWeight: FontWeight.w800,
+                                      color: Colors.white,
                                     ),
                                   ),
                                 ),
                               ],
+                            ),
+                            const SizedBox(height: 6),
+                            Text(
+                              dest.province,
+                              style: TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 13,
+                                color: Colors.white.withOpacity(0.92),
+                              ),
                             ),
                           ],
                         ),
