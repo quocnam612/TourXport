@@ -23,7 +23,7 @@ class TourXportApp extends StatelessWidget {
         },
       ),
       theme: ThemeData(
-        fontFamily: 'Poppins',
+        fontFamily: 'Montserrat',
         colorScheme: ColorScheme.fromSeed(
           seedColor: const Color(0xFF2D6A4F),
           brightness: Brightness.dark,

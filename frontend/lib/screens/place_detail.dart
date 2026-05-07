@@ -1,4 +1,5 @@
 import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class PlaceDetailScreen extends StatefulWidget {
@@ -56,6 +57,56 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
 
   void _onSheetChanged() {
     setState(() => _sheetFraction = _sheetCtrl.size);
+  }
+
+  Future<void> _toggleSaved() async {
+    final token = widget.authToken?.trim();
+    if (token == null || token.isEmpty) {
+      _showMessage('Bạn cần đăng nhập để lưu địa điểm');
+      return;
+    }
+
+    final dest = widget.destination;
+
+    try {
+      final response = _isSaved
+          ? await apiDeleteJson(
+              '/auth/saved-places',
+              {'name': dest.name},
+              token: token,
+            )
+          : await apiPostJson(
+              '/auth/saved-places',
+              dest.toJson(),
+              token: token,
+            );
+
+      final data = tryDecodeJsonObject(response.body);
+      if (!mounted) return;
+
+      if (response.statusCode == 200 && data?['success'] == true) {
+        setState(() => _isSaved = !_isSaved);
+        _showMessage(
+          _isSaved ? 'Đã lưu ${dest.name}' : 'Đã bỏ lưu ${dest.name}',
+        );
+      } else {
+        _showMessage(data?['message'] as String? ?? 'Không cập nhật được trạng thái lưu');
+      }
+    } catch (_) {
+      if (mounted) {
+        _showMessage('Không kết nối được server để cập nhật trạng thái lưu');
+      }
+    }
+  }
+
+  void _toggleLike() {
+    setState(() => _isLiked = !_isLiked);
+  }
+
+  void _showMessage(String message) {
+    ScaffoldMessenger.of(context)
+      ..hideCurrentSnackBar()
+      ..showSnackBar(SnackBar(content: Text(message)));
   }
 
   @override
@@ -139,6 +190,24 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
             ),
           );
         }),
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _buildSimpleImage(Destination dest, Animation<double> parentAnim) {
+    return Positioned.fill(
+      child: FadeTransition(
+        opacity: CurvedAnimation(
+          parent: parentAnim,
+          curve: Curves.easeOut,
+        ),
+        child: Image.asset(
+          dest.imagePath,
+          fit: BoxFit.cover,
+        ),
+>>>>>>> feature-restore
       ),
     );
   }
@@ -232,9 +301,9 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                         children: [
                           const Icon(Icons.location_on, color: Color(0xFFD4AF7A), size: 16),
                           const SizedBox(width: 4),
-                          Text(dest.province, style: TextStyle(
+                          Text('${dest.province}', style: const TextStyle(
                             fontFamily: 'Montserrat', fontSize: 14,
-                            color: Colors.white.withOpacity(0.7),
+                            color: Colors.white,
                           )),
                           const SizedBox(width: 16),
                           Text('Đánh giá', style: TextStyle(
@@ -262,12 +331,15 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                 ),
               ),
             ),
+              ),
+            ),
           );
         },
       ),
     );
   }
 
+<<<<<<< HEAD
   Widget _buildTabBar() {
     return Row(
       children: [
@@ -351,12 +423,15 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     return descriptions[name] ?? 'Một điểm đến tuyệt vời tại Việt Nam với cảnh quan thiên nhiên hùng vĩ và văn hóa đặc sắc.';
   }
 
+=======
+>>>>>>> feature-restore
   Widget _buildBottomCTA() {
     return Positioned(
       bottom: 0, left: 0, right: 0,
       child: AnimatedBuilder(
         animation: _panelSlide,
         builder: (context, child) {
+<<<<<<< HEAD
           final screenH = MediaQuery.of(context).size.height;
           final slideOffset = (1 - _panelSlide.value) * screenH;
           return Transform.translate(offset: Offset(0, slideOffset), child: child);
@@ -373,6 +448,41 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                   Colors.black.withOpacity(0.0),
                   Colors.black.withOpacity(0.70),
                   Colors.black.withOpacity(0.85),
+=======
+          final slideOffset = (1 - _panelSlide.value) * 150.0;
+          return Transform.translate(
+            offset: Offset(0, slideOffset),
+            child: child,
+          );
+        },
+        child: Container(
+          padding: const EdgeInsets.fromLTRB(24, 16, 24, 30),
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Colors.transparent,
+                Colors.black.withOpacity(0.4),
+                Colors.black.withOpacity(0.8),
+              ],
+            ),
+          ),
+          child: GestureDetector(
+            onTap: () {},
+            child: Container(
+              height: 56,
+              decoration: BoxDecoration(
+                gradient: const LinearGradient(
+                  colors: [Color(0xFFB5956A), Color(0xFFD4AF7A)],
+                ),
+                borderRadius: BorderRadius.circular(20),
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color(0xFFB5956A).withOpacity(0.4),
+                    blurRadius: 20, offset: const Offset(0, 8),
+                  ),
+>>>>>>> feature-restore
                 ],
               ),
             ),
@@ -407,7 +517,17 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     );
   }
 
+<<<<<<< HEAD
   Widget _glassCircle(IconData icon, VoidCallback onTap) {
+=======
+
+  // ── Glass circle button ──
+  Widget _glassCircle(
+    IconData icon,
+    VoidCallback onTap, {
+    Color iconColor = Colors.white,
+  }) {
+>>>>>>> feature-restore
     return GestureDetector(
       onTap: onTap,
       child: ClipOval(
@@ -420,7 +540,44 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
               color: Colors.black.withOpacity(0.25),
               border: Border.all(color: Colors.white.withOpacity(0.2)),
             ),
-            child: Icon(icon, color: Colors.white, size: 20),
+            child: Icon(icon, color: iconColor, size: 20),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _glassCircleAnimatedIcon({
+    required bool isActive,
+    required IconData activeIcon,
+    required IconData inactiveIcon,
+    required VoidCallback onTap,
+    required Color activeColor,
+  }) {
+    return GestureDetector(
+      onTap: onTap,
+      child: ClipOval(
+        child: BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
+          child: Container(
+            width: 46,
+            height: 46,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: Colors.white.withOpacity(0.15),
+              border: Border.all(color: Colors.white.withOpacity(0.25)),
+            ),
+            child: AnimatedSwitcher(
+              duration: const Duration(milliseconds: 220),
+              transitionBuilder: (child, animation) =>
+                  ScaleTransition(scale: animation, child: child),
+              child: Icon(
+                isActive ? activeIcon : inactiveIcon,
+                key: ValueKey<bool>(isActive),
+                color: isActive ? activeColor : Colors.white,
+                size: 20,
+              ),
+            ),
           ),
         ),
       ),
@@ -435,6 +592,36 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
   }
 
 
+<<<<<<< HEAD
+=======
+  Widget _statCard(IconData icon, String value, String label, Color accent) {
+    return Expanded(
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: 16),
+        decoration: BoxDecoration(
+          color: accent.withOpacity(0.16),
+          borderRadius: BorderRadius.circular(18),
+          border: Border.all(color: accent.withOpacity(0.34)),
+        ),
+        child: Column(
+          children: [
+            Icon(icon, color: accent, size: 24),
+            const SizedBox(height: 6),
+            Text(value, style: TextStyle(
+              fontFamily: 'Montserrat', fontSize: 16,
+              fontWeight: FontWeight.w700, color: accent,
+            )),
+            const SizedBox(height: 2),
+            Text(label, style: TextStyle(
+              fontFamily: 'Montserrat', fontSize: 11,
+              color: Colors.white.withOpacity(0.8),
+            )),
+          ],
+        ),
+      ),
+    );
+  }
+>>>>>>> feature-restore
 
 
   Widget _buildHighlightChips() {
@@ -449,18 +636,18 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
       children: highlights.map((h) => Container(
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
         decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.06),
+          color: Colors.white.withOpacity(0.13),
           borderRadius: BorderRadius.circular(20),
-          border: Border.all(color: Colors.white.withOpacity(0.12)),
+          border: Border.all(color: Colors.white.withOpacity(0.2)),
         ),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(h.$1, size: 16, color: Colors.white.withOpacity(0.7)),
+            Icon(h.$1, size: 16, color: Colors.white.withOpacity(0.9)),
             const SizedBox(width: 6),
             Text(h.$2, style: TextStyle(
               fontFamily: 'Montserrat', fontSize: 13,
-              color: Colors.white.withOpacity(0.85),
+              color: Colors.white,
             )),
           ],
         ),
@@ -468,13 +655,73 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     );
   }
 
+<<<<<<< HEAD
+=======
+  // ── About section with expand ──
+  Widget _buildAboutSection() {
+    const fullText =
+        'Đây là một trong những điểm đến tuyệt vời nhất tại Việt Nam. '
+        'Bạn sẽ được trải nghiệm không gian thiên nhiên hùng vĩ, '
+        'khám phá văn hóa bản địa đặc sắc và thưởng thức ẩm thực địa phương. '
+        'Tour bao gồm đưa đón tận nơi, hướng dẫn viên tiếng Việt, '
+        'và bữa ăn đặc sản vùng miền. Phù hợp cho gia đình, '
+        'nhóm bạn hoặc du lịch cặp đôi lãng mạn.';
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          fullText,
+          maxLines: _showFullDesc ? 20 : 3,
+          overflow: TextOverflow.ellipsis,
+          style: TextStyle(
+            fontFamily: 'Montserrat', fontSize: 14,
+            color: Colors.white.withOpacity(0.84), height: 1.7,
+          ),
+        ),
+        const SizedBox(height: 6),
+        GestureDetector(
+          onTap: () => setState(() => _showFullDesc = !_showFullDesc),
+          child: Text(
+            _showFullDesc ? 'Thu gọn' : 'Xem thêm',
+            style: const TextStyle(
+              fontFamily: 'Montserrat', fontSize: 13,
+              fontWeight: FontWeight.w600, color: Color(0xFFB5956A),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  // ── Gallery ──
+  Widget _buildGallery(dynamic dest) {
+    return SizedBox(
+      height: 100,
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        children: List.generate(4, (i) => Padding(
+          padding: EdgeInsets.only(right: i < 3 ? 10 : 0),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(16),
+            child: SizedBox(
+              width: 130,
+              child: Image.asset('${dest.imagePath}', fit: BoxFit.cover),
+            ),
+          ),
+        )),
+      ),
+    );
+  }
+
+  // ── Review card ──
+>>>>>>> feature-restore
   Widget _buildReviewCard({required String name, required int rating, required String text}) {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.05),
+        color: Colors.white.withOpacity(0.11),
         borderRadius: BorderRadius.circular(18),
-        border: Border.all(color: Colors.white.withOpacity(0.08)),
+        border: Border.all(color: Colors.white.withOpacity(0.18)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -506,7 +753,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
           const SizedBox(height: 10),
           Text(text, style: TextStyle(
             fontFamily: 'Montserrat', fontSize: 13,
-            color: Colors.white.withOpacity(0.6), height: 1.5,
+            color: Colors.white.withOpacity(0.82), height: 1.5,
           )),
         ],
       ),

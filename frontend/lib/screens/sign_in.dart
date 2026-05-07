@@ -1,4 +1,5 @@
 import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import '../api/api.dart';
 import '../utils/auth_feedback.dart';
@@ -48,6 +49,7 @@ class _SignInScreenState extends State<SignInScreen>
       if (response.statusCode == 200 && data?['success'] == true) {
         final user = data?['user'];
         final userName = user is Map ? user['name'] as String? : null;
+        final authToken = data?['token'] as String?;
         showAuthSuccessToast(
           context,
           'Đăng nhập thành công — chào ${userName ?? 'bạn'}!',
@@ -59,6 +61,7 @@ class _SignInScreenState extends State<SignInScreen>
             PageRouteBuilder(
               pageBuilder: (_, __, ___) => HomeScreen(
                 userName: userName ?? 'bạn',
+                authToken: authToken,
               ),
               transitionDuration: const Duration(milliseconds: 600),
               reverseTransitionDuration: const Duration(milliseconds: 400),
@@ -160,9 +163,6 @@ class _SignInScreenState extends State<SignInScreen>
       resizeToAvoidBottomInset: true,
       body: Stack(
         children: [
-          // ── Background image with parallax
-          _buildHeroImage(s),
-
           // ── Draggable panel with green transparent overlay
           _buildDraggablePanel(s),
         ],

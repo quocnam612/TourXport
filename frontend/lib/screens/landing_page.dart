@@ -258,7 +258,7 @@ class _LandingPageState extends State<LandingPage>
       position: _titleSlide,
       child: FadeTransition(
         opacity: _titleFade,
-        child: Column(
+        child: const Column(
           children: [
             Text(
               'KHÁM PHÁ',
@@ -271,14 +271,14 @@ class _LandingPageState extends State<LandingPage>
                 letterSpacing: 6,
                 shadows: [
                   Shadow(
-                    color: const Color(0x55000000),
+                    color: Color(0x55000000),
                     blurRadius: 8,
-                    offset: const Offset(0, 2),
+                    offset: Offset(0, 2),
                   ),
                 ],
               ),
             ),
-            const SizedBox(height: 4),
+            SizedBox(height: 4),
             Text(
               'VIỆT NAM',
               textAlign: TextAlign.center,
@@ -290,14 +290,14 @@ class _LandingPageState extends State<LandingPage>
                 letterSpacing: 5,
                 shadows: [
                   Shadow(
-                    color: const Color(0x88000000),
+                    color: Color(0x88000000),
                     blurRadius: 12,
-                    offset: const Offset(0, 4),
+                    offset: Offset(0, 4),
                   ),
                   Shadow(
-                    color: const Color(0x44000000),
+                    color: Color(0x44000000),
                     blurRadius: 24,
-                    offset: const Offset(0, 8),
+                    offset: Offset(0, 8),
                   ),
                 ],
               ),
@@ -387,8 +387,8 @@ class _LandingPageState extends State<LandingPage>
                   );
                 },
                 style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.resolveWith((states) {
-                    if (states.contains(MaterialState.hovered)) {
+                  backgroundColor: WidgetStateProperty.resolveWith((states) {
+                    if (states.contains(WidgetState.hovered)) {
                       return Colors.black.withOpacity(0.9);
                     }
                     return AppColors.buttonDark.withOpacity(0.85);
@@ -400,7 +400,7 @@ class _LandingPageState extends State<LandingPage>
                       borderRadius: BorderRadius.circular(50),
                     ),
                   ),
-                  elevation: MaterialStateProperty.all(0),
+                  elevation: WidgetStateProperty.all(0),
                 ),
                 child: const Text(
                   'BẮT ĐẦU NGAY',
