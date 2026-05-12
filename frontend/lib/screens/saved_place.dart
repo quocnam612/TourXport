@@ -25,18 +25,20 @@ class SavedPlacesSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      key: const ValueKey<String>('saved_tab'),
-      children: [
-        _buildTopBar(),
-        const SizedBox(height: 8),
-        _buildTitle(),
-        const SizedBox(height: 12),
-        Expanded(
-          child: _buildSavedPlacesView(),
-        ),
-        const SizedBox(height: 16),
-      ],
+    return SafeArea(
+      child: Column(
+        key: const ValueKey<String>('saved_tab'),
+        children: [
+          _buildTopBar(),
+          const SizedBox(height: 8),
+          _buildTitle(),
+          const SizedBox(height: 12),
+          Expanded(
+            child: _buildSavedPlacesView(),
+          ),
+          const SizedBox(height: 100),
+        ],
+      ),
     );
   }
 

@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -5,7 +6,16 @@ import 'package:flutter/material.dart';
 import '../api/api.dart';
 import '../models/destination.dart';
 import '../widgets/anim_builder.dart';
+import 'package:image_picker/image_picker.dart';
+import 'edit_profile_screen.dart';
+import 'email_settings_screen.dart';
+import 'help_support_screen.dart';
+import 'language_settings_screen.dart';
+import 'notification_settings_screen.dart';
+import 'phone_settings_screen.dart';
+import 'security_settings_screen.dart';
 import 'place_detail.dart';
+import 'profile_section.dart';
 import 'saved_place.dart';
 import 'survey_screen.dart';
 
@@ -36,6 +46,11 @@ class _HomeScreenState extends State<HomeScreen>
   List<Destination> _savedDestinations = const [];
   bool _isLoadingSavedPlaces = false;
 
+  Map<String, dynamic>? _userData;
+  bool _isLoadingProfile = false;
+  String _currentUserName = '';
+  final ImagePicker _picker = ImagePicker();
+
   late final AnimationController _bgFadeController;
   late final Animation<double> _bgFade;
   late final AnimationController _entranceController;
@@ -53,6 +68,7 @@ class _HomeScreenState extends State<HomeScreen>
   void initState() {
     super.initState();
 
+    _currentUserName = widget.userName;
     _pageController = PageController(viewportFraction: 0.82);
 
     _bgFadeController = AnimationController(
@@ -75,6 +91,7 @@ class _HomeScreenState extends State<HomeScreen>
     _entranceController.forward();
 
     _loadSavedPlaces();
+    _loadProfile();
   }
 
   @override
@@ -139,6 +156,620 @@ class _HomeScreenState extends State<HomeScreen>
         ..clear()
         ..addAll(places.map((item) => item.name));
     });
+  }
+
+  Future<void> _loadProfile() async {
+    final token = widget.authToken?.trim();
+    if (token == null || token.isEmpty) return;
+
+    setState(() => _isLoadingProfile = true);
+
+    try {
+      final response = await apiGet('/auth/profile', token: token);
+      final data = tryDecodeJsonObject(response.body);
+
+      if (!mounted) return;
+
+      if (response.statusCode == 200 && data?['success'] == true) {
+        setState(() {
+          _userData = data!['user'];
+          if (_userData?['name'] != null) {
+            _currentUserName = _userData!['name'];
+          }
+        });
+      }
+      if (mounted) {
+        setState(() => _isLoadingProfile = false);
+      }
+    } catch (e) {
+      if (mounted) {
+        setState(() => _isLoadingProfile = false);
+        _showMessage('Lỗi tải thông tin cá nhân');
+      }
+    }
+  }
+
+  Future<void> _pickAndUploadImage(bool isAvatar) async {
+    try {
+      final XFile? image = await _picker.pickImage(
+        source: ImageSource.gallery,
+        maxWidth: 1024,
+        maxHeight: 1024,
+        imageQuality: 85,
+      );
+
+      if (image == null) return;
+
+      setState(() => _isLoadingProfile = true);
+
+      final file = File(image.path);
+      final response = await apiPostMultipart(
+        '/auth/upload',
+        'image',
+        file,
+        token: widget.authToken,
+      );
+
+      final responseStr = await response.stream.bytesToString();
+      final data = tryDecodeJsonObject(responseStr);
+
+      if (data != null && data['success'] == true) {
+        final newUrl = data['imageUrl'];
+        await _updateProfileImage(isAvatar, newUrl);
+      } else {
+        _showMessage(data?['message'] ?? 'Upload thất bại');
+      }
+    } catch (e) {
+      _showMessage('Lỗi khi tải ảnh lên');
+    } finally {
+      if (mounted) setState(() => _isLoadingProfile = false);
+    }
+  }
+
+  Future<void> _updateProfileImage(bool isAvatar, String url) async {
+    final token = widget.authToken?.trim();
+    if (token == null || token.isEmpty) return;
+
+    try {
+      final response = await apiPutJson(
+        '/auth/profile',
+        isAvatar ? {'avatarUrl': url} : {'coverUrl': url},
+        token: token,
+      );
+      final data = tryDecodeJsonObject(response.body);
+
+      if (response.statusCode == 200 && data?['success'] == true) {
+        _loadProfile(); // Refresh profile data
+        _showMessage(isAvatar ? 'Đã cập nhật ảnh đại diện' : 'Đã cập nhật ảnh bìa');
+      } else {
+        _showMessage(data?['message'] ?? 'Cập nhật thất bại');
+      }
+    } catch (e) {
+      _showMessage('Lỗi kết nối server');
+    }
+  }
+
+  void _showEditImageDialog(bool isAvatar) {
+    final TextEditingController urlController = TextEditingController();
+    showDialog(
+      context: context,
+      builder: (context) => BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
+        child: AlertDialog(
+          backgroundColor: const Color(0xFF1B2321).withOpacity(0.95),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(28),
+            side: BorderSide(color: Colors.white.withOpacity(0.12)),
+          ),
+          title: Text(
+            isAvatar ? 'Cập nhật ảnh đại diện' : 'Cập nhật ảnh bìa',
+            style: const TextStyle(
+              fontFamily: 'Montserrat',
+              color: Colors.white,
+              fontWeight: FontWeight.w800,
+            ),
+          ),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              // Option 1: Pick from Gallery
+              ElevatedButton.icon(
+                onPressed: () {
+                  Navigator.pop(context);
+                  _pickAndUploadImage(isAvatar);
+                },
+                icon: const Icon(Icons.photo_library_rounded, color: Colors.white),
+                label: const Text(
+                  'Chọn từ thư viện',
+                  style: TextStyle(fontFamily: 'Montserrat', fontWeight: FontWeight.w600),
+                ),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFFB5956A),
+                  foregroundColor: Colors.white,
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                  elevation: 8,
+                  shadowColor: const Color(0xFFB5956A).withOpacity(0.4),
+                ),
+              ),
+              const SizedBox(height: 20),
+              Row(
+                children: [
+                  Expanded(child: Divider(color: Colors.white.withOpacity(0.1))),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                    child: Text(
+                      'Hoặc nhập URL',
+                      style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        color: Colors.white.withOpacity(0.3),
+                        fontSize: 12,
+                      ),
+                    ),
+                  ),
+                  Expanded(child: Divider(color: Colors.white.withOpacity(0.1))),
+                ],
+              ),
+              const SizedBox(height: 20),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                decoration: BoxDecoration(
+                  color: Colors.black.withOpacity(0.3),
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(color: Colors.white.withOpacity(0.1)),
+                ),
+                child: TextField(
+                  controller: urlController,
+                  style: const TextStyle(color: Colors.white, fontSize: 14),
+                  decoration: const InputDecoration(
+                    hintText: 'https://example.com/image.jpg',
+                    hintStyle: TextStyle(color: Colors.white30),
+                    border: InputBorder.none,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: Text(
+                'Hủy',
+                style: TextStyle(
+                  fontFamily: 'Montserrat',
+                  color: Colors.white.withOpacity(0.5),
+                ),
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () async {
+                final url = urlController.text.trim();
+                if (url.isNotEmpty) {
+                  Navigator.pop(context);
+                  _updateProfileImage(isAvatar, url);
+                }
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color(0xFFB5956A).withOpacity(0.2),
+                foregroundColor: const Color(0xFFB5956A),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+              ),
+              child: const Text(
+                'Lưu URL',
+                style: TextStyle(fontFamily: 'Montserrat', fontWeight: FontWeight.bold),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _logout() {
+    showDialog(
+      context: context,
+      builder: (context) => BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
+        child: AlertDialog(
+          backgroundColor: const Color(0xFF1B2321).withOpacity(0.9),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(24),
+            side: BorderSide(color: Colors.white.withOpacity(0.12)),
+          ),
+          title: const Text(
+            'Đăng xuất?',
+            style: TextStyle(fontFamily: 'Montserrat', color: Colors.white),
+          ),
+          content: Text(
+            'Bạn có chắc chắn muốn đăng xuất khỏi TourXport?',
+            style: TextStyle(
+              fontFamily: 'Montserrat',
+              color: Colors.white.withOpacity(0.7),
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: Text(
+                'Hủy',
+                style: TextStyle(
+                  fontFamily: 'Montserrat',
+                  color: Colors.white.withOpacity(0.5),
+                ),
+              ),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.pop(context); // Close dialog
+                Navigator.of(context).pop(); // Back to Sign In
+              },
+              child: const Text(
+                'Đăng xuất',
+                style: TextStyle(
+                  fontFamily: 'Montserrat',
+                  color: const Color(0xFFE74C3C),
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Future<void> _openEditProfile() async {
+    if (_userData == null) return;
+
+    final result = await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => EditProfileScreen(
+          userData: _userData!,
+          authToken: widget.authToken!,
+        ),
+      ),
+    );
+
+    if (result == true) {
+      _loadProfile();
+    }
+  }
+
+  Future<void> _editName() => _showEditFieldDialog(
+    'Tên', 
+    'name', 
+    _userData?['name'] ?? '',
+    const Color(0xFFD4AF7A),
+    Icons.person_rounded,
+  );
+  
+  Future<void> _editHelpSupport() async {
+    if (_userData == null) return;
+    await Navigator.push(
+      context,
+      PageRouteBuilder(
+        pageBuilder: (context, animation, secondaryAnimation) =>
+            HelpSupportScreen(userData: _userData!),
+        transitionsBuilder: (context, animation, secondaryAnimation, child) {
+          return FadeTransition(
+            opacity: animation,
+            child: SlideTransition(
+              position: Tween<Offset>(
+                begin: const Offset(0, 0.05),
+                end: Offset.zero,
+              ).animate(CurvedAnimation(parent: animation, curve: Curves.easeOutCubic)),
+              child: child,
+            ),
+          );
+        },
+      ),
+    );
+  }
+
+  Future<void> _editLanguage() async {
+    if (_userData == null) return;
+    await Navigator.push(
+      context,
+      PageRouteBuilder(
+        pageBuilder: (context, animation, secondaryAnimation) =>
+            LanguageSettingsScreen(userData: _userData!),
+        transitionsBuilder: (context, animation, secondaryAnimation, child) {
+          return FadeTransition(
+            opacity: animation,
+            child: SlideTransition(
+              position: Tween<Offset>(
+                begin: const Offset(0, 0.05),
+                end: Offset.zero,
+              ).animate(CurvedAnimation(parent: animation, curve: Curves.easeOutCubic)),
+              child: child,
+            ),
+          );
+        },
+      ),
+    );
+  }
+
+  Future<void> _editEmail() async {
+    if (_userData == null) return;
+    
+    final result = await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => EmailSettingsScreen(
+          userData: _userData!,
+          authToken: widget.authToken!,
+        ),
+      ),
+    );
+
+    if (result == true) {
+      _loadProfile();
+    }
+  }
+  
+  Future<void> _editPhone() async {
+    if (_userData == null) return;
+    
+    final result = await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => PhoneSettingsScreen(
+          userData: _userData!,
+          authToken: widget.authToken!,
+        ),
+      ),
+    );
+
+    if (result == true) {
+      _loadProfile();
+    }
+  }
+
+  Future<void> _editSecurity() async {
+    if (_userData == null) {
+      // _showMessage('Vui lòng đợi cấu hình bảo mật đang tải...');
+      return;
+    }
+    
+    // _showMessage('Đang mở cài đặt bảo mật...');
+    await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => SecuritySettingsScreen(
+          userData: _userData!,
+          authToken: widget.authToken!,
+        ),
+      ),
+    );
+  }
+
+  Future<void> _editNotifications() async {
+    if (_userData == null) return;
+    
+    await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => NotificationSettingsScreen(
+          userData: _userData!,
+          authToken: widget.authToken!,
+        ),
+      ),
+    );
+  }
+
+  Future<void> _showEditFieldDialog(String label, String fieldKey, String initialValue, Color accentColor, IconData icon) async {
+    final controller = TextEditingController(text: initialValue);
+    
+    final result = await showModalBottomSheet<bool>(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (context) => Container(
+        height: MediaQuery.of(context).size.height * 0.7,
+        decoration: BoxDecoration(
+          color: const Color(0xFF1B2321).withOpacity(0.95),
+          borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
+          border: Border.all(color: Colors.white.withOpacity(0.12), width: 1.5),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.5),
+              blurRadius: 40,
+              spreadRadius: 10,
+            ),
+          ],
+        ),
+        child: ClipRRect(
+          borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
+          child: BackdropFilter(
+            filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
+            child: Stack(
+              children: [
+                // Large Background Decorative Icon
+                Positioned(
+                  top: -20,
+                  right: -30,
+                  child: Icon(
+                    icon,
+                    size: 200,
+                    color: accentColor.withOpacity(0.05),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(
+                    left: 24, 
+                    right: 24, 
+                    top: 12,
+                    bottom: MediaQuery.of(context).viewInsets.bottom + 24,
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      // Handle
+                      Center(
+                        child: Container(
+                          width: 40,
+                          height: 4,
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(0.2),
+                            borderRadius: BorderRadius.circular(2),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 32),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              Container(
+                                padding: const EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  color: accentColor.withOpacity(0.15),
+                                  borderRadius: BorderRadius.circular(14),
+                                ),
+                                child: Icon(icon, color: accentColor, size: 24),
+                              ),
+                              const SizedBox(width: 16),
+                              Text(
+                                'Chỉnh sửa $label',
+                                style: const TextStyle(
+                                  fontFamily: 'Montserrat',
+                                  fontSize: 22,
+                                  fontWeight: FontWeight.w800,
+                                  color: Colors.white,
+                                  letterSpacing: -0.5,
+                                ),
+                              ),
+                            ],
+                          ),
+                          GestureDetector(
+                            onTap: () => Navigator.pop(context),
+                            child: Container(
+                              padding: const EdgeInsets.all(8),
+                              decoration: BoxDecoration(
+                                color: Colors.white.withOpacity(0.05),
+                                shape: BoxShape.circle,
+                              ),
+                              child: const Icon(Icons.close_rounded, color: Colors.white70, size: 20),
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 16),
+                      Text(
+                        'Cập nhật $label của bạn để mọi người có thể kết nối với bạn dễ dàng hơn.',
+                        style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          fontSize: 14,
+                          color: Colors.white.withOpacity(0.5),
+                          height: 1.5,
+                        ),
+                      ),
+                      const SizedBox(height: 40),
+                      
+                      // Themed Input
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                        decoration: BoxDecoration(
+                          color: Colors.black.withOpacity(0.2),
+                          borderRadius: BorderRadius.circular(20),
+                          border: Border.all(
+                            color: accentColor.withOpacity(0.4),
+                            width: 1.5,
+                          ),
+                          boxShadow: [
+                            BoxShadow(
+                              color: accentColor.withOpacity(0.1),
+                              blurRadius: 20,
+                              spreadRadius: 2,
+                            ),
+                          ],
+                        ),
+                        child: TextField(
+                          controller: controller,
+                          autofocus: true,
+                          keyboardType: fieldKey == 'phone' 
+                              ? TextInputType.phone 
+                              : (fieldKey == 'email' ? TextInputType.emailAddress : TextInputType.text),
+                          style: const TextStyle(
+                            fontFamily: 'Montserrat',
+                            color: Colors.white,
+                            fontSize: 18,
+                            fontWeight: FontWeight.w600,
+                          ),
+                          decoration: InputDecoration(
+                            hintText: 'Nhập $label mới...',
+                            hintStyle: TextStyle(color: Colors.white.withOpacity(0.2)),
+                            border: InputBorder.none,
+                          ),
+                        ),
+                      ),
+                      
+                      const Spacer(),
+                      
+                      // Save Button
+                      SizedBox(
+                        width: double.infinity,
+                        height: 64,
+                        child: ElevatedButton(
+                          onPressed: () async {
+                            final newValue = controller.text.trim();
+                            if (newValue == initialValue) {
+                              Navigator.pop(context);
+                              return;
+                            }
+                            
+                            final token = widget.authToken?.trim();
+                            if (token == null) return;
+
+                            final response = await apiPutJson(
+                              '/auth/profile',
+                              {fieldKey: newValue},
+                              token: token,
+                            );
+
+                            if (response.statusCode == 200) {
+                              Navigator.pop(context, true);
+                            } else {
+                              _showMessage('Cập nhật thất bại');
+                            }
+                          },
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: accentColor,
+                            foregroundColor: Colors.black,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            elevation: 12,
+                            shadowColor: accentColor.withOpacity(0.4),
+                          ),
+                          child: const Text(
+                            'Lưu thay đổi',
+                            style: TextStyle(
+                              fontFamily: 'Montserrat',
+                              fontSize: 16,
+                              fontWeight: FontWeight.w800,
+                              letterSpacing: 1,
+                            ),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 12),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+
+    if (result == true) {
+      _loadProfile();
+    }
   }
 
   Future<bool> _toggleSaved(Destination dest) async {
@@ -582,10 +1213,12 @@ class _HomeScreenState extends State<HomeScreen>
           _buildCurrentBackground(),
           _buildDarkOverlay(),
           _buildUIContent(size),
-          Positioned(
+          AnimatedPositioned(
+            duration: const Duration(milliseconds: 300),
+            curve: Curves.easeInOut,
             left: 24,
             right: 24,
-            bottom: 20,
+            bottom: _navIndex == 3 ? -100 : 20,
             child: _buildBottomNav(),
           ),
         ],
@@ -663,10 +1296,7 @@ class _HomeScreenState extends State<HomeScreen>
   }
 
   Widget _buildUIContent(Size size) {
-    final bool isSavedTab = _navIndex == 1;
-
-    return SafeArea(
-      child: AnimatedSwitcher(
+    return AnimatedSwitcher(
         duration: const Duration(milliseconds: 360),
         reverseDuration: const Duration(milliseconds: 280),
         switchInCurve: Curves.easeOutCubic,
@@ -685,19 +1315,42 @@ class _HomeScreenState extends State<HomeScreen>
             ),
           );
         },
-        child: isSavedTab
-            ? SavedPlacesSection(
-                entranceAnimation: _cardEntrance,
-                savedDestinations: _savedDestinations,
-                updatingSavedNames: _updatingSavedNames,
-                isLoading: _isLoadingSavedPlaces,
-                onBack: () => setState(() => _navIndex = 0),
-                onOpenDetail: _openPlaceDetail,
-                onToggleSaved: _toggleSaved,
-              )
-            : _buildHomeTabBody(size),
-      ),
-    );
+        child: _buildSelectedSection(size),
+      );
+  }
+
+  Widget _buildSelectedSection(Size size) {
+    switch (_navIndex) {
+      case 1:
+        return SavedPlacesSection(
+          entranceAnimation: _cardEntrance,
+          savedDestinations: _savedDestinations,
+          updatingSavedNames: _updatingSavedNames,
+          isLoading: _isLoadingSavedPlaces,
+          onBack: () => setState(() => _navIndex = 0),
+          onOpenDetail: _openPlaceDetail,
+          onToggleSaved: _toggleSaved,
+        );
+      case 3:
+        return ProfileSection(
+          entranceAnimation: _cardEntrance,
+          userData: _userData,
+          isLoading: _isLoadingProfile,
+          onBack: () => setState(() => _navIndex = 0),
+          onLogout: _logout,
+          onUpdateAvatar: () => _showEditImageDialog(true),
+          onUpdateCover: () => _showEditImageDialog(false),
+          onEditName: _openEditProfile,
+          onEditEmail: _editEmail,
+          onEditPhone: _editPhone,
+          onEditSecurity: () => _editSecurity(),
+          onEditNotifications: _editNotifications,
+          onEditLanguage: _editLanguage,
+          onEditHelpSupport: _editHelpSupport,
+        );
+      default:
+        return _buildHomeTabBody(size);
+    }
   }
 
   Widget _buildHomeTabBody(Size size) {

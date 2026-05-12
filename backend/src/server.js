@@ -6,11 +6,18 @@ import config from './config/config.js';
 import authRoutes from './routes/authRoutes.js';
 import locationsRoutes from './routes/locationsRoutes.js';
 
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const app = express();
 
 // Middlewares
 app.use(express.json());
 app.use(cors({origin: config.cors.allowedOrigins}));
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // API routes
 app.use('/auth', authRoutes);

@@ -26,6 +26,14 @@ const userSchema = new mongoose.Schema({
     savedPlaces: {
         type: Array,
         default: []
+    },
+    avatarUrl: {
+        type: String,
+        default: ''
+    },
+    coverUrl: {
+        type: String,
+        default: ''
     }
 }, { timestamps: true });
 
