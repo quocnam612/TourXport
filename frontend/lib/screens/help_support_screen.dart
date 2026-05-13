@@ -133,51 +133,18 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
   // --- UI Components ---
 
   Widget _buildHeroBackground() {
-    return Container(
-      height: 550,
-      width: double.infinity,
+    return Positioned.fill(
       child: Stack(
         fit: StackFit.expand,
         children: [
-          Image.asset(
-            'assets/images/ha_long_bay_sailing.jpg',
-            fit: BoxFit.cover,
-          ),
-          // Deep Atmospheric Gradient
-          Container(
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [
-                  Colors.black.withOpacity(0.1),
-                  const Color(0xFF1B2321).withOpacity(0.4),
-                  const Color(0xFF1B2321).withOpacity(0.92),
-                  const Color(0xFF1B2321),
-                ],
-                stops: const [0.0, 0.35, 0.8, 1.0],
-              ),
+          Image.asset('assets/images/halong.jpg', fit: BoxFit.cover),
+          Container(decoration: BoxDecoration(color: const Color(0xFF1B2321).withOpacity(0.78))),
+          Positioned(
+            top: 0, left: 0, right: 0,
+            child: Container(
+              height: 150,
+              decoration: BoxDecoration(gradient: RadialGradient(center: Alignment.topCenter, radius: 1.2, colors: [const Color(0xFFD4AF7A).withOpacity(0.10), Colors.transparent])),
             ),
-          ),
-          // Animated Ambient Particles (Simulated with Radial Gradients)
-          AnimatedBuilder(
-            animation: _floatingController,
-            builder: (context, child) {
-              return Stack(
-                children: [
-                  Positioned(
-                    top: 100 + (_floatingController.value * 30),
-                    right: 40 - (_floatingController.value * 20),
-                    child: _buildAmbientGlow(150, const Color(0xFFD4AF7A).withOpacity(0.08)),
-                  ),
-                  Positioned(
-                    bottom: 200 - (_floatingController.value * 40),
-                    left: 20 + (_floatingController.value * 30),
-                    child: _buildAmbientGlow(200, const Color(0xFF2D6A4F).withOpacity(0.05)),
-                  ),
-                ],
-              );
-            },
           ),
         ],
       ),
@@ -580,7 +547,7 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
         child: Container(
           padding: padding ?? const EdgeInsets.all(20),
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.04),
+            color: Colors.black.withOpacity(0.32),
             borderRadius: BorderRadius.circular(28),
             border: Border.all(color: Colors.white.withOpacity(borderOpacity), width: 1.2),
           ),

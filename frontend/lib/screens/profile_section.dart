@@ -51,73 +51,117 @@ class ProfileSection extends StatelessWidget {
     final avatarUrl = userData?['avatarUrl'] ?? '';
     final coverUrl = userData?['coverUrl'] ?? '';
 
-    return MediaQuery.removePadding(
-      context: context,
-      removeTop: true,
-      child: SingleChildScrollView(
-        key: const ValueKey<String>('profile_tab'),
-        padding: EdgeInsets.zero,
-        physics: const BouncingScrollPhysics(),
-        child: Column(
-          children: [
-            _buildHeader(context, name, avatarUrl, coverUrl),
-          Transform.translate(
-            offset: const Offset(0, -60),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 24),
-              child: Column(
-                children: [
-                  _buildMenuGroup(
-                    context,
-                    items: [
-                      _MenuDataItem(
-                        icon: Icons.person_outline_rounded,
-                        title: 'Thông tin cá nhân',
-                        subtitle: name,
-                        onTap: onEditName,
-                      ),
-                      _MenuDataItem(
-                        icon: Icons.email_outlined,
-                        title: 'Email',
-                        subtitle: email,
-                        onTap: onEditEmail,
-                      ),
-                      _MenuDataItem(
-                        icon: Icons.phone_android_rounded,
-                        title: 'Số điện thoại',
-                        subtitle: phone,
-                        onTap: onEditPhone,
-                      ),
-                    ],
-                  ),
-                  _buildMenuGroup(
-                    context,
-                    items: [
-                      _MenuDataItem(icon: Icons.notifications_none_rounded, title: 'Thông báo', onTap: onEditNotifications),
-                      _MenuDataItem(icon: Icons.language_rounded, title: 'Ngôn ngữ', subtitle: 'Tiếng Việt', onTap: onEditLanguage),
-                      _MenuDataItem(icon: Icons.security_rounded, title: 'Bảo mật', onTap: onEditSecurity),
-                    ],
-                  ),
-                  _buildMenuGroup(
-                    context,
-                    items: [
-                      _MenuDataItem(icon: Icons.help_outline_rounded, title: 'Trợ giúp & Hỗ trợ', onTap: onEditHelpSupport),
-                      _MenuDataItem(
-                        icon: Icons.logout_rounded,
-                        title: 'Đăng xuất',
-                        titleColor: const Color(0xFFE74C3C),
-                        onTap: onLogout,
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 40),
-                ],
+    return Stack(
+      children: [
+        // Full-screen Background: Ha Long Bay image + dark green overlay
+        Positioned.fill(
+          child: Stack(
+            fit: StackFit.expand,
+            children: [
+              coverUrl.isNotEmpty
+                  ? Image.network(coverUrl, fit: BoxFit.cover)
+                  : Image.asset(
+                      'assets/images/halong.jpg',
+                      fit: BoxFit.cover,
+                    ),
+              // Dark green tinted overlay across the entire screen
+              Container(
+                decoration: BoxDecoration(
+                  color: const Color(0xFF1B2321).withOpacity(0.78),
+                ),
               ),
+              // Subtle top ambient glow
+              Positioned(
+                top: 0,
+                left: 0,
+                right: 0,
+                child: Container(
+                  height: 150,
+                  decoration: BoxDecoration(
+                    gradient: RadialGradient(
+                      center: Alignment.topCenter,
+                      radius: 1.2,
+                      colors: [
+                        const Color(0xFFD4AF7A).withOpacity(0.10),
+                        Colors.transparent,
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        // Scrollable Content
+        MediaQuery.removePadding(
+          context: context,
+          removeTop: true,
+          child: SingleChildScrollView(
+            key: const ValueKey<String>('profile_tab'),
+            padding: EdgeInsets.zero,
+            physics: const BouncingScrollPhysics(),
+            child: Column(
+              children: [
+                _buildHeader(context, name, avatarUrl, coverUrl),
+              Transform.translate(
+                offset: const Offset(0, -60),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 24),
+                  child: Column(
+                    children: [
+                      _buildMenuGroup(
+                        context,
+                        items: [
+                          _MenuDataItem(
+                            icon: Icons.person_outline_rounded,
+                            title: 'Thông tin cá nhân',
+                            subtitle: name,
+                            onTap: onEditName,
+                          ),
+                          _MenuDataItem(
+                            icon: Icons.email_outlined,
+                            title: 'Email',
+                            subtitle: email,
+                            onTap: onEditEmail,
+                          ),
+                          _MenuDataItem(
+                            icon: Icons.phone_android_rounded,
+                            title: 'Số điện thoại',
+                            subtitle: phone,
+                            onTap: onEditPhone,
+                          ),
+                        ],
+                      ),
+                      _buildMenuGroup(
+                        context,
+                        items: [
+                          _MenuDataItem(icon: Icons.notifications_none_rounded, title: 'Thông báo', onTap: onEditNotifications),
+                          _MenuDataItem(icon: Icons.language_rounded, title: 'Ngôn ngữ', subtitle: 'Tiếng Việt', onTap: onEditLanguage),
+                          _MenuDataItem(icon: Icons.security_rounded, title: 'Bảo mật', onTap: onEditSecurity),
+                        ],
+                      ),
+                      _buildMenuGroup(
+                        context,
+                        items: [
+                          _MenuDataItem(icon: Icons.help_outline_rounded, title: 'Trợ giúp & Hỗ trợ', onTap: onEditHelpSupport),
+                          _MenuDataItem(
+                            icon: Icons.logout_rounded,
+                            title: 'Đăng xuất',
+                            titleColor: const Color(0xFFE74C3C),
+                            onTap: onLogout,
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 40),
+                    ],
+                  ),
+                ),
+              ),
+              ],
             ),
           ),
-          ],
         ),
-      ),
+      ],
     );
   }
 
@@ -130,70 +174,17 @@ class ProfileSection extends StatelessWidget {
       child: Stack(
         clipBehavior: Clip.none,
         children: [
-          // Background Image with Cinematic Gradient
-          Container(
+          // Header sizing container (background provided by parent Stack)
+          SizedBox(
             height: 440,
             width: screenW,
-            child: Stack(
-              fit: StackFit.expand,
-              children: [
-                coverUrl.isNotEmpty
-                    ? Image.network(coverUrl, fit: BoxFit.cover)
-                    : Image.asset(
-                        'assets/images/ha_long_bay_sailing.jpg',
-                        fit: BoxFit.cover,
-                      ),
-                // Layered Atmospheric Gradient
-                Container(
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [
-                        Colors.black.withOpacity(0.2),
-                        const Color(0xFF1B2321).withOpacity(0.4),
-                        const Color(0xFF1B2321).withOpacity(0.9),
-                        const Color(0xFF1B2321),
-                      ],
-                      stops: const [0.0, 0.4, 0.85, 1.0],
-                    ),
-                  ),
-                ),
-                // Soft Top Ambient Glow
-                Positioned(
-                  top: 0,
-                  left: 0,
-                  right: 0,
-                  child: Container(
-                    height: 120,
-                    decoration: BoxDecoration(
-                      gradient: RadialGradient(
-                        center: Alignment.topCenter,
-                        radius: 1.2,
-                        colors: [
-                          const Color(0xFFD4AF7A).withOpacity(0.12),
-                          Colors.transparent,
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
           ),
           
-          // Action Buttons (Back & Camera)
+          // Action Button (Back)
           Positioned(
             top: topPadding + 12,
             left: 20,
-            right: 20,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                _glassIconButton(Icons.arrow_back_ios_new_rounded, onBack),
-                _glassIconButton(Icons.camera_alt_rounded, onUpdateCover),
-              ],
-            ),
+            child: _glassIconButton(Icons.arrow_back_ios_new_rounded, onBack),
           ),
 
           // Header Content (Avatar + Name + Bio)
@@ -225,7 +216,7 @@ class ProfileSection extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 48),
                   child: Text(
-                    'Khám phá thế giới, chinh phục những đỉnh cao mới.',
+                    userData?['bio'] ?? 'Chưa có tiểu sử. Hãy cập nhật để mọi người biết thêm về bạn!',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontFamily: 'Montserrat',

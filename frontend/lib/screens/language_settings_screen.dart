@@ -173,74 +173,17 @@ class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> with Ti
   // --- UI Components ---
 
   Widget _buildHeroBackground() {
-    final String coverUrl = widget.userData['coverUrl'] ?? '';
-    final screenW = MediaQuery.of(context).size.width;
-    
-    return Container(
-      height: 500,
-      width: screenW,
+    return Positioned.fill(
       child: Stack(
         fit: StackFit.expand,
         children: [
-          coverUrl.isNotEmpty
-              ? Image.network(coverUrl, fit: BoxFit.cover)
-              : Image.asset(
-                  'assets/images/phongnhakebang.jpg',
-                  fit: BoxFit.cover,
-                ),
-          // Cinematic Dark Overlay
-          Container(
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [
-                  Colors.black.withOpacity(0.1),
-                  const Color(0xFF1B2321).withOpacity(0.4),
-                  const Color(0xFF1B2321).withOpacity(0.85),
-                  const Color(0xFF1B2321),
-                ],
-                stops: const [0.0, 0.4, 0.8, 1.0],
-              ),
-            ),
-          ),
-          // Moving Light Reflection Shimmer
-          AnimatedBuilder(
-            animation: _shimmerController,
-            builder: (context, child) {
-              return Container(
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment(-1.0 + _shimmerController.value * 2, -1.0),
-                    end: Alignment(-1.0 + _shimmerController.value * 2 + 1.0, 1.0),
-                    colors: [
-                      Colors.transparent,
-                      Colors.white.withOpacity(0.03),
-                      Colors.transparent,
-                    ],
-                    stops: const [0.3, 0.5, 0.7],
-                  ),
-                ),
-              );
-            },
-          ),
-          // Top Ambient Glow
+          Image.asset('assets/images/halong.jpg', fit: BoxFit.cover),
+          Container(decoration: BoxDecoration(color: const Color(0xFF1B2321).withOpacity(0.78))),
           Positioned(
-            top: 0,
-            left: 0,
-            right: 0,
+            top: 0, left: 0, right: 0,
             child: Container(
               height: 150,
-              decoration: BoxDecoration(
-                gradient: RadialGradient(
-                  center: Alignment.topCenter,
-                  radius: 1.5,
-                  colors: [
-                    const Color(0xFFD4AF7A).withOpacity(0.15),
-                    Colors.transparent,
-                  ],
-                ),
-              ),
+              decoration: BoxDecoration(gradient: RadialGradient(center: Alignment.topCenter, radius: 1.2, colors: [const Color(0xFFD4AF7A).withOpacity(0.10), Colors.transparent])),
             ),
           ),
         ],
@@ -644,7 +587,7 @@ class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> with Ti
         child: Container(
           padding: padding ?? const EdgeInsets.all(24),
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.04),
+            color: Colors.black.withOpacity(0.32),
             borderRadius: BorderRadius.circular(28),
             border: Border.all(color: Colors.white.withOpacity(0.12), width: 1.2),
             boxShadow: [

@@ -140,30 +140,17 @@ class _NotificationSettingsScreenState extends State<NotificationSettingsScreen>
   }
 
   Widget _buildHeroBackground() {
-    final String coverUrl = widget.userData['coverUrl'] ?? '';
-    return Container(
-      height: 440,
-      width: double.infinity,
+    return Positioned.fill(
       child: Stack(
         fit: StackFit.expand,
         children: [
-          coverUrl.isNotEmpty
-              ? Image.network(coverUrl, fit: BoxFit.cover)
-              : Image.asset('assets/images/ha_long_bay_sailing.jpg', fit: BoxFit.cover),
-          Container(
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter, end: Alignment.bottomCenter,
-                colors: [Colors.black.withOpacity(0.2), const Color(0xFF1B2321).withOpacity(0.4), const Color(0xFF1B2321).withOpacity(0.9), const Color(0xFF1B2321)],
-                stops: const [0.0, 0.4, 0.85, 1.0],
-              ),
-            ),
-          ),
+          Image.asset('assets/images/halong.jpg', fit: BoxFit.cover),
+          Container(decoration: BoxDecoration(color: const Color(0xFF1B2321).withOpacity(0.78))),
           Positioned(
             top: 0, left: 0, right: 0,
             child: Container(
-              height: 120,
-              decoration: BoxDecoration(gradient: RadialGradient(center: Alignment.topCenter, radius: 1.2, colors: [const Color(0xFFD4AF7A).withOpacity(0.12), Colors.transparent])),
+              height: 150,
+              decoration: BoxDecoration(gradient: RadialGradient(center: Alignment.topCenter, radius: 1.2, colors: [const Color(0xFFD4AF7A).withOpacity(0.10), Colors.transparent])),
             ),
           ),
         ],
@@ -405,10 +392,10 @@ class _NotificationSettingsScreenState extends State<NotificationSettingsScreen>
 
   Widget _buildGlassCard({required Widget child}) {
     return ClipRRect(
-      borderRadius: BorderRadius.circular(24),
+      borderRadius: BorderRadius.circular(28),
       child: BackdropFilter(
         filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
-        child: Container(padding: const EdgeInsets.all(20), decoration: BoxDecoration(color: Colors.white.withOpacity(0.05), borderRadius: BorderRadius.circular(24), border: Border.all(color: Colors.white.withOpacity(0.1))), child: child),
+        child: Container(padding: const EdgeInsets.all(20), decoration: BoxDecoration(color: Colors.black.withOpacity(0.32), borderRadius: BorderRadius.circular(28), border: Border.all(color: Colors.white.withOpacity(0.12), width: 1.2)), child: child),
       ),
     );
   }

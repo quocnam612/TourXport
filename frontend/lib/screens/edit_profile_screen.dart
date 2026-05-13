@@ -48,7 +48,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> with TickerProvid
     super.initState();
     _nameController = TextEditingController(text: widget.userData['name'] ?? '');
     _usernameController = TextEditingController(text: widget.userData['username'] ?? 'traveler_2025');
-    _bioController = TextEditingController(text: widget.userData['bio'] ?? 'Khám phá thế giới qua những điểm đến sang trọng.');
+    _bioController = TextEditingController(text: widget.userData['bio'] ?? '');
     _emailController = TextEditingController(text: widget.userData['email'] ?? '');
     _phoneController = TextEditingController(text: widget.userData['phone'] ?? '');
     
@@ -285,49 +285,36 @@ class _EditProfileScreenState extends State<EditProfileScreen> with TickerProvid
 
   Widget _buildHeroBackground() {
     final String coverUrl = widget.userData['coverUrl'] ?? '';
-    final screenW = MediaQuery.of(context).size.width;
-    
-    return Container(
-      height: 440,
-      width: screenW,
+
+    return Positioned.fill(
       child: Stack(
         fit: StackFit.expand,
         children: [
           coverUrl.isNotEmpty
               ? Image.network(coverUrl, fit: BoxFit.cover)
               : Image.asset(
-                  'assets/images/ha_long_bay_sailing.jpg',
+                  'assets/images/halong.jpg',
                   fit: BoxFit.cover,
                 ),
-          // Layered Atmospheric Gradient
+          // Dark green tinted overlay across the entire screen
           Container(
             decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [
-                  Colors.black.withOpacity(0.2),
-                  const Color(0xFF1B2321).withOpacity(0.4),
-                  const Color(0xFF1B2321).withOpacity(0.9),
-                  const Color(0xFF1B2321),
-                ],
-                stops: const [0.0, 0.4, 0.85, 1.0],
-              ),
+              color: const Color(0xFF1B2321).withOpacity(0.78),
             ),
           ),
-          // Soft Top Ambient Glow
+          // Subtle top ambient glow
           Positioned(
             top: 0,
             left: 0,
             right: 0,
             child: Container(
-              height: 120,
+              height: 150,
               decoration: BoxDecoration(
                 gradient: RadialGradient(
                   center: Alignment.topCenter,
                   radius: 1.2,
                   colors: [
-                    const Color(0xFFD4AF7A).withOpacity(0.12),
+                    const Color(0xFFD4AF7A).withOpacity(0.10),
                     Colors.transparent,
                   ],
                 ),
@@ -369,19 +356,6 @@ class _EditProfileScreenState extends State<EditProfileScreen> with TickerProvid
                     radius: 50,
                     backgroundImage: NetworkImage(widget.userData['avatarUrl'] ?? 'https://i.pravatar.cc/300'),
                   ),
-                ),
-              ),
-              Positioned(
-                bottom: 5,
-                right: MediaQuery.of(context).size.width / 2 - 60,
-                child: Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                    color: const Color(0xFFD4AF7A),
-                    shape: BoxShape.circle,
-                    border: Border.all(color: const Color(0xFF0F1412), width: 3),
-                  ),
-                  child: const Icon(Icons.camera_alt_rounded, color: Colors.white, size: 18),
                 ),
               ),
             ],
@@ -679,24 +653,18 @@ class _EditProfileScreenState extends State<EditProfileScreen> with TickerProvid
 
   // UI Components
   Widget _buildGlassCard({required Widget child}) {
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.all(24),
-      decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.03),
-        borderRadius: BorderRadius.circular(28),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withOpacity(0.2),
-            blurRadius: 20,
-            offset: const Offset(0, 10),
-          )
-        ],
-      ),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(28),
-        child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(28),
+      child: BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
+        child: Container(
+          width: double.infinity,
+          padding: const EdgeInsets.all(24),
+          decoration: BoxDecoration(
+            color: Colors.black.withOpacity(0.32),
+            borderRadius: BorderRadius.circular(28),
+            border: Border.all(color: Colors.white.withOpacity(0.12), width: 1.2),
+          ),
           child: child,
         ),
       ),

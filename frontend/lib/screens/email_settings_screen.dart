@@ -166,50 +166,31 @@ class _EmailSettingsScreenState extends State<EmailSettingsScreen> with TickerPr
   }
 
   Widget _buildHeroBackground() {
-    final String coverUrl = widget.userData['coverUrl'] ?? '';
-    final screenW = MediaQuery.of(context).size.width;
-    
-    return Container(
-      height: 440,
-      width: screenW,
+    return Positioned.fill(
       child: Stack(
         fit: StackFit.expand,
         children: [
-          coverUrl.isNotEmpty
-              ? Image.network(coverUrl, fit: BoxFit.cover)
-              : Image.asset(
-                  'assets/images/ha_long_bay_sailing.jpg',
-                  fit: BoxFit.cover,
-                ),
-          // Layered Atmospheric Gradient
+          Image.asset(
+            'assets/images/halong.jpg',
+            fit: BoxFit.cover,
+          ),
           Container(
             decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [
-                  Colors.black.withOpacity(0.2),
-                  const Color(0xFF1B2321).withOpacity(0.4),
-                  const Color(0xFF1B2321).withOpacity(0.9),
-                  const Color(0xFF1B2321),
-                ],
-                stops: const [0.0, 0.4, 0.85, 1.0],
-              ),
+              color: const Color(0xFF1B2321).withOpacity(0.78),
             ),
           ),
-          // Soft Top Ambient Glow
           Positioned(
             top: 0,
             left: 0,
             right: 0,
             child: Container(
-              height: 120,
+              height: 150,
               decoration: BoxDecoration(
                 gradient: RadialGradient(
                   center: Alignment.topCenter,
                   radius: 1.2,
                   colors: [
-                    const Color(0xFFD4AF7A).withOpacity(0.12),
+                    const Color(0xFFD4AF7A).withOpacity(0.10),
                     Colors.transparent,
                   ],
                 ),
@@ -544,15 +525,15 @@ class _EmailSettingsScreenState extends State<EmailSettingsScreen> with TickerPr
 
   Widget _buildGlassCard({required Widget child}) {
     return ClipRRect(
-      borderRadius: BorderRadius.circular(24),
+      borderRadius: BorderRadius.circular(28),
       child: BackdropFilter(
         filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
         child: Container(
           padding: const EdgeInsets.all(24),
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.05),
-            borderRadius: BorderRadius.circular(24),
-            border: Border.all(color: Colors.white.withOpacity(0.1), width: 1),
+            color: Colors.black.withOpacity(0.32),
+            borderRadius: BorderRadius.circular(28),
+            border: Border.all(color: Colors.white.withOpacity(0.12), width: 1.2),
           ),
           child: child,
         ),
