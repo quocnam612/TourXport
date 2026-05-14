@@ -1,41 +1,44 @@
-import os
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
-from openai import AsyncOpenAI
-from dotenv import load_dotenv
+from fastapi import FastAPI
+from contextlib import asynccontextmanager
+from motor.motor_asyncio import AsyncIOMotorClient
 
-load_dotenv()  # tao file .env ngang hang voi thu muc src de luu OPENAI_API_KEY
+from src.core.config import settings
+from src.dependencies.database import db
 
-app = FastAPI(title="AI Recommendation Service")
+from src.api.api import api_router 
 
-client = AsyncOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+from src.core.config import settings
 
-class PromptRequest(BaseModel):
-    prompt: str
 
-@app.post("/api/v1/ai/generate")
-async def generate_response(request: PromptRequest):
-    """
-    Endpoint nhận prompt từ người dùng và trả về kết quả từ gpt-4o-mini.
-    """
-    if not request.prompt:
-        raise HTTPException(status_code=400, detail="Prompt không được để trống")
-
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # --- KHI SERVER START ---
+    print("Đang khởi động hệ thống...")
     try:
-        response = await client.chat.completions.create(
-            model="gpt-4o-mini",
-            messages=[
-                {"role": "system", "content": "Bạn là trợ lý du lịch thông minh, chuyên gợi ý địa điểm ăn uống tại TP.HCM."},
-                {"role": "user", "content": request.prompt}
-            ],
-            temperature=0.7
-        )
-
-        return {
-            "status": "success",
-            "data": response.choices[0].message.content
-        }
-
+        db.client = AsyncIOMotorClient(settings.mongo_uri)
+        print("Đã kết nối MongoDB.")
     except Exception as e:
-        print(f"Lỗi OpenAI: {e}")
-        raise HTTPException(status_code=500, detail="Lỗi xử lý AI")
+        print(f"Lỗi kết nối MongoDB: {e}")
+        
+    yield 
+    
+    # --- KHI SERVER SHUTDOWN ---
+    print("Đang tắt hệ thống...")
+    if db.client:
+        db.client.close()
+        print("✅ Đã ngắt kết nối MongoDB.")
+
+# Khởi tạo app
+app = FastAPI(
+    title="TourXport AI Worker",
+    version="1.0.0",
+    lifespan=lifespan
+)
+
+@app.get("/")
+async def root():
+    return {"message": "AI Worker is running smooth!"}
+
+# ĐĂNG KÝ ROUTER TỔNG VÀO APP
+# Điểm bắt đầu của mọi API sẽ có dạng: http://localhost:8000/api/...
+app.include_router(api_router, prefix="/api")
