@@ -5,24 +5,30 @@ import mongoose from 'mongoose';
 import config from './config/config.js'; 
 import authRoutes from './routes/authRoutes.js';
 import locationsRoutes from './routes/locationsRoutes.js';
-
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// import tourRoutes from './routes/tourRoutes.js';
 
 const app = express();
 
-// Middlewares
+// Middleware
 app.use(express.json());
-app.use(cors({origin: config.cors.allowedOrigins}));
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+app.use(cors());
 
 // API routes
 app.use('/auth', authRoutes);
 app.use('/locations', locationsRoutes);
+// app.use('/tours', tourRoutes);
 
+// Global error handler
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).json({
+        success: false,
+        message: 'Something went wrong on the server!',
+        error: err.message
+    });
+});
+
+// Database connection
 mongoose.connect(config.database.uri)
 .then(() => {
     console.log('✅ Connected to MongoDB Atlas');

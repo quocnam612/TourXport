@@ -15,12 +15,10 @@ export const authenticate = (req, res, next) => {
 
     try {
         const decoded = jwt.verify(token, config.jwt.key);
-        req.user = decoded; // { id: user._id }
+        req.user = decoded;
         next();
     } catch (err) {
-        return res.status(401).json({
-            success: false,
-            message: 'Unauthorized: Invalid or expired token'
-        });
+        const message = err.name === 'TokenExpiredError' ? 'Token expired' : 'Invalid token';
+        return res.status(401).json({ success: false, message });
     }
 };

@@ -7,7 +7,8 @@ const config = {
 
     jwt: {
         key: process.env.JWT_KEY || 'default_jwt_secret_key',
-        expiresIn: process.env.JWT_EXPIRATION || '3d'
+        expiresIn: process.env.JWT_EXPIRATION || '3d',
+        algorithm: 'HS256'
     },
 
     crawler: {
