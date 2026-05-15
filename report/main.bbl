@@ -1,23 +1,71 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{fe1}
+\bibitem{flutter_doc}
 {Flutter}.
-\newblock \href{https://docs.flutter.dev/} {Flutter Documentation}, 2023.
+\newblock \href{https://docs.flutter.dev/}{Flutter Documentation}, 2023.
 
-\bibitem{fe2}
+\bibitem{material3}
 {Material.io}.
-\newblock \href{https://m3.material.io/} {Material Design 3 Guidelines}, 2021.
+\newblock \href{https://m3.material.io/}{Material Design 3 Guidelines}, 2021.
 
-\bibitem{fe3}
+\bibitem{dart_guide}
 {Dart Language}.
-\newblock \href{https://dart.dev/guides} {Dart Language Guide}, 2023.
+\newblock \href{https://dart.dev/guides}{Dart Language Guide}, 2023.
 
-\bibitem{fe5}
-{Flutter Community}.
-\newblock \href{https://pub.dev/} {Flutter packages}, 2023.
-
-\bibitem{fe4}
+\bibitem{glassmorphism}
 {UX Design}.
-\newblock \href{https://uxdesign.cc/glassmorphism-in-user-interfaces-1f510ef39818} { Glassmorphism Design Patterns}, 2021.
+\newblock \href{https://uxdesign.cc/glassmorphism-in-user-interfaces-1f510ef39818}{Glassmorphism Design Patterns}, 2021.
+
+\bibitem{nodejs}
+{Node.js Foundation}.
+\newblock \href{https://nodejs.org/}{Node.js}, 2024.
+
+\bibitem{expressjs}
+{Express.js}.
+\newblock \href{https://expressjs.com/}{Express Web Framework}, 2023.
+
+\bibitem{mongodb}
+{MongoDB}.
+\newblock \href{https://www.mongodb.com/docs/}{MongoDB Documentation}, 2024.
+
+\bibitem{microservices}
+{Software Architecture}.
+\newblock \href{https://microservices.io/}{Microservices Architecture Pattern}, 2024.
+
+\bibitem{restapi}
+{REST API}.
+\newblock \href{https://restfulapi.net/}{RESTful API Design Best Practices}, 2023.
+
+\bibitem{mongoose}
+{Mongoose}.
+\newblock \href{https://mongoosejs.com/}{Mongoose ODM}, 2024.
+
+\bibitem{bcryptjs}
+{dcodeIO}.
+\newblock \href{https://www.npmjs.com/package/bcryptjs}{bcryptjs - Password Hashing}, 2023.
+
+\bibitem{pubdev}
+{Flutter Community}.
+\newblock \href{https://pub.dev/}{Flutter packages}, 2023.
+
+\bibitem{fastapi}
+{Sebastián Ramírez}.
+\newblock \href{https://fastapi.tiangolo.com/}{FastAPI Documentation}, 2023.
+
+\bibitem{openai}
+{OpenAI}.
+\newblock \href{https://platform.openai.com/docs}{OpenAI API Documentation}, 2024.
+
+\bibitem{pydantic}
+{Pydantic authors}.
+\newblock \href{https://pydantic-docs.helpmanual.io/}{Pydantic Documentation}, 2024.
+
+\bibitem{jwt}
+{IETF}.
+\newblock \href{https://datatracker.ietf.org/doc/html/rfc7519}{JSON Web Token (RFC 7519)}, 2015.
+
+\bibitem{docker_compose}
+{Docker}.
+\newblock \href{https://docs.docker.com/compose/}{Docker Compose Documentation}, 2024.
 
 \end{thebibliography}

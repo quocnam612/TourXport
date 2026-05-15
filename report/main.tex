@@ -5,6 +5,9 @@
 % Disable indentation on new paragraphs
 \setlength{\parindent}{0pt}
 
+% Define \squd used in content files (small quad indent)
+\newcommand{\squd}{\quad}
+
 % Line spacing 1.5
 \renewcommand{\baselinestretch}{1.5}
 
@@ -115,8 +118,8 @@ Trường Đại học Khoa học Tự nhiên - ĐHQG HCM\\
 \pagebreak
 \tableofcontents
 \pagebreak
-\listoftables
-\pagebreak
+% \listoftables
+% \pagebreak
 \listoffigures
 \pagebreak
 
@@ -128,8 +131,5 @@ Trường Đại học Khoa học Tự nhiên - ĐHQG HCM\\
 \input{content/C3.tex}
 \input{content/C4.tex}
 \input{content/C5.tex}
-
-% References
-\input{ref/ref.tex}
 
 \end{document}

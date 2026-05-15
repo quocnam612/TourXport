@@ -1,4 +1,41 @@
 \chapter{TỔNG KẾT VÀ HƯỚNG PHÁT TRIỂN}
 
 \section{Tổng kết}
+Dự án TourXport đã hoàn thành giai đoạn Proof of Concept - POC với những kết quả khả quan, khẳng định tính khả thi của một hệ thống hỗ trợ du lịch thông minh. Các mục tiêu cốt lõi được tổng kết như sau:
+
+\begin{itemize}
+    \item \textbf{Xây dựng nền tảng kỹ thuật vững chắc:} Hệ thống đã triển khai thành công mô hình Client-Server sử dụng Flutter và Node.js. Việc áp dụng Docker giúp quá trình thiết lập môi trường và triển khai sản phẩm trở nên nhất quán và chuyên nghiệp.
+    \item \textbf{Hiện thực hóa các tính năng cốt lõi:} 
+    \begin{itemize}
+        \item \textbf{Hệ thống xác thực người dùng:} Đã xây dựng hoàn chỉnh chức năng đăng ký và đăng nhập với bảo mật mật khẩu bằng thuật toán Bcrypt, cấp phát JWT token cho phiên làm việc của người dùng.
+        \item \textbf{Giao diện di động đầy đủ:} Phát triển thành công ứng dụng Flutter với các màn hình chính bao gồm Landing page, Sign-in, Sign-up, Dashboard, Place listing, Survey, Favorites (Save), Profile và Settings. Toàn bộ giao diện được thiết kế theo Material Design 3 với hiệu ứng glassmorphism cho cảm giác hiện đại.
+        \item \textbf{Hệ thống API RESTful:} Xây dựng bộ API đầy đủ trên Express.js để hỗ trợ quản lý người dùng, địa điểm, bài viết (reviews), và hành trình, với các endpoint chuẩn (GET, POST, PUT, DELETE).
+        \item \textbf{Công cụ sinh lịch trình AI:} Phát triển AI Worker với FastAPI sử dụng OpenAI API để tự động tạo các lịch trình du lịch chi tiết dựa trên yêu cầu của người dùng, với khả năng kết hợp dữ liệu (RAG) từ cơ sở dữ liệu MongoDB.
+        \item \textbf{Triển khai với Docker:} Đóng gói toàn bộ hệ thống (Backend, AI Worker, Database) vào các container Docker, sử dụng Docker Compose để quản lý và triển khai một cách nhanh chóng trên các môi trường khác nhau.
+    \end{itemize}
+    \item \textbf{Quản trị dữ liệu tập trung:} Cơ sở dữ liệu MongoDB được thiết kế tối ưu, lưu trữ dữ liệu địa điểm đã qua chuẩn hóa, hỗ trợ hiệu quả cho việc truy xuất thông tin nhanh chóng.
+    \item \textbf{Tích hợp Trí tuệ nhân tạo:} Đã thử nghiệm thành công việc kết nối với các mô hình ngôn ngữ lớn (LLM) để xử lý dữ liệu và đưa ra gợi ý hành trình sơ bộ, đặt nền móng cho các tính năng cá nhân hóa chuyên sâu.
+\end{itemize}
+
 \section{Hướng phát triển trong tương lai}
+Để TourXport trở thành một ứng dụng du lịch toàn diện, hướng phát triển tiếp theo sẽ tập trung vào việc mở rộng hệ sinh thái dịch vụ và nâng cao trải nghiệm người dùng:
+
+\subsection{Mở rộng hệ sinh thái dịch vụ (Dịch vụ tích hợp)}
+\begin{itemize}
+    \item \textbf{Tích hợp ẩm thực và lưu trú:} Mở rộng cơ sở dữ liệu để gợi ý món ăn đặc sản và khách sạn theo ngân sách. Hệ thống AI sẽ tự động lồng ghép lịch trình ăn uống và nghỉ ngơi vào Tour dựa trên vị trí địa lý của các điểm tham quan.
+    \item \textbf{Tính năng quản lý đoàn (Group Travel):} Phát triển cơ chế tạo nhóm thông qua mã định danh, cho phép chia sẻ vị trí thời gian thực giữa các thành viên và gửi thông báo đẩy (Push Notification) từ trưởng đoàn.
+\end{itemize}
+
+\subsection{Hỗ trợ an toàn và tình huống khẩn cấp}
+\begin{itemize}
+    \item \textbf{Tự động hóa theo GPS:} Phát triển tính năng tự động đánh dấu hoàn thành địa điểm dựa trên tọa độ GPS và tái cấu trúc lộ trình (Re-routing) ngay lập tức nếu người dùng đi chệch hướng hoặc bỏ lỡ một điểm đến.
+    \item \textbf{Bảo vệ người dùng:} Xây dựng lớp bảo vệ người dùng thông qua việc cung cấp danh bạ khẩn cấp địa phương, tính năng gửi tín hiệu SOS kèm vị trí và chỉ dẫn đến cơ sở y tế gần nhất khi phát hiện sự cố.
+\end{itemize}
+
+\subsection{Hoàn thiện hậu hành trình}
+\quad Phát triển các công cụ tổng kết chi phí thực tế so với dự kiến và tự động tạo "Bộ sưu tập kỷ niệm" để người dùng dễ dàng chia sẻ hành trình lên các nền tảng mạng xã hội.
+
+\section{Tài liệu tham khảo}
+\nocite{*}
+\bibliographystyle{unsrt}
+\bibliography{ref/ref}

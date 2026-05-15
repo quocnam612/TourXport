@@ -1,23 +1,92 @@
 \chapter{CHI TIẾT CÁC THÀNH PHẦN CỐT LÕI}
 
-\section{Backend (Node.js \& Express)}
+\section{Backend (Node.js/Express \& Logic Engine)}
+
 \subsection{Vai trò và Nhiệm vụ}
+\quad Trong hệ thống TourXport, thành phần Backend đóng vai trò là "xương sống" kỹ thuật, chịu trách nhiệm vận hành toàn bộ các logic nghiệp vụ phức tạp và đảm bảo sự kết nối thông suốt giữa lớp ứng dụng (Frontend) và các dịch vụ dữ liệu/AI theo kiến trúc microservices \cite{microservices}. Các nhiệm vụ chính bao gồm:
+
+\begin{itemize}
+    \item \textbf{Thiết kế và quản lý API:} Xây dựng hệ thống RESTful API \cite{restapi} cung cấp các điểm cuối (endpoints) cho ứng dụng di động truy xuất dữ liệu địa điểm, người dùng và hành trình.
+    \item \textbf{Quản lý Cơ sở dữ liệu:} Thực hiện các thao tác CRUD (Create, Read, Update, Delete) trên MongoDB thông qua Mongoose ODM \cite{mongoose}, đảm bảo tính toàn vẹn và tối ưu hóa truy vấn.
+    \item \textbf{Xác thực và Bảo mật:} Triển khai cơ chế bảo mật dựa trên JSON Web Token (JWT) để quản lý phiên đăng nhập và bảo vệ các tài nguyên nhạy cảm của người dùng.
+    \item \textbf{Tích hợp dịch vụ AI:} Đóng vai trò trung gian tiếp nhận yêu cầu từ người dùng, gửi dữ liệu ngữ cảnh (Context) cho dịch vụ AI và xử lý kết quả trả về trước khi lưu trữ.
+\end{itemize}
+
 \subsection{Tech Stack \& Thư viện}
+Hệ thống Backend được xây dựng trên các nền tảng công nghệ hiện đại, ưu tiên tính phi tập trung và hiệu năng xử lý bất đồng bộ:
+
+\begin{itemize}
+    \item \textbf{Runtime Environment:} Node.js - cho phép xử lý số lượng lớn các kết nối đồng thời với mô hình Non-blocking Input/Output.
+    \item \textbf{Web Framework:} Express.js - tối giản, linh hoạt, hỗ trợ mạnh mẽ việc xây dựng các Middleware xử lý lỗi và xác thực.
+    \item \textbf{Database ODM:} Mongoose \cite{mongoose} - hỗ trợ định nghĩa Schema chặt chẽ cho MongoDB và quản lý các mối quan hệ dữ liệu phức tạp.
+    \item \textbf{Bảo mật:} \texttt{bcryptjs} \cite{bcryptjs} (mã hóa mật khẩu) và \texttt{jsonwebtoken} (xác thực người dùng).
+    \item \textbf{Quản lý môi trường:} Docker \& Docker Compose - đóng gói toàn bộ dịch vụ để đảm bảo tính nhất quán giữa các môi trường phát triển và triển khai.
+\end{itemize}
+
 \subsection{Quy trình xử lý}
+Quy trình xử lý một yêu cầu điển hình tại Backend được thực hiện qua các giai đoạn nghiêm ngặt:
+
+\begin{enumerate}
+    \item \textbf{Tiếp nhận và Phân loại (Routing):} Yêu cầu từ Client được định tuyến đến Controller tương ứng dựa trên URL và phương thức HTTP (GET, POST, PUT, DELETE, PATCH).
+    \item \textbf{Kiểm soát truy cập (Middleware):} Các yêu cầu được đưa qua lớp kiểm tra Token. Nếu hợp lệ, thông tin người dùng được trích xuất từ JWT để sử dụng cho các bước tiếp theo.
+    \item \textbf{Thực thi Logic nghiệp vụ:} Controller thực hiện các tính toán hoặc gọi đến các Model để truy xuất dữ liệu. Trong trường hợp tạo tour, Backend sẽ giao tiếp với AI Backend để nhận kết quả lịch trình.
+    \item \textbf{Quản lý lỗi tập trung (Global Error Handling):} Mọi lỗi phát sinh trong quá trình xử lý đều được bắt bởi một Middleware chuyên trách, đảm bảo server không bị crash và trả về phản hồi chuẩn JSON cho người dùng.
+    \item \textbf{Phản hồi kết quả:} Kết quả sau khi xử lý được trả về dưới dạng JSON với cấu trúc chuẩn bao gồm trạng thái (\textit{success}), thông điệp (\textit{message}) và dữ liệu (\textit{data}).
+\end{enumerate}
+
+\subsection{Kết quả đạt được}
+
+Sau quá trình triển khai và thực nghiệm trong giai đoạn POC, hệ thống Backend đã đạt được các kết quả cụ thể, đáp ứng đầy đủ các tiêu chí kỹ thuật đề ra:
+
+\begin{itemize}
+    \item \textbf{Thiết lập thành công hệ thống Cơ sở dữ liệu Cloud:} 
+    Hệ thống đã triển khai hoàn thiện cơ sở dữ liệu NoSQL trên nền tảng MongoDB Atlas. Các Collection cốt lõi bao gồm \texttt{users}, \texttt{places}, \texttt{reviews} và \texttt{tours} đã được định nghĩa Schema chặt chẽ, sẵn sàng cho việc lưu trữ và truy xuất dữ liệu quy mô lớn. 
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\textwidth]{img/BE-1.png}
+        \caption{Giao diện quản lý MongoDB Atlas với các Collection đã thiết lập}
+    \end{figure}
+
+    \item \textbf{Xây dựng bộ thư viện API đầy đủ (API Documentation):} 
+    Toàn bộ các luồng nghiệp vụ quan trọng đã được hiện thực hóa qua hệ thống RESTful API. Nhóm đã xây dựng tài liệu theo dõi tiến độ chi tiết bao gồm các phương thức (GET, POST), điểm cuối (Endpoints), cấu trúc Request/Response và các trường hợp xử lý lỗi (Error cases). Các chức năng đã hoàn thiện gồm:
+    \begin{itemize}
+        \item Hệ thống xác thực: Đăng ký (\texttt{/auth/register}), Đăng nhập (\texttt{/auth/login}).
+        \item Quản lý dữ liệu: Truy xuất danh sách địa điểm (\texttt{/locations}), chi tiết địa điểm và quản lý hồ sơ người dùng.
+    \end{itemize}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\textwidth]{img/BE-2.png}
+        \caption{Bảng các Endpoints và trạng thái hoàn thiện của API}
+    \end{figure}
+
+    \item \textbf{Kiểm thử và Xác thực thành công:} 
+    Thông qua công cụ Thunder Client, các API đã được kiểm thử đơn vị (Unit Test) và đạt trạng thái hoạt động ổn định (Status 200 OK). Hệ thống xác thực JWT đã hoạt động chính xác, cho phép tạo và trả về Token hợp lệ kèm theo thông tin định danh người dùng sau khi đăng nhập thành công.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\textwidth]{img/BE-3.png}
+        \caption{Kết quả kiểm thử API đăng nhập thành công với JWT được trả về}
+    \end{figure}
+
+    \item \textbf{Đảm bảo tính toàn vẹn và bảo mật dữ liệu:} 
+    Mật khẩu người dùng đã được mã hóa dưới dạng Hash (thuật toán Bcrypt) trước khi lưu vào cơ sở dữ liệu, đảm bảo ngay cả quản trị viên hệ thống cũng không thể truy cập mật khẩu gốc, đáp ứng tiêu chuẩn bảo mật trong phát triển phần mềm hiện đại.
+\end{itemize}
 
 \section{Frontend (Flutter Multi-platform)}
 
 \subsection{Vai trò và Nhiệm vụ}
 
-\quad Frontend đóng vai trò lớp giao tiếp trực tiếp giữa người dùng và hệ thống TourXport, chịu trách nhiệm xây dựng giao diện, xử lý tương tác và hiển thị dữ liệu một cách trực quan.
+\squd Frontend đóng vai trò lớp giao tiếp trực tiếp giữa người dùng và hệ thống TourXport, chịu trách nhiệm xây dựng giao diện, xử lý tương tác và hiển thị dữ liệu một cách trực quan.
 
-\quad Trong dự án TourXport, frontend được phát triển bằng Flutter \cite{fe1} nhằm hỗ trợ đa nền tảng và đảm bảo tính đồng nhất về giao diện trên các thiết bị di động.
+\squd Trong dự án TourXport, frontend được phát triển bằng Flutter nhằm hỗ trợ đa nền tảng và đảm bảo tính đồng nhất về giao diện trên các thiết bị di động.
 
-\quad Nhiệm vụ chính của frontend trong giai đoạn POC:
+\squd Nhiệm vụ chính của frontend trong giai đoạn POC:
 
 \begin{itemize}
     \item Xây dựng Trải nghiệm Người dùng (UX)
-    \item Phát triển Giao diện (UI) \cite{fe2}
+    \item Phát triển Giao diện (UI)
     \item Thu thập Dữ liệu Người dùng
     \item Xử lý và Hiển thị Dữ liệu
     \item Quản lý Tài khoản
@@ -25,12 +94,12 @@
 
 \subsection{Tech Stack \& Thư viện}
 
-\quad Front-end của TourXport được xây dựng trên nền tảng công nghệ hiện đại nhằm đảm bảo hiệu năng và tính thẩm mỹ cao:
+\squd Front-end của TourXport được xây dựng trên nền tảng công nghệ hiện đại nhằm đảm bảo hiệu năng và tính thẩm mỹ cao:
 
 \begin{itemize}
     \item \textbf{Framework chính}: Flutter cho phép xây dựng ứng dụng đa nền tảng (Android, iOS, Web, Windows) từ một codebase duy nhất.
-    \item \textbf{Ngôn ngữ lập trình}: Dart \cite{fe3} là ngôn ngữ tối ưu cho việc xây dựng UI và các tác vụ bất đồng bộ.
-    \item \textbf{Thư viện và Công cụ} \cite{fe5}:
+    \item \textbf{Ngôn ngữ lập trình}: Dart là ngôn ngữ tối ưu cho việc xây dựng UI và các tác vụ bất đồng bộ.
+    \item \textbf{Thư viện và Công cụ} \cite{pubdev}:
         \begin{itemize}
             \item http: Xử lý các yêu cầu mạng (RESTful API) tới Backend.
             \item google\_fonts: Tích hợp bộ font chữ Montserrat chuyên nghiệp
@@ -40,27 +109,27 @@
 
 \subsection{Quy trình xử lý}
 
-\quad \textbf{Bước 1}: Lên ý tưởng và phân tích yêu cầu
+\squd \textbf{Bước 1}: Lên ý tưởng và phân tích yêu cầu
 \begin{itemize}
     \item Xác định chức năng cần phát triển
     \item Phân tích nhu cầu người dùng
     \item Xây dựng luồng sử dụng của ứng dụng
 \end{itemize}
 
-\quad \textbf{Bước 2}: Thiết kế giao diện trên Figma \cite{fe4}
+\squd \textbf{Bước 2}: Thiết kế giao diện trên Figma
 \begin{itemize}
     \item Chọn màu sắc, font chữ, bố cục
     \item Tạo prototype mô phỏng trải nghiệm người dùng
 \end{itemize}
 
-\quad \textbf{Bước 3}: Phát triển giao diện bằng Dart với Flutter
+\squd \textbf{Bước 3}: Phát triển giao diện bằng Dart với Flutter
 \begin{itemize}
     \item Chuyển thiết kế thành giao diện thực tế
     \item Xây dựng widget và xử lý logic frontend
     \item Kết nối API và quản lý trạng thái ứng dụng
 \end{itemize}
 
-\quad \textbf{Bước 4}: Kiểm thử trên máy ảo
+\squd \textbf{Bước 4}: Kiểm thử trên máy ảo
 \begin{itemize}
     \item Chạy thử trên Android Emulator
     \item Kiểm tra responsive và hiệu năng
@@ -77,9 +146,9 @@
     \caption{Bảng theo dõi công việc front-end sprint 1}
 \end{figure}
 
-\quad Trong Sprint 1, nhóm Front-end tập trung xây dựng nền tảng ban đầu cho ứng dụng bằng Flutter và ngôn ngữ Dart. Mục tiêu chính của sprint là hoàn thành môi trường phát triển, lên ý tưởng giao diện và thiết kế các màn hình cơ bản trên Figma để chuẩn bị cho giai đoạn lập trình.
+\squd Trong Sprint 1, nhóm Front-end tập trung xây dựng nền tảng ban đầu cho ứng dụng bằng Flutter và ngôn ngữ Dart. Mục tiêu chính của sprint là hoàn thành môi trường phát triển, lên ý tưởng giao diện và thiết kế các màn hình cơ bản trên Figma để chuẩn bị cho giai đoạn lập trình.
 
-\quad Các công việc đã thực hiện gồm:
+\squd Các công việc đã thực hiện gồm:
 \begin{itemize}
     \item Cài đặt và cấu hình các công nghệ cần thiết như Flutter, Dart và Android Studio.
     \item Thảo luận và thống nhất ý tưởng thiết kế giao diện với các thành viên trong nhóm.
@@ -93,7 +162,7 @@
     \caption{Thiết kế landing page, sign in, sign up}
 \end{figure}
 
-\quad Kết quả đạt được sau Sprint 1:
+\squd Kết quả đạt được sau Sprint 1:
 \begin{itemize}
     \item Môi trường phát triển Front-end đã được thiết lập hoàn chỉnh.
     \item Bộ giao diện cơ bản đã được thiết kế thống nhất.
@@ -108,9 +177,9 @@
     \caption{Bảng theo dõi công việc front-end sprint 2}
 \end{figure}
 
-\quad Trong Sprint 2, nhóm tiếp tục phát triển các chức năng chính của ứng dụng bằng Flutter và Dart. Sprint này tập trung vào việc xây dựng các màn hình chức năng sau khi người dùng đăng nhập, đồng thời mở rộng thiết kế giao diện phục vụ trải nghiệm cá nhân hóa.
+\squd Trong Sprint 2, nhóm tiếp tục phát triển các chức năng chính của ứng dụng bằng Flutter và Dart. Sprint này tập trung vào việc xây dựng các màn hình chức năng sau khi người dùng đăng nhập, đồng thời mở rộng thiết kế giao diện phục vụ trải nghiệm cá nhân hóa.
 
-\quad Các công việc đã thực hiện gồm:
+\squd Các công việc đã thực hiện gồm:
 \begin{itemize}
     \item Phát triển màn hình Dashboard và tích hợp điều hướng cơ bản sau khi đăng nhập.
     \item Xây dựng màn hình Place để hiển thị danh sách địa điểm và chức năng chọn nơi đến.
@@ -124,7 +193,7 @@
     \caption{Thiết kế dashboard và places}
 \end{figure}
 
-\quad Kết quả đạt được sau Sprint 2:
+\squd Kết quả đạt được sau Sprint 2:
 \begin{itemize}
     \item Ứng dụng có thể điều hướng giữa các màn hình chính trên Android Emulator.
     \item Các chức năng giao diện cơ bản sau đăng nhập đã được xây dựng thành công.
@@ -139,9 +208,9 @@
     \caption{Bảng theo dõi công việc front-end sprint 3}
 \end{figure}
 
-\quad Trong Sprint 3, tiếp tục hoàn thiện các chức năng liên quan đến tài khoản và trải nghiệm người dùng bằng Flutter và Dart. Sprint này tập trung phát triển các màn hình cá nhân hóa và cài đặt trong ứng dụng.
+\squd Trong Sprint 3, tiếp tục hoàn thiện các chức năng liên quan đến tài khoản và trải nghiệm người dùng bằng Flutter và Dart. Sprint này tập trung phát triển các màn hình cá nhân hóa và cài đặt trong ứng dụng.
 
-\quad Các công việc đã thực hiện gồm:
+\squd Các công việc đã thực hiện gồm:
 \begin{itemize}
     \item Xây dựng màn hình Profile với giao diện phù hợp và khả năng hoạt động trên máy ảo.
     \item Phát triển màn hình thông tin cá nhân bao gồm họ tên, Gmail và số điện thoại.
@@ -155,7 +224,7 @@
     \caption{Màn hình máy ảo profile và trang thông tin cá nhân, email}
 \end{figure}
 
-\quad Kết quả đạt được sau Sprint 3:
+\squd Kết quả đạt được sau Sprint 3:
 \begin{itemize}
     \item Các màn hình quản lý tài khoản và cài đặt đã được xây dựng thành công.
     \item Ứng dụng tiếp tục hoạt động ổn định trên Android Emulator.
@@ -163,11 +232,94 @@
 \end{itemize}
 
 \section{AI Worker (LLM \& RAG Engine)}
+
 \subsection{Vai trò và Nhiệm vụ}
+
+\quad AI Worker là thành phần xử lý trí tuệ nhân tạo cốt lõi của hệ thống TourXport, chịu trách nhiệm diễn giải các yêu cầu du lịch phức tạp của người dùng (thông qua văn bản tự nhiên, ngân sách, thời gian) và tự động lập kế hoạch lịch trình chi tiết (Itinerary). Việc tách biệt AI Worker thành một dịch vụ độc lập (Microservice) khỏi Backend chính giúp tối ưu hóa việc xử lý các tác vụ tốn kém thời gian và tài nguyên tính toán, đặc biệt là quá trình giao tiếp mạng bất đồng bộ với các mô hình ngôn ngữ lớn (LLMs). 
+
+\quad Thành phần này đóng vai trò như một bộ điều phối (Orchestrator), quyết định việc sinh lịch trình tự do bằng LLM thuần túy (Pure LLM) hoặc kết hợp với công nghệ truy xuất dữ liệu (RAG - Retrieval-Augmented Generation) từ cơ sở dữ liệu vector. Trong tương lai, nếu triển khai các tính năng khác cần xử dụng LLM làm cốt lõi, module AI Worker cũng sẽ đóng vai trò là điều phối.
+
 \subsection{Tech Stack \& Thư viện}
+
+\begin{itemize}
+    \item \textbf{Ngôn ngữ nền tảng:} Python 3.10.
+    \item \textbf{Framework:} FastAPI (phiên bản 0.136.1) \cite{fastapi} – cung cấp khả năng xử lý bất đồng bộ (async) với hiệu suất cao và tự động hóa sinh tài liệu giao diện API.
+    \item \textbf{LLM Integration:} Thư viện openai (phiên bản 2.36.0) cho python \cite{openai} – giao tiếp trực tiếp với mô hình gpt-4o-mini. Hệ thống sử dụng phương thức phân tích cú pháp nâng cao để đảm bảo đầu ra luôn tuân thủ nghiêm ngặt chuẩn cấu trúc JSON.
+    \item \textbf{Data Validation \& Serialization:} Thư viện pydantic (phiên bản 2.13.4) \cite{pydantic} – định nghĩa các schema ràng buộc kiểu dữ liệu cho Request và Response. Hệ thống tận dụng Pydantic để tự động ánh xạ cấu trúc dữ liệu snake\_case của Python sang định dạng camelCase chuẩn hóa cho luồng giao tiếp với Frontend.
+    \item \textbf{Authentication:} Thư viện PyJWT \cite{jwt} – dùng để giải mã và xác thực token JWT được cấp phát chéo từ Backend chính.
+\end{itemize}
+
 \subsection{Quy trình xử lý}
+\begin{itemize}
+    \item \textbf{Bước 1}: Tiếp nhận và Xác thực Yêu cầu — Lớp Controller tại file src/api/endpoints/trip\_generator.py (hàm generate\_trip) tiếp nhận POST request chứa dữ liệu TripGenerateRequest. Tại đây, hệ thống thực thi hàm dependency verify\_token (được định nghĩa trong src/core/security.py) để tiến hành giải mã chuỗi JWT truyền vào thông qua Header, nhằm xác minh danh tính và phiên thao tác của người dùng.
+    \item \textbf{Bước 2}: Điều phối Luồng xử lý (Orchestrator) — Sau khi xác thực, dữ liệu được chuyển cho lớp TripOrchestrator tại src/services/trip\_generator/ai\_orchestrator.py (hàm execute). Trong phạm vi giai đoạn thực thi POC hiện tại, hàm này quyết định chuyển hướng luồng xử lý thẳng đến module sinh kế hoạch bằng LLM thuần túy (generate\_itinerary\_pure\_llm), do hệ thống cơ sở dữ liệu địa điểm (Vector Database) vẫn đang trong quá trình xây dựng và cào dữ liệu. Các logic tương lai dành cho RAG (như Vector Search qua DBService) đã được thiết kế sẵn cấu trúc (placeholder) nhằm chờ tích hợp.
+    \item \textbf{Bước 3}: Giao tiếp LLM với Structured Output — Lớp AIService tại src/services/trip\_generator/ai\_service.py tiếp nhận tham số đầu vào (ngân sách, số ngày, sở thích) để cấu trúc thành System Prompt và User Prompt. Hệ thống gọi hàm API của OpenAI thông qua phương thức beta.chat.completions.parse, đồng thời truyền vào tham số response\_format=TripGeneratorResponse. Kỹ thuật này ép buộc mô hình gpt-4o-mini không trả về văn bản tự do, mà phải trả về chính xác cấu trúc dữ liệu định nghĩa tại src/schemas/response/trip\_generator.py (bao gồm các thực thể lồng nhau như TripData, DailyItinerary, và Location).
+    \item \textbf{Bước 4}: Chuẩn hóa và Phản hồi — Kết quả JSON trả về từ OpenAI lập tức được Pydantic parse thành đối tượng Python nội bộ. Hệ thống chủ động gán cờ is\_from\_db = False để minh bạch hóa với Frontend rằng dữ liệu này hoàn toàn do AI khởi tạo (ảo hóa), các thuộc tính như place\_id sẽ nhận giá trị null. Cuối cùng, FastAPI tự động serialize đối tượng này và phản hồi về cho phía Client (Flutter).
+\end{itemize}
 
 \section{Thu thập Dataset (Data Crawler/Scraper)}
+
 \subsection{Vai trò và Nhiệm vụ}
+
+\subsubsection{Vai trò}
+
+\quad Module Crawler/Scraper đóng vai trò là lớp thu thập dữ liệu đầu tiên của hệ thống. Thay vì cào dữ liệu HTML trực tiếp, nhóm sử dụng RapidAPI để bảo đảm ổn định, hợp pháp và có cấu trúc dữ liệu rõ ràng.
+
+\quad Vai trò chính của module này gồm:
+\begin{itemize}
+    \item \textbf{Thu thập dữ liệu}: Tự động hóa việc truy xuất thông tin về địa điểm (khách sạn, nhà hàng, điểm du lịch), các hình ảnh minh họa và các bài đánh giá (reviews) của người dùng từ hệ thống TripAdvisor.
+    \item \textbf{Tiền xử lý dữ liệu}: Chuẩn hóa và lưu trữ dữ liệu thu thập được dưới định dạng JSON theo định dạng mong muốn, sẵn sàng cho việc phân tích và huấn luyện mô hình AI trong tương lai.
+\end{itemize}
+
+\subsubsection{Nhiệm vụ}
+
+\quad Nhiệm vụ chính trong giai đoạn POC gồm:
+\begin{itemize}
+    \item Kết nối và tích hợp API key của RapidAPI để gọi các endpoint của Travel Advisor như \texttt{locations/search} và \texttt{photos/list}.
+    \item Lấy các trường dữ liệu cốt lõi như tên địa điểm, ID địa điểm, điểm đánh giá, nội dung review và ảnh minh họa.
+    \item Sử dụng các tham số đầu vào của endpoint để lấy đủ số lượng địa điểm, ảnh và đánh giá thay vì chỉ lấy trang đầu tiên.
+    \item Xử lý và tối ưu gọi RapidAPI bằng cách giới hạn lưu lượng requests (x requests/ giây, y requests/ tháng) để tránh lỗi HTTP 429 (Too Many Requests) và tránh lãng phí tokens RapidAPI.
+    \item Chuyển đổi dữ liệu thô thành dữ liệu JSON tối ưu và lưu trữ cục bộ.
+\end{itemize}
+
 \subsection{Tech Stack \& Thư viện}
+
+\begin{itemize}
+    \item \textbf{Ngôn ngữ lập trình}: Python 3.9+.
+    \item \textbf{Thư viện chính}: 
+    \begin{itemize}
+        \item requests: Thực hiện các HTTP GET requests đến endpoint của RapidAPI
+        \item json: phân tích dữ liệu trả về từ API.
+        \item time: Tạo độ trễ giữa các lần gọi API, tuân thủ Rate Limit của gói Rapid API đang sử dụng.
+        \item python-dataenv: Quản lý biến môi trường, bảo mật thông tin X-RapidAPI-Key và X-RapidAPI-Host thay vì hard-code trực tiếp vào mã nguồn.
+    \end{itemize}
+\end{itemize}
+
 \subsection{Quy trình xử lý}
+
+\begin{itemize}
+    \item \textbf{Bước 1: Khởi tạo \& Xác thực}
+    \begin{itemize}
+        \item Load cấu hình từ file .env (API key, Host URL)
+        \item Thiết lập HTTP Headers theo yêu cầu của RapidAPI (bao gồm X-RapidAPI-Key và X-RapidAPI-Host)
+    \end{itemize}
+    \item \textbf{Bước 2: Tìm kiếm ID địa điểm}. 
+    \begin{itemize}
+        \item Gọi endpoint locations/search sử dụng biến số từ khóa địa điểm để lấy dữ liệu trường location\_id.
+        \item Trích xuất và lưu lại location\_id của địa điểm cần lấy data
+    \end{itemize}
+    \item \textbf{Bước 3: Thu thập thông tin điểm du lịch}. 
+    \begin{itemize}
+        \item Sử dụng location\_id làm biến số gọi endpoint attraction/list, thu thập thông tin các điểm du lịch lân cận, truy xuất lấy location\_id của từng điểm
+        \item Sử dụng location\_id của từng điểm gọi endpoint attration/get-details để lấy thông tin chi tiết
+        \item Lọc qua cấu trúc file JSON dữ lại những trường cốt lõi, bỏ những trường dư thừa không sử dụng.
+        \item Cộng dồn offset để quản lý danh sách theo trang.
+        \item Trong quá trình hệ thống vận hành, kiểm tra HTTP Status Code (Nếu 200 OK -> đi tiếp; Nếu 429 -> Tạm dừng hệ thống 10-30 giây và retry; Nếu lỗi khác -> Ghi log và bỏ qua)
+        \item Kích hoạt Rate Limiting Rule với time.sleep trước khi gọi trang tiếp theo.
+    \end{itemize}
+    \item \textbf{Bước 4: Chuẩn hóa \& Lưu trữ}. 
+    \begin{itemize}
+        \item Ép kiểu các trường thời gian mở và đóng cửa thành dạng giờ trong ngày cũng như nhiều trường khác
+        \item Lưu Data thành file .json để bắt đầu phân tích và huấn luyện mô hình
+    \end{itemize}
+\end{itemize}
