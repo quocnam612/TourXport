@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass[12pt]{report}
 
 \usepackage{hcmus-report-template}
 
@@ -20,10 +20,11 @@
 
 % Define course name, report name and report title.
 \newcommand{\coursename}{Tư duy tính toán}
-\newcommand{\reporttitle}{Project: Smart Tourism System}
+\newcommand{\reportname}{TourXport - Smart Tourism System}
+\newcommand{\reporttitle}{Proof of Concept}
 
 \newcommand{\studentname}{Phạm Anh Tuấn - 24120238 \\ Nguyễn Anh Đức - 24120289 \\ Nguyễn Đức Anh Khôi - 24120076 \\ Võ Minh Khang - 24120336 \\ Nguyễn Quốc Nam - 24120098 \\ Phan Văn Việt - 24120244 \\ Nguyễn Anh Thái - 24120224}
-\newcommand{\teachername}{ThS. }
+\newcommand{\teachername}{ThS. Nguyễn Trọng Việt}
 
 % Header
 \lhead{\reporttitle}
@@ -36,7 +37,74 @@ Trường Đại học Khoa học Tự nhiên - ĐHQG HCM\\
 % Customize the footer text if desired. Leaving it empty hides the footer.
 \newcommand{\leftfooter}{}
 \lfoot{\leftfooter}
+\usepackage{titlesec}
 
+% Tùy chỉnh khoảng cách cho Chương
+% \titlespacing*{loại_tiêu_đề}{thụt_lề_trái}{khoảng_cách_trên}{khoảng_cách_dưới}
+\titleformat{\chapter}[hang]{\bfseries\Large}{CHƯƠNG \thechapter:}{0.5em}{}
+\titlespacing*{\chapter}{0pt}{-30pt}{20pt} 
+
+% Tùy chỉnh thêm cho các Section nếu thấy nó cũng quá thưa
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+\usepackage{titlesec}
+\usepackage{etoolbox}
+\usepackage{array}
+\usepackage{titletoc}
+\usepackage{xcolor}
+
+% 1. Đảm bảo hyperref nhận màu xanh cho cả cụm (nếu chưa có)
+\hypersetup{colorlinks=true, linkcolor=blue}
+
+% 2. Cấu hình lại Mục lục
+\titlecontents{chapter}
+    [0pt]                               % Lề trái
+    {\addvspace{10pt}\bfseries\color{blue}} % Đổi màu cả dòng Chương thành màu xanh
+    {CHƯƠNG \thecontentslabel:\hspace{0.5em}} % Giảm khoảng cách sau dấu ":" bằng \hspace
+    {}                                  
+    {\hfill\contentspage}
+
+% 3. Giảm khoảng cách cho Section (mấy số 1, 2, 3 xanh xanh)
+\titlecontents{section}
+    [1.5em]                             % Thụt lề trái cho Section
+    {\addvspace{3pt}\color{blue}}       % Giữ màu xanh
+    {\thecontentslabel\hspace{0.5em}}   % Giảm khoảng cách giữa số "1" và tiêu đề
+    {}
+    {\titlerule*[0.8pc]{.}\contentspage}
+
+% 4. Tương tự cho Subsection nếu cần
+\titlecontents{subsection}
+    [3.8em]
+    {\addvspace{1pt}\color{blue}}
+    {\thecontentslabel\hspace{0.5em}}
+    {}
+    {\titlerule*[0.8pc]{.}\contentspage}
+
+% Giữ nguyên các định dạng đè số nãy giờ của ông
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+
+% 2. Reset số Section mỗi khi bắt đầu Chương mới
+\makeatletter
+\@addtoreset{section}{chapter}
+\makeatother
+
+% 3. Định nghĩa lại cách hiển thị số cho Section, Subsection, Subsubsection
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+
+% 4. Ép Subsubsection hiện lên trên Mục lục (Table of Contents)
+\setcounter{tocdepth}{3}    % Hiện đến cấp 3 (Subsubsection)
+\setcounter{secnumdepth}{3} % Đánh số đến cấp 3
+% 5. Tùy chỉnh nốt cho Subsubsection (Cấp 1.1.1)
+\titlecontents{subsubsection}
+    [6.5em]                             % Thụt lề trái (tăng lên để không đè lên subsection)
+    {\addvspace{1pt}\color{blue}}       % Vẫn màu xanh cho đồng bộ
+    {\thecontentslabel\hspace{0.5em}}   % Giảm khoảng cách số 1.1.1 với tiêu đề
+    {}
+    {\titlerule*[0.8pc]{.}\contentspage}
 % ============ DOCUMENT ============
 \begin{document}
 
@@ -55,8 +123,11 @@ Trường Đại học Khoa học Tự nhiên - ĐHQG HCM\\
 \pagenumbering{arabic}
 \setcounter{page}{1}
 
-\input{content/I-GioiThieu}
-
+\input{content/C1.tex}
+\input{content/C2.tex}
+\input{content/C3.tex}
+\input{content/C4.tex}
+\input{content/C5.tex}
 
 % References
 \input{ref/ref.tex}
