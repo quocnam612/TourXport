@@ -19,8 +19,8 @@ services:
 
   ai_backend:
     build: ./ai_backend
-    expose:
-      - "8000" # Chỉ mở nội bộ
+    ports:
+      - "${PORT_AI_BACKEND:-8000}:8000"
     env_file: .env
     develop:
       watch:
