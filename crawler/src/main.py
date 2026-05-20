@@ -37,7 +37,35 @@ def parse_kwargs(unknown_args):
     return kwargs
 
 def main():
-    parser = argparse.ArgumentParser(description="TourXport Crawler CLI")
+    description = (
+        "TourXport Crawler CLI"
+    )
+    epilog = """
+location_search:     --query, --lang, --units
+hotels_list:         --query, --adults, --rooms, --nights, --checkin, --offset, --pricesmax, --pricesmin, 
+                     --zff, --subcategory, --hotel_class, --currency, --amenities, --child_rm_ages, 
+                     --order, --limit, --sort, --lang
+hotels_details:      --query, --checkin, --adults, --lang, --child_rm_ages, --currency, --nights, --rooms
+restaurants_list:    --query, --currency, --lunit, --limit, --offset, --lang, --restaurant_tagcategory,
+                     --restaurant_tagcategory_standalone, --restaurant_mealtype, --combined_food,
+                     --dietary_restrictions, --prices_restaurant, --min_rating, --open_now, 
+                     --restaurant_styles, --restaurant_dining_options
+restaurants_details: --query, --currency, --lang
+attractions_list:    --query, --currency, --lang, --lunit, --min_rating, --limit, --sort, --bookable_first, 
+                     --subcategory, --offset
+attractions_details: --query, --currency, --lang
+reviews_list:        --query, --keyword, --limit, --currency, --offset, --lang
+photos_list:         --query, --currency, --limit, --offset, --lang
+questions_list:      --query, --offset, --limit
+answers_list:        --query, --offset, --limit
+
+Example: python src/main.py --task restaurants_list --query 293919 --limit 10 --currency EUR
+"""
+    parser = argparse.ArgumentParser(
+        description=description, 
+        epilog=epilog,
+        formatter_class=argparse.RawTextHelpFormatter
+    )
     parser.add_argument("--task", type=str, required=True, 
                         choices=[
                             "location_search", 
@@ -54,34 +82,37 @@ def main():
                             "google-maps"
                         ],
                         help="The task you want to run.")
-    parser.add_argument("--query", type=str, required=True,
-                        help="The search query, location ID, or question ID.")
-    parser.add_argument("--adults", type=int, default=1, help="Number of adults (for hotels_list).")
-    parser.add_argument("--rooms", type=int, default=1, help="Number of rooms (for hotels_list).")
-    parser.add_argument("--nights", type=int, default=1, help="Number of nights (for hotels_list).")
 
     args, unknown = parser.parse_known_args()
     kwargs = parse_kwargs(unknown)
+    
+    query = kwargs.pop("query", None)
+    if not query:
+        print("Error: --query is required for all tasks.")
+        return
 
     if args.task == "location_search":
-        print(f"Searching for: {args.query} with {kwargs}")
-        locations_search(query=args.query, **kwargs)
+        print(f"Searching for: {query} with {kwargs}")
+        locations_search(query=query, **kwargs)
         
     elif args.task == "google-maps":
-        print(f"Running Google Maps scraper for: {args.query}")
-        asyncio.run(scrape_gmaps_restaurants(query=args.query))
+        print(f"Running Google Maps scraper for: {query}")
+        asyncio.run(scrape_gmaps_restaurants(query=query))
         
     else:
         # All other tasks expect an integer ID
         try:
-            target_id = int(args.query)
+            target_id = int(query)
         except ValueError:
             print(f"Error: query must be a valid integer ID for task '{args.task}'.")
             return
 
         if args.task == "hotels_list":
+            if "adults" not in kwargs: kwargs["adults"] = 1
+            if "rooms" not in kwargs: kwargs["rooms"] = 1
+            if "nights" not in kwargs: kwargs["nights"] = 1
             print(f"Fetching hotels for location_id: {target_id} with {kwargs}")
-            hotels_list_id(location_id=target_id, adults=args.adults, rooms=args.rooms, nights=args.nights, **kwargs)
+            hotels_list_id(location_id=target_id, **kwargs)
             
         elif args.task == "hotels_details":
             print(f"Fetching hotel details for location_id: {target_id} with {kwargs}")
