@@ -23,6 +23,26 @@ String get apiBaseUrl {
   return 'http://localhost:3000';
 }
 
+/// Base URL cho AI Backend (Python - FastAPI)
+String get aiBaseUrl {
+  final override = _kApiBaseFromEnv.trim();
+  if (override.isNotEmpty) {
+    // Nếu override có chứa port, ta giả định nó là base chung, nhưng AI thường chạy port khác.
+    // Tuy nhiên để đơn giản, nếu người dùng cung cấp API_BASE_URL, ta dùng nó làm base cho cả 2 hoặc xử lý logic riêng.
+    // Ở đây ta mặc định port 8000 cho AI.
+    final base = override.endsWith('/') ? override.substring(0, override.length - 1) : override;
+    if (base.contains(':3000')) return base.replaceFirst(':3000', ':8000');
+    return base;
+  }
+  if (kIsWeb) {
+    return 'http://localhost:8000';
+  }
+  if (Platform.isAndroid) {
+    return 'http://10.0.2.2:8000';
+  }
+  return 'http://localhost:8000';
+}
+
 final http.Client _client = http.Client();
 
 Map<String, String> _buildHeaders({String? token}) {
@@ -52,6 +72,21 @@ Future<http.Response> apiPostJson(
     headers: _buildHeaders(token: token),
     body: jsonEncode(body),
   );
+}
+
+/// Gọi API tới AI Backend (timeout dài hơn vì OpenAI cần xử lý 15-60s)
+Future<http.Response> apiAiPostJson(
+  String path,
+  Map<String, dynamic> body, {
+  String? token,
+  Duration timeout = const Duration(seconds: 120),
+}) {
+  final uri = Uri.parse('$aiBaseUrl$path');
+  return _client.post(
+    uri,
+    headers: _buildHeaders(token: token),
+    body: jsonEncode(body),
+  ).timeout(timeout);
 }
 
 Future<http.Response> apiDeleteJson(
@@ -108,3 +143,4 @@ Map<String, dynamic>? tryDecodeJsonObject(String body) {
   } catch (_) {}
   return null;
 }
+

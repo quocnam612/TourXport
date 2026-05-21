@@ -120,4 +120,67 @@ class SurveyAnswer {
       'vibe_style': vibeStyle,
     };
   }
+
+  // ── AI Helpers ──
+
+  /// Chuyển đổi chuỗi ngân sách sang số (VND)
+  double parseAiBudget() {
+    if (budget == null) return 5000000.0;
+    switch (budget) {
+      case 'Dưới 2 triệu': return 1500000.0;
+      case '2–5 triệu': return 3500000.0;
+      case '5–10 triệu': return 7500000.0;
+      case '10–20 triệu': return 15000000.0;
+      case 'Trên 20 triệu': return 25000000.0;
+      default: return 5000000.0;
+    }
+  }
+
+  /// Chuyển đổi chuỗi thời gian sang số ngày
+  int parseAiDurationDays() {
+    if (duration == null) return 3;
+    switch (duration) {
+      case '1 ngày': return 1;
+      case '2–3 ngày': return 3;
+      case '4–7 ngày': return 5;
+      case 'Trên 1 tuần': return 10;
+      default: return 3;
+    }
+  }
+
+  /// Tổng hợp tất cả câu trả lời thành 1 chuỗi mô tả sở thích cho AI
+  String toAiPreferencesString() {
+    final buffer = StringBuffer();
+    
+    if (travelFeelings.isNotEmpty) {
+      buffer.write("Cảm giác muốn có: ${travelFeelings.join(', ')}. ");
+    }
+    if (groupType != null) {
+      buffer.write("Đi du lịch theo hình thức: $groupType. ");
+    }
+    
+    buffer.write("Phong cách: ${sliderRelaxExplore > 0.5 ? 'Khám phá' : 'Nghỉ dưỡng'}, ");
+    buffer.write("${sliderQuietLively > 0.5 ? 'Sôi động' : 'Yên tĩnh'}, ");
+    buffer.write("${sliderPlannedFree > 0.5 ? 'Tự do' : 'Kế hoạch'}, ");
+    buffer.write("${sliderNatureCity > 0.5 ? 'Thành phố' : 'Thiên nhiên'}. ");
+
+    if (activities.isNotEmpty) {
+      buffer.write("Hoạt động yêu thích: ${activities.join(', ')}. ");
+    }
+    if (placeTypes.isNotEmpty) {
+      buffer.write("Kiểu địa điểm: ${placeTypes.join(', ')}. ");
+    }
+    if (vibeStyle != null) {
+      buffer.write("Vibe mong muốn: $vibeStyle. ");
+    }
+    if (avoidList.isNotEmpty) {
+      buffer.write("Muốn tránh: ${avoidList.join(', ')}. ");
+    }
+    if (specialNeeds.isNotEmpty) {
+      buffer.write("Yêu cầu đặc biệt: ${specialNeeds.join(', ')}. ");
+    }
+
+    return buffer.toString().trim();
+  }
 }
+

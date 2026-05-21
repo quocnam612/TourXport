@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../api/api.dart';
 import '../models/destination.dart';
+import 'map_screen.dart';
 
 class PlaceDetailScreen extends StatefulWidget {
   final Destination destination;
@@ -666,7 +667,14 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
               children: [
                 Expanded(
                   child: GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MapScreen(destination: widget.destination),
+                        ),
+                      );
+                    },
                     child: Container(
                       height: 56,
                       decoration: BoxDecoration(

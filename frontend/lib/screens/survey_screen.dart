@@ -67,7 +67,10 @@ class _SurveyScreenState extends State<SurveyScreen>
     } else {
       _syncAnswers();
       Navigator.push(context, PageRouteBuilder(
-        pageBuilder: (_, __, ___) => SurveyResultScreen(answer: _answer),
+        pageBuilder: (_, __, ___) => SurveyResultScreen(
+          answer: _answer,
+          authToken: widget.authToken,
+        ),
         transitionDuration: const Duration(milliseconds: 500),
         reverseTransitionDuration: const Duration(milliseconds: 400),
         transitionsBuilder: (_, anim, __, child) {
