@@ -1,4 +1,5 @@
 class Destination {
+  final String? id;
   final String name;
   final String province;
   final String price;
@@ -8,6 +9,7 @@ class Destination {
   final double longitude;
 
   const Destination({
+    this.id,
     required this.name,
     required this.province,
     required this.price,
@@ -18,19 +20,27 @@ class Destination {
   });
 
   factory Destination.fromJson(Map<String, dynamic> json) {
+    final String idVal = (json['_id'] ?? json['id'] ?? '') as String;
+    final String nameVal = (json['title'] ?? json['name'] ?? '') as String;
+    final String provinceVal = (json['state'] ?? json['city'] ?? json['province'] ?? '') as String;
+
+    final sample = findSampleDestination(nameVal);
+
     return Destination(
-      name: (json['name'] ?? '') as String,
-      province: (json['province'] ?? '') as String,
-      price: (json['price'] ?? '') as String,
-      imagePath: (json['imagePath'] ?? '') as String,
-      bgBlurPath: (json['bgBlurPath'] ?? json['imagePath'] ?? '') as String,
-      latitude: ((json['latitude'] ?? 0.0) as num).toDouble(),
-      longitude: ((json['longitude'] ?? 0.0) as num).toDouble(),
+      id: idVal.isNotEmpty ? idVal : null,
+      name: nameVal.isNotEmpty ? nameVal : (sample?.name ?? ''),
+      province: provinceVal.isNotEmpty ? provinceVal : (sample?.province ?? ''),
+      price: (json['price'] ?? sample?.price ?? 'Chỉ từ 1.5 triệu đồng') as String,
+      imagePath: (json['imagePath'] ?? sample?.imagePath ?? 'assets/images/halong.jpg') as String,
+      bgBlurPath: (json['bgBlurPath'] ?? json['imagePath'] ?? sample?.bgBlurPath ?? 'assets/images/halong.jpg') as String,
+      latitude: ((json['latitude'] ?? sample?.latitude ?? 0.0) as num).toDouble(),
+      longitude: ((json['longitude'] ?? sample?.longitude ?? 0.0) as num).toDouble(),
     );
   }
 
   Map<String, dynamic> toJson() {
     return {
+      if (id != null) 'id': id,
       'name': name,
       'province': province,
       'price': price,
@@ -41,6 +51,23 @@ class Destination {
     };
   }
 }
+
+Destination? findSampleDestination(String name) {
+  if (name.isEmpty) return null;
+  for (var d in sampleDestinations) {
+    if (d.name.toLowerCase().trim() == name.toLowerCase().trim()) {
+      return d;
+    }
+  }
+  for (var d in sampleDestinations) {
+    if (d.name.toLowerCase().contains(name.toLowerCase()) || 
+        name.toLowerCase().contains(d.name.toLowerCase())) {
+      return d;
+    }
+  }
+  return null;
+}
+
 
 const List<Destination> sampleDestinations = [
   Destination(

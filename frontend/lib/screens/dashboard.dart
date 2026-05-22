@@ -119,7 +119,7 @@ class _HomeScreenState extends State<HomeScreen>
     setState(() => _isLoadingSavedPlaces = true);
 
     try {
-      final response = await apiGet('/auth/saved-places', token: token);
+      final response = await apiGet('/auth/profile/saved-places', token: token);
       final data = tryDecodeJsonObject(response.body);
 
       if (!mounted) return;
@@ -787,15 +787,35 @@ class _HomeScreenState extends State<HomeScreen>
     setState(() => _updatingSavedNames.add(dest.name));
 
     try {
+      String? placeId = dest.id;
+      if (placeId == null || placeId.isEmpty) {
+        final savedMatch = _savedDestinations.firstWhere(
+          (item) => item.name.toLowerCase() == dest.name.toLowerCase(),
+          orElse: () => const Destination(name: '', province: '', price: '', imagePath: '', bgBlurPath: ''),
+        );
+        if (savedMatch.name.isNotEmpty) {
+          placeId = savedMatch.id;
+        }
+      }
+
+      if ((placeId == null || placeId.isEmpty) && !currentlySaved) {
+        placeId = await resolvePlaceIdByName(dest.name, token: token);
+      }
+
+      if (placeId == null || placeId.isEmpty) {
+        _showMessage('Không tìm thấy thông tin địa điểm này trên hệ thống');
+        return currentlySaved;
+      }
+
       final response = currentlySaved
           ? await apiDeleteJson(
-              '/auth/saved-places',
-              {'name': dest.name},
+              '/auth/profile/saved-places/$placeId',
+              {},
               token: token,
             )
           : await apiPostJson(
-              '/auth/saved-places',
-              dest.toJson(),
+              '/auth/profile/saved-places',
+              {'placeId': placeId},
               token: token,
             );
 
@@ -803,7 +823,7 @@ class _HomeScreenState extends State<HomeScreen>
       if (!mounted) return currentlySaved;
 
       if (response.statusCode == 200 && data?['success'] == true) {
-        _applySavedPlacesPayload(data!);
+        await _loadSavedPlaces();
         _showMessage(
           currentlySaved
               ? 'Đã bỏ lưu ${dest.name}'
@@ -915,6 +935,7 @@ class _HomeScreenState extends State<HomeScreen>
     final isLiked = result['isLiked'];
     if (isSaved != null) {
       _applySavedStateFromDetail(dest, isSaved);
+      _loadSavedPlaces();
     }
     if (isLiked != null) {
       setState(() {

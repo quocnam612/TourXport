@@ -144,3 +144,24 @@ Map<String, dynamic>? tryDecodeJsonObject(String body) {
   return null;
 }
 
+/// Resolves a place ID by searching the backend using `/locations/search`
+Future<String?> resolvePlaceIdByName(String name, {String? token}) async {
+  if (name.isEmpty) return null;
+  try {
+    final response = await apiPostJson(
+      '/locations/search',
+      {'query': name},
+      token: token,
+    );
+    final data = tryDecodeJsonObject(response.body);
+    if (response.statusCode == 200 && data?['success'] == true) {
+      final list = data!['data'];
+      if (list is List && list.isNotEmpty) {
+        return list.first['_id'] as String?;
+      }
+    }
+  } catch (_) {}
+  return null;
+}
+
+

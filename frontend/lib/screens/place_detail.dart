@@ -102,15 +102,25 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     final dest = widget.destination;
 
     try {
+      String? placeId = dest.id;
+      if (placeId == null || placeId.isEmpty) {
+        placeId = await resolvePlaceIdByName(dest.name, token: token);
+      }
+
+      if (placeId == null || placeId.isEmpty) {
+        _showMessage('Không tìm thấy thông tin địa điểm này trên hệ thống');
+        return;
+      }
+
       final response = _isSaved
           ? await apiDeleteJson(
-              '/auth/saved-places',
-              {'name': dest.name},
+              '/auth/profile/saved-places/$placeId',
+              {},
               token: token,
             )
           : await apiPostJson(
-              '/auth/saved-places',
-              dest.toJson(),
+              '/auth/profile/saved-places',
+              {'placeId': placeId},
               token: token,
             );
 
