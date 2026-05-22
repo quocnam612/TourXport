@@ -4,6 +4,21 @@ import jwt from 'jsonwebtoken';
 import UserDB from '../models/UserDB.js';
 import config from '../config/config.js';
 
+// Helper functions for validation
+const isValidEmail = (email) => {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
+};
+
+const isValidPhone = (phone) => {
+    const phoneRegex = /^0\d{9}$/;
+    return phoneRegex.test(phone);
+};
+
+const isValidPassword = (password) => {
+    return password.length >= 8;
+};
+
 export const login = async (req, res) => {
     try {
         const { phone, email, password } = req.body;
@@ -61,6 +76,30 @@ export const register = async (req, res) => {
             return res.status(400).json({ //400 Bad Request
                 success: false,
                 message: 'Please provide all required fields!'
+            });
+        }
+
+        // Validate email format
+        if (!isValidEmail(email)) {
+            return res.status(400).json({
+                success: false,
+                message: 'Invalid email format! Please provide a valid email address.'
+            });
+        }
+
+        // Validate phone format if provided
+        if (phone && !isValidPhone(phone)) {
+            return res.status(400).json({
+                success: false,
+                message: 'Invalid phone number format! Phone must be 10 digits and start with 0.'
+            });
+        }
+
+        // Validate password length
+        if (!isValidPassword(password)) {
+            return res.status(400).json({
+                success: false,
+                message: 'Password must be at least 8 characters long.'
             });
         }
 
