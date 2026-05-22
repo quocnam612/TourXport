@@ -7,6 +7,16 @@ const placeSchema = new mongoose.Schema({
         trim: true
     },
 
+    description: {
+        type: String,
+        default: ''
+    },
+
+    imageUrl: {
+        type: String,
+        default: ''
+    },
+
     totalScore: {
         type: Number,
         default: 0
@@ -17,19 +27,47 @@ const placeSchema = new mongoose.Schema({
         default: 0
     },
 
-    street: String,
-    city: String,
-    state: String,
-    countryCode: String,
+    city: {
+        type: String,
+        default: ''
+    },
 
-    website: String,
-    phone: String,
+    state: {
+        type: String,
+        default: ''
+    },
 
-    categories: [String],
-    categoryName: String,
+    countryCode: {
+        type: String,
+        default: 'VN'
+    },
 
-    url: String
+    categories: {
+        type: [String],
+        default: []
+    },
 
-}, { timestamps: true });
+    categoryName: {
+        type: String,
+        default: ''
+    },
+
+    priceRange: {
+        type: String,
+        default: ''
+    }
+
+}, {
+    timestamps: true
+});
+
+// Full-text search index
+placeSchema.index({
+    title: 'text',
+    description: 'text',
+    city: 'text',
+    state: 'text',
+    categories: 'text'
+});
 
 export default mongoose.model('PlaceDB', placeSchema, 'places');

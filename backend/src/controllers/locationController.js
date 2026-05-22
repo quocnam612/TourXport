@@ -1,21 +1,48 @@
 import mongoose from 'mongoose';
 import PlaceDB from '../models/PlaceDB.js';
 
+// GET ALL LOCATIONS
 export const getLocations = async (req, res) => {
     try {
-        const data = await PlaceDB.find().limit(50);
+        const {
+            page = 1,
+            limit = 10
+        } = req.query;
 
-        res.json({ success: true, data });
+        const skip = (page - 1) * limit;
+
+        const data = await PlaceDB.find()
+            .sort({
+                totalScore: -1,
+                reviewsCount: -1
+            })
+            .skip(skip)
+            .limit(Number(limit));
+
+        const total = await PlaceDB.countDocuments();
+
+        res.status(200).json({
+            success: true,
+            total,
+            currentPage: Number(page),
+            totalPages: Math.ceil(total / limit),
+            data
+        });
+
     } catch (err) {
-        res.status(500).json({ success: false, message: err.message });
+        res.status(500).json({
+            success: false,
+            message: err.message
+        });
     }
 };
 
+// GET LOCATION BY ID
 export const getLocationById = async (req, res) => {
     try {
         const { id } = req.params;
 
-        // ✅ Validate ObjectId
+        // Validate ObjectId
         if (!mongoose.Types.ObjectId.isValid(id)) {
             return res.status(400).json({
                 success: false,
@@ -32,64 +59,124 @@ export const getLocationById = async (req, res) => {
             });
         }
 
-        res.json({
+        res.status(200).json({
             success: true,
             data: location
         });
 
     } catch (err) {
-        res.status(500).json({ success: false, message: err.message });
+        res.status(500).json({
+            success: false,
+            message: err.message
+        });
     }
 };
 
+// SEARCH LOCATIONS
 export const searchLocations = async (req, res) => {
     try {
-        const { query, category, city, limit = 10 } = req.body;
+        const {
+            query,
+            category,
+            city,
+            minRating,
+            page = 1,
+            limit = 10
+        } = req.body;
 
         const filter = {};
 
-        // 🔍 search theo tên
+        // Full-text search
         if (query) {
-            filter.title = { $regex: query, $options: 'i' };
+            filter.$text = {
+                $search: query
+            };
         }
 
-        // 📍 filter city
+        // Filter city
         if (city) {
-            filter.city = { $regex: city, $options: 'i' };
+            filter.city = {
+                $regex: city,
+                $options: 'i'
+            };
         }
 
-        // 🏷️ filter category
+        // Filter category
         if (category) {
             filter.categories = category;
         }
 
-        const data = await PlaceDB.find(filter)
-            .sort({ totalScore: -1 }) // ưu tiên rating cao
-            .limit(limit);
+        // Filter minimum rating
+        if (minRating) {
+            filter.totalScore = {
+                $gte: minRating
+            };
+        }
 
-        res.json({ success: true, data });
+        const skip = (page - 1) * limit;
+
+        const data = await PlaceDB.find(filter)
+            .sort({
+                totalScore: -1,
+                reviewsCount: -1
+            })
+            .skip(skip)
+            .limit(Number(limit));
+
+        const total = await PlaceDB.countDocuments(filter);
+
+        res.status(200).json({
+            success: true,
+            total,
+            currentPage: Number(page),
+            totalPages: Math.ceil(total / limit),
+            data
+        });
 
     } catch (err) {
-        res.status(500).json({ success: false, message: err.message });
+        res.status(500).json({
+            success: false,
+            message: err.message
+        });
     }
 };
 
+// GET NEARBY LOCATIONS
 export const getNearbyLocations = async (req, res) => {
     try {
         const { city, category } = req.query;
 
         const filter = {};
 
-        if (city) filter.city = city;
-        if (category) filter.categories = category;
+        // Filter city
+        if (city) {
+            filter.city = {
+                $regex: city,
+                $options: 'i'
+            };
+        }
+
+        // Filter category
+        if (category) {
+            filter.categories = category;
+        }
 
         const data = await PlaceDB.find(filter)
-            .sort({ totalScore: -1 })
+            .sort({
+                totalScore: -1,
+                reviewsCount: -1
+            })
             .limit(10);
 
-        res.json({ success: true, data });
+        res.status(200).json({
+            success: true,
+            data
+        });
 
     } catch (err) {
-        res.status(500).json({ success: false, message: err.message });
+        res.status(500).json({
+            success: false,
+            message: err.message
+        });
     }
 };
