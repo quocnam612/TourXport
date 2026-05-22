@@ -26,6 +26,22 @@ class _SignUpScreenState extends State<SignUpScreen>
 
   bool _isLoading = false;
 
+  bool _isValidEmail(String email) {
+    final emailRegex = RegExp(
+      r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$',
+    );
+    return emailRegex.hasMatch(email);
+  }
+
+  bool _isValidPhone(String phone) {
+    final phoneRegex = RegExp(r'^0\d{9}$');
+    return phoneRegex.hasMatch(phone);
+  }
+
+  bool _isValidPassword(String password) {
+    return password.length >= 8;
+  }
+
   void _handleRegister() async {
     final name = _nameController.text.trim();
     final phone = _phoneController.text.trim();
@@ -37,6 +53,28 @@ class _SignUpScreenState extends State<SignUpScreen>
       showAuthErrorToast(context, 'Vui lòng điền đủ các trường bắt buộc');
       return;
     }
+
+    if (!_isValidEmail(email)) {
+      showAuthErrorToast(
+        context,
+        'Vui lòng nhập email hợp lệ (ví dụ: abc@gmail.com)',
+      );
+      return;
+    }
+
+    if (phone.isNotEmpty && !_isValidPhone(phone)) {
+      showAuthErrorToast(
+        context,
+        'Vui lòng nhập số điện thoại hợp lệ (10 chữ số, bắt đầu với 0)',
+      );
+      return;
+    }
+
+    if (!_isValidPassword(password)) {
+      showAuthErrorToast(context, 'Mật khẩu phải có ít nhất 8 ký tự');
+      return;
+    }
+
     if (password != confirm) {
       showAuthErrorToast(context, 'Mật khẩu xác nhận không khớp');
       return;
@@ -75,7 +113,10 @@ class _SignUpScreenState extends State<SignUpScreen>
     } catch (e) {
       if (!mounted) return;
       setState(() => _isLoading = false);
-      showAuthErrorToast(context, 'Không kết nối được server. Đã bật backend chưa? ($e)');
+      showAuthErrorToast(
+        context,
+        'Không kết nối được server. Đã bật backend chưa? ($e)',
+      );
     }
   }
 
@@ -86,7 +127,8 @@ class _SignUpScreenState extends State<SignUpScreen>
   late final Animation<double> _contentFade;
 
   // Sheet controller for parallax
-  final DraggableScrollableController _sheetCtrl = DraggableScrollableController();
+  final DraggableScrollableController _sheetCtrl =
+      DraggableScrollableController();
   double _sheetFraction = 0.72;
 
   @override
@@ -169,13 +211,18 @@ class _SignUpScreenState extends State<SignUpScreen>
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
                 child: Container(
-                  width: 46, height: 46,
+                  width: 46,
+                  height: 46,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     color: Colors.white.withOpacity(0.15),
                     border: Border.all(color: Colors.white.withOpacity(0.25)),
                   ),
-                  child: const Icon(Icons.arrow_back_ios_new, color: Colors.white, size: 20),
+                  child: const Icon(
+                    Icons.arrow_back_ios_new,
+                    color: Colors.white,
+                    size: 20,
+                  ),
                 ),
               ),
             ),
@@ -190,10 +237,7 @@ class _SignUpScreenState extends State<SignUpScreen>
       child: Stack(
         fit: StackFit.expand,
         children: [
-          Image.asset(
-            'assets/images/login_bg.jpg',
-            fit: BoxFit.cover,
-          ),
+          Image.asset('assets/images/login_bg.jpg', fit: BoxFit.cover),
           // Light blur on the background
           BackdropFilter(
             filter: ImageFilter.blur(sigmaX: 3, sigmaY: 3),
@@ -238,21 +282,32 @@ class _SignUpScreenState extends State<SignUpScreen>
                       Colors.black.withOpacity(0.55),
                     ],
                   ),
-                  borderRadius: const BorderRadius.vertical(top: Radius.circular(36)),
+                  borderRadius: const BorderRadius.vertical(
+                    top: Radius.circular(36),
+                  ),
                   border: Border(
-                    top: BorderSide(color: Colors.white.withOpacity(0.1), width: 1),
+                    top: BorderSide(
+                      color: Colors.white.withOpacity(0.1),
+                      width: 1,
+                    ),
                   ),
                 ),
                 child: FadeTransition(
                   opacity: _contentFade,
                   child: ListView(
                     controller: scrollCtrl,
-                    padding: EdgeInsets.fromLTRB(24 * s, 12, 24 * s, MediaQuery.viewInsetsOf(context).bottom + 24),
+                    padding: EdgeInsets.fromLTRB(
+                      24 * s,
+                      12,
+                      24 * s,
+                      MediaQuery.viewInsetsOf(context).bottom + 24,
+                    ),
                     children: [
                       // Drag handle
                       Center(
                         child: Container(
-                          width: 42, height: 5,
+                          width: 42,
+                          height: 5,
                           margin: const EdgeInsets.only(bottom: 16),
                           decoration: BoxDecoration(
                             color: Colors.white.withOpacity(0.2),
@@ -312,8 +367,9 @@ class _SignUpScreenState extends State<SignUpScreen>
                         controller: _passwordController,
                         isPassword: true,
                         obscure: _obscurePassword,
-                        onToggleObscure: () =>
-                            setState(() => _obscurePassword = !_obscurePassword),
+                        onToggleObscure: () => setState(
+                          () => _obscurePassword = !_obscurePassword,
+                        ),
                         s: s,
                       ),
                       SizedBox(height: 14 * s),
@@ -367,17 +423,24 @@ class _SignUpScreenState extends State<SignUpScreen>
                           ),
                           alignment: Alignment.center,
                           child: _isLoading
-                            ? const SizedBox(width: 24, height: 24, child: CircularProgressIndicator(color: Colors.white, strokeWidth: 2))
-                            : Text(
-                            'Đăng ký',
-                            style: TextStyle(
-                              fontFamily: 'Montserrat',
-                              fontWeight: FontWeight.w500,
-                              fontSize: 24 * s,
-                              color: Colors.white.withOpacity(0.9),
-                              letterSpacing: 0.5,
-                            ),
-                          ),
+                              ? const SizedBox(
+                                  width: 24,
+                                  height: 24,
+                                  child: CircularProgressIndicator(
+                                    color: Colors.white,
+                                    strokeWidth: 2,
+                                  ),
+                                )
+                              : Text(
+                                  'Đăng ký',
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 24 * s,
+                                    color: Colors.white.withOpacity(0.9),
+                                    letterSpacing: 0.5,
+                                  ),
+                                ),
                         ),
                       ),
                       SizedBox(height: 20 * s),
@@ -392,8 +455,7 @@ class _SignUpScreenState extends State<SignUpScreen>
                             ),
                           ),
                           Padding(
-                            padding:
-                                EdgeInsets.symmetric(horizontal: 10 * s),
+                            padding: EdgeInsets.symmetric(horizontal: 10 * s),
                             child: Text(
                               'Hoặc',
                               style: TextStyle(
@@ -458,8 +520,7 @@ class _SignUpScreenState extends State<SignUpScreen>
                                 fontSize: 15 * s,
                                 color: Colors.white,
                                 decoration: TextDecoration.underline,
-                                decorationColor:
-                                    Colors.white.withOpacity(0.6),
+                                decorationColor: Colors.white.withOpacity(0.6),
                               ),
                             ),
                           ),
@@ -507,10 +568,7 @@ class _SignUpScreenState extends State<SignUpScreen>
           decoration: BoxDecoration(
             color: Colors.white.withOpacity(0.14),
             borderRadius: BorderRadius.circular(40),
-            border: Border.all(
-              color: Colors.white.withOpacity(0.25),
-              width: 1,
-            ),
+            border: Border.all(color: Colors.white.withOpacity(0.25), width: 1),
           ),
           child: TextField(
             controller: controller,
@@ -549,9 +607,7 @@ class _SignUpScreenState extends State<SignUpScreen>
                             );
                           },
                           child: Icon(
-                            obscure
-                                ? Icons.visibility_off
-                                : Icons.visibility,
+                            obscure ? Icons.visibility_off : Icons.visibility,
                             key: ValueKey<bool>(obscure),
                             color: Colors.white.withOpacity(0.6),
                             size: 22 * s,
