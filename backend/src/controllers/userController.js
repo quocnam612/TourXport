@@ -1,10 +1,10 @@
 import bcrypt from 'bcrypt';
 
-import config from '../config/config.js';
-import { generateToken } from '../utils/jwt.js'
-;
 import UserDB from '../models/UserDB.js';
 import PlaceDB from '../models/PlaceDB.js';
+import config from '../config/config.js';
+import validate from '../utils/validators.js';
+import { generateToken } from '../utils/jwt.js';
 
 export const login = async (req, res) => {
     try {
