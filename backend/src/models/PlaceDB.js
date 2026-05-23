@@ -1,18 +1,18 @@
 import mongoose from 'mongoose';
 
 const placeSchema = new mongoose.Schema({
+    sourceLocationId: {
+        type: String,
+        default: null
+    },
+
     title: {
         type: String,
         required: true,
         trim: true
     },
 
-    description: {
-        type: String,
-        default: ''
-    },
-
-    imageUrl: {
+    city: {
         type: String,
         default: ''
     },
@@ -22,32 +22,17 @@ const placeSchema = new mongoose.Schema({
         default: 0
     },
 
+    ranking: {
+        type: String,
+        default: ''
+    },
+
     reviewsCount: {
         type: Number,
         default: 0
     },
 
-    city: {
-        type: String,
-        default: ''
-    },
-
-    state: {
-        type: String,
-        default: ''
-    },
-
-    countryCode: {
-        type: String,
-        default: 'VN'
-    },
-
-    categories: {
-        type: [String],
-        default: []
-    },
-
-    categoryName: {
+    category: {
         type: String,
         default: ''
     },
@@ -55,19 +40,86 @@ const placeSchema = new mongoose.Schema({
     priceRange: {
         type: String,
         default: ''
+    },
+
+    description: {
+        type: String,
+        default: ''
+    },
+
+    embedding: {
+        type: mongoose.Schema.Types.Mixed,
+        default: null
+    },
+
+    searchText: {
+        type: String,
+        default: ''
+    },
+
+    tags: {
+        type: [String],
+        default: []
+    },
+
+    image: {
+        url: {
+            type: String,
+            default: ''
+        },
+
+        publicId: {
+            type: String,
+            default: ''
+        },
+
+        source: {
+            type: String,
+            default: ''
+        }
+    },
+
+    location: {
+        type: {
+            type: String,
+            enum: ['Point'],
+            default: 'Point'
+        },
+
+        coordinates: {
+            type: [Number],
+            default: [0, 0]
+        }
+    },
+
+    openingHours: {
+        type: mongoose.Schema.Types.Mixed,
+        default: null
+    },
+
+    highlights: {
+        type: [String],
+        default: []
     }
 
 }, {
     timestamps: true
 });
 
-// Full-text search index
+
+// TEXT SEARCH INDEX
 placeSchema.index({
     title: 'text',
-    description: 'text',
     city: 'text',
-    state: 'text',
-    categories: 'text'
+    category: 'text',
+    searchText: 'text',
+    tags: 'text'
+});
+
+
+// GEO INDEX
+placeSchema.index({
+    location: '2dsphere'
 });
 
 export default mongoose.model('PlaceDB', placeSchema, 'places');
