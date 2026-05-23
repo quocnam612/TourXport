@@ -18,6 +18,7 @@ import 'place_detail.dart';
 import 'profile_section.dart';
 import 'saved_place.dart';
 import 'survey_screen.dart';
+import 'sign_in.dart';
 
 class HomeScreen extends StatefulWidget {
   final String userName;
@@ -33,8 +34,7 @@ class HomeScreen extends StatefulWidget {
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen>
-    with TickerProviderStateMixin {
+class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   int _currentIndex = 0;
   int _previousIndex = 0;
   int _navIndex = 0;
@@ -127,7 +127,8 @@ class _HomeScreenState extends State<HomeScreen>
       if (response.statusCode == 200 && data?['success'] == true) {
         _applySavedPlacesPayload(data!);
       } else if (showError) {
-        _showMessage(data?['message'] as String? ?? 'Không tải được danh sách đã lưu');
+        _showMessage(
+            data?['message'] as String? ?? 'Không tải được danh sách đã lưu');
       }
     } catch (_) {
       if (mounted && showError) {
@@ -240,7 +241,8 @@ class _HomeScreenState extends State<HomeScreen>
 
       if (response.statusCode == 200 && data?['success'] == true) {
         _loadProfile(); // Refresh profile data
-        _showMessage(isAvatar ? 'Đã cập nhật ảnh đại diện' : 'Đã cập nhật ảnh bìa');
+        _showMessage(
+            isAvatar ? 'Đã cập nhật ảnh đại diện' : 'Đã cập nhật ảnh bìa');
       } else {
         _showMessage(data?['message'] ?? 'Cập nhật thất bại');
       }
@@ -279,16 +281,19 @@ class _HomeScreenState extends State<HomeScreen>
                   Navigator.pop(context);
                   _pickAndUploadImage(isAvatar);
                 },
-                icon: const Icon(Icons.photo_library_rounded, color: Colors.white),
+                icon: const Icon(Icons.photo_library_rounded,
+                    color: Colors.white),
                 label: const Text(
                   'Chọn từ thư viện',
-                  style: TextStyle(fontFamily: 'Montserrat', fontWeight: FontWeight.w600),
+                  style: TextStyle(
+                      fontFamily: 'Montserrat', fontWeight: FontWeight.w600),
                 ),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFFB5956A),
                   foregroundColor: Colors.white,
                   padding: const EdgeInsets.symmetric(vertical: 16),
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16)),
                   elevation: 8,
                   shadowColor: const Color(0xFFB5956A).withOpacity(0.4),
                 ),
@@ -296,7 +301,8 @@ class _HomeScreenState extends State<HomeScreen>
               const SizedBox(height: 20),
               Row(
                 children: [
-                  Expanded(child: Divider(color: Colors.white.withOpacity(0.1))),
+                  Expanded(
+                      child: Divider(color: Colors.white.withOpacity(0.1))),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 12),
                     child: Text(
@@ -308,7 +314,8 @@ class _HomeScreenState extends State<HomeScreen>
                       ),
                     ),
                   ),
-                  Expanded(child: Divider(color: Colors.white.withOpacity(0.1))),
+                  Expanded(
+                      child: Divider(color: Colors.white.withOpacity(0.1))),
                 ],
               ),
               const SizedBox(height: 20),
@@ -353,11 +360,13 @@ class _HomeScreenState extends State<HomeScreen>
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color(0xFFB5956A).withOpacity(0.2),
                 foregroundColor: const Color(0xFFB5956A),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12)),
               ),
               child: const Text(
                 'Lưu URL',
-                style: TextStyle(fontFamily: 'Montserrat', fontWeight: FontWeight.bold),
+                style: TextStyle(
+                    fontFamily: 'Montserrat', fontWeight: FontWeight.bold),
               ),
             ),
           ],
@@ -402,7 +411,34 @@ class _HomeScreenState extends State<HomeScreen>
             TextButton(
               onPressed: () {
                 Navigator.pop(context); // Close dialog
-                Navigator.of(context).pop(); // Back to Sign In
+                Navigator.pushAndRemoveUntil(
+                  context,
+                  PageRouteBuilder(
+                    pageBuilder: (_, __, ___) => const SignInScreen(),
+                    transitionDuration: const Duration(milliseconds: 600),
+                    reverseTransitionDuration:
+                        const Duration(milliseconds: 400),
+                    transitionsBuilder: (_, animation, __, child) {
+                      return FadeTransition(
+                        opacity: CurvedAnimation(
+                          parent: animation,
+                          curve: Curves.easeInOut,
+                        ),
+                        child: SlideTransition(
+                          position: Tween<Offset>(
+                            begin: const Offset(0, 0.05),
+                            end: Offset.zero,
+                          ).animate(CurvedAnimation(
+                            parent: animation,
+                            curve: Curves.easeOutCubic,
+                          )),
+                          child: child,
+                        ),
+                      );
+                    },
+                  ),
+                  (route) => false,
+                );
               },
               child: const Text(
                 'Đăng xuất',
@@ -438,13 +474,13 @@ class _HomeScreenState extends State<HomeScreen>
   }
 
   Future<void> _editName() => _showEditFieldDialog(
-    'Tên', 
-    'name', 
-    _userData?['name'] ?? '',
-    const Color(0xFFD4AF7A),
-    Icons.person_rounded,
-  );
-  
+        'Tên',
+        'name',
+        _userData?['name'] ?? '',
+        const Color(0xFFD4AF7A),
+        Icons.person_rounded,
+      );
+
   Future<void> _editHelpSupport() async {
     if (_userData == null) return;
     await Navigator.push(
@@ -459,7 +495,8 @@ class _HomeScreenState extends State<HomeScreen>
               position: Tween<Offset>(
                 begin: const Offset(0, 0.05),
                 end: Offset.zero,
-              ).animate(CurvedAnimation(parent: animation, curve: Curves.easeOutCubic)),
+              ).animate(CurvedAnimation(
+                  parent: animation, curve: Curves.easeOutCubic)),
               child: child,
             ),
           );
@@ -482,7 +519,8 @@ class _HomeScreenState extends State<HomeScreen>
               position: Tween<Offset>(
                 begin: const Offset(0, 0.05),
                 end: Offset.zero,
-              ).animate(CurvedAnimation(parent: animation, curve: Curves.easeOutCubic)),
+              ).animate(CurvedAnimation(
+                  parent: animation, curve: Curves.easeOutCubic)),
               child: child,
             ),
           );
@@ -493,7 +531,7 @@ class _HomeScreenState extends State<HomeScreen>
 
   Future<void> _editEmail() async {
     if (_userData == null) return;
-    
+
     final result = await Navigator.push(
       context,
       MaterialPageRoute(
@@ -508,10 +546,10 @@ class _HomeScreenState extends State<HomeScreen>
       _loadProfile();
     }
   }
-  
+
   Future<void> _editPhone() async {
     if (_userData == null) return;
-    
+
     final result = await Navigator.push(
       context,
       MaterialPageRoute(
@@ -532,7 +570,7 @@ class _HomeScreenState extends State<HomeScreen>
       // _showMessage('Vui lòng đợi cấu hình bảo mật đang tải...');
       return;
     }
-    
+
     // _showMessage('Đang mở cài đặt bảo mật...');
     await Navigator.push(
       context,
@@ -547,7 +585,7 @@ class _HomeScreenState extends State<HomeScreen>
 
   Future<void> _editNotifications() async {
     if (_userData == null) return;
-    
+
     await Navigator.push(
       context,
       MaterialPageRoute(
@@ -559,9 +597,10 @@ class _HomeScreenState extends State<HomeScreen>
     );
   }
 
-  Future<void> _showEditFieldDialog(String label, String fieldKey, String initialValue, Color accentColor, IconData icon) async {
+  Future<void> _showEditFieldDialog(String label, String fieldKey,
+      String initialValue, Color accentColor, IconData icon) async {
     final controller = TextEditingController(text: initialValue);
-    
+
     final result = await showModalBottomSheet<bool>(
       context: context,
       isScrollControlled: true,
@@ -598,8 +637,8 @@ class _HomeScreenState extends State<HomeScreen>
                 ),
                 Padding(
                   padding: EdgeInsets.only(
-                    left: 24, 
-                    right: 24, 
+                    left: 24,
+                    right: 24,
                     top: 12,
                     bottom: MediaQuery.of(context).viewInsets.bottom + 24,
                   ),
@@ -652,7 +691,8 @@ class _HomeScreenState extends State<HomeScreen>
                                 color: Colors.white.withOpacity(0.05),
                                 shape: BoxShape.circle,
                               ),
-                              child: const Icon(Icons.close_rounded, color: Colors.white70, size: 20),
+                              child: const Icon(Icons.close_rounded,
+                                  color: Colors.white70, size: 20),
                             ),
                           ),
                         ],
@@ -668,10 +708,11 @@ class _HomeScreenState extends State<HomeScreen>
                         ),
                       ),
                       const SizedBox(height: 40),
-                      
+
                       // Themed Input
                       Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 20, vertical: 10),
                         decoration: BoxDecoration(
                           color: Colors.black.withOpacity(0.2),
                           borderRadius: BorderRadius.circular(20),
@@ -690,9 +731,11 @@ class _HomeScreenState extends State<HomeScreen>
                         child: TextField(
                           controller: controller,
                           autofocus: true,
-                          keyboardType: fieldKey == 'phone' 
-                              ? TextInputType.phone 
-                              : (fieldKey == 'email' ? TextInputType.emailAddress : TextInputType.text),
+                          keyboardType: fieldKey == 'phone'
+                              ? TextInputType.phone
+                              : (fieldKey == 'email'
+                                  ? TextInputType.emailAddress
+                                  : TextInputType.text),
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             color: Colors.white,
@@ -701,14 +744,15 @@ class _HomeScreenState extends State<HomeScreen>
                           ),
                           decoration: InputDecoration(
                             hintText: 'Nhập $label mới...',
-                            hintStyle: TextStyle(color: Colors.white.withOpacity(0.2)),
+                            hintStyle:
+                                TextStyle(color: Colors.white.withOpacity(0.2)),
                             border: InputBorder.none,
                           ),
                         ),
                       ),
-                      
+
                       const Spacer(),
-                      
+
                       // Save Button
                       SizedBox(
                         width: double.infinity,
@@ -720,7 +764,7 @@ class _HomeScreenState extends State<HomeScreen>
                               Navigator.pop(context);
                               return;
                             }
-                            
+
                             final token = widget.authToken?.trim();
                             if (token == null) return;
 
@@ -791,7 +835,8 @@ class _HomeScreenState extends State<HomeScreen>
       if (placeId == null || placeId.isEmpty) {
         final savedMatch = _savedDestinations.firstWhere(
           (item) => item.name.toLowerCase() == dest.name.toLowerCase(),
-          orElse: () => const Destination(name: '', province: '', price: '', imagePath: '', bgBlurPath: ''),
+          orElse: () => const Destination(
+              name: '', province: '', price: '', imagePath: '', bgBlurPath: ''),
         );
         if (savedMatch.name.isNotEmpty) {
           placeId = savedMatch.id;
@@ -825,12 +870,11 @@ class _HomeScreenState extends State<HomeScreen>
       if (response.statusCode == 200 && data?['success'] == true) {
         await _loadSavedPlaces();
         _showMessage(
-          currentlySaved
-              ? 'Đã bỏ lưu ${dest.name}'
-              : 'Đã lưu ${dest.name}',
+          currentlySaved ? 'Đã bỏ lưu ${dest.name}' : 'Đã lưu ${dest.name}',
         );
       } else {
-        _showMessage(data?['message'] as String? ?? 'Không cập nhật được địa điểm đã lưu');
+        _showMessage(data?['message'] as String? ??
+            'Không cập nhật được địa điểm đã lưu');
       }
     } catch (_) {
       if (mounted) {
@@ -855,9 +899,8 @@ class _HomeScreenState extends State<HomeScreen>
         }
       } else {
         _savedNames.remove(dest.name);
-        _savedDestinations = _savedDestinations
-            .where((item) => item.name != dest.name)
-            .toList();
+        _savedDestinations =
+            _savedDestinations.where((item) => item.name != dest.name).toList();
       }
     });
   }
@@ -877,7 +920,8 @@ class _HomeScreenState extends State<HomeScreen>
     return isLiked ? seeded + 1 : seeded;
   }
 
-  Future<void> _openPlaceDetail(Destination dest, BuildContext cardContext) async {
+  Future<void> _openPlaceDetail(
+      Destination dest, BuildContext cardContext) async {
     final useSimpleTransition = _navIndex == 1;
     Rect? cardRect;
 
@@ -1023,10 +1067,7 @@ class _HomeScreenState extends State<HomeScreen>
   }
 
   Future<void> _openSearchToolsSheet() async {
-    final regions = _homeDestinations
-        .map((d) => d.province)
-        .toSet()
-        .toList();
+    final regions = _homeDestinations.map((d) => d.province).toSet().toList();
 
     await showModalBottomSheet<void>(
       context: context,
@@ -1072,9 +1113,8 @@ class _HomeScreenState extends State<HomeScreen>
                 title: _showLikedOnly
                     ? 'Hiện tất cả địa điểm'
                     : 'Chỉ xem đã thích',
-                subtitle: _showLikedOnly
-                    ? 'Tắt lọc theo tim'
-                    : 'Lọc nhanh theo tim',
+                subtitle:
+                    _showLikedOnly ? 'Tắt lọc theo tim' : 'Lọc nhanh theo tim',
                 onTap: () {
                   Navigator.pop(context);
                   _toggleLikedOnlyView();
@@ -1138,7 +1178,8 @@ class _HomeScreenState extends State<HomeScreen>
                         decoration: BoxDecoration(
                           color: Colors.white.withOpacity(0.12),
                           borderRadius: BorderRadius.circular(18),
-                          border: Border.all(color: Colors.white.withOpacity(0.2)),
+                          border:
+                              Border.all(color: Colors.white.withOpacity(0.2)),
                         ),
                         child: Text(
                           region,
@@ -1318,26 +1359,26 @@ class _HomeScreenState extends State<HomeScreen>
 
   Widget _buildUIContent(Size size) {
     return AnimatedSwitcher(
-        duration: const Duration(milliseconds: 360),
-        reverseDuration: const Duration(milliseconds: 280),
-        switchInCurve: Curves.easeOutCubic,
-        switchOutCurve: Curves.easeInCubic,
-        transitionBuilder: (child, animation) {
-          final slide = Tween<Offset>(
-            begin: const Offset(0, 0.03),
-            end: Offset.zero,
-          ).animate(animation);
+      duration: const Duration(milliseconds: 360),
+      reverseDuration: const Duration(milliseconds: 280),
+      switchInCurve: Curves.easeOutCubic,
+      switchOutCurve: Curves.easeInCubic,
+      transitionBuilder: (child, animation) {
+        final slide = Tween<Offset>(
+          begin: const Offset(0, 0.03),
+          end: Offset.zero,
+        ).animate(animation);
 
-          return FadeTransition(
-            opacity: animation,
-            child: SlideTransition(
-              position: slide,
-              child: child,
-            ),
-          );
-        },
-        child: _buildSelectedSection(size),
-      );
+        return FadeTransition(
+          opacity: animation,
+          child: SlideTransition(
+            position: slide,
+            child: child,
+          ),
+        );
+      },
+      child: _buildSelectedSection(size),
+    );
   }
 
   Widget _buildSelectedSection(Size size) {
@@ -1505,7 +1546,8 @@ class _HomeScreenState extends State<HomeScreen>
             child: Row(
               children: [
                 const SizedBox(width: 14),
-                Icon(Icons.search_rounded, color: Colors.white.withOpacity(0.7), size: 22),
+                Icon(Icons.search_rounded,
+                    color: Colors.white.withOpacity(0.7), size: 22),
                 const SizedBox(width: 10),
                 Expanded(
                   child: TextField(
@@ -1536,7 +1578,8 @@ class _HomeScreenState extends State<HomeScreen>
                     color: Colors.white.withOpacity(0.12),
                     borderRadius: BorderRadius.circular(12),
                   ),
-                  child: Icon(Icons.tune_rounded, color: Colors.white.withOpacity(0.7), size: 20),
+                  child: Icon(Icons.tune_rounded,
+                      color: Colors.white.withOpacity(0.7), size: 20),
                 ),
               ],
             ),
@@ -1547,10 +1590,7 @@ class _HomeScreenState extends State<HomeScreen>
   }
 
   Widget _buildRegionTabs() {
-    final regions = _homeDestinations
-        .map((d) => d.province)
-        .toSet()
-        .toList();
+    final regions = _homeDestinations.map((d) => d.province).toSet().toList();
     if (regions.isEmpty) {
       return const SizedBox(height: 36);
     }
@@ -1583,9 +1623,8 @@ class _HomeScreenState extends State<HomeScreen>
                 padding:
                     const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 decoration: BoxDecoration(
-                  color: isSelected
-                      ? Colors.white
-                      : Colors.black.withOpacity(0.4),
+                  color:
+                      isSelected ? Colors.white : Colors.black.withOpacity(0.4),
                   borderRadius: BorderRadius.circular(24),
                 ),
                 child: Text(
@@ -1680,7 +1719,8 @@ class _HomeScreenState extends State<HomeScreen>
         builder: (cardContext) {
           return Hero(
             tag: 'card_hero_${dest.name}',
-            flightShuttleBuilder: (_, __, ___, ____, _____) => const SizedBox.shrink(),
+            flightShuttleBuilder: (_, __, ___, ____, _____) =>
+                const SizedBox.shrink(),
             placeholderBuilder: (context, size, child) =>
                 Opacity(opacity: 0.0, child: child),
             child: Container(
@@ -1705,7 +1745,8 @@ class _HomeScreenState extends State<HomeScreen>
                       errorBuilder: (_, __, ___) => Container(
                         color: const Color(0xFF2A4A3E),
                         child: const Center(
-                          child: Icon(Icons.image, color: Colors.white38, size: 60),
+                          child: Icon(Icons.image,
+                              color: Colors.white38, size: 60),
                         ),
                       ),
                     ),
@@ -1731,7 +1772,9 @@ class _HomeScreenState extends State<HomeScreen>
                             child: Icon(
                               isLiked ? Icons.favorite : Icons.favorite_border,
                               key: ValueKey<bool>(isLiked),
-                              color: isLiked ? const Color(0xFFE74C3C) : Colors.white,
+                              color: isLiked
+                                  ? const Color(0xFFE74C3C)
+                                  : Colors.white,
                               size: 22,
                             ),
                           ),
@@ -1887,13 +1930,15 @@ class _HomeScreenState extends State<HomeScreen>
                                 borderRadius: BorderRadius.circular(16),
                                 boxShadow: [
                                   BoxShadow(
-                                    color: const Color(0xFFB5956A).withValues(alpha: 0.8),
+                                    color: const Color(0xFFB5956A)
+                                        .withValues(alpha: 0.8),
                                     blurRadius: 20,
                                     spreadRadius: 2,
                                     offset: const Offset(0, 0),
                                   ),
                                   BoxShadow(
-                                    color: const Color(0xFFB5956A).withValues(alpha: 0.4),
+                                    color: const Color(0xFFB5956A)
+                                        .withValues(alpha: 0.4),
                                     blurRadius: 35,
                                     spreadRadius: 8,
                                     offset: const Offset(0, 0),
@@ -1959,7 +2004,8 @@ class _HomeScreenState extends State<HomeScreen>
                             authToken: widget.authToken,
                           ),
                           transitionDuration: const Duration(milliseconds: 500),
-                          reverseTransitionDuration: const Duration(milliseconds: 400),
+                          reverseTransitionDuration:
+                              const Duration(milliseconds: 400),
                           transitionsBuilder: (_, animation, __, child) {
                             return FadeTransition(
                               opacity: CurvedAnimation(

@@ -5,6 +5,7 @@ import '../api/api.dart';
 import '../utils/auth_feedback.dart';
 import '../widgets/anim_builder.dart';
 import 'sign_in.dart';
+import 'dashboard.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
@@ -101,8 +102,40 @@ class _SignUpScreenState extends State<SignUpScreen>
       if (ok) {
         showAuthSuccessToast(
           context,
-          msg ?? 'Đăng ký thành công! Bạn có thể quay lại đăng nhập.',
+          msg ?? 'Đăng ký thành công! Chào mừng bạn!',
         );
+        if (mounted) {
+          Navigator.pushAndRemoveUntil(
+            context,
+            PageRouteBuilder(
+              pageBuilder: (_, __, ___) => HomeScreen(
+                userName: name,
+                authToken: data?['token'] as String?,
+              ),
+              transitionDuration: const Duration(milliseconds: 600),
+              reverseTransitionDuration: const Duration(milliseconds: 400),
+              transitionsBuilder: (_, animation, __, child) {
+                return FadeTransition(
+                  opacity: CurvedAnimation(
+                    parent: animation,
+                    curve: Curves.easeInOut,
+                  ),
+                  child: SlideTransition(
+                    position: Tween<Offset>(
+                      begin: const Offset(0, 0.05),
+                      end: Offset.zero,
+                    ).animate(CurvedAnimation(
+                      parent: animation,
+                      curve: Curves.easeOutCubic,
+                    )),
+                    child: child,
+                  ),
+                );
+              },
+            ),
+            (route) => false,
+          );
+        }
         return;
       }
 
