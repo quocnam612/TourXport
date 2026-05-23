@@ -1,0 +1,4394 @@
+[
+    {
+        "sourceLocationId": "26772847",
+        "title": "Pu Luong Epic Restaurant",
+        "city": "Thanh Lam",
+        "totalScore": 4.8,
+        "ranking": "1/44",
+        "reviewsCount": 80,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Pu Luong Epic Restaurant ở Thanh Lam. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.8/5 từ 80 lượt review. Xếp hạng: 1/44. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/19/9d/cb/breathtaking-view.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.149414,
+                20.445478
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25547678",
+        "title": "Alma Restaurant",
+        "city": "Thanh Hóa",
+        "totalScore": 4.9,
+        "ranking": "2/44",
+        "reviewsCount": 33,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Alma Restaurant ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.9/5 từ 33 lượt review. Xếp hạng: 2/44. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/d5/54/4f/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.777504,
+                19.810234
+            ]
+        },
+        "openingHours": {
+            "display": "11:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26314351",
+        "title": "Pù Luông Hiêu Quán - Hieu Village Restaurant",
+        "city": "Co Lung",
+        "totalScore": 5.0,
+        "ranking": "3/44",
+        "reviewsCount": 25,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Pù Luông Hiêu Quán - Hieu Village Restaurant ở Co Lung. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 25 lượt review. Xếp hạng: 3/44. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/11/8c/ad/banana-flower-salad.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.231186,
+                20.44971
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15787195",
+        "title": "Pu Luong The Deer Restaurant",
+        "city": "Co Lung",
+        "totalScore": 5.0,
+        "ranking": "4/44",
+        "reviewsCount": 20,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Pu Luong The Deer Restaurant ở Co Lung. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 20 lượt review. Xếp hạng: 4/44. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/c3/88/16/banana-flower-salad.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.222626,
+                20.464127
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25228505",
+        "title": "Pu Luong La Fumée Restaurant",
+        "city": "Thanh Son",
+        "totalScore": 4.8,
+        "ranking": "5/44",
+        "reviewsCount": 13,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Pu Luong La Fumée Restaurant ở Thanh Son. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.8/5 từ 13 lượt review. Xếp hạng: 5/44. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/29/a3/d3/d3/the-panorama-of-pu-luong.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.12351,
+                20.46696
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28012955",
+        "title": "RORU - Mordern Japanese Restaurant",
+        "city": "Hà Nội",
+        "totalScore": 5.0,
+        "ranking": "944/3710",
+        "reviewsCount": 9,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "RORU - Mordern Japanese Restaurant ở Hà Nội. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 9 lượt review. Xếp hạng: 944/3710. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/e5/79/ad/a-mordern-sushi-bar.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.89808,
+                19.73493
+            ]
+        },
+        "openingHours": {
+            "display": "10:30-14:00, 18:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1080,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1080,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1080,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1080,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1080,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1080,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1080,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25547730",
+        "title": "Zenith Skybar",
+        "city": "Thanh Hóa",
+        "totalScore": 5.0,
+        "ranking": "6/44",
+        "reviewsCount": 9,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Zenith Skybar ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 9 lượt review. Xếp hạng: 6/44.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/29/83/7a/60/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.777504,
+                19.810234
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26862474",
+        "title": "Nhà Hàng Đỉnh Pù Luông",
+        "city": "Thanh Hóa",
+        "totalScore": 5.0,
+        "ranking": "7/44",
+        "reviewsCount": 7,
+        "category": "Ngồi xuống",
+        "priceRange": "263.157.888 ₫ - 2.147.483.647 ₫",
+        "description": "Nhà hàng Đỉnh Pù Luông chuyện phục vụ các cón ăn đặc sản Pù Luông như vịt Cổ Lũng, lợn cắp nách, ốc ếch, cá dầm xanh... Đỉnh Pù Luông restaurant nằm tại vị trí trung tâm bản Đôn và gần các điểm thăm quan, các resort lớn. Nhà hàng có không gian rộng thoáng, view đẹp nhìn thung lũng và bể bơi vô cực đẹp... có thể phục vụ 80 khách cùng lúc, thực đơn các món ăn cho khách nội địa và quốc tể, các món ăn kiêng, chay, set menu và menu chọn món. Đầu bếp có nhiều năm kinh nghiệm chế biến món ăn đặc sản địa phương ngon khẩu vị... Nhân viên được đào tạo tốt, nhiệt tình, chu đáo.",
+        "embedding": null,
+        "searchText": "Nhà Hàng Đỉnh Pù Luông ở Thanh Hóa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà hàng Đỉnh Pù Luông chuyện phục vụ các cón ăn đặc sản Pù Luông như vịt Cổ Lũng, lợn cắp nách, ốc ếch, cá dầm xanh... Đỉnh Pù Luông restaurant nằm tại vị trí trung tâm bản Đôn và gần các điểm thăm quan, các resort lớn. Nhà hàng có không gian rộng thoáng, view đẹp nhìn thung lũng và bể bơi vô cực đẹp... có thể phục vụ 80 khách cùng lúc, thực đơn các món ăn cho khách nội địa và quốc tể, các món ăn kiêng, chay, set menu và menu chọn món. Đầu bếp có nhiều năm kinh nghiệm chế biến món ăn đặc sản địa phương ngon khẩu vị... Nhân viên được đào tạo tốt, nhiệt tình, chu đáo. Đánh giá: 5.0/5 từ 7 lượt review. Xếp hạng: 7/44. Giá: 263.157.888 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/e8/5f/77/t-ng-quan-nha-hang-d.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.15437,
+                20.442612
+            ]
+        },
+        "openingHours": {
+            "display": "09:30-21:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15216437",
+        "title": "The Vault Pub",
+        "city": "Thanh Hóa",
+        "totalScore": 5.0,
+        "ranking": "8/44",
+        "reviewsCount": 15,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Vault Pub ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 15 lượt review. Xếp hạng: 8/44.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/21/99/bd/e0/great-view.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.77757,
+                19.80636
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 2160
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 2160
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 2160
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1500
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17376534",
+        "title": "Nhà Hàng Đại Nam Biển Hải Tiến",
+        "city": "Thanh Hóa",
+        "totalScore": 5.0,
+        "ranking": "9/44",
+        "reviewsCount": 9,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "Quán ăn ngon rẻ, nhà hàng uy tín biển hải tiến, nhà hàng biển hải tiến, với 11 năm trong nghề kinh doanh dịch vụ ăn uống và chế biến thực phẩm hải sản tươi sống",
+        "embedding": null,
+        "searchText": "Nhà Hàng Đại Nam Biển Hải Tiến ở Thanh Hóa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Quán ăn ngon rẻ, nhà hàng uy tín biển hải tiến, nhà hàng biển hải tiến, với 11 năm trong nghề kinh doanh dịch vụ ăn uống và chế biến thực phẩm hải sản tươi sống Đánh giá: 5.0/5 từ 9 lượt review. Xếp hạng: 9/44. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/ec/f3/1b/nha-hang-d-i-nam.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.93213,
+                19.842794
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32969467",
+        "title": "Quán Ăn An Tâm Hue Vietnam",
+        "city": "Huế",
+        "totalScore": 5.0,
+        "ranking": "227/487",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Ăn An Tâm Hue Vietnam ở Huế. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 227/487.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/31/70/b3/cf/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.89793,
+                19.73737
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17722119",
+        "title": "Nhà Hàng Thanh Bình Hải Tiến",
+        "city": "Thanh Hóa",
+        "totalScore": 4.9,
+        "ranking": "10/44",
+        "reviewsCount": 7,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "nhà hàng hải tiến có nhiều món ăn hải sản tươi sống đặc biệt ngon giá rẻ uy tín lâu năm nhất với nhiều năm kinh nghiệm nhận tổ chức tiệc hội nghị sinh nhật...",
+        "embedding": null,
+        "searchText": "Nhà Hàng Thanh Bình Hải Tiến ở Thanh Hóa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: nhà hàng hải tiến có nhiều món ăn hải sản tươi sống đặc biệt ngon giá rẻ uy tín lâu năm nhất với nhiều năm kinh nghiệm nhận tổ chức tiệc hội nghị sinh nhật... Đánh giá: 4.9/5 từ 7 lượt review. Xếp hạng: 10/44. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/24/56/62/08/bien-hai-tien-thanh-hoa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.929436,
+                19.844213
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15106689",
+        "title": "Nhà hàng hải sản S-Hải Tiến",
+        "city": "Thanh Hóa",
+        "totalScore": 4.7,
+        "ranking": "11/44",
+        "reviewsCount": 6,
+        "category": "Ngồi xuống",
+        "priceRange": "1.315.789.440 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng hải sản S-Hải Tiến ở Thanh Hóa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.7/5 từ 6 lượt review. Xếp hạng: 11/44. Giá: 1.315.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/ae/45/6b/nha-hang-s-h-i-ti-n.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.93651,
+                19.851252
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "11955352",
+        "title": "Ẩm Thực Vũ Gia Viên",
+        "city": "Thanh Hóa",
+        "totalScore": 4.1,
+        "ranking": "12/44",
+        "reviewsCount": 7,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Ẩm Thực Vũ Gia Viên ở Thanh Hóa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.1/5 từ 7 lượt review. Xếp hạng: 12/44. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/fe/20/96/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.77803,
+                19.784826
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12860492",
+        "title": "GoGi House",
+        "city": "Thanh Hóa",
+        "totalScore": 4.9,
+        "ranking": "13/44",
+        "reviewsCount": 9,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "1.973.684.224 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "GoGi House ở Thanh Hóa. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 4.9/5 từ 9 lượt review. Xếp hạng: 13/44. Giá: 1.973.684.224 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/96/3c/49/cach-cu-n-th-t-nu-ng.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.77808,
+                19.80712
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23484080",
+        "title": "John Peter Pizza",
+        "city": "Sầm Sơn",
+        "totalScore": 4.7,
+        "ranking": "14/44",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Nhà hàng Pizza & Pasta nhỏ. Gia đình và các cặp đôi Chào mừng. Ăn ngay, Mang đi hoặc Giao hàng tận nơi",
+        "embedding": null,
+        "searchText": "John Peter Pizza ở Sầm Sơn. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Nhà hàng Pizza & Pasta nhỏ. Gia đình và các cặp đôi Chào mừng. Ăn ngay, Mang đi hoặc Giao hàng tận nơi Đánh giá: 4.7/5 từ 3 lượt review. Xếp hạng: 14/44.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/29/be/af/f4/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.89753,
+                19.739004
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17375944",
+        "title": "Trâu Giật Quán",
+        "city": "Sầm Sơn",
+        "totalScore": 5.0,
+        "ranking": "15/44",
+        "reviewsCount": 4,
+        "category": "Ngồi xuống",
+        "priceRange": "3.947.368 ₫ - 6.578.947 ₫",
+        "description": "Nhà hàng tại thành phố biển Sầm Sơn với không gian truyền thống sang trọng và lịch sự, đội ngủ nhân viên chuyên nghiệp và nhiệt tình. Các món ăn chuyên về Trâu rất ngon và đậm đà hương vị đảm bảo hài lòng các thượng khách. Đặc biệt đồ ăn hải sản tại nhà hàng theo nhu cầu đặt của khách hàng cũng rất tươi ngon và đậm đà hương vị đặc trưng của vùng biển.",
+        "embedding": null,
+        "searchText": "Trâu Giật Quán ở Sầm Sơn. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà hàng tại thành phố biển Sầm Sơn với không gian truyền thống sang trọng và lịch sự, đội ngủ nhân viên chuyên nghiệp và nhiệt tình. Các món ăn chuyên về Trâu rất ngon và đậm đà hương vị đảm bảo hài lòng các thượng khách. Đặc biệt đồ ăn hải sản tại nhà hàng theo nhu cầu đặt của khách hàng cũng rất tươi ngon và đậm đà hương vị đặc trưng của vùng biển. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 15/44. Giá: 3.947.368 ₫ - 6.578.947 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/44/fb/0a/khong-gian-phong-an-t.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.90479,
+                19.762564
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26633268",
+        "title": "Nois. Cafe & Lounge",
+        "city": "Sầm Sơn",
+        "totalScore": 5.0,
+        "ranking": "16/44",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "657.894.720 ₫ - 2.147.483.647 ₫",
+        "description": "Chúng tôi có cafe và trà ngon nhất Sầm Sơn. Xin mời các bạn đến thưởng thức!",
+        "embedding": null,
+        "searchText": "Nois. Cafe & Lounge ở Sầm Sơn. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Chúng tôi có cafe và trà ngon nhất Sầm Sơn. Xin mời các bạn đến thưởng thức! Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 16/44. Giá: 657.894.720 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/b3/06/e1/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.90815,
+                19.74964
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12860508",
+        "title": "Nhà Hàng Hutong",
+        "city": "Thanh Hóa",
+        "totalScore": 4.3,
+        "ranking": "17/44",
+        "reviewsCount": 6,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "1.842.105.216 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hutong ở Thanh Hóa. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 4.3/5 từ 6 lượt review. Xếp hạng: 17/44. Giá: 1.842.105.216 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/7b/63/0f/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.7781,
+                19.807173
+            ]
+        },
+        "openingHours": {
+            "display": "11:00-14:00, 17:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12860545",
+        "title": "Nhà Hàng Vuvuzela",
+        "city": "Thanh Hóa",
+        "totalScore": 4.4,
+        "ranking": "18/44",
+        "reviewsCount": 7,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Vuvuzela ở Thanh Hóa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.4/5 từ 7 lượt review. Xếp hạng: 18/44. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/96/33/35/d-an-phong-cach-chau.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.77802,
+                19.807116
+            ]
+        },
+        "openingHours": {
+            "display": "11:00-14:00, 17:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25139911",
+        "title": "Pu Luong Restaurant",
+        "city": "Ba Thuoc",
+        "totalScore": 5.0,
+        "ranking": "19/44",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pu Luong Restaurant ở Ba Thuoc. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 19/44.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.122086,
+                20.467157
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15632083",
+        "title": "Pizza Hut Vincom Thanh Hoá",
+        "city": "Thanh Hóa",
+        "totalScore": 4.7,
+        "ranking": "20/44",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pizza Hut Vincom Thanh Hoá ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.7/5 từ 3 lượt review. Xếp hạng: 20/44.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/b8/7a/00/thanh-ho-a.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.77753,
+                19.80885
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33472280",
+        "title": "Nhà Hàng Pù Luông Emotion",
+        "city": "Thanh Hóa",
+        "totalScore": 5.0,
+        "ranking": "21/44",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Pù Luông Emotion ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 21/44.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/2f/db/da/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.180214,
+                10.776521
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33024437",
+        "title": "Jutopia Gourmet Coffee",
+        "city": "Thanh Hóa",
+        "totalScore": 5.0,
+        "ranking": "22/44",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "26.316 ₫ - 105.263 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Jutopia Gourmet Coffee ở Thanh Hóa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 22/44. Giá: 26.316 ₫ - 105.263 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/69/f9/01/jutopia-is-a-thanh-hoa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.77867,
+                19.794447
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33263342",
+        "title": "Củi Pizza&pasta - Steak Go! Thanh Hoá",
+        "city": "Thanh Hóa",
+        "totalScore": 5.0,
+        "ranking": "23/44",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Củi Pizza&pasta - Steak Go! Thanh Hoá ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 23/44.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/30/35/86/22/decorate-for-anniversary.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.80221,
+                19.805534
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-21:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27975882",
+        "title": "Củi Pizza & Pasta",
+        "city": "Thanh Hóa",
+        "totalScore": 5.0,
+        "ranking": "24/44",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Củi Pizza & Pasta ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 24/44.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/30/1c/19/20/burrata-cheese-tuoi.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.77896,
+                19.809715
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 975,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 975,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 975,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32808443",
+        "title": "Dê Tươi Song Hào",
+        "city": "Hải Hòa",
+        "totalScore": 5.0,
+        "ranking": "25/44",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dê Tươi Song Hào ở Hải Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 25/44.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/8d/59/32/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.91667,
+                14.48333
+            ]
+        },
+        "openingHours": {
+            "display": "11:00-23:45",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1425
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "7193833",
+        "title": "OceanWave",
+        "city": "Thanh Hóa",
+        "totalScore": 5.0,
+        "ranking": "26/44",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "OceanWave ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 26/44.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/78/82/c3/oceanwave.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.817024,
+                19.335285
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28006495",
+        "title": "Buffet Mi Bbq & Hot Pot",
+        "city": "Thanh Hóa",
+        "totalScore": 5.0,
+        "ranking": "27/44",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Buffet Mi Bbq & Hot Pot ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 27/44.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2c/c9/25/04/co-th-don-du-c-khach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.85499,
+                19.852314
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-14:00, 17:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21256169",
+        "title": "Pu Luong The Deer Restaurant",
+        "city": "Co Lung",
+        "totalScore": 5.0,
+        "ranking": "28/44",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "131.579 ₫ - 263.158 ₫",
+        "description": "Pù Luông Hiêu Quán là một nhà hàng được tọa lạc tại Bản Hiêu, nằm ngay cạnh Thác Hiêu có quy mô lên đến hơn 100 thực khách. Chúng tôi chuyên các món ăn dân tộc Thái Pù Luông kết hợp với một chút phong cách món Âu dành cho người nước ngoài. Tất cả những thực phẩm mà chúng tôi sử dụng đều được ký hợp đồng với Bà con Bản Hiêu và vùng phụ cận được giám sát chặt chẽ quy trình sản xuất, cam kết chất lượng và hữu cơ , Không sử dụng các loại hóa chất. Đội ngũ đầu bếp tận tâm trung thực với khách hàng, các ban được đào tạo bài bản để đem lại cho Quý Khách bữa ăn tuyệt vời. Không gian nhà hàng rộng rãi sạch sẽ cùng với đội ngũ nhân viên phục vụ nhiệt tình sẽ đem lại những trải nghiệm cho khách hàng.",
+        "embedding": null,
+        "searchText": "Pu Luong The Deer Restaurant ở Co Lung. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Pù Luông Hiêu Quán là một nhà hàng được tọa lạc tại Bản Hiêu, nằm ngay cạnh Thác Hiêu có quy mô lên đến hơn 100 thực khách. Chúng tôi chuyên các món ăn dân tộc Thái Pù Luông kết hợp với một chút phong cách món Âu dành cho người nước ngoài. Tất cả những thực phẩm mà chúng tôi sử dụng đều được ký hợp đồng với Bà con Bản Hiêu và vùng phụ cận được giám sát chặt chẽ quy trình sản xuất, cam kết chất lượng và hữu cơ , Không sử dụng các loại hóa chất. Đội ngũ đầu bếp tận tâm trung thực với khách hàng, các ban được đào tạo bài bản để đem lại cho Quý Khách bữa ăn tuyệt vời. Không gian nhà hàng rộng rãi sạch sẽ cùng với đội ngũ nhân viên phục vụ nhiệt tình sẽ đem lại những trải nghiệm cho khách hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 28/44. Giá: 131.579 ₫ - 263.158 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/e9/d0/06/decoration.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "09:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "18114282",
+        "title": "Lẩu Nướng Út Thủy",
+        "city": "Nghi Son",
+        "totalScore": 5.0,
+        "ranking": "29/44",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lẩu Nướng Út Thủy ở Nghi Son. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 29/44.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/26/3d/42/m-t-l-u-tuoi-ngon-nhu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.802895,
+                19.330444
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "29444310",
+        "title": "Coffee View",
+        "city": "Thanh Hóa",
+        "totalScore": 4.0,
+        "ranking": "30/44",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Coffee View ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 30/44.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/15/d8/7c/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.22081,
+                16.068996
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17479320",
+        "title": "Le Pub",
+        "city": "Thanh Hóa",
+        "totalScore": 5.0,
+        "ranking": "31/44",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Le Pub ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 31/44.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/18/8c/29/b5/photo4jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.779076,
+                19.809637
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15067640",
+        "title": "Nhà Hàng Hải Sản Kando",
+        "city": "Thanh Hóa",
+        "totalScore": 4.0,
+        "ranking": "32/44",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hải Sản Kando ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 32/44. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/24/c5/ae/7c/nha-hang-h-i-s-n-tuoi.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.76701,
+                19.80594
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12647826",
+        "title": "Dream Cones Sầm Sơn",
+        "city": "Thanh Hóa",
+        "totalScore": 3.5,
+        "ranking": "33/44",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "921.053 ₫ - 3.131.579 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Dream Cones Sầm Sơn ở Thanh Hóa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.5/5 từ 2 lượt review. Xếp hạng: 33/44. Giá: 921.053 ₫ - 3.131.579 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/df/14/95/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.77669,
+                19.808775
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8138479",
+        "title": "Sato BBQ",
+        "city": "Thanh Hóa",
+        "totalScore": 3.2,
+        "ranking": "34/44",
+        "reviewsCount": 5,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Sato BBQ ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.2/5 từ 5 lượt review. Xếp hạng: 34/44. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/20/5d/db/sato-bbq.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.7736,
+                19.80789
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15308146",
+        "title": "Dạ Lan",
+        "city": "Thanh Hóa",
+        "totalScore": 3.4,
+        "ranking": "35/44",
+        "reviewsCount": 7,
+        "category": "Ngồi xuống",
+        "priceRange": "1.315.789.440 ₫ - 2.147.483.647 ₫",
+        "description": "Công ty cổ phần Dạ Lan là doanh nghiệp hàng đầu của tỉnh Thanh Hóa trong lĩnh vực kinh doanh ẩm thực, tổ chức sự kiện,thể dục thể thao, đào tạo nghề, sản xuất Rượu Nếp cái hoa vàng, Nước uống tinh khiết . \n Dạ Lan đã trở thành sự lựa chọn tin cậy của người tiêu dùng.",
+        "embedding": null,
+        "searchText": "Dạ Lan ở Thanh Hóa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Công ty cổ phần Dạ Lan là doanh nghiệp hàng đầu của tỉnh Thanh Hóa trong lĩnh vực kinh doanh ẩm thực, tổ chức sự kiện,thể dục thể thao, đào tạo nghề, sản xuất Rượu Nếp cái hoa vàng, Nước uống tinh khiết . \n Dạ Lan đã trở thành sự lựa chọn tin cậy của người tiêu dùng. Đánh giá: 3.4/5 từ 7 lượt review. Xếp hạng: 35/44. Giá: 1.315.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/37/59/f1/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.776794,
+                19.81143
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11668848",
+        "title": "Hôme Collection",
+        "city": "Thanh Hóa",
+        "totalScore": 3.3,
+        "ranking": "36/44",
+        "reviewsCount": 4,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hôme Collection ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.3/5 từ 4 lượt review. Xếp hạng: 36/44.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/ca/69/10/vietnamese-cappucino.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.777954,
+                19.82009
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24077007",
+        "title": "Nhà Hàng Quý Hiệp",
+        "city": "Thanh Hóa",
+        "totalScore": 3.0,
+        "ranking": "37/44",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Quý Hiệp ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 37/44.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/23/88/60/79/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.73805,
+                20.140238
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24074581",
+        "title": "Quan An Ngon",
+        "city": "Thanh Hóa",
+        "totalScore": 3.0,
+        "ranking": "38/44",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quan An Ngon ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 38/44.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/23/80/5b/2c/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.615425,
+                20.05921
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17379474",
+        "title": "Hưng Thịnh Quán",
+        "city": "Thanh Hóa",
+        "totalScore": 3.0,
+        "ranking": "39/44",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "3.157.895 ₫ - 11.842.105 ₫",
+        "description": "Nhà hàng Hưng Thịnh Quán biển Hải Tiến Thanh Hóa\n Xin giới thiệu nhà hàng ngon - rẻ phục vụ khách du lịch hè 2019 tại Biển Hải Tiến Thanh Hóa\n \n Nhà hàng Hưng Thịnh Quán biển Hải Tiến Thanh Hóa\n 1. Góc view đẹp - chỗ ngồi lý tưởng ngắm biển\n 2. Giá rẻ phù hợp - phục vụ tận tình chu đáo\n 3. Nhân viên thân thiện - đáng yêu\n 4. Chủ quán vui vẻ thoải mái\n \n Xin kính mời thực khách du lịch trong và ngoài tỉnh a",
+        "embedding": null,
+        "searchText": "Hưng Thịnh Quán ở Thanh Hóa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà hàng Hưng Thịnh Quán biển Hải Tiến Thanh Hóa\n Xin giới thiệu nhà hàng ngon - rẻ phục vụ khách du lịch hè 2019 tại Biển Hải Tiến Thanh Hóa\n \n Nhà hàng Hưng Thịnh Quán biển Hải Tiến Thanh Hóa\n 1. Góc view đẹp - chỗ ngồi lý tưởng ngắm biển\n 2. Giá rẻ phù hợp - phục vụ tận tình chu đáo\n 3. Nhân viên thân thiện - đáng yêu\n 4. Chủ quán vui vẻ thoải mái\n \n Xin kính mời thực khách du lịch trong và ngoài tỉnh a Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 39/44. Giá: 3.157.895 ₫ - 11.842.105 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/3f/19/d4/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.934425,
+                19.835558
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24815142",
+        "title": "Toro Craft Beer",
+        "city": "Đà Nẵng",
+        "totalScore": 2.5,
+        "ranking": "1696/1751",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Toro Craft Beer là quán bia nhỏ ngoài trời. Nơi thưởng thức nhiều loại bia được nấu thủ công đến từ khắp nơi trên cả nước việt nam. Đặc biệt sử dụng nguyên liệu đến từ việt nam. Sẽ là 1 trải nghiệm thú vị cho chuyến du lịch của bạn!",
+        "embedding": null,
+        "searchText": "Toro Craft Beer ở Đà Nẵng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Toro Craft Beer là quán bia nhỏ ngoài trời. Nơi thưởng thức nhiều loại bia được nấu thủ công đến từ khắp nơi trên cả nước việt nam. Đặc biệt sử dụng nguyên liệu đến từ việt nam. Sẽ là 1 trải nghiệm thú vị cho chuyến du lịch của bạn! Đánh giá: 2.5/5 từ 2 lượt review. Xếp hạng: 1696/1751.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/d7/41/9b/toro-craft-beer-la-d.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.89056,
+                19.736788
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1500
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13809967",
+        "title": "Bella Restaurant",
+        "city": "Nghi Son",
+        "totalScore": 1.0,
+        "ranking": "40/44",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bella Restaurant ở Nghi Son. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 1.0/5 từ 1 lượt review. Xếp hạng: 40/44.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.80099,
+                19.337334
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23086057",
+        "title": "The Pizza Company",
+        "city": "Thanh Hóa",
+        "totalScore": 2.0,
+        "ranking": "41/44",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The Pizza Company ở Thanh Hóa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 2.0/5 từ 1 lượt review. Xếp hạng: 41/44. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/1b/cd/85/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.777855,
+                19.80738
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17695728",
+        "title": "Aha Cafe",
+        "city": "Sầm Sơn",
+        "totalScore": 2.0,
+        "ranking": "42/44",
+        "reviewsCount": 2,
+        "category": "Quán cafe",
+        "priceRange": "394.736.832 ₫ - 1.315.789.440 ₫",
+        "description": "Aha Cafe được biết đến là một chuỗi quán cà phê mang phong cách “cà phê vỉa hè”, ra đời từ năm 1997 ở Hà Nội. Hiện có mặt ở TPHCM, Đà Nẵng, Bắc Ninh, Thanh Hóa..",
+        "embedding": null,
+        "searchText": "Aha Cafe ở Sầm Sơn. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Mô tả: Aha Cafe được biết đến là một chuỗi quán cà phê mang phong cách “cà phê vỉa hè”, ra đời từ năm 1997 ở Hà Nội. Hiện có mặt ở TPHCM, Đà Nẵng, Bắc Ninh, Thanh Hóa.. Đánh giá: 2.0/5 từ 2 lượt review. Xếp hạng: 42/44. Giá: 394.736.832 ₫ - 1.315.789.440 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/7d/e5/24/aha-cafe.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.90511,
+                19.742794
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15682465",
+        "title": "Hoàng Cà Phê",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": "43/44",
+        "reviewsCount": 0,
+        "category": "Quán cafe",
+        "priceRange": "394.736.832 ₫ - 921.052.608 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hoàng Cà Phê ở Thanh Hóa. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Xếp hạng: 43/44. Giá: 394.736.832 ₫ - 921.052.608 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/e2/5b/ee/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.783806,
+                19.803782
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "20032620",
+        "title": "Garden House Restaurant",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": "44/44",
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Garden House Restaurant ở Thanh Hóa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Xếp hạng: 44/44. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/ea/f2/25/quan-ca-phe.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.90232,
+                19.846367
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27706671",
+        "title": "Insight Pu Luong Restaurant",
+        "city": "Ba Thuoc",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Insight Pu Luong Restaurant ở Ba Thuoc. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/f8/67/fc/purple-sticky-rice.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.76667,
+                19.8
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-21:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15776534",
+        "title": "8Bingsu",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "1.289.473.664 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "8Bingsu ở Thanh Hóa. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Giá: 1.289.473.664 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/20/49/94/flavored-yogurt.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.77169,
+                19.803976
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17461352",
+        "title": "Nhà Hàng Biển Xanh",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Biển Xanh ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/8e/9e/d7/nha-hang-ngon-bi-n-h.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78518,
+                19.806692
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33059457",
+        "title": "Old Mixology",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Old Mixology ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.32445,
+                20.44214
+            ]
+        },
+        "openingHours": {
+            "display": "20:00-26:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1200,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1200,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1200,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1200,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1200,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1200,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1200,
+                        "close_time": 1560
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14206415",
+        "title": "Nhà Hàng Hoàng Long",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hoàng Long ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.76661,
+                19.808743
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15581226",
+        "title": "Nha Hang Vuon Tigon Bien Hai Tien",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "1.315.789.440 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nha Hang Vuon Tigon Bien Hai Tien ở Thanh Hóa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 1.315.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/7a/e9/5a/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.93544,
+                19.84468
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23499298",
+        "title": "Pu Luong Auberge",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pu Luong Auberge ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.31002,
+                20.120031
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17433334",
+        "title": "AHA Cafe",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Quán cafe",
+        "priceRange": "736.842.112 ₫ - 1.552.631.552 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "AHA Cafe ở Thanh Hóa. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Giá: 736.842.112 ₫ - 1.552.631.552 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/71/27/6d/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.7773,
+                19.80996
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33068050",
+        "title": "Old Mixology",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Old Mixology ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.76932,
+                19.804
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25168543",
+        "title": "Puluong0km Restaurant & Hotel",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Nhà Hàng Pù Luông 0km - nhà hàng ngon, ẩm thực Thái Đen uy tín chất lượng tại Thanh Hoá",
+        "embedding": null,
+        "searchText": "Puluong0km Restaurant & Hotel ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Nhà Hàng Pù Luông 0km - nhà hàng ngon, ẩm thực Thái Đen uy tín chất lượng tại Thanh Hoá",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78518,
+                19.806692
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27417993",
+        "title": "Pu Luong Cuisine Garden",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pu Luong Cuisine Garden ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.76667,
+                19.8
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33747760",
+        "title": "Pu Luong Mist Valley Home",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pu Luong Mist Valley Home ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.75919,
+                19.818638
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27531153",
+        "title": "Nhà Hàng Làng Chài Hải Tiến",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Làng Chài Hải Tiến ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/e3/02/ed/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.93342,
+                19.84237
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27486474",
+        "title": "Nhà Hàng Dê Ủ Trấu S-việt",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Dê Ủ Trấu S-việt ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.79695,
+                19.810225
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26851151",
+        "title": "Anh Em Quán - 22 Võ Nguyên Lượng",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Anh Em Quán - 22 Võ Nguyên Lượng chuyên phục vũ các món ngon đặc sản đồng quê; không gian cực chill, sang trọng; phục vụ chuyên nghiệp chu đáo.",
+        "embedding": null,
+        "searchText": "Anh Em Quán - 22 Võ Nguyên Lượng ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Anh Em Quán - 22 Võ Nguyên Lượng chuyên phục vũ các món ngon đặc sản đồng quê; không gian cực chill, sang trọng; phục vụ chuyên nghiệp chu đáo.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2f/7e/da/bd/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78379,
+                19.82636
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23655180",
+        "title": "Vườn bia Thiên Thanh",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "\"Vườn Bia Thiên Thanh - Nhà hàng chuyên các món lẩu, món nhậu đặc sản chế biến tươi ngon, hấp dẫn. Nguyên liệu tươi ngon được chế biến sạch sẽ, theo công thức gia truyền. Đầu bếp 10 năm kinh nghiệm. Hãy đến và chill cùng hội anh em chiến hữu tại Vườn Bia Thiên Thanh ! Hotline : 0943.636.345 Địa chỉ: Lô Cx1, đường Nguyễn Huy Tự, P.Lam Sơn, TP.Thhanh Hóa\"",
+        "embedding": null,
+        "searchText": "Vườn bia Thiên Thanh ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: \"Vườn Bia Thiên Thanh - Nhà hàng chuyên các món lẩu, món nhậu đặc sản chế biến tươi ngon, hấp dẫn. Nguyên liệu tươi ngon được chế biến sạch sẽ, theo công thức gia truyền. Đầu bếp 10 năm kinh nghiệm. Hãy đến và chill cùng hội anh em chiến hữu tại Vườn Bia Thiên Thanh ! Hotline : 0943.636.345 Địa chỉ: Lô Cx1, đường Nguyễn Huy Tự, P.Lam Sơn, TP.Thhanh Hóa\"",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78513,
+                19.798973
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32809027",
+        "title": "Fork 'n Lekker",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Fork 'n Lekker ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.76667,
+                19.8
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27175958",
+        "title": "Drop Coffee Roasters",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Drop Coffee Roasters ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/63/2b/58/perfect-coffee-bean.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78518,
+                19.806692
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33989647",
+        "title": "Voilas Coffee Roastery",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Voilas Coffee Roastery ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78003,
+                19.801142
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25168563",
+        "title": "Puluong0km",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Nhà Hàng Pù Luông 0km - nhà hàng ngon, ẩm thực Thái Đen uy tín chất lượng tại Thanh Hoá",
+        "embedding": null,
+        "searchText": "Puluong0km ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Nhà Hàng Pù Luông 0km - nhà hàng ngon, ẩm thực Thái Đen uy tín chất lượng tại Thanh Hoá",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78518,
+                19.806692
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23237414",
+        "title": "Today Bistro & Cafe",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Today Bistro & Cafe ở Thanh Hóa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/c5/df/bc/first-floor.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.77215,
+                19.802057
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17395438",
+        "title": "Nhà Hàng Hải Sản Diệp Anh",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hải Sản Diệp Anh ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.91181,
+                19.759447
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14960552",
+        "title": "Bảo Coffee",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Quán cafe",
+        "priceRange": "526.315.776 ₫ - 1.184.210.560 ₫",
+        "description": "- Cà phê chất lượng cao Việt Nam và cà phê đặc sản nhập khẩu; - Pha thủ công và pha máy Espresso; - Sinh tố và nước trái cây tươi ngon.",
+        "embedding": null,
+        "searchText": "Bảo Coffee ở Thanh Hóa. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Mô tả: - Cà phê chất lượng cao Việt Nam và cà phê đặc sản nhập khẩu; - Pha thủ công và pha máy Espresso; - Sinh tố và nước trái cây tươi ngon. Giá: 526.315.776 ₫ - 1.184.210.560 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.77832,
+                19.809479
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26610151",
+        "title": "Blue Oceans Restaurant",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "̀ ̀ Đ ̣: Nhà Hàng Bánh Việt không gian, truyền thống sang trọng, cho bữa ăn Ữ ̆N Thực đơn đa dạng như các loại ́ truyền thống món ̣̂ Đ̣̆ ̉ - Đ̂̀ ̂ - ́ ̛̀ - ̉ ̉, vv.. từ nguyên liệu tươi ngon. được chế biến từ những Đầ ế hàng đầu việt nam ầ ượ Làm Nóng Trái Tim: Để bữa tối thêm phần trọn vẹn, Nhà Hàng Bánh Việt có một danh mục HẦM RƯỢU và phòng ăn riêng. đa dạng, từ rượu vang chất lượng đến các loại cocktail độc đáo. Đội ngũ bartender tài năng của chúng tôi sẽ tạo ra những ly đồ uống độc đáo, phù hợp với sở thích của từng khách hàng. ̛̣ ̂̉ ̣ Tươi Mát: Chúng tôi có khu bán thực phẩm sạch, cam kết đảm bảo tươi ngon. chất lượng nguyên liệu tốt nhất cho bữa ăn của quý khách. ́ ̣ ̣: Nhà Hàng Bánh Việt có sẵn dịch vụ khách sạn cao cấp. Với các phòng nghỉ tiện nghi Hãy đến và trải nghiệm vị trí tuyệt vời của Nhà Hàng Bánh Việt,",
+        "embedding": null,
+        "searchText": "Blue Oceans Restaurant ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: ̀ ̀ Đ ̣: Nhà Hàng Bánh Việt không gian, truyền thống sang trọng, cho bữa ăn Ữ ̆N Thực đơn đa dạng như các loại ́ truyền thống món ̣̂ Đ̣̆ ̉ - Đ̂̀ ̂ - ́ ̛̀ - ̉ ̉, vv.. từ nguyên liệu tươi ngon. được chế biến từ những Đầ ế hàng đầu việt nam ầ ượ Làm Nóng Trái Tim: Để bữa tối thêm phần trọn vẹn, Nhà Hàng Bánh Việt có một danh mục HẦM RƯỢU và phòng ăn riêng. đa dạng, từ rượu vang chất lượng đến các loại cocktail độc đáo. Đội ngũ bartender tài năng của chúng tôi sẽ tạo ra những ly đồ uống độc đáo, phù hợp với sở thích của từng khách hàng. ̛̣ ̂̉ ̣ Tươi Mát: Chúng tôi có khu bán thực phẩm sạch, cam kết đảm bảo tươi ngon. chất lượng nguyên liệu tốt nhất cho bữa ăn của quý khách. ́ ̣ ̣: Nhà Hàng Bánh Việt có sẵn dịch vụ khách sạn cao cấp. Với các phòng nghỉ tiện nghi Hãy đến và trải nghiệm vị trí tuyệt vời của Nhà Hàng Bánh Việt,",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.76057,
+                19.81001
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32946746",
+        "title": "Nhà Hàng Cơm Việt",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Cơm Việt ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.77511,
+                19.823042
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25437936",
+        "title": "Hai Tien Thanh Binh Restaurant",
+        "city": "Hoang Tien",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hai Tien Thanh Binh Restaurant ở Hoang Tien. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/cc/f3/84/nha-hang-ngon-thanh-binh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78518,
+                19.806692
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27705963",
+        "title": "Aha Cafe Cầu Cảng Hải Tiến",
+        "city": "Hoang Hoa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Aha Cafe Cầu Cảng Hải Tiến ở Hoang Hoa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.17807,
+                10.658597
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33066855",
+        "title": "1988 Coffee Thanh Hoa",
+        "city": "Hoang Hoa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "1988 Coffee Thanh Hoa ở Hoang Hoa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.77208,
+                19.795404
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23005818",
+        "title": "Hidden Coffee",
+        "city": "Vinh Long",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hidden Coffee ở Vinh Long. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97235,
+                10.249998
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28007446",
+        "title": "Nhà Hàng Gia Sơn - Hải Sản Tươi Sống",
+        "city": "Tinh Gia District",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "1.052.631.552 ₫ - 2.147.483.647 ₫",
+        "description": "Nhà Hàng Gia Sơn - Thiên Đường Hải Sản Tươi Sống và Món Đồng Quê Nhà Hàng Gia Sơn là điểm đến lý tưởng cho những ai yêu thích hải sản tươi sống và các món đồng quê. Hải Sản Tươi Sống: - Cá mú tươi ngon, kết hợp với rau sống và nước chấm đặc trưng. - Tôm tươi ướp sốt Thái chua cay, kích thích vị giác. - Cá hồi tươi, ăn kèm wasabi và nước tương, đậm chất tươi ngon Món Đồng Quê: - Xách bò giòn dai xào cùng khế chua, hài hòa hương vị. - Chim quay giòn rụm, thịt mềm ngọt, gia vị đậm đà. - Cá nướng vàng rụm, chấm nước mắm nêm đặc trưng. Món Lẩu: Nhà hàng còn phục vụ nhiều loại lẩu phong phú như lẩu hải sản, lẩu đuôi bò.. mỗi món đều mang đến hương vị đặc trưng và phong phú. Nhà Hàng Gia Sơn là nơi hoàn hảo để thưởng thức món ngon",
+        "embedding": null,
+        "searchText": "Nhà Hàng Gia Sơn - Hải Sản Tươi Sống ở Tinh Gia District. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà Hàng Gia Sơn - Thiên Đường Hải Sản Tươi Sống và Món Đồng Quê Nhà Hàng Gia Sơn là điểm đến lý tưởng cho những ai yêu thích hải sản tươi sống và các món đồng quê. Hải Sản Tươi Sống: - Cá mú tươi ngon, kết hợp với rau sống và nước chấm đặc trưng. - Tôm tươi ướp sốt Thái chua cay, kích thích vị giác. - Cá hồi tươi, ăn kèm wasabi và nước tương, đậm chất tươi ngon Món Đồng Quê: - Xách bò giòn dai xào cùng khế chua, hài hòa hương vị. - Chim quay giòn rụm, thịt mềm ngọt, gia vị đậm đà. - Cá nướng vàng rụm, chấm nước mắm nêm đặc trưng. Món Lẩu: Nhà hàng còn phục vụ nhiều loại lẩu phong phú như lẩu hải sản, lẩu đuôi bò.. mỗi món đều mang đến hương vị đặc trưng và phong phú. Nhà Hàng Gia Sơn là nơi hoàn hảo để thưởng thức món ngon Giá: 1.052.631.552 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/31/d5/1f/nha-hang-gia-son-h-i.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.7645,
+                19.400534
+            ]
+        },
+        "openingHours": {
+            "display": "08:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27706932",
+        "title": "Pù Luông Mây Home & Cafe",
+        "city": "Thanh Son",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pù Luông Mây Home & Cafe ở Thanh Son. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.33333,
+                20.06667
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    }
+]

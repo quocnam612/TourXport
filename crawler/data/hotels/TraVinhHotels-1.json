@@ -1,0 +1,31 @@
+[
+    {
+        "sourceLocationId": "1988791",
+        "title": "Cuu Long Hotel",
+        "city": "Trà Vinh",
+        "totalScore": 2.7,
+        "ranking": null,
+        "reviewsCount": 44,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cuu Long Hotel ở Trà Vinh. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 2.7/5 từ 44 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/05/b3/73/04/cuu-long-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.333885,
+                9.931494
+            ]
+        },
+        "openingHours": null
+    }
+]

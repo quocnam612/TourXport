@@ -1,0 +1,850 @@
+[
+    {
+        "sourceLocationId": "33090532",
+        "title": "Khu nghỉ dưỡng Rooster Mekong",
+        "city": "Long Thoi, Cho Lach, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 5.0,
+        "ranking": "31/225",
+        "reviewsCount": 1,
+        "category": "Khách sạn",
+        "priceRange": "947.368 ₫ - 1.605.263 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu nghỉ dưỡng Rooster Mekong ở Long Thoi, Cho Lach, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 31/225. Giá: 947.368 ₫ - 1.605.263 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/b8/7a/6b/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.186775,
+                10.23944
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25126789",
+        "title": "Maison Du Pays De Bến Tre",
+        "city": "Thạnh Phú Đông, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 5.0,
+        "ranking": "32/225",
+        "reviewsCount": 1,
+        "category": "Khách sạn",
+        "priceRange": "657.895 ₫ - 894.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Maison Du Pays De Bến Tre ở Thạnh Phú Đông, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 32/225. Giá: 657.895 ₫ - 894.737 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/2e/e2/69/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.44239,
+                10.104386
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12999496",
+        "title": "Khach san Hung Long Ben Tre",
+        "city": "Luong Hoa, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 5.0,
+        "ranking": "33/225",
+        "reviewsCount": 2,
+        "category": "Khách sạn",
+        "priceRange": "473.684 ₫ - 631.579 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khach san Hung Long Ben Tre ở Luong Hoa, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 33/225. Giá: 473.684 ₫ - 631.579 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/8a/d9/d9/m-t-ti-n.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.441025,
+                10.218208
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27456537",
+        "title": "Hide Away Homestay Ben Tre",
+        "city": "Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 5.0,
+        "ranking": "34/225",
+        "reviewsCount": 1,
+        "category": "Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hide Away Homestay Ben Tre ở Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 34/225.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2b/8e/12/50/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.38333,
+                10.23333
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "2244754",
+        "title": "Mekong Floating House",
+        "city": "Quới Sơn, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 3.5,
+        "ranking": "35/225",
+        "reviewsCount": 26,
+        "category": "Khách sạn đặc biệt",
+        "priceRange": "921.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Mekong Floating House ở Quới Sơn, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Khách sạn đặc biệt. Tags: Khách sạn đặc biệt. Đánh giá: 3.5/5 từ 26 lượt review. Xếp hạng: 35/225. Giá: 921.053 ₫.",
+        "tags": [
+            "Khách sạn đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/02/10/5d/f7/exterior-view.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.39232,
+                10.329676
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6770895",
+        "title": "Hoai Phu Hotel",
+        "city": "Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 4.3,
+        "ranking": "36/225",
+        "reviewsCount": 4,
+        "category": "Khách sạn nhỏ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hoai Phu Hotel ở Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 4.3/5 từ 4 lượt review. Xếp hạng: 36/225.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/1d/7a/45/family-room.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37521,
+                10.24987
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15872055",
+        "title": "Huỳnh Thảo Hotel",
+        "city": "Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 4.5,
+        "ranking": "37/225",
+        "reviewsCount": 2,
+        "category": "Khách sạn",
+        "priceRange": "657.895 ₫ - 842.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Huỳnh Thảo Hotel ở Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 37/225. Giá: 657.895 ₫ - 842.105 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/49/8b/6e/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.355286,
+                10.242289
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23374820",
+        "title": "Nong Trai Thanh Thoi",
+        "city": "My Thanh, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 5.0,
+        "ranking": "38/225",
+        "reviewsCount": 1,
+        "category": "Nhà khách",
+        "priceRange": "763.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nong Trai Thanh Thoi ở My Thanh, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Nhà khách. Tags: Nhà khách. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 38/225. Giá: 763.158 ₫.",
+        "tags": [
+            "Nhà khách"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/31/b4/b9/a9/bedroom.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.41997,
+                10.214783
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33694018",
+        "title": "Bamboo Riverside Boutique Hotel",
+        "city": "Tan Thạch, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 4.0,
+        "ranking": "39/225",
+        "reviewsCount": 1,
+        "category": "Khách sạn",
+        "priceRange": "736.842 ₫ - 1.263.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Bamboo Riverside Boutique Hotel ở Tan Thạch, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 39/225. Giá: 736.842 ₫ - 1.263.158 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/31/6c/b1/7b/bedroom.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.36646,
+                10.33159
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9799312",
+        "title": "Dua Xanh Nam Bo Homestay",
+        "city": "Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 4.5,
+        "ranking": "40/225",
+        "reviewsCount": 2,
+        "category": "Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dua Xanh Nam Bo Homestay ở Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 40/225.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/8c/0b/cf/dua-xanh-nam-bo-homestay.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.368996,
+                10.215638
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8608519",
+        "title": "Khu Nghỉ Dưỡng Mỹ An",
+        "city": "Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 3.6,
+        "ranking": "41/225",
+        "reviewsCount": 5,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu Nghỉ Dưỡng Mỹ An ở Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 3.6/5 từ 5 lượt review. Xếp hạng: 41/225.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/de/13/fa/khuon-vien-khu-ngh-du.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.357635,
+                10.214014
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15662031",
+        "title": "Aloe Vera Homestay",
+        "city": "Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 5.0,
+        "ranking": "42/225",
+        "reviewsCount": 1,
+        "category": "Nhà trọ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Aloe Vera Homestay ở Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 42/225.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/15/d9/61/89/aloe-vera-homestay.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12200490",
+        "title": "Amazing Dream Homestay",
+        "city": "Ba Tri, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 5.0,
+        "ranking": "43/225",
+        "reviewsCount": 1,
+        "category": "Nhà ngoại ô",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Amazing Dream Homestay ở Ba Tri, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Nhà ngoại ô. Tags: Nhà ngoại ô. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 43/225.",
+        "tags": [
+            "Nhà ngoại ô"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/14/6b/6d/c8/be-a-farmer.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.58285,
+                10.047819
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21324821",
+        "title": "Du lịch Cồn Phụng - Bến Tre Cona Hotel",
+        "city": "Tan Thạch, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 4.0,
+        "ranking": "44/225",
+        "reviewsCount": 1,
+        "category": "Nhà trọ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Du lịch Cồn Phụng - Bến Tre Cona Hotel ở Tan Thạch, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 44/225.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.36839,
+                10.336534
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8036312",
+        "title": "Mai Thanh Van",
+        "city": "Sơn Hoà, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 4.0,
+        "ranking": "45/225",
+        "reviewsCount": 1,
+        "category": "Nhà khách",
+        "priceRange": "526.316 ₫ - 1.000.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Mai Thanh Van ở Sơn Hoà, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Nhà khách. Tags: Nhà khách. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 45/225. Giá: 526.316 ₫ - 1.000.000 ₫.",
+        "tags": [
+            "Nhà khách"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/97/57/7f/mai-thanh-van.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.18518,
+                10.231725
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6612933",
+        "title": "Đông Nam Á Hotel Bến Tre",
+        "city": "Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 3.0,
+        "ranking": "46/225",
+        "reviewsCount": 2,
+        "category": "Khách sạn đặc biệt",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đông Nam Á Hotel Bến Tre ở Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Khách sạn đặc biệt. Tags: Khách sạn đặc biệt. Đánh giá: 3.0/5 từ 2 lượt review. Xếp hạng: 46/225.",
+        "tags": [
+            "Khách sạn đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/0c/d6/7e/dong-nam-a-1-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.36222,
+                10.258269
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15001194",
+        "title": "Ben Tre Stay",
+        "city": "Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 3.0,
+        "ranking": "47/225",
+        "reviewsCount": 1,
+        "category": "Nhà nghỉ",
+        "priceRange": "210.526 ₫ - 736.842 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Ben Tre Stay ở Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 47/225. Giá: 210.526 ₫ - 736.842 ₫.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/47/17/e5/small-homestay-near-bentre.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.393524,
+                10.246628
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7249040",
+        "title": "Khách sạn Hoa Dừa",
+        "city": "Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 3.3,
+        "ranking": "48/225",
+        "reviewsCount": 3,
+        "category": "Khách sạn nhỏ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Hoa Dừa ở Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 3.3/5 từ 3 lượt review. Xếp hạng: 48/225.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/be/14/d6/khach-s-n-hoa-d-a-b-n.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.35924,
+                10.26576
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1227720",
+        "title": "Hung Vuong Hotel",
+        "city": "Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 3.0,
+        "ranking": "49/225",
+        "reviewsCount": 42,
+        "category": "Khách sạn",
+        "priceRange": "394.737 ₫ - 421.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hung Vuong Hotel ở Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 3.0/5 từ 42 lượt review. Xếp hạng: 49/225. Giá: 394.737 ₫ - 421.053 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/5b/57/04/daily-bike-tour-in-bentre.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37362,
+                10.234367
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6612986",
+        "title": "Dong Nam A 2 Hotel",
+        "city": "Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 2.0,
+        "ranking": "50/225",
+        "reviewsCount": 1,
+        "category": "Khách sạn đặc biệt",
+        "priceRange": "342.105 ₫ - 526.316 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Dong Nam A 2 Hotel ở Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Khách sạn đặc biệt. Tags: Khách sạn đặc biệt. Đánh giá: 2.0/5 từ 1 lượt review. Xếp hạng: 50/225. Giá: 342.105 ₫ - 526.316 ₫.",
+        "tags": [
+            "Khách sạn đặc biệt"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37635,
+                10.235845
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1227404",
+        "title": "Dong Khoi Hotel",
+        "city": "Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 2.3,
+        "ranking": "51/225",
+        "reviewsCount": 7,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dong Khoi Hotel ở Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 2.3/5 từ 7 lượt review. Xếp hạng: 51/225.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/d9/0c/68/dong-khoi-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37879,
+                10.239359
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25210751",
+        "title": "BenTrestay",
+        "city": "Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 2.0,
+        "ranking": "52/225",
+        "reviewsCount": 1,
+        "category": "Khách sạn",
+        "priceRange": "289.474 ₫ - 973.684 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "BenTrestay ở Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 2.0/5 từ 1 lượt review. Xếp hạng: 52/225. Giá: 289.474 ₫ - 973.684 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/11/e9/a7/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.39358,
+                10.246555
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19392189",
+        "title": "Du Lich Sinh Thai Ha Thao",
+        "city": "Nhơn Thạnh, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 1.0,
+        "ranking": "53/225",
+        "reviewsCount": 1,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Du Lich Sinh Thai Ha Thao ở Nhơn Thạnh, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 1.0/5 từ 1 lượt review. Xếp hạng: 53/225.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/1a/bc/6a/81/photo6jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.369,
+                10.32459
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9571208",
+        "title": "Hai Long Hotel",
+        "city": "Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 2.0,
+        "ranking": "54/225",
+        "reviewsCount": 6,
+        "category": "Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hai Long Hotel ở Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 2.0/5 từ 6 lượt review. Xếp hạng: 54/225.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/33/87/2d/hai-long-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37287,
+                10.253755
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12677823",
+        "title": "Mekong Hotel & Restaurant",
+        "city": "Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 1.7,
+        "ranking": "55/225",
+        "reviewsCount": 3,
+        "category": "Khách sạn",
+        "priceRange": "315.789 ₫ - 605.263 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Mekong Hotel & Restaurant ở Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 1.7/5 từ 3 lượt review. Xếp hạng: 55/225. Giá: 315.789 ₫ - 605.263 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/16/62/9a/ce/jrdin-et-hall.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.36359,
+                10.256468
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25294244",
+        "title": "Homestay Coco Island",
+        "city": "Tan Thach, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 1.0,
+        "ranking": "56/225",
+        "reviewsCount": 1,
+        "category": "Khách sạn nhỏ",
+        "priceRange": "605.263 ₫ - 894.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Homestay Coco Island ở Tan Thach, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 1.0/5 từ 1 lượt review. Xếp hạng: 56/225. Giá: 605.263 ₫ - 894.737 ₫.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/3f/78/47/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.369286,
+                10.336097
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11726623",
+        "title": "Nhà Nghỉ Tí Nị - Bến Tre",
+        "city": "Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "57/225",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Nghỉ Tí Nị - Bến Tre ở Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 57/225.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37624,
+                10.23847
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33455120",
+        "title": "Vinhomes Central Park Collection Xiii",
+        "city": "Bình Thạnh, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "58/225",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vinhomes Central Park Collection Xiii ở Bình Thạnh, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 58/225.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.72134,
+                10.79348
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34291482",
+        "title": "Khach San Ben Tre",
+        "city": "Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "59/225",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "500.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khach San Ben Tre ở Bến Tre, Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 59/225. Giá: 500.000 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/33/31/cd/23/bed.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.36167,
+                10.248671
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34091818",
+        "title": "Hoa Lan Motel & Homestay",
+        "city": "Tỉnh Bến Tre, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "60/225",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "289.474 ₫ - 447.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hoa Lan Motel & Homestay ở Tỉnh Bến Tre, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 60/225. Giá: 289.474 ₫ - 447.368 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/32/47/90/39/hoa-lan-motel-homesta.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.39069,
+                10.239192
+            ]
+        },
+        "openingHours": null
+    }
+]

@@ -1,0 +1,928 @@
+[
+    {
+        "sourceLocationId": "8714363",
+        "title": "Vườn Quốc Gia Tam Đảo",
+        "city": "Tam Đảo",
+        "totalScore": 4.2,
+        "ranking": "2/17",
+        "reviewsCount": 55,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn Quốc Gia Tam Đảo ở Tam Đảo. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.2/5 từ 55 lượt review. Xếp hạng: 2/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/fd/8e/97/tam-dao-national-park.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.63549,
+                21.44222
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8071849",
+        "title": "Thiền Viện Trúc Lâm An Tâm",
+        "city": "Tam Đảo",
+        "totalScore": 4.6,
+        "ranking": "1/17",
+        "reviewsCount": 29,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thiền Viện Trúc Lâm An Tâm ở Tam Đảo. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.6/5 từ 29 lượt review. Xếp hạng: 1/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/38/33/99/photo6jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.80781,
+                21.04732
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15009759",
+        "title": "Thiền Viện Trúc Lâm Tây Thiên",
+        "city": "Tam Đảo",
+        "totalScore": 4.6,
+        "ranking": "5/17",
+        "reviewsCount": 8,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thiền Viện Trúc Lâm Tây Thiên ở Tam Đảo. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.6/5 từ 8 lượt review. Xếp hạng: 5/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/26/dd/5f/thi-n-vi-n-truc-lam-tay.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14919999",
+        "title": "Tháp Truyền Hình Tam Đảo",
+        "city": "Tam Đảo",
+        "totalScore": 3.7,
+        "ranking": "9/17",
+        "reviewsCount": 6,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tháp Truyền Hình Tam Đảo ở Tam Đảo. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.7/5 từ 6 lượt review. Xếp hạng: 9/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/fd/95/af/thap-truyen-hinh-tam.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.57622,
+                21.46499
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33496736",
+        "title": "Amber Spa",
+        "city": "Vĩnh Yên",
+        "totalScore": 4.5,
+        "ranking": "1/4",
+        "reviewsCount": 6,
+        "category": "Spa & Sức khỏe",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Amber Spa ở Vĩnh Yên. Loại địa điểm: Spa & Sức khỏe. Tags: Điểm du lịch, Spa & Sức khỏe. Đánh giá: 4.5/5 từ 6 lượt review. Xếp hạng: 1/4.",
+        "tags": [
+            "Điểm du lịch",
+            "Spa & Sức khỏe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/9a/57/9a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "09:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33262434",
+        "title": "Seva Spa",
+        "city": "Ngoc Thanh",
+        "totalScore": 5.0,
+        "ranking": "2/4",
+        "reviewsCount": 4,
+        "category": "Spa & Sức khỏe",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Seva Spa ở Ngoc Thanh. Loại địa điểm: Spa & Sức khỏe. Tags: Điểm du lịch, Spa & Sức khỏe. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 2/4.",
+        "tags": [
+            "Điểm du lịch",
+            "Spa & Sức khỏe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/89/e3/9f/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16816853",
+        "title": "Massage Hoa Sen Healthcare Cente",
+        "city": "Vĩnh Yên",
+        "totalScore": 5.0,
+        "ranking": "3/4",
+        "reviewsCount": 5,
+        "category": "Spa & Sức khỏe",
+        "priceRange": null,
+        "description": "Là đơn vị cung cấp dịch vụ chăm sóc sức khoẻ hàng đầu tại thành phố Vĩnh Yên. Chúng tôi đặt khách hàng làm trọng tâm trong việc phục vụ cũng như chăm sóc bởi các dịch vụ của chúng tôi.\n          \n          ",
+        "embedding": null,
+        "searchText": "Massage Hoa Sen Healthcare Cente ở Vĩnh Yên. Loại địa điểm: Spa & Sức khỏe. Tags: Điểm du lịch, Spa & Sức khỏe. Mô tả: Là đơn vị cung cấp dịch vụ chăm sóc sức khoẻ hàng đầu tại thành phố Vĩnh Yên. Chúng tôi đặt khách hàng làm trọng tâm trong việc phục vụ cũng như chăm sóc bởi các dịch vụ của chúng tôi.\n          \n           Đánh giá: 5.0/5 từ 5 lượt review. Xếp hạng: 3/4.",
+        "tags": [
+            "Điểm du lịch",
+            "Spa & Sức khỏe"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.59395,
+                21.311657
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-23:45",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1425
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13911115",
+        "title": "Dai Lai Golf Club",
+        "city": "Phúc Yên",
+        "totalScore": 4.8,
+        "ranking": "1/3",
+        "reviewsCount": 4,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "Nằm ở chân dãy núi Ngọc thanh, một bên là hồ Đại Lải thơ mộng, cách trung tâm Hà Nội chưa đầy 40 km, kết nối với hệ thống giao thông thuận tiện. Sân được thiết kế với vô số gò đồi uốn lượn mấp mô để đem lại những trải nghiệm vừa thách thức vừa thư giãn nhẹ nhàng. Bao quanh sân là hệ thống cảnh quan, rừng thông. Sân golf hướng ra mặt nước lớn hồ Đại Lải tạo nên cảm giác thú vị cho người chơi.",
+        "embedding": null,
+        "searchText": "Dai Lai Golf Club ở Phúc Yên. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Hoạt động ngoài trời. Mô tả: Nằm ở chân dãy núi Ngọc thanh, một bên là hồ Đại Lải thơ mộng, cách trung tâm Hà Nội chưa đầy 40 km, kết nối với hệ thống giao thông thuận tiện. Sân được thiết kế với vô số gò đồi uốn lượn mấp mô để đem lại những trải nghiệm vừa thách thức vừa thư giãn nhẹ nhàng. Bao quanh sân là hệ thống cảnh quan, rừng thông. Sân golf hướng ra mặt nước lớn hồ Đại Lải tạo nên cảm giác thú vị cho người chơi. Đánh giá: 4.8/5 từ 4 lượt review. Xếp hạng: 1/3.",
+        "tags": [
+            "Điểm du lịch",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/66/36/8b/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.72247,
+                21.326498
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27158286",
+        "title": "Xe Ghép Giá Rẻ",
+        "city": "Vĩnh Yên",
+        "totalScore": 0,
+        "ranking": "1/4",
+        "reviewsCount": 0,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": "Xe Ghép Giá Rẻ là đơn vị chuyên chạy xe taxi ghép tiện chuyến trên tuyến đường Vĩnh Phúc đi Hà Nội và ngược lại, được nhiều hành khách yêu thích và tin tưởng.",
+        "embedding": null,
+        "searchText": "Xe Ghép Giá Rẻ ở Vĩnh Yên. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Khác, Phương tiện giao thông. Mô tả: Xe Ghép Giá Rẻ là đơn vị chuyên chạy xe taxi ghép tiện chuyến trên tuyến đường Vĩnh Phúc đi Hà Nội và ngược lại, được nhiều hành khách yêu thích và tin tưởng. Xếp hạng: 1/4.",
+        "tags": [
+            "Điểm du lịch",
+            "Khác",
+            "Phương tiện giao thông"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/51/a1/c2/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "04:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 240,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 240,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 240,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 240,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 240,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 240,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 240,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27753563",
+        "title": "Aki Foot Massage Vĩnh Yên",
+        "city": "Vĩnh Yên",
+        "totalScore": 5.0,
+        "ranking": "4/4",
+        "reviewsCount": 1,
+        "category": "Spa & Sức khỏe",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Aki Foot Massage Vĩnh Yên ở Vĩnh Yên. Loại địa điểm: Spa & Sức khỏe. Tags: Điểm du lịch, Spa & Sức khỏe. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 4/4.",
+        "tags": [
+            "Điểm du lịch",
+            "Spa & Sức khỏe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/36/8d/72/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.599884,
+                21.32542
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-25:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1500
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27136161",
+        "title": "Thanh Lanh Golf Club",
+        "city": "Trung My",
+        "totalScore": 3.5,
+        "ranking": "2/3",
+        "reviewsCount": 4,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thanh Lanh Golf Club ở Trung My. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Hoạt động ngoài trời. Đánh giá: 3.5/5 từ 4 lượt review. Xếp hạng: 2/3.",
+        "tags": [
+            "Điểm du lịch",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/7a/59/2b/thanh-lanh-valley-golf.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.692024,
+                21.402157
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4778595",
+        "title": "Tam Dao Golf & Resort",
+        "city": "Tam Đảo",
+        "totalScore": 3.4,
+        "ranking": "3/3",
+        "reviewsCount": 17,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tam Dao Golf & Resort ở Tam Đảo. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Hoạt động ngoài trời. Đánh giá: 3.4/5 từ 17 lượt review. Xếp hạng: 3/3.",
+        "tags": [
+            "Điểm du lịch",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/04/90/ff/83/tam-dao-golf-resort.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.62521,
+                21.40409
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1770
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1770
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1770
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1770
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1770
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1770
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "24128341",
+        "title": "Quảng trường Tam Đảo",
+        "city": "Tam Đảo",
+        "totalScore": 5.0,
+        "ranking": "13/17",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quảng trường Tam Đảo ở Tam Đảo. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 13/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/25/4d/53/7f/m-t-goc-qu-ng-tru-ng.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.64467,
+                21.456139
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33022468",
+        "title": "Xe Ghép Tùng Chi",
+        "city": "Vĩnh Yên",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": "Xe Ghép Tùng Chi là đơn vị chuyên cung cấp dịch vụ xe taxi ghép tiện chuyến Vĩnh Phúc - Hà Nội được nhiều hành khách yêu thích và tin tưởng lựa chọn nhờ chất lượng dịch vụ cao, tiết kiệm chi phí, thoải mái và tiện lợi. Xe Ghép Tùng Chi phục vụ hành khách Vĩnh Phúc - Hà Nội 24/7, giờ giấc linh hoạt, đưa đón tận nơi tận tình, chu đáo.",
+        "embedding": null,
+        "searchText": "Xe Ghép Tùng Chi ở Vĩnh Yên. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Phương tiện giao thông. Mô tả: Xe Ghép Tùng Chi là đơn vị chuyên cung cấp dịch vụ xe taxi ghép tiện chuyến Vĩnh Phúc - Hà Nội được nhiều hành khách yêu thích và tin tưởng lựa chọn nhờ chất lượng dịch vụ cao, tiết kiệm chi phí, thoải mái và tiện lợi. Xe Ghép Tùng Chi phục vụ hành khách Vĩnh Phúc - Hà Nội 24/7, giờ giấc linh hoạt, đưa đón tận nơi tận tình, chu đáo.",
+        "tags": [
+            "Điểm du lịch",
+            "Phương tiện giao thông"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.55943,
+                21.29941
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33017035",
+        "title": "Xe Ghép Vĩnh Phúc Hà Nội",
+        "city": "Vĩnh Yên",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": "Xe Ghép Vĩnh Phúc Hà Nội chuyên cung cấp dịch vụ xe taxi ghép tiện chuyến Vĩnh Phúc - Hà Nội giá rẻ như xe bus, chất lượng như xe riêng. Dịch vụ xe ghép Vĩnh Phúc Hà Nội được nhiều hành khách yêu thích và tin tưởng lựa chọn nhờ chất lượng dịch vụ cao, mức giá phải chăng, tiết kiệm chi phí, thoải mái và tiện lợi.",
+        "embedding": null,
+        "searchText": "Xe Ghép Vĩnh Phúc Hà Nội ở Vĩnh Yên. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Phương tiện giao thông. Mô tả: Xe Ghép Vĩnh Phúc Hà Nội chuyên cung cấp dịch vụ xe taxi ghép tiện chuyến Vĩnh Phúc - Hà Nội giá rẻ như xe bus, chất lượng như xe riêng. Dịch vụ xe ghép Vĩnh Phúc Hà Nội được nhiều hành khách yêu thích và tin tưởng lựa chọn nhờ chất lượng dịch vụ cao, mức giá phải chăng, tiết kiệm chi phí, thoải mái và tiện lợi.",
+        "tags": [
+            "Điểm du lịch",
+            "Phương tiện giao thông"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.56689,
+                21.295195
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32994765",
+        "title": "Tam Dao Private Car Service",
+        "city": "Tam Đảo",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": "Mui ne Private car Company offers private transfer service from/to Tam Dao with basic English speaking Driver. From luxurious sedans to spacious SUVs, these rental services cater to various needs and preferences, providing a range of vehicles equipped for comfort and convenience.\n",
+        "embedding": null,
+        "searchText": "Tam Dao Private Car Service ở Tam Đảo. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Khác, Phương tiện giao thông. Mô tả: Mui ne Private car Company offers private transfer service from/to Tam Dao with basic English speaking Driver. From luxurious sedans to spacious SUVs, these rental services cater to various needs and preferences, providing a range of vehicles equipped for comfort and convenience.\n",
+        "tags": [
+            "Điểm du lịch",
+            "Khác",
+            "Phương tiện giao thông"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/2c/a3/a9/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21080920",
+        "title": "Chùa Du Anh chùa Thông",
+        "city": "Vinh Tuong",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Du Anh chùa Thông ở Vinh Tuong. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.521065,
+                21.163177
+            ]
+        },
+        "openingHours": null
+    }
+]

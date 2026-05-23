@@ -1,0 +1,2314 @@
+[
+    {
+        "sourceLocationId": "1066188",
+        "title": "Đồi Cát Trắng",
+        "city": "Mũi Né",
+        "totalScore": 3.8,
+        "ranking": "3/48",
+        "reviewsCount": 3332,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đồi Cát Trắng ở Mũi Né. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.8/5 từ 3332 lượt review. Xếp hạng: 3/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/ca/81/5f/the-white-sand-dunes.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.42766,
+                11.070952
+            ]
+        },
+        "openingHours": {
+            "display": "04:15-18:15",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 255,
+                        "close_time": 1095
+                    }
+                ],
+                [
+                    {
+                        "open_time": 255,
+                        "close_time": 1095
+                    }
+                ],
+                [
+                    {
+                        "open_time": 255,
+                        "close_time": 1095
+                    }
+                ],
+                [
+                    {
+                        "open_time": 255,
+                        "close_time": 1095
+                    }
+                ],
+                [
+                    {
+                        "open_time": 255,
+                        "close_time": 1095
+                    }
+                ],
+                [
+                    {
+                        "open_time": 255,
+                        "close_time": 1095
+                    }
+                ],
+                [
+                    {
+                        "open_time": 255,
+                        "close_time": 1095
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "7312750",
+        "title": "Núi Tà Cú",
+        "city": "Phan Thiết",
+        "totalScore": 4.5,
+        "ranking": "1/48",
+        "reviewsCount": 454,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Núi Tà Cú ở Phan Thiết. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 454 lượt review. Xếp hạng: 1/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/2d/53/18/ttc-world-ta-cu-thu-c.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.88279,
+                10.828099
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "4102998",
+        "title": "Cảng Mũi Né",
+        "city": "Mũi Né",
+        "totalScore": 3.8,
+        "ranking": "5/48",
+        "reviewsCount": 901,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cảng Mũi Né ở Mũi Né. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.8/5 từ 901 lượt review. Xếp hạng: 5/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/62/31/4c/mui-ne-harbor.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.2767,
+                10.942199
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1380317",
+        "title": "Red Sand Dunes",
+        "city": "Mũi Né",
+        "totalScore": 3.5,
+        "ranking": "7/48",
+        "reviewsCount": 2081,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Red Sand Dunes ở Mũi Né. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.5/5 từ 2081 lượt review. Xếp hạng: 7/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/26/b4/ad/1.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.37296,
+                11.033205
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "4412570",
+        "title": "Mũi Né Beach",
+        "city": "Mũi Né",
+        "totalScore": 3.4,
+        "ranking": "11/48",
+        "reviewsCount": 874,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mũi Né Beach ở Mũi Né. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.4/5 từ 874 lượt review. Xếp hạng: 11/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/d7/fb/7e/img-20190608-111909-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.3065,
+                10.953789
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8536173",
+        "title": "Bãi Đá Ông Địa",
+        "city": "Mũi Né",
+        "totalScore": 4.1,
+        "ranking": "8/48",
+        "reviewsCount": 96,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bãi Đá Ông Địa ở Mũi Né. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.1/5 từ 96 lượt review. Xếp hạng: 8/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/1f/45/f9/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.18427,
+                10.936611
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "2423155",
+        "title": "Fairy Stream (Suoi Tien)",
+        "city": "Phan Thiết",
+        "totalScore": 3.9,
+        "ranking": "2/48",
+        "reviewsCount": 2739,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Fairy Stream (Suoi Tien) ở Phan Thiết. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.9/5 từ 2739 lượt review. Xếp hạng: 2/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/39/42/28/20190125-152244-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.25645,
+                10.951217
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-17:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8591208",
+        "title": "Chợ Mũi Né",
+        "city": "Mũi Né",
+        "totalScore": 3.7,
+        "ranking": "15/48",
+        "reviewsCount": 60,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Mũi Né ở Mũi Né. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 3.7/5 từ 60 lượt review. Xếp hạng: 15/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/0b/cc/17/mui-ne-market.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.28659,
+                10.935742
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8610048",
+        "title": "Linh Long Tự",
+        "city": "Mũi Né",
+        "totalScore": 4.3,
+        "ranking": "14/48",
+        "reviewsCount": 33,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Linh Long Tự ở Mũi Né. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 33 lượt review. Xếp hạng: 14/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/e3/49/0f/service-inside-altar.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.28468,
+                10.927382
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15699899",
+        "title": "Bảo tàng nước mắm Làng Chài Xưa",
+        "city": "Mũi Né",
+        "totalScore": 4.7,
+        "ranking": "13/48",
+        "reviewsCount": 18,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bảo tàng nước mắm Làng Chài Xưa ở Mũi Né. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.7/5 từ 18 lượt review. Xếp hạng: 13/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/fd/10/9c/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.16533,
+                10.93921
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1911317",
+        "title": "Linh Son Truong Tho Pagoda",
+        "city": "Phan Thiết",
+        "totalScore": 4.6,
+        "ranking": "4/48",
+        "reviewsCount": 127,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Linh Son Truong Tho Pagoda ở Phan Thiết. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.6/5 từ 127 lượt review. Xếp hạng: 4/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/58/a0/51/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.89069,
+                10.84988
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8602507",
+        "title": "Lotte Mart",
+        "city": "Phan Thiết",
+        "totalScore": 3.8,
+        "ranking": "12/48",
+        "reviewsCount": 92,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lotte Mart ở Phan Thiết. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 3.8/5 từ 92 lượt review. Xếp hạng: 12/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/dc/d6/79/outside-mall-and-shops.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.110954,
+                10.938793
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8611007",
+        "title": "Hòn Rơm",
+        "city": "Mũi Né",
+        "totalScore": 3.9,
+        "ranking": "18/48",
+        "reviewsCount": 33,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hòn Rơm ở Mũi Né. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.9/5 từ 33 lượt review. Xếp hạng: 18/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/e3/42/56/beach-food-hon-rom.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7102338",
+        "title": "Lotus Lake",
+        "city": "Mũi Né",
+        "totalScore": 3.2,
+        "ranking": "25/48",
+        "reviewsCount": 92,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lotus Lake ở Mũi Né. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.2/5 từ 92 lượt review. Xếp hạng: 25/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/1f/59/c8/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.25183,
+                10.95252
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6634195",
+        "title": "Tháp Po Sah Inư",
+        "city": "Phan Thiết",
+        "totalScore": 3.9,
+        "ranking": "6/48",
+        "reviewsCount": 282,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tháp Po Sah Inư ở Phan Thiết. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.9/5 từ 282 lượt review. Xếp hạng: 6/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/05/e9/50/4d/po-sah-inu-cham-tower.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.14621,
+                10.936005
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8602408",
+        "title": "Chợ Hàm Tiến",
+        "city": "Phan Thiết",
+        "totalScore": 3.8,
+        "ranking": "20/48",
+        "reviewsCount": 56,
+        "category": "Đồ ăn & Đồ uống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Hàm Tiến ở Phan Thiết. Loại địa điểm: Đồ ăn & Đồ uống. Tags: Điểm du lịch, Nơi mua sắm, Đồ ăn & Đồ uống. Đánh giá: 3.8/5 từ 56 lượt review. Xếp hạng: 20/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Đồ ăn & Đồ uống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/a0/16/44/front-of-market.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24512,
+                10.954373
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16714949",
+        "title": "Casino GMC Mui Ne",
+        "city": "Ham Tien",
+        "totalScore": 3.7,
+        "ranking": "32/48",
+        "reviewsCount": 3,
+        "category": "Vui chơi & Giải trí",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Casino GMC Mui Ne ở Ham Tien. Loại địa điểm: Vui chơi & Giải trí. Tags: Điểm du lịch, Sòng bạc & Đánh bạc, Vui chơi & Giải trí. Đánh giá: 3.7/5 từ 3 lượt review. Xếp hạng: 32/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Sòng bạc & Đánh bạc",
+            "Vui chơi & Giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/94/34/b2/gmc.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.20166,
+                10.94755
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14186982",
+        "title": "Chợ Phan Thiết",
+        "city": "Phan Thiết",
+        "totalScore": 3.8,
+        "ranking": "22/48",
+        "reviewsCount": 15,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Phan Thiết ở Phan Thiết. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 3.8/5 từ 15 lượt review. Xếp hạng: 22/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/0f/03/18/phan-thiet-market.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.09654,
+                10.925807
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19971753",
+        "title": "Chùa Bình Nhơn",
+        "city": "Tỉnh Bình Thuận",
+        "totalScore": 4.0,
+        "ranking": "33/48",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Bình Nhơn ở Tỉnh Bình Thuận. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 33/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/ba/3c/2e/blick-nach-draussen.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1654283",
+        "title": "Thánh tượng Đức Mẹ Tàpao",
+        "city": "Phan Thiết",
+        "totalScore": 4.7,
+        "ranking": "23/48",
+        "reviewsCount": 11,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thánh tượng Đức Mẹ Tàpao ở Phan Thiết. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.7/5 từ 11 lượt review. Xếp hạng: 23/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/05/38/d7/ba/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8610648",
+        "title": "Đình Vạn Thủy Tú",
+        "city": "Phan Thiết",
+        "totalScore": 3.8,
+        "ranking": "17/48",
+        "reviewsCount": 30,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đình Vạn Thủy Tú ở Phan Thiết. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.8/5 từ 30 lượt review. Xếp hạng: 17/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/30/66/f5/van-thuy-tu-communal.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.10015,
+                10.923201
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9748338",
+        "title": "Vita Garden Mini-Zoo",
+        "city": "Phan Thiết",
+        "totalScore": 3.4,
+        "ranking": "34/48",
+        "reviewsCount": 26,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vita Garden Mini-Zoo ở Phan Thiết. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Sở thú & Thủy cung, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.4/5 từ 26 lượt review. Xếp hạng: 34/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Sở thú & Thủy cung",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/d6/c6/07/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.2584,
+                10.954512
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15815858",
+        "title": "Tàu Cao Tốc Phú Quý Express",
+        "city": "Phan Thiết",
+        "totalScore": 5.0,
+        "ranking": "31/48",
+        "reviewsCount": 1,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": "Tàu cao tốc Phú Quý Express được đóng mới 100%, chuyên chở gần 300 hành khách (trong đó có 230 giường nằm) và 15 tấn hàng hóa. Các khoang tàu đều được trang bị máy lạnh, sạch sẽ và đầy đủ tiện nghi.\n Tàu chuyên vận chuyển hành khách đi công tác, tham quan du lịch biển đảo Phú Quý, Hòn đảo xinh đẹp của tỉnh Bình Thuận",
+        "embedding": null,
+        "searchText": "Tàu Cao Tốc Phú Quý Express ở Phan Thiết. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Phương tiện giao thông. Mô tả: Tàu cao tốc Phú Quý Express được đóng mới 100%, chuyên chở gần 300 hành khách (trong đó có 230 giường nằm) và 15 tấn hàng hóa. Các khoang tàu đều được trang bị máy lạnh, sạch sẽ và đầy đủ tiện nghi.\n Tàu chuyên vận chuyển hành khách đi công tác, tham quan du lịch biển đảo Phú Quý, Hòn đảo xinh đẹp của tỉnh Bình Thuận Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 31/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Phương tiện giao thông"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/19/0e/a3/b6/phuong-ti-n-di-chuy-n.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.11122,
+                10.934439
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8599680",
+        "title": "Ho Chi Minh Museum",
+        "city": "Phan Thiết",
+        "totalScore": 4.1,
+        "ranking": "16/48",
+        "reviewsCount": 36,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ho Chi Minh Museum ở Phan Thiết. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.1/5 từ 36 lượt review. Xếp hạng: 16/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/d8/92/3d/statue.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.09559,
+                10.928457
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6932146",
+        "title": "Ke Ga Light house",
+        "city": "Kê Gà",
+        "totalScore": 4.2,
+        "ranking": "9/48",
+        "reviewsCount": 81,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ke Ga Light house ở Kê Gà. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 81 lượt review. Xếp hạng: 9/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/4a/c4/1f/ke-ga-lighthouse.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.99191,
+                10.699628
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14175677",
+        "title": "Dinh Thầy Thím",
+        "city": "Lagi",
+        "totalScore": 2.0,
+        "ranking": "39/48",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dinh Thầy Thím ở Lagi. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 2.0/5 từ 4 lượt review. Xếp hạng: 39/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/a3/5c/9b/20180428-095616-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.78118,
+                10.65904
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7747006",
+        "title": "Núi Đá Chồng",
+        "city": "Khánh Hải",
+        "totalScore": 4.5,
+        "ranking": "24/48",
+        "reviewsCount": 6,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Núi Đá Chồng ở Khánh Hải. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.5/5 từ 6 lượt review. Xếp hạng: 24/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-c/2560x500/07/70/6f/a5/nui-da-chong.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "5062547",
+        "title": "Reclining Buddha",
+        "city": "Thi Tran Thuan Nam",
+        "totalScore": 4.2,
+        "ranking": "19/48",
+        "reviewsCount": 19,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Reclining Buddha ở Thi Tran Thuan Nam. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 19 lượt review. Xếp hạng: 19/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/c2/a4/a6/photo1jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.89495,
+                10.814378
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27495729",
+        "title": "Wonder Hill",
+        "city": "Phan Thiết",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Wonder Hill ở Phan Thiết. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/98/81/df/wonder-hill.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.04418,
+                10.851744
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27110006",
+        "title": "Muine Travels",
+        "city": "Phan Thiết",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Muine Travels ở Phan Thiết. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Thông tin cho khách du lịch.",
+        "tags": [
+            "Điểm du lịch",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.27396,
+                10.943862
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23811886",
+        "title": "Vietnam Enduro",
+        "city": "Mũi Né",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vietnam Enduro ở Mũi Né. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/33/20/55/e7/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.25415,
+                10.972801
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21197402",
+        "title": "Tien Thanh Beach",
+        "city": "Tien Thanh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tien Thanh Beach ở Tien Thanh. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.03963,
+                10.838708
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6922021",
+        "title": "Vinh Hy Bay",
+        "city": "Vĩnh Hảo",
+        "totalScore": 4.6,
+        "ranking": "10/48",
+        "reviewsCount": 25,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vinh Hy Bay ở Vĩnh Hảo. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.6/5 từ 25 lượt review. Xếp hạng: 10/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/ea/5e/61/bai-chu-i.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27495698",
+        "title": "Wonderland Water Park",
+        "city": "Phan Thiết",
+        "totalScore": 4.8,
+        "ranking": "21/48",
+        "reviewsCount": 4,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": "Wonderland Water Park là công viên nước được thiết kế theo chủ đề Vùng đất đại dương với các trò chơi hấp dẫn dành cho mọi lứa tuổi. Với quy mô 7ha, Wonderland Water Park mang đến cho du khách nhiều cung bậc cảm xúc từ thư giãn đến bùng nổ với các cấp độ thử thách tăng dần.",
+        "embedding": null,
+        "searchText": "Wonderland Water Park ở Phan Thiết. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Mô tả: Wonderland Water Park là công viên nước được thiết kế theo chủ đề Vùng đất đại dương với các trò chơi hấp dẫn dành cho mọi lứa tuổi. Với quy mô 7ha, Wonderland Water Park mang đến cho du khách nhiều cung bậc cảm xúc từ thư giãn đến bùng nổ với các cấp độ thử thách tăng dần. Đánh giá: 4.8/5 từ 4 lượt review. Xếp hạng: 21/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/22/e5/1f/wonderland-water-park.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.1,
+                10.93333
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27495763",
+        "title": "Circus Land",
+        "city": "Tien Thanh",
+        "totalScore": 5.0,
+        "ranking": "26/48",
+        "reviewsCount": 1,
+        "category": "Công viên nước & giải trí",
+        "priceRange": null,
+        "description": "Circus Land là công viên trò chơi ven bờ biển được thiết kế với cảm hứng từ những gánh xiếc lưu động thời thượng kiểu Mỹ. Với quy mô 1.5ha cùng nhiều trò chơi hiện đại, hấp dẫn, Circus Land mang đến cho du khách những cung bậc cảm xúc tuyệt vời. Tại Circus Land du khách có thể hòa mình vào các trò chơi từ nhẹ nhàng cùng “Giấc mơ bồng bềnh” với những chú ngựa gỗ đầy màu sắc lộng lẫy, nhìn ngắm toàn cảnhNovaWorld Phan Thiet từ trên cao tại “Vòng quay hạnh phúc”. Cũng tại đây, du khách cũng có thể thử sức chinh phục những trò chơi cảm giác mạnh đạt tiêu chuẩn quốc tế như “Chinh phục thuỷ quái”, “Bay lên nào”, “Cánh quạt quyền năng”, “Chuyến tàu xuyên không”, “Đĩa bay ảo ảnh”,... Bên cạnh những trải nghiệm vui chơi, tại Circus Land có thể tìm thấy nhiều quầy hàng ẩm thực phục vụ các món ăn nhanh theo phong cách Mỹ như: Hotdog Wagon, Waffy, kem, trà chanh… dễ ăn và ngon miệng, phù hợp cho cả trẻ em và người lớn.",
+        "embedding": null,
+        "searchText": "Circus Land ở Tien Thanh. Loại địa điểm: Công viên nước & giải trí. Tags: Điểm du lịch, Công viên nước & giải trí. Mô tả: Circus Land là công viên trò chơi ven bờ biển được thiết kế với cảm hứng từ những gánh xiếc lưu động thời thượng kiểu Mỹ. Với quy mô 1.5ha cùng nhiều trò chơi hiện đại, hấp dẫn, Circus Land mang đến cho du khách những cung bậc cảm xúc tuyệt vời. Tại Circus Land du khách có thể hòa mình vào các trò chơi từ nhẹ nhàng cùng “Giấc mơ bồng bềnh” với những chú ngựa gỗ đầy màu sắc lộng lẫy, nhìn ngắm toàn cảnhNovaWorld Phan Thiet từ trên cao tại “Vòng quay hạnh phúc”. Cũng tại đây, du khách cũng có thể thử sức chinh phục những trò chơi cảm giác mạnh đạt tiêu chuẩn quốc tế như “Chinh phục thuỷ quái”, “Bay lên nào”, “Cánh quạt quyền năng”, “Chuyến tàu xuyên không”, “Đĩa bay ảo ảnh”,... Bên cạnh những trải nghiệm vui chơi, tại Circus Land có thể tìm thấy nhiều quầy hàng ẩm thực phục vụ các món ăn nhanh theo phong cách Mỹ như: Hotdog Wagon, Waffy, kem, trà chanh… dễ ăn và ngon miệng, phù hợp cho cả trẻ em và người lớn. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 26/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/22/d2/be/circus-land.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.044014,
+                10.850612
+            ]
+        },
+        "openingHours": {
+            "display": "15:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27495429",
+        "title": "Dino Park Phan Thiết",
+        "city": "Phan Thiết",
+        "totalScore": 5.0,
+        "ranking": "27/48",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": "Dino Park – Công viên khủng long lớn nhất miền Nam Việt Nam và là nơi sở hữu mô hình khủng long T-rex động lớn nhất Việt Nam được thiết kế với cảm hứng từ bộ phim Jurassic Park huyền thoại. Tại đây, du khách sẽ được tận mắt chiêm ngưỡng các loài khủng long đã bị tuyệt chủng. Với quy mô lên đến 2.5ha, Dino Park bao gồm 02 không gian: • Không gian ngoài trời: nơi tái hiện lại khung cảnh các loài khủng long gắn liền với hệ sinh thái của chúng. • Không gian trong nhà: mô phỏng hình mẫu phòng thí nghiệm nơi các nhà khoa học thực hiện công cuộc nghiên cứu và chế ngự các loài khủng long. Dino Park sở hữu gần 100 mô hình khủng long theo kích thước thật, nơi du khách sẽ được dẫn dắt vào hành trình khám phá đầy bất ngờ thú vị",
+        "embedding": null,
+        "searchText": "Dino Park Phan Thiết ở Phan Thiết. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Mô tả: Dino Park – Công viên khủng long lớn nhất miền Nam Việt Nam và là nơi sở hữu mô hình khủng long T-rex động lớn nhất Việt Nam được thiết kế với cảm hứng từ bộ phim Jurassic Park huyền thoại. Tại đây, du khách sẽ được tận mắt chiêm ngưỡng các loài khủng long đã bị tuyệt chủng. Với quy mô lên đến 2.5ha, Dino Park bao gồm 02 không gian: • Không gian ngoài trời: nơi tái hiện lại khung cảnh các loài khủng long gắn liền với hệ sinh thái của chúng. • Không gian trong nhà: mô phỏng hình mẫu phòng thí nghiệm nơi các nhà khoa học thực hiện công cuộc nghiên cứu và chế ngự các loài khủng long. Dino Park sở hữu gần 100 mô hình khủng long theo kích thước thật, nơi du khách sẽ được dẫn dắt vào hành trình khám phá đầy bất ngờ thú vị Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 27/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/13/bf/3b/outdoor.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.04418,
+                10.851744
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27495694",
+        "title": "Safari Cafe",
+        "city": "Phan Thiết",
+        "totalScore": 5.0,
+        "ranking": "28/48",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "Safari Cafe – cafe safari bán hoang dã đầu tiên tại Phan Thiết với quy mô 15ha được thiết kế lấy cảm hứng từ vùng hoang mạc Châu Phi với các loài động vật ăn cỏ như hươu cao cổ,ngựa vằn, bò sừng dài, linh dương Đông Phi, hươu sao,đà điểu,… Không chỉ mang đến trải nghiệm tương tác cùng những loài động vật dễ thương, phù hợp với khách hàng ở mọi nhóm tuổi, Safari Café còn hướng đến việc đáp ứng nhu cầu du lịch \"Xanh\", gần gũi với thiên nhiên,kiến tạo nên không gian giải trí kết hợp giáo dục.\nKhi đến với Safari Cafe, du khách có thể check-in với mô hình cây Bao báp “khổng lồ” mang đậm màu sắc Châu Phi, cafe và ngắm hươu cao cổ hay vi vu trên chuyến xe đầu kéo vòng quanh khu sinh thái. Đặc biệt, tại Safari Café du khách có thể tương tác trực tiếp với hơn 100 cá thể động vật, cho thú ăn hay lắng nghe các hướng dẫn viên giới thiệu về từng đặc tính của từng loài, cách chăm sóc chúng và chụp hình check-in cùng với các loài thú.",
+        "embedding": null,
+        "searchText": "Safari Cafe ở Phan Thiết. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Sở thú & Thủy cung, Thiên nhiên & Công viên, Hoạt động ngoài trời. Mô tả: Safari Cafe – cafe safari bán hoang dã đầu tiên tại Phan Thiết với quy mô 15ha được thiết kế lấy cảm hứng từ vùng hoang mạc Châu Phi với các loài động vật ăn cỏ như hươu cao cổ,ngựa vằn, bò sừng dài, linh dương Đông Phi, hươu sao,đà điểu,… Không chỉ mang đến trải nghiệm tương tác cùng những loài động vật dễ thương, phù hợp với khách hàng ở mọi nhóm tuổi, Safari Café còn hướng đến việc đáp ứng nhu cầu du lịch \"Xanh\", gần gũi với thiên nhiên,kiến tạo nên không gian giải trí kết hợp giáo dục.\nKhi đến với Safari Cafe, du khách có thể check-in với mô hình cây Bao báp “khổng lồ” mang đậm màu sắc Châu Phi, cafe và ngắm hươu cao cổ hay vi vu trên chuyến xe đầu kéo vòng quanh khu sinh thái. Đặc biệt, tại Safari Café du khách có thể tương tác trực tiếp với hơn 100 cá thể động vật, cho thú ăn hay lắng nghe các hướng dẫn viên giới thiệu về từng đặc tính của từng loài, cách chăm sóc chúng và chụp hình check-in cùng với các loài thú. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 28/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Sở thú & Thủy cung",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/18/bd/0b/safari.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.04418,
+                10.851744
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28114246",
+        "title": "Dốc Hoàng Hôn Phan Thiết",
+        "city": "Phu Hai",
+        "totalScore": 5.0,
+        "ranking": "29/48",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dốc Hoàng Hôn Phan Thiết ở Phu Hai. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 29/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/0a/75/0a/d-c-hoang-hon-phan-thi.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.15742,
+                10.930258
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "20547216",
+        "title": "Chùa Bửu Sơn",
+        "city": "Phan Thiết",
+        "totalScore": 4.0,
+        "ranking": "30/48",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Bửu Sơn ở Phan Thiết. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 30/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/96/9f/68/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.1457,
+                10.936804
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32863688",
+        "title": "Phan Thiet Beach",
+        "city": "Phan Thiết",
+        "totalScore": 3.0,
+        "ranking": "35/48",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phan Thiet Beach ở Phan Thiết. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 35/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/ac/e7/70/diverse-spiagge-di-phan.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.1317,
+                10.932269
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32863684",
+        "title": "Mui Ne Beach",
+        "city": "Mũi Né",
+        "totalScore": 3.0,
+        "ranking": "36/48",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mui Ne Beach ở Mũi Né. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 36/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/9e/6e/8c/a-spasso-per-mui-ne-dicembre.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.306496,
+                10.953798
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32862633",
+        "title": "Thanh Hai Parish Church",
+        "city": "Phan Thiết",
+        "totalScore": 3.0,
+        "ranking": "37/48",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thanh Hai Parish Church ở Phan Thiết. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 37/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/9c/ad/d1/chiesa-cattolica-di-phan.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.12857,
+                10.934479
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32729036",
+        "title": "Bat Nha Glass Pillar",
+        "city": "Tan Thanh",
+        "totalScore": 3.0,
+        "ranking": "38/48",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bat Nha Glass Pillar ở Tan Thanh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 38/48.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/5a/0c/96/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.17225,
+                11.382784
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-20:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34244716",
+        "title": "Novadreams Wonder Hill Park",
+        "city": "Phan Thiết",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Novadreams Wonder Hill Park ở Phan Thiết. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.69895,
+                10.80564
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34043346",
+        "title": "Mian Farm",
+        "city": "Hoa Thang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mian Farm ở Hoa Thang. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.40395,
+                11.05455
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-18:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1110
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33931777",
+        "title": "Khải Quân Pickleball Phan Thiết",
+        "city": "Phan Thiết",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Vui chơi & Giải trí",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khải Quân Pickleball Phan Thiết ở Phan Thiết. Loại địa điểm: Vui chơi & Giải trí. Tags: Điểm du lịch, Vui chơi & Giải trí.",
+        "tags": [
+            "Điểm du lịch",
+            "Vui chơi & Giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/31/5a/ad/98/play-with-friends.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.12409,
+                10.931292
+            ]
+        },
+        "openingHours": {
+            "display": "05:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33931737",
+        "title": "Ocean Picklelball Club",
+        "city": "Phan Thiết",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Sự kiện",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ocean Picklelball Club ở Phan Thiết. Loại địa điểm: Sự kiện. Tags: Điểm du lịch, Vui chơi & Giải trí, Sự kiện.",
+        "tags": [
+            "Điểm du lịch",
+            "Vui chơi & Giải trí",
+            "Sự kiện"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.1249,
+                10.930991
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33669172",
+        "title": "Đinh camping vườn điều tự túc",
+        "city": "Phan Thiết",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đinh camping vườn điều tự túc ở Phan Thiết. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thông tin cho khách du lịch.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/33/43/48/70/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.10125,
+                10.922616
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [],
+                [],
+                []
+            ]
+        }
+    }
+]

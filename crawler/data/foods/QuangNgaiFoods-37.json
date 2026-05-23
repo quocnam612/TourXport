@@ -1,0 +1,1718 @@
+[
+    {
+        "sourceLocationId": "27410999",
+        "title": "Herbal Pizza & Steak Quảng Ngãi",
+        "city": "Quảng Ngãi",
+        "totalScore": 4.4,
+        "ranking": "1/26",
+        "reviewsCount": 9,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Herbal Pizza & Steak Quảng Ngãi ở Quảng Ngãi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.4/5 từ 9 lượt review. Xếp hạng: 1/26. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/76/7e/61/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.80949,
+                15.128874
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8494891",
+        "title": "Viet Chay Sala",
+        "city": "Quảng Ngãi",
+        "totalScore": 4.1,
+        "ranking": "2/26",
+        "reviewsCount": 29,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Viet Chay Sala ở Quảng Ngãi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.1/5 từ 29 lượt review. Xếp hạng: 2/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/0d/04/2b/2b/buffet-chay-tuy-t-ngon.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.809074,
+                15.119281
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6922195",
+        "title": "Nhung 2 Cơm Gà",
+        "city": "Quảng Ngãi",
+        "totalScore": 3.7,
+        "ranking": "3/26",
+        "reviewsCount": 27,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhung 2 Cơm Gà ở Quảng Ngãi. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.7/5 từ 27 lượt review. Xếp hạng: 3/26.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/8d/82/e2/20160609-122749-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.80195,
+                15.1201
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12504887",
+        "title": "Kawaii Sushi",
+        "city": "Quảng Ngãi",
+        "totalScore": 5.0,
+        "ranking": "4/26",
+        "reviewsCount": 4,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "1.315.789.440 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Kawaii Sushi ở Quảng Ngãi. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 4/26. Giá: 1.315.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/02/16/5b/sushi-moriwase.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.80296,
+                15.119384
+            ]
+        },
+        "openingHours": {
+            "display": "09:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21119718",
+        "title": "Milano Coffee 623 Nguyễn Văn Linh",
+        "city": "Quảng Ngãi",
+        "totalScore": 5.0,
+        "ranking": "5/26",
+        "reviewsCount": 4,
+        "category": "Ngồi xuống",
+        "priceRange": "315.789.472 ₫ - 657.894.720 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Milano Coffee 623 Nguyễn Văn Linh ở Quảng Ngãi. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 5/26. Giá: 315.789.472 ₫ - 657.894.720 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/d4/d9/a7/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.799194,
+                15.142173
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14776470",
+        "title": "Pizza Kids",
+        "city": "Quảng Ngãi",
+        "totalScore": 5.0,
+        "ranking": "6/26",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pizza Kids ở Quảng Ngãi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 6/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/6f/b1/6f/hotline-0905-631-155.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.78562,
+                15.112764
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10834782",
+        "title": "Quan an Co Hanh",
+        "city": "Quảng Ngãi",
+        "totalScore": 4.8,
+        "ranking": "7/26",
+        "reviewsCount": 4,
+        "category": "Ngồi xuống",
+        "priceRange": "394.736.832 ₫ - 789.473.664 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quan an Co Hanh ở Quảng Ngãi. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.8/5 từ 4 lượt review. Xếp hạng: 7/26. Giá: 394.736.832 ₫ - 789.473.664 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/c1/93/c1/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.80464,
+                15.12435
+            ]
+        },
+        "openingHours": {
+            "display": "15:30-18:00, 18:30-36:15",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 930,
+                        "close_time": 1080
+                    },
+                    {
+                        "open_time": 1110,
+                        "close_time": 2175
+                    }
+                ],
+                [
+                    {
+                        "open_time": 930,
+                        "close_time": 1080
+                    },
+                    {
+                        "open_time": 1110,
+                        "close_time": 2175
+                    }
+                ],
+                [
+                    {
+                        "open_time": 930,
+                        "close_time": 1080
+                    },
+                    {
+                        "open_time": 1110,
+                        "close_time": 2175
+                    }
+                ],
+                [
+                    {
+                        "open_time": 930,
+                        "close_time": 1080
+                    },
+                    {
+                        "open_time": 1110,
+                        "close_time": 2175
+                    }
+                ],
+                [
+                    {
+                        "open_time": 930,
+                        "close_time": 1080
+                    },
+                    {
+                        "open_time": 1110,
+                        "close_time": 2175
+                    }
+                ],
+                [
+                    {
+                        "open_time": 930,
+                        "close_time": 1080
+                    },
+                    {
+                        "open_time": 1110,
+                        "close_time": 2175
+                    }
+                ],
+                [
+                    {
+                        "open_time": 930,
+                        "close_time": 1080
+                    },
+                    {
+                        "open_time": 1110,
+                        "close_time": 2175
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "6780900",
+        "title": "Cơm niêu Hoa Sữa",
+        "city": "Quảng Ngãi",
+        "totalScore": 4.0,
+        "ranking": "8/26",
+        "reviewsCount": 6,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cơm niêu Hoa Sữa ở Quảng Ngãi. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.0/5 từ 6 lượt review. Xếp hạng: 8/26.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/6f/b9/39/great-chicken-with-garlic.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.78793,
+                15.129887
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26321337",
+        "title": "Min coffee",
+        "city": "Quảng Ngãi",
+        "totalScore": 5.0,
+        "ranking": "9/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Min Coffee là điểm dừng chân của tất cả quý khách khi đến Quảng Ngãi. Nơi cung cấp món cà phê thượng hạng, nước trái cây, sinh tố tươi mát bổ dưỡng. Đặc biệt là có bán các món ăn chay, thuần chay cho tất cả mọi người khi được yêu cầu. Min Coffee và Min’s House là một địa điểm được nhiều người yêu mến ở Quảng Ngãi.",
+        "embedding": null,
+        "searchText": "Min coffee ở Quảng Ngãi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Min Coffee là điểm dừng chân của tất cả quý khách khi đến Quảng Ngãi. Nơi cung cấp món cà phê thượng hạng, nước trái cây, sinh tố tươi mát bổ dưỡng. Đặc biệt là có bán các món ăn chay, thuần chay cho tất cả mọi người khi được yêu cầu. Min Coffee và Min’s House là một địa điểm được nhiều người yêu mến ở Quảng Ngãi. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 9/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/f7/fc/d6/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.78762,
+                15.130312
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27414097",
+        "title": "Bánh Mì Thành Phát",
+        "city": "Quảng Ngãi",
+        "totalScore": 5.0,
+        "ranking": "10/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bánh Mì Thành Phát ở Quảng Ngãi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 10/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/7a/e4/7b/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.34142,
+                15.699841
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13975508",
+        "title": "Bolo Bala Beer Club",
+        "city": "Quảng Ngãi",
+        "totalScore": 5.0,
+        "ranking": "11/26",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Bolo Bala Beer Club ở Quảng Ngãi. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 11/26. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/02/9f/38/squid.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.79934,
+                15.10311
+            ]
+        },
+        "openingHours": {
+            "display": "16:00-36:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 2160
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 2160
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 2160
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 2160
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 2160
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 2160
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 2160
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23396482",
+        "title": "Cơm Niêu Cây Khế",
+        "city": "Quảng Ngãi",
+        "totalScore": 5.0,
+        "ranking": "12/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cơm Niêu Cây Khế ở Quảng Ngãi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 12/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.79763,
+                15.125721
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33202712",
+        "title": "Cho Quang Ngai Market",
+        "city": "Quảng Ngãi",
+        "totalScore": 4.0,
+        "ranking": "13/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cho Quang Ngai Market ở Quảng Ngãi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 13/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/f1/b8/e9/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.95582,
+                14.80657
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32876932",
+        "title": "Hân Trang Quán Ram Bún Thit Nuöng Cà Phé",
+        "city": "Quảng Ngãi",
+        "totalScore": 4.0,
+        "ranking": "14/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hân Trang Quán Ram Bún Thit Nuöng Cà Phé ở Quảng Ngãi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 14/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/b0/aa/fe/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.81767,
+                21.581722
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12711232",
+        "title": "Nhà Hàng Hải Sản Sake",
+        "city": "Quảng Ngãi",
+        "totalScore": 5.0,
+        "ranking": "15/26",
+        "reviewsCount": 1,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "1.973.684.224 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hải Sản Sake ở Quảng Ngãi. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 15/26. Giá: 1.973.684.224 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/19/0c/2c/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.80235,
+                15.1176
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27414316",
+        "title": "The Thai Cuisine Quảng Ngãi",
+        "city": "Quảng Ngãi",
+        "totalScore": 4.0,
+        "ranking": "16/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Thai Cuisine Quảng Ngãi ở Quảng Ngãi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 16/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/78/6b/91/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.79878,
+                15.122696
+            ]
+        },
+        "openingHours": {
+            "display": "10:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "16754681",
+        "title": "Top Coffee",
+        "city": "Quảng Ngãi",
+        "totalScore": 5.0,
+        "ranking": "17/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Top Coffee ở Quảng Ngãi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 17/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/ad/f0/6f/quan-cafe-gia-r-nhan.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.81269,
+                15.11473
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12817378",
+        "title": "Karaoke Tuấn Thịnh",
+        "city": "Quảng Ngãi",
+        "totalScore": 5.0,
+        "ranking": "18/26",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "263.157.888 ₫ - 2.147.483.647 ₫",
+        "description": "Đi vào hoạt động từ năm 2000 Karaoke Tuấn Thịnh nằm trong làng Karaoke của thành phố Quảng Ngãi và là quán đứng đầu Quảng Ngãi về dịch vụ karaoke. Karaoke Tuấn Thịnh chuyên phục vụ karaoke cho các cơ quan, công sở, đại gia đình, nhóm bạn bè… Là một trong những cơ sở kinh doanh Karaoke lớn,Tuấn Thịnh có 25 phòng được chia làm hai loại có sức chứa 12 người và 70 người...",
+        "embedding": null,
+        "searchText": "Karaoke Tuấn Thịnh ở Quảng Ngãi. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Đi vào hoạt động từ năm 2000 Karaoke Tuấn Thịnh nằm trong làng Karaoke của thành phố Quảng Ngãi và là quán đứng đầu Quảng Ngãi về dịch vụ karaoke. Karaoke Tuấn Thịnh chuyên phục vụ karaoke cho các cơ quan, công sở, đại gia đình, nhóm bạn bè… Là một trong những cơ sở kinh doanh Karaoke lớn,Tuấn Thịnh có 25 phòng được chia làm hai loại có sức chứa 12 người và 70 người... Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 18/26. Giá: 263.157.888 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.79389,
+                15.117812
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13564118",
+        "title": "Light Star Restaurant",
+        "city": "Quảng Ngãi",
+        "totalScore": 4.0,
+        "ranking": "19/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Light Star Restaurant ở Quảng Ngãi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 19/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/33/c9/0a/nha-hang-light-star-01.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.79269,
+                15.1257
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6277214",
+        "title": "Markthalle, Stand Nr. E 027 Frau Pham Thi Chanh",
+        "city": "Quảng Ngãi",
+        "totalScore": 4.0,
+        "ranking": "20/26",
+        "reviewsCount": 1,
+        "category": "Đồ ăn nhanh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Markthalle, Stand Nr. E 027 Frau Pham Thi Chanh ở Quảng Ngãi. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 20/26.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23131112",
+        "title": "Bombay Rooftop - Drinking & Chilling",
+        "city": "Quảng Ngãi",
+        "totalScore": 3.0,
+        "ranking": "21/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bombay Rooftop - Drinking & Chilling ở Quảng Ngãi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 21/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/9b/17/e0/chilling.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24992266",
+        "title": "Cơm Niêu Bến Sông Quê",
+        "city": "Quảng Ngãi",
+        "totalScore": 3.0,
+        "ranking": "22/26",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Cơm Niêu Bến Sông Quê chuyên cung cấp các dịch vụ ăn uống, là nơi đáng để bạn ghé thăm và thưởng thức , với đội ngủ bếp có nhiều năm kinh nghiệm và đội ngũ nhân viên chuyên nghiệp , hứa hẹn sẽ mang đến cho bạn những trải nghiệm thú vị tuyệt vời bên người thân và gia đình !!",
+        "embedding": null,
+        "searchText": "Cơm Niêu Bến Sông Quê ở Quảng Ngãi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Cơm Niêu Bến Sông Quê chuyên cung cấp các dịch vụ ăn uống, là nơi đáng để bạn ghé thăm và thưởng thức , với đội ngủ bếp có nhiều năm kinh nghiệm và đội ngũ nhân viên chuyên nghiệp , hứa hẹn sẽ mang đến cho bạn những trải nghiệm thú vị tuyệt vời bên người thân và gia đình !! Đánh giá: 3.0/5 từ 2 lượt review. Xếp hạng: 22/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/f8/c0/17/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.8024,
+                15.133945
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "11791408",
+        "title": "Quán Cơm Gà Yến",
+        "city": "Quảng Ngãi",
+        "totalScore": 3.7,
+        "ranking": "23/26",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": "52.632 ₫ - 131.579 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Cơm Gà Yến ở Quảng Ngãi. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.7/5 từ 3 lượt review. Xếp hạng: 23/26. Giá: 52.632 ₫ - 131.579 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/86/1f/67/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.80421,
+                15.122549
+            ]
+        },
+        "openingHours": {
+            "display": "18:00-28:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1680
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1680
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1680
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1680
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1680
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1680
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1680
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17852780",
+        "title": "Thu Búp Mì Quảng",
+        "city": "Quảng Ngãi",
+        "totalScore": 1.0,
+        "ranking": "24/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thu Búp Mì Quảng ở Quảng Ngãi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 1.0/5 từ 1 lượt review. Xếp hạng: 24/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.7863,
+                15.12073
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16828345",
+        "title": "Rio Cafe",
+        "city": "Quảng Ngãi",
+        "totalScore": 1.0,
+        "ranking": "25/26",
+        "reviewsCount": 1,
+        "category": "Quán cafe",
+        "priceRange": "26.316 ₫ - 52.632 ₫",
+        "description": "The Rio Coffee là địa điểm hàng đầu cho sự lựa chọn của bạn về dịch vụ café, nước giải khát và bánh tại Quảng Ngãi",
+        "embedding": null,
+        "searchText": "Rio Cafe ở Quảng Ngãi. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Mô tả: The Rio Coffee là địa điểm hàng đầu cho sự lựa chọn của bạn về dịch vụ café, nước giải khát và bánh tại Quảng Ngãi Đánh giá: 1.0/5 từ 1 lượt review. Xếp hạng: 25/26. Giá: 26.316 ₫ - 52.632 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/cd/e4/14/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.79978,
+                15.103252
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25280159",
+        "title": "Cơm Niêu Bếp Nhà Gạo - Cơ Sở 2",
+        "city": "Quảng Ngãi",
+        "totalScore": 1.0,
+        "ranking": "26/26",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "500.000.000 ₫ - 1.815.789.440 ₫",
+        "description": "NHÀ HÀNG CƠM NIÊU BẾP NHÀ GẠO chuyên phục vụ các tour du lịch, nhận đặt tiệc Hội nghị, Liên hoan, Sinh nhật, Cơm trưa văn phòng,",
+        "embedding": null,
+        "searchText": "Cơm Niêu Bếp Nhà Gạo - Cơ Sở 2 ở Quảng Ngãi. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: NHÀ HÀNG CƠM NIÊU BẾP NHÀ GẠO chuyên phục vụ các tour du lịch, nhận đặt tiệc Hội nghị, Liên hoan, Sinh nhật, Cơm trưa văn phòng, Đánh giá: 1.0/5 từ 1 lượt review. Xếp hạng: 26/26. Giá: 500.000.000 ₫ - 1.815.789.440 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/05/ac/ff/combo-gia-dinh-4-ngu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.78235,
+                15.150858
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17662937",
+        "title": "Hải Sản Thành Lợi",
+        "city": "Tỉnh Quảng Ngãi",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hải Sản Thành Lợi ở Tỉnh Quảng Ngãi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.79743,
+                15.13329
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16152290",
+        "title": "Cà Phê Sài Gòn Điểm Hẹn",
+        "city": "Quảng Ngãi",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cà Phê Sài Gòn Điểm Hẹn ở Quảng Ngãi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.79804,
+                15.129221
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32993785",
+        "title": "The Thai Cuisine",
+        "city": "Quảng Ngãi",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Thai Cuisine ở Quảng Ngãi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.78799,
+                15.13183
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14450664",
+        "title": "Quán Ngon",
+        "city": "Quảng Ngãi",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Ngon ở Quảng Ngãi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.80214,
+                15.105094
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21034459",
+        "title": "Kichi Kichi",
+        "city": "Quảng Ngãi",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kichi Kichi ở Quảng Ngãi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14910730",
+        "title": "Nhà Hàng Sake Beer",
+        "city": "Quảng Ngãi",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Sake Beer ở Quảng Ngãi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/de/0f/bd/nha-hang-sake-beer.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.79701,
+                15.125908
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14135385",
+        "title": "Kiều Trâm Cafe",
+        "city": "Quảng Ngãi",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Quán cafe",
+        "priceRange": "263.157.888 ₫ - 526.315.776 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Kiều Trâm Cafe ở Quảng Ngãi. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Giá: 263.157.888 ₫ - 526.315.776 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/21/6a/58/drinks-d-u-ng.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.795715,
+                15.111261
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-11:00, 14:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10766407",
+        "title": "Quán Vinh",
+        "city": "Quảng Ngãi",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Vinh ở Quảng Ngãi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.80297,
+                15.12305
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21282922",
+        "title": "Dêré Cao Nguyên",
+        "city": "Quảng Ngãi",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dêré Cao Nguyên ở Quảng Ngãi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.82171,
+                15.118197
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "22953418",
+        "title": "Pizza Min",
+        "city": "Quảng Ngãi",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Pizza Min ở Quảng Ngãi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.8111,
+                15.1255
+            ]
+        },
+        "openingHours": {
+            "display": "14:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23918090",
+        "title": "Mì Quảng Tam Thanh",
+        "city": "Quảng Ngãi",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Một trong những 5 quán mì quảng ngon nhất Quảng Ngãi, chuẩn vị, sạch sẽ, menu phong phú, giá cả được niêm yết rõ ràng. Hân hạnh được phục vụ quý thượng khách trong và ngoài nước.",
+        "embedding": null,
+        "searchText": "Mì Quảng Tam Thanh ở Quảng Ngãi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Một trong những 5 quán mì quảng ngon nhất Quảng Ngãi, chuẩn vị, sạch sẽ, menu phong phú, giá cả được niêm yết rõ ràng. Hân hạnh được phục vụ quý thượng khách trong và ngoài nước.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.80337,
+                15.111338
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    }
+]

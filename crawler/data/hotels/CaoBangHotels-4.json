@@ -1,0 +1,121 @@
+[
+    {
+        "sourceLocationId": "25160517",
+        "title": "Mường Thanh Luxury Cao Bằng",
+        "city": "Cao Bằng",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 157,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mường Thanh Luxury Cao Bằng ở Cao Bằng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 157 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/27/a3/7a/30/mu-ng-thanh-luxury-cao.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.25961,
+                22.662466
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25166193",
+        "title": "Cao Bang Eco Camping",
+        "city": "Cao Bằng",
+        "totalScore": 5.0,
+        "ranking": null,
+        "reviewsCount": 120,
+        "category": "Cơ sở lưu trú đặc biệt",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cao Bang Eco Camping ở Cao Bằng. Loại địa điểm: Cơ sở lưu trú đặc biệt. Tags: Khách sạn, Cơ sở lưu trú đặc biệt. Đánh giá: 5.0/5 từ 120 lượt review.",
+        "tags": [
+            "Khách sạn",
+            "Cơ sở lưu trú đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/76/83/f8/dem-trang-suong-m.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.273155,
+                22.661673
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26209318",
+        "title": "Cao Bang Eco House",
+        "city": "Cao Bằng",
+        "totalScore": 5.0,
+        "ranking": null,
+        "reviewsCount": 59,
+        "category": "Cơ sở lưu trú đặc biệt",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cao Bang Eco House ở Cao Bằng. Loại địa điểm: Cơ sở lưu trú đặc biệt. Tags: Khách sạn, Cơ sở lưu trú đặc biệt. Đánh giá: 5.0/5 từ 59 lượt review.",
+        "tags": [
+            "Khách sạn",
+            "Cơ sở lưu trú đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/29/b2/d9/e6/cao-bang-eco-house.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.26112,
+                22.664387
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13812591",
+        "title": "Cao Bang Eco Homestay",
+        "city": "Cao Bằng",
+        "totalScore": 5.0,
+        "ranking": null,
+        "reviewsCount": 128,
+        "category": "Cơ sở lưu trú đặc biệt",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cao Bang Eco Homestay ở Cao Bằng. Loại địa điểm: Cơ sở lưu trú đặc biệt. Tags: Khách sạn, Cơ sở lưu trú đặc biệt. Đánh giá: 5.0/5 từ 128 lượt review.",
+        "tags": [
+            "Khách sạn",
+            "Cơ sở lưu trú đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/14/99/5e/72/in-front-of-the-homestay.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.26411,
+                22.659828
+            ]
+        },
+        "openingHours": null
+    }
+]

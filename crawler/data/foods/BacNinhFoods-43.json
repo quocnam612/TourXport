@@ -1,0 +1,2561 @@
+[
+    {
+        "sourceLocationId": "17386296",
+        "title": "Trâu Ngon Quán",
+        "city": "Bắc Ninh",
+        "totalScore": 4.9,
+        "ranking": "1/20",
+        "reviewsCount": 7,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Trâu Ngon Quán ở Bắc Ninh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.9/5 từ 7 lượt review. Xếp hạng: 1/20. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/45/8b/51/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.960144,
+                21.118622
+            ]
+        },
+        "openingHours": {
+            "display": "10:30-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10037832",
+        "title": "Nhà hàng Hà Phong",
+        "city": "Bắc Ninh",
+        "totalScore": 4.5,
+        "ranking": "2/20",
+        "reviewsCount": 13,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Hà Phong ở Bắc Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.5/5 từ 13 lượt review. Xếp hạng: 2/20. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/46/d4/5d/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.06618,
+                21.17995
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23895378",
+        "title": "Nhà Hàng Âu Stade De France",
+        "city": "Bắc Ninh",
+        "totalScore": 5.0,
+        "ranking": "3/20",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Nhà hàng STADE DE FRANCE là nhà hàng cao cấp Fine Dining đầu tiên tại Bắc Ninh, hướng tới một trải nghiệm ẩm thực tinh tế cùng không gian sang trọng đẳng cấp",
+        "embedding": null,
+        "searchText": "Nhà Hàng Âu Stade De France ở Bắc Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Nhà hàng STADE DE FRANCE là nhà hàng cao cấp Fine Dining đầu tiên tại Bắc Ninh, hướng tới một trải nghiệm ẩm thực tinh tế cùng không gian sang trọng đẳng cấp Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 3/20.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/22/17/2d/56/nha-hang-au-stade-de.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.0552,
+                21.1645
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-23:45",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28879811",
+        "title": "AN Kinh Bắc - Signature",
+        "city": "Bắc Ninh",
+        "totalScore": 5.0,
+        "ranking": "4/20",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "AN Kinh–Bắc Signature – Kể lại hành trình khám phá văn hóa địa phương. Tự hào là thương hiệu cà phê từ vùng đất Bắc Ninh, AN Kinh–Bắc khởi tạo cửa hàng Signature đầu tiên của thương hiệu trên chính vùng đất này. Cửa hàng AN Signature được xây dựng dựa trên mô phỏng “kể lại” hành trình khám phá miền Kinh–Bắc. Điểm nhấn trong không gian là hình ảnh mái đình địa phương, cách điệu mềm mại tựa một dải lụa đào, ôm lấy bầu không khí nhộn nhịp của văn hóa sinh hoạt đình làng truyền thống Bắc Bộ. Kết hợp “vừa bổ trợ, vừa tương phản” trong hình khối, vật liệu và màu sắc, thiết kế không gian tại đây phản chiếu tính khớp nối các giá trị quá khứ, hiện tại và tương lai trong văn hóa bản địa. Tất cả nhịp nhàng kết nối để tạo ra những xúc cảm đa chiều dành cho những vị khách đến chơi nhà, về một vùng Kinh–Bắc không chỉ giàu đẹp về văn hóa mà còn chu đáo, thịnh tình.",
+        "embedding": null,
+        "searchText": "AN Kinh Bắc - Signature ở Bắc Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: AN Kinh–Bắc Signature – Kể lại hành trình khám phá văn hóa địa phương. Tự hào là thương hiệu cà phê từ vùng đất Bắc Ninh, AN Kinh–Bắc khởi tạo cửa hàng Signature đầu tiên của thương hiệu trên chính vùng đất này. Cửa hàng AN Signature được xây dựng dựa trên mô phỏng “kể lại” hành trình khám phá miền Kinh–Bắc. Điểm nhấn trong không gian là hình ảnh mái đình địa phương, cách điệu mềm mại tựa một dải lụa đào, ôm lấy bầu không khí nhộn nhịp của văn hóa sinh hoạt đình làng truyền thống Bắc Bộ. Kết hợp “vừa bổ trợ, vừa tương phản” trong hình khối, vật liệu và màu sắc, thiết kế không gian tại đây phản chiếu tính khớp nối các giá trị quá khứ, hiện tại và tương lai trong văn hóa bản địa. Tất cả nhịp nhàng kết nối để tạo ra những xúc cảm đa chiều dành cho những vị khách đến chơi nhà, về một vùng Kinh–Bắc không chỉ giàu đẹp về văn hóa mà còn chu đáo, thịnh tình. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 4/20.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/28/73/9a/giang-sinh-an-kbs-2024.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.17738,
+                20.428381
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19428672",
+        "title": "Nhà Hàng Hải Sản Dung Cua",
+        "city": "Bắc Ninh",
+        "totalScore": 4.4,
+        "ranking": "5/20",
+        "reviewsCount": 5,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hải Sản Dung Cua ở Bắc Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.4/5 từ 5 lượt review. Xếp hạng: 5/20.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/27/79/3e/a7/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.06313,
+                21.17495
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23255765",
+        "title": "Nhà Hàng Uri",
+        "city": "Bắc Ninh",
+        "totalScore": 4.5,
+        "ranking": "6/20",
+        "reviewsCount": 4,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Uri ở Bắc Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.5/5 từ 4 lượt review. Xếp hạng: 6/20. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/3d/a5/51/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.06022,
+                21.170712
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25293614",
+        "title": "nhẹ Kinh Bắc",
+        "city": "Tu Son",
+        "totalScore": 5.0,
+        "ranking": "7/20",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "657.894.720 ₫ - 2.105.263.104 ₫",
+        "description": "Là người Kinh Bắc, giá trị tinh hoa nhất có lẽ là sự lạc quan, tinh tế và dịu dàng đáng kinh ngạc ở mọi hoàn cảnh. Đó là lý do Nhẹ càfe ra đời lấy làm lõi, giữ gìn và phát triển.",
+        "embedding": null,
+        "searchText": "nhẹ Kinh Bắc ở Tu Son. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Là người Kinh Bắc, giá trị tinh hoa nhất có lẽ là sự lạc quan, tinh tế và dịu dàng đáng kinh ngạc ở mọi hoàn cảnh. Đó là lý do Nhẹ càfe ra đời lấy làm lõi, giữ gìn và phát triển. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 7/20. Giá: 657.894.720 ₫ - 2.105.263.104 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/19/b7/96/khong-gian-ngoai-tr-i.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.954926,
+                21.113422
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21235581",
+        "title": "Tân Lương Sơn Quán Bắc Ninh",
+        "city": "Bắc Ninh",
+        "totalScore": 4.7,
+        "ranking": "8/20",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Tân Lương Sơn Quán Bắc Ninh ở Bắc Ninh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.7/5 từ 3 lượt review. Xếp hạng: 8/20. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/d3/21/c1/combo-vip-baba-be-chao.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.05702,
+                21.1734
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14175949",
+        "title": "Cà phê - Sinh tố",
+        "city": "Bắc Ninh",
+        "totalScore": 5.0,
+        "ranking": "9/20",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "94-98% ly cà phê của bạn là nước, 2% còn lại cà các chất lấy ra từ cà phê. Chọn nước phù hợp (thành phần khoáng chất có trong nước) là điều quan trọng trong pha cà phê. Tuy nhiên đó chưa phải là điều quyết quan trọng nhất ảnh hưởng tới việc pha ly cà phê ngon. Nhiệt độ cũng ảnh hưởng rất lớn đến vị của ly cà phê: ngọt, đắng, chua… Kiểm soát nhiệt độ của nước pha chế là chìa khóa cho bất kỳ người pha cà phê hay người yêu cà phê nào. Nhiệt độ nước ảnh hưởng đến cà phê của bạn như thế nào? \"Nhiệt độ của nước có tác động trực tiếp đến tỷ lệ chiết xuất các thành phần khác nhau trong quá trình pha\" Trong quá trình pha, có nhiều phản ứng hóa học phức tạp xảy ra. Nước chiết xuất ​​chlorogenic, acetic và malic acid; caffeine; dầu; và nhiều thứ khác nữa. Những phản ứng này cũng sẽ diễn ra vào những thời điểm khác nhau: ví dụ như caffein, được chiết xuất sớm trong quá trình pha. Axit trái cây cũng bắt đầu xuất hiện trong thời gian đầu tiên, tiếp theo là vị ngọt, và với vị đắng đến cuối cùng...",
+        "embedding": null,
+        "searchText": "Cà phê - Sinh tố ở Bắc Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: 94-98% ly cà phê của bạn là nước, 2% còn lại cà các chất lấy ra từ cà phê. Chọn nước phù hợp (thành phần khoáng chất có trong nước) là điều quan trọng trong pha cà phê. Tuy nhiên đó chưa phải là điều quyết quan trọng nhất ảnh hưởng tới việc pha ly cà phê ngon. Nhiệt độ cũng ảnh hưởng rất lớn đến vị của ly cà phê: ngọt, đắng, chua… Kiểm soát nhiệt độ của nước pha chế là chìa khóa cho bất kỳ người pha cà phê hay người yêu cà phê nào. Nhiệt độ nước ảnh hưởng đến cà phê của bạn như thế nào? \"Nhiệt độ của nước có tác động trực tiếp đến tỷ lệ chiết xuất các thành phần khác nhau trong quá trình pha\" Trong quá trình pha, có nhiều phản ứng hóa học phức tạp xảy ra. Nước chiết xuất ​​chlorogenic, acetic và malic acid; caffeine; dầu; và nhiều thứ khác nữa. Những phản ứng này cũng sẽ diễn ra vào những thời điểm khác nhau: ví dụ như caffein, được chiết xuất sớm trong quá trình pha. Axit trái cây cũng bắt đầu xuất hiện trong thời gian đầu tiên, tiếp theo là vị ngọt, và với vị đắng đến cuối cùng... Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 9/20.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/4a/18/5e/lee-capuchino.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.04501,
+                21.166624
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33671480",
+        "title": "Nhà hàng nhật bản KINZA",
+        "city": "Bắc Ninh",
+        "totalScore": 0,
+        "ranking": "10/20",
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng nhật bản KINZA ở Bắc Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Xếp hạng: 10/20.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.07556,
+                21.173944
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26499198",
+        "title": "Trâu Ngon Quán- Yên Phong",
+        "city": "Bắc Ninh",
+        "totalScore": 5.0,
+        "ranking": "11/20",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "06.08.2023 Trâu Ngon Quán đánh một dấu son trên bản đồ hệ thống, mang ẩm thực trâu ngon thượng hạng đến gần hơn với khách hàng, chính thức khaitrương tại Số 12 - LK6 KĐT An Bình Vọng Đông, Yên Trung, Yên Phong, Bắc Ninh",
+        "embedding": null,
+        "searchText": "Trâu Ngon Quán- Yên Phong ở Bắc Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: 06.08.2023 Trâu Ngon Quán đánh một dấu son trên bản đồ hệ thống, mang ẩm thực trâu ngon thượng hạng đến gần hơn với khách hàng, chính thức khaitrương tại Số 12 - LK6 KĐT An Bình Vọng Đông, Yên Trung, Yên Phong, Bắc Ninh Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 11/20.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.98835,
+                21.22527
+            ]
+        },
+        "openingHours": {
+            "display": "10:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "11955387",
+        "title": "Nhà Hàng Bia Tươi Đức Babarina",
+        "city": "Bắc Ninh",
+        "totalScore": 4.7,
+        "ranking": "12/20",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": "1.578.947 ₫ - 6.578.947 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Bia Tươi Đức Babarina ở Bắc Ninh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.7/5 từ 3 lượt review. Xếp hạng: 12/20. Giá: 1.578.947 ₫ - 6.578.947 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/fb/fc/6b/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.95032,
+                21.11295
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32999900",
+        "title": "Nhà Hàng Lợn Mẹt Dũng Long Sa Pa",
+        "city": "Sapa",
+        "totalScore": 5.0,
+        "ranking": "207/269",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "1.315.789.440 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Lợn Mẹt Dũng Long Sa Pa ở Sapa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 207/269. Giá: 1.315.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/3f/b7/41/l-n-m-t-d-mon-best-seller.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.06408,
+                21.17492
+            ]
+        },
+        "openingHours": {
+            "display": "09:30-23:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1410
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15097213",
+        "title": "GoGi House",
+        "city": "Bắc Ninh",
+        "totalScore": 4.3,
+        "ranking": "13/20",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": "1.578.947.328 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "GoGi House ở Bắc Ninh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.3/5 từ 3 lượt review. Xếp hạng: 13/20. Giá: 1.578.947.328 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/7e/b6/7c/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.07195,
+                21.17548
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27461238",
+        "title": "Nhà Hàng Dolphin",
+        "city": "Bắc Ninh",
+        "totalScore": 5.0,
+        "ranking": "14/20",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Dolphin ở Bắc Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 14/20.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/f3/0c/db/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.06473,
+                21.191809
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12231347",
+        "title": "Nhà Hàng & Bar Kinh Bắc",
+        "city": "Bắc Ninh",
+        "totalScore": 4.3,
+        "ranking": "15/20",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng & Bar Kinh Bắc ở Bắc Ninh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.3/5 từ 3 lượt review. Xếp hạng: 15/20. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/9e/68/b0/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.08182,
+                21.183813
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21248303",
+        "title": "Phở Vương",
+        "city": "Bắc Ninh",
+        "totalScore": 5.0,
+        "ranking": "16/20",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phở Vương ở Bắc Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 16/20.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14134944",
+        "title": "Bánh Mì Gà Xé Cay",
+        "city": "Bắc Ninh",
+        "totalScore": 5.0,
+        "ranking": "17/20",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bánh Mì Gà Xé Cay ở Bắc Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 17/20.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/30/9f/d3/d-a-di-m-thoang-mat-va.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.067474,
+                21.187794
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-13:00, 15:00-20:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1230
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27763868",
+        "title": "Phở Bò Thố Đá - Cơm Tự Chọn",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 5.0,
+        "ranking": "68/167",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "263.158 ₫ - 5.263.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Phở Bò Thố Đá - Cơm Tự Chọn ở Vịnh Hạ Long. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 68/167. Giá: 263.158 ₫ - 5.263.158 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/3c/32/ce/t-ch-c-sinh-nh-t.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.06174,
+                21.16743
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-21:45",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1305
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1305
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1305
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1305
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1305
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1305
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1305
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13908637",
+        "title": "Nhà Hàng Hàn Quốc",
+        "city": "Bắc Ninh",
+        "totalScore": 2.0,
+        "ranking": "18/20",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hàn Quốc ở Bắc Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 2.0/5 từ 1 lượt review. Xếp hạng: 18/20.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/74/62/27/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.05749,
+                21.17518
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23085808",
+        "title": "The Pizza Company",
+        "city": "Bắc Ninh",
+        "totalScore": 1.0,
+        "ranking": "19/20",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The Pizza Company ở Bắc Ninh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 1.0/5 từ 1 lượt review. Xếp hạng: 19/20. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/29/d1/d2/38/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.0627,
+                21.172262
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28471129",
+        "title": "Bếp Nhà Nem - Nầm Bò Nướng Ecopark",
+        "city": "Hung Yen",
+        "totalScore": 5.0,
+        "ranking": "1/6",
+        "reviewsCount": 9,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Bếp nhà Nem Ecopark chuyên nầm bò nướng bơ chảo hương vị Tây Bắc. Bánh cuốn tráng tay chuẩn vị Thanh Hoá. Mở cửa cả ngày từ 6 giờ sáng đến 23 giờ tối. Menu: - Nầm nướng - Bò nướng - Ba chỉ nướng - Bánh cuốn tráng tay Thanh Hoá - Cháo lươn Thanh Hoá - Chả tôm Thanh Hoá",
+        "embedding": null,
+        "searchText": "Bếp Nhà Nem - Nầm Bò Nướng Ecopark ở Hung Yen. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Bếp nhà Nem Ecopark chuyên nầm bò nướng bơ chảo hương vị Tây Bắc. Bánh cuốn tráng tay chuẩn vị Thanh Hoá. Mở cửa cả ngày từ 6 giờ sáng đến 23 giờ tối. Menu: - Nầm nướng - Bò nướng - Ba chỉ nướng - Bánh cuốn tráng tay Thanh Hoá - Cháo lươn Thanh Hoá - Chả tôm Thanh Hoá Đánh giá: 5.0/5 từ 9 lượt review. Xếp hạng: 1/6.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/f6/9e/0c/n-m-bo-nu-ng.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.018425,
+                21.141869
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21019811",
+        "title": "Trà Dạo Mát",
+        "city": "Bắc Ninh",
+        "totalScore": 0,
+        "ranking": "20/20",
+        "reviewsCount": 0,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "263.157.888 ₫ - 394.736.832 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Trà Dạo Mát ở Bắc Ninh. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Xếp hạng: 20/20. Giá: 263.157.888 ₫ - 394.736.832 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/6d/a1/b1/tra-d-o-mat.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.07047,
+                21.18105
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32911943",
+        "title": "Ba Nhất",
+        "city": "Hà Nội",
+        "totalScore": 5.0,
+        "ranking": "496/3710",
+        "reviewsCount": 22,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ba Nhất ở Hà Nội. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 22 lượt review. Xếp hạng: 496/3710.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/30/97/cb/99/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.913956,
+                21.13906
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4587353",
+        "title": "The Hung Snake Restaurant",
+        "city": "Hà Nội",
+        "totalScore": 4.9,
+        "ranking": "9/3710",
+        "reviewsCount": 1984,
+        "category": "Ngồi xuống",
+        "priceRange": "289.474 ₫ - 3.947.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The Hung Snake Restaurant ở Hà Nội. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.9/5 từ 1984 lượt review. Xếp hạng: 9/3710. Giá: 289.474 ₫ - 3.947.368 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/23/16/36/the-entrance-of-the-hung.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.89825,
+                21.05601
+            ]
+        },
+        "openingHours": {
+            "display": "09:30-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14199232",
+        "title": "The Cobra Snake Ba Mao",
+        "city": "Hà Nội",
+        "totalScore": 5.0,
+        "ranking": "93/3710",
+        "reviewsCount": 247,
+        "category": "Ngồi xuống",
+        "priceRange": "394.737 ₫ - 526.316 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The Cobra Snake Ba Mao ở Hà Nội. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 247 lượt review. Xếp hạng: 93/3710. Giá: 394.737 ₫ - 526.316 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/4d/10/33/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.90024,
+                21.054403
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33368763",
+        "title": "Ok Sushi Restaurant",
+        "city": "Bắc Ninh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ok Sushi Restaurant ở Bắc Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.05933,
+                21.17252
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26524893",
+        "title": "Phở 1981",
+        "city": "Bắc Ninh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phở 1981 ở Bắc Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.06605,
+                21.185719
+            ]
+        },
+        "openingHours": {
+            "display": "05:00-14:00, 16:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26877960",
+        "title": "Nhà hàng Bếp xưa",
+        "city": "Bắc Ninh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Nhà hàng Bếp xưa phục vụ các món lẩu đồng quê đậm đà hương vị truyền thống",
+        "embedding": null,
+        "searchText": "Nhà hàng Bếp xưa ở Bắc Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Nhà hàng Bếp xưa phục vụ các món lẩu đồng quê đậm đà hương vị truyền thống",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.05805,
+                21.183216
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28879813",
+        "title": "AN Kinh Bắc - Võ Cường",
+        "city": "Bắc Ninh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "921.052.608 ₫ - 1.710.526.336 ₫",
+        "description": "Nằm bên công viên rợp bóng cây, cạnh khu chợ đầu mối lâu đời của thành phố, chúng mình đã khai thác văn hóa của nơi chốn trong không gian dịch vụ, cùng với những sự hứng khởi, ân cần vốn có để mong các bạn sẽ có những trải nghiệm mới mẻ, thú vị ngay chính tại thành phố của chúng mình.",
+        "embedding": null,
+        "searchText": "AN Kinh Bắc - Võ Cường ở Bắc Ninh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nằm bên công viên rợp bóng cây, cạnh khu chợ đầu mối lâu đời của thành phố, chúng mình đã khai thác văn hóa của nơi chốn trong không gian dịch vụ, cùng với những sự hứng khởi, ân cần vốn có để mong các bạn sẽ có những trải nghiệm mới mẻ, thú vị ngay chính tại thành phố của chúng mình. Giá: 921.052.608 ₫ - 1.710.526.336 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/e7/6a/d7/1a-vo-cu-ng-10-phu-ng.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.05574,
+                21.171724
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34020280",
+        "title": "Buffet Poseidon Bắc Ninh",
+        "city": "Bắc Ninh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "Buffet Poseidon là chuỗi nhà hàng buffet hải sản lớn nhất Việt Nam. Lấy cảm hứng từ Poseidon, vị thần biển cả trong thần thoại Hy Lạp, thương hiệu này hướng đến việc mang lại trải nghiệm ẩm thực đa dạng và tinh tế cho mọi thực khách. Tại Poseidon, khách hàng có thể thưởng thức hơn 200 món ăn được chế biến tỉ mỉ, với điểm nhấn là hải sản cao cấp, bao gồm cua, ốc biển, cá hồi, tôm, mực. Cùng với đó là các quầy ẩm thực quốc tế Á Âu và các món đặc trưng truyền thống chợ quê ba miền Việt Nam.",
+        "embedding": null,
+        "searchText": "Buffet Poseidon Bắc Ninh ở Bắc Ninh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Buffet Poseidon là chuỗi nhà hàng buffet hải sản lớn nhất Việt Nam. Lấy cảm hứng từ Poseidon, vị thần biển cả trong thần thoại Hy Lạp, thương hiệu này hướng đến việc mang lại trải nghiệm ẩm thực đa dạng và tinh tế cho mọi thực khách. Tại Poseidon, khách hàng có thể thưởng thức hơn 200 món ăn được chế biến tỉ mỉ, với điểm nhấn là hải sản cao cấp, bao gồm cua, ốc biển, cá hồi, tôm, mực. Cùng với đó là các quầy ẩm thực quốc tế Á Âu và các món đặc trưng truyền thống chợ quê ba miền Việt Nam. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/33/3a/17/23/tom-su-nu-ng-luon-la.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.072014,
+                21.178476
+            ]
+        },
+        "openingHours": {
+            "display": "11:00-14:00, 17:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33230572",
+        "title": "Almost Space",
+        "city": "Bắc Ninh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Almost Space ở Bắc Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.06419,
+                21.177315
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27481801",
+        "title": "Caribbe - Buffet Seafood",
+        "city": "Bắc Ninh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Caribbe - Buffet Seafood ở Bắc Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/db/85/f6/d-i-ngu-nhan-vien.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.07632,
+                21.18608
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1590
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1590
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1590
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1590
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1590
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1590
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1590
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15097205",
+        "title": "GoGi House",
+        "city": "Bắc Ninh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "1.578.947.328 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "GoGi House ở Bắc Ninh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 1.578.947.328 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/7e/ac/e0/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.07195,
+                21.17548
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23142877",
+        "title": "Nhẹ càfe",
+        "city": "Bắc Ninh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "394.736.832 ₫ - 921.052.608 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhẹ càfe ở Bắc Ninh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 394.736.832 ₫ - 921.052.608 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/9f/ae/f4/ca-phe-th-ch-kem-s-a.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.87674,
+                21.123022
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27670610",
+        "title": "Nhà Hàng Uri Palace - Bắc Ninh",
+        "city": "Bắc Ninh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Uri Palace - Bắc Ninh ở Bắc Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.06013,
+                21.170609
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21139730",
+        "title": "El Éxito Cocktail Bar & Lounge",
+        "city": "Bắc Ninh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "El Éxito Cocktail Bar & Lounge ở Bắc Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.07631,
+                21.18608
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24986183",
+        "title": "Sushi Sake",
+        "city": "Bắc Ninh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sushi Sake ở Bắc Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/25/dd/b3/81/cornflakes-black-tiger.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.06006,
+                21.172735
+            ]
+        },
+        "openingHours": {
+            "display": "16:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "24155574",
+        "title": "Nhà hàng Quán Ngon Ba Miền Bắc Ninh",
+        "city": "Bắc Ninh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Quán Ngon Ba Miền Bắc Ninh ở Bắc Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.07398,
+                21.179312
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33227771",
+        "title": "Almost Space",
+        "city": "Bắc Ninh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Almost Space ở Bắc Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.06419,
+                21.177322
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13836743",
+        "title": "Sky Garden",
+        "city": "Đình Bảng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sky Garden ở Đình Bảng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.94942,
+                21.099401
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21071757",
+        "title": "2nd Espresso",
+        "city": "Tu Son",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "2nd Espresso ở Tu Son. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.95913,
+                21.116909
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25293625",
+        "title": "nhẹ Đền Đô",
+        "city": "Tu Son",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Cơ sở đầu tiên của hệ thống nhẹ cafe",
+        "embedding": null,
+        "searchText": "nhẹ Đền Đô ở Tu Son. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Cơ sở đầu tiên của hệ thống nhẹ cafe",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/b3/c9/fc/nh-d-n-do-from-outside.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.95781,
+                21.1085
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    }
+]

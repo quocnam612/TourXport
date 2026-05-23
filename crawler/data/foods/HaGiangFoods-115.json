@@ -1,0 +1,6209 @@
+[
+    {
+        "sourceLocationId": "7984175",
+        "title": "nhà hàng quang dũng",
+        "city": "Đồng Văn",
+        "totalScore": 4.8,
+        "ranking": "1/97",
+        "reviewsCount": 367,
+        "category": "Ngồi xuống",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "nhà hàng quang dũng ở Đồng Văn. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.8/5 từ 367 lượt review. Xếp hạng: 1/97. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/9e/8a/30/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.3613,
+                23.278702
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15697908",
+        "title": "Mr.Hung Bar Restaurant",
+        "city": "Hà Giang",
+        "totalScore": 4.8,
+        "ranking": "2/97",
+        "reviewsCount": 279,
+        "category": "Ngồi xuống",
+        "priceRange": "78.947 ₫ - 526.316 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Mr.Hung Bar Restaurant ở Hà Giang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.8/5 từ 279 lượt review. Xếp hạng: 2/97. Giá: 78.947 ₫ - 526.316 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/16/36/69/delicious-spring-rolls.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.97557,
+                22.805433
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25454566",
+        "title": "Phiên - Coffee, Beer & Wine",
+        "city": "Đồng Văn",
+        "totalScore": 4.9,
+        "ranking": "3/97",
+        "reviewsCount": 73,
+        "category": "Ngồi xuống",
+        "priceRange": "789.473.664 ₫ - 2.147.483.647 ₫",
+        "description": "Phiên - Coffee, Beer & Wine là công sức của người chị lớn nhưng tâm hồn tươi trẻ, luôn muốn trải nghiệm những thử thách cùng các em, người chị chu đáo luôn tất bật với công việc, là nhờ thật nhiều động viên để các em chịu dấn thân của người anh ngoài thiếu người yêu thì không thiếu thứ gì, là từ người bạn chẳng nề hà thức khuya dậy sớm, xắn áo xắn quần đầu bù tóc rối bao ngày, là công sức của người em út dùng cả thanh xuân để tạo nên những thứ đẹp xỉu… “Phiên” không phải của riêng chúng mình mà là của cả gia đình, người thân chúng mình... Từ hôm nay, khi “Phiên” đã thành hình, \"Phiên\" sẽ luôn ấm nồng, nhộn nhịp, thú vị và thật riêng có. “Phiên” sẽ luôn đủ rộn ràng khi bạn cần, đủ an yên khi bạn muốn. “Phiên” có Nô, có Lử… những em trai H’Mông hiền hoà, chân thành, hiếu khách. Mời bạn ghé “Phiên” tại ngay Phố cổ Đồng Văn để trải nghiệm những tâm huyết của chúng mình - những người yêu mến và trân trọng những gì truyền thống, bình dị của Hà Giang Phiên - Coffee - Beer - Wine and more!",
+        "embedding": null,
+        "searchText": "Phiên - Coffee, Beer & Wine ở Đồng Văn. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Phiên - Coffee, Beer & Wine là công sức của người chị lớn nhưng tâm hồn tươi trẻ, luôn muốn trải nghiệm những thử thách cùng các em, người chị chu đáo luôn tất bật với công việc, là nhờ thật nhiều động viên để các em chịu dấn thân của người anh ngoài thiếu người yêu thì không thiếu thứ gì, là từ người bạn chẳng nề hà thức khuya dậy sớm, xắn áo xắn quần đầu bù tóc rối bao ngày, là công sức của người em út dùng cả thanh xuân để tạo nên những thứ đẹp xỉu… “Phiên” không phải của riêng chúng mình mà là của cả gia đình, người thân chúng mình... Từ hôm nay, khi “Phiên” đã thành hình, \"Phiên\" sẽ luôn ấm nồng, nhộn nhịp, thú vị và thật riêng có. “Phiên” sẽ luôn đủ rộn ràng khi bạn cần, đủ an yên khi bạn muốn. “Phiên” có Nô, có Lử… những em trai H’Mông hiền hoà, chân thành, hiếu khách. Mời bạn ghé “Phiên” tại ngay Phố cổ Đồng Văn để trải nghiệm những tâm huyết của chúng mình - những người yêu mến và trân trọng những gì truyền thống, bình dị của Hà Giang Phiên - Coffee - Beer - Wine and more! Đánh giá: 4.9/5 từ 73 lượt review. Xếp hạng: 3/97. Giá: 789.473.664 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/29/1e/c8/ce/phien-is-a-local-bar.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.36127,
+                23.27851
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28105388",
+        "title": "Gác Bếp Cuisine",
+        "city": "Đồng Văn",
+        "totalScore": 5.0,
+        "ranking": "4/97",
+        "reviewsCount": 56,
+        "category": "Ngồi xuống",
+        "priceRange": "921.052.608 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Gác Bếp Cuisine ở Đồng Văn. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 56 lượt review. Xếp hạng: 4/97. Giá: 921.052.608 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/18/8a/0e/commemorative-photo-of.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.53872,
+                18.46081
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15829302",
+        "title": "Roma Italian Restaurant",
+        "city": "Đồng Văn",
+        "totalScore": 4.6,
+        "ranking": "5/97",
+        "reviewsCount": 169,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Roma Italian Restaurant ở Đồng Văn. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.6/5 từ 169 lượt review. Xếp hạng: 5/97. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/19/7d/68/55/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.35968,
+                23.277636
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-23:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1410
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12419699",
+        "title": "Nhà Hàng Green Karst",
+        "city": "Đồng Văn",
+        "totalScore": 4.6,
+        "ranking": "6/97",
+        "reviewsCount": 242,
+        "category": "Ngồi xuống",
+        "priceRange": "52.632 ₫ - 394.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Green Karst ở Đồng Văn. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.6/5 từ 242 lượt review. Xếp hạng: 6/97. Giá: 52.632 ₫ - 394.737 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/4f/48/76/the-hot-pot-is-delicious.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.360085,
+                23.27928
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25415876",
+        "title": "Quiri Bar & Restaurant Ha Giang",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "7/97",
+        "reviewsCount": 35,
+        "category": "Ngồi xuống",
+        "priceRange": "2.631.579 ₫ - 7.894.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quiri Bar & Restaurant Ha Giang ở Hà Giang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 35 lượt review. Xếp hạng: 7/97. Giá: 2.631.579 ₫ - 7.894.737 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/0f/4b/c0/our-customer.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.96389,
+                22.814335
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14887924",
+        "title": "Mr. Hung Italian Restaurant & Bar Wine Mèo Vạc",
+        "city": "Mèo Vạc",
+        "totalScore": 4.5,
+        "ranking": "8/97",
+        "reviewsCount": 104,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "184.211 ₫ - 315.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Mr. Hung Italian Restaurant & Bar Wine Mèo Vạc ở Mèo Vạc. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 4.5/5 từ 104 lượt review. Xếp hạng: 8/97. Giá: 184.211 ₫ - 315.789 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/f1/14/fc/welcome.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.40775,
+                23.163229
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-23:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1410
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23501971",
+        "title": "PIZZA HERE",
+        "city": "Hà Giang",
+        "totalScore": 4.6,
+        "ranking": "9/97",
+        "reviewsCount": 38,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "PIZZA HERE là nhà hàng đầu tiên tại Việt Nam mang đến một khái niệm pizza mới và đích thực: pizza cuộn.",
+        "embedding": null,
+        "searchText": "PIZZA HERE ở Hà Giang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: PIZZA HERE là nhà hàng đầu tiên tại Việt Nam mang đến một khái niệm pizza mới và đích thực: pizza cuộn. Đánh giá: 4.6/5 từ 38 lượt review. Xếp hạng: 9/97. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/29/26/75/our-restaurant-main-floor.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98561,
+                22.826035
+            ]
+        },
+        "openingHours": {
+            "display": "12:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 720,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 720,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 720,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 720,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 720,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 720,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 720,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "24110536",
+        "title": "Phượt House Restaurant And Motorbikes",
+        "city": "Hà Giang",
+        "totalScore": 4.9,
+        "ranking": "10/97",
+        "reviewsCount": 22,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phượt House Restaurant And Motorbikes ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.9/5 từ 22 lượt review. Xếp hạng: 10/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/23/eb/a0/0f/restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.97841,
+                22.804193
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14057784",
+        "title": "Thanh Phương Restaurant",
+        "city": "Mèo Vạc",
+        "totalScore": 4.7,
+        "ranking": "11/97",
+        "reviewsCount": 45,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thanh Phương Restaurant ở Mèo Vạc. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.7/5 từ 45 lượt review. Xếp hạng: 11/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/1a/a1/33/19/thanh-phuong-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.408134,
+                23.164837
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26684142",
+        "title": "ToTo-Chan Vegetarian Food & Drink",
+        "city": "Đồng Văn",
+        "totalScore": 5.0,
+        "ranking": "12/97",
+        "reviewsCount": 16,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Nhà hàng phục vụ đồ ăn chay và đồ uống",
+        "embedding": null,
+        "searchText": "ToTo-Chan Vegetarian Food & Drink ở Đồng Văn. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Nhà hàng phục vụ đồ ăn chay và đồ uống Đánh giá: 5.0/5 từ 16 lượt review. Xếp hạng: 12/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/dd/60/38/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.36011,
+                23.280071
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19116247",
+        "title": "Ethnic House Lounge Bar & hostel",
+        "city": "Đồng Văn",
+        "totalScore": 4.7,
+        "ranking": "13/97",
+        "reviewsCount": 22,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ethnic House Lounge Bar & hostel ở Đồng Văn. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.7/5 từ 22 lượt review. Xếp hạng: 13/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/23/50/c2/b8/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.3596,
+                23.28016
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26575768",
+        "title": "Ma Pi Leng Restaurant",
+        "city": "Đồng Văn",
+        "totalScore": 5.0,
+        "ranking": "14/97",
+        "reviewsCount": 14,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Discover the soul of the highlands, where traditional Hmong cuisine blends seamlessly with ancient architecture rich in cultural identity. Nestled in the heart of majestic nature, our restaurant offers not only unforgettable flavors but also the warmth and heartfelt hospitality of the Hmong people — a memorable journey for those seeking an authentic experience. We are honored to welcome and serve you.",
+        "embedding": null,
+        "searchText": "Ma Pi Leng Restaurant ở Đồng Văn. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Discover the soul of the highlands, where traditional Hmong cuisine blends seamlessly with ancient architecture rich in cultural identity. Nestled in the heart of majestic nature, our restaurant offers not only unforgettable flavors but also the warmth and heartfelt hospitality of the Hmong people — a memorable journey for those seeking an authentic experience. We are honored to welcome and serve you. Đánh giá: 5.0/5 từ 14 lượt review. Xếp hạng: 14/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/9a/b3/de/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.371666,
+                23.293125
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19736761",
+        "title": "Hala Indian Restaurant",
+        "city": "Đồng Văn",
+        "totalScore": 5.0,
+        "ranking": "15/97",
+        "reviewsCount": 25,
+        "category": "Ngồi xuống",
+        "priceRange": "78.947 ₫ - 210.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hala Indian Restaurant ở Đồng Văn. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 25 lượt review. Xếp hạng: 15/97. Giá: 78.947 ₫ - 210.526 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/63/bf/69/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.35985,
+                23.277605
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33738234",
+        "title": "Zôm pub",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "16/97",
+        "reviewsCount": 9,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Zôm pub ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 9 lượt review. Xếp hạng: 16/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/e6/b0/5b/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98199,
+                22.819206
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26857859",
+        "title": "Top of the Loop",
+        "city": "Hà Giang",
+        "totalScore": 4.6,
+        "ranking": "17/97",
+        "reviewsCount": 15,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": "Top of the Loop – Hostel · Kitchen · Rooftop Bar Located in the heart of Ha Giang, Top of the Loop offers a cozy stopover for travelers who love to explore. We bring together a friendly hostel, a kitchen serving both local and international flavors, and a rooftop bar with stunning mountain views—creating a space that is both welcoming and vibrant. Here, you can start your journey with a hearty meal, connect with fellow travelers, and end the day with a cocktail at sunset over the mountains. Top of the Loop is more than just a place to stay—it’s a community for wanderers seeking authentic Ha Giang experiences.",
+        "embedding": null,
+        "searchText": "Top of the Loop ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Top of the Loop – Hostel · Kitchen · Rooftop Bar Located in the heart of Ha Giang, Top of the Loop offers a cozy stopover for travelers who love to explore. We bring together a friendly hostel, a kitchen serving both local and international flavors, and a rooftop bar with stunning mountain views—creating a space that is both welcoming and vibrant. Here, you can start your journey with a hearty meal, connect with fellow travelers, and end the day with a cocktail at sunset over the mountains. Top of the Loop is more than just a place to stay—it’s a community for wanderers seeking authentic Ha Giang experiences. Đánh giá: 4.6/5 từ 15 lượt review. Xếp hạng: 17/97. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/b9/5e/c1/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.97972,
+                22.818876
+            ]
+        },
+        "openingHours": {
+            "display": "07:45-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 465,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 465,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 465,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 465,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 465,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 465,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 465,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15699836",
+        "title": "Bong Restaurant",
+        "city": "Đồng Văn",
+        "totalScore": 4.7,
+        "ranking": "18/97",
+        "reviewsCount": 25,
+        "category": "Ngồi xuống",
+        "priceRange": "26.316 ₫ - 131.579 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Bong Restaurant ở Đồng Văn. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.7/5 từ 25 lượt review. Xếp hạng: 18/97. Giá: 26.316 ₫ - 131.579 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/6d/73/0a/bong-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.36146,
+                23.277674
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25369753",
+        "title": "Yolo Ha Giang Local Family Restaurant",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "19/97",
+        "reviewsCount": 11,
+        "category": "Ngồi xuống",
+        "priceRange": "789.473.664 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Yolo Ha Giang Local Family Restaurant ở Hà Giang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 11 lượt review. Xếp hạng: 19/97. Giá: 789.473.664 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/a4/dc/f8/chicken-salad.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.9787,
+                22.804947
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15528395",
+        "title": "Ha Giang Sports Bar & Restaurant",
+        "city": "Hà Giang",
+        "totalScore": 4.9,
+        "ranking": "20/97",
+        "reviewsCount": 19,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "631.579 ₫ - 657.895 ₫",
+        "description": "Are you looking for a great place to eat, free play entertainment games, and watch live sports on big screen in Ha Giang? Welcome to your Ha Giang adventure At Ha Giang Sports Bar & Restaurant, Enjoy delicious dishes starting from only sixty thousand Vietnamese dong such as fried rice, chicken curry rice, fried noodles, spring rolls, and Vietnamese steaks. Especially, don’t miss homemade dishes like pizza, pasta, and tacos! Sip on signature cocktails, fresh juices, or cold beer starting from only twenty thousand Vietnamese dong Additionally, we always have a \"Happy Day\" every Tuesday where you buy two food get one free. Don’t miss the lively atmosphere and fantastic music here! Ha Giang Sports Bar & Food — great food, refreshing drinks, wonderful experience! See you…!",
+        "embedding": null,
+        "searchText": "Ha Giang Sports Bar & Restaurant ở Hà Giang. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Mô tả: Are you looking for a great place to eat, free play entertainment games, and watch live sports on big screen in Ha Giang? Welcome to your Ha Giang adventure At Ha Giang Sports Bar & Restaurant, Enjoy delicious dishes starting from only sixty thousand Vietnamese dong such as fried rice, chicken curry rice, fried noodles, spring rolls, and Vietnamese steaks. Especially, don’t miss homemade dishes like pizza, pasta, and tacos! Sip on signature cocktails, fresh juices, or cold beer starting from only twenty thousand Vietnamese dong Additionally, we always have a \"Happy Day\" every Tuesday where you buy two food get one free. Don’t miss the lively atmosphere and fantastic music here! Ha Giang Sports Bar & Food — great food, refreshing drinks, wonderful experience! See you…! Đánh giá: 4.9/5 từ 19 lượt review. Xếp hạng: 20/97. Giá: 631.579 ₫ - 657.895 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/75/6d/f5/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.9857,
+                22.823153
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25386585",
+        "title": "Blue Sky Restaurant Foods Smoothie",
+        "city": "Hà Giang",
+        "totalScore": 4.9,
+        "ranking": "21/97",
+        "reviewsCount": 10,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Blue Sky Restaurant Foods Smoothie ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.9/5 từ 10 lượt review. Xếp hạng: 21/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/ae/45/e9/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.97974,
+                22.816061
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "11714165",
+        "title": "Nhà Hàng & Bar Xuân Thu",
+        "city": "Đồng Văn",
+        "totalScore": 4.4,
+        "ranking": "22/97",
+        "reviewsCount": 36,
+        "category": "Ngồi xuống",
+        "priceRange": "52.632 ₫ - 210.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng & Bar Xuân Thu ở Đồng Văn. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.4/5 từ 36 lượt review. Xếp hạng: 22/97. Giá: 52.632 ₫ - 210.526 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/59/95/1a/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.36667,
+                23.266666
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17482373",
+        "title": "1 High Bar Du Gia",
+        "city": "Yen Minh",
+        "totalScore": 4.8,
+        "ranking": "23/97",
+        "reviewsCount": 16,
+        "category": "Quán cafe",
+        "priceRange": "52.632 ₫ - 210.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "1 High Bar Du Gia ở Yen Minh. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 4.8/5 từ 16 lượt review. Xếp hạng: 23/97. Giá: 52.632 ₫ - 210.526 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/97/ac/d0/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.22488,
+                22.932901
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15028852",
+        "title": "Quán Ăn - Coffee Yến Ngọc",
+        "city": "Quan Ba",
+        "totalScore": 4.8,
+        "ranking": "25/97",
+        "reviewsCount": 17,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "789.474 ₫ - 2.631.579 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Ăn - Coffee Yến Ngọc ở Quan Ba. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 4.8/5 từ 17 lượt review. Xếp hạng: 25/97. Giá: 789.474 ₫ - 2.631.579 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/a1/d6/85/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.99542,
+                23.06588
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12512241",
+        "title": "Mây Cồ Quán",
+        "city": "Mèo Vạc",
+        "totalScore": 4.4,
+        "ranking": "26/97",
+        "reviewsCount": 17,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mây Cồ Quán ở Mèo Vạc. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.4/5 từ 17 lượt review. Xếp hạng: 26/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/a3/d9/e6/photo1jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.40824,
+                23.163523
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27961349",
+        "title": "Ha Giang Vegetarian, Vegan Restaurant",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "27/97",
+        "reviewsCount": 5,
+        "category": "Ngồi xuống",
+        "priceRange": "1.552.631.552 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Ha Giang Vegetarian, Vegan Restaurant ở Hà Giang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 5 lượt review. Xếp hạng: 27/97. Giá: 1.552.631.552 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/71/3f/e1/logo-board-sign.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.985756,
+                22.824305
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28019702",
+        "title": "Quiri Club",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "28/97",
+        "reviewsCount": 4,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "quán bar cung cấp các loại bia và cocktail với âm nhạc và có khu vực nhảy là nơi vui chơi hàng đầu tại Đồng Văn vui lòng đặt bàn liên hệ qua số điện thoại +84 338041094",
+        "embedding": null,
+        "searchText": "Quiri Club ở Hà Giang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: quán bar cung cấp các loại bia và cocktail với âm nhạc và có khu vực nhảy là nơi vui chơi hàng đầu tại Đồng Văn vui lòng đặt bàn liên hệ qua số điện thoại +84 338041094 Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 28/97. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/cc/9c/2a/best-club-on-ha-giang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.360466,
+                23.27656
+            ]
+        },
+        "openingHours": {
+            "display": "18:00-27:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1620
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1620
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1620
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1620
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1620
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1620
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1620
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21225386",
+        "title": "Ha Giang Wings Bungalow Restaurant",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "30/97",
+        "reviewsCount": 5,
+        "category": "Ngồi xuống",
+        "priceRange": "263.157.888 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Ha Giang Wings Bungalow Restaurant ở Hà Giang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 5 lượt review. Xếp hạng: 30/97. Giá: 263.157.888 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/c4/2a/6c/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.97069,
+                22.77723
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-20:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15197242",
+        "title": "Restaurant Juan Hoan Hao",
+        "city": "Tam Son",
+        "totalScore": 5.0,
+        "ranking": "33/97",
+        "reviewsCount": 7,
+        "category": "Ngồi xuống",
+        "priceRange": "263.158 ₫ - 1.052.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Restaurant Juan Hoan Hao ở Tam Son. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 7 lượt review. Xếp hạng: 33/97. Giá: 263.158 ₫ - 1.052.632 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/36/f7/df/mon-ng-n.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14054007",
+        "title": "Nhà hàng  Hao Tea",
+        "city": "Hà Giang",
+        "totalScore": 4.5,
+        "ranking": "34/97",
+        "reviewsCount": 10,
+        "category": "Ngồi xuống",
+        "priceRange": "52.632 ₫ - 1.315.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng  Hao Tea ở Hà Giang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.5/5 từ 10 lượt review. Xếp hạng: 34/97. Giá: 52.632 ₫ - 1.315.789 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/1d/11/b8/breakfast-combo-tea-or.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98768,
+                22.821928
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "24117001",
+        "title": "Bep Viet Restaurant",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "35/97",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bep Viet Restaurant ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 35/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/26/65/db/fd/first-time-dining-here.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.9856,
+                22.823143
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28005426",
+        "title": "Adventure Restaurant",
+        "city": "Mèo Vạc",
+        "totalScore": 5.0,
+        "ranking": "36/97",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Adventure Restaurant ở Mèo Vạc. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 36/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/c5/ec/b1/very-nice-corner.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.43843,
+                23.14075
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "18314443",
+        "title": "Ha Giang Historic House",
+        "city": "Hà Giang",
+        "totalScore": 4.8,
+        "ranking": "39/97",
+        "reviewsCount": 4,
+        "category": "Ngồi xuống",
+        "priceRange": "789.473.664 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Ha Giang Historic House ở Hà Giang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.8/5 từ 4 lượt review. Xếp hạng: 39/97. Giá: 789.473.664 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/62/c5/ae/img-20191216-200653-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98791,
+                22.815378
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15597872",
+        "title": "Quyet Hang Fast Food - Milk Tea",
+        "city": "Mèo Vạc",
+        "totalScore": 4.6,
+        "ranking": "40/97",
+        "reviewsCount": 7,
+        "category": "Quán cafe",
+        "priceRange": "52.632 ₫ - 1.315.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quyet Hang Fast Food - Milk Tea ở Mèo Vạc. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 4.6/5 từ 7 lượt review. Xếp hạng: 40/97. Giá: 52.632 ₫ - 1.315.789 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/a0/7e/4f/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.409935,
+                23.164228
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33875774",
+        "title": "Kandy live music bar & restaurant",
+        "city": "Mèo Vạc",
+        "totalScore": 5.0,
+        "ranking": "41/97",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kandy live music bar & restaurant ở Mèo Vạc. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 41/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/32/36/be/59/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.40972,
+                23.16599
+            ]
+        },
+        "openingHours": {
+            "display": "16:00-25:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1500
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17424033",
+        "title": "Green Hill Restaurant",
+        "city": "Hà Giang",
+        "totalScore": 4.8,
+        "ranking": "42/97",
+        "reviewsCount": 5,
+        "category": "Ngồi xuống",
+        "priceRange": "26.316 ₫ - 315.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Green Hill Restaurant ở Hà Giang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.8/5 từ 5 lượt review. Xếp hạng: 42/97. Giá: 26.316 ₫ - 315.789 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/19/f7/22/75/green-hill-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.01058,
+                22.849264
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33230687",
+        "title": "Hmong Restaurant-pizza-bar",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "44/97",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hmong Restaurant-pizza-bar ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 44/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/30/10/2f/fc/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.226776,
+                22.925785
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12586696",
+        "title": "10am hostel Cafe & food",
+        "city": "Hà Giang",
+        "totalScore": 4.7,
+        "ranking": "46/97",
+        "reviewsCount": 6,
+        "category": "Quán cafe",
+        "priceRange": "157.895 ₫ - 789.473.664 ₫",
+        "description": "The Cafe located in the 10am's house hostel, we serve: Beverages: coffee, tea, cappuccino, smoothies, ice blended, fresh fruit juices, ... Food: pizza, pasta, chicken rice",
+        "embedding": null,
+        "searchText": "10am hostel Cafe & food ở Hà Giang. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Mô tả: The Cafe located in the 10am's house hostel, we serve: Beverages: coffee, tea, cappuccino, smoothies, ice blended, fresh fruit juices, ... Food: pizza, pasta, chicken rice Đánh giá: 4.7/5 từ 6 lượt review. Xếp hạng: 46/97. Giá: 157.895 ₫ - 789.473.664 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/bc/7e/83/cappuccino.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98647,
+                22.818285
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27539113",
+        "title": "Huy Huyền Quán",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "47/97",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Huy Huyền Quán ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 47/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2c/d4/0d/18/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.0,
+                22.75
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27509916",
+        "title": "Pho-a-dau",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "48/97",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pho-a-dau ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 48/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2c/db/9c/36/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98333,
+                22.83333
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27121176",
+        "title": "Quynh Nhu: Pasta Restaurant and Bar",
+        "city": "Du Gia",
+        "totalScore": 5.0,
+        "ranking": "49/97",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Quán ăn phục vụ đồ ăn Âu, đòi ăn việt nam, các món ăn chay , rượu Tây , và các loại nước uống cà phê…!",
+        "embedding": null,
+        "searchText": "Quynh Nhu: Pasta Restaurant and Bar ở Du Gia. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Quán ăn phục vụ đồ ăn Âu, đòi ăn việt nam, các món ăn chay , rượu Tây , và các loại nước uống cà phê…! Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 49/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/32/26/e7/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.223236,
+                22.930529
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10812962",
+        "title": "Quán Bún Bò Huế - Thắng Ly",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "50/97",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Bún Bò Huế - Thắng Ly ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 50/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/e9/8a/2e/quan-bun-bo-hu-th-ng.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98141,
+                22.82875
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15612234",
+        "title": "Nhà Hàng Chay Thiên Phúc",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "51/97",
+        "reviewsCount": 4,
+        "category": "Đồ ăn nhanh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Chay Thiên Phúc ở Hà Giang. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 51/97.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/17/eb/ca/80/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.982216,
+                22.826786
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23092442",
+        "title": "Nhà hàng Café Karst Pearl Hà Giang",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "52/97",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": "26.316 ₫ - 263.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Café Karst Pearl Hà Giang ở Hà Giang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 52/97. Giá: 26.316 ₫ - 263.158 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/90/0c/51/img-20210121-105838-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.270035,
+                20.316385
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26352229",
+        "title": "Pizza Here | By The Slices",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "53/97",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "1.184.210.560 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Pizza Here | By The Slices ở Hà Giang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 53/97. Giá: 1.184.210.560 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/61/14/cd/enjoying-a-veggie-slice.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.97429,
+                22.806717
+            ]
+        },
+        "openingHours": {
+            "display": "15:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15594026",
+        "title": "SOBA!LBC226",
+        "city": "Hà Giang",
+        "totalScore": 4.8,
+        "ranking": "54/97",
+        "reviewsCount": 4,
+        "category": "Ngồi xuống",
+        "priceRange": "789.473.664 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "SOBA!LBC226 ở Hà Giang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.8/5 từ 4 lượt review. Xếp hạng: 54/97. Giá: 789.473.664 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/c8/39/89/7-colors-soba.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98792,
+                22.83366
+            ]
+        },
+        "openingHours": {
+            "display": "11:45-13:45, 16:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 705,
+                        "close_time": 825
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 705,
+                        "close_time": 825
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 705,
+                        "close_time": 825
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 705,
+                        "close_time": 825
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 705,
+                        "close_time": 825
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 705,
+                        "close_time": 825
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 705,
+                        "close_time": 825
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "20032610",
+        "title": "Rosco's Restaurant & Bar",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "55/97",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": "921.052.608 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Rosco's Restaurant & Bar ở Hà Giang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 55/97. Giá: 921.052.608 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/cd/bc/4f/rooster-s-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "09:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33248815",
+        "title": "H'mong Restaurant-pizza-bar",
+        "city": "Hà Giang",
+        "totalScore": 0,
+        "ranking": "56/97",
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "H'mong Restaurant-pizza-bar ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Xếp hạng: 56/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/30/1d/cb/ad/the-best-restaurant-in.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.22278,
+                22.930408
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19235483",
+        "title": "Nhà Hàng Minh Hòa",
+        "city": "Tam Son",
+        "totalScore": 0,
+        "ranking": "57/97",
+        "reviewsCount": 0,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "1.315.789.440 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Minh Hòa ở Tam Son. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Xếp hạng: 57/97. Giá: 1.315.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.99149,
+                23.06474
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34255884",
+        "title": "Xuan coffe",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "58/97",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Xuan coffe ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 58/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/a6/c4/03/ha-giang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.935715,
+                21.01188
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33986729",
+        "title": "Dong Que Restaurant - No.6 Waterfall",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "59/97",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dong Que Restaurant - No.6 Waterfall ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 59/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.978714,
+                22.819342
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33342043",
+        "title": "Nhà Hàng Cao Nguyên Đồng Văn",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "60/97",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Cao Nguyên Đồng Văn ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 60/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/8f/c4/b7/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.89818,
+                18.34253
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9982919",
+        "title": "Quán cafe Tùng Dương",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "61/97",
+        "reviewsCount": 3,
+        "category": "Quán cafe",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán cafe Tùng Dương ở Hà Giang. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 61/97.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/82/7e/58/qua-n-cafe-tu-ng-duong.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98654,
+                22.829668
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10757448",
+        "title": "Nhà Hàng Lâm Tùng",
+        "city": "Đồng Văn",
+        "totalScore": 4.7,
+        "ranking": "63/97",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": "2.105.263.104 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Lâm Tùng ở Đồng Văn. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.7/5 từ 3 lượt review. Xếp hạng: 63/97. Giá: 2.105.263.104 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/18/bb/22/e3/photo3jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.36134,
+                23.277624
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33072379",
+        "title": "Nha Hang Giang Diep 1976",
+        "city": "Yen Minh",
+        "totalScore": 5.0,
+        "ranking": "64/97",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nha Hang Giang Diep 1976 ở Yen Minh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 64/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.24954,
+                23.079891
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20200037",
+        "title": "Sary Restaurant",
+        "city": "Đồng Văn",
+        "totalScore": 5.0,
+        "ranking": "65/97",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sary Restaurant ở Đồng Văn. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 65/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.36035,
+                23.277431
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16725800",
+        "title": "Tâm Family Homestay",
+        "city": "Yen Minh",
+        "totalScore": 5.0,
+        "ranking": "66/97",
+        "reviewsCount": 1,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "789.473.664 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Tâm Family Homestay ở Yen Minh. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 66/97. Giá: 789.473.664 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/4c/3b/2d/happy-guests-i-love-you.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.204666,
+                22.92636
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15059268",
+        "title": "Bún Chả Tân Sơn",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "67/97",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "526.315.776 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Bún Chả Tân Sơn ở Hà Giang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 67/97. Giá: 526.315.776 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/14/5b/09/65/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98812,
+                22.825245
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23089184",
+        "title": "Nhà Hàng Minh Hòa",
+        "city": "Quan Ba",
+        "totalScore": 5.0,
+        "ranking": "68/97",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Minh Hòa ở Quan Ba. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 68/97. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/f5/9f/da/large-space-cool.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.842995,
+                21.030523
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32548267",
+        "title": "Nha Hang Thuy Tien",
+        "city": "Mèo Vạc",
+        "totalScore": 5.0,
+        "ranking": "69/97",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nha Hang Thuy Tien ở Mèo Vạc. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 69/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.40929,
+                23.16644
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28653800",
+        "title": "Ma Pi Leng Beer Garden",
+        "city": "Đồng Văn",
+        "totalScore": 5.0,
+        "ranking": "70/97",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ma Pi Leng Beer Garden ở Đồng Văn. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 70/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/ff/d5/0c/t-goc-nhin-tren-cao-quan.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78629,
+                20.957592
+            ]
+        },
+        "openingHours": {
+            "display": "14:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27126131",
+        "title": "Quynh Nhu: Pasta Restaurant and Bar",
+        "city": "Du Gia",
+        "totalScore": 5.0,
+        "ranking": "71/97",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Đồ ăn Á, Âu, các món ăn chay Tùy chọn cho người ăn chay Chuyên pasta Đồ uống có cồn",
+        "embedding": null,
+        "searchText": "Quynh Nhu: Pasta Restaurant and Bar ở Du Gia. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Đồ ăn Á, Âu, các món ăn chay Tùy chọn cho người ăn chay Chuyên pasta Đồ uống có cồn Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 71/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2d/b1/11/91/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.21392,
+                22.930758
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23256112",
+        "title": "Ngọc Lan Quán",
+        "city": "Mèo Vạc",
+        "totalScore": 5.0,
+        "ranking": "72/97",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "789.474 ₫ - 13.157.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Ngọc Lan Quán ở Mèo Vạc. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 72/97. Giá: 789.474 ₫ - 13.157.895 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2b/ad/67/69/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.4173,
+                23.1507
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15522164",
+        "title": "Nhà Hàng Âu Việt",
+        "city": "Đồng Văn",
+        "totalScore": 5.0,
+        "ranking": "73/97",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Âu Việt ở Đồng Văn. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 73/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/a6/3a/d2/nha-hang-au-vi-t.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.35843,
+                23.277077
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34037453",
+        "title": "Ha Giang Bites",
+        "city": "Hà Giang",
+        "totalScore": 4.0,
+        "ranking": "74/97",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ha Giang Bites ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 3 lượt review. Xếp hạng: 74/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/5b/30/fb/customer-service-is-what.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98527,
+                22.822481
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15186377",
+        "title": "Chim Chim Restaurant",
+        "city": "Quan Ba",
+        "totalScore": 5.0,
+        "ranking": "76/97",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chim Chim Restaurant ở Quan Ba. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 76/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/ef/2b/08/chim-chim-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.99451,
+                23.065474
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25452660",
+        "title": "Pho Da restaurant",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "78/97",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "1.842.105.216 ₫ - 2.147.483.647 ₫",
+        "description": "Nhà hàng nằm ngay trung tâm thành phố với các món ăn đậm đà bản sắc dân tộc vùng cao Hà Giang",
+        "embedding": null,
+        "searchText": "Pho Da restaurant ở Hà Giang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà hàng nằm ngay trung tâm thành phố với các món ăn đậm đà bản sắc dân tộc vùng cao Hà Giang Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 78/97. Giá: 1.842.105.216 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/db/42/0c/m-t-ti-n-nha-hang-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98271,
+                22.830755
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33342299",
+        "title": "Áp Chao Vịt Rán Cô Hạc",
+        "city": "Hà Giang",
+        "totalScore": 4.0,
+        "ranking": "80/97",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Áp Chao Vịt Rán Cô Hạc ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 80/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/8f/c7/05/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.68422,
+                10.797006
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15208787",
+        "title": "BBQ PIZZA",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "83/97",
+        "reviewsCount": 1,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "789.473.664 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "BBQ PIZZA ở Hà Giang. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 83/97. Giá: 789.473.664 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/09/1b/4f/view.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98702,
+                22.825361
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1335
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1335
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14067627",
+        "title": "Đu Đủ Quán",
+        "city": "Mèo Vạc",
+        "totalScore": 5.0,
+        "ranking": "84/97",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đu Đủ Quán ở Mèo Vạc. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 84/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/de/98/c9/gi-i-nhi-t.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.40993,
+                23.171118
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14155696",
+        "title": "Nhà Hàng Hiền Lương",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "85/97",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hiền Lương ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 85/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98133,
+                22.828545
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12394059",
+        "title": "Quán Tiến Thơ",
+        "city": "Hà Giang",
+        "totalScore": 4.0,
+        "ranking": "86/97",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Tiến Thơ ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 86/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/33/35/a5/photo-prise-par-guythu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15198597",
+        "title": "CND Restaurant - Hostel",
+        "city": "Đồng Văn",
+        "totalScore": 3.3,
+        "ranking": "87/97",
+        "reviewsCount": 4,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "52.632 ₫ - 263.158 ₫",
+        "description": "Những tinh hoa ẩm thực, chắc hẳn sẽ luôn làm hài lòng du khách mỗi khi dùng bữa ăn trong các chuyến du lịch vùng cao.\n - Nhà hàng chuyên phục vụ khách ăn sáng, ăn trưa, ăn tối với giả cả phải chăng.\n - Đặc biệt nhà hàng chuyên về các món lẩu vùng cao như lẩu thắng cố, lẩu gà nấm",
+        "embedding": null,
+        "searchText": "CND Restaurant - Hostel ở Đồng Văn. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Mô tả: Những tinh hoa ẩm thực, chắc hẳn sẽ luôn làm hài lòng du khách mỗi khi dùng bữa ăn trong các chuyến du lịch vùng cao.\n - Nhà hàng chuyên phục vụ khách ăn sáng, ăn trưa, ăn tối với giả cả phải chăng.\n - Đặc biệt nhà hàng chuyên về các món lẩu vùng cao như lẩu thắng cố, lẩu gà nấm Đánh giá: 3.3/5 từ 4 lượt review. Xếp hạng: 87/97. Giá: 52.632 ₫ - 263.158 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/14/f3/b9/6a/toan-c-nh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.35015,
+                23.278032
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1395
+                    }
+                ],
+                [
+                    {
+                        "open_time": 405,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33326531",
+        "title": "Nhà Hàng Đình Trường 686",
+        "city": "Hà Giang",
+        "totalScore": 3.0,
+        "ranking": "88/97",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Đình Trường 686 ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 88/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/87/22/14/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.72512,
+                20.929075
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33331807",
+        "title": "Phở Chua Lý Dinh",
+        "city": "Hà Giang",
+        "totalScore": 3.0,
+        "ranking": "89/97",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phở Chua Lý Dinh ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 89/97.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/87/20/64/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98199,
+                22.819206
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19042118",
+        "title": "Melody Coffee - Fastfood",
+        "city": "Đồng Văn",
+        "totalScore": 3.0,
+        "ranking": "90/97",
+        "reviewsCount": 2,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "789.473.664 ₫ - 1.315.789.440 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Melody Coffee - Fastfood ở Đồng Văn. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 3.0/5 từ 2 lượt review. Xếp hạng: 90/97. Giá: 789.473.664 ₫ - 1.315.789.440 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/7c/38/b4/melody-coffee-fastfood.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.35861,
+                23.277185
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13307427",
+        "title": "Cơm Niêu An Nhiên",
+        "city": "Hà Giang",
+        "totalScore": 3.3,
+        "ranking": "91/97",
+        "reviewsCount": 11,
+        "category": "Ngồi xuống",
+        "priceRange": "52.632 ₫ - 368.421 ₫",
+        "description": "Nhà hàng Cơm Niêu An Nhiên phục vụ khách từ 8 giờ đến 23 giờ 30 phút hàng ngày. Đặc trưng là Cơm niêu, Cá kho tộ và các món ăn dân tộc được chế biến bằng nguyên liệu tươi mới như bò, gà, thịt lợn, cá sông, trâu, dê...Ngoài ra nhà hàng phục vụ Lẩu từ 2 người trở lên. Đồ ăn dành cho khách nước ngoài cũng rất đa dạng như cơm rang, mì xào, nem, và đặc biệt là đồ ăn chay cũng rất được chú trọng.",
+        "embedding": null,
+        "searchText": "Cơm Niêu An Nhiên ở Hà Giang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà hàng Cơm Niêu An Nhiên phục vụ khách từ 8 giờ đến 23 giờ 30 phút hàng ngày. Đặc trưng là Cơm niêu, Cá kho tộ và các món ăn dân tộc được chế biến bằng nguyên liệu tươi mới như bò, gà, thịt lợn, cá sông, trâu, dê...Ngoài ra nhà hàng phục vụ Lẩu từ 2 người trở lên. Đồ ăn dành cho khách nước ngoài cũng rất đa dạng như cơm rang, mì xào, nem, và đặc biệt là đồ ăn chay cũng rất được chú trọng. Đánh giá: 3.3/5 từ 11 lượt review. Xếp hạng: 91/97. Giá: 52.632 ₫ - 368.421 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/94/b1/dd/canh-ga.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98442,
+                22.82098
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-23:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1410
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19261123",
+        "title": "KimBap Hà Giang",
+        "city": "Hà Giang",
+        "totalScore": 2.3,
+        "ranking": "92/97",
+        "reviewsCount": 3,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "789.473.664 ₫ - 1.184.210.560 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "KimBap Hà Giang ở Hà Giang. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 2.3/5 từ 3 lượt review. Xếp hạng: 92/97. Giá: 789.473.664 ₫ - 1.184.210.560 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/da/d0/91/kimbap-chien-fried.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98121,
+                22.81776
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-13:30, 15:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13287897",
+        "title": "Bbq Beer Club",
+        "city": "Hà Giang",
+        "totalScore": 3.3,
+        "ranking": "93/97",
+        "reviewsCount": 4,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Bbq Beer Club ở Hà Giang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.3/5 từ 4 lượt review. Xếp hạng: 93/97. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/e7/1f/3e/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98977,
+                22.83454
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15208794",
+        "title": "BBQ Pizza Yên Minh",
+        "city": "Yen Minh",
+        "totalScore": 1.2,
+        "ranking": "94/97",
+        "reviewsCount": 5,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "789.473.664 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "BBQ Pizza Yên Minh ở Yen Minh. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 1.2/5 từ 5 lượt review. Xếp hạng: 94/97. Giá: 789.473.664 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/f3/4c/16/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.13867,
+                23.11966
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17450415",
+        "title": "The 27 Club Nirvana Mountain",
+        "city": "Đồng Văn",
+        "totalScore": 0,
+        "ranking": "95/97",
+        "reviewsCount": 0,
+        "category": "Quán cafe",
+        "priceRange": "657.894.720 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The 27 Club Nirvana Mountain ở Đồng Văn. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Xếp hạng: 95/97. Giá: 657.894.720 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/9b/8c/65/family-dinner-vegan-chicken.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.36006,
+                23.27722
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19882589",
+        "title": "Hoàng Dũng Quán",
+        "city": "Mèo Vạc",
+        "totalScore": 0,
+        "ranking": "96/97",
+        "reviewsCount": 0,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "921.052.608 ₫ - 1.315.789.440 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hoàng Dũng Quán ở Mèo Vạc. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Xếp hạng: 96/97. Giá: 921.052.608 ₫ - 1.315.789.440 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/96/7e/4b/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12225360",
+        "title": "Nhà Hàng Vinh Tường",
+        "city": "Hà Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Vinh Tường ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13550358",
+        "title": "Nhà Hàng Tình Cốc",
+        "city": "Hà Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Tình Cốc ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14927842",
+        "title": "Cuốn Việt",
+        "city": "Hà Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cuốn Việt ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98364,
+                22.83004
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15129572",
+        "title": "Hà Nội Bia Store",
+        "city": "Hà Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hà Nội Bia Store ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98844,
+                22.830444
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15264038",
+        "title": "Shang Quán",
+        "city": "Hà Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Shang Quán ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/da/9f/e1/d-u.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98212,
+                22.82614
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17282096",
+        "title": "Cơm Chay Hương Sen",
+        "city": "Hà Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cơm Chay Hương Sen ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98787,
+                22.824915
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17324831",
+        "title": "Homestay Toàn Phương",
+        "city": "Mèo Vạc",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Homestay Toàn Phương ở Mèo Vạc. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/f5/9a/91/nh-ng-mon-an-d-c-trung.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.42615,
+                23.03343
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17750058",
+        "title": "Ha Giang's MamaMia Pizza",
+        "city": "Hà Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ha Giang's MamaMia Pizza ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/30/ce/7d/ngay-bay-gi.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.97562,
+                22.80541
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19110507",
+        "title": "Nhà Hàng Vụ Triển",
+        "city": "Hà Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Vụ Triển ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.406624,
+                23.163273
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19857065",
+        "title": "Nhà Hàng Phong Vân Quán",
+        "city": "Yen Minh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Phong Vân Quán ở Yen Minh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/d0/18/bf/nha-hang-phong-van-quan.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.1443,
+                23.117579
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "20200035",
+        "title": "Sary Restaurant",
+        "city": "Đồng Văn",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sary Restaurant ở Đồng Văn. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.36039,
+                23.277374
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20200040",
+        "title": "Sary Restaurant",
+        "city": "Đồng Văn",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sary Restaurant ở Đồng Văn. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.36035,
+                23.27743
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20200052",
+        "title": "Pho Bun Com Rang",
+        "city": "Quan Ba",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pho Bun Com Rang ở Quan Ba. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21082699",
+        "title": "Tien Quyen Pho Bac Quang Ha Giang",
+        "city": "Hà Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tien Quyen Pho Bac Quang Ha Giang ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98357,
+                22.82333
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23412004",
+        "title": "Quy Family",
+        "city": "Yen Minh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quy Family ở Yen Minh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1d/0c/a3/ff/bed.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.21628,
+                22.934353
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "24170205",
+        "title": "Hung's Pho Trang Kim",
+        "city": "Quan Ba",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hung's Pho Trang Kim ở Quan Ba. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.01452,
+                23.043789
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25103449",
+        "title": "Godfather Coffe - Cocktail - Wine",
+        "city": "Hà Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Godfather Coffe - Cocktail - Wine ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/26/c4/5d/c6/ban-cong-d-p.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98552,
+                22.83057
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25360852",
+        "title": "Nhà Hàng Cnd",
+        "city": "Đồng Văn",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Nhà hàng chuyên đặc sản vùng cao Lẩu gà đen Thắng cố ngựa Lẩu cá tầm Lợn mẹt Các món ăn dân tộc",
+        "embedding": null,
+        "searchText": "Nhà Hàng Cnd ở Đồng Văn. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Nhà hàng chuyên đặc sản vùng cao Lẩu gà đen Thắng cố ngựa Lẩu cá tầm Lợn mẹt Các món ăn dân tộc",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.371666,
+                23.293125
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25361773",
+        "title": "Nhà Hàng Cnd",
+        "city": "Đồng Văn",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Chuyên đặc sản vùng cao Thắng cố ngựa Lẩu gà đen Lẩu cá tầm",
+        "embedding": null,
+        "searchText": "Nhà Hàng Cnd ở Đồng Văn. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Chuyên đặc sản vùng cao Thắng cố ngựa Lẩu gà đen Lẩu cá tầm",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/68/f4/7a/l-u-bo-cao-nguyen-da.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.35019,
+                23.278063
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26226296",
+        "title": "Bún Bò Huế Thắng Ly",
+        "city": "Hà Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bún Bò Huế Thắng Ly ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98552,
+                22.83057
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26772188",
+        "title": "Odyssey Kitchen",
+        "city": "Hà Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Odyssey Kitchen ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/9e/ee/eb/beef-steak.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.97771,
+                22.8058
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26867381",
+        "title": "Cao Nguyen Restaurant - Coffe - Fastfood - Beer",
+        "city": "Yen Minh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "nhà hàng đồ ăn nhanh, rượu, bia, cà phê",
+        "embedding": null,
+        "searchText": "Cao Nguyen Restaurant - Coffe - Fastfood - Beer ở Yen Minh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: nhà hàng đồ ăn nhanh, rượu, bia, cà phê",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.141716,
+                23.118149
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26999975",
+        "title": "Thịt Nướng Chuẩn Vị Trung Hoa",
+        "city": "Hà Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Đồ ăn chuẩn vị Trung Hoa",
+        "embedding": null,
+        "searchText": "Thịt Nướng Chuẩn Vị Trung Hoa ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Đồ ăn chuẩn vị Trung Hoa",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98122,
+                22.835848
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27087788",
+        "title": "Quan điểm hẹn cơm phở lẩu vùng cao",
+        "city": "Hà Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Quán của chúng tôi là một quán ăn nhỏ nằm ở chợ trung tâm đồng văn chuyên phục vụ về mặt hàng ăn uống",
+        "embedding": null,
+        "searchText": "Quan điểm hẹn cơm phở lẩu vùng cao ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Quán của chúng tôi là một quán ăn nhỏ nằm ở chợ trung tâm đồng văn chuyên phục vụ về mặt hàng ăn uống",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.36,
+                23.277424
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28116554",
+        "title": "Wanderlust Restaurant",
+        "city": "Hà Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Wanderlust Restaurant ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.9893,
+                22.823578
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32861024",
+        "title": "Born To Be Wild",
+        "city": "Đồng Văn",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Born To Be Wild ở Đồng Văn. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.91685,
+                20.643147
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33296436",
+        "title": "Bún Đậu Mer 400 Vĩnh Hưng",
+        "city": "Hoàng Su Phì",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bún Đậu Mer 400 Vĩnh Hưng ở Hoàng Su Phì. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.88006,
+                20.995438
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33879150",
+        "title": "Kandy live music bar & restaurant",
+        "city": "Mèo Vạc",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kandy live music bar & restaurant ở Mèo Vạc. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98299,
+                22.830454
+            ]
+        },
+        "openingHours": {
+            "display": "16:00-25:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1500
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33986014",
+        "title": "Dong Que Restaurant - No.6 Waterfall",
+        "city": "Hà Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dong Que Restaurant - No.6 Waterfall ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/8b/47/a1/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.01491,
+                22.831224
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33992282",
+        "title": "Thao Linh restaurant & homestay",
+        "city": "Hà Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thao Linh restaurant & homestay ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/9d/ff/d6/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.57458,
+                10.306735
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34100087",
+        "title": "Phở Ngô - Vietnamese local cuisine",
+        "city": "Hà Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phở Ngô - Vietnamese local cuisine ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/45/f8/86/menu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98241,
+                22.830122
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 720
+                    }
+                ],
+                [],
+                [],
+                []
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34256381",
+        "title": "Xuan coffe",
+        "city": "Hà Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Xuan coffe ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.57986,
+                17.447609
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34403082",
+        "title": "Churros & Cafe",
+        "city": "Hà Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Churros & Cafe ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98544,
+                22.823734
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    }
+]

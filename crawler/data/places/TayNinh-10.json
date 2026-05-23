@@ -1,0 +1,617 @@
+[
+    {
+        "sourceLocationId": "550717",
+        "title": "Cao Dai Temple",
+        "city": "Tây Ninh",
+        "totalScore": 4.1,
+        "ranking": "1/12",
+        "reviewsCount": 1160,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cao Dai Temple ở Tây Ninh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.1/5 từ 1160 lượt review. Xếp hạng: 1/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/8b/e8/53/external.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.09945,
+                11.305304
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "2494718",
+        "title": "Black Virgin Mountain",
+        "city": "Tây Ninh",
+        "totalScore": 4.1,
+        "ranking": "2/12",
+        "reviewsCount": 83,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Black Virgin Mountain ở Tây Ninh. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.1/5 từ 83 lượt review. Xếp hạng: 2/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/a4/ef/17/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.179276,
+                11.375003
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8290107",
+        "title": "Long Điền Sơn",
+        "city": "Tây Ninh",
+        "totalScore": 3.8,
+        "ranking": "3/12",
+        "reviewsCount": 6,
+        "category": "Công viên nước & giải trí",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Long Điền Sơn ở Tây Ninh. Loại địa điểm: Công viên nước & giải trí. Tags: Điểm du lịch, Công viên nước & giải trí. Đánh giá: 3.8/5 từ 6 lượt review. Xếp hạng: 3/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/e0/cb/11/20151128-171143-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32730488",
+        "title": "Power Pole Trail",
+        "city": "Tây Ninh",
+        "totalScore": 5.0,
+        "ranking": "4/12",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Power Pole Trail ở Tây Ninh. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 4/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/5c/02/d4/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.16581,
+                11.364569
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-11:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32715915",
+        "title": "Buddha Nirvana Black Virgin Mountain",
+        "city": "Tây Ninh",
+        "totalScore": 5.0,
+        "ranking": "5/12",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Buddha Nirvana Black Virgin Mountain ở Tây Ninh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 5/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/55/5f/67/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.29374,
+                11.55383
+            ]
+        },
+        "openingHours": {
+            "display": "03:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 180,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 180,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 180,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 180,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 180,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 180,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 180,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32715931",
+        "title": "Boi Loi Trail",
+        "city": "Tây Ninh",
+        "totalScore": 5.0,
+        "ranking": "6/12",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Boi Loi Trail ở Tây Ninh. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 6/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/58/78/94/exercise-to-the-pagoda.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.17826,
+                11.365713
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32715877",
+        "title": "Lady Buddha Statue",
+        "city": "Tây Ninh",
+        "totalScore": 5.0,
+        "ranking": "7/12",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lady Buddha Statue ở Tây Ninh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 7/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/56/d4/a3/different-pictures.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.21336,
+                21.267004
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-20:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32714767",
+        "title": "Hang Pagoda",
+        "city": "Tây Ninh",
+        "totalScore": 5.0,
+        "ranking": "8/12",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hang Pagoda ở Tây Ninh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 8/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/55/4c/67/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.29374,
+                11.55383
+            ]
+        },
+        "openingHours": {
+            "display": "03:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 180,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 180,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 180,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 180,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 180,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 180,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 180,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32714832",
+        "title": "Sun World Black Virgin Mountain",
+        "city": "Tây Ninh",
+        "totalScore": 4.0,
+        "ranking": "9/12",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sun World Black Virgin Mountain ở Tây Ninh. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 9/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/56/d1/ad/whole-day-trip.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.173035,
+                11.364086
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-20:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26169191",
+        "title": "Caodaism's Holy Land",
+        "city": "Tây Ninh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Caodaism's Holy Land ở Tây Ninh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.13337,
+                11.300238
+            ]
+        },
+        "openingHours": null
+    }
+]

@@ -1,0 +1,341 @@
+[
+    {
+        "sourceLocationId": "8845299",
+        "title": "Nhà Hàng Cây Me",
+        "city": "Bac Kan",
+        "totalScore": 4.9,
+        "ranking": "1/2",
+        "reviewsCount": 7,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Cây Me ở Bac Kan. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.9/5 từ 7 lượt review. Xếp hạng: 1/2.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/d5/1a/0f/good-friendly-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.84056,
+                22.12161
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15142127",
+        "title": "Le Jardin Bac Kan",
+        "city": "Bac Kan",
+        "totalScore": 4.5,
+        "ranking": "2/2",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Le Jardin Bac Kan ở Bac Kan. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 2/2. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/c6/7b/8c/1.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.83317,
+                22.14806
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33022545",
+        "title": "Tiệm Coffee Ba Be Wooden House",
+        "city": "Nam Mau",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tiệm Coffee Ba Be Wooden House ở Nam Mau. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/30/52/b5/8b/chill.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.61756,
+                22.398867
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12502612",
+        "title": "Nhà Hàng Nguyễn Văn Khoa",
+        "city": "Bac Kan",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Nguyễn Văn Khoa ở Bac Kan. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/21/ea/7f/com-m-t-699000d-vui-long.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.84885,
+                22.199682
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17838846",
+        "title": "Hill Coffee",
+        "city": "Bac Kan",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hill Coffee ở Bac Kan. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.83063,
+                22.15195
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10825161",
+        "title": "Nhà Hàng TLT",
+        "city": "Bac Kan",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng TLT ở Bac Kan. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.83852,
+                22.12404
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24892492",
+        "title": "Ba Be Restaurant",
+        "city": "Bac Kan",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ba Be Restaurant ở Bac Kan. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.6421,
+                22.42045
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23063605",
+        "title": "Nhà Hàng Phúc Khánh",
+        "city": "Bắc Kạn",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Phúc Khánh ở Bắc Kạn. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/8f/88/54/mon-an.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.626976,
+                22.394741
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "16657169",
+        "title": "Nhà Hàng Tinh Tường",
+        "city": "Phu Thong",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Tinh Tường ở Phu Thong. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.61961,
+                22.40308
+            ]
+        },
+        "openingHours": null
+    }
+]

@@ -1,0 +1,416 @@
+[
+    {
+        "sourceLocationId": "17579835",
+        "title": "Đền Kiếp Bạc",
+        "city": "Hải Dương",
+        "totalScore": 4.5,
+        "ranking": "4/10",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đền Kiếp Bạc ở Hải Dương. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 4 lượt review. Xếp hạng: 4/10.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/d0/bc/d1/d-n-ki-p-b-c.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.32767,
+                21.15129
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "5501651",
+        "title": "Chi Linh Star Golf Club",
+        "city": "Hải Dương",
+        "totalScore": 4.4,
+        "ranking": "1/1",
+        "reviewsCount": 14,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chi Linh Star Golf Club ở Hải Dương. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Hoạt động ngoài trời. Đánh giá: 4.4/5 từ 14 lượt review. Xếp hạng: 1/1.",
+        "tags": [
+            "Điểm du lịch",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/06/36/12/99/the-club-house.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.39268,
+                21.11217
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6964222",
+        "title": "Hong Ngoc Fine Art",
+        "city": "Hải Dương",
+        "totalScore": 3.5,
+        "ranking": "1/1",
+        "reviewsCount": 33,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hong Ngoc Fine Art ở Hải Dương. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 3.5/5 từ 33 lượt review. Xếp hạng: 1/1.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/b0/27/6f/hong-ngoc-fine-art.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.39462,
+                21.113825
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "29037398",
+        "title": "Trăm Gian Pagoda",
+        "city": "Hải Dương",
+        "totalScore": 0,
+        "ranking": "3/10",
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trăm Gian Pagoda ở Hải Dương. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Xếp hạng: 3/10.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.7373,
+                20.844084
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1740
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "29261646",
+        "title": "Long Dong Temple",
+        "city": "Hải Dương",
+        "totalScore": 0,
+        "ranking": "5/10",
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Long Dong Temple ở Hải Dương. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Xếp hạng: 5/10.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.33302,
+                20.94099
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27520717",
+        "title": "Đền Sượt",
+        "city": "Hải Dương",
+        "totalScore": 4.0,
+        "ranking": "6/10",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đền Sượt ở Hải Dương. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 6/10.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2b/c3/8a/26/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.30618,
+                20.933466
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4945621",
+        "title": "Karaoke Marigold",
+        "city": "Hải Dương",
+        "totalScore": 1.0,
+        "ranking": "1/1",
+        "reviewsCount": 1,
+        "category": "Giải trí về đêm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Karaoke Marigold ở Hải Dương. Loại địa điểm: Giải trí về đêm. Tags: Điểm du lịch, Giải trí về đêm. Đánh giá: 1.0/5 từ 1 lượt review. Xếp hạng: 1/1.",
+        "tags": [
+            "Điểm du lịch",
+            "Giải trí về đêm"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.58333,
+                21.01667
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32747453",
+        "title": "Navatan Westlake Tanning Salon",
+        "city": "An Nhân",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Spa & Sức khỏe",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Navatan Westlake Tanning Salon ở An Nhân. Loại địa điểm: Spa & Sức khỏe. Tags: Điểm du lịch, Spa & Sức khỏe.",
+        "tags": [
+            "Điểm du lịch",
+            "Spa & Sức khỏe"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.15201,
+                21.07675
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "30052778",
+        "title": "Đền Long Động",
+        "city": "Hải Dương",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đền Long Động ở Hải Dương. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.94521,
+                17.172497
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27687737",
+        "title": "Chùa Chợ Mát",
+        "city": "Hải Dương",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Chợ Mát ở Hải Dương. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.31481,
+                20.93686
+            ]
+        },
+        "openingHours": null
+    }
+]

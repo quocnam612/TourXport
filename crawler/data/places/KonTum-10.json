@@ -1,0 +1,436 @@
+[
+    {
+        "sourceLocationId": "1651187",
+        "title": "Nhà Thờ Gỗ",
+        "city": "Kontum",
+        "totalScore": 4.4,
+        "ranking": "1/10",
+        "reviewsCount": 117,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Thờ Gỗ ở Kontum. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.4/5 từ 117 lượt review. Xếp hạng: 1/10.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/18/95/f4/e4/kon-tum-wooden-church.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.0132,
+                14.34532
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "16155503",
+        "title": "Đức Mẹ Măng Đen",
+        "city": "Dak Long",
+        "totalScore": 5.0,
+        "ranking": "6/10",
+        "reviewsCount": 3,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đức Mẹ Măng Đen ở Dak Long. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 6/10.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/d8/a8/10/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00572,
+                14.3501
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8013050",
+        "title": "Nhà Rông Kon Klor",
+        "city": "Kontum",
+        "totalScore": 4.1,
+        "ranking": "3/10",
+        "reviewsCount": 32,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Rông Kon Klor ở Kontum. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.1/5 từ 32 lượt review. Xếp hạng: 3/10.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/bf/f0/7f/kon-klor-rong-house.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.0344,
+                14.3487
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8294163",
+        "title": "Bảo Tàng Kon Tum",
+        "city": "Kontum",
+        "totalScore": 4.1,
+        "ranking": "5/10",
+        "reviewsCount": 14,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bảo Tàng Kon Tum ở Kontum. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.1/5 từ 14 lượt review. Xếp hạng: 5/10.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/f7/3a/23/photo2jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00223,
+                14.34605
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1655659",
+        "title": "Bishop of Kontum's Building",
+        "city": "Kontum",
+        "totalScore": 4.1,
+        "ranking": "2/10",
+        "reviewsCount": 37,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bishop of Kontum's Building ở Kontum. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.1/5 từ 37 lượt review. Xếp hạng: 2/10.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/8f/5f/f0/20190223-090202-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.01371,
+                14.35012
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "5996867",
+        "title": "Chu Mom Ray National Park",
+        "city": "Kontum",
+        "totalScore": 3.5,
+        "ranking": "9/10",
+        "reviewsCount": 4,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chu Mom Ray National Park ở Kontum. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.5/5 từ 4 lượt review. Xếp hạng: 9/10.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/69/e9/18/img-5522-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.83707,
+                14.66879
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23463981",
+        "title": "Thác Pa Sỹ",
+        "city": "Măng Đen",
+        "totalScore": 4.3,
+        "ranking": "4/10",
+        "reviewsCount": 6,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thác Pa Sỹ ở Măng Đen. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.3/5 từ 6 lượt review. Xếp hạng: 4/10.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/fa/22/89/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.2567,
+                14.595102
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33563787",
+        "title": "Cầu Treo Konklor",
+        "city": "Kontum",
+        "totalScore": 5.0,
+        "ranking": "7/10",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cầu Treo Konklor ở Kontum. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 7/10.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.99316,
+                14.366815
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33503075",
+        "title": "Nhà Thờ Giáo Xứ Phương Quý",
+        "city": "Kontum",
+        "totalScore": 5.0,
+        "ranking": "8/10",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Thờ Giáo Xứ Phương Quý ở Kontum. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 8/10.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/04/a5/2e/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.17435,
+                20.96795
+            ]
+        },
+        "openingHours": {
+            "display": "05:00-18:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1110
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33502562",
+        "title": "Thủy Điện Pleikrong",
+        "city": "Kontum",
+        "totalScore": 2.0,
+        "ranking": "10/10",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thủy Điện Pleikrong ở Kontum. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 2.0/5 từ 1 lượt review. Xếp hạng: 10/10.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/0b/77/ae/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.99619,
+                14.325028
+            ]
+        },
+        "openingHours": null
+    }
+]

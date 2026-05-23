@@ -18,7 +18,9 @@ def restaurants_list(
     offset: int = 0,
     restaurant_styles: str = None, # Restaurant features
     lang: str = "vi_VN",
-    restaurant_dining_options: str = None # Restaurant features
+    restaurant_dining_options: str = None, # Restaurant features
+    save_raw: bool = True,
+    return_status: bool = False
     ):
     endpoint = "restaurants/list"
     params = {
@@ -39,7 +41,7 @@ def restaurants_list(
         "restaurant_styles": restaurant_styles,
         "restaurant_dining_options": restaurant_dining_options
     }
-    max_retries = 3
+    max_retries = 1
     data = None
     
     for attempt in range(max_retries):
@@ -47,22 +49,24 @@ def restaurants_list(
             data = travel_advisor_client.get(endpoint, params)
             # Check if data is empty or if "data" array is empty
             if not data or ("data" in data and not data["data"]):
-                print(f"Attempt {attempt + 1}: 0 results found, retrying in 5 seconds...")
-                time.sleep(5)
-                continue
+                print(f"Attempt {attempt + 1}: 0 results found.")
+                if attempt < max_retries - 1:
+                    time.sleep(5)
+                    continue
+                return (None, "empty") if return_status else None
             break # Success, we have data
         except Exception as e:
             print(f"Error fetching data on attempt {attempt + 1}: {e}")
             if attempt < max_retries - 1:
                 time.sleep(5)
                 continue
-            return None
+            return (None, "error") if return_status else None
     
-    if data:
+    if data and save_raw:
         filename = f"{location_id}_restaurants_list.json"
         save_to_json(data, filename)
     
-    return data
+    return (data, "ok") if return_status else data
 
 def restaurants_get_details(
     location_id: int, 
@@ -75,7 +79,7 @@ def restaurants_get_details(
         "currency": currency,
         "lang": lang
     }
-    max_retries = 3
+    max_retries = 1
     data = None
     
     for attempt in range(max_retries):
@@ -83,9 +87,11 @@ def restaurants_get_details(
             data = travel_advisor_client.get(endpoint, params)
             # Check if data is empty or if "data" array is empty
             if not data or ("data" in data and not data["data"]):
-                print(f"Attempt {attempt + 1}: 0 results found, retrying in 5 seconds...")
-                time.sleep(5)
-                continue
+                print(f"Attempt {attempt + 1}: 0 results found.")
+                if attempt < max_retries - 1:
+                    time.sleep(5)
+                    continue
+                return None
             break # Success, we have data
         except Exception as e:
             print(f"Error fetching data on attempt {attempt + 1}: {e}")

@@ -1,0 +1,1281 @@
+[
+    {
+        "sourceLocationId": "6931568",
+        "title": "Khu Bảo Tồn Thiên Nhiên Pù Luông",
+        "city": "Co Lung",
+        "totalScore": 4.7,
+        "ranking": "3/35",
+        "reviewsCount": 128,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu Bảo Tồn Thiên Nhiên Pù Luông ở Co Lung. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.7/5 từ 128 lượt review. Xếp hạng: 3/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/c3/1e/ee/pu-luong-nature-reserve.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.20834,
+                20.462471
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "11548765",
+        "title": "Công Viên Quốc Gia Bến En",
+        "city": "Thanh Hóa",
+        "totalScore": 4.5,
+        "ranking": "7/35",
+        "reviewsCount": 8,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Công Viên Quốc Gia Bến En ở Thanh Hóa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 8 lượt review. Xếp hạng: 7/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/41/8c/6e/view-from-island.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10064368",
+        "title": "Thành Nhà Hồ",
+        "city": "Thanh Hóa",
+        "totalScore": 4.1,
+        "ranking": "5/35",
+        "reviewsCount": 28,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thành Nhà Hồ ở Thanh Hóa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.1/5 từ 28 lượt review. Xếp hạng: 5/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/cd/3b/42/dong-du-village-farmstays.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.60682,
+                20.07441
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16706355",
+        "title": "Bản Đôn",
+        "city": "Ba Thuoc",
+        "totalScore": 5.0,
+        "ranking": "8/35",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bản Đôn ở Ba Thuoc. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 8/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/8a/b0/e5/rice-field-from-don-village.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.77934,
+                19.80316
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16850238",
+        "title": "Bãi biển Hải Tiến",
+        "city": "Thanh Hóa",
+        "totalScore": 3.3,
+        "ranking": "19/35",
+        "reviewsCount": 4,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "Khu du lịch sinh thái biển Hải Tiến như một Hawaii thu nhỏ của Bắc Trung Bộ, Biển Hải Tiến thoải dài, ẩn chứa nét hoang sơ, cảnh quan tự nhiên hấp dẫn, nơi đây không chỉ có biển xanh, cát trắng, nắng vàng cùng những rặng dừa xanh, rừng phi lao bát ngát mà dưới bàn tay tài hoa và trí tuệ của con người, nhiều cơ sở hạ tầng du lịch đẹp, sang trọng và hiện đại được xây dựng",
+        "embedding": null,
+        "searchText": "Bãi biển Hải Tiến ở Thanh Hóa. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Mô tả: Khu du lịch sinh thái biển Hải Tiến như một Hawaii thu nhỏ của Bắc Trung Bộ, Biển Hải Tiến thoải dài, ẩn chứa nét hoang sơ, cảnh quan tự nhiên hấp dẫn, nơi đây không chỉ có biển xanh, cát trắng, nắng vàng cùng những rặng dừa xanh, rừng phi lao bát ngát mà dưới bàn tay tài hoa và trí tuệ của con người, nhiều cơ sở hạ tầng du lịch đẹp, sang trọng và hiện đại được xây dựng Đánh giá: 3.3/5 từ 4 lượt review. Xếp hạng: 19/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/18/00/73/2e/bai-bi-n-h-i-ti-n.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.93594,
+                19.840982
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15608628",
+        "title": "Đền Bà Triệu",
+        "city": "Trieu Loc",
+        "totalScore": 3.0,
+        "ranking": "26/35",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đền Bà Triệu ở Trieu Loc. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 26/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/a7/57/72/mai-cong-d-n-ba-tri-u.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33114731",
+        "title": "Pu Luong Ancient Stilt House",
+        "city": "Thanh Hóa",
+        "totalScore": 5.0,
+        "ranking": "1/35",
+        "reviewsCount": 165,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pu Luong Ancient Stilt House ở Thanh Hóa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 165 lượt review. Xếp hạng: 1/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/d5/1e/5f/pu-luong-ancient-stilt.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.80578,
+                19.774687
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34015565",
+        "title": "Puluong Giant Waterwheel",
+        "city": "Thanh Hóa",
+        "totalScore": 5.0,
+        "ranking": "2/35",
+        "reviewsCount": 60,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Puluong Giant Waterwheel ở Thanh Hóa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 60 lượt review. Xếp hạng: 2/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/c3/58/2c/puluong-giant-waterwheel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.81522,
+                21.021416
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33124473",
+        "title": "Pu Luong Surprising Cave",
+        "city": "Thanh Hóa",
+        "totalScore": 5.0,
+        "ranking": "4/35",
+        "reviewsCount": 9,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pu Luong Surprising Cave ở Thanh Hóa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 9 lượt review. Xếp hạng: 4/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/dc/f5/10/pu-luong-surprising-cave.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.778564,
+                19.791876
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "20943990",
+        "title": "Thác Hiêu",
+        "city": "Thanh Hóa",
+        "totalScore": 5.0,
+        "ranking": "6/35",
+        "reviewsCount": 3,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thác Hiêu ở Thanh Hóa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 6/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/29/d3/c8/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.231186,
+                20.449713
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20972964",
+        "title": "Động Từ Thức",
+        "city": "Thanh Hóa",
+        "totalScore": 5.0,
+        "ranking": "9/35",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Động Từ Thức ở Thanh Hóa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 9/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/7e/d9/9b/d-ng-t-th-c.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78518,
+                19.806692
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21054438",
+        "title": "Đền Độc Cước",
+        "city": "Sầm Sơn",
+        "totalScore": 5.0,
+        "ranking": "10/35",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đền Độc Cước ở Sầm Sơn. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 10/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/29/08/11/ef/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.898125,
+                19.7635
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20943605",
+        "title": "Hang Con Moong",
+        "city": "Thanh Yen",
+        "totalScore": 4.0,
+        "ranking": "11/35",
+        "reviewsCount": 2,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hang Con Moong ở Thanh Yen. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 11/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/7e/cc/63/hang-con-moong.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.605,
+                20.2875
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33101683",
+        "title": "Sầm Sơn",
+        "city": "Thanh Hóa",
+        "totalScore": 4.0,
+        "ranking": "12/35",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sầm Sơn ở Thanh Hóa. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 12/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/30/d5/e8/96/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.81603,
+                19.813267
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21041152",
+        "title": "Thác Mây",
+        "city": "Thanh Hóa",
+        "totalScore": 5.0,
+        "ranking": "13/35",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thác Mây ở Thanh Hóa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 13/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/7e/ca/6c/thac-may.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20975158",
+        "title": "Suối Cá thần Cẩm Lương",
+        "city": "Cam Luong",
+        "totalScore": 5.0,
+        "ranking": "14/35",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Suối Cá thần Cẩm Lương ở Cam Luong. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 14/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/70/da/82/su-i-ca-th-n-c-m-luong.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.390434,
+                20.25194
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20943596",
+        "title": "Nhà cổ Tây Giai",
+        "city": "Vinh Tien",
+        "totalScore": 5.0,
+        "ranking": "15/35",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà cổ Tây Giai ở Vinh Tien. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 15/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/5a/f2/a3/nha-c-tay-giai.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20943592",
+        "title": "Thác Ma Hao",
+        "city": "Tri Nang",
+        "totalScore": 5.0,
+        "ranking": "16/35",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thác Ma Hao ở Tri Nang. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 16/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/5a/f6/76/thac-ma-hao-va-cac-co.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.18522,
+                20.0989
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "20936328",
+        "title": "Đàn tế Nam Giao",
+        "city": "Thanh Hóa",
+        "totalScore": 5.0,
+        "ranking": "17/35",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đàn tế Nam Giao ở Thanh Hóa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 17/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/59/31/e1/visiting-dan-te-nam-giao.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.62961,
+                20.046328
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20936273",
+        "title": "Di tích Quốc gia đặc biệt Lam Kinh",
+        "city": "Tỉnh Thanh Hóa",
+        "totalScore": 5.0,
+        "ranking": "18/35",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Di tích Quốc gia đặc biệt Lam Kinh ở Tỉnh Thanh Hóa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 18/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/1b/59/0f/0f/l-h-i-lam-kinh-lam-kinh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "07:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21082281",
+        "title": "Lê Lai Temple",
+        "city": "Thanh Hóa",
+        "totalScore": 4.0,
+        "ranking": "20/35",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lê Lai Temple ở Thanh Hóa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 20/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/a2/39/48/d-n-tep-le-lai.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21054529",
+        "title": "Nghè Vẹt",
+        "city": "Thanh Hóa",
+        "totalScore": 4.0,
+        "ranking": "21/35",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nghè Vẹt ở Thanh Hóa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 21/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/7e/de/11/nghe-v-t.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.65885,
+                20.08082
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21057982",
+        "title": "Bảo tàng tỉnh Thanh Hóa",
+        "city": "Thanh Hóa",
+        "totalScore": 4.0,
+        "ranking": "22/35",
+        "reviewsCount": 1,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bảo tàng tỉnh Thanh Hóa ở Thanh Hóa. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 22/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/7a/b7/96/b-suu-t-p-nong-c.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "07:30-11:30, 13:30-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21041145",
+        "title": "Đền Cô Bơ",
+        "city": "Thanh Hóa",
+        "totalScore": 4.0,
+        "ranking": "23/35",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đền Cô Bơ ở Thanh Hóa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 23/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/74/34/06/d-n-co-bo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21041149",
+        "title": "Đền Đồng Cổ",
+        "city": "Thanh Hóa",
+        "totalScore": 4.0,
+        "ranking": "24/35",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đền Đồng Cổ ở Thanh Hóa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 24/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/74/2e/0b/d-n-d-ng-c.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21041473",
+        "title": "Đền thờ Thái Úy Lý Thường Kiệt",
+        "city": "Thanh Hóa",
+        "totalScore": 3.0,
+        "ranking": "25/35",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đền thờ Thái Úy Lý Thường Kiệt ở Thanh Hóa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 25/35.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/7e/d6/2a/d-n-th-thai-uy-ly-thu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.826096,
+                19.975906
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21082282",
+        "title": "Trúc Lâm Hàm Rồng Zen Monastery",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trúc Lâm Hàm Rồng Zen Monastery ở Thanh Hóa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/a2/39/b9/truc-lam-ham-r-ng-zen.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21080924",
+        "title": "Đền Độc Cước",
+        "city": "Sầm Sơn",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đền Độc Cước ở Sầm Sơn. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.90012,
+                19.732536
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21080910",
+        "title": "Đền thờ Vua LÊ HOÀN",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đền thờ Vua LÊ HOÀN ở Thanh Hóa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.529854,
+                19.976543
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21058708",
+        "title": "Thái Miếu Nhà Lê",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thái Miếu Nhà Lê ở Thanh Hóa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/1b/7e/d9/0a/thai-mi-u-nha-le.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.77803,
+                19.787447
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21054442",
+        "title": "Hòn Trống Mái",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hòn Trống Mái ở Thanh Hóa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/1b/7e/d9/f5/hon-tr-ng-mai.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.890686,
+                19.727047
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21051837",
+        "title": "Phủ Trịnh",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phủ Trịnh ở Thanh Hóa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/1b/7a/b8/f8/ph-tr-nh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20943993",
+        "title": "Động Từ Thức",
+        "city": "Nga Thien",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Động Từ Thức ở Nga Thien. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97912,
+                20.04684
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20943598",
+        "title": "Đình Đông Môn",
+        "city": "Vinh Long",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đình Đông Môn ở Vinh Long. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/5d/48/77/dinh-dong-mon.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.60922,
+                20.080837
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20943368",
+        "title": "Đền Đồng Cổ",
+        "city": "Thanh Hóa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đền Đồng Cổ ở Thanh Hóa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/17/26/fc/dong-du-valley.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.58471,
+                20.04556
+            ]
+        },
+        "openingHours": null
+    }
+]

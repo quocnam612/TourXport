@@ -1,0 +1,305 @@
+[
+    {
+        "sourceLocationId": "12268848",
+        "title": "Vườn Quốc Gia Vũ Quang",
+        "city": "Hà Tĩnh",
+        "totalScore": 3.7,
+        "ranking": "4/9",
+        "reviewsCount": 6,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn Quốc Gia Vũ Quang ở Hà Tĩnh. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.7/5 từ 6 lượt review. Xếp hạng: 4/9.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/13/4b/46/e2/vu-quang-national-park.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17667261",
+        "title": "Vinpearl Water Park Hà Tĩnh",
+        "city": "Hà Tĩnh",
+        "totalScore": 3.0,
+        "ranking": "5/9",
+        "reviewsCount": 8,
+        "category": "Công viên nước & giải trí",
+        "priceRange": null,
+        "description": "Công viên nước Hà Tĩnh sẽ làm hài lòng khách hàng ở mọi lứa tuổi với các chuyến đi như Six Super Speed lanes, Four Lane Spiral thú vị hoặc đường trượt Super Bowl hoang dã. Ngoài ra còn có các khu vui chơi tuyệt vời cho trẻ em như khu vực bể bơi vui vẻ, nhà táo và máy phun mưa sứa.",
+        "embedding": null,
+        "searchText": "Vinpearl Water Park Hà Tĩnh ở Hà Tĩnh. Loại địa điểm: Công viên nước & giải trí. Tags: Điểm du lịch, Công viên nước & giải trí. Mô tả: Công viên nước Hà Tĩnh sẽ làm hài lòng khách hàng ở mọi lứa tuổi với các chuyến đi như Six Super Speed lanes, Four Lane Spiral thú vị hoặc đường trượt Super Bowl hoang dã. Ngoài ra còn có các khu vui chơi tuyệt vời cho trẻ em như khu vực bể bơi vui vẻ, nhà táo và máy phun mưa sứa. Đánh giá: 3.0/5 từ 8 lượt review. Xếp hạng: 5/9.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/18/12/b1/31/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.89395,
+                18.487587
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21001217",
+        "title": "Huong Tich Pagoda",
+        "city": "Hà Tĩnh",
+        "totalScore": 4.8,
+        "ranking": "1/9",
+        "reviewsCount": 6,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Huong Tich Pagoda ở Hà Tĩnh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.8/5 từ 6 lượt review. Xếp hạng: 1/9.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/a0/6b/bf/photo8jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.7663,
+                18.47126
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21001215",
+        "title": "Hồ Kẻ Gỗ",
+        "city": "Hà Tĩnh",
+        "totalScore": 5.0,
+        "ranking": "2/9",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hồ Kẻ Gỗ ở Hà Tĩnh. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 2/9.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/23/25/49/0f/h-k-g.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.67452,
+                18.294378
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12729909",
+        "title": "Tran Phu Memmorial House",
+        "city": "Hà Tĩnh",
+        "totalScore": 4.0,
+        "ranking": "3/9",
+        "reviewsCount": 1,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tran Phu Memmorial House ở Hà Tĩnh. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 3/9.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/4c/04/56/ethnic-homestay-vietnam.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33327094",
+        "title": "Chùa Thiện Quang",
+        "city": "Thiên Cầm",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Thiện Quang ở Thiên Cầm. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.0883,
+                10.927473
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26703940",
+        "title": "Hà Tĩnh Stadium",
+        "city": "Hà Tĩnh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": "Sân vận động bóng đá Hà Tĩnh",
+        "embedding": null,
+        "searchText": "Hà Tĩnh Stadium ở Hà Tĩnh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Mô tả: Sân vận động bóng đá Hà Tĩnh",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.90541,
+                18.333952
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1290
+                    }
+                ],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25312124",
+        "title": "Shire Of Le Duan",
+        "city": "Hà Tĩnh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Shire Of Le Duan ở Hà Tĩnh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.92714,
+                18.186447
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20998880",
+        "title": "Đền thờ Cố Tổng bí thư Lê Duẩn",
+        "city": "Hà Tĩnh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đền thờ Cố Tổng bí thư Lê Duẩn ở Hà Tĩnh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    }
+]

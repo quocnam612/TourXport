@@ -1,0 +1,219 @@
+[
+    {
+        "sourceLocationId": "6739413",
+        "title": "Mui Ca Mau",
+        "city": "Cà Mau",
+        "totalScore": 4.0,
+        "ranking": "1/5",
+        "reviewsCount": 39,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mui Ca Mau ở Cà Mau. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 39 lượt review. Xếp hạng: 1/5.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/48/1b/e1/the-monument-at-the-dat.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8540457",
+        "title": "Công viên Văn hóa - Du lịch Mũi Cà Mau",
+        "city": "Cà Mau",
+        "totalScore": 3.8,
+        "ranking": "2/5",
+        "reviewsCount": 5,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Công viên Văn hóa - Du lịch Mũi Cà Mau ở Cà Mau. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.8/5 từ 5 lượt review. Xếp hạng: 2/5.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/a7/47/20/h-i-lien-hi-p-ph-n-t.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14027945",
+        "title": "Trung Tâm Thông Tin Xúc Tiến Du Lịch Tỉnh Cà Mau",
+        "city": "Cà Mau",
+        "totalScore": 3.5,
+        "ranking": "3/5",
+        "reviewsCount": 2,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": "Trung tâm Thông tin Xúc tiến Du lịch tỉnh Cà Mau\n - Các điểm du lịch tại Cà Mau\n - Tour, tuyên du lịch trong tỉnh Cà Mau\n - Nhà hàng, khách sạn tại Cà Mau\n - Thuê xe, cano ... tại Cà Mau",
+        "embedding": null,
+        "searchText": "Trung Tâm Thông Tin Xúc Tiến Du Lịch Tỉnh Cà Mau ở Cà Mau. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Thông tin cho khách du lịch. Mô tả: Trung tâm Thông tin Xúc tiến Du lịch tỉnh Cà Mau\n - Các điểm du lịch tại Cà Mau\n - Tour, tuyên du lịch trong tỉnh Cà Mau\n - Nhà hàng, khách sạn tại Cà Mau\n - Thuê xe, cano ... tại Cà Mau Đánh giá: 3.5/5 từ 2 lượt review. Xếp hạng: 3/5.",
+        "tags": [
+            "Điểm du lịch",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.147995,
+                9.181631
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1859
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1859
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1859
+                    }
+                ],
+                []
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26209322",
+        "title": "Khu Du Lịch Khai Long",
+        "city": "Cà Mau",
+        "totalScore": 0,
+        "ranking": "4/5",
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": "Khu vực cho du khách đến tham quan, lưu trú, ăn uống và vui chơi giải trí với cảnh quan đẹp và nhiều loại hình dịch vụ nổi bật",
+        "embedding": null,
+        "searchText": "Khu Du Lịch Khai Long ở Cà Mau. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Mô tả: Khu vực cho du khách đến tham quan, lưu trú, ăn uống và vui chơi giải trí với cảnh quan đẹp và nhiều loại hình dịch vụ nổi bật Xếp hạng: 4/5.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/29/81/1c/c0/khu-b-ke-ven-bi-n.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.82865,
+                8.566813
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21058714",
+        "title": "Khu Tưởng niệm Chủ tịch Hồ Chí Minh",
+        "city": "Cà Mau",
+        "totalScore": 4.0,
+        "ranking": "5/5",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu Tưởng niệm Chủ tịch Hồ Chí Minh ở Cà Mau. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 5/5.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/a9/00/12/muong-thanh-luxury-ca.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.13402,
+                9.189878
+            ]
+        },
+        "openingHours": null
+    }
+]

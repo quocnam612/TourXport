@@ -1,7 +1,7 @@
 import json
 import os
 
-from src.utils.file_io import save_to_data_json, save_to_json
+from src.utils.file_io import save_to_data_json, save_to_output_json
 
 
 def _as_number(value, fallback=0):
@@ -79,7 +79,28 @@ def _tags(item):
         if isinstance(subcategory, dict) and subcategory.get("name"):
             names.append(subcategory["name"])
 
+    hotel_label = item.get("subcategory_type_label")
+    if hotel_label:
+        names.append(hotel_label)
+
+    if not names and _is_hotel_result(item):
+        names.append("Khách sạn / Nhà nghỉ")
+
     return list(dict.fromkeys(names))
+
+
+def _is_hotel_result(item):
+    hotel_fields = (
+        "hotel_class",
+        "hotel_class_attribution",
+        "subcategory_type",
+        "subcategory_type_label",
+    )
+    if any(item.get(field) for field in hotel_fields):
+        return True
+
+    ranking_category = str(item.get("ranking_category") or "").lower()
+    return ranking_category in {"hotel", "hotels"}
 
 
 def _province_or_city(item, address, ancestors):
@@ -157,6 +178,23 @@ def _ranking(item):
     return item.get("ranking")
 
 
+def _price_range(item):
+    for key in ("price", "priceRange", "price_range"):
+        value = item.get(key)
+        if value:
+            return value
+
+    price_level = item.get("price_level")
+    if not price_level:
+        return None
+
+    normalized = str(price_level).strip()
+    if normalized and set(normalized).issubset({"₫", "$", "€", "£", "¥", " " }):
+        return None
+
+    return normalized
+
+
 def _search_text(place):
     parts = [
         f"{place['title']} ở {place['city']}." if place.get("city") else place["title"],
@@ -216,7 +254,7 @@ def transform_to_places(raw_data):
             "ranking": _ranking(item),
             "reviewsCount": _as_int(item.get("num_reviews") or item.get("reviewsCount")),
             "category": tags[-1] if tags else None,
-            "priceRange": item.get("price_level") or item.get("price") or item.get("priceRange"),
+            "priceRange": _price_range(item),
             "description": item.get("description") or item.get("geo_description"),
             "embedding": None,
             "searchText": None,
@@ -233,7 +271,7 @@ def transform_to_places(raw_data):
 
 def save_places_output(raw_data, filename):
     places = transform_to_places(raw_data)
-    save_to_json(places, filename)
+    save_to_output_json(places, filename)
     print(f"Places exported: {len(places)}")
     return places
 
@@ -290,19 +328,25 @@ def clean_output_places(prefix):
     return removed
 
 
-def merge_output_places(prefix, output_filename):
+def merge_output_places(prefix, output_filename, output_subdir="places"):
     places, file_count = collect_output_places(prefix)
-    save_to_data_json(places, output_filename)
+    save_to_data_json(places, output_filename, subdir=output_subdir)
     print(f"Merged files: {file_count}")
     print(f"Merged places exported: {len(places)}")
     return places
 
 
-def save_merged_output_places(prefix, region_name=None, clean_output=False):
+def save_merged_output_places(prefix, region_name=None, clean_output=False, output_subdir="places"):
     places, file_count = collect_output_places(prefix)
+    if not places:
+        print(f"Merged files: {file_count}")
+        print("Merged places exported: 0")
+        print("No valid places found. Keeping output files for inspection.")
+        return []
+
     compact_region = "".join((region_name or prefix).split())
     final_filename = f"{compact_region}-{len(places)}.json"
-    save_to_data_json(places, final_filename)
+    save_to_data_json(places, final_filename, subdir=output_subdir)
     print(f"Merged files: {file_count}")
     print(f"Merged places exported: {len(places)}")
     if clean_output:

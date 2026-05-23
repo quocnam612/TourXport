@@ -1,0 +1,97 @@
+[
+    {
+        "sourceLocationId": "12268844",
+        "title": "Vườn Quốc Gia Bù Gia Mập",
+        "city": "Phuoc Long",
+        "totalScore": 5.0,
+        "ranking": "2/2",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn Quốc Gia Bù Gia Mập ở Phuoc Long. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 2/2.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/6f/d3/5d/img-20191216-130624-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "22827952",
+        "title": "Hợp Tác Xã Cây Ăn Trái Nông Thành Phát",
+        "city": "Phu Rieng",
+        "totalScore": 5.0,
+        "ranking": "1/1",
+        "reviewsCount": 1,
+        "category": "Khác",
+        "priceRange": null,
+        "description": "- Hợp tác xã cây ăn trái Nông Thành Phát có địa chỉ tại thôn Đồng Tiến, xã Phước Tân, Phú Riềng, Bình Phước là một vùng chuyên canh cây ăn trái như: sầu riêng, bưởi, bơ,... theo tiêu chuẩn VietGAP cung cấp ra thị trường hơn 100 tấn/năm với mục tiêu cung cấp cây ăn trái giá trị dinh dưỡng cao, an toàn. \n- Quí khách nếu có nhu cầu tham quan hoặc mua sản phẩm vui lòng liên hệ: 0322 548 654. \n",
+        "embedding": null,
+        "searchText": "Hợp Tác Xã Cây Ăn Trái Nông Thành Phát ở Phu Rieng. Loại địa điểm: Khác. Tags: Điểm du lịch, Chuyến tham quan, Khác. Mô tả: - Hợp tác xã cây ăn trái Nông Thành Phát có địa chỉ tại thôn Đồng Tiến, xã Phước Tân, Phú Riềng, Bình Phước là một vùng chuyên canh cây ăn trái như: sầu riêng, bưởi, bơ,... theo tiêu chuẩn VietGAP cung cấp ra thị trường hơn 100 tấn/năm với mục tiêu cung cấp cây ăn trái giá trị dinh dưỡng cao, an toàn. \n- Quí khách nếu có nhu cầu tham quan hoặc mua sản phẩm vui lòng liên hệ: 0322 548 654. \n Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 1/1.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Khác"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/67/b0/54/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "07:30-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    }
+]

@@ -1,0 +1,1404 @@
+[
+    {
+        "sourceLocationId": "4064123",
+        "title": "Nhà hàng chay Yên Ninh",
+        "city": "Điện Biên Phủ",
+        "totalScore": 4.9,
+        "ranking": "1/19",
+        "reviewsCount": 145,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng chay Yên Ninh ở Điện Biên Phủ. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.9/5 từ 145 lượt review. Xếp hạng: 1/19.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/90/14/bd/img-20190223-160142-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.0206,
+                21.395784
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34200713",
+        "title": "Cộng Cà Phê",
+        "city": "Điện Biên Phủ",
+        "totalScore": 5.0,
+        "ranking": "2/19",
+        "reviewsCount": 5,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cộng Cà Phê ở Điện Biên Phủ. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 5 lượt review. Xếp hạng: 2/19.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/32/85/0f/71/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "07:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26458735",
+        "title": "Quà Tây Bắc",
+        "city": "Điện Biên Phủ",
+        "totalScore": 5.0,
+        "ranking": "3/19",
+        "reviewsCount": 4,
+        "category": "Ngồi xuống",
+        "priceRange": "13.157.895 ₫ - 263.157.888 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quà Tây Bắc ở Điện Biên Phủ. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 3/19. Giá: 13.157.895 ₫ - 263.157.888 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/02/f2/1d/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.01046,
+                21.384026
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "3940634",
+        "title": "Dân Tộc Quán",
+        "city": "Điện Biên Phủ",
+        "totalScore": 3.9,
+        "ranking": "4/19",
+        "reviewsCount": 19,
+        "category": "Ngồi xuống",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Dân Tộc Quán ở Điện Biên Phủ. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.9/5 từ 19 lượt review. Xếp hạng: 4/19. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/e7/f3/3e/dan-toc-quan.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.01082,
+                21.383265
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26800397",
+        "title": "Xo Coffee",
+        "city": "Điện Biên Phủ",
+        "totalScore": 0,
+        "ranking": "5/19",
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "657.894.720 ₫ - 1.052.631.552 ₫",
+        "description": "X.O COFFEE Coffee n Chill ☕ Address: 450 Võ Nguyên Giáp, Điện Biên. ☕ Tel: 0839763333 ☕ We are open from 7:00 to 22:00 (Moon-Sun).",
+        "embedding": null,
+        "searchText": "Xo Coffee ở Điện Biên Phủ. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: X.O COFFEE Coffee n Chill ☕ Address: 450 Võ Nguyên Giáp, Điện Biên. ☕ Tel: 0839763333 ☕ We are open from 7:00 to 22:00 (Moon-Sun). Xếp hạng: 5/19. Giá: 657.894.720 ₫ - 1.052.631.552 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/b0/c3/54/our-coffee-shop-not-big.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.02335,
+                21.402262
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27997394",
+        "title": "La Boong",
+        "city": "Điện Biên Phủ",
+        "totalScore": 5.0,
+        "ranking": "6/19",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "La Boong ở Điện Biên Phủ. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 6/19.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/ca/12/3f/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.022,
+                21.396898
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26799647",
+        "title": "X.o Coffee",
+        "city": "Điện Biên Phủ",
+        "totalScore": 5.0,
+        "ranking": "7/19",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Coffee stop ☕️ ---------------------- X.O COFFEE Coffee n Chill ☕ Address: 450 Võ Nguyên Giáp, Điện Biên. ☕ Tel: 0839763333 ☕ We are open from 7:00 to 22:00 (Moon-Sun).",
+        "embedding": null,
+        "searchText": "X.o Coffee ở Điện Biên Phủ. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Coffee stop ☕️ ---------------------- X.O COFFEE Coffee n Chill ☕ Address: 450 Võ Nguyên Giáp, Điện Biên. ☕ Tel: 0839763333 ☕ We are open from 7:00 to 22:00 (Moon-Sun). Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 7/19.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2a/b0/be/4a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.02335,
+                21.402262
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26867544",
+        "title": "Nhà Hàng - 70 - Cơm Tự Chọn - Cơm Rang - Các Món Ăn Dân Tộc.",
+        "city": "Điện Biên Phủ",
+        "totalScore": 5.0,
+        "ranking": "8/19",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng - 70 - Cơm Tự Chọn - Cơm Rang - Các Món Ăn Dân Tộc. ở Điện Biên Phủ. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 8/19.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.01573,
+                21.383404
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25113470",
+        "title": "Hom Nao",
+        "city": "Điện Biên Phủ",
+        "totalScore": 5.0,
+        "ranking": "9/19",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hom Nao ở Điện Biên Phủ. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 9/19.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/26/cf/a0/08/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.03542,
+                21.409286
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8674441",
+        "title": "Nhà hàng Thaisphere",
+        "city": "Điện Biên Phủ",
+        "totalScore": 3.4,
+        "ranking": "10/19",
+        "reviewsCount": 9,
+        "category": "Ngồi xuống",
+        "priceRange": "1.315.789.440 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Thaisphere ở Điện Biên Phủ. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.4/5 từ 9 lượt review. Xếp hạng: 10/19. Giá: 1.315.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/14/69/02/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.04263,
+                21.408873
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23885448",
+        "title": "Tocotoco",
+        "city": "Điện Biên Phủ",
+        "totalScore": 5.0,
+        "ranking": "11/19",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tocotoco ở Điện Biên Phủ. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 11/19.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.01703,
+                21.394514
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19235175",
+        "title": "Buông Café",
+        "city": "Điện Biên Phủ",
+        "totalScore": 5.0,
+        "ranking": "12/19",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Buông Café ở Điện Biên Phủ. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 12/19.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/17/d8/fb/s-a-chua-d-o-them-m-t.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.0094,
+                21.388155
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27999935",
+        "title": "Royce Coffee",
+        "city": "Điện Biên Phủ",
+        "totalScore": 4.0,
+        "ranking": "13/19",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Royce Coffee ở Điện Biên Phủ. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 13/19.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2c/ca/14/36/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.02301,
+                21.38602
+            ]
+        },
+        "openingHours": {
+            "display": "08:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10750050",
+        "title": "Nhà Hàng A1",
+        "city": "Điện Biên Phủ",
+        "totalScore": 3.2,
+        "ranking": "14/19",
+        "reviewsCount": 10,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng A1 ở Điện Biên Phủ. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.2/5 từ 10 lượt review. Xếp hạng: 14/19. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/98/71/87/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.01717,
+                21.384377
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21141605",
+        "title": "Nha Hang De 79",
+        "city": "Điện Biên Phủ",
+        "totalScore": 4.0,
+        "ranking": "15/19",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nha Hang De 79 ở Điện Biên Phủ. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 15/19.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/ac/c1/e8/nha-hang-de-79.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.011024,
+                21.389284
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21141619",
+        "title": "Nha Hang Tung Tinh",
+        "city": "Muong Lay",
+        "totalScore": 4.0,
+        "ranking": "16/19",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nha Hang Tung Tinh ở Muong Lay. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 16/19. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.1635,
+                22.049873
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16731218",
+        "title": "Iris FastFood",
+        "city": "Điện Biên Phủ",
+        "totalScore": 2.7,
+        "ranking": "17/19",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Iris FastFood ở Điện Biên Phủ. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 2.7/5 từ 3 lượt review. Xếp hạng: 17/19.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.01481,
+                21.389223
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13947292",
+        "title": "Trà Cafe Cường Phương",
+        "city": "Điện Biên Phủ",
+        "totalScore": 2.3,
+        "ranking": "18/19",
+        "reviewsCount": 3,
+        "category": "Quán cafe",
+        "priceRange": "526.316 ₫ - 1.315.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Trà Cafe Cường Phương ở Điện Biên Phủ. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 2.3/5 từ 3 lượt review. Xếp hạng: 18/19. Giá: 526.316 ₫ - 1.315.789 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/a5/9c/75/day-la-khong-gian-c-a.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.01387,
+                21.385157
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "5288086",
+        "title": "Lien Tuoi",
+        "city": "Điện Biên Phủ",
+        "totalScore": 2.3,
+        "ranking": "19/19",
+        "reviewsCount": 6,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lien Tuoi ở Điện Biên Phủ. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 2.3/5 từ 6 lượt review. Xếp hạng: 19/19.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16646084",
+        "title": "Trâu Ngon Quán",
+        "city": "Điện Biên Phủ",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trâu Ngon Quán ở Điện Biên Phủ. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25376412",
+        "title": "Nhà hàng Phương Đông- Vượng Phát",
+        "city": "Điện Biên Phủ",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Kinh doanh dịch uống Chuyên lợn bản - Gà đồi - Ẩm thực dân tộc - Cá Hồi - Cá tầm Với nguồn nguyên liệu tươi ngon, sạch, gia vị nổi tiếng vùng Tây Bắc, được đầu bếp nấu bằng cả tấm lòng tạo ra những món ăn thơm ngon làm hài lòng cả những vị khách khó tính.",
+        "embedding": null,
+        "searchText": "Nhà hàng Phương Đông- Vượng Phát ở Điện Biên Phủ. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Kinh doanh dịch uống Chuyên lợn bản - Gà đồi - Ẩm thực dân tộc - Cá Hồi - Cá tầm Với nguồn nguyên liệu tươi ngon, sạch, gia vị nổi tiếng vùng Tây Bắc, được đầu bếp nấu bằng cả tấm lòng tạo ra những món ăn thơm ngon làm hài lòng cả những vị khách khó tính.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.01199,
+                21.397726
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32995831",
+        "title": "Cầm Cafe",
+        "city": "Điện Biên Phủ",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cầm Cafe ở Điện Biên Phủ. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.02301,
+                21.38602
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-23:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1410
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19857058",
+        "title": "Mường Cà Phê",
+        "city": "Điện Biên Phủ",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mường Cà Phê ở Điện Biên Phủ. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.02212,
+                21.396805
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27058626",
+        "title": "Tuan Le Quan",
+        "city": "Điện Biên Phủ",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tuan Le Quan ở Điện Biên Phủ. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.01086,
+                21.39267
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27999871",
+        "title": "La Boong",
+        "city": "Điện Biên Phủ",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "La Boong ở Điện Biên Phủ. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.0213,
+                21.397509
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15270857",
+        "title": "Tổ Hợp Ẩm Thực Sum Điện Biên",
+        "city": "Điện Biên Phủ",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tổ Hợp Ẩm Thực Sum Điện Biên ở Điện Biên Phủ. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.022736,
+                21.394157
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25352798",
+        "title": "Hestia Cocktail & Wine Bar",
+        "city": "Điện Biên Phủ",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Một góc cocktail bar đầy cảm hứng",
+        "embedding": null,
+        "searchText": "Hestia Cocktail & Wine Bar ở Điện Biên Phủ. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Một góc cocktail bar đầy cảm hứng",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/29/96/e3/3a/hidden-bar-classic-cocktail.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.020134,
+                21.38559
+            ]
+        },
+        "openingHours": {
+            "display": "19:00-25:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1500
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19125738",
+        "title": "Nhà Hàng - Cafe Ẩm Thực Mường Then",
+        "city": "Điện Biên Phủ",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "1.315.789.440 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng - Cafe Ẩm Thực Mường Then ở Điện Biên Phủ. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 1.315.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/8a/2d/f6/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.01203,
+                21.392296
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26162206",
+        "title": "Coffee The Town",
+        "city": "Tuần Giáo",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Coffee The Town ở Tuần Giáo. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.41928,
+                21.588442
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23915427",
+        "title": "Khách sạn Tây Bắc",
+        "city": "Tuần Giáo",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Tạo lạc tại cửa ngõ, là nơi giao nhau giữa Điện Biên Sơn La",
+        "embedding": null,
+        "searchText": "Khách sạn Tây Bắc ở Tuần Giáo. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Tạo lạc tại cửa ngõ, là nơi giao nhau giữa Điện Biên Sơn La",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.41913,
+                21.587587
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    }
+]

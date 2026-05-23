@@ -1,0 +1,320 @@
+[
+    {
+        "sourceLocationId": "16724818",
+        "title": "Chùa Tam Chúc",
+        "city": "Ba Sao",
+        "totalScore": 3.6,
+        "ranking": "3/8",
+        "reviewsCount": 26,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Tam Chúc ở Ba Sao. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.6/5 từ 26 lượt review. Xếp hạng: 3/8.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/fc/92/41/c-ng-tam-quan.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.796165,
+                20.553158
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20106860",
+        "title": "Chùa Địa Tạng",
+        "city": "Liem Son",
+        "totalScore": 5.0,
+        "ranking": "4/8",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Địa Tạng ở Liem Son. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 4/8.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/27/3d/98/66/a-pagoda-of-peace-and.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.95181,
+                20.44514
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25280048",
+        "title": "Chùa Địa Tạng Phi Lai Tự",
+        "city": "Liem Son",
+        "totalScore": 5.0,
+        "ranking": "1/8",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Địa Tạng Phi Lai Tự ở Liem Son. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 1/8.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/29/05/9d/ca/tinh-tam.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.949455,
+                20.44485
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27416577",
+        "title": "Vũ Trường H2",
+        "city": "Duy Hai",
+        "totalScore": 5.0,
+        "ranking": "1/1",
+        "reviewsCount": 4,
+        "category": "Giải trí về đêm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vũ Trường H2 ở Duy Hai. Loại địa điểm: Giải trí về đêm. Tags: Điểm du lịch, Giải trí về đêm. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 1/1.",
+        "tags": [
+            "Điểm du lịch",
+            "Giải trí về đêm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/7b/9c/e9/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.90799,
+                20.642576
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21038010",
+        "title": "Công ty TNHH Dịch vụ Du lịch Tam Chúc",
+        "city": "Phu Ly",
+        "totalScore": 5.0,
+        "ranking": "1/1",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "Khu du lịch cung cấp tổ hợp các dịch vụ từ vận chuyển: vé xe điện, vé thuyền, dịch vụ ăn uống và dịch vụ lưu trú. ",
+        "embedding": null,
+        "searchText": "Công ty TNHH Dịch vụ Du lịch Tam Chúc ở Phu Ly. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Khác, Chuyến tham quan bằng thuyền & thể thao dưới nước, Phương tiện giao thông, Hoạt động ngoài trời. Mô tả: Khu du lịch cung cấp tổ hợp các dịch vụ từ vận chuyển: vé xe điện, vé thuyền, dịch vụ ăn uống và dịch vụ lưu trú.  Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 1/1.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Khác",
+            "Chuyến tham quan bằng thuyền & thể thao dưới nước",
+            "Phương tiện giao thông",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/70/d1/bd/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "08:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25401155",
+        "title": "Ba Danh Pagoda",
+        "city": "Kim Bang",
+        "totalScore": 5.0,
+        "ranking": "6/8",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ba Danh Pagoda ở Kim Bang. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 6/8.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/a5/6e/7e/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.85266,
+                20.568966
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33954289",
+        "title": "Thùng rượu gỗ Sơn Hà",
+        "city": "Phu Ly",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Chuyến tham quan",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thùng rượu gỗ Sơn Hà ở Phu Ly. Loại địa điểm: Chuyến tham quan. Tags: Điểm du lịch, Đồ ăn & Đồ uống, Chuyến tham quan.",
+        "tags": [
+            "Điểm du lịch",
+            "Đồ ăn & Đồ uống",
+            "Chuyến tham quan"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.63315,
+                10.790903
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28099347",
+        "title": "Tam Chuc Complex",
+        "city": "Kim Bang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tam Chuc Complex ở Kim Bang. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.15419,
+                16.068401
+            ]
+        },
+        "openingHours": null
+    }
+]

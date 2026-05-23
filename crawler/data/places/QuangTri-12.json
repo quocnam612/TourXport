@@ -1,0 +1,425 @@
+[
+    {
+        "sourceLocationId": "5553586",
+        "title": "Địa đạo Vịnh Mốc",
+        "city": "Đông Hà",
+        "totalScore": 4.6,
+        "ranking": "1/15",
+        "reviewsCount": 375,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Địa đạo Vịnh Mốc ở Đông Hà. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.6/5 từ 375 lượt review. Xếp hạng: 1/15.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/35/6e/e2/mappa-vinh-moch.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.110275,
+                17.07448
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "7306116",
+        "title": "Biển Cửa Việt",
+        "city": "Đông Hà",
+        "totalScore": 4.5,
+        "ranking": "4/15",
+        "reviewsCount": 23,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Biển Cửa Việt ở Đông Hà. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.5/5 từ 23 lượt review. Xếp hạng: 4/15.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/51/ea/49/welcome-gate.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.186424,
+                16.912937
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4470843",
+        "title": "Căn Cứ Khe Sanh",
+        "city": "Khe Sanh",
+        "totalScore": 4.0,
+        "ranking": "2/15",
+        "reviewsCount": 143,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Căn Cứ Khe Sanh ở Khe Sanh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 143 lượt review. Xếp hạng: 2/15.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/e7/61/a6/chinook-helicopter.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.72442,
+                16.653889
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1654276",
+        "title": "Nhà thờ La Vang",
+        "city": "Hai Phu",
+        "totalScore": 4.2,
+        "ranking": "6/15",
+        "reviewsCount": 19,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà thờ La Vang ở Hai Phu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 19 lượt review. Xếp hạng: 6/15.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/8b/fc/0b/our-lady-of-la-vang-pilgrimage.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.1955,
+                16.706861
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4037754",
+        "title": "Bảo tàng Khắc phục hậu quả bom mìn",
+        "city": "Đông Hà",
+        "totalScore": 4.7,
+        "ranking": "3/15",
+        "reviewsCount": 63,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bảo tàng Khắc phục hậu quả bom mìn ở Đông Hà. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Thông tin cho khách du lịch. Đánh giá: 4.7/5 từ 63 lượt review. Xếp hạng: 3/15.",
+        "tags": [
+            "Điểm du lịch",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/19/a2/bc/11/project-renew-staff-briefs.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.10519,
+                16.798775
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 960
+                    }
+                ],
+                []
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10859449",
+        "title": "Làng Mai Xá",
+        "city": "Đông Hà",
+        "totalScore": 4.8,
+        "ranking": "7/15",
+        "reviewsCount": 15,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Làng Mai Xá ở Đông Hà. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.8/5 từ 15 lượt review. Xếp hạng: 7/15.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/55/76/ea/panorama-of-mai-xa-communal.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.13877,
+                16.87603
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8540396",
+        "title": "Thành cổ Quảng Trị",
+        "city": "Quang Tri",
+        "totalScore": 4.5,
+        "ranking": "5/15",
+        "reviewsCount": 19,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thành cổ Quảng Trị ở Quang Tri. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 19 lượt review. Xếp hạng: 5/15.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/db/8c/94/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.18948,
+                16.753931
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14937018",
+        "title": "Mũi Trèo",
+        "city": "Vinh Linh",
+        "totalScore": 5.0,
+        "ranking": "11/15",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mũi Trèo ở Vinh Linh. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 11/15.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9738970",
+        "title": "Bảo tàng Quảng Trị",
+        "city": "Đông Hà",
+        "totalScore": 4.0,
+        "ranking": "10/15",
+        "reviewsCount": 5,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bảo tàng Quảng Trị ở Đông Hà. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.0/5 từ 5 lượt review. Xếp hạng: 10/15.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/b7/b7/25/quang-tri-museum.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.09295,
+                16.81622
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9738911",
+        "title": "Chợ Đông Hà",
+        "city": "Đông Hà",
+        "totalScore": 3.4,
+        "ranking": "9/15",
+        "reviewsCount": 13,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Đông Hà ở Đông Hà. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 3.4/5 từ 13 lượt review. Xếp hạng: 9/15.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/f4/13/5d/dong-ha.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.099846,
+                16.82396
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7043104",
+        "title": "Bãi biển Cửa Tùng",
+        "city": "Vinh Linh",
+        "totalScore": 4.0,
+        "ranking": "8/15",
+        "reviewsCount": 7,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bãi biển Cửa Tùng ở Vinh Linh. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.0/5 từ 7 lượt review. Xếp hạng: 8/15.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/cd/75/15/cua-tung-beach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14137857",
+        "title": "Nghĩa Trang Liệt Sĩ Trường Sơn",
+        "city": "Vinh Truong",
+        "totalScore": 5.0,
+        "ranking": "12/15",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nghĩa Trang Liệt Sĩ Trường Sơn ở Vinh Truong. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 12/15.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/25/a9/0b/14/truong-son-martyrs-cemetery.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    }
+]

@@ -1,0 +1,5665 @@
+[
+    {
+        "sourceLocationId": "5503688",
+        "title": "Crazy House",
+        "city": "Đà Lạt",
+        "totalScore": 4.1,
+        "ranking": "4/114",
+        "reviewsCount": 3907,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Crazy House ở Đà Lạt. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên. Đánh giá: 4.1/5 từ 3907 lượt review. Xếp hạng: 4/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/b8/92/29/an-extraordinary-sight.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.430885,
+                11.934726
+            ]
+        },
+        "openingHours": {
+            "display": "08:30-18:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1110
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "451017",
+        "title": "Linh Phuoc Pagoda",
+        "city": "Đà Lạt",
+        "totalScore": 4.6,
+        "ranking": "1/114",
+        "reviewsCount": 1411,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Linh Phuoc Pagoda ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.6/5 từ 1411 lượt review. Xếp hạng: 1/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/27/a1/c4/2c/it-is-know-as-daragon.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.49941,
+                11.94448
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "1990715",
+        "title": "Elephant  Waterfall ( Thác Voi)",
+        "city": "Gia Lam",
+        "totalScore": 4.1,
+        "ranking": "6/114",
+        "reviewsCount": 1836,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Elephant  Waterfall ( Thác Voi) ở Gia Lam. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.1/5 từ 1836 lượt review. Xếp hạng: 6/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/25/f8/79/the-view-to-elephant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.336494,
+                11.823007
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "451021",
+        "title": "Thiền Viện Trúc Lâm",
+        "city": "Đà Lạt",
+        "totalScore": 4.5,
+        "ranking": "3/114",
+        "reviewsCount": 1021,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thiền Viện Trúc Lâm ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 1021 lượt review. Xếp hạng: 3/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/27/a1/c7/40/the-most-beautiful-pagoda.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.4359,
+                11.903559
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1845666",
+        "title": "Công viên hoa Đà Lạt",
+        "city": "Đà Lạt",
+        "totalScore": 3.9,
+        "ranking": "9/114",
+        "reviewsCount": 1216,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Công viên hoa Đà Lạt ở Đà Lạt. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.9/5 từ 1216 lượt review. Xếp hạng: 9/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/a2/bb/e8/dalat-flower-park.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.44983,
+                11.950248
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "451012",
+        "title": "Thung Lũng Tình Yêu",
+        "city": "Đà Lạt",
+        "totalScore": 3.9,
+        "ranking": "11/114",
+        "reviewsCount": 481,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": "Just as true love has to surpass several obstacles, the Valley of Love in Dalat had to surpass many challenges in the past in order to gain its rightful name today. In the beginning, the valley was called Vallée D’amour (Valley of Love) by the French before being renamed The Valley of Piece. In 1935, its beauty and captivation persuaded people to once again name it after the most wonderful thing in the world: Love. Thanks to being the honeymoon destination of newly-married couples, this valley is even regarded as Niagara Fall of Vietnam.",
+        "embedding": null,
+        "searchText": "Thung Lũng Tình Yêu ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Mô tả: Just as true love has to surpass several obstacles, the Valley of Love in Dalat had to surpass many challenges in the past in order to gain its rightful name today. In the beginning, the valley was called Vallée D’amour (Valley of Love) by the French before being renamed The Valley of Piece. In 1935, its beauty and captivation persuaded people to once again name it after the most wonderful thing in the world: Love. Thanks to being the honeymoon destination of newly-married couples, this valley is even regarded as Niagara Fall of Vietnam. Đánh giá: 3.9/5 từ 481 lượt review. Xếp hạng: 11/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/de/2b/83/overview.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.44891,
+                11.978066
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "9989857",
+        "title": "Tuyen Lam Lake",
+        "city": "Đà Lạt",
+        "totalScore": 4.4,
+        "ranking": "7/114",
+        "reviewsCount": 170,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tuyen Lam Lake ở Đà Lạt. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.4/5 từ 170 lượt review. Xếp hạng: 7/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/a5/34/84/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.43395,
+                11.91221
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "451009",
+        "title": "Dalat Market",
+        "city": "Đà Lạt",
+        "totalScore": 4.0,
+        "ranking": "10/114",
+        "reviewsCount": 435,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dalat Market ở Đà Lạt. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 4.0/5 từ 435 lượt review. Xếp hạng: 10/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/b1/26/35/dalat-market.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.43689,
+                11.942985
+            ]
+        },
+        "openingHours": {
+            "display": "17:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "11443926",
+        "title": "Chợ Đêm Đà Lạt",
+        "city": "Đà Lạt",
+        "totalScore": 3.9,
+        "ranking": "20/114",
+        "reviewsCount": 193,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Đêm Đà Lạt ở Đà Lạt. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 3.9/5 từ 193 lượt review. Xếp hạng: 20/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/b2/43/1a/der-markt.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.43693,
+                11.942786
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [],
+                [],
+                [],
+                [],
+                []
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "451022",
+        "title": "Xuan Huong Lake",
+        "city": "Đà Lạt",
+        "totalScore": 4.1,
+        "ranking": "5/114",
+        "reviewsCount": 519,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Xuan Huong Lake ở Đà Lạt. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.1/5 từ 519 lượt review. Xếp hạng: 5/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/8d/c3/ba/xuan-huong-lake.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.43995,
+                11.93974
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6960949",
+        "title": "Statue Of Golden Buddha",
+        "city": "Đà Lạt",
+        "totalScore": 4.3,
+        "ranking": "8/114",
+        "reviewsCount": 234,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Statue Of Golden Buddha ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 234 lượt review. Xếp hạng: 8/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/10/a8/ee/goldener-big-buddha.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.44242,
+                11.956531
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15334345",
+        "title": "Da Lat Cable Car - Robin Hill",
+        "city": "Đà Lạt",
+        "totalScore": 4.3,
+        "ranking": "16/114",
+        "reviewsCount": 75,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Da Lat Cable Car - Robin Hill ở Đà Lạt. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Phương tiện giao thông. Đánh giá: 4.3/5 từ 75 lượt review. Xếp hạng: 16/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Phương tiện giao thông"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/27/a1/cb/84/the-city-view-from-robin.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.44379,
+                11.923227
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-11:30, 13:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 780,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 780,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 780,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 780,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 780,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 780,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 780,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "9989939",
+        "title": "Lam Vien Square",
+        "city": "Đà Lạt",
+        "totalScore": 4.0,
+        "ranking": "17/114",
+        "reviewsCount": 168,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lam Vien Square ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 168 lượt review. Xếp hạng: 17/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/4a/3a/cb/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.44526,
+                11.93755
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "451013",
+        "title": "Dinh Bảo Đại",
+        "city": "Đà Lạt",
+        "totalScore": 3.6,
+        "ranking": "15/114",
+        "reviewsCount": 574,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dinh Bảo Đại ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.6/5 từ 574 lượt review. Xếp hạng: 15/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/7d/a6/14/bao-dai-s-palace.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.42938,
+                11.92996
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "6977911",
+        "title": "Lang Biang Trail",
+        "city": "Đà Lạt",
+        "totalScore": 4.2,
+        "ranking": "19/114",
+        "reviewsCount": 140,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lang Biang Trail ở Đà Lạt. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.2/5 từ 140 lượt review. Xếp hạng: 19/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/d3/01/75/lang-biang-trail.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.44031,
+                12.045005
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 495,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14155384",
+        "title": "Đồi Chè Cầu Đất",
+        "city": "Đà Lạt",
+        "totalScore": 4.7,
+        "ranking": "25/114",
+        "reviewsCount": 35,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đồi Chè Cầu Đất ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.7/5 từ 35 lượt review. Xếp hạng: 25/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/a6/06/6f/photo2jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.56142,
+                11.881783
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6983480",
+        "title": "Domaine de Marie Church",
+        "city": "Đà Lạt",
+        "totalScore": 4.3,
+        "ranking": "14/114",
+        "reviewsCount": 129,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Domaine de Marie Church ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 129 lượt review. Xếp hạng: 14/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/62/9f/77/domaine-de-marie-church.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.4304,
+                11.949178
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8327098",
+        "title": "Cung Điện Vua I Đà Lạt",
+        "city": "Đà Lạt",
+        "totalScore": 4.2,
+        "ranking": "21/114",
+        "reviewsCount": 72,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cung Điện Vua I Đà Lạt ở Đà Lạt. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.2/5 từ 72 lượt review. Xếp hạng: 21/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/20/23/a8/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.46972,
+                11.9444
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "451011",
+        "title": "Prenn Falls",
+        "city": "Đà Lạt",
+        "totalScore": 3.2,
+        "ranking": "72/114",
+        "reviewsCount": 327,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Prenn Falls ở Đà Lạt. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.2/5 từ 327 lượt review. Xếp hạng: 72/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/65/b4/00/43543.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.43781,
+                11.936434
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11611968",
+        "title": "Đường Hầm Điêu Khắc",
+        "city": "Đà Lạt",
+        "totalScore": 4.1,
+        "ranking": "23/114",
+        "reviewsCount": 66,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đường Hầm Điêu Khắc ở Đà Lạt. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Thông tin cho khách du lịch. Đánh giá: 4.1/5 từ 66 lượt review. Xếp hạng: 23/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/6a/21/3b/giao-x-mai-anh-t-i-du.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.41036,
+                11.883047
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15512032",
+        "title": "Dao Tien Endangered Primate Species Centre",
+        "city": "Tỉnh Lâm Đồng",
+        "totalScore": 5.0,
+        "ranking": "45/114",
+        "reviewsCount": 5,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dao Tien Endangered Primate Species Centre ở Tỉnh Lâm Đồng. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 5 lượt review. Xếp hạng: 45/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "451020",
+        "title": "Thiên Vương cổ sát",
+        "city": "Đà Lạt",
+        "totalScore": 4.5,
+        "ranking": "13/114",
+        "reviewsCount": 149,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thiên Vương cổ sát ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 149 lượt review. Xếp hạng: 13/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/3b/c9/bf/thien-vuong-pagoda.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.458855,
+                11.93984
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14801793",
+        "title": "Cánh Đồng Hoa Cẩm Tú Cầu",
+        "city": "Đà Lạt",
+        "totalScore": 4.2,
+        "ranking": "34/114",
+        "reviewsCount": 26,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cánh Đồng Hoa Cẩm Tú Cầu ở Đà Lạt. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.2/5 từ 26 lượt review. Xếp hạng: 34/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/b9/d6/77/garden-hydrangeas.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.513275,
+                11.94614
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "3812786",
+        "title": "Linh Son Pagoda",
+        "city": "Đà Lạt",
+        "totalScore": 4.3,
+        "ranking": "18/114",
+        "reviewsCount": 98,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Linh Son Pagoda ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 98 lượt review. Xếp hạng: 18/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/09/48/0a/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.43694,
+                11.95015
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12051705",
+        "title": "XQ Da Lat Art House",
+        "city": "Đà Lạt",
+        "totalScore": 4.5,
+        "ranking": "28/114",
+        "reviewsCount": 41,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "XQ Da Lat Art House ở Đà Lạt. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Nơi mua sắm, Bảo tàng. Đánh giá: 4.5/5 từ 41 lượt review. Xếp hạng: 28/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/d2/54/cb/xq-da-lat-art-house.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.44795,
+                11.977347
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "7276777",
+        "title": "Park Prenn",
+        "city": "Đà Lạt",
+        "totalScore": 3.6,
+        "ranking": "33/114",
+        "reviewsCount": 211,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Park Prenn ở Đà Lạt. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.6/5 từ 211 lượt review. Xếp hạng: 33/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/e8/69/b4/park-prenn.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.43512,
+                11.94358
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8327329",
+        "title": "Dinh 1 Đà Lạt",
+        "city": "Đà Lạt",
+        "totalScore": 4.5,
+        "ranking": "31/114",
+        "reviewsCount": 35,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dinh 1 Đà Lạt ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 35 lượt review. Xếp hạng: 31/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/0b/1c/28/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.46818,
+                11.942839
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7258249",
+        "title": "Dalat Cathedral",
+        "city": "Đà Lạt",
+        "totalScore": 3.6,
+        "ranking": "24/114",
+        "reviewsCount": 261,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dalat Cathedral ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.6/5 từ 261 lượt review. Xếp hạng: 24/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/d2/e7/04/dalat-cathedral.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.43025,
+                11.9545
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7305747",
+        "title": "Thung lũng vàng",
+        "city": "Đà Lạt",
+        "totalScore": 4.2,
+        "ranking": "27/114",
+        "reviewsCount": 61,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thung lũng vàng ở Đà Lạt. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.2/5 từ 61 lượt review. Xếp hạng: 27/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/3b/69/3d/scenery-in-golden-valley.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.40311,
+                11.98043
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12666149",
+        "title": "Làng Cù Lần",
+        "city": "Đà Lạt",
+        "totalScore": 3.9,
+        "ranking": "32/114",
+        "reviewsCount": 37,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Làng Cù Lần ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.9/5 từ 37 lượt review. Xếp hạng: 32/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/8b/f5/84/lang-cu-l-n-nhin-t-tren.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.362434,
+                12.026887
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26340315",
+        "title": "Mongo Land Dalat",
+        "city": "Đà Lạt",
+        "totalScore": 1.9,
+        "ranking": "81/114",
+        "reviewsCount": 22,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mongo Land Dalat ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 1.9/5 từ 22 lượt review. Xếp hạng: 81/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/a5/ce/fe/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.33948,
+                11.915723
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34382245",
+        "title": "Lattrips",
+        "city": "Đà Lạt",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lattrips ở Đà Lạt. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Thông tin cho khách du lịch.",
+        "tags": [
+            "Điểm du lịch",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.4549,
+                11.94469
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-18:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1110
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34363171",
+        "title": "Tam Coffee",
+        "city": "Lâm Đồng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tam Coffee ở Lâm Đồng. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.08333,
+                11.66667
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34311174",
+        "title": "Mơ Mơ Studio - Plants & Art",
+        "city": "Lâm Đồng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": "Mơ Mơ Studio - nơi những giấc mơ mơn mởn bắt đầu. --- Bắt nguồn từ một mảnh vườn nhỏ, Mơ Mơ Studio giờ đây là không gian sáng tạo dành riêng cho những ai yêu mến cỏ cây và hoa lá giữa lòng đà lạt. Bạn có thể tìm thấy: - kiểng lá, hương thảo và các loại hoa rực rỡ. - đồ decor nhà cửa độc đáo: chậu cây gốm, tranh gân lá nghệ thuật, hệ sinh thái terrarium nhỏ xinh... - workshop làm vườn và các hoạt động trải nghiệm giúp bạn tự tay tạo nên những mầm xanh cho riêng mình. --- Ghé Mơ Mơ và tìm thấy một chút bình yên trong hành trình yêu thiên nhiên của mình.",
+        "embedding": null,
+        "searchText": "Mơ Mơ Studio - Plants & Art ở Lâm Đồng. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Nơi mua sắm, Đồ ăn & Đồ uống, Bảo tàng, Thiên nhiên & Công viên. Mô tả: Mơ Mơ Studio - nơi những giấc mơ mơn mởn bắt đầu. --- Bắt nguồn từ một mảnh vườn nhỏ, Mơ Mơ Studio giờ đây là không gian sáng tạo dành riêng cho những ai yêu mến cỏ cây và hoa lá giữa lòng đà lạt. Bạn có thể tìm thấy: - kiểng lá, hương thảo và các loại hoa rực rỡ. - đồ decor nhà cửa độc đáo: chậu cây gốm, tranh gân lá nghệ thuật, hệ sinh thái terrarium nhỏ xinh... - workshop làm vườn và các hoạt động trải nghiệm giúp bạn tự tay tạo nên những mầm xanh cho riêng mình. --- Ghé Mơ Mơ và tìm thấy một chút bình yên trong hành trình yêu thiên nhiên của mình.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Đồ ăn & Đồ uống",
+            "Bảo tàng",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.420685,
+                11.933924
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-19:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1140
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34299430",
+        "title": "Vietnam Easyrider",
+        "city": "Đà Lạt",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "DALAT DISCOVERY - Vietnameasyrider Where Adventure Meets Authentic Experience Dalat Discovery - Vietnameasyrider is a dynamic international travel company based in Da Lat, dedicated to delivering immersive, high-quality travel experiences across Vietnam. Built on a foundation of professionalism, passion, and local expertise, we specialize in combining adventure tourism with cultural discovery. At the core of Dalat Discovery - Vietnameasyrider is a team of fully licensed, multilingual guides who bring years of hands-on experience in the tourism industry. More than just guides, we are outdoor specialists — trained to lead a wide range of activities including jungle trekking, wilderness camping, trail running, stand-up paddleboarding (SUP), and survival-based expeditions. What sets Dalat Discovery - Vietnameasyrider apart is our unwavering commitment to safety and guest satisfaction. Every journey is supported by strict safety protocols, with our team certified in first aid and emer",
+        "embedding": null,
+        "searchText": "Vietnam Easyrider ở Đà Lạt. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Thông tin cho khách du lịch, Hoạt động ngoài trời. Mô tả: DALAT DISCOVERY - Vietnameasyrider Where Adventure Meets Authentic Experience Dalat Discovery - Vietnameasyrider is a dynamic international travel company based in Da Lat, dedicated to delivering immersive, high-quality travel experiences across Vietnam. Built on a foundation of professionalism, passion, and local expertise, we specialize in combining adventure tourism with cultural discovery. At the core of Dalat Discovery - Vietnameasyrider is a team of fully licensed, multilingual guides who bring years of hands-on experience in the tourism industry. More than just guides, we are outdoor specialists — trained to lead a wide range of activities including jungle trekking, wilderness camping, trail running, stand-up paddleboarding (SUP), and survival-based expeditions. What sets Dalat Discovery - Vietnameasyrider apart is our unwavering commitment to safety and guest satisfaction. Every journey is supported by strict safety protocols, with our team certified in first aid and emer",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Thông tin cho khách du lịch",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/e0/c8/0d/vietnam-easyrider.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.43261,
+                11.930053
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 990
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34244765",
+        "title": "DALA FARM",
+        "city": "Đà Lạt",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "DALA FARM ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.43788,
+                11.958734
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34227775",
+        "title": "St. Nicholas Cathedral of Da Lat",
+        "city": "Dalat",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "St. Nicholas Cathedral of Da Lat ở Dalat. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.437675,
+                11.936224
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34115770",
+        "title": "Dalat Sunny Travel",
+        "city": "Đà Lạt",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dalat Sunny Travel ở Đà Lạt. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Thông tin cho khách du lịch.",
+        "tags": [
+            "Điểm du lịch",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.45267,
+                11.942223
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33116705",
+        "title": "Thế Giới Mèo Ú",
+        "city": "Đà Lạt",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thế Giới Mèo Ú ở Đà Lạt. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Sở thú & Thủy cung, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Sở thú & Thủy cung",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/d5/4d/fa/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.45672,
+                11.911931
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33065565",
+        "title": "Goats In Dalat",
+        "city": "Lâm Đồng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Goats In Dalat ở Lâm Đồng. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/99/89/68/heading-up-the-valley.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.47193,
+                11.961435
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-12:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 720
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32867573",
+        "title": "Da Lat Night Market",
+        "city": "Đà Lạt",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Da Lat Night Market ở Đà Lạt. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.43729,
+                11.941415
+            ]
+        },
+        "openingHours": {
+            "display": "17:30-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32865594",
+        "title": "Truc Lam Zen Monastery",
+        "city": "Đà Lạt",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Truc Lam Zen Monastery ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/f9/3a/87/blue-swimmer-tours.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.18442,
+                20.443195
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32834394",
+        "title": "Nhà Cải Bên Thung Lũng Xanh",
+        "city": "Dalat",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Cải Bên Thung Lũng Xanh ở Dalat. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.43838,
+                11.942822
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32832410",
+        "title": "Nhà Cải Bên Thung Lũng Xanh",
+        "city": "Đà Lạt",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Cải Bên Thung Lũng Xanh ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.44049,
+                11.940437
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32716674",
+        "title": "Lá Dứa- Arts & Craft Gift Shop",
+        "city": "Phuong 8",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lá Dứa- Arts & Craft Gift Shop ở Phuong 8. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.68475,
+                10.789578
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32711747",
+        "title": "Langfarm Center",
+        "city": "Đà Lạt",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Langfarm Center ở Đà Lạt. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Thông tin cho khách du lịch.",
+        "tags": [
+            "Điểm du lịch",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.42901,
+                11.937963
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-29:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1770
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1770
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1770
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1770
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1770
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1770
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1770
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32699030",
+        "title": "Langfarm Center - Fairytale Farm",
+        "city": "Đà Lạt",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Langfarm Center - Fairytale Farm ở Đà Lạt. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Thông tin cho khách du lịch.",
+        "tags": [
+            "Điểm du lịch",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/77/f0/7c/the-photo-showcases-the.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.41775,
+                11.944645
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-17:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32697806",
+        "title": "Fresh Dalat",
+        "city": "Đà Lạt",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Fresh Dalat ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.66961,
+                10.790954
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-17:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27981317",
+        "title": "Donki Land",
+        "city": "Đà Lạt",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Donki Land ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.81113,
+                11.544297
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-17:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27979041",
+        "title": "Donki Land",
+        "city": "Đà Lạt",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Donki Land ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/ab/11/70/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.81113,
+                11.544297
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-17:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27153290",
+        "title": "Pawsome Haven",
+        "city": "Lâm Đồng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pawsome Haven ở Lâm Đồng. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Sở thú & Thủy cung, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Sở thú & Thủy cung",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2b/f1/eb/cd/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.58047,
+                12.109256
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26950075",
+        "title": "Datanla Waterfall Tourist Area",
+        "city": "Đà Lạt",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Vui chơi & Giải trí",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Datanla Waterfall Tourist Area ở Đà Lạt. Loại địa điểm: Vui chơi & Giải trí. Tags: Điểm du lịch, Vui chơi & Giải trí.",
+        "tags": [
+            "Điểm du lịch",
+            "Vui chơi & Giải trí"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.46234,
+                11.883282
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26822659",
+        "title": "Elephant waterfall",
+        "city": "Gia Lam",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Elephant waterfall ở Gia Lam. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/c7/32/38/elephant-waterfall.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.33486,
+                11.823562
+            ]
+        },
+        "openingHours": {
+            "display": "09:15-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 555,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 555,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 555,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 555,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 555,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 555,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 555,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26609391",
+        "title": "Finca de Dong",
+        "city": "Bảo Lộc",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": "Trải nghiệm trang trại cà phê",
+        "embedding": null,
+        "searchText": "Finca de Dong ở Bảo Lộc. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Mô tả: Trải nghiệm trang trại cà phê",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/5a/b7/32/co-nh-ng-tr-i-nghi-m.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.965034,
+                11.42296
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25408425",
+        "title": "Rừng Giao Hưởng",
+        "city": "Đà Lạt",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Rừng Giao Hưởng ở Đà Lạt. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.4071,
+                11.940873
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-17:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25370133",
+        "title": "Samten Hills Dalat",
+        "city": "Tu Tra",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Samten Hills Dalat ở Tu Tra. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.41771,
+                11.704864
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25278326",
+        "title": "Vườn dâu Ichigo farm",
+        "city": "Đà Lạt",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn dâu Ichigo farm ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.3937,
+                11.966529
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-16:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 960
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25241933",
+        "title": "Quần Thể Khu Du Lịch Pi Ni",
+        "city": "Phi To",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": "Quần thể Khu du lịch Pi Ni với 5 loại hình du lịch chính bao gồm: Du lịch tham quan, du lịch trải nghiệm, du lịch lưu trú, du lịch mạo hiểm & du lịch trị liệu.",
+        "embedding": null,
+        "searchText": "Quần Thể Khu Du Lịch Pi Ni ở Phi To. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Mô tả: Quần thể Khu du lịch Pi Ni với 5 loại hình du lịch chính bao gồm: Du lịch tham quan, du lịch trải nghiệm, du lịch lưu trú, du lịch mạo hiểm & du lịch trị liệu.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/b7/4c/f6/nhi-u-t-a-d-check-in.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.35033,
+                12.00261
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25216384",
+        "title": "Laddy Budda",
+        "city": "Thị Tran Nam Ban",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Laddy Budda ở Thị Tran Nam Ban. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/27/a1/cc/09/laddy-budda-elephant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.33353,
+                11.823717
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25206646",
+        "title": "Ankroet Waterfall",
+        "city": "Đà Lạt",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ankroet Waterfall ở Đà Lạt. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.36747,
+                11.990632
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24040129",
+        "title": "Suoi Mo Waterfall",
+        "city": "Bảo Lộc",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Suoi Mo Waterfall ở Bảo Lộc. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/23/53/cc/ea/a-part-of-suoi-mo-waterfall.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.739204,
+                11.489438
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21341329",
+        "title": "Tùng Hạ Lavender Farm",
+        "city": "Đà Lạt",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tùng Hạ Lavender Farm ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.47414,
+                11.93145
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17376128",
+        "title": "Elon Farmstay",
+        "city": "Lâm Đồng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Elon Farmstay ở Lâm Đồng. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/39/68/6b/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14175692",
+        "title": "Ngã Ba Tình",
+        "city": "Đà Lạt",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ngã Ba Tình ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4462752",
+        "title": "Thác Pongour",
+        "city": "Tỉnh Lâm Đồng",
+        "totalScore": 4.7,
+        "ranking": "2/114",
+        "reviewsCount": 235,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thác Pongour ở Tỉnh Lâm Đồng. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.7/5 từ 235 lượt review. Xếp hạng: 2/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/65/43/ae/pongour-waterfall.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.26441,
+                11.688393
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "671834",
+        "title": "Lang Biang",
+        "city": "Lac Duong",
+        "totalScore": 4.1,
+        "ranking": "12/114",
+        "reviewsCount": 383,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lang Biang ở Lac Duong. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên. Đánh giá: 4.1/5 từ 383 lượt review. Xếp hạng: 12/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/ee/9f/49/on-the-top.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.44036,
+                12.04892
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8042349",
+        "title": "Bảo tàng Lâm Đồng",
+        "city": "Đà Lạt",
+        "totalScore": 4.3,
+        "ranking": "30/114",
+        "reviewsCount": 45,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bảo tàng Lâm Đồng ở Đà Lạt. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.3/5 từ 45 lượt review. Xếp hạng: 30/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/f3/22/61/lam-dong-museum.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.4599,
+                11.940459
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-11:30, 13:30-16:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 990
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "451019",
+        "title": "The French Quarter",
+        "city": "Đà Lạt",
+        "totalScore": 3.7,
+        "ranking": "38/114",
+        "reviewsCount": 62,
+        "category": "Khác",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The French Quarter ở Đà Lạt. Loại địa điểm: Khác. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Khác. Đánh giá: 3.7/5 từ 62 lượt review. Xếp hạng: 38/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Khác"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/e6/8b/e7/the-french-quarter.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.45856,
+                11.94041
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "451015",
+        "title": "Hang Nga Guest House and Art Gallery",
+        "city": "Đà Lạt",
+        "totalScore": 4.1,
+        "ranking": "29/114",
+        "reviewsCount": 88,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hang Nga Guest House and Art Gallery ở Đà Lạt. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên. Đánh giá: 4.1/5 từ 88 lượt review. Xếp hạng: 29/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/69/6f/57/da-l-t-h-ng-nga-crazy.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.43079,
+                11.934701
+            ]
+        },
+        "openingHours": {
+            "display": "08:30-18:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1110
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "6158304",
+        "title": "Dambri Waterfall",
+        "city": "Bảo Lộc",
+        "totalScore": 4.4,
+        "ranking": "22/114",
+        "reviewsCount": 79,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dambri Waterfall ở Bảo Lộc. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.4/5 từ 79 lượt review. Xếp hạng: 22/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/1d/5f/ec/dasara-waterfall.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.81086,
+                11.54402
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15764333",
+        "title": "Khu du lịch sinh thái Hoa Sơn Điền Trang",
+        "city": "Đà Lạt",
+        "totalScore": 3.8,
+        "ranking": "46/114",
+        "reviewsCount": 13,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu du lịch sinh thái Hoa Sơn Điền Trang ở Đà Lạt. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên. Đánh giá: 3.8/5 từ 13 lượt review. Xếp hạng: 46/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/1e/04/9e/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.4293,
+                11.9461
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16666036",
+        "title": "Bàu Sấu",
+        "city": "Tỉnh Lâm Đồng",
+        "totalScore": 4.4,
+        "ranking": "35/114",
+        "reviewsCount": 14,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bàu Sấu ở Tỉnh Lâm Đồng. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.4/5 từ 14 lượt review. Xếp hạng: 35/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/56/0f/c1/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.34348,
+                11.457891
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6491660",
+        "title": "Mong Mo Hill",
+        "city": "Đà Lạt",
+        "totalScore": 4.2,
+        "ranking": "43/114",
+        "reviewsCount": 24,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": "Khu du lịch Đồi Mộng Mơ vừa triển khai dịch vụ mới \"giao lưu văn hóa Cồng Chiêng\". Chỉ với 150.000 đồng du khách được thưởng thức thịt nướng, rượu cần bên bếp lửa hồng bập bùng, được hòa theo vũ điệu Cồng Chiêng của đồng bào nơi đây. Chương trình diễn ra hàng đêm từ 19h-20h30 các ngày trong tuần. Đặc biệt khu du lịch sẽ hỗ trợ xe đưa đón nội thành Đà Lạt.",
+        "embedding": null,
+        "searchText": "Mong Mo Hill ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Mô tả: Khu du lịch Đồi Mộng Mơ vừa triển khai dịch vụ mới \"giao lưu văn hóa Cồng Chiêng\". Chỉ với 150.000 đồng du khách được thưởng thức thịt nướng, rượu cần bên bếp lửa hồng bập bùng, được hòa theo vũ điệu Cồng Chiêng của đồng bào nơi đây. Chương trình diễn ra hàng đêm từ 19h-20h30 các ngày trong tuần. Đặc biệt khu du lịch sẽ hỗ trợ xe đưa đón nội thành Đà Lạt. Đánh giá: 4.2/5 từ 24 lượt review. Xếp hạng: 43/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/8a/27/ef/mong-mo-hill.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.44667,
+                11.97719
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8765889",
+        "title": "Thác Bảo Đại",
+        "city": "Đà Lạt",
+        "totalScore": 4.6,
+        "ranking": "37/114",
+        "reviewsCount": 15,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thác Bảo Đại ở Đà Lạt. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.6/5 từ 15 lượt review. Xếp hạng: 37/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/71/5c/e8/bao-dai-waterfall-thac.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.349754,
+                11.605997
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16917159",
+        "title": "Que Garden",
+        "city": "Đà Lạt",
+        "totalScore": 5.0,
+        "ranking": "48/114",
+        "reviewsCount": 4,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": "QUE Garden với diện tích 20.000m2 và được bài trí một cách tinh tế bằng những chậu bonsai lá kim được uốn nắn tinh xảo. Không chỉ vậy bao bọc xung quanh những cây bonsai lá kim này là những khu vườn được chăm sóc tỉ mỉ bằng những loài hoa nổi tiếng của Đà Lạt, cùng với các hồ cá Koi tạo nên một không gian vô cùng đặc sắc cho những người đam mê cái đẹp đến từ thiên nhiên.",
+        "embedding": null,
+        "searchText": "Que Garden ở Đà Lạt. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Mô tả: QUE Garden với diện tích 20.000m2 và được bài trí một cách tinh tế bằng những chậu bonsai lá kim được uốn nắn tinh xảo. Không chỉ vậy bao bọc xung quanh những cây bonsai lá kim này là những khu vườn được chăm sóc tỉ mỉ bằng những loài hoa nổi tiếng của Đà Lạt, cùng với các hồ cá Koi tạo nên một không gian vô cùng đặc sắc cho những người đam mê cái đẹp đến từ thiên nhiên. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 48/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/0d/80/93/c-nh-d-p.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.45968,
+                11.908269
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7333758",
+        "title": "Thác Hang Cọp",
+        "city": "Đà Lạt",
+        "totalScore": 3.4,
+        "ranking": "66/114",
+        "reviewsCount": 29,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thác Hang Cọp ở Đà Lạt. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.4/5 từ 29 lượt review. Xếp hạng: 66/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/fe/33/dc/hang-cop-waterfall-tiger.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8115642",
+        "title": "Thác Cam Ly",
+        "city": "Đà Lạt",
+        "totalScore": 2.1,
+        "ranking": "80/114",
+        "reviewsCount": 44,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thác Cam Ly ở Đà Lạt. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 2.1/5 từ 44 lượt review. Xếp hạng: 80/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/23/c8/27/thac-cam-ly.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.419914,
+                11.941622
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14801804",
+        "title": "Lavenderdalat Gardens",
+        "city": "Đà Lạt",
+        "totalScore": 3.2,
+        "ranking": "76/114",
+        "reviewsCount": 5,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lavenderdalat Gardens ở Đà Lạt. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.2/5 từ 5 lượt review. Xếp hạng: 76/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/ba/c5/19/not-fully-bloom-in-early.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8305174",
+        "title": "Khu Du Lịch Sao Đà Lạt",
+        "city": "Đà Lạt",
+        "totalScore": 3.4,
+        "ranking": "55/114",
+        "reviewsCount": 36,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu Du Lịch Sao Đà Lạt ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.4/5 từ 36 lượt review. Xếp hạng: 55/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/c0/d7/40/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.43531,
+                11.94124
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "451010",
+        "title": "Lam Ty Ni Pagoda",
+        "city": "Đà Lạt",
+        "totalScore": 3.9,
+        "ranking": "42/114",
+        "reviewsCount": 27,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lam Ty Ni Pagoda ở Đà Lạt. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Nơi mua sắm, Danh lam & Thắng cảnh, Bảo tàng. Đánh giá: 3.9/5 từ 27 lượt review. Xếp hạng: 42/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Danh lam & Thắng cảnh",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/04/37/0a/77/lam-ty-ni-pagoda.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.42574,
+                11.93668
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11548258",
+        "title": "Hồ Thuỷ Quái Đà Lạt",
+        "city": "Đà Lạt",
+        "totalScore": 5.0,
+        "ranking": "65/114",
+        "reviewsCount": 2,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hồ Thuỷ Quái Đà Lạt ở Đà Lạt. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 65/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/1b/3f/fc/khong-gian.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.44584,
+                11.93293
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12729915",
+        "title": "Chùa Linh Quang",
+        "city": "Đà Lạt",
+        "totalScore": 4.6,
+        "ranking": "52/114",
+        "reviewsCount": 5,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Linh Quang ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.6/5 từ 5 lượt review. Xếp hạng: 52/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/36/2e/ee/20180302-084649-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.42862,
+                11.95697
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "379361",
+        "title": "Central Highlands",
+        "city": "Đà Lạt",
+        "totalScore": 4.8,
+        "ranking": "67/114",
+        "reviewsCount": 4,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Central Highlands ở Đà Lạt. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.8/5 từ 4 lượt review. Xếp hạng: 67/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/01/fb/fc/5e/wire-and-bamboo-bridge.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "451016",
+        "title": "Lake of Sighs (Ho Than Tho)",
+        "city": "Đà Lạt",
+        "totalScore": 3.7,
+        "ranking": "40/114",
+        "reviewsCount": 51,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lake of Sighs (Ho Than Tho) ở Đà Lạt. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.7/5 từ 51 lượt review. Xếp hạng: 40/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/01/73/95/94/lake-of-sighs-ho-than.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.47828,
+                11.955895
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14936601",
+        "title": "Fresh Đà Lạt",
+        "city": "Đà Lạt",
+        "totalScore": 3.2,
+        "ranking": "75/114",
+        "reviewsCount": 6,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": "Đà Lạt – thiên đường của rất nhiều loài hoa, khung cảnh nên thơ, bạn có thể bắt gặp dễ dàng tại xứ sở tình yêu này. Nhưng để tìm kiếm một “bức tranh” Đà Lạt thu nhỏ ấn tượng trong lòng du khách thì Fresh Garden thật sự là nơi khiến bạn phải ghé thăm, nơi đây sở hữu những cánh đồng hoa rực rỡ, rộng bao la với đa dạng các loài hoa nhiều màu sắc tạo nên một bức tranh tuyệt đẹp.",
+        "embedding": null,
+        "searchText": "Fresh Đà Lạt ở Đà Lạt. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên. Mô tả: Đà Lạt – thiên đường của rất nhiều loài hoa, khung cảnh nên thơ, bạn có thể bắt gặp dễ dàng tại xứ sở tình yêu này. Nhưng để tìm kiếm một “bức tranh” Đà Lạt thu nhỏ ấn tượng trong lòng du khách thì Fresh Garden thật sự là nơi khiến bạn phải ghé thăm, nơi đây sở hữu những cánh đồng hoa rực rỡ, rộng bao la với đa dạng các loài hoa nhiều màu sắc tạo nên một bức tranh tuyệt đẹp. Đánh giá: 3.2/5 từ 6 lượt review. Xếp hạng: 75/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/02/e2/72/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.40831,
+                11.94628
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-17:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "6891964",
+        "title": "Dalat Cultural Exchange Center",
+        "city": "Đà Lạt",
+        "totalScore": 4.5,
+        "ranking": "64/114",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dalat Cultural Exchange Center ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 4 lượt review. Xếp hạng: 64/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/65/17/07/sharing-information.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.43508,
+                11.950711
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16835189",
+        "title": "Da Tien Tourist Area",
+        "city": "Đà Lạt",
+        "totalScore": 4.0,
+        "ranking": "74/114",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Da Tien Tourist Area ở Đà Lạt. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 74/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/e6/e3/0b/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.43437,
+                11.90064
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19849866",
+        "title": "Đà Lạt, Ngày Tháng Năm",
+        "city": "Đà Lạt",
+        "totalScore": 0,
+        "ranking": "79/114",
+        "reviewsCount": 0,
+        "category": "Hòa nhạc & chương trình biểu diễn",
+        "priceRange": null,
+        "description": "Đà Lạt, Ngày … Tháng … Năm - một mảnh hồn Dalat nhỏ - muốn gìn giữ và lan tỏa nét văn hóa Dalat xưa, bằng lối kiến trúc rạp chiếu bóng hoài cổ, rồi xong tái hiện lối sống con người Dalat bằng âm nhạc sống động được thể hiện qua sự trình bày của các nữ minh tinh, đào hát thời nay, cũng không quên những câu chuyện hàn huyên tâm sự, sống lại một thời đã qua…",
+        "embedding": null,
+        "searchText": "Đà Lạt, Ngày Tháng Năm ở Đà Lạt. Loại địa điểm: Hòa nhạc & chương trình biểu diễn. Tags: Điểm du lịch, Hòa nhạc & chương trình biểu diễn. Mô tả: Đà Lạt, Ngày … Tháng … Năm - một mảnh hồn Dalat nhỏ - muốn gìn giữ và lan tỏa nét văn hóa Dalat xưa, bằng lối kiến trúc rạp chiếu bóng hoài cổ, rồi xong tái hiện lối sống con người Dalat bằng âm nhạc sống động được thể hiện qua sự trình bày của các nữ minh tinh, đào hát thời nay, cũng không quên những câu chuyện hàn huyên tâm sự, sống lại một thời đã qua… Xếp hạng: 79/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Hòa nhạc & chương trình biểu diễn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/9d/01/3d/nh-d-i-di-n-da-l-t-ngay.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7333819",
+        "title": "Chùa Linh Ẩn (Linh Ẩn Tự)",
+        "city": "Lâm Đồng",
+        "totalScore": 4.4,
+        "ranking": "26/114",
+        "reviewsCount": 36,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Linh Ẩn (Linh Ẩn Tự) ở Lâm Đồng. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.4/5 từ 36 lượt review. Xếp hạng: 26/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/15/9a/76/linh-an-pagoda.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.33371,
+                11.82441
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13321807",
+        "title": "Linh Quy Phap An",
+        "city": "Bảo Lộc",
+        "totalScore": 4.3,
+        "ranking": "44/114",
+        "reviewsCount": 8,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Linh Quy Phap An ở Bảo Lộc. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 8 lượt review. Xếp hạng: 44/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/78/8e/87/linh-quy-phap-an-temple.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.822624,
+                11.41664
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13567749",
+        "title": "Dambri Waterfall",
+        "city": "Lâm Đồng",
+        "totalScore": 5.0,
+        "ranking": "60/114",
+        "reviewsCount": 2,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dambri Waterfall ở Lâm Đồng. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 60/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-c/2560x500/13/ba/e9/1f/one-of-my-favorites-a.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.742325,
+                11.627636
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6931578",
+        "title": "Khu du lịch rừng Madagui",
+        "city": "Madagui Town",
+        "totalScore": 5.0,
+        "ranking": "69/114",
+        "reviewsCount": 2,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu du lịch rừng Madagui ở Madagui Town. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 69/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/69/38/9a/h-i-s-n-tuoi-r-va-r-t.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58092,
+                11.4206
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8527862",
+        "title": "Nha Tho Bao Loc",
+        "city": "Bảo Lộc",
+        "totalScore": 4.0,
+        "ranking": "54/114",
+        "reviewsCount": 7,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nha Tho Bao Loc ở Bảo Lộc. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 7 lượt review. Xếp hạng: 54/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/17/6a/0e/bl10-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.44407,
+                11.93656
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15149414",
+        "title": "Tuyệt Tình Cốc",
+        "city": "Lat",
+        "totalScore": 3.0,
+        "ranking": "78/114",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tuyệt Tình Cốc ở Lat. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 78/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/01/60/2c/tuyet-tinh-coc.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.33856,
+                12.04615
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10000828",
+        "title": "Trại dế Thiện An",
+        "city": "Lâm Đồng",
+        "totalScore": 3.2,
+        "ranking": "62/114",
+        "reviewsCount": 16,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trại dế Thiện An ở Lâm Đồng. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.2/5 từ 16 lượt review. Xếp hạng: 62/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/df/17/20/img-20160411-135706-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.34174,
+                11.874507
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8286897",
+        "title": "Khu Du Lịch Rừng Madagui",
+        "city": "Madagui Town",
+        "totalScore": 2.9,
+        "ranking": "77/114",
+        "reviewsCount": 7,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu Du Lịch Rừng Madagui ở Madagui Town. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 2.9/5 từ 7 lượt review. Xếp hạng: 77/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-c/2560x500/0a/65/77/1c/just-a-small-sample-of.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34299305",
+        "title": "Shop bao cao su - AdultShop Đà Lạt",
+        "city": "Đà Lạt",
+        "totalScore": 5.0,
+        "ranking": "36/114",
+        "reviewsCount": 4,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Shop bao cao su - AdultShop Đà Lạt ở Đà Lạt. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 36/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/d9/96/9b/hinh-nh-ben-trong-c-a.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.43159,
+                11.950564
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26683849",
+        "title": "Dalat Blue Mountain Farm",
+        "city": "Đà Lạt",
+        "totalScore": 5.0,
+        "ranking": "39/114",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dalat Blue Mountain Farm ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 39/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/2c/82/9f/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.45831,
+                11.940419
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 720
+                    }
+                ],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 720
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28651432",
+        "title": "Tea Bobla Waterfall",
+        "city": "Di Linh",
+        "totalScore": 4.8,
+        "ranking": "41/114",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tea Bobla Waterfall ở Di Linh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.8/5 từ 4 lượt review. Xếp hạng: 41/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/c5/98/c9/thac-bobla.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.35725,
+                11.201132
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25709235",
+        "title": "Samten Hills Dalat",
+        "city": "Lâm Đồng",
+        "totalScore": 5.0,
+        "ranking": "47/114",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Samten Hills Dalat ở Lâm Đồng. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 47/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/29/25/29/0f/panoramic-view-of-the.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.439476,
+                11.69778
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-20:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27146623",
+        "title": "B'Lao Jade Farm",
+        "city": "Bảo Lộc",
+        "totalScore": 5.0,
+        "ranking": "49/114",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "B'Lao Jade Farm ở Bảo Lộc. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 49/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/51/11/da/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.73727,
+                11.479026
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27141694",
+        "title": "Đồi Bát Úp",
+        "city": "Bảo Lộc",
+        "totalScore": 5.0,
+        "ranking": "50/114",
+        "reviewsCount": 2,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đồi Bát Úp ở Bảo Lộc. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 50/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/49/57/f5/d-a-di-m-ly-tu-ng-d-san.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.73616,
+                11.450621
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33066886",
+        "title": "Delight Park Dalat",
+        "city": "Đà Lạt",
+        "totalScore": 4.0,
+        "ranking": "51/114",
+        "reviewsCount": 4,
+        "category": "Công viên nước & giải trí",
+        "priceRange": null,
+        "description": "Công viên hoa và ánh sáng nghệ thuật lớn nhất tại Việt Nam\n- Tham quan ban ngày\n- Tham quan ban đêm: bồng lai tiên cảnh ngàn sao\n- Show Sử thi Âu Lạc Nhạc nước Hồ Sương Mai\n- Khinh khí cầu\n- Nhà hàng\n- Cafe",
+        "embedding": null,
+        "searchText": "Delight Park Dalat ở Đà Lạt. Loại địa điểm: Công viên nước & giải trí. Tags: Điểm du lịch, Công viên nước & giải trí. Mô tả: Công viên hoa và ánh sáng nghệ thuật lớn nhất tại Việt Nam\n- Tham quan ban ngày\n- Tham quan ban đêm: bồng lai tiên cảnh ngàn sao\n- Show Sử thi Âu Lạc Nhạc nước Hồ Sương Mai\n- Khinh khí cầu\n- Nhà hàng\n- Cafe Đánh giá: 4.0/5 từ 4 lượt review. Xếp hạng: 51/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/99/1a/e2/show-nh-c-nu-c-s-thi.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.47835,
+                11.956857
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34191306",
+        "title": "Đà Lạt Youth Prison Museum",
+        "city": "Dalat",
+        "totalScore": 5.0,
+        "ranking": "53/114",
+        "reviewsCount": 1,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đà Lạt Youth Prison Museum ở Dalat. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 53/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.987114,
+                22.83131
+            ]
+        },
+        "openingHours": {
+            "display": "07:15-11:30, 13:30-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 435,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 435,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 435,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 435,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 435,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 435,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 435,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15058800",
+        "title": "Da Lat Pedagogy College",
+        "city": "Đà Lạt",
+        "totalScore": 5.0,
+        "ranking": "56/114",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Da Lat Pedagogy College ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 56/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.45531,
+                11.9479
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27495734",
+        "title": "NovaDreams Royal Garden",
+        "city": "Đà Lạt",
+        "totalScore": 5.0,
+        "ranking": "57/114",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": "Euro Garden - Vườn Châu Âu là công viên cảnh quan với quy mô 7.2ha tại Cầu Đất, Đà Lạt. Tọa lạc ở độ cao 1650m, Vườn Châu Âu sở hữu khung cảnh như lạc vào trời Âu với muôn vàn sắc hoa cùng tiệm café tàu hỏa siêu chất như ở trong xứ sở diệu kỳ.\nKhi tới với Euro Garden - Vườn Châu Âu, bạn có thể tận hưởng một tách café Cầu Đất, thưởng thức những bữa ăn nhẹ ngon lành và ngắm mây trời bồng bềnh với muôn vàn sắc hoa rực rỡ như đồi hoa cẩm tú càu, đồi trà,….. Trải nghiệm săn mây hay ngắm hoàng hôn buông trong tiếng nhạc du dương cũng là những khoảng khắc ấn tượng tại nơi đây\nTrong năm 2024, Euro Garden tiếp tục được nâng cấp và tăng thêm nhiều trải nghiệm cho khách hàng với những trò chơi trong nhà và ngoài trời, hứa hẹn là Điểm phải đến trong hành trình khám phá Đà Lạt.",
+        "embedding": null,
+        "searchText": "NovaDreams Royal Garden ở Đà Lạt. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Công viên nước & giải trí, Thiên nhiên & Công viên. Mô tả: Euro Garden - Vườn Châu Âu là công viên cảnh quan với quy mô 7.2ha tại Cầu Đất, Đà Lạt. Tọa lạc ở độ cao 1650m, Vườn Châu Âu sở hữu khung cảnh như lạc vào trời Âu với muôn vàn sắc hoa cùng tiệm café tàu hỏa siêu chất như ở trong xứ sở diệu kỳ.\nKhi tới với Euro Garden - Vườn Châu Âu, bạn có thể tận hưởng một tách café Cầu Đất, thưởng thức những bữa ăn nhẹ ngon lành và ngắm mây trời bồng bềnh với muôn vàn sắc hoa rực rỡ như đồi hoa cẩm tú càu, đồi trà,….. Trải nghiệm săn mây hay ngắm hoàng hôn buông trong tiếng nhạc du dương cũng là những khoảng khắc ấn tượng tại nơi đây\nTrong năm 2024, Euro Garden tiếp tục được nâng cấp và tăng thêm nhiều trải nghiệm cho khách hàng với những trò chơi trong nhà và ngoài trời, hứa hẹn là Điểm phải đến trong hành trình khám phá Đà Lạt. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 57/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/25/66/48/euro-garden.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.44193,
+                11.94646
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-16:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 960
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33351568",
+        "title": "Cat Farm",
+        "city": "Bảo Lộc",
+        "totalScore": 5.0,
+        "ranking": "58/114",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cat Farm ở Bảo Lộc. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 58/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/9d/83/dc/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.73087,
+                11.467204
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33348955",
+        "title": "Đami Farm",
+        "city": "Lâm Đồng",
+        "totalScore": 5.0,
+        "ranking": "59/114",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đami Farm ở Lâm Đồng. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 59/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/30/de/a1/b6/boi-gi-a-h-nu-c-trong.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.66816,
+                11.110787
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27925859",
+        "title": "The Florest - Hoa Trong Rừng",
+        "city": "Lâm Đồng",
+        "totalScore": 3.5,
+        "ranking": "61/114",
+        "reviewsCount": 6,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Florest - Hoa Trong Rừng ở Lâm Đồng. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.5/5 từ 6 lượt review. Xếp hạng: 61/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/97/74/ff/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.08333,
+                11.66667
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                []
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27367310",
+        "title": "Farm Cô Chú Tuấn Hà",
+        "city": "Me Linh",
+        "totalScore": 5.0,
+        "ranking": "63/114",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Farm Cô Chú Tuấn Hà ở Me Linh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 63/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.398254,
+                11.951828
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25101221",
+        "title": "Radar Peak Langbiang",
+        "city": "Đà Lạt",
+        "totalScore": 4.0,
+        "ranking": "68/114",
+        "reviewsCount": 2,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Radar Peak Langbiang ở Đà Lạt. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 68/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/27/aa/77/d9/langbiang-moutain.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.413895,
+                12.032052
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33366894",
+        "title": "Bunny Hill Farm Dalat",
+        "city": "Đà Lạt",
+        "totalScore": 4.0,
+        "ranking": "70/114",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bunny Hill Farm Dalat ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 70/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/a9/41/a9/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.50286,
+                11.949654
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28023373",
+        "title": "Dalat Last King Summer Palace - Bao Dai Palace",
+        "city": "Đà Lạt",
+        "totalScore": 3.3,
+        "ranking": "71/114",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dalat Last King Summer Palace - Bao Dai Palace ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.3/5 từ 4 lượt review. Xếp hạng: 71/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/ff/b9/d7/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.4271,
+                11.932088
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-16:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 960
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27519089",
+        "title": "Cao Dai Temple of Da Lat",
+        "city": "Đà Lạt",
+        "totalScore": 5.0,
+        "ranking": "73/114",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cao Dai Temple of Da Lat ở Đà Lạt. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 73/114.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/e5/db/ce/cao-dai-temple.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.504326,
+                11.9454
+            ]
+        },
+        "openingHours": null
+    }
+]

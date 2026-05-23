@@ -1,0 +1,351 @@
+[
+    {
+        "sourceLocationId": "17631948",
+        "title": "Cocob Tiền Hải",
+        "city": "Thái Bình",
+        "totalScore": 5.0,
+        "ranking": "1/1",
+        "reviewsCount": 1,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "131.579 ₫ - 157.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Cocob Tiền Hải ở Thái Bình. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 1/1. Giá: 131.579 ₫ - 157.895 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/08/15/62/space.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.56023,
+                20.73031
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15097215",
+        "title": "GoGi House",
+        "city": "Thái Bình",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "1.578.947.328 ₫ - 2.147.483.647 ₫",
+        "description": "GoGi House (Quán thịt nướng Hàn Quốc) sẽ đưa bạn đến Seoul, nơi những con phố bình dị, những quán ăn dân dã đã trở nên quen thuộc và gắn bó với người dân xứ Hàn. Nếu đã một lần thưởng thức thịt nướng tại GoGi House, bạn sẽ không thể quên được hương vị \"ngất ngây\" của những món sườn non bò Mỹ, nạc vai bò Mỹ, dẻ sườn tươi...hòa quyện vào với các loại gia vị đặc trưng của xứ sở Kimchi.",
+        "embedding": null,
+        "searchText": "GoGi House ở Thái Bình. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: GoGi House (Quán thịt nướng Hàn Quốc) sẽ đưa bạn đến Seoul, nơi những con phố bình dị, những quán ăn dân dã đã trở nên quen thuộc và gắn bó với người dân xứ Hàn. Nếu đã một lần thưởng thức thịt nướng tại GoGi House, bạn sẽ không thể quên được hương vị \"ngất ngây\" của những món sườn non bò Mỹ, nạc vai bò Mỹ, dẻ sườn tươi...hòa quyện vào với các loại gia vị đặc trưng của xứ sở Kimchi. Giá: 1.578.947.328 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/14/7e/b6/a2/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.33697,
+                20.444515
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21279303",
+        "title": "Tea & Coffee 1975 Thái Bình",
+        "city": "Thái Bình",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tea & Coffee 1975 Thái Bình ở Thái Bình. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.3516,
+                20.445766
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17749258",
+        "title": "Morning Cafe",
+        "city": "Thái Bình",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Quán cafe",
+        "priceRange": "657.894.720 ₫ - 1.315.789.440 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Morning Cafe ở Thái Bình. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Giá: 657.894.720 ₫ - 1.315.789.440 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.33618,
+                20.44153
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25435801",
+        "title": "Coffee Harley-Davidson Cycles",
+        "city": "Thái Bình",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Coffee Harley-Davidson Cycles ở Thái Bình. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.328384,
+                20.445822
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15708814",
+        "title": "Nhà Hàng Sen Vàng",
+        "city": "Thái Bình",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Sen Vàng ở Thái Bình. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.34396,
+                20.440735
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23122514",
+        "title": "Phở Thìn Hà Nội - 265 Lý Thái Tổ",
+        "city": "Thái Bình",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phở Thìn Hà Nội - 265 Lý Thái Tổ ở Thái Bình. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.343155,
+                20.44588
+            ]
+        },
+        "openingHours": {
+            "display": "05:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23322045",
+        "title": "76 Bistro",
+        "city": "Thái Bình",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "76 Bistro ở Thái Bình. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.336655,
+                20.448433
+            ]
+        },
+        "openingHours": null
+    }
+]

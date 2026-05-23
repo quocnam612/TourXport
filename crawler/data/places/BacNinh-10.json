@@ -1,0 +1,361 @@
+[
+    {
+        "sourceLocationId": "1581727",
+        "title": "Tho Ha Village",
+        "city": "Tỉnh Bắc Ninh",
+        "totalScore": 4.5,
+        "ranking": "1/9",
+        "reviewsCount": 22,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tho Ha Village ở Tỉnh Bắc Ninh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 22 lượt review. Xếp hạng: 1/9.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/93/7a/cc/riverside-view-of-tho.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7339865",
+        "title": "Làng gốm Phù Lãng",
+        "city": "Bắc Ninh",
+        "totalScore": 4.8,
+        "ranking": "3/9",
+        "reviewsCount": 8,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Làng gốm Phù Lãng ở Bắc Ninh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.8/5 từ 8 lượt review. Xếp hạng: 3/9.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/17/d7/94/phu-lang-pottery-village.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8627375",
+        "title": "Chùa Dâu",
+        "city": "Bắc Ninh",
+        "totalScore": 4.6,
+        "ranking": "5/9",
+        "reviewsCount": 9,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Dâu ở Bắc Ninh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.6/5 từ 9 lượt review. Xếp hạng: 5/9.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/5c/31/fe/le-boudha.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4225742",
+        "title": "Do Temple",
+        "city": "Đình Bảng",
+        "totalScore": 4.8,
+        "ranking": "2/9",
+        "reviewsCount": 12,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Do Temple ở Đình Bảng. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.8/5 từ 12 lượt review. Xếp hạng: 2/9.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/6a/a5/c3/b-c-ninh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.07336,
+                21.17697
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16695629",
+        "title": "Đền Bà Chúa Kho",
+        "city": "Bắc Ninh",
+        "totalScore": 4.0,
+        "ranking": "6/9",
+        "reviewsCount": 6,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đền Bà Chúa Kho ở Bắc Ninh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 6 lượt review. Xếp hạng: 6/9.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/7c/58/e5/ba-chua-kho-temple.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.08572,
+                21.20493
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14074259",
+        "title": "Chùa Phật Tích",
+        "city": "Bắc Ninh",
+        "totalScore": 4.8,
+        "ranking": "4/9",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Phật Tích ở Bắc Ninh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.8/5 từ 4 lượt review. Xếp hạng: 4/9.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/95/98/06/phat-tich-temple.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12368489",
+        "title": "Đền Giếng (Đền Cùng - Giếng Ngọc)",
+        "city": "Bắc Ninh",
+        "totalScore": 4.5,
+        "ranking": "7/9",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đền Giếng (Đền Cùng - Giếng Ngọc) ở Bắc Ninh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 7/9.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/1b/fc/5a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.05001,
+                21.21256
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15850086",
+        "title": "Đền Lý Bát Đế",
+        "city": "Bắc Ninh",
+        "totalScore": 3.5,
+        "ranking": "8/9",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đền Lý Bát Đế ở Bắc Ninh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.5/5 từ 2 lượt review. Xếp hạng: 8/9.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/7a/08/61/k-ok.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.96238,
+                21.10409
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32696726",
+        "title": "Imi Farm",
+        "city": "Bắc Ninh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Imi Farm ở Bắc Ninh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.07631,
+                21.18608
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-19:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1140
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28041322",
+        "title": "Hanoi transfer to Tam Coc , Ninh Binh ( Private car )",
+        "city": "Bắc Ninh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": "We provide private Car from Hanoi Airport or Hanoi Old Quarter Transfer to Tam Coc, Ninh Binh, with a team of professional and friendly drivers, New and clean car.",
+        "embedding": null,
+        "searchText": "Hanoi transfer to Tam Coc , Ninh Binh ( Private car ) ở Bắc Ninh. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Khác, Phương tiện giao thông. Mô tả: We provide private Car from Hanoi Airport or Hanoi Old Quarter Transfer to Tam Coc, Ninh Binh, with a team of professional and friendly drivers, New and clean car.",
+        "tags": [
+            "Điểm du lịch",
+            "Khác",
+            "Phương tiện giao thông"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/f0/bb/8d/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "00:00-23:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1410
+                    }
+                ]
+            ]
+        }
+    }
+]

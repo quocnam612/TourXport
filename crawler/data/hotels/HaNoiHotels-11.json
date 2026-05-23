@@ -1,0 +1,321 @@
+[
+    {
+        "sourceLocationId": "1951646",
+        "title": "Khách Sạn Hà Nội Tirant",
+        "city": "Hà Nội",
+        "totalScore": 5.0,
+        "ranking": null,
+        "reviewsCount": 2630,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn Hà Nội Tirant ở Hà Nội. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 2630 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/8e/e9/43/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.852264,
+                21.033127
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "299548",
+        "title": "Sofitel Legend Metropole Hanoi",
+        "city": "Hà Nội",
+        "totalScore": 4.8,
+        "ranking": null,
+        "reviewsCount": 8955,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sofitel Legend Metropole Hanoi ở Hà Nội. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 8955 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/47/b9/0c/pool--v17858965.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.85566,
+                21.025656
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17627438",
+        "title": "La Sinfonía del Rey Hotel & Spa",
+        "city": "Hà Nội",
+        "totalScore": 5.0,
+        "ranking": null,
+        "reviewsCount": 3885,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "La Sinfonía del Rey Hotel & Spa ở Hà Nội. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 3885 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/4f/ee/40/the-luxurious-lobby-lounge.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.85402,
+                21.031092
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7180030",
+        "title": "La Siesta Classic Ma May Hanoi Hotel",
+        "city": "Hoan Kiem",
+        "totalScore": 5.0,
+        "ranking": null,
+        "reviewsCount": 7647,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "La Siesta Classic Ma May Hanoi Hotel ở Hoan Kiem. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 7647 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/59/4c/d3/hanoi-la-siesta-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.85323,
+                21.034248
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "302627",
+        "title": "Melia Hà Nội",
+        "city": "Hà Nội",
+        "totalScore": 4.5,
+        "ranking": null,
+        "reviewsCount": 3519,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Melia Hà Nội ở Hà Nội. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.5/5 từ 3519 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/33/59/48/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.84824,
+                21.024288
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "306185",
+        "title": "Khách sạn Pullman Hà Nội",
+        "city": "Hà Nội",
+        "totalScore": 4.2,
+        "ranking": null,
+        "reviewsCount": 1250,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Pullman Hà Nội ở Hà Nội. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.2/5 từ 1250 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/33/4d/4f/c6/exterior.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.82872,
+                21.029963
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8615276",
+        "title": "Silk Path Boutique Hanoi",
+        "city": "Hà Nội",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 3240,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Silk Path Boutique Hanoi ở Hà Nội. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 3240 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/aa/27/23/grand-executive-room.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.85246,
+                21.025517
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "815139",
+        "title": "InterContinental Hà Nội Hồ Tây",
+        "city": "Tay Ho",
+        "totalScore": 4.4,
+        "ranking": null,
+        "reviewsCount": 3201,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "InterContinental Hà Nội Hồ Tây ở Tay Ho. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.4/5 từ 3201 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/30/cd/94/ad/hotel-overview.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.83154,
+                21.058363
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13507503",
+        "title": "JM Marvel Hotel & Spa",
+        "city": "Hà Nội",
+        "totalScore": 5.0,
+        "ranking": null,
+        "reviewsCount": 3545,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "JM Marvel Hotel & Spa ở Hà Nội. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 3545 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/76/52/fb/entrance.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.846634,
+                21.03112
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13292837",
+        "title": "Hanoi Allure Hotel",
+        "city": "Hà Nội",
+        "totalScore": 5.0,
+        "ranking": null,
+        "reviewsCount": 1196,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hanoi Allure Hotel ở Hà Nội. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 1196 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/23/35/d6/d7/lobby-area.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.85288,
+                21.035336
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "5049935",
+        "title": "Lotte Hotel Hanoi",
+        "city": "Ba Dinh",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 2604,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lotte Hotel Hanoi ở Ba Dinh. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 2604 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/42/46/2a/ground-lobby--v11782245.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.8123,
+                21.031876
+            ]
+        },
+        "openingHours": null
+    }
+]

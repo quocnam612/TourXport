@@ -1,0 +1,1684 @@
+[
+    {
+        "sourceLocationId": "313715",
+        "title": "Victoria Chau Doc Hotel",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 4.6,
+        "ranking": "1/223",
+        "reviewsCount": 1783,
+        "category": "Khách sạn",
+        "priceRange": "1.868.421 ₫ - 2.578.947 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Victoria Chau Doc Hotel ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 1783 lượt review. Xếp hạng: 1/223. Giá: 1.868.421 ₫ - 2.578.947 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/e2/1a/b9/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.12417,
+                10.708169
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "5921904",
+        "title": "Victoria Nui Sam Lodge",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 4.6,
+        "ranking": "2/223",
+        "reviewsCount": 591,
+        "category": "Khách sạn",
+        "priceRange": "1.763.158 ₫ - 2.473.684 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Victoria Nui Sam Lodge ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 591 lượt review. Xếp hạng: 2/223. Giá: 1.763.158 ₫ - 2.473.684 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/c8/57/8d/victoria-nui-sam-lodge.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.07746,
+                10.671218
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "663405",
+        "title": "Khách sạn Châu Phố",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 3.6,
+        "ranking": "3/223",
+        "reviewsCount": 515,
+        "category": "Khách sạn",
+        "priceRange": "1.368.421 ₫ - 1.894.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Châu Phố ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 3.6/5 từ 515 lượt review. Xếp hạng: 3/223. Giá: 1.368.421 ₫ - 1.894.737 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/d7/40/08/chau-pho-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.11657,
+                10.705427
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32808505",
+        "title": "MerPerle Nui Sam Resort",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 4.8,
+        "ranking": "4/223",
+        "reviewsCount": 19,
+        "category": "B&B",
+        "priceRange": "1.131.579 ₫ - 3.236.842 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "MerPerle Nui Sam Resort ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: B&B. Tags: B&B. Đánh giá: 4.8/5 từ 19 lượt review. Xếp hạng: 4/223. Giá: 1.131.579 ₫ - 3.236.842 ₫.",
+        "tags": [
+            "B&B"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/85/c1/f8/pool.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.083626,
+                10.683257
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10034471",
+        "title": "Cơ sở lưu trú du lịch Happy Homestay",
+        "city": "Long Xuyên, Tỉnh An Giang",
+        "totalScore": 5.0,
+        "ranking": "5/223",
+        "reviewsCount": 29,
+        "category": "Nhà nghỉ",
+        "priceRange": "500.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Cơ sở lưu trú du lịch Happy Homestay ở Long Xuyên, Tỉnh An Giang. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 5.0/5 từ 29 lượt review. Xếp hạng: 5/223. Giá: 500.000 ₫.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/99/bb/3c/i-and-my-friend-around.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.56092,
+                10.437611
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "601995",
+        "title": "Khách sạn Trung Nguyên",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 3.8,
+        "ranking": "6/223",
+        "reviewsCount": 286,
+        "category": "Khách sạn",
+        "priceRange": "657.895 ₫ - 894.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Trung Nguyên ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 3.8/5 từ 286 lượt review. Xếp hạng: 6/223. Giá: 657.895 ₫ - 894.737 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/e0/74/df/temple-near-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.1183,
+                10.7109
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24989410",
+        "title": "Homestay Khoa Chaudoc",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 4.9,
+        "ranking": "7/223",
+        "reviewsCount": 14,
+        "category": "Cơ sở kinh doanh có dịch vụ giới hạn",
+        "priceRange": "342.105 ₫ - 631.579 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Homestay Khoa Chaudoc ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Cơ sở kinh doanh có dịch vụ giới hạn. Tags: Cơ sở kinh doanh có dịch vụ giới hạn. Đánh giá: 4.9/5 từ 14 lượt review. Xếp hạng: 7/223. Giá: 342.105 ₫ - 631.579 ₫.",
+        "tags": [
+            "Cơ sở kinh doanh có dịch vụ giới hạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2a/12/35/92/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.11761,
+                10.708983
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "3221680",
+        "title": "Khách sạn Hòa Binh 1",
+        "city": "Long Xuyên, Tỉnh An Giang",
+        "totalScore": 3.9,
+        "ranking": "8/223",
+        "reviewsCount": 58,
+        "category": "Khách sạn",
+        "priceRange": "684.211 ₫ - 842.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Hòa Binh 1 ở Long Xuyên, Tỉnh An Giang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 3.9/5 từ 58 lượt review. Xếp hạng: 8/223. Giá: 684.211 ₫ - 842.105 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/75/6e/7b/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.43294,
+                10.386736
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1490941",
+        "title": "Khách sạn Hải Châu",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 3.8,
+        "ranking": "9/223",
+        "reviewsCount": 184,
+        "category": "Khách sạn",
+        "priceRange": "368.421 ₫ - 447.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Hải Châu ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 3.8/5 từ 184 lượt review. Xếp hạng: 9/223. Giá: 368.421 ₫ - 447.368 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/01/5b/59/fb/hai-chau-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.11784,
+                10.711544
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27772380",
+        "title": "Paris Hotel Chau Doc",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 4.8,
+        "ranking": "10/223",
+        "reviewsCount": 6,
+        "category": "Khách sạn",
+        "priceRange": "578.947 ₫ - 973.684 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Paris Hotel Chau Doc ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 6 lượt review. Xếp hạng: 10/223. Giá: 578.947 ₫ - 973.684 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/76/e2/c9/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.124,
+                10.706841
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9794497",
+        "title": "Khách Sạn Đồng Xanh",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 3.9,
+        "ranking": "11/223",
+        "reviewsCount": 51,
+        "category": "Khách sạn",
+        "priceRange": "342.105 ₫ - 447.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn Đồng Xanh ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 3.9/5 từ 51 lượt review. Xếp hạng: 11/223. Giá: 342.105 ₫ - 447.368 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/0b/d3/b6/ta-img-20180214-074507.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.12628,
+                10.697761
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7391726",
+        "title": "Hung Cuong Hotel",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 3.6,
+        "ranking": "12/223",
+        "reviewsCount": 172,
+        "category": "Khách sạn",
+        "priceRange": "552.632 ₫ - 657.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hung Cuong Hotel ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 3.6/5 từ 172 lượt review. Xếp hạng: 12/223. Giá: 552.632 ₫ - 657.895 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/08/0f/c7/hung-cuong-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.11706,
+                10.710472
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19763309",
+        "title": "The Luxe Hotel Châu Đốc",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 4.3,
+        "ranking": "13/223",
+        "reviewsCount": 7,
+        "category": "Khách sạn nhỏ",
+        "priceRange": "526.316 ₫ - 1.184.211 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The Luxe Hotel Châu Đốc ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 4.3/5 từ 7 lượt review. Xếp hạng: 13/223. Giá: 526.316 ₫ - 1.184.211 ₫.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/af/5a/b1/the-luxe-hotel-chau-doc.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.097855,
+                10.694296
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20804460",
+        "title": "Little Saigon Homestay",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 3.9,
+        "ranking": "14/223",
+        "reviewsCount": 8,
+        "category": "Nhà trọ",
+        "priceRange": "368.421 ₫ - 578.947 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Little Saigon Homestay ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 3.9/5 từ 8 lượt review. Xếp hạng: 14/223. Giá: 368.421 ₫ - 578.947 ₫.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/60/b5/ce/double-room.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.116554,
+                10.699505
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26680460",
+        "title": "Hero Hostel & Billiards",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 5.0,
+        "ranking": "15/223",
+        "reviewsCount": 3,
+        "category": "Khách sạn",
+        "priceRange": "342.105 ₫ - 736.842 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hero Hostel & Billiards ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 15/223. Giá: 342.105 ₫ - 736.842 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/6b/36/83/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.12431,
+                10.707614
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12961178",
+        "title": "Bao Thy Hotel",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 4.3,
+        "ranking": "16/223",
+        "reviewsCount": 16,
+        "category": "Khách sạn đặc biệt",
+        "priceRange": "289.474 ₫ - 394.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Bao Thy Hotel ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn đặc biệt. Tags: Khách sạn đặc biệt. Đánh giá: 4.3/5 từ 16 lượt review. Xếp hạng: 16/223. Giá: 289.474 ₫ - 394.737 ₫.",
+        "tags": [
+            "Khách sạn đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/53/16/16/bao-thy-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.121635,
+                10.720229
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4167657",
+        "title": "Chau Doc Home Stay",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 4.6,
+        "ranking": "17/223",
+        "reviewsCount": 8,
+        "category": "Khách sạn nhỏ",
+        "priceRange": "526.316 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Chau Doc Home Stay ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 4.6/5 từ 8 lượt review. Xếp hạng: 17/223. Giá: 526.316 ₫.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/27/c3/63/dc/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.16222,
+                10.68219
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17643093",
+        "title": "Homestay Khoachaudoc",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 5.0,
+        "ranking": "18/223",
+        "reviewsCount": 4,
+        "category": "Nhà trọ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Homestay Khoachaudoc ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 18/223.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/31/55/55/c7/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.08213,
+                10.68196
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21286835",
+        "title": "Ngoc Linh Motel",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 5.0,
+        "ranking": "19/223",
+        "reviewsCount": 3,
+        "category": "Khách sạn đặc biệt",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ngoc Linh Motel ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn đặc biệt. Tags: Khách sạn đặc biệt. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 19/223.",
+        "tags": [
+            "Khách sạn đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/8d/e4/c4/phong-4-ngu-i.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.08462,
+                10.677345
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13953567",
+        "title": "Sang Như Ngọc Resort",
+        "city": "Tinh Bien, Tỉnh An Giang",
+        "totalScore": 4.2,
+        "ranking": "20/223",
+        "reviewsCount": 11,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "684.211 ₫ - 921.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Sang Như Ngọc Resort ở Tinh Bien, Tỉnh An Giang. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.2/5 từ 11 lượt review. Xếp hạng: 20/223. Giá: 684.211 ₫ - 921.053 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/7f/66/2a/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.02481,
+                10.496015
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1485863",
+        "title": "Khách sạn Đông Xuyên",
+        "city": "Long Xuyên, Tỉnh An Giang",
+        "totalScore": 3.3,
+        "ranking": "21/223",
+        "reviewsCount": 31,
+        "category": "Khách sạn nhỏ",
+        "priceRange": "657.895 ₫ - 921.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Đông Xuyên ở Long Xuyên, Tỉnh An Giang. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 3.3/5 từ 31 lượt review. Xếp hạng: 21/223. Giá: 657.895 ₫ - 921.053 ₫.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/e9/3c/75/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.44085,
+                10.382129
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9756710",
+        "title": "Dong Bao Hotel",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 3.6,
+        "ranking": "22/223",
+        "reviewsCount": 26,
+        "category": "Nhà nghỉ",
+        "priceRange": "342.105 ₫ - 394.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Dong Bao Hotel ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 3.6/5 từ 26 lượt review. Xếp hạng: 22/223. Giá: 342.105 ₫ - 394.737 ₫.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/5b/27/47/beautiful-co-ordinated.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.11876,
+                10.709162
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23207514",
+        "title": "Lara Hotel Long Xuyen",
+        "city": "Long Xuyên, Tỉnh An Giang",
+        "totalScore": 4.0,
+        "ranking": "23/223",
+        "reviewsCount": 4,
+        "category": "Khách sạn",
+        "priceRange": "736.842 ₫ - 1.026.316 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Lara Hotel Long Xuyen ở Long Xuyên, Tỉnh An Giang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.0/5 từ 4 lượt review. Xếp hạng: 23/223. Giá: 736.842 ₫ - 1.026.316 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/25/08/b7/85/lara-hotel-long-xuyen.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.442024,
+                10.379026
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12708401",
+        "title": "Sao Khue Hotel",
+        "city": "Long Xuyên, Tỉnh An Giang",
+        "totalScore": 4.5,
+        "ranking": "24/223",
+        "reviewsCount": 2,
+        "category": "Khách sạn nhỏ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sao Khue Hotel ở Long Xuyên, Tỉnh An Giang. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 24/223.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.42409,
+                10.3958
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21093584",
+        "title": "Hoang De Hotel",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 5.0,
+        "ranking": "25/223",
+        "reviewsCount": 1,
+        "category": "Khách sạn",
+        "priceRange": "500.000 ₫ - 552.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hoang De Hotel ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 25/223. Giá: 500.000 ₫ - 552.632 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.13112,
+                10.702674
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15067401",
+        "title": "Khách Sạn Đăng Khôi",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 5.0,
+        "ranking": "26/223",
+        "reviewsCount": 1,
+        "category": "Khách sạn đặc biệt",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn Đăng Khôi ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn đặc biệt. Tags: Khách sạn đặc biệt. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 26/223.",
+        "tags": [
+            "Khách sạn đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/27/f4/39/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.07784,
+                10.68352
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26147790",
+        "title": "DeMi Homestay - Chau Doc",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 5.0,
+        "ranking": "27/223",
+        "reviewsCount": 1,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "DeMi Homestay - Chau Doc ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 27/223.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/ce/aa/82/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.07536,
+                10.68136
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10517605",
+        "title": "Nhà Nghỉ Dinh Thành Công",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 4.0,
+        "ranking": "28/223",
+        "reviewsCount": 5,
+        "category": "Nhà nghỉ",
+        "priceRange": "210.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Nghỉ Dinh Thành Công ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 4.0/5 từ 5 lượt review. Xếp hạng: 28/223. Giá: 210.526 ₫.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/94/05/09/entrance-of-the-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.11931,
+                10.71008
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "3229240",
+        "title": "Kim Anh Hotel",
+        "city": "Long Xuyên, Tỉnh An Giang",
+        "totalScore": 4.7,
+        "ranking": "29/223",
+        "reviewsCount": 3,
+        "category": "Khách sạn nhỏ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kim Anh Hotel ở Long Xuyên, Tỉnh An Giang. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 4.7/5 từ 3 lượt review. Xếp hạng: 29/223.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/cf/d9/c1/2018.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.44299,
+                10.380834
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23523604",
+        "title": "Khach San Yen Chau",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 3.5,
+        "ranking": "30/223",
+        "reviewsCount": 4,
+        "category": "Khách sạn",
+        "priceRange": "578.947 ₫ - 894.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khach San Yen Chau ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 3.5/5 từ 4 lượt review. Xếp hạng: 30/223. Giá: 578.947 ₫ - 894.737 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/2e/05/ca/fb/khach-s-n-yen-chau.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.117,
+                10.708123
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14960846",
+        "title": "Nhà Nghỉ Minh Kim",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 4.5,
+        "ranking": "31/223",
+        "reviewsCount": 2,
+        "category": "Khách sạn đặc biệt",
+        "priceRange": "315.789 ₫ - 368.421 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Nghỉ Minh Kim ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn đặc biệt. Tags: Khách sạn đặc biệt. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 31/223. Giá: 315.789 ₫ - 368.421 ₫.",
+        "tags": [
+            "Khách sạn đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/2e/1a/d9/77/property-building.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.13739,
+                10.697782
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8039180",
+        "title": "Hoang Duc Hotel",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 3.4,
+        "ranking": "32/223",
+        "reviewsCount": 13,
+        "category": "Nhà nghỉ",
+        "priceRange": "526.316 ₫ - 605.263 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hoang Duc Hotel ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 3.4/5 từ 13 lượt review. Xếp hạng: 32/223. Giá: 526.316 ₫ - 605.263 ₫.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/de/30/a0/hoang-duc-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.10007,
+                10.6956
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12258518",
+        "title": "Ngoc Hung Mai Hostel",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 5.0,
+        "ranking": "33/223",
+        "reviewsCount": 1,
+        "category": "Nhà trọ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ngoc Hung Mai Hostel ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 33/223.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/1c/aa/f1/77/d-y-d-ti-n-nghi-gia-c.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.07902,
+                10.683712
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7154748",
+        "title": "Khách sạn Kim Phát",
+        "city": "Long Xuyên, Tỉnh An Giang",
+        "totalScore": 5.0,
+        "ranking": "34/223",
+        "reviewsCount": 1,
+        "category": "Khách sạn nhỏ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Kim Phát ở Long Xuyên, Tỉnh An Giang. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 34/223.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.44138,
+                10.37621
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12607180",
+        "title": "Sao Mai Hotel",
+        "city": "Long Xuyên, Tỉnh An Giang",
+        "totalScore": 4.0,
+        "ranking": "35/223",
+        "reviewsCount": 2,
+        "category": "Nhà trọ đặc biệt",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sao Mai Hotel ở Long Xuyên, Tỉnh An Giang. Loại địa điểm: Nhà trọ đặc biệt. Tags: Nhà trọ đặc biệt. Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 35/223.",
+        "tags": [
+            "Nhà trọ đặc biệt"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.429184,
+                10.39445
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12259050",
+        "title": "Khách Sạn 20",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 3.4,
+        "ranking": "36/223",
+        "reviewsCount": 5,
+        "category": "Nhà khách",
+        "priceRange": "157.895 ₫ - 394.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn 20 ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Nhà khách. Tags: Nhà khách. Đánh giá: 3.4/5 từ 5 lượt review. Xếp hạng: 36/223. Giá: 157.895 ₫ - 394.737 ₫.",
+        "tags": [
+            "Nhà khách"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/aa/6f/a6/20170912-101336-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.13198,
+                10.703413
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "3222442",
+        "title": "Cuu Long Hotel",
+        "city": "Long Xuyên, Tỉnh An Giang",
+        "totalScore": 3.7,
+        "ranking": "37/223",
+        "reviewsCount": 3,
+        "category": "Khách sạn nhỏ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cuu Long Hotel ở Long Xuyên, Tỉnh An Giang. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 3.7/5 từ 3 lượt review. Xếp hạng: 37/223.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/ee/00/e1/cuu-long-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.44047,
+                10.3825
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13340109",
+        "title": "Homestay Phước Nguyên",
+        "city": "Long Xuyên, Tỉnh An Giang",
+        "totalScore": 5.0,
+        "ranking": "38/223",
+        "reviewsCount": 1,
+        "category": "Nhà trọ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Homestay Phước Nguyên ở Long Xuyên, Tỉnh An Giang. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 38/223.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/6f/42/04/img-20181119-wa0022-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.44346,
+                10.410176
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12793714",
+        "title": "Phong Lan Guesthouse",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 5.0,
+        "ranking": "39/223",
+        "reviewsCount": 1,
+        "category": "Nhà khách",
+        "priceRange": "315.789 ₫ - 447.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Phong Lan Guesthouse ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Nhà khách. Tags: Nhà khách. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 39/223. Giá: 315.789 ₫ - 447.368 ₫.",
+        "tags": [
+            "Nhà khách"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/2e/06/d8/7a/phong-lan-guesthouse.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.124535,
+                10.696881
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1880293",
+        "title": "Khách sạn Hòa Bình 2",
+        "city": "Long Xuyên, Tỉnh An Giang",
+        "totalScore": 3.6,
+        "ranking": "40/223",
+        "reviewsCount": 10,
+        "category": "Khách sạn",
+        "priceRange": "421.053 ₫ - 552.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Hòa Bình 2 ở Long Xuyên, Tỉnh An Giang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 3.6/5 từ 10 lượt review. Xếp hạng: 40/223. Giá: 421.053 ₫ - 552.632 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/4b/9f/1d/t-sut-c-a-n-n-g-ch-b.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.433235,
+                10.389587
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9784358",
+        "title": "Song Hao Hotel",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 5.0,
+        "ranking": "41/223",
+        "reviewsCount": 1,
+        "category": "Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Song Hao Hotel ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 41/223.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/6c/00/a6/carte.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.116,
+                10.709864
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1626700",
+        "title": "Long Xuyen Hotel",
+        "city": "Long Xuyên, Tỉnh An Giang",
+        "totalScore": 3.2,
+        "ranking": "42/223",
+        "reviewsCount": 12,
+        "category": "Khách sạn",
+        "priceRange": "394.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Long Xuyen Hotel ở Long Xuyên, Tỉnh An Giang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 3.2/5 từ 12 lượt review. Xếp hạng: 42/223. Giá: 394.737 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/19/ca/12/18/2589004.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.45352,
+                10.3607
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7178815",
+        "title": "Lam Vien Nui Cam Resort",
+        "city": "Tinh Bien, Tỉnh An Giang",
+        "totalScore": 5.0,
+        "ranking": "43/223",
+        "reviewsCount": 1,
+        "category": "Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lam Vien Nui Cam Resort ở Tinh Bien, Tỉnh An Giang. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 43/223.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6121115",
+        "title": "Vy Khanh Guesthouse",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 3.4,
+        "ranking": "44/223",
+        "reviewsCount": 5,
+        "category": "Nhà khách",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vy Khanh Guesthouse ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Nhà khách. Tags: Nhà khách. Đánh giá: 3.4/5 từ 5 lượt review. Xếp hạng: 44/223.",
+        "tags": [
+            "Nhà khách"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.12574,
+                10.69953
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12804801",
+        "title": "Kieu Lan Hotel",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 4.0,
+        "ranking": "45/223",
+        "reviewsCount": 1,
+        "category": "Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kieu Lan Hotel ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 45/223.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/dd/fc/36/kieu-lan-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.08354,
+                10.678554
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12804408",
+        "title": "Thang Loi 2 Hotel",
+        "city": "Long Xuyên, Tỉnh An Giang",
+        "totalScore": 4.0,
+        "ranking": "46/223",
+        "reviewsCount": 1,
+        "category": "Khách sạn nhỏ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thang Loi 2 Hotel ở Long Xuyên, Tỉnh An Giang. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 46/223.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.43217,
+                10.38839
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21505518",
+        "title": "Chau Khuong Hotel",
+        "city": "Long Xuyên, Tỉnh An Giang",
+        "totalScore": 3.2,
+        "ranking": "47/223",
+        "reviewsCount": 5,
+        "category": "Khách sạn",
+        "priceRange": "1.105.263 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Chau Khuong Hotel ở Long Xuyên, Tỉnh An Giang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 3.2/5 từ 5 lượt review. Xếp hạng: 47/223. Giá: 1.105.263 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/2e/07/2e/98/chau-khuong-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.43524,
+                10.378066
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1174365",
+        "title": "Ben Da Nui Sam Hotel",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 3.2,
+        "ranking": "48/223",
+        "reviewsCount": 9,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ben Da Nui Sam Hotel ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 3.2/5 từ 9 lượt review. Xếp hạng: 48/223.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/df/cb/66/ben-da-nui-sam-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.10018,
+                10.69575
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "3752968",
+        "title": "Van Huong Mai Resort",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 3.2,
+        "ranking": "49/223",
+        "reviewsCount": 5,
+        "category": "Khách sạn nhỏ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Van Huong Mai Resort ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 3.2/5 từ 5 lượt review. Xếp hạng: 49/223.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/04/69/7c/97/van-huong-mai-resort.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.10007,
+                10.6956
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "3222665",
+        "title": "Phuong Nam Hotel",
+        "city": "Long Xuyên, Tỉnh An Giang",
+        "totalScore": 3.0,
+        "ranking": "50/223",
+        "reviewsCount": 5,
+        "category": "Nhà nghỉ",
+        "priceRange": "500.000 ₫ - 605.263 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Phuong Nam Hotel ở Long Xuyên, Tỉnh An Giang. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 3.0/5 từ 5 lượt review. Xếp hạng: 50/223. Giá: 500.000 ₫ - 605.263 ₫.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/e3/87/0d/phuong-nam-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.43157,
+                10.388742
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "803314",
+        "title": "Dong Nam",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 3.1,
+        "ranking": "51/223",
+        "reviewsCount": 15,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dong Nam ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 3.1/5 từ 15 lượt review. Xếp hạng: 51/223.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/8a/e3/60/dong-nam.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.10577,
+                10.705838
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9782942",
+        "title": "A Chau Hotel",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 3.0,
+        "ranking": "52/223",
+        "reviewsCount": 1,
+        "category": "Khách sạn nhỏ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "A Chau Hotel ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 52/223.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.08333,
+                10.66667
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12804811",
+        "title": "Minh Trang Motel",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 3.0,
+        "ranking": "53/223",
+        "reviewsCount": 1,
+        "category": "Nhà nghỉ",
+        "priceRange": "473.684 ₫ - 500.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Minh Trang Motel ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 53/223. Giá: 473.684 ₫ - 500.000 ₫.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/47/78/96/minh-trang-motel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.08965,
+                10.6874
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34068645",
+        "title": "Murray Guesthouse",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 3.0,
+        "ranking": "54/223",
+        "reviewsCount": 1,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Murray Guesthouse ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 54/223.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.12917,
+                10.70524
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9787745",
+        "title": "Mai Van Anh Hotel",
+        "city": "Long Xuyên, Tỉnh An Giang",
+        "totalScore": 3.0,
+        "ranking": "55/223",
+        "reviewsCount": 2,
+        "category": "Khách sạn nhỏ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mai Van Anh Hotel ở Long Xuyên, Tỉnh An Giang. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 3.0/5 từ 2 lượt review. Xếp hạng: 55/223.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.42393,
+                10.39353
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1047987",
+        "title": "Ky An Hotel",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 1.0,
+        "ranking": "56/223",
+        "reviewsCount": 1,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ky An Hotel ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 1.0/5 từ 1 lượt review. Xếp hạng: 56/223.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.131645,
+                10.705747
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9793547",
+        "title": "Chi Nguyen Hotel",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 2.5,
+        "ranking": "57/223",
+        "reviewsCount": 2,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chi Nguyen Hotel ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 2.5/5 từ 2 lượt review. Xếp hạng: 57/223.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.12853,
+                10.70443
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9997040",
+        "title": "Khách sạn Helen Ngọc Giang",
+        "city": "Long Xuyên, Tỉnh An Giang",
+        "totalScore": 2.2,
+        "ranking": "58/223",
+        "reviewsCount": 5,
+        "category": "Khách sạn",
+        "priceRange": "210.526 ₫ - 578.947 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Helen Ngọc Giang ở Long Xuyên, Tỉnh An Giang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 2.2/5 từ 5 lượt review. Xếp hạng: 58/223. Giá: 210.526 ₫ - 578.947 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/ef/71/60/deluxe-trip-single-room.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.43293,
+                10.384788
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1437444",
+        "title": "Khách sạn Sông Sao",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 2.3,
+        "ranking": "59/223",
+        "reviewsCount": 4,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Sông Sao ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 2.3/5 từ 4 lượt review. Xếp hạng: 59/223.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.11808,
+                10.709658
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10056063",
+        "title": "Đại Lợi Hotel",
+        "city": "Châu Đốc, Tỉnh An Giang",
+        "totalScore": 2.9,
+        "ranking": "60/223",
+        "reviewsCount": 8,
+        "category": "Nhà nghỉ",
+        "priceRange": "500.000 ₫ - 657.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Đại Lợi Hotel ở Châu Đốc, Tỉnh An Giang. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 2.9/5 từ 8 lượt review. Xếp hạng: 60/223. Giá: 500.000 ₫ - 657.895 ₫.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/10/cc/b6/e2/my-room-quite-large.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.11783,
+                10.708972
+            ]
+        },
+        "openingHours": null
+    }
+]

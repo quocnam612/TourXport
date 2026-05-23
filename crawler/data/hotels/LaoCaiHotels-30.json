@@ -1,0 +1,872 @@
+[
+    {
+        "sourceLocationId": "10236646",
+        "title": "Khách sạn Sapa Centre",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 4.9,
+        "ranking": "1/1692",
+        "reviewsCount": 1496,
+        "category": "Khách sạn nhỏ",
+        "priceRange": "605.263 ₫ - 1.447.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Sapa Centre ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 4.9/5 từ 1496 lượt review. Xếp hạng: 1/1692. Giá: 605.263 ₫ - 1.447.368 ₫.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/30/bd/33/ed/deluxe-room-mountain.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84139,
+                22.334656
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32712599",
+        "title": "Garrya Mù Cang Chải",
+        "city": "La Pan Tan, Tỉnh Lào Cai",
+        "totalScore": 5.0,
+        "ranking": "2/1692",
+        "reviewsCount": 462,
+        "category": "Khách sạn",
+        "priceRange": "4.421.053 ₫ - 5.605.263 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Garrya Mù Cang Chải ở La Pan Tan, Tỉnh Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 462 lượt review. Xếp hạng: 2/1692. Giá: 4.421.053 ₫ - 5.605.263 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/b1/e8/bd/overview.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.175735,
+                21.79328
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8299368",
+        "title": "Eco Palms House",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 4.9,
+        "ranking": "3/1692",
+        "reviewsCount": 1109,
+        "category": "Khách sạn",
+        "priceRange": "1.973.684 ₫ - 2.526.316 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Eco Palms House ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 1109 lượt review. Xếp hạng: 3/1692. Giá: 1.973.684 ₫ - 2.526.316 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/22/57/a3/79/infinity-swimming-pool.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.88297,
+                22.314425
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11908224",
+        "title": "Sapa Clay House",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 4.9,
+        "ranking": "4/1692",
+        "reviewsCount": 1117,
+        "category": "Khách sạn",
+        "priceRange": "2.894.737 ₫ - 5.552.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Sapa Clay House ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 1117 lượt review. Xếp hạng: 4/1692. Giá: 2.894.737 ₫ - 5.552.632 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/8c/85/c0/the-infinity-pool.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.8578,
+                22.318916
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12786956",
+        "title": "Pao's Sapa Leisure Hotel",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 4.9,
+        "ranking": "5/1692",
+        "reviewsCount": 1416,
+        "category": "Khách sạn",
+        "priceRange": "1.473.684 ₫ - 4.894.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Pao's Sapa Leisure Hotel ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 1416 lượt review. Xếp hạng: 5/1692. Giá: 1.473.684 ₫ - 4.894.737 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/89/94/ba/khach-s-n-pao-sa-pa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84658,
+                22.32716
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19055925",
+        "title": "KK Sapa Hotel",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 4.9,
+        "ranking": "6/1692",
+        "reviewsCount": 889,
+        "category": "Khách sạn",
+        "priceRange": "1.263.158 ₫ - 3.578.947 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "KK Sapa Hotel ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 889 lượt review. Xếp hạng: 6/1692. Giá: 1.263.158 ₫ - 3.578.947 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/6d/9c/e6/c-nh-quan-ben-ngoai-khach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.844505,
+                22.33115
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12158095",
+        "title": "Khách Sạn & Spa Aira Boutique Sapa",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 5.0,
+        "ranking": "7/1692",
+        "reviewsCount": 1201,
+        "category": "Khách sạn",
+        "priceRange": "1.421.053 ₫ - 3.263.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn & Spa Aira Boutique Sapa ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 1201 lượt review. Xếp hạng: 7/1692. Giá: 1.421.053 ₫ - 3.263.158 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/6e/24/ef/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.83649,
+                22.334158
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11726212",
+        "title": "Quiet Sapa Hotel",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 4.9,
+        "ranking": "8/1692",
+        "reviewsCount": 147,
+        "category": "Khách sạn",
+        "priceRange": "684.211 ₫ - 1.184.211 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quiet Sapa Hotel ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 147 lượt review. Xếp hạng: 8/1692. Giá: 684.211 ₫ - 1.184.211 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/26/d9/1e/66/duluxe-dbl-swet-view.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.846596,
+                22.336733
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7154741",
+        "title": "Chau Long Sapa 2 Hotel",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 4.9,
+        "ranking": "9/1692",
+        "reviewsCount": 411,
+        "category": "Khách sạn",
+        "priceRange": "868.421 ₫ - 1.736.842 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Chau Long Sapa 2 Hotel ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 411 lượt review. Xếp hạng: 9/1692. Giá: 868.421 ₫ - 1.736.842 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/75/a6/6a/c-nh-nhin-t-ngoai.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84228,
+                22.332706
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6621301",
+        "title": "Hotel Sapa Square, Affiliated By Meliá",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 4.5,
+        "ranking": "10/1692",
+        "reviewsCount": 685,
+        "category": "Khách sạn",
+        "priceRange": "1.236.842 ₫ - 2.315.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hotel Sapa Square, Affiliated By Meliá ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.5/5 từ 685 lượt review. Xếp hạng: 10/1692. Giá: 1.236.842 ₫ - 2.315.789 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/c0/c4/6d/m-t-ti-n.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84127,
+                22.33556
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7786873",
+        "title": "Khách sạn Amazing Hotel Sapa",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 4.6,
+        "ranking": "11/1692",
+        "reviewsCount": 891,
+        "category": "Khách sạn",
+        "priceRange": "1.000.000 ₫ - 2.157.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Amazing Hotel Sapa ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 891 lượt review. Xếp hạng: 11/1692. Giá: 1.000.000 ₫ - 2.157.895 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/db/e2/c7/the-hotel-offers-spectacular.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84241,
+                22.332766
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27924691",
+        "title": "Khách Sạn Mường Thanh Sapa",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 5.0,
+        "ranking": "12/1692",
+        "reviewsCount": 95,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn Mường Thanh Sapa ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 95 lượt review. Xếp hạng: 12/1692.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/d5/7e/76/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84832,
+                22.337893
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26813294",
+        "title": "Green Sapa Homestay",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 4.9,
+        "ranking": "13/1692",
+        "reviewsCount": 118,
+        "category": "Nhà khách",
+        "priceRange": "289.474 ₫ - 447.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Green Sapa Homestay ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Nhà khách. Tags: Nhà khách. Đánh giá: 4.9/5 từ 118 lượt review. Xếp hạng: 13/1692. Giá: 289.474 ₫ - 447.368 ₫.",
+        "tags": [
+            "Nhà khách"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/67/e0/62/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.8368,
+                22.33634
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "590060",
+        "title": "Bamboo Sapa Hotel",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 4.3,
+        "ranking": "14/1692",
+        "reviewsCount": 1279,
+        "category": "Khách sạn",
+        "priceRange": "1.131.579 ₫ - 2.210.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Bamboo Sapa Hotel ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.3/5 từ 1279 lượt review. Xếp hạng: 14/1692. Giá: 1.131.579 ₫ - 2.210.526 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/19/6e/ae/infinity-pool.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84367,
+                22.332346
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21249677",
+        "title": "Mega View Homestay",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 5.0,
+        "ranking": "15/1692",
+        "reviewsCount": 368,
+        "category": "Nhà trọ",
+        "priceRange": "473.684 ₫ - 842.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Mega View Homestay ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 5.0/5 từ 368 lượt review. Xếp hạng: 15/1692. Giá: 473.684 ₫ - 842.105 ₫.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/42/ce/8d/view-from-king-deluxe.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84336,
+                22.332006
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8352356",
+        "title": "Khách sạn Botanic Sapa",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 4.9,
+        "ranking": "16/1692",
+        "reviewsCount": 220,
+        "category": "Khách sạn nhỏ",
+        "priceRange": "763.158 ₫ - 973.684 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Botanic Sapa ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 4.9/5 từ 220 lượt review. Xếp hạng: 16/1692. Giá: 763.158 ₫ - 973.684 ₫.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/14/6a/45/ea/khach-s-n-botanic-sapa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84309,
+                22.332407
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12287201",
+        "title": "Little View Homestay",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 4.9,
+        "ranking": "17/1692",
+        "reviewsCount": 379,
+        "category": "Nhà trọ",
+        "priceRange": "473.684 ₫ - 1.394.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Little View Homestay ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 4.9/5 từ 379 lượt review. Xếp hạng: 17/1692. Giá: 473.684 ₫ - 1.394.737 ₫.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/cb/49/bd/photo6jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.845955,
+                22.336088
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12832060",
+        "title": "Sapa Luxury Hotel",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 4.9,
+        "ranking": "18/1692",
+        "reviewsCount": 448,
+        "category": "Khách sạn",
+        "priceRange": "815.789 ₫ - 1.263.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Sapa Luxury Hotel ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 448 lượt review. Xếp hạng: 18/1692. Giá: 815.789 ₫ - 1.263.158 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/56/79/7b/sapa-luxury-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.85116,
+                22.337536
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15245975",
+        "title": "Lotus Aroma Sapa Hotel",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 4.9,
+        "ranking": "19/1692",
+        "reviewsCount": 414,
+        "category": "Khách sạn",
+        "priceRange": "1.052.632 ₫ - 2.789.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Lotus Aroma Sapa Hotel ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 414 lượt review. Xếp hạng: 19/1692. Giá: 1.052.632 ₫ - 2.789.474 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/61/f2/c0/lotus-aroma-sapa-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.853226,
+                22.339458
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "2193394",
+        "title": "Muong Thanh Sapa",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 4.8,
+        "ranking": "20/1692",
+        "reviewsCount": 236,
+        "category": "Khách sạn",
+        "priceRange": "710.526 ₫ - 1.157.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Muong Thanh Sapa ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 236 lượt review. Xếp hạng: 20/1692. Giá: 710.526 ₫ - 1.157.895 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/ed/f9/ae/muong-thanh-sapa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84818,
+                22.33767
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15224948",
+        "title": "Khách sạn nhỏ của tôi",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 4.9,
+        "ranking": "21/1692",
+        "reviewsCount": 487,
+        "category": "Khách sạn",
+        "priceRange": "631.579 ₫ - 2.473.684 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn nhỏ của tôi ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 487 lượt review. Xếp hạng: 21/1692. Giá: 631.579 ₫ - 2.473.684 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/18/c2/70/my-boutique-hotel-spa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84575,
+                22.329573
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8552235",
+        "title": "Muong Thanh Grand Lao Cai Hotel",
+        "city": "Lào Cai, Tỉnh Lào Cai",
+        "totalScore": 4.7,
+        "ranking": "22/1692",
+        "reviewsCount": 139,
+        "category": "Khách sạn",
+        "priceRange": "552.632 ₫ - 1.078.947 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Muong Thanh Grand Lao Cai Hotel ở Lào Cai, Tỉnh Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.7/5 từ 139 lượt review. Xếp hạng: 22/1692. Giá: 552.632 ₫ - 1.078.947 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/2b/f4/fc/muong-thanh-grand-lao.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.96558,
+                22.502111
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12843531",
+        "title": "Khu nghỉ dưỡng và spa Silk Path Grand Sapa",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 4.8,
+        "ranking": "23/1692",
+        "reviewsCount": 832,
+        "category": "Khách sạn",
+        "priceRange": "1.842.105 ₫ - 6.000.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu nghỉ dưỡng và spa Silk Path Grand Sapa ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 832 lượt review. Xếp hạng: 23/1692. Giá: 1.842.105 ₫ - 6.000.000 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/82/f4/9f/coffee-yard.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.83822,
+                22.337702
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12505879",
+        "title": "Tavan Family Homestay",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 4.8,
+        "ranking": "24/1692",
+        "reviewsCount": 276,
+        "category": "Nhà trọ",
+        "priceRange": "500.000 ₫ - 657.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Tavan Family Homestay ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 4.8/5 từ 276 lượt review. Xếp hạng: 24/1692. Giá: 500.000 ₫ - 657.895 ₫.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/14/fe/d6/18/garden-view-tavan-family.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.89013,
+                22.302677
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8856863",
+        "title": "Khách sạn Sapa Dragon",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 4.9,
+        "ranking": "25/1692",
+        "reviewsCount": 743,
+        "category": "Khách sạn",
+        "priceRange": "789.474 ₫ - 1.184.211 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Sapa Dragon ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 743 lượt review. Xếp hạng: 25/1692. Giá: 789.474 ₫ - 1.184.211 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/77/d6/a3/front.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.83931,
+                22.335566
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12257200",
+        "title": "Khách Sạn Sapa Capsule",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 4.8,
+        "ranking": "26/1692",
+        "reviewsCount": 339,
+        "category": "Khách sạn",
+        "priceRange": "342.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn Sapa Capsule ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 339 lượt review. Xếp hạng: 26/1692. Giá: 342.105 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/c7/52/c3/sapa-capsule-hotel-s.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84054,
+                22.337427
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12847141",
+        "title": "Sapa Horizon Hotel",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 4.8,
+        "ranking": "27/1692",
+        "reviewsCount": 1267,
+        "category": "Khách sạn",
+        "priceRange": "1.315.789 ₫ - 3.184.211 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Sapa Horizon Hotel ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 1267 lượt review. Xếp hạng: 27/1692. Giá: 1.315.789 ₫ - 3.184.211 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/4e/3e/84/sapa-horizon-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84242,
+                22.334295
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10191211",
+        "title": "Heart Of Sapa Hotel",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 4.8,
+        "ranking": "28/1692",
+        "reviewsCount": 320,
+        "category": "Khách sạn nhỏ",
+        "priceRange": "394.737 ₫ - 894.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Heart Of Sapa Hotel ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 4.8/5 từ 320 lượt review. Xếp hạng: 28/1692. Giá: 394.737 ₫ - 894.737 ₫.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/f6/0f/4c/heart-of-sapa-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84236,
+                22.33285
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15028320",
+        "title": "Hotel de la Coupole - MGallery",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 4.8,
+        "ranking": "29/1692",
+        "reviewsCount": 1239,
+        "category": "Khách sạn",
+        "priceRange": "3.263.158 ₫ - 4.842.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hotel de la Coupole - MGallery ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 1239 lượt review. Xếp hạng: 29/1692. Giá: 3.263.158 ₫ - 4.842.105 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/33/4d/78/b8/exterior.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84025,
+                22.334553
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15246389",
+        "title": "Khách sạn Pistachio Sapa",
+        "city": "Sapa, Tỉnh Lào Cai",
+        "totalScore": 4.8,
+        "ranking": "30/1692",
+        "reviewsCount": 562,
+        "category": "Khách sạn",
+        "priceRange": "1.263.158 ₫ - 4.289.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Pistachio Sapa ở Sapa, Tỉnh Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 562 lượt review. Xếp hạng: 30/1692. Giá: 1.263.158 ₫ - 4.289.474 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/84/d4/0d/logo-of-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.838745,
+                22.334715
+            ]
+        },
+        "openingHours": null
+    }
+]

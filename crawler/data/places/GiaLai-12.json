@@ -1,0 +1,370 @@
+[
+    {
+        "sourceLocationId": "4939043",
+        "title": "Minh Thanh Temple",
+        "city": "Pleiku",
+        "totalScore": 4.5,
+        "ranking": "2/14",
+        "reviewsCount": 33,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Minh Thanh Temple ở Pleiku. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 33 lượt review. Xếp hạng: 2/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/d4/3c/48/chanh-di-n.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00648,
+                13.96403
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13358048",
+        "title": "Núi lửa Chư Đăng Ya",
+        "city": "Pleiku",
+        "totalScore": 4.4,
+        "ranking": "3/14",
+        "reviewsCount": 16,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Núi lửa Chư Đăng Ya ở Pleiku. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.4/5 từ 16 lượt review. Xếp hạng: 3/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-c/2560x500/12/31/7d/9e/center-of-the-volcano.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1674539",
+        "title": "T'Nung Lake ( Ia Nueng)",
+        "city": "Pleiku",
+        "totalScore": 4.0,
+        "ranking": "1/14",
+        "reviewsCount": 54,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "T'Nung Lake ( Ia Nueng) ở Pleiku. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.0/5 từ 54 lượt review. Xếp hạng: 1/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/99/bb/71/enjoy-the-breeze-from.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00523,
+                14.03301
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15212968",
+        "title": "Thiền Đường Giác Sơn",
+        "city": "Pleiku",
+        "totalScore": 4.8,
+        "ranking": "6/14",
+        "reviewsCount": 6,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": "Trung tâm thực tập thiền định, nơi giúp cởi mở tâm hồn, thực tập tĩnh lặng và cảm nhận hạnh phúc. .",
+        "embedding": null,
+        "searchText": "Thiền Đường Giác Sơn ở Pleiku. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Mô tả: Trung tâm thực tập thiền định, nơi giúp cởi mở tâm hồn, thực tập tĩnh lặng và cảm nhận hạnh phúc. . Đánh giá: 4.8/5 từ 6 lượt review. Xếp hạng: 6/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/21/6e/b5/thi-n-du-ng-giac-son.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00372,
+                13.99537
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13366412",
+        "title": "Kon Ka Kinh National Park",
+        "city": "Pleiku",
+        "totalScore": 5.0,
+        "ranking": "7/14",
+        "reviewsCount": 5,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kon Ka Kinh National Park ở Pleiku. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 5 lượt review. Xếp hạng: 7/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/d7/60/12/day-la-1-trong-nh-ng.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11640633",
+        "title": "Phu Cuong Waterfall",
+        "city": "Pleiku",
+        "totalScore": 4.0,
+        "ranking": "4/14",
+        "reviewsCount": 16,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phu Cuong Waterfall ở Pleiku. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.0/5 từ 16 lượt review. Xếp hạng: 4/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/de/0e/29/sight-view.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.13587,
+                13.661111
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13358070",
+        "title": "Đồi Cỏ Hồng Đăk Đoa",
+        "city": "Pleiku",
+        "totalScore": 5.0,
+        "ranking": "8/14",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đồi Cỏ Hồng Đăk Đoa ở Pleiku. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 8/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1d/0f/28/bc/gialai-ecotourist-co.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1675266",
+        "title": "Plei Chuet Montagnard Church",
+        "city": "Pleiku",
+        "totalScore": 5.0,
+        "ranking": "10/14",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Plei Chuet Montagnard Church ở Pleiku. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 10/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/9e/9b/15/noi-thieng-lieng-cho.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "18669547",
+        "title": "Biển Hồ",
+        "city": "Pleiku",
+        "totalScore": 4.5,
+        "ranking": "5/14",
+        "reviewsCount": 4,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Biển Hồ ở Pleiku. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 4 lượt review. Xếp hạng: 5/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/29/c1/37/6c/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1672376",
+        "title": "Camp Holloway",
+        "city": "Pleiku",
+        "totalScore": 2.4,
+        "ranking": "12/14",
+        "reviewsCount": 7,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Camp Holloway ở Pleiku. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 2.4/5 từ 7 lượt review. Xếp hạng: 12/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/13/f1/d2/ndvn-nay-n-m-tren-du.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.0015,
+                13.97682
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1725605",
+        "title": "Dong Nhi Cemetery",
+        "city": "Pleiku",
+        "totalScore": 4.0,
+        "ranking": "11/14",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dong Nhi Cemetery ở Pleiku. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 11/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.98802,
+                13.96893
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33017141",
+        "title": "Upes Garden",
+        "city": "Pleiku",
+        "totalScore": 5.0,
+        "ranking": "9/14",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Upes Garden ở Pleiku. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 9/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00871,
+                14.05337
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    }
+]

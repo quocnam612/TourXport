@@ -1,0 +1,3801 @@
+[
+    {
+        "sourceLocationId": "11950036",
+        "title": "Tượng đài Chúa Kitô Vua",
+        "city": "Vũng Tàu",
+        "totalScore": 4.3,
+        "ranking": "4/92",
+        "reviewsCount": 883,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tượng đài Chúa Kitô Vua ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 883 lượt review. Xếp hạng: 4/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/8f/7f/19/tuong-thanh-gioc.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.08455,
+                10.326411
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11434688",
+        "title": "Bảo Tàng Vũ Khí Cổ Robert Taylor",
+        "city": "Vũng Tàu",
+        "totalScore": 4.8,
+        "ranking": "3/92",
+        "reviewsCount": 236,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bảo Tàng Vũ Khí Cổ Robert Taylor ở Vũng Tàu. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.8/5 từ 236 lượt review. Xếp hạng: 3/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/0e/54/de/dd/the-robert-taylor-museum.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.07491,
+                10.351033
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12374392",
+        "title": "Tàu Cao Tốc Greenlines",
+        "city": "Vũng Tàu",
+        "totalScore": 4.2,
+        "ranking": "6/92",
+        "reviewsCount": 179,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tàu Cao Tốc Greenlines ở Vũng Tàu. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Phương tiện giao thông. Đánh giá: 4.2/5 từ 179 lượt review. Xếp hạng: 6/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Phương tiện giao thông"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/72/f3/de/catamaran-ferry-double.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.06603,
+                10.351719
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8464294",
+        "title": "Ngọn Hải Đăng Vũng Tàu",
+        "city": "Vũng Tàu",
+        "totalScore": 4.1,
+        "ranking": "5/92",
+        "reviewsCount": 251,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ngọn Hải Đăng Vũng Tàu ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.1/5 từ 251 lượt review. Xếp hạng: 5/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/09/21/e8/ec/vung-tau-lighthouse.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.07768,
+                10.33399
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11530256",
+        "title": "Bãi Biển Vũng Tàu",
+        "city": "Vũng Tàu",
+        "totalScore": 3.9,
+        "ranking": "11/92",
+        "reviewsCount": 166,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bãi Biển Vũng Tàu ở Vũng Tàu. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.9/5 từ 166 lượt review. Xếp hạng: 11/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/c3/42/09/vung-tau-beach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.0954,
+                10.342268
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6978866",
+        "title": "Dam Trau Beach",
+        "city": "Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.4,
+        "ranking": "7/92",
+        "reviewsCount": 174,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dam Trau Beach ở Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.4/5 từ 174 lượt review. Xếp hạng: 7/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/f6/89/5c/img-20190327-125406-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7903558",
+        "title": "Hòn Bảy Cạnh",
+        "city": "Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.8,
+        "ranking": "40/92",
+        "reviewsCount": 6,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hòn Bảy Cạnh ở Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.8/5 từ 6 lượt review. Xếp hạng: 40/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/98/5e/89/photo4jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4402747",
+        "title": "Khu du lịch văn hóa sinh thái Hồ Mây",
+        "city": "Vũng Tàu",
+        "totalScore": 3.8,
+        "ranking": "18/92",
+        "reviewsCount": 231,
+        "category": "Công viên nước & giải trí",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu du lịch văn hóa sinh thái Hồ Mây ở Vũng Tàu. Loại địa điểm: Công viên nước & giải trí. Tags: Điểm du lịch, Công viên nước & giải trí. Đánh giá: 3.8/5 từ 231 lượt review. Xếp hạng: 18/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/1c/57/2c/khu-du-l-ch-van-hoa-sinh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.066505,
+                10.351192
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8012821",
+        "title": "Nhà Tù Côn Đảo",
+        "city": "Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.4,
+        "ranking": "10/92",
+        "reviewsCount": 79,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Tù Côn Đảo ở Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.4/5 từ 79 lượt review. Xếp hạng: 10/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/5e/51/d4/20181110-150257-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "07:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12213002",
+        "title": "Nhà Úp Ngược",
+        "city": "Vũng Tàu",
+        "totalScore": 4.6,
+        "ranking": "14/92",
+        "reviewsCount": 43,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Úp Ngược ở Vũng Tàu. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.6/5 từ 43 lượt review. Xếp hạng: 14/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/31/85/08/sleep-time.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.07202,
+                10.34987
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8532512",
+        "title": "Bãi Sau",
+        "city": "Vũng Tàu",
+        "totalScore": 3.8,
+        "ranking": "21/92",
+        "reviewsCount": 139,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bãi Sau ở Vũng Tàu. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.8/5 từ 139 lượt review. Xếp hạng: 21/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/e5/c5/f7/vung-tau-back-beach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.10001,
+                10.345498
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "3513551",
+        "title": "Đền thánh Đức Mẹ Bãi Dâu",
+        "city": "Vũng Tàu",
+        "totalScore": 4.3,
+        "ranking": "12/92",
+        "reviewsCount": 88,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đền thánh Đức Mẹ Bãi Dâu ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 88 lượt review. Xếp hạng: 12/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/90/8c/ce/view-from-entry-gateway.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.0672,
+                10.3703
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8300181",
+        "title": "Bến Tàu Cánh Ngần Vũng Tàu",
+        "city": "Vũng Tàu",
+        "totalScore": 3.7,
+        "ranking": "17/92",
+        "reviewsCount": 198,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bến Tàu Cánh Ngần Vũng Tàu ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.7/5 từ 198 lượt review. Xếp hạng: 17/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/a1/ea/c6/vung-tau-ferry-terminal.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.07465,
+                10.34169
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9883153",
+        "title": "Đèo Nước Ngọt",
+        "city": "Long Hải",
+        "totalScore": 3.0,
+        "ranking": "72/92",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đèo Nước Ngọt ở Long Hải. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 72/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/ef/5a/20/located-6km-from-minh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.25007,
+                10.38085
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7389213",
+        "title": "Bạch Dinh",
+        "city": "Vũng Tàu",
+        "totalScore": 4.1,
+        "ranking": "15/92",
+        "reviewsCount": 76,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bạch Dinh ở Vũng Tàu. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Bảo tàng. Đánh giá: 4.1/5 từ 76 lượt review. Xếp hạng: 15/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/14/e3/77/20160921-120936-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.06609,
+                10.35183
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9754929",
+        "title": "Núi Đất",
+        "city": "Bà Rịa",
+        "totalScore": 4.4,
+        "ranking": "39/92",
+        "reviewsCount": 11,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Núi Đất ở Bà Rịa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.4/5 từ 11 lượt review. Xếp hạng: 39/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/4e/4c/66/sas-hill-kangaroo-pad.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.07438,
+                10.34819
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13956820",
+        "title": "Bãi Biển Hồ Tràm",
+        "city": "Hồ Tràm",
+        "totalScore": 4.8,
+        "ranking": "1/92",
+        "reviewsCount": 195,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bãi Biển Hồ Tràm ở Hồ Tràm. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.8/5 từ 195 lượt review. Xếp hạng: 1/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/01/ca/39/20180516-181946-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.442635,
+                10.468138
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13454427",
+        "title": "The Battle of Long Tan",
+        "city": "Vũng Tàu",
+        "totalScore": 4.8,
+        "ranking": "13/92",
+        "reviewsCount": 33,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Battle of Long Tan ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.8/5 từ 33 lượt review. Xếp hạng: 13/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/c0/04/4e/long-tan-australian-memorial.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.265495,
+                10.553083
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "16656354",
+        "title": "Chùa Khỉ",
+        "city": "Long Hải",
+        "totalScore": 4.0,
+        "ranking": "70/92",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Khỉ ở Long Hải. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 70/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.07841,
+                10.56641
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "2494838",
+        "title": "Long Hai Beach",
+        "city": "Long Hải",
+        "totalScore": 3.7,
+        "ranking": "31/92",
+        "reviewsCount": 68,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Long Hai Beach ở Long Hải. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.7/5 từ 68 lượt review. Xếp hạng: 31/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/85/4f/4b/long-hai-beach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.24731,
+                10.381043
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8331363",
+        "title": "Bãi Trước",
+        "city": "Vũng Tàu",
+        "totalScore": 3.9,
+        "ranking": "16/92",
+        "reviewsCount": 181,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bãi Trước ở Vũng Tàu. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.9/5 từ 181 lượt review. Xếp hạng: 16/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/08/24/af/6e/front-beach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.07427,
+                10.342989
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7845196",
+        "title": "Con Dao Musuem",
+        "city": "Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.4,
+        "ranking": "9/92",
+        "reviewsCount": 91,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Con Dao Musuem ở Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.4/5 từ 91 lượt review. Xếp hạng: 9/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/e0/5a/aa/cour-de-la-prison.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 630
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 630
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 630
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 630
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 630
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 630
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 990
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8323977",
+        "title": "Trận địa pháo cổ Sao Mai - Núi Lớn",
+        "city": "Vũng Tàu",
+        "totalScore": 4.0,
+        "ranking": "29/92",
+        "reviewsCount": 30,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trận địa pháo cổ Sao Mai - Núi Lớn ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 30 lượt review. Xếp hạng: 29/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/44/55/5d/photo4jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.0657,
+                10.382385
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4186434",
+        "title": "Hon Ba Island",
+        "city": "Vũng Tàu",
+        "totalScore": 4.1,
+        "ranking": "20/92",
+        "reviewsCount": 78,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hon Ba Island ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.1/5 từ 78 lượt review. Xếp hạng: 20/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/ef/7f/94/dsc02403-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.07465,
+                10.34169
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11082886",
+        "title": "Vung Tau Beach",
+        "city": "Vũng Tàu",
+        "totalScore": 3.8,
+        "ranking": "24/92",
+        "reviewsCount": 46,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vung Tau Beach ở Vũng Tàu. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.8/5 từ 46 lượt review. Xếp hạng: 24/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/ee/d5/6f/detalle-de-las-macas.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.10133,
+                10.35143
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15850127",
+        "title": "Con Dao Express",
+        "city": "Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 2.9,
+        "ranking": "74/92",
+        "reviewsCount": 10,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Con Dao Express ở Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Phương tiện giao thông. Đánh giá: 2.9/5 từ 10 lượt review. Xếp hạng: 74/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Phương tiện giao thông"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/28/99/32/photo5jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "07:00-20:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "4307798",
+        "title": "Lăng cá ông",
+        "city": "Vũng Tàu",
+        "totalScore": 3.4,
+        "ranking": "32/92",
+        "reviewsCount": 73,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lăng cá ông ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.4/5 từ 73 lượt review. Xếp hạng: 32/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/1c/60/b4/interesting-shrine.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.08349,
+                10.340661
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8471987",
+        "title": "Khu căn cứ Minh Đạm",
+        "city": "Vũng Tàu",
+        "totalScore": 4.2,
+        "ranking": "30/92",
+        "reviewsCount": 24,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu căn cứ Minh Đạm ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 24 lượt review. Xếp hạng: 30/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/a4/72/46/minh-dam-bases.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7937098",
+        "title": "Vườn Quốc Gia Côn Đảo",
+        "city": "Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.0,
+        "ranking": "19/92",
+        "reviewsCount": 89,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn Quốc Gia Côn Đảo ở Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.0/5 từ 89 lượt review. Xếp hạng: 19/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/f6/87/46/img-20190328-091252-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14901785",
+        "title": "Vung Tau Night Market",
+        "city": "Vũng Tàu",
+        "totalScore": 4.1,
+        "ranking": "36/92",
+        "reviewsCount": 11,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vung Tau Night Market ở Vũng Tàu. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 4.1/5 từ 11 lượt review. Xếp hạng: 36/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/bf/ef/a6/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.09472,
+                10.345064
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-19:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1140
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32789735",
+        "title": "ABC's Art",
+        "city": "Bà Rịa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "ABC's Art ở Bà Rịa. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Nơi mua sắm, Bảo tàng.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Bảo tàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.16929,
+                10.494281
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-12:00, 14:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32784681",
+        "title": "Hamptons Beach Ho Tram Discovery",
+        "city": "Phú Mỹ",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hamptons Beach Ho Tram Discovery ở Phú Mỹ. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/6f/1b/f9/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.06667,
+                10.63333
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32767155",
+        "title": "Bai Sau Beach",
+        "city": "Vũng Tàu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bai Sau Beach ở Vũng Tàu. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.84756,
+                10.905169
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32701512",
+        "title": "Đền Thờ Liệt Sĩ Thành Phố Vũng Tàu",
+        "city": "Vũng Tàu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đền Thờ Liệt Sĩ Thành Phố Vũng Tàu ở Vũng Tàu. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Bảo tàng, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.09494,
+                10.359139
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28057742",
+        "title": "Binon Cacao Park",
+        "city": "Vũng Tàu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Binon Cacao Park ở Vũng Tàu. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/ab/d4/09/the-visit-to-binon-cacao.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.25,
+                10.58333
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1710
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1710
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1710
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1710
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1710
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1710
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27496900",
+        "title": "Núi Minh Đạm",
+        "city": "Phước Hải",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Núi Minh Đạm ở Phước Hải. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.25214,
+                10.413913
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27495774",
+        "title": "Tropicana Park",
+        "city": "Binh Chau",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Công viên nước & giải trí",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tropicana Park ở Binh Chau. Loại địa điểm: Công viên nước & giải trí. Tags: Điểm du lịch, Công viên nước & giải trí.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/96/58/d3/tropicana-park.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.19406,
+                10.416883
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27473886",
+        "title": "Thiền Viện Trúc Lâm Chân Nguyên",
+        "city": "Vũng Tàu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thiền Viện Trúc Lâm Chân Nguyên ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.26355,
+                10.397306
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23895324",
+        "title": "Stone Art - Shop đá vẽ nghệ thuật",
+        "city": "Bà Rịa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": "Các tác phẩm nghệ thuật được vẽ tay thủ công trên đá cuội tinh xảo, mang tính nghệ thuật cao và được phủ keo epoxy bền chắc. Là sản phẩm độc đáo, lạ mắt và đầu tiên theo kĩ thuật này tại Việt Nam.",
+        "embedding": null,
+        "searchText": "Stone Art - Shop đá vẽ nghệ thuật ở Bà Rịa. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Nơi mua sắm, Bảo tàng. Mô tả: Các tác phẩm nghệ thuật được vẽ tay thủ công trên đá cuội tinh xảo, mang tính nghệ thuật cao và được phủ keo epoxy bền chắc. Là sản phẩm độc đáo, lạ mắt và đầu tiên theo kĩ thuật này tại Việt Nam.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Bảo tàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.169716,
+                10.493998
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17807028",
+        "title": "Giáo Xứ Sao Mai",
+        "city": "Vũng Tàu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Giáo Xứ Sao Mai ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.05932,
+                10.3865
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16871359",
+        "title": "Hồ Đá Xanh",
+        "city": "Bà Rịa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hồ Đá Xanh ở Bà Rịa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.14522,
+                10.49993
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15512052",
+        "title": "Núi Dinh",
+        "city": "Bà Rịa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Núi Dinh ở Bà Rịa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/25/a1/3b/d0/khong-khi-trong-lanh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13976388",
+        "title": "Phước Linh Cổ Tự",
+        "city": "Tam Phuoc",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phước Linh Cổ Tự ở Tam Phuoc. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/8e/cb/b3/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.243,
+                10.541739
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12800375",
+        "title": "Chùa Nam Sơn",
+        "city": "Vũng Tàu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Nam Sơn ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/8e/37/8a/nam-son-pagoda.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.07234,
+                10.37064
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4567552",
+        "title": "Minh Hai Junk",
+        "city": "Long Hải",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Minh Hai Junk ở Long Hải. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.16555,
+                10.4973
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13978752",
+        "title": "Địa Đạo Long Phước",
+        "city": "Bà Rịa",
+        "totalScore": 5.0,
+        "ranking": "35/92",
+        "reviewsCount": 5,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Địa Đạo Long Phước ở Bà Rịa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 5 lượt review. Xếp hạng: 35/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/0e/0d/0e/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14008409",
+        "title": "Nghĩa Trang Hàng Dương",
+        "city": "Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.7,
+        "ranking": "23/92",
+        "reviewsCount": 19,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nghĩa Trang Hàng Dương ở Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.7/5 từ 19 lượt review. Xếp hạng: 23/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/b3/22/bd/tombe.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.07953,
+                10.34292
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-19:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14007191",
+        "title": "Vân Sơn Tự",
+        "city": "Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.7,
+        "ranking": "22/92",
+        "reviewsCount": 23,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vân Sơn Tự ở Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.7/5 từ 23 lượt review. Xếp hạng: 22/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/38/b0/5c/van-son-pagoda.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8602190",
+        "title": "Đài tưởng niệm liệt sỹ Vũng Tàu",
+        "city": "Vũng Tàu",
+        "totalScore": 4.3,
+        "ranking": "34/92",
+        "reviewsCount": 11,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đài tưởng niệm liệt sỹ Vũng Tàu ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 11 lượt review. Xếp hạng: 34/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/f6/44/56/the-shrine.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.08952,
+                10.3424
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14796487",
+        "title": "Chợ Xóm Lưới",
+        "city": "Vũng Tàu",
+        "totalScore": 4.7,
+        "ranking": "38/92",
+        "reviewsCount": 6,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Xóm Lưới ở Vũng Tàu. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 4.7/5 từ 6 lượt review. Xếp hạng: 38/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/a0/95/2f/xom-luoi-market.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.0755,
+                10.34532
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14025411",
+        "title": "Bãi Nhát",
+        "city": "Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.8,
+        "ranking": "28/92",
+        "reviewsCount": 13,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bãi Nhát ở Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.8/5 từ 13 lượt review. Xếp hạng: 28/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/aa/f0/97/photo2jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.243,
+                10.541739
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14061309",
+        "title": "Mũi Nghinh Phong",
+        "city": "Vũng Tàu",
+        "totalScore": 4.0,
+        "ranking": "62/92",
+        "reviewsCount": 6,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mũi Nghinh Phong ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 6 lượt review. Xếp hạng: 62/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/14/32/ae/e1/this-is-the-gate-that.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.0836,
+                10.320705
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9996665",
+        "title": "Đài tưởng niệm nữ anh hùng Võ Thị Sáu",
+        "city": "Vũng Tàu",
+        "totalScore": 4.1,
+        "ranking": "43/92",
+        "reviewsCount": 9,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đài tưởng niệm nữ anh hùng Võ Thị Sáu ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.1/5 từ 9 lượt review. Xếp hạng: 43/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/a5/f4/f6/20160617-155321-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.26967,
+                10.489565
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14860653",
+        "title": "Chợ Vũng Tàu",
+        "city": "Vũng Tàu",
+        "totalScore": 3.3,
+        "ranking": "45/92",
+        "reviewsCount": 13,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Vũng Tàu ở Vũng Tàu. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 3.3/5 từ 13 lượt review. Xếp hạng: 45/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/b4/f4/65/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.08589,
+                10.348409
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8141235",
+        "title": "Thích Ca Phật Đài",
+        "city": "Vũng Tàu",
+        "totalScore": 3.9,
+        "ranking": "41/92",
+        "reviewsCount": 17,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thích Ca Phật Đài ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.9/5 từ 17 lượt review. Xếp hạng: 41/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/1e/2b/fb/thich-ca-phat-dai.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.06871,
+                10.350194
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14860660",
+        "title": "Nhà Thờ Vũng Tàu",
+        "city": "Vũng Tàu",
+        "totalScore": 4.0,
+        "ranking": "52/92",
+        "reviewsCount": 5,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Thờ Vũng Tàu ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 5 lượt review. Xếp hạng: 52/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/b4/f3/9f/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.10122,
+                10.39137
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8181434",
+        "title": "Nhà Thờ Chính Tòa Đức Maria Mẹ Thiên Chúa",
+        "city": "Bà Rịa",
+        "totalScore": 4.1,
+        "ranking": "49/92",
+        "reviewsCount": 7,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Thờ Chính Tòa Đức Maria Mẹ Thiên Chúa ở Bà Rịa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.1/5 từ 7 lượt review. Xếp hạng: 49/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/e7/96/d0/grounds-of-the-cathedral.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.16999,
+                10.496557
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12051522",
+        "title": "Trung Tâm Thương Mại Imperial Plaza",
+        "city": "Vũng Tàu",
+        "totalScore": 2.4,
+        "ranking": "75/92",
+        "reviewsCount": 14,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trung Tâm Thương Mại Imperial Plaza ở Vũng Tàu. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 2.4/5 từ 14 lượt review. Xếp hạng: 75/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/ab/44/6c/imperial-plaza-shopping.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.09478,
+                10.34311
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "9721588",
+        "title": "Địa đạo Kim Long",
+        "city": "Vũng Tàu",
+        "totalScore": 3.8,
+        "ranking": "42/92",
+        "reviewsCount": 13,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Địa đạo Kim Long ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.8/5 từ 13 lượt review. Xếp hạng: 42/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/28/35/d3/entrance-to-the-temple.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7623401",
+        "title": "Martyrs' Memorial",
+        "city": "Vũng Tàu",
+        "totalScore": 3.9,
+        "ranking": "37/92",
+        "reviewsCount": 20,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Martyrs' Memorial ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.9/5 từ 20 lượt review. Xếp hạng: 37/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/43/c4/2a/martyrs-memorial.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.18634,
+                10.49139
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13979067",
+        "title": "Chùa Khỉ (Thiền Viện Trúc Lâm)",
+        "city": "Vũng Tàu",
+        "totalScore": 3.6,
+        "ranking": "47/92",
+        "reviewsCount": 8,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Khỉ (Thiền Viện Trúc Lâm) ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.6/5 từ 8 lượt review. Xếp hạng: 47/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/ff/ad/63/mange-smukke-skulpturer.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10088605",
+        "title": "Bãi Dứa",
+        "city": "Vũng Tàu",
+        "totalScore": 3.3,
+        "ranking": "64/92",
+        "reviewsCount": 12,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bãi Dứa ở Vũng Tàu. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.3/5 từ 12 lượt review. Xếp hạng: 64/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/f8/82/8a/lovely-quiet-beach-especially.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.07388,
+                10.37111
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20087230",
+        "title": "Núi Thị Vải",
+        "city": "Bà Rịa",
+        "totalScore": 5.0,
+        "ranking": "63/92",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Núi Thị Vải ở Bà Rịa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 63/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/dd/aa/25/photo2j_r.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13979051",
+        "title": "Tịnh Xá Ngọc Hải",
+        "city": "Vũng Tàu",
+        "totalScore": 5.0,
+        "ranking": "67/92",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tịnh Xá Ngọc Hải ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 67/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17637382",
+        "title": "War Memorial Statue",
+        "city": "Vũng Tàu",
+        "totalScore": 5.0,
+        "ranking": "65/92",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "War Memorial Statue ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 65/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.08505,
+                10.35461
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7937118",
+        "title": "Phu Hai Prison",
+        "city": "Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.2,
+        "ranking": "33/92",
+        "reviewsCount": 19,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phu Hai Prison ở Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 19 lượt review. Xếp hạng: 33/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/ec/15/b2/phu-hai-prisoninside.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4931365",
+        "title": "Minh Dam Mountain",
+        "city": "Phước Hải",
+        "totalScore": 4.0,
+        "ranking": "46/92",
+        "reviewsCount": 11,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Minh Dam Mountain ở Phước Hải. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.0/5 từ 11 lượt review. Xếp hạng: 46/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/1f/c0/2e/roll-of-honour.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.26092,
+                10.405772
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12295938",
+        "title": "Chùa Trúc Lâm Bảo Sơn",
+        "city": "Vũng Tàu",
+        "totalScore": 5.0,
+        "ranking": "69/92",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Trúc Lâm Bảo Sơn ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 69/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13979057",
+        "title": "Dinh Cô (Long Hải)",
+        "city": "Vũng Tàu",
+        "totalScore": 4.0,
+        "ranking": "71/92",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dinh Cô (Long Hải) ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 71/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14155853",
+        "title": "Công viên Tao Phùng",
+        "city": "Vũng Tàu",
+        "totalScore": 3.7,
+        "ranking": "66/92",
+        "reviewsCount": 3,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Công viên Tao Phùng ở Vũng Tàu. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.7/5 từ 3 lượt review. Xếp hạng: 66/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/14/a1/fd/01/view.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.09919,
+                10.34863
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11885537",
+        "title": "Hồ Tràm Camping",
+        "city": "Vũng Tàu",
+        "totalScore": 0,
+        "ranking": "77/92",
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": "Khu du lịch là điểm đến gần gũi với thiên nhiên, thân thiện với môi trường và tốt cho sức khỏe.",
+        "embedding": null,
+        "searchText": "Hồ Tràm Camping ở Vũng Tàu. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Vui chơi & Giải trí, Thiên nhiên & Công viên. Mô tả: Khu du lịch là điểm đến gần gũi với thiên nhiên, thân thiện với môi trường và tốt cho sức khỏe. Xếp hạng: 77/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Vui chơi & Giải trí",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.53532,
+                10.531462
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14008401",
+        "title": "Bãi Ông Đụng",
+        "city": "Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.0,
+        "ranking": "44/92",
+        "reviewsCount": 9,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bãi Ông Đụng ở Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.0/5 từ 9 lượt review. Xếp hạng: 44/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/98/7b/86/img-20181203-154304-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8095071",
+        "title": "Arena Vungtau",
+        "city": "Vũng Tàu",
+        "totalScore": 0,
+        "ranking": "76/92",
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Arena Vungtau ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Xếp hạng: 76/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.08688,
+                10.3535
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13837243",
+        "title": "Khu bảo Tồn Thiên Nhiên Bình Châu - Phước Bửu",
+        "city": "Bung Rieng",
+        "totalScore": 4.3,
+        "ranking": "48/92",
+        "reviewsCount": 3,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu bảo Tồn Thiên Nhiên Bình Châu - Phước Bửu ở Bung Rieng. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.3/5 từ 3 lượt review. Xếp hạng: 48/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/65/e4/75/mangrove-forest.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.48863,
+                10.536421
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14008384",
+        "title": "Hang Đá Đức Mẹ",
+        "city": "Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.0,
+        "ranking": "68/92",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hang Đá Đức Mẹ ở Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 68/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/24/ae/98/hidden-con-dao.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14007227",
+        "title": "Dinh Chúa Đảo",
+        "city": "Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.5,
+        "ranking": "60/92",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dinh Chúa Đảo ở Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 60/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/24/b3/5a/colonial-architecture.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.05214,
+                10.58276
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13979403",
+        "title": "Nhà lưu niệm Võ Thị Sáu",
+        "city": "Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.3,
+        "ranking": "56/92",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà lưu niệm Võ Thị Sáu ở Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 4 lượt review. Xếp hạng: 56/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/15/59/5e/vo-thi-sau-monument.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.08569,
+                10.37616
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14007249",
+        "title": "Hồ An Hải",
+        "city": "Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 3.8,
+        "ranking": "57/92",
+        "reviewsCount": 6,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hồ An Hải ở Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.8/5 từ 6 lượt review. Xếp hạng: 57/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/24/af/e3/an-hai.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "2643816",
+        "title": "Sky Park On The Big Mountain",
+        "city": "Bà Rịa",
+        "totalScore": 2.8,
+        "ranking": "73/92",
+        "reviewsCount": 12,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sky Park On The Big Mountain ở Bà Rịa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 2.8/5 từ 12 lượt review. Xếp hạng: 73/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/47/31/59/fishing-on-lake.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27121150",
+        "title": "Hamptons Beach Ho Tram",
+        "city": "Hồ Tràm",
+        "totalScore": 5.0,
+        "ranking": "2/92",
+        "reviewsCount": 162,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hamptons Beach Ho Tram ở Hồ Tràm. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 162 lượt review. Xếp hạng: 2/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/00/fa/4b/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.43677,
+                10.473301
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25384334",
+        "title": "Thiền Tôn Phật Quang",
+        "city": "Phú Mỹ",
+        "totalScore": 5.0,
+        "ranking": "8/92",
+        "reviewsCount": 31,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": "Khi đến Bà Rịa Vũng Tàu, bạn chắc chắn sẽ không thể bỏ qua một địa điểm vô cùng ấn tượng. Nơi đây không chỉ sở hữu khung cảnh thiên nhiên đẹp bình yên, mà còn là một ngôi nhà tâm linh được hàng vạn người ở cả trong và ngoài nước cùng trở về. Đó chính là ngôi chùa Thiền Tôn Phật Quang, tọa lạc tại thung lũng Núi Dinh, thôn Chu Hải, xã Tân Hải, thị xã Phú Mỹ, tỉnh Bà Rịa - Vũng Tàu do Thượng tọa Thích Chân Quang - Giảng sư Phật học, Tiến sĩ Luật học làm Viện chủ cùng hơn 200 vị Tăng Ni tu hành rất đỗi đơn sơ, bình dị mà vô cùng ấm áp.",
+        "embedding": null,
+        "searchText": "Thiền Tôn Phật Quang ở Phú Mỹ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Mô tả: Khi đến Bà Rịa Vũng Tàu, bạn chắc chắn sẽ không thể bỏ qua một địa điểm vô cùng ấn tượng. Nơi đây không chỉ sở hữu khung cảnh thiên nhiên đẹp bình yên, mà còn là một ngôi nhà tâm linh được hàng vạn người ở cả trong và ngoài nước cùng trở về. Đó chính là ngôi chùa Thiền Tôn Phật Quang, tọa lạc tại thung lũng Núi Dinh, thôn Chu Hải, xã Tân Hải, thị xã Phú Mỹ, tỉnh Bà Rịa - Vũng Tàu do Thượng tọa Thích Chân Quang - Giảng sư Phật học, Tiến sĩ Luật học làm Viện chủ cùng hơn 200 vị Tăng Ni tu hành rất đỗi đơn sơ, bình dị mà vô cùng ấm áp. Đánh giá: 5.0/5 từ 31 lượt review. Xếp hạng: 8/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/86/dd/20/i-often-come-here-during.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.12608,
+                10.523822
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "4795455",
+        "title": "The Doppel Mayer Cable Car",
+        "city": "Vũng Tàu",
+        "totalScore": 3.7,
+        "ranking": "25/92",
+        "reviewsCount": 46,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Doppel Mayer Cable Car ở Vũng Tàu. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Phương tiện giao thông. Đánh giá: 3.7/5 từ 46 lượt review. Xếp hạng: 25/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Phương tiện giao thông"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/19/f6/f0/the-doppel-mayer-cable.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.06603,
+                10.351719
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27121209",
+        "title": "The Hamptons Pier Hồ Tràm",
+        "city": "Phuoc Thuan",
+        "totalScore": 4.7,
+        "ranking": "26/92",
+        "reviewsCount": 13,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Hamptons Pier Hồ Tràm ở Phuoc Thuan. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.7/5 từ 13 lượt review. Xếp hạng: 26/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/6f/69/0b/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.39368,
+                10.46831
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25169312",
+        "title": "Hamptons Plaza Ho Tram",
+        "city": "Hồ Tràm",
+        "totalScore": 4.3,
+        "ranking": "27/92",
+        "reviewsCount": 23,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hamptons Plaza Ho Tram ở Hồ Tràm. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 4.3/5 từ 23 lượt review. Xếp hạng: 27/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/6f/60/be/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.392944,
+                10.471043
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34244707",
+        "title": "Wonder Museum Ho Tram",
+        "city": "Hồ Tràm",
+        "totalScore": 5.0,
+        "ranking": "50/92",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Wonder Museum Ho Tram ở Hồ Tràm. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Công viên nước & giải trí, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 50/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/9a/74/cd/wonder-museum-ho-tram.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.60173,
+                10.81683
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27534106",
+        "title": "Côn Đảo National Park",
+        "city": "Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 5.0,
+        "ranking": "51/92",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Côn Đảo National Park ở Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 51/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/ce/ca/94/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.59784,
+                8.698068
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26585644",
+        "title": "Ba Ria Vung Tau Provincial Museum",
+        "city": "Vũng Tàu",
+        "totalScore": 5.0,
+        "ranking": "53/92",
+        "reviewsCount": 1,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ba Ria Vung Tau Provincial Museum ở Vũng Tàu. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 53/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/58/12/be/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.06893,
+                10.350079
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33063869",
+        "title": "Thánh Thất Tân Hòa",
+        "city": "Vũng Tàu",
+        "totalScore": 5.0,
+        "ranking": "54/92",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thánh Thất Tân Hòa ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 54/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/93/a5/c7/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.214096,
+                21.401525
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33062434",
+        "title": "Chùa Hộ Pháp",
+        "city": "Vũng Tàu",
+        "totalScore": 5.0,
+        "ranking": "55/92",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Hộ Pháp ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 55/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/91/91/6a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.244804,
+                10.652088
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27956701",
+        "title": "Vape Pod Xuyên Mộc",
+        "city": "Xuyen Moc",
+        "totalScore": 5.0,
+        "ranking": "58/92",
+        "reviewsCount": 1,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vape Pod Xuyên Mộc ở Xuyen Moc. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 58/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2c/d5/71/6b/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.41449,
+                10.540483
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-23:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1410
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25415377",
+        "title": "Công Viên Nhiệt Đới",
+        "city": "Binh Chau",
+        "totalScore": 5.0,
+        "ranking": "59/92",
+        "reviewsCount": 1,
+        "category": "Công viên nước & giải trí",
+        "priceRange": null,
+        "description": "Tropicana Park là công viên nước theo phong cách Polynesia từ Thái Bình Dương độc đáo, tọa lạc tại Hồ Tràm – Bình Châu, huyện Xuyên Mộc, tỉnh Bà Rịa – Vũng Tàu. Đến Tropicana Park, du khách có thể khám phá ngay thiên đường dưới nước với nhiều trải nghiệm mới lạ cùng các hoạt động – trò chơi dưới nước vô cùng hấp dẫn. Ấn tượng đầu tiên về Tropicana Park là bối cảnh các trò chơi có bối cảnh mang đậm sắc màu đảo Hawaii, mang đến vô số những điểm check-in đặc sắc và độc đáo để du khách lưu lại những bức ảnh ‘triệu like’.",
+        "embedding": null,
+        "searchText": "Công Viên Nhiệt Đới ở Binh Chau. Loại địa điểm: Công viên nước & giải trí. Tags: Điểm du lịch, Công viên nước & giải trí. Mô tả: Tropicana Park là công viên nước theo phong cách Polynesia từ Thái Bình Dương độc đáo, tọa lạc tại Hồ Tràm – Bình Châu, huyện Xuyên Mộc, tỉnh Bà Rịa – Vũng Tàu. Đến Tropicana Park, du khách có thể khám phá ngay thiên đường dưới nước với nhiều trải nghiệm mới lạ cùng các hoạt động – trò chơi dưới nước vô cùng hấp dẫn. Ấn tượng đầu tiên về Tropicana Park là bối cảnh các trò chơi có bối cảnh mang đậm sắc màu đảo Hawaii, mang đến vô số những điểm check-in đặc sắc và độc đáo để du khách lưu lại những bức ảnh ‘triệu like’. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 59/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/bb/f9/36/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.53255,
+                10.533768
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1050
+                    }
+                ],
+                [],
+                [],
+                [],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34103891",
+        "title": "Nirvana Vihara",
+        "city": "Vũng Tàu",
+        "totalScore": 4.0,
+        "ranking": "61/92",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nirvana Vihara ở Vũng Tàu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 61/92.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.076775,
+                10.330456
+            ]
+        },
+        "openingHours": null
+    }
+]

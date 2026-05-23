@@ -1,0 +1,382 @@
+[
+    {
+        "sourceLocationId": "4795489",
+        "title": "Viet Artisans",
+        "city": "Vĩnh Long",
+        "totalScore": 4.5,
+        "ranking": "1/12",
+        "reviewsCount": 19,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Viet Artisans ở Vĩnh Long. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 19 lượt review. Xếp hạng: 1/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/04/8e/9b/13/viet-artisans.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17595567",
+        "title": "Chợ Vĩnh Long",
+        "city": "Vĩnh Long",
+        "totalScore": 4.0,
+        "ranking": "4/12",
+        "reviewsCount": 4,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Vĩnh Long ở Vĩnh Long. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 4.0/5 từ 4 lượt review. Xếp hạng: 4/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/d0/db/bb/photo3jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97232,
+                10.25617
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19546705",
+        "title": "Phà An Bình",
+        "city": "Vĩnh Long",
+        "totalScore": 2.7,
+        "ranking": "7/12",
+        "reviewsCount": 7,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phà An Bình ở Vĩnh Long. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Phương tiện giao thông. Đánh giá: 2.7/5 từ 7 lượt review. Xếp hạng: 7/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Phương tiện giao thông"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/d7/a2/6d/scooters-riding-off-the.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.96923,
+                10.25694
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19546700",
+        "title": "Vinh Long Provincial Museum",
+        "city": "Vĩnh Long",
+        "totalScore": 4.0,
+        "ranking": "5/12",
+        "reviewsCount": 1,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vinh Long Provincial Museum ở Vĩnh Long. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 5/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/2a/c0/ab/vinh-long-provincial.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97139,
+                10.25786
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17424090",
+        "title": "Chùa Khmer Phù Ly",
+        "city": "Bình Minh",
+        "totalScore": 4.0,
+        "ranking": "6/12",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Khmer Phù Ly ở Bình Minh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 6/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.87576,
+                10.00165
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25188324",
+        "title": "Coop Mart Vinh Long",
+        "city": "Vĩnh Long",
+        "totalScore": 0,
+        "ranking": "2/12",
+        "reviewsCount": 0,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Coop Mart Vinh Long ở Vĩnh Long. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Thông tin cho khách du lịch. Xếp hạng: 2/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97074,
+                10.255142
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33875409",
+        "title": "Giáo xứ Long Mỹ",
+        "city": "Vĩnh Long",
+        "totalScore": 5.0,
+        "ranking": "3/12",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Giáo xứ Long Mỹ ở Vĩnh Long. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 3/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/50/69/a7/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.08316,
+                10.236263
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34123791",
+        "title": "Tombeau de M. Ham Huynh Ki",
+        "city": "Vĩnh Long",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tombeau de M. Ham Huynh Ki ở Vĩnh Long. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.75309,
+                10.592933
+            ]
+        },
+        "openingHours": null
+    }
+]

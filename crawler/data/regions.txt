@@ -1,22 +1,22 @@
-    Ha Noi	293924
-    Hue	2146376
-    Lai Chau	2146215
-    Dien Bien	2146202
-    Son La	12612245
-    Lang Son	2146219
-    Quang Ninh	2146283
-    Thanh Hoa	2146327
-    Nghe An	2146235
-    Ha Tinh	3312572
-    Cao Bang	2146194
-    Tuyen Quang	2146335
-    Lao Cai	2146220
-    Thai Nguyen	2146324
-    Phu Tho	4355226
-    Bac Ninh	2145106
-    Hung Yen	12875227
-    Hai Phong	303944
-    Ninh Binh	2146239
+Ha Noi	293924
+Hue	2146376
+Lai Chau	2146215
+Dien Bien	2146202
+Son La	12612245
+Lang Son	2146219
+Quang Ninh	2146283
+Thanh Hoa	2146327
+Nghe An	2146235
+Ha Tinh	3312572
+Cao Bang	2146194
+Tuyen Quang	2146335
+Lao Cai	2146220
+Thai Nguyen	2146324
+Phu Tho	4355226
+Bac Ninh	2145106
+Hung Yen	12875227
+Hai Phong	303944
+Ninh Binh	2146239
 Quang Tri	2146290
 Da Nang	298085
 Quang Ngai	2146276

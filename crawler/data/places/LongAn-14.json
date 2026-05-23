@@ -1,0 +1,576 @@
+[
+    {
+        "sourceLocationId": "15815697",
+        "title": "Làng Nổi Tân Lập",
+        "city": "Tỉnh Long An",
+        "totalScore": 5.0,
+        "ranking": "5/14",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Làng Nổi Tân Lập ở Tỉnh Long An. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 5/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/7e/24/64/nhu-m-phen.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.41247,
+                10.53798
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "2226649",
+        "title": "Chợ Cần Đước",
+        "city": "Can Duoc",
+        "totalScore": 4.7,
+        "ranking": "4/14",
+        "reviewsCount": 6,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Cần Đước ở Can Duoc. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 4.7/5 từ 6 lượt review. Xếp hạng: 4/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/c4/8b/26/can-duoc-market-long.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17612084",
+        "title": "Khu Du Lịch Cánh Đồng Bất Tận",
+        "city": "Moc Hoa",
+        "totalScore": 5.0,
+        "ranking": "10/14",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu Du Lịch Cánh Đồng Bất Tận ở Moc Hoa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 10/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/e8/88/f9/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19296697",
+        "title": "Mekong Delta Homestay",
+        "city": "Ben Luc",
+        "totalScore": 4.9,
+        "ranking": "1/2",
+        "reviewsCount": 55,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "At Family Tiny Garden, the hustle and bustle of life slows down, allowing you to fully enjoy every peaceful moment. A tranquil countryside setting with lush green coconut trees, organic vegetable gardens, lotus ponds, recreational fishing, visits to fruit orchards, and beautiful ripening rice fields…",
+        "embedding": null,
+        "searchText": "Mekong Delta Homestay ở Ben Luc. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Khác, Chuyến tham quan bằng thuyền & thể thao dưới nước, Phương tiện giao thông, Hoạt động ngoài trời. Mô tả: At Family Tiny Garden, the hustle and bustle of life slows down, allowing you to fully enjoy every peaceful moment. A tranquil countryside setting with lush green coconut trees, organic vegetable gardens, lotus ponds, recreational fishing, visits to fruit orchards, and beautiful ripening rice fields… Đánh giá: 4.9/5 từ 55 lượt review. Xếp hạng: 1/2.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Khác",
+            "Chuyến tham quan bằng thuyền & thể thao dưới nước",
+            "Phương tiện giao thông",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/30/89/66/62/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.75259,
+                10.80563
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-23:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1410
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33056894",
+        "title": "Herping Tour Vietnam - Guide Diệp Tùng",
+        "city": "Ben Luc",
+        "totalScore": 5.0,
+        "ranking": "2/14",
+        "reviewsCount": 10,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Herping Tour Vietnam - Guide Diệp Tùng ở Ben Luc. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Thông tin cho khách du lịch. Đánh giá: 5.0/5 từ 10 lượt review. Xếp hạng: 2/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/31/59/b6/24/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.55236,
+                10.653804
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16731523",
+        "title": "West Lakes Golf & Villas",
+        "city": "Tỉnh Long An",
+        "totalScore": 4.5,
+        "ranking": "2/5",
+        "reviewsCount": 11,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "West Lakes Golf & Villas là một điểm đến mới vừa xuất hiện trong ngành công nghiệp golf Việt Nam. Đây là sân golf 18 lỗ đầu tiên nằm ở phía Tây thành phố Hồ Chí Minh được xây dựng hoàn thiện vào cuối năm 2018. Công trình tích hợp đầy đủ tiện nghi của Clubhouse và sân tập, sẽ được bổ sung 9 lỗ golf để trở thành sân golf 27 lỗ với khu dân cư và khu biệt thự đang xây dựng và sẽ hoành thành vào năm 2019. Sân golf West Lakes được thiết kế bởi công ty Thomson Perrett – một công ty uy tín với danh tiếng vang dội của Peter Thomson là nhà sáng lập và cũng là người đã 5 lần chiến thắng giải Anh mở rộng. Công ty thiết kế đẳng cấp thế giới này với trụ sở được đặt tại Melbourne, Úc đã có hơn 250 dự án thành công trên toàn cầu.",
+        "embedding": null,
+        "searchText": "West Lakes Golf & Villas ở Tỉnh Long An. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Hoạt động ngoài trời. Mô tả: West Lakes Golf & Villas là một điểm đến mới vừa xuất hiện trong ngành công nghiệp golf Việt Nam. Đây là sân golf 18 lỗ đầu tiên nằm ở phía Tây thành phố Hồ Chí Minh được xây dựng hoàn thiện vào cuối năm 2018. Công trình tích hợp đầy đủ tiện nghi của Clubhouse và sân tập, sẽ được bổ sung 9 lỗ golf để trở thành sân golf 27 lỗ với khu dân cư và khu biệt thự đang xây dựng và sẽ hoành thành vào năm 2019. Sân golf West Lakes được thiết kế bởi công ty Thomson Perrett – một công ty uy tín với danh tiếng vang dội của Peter Thomson là nhà sáng lập và cũng là người đã 5 lần chiến thắng giải Anh mở rộng. Công ty thiết kế đẳng cấp thế giới này với trụ sở được đặt tại Melbourne, Úc đã có hơn 250 dự án thành công trên toàn cầu. Đánh giá: 4.5/5 từ 11 lượt review. Xếp hạng: 2/5.",
+        "tags": [
+            "Điểm du lịch",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/a7/67/40/di-u-ki-n-tuy-t-d-p-day.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.36358,
+                10.981248
+            ]
+        },
+        "openingHours": {
+            "display": "05:30-20:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15236905",
+        "title": "Jump Arena",
+        "city": "Tân An",
+        "totalScore": 4.2,
+        "ranking": "1/1",
+        "reviewsCount": 5,
+        "category": "Vui chơi & Giải trí",
+        "priceRange": null,
+        "description": "Jump Arena – trung tâm vui chơi giải trí bạt nhún đầu tiên và lớn nhất tại Việt Nam. Tại đây, bạn sẽ có được những phút giây thư giãn thoải mái khi hoạt động tích cực trên tấm bạt nhún khổng lồ để bạn giải phóng năng lượng và đem lại cho bạn một cơ thể cân đối cùng với niềm vui và sự tự do để khám phá sức mạnh của bản thân.",
+        "embedding": null,
+        "searchText": "Jump Arena ở Tân An. Loại địa điểm: Vui chơi & Giải trí. Tags: Điểm du lịch, Vui chơi & Giải trí. Mô tả: Jump Arena – trung tâm vui chơi giải trí bạt nhún đầu tiên và lớn nhất tại Việt Nam. Tại đây, bạn sẽ có được những phút giây thư giãn thoải mái khi hoạt động tích cực trên tấm bạt nhún khổng lồ để bạn giải phóng năng lượng và đem lại cho bạn một cơ thể cân đối cùng với niềm vui và sự tự do để khám phá sức mạnh của bản thân. Đánh giá: 4.2/5 từ 5 lượt review. Xếp hạng: 1/1.",
+        "tags": [
+            "Điểm du lịch",
+            "Vui chơi & Giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/0c/71/ad/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.41247,
+                10.53798
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25179226",
+        "title": "Dana",
+        "city": "Ben Luc",
+        "totalScore": 5.0,
+        "ranking": "1/1",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "I'm a tour guide for more than 10 years. I am from Mekong, south west of Saigon. \nJoin me like a friend, I would guide you in the local way and touch the Mekong with the rice file, cycling, cooking class, BBQ Vietnammes dishes and boat ride.\n\n",
+        "embedding": null,
+        "searchText": "Dana ở Ben Luc. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Đồ ăn & Đồ uống, Lớp học & hội thảo, Chuyến tham quan, Khác, Chuyến tham quan bằng thuyền & thể thao dưới nước, Phương tiện giao thông, Hoạt động ngoài trời. Mô tả: I'm a tour guide for more than 10 years. I am from Mekong, south west of Saigon. \nJoin me like a friend, I would guide you in the local way and touch the Mekong with the rice file, cycling, cooking class, BBQ Vietnammes dishes and boat ride.\n\n Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 1/1.",
+        "tags": [
+            "Điểm du lịch",
+            "Đồ ăn & Đồ uống",
+            "Lớp học & hội thảo",
+            "Chuyến tham quan",
+            "Khác",
+            "Chuyến tham quan bằng thuyền & thể thao dưới nước",
+            "Phương tiện giao thông",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/27/13/0a/af/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33341024",
+        "title": "LONG AN PRIVATE CAR",
+        "city": "Tân An",
+        "totalScore": 0,
+        "ranking": "3/3",
+        "reviewsCount": 0,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": "Mui ne Private car Company offers private transfer service from/to Long An with basic English speaking Driver. From luxurious sedans to spacious SUVs, these rental services cater to various needs and preferences, providing a range of vehicles equipped for comfort and convenience.",
+        "embedding": null,
+        "searchText": "LONG AN PRIVATE CAR ở Tân An. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Khác, Phương tiện giao thông. Mô tả: Mui ne Private car Company offers private transfer service from/to Long An with basic English speaking Driver. From luxurious sedans to spacious SUVs, these rental services cater to various needs and preferences, providing a range of vehicles equipped for comfort and convenience. Xếp hạng: 3/3.",
+        "tags": [
+            "Điểm du lịch",
+            "Khác",
+            "Phương tiện giao thông"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/30/89/8b/cd/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23696577",
+        "title": "Lavilla Green City",
+        "city": "Tân An",
+        "totalScore": 5.0,
+        "ranking": "3/5",
+        "reviewsCount": 1,
+        "category": "Chuyến tham quan",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lavilla Green City ở Tân An. Loại địa điểm: Chuyến tham quan. Tags: Điểm du lịch, Chuyến tham quan. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 3/5.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/20/10/66/b1/phoi-c-nh-c-u-vang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.405266,
+                10.555504
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32766939",
+        "title": "Danang Scavenger Hunt",
+        "city": "Tan My",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Chuyến tham quan",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Danang Scavenger Hunt ở Tan My. Loại địa điểm: Chuyến tham quan. Tags: Điểm du lịch, Chuyến tham quan.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.627594,
+                10.85108
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32699852",
+        "title": "Can Tho Tourism Viet Nam",
+        "city": "Tân An",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Can Tho Tourism Viet Nam ở Tân An. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/80/06/7a/floating-market-tour.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.658966,
+                10.751434
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25212375",
+        "title": "Chavi Garden",
+        "city": "Ben Luc",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": "Khu du lịch sinh thái giáo dục trải nghiệm",
+        "embedding": null,
+        "searchText": "Chavi Garden ở Ben Luc. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Mô tả: Khu du lịch sinh thái giáo dục trải nghiệm",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/26/ea/9f/vui-choi-t-i-chavi-garden.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.41392,
+                10.854798
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "455165",
+        "title": "Route 1",
+        "city": "Tỉnh Long An",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Route 1 ở Tỉnh Long An. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    }
+]

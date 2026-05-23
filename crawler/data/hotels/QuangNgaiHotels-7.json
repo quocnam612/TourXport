@@ -1,0 +1,207 @@
+[
+    {
+        "sourceLocationId": "17793639",
+        "title": "Cocoland Riverfront Resort & Wellness",
+        "city": "Quảng Ngãi",
+        "totalScore": 3.4,
+        "ranking": null,
+        "reviewsCount": 18,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cocoland Riverfront Resort & Wellness ở Quảng Ngãi. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 3.4/5 từ 18 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/bf/3a/21/cocoland-river-beach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.89457,
+                15.095693
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10619059",
+        "title": "Mường Thanh Holiday Lý Sơn",
+        "city": "Quảng Ngãi",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 375,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mường Thanh Holiday Lý Sơn ở Quảng Ngãi. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 375 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/5c/38/cd/hotel-from-flycam.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.11635,
+                15.371173
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19790034",
+        "title": "Quang Ngai Hostel",
+        "city": "Quảng Ngãi",
+        "totalScore": 5.0,
+        "ranking": null,
+        "reviewsCount": 1,
+        "category": "Cơ sở lưu trú đặc biệt",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quang Ngai Hostel ở Quảng Ngãi. Loại địa điểm: Cơ sở lưu trú đặc biệt. Tags: Khách sạn, Cơ sở lưu trú đặc biệt. Đánh giá: 5.0/5 từ 1 lượt review.",
+        "tags": [
+            "Khách sạn",
+            "Cơ sở lưu trú đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/22/09/2c/3c/room.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.78763,
+                15.13034
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "645796",
+        "title": "Central Hotel",
+        "city": "Quảng Ngãi",
+        "totalScore": 2.5,
+        "ranking": null,
+        "reviewsCount": 55,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Central Hotel ở Quảng Ngãi. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 2.5/5 từ 55 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/23/25/de/82/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.807594,
+                15.113348
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8353005",
+        "title": "Thien An Riverside Hotel",
+        "city": "Quảng Ngãi",
+        "totalScore": 2.1,
+        "ranking": null,
+        "reviewsCount": 19,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thien An Riverside Hotel ở Quảng Ngãi. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 2.1/5 từ 19 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/03/6b/02/thien-an-riverside-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.7961,
+                15.13324
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4200312",
+        "title": "Khách sạn Hùng Vương",
+        "city": "Quảng Ngãi",
+        "totalScore": 2.5,
+        "ranking": null,
+        "reviewsCount": 6,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Hùng Vương ở Quảng Ngãi. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 2.5/5 từ 6 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/05/2c/4a/dd/front-of-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.802666,
+                15.123132
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "3795016",
+        "title": "Khu Nghỉ Dưỡng Sa Huỳnh",
+        "city": "Quảng Ngãi",
+        "totalScore": 3.3,
+        "ranking": null,
+        "reviewsCount": 45,
+        "category": "B&B",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu Nghỉ Dưỡng Sa Huỳnh ở Quảng Ngãi. Loại địa điểm: B&B. Tags: Khách sạn, B&B. Đánh giá: 3.3/5 từ 45 lượt review.",
+        "tags": [
+            "Khách sạn",
+            "B&B"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/b5/22/b0/here-s-both-the-pool.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.0648,
+                14.649811
+            ]
+        },
+        "openingHours": null
+    }
+]

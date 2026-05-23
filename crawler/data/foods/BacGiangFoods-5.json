@@ -1,0 +1,280 @@
+[
+    {
+        "sourceLocationId": "24136292",
+        "title": "Nhà Hàng Hải Sản Ghẹ Xanh Bắc Giang",
+        "city": "Bac Giang",
+        "totalScore": 5.0,
+        "ranking": "1/3",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "Nhà hàng hải sản Ghẹ Xanh là nhà hàng hải sản nổi tiếng nhất Bắc Giang. Với thực đơn phong phú với trên 70 món ăn được chế biến nghệ thuật bởi bàn tay khéo léo của các đầu bếp nổi tiếng trên khắp đất nước. Tại đây nguồn hải sản phong phú, luôn tươi sống và được lựa kỹ càng từ các vùng biển nổi tiếng Việt Nam. Đến với hải sản Ghẹ Xanh bạn như được hòa mình vào thiên nhiên. Nhà hàng được thiết kế không gian mở 100%, các phòng đều đón ánh sáng tự nhiên và được bao quanh bởi những hàng cây xanh. Hệ thống phòng VIP mỗi phòng mang một phong cách khác nhau. Hệ thống âm thanh ánh sáng chuyên nghiệp hiện đại, được trang bị màn hình led lớn và karaoke sống động nhằm mang đến cho thực khách những trải nghiệm tốt nhất. Trong cái nhìn của các chuyên gia và kiến trúc sư hải sản Ghẹ Xanh được đánh giá là nhà hàng có diện tích lớn nhất miền Bắc với thiết kế đậm chất Đông Dương. Đối với các tín đồ check in hải sản ghẹ xanh là nơi có nhiều góc check in bậc nhất. Chất lượng dịch vụ hàng đầu, nhân viên phục vụ chuyên nghiệp, nhiệt tình và chu đáo. Nhà hàng hải sản Ghẹ Xanh chính là lựa chọn số 1 của thực khách.",
+        "embedding": null,
+        "searchText": "Nhà Hàng Hải Sản Ghẹ Xanh Bắc Giang ở Bac Giang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà hàng hải sản Ghẹ Xanh là nhà hàng hải sản nổi tiếng nhất Bắc Giang. Với thực đơn phong phú với trên 70 món ăn được chế biến nghệ thuật bởi bàn tay khéo léo của các đầu bếp nổi tiếng trên khắp đất nước. Tại đây nguồn hải sản phong phú, luôn tươi sống và được lựa kỹ càng từ các vùng biển nổi tiếng Việt Nam. Đến với hải sản Ghẹ Xanh bạn như được hòa mình vào thiên nhiên. Nhà hàng được thiết kế không gian mở 100%, các phòng đều đón ánh sáng tự nhiên và được bao quanh bởi những hàng cây xanh. Hệ thống phòng VIP mỗi phòng mang một phong cách khác nhau. Hệ thống âm thanh ánh sáng chuyên nghiệp hiện đại, được trang bị màn hình led lớn và karaoke sống động nhằm mang đến cho thực khách những trải nghiệm tốt nhất. Trong cái nhìn của các chuyên gia và kiến trúc sư hải sản Ghẹ Xanh được đánh giá là nhà hàng có diện tích lớn nhất miền Bắc với thiết kế đậm chất Đông Dương. Đối với các tín đồ check in hải sản ghẹ xanh là nơi có nhiều góc check in bậc nhất. Chất lượng dịch vụ hàng đầu, nhân viên phục vụ chuyên nghiệp, nhiệt tình và chu đáo. Nhà hàng hải sản Ghẹ Xanh chính là lựa chọn số 1 của thực khách. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 1/3. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/24/37/39/fc/nha-hang-h-i-s-n-gh-xanh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.20224,
+                21.26671
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28647517",
+        "title": "Mandala Dimsum Corner",
+        "city": "Bac Giang",
+        "totalScore": 5.0,
+        "ranking": "2/3",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mandala Dimsum Corner ở Bac Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 2/3.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.1946,
+                21.27307
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12588446",
+        "title": "Cao Lan Cuisine",
+        "city": "Bac Giang",
+        "totalScore": 5.0,
+        "ranking": "3/3",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "52.632 ₫ - 2.631.579 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Cao Lan Cuisine ở Bac Giang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 3/3. Giá: 52.632 ₫ - 2.631.579 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/ba/ce/a3/hot-pot.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.19871,
+                21.28113
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34275027",
+        "title": "Royale Lounge - Danang Halal Restaurant",
+        "city": "Đà Nẵng",
+        "totalScore": 5.0,
+        "ranking": "613/1751",
+        "reviewsCount": 4,
+        "category": "Ngồi xuống",
+        "priceRange": "1.184.210.560 ₫ - 2.147.483.647 ₫",
+        "description": "Discover a refined Halal dining experience at Royale Lounge. Royale Lounge at Peninsula Hotel Danang is officially recognized for serving Halal-compliant cuisine — welcoming Muslim travelers to enjoy a refined dining experience above the city. For those seeking a Halal dining experience in Da Nang, we invite you to our restaurant, an elegant setting overlooking the ocean and city skyline. Thoughtfully prepared according to Halal standards, our menu brings together authentic Vietnamese flavors and international favorites, served in an elegant setting on Level 28. Located on the top floor of the hotel, Royale Lounge unveils a 360-degree panorama embracing Da Nang from the poetic My Khe Beach to the lush greenery of Son Tra Peninsula.",
+        "embedding": null,
+        "searchText": "Royale Lounge - Danang Halal Restaurant ở Đà Nẵng. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Discover a refined Halal dining experience at Royale Lounge. Royale Lounge at Peninsula Hotel Danang is officially recognized for serving Halal-compliant cuisine — welcoming Muslim travelers to enjoy a refined dining experience above the city. For those seeking a Halal dining experience in Da Nang, we invite you to our restaurant, an elegant setting overlooking the ocean and city skyline. Thoughtfully prepared according to Halal standards, our menu brings together authentic Vietnamese flavors and international favorites, served in an elegant setting on Level 28. Located on the top floor of the hotel, Royale Lounge unveils a 360-degree panorama embracing Da Nang from the poetic My Khe Beach to the lush greenery of Son Tra Peninsula. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 613/1751. Giá: 1.184.210.560 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/33/2e/a3/45/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.16512,
+                21.270681
+            ]
+        },
+        "openingHours": {
+            "display": "11:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28111801",
+        "title": "Kha Chill",
+        "city": "Bac Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kha Chill ở Bac Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.10018,
+                21.204056
+            ]
+        },
+        "openingHours": null
+    }
+]

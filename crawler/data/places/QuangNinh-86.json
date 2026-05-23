@@ -1,0 +1,4310 @@
+[
+    {
+        "sourceLocationId": "1968469",
+        "title": "Vịnh Hạ Long",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 4.5,
+        "ranking": "4/86",
+        "reviewsCount": 11851,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vịnh Hạ Long ở Vịnh Hạ Long. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 11851 lượt review. Xếp hạng: 4/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/5a/42/f0/photo2jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.02037,
+                20.898792
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "2155607",
+        "title": "Vịnh Bái Tử Long",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 4.8,
+        "ranking": "1/86",
+        "reviewsCount": 1039,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vịnh Bái Tử Long ở Vịnh Hạ Long. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.8/5 từ 1039 lượt review. Xếp hạng: 1/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/01/e7/28/49/deck-on-red-dragon.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.246475,
+                20.98311
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8046720",
+        "title": "Pont Bai Chay",
+        "city": "Bai Chay",
+        "totalScore": 4.4,
+        "ranking": "20/86",
+        "reviewsCount": 15,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pont Bai Chay ở Bai Chay. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.4/5 từ 15 lượt review. Xếp hạng: 20/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/4a/f6/d1/cay-cau-1-1-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.03891,
+                20.95205
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11893961",
+        "title": "Sun World Ha Long",
+        "city": "Bai Chay",
+        "totalScore": 4.0,
+        "ranking": "11/86",
+        "reviewsCount": 205,
+        "category": "Công viên nước & giải trí",
+        "priceRange": null,
+        "description": "Trải rộng trên diện tích 214ha, Sun World Halong Complex là tổ hợp công viên vui chơi giải trí mang đẳng cấp quốc tế bao gồm 2 khu vực chính: Tổ hợp vui chơi ven biển và tổ hợp vui chơi trên đỉnh Ba Đèo – được kết nối với nhau bởi hệ thống cáp treo độc đáo.\n \n Quần thể du lịch giải trí Sun World Halong Complex là sản phẩm của Tập đoàn Sun Group.",
+        "embedding": null,
+        "searchText": "Sun World Ha Long ở Bai Chay. Loại địa điểm: Công viên nước & giải trí. Tags: Điểm du lịch, Công viên nước & giải trí. Mô tả: Trải rộng trên diện tích 214ha, Sun World Halong Complex là tổ hợp công viên vui chơi giải trí mang đẳng cấp quốc tế bao gồm 2 khu vực chính: Tổ hợp vui chơi ven biển và tổ hợp vui chơi trên đỉnh Ba Đèo – được kết nối với nhau bởi hệ thống cáp treo độc đáo.\n \n Quần thể du lịch giải trí Sun World Halong Complex là sản phẩm của Tập đoàn Sun Group. Đánh giá: 4.0/5 từ 205 lượt review. Xếp hạng: 11/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/67/f6/34/sun-world-halong-complex.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.05045,
+                20.953089
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "456290",
+        "title": "Hang Sửng Sốt",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 4.3,
+        "ranking": "2/86",
+        "reviewsCount": 1919,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hang Sửng Sốt ở Vịnh Hạ Long. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.3/5 từ 1919 lượt review. Xếp hạng: 2/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/12/31/5c/sung-sot-cave.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.091484,
+                20.843979
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "2027899",
+        "title": "Động Thiên Cung",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 4.2,
+        "ranking": "5/86",
+        "reviewsCount": 577,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Động Thiên Cung ở Vịnh Hạ Long. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.2/5 từ 577 lượt review. Xếp hạng: 5/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/03/3a/9b/ed/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.01729,
+                20.91271
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "4795456",
+        "title": "Ti Top Island",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 3.9,
+        "ranking": "6/86",
+        "reviewsCount": 1172,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ti Top Island ở Vịnh Hạ Long. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.9/5 từ 1172 lượt review. Xếp hạng: 6/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/dd/dd/41/20171123-084435-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.08028,
+                20.859444
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "456291",
+        "title": "Dau Go Cave",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 4.3,
+        "ranking": "3/86",
+        "reviewsCount": 714,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": "Dau Go Cave (Hang Dau Go) is one of the most stunning and iconic caves in Ha Long Bay, famous for its large chambers, impressive stalactites, and dramatic natural scenery. Located on Dau Go Island, the cave is a popular stop on many Ha Long Bay boat tours. Inside, visitors can explore three spacious chambers filled with unique rock formations shaped over millions of years. Soft lighting highlights the beauty of the stalactites, making it easy to take great photos. Local legends say the cave was once used by General Trần Hưng Đạo, adding historical interest. Dau Go Cave is a must-visit attraction for nature lovers and anyone exploring Ha Long Bay.",
+        "embedding": null,
+        "searchText": "Dau Go Cave ở Vịnh Hạ Long. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Mô tả: Dau Go Cave (Hang Dau Go) is one of the most stunning and iconic caves in Ha Long Bay, famous for its large chambers, impressive stalactites, and dramatic natural scenery. Located on Dau Go Island, the cave is a popular stop on many Ha Long Bay boat tours. Inside, visitors can explore three spacious chambers filled with unique rock formations shaped over millions of years. Soft lighting highlights the beauty of the stalactites, making it easy to take great photos. Local legends say the cave was once used by General Trần Hưng Đạo, adding historical interest. Dau Go Cave is a must-visit attraction for nature lovers and anyone exploring Ha Long Bay. Đánh giá: 4.3/5 từ 714 lượt review. Xếp hạng: 3/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/01/77/a2/89/limestone-caves-halong.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.018654,
+                20.911156
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "1651201",
+        "title": "Castaway Island",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 4.1,
+        "ranking": "8/86",
+        "reviewsCount": 557,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Castaway Island ở Vịnh Hạ Long. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.1/5 từ 557 lượt review. Xếp hạng: 8/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/3d/18/5c/castaway-halong-bay-vietnam.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.03809,
+                20.95024
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15608907",
+        "title": "Rừng Ngập Mặn Tiên Yên",
+        "city": "Tỉnh Quảng Ninh",
+        "totalScore": 3.0,
+        "ranking": "69/86",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Rừng Ngập Mặn Tiên Yên ở Tỉnh Quảng Ninh. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 69/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/ad/47/a1/r-ng-ng-p-m-n-tien-yen.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.95524,
+                21.53265
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17713573",
+        "title": "Clock Tower Roundabout",
+        "city": "Ha Long City",
+        "totalScore": 4.7,
+        "ranking": "29/86",
+        "reviewsCount": 3,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Clock Tower Roundabout ở Ha Long City. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.7/5 từ 3 lượt review. Xếp hạng: 29/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/4b/6f/62/cabalina-grove.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.09788,
+                20.96435
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15292351",
+        "title": "Công Viên Hoa Hạ Long",
+        "city": "Ha Long City",
+        "totalScore": 5.0,
+        "ranking": "32/86",
+        "reviewsCount": 2,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Công Viên Hoa Hạ Long ở Ha Long City. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 32/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/32/4b/70/33/cabalina-grove.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.07218,
+                20.95242
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7915938",
+        "title": "Làng Chài Cửa Vạn",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 4.2,
+        "ranking": "7/86",
+        "reviewsCount": 292,
+        "category": "Khác",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Làng Chài Cửa Vạn ở Vịnh Hạ Long. Loại địa điểm: Khác. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Khác. Đánh giá: 4.2/5 từ 292 lượt review. Xếp hạng: 7/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Khác"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/56/78/60/pescatori.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.16238,
+                20.969112
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9754976",
+        "title": "Bảo tàng tỉnh Quảng Ninh",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 4.2,
+        "ranking": "14/86",
+        "reviewsCount": 56,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bảo tàng tỉnh Quảng Ninh ở Vịnh Hạ Long. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.2/5 từ 56 lượt review. Xếp hạng: 14/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/2d/cd/e6/facade.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.09759,
+                20.948778
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-12:00, 13:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 780,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 780,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 780,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 780,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 780,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 780,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 780,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "6978608",
+        "title": "Đảo Cô Tô",
+        "city": "Tỉnh Quảng Ninh",
+        "totalScore": 4.4,
+        "ranking": "13/86",
+        "reviewsCount": 85,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đảo Cô Tô ở Tỉnh Quảng Ninh. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.4/5 từ 85 lượt review. Xếp hạng: 13/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/49/54/ed/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.75928,
+                20.991093
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11888473",
+        "title": "Núi Bài Thơ",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 3.8,
+        "ranking": "18/86",
+        "reviewsCount": 110,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Núi Bài Thơ ở Vịnh Hạ Long. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.8/5 từ 110 lượt review. Xếp hạng: 18/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/e8/21/7d/img-20180129-170619-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.0791,
+                20.949879
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6537089",
+        "title": "Yen Tu Mountain",
+        "city": "Uong Bi",
+        "totalScore": 4.7,
+        "ranking": "10/86",
+        "reviewsCount": 68,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Yen Tu Mountain ở Uong Bi. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.7/5 từ 68 lượt review. Xếp hạng: 10/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/05/c5/cc/3b/yen-tu-mountain.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.724556,
+                21.090363
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "7940447",
+        "title": "Hon Ga Choi Island",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 4.1,
+        "ranking": "9/86",
+        "reviewsCount": 250,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hon Ga Choi Island ở Vịnh Hạ Long. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.1/5 từ 250 lượt review. Xếp hạng: 9/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/00/de/e9/hon-ga-choi-island.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.025536,
+                20.890854
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13204775",
+        "title": "Hang Tiên Ông",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 4.3,
+        "ranking": "16/86",
+        "reviewsCount": 44,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hang Tiên Ông ở Vịnh Hạ Long. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.3/5 từ 44 lượt review. Xếp hạng: 16/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/63/f7/1e/interno-delle-grotte.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.12296,
+                20.815964
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17379240",
+        "title": "Chợ Hạ Long",
+        "city": "Ha Long City",
+        "totalScore": 3.7,
+        "ranking": "30/86",
+        "reviewsCount": 7,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Hạ Long ở Ha Long City. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 3.7/5 từ 7 lượt review. Xếp hạng: 30/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/9d/a4/f6/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7940528",
+        "title": "Bai Chai Bridge",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 4.2,
+        "ranking": "12/86",
+        "reviewsCount": 78,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bai Chai Bridge ở Vịnh Hạ Long. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 78 lượt review. Xếp hạng: 12/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/2f/48/35/bridge.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.0784,
+                20.948164
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8564698",
+        "title": "Bai Chay Beach",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 3.9,
+        "ranking": "21/86",
+        "reviewsCount": 50,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bai Chay Beach ở Vịnh Hạ Long. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.9/5 từ 50 lượt review. Xếp hạng: 21/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/c8/b2/da/bai-chay-beach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.04961,
+                20.947033
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13646432",
+        "title": "Thien Canh Son Cave",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 3.3,
+        "ranking": "24/86",
+        "reviewsCount": 46,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thien Canh Son Cave ở Vịnh Hạ Long. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.3/5 từ 46 lượt review. Xếp hạng: 24/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/98/86/75/just-some-of-the-boats.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10020705",
+        "title": "Carnaval Hạ Long",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 4.6,
+        "ranking": "25/86",
+        "reviewsCount": 7,
+        "category": "Sự kiện",
+        "priceRange": null,
+        "description": "Lễ hội Hạ Long là lễ hội lớn nhất ở Vịnh Hạ Long, Việt Nam. Du khách từ lâu đã đến khu vực này vì vẻ đẹp rộng lớn với những vách đá vôi và những hòn đảo nhô lên từ mặt nước màu xanh ngọc. Lễ hội Hạ Long tăng lượng khách đến đây bằng cách mời hàng nghìn diễn viên, vũ công, ca sĩ, nhạc sĩ và thậm chí học sinh địa phương để biểu diễn. Chương trình diễu hành đường phố là cách thu hút khách chính của lễ hội với những trang phục đầy màu sắc, âm nhạc địa phương và cả những màn trình diễn trong nước.",
+        "embedding": null,
+        "searchText": "Carnaval Hạ Long ở Vịnh Hạ Long. Loại địa điểm: Sự kiện. Tags: Điểm du lịch, Sự kiện. Mô tả: Lễ hội Hạ Long là lễ hội lớn nhất ở Vịnh Hạ Long, Việt Nam. Du khách từ lâu đã đến khu vực này vì vẻ đẹp rộng lớn với những vách đá vôi và những hòn đảo nhô lên từ mặt nước màu xanh ngọc. Lễ hội Hạ Long tăng lượng khách đến đây bằng cách mời hàng nghìn diễn viên, vũ công, ca sĩ, nhạc sĩ và thậm chí học sinh địa phương để biểu diễn. Chương trình diễu hành đường phố là cách thu hút khách chính của lễ hội với những trang phục đầy màu sắc, âm nhạc địa phương và cả những màn trình diễn trong nước. Đánh giá: 4.6/5 từ 7 lượt review. Xếp hạng: 25/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Sự kiện"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/0f/55/ef/6c/indochine-vintage.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.03905,
+                20.952202
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6925395",
+        "title": "Soi Sim Island",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 4.1,
+        "ranking": "19/86",
+        "reviewsCount": 38,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Soi Sim Island ở Vịnh Hạ Long. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.1/5 từ 38 lượt review. Xếp hạng: 19/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/93/47/e8/soi-sim-island.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.07399,
+                20.849615
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13375904",
+        "title": "Ti Top Beach",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 3.3,
+        "ranking": "28/86",
+        "reviewsCount": 81,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ti Top Beach ở Vịnh Hạ Long. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.3/5 từ 81 lượt review. Xếp hạng: 28/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/fa/2b/16/titop-beach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.08066,
+                20.858252
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8291632",
+        "title": "Trung Tâm Thương Mại Bãi Cháy",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 3.3,
+        "ranking": "66/86",
+        "reviewsCount": 10,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trung Tâm Thương Mại Bãi Cháy ở Vịnh Hạ Long. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 3.3/5 từ 10 lượt review. Xếp hạng: 66/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/fc/e5/5c/bai-chay-commercial-center.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.02284,
+                20.95661
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13567681",
+        "title": "Chùa Long Tiên",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 3.3,
+        "ranking": "55/86",
+        "reviewsCount": 9,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Long Tiên ở Vịnh Hạ Long. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.3/5 từ 9 lượt review. Xếp hạng: 55/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/15/df/75/83/inside-the-compound.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.828026,
+                21.01459
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14108975",
+        "title": "Vườn Cảnh Treo Tranh Việt Nam",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 4.0,
+        "ranking": "67/86",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn Cảnh Treo Tranh Việt Nam ở Vịnh Hạ Long. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 67/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/fc/1b/d9/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.953964,
+                21.003145
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14985746",
+        "title": "Bãi biển Vàn Chảy",
+        "city": "Tỉnh Quảng Ninh",
+        "totalScore": 4.7,
+        "ranking": "27/86",
+        "reviewsCount": 6,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bãi biển Vàn Chảy ở Tỉnh Quảng Ninh. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.7/5 từ 6 lượt review. Xếp hạng: 27/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/27/3d/a0/76/2022.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34168250",
+        "title": "Động Thiên Long",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Động Thiên Long ở Vịnh Hạ Long. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/33/39/25/4d/blue-swimmer-tours.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.09157,
+                20.95047
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34144130",
+        "title": "Lan Ha Bay",
+        "city": "Ha Long City",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lan Ha Bay ở Ha Long City. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/33/4e/9f/cc/catba-cabalina-grove.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.717834,
+                20.838093
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34025687",
+        "title": "Tuan Chau Ferry",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tuan Chau Ferry ở Vịnh Hạ Long. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/64/c8/9f/cabalina-grove.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.41081,
+                10.34301
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-13:00, 13:30-15:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 900
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33861908",
+        "title": "Halong Night Market",
+        "city": "Bai Chay",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Halong Night Market ở Bai Chay. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/32/47/5c/d2/cabalina.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.04363,
+                20.950422
+            ]
+        },
+        "openingHours": {
+            "display": "08:30-11:30, 15:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28816094",
+        "title": "Trần Royal Ancestor's Temple",
+        "city": "Dong Trieu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trần Royal Ancestor's Temple ở Dong Trieu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.83333,
+                20.83333
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28123755",
+        "title": "Tuần Châu Park",
+        "city": "Ha Long City",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Công viên nước & giải trí",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tuần Châu Park ở Ha Long City. Loại địa điểm: Công viên nước & giải trí. Tags: Điểm du lịch, Công viên nước & giải trí.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/4b/78/56/otter-valley-cafe.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.07336,
+                20.95045
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27537506",
+        "title": "Bãi biển Trà Cổ",
+        "city": "Móng Cái",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bãi biển Trà Cổ ở Móng Cái. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/d2/90/3e/blue-swimmer-travel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.33333,
+                21.25
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26822441",
+        "title": "CẢNG CÁ CÔ TÔ",
+        "city": "Thị Tran Co To",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": "Đây là địa điểm những ngư dân đưa cá về sau những chuyến đánh bắt trên biển",
+        "embedding": null,
+        "searchText": "CẢNG CÁ CÔ TÔ ở Thị Tran Co To. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Mô tả: Đây là địa điểm những ngư dân đưa cá về sau những chuyến đánh bắt trên biển",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/db/5a/c1/les-activites-du-port.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.77845,
+                20.97563
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26822439",
+        "title": "NGỌN HẢI ĐĂNG CÔ TÔ",
+        "city": "Thị Tran Co To",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": "Là một trong 30 con mắt biển đẹp nhất Việt Nam",
+        "embedding": null,
+        "searchText": "NGỌN HẢI ĐĂNG CÔ TÔ ở Thị Tran Co To. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Mô tả: Là một trong 30 con mắt biển đẹp nhất Việt Nam",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/db/5f/4c/co-to-lighthouse-a-panoramic.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.758385,
+                21.000423
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26822021",
+        "title": "CỬU HÀNG TẠP HOÁ CHUNG DỊ",
+        "city": "Thị Tran Co To",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": "Cửa hàng tạp hóa uy tín cạnh Cô Tô Center Homestay",
+        "embedding": null,
+        "searchText": "CỬU HÀNG TẠP HOÁ CHUNG DỊ ở Thị Tran Co To. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Mô tả: Cửa hàng tạp hóa uy tín cạnh Cô Tô Center Homestay",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.749954,
+                20.99433
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26822020",
+        "title": "Đảo 7 Sao",
+        "city": "Thị Tran Co To",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": "Là hòn đảo tuyệt đẹp của Cô Tô, cách đảo Cô Tô lớn 15km",
+        "embedding": null,
+        "searchText": "Đảo 7 Sao ở Thị Tran Co To. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Mô tả: Là hòn đảo tuyệt đẹp của Cô Tô, cách đảo Cô Tô lớn 15km",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/db/63/04/as-a-little-known-place.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.782684,
+                21.10429
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25173714",
+        "title": "Nhà Thờ Cô Tô",
+        "city": "Thị Tran Co To",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Thờ Cô Tô ở Thị Tran Co To. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/2a/be/8f/d7/d-a-di-m-b-n-khong-th.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.76736,
+                20.96817
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25173711",
+        "title": "Nhà trưng bày lưu niệm Hồ Chủ Tịch",
+        "city": "Thị Tran Co To",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": "Di tích lịch sử Khu lưu niệm Chủ tịch Hồ Chí Minh trên đảo Cô Tô thuộc loại hình di tích lưu niệm danh nhân gồm: Tượng đài, khuôn viên, bia, đền thờ, nhà trưng bày, lưu niệm, ruộng khoai và cánh đồng muối",
+        "embedding": null,
+        "searchText": "Nhà trưng bày lưu niệm Hồ Chủ Tịch ở Thị Tran Co To. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Mô tả: Di tích lịch sử Khu lưu niệm Chủ tịch Hồ Chí Minh trên đảo Cô Tô thuộc loại hình di tích lưu niệm danh nhân gồm: Tượng đài, khuôn viên, bia, đền thờ, nhà trưng bày, lưu niệm, ruộng khoai và cánh đồng muối",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/27/1b/2f/7e/nha-trung-bay-luu-ni.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.76535,
+                20.9734
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23307457",
+        "title": "Vòng Quay Mặt Trời Hạ Long",
+        "city": "Ha Long City",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Công viên nước & giải trí",
+        "priceRange": null,
+        "description": "Trong khu giải trí Sun World Hạ Long Park, ấn tượng và nổi bật, tiêu biểu nhất chính là Vòng quay Mặt Trời, một dịch vụ tuyệt vời. Vòng quay Mặt Trời Hạ Long (Sun Wheel) cao 215 m so với mực nước biển, đường kính vòng quay khoảng 115m và đây là một trong hai vòng quay mặt trời lớn nhất tại Việt Nam bên cạnh vòng quay mặt trời tại Công viên Châu Á ở Đà Nẵng.",
+        "embedding": null,
+        "searchText": "Vòng Quay Mặt Trời Hạ Long ở Ha Long City. Loại địa điểm: Công viên nước & giải trí. Tags: Điểm du lịch, Công viên nước & giải trí. Mô tả: Trong khu giải trí Sun World Hạ Long Park, ấn tượng và nổi bật, tiêu biểu nhất chính là Vòng quay Mặt Trời, một dịch vụ tuyệt vời. Vòng quay Mặt Trời Hạ Long (Sun Wheel) cao 215 m so với mực nước biển, đường kính vòng quay khoảng 115m và đây là một trong hai vòng quay mặt trời lớn nhất tại Việt Nam bên cạnh vòng quay mặt trời tại Công viên Châu Á ở Đà Nẵng.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/32/4b/70/87/otter-valley-cafe.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.07189,
+                20.956736
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23296644",
+        "title": "Quảng Trường Mặt Trời",
+        "city": "Ha Long City",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quảng Trường Mặt Trời ở Ha Long City. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/4b/71/63/otter-valley-cafe.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.04259,
+                20.948338
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15338436",
+        "title": "Observation Tower",
+        "city": "Bai Chay",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Observation Tower ở Bai Chay. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/45/64/c7/cabalina-grove.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13341584",
+        "title": "Son Hao Beach",
+        "city": "Quan Lạn",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Son Hao Beach ở Quan Lạn. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/32/4b/f4/54/cabalina-grove.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13325950",
+        "title": "Chùa Ba Vàng",
+        "city": "Uong Bi",
+        "totalScore": 4.8,
+        "ranking": "15/86",
+        "reviewsCount": 21,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Ba Vàng ở Uong Bi. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.8/5 từ 21 lượt review. Xếp hạng: 15/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/75/e5/75/pagoda-ba-vang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.764824,
+                21.033909
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11620593",
+        "title": "Bãi Biển Minh Châu",
+        "city": "Quan Lạn",
+        "totalScore": 4.1,
+        "ranking": "22/86",
+        "reviewsCount": 23,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bãi Biển Minh Châu ở Quan Lạn. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.1/5 từ 23 lượt review. Xếp hạng: 22/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/94/1d/dd/minh-chau-beach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.55681,
+                20.937994
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13341582",
+        "title": "Quan Lan Beach",
+        "city": "Quan Lạn",
+        "totalScore": 4.2,
+        "ranking": "39/86",
+        "reviewsCount": 6,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quan Lan Beach ở Quan Lạn. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.2/5 từ 6 lượt review. Xếp hạng: 39/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/a3/02/25/20180707-155355-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13341618",
+        "title": "Quan Lan Temple",
+        "city": "Quan Lạn",
+        "totalScore": 4.7,
+        "ranking": "52/86",
+        "reviewsCount": 3,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quan Lan Temple ở Quan Lạn. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.7/5 từ 3 lượt review. Xếp hạng: 52/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/49/90/1d/blue-swimmer-travel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11631377",
+        "title": "Cai Chien island",
+        "city": "Móng Cái",
+        "totalScore": 4.5,
+        "ranking": "62/86",
+        "reviewsCount": 2,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cai Chien island ở Móng Cái. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 62/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-c/2560x500/0f/fc/fa/5e/cai-rong-beach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15592643",
+        "title": "Giac Tam Buddhist Zen Monastery",
+        "city": "Van Don",
+        "totalScore": 5.0,
+        "ranking": "37/86",
+        "reviewsCount": 3,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Giac Tam Buddhist Zen Monastery ở Van Don. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 37/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/a5/7f/3b/drum-at-monastery.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10020708",
+        "title": "Hội Xuân Yên Tử",
+        "city": "Uong Bi",
+        "totalScore": 5.0,
+        "ranking": "26/86",
+        "reviewsCount": 6,
+        "category": "Sự kiện",
+        "priceRange": null,
+        "description": "Tại phía bắc của tỉnh Quảng Ninh ở Việt Nam, lễ hội mùa xuân Phật giáo Yên Tử diễn ra vào ngày mười âm lịch kéo dài đến cuối tháng Ba âm lịch. Cả nghi lễ truyền thống và màn biển diễn nghệ thuật đều thu hút một lượng lớn người xem đến với lễ khai mạc. Khu vực lễ hội tọa lạc tại vùng núi Yên Tử xinh đẹp và bao quanh bởi vẻ đẹp thiên nhiên đầy cảm hứng cùng với những ngôi chùa cổ kính.",
+        "embedding": null,
+        "searchText": "Hội Xuân Yên Tử ở Uong Bi. Loại địa điểm: Sự kiện. Tags: Điểm du lịch, Sự kiện. Mô tả: Tại phía bắc của tỉnh Quảng Ninh ở Việt Nam, lễ hội mùa xuân Phật giáo Yên Tử diễn ra vào ngày mười âm lịch kéo dài đến cuối tháng Ba âm lịch. Cả nghi lễ truyền thống và màn biển diễn nghệ thuật đều thu hút một lượng lớn người xem đến với lễ khai mạc. Khu vực lễ hội tọa lạc tại vùng núi Yên Tử xinh đẹp và bao quanh bởi vẻ đẹp thiên nhiên đầy cảm hứng cùng với những ngôi chùa cổ kính. Đánh giá: 5.0/5 từ 6 lượt review. Xếp hạng: 26/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Sự kiện"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/a1/88/5a/mgallery-by-soffitel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.54598,
+                21.180649
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34134961",
+        "title": "Cai Beo Fishing Village",
+        "city": "Ha Long City",
+        "totalScore": 5.0,
+        "ranking": "17/86",
+        "reviewsCount": 8,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cai Beo Fishing Village ở Ha Long City. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 8 lượt review. Xếp hạng: 17/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/33/46/31/9e/hidden-valley-catba.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.90326,
+                21.138
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27696284",
+        "title": "Titans Pickleball Halong Court",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 5.0,
+        "ranking": "23/86",
+        "reviewsCount": 5,
+        "category": "Vui chơi & Giải trí",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Titans Pickleball Halong Court ở Vịnh Hạ Long. Loại địa điểm: Vui chơi & Giải trí. Tags: Điểm du lịch, Vui chơi & Giải trí. Đánh giá: 5.0/5 từ 5 lượt review. Xếp hạng: 23/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Vui chơi & Giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/ef/b7/89/2-pickleball-courts-on.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.0623,
+                20.960314
+            ]
+        },
+        "openingHours": {
+            "display": "05:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19737091",
+        "title": "Hong Van Beach",
+        "city": "Tỉnh Quảng Ninh",
+        "totalScore": 5.0,
+        "ranking": "31/86",
+        "reviewsCount": 3,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hong Van Beach ở Tỉnh Quảng Ninh. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 31/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/26/df/66/a2/on-the-way-to-snorkling.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25161898",
+        "title": "The Sunset Gulf",
+        "city": "Thị Tran Co To",
+        "totalScore": 5.0,
+        "ranking": "33/86",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Sunset Gulf ở Thị Tran Co To. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 33/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/ba/25/53/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.749985,
+                20.96552
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26317525",
+        "title": "Vincom Plaza Hạ Long",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 4.5,
+        "ranking": "34/86",
+        "reviewsCount": 2,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vincom Plaza Hạ Long ở Vịnh Hạ Long. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 34/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/f1/89/9b/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.08691,
+                20.949492
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-21:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25165263",
+        "title": "Trinh Nu Beach",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 4.5,
+        "ranking": "35/86",
+        "reviewsCount": 2,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trinh Nu Beach ở Vịnh Hạ Long. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 35/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/27/0d/e3/f4/bo-nau-cave.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.085175,
+                20.980316
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25168324",
+        "title": "Hon Chep Con",
+        "city": "Tỉnh Quảng Ninh",
+        "totalScore": 5.0,
+        "ranking": "36/86",
+        "reviewsCount": 2,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hon Chep Con ở Tỉnh Quảng Ninh. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 36/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/27/07/a8/7c/the-koi-islet.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.75479,
+                21.048763
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26517053",
+        "title": "Dark & Light Cave",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 4.5,
+        "ranking": "38/86",
+        "reviewsCount": 2,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dark & Light Cave ở Vịnh Hạ Long. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 38/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/33/0f/57/35/cai-beo-fishing-village.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.1839,
+                20.910051
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23312867",
+        "title": "Suối Khoáng Publich Yoko Onsen Hạ Long",
+        "city": "Ha Long City",
+        "totalScore": 0,
+        "ranking": "40/86",
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Suối Khoáng Publich Yoko Onsen Hạ Long ở Ha Long City. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Xếp hạng: 40/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/49/92/9f/blue-swimmer-travel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.08,
+                20.95111
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34068328",
+        "title": "Dragon Pearl Cave - Hang Ngọc Rồng",
+        "city": "Cam Pha",
+        "totalScore": 5.0,
+        "ranking": "41/86",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dragon Pearl Cave - Hang Ngọc Rồng ở Cam Pha. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 41/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/c0/35/07/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.298645,
+                20.993221
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34144098",
+        "title": "Cat Ba Bay",
+        "city": "Ha Long City",
+        "totalScore": 5.0,
+        "ranking": "42/86",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cat Ba Bay ở Ha Long City. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 42/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/33/4e/a1/57/catba-cabalina-grove.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.717834,
+                20.838093
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34140739",
+        "title": "Lan Ha Bay",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 5.0,
+        "ranking": "43/86",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lan Ha Bay ở Vịnh Hạ Long. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 43/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/33/41/da/d9/the-mangrove-cafe-and.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.078575,
+                20.971737
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34140738",
+        "title": "Viet Hai Farming Village",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 5.0,
+        "ranking": "44/86",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Viet Hai Farming Village ở Vịnh Hạ Long. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 44/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/33/46/84/0a/cabalina-grove.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.092606,
+                20.949915
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25280571",
+        "title": "Hang Luon Cave",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 3.7,
+        "ranking": "45/86",
+        "reviewsCount": 7,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": "Đến với Hang Luồn, ngoài chiêm ngưỡng vẻ đẹp thiên nhiên, bạn còn có được những trải nghiệm vô cùng đáng nhớ. Hoạt động thú vị nhất phải kể đến chính là chèo thuyền kayak khám phá Hang Luồn. Trên chiếc thuyền kayak nhỏ xinh, vừa trò chuyện, vừa ngắm khung cảnh tuyệt vời thật là lãng mạn, nên thơ biết bao. Một chiêc thuyền kayak thường dành cho hai người với hai mái chèo, bạn có thể tự do điều khiển kayak giữa mênh mông sóng nước vịnh Hạ Long",
+        "embedding": null,
+        "searchText": "Hang Luon Cave ở Vịnh Hạ Long. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Mô tả: Đến với Hang Luồn, ngoài chiêm ngưỡng vẻ đẹp thiên nhiên, bạn còn có được những trải nghiệm vô cùng đáng nhớ. Hoạt động thú vị nhất phải kể đến chính là chèo thuyền kayak khám phá Hang Luồn. Trên chiếc thuyền kayak nhỏ xinh, vừa trò chuyện, vừa ngắm khung cảnh tuyệt vời thật là lãng mạn, nên thơ biết bao. Một chiêc thuyền kayak thường dành cho hai người với hai mái chèo, bạn có thể tự do điều khiển kayak giữa mênh mông sóng nước vịnh Hạ Long Đánh giá: 3.7/5 từ 7 lượt review. Xếp hạng: 45/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/4f/2f/13/c-nh-quan-hang-lu-n-v.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.095,
+                20.853174
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25161892",
+        "title": "Coto Church",
+        "city": "Thị Tran Co To",
+        "totalScore": 0,
+        "ranking": "46/86",
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Coto Church ở Thị Tran Co To. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Xếp hạng: 46/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/26/f9/12/0a/weekend-ceremony.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.76751,
+                20.96806
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33161049",
+        "title": "Hạ Long Bay",
+        "city": "Ha Long City",
+        "totalScore": 5.0,
+        "ranking": "47/86",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hạ Long Bay ở Ha Long City. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 47/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/58/64/d1/cai-beo-fishing-village.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.109985,
+                20.967611
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34100226",
+        "title": "Bao Hai Linh Thong Temple",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 5.0,
+        "ranking": "48/86",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bao Hai Linh Thong Temple ở Vịnh Hạ Long. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 48/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/47/5d/ed/cabalina.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.10511,
+                20.951195
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1140
+                    }
+                ],
+                []
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25161990",
+        "title": "Ho Chi Minh Park",
+        "city": "Thị Tran Co To",
+        "totalScore": 4.5,
+        "ranking": "49/86",
+        "reviewsCount": 2,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ho Chi Minh Park ở Thị Tran Co To. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 49/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/bb/86/17/cho-d-n-th-i-di-m-nay.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.76497,
+                20.97066
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34067447",
+        "title": "Golden Buffalo Statues",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 5.0,
+        "ranking": "50/86",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Golden Buffalo Statues ở Vịnh Hạ Long. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 50/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/fd/6c/b6/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.080444,
+                20.96868
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "4994540",
+        "title": "Động Mê Cung",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 3.6,
+        "ranking": "51/86",
+        "reviewsCount": 10,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Động Mê Cung ở Vịnh Hạ Long. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.6/5 từ 10 lượt review. Xếp hạng: 51/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/b1/af/49/ninh-binh-getaway.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.08446,
+                20.834297
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28661322",
+        "title": "An Sinh Temple",
+        "city": "Dong Trieu",
+        "totalScore": 5.0,
+        "ranking": "53/86",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "An Sinh Temple ở Dong Trieu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 53/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/d8/b2/1d/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.537,
+                21.117508
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26820753",
+        "title": "Co To Lighthouse",
+        "city": "Thị Tran Co To",
+        "totalScore": 5.0,
+        "ranking": "54/86",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": "Ngọn hải đăng ra đời từ cuối thế kỉ 19, tính đến nay đã có hơn 200 năm tuổi, trở thành biểu tượng mang tính lịch sử của đảo ngọc Cô Tô vùng biển Đông Bắc Tổ quốc. Hiện tại, ngọn hải đăng đã được đầu tư chiếu sáng bằng năng lượng mặt trời với hệ thống điều khiển tự động và bán tự động. Ngọn hải đăng có tầm chiếu xa 20,7 hải lý về ban đêm, 28 hải lý về ban ngày.",
+        "embedding": null,
+        "searchText": "Co To Lighthouse ở Thị Tran Co To. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Mô tả: Ngọn hải đăng ra đời từ cuối thế kỉ 19, tính đến nay đã có hơn 200 năm tuổi, trở thành biểu tượng mang tính lịch sử của đảo ngọc Cô Tô vùng biển Đông Bắc Tổ quốc. Hiện tại, ngọn hải đăng đã được đầu tư chiếu sáng bằng năng lượng mặt trời với hệ thống điều khiển tự động và bán tự động. Ngọn hải đăng có tầm chiếu xa 20,7 hải lý về ban đêm, 28 hải lý về ban ngày. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 54/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/bf/d8/76/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.75782,
+                20.998854
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25279692",
+        "title": "Hon Dinh Huong Island",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 4.0,
+        "ranking": "56/86",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": "Hòn Đỉnh Hương Quảng Ninh vừa mang trong mình ý nghĩa tâm linh thiêng liêng, vừa là biểu tượng của sự may mắn. Hình ảnh hòn Đỉnh Hương đã được in trên tờ tiền 200.000VNĐ đang lưu hành.",
+        "embedding": null,
+        "searchText": "Hon Dinh Huong Island ở Vịnh Hạ Long. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Mô tả: Hòn Đỉnh Hương Quảng Ninh vừa mang trong mình ý nghĩa tâm linh thiêng liêng, vừa là biểu tượng của sự may mắn. Hình ảnh hòn Đỉnh Hương đã được in trên tờ tiền 200.000VNĐ đang lưu hành. Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 56/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/4b/72/85/otter-valley-cafe.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.01751,
+                20.914425
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23312834",
+        "title": "Công Viên Nước Hạ Long",
+        "city": "Ha Long City",
+        "totalScore": 5.0,
+        "ranking": "57/86",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Công Viên Nước Hạ Long ở Ha Long City. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 57/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/4b/71/93/otter-valley-cafe.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.08,
+                20.95111
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25188234",
+        "title": "Bãi biển tình yêu (Love Beach)",
+        "city": "Thị Tran Co To",
+        "totalScore": 5.0,
+        "ranking": "58/86",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "Đây là một bãi biển đẹp và dài nhất quần đảo Cô Tô, bãi biển kéo dài từ thị trấn Cô Tô đến xã Đồng Tiến, đây cũng là bãi biển tắm an toàn, ngắm hoàng hôn tại đây cũng rất đẹp, bạn cũng có thể thỏa thức dạo bộ 1 vòng bãi biển dài hơn 6km này",
+        "embedding": null,
+        "searchText": "Bãi biển tình yêu (Love Beach) ở Thị Tran Co To. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Mô tả: Đây là một bãi biển đẹp và dài nhất quần đảo Cô Tô, bãi biển kéo dài từ thị trấn Cô Tô đến xã Đồng Tiến, đây cũng là bãi biển tắm an toàn, ngắm hoàng hôn tại đây cũng rất đẹp, bạn cũng có thể thỏa thức dạo bộ 1 vòng bãi biển dài hơn 6km này Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 58/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/de/7d/9c/hoang-hon-thang-11-t.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.7577,
+                20.993715
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25161895",
+        "title": "Dragon Rock Garden",
+        "city": "Thị Tran Co To",
+        "totalScore": 5.0,
+        "ranking": "59/86",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dragon Rock Garden ở Thị Tran Co To. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 59/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.76206,
+                20.957647
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25163583",
+        "title": "Âu Tàu",
+        "city": "Thị Tran Co To",
+        "totalScore": 5.0,
+        "ranking": "60/86",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Âu Tàu ở Thị Tran Co To. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 60/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/be/8d/4d/d-a-di-m-ng-m-hoang-hon.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.75018,
+                20.96163
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25159424",
+        "title": "Bãi đã Móng Rồng",
+        "city": "Thị Tran Co To",
+        "totalScore": 5.0,
+        "ranking": "61/86",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": "Bãi đá Móng Rồng là một hệ thống những lớp đá trầm tích bị bào mòn qua thời gian hàng vạn năm trước bởi nước biển. Trước đây bãi đá này có tên là Cầu Mỵ, nhưng đến năm 2015 được đổi tên là bãi đá Móng Rồng.",
+        "embedding": null,
+        "searchText": "Bãi đã Móng Rồng ở Thị Tran Co To. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Mô tả: Bãi đá Móng Rồng là một hệ thống những lớp đá trầm tích bị bào mòn qua thời gian hàng vạn năm trước bởi nước biển. Trước đây bãi đá này có tên là Cầu Mỵ, nhưng đến năm 2015 được đổi tên là bãi đá Móng Rồng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 61/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/26/f1/9b/72/t-di-m-cao-th-2-nhin.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.76018,
+                20.962746
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34067440",
+        "title": "Công viên Lán Bè Skywalk",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 4.0,
+        "ranking": "63/86",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Công viên Lán Bè Skywalk ở Vịnh Hạ Long. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 63/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/fd/6d/34/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.080444,
+                20.96868
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33230145",
+        "title": "Tran Quoc Nghien Temple",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 4.0,
+        "ranking": "64/86",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tran Quoc Nghien Temple ở Vịnh Hạ Long. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 64/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/49/72/5d/blue-swimmer-travel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.07495,
+                20.947481
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27539136",
+        "title": "Vung Vieng Fishing Village",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 4.0,
+        "ranking": "65/86",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vung Vieng Fishing Village ở Vịnh Hạ Long. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 65/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/4b/74/1c/otter-valley-cafe.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.51751,
+                17.25272
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7309376",
+        "title": "Làng Chài Cống Đầm",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 4.0,
+        "ranking": "68/86",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Làng Chài Cống Đầm ở Vịnh Hạ Long. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 68/86.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/0e/e9/ed/cong-dam-floating-village.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    }
+]

@@ -1,0 +1,704 @@
+[
+    {
+        "sourceLocationId": "9718517",
+        "title": "Mù Căng Chải",
+        "city": "Yên Bái",
+        "totalScore": 4.9,
+        "ranking": "2/12",
+        "reviewsCount": 54,
+        "category": "Khác",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mù Căng Chải ở Yên Bái. Loại địa điểm: Khác. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Khác. Đánh giá: 4.9/5 từ 54 lượt review. Xếp hạng: 2/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Khác"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/71/0d/88/ru-ng-b-c-thang-mu-cang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.0941,
+                21.849339
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10031203",
+        "title": "Hồ Thác Bà",
+        "city": "Yên Bái",
+        "totalScore": 4.5,
+        "ranking": "3/12",
+        "reviewsCount": 13,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hồ Thác Bà ở Yên Bái. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 13 lượt review. Xếp hạng: 3/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/56/21/f2/thac-ba-lake.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98802,
+                21.832819
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8091201",
+        "title": "Thung Lũng Tú Lệ",
+        "city": "Van Chan District",
+        "totalScore": 4.8,
+        "ranking": "4/12",
+        "reviewsCount": 12,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thung Lũng Tú Lệ ở Van Chan District. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.8/5 từ 12 lượt review. Xếp hạng: 4/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/5b/2b/97/graber.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.87854,
+                21.7147
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11913331",
+        "title": "Suối Giàng - Yên Bái",
+        "city": "Yên Bái",
+        "totalScore": 3.8,
+        "ranking": "6/12",
+        "reviewsCount": 5,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Suối Giàng - Yên Bái ở Yên Bái. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.8/5 từ 5 lượt review. Xếp hạng: 6/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/14/1c/df/85/vietmountaintravelcomvn.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8380397",
+        "title": "Zonitrip - Day Tours",
+        "city": "Yên Bái",
+        "totalScore": 4.9,
+        "ranking": "1/8",
+        "reviewsCount": 163,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Zonitrip - Day Tours ở Yên Bái. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Hoạt động ngoài trời. Đánh giá: 4.9/5 từ 163 lượt review. Xếp hạng: 1/8.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/0a/b3/7f/trekking-hoang-su-phi.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.8745,
+                21.71379
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25172470",
+        "title": "Yen Bai Tv Tours",
+        "city": "Yên Bái",
+        "totalScore": 5.0,
+        "ranking": "2/8",
+        "reviewsCount": 3,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Yen Bai Tv Tours ở Yên Bái. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 2/8.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/27/1c/d2/97/yen-bai-tv-tours.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.933044,
+                21.679401
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34393000",
+        "title": "Hmong Immersive Journey",
+        "city": "Pung Luong",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "We create immersive cultural journeys in Northern Vietnam, focusing on authentic Hmong experiences, mountain landscapes, local traditions, spirituality, and meaningful human connection.\n\nOur experiences are carefully curated for travelers seeking deeper cultural understanding beyond standard tourism.",
+        "embedding": null,
+        "searchText": "Hmong Immersive Journey ở Pung Luong. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Khác, Phương tiện giao thông, Hoạt động ngoài trời. Mô tả: We create immersive cultural journeys in Northern Vietnam, focusing on authentic Hmong experiences, mountain landscapes, local traditions, spirituality, and meaningful human connection.\n\nOur experiences are carefully curated for travelers seeking deeper cultural understanding beyond standard tourism.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Khác",
+            "Phương tiện giao thông",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1410
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34044415",
+        "title": "HANOI TRAIN STREET TOURS - JEEP AND MOTORBIKE",
+        "city": "Yên Bái",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "Discover the real Hanoi from a unique perspective!\nJoin Hanoi Train Street Tours to explore the city’s vibrant streets, hidden alleys, and peaceful countryside by Jeep or Motorbike.\nFeel the thrill of the passing train, taste authentic local food, and see Hanoi’s true daily life.",
+        "embedding": null,
+        "searchText": "HANOI TRAIN STREET TOURS - JEEP AND MOTORBIKE ở Yên Bái. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Khác, Hoạt động ngoài trời. Mô tả: Discover the real Hanoi from a unique perspective!\nJoin Hanoi Train Street Tours to explore the city’s vibrant streets, hidden alleys, and peaceful countryside by Jeep or Motorbike.\nFeel the thrill of the passing train, taste authentic local food, and see Hanoi’s true daily life.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Khác",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/bd/32/66/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "00:00-23:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1410
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34027519",
+        "title": "Trekking Đỉnh Lùng Cúng 2913m",
+        "city": "Yên Bái",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trekking Đỉnh Lùng Cúng 2913m ở Yên Bái. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.93,
+                21.729586
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34025894",
+        "title": "Đỉnh Tà Chì Nhù",
+        "city": "Yên Bái",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đỉnh Tà Chì Nhù ở Yên Bái. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.91687,
+                21.721493
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34025885",
+        "title": "Đỉnh Lùng Cúng",
+        "city": "Yên Bái",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đỉnh Lùng Cúng ở Yên Bái. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/cd/8e/d0/la-phong-d-lung-cung.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.91039,
+                21.7214
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1305
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27969404",
+        "title": "Mebayluon Paragliding",
+        "city": "Yên Bái",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mebayluon Paragliding ở Yên Bái. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Chuyến tham quan bằng thuyền & thể thao dưới nước, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Chuyến tham quan bằng thuyền & thể thao dưới nước",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.8708,
+                21.69517
+            ]
+        },
+        "openingHours": null
+    }
+]

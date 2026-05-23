@@ -1,0 +1,603 @@
+[
+    {
+        "sourceLocationId": "27995585",
+        "title": "Citrus Coffee Lab",
+        "city": "Tuyên Quang",
+        "totalScore": 5.0,
+        "ranking": "1/10",
+        "reviewsCount": 6,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Citrus Coffee Lab ở Tuyên Quang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 6 lượt review. Xếp hạng: 1/10. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/03/62/46/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.20786,
+                21.8164
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15190189",
+        "title": "Nhà hàng Sen Vàng BBQ Tuyên Quang",
+        "city": "Tuyên Quang",
+        "totalScore": 5.0,
+        "ranking": "2/10",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Sen Vàng BBQ Tuyên Quang ở Tuyên Quang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 2/10. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/03/43/3b/set-menu-ch-co-800000d.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.21726,
+                21.817293
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33224064",
+        "title": "Nhà Hàng Thắng Chung",
+        "city": "Tuyên Quang",
+        "totalScore": 5.0,
+        "ranking": "3/10",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Nhà hàng Thắng Chung – cơm nhà sàn truyền thống tại Tuyên Quang, nổi tiếng với các món cơm bình dân, cá kho, rau rừng, thịt rang… Không gian gỗ ấm cúng, rộng rãi, phù hợp cho đoàn khách và khách lẻ trên hành trình khám phá núi rừng Đông Bắc. Nestled along National Road 2 in Ham Yen, Tuyen Quang, Thang Chung Restaurant offers travelers a warm welcome and a taste of authentic Vietnamese countryside cuisine. Built in the style of a traditional stilt house with polished wooden pillars and rustic interiors, the restaurant brings a cozy, home-like dining experience. The menu features flavorful, home-cooked dishes such as claypot brais Thang Chung Restaurant offers a cozy stilt-house dining experience in Tuyen Quang. Known for homestyle Vietnamese dishes like braised fish, forest vegetables, and pork specialties. Spacious and friendly – ideal for both travelers and groups passing through Northeast Vietnam. #Vietnamesecuisine #Localfood #Affordablemeals #Countrysidestop #TuyenQuangspecialties",
+        "embedding": null,
+        "searchText": "Nhà Hàng Thắng Chung ở Tuyên Quang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Nhà hàng Thắng Chung – cơm nhà sàn truyền thống tại Tuyên Quang, nổi tiếng với các món cơm bình dân, cá kho, rau rừng, thịt rang… Không gian gỗ ấm cúng, rộng rãi, phù hợp cho đoàn khách và khách lẻ trên hành trình khám phá núi rừng Đông Bắc. Nestled along National Road 2 in Ham Yen, Tuyen Quang, Thang Chung Restaurant offers travelers a warm welcome and a taste of authentic Vietnamese countryside cuisine. Built in the style of a traditional stilt house with polished wooden pillars and rustic interiors, the restaurant brings a cozy, home-like dining experience. The menu features flavorful, home-cooked dishes such as claypot brais Thang Chung Restaurant offers a cozy stilt-house dining experience in Tuyen Quang. Known for homestyle Vietnamese dishes like braised fish, forest vegetables, and pork specialties. Spacious and friendly – ideal for both travelers and groups passing through Northeast Vietnam. #Vietnamesecuisine #Localfood #Affordablemeals #Countrysidestop #TuyenQuangspecialties Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 3/10.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/32/82/9d/e4/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.2036,
+                21.828684
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "20818875",
+        "title": "Nhà Hàng Royal Tuyên Quang",
+        "city": "Tuyên Quang",
+        "totalScore": 5.0,
+        "ranking": "4/10",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Royal Tuyên Quang ở Tuyên Quang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 4/10. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/58/45/d3/nha-hang-royal-tuyen.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.20805,
+                21.815153
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23954770",
+        "title": "Pizza Here",
+        "city": "Tuyên Quang",
+        "totalScore": 5.0,
+        "ranking": "5/10",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pizza Here ở Tuyên Quang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 5/10.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/25/4d/61/7d/spaghetti-bolognese.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.21377,
+                21.81727
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "9982805",
+        "title": "Nhà hàng BBQ",
+        "city": "Tuyên Quang",
+        "totalScore": 3.6,
+        "ranking": "6/10",
+        "reviewsCount": 7,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng BBQ ở Tuyên Quang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.6/5 từ 7 lượt review. Xếp hạng: 6/10.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/76/d6/fb/photo3jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.21422,
+                21.818092
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "18970258",
+        "title": "Nhà Hàng Hẻm Quán",
+        "city": "Tuyên Quang",
+        "totalScore": 4.0,
+        "ranking": "7/10",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hẻm Quán ở Tuyên Quang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 7/10.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.21113,
+                21.824467
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "18967018",
+        "title": "Nhà Hàng BBQ Garden",
+        "city": "Tuyên Quang",
+        "totalScore": 4.0,
+        "ranking": "8/10",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng BBQ Garden ở Tuyên Quang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 8/10.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.21445,
+                21.812086
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17435025",
+        "title": "Hanos 75",
+        "city": "Tuyên Quang",
+        "totalScore": 4.0,
+        "ranking": "9/10",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hanos 75 ở Tuyên Quang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 9/10.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/79/ac/4c/20190508-144309-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.21356,
+                21.81653
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24002260",
+        "title": "Nha Hang Hoa Vien",
+        "city": "Tuyên Quang",
+        "totalScore": 3.0,
+        "ranking": "10/10",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nha Hang Hoa Vien ở Tuyên Quang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 10/10.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/23/1a/2d/42/fish-vegetable-meat-in.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.18148,
+                21.822647
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15233371",
+        "title": "Chaboba",
+        "city": "Tuyên Quang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chaboba ở Tuyên Quang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.203514,
+                21.820122
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21071793",
+        "title": "Nhà hàng Hộ Nhâm",
+        "city": "Tuyên Quang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Hộ Nhâm ở Tuyên Quang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/9b/43/a9/nha-hang-h-nham.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.14026,
+                21.769018
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12908083",
+        "title": "CHAO Đem : Lieu Cuong 01",
+        "city": "Tuyên Quang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "157.894.736 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "CHAO Đem : Lieu Cuong 01 ở Tuyên Quang. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Giá: 157.894.736 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.03437,
+                22.063683
+            ]
+        },
+        "openingHours": null
+    }
+]

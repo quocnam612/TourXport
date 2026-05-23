@@ -1,0 +1,2540 @@
+[
+    {
+        "sourceLocationId": "7184390",
+        "title": "Le Napoli - Phan Rang",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 4.5,
+        "ranking": "1/29",
+        "reviewsCount": 97,
+        "category": "Ngồi xuống",
+        "priceRange": "131.579 ₫ - 526.316 ₫",
+        "description": "Dịch vụ ăn uống Á - Âu. Italian - Vietnamese Food Cocktails, rượu vang. Cocktails, Wines Không gian thoáng mát. View Chill Nhân viên thân thiện. Friendly staff",
+        "embedding": null,
+        "searchText": "Le Napoli - Phan Rang ở Phan Rang-Tháp Chàm. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Dịch vụ ăn uống Á - Âu. Italian - Vietnamese Food Cocktails, rượu vang. Cocktails, Wines Không gian thoáng mát. View Chill Nhân viên thân thiện. Friendly staff Đánh giá: 4.5/5 từ 97 lượt review. Xếp hạng: 1/29. Giá: 131.579 ₫ - 526.316 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/68/b2/04/terrasse-du-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.006874,
+                11.578848
+            ]
+        },
+        "openingHours": {
+            "display": "16:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15582828",
+        "title": "Sorrento Beach Club Vietnam and Kite Centre Restaurant",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 4.9,
+        "ranking": "2/29",
+        "reviewsCount": 19,
+        "category": "Ngồi xuống",
+        "priceRange": "1.315.789.440 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Sorrento Beach Club Vietnam and Kite Centre Restaurant ở Phan Rang-Tháp Chàm. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.9/5 từ 19 lượt review. Xếp hạng: 2/29. Giá: 1.315.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/64/af/ba/hungry.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.147316,
+                11.613481
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15850468",
+        "title": "Nhà Hàng Hải Âu Phan Rang",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 4.9,
+        "ranking": "3/29",
+        "reviewsCount": 10,
+        "category": "Ngồi xuống",
+        "priceRange": "2.105.263 ₫ - 6.578.947 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hải Âu Phan Rang ở Phan Rang-Tháp Chàm. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.9/5 từ 10 lượt review. Xếp hạng: 3/29. Giá: 2.105.263 ₫ - 6.578.947 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/47/cc/a8/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.02295,
+                11.55601
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21374231",
+        "title": "May's Kitchen",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 5.0,
+        "ranking": "4/29",
+        "reviewsCount": 5,
+        "category": "Ngồi xuống",
+        "priceRange": "52.632 ₫ - 131.579 ₫",
+        "description": "Bếp có các món salad, cơm cuộn, padthai, bò bía, bếp phục vụ mang đi và delivery. Mở cửa từ 9g sáng tới 5:30 chiều. Chúc khách một ngày vui vẻ nhé ❤️",
+        "embedding": null,
+        "searchText": "May's Kitchen ở Phan Rang-Tháp Chàm. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Bếp có các món salad, cơm cuộn, padthai, bò bía, bếp phục vụ mang đi và delivery. Mở cửa từ 9g sáng tới 5:30 chiều. Chúc khách một ngày vui vẻ nhé ❤️ Đánh giá: 5.0/5 từ 5 lượt review. Xếp hạng: 4/29. Giá: 52.632 ₫ - 131.579 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/25/eb/27/mi-n-tr-n-korean-noodle.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.98474,
+                11.551547
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-19:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "24048421",
+        "title": "Four Seasons Phan Rang",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 4.7,
+        "ranking": "5/29",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Four Seasons Phan Rang ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.7/5 từ 3 lượt review. Xếp hạng: 5/29.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/de/4d/24/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.01495,
+                11.563873
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14860734",
+        "title": "Queen BBQ Buffel Nướng & Lẩu",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 4.5,
+        "ranking": "6/29",
+        "reviewsCount": 6,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Queen BBQ Buffel Nướng & Lẩu ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.5/5 từ 6 lượt review. Xếp hạng: 6/29.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/a9/c0/57/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.99921,
+                11.60792
+            ]
+        },
+        "openingHours": {
+            "display": "12:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 720,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 720,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 720,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 720,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 720,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 720,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 720,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13457852",
+        "title": "Nhà Hàng Phố Biển",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 4.3,
+        "ranking": "7/29",
+        "reviewsCount": 6,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Phố Biển ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.3/5 từ 6 lượt review. Xếp hạng: 7/29. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/b7/26/95/img-20190308-165041-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.040016,
+                11.589185
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15609849",
+        "title": "Pizza Bob2",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 4.8,
+        "ranking": "8/29",
+        "reviewsCount": 5,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pizza Bob2 ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.8/5 từ 5 lượt review. Xếp hạng: 8/29.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/b5/48/3c/pizza-bob2.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.99621,
+                11.56718
+            ]
+        },
+        "openingHours": {
+            "display": "15:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14920251",
+        "title": "Vườn Hải Sản",
+        "city": "Khanh Hai",
+        "totalScore": 4.2,
+        "ranking": "9/29",
+        "reviewsCount": 5,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn Hải Sản ở Khanh Hai. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.2/5 từ 5 lượt review. Xếp hạng: 9/29.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/ec/af/d0/vu-n-h-i-s-n.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.03187,
+                11.588073
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    },
+                    {
+                        "open_time": 1080,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    },
+                    {
+                        "open_time": 1080,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    },
+                    {
+                        "open_time": 1080,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    },
+                    {
+                        "open_time": 1080,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28656795",
+        "title": "Chành Rành Restaurant",
+        "city": "Ninh Thuan Province",
+        "totalScore": 5.0,
+        "ranking": "10/29",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chành Rành Restaurant ở Ninh Thuan Province. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 10/29.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/03/c3/f0/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.75792,
+                10.01653
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33225949",
+        "title": "Dây Leo Xanh Food & Beer Garden",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 5.0,
+        "ranking": "11/29",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dây Leo Xanh Food & Beer Garden ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 11/29.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/00/5b/bd/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.995094,
+                11.561021
+            ]
+        },
+        "openingHours": {
+            "display": "09:30-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27514029",
+        "title": "Mochi House Phan Rang",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 5.0,
+        "ranking": "12/29",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mochi House Phan Rang ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 12/29.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/bf/e4/59/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.99831,
+                11.567674
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "16882086",
+        "title": "Bánh Mì Cô Hiền",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 5.0,
+        "ranking": "13/29",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bánh Mì Cô Hiền ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 13/29.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/f3/a4/78/must-try-banh-mi.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.99011,
+                11.563034
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15193095",
+        "title": "Buffet Nâu Đỏ",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 5.0,
+        "ranking": "14/29",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "1.315.789 ₫ - 2.631.579 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Buffet Nâu Đỏ ở Phan Rang-Tháp Chàm. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 14/29. Giá: 1.315.789 ₫ - 2.631.579 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/14/ed/f6/2e/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.99948,
+                11.563981
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15528111",
+        "title": "Pause Gourmande",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 4.0,
+        "ranking": "15/29",
+        "reviewsCount": 4,
+        "category": "Ngồi xuống",
+        "priceRange": "921.052.608 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Pause Gourmande ở Phan Rang-Tháp Chàm. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.0/5 từ 4 lượt review. Xếp hạng: 15/29. Giá: 921.052.608 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/d4/ae/e2/smashed-avocado.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.030685,
+                11.586938
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 960
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 960
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25361536",
+        "title": "Phở Cù",
+        "city": "Phuoc Minh",
+        "totalScore": 5.0,
+        "ranking": "16/29",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phở Cù ở Phuoc Minh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 16/29.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/6e/78/86/street-view-of-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.21558,
+                16.052067
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12116969",
+        "title": "Pho 36",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 4.0,
+        "ranking": "17/29",
+        "reviewsCount": 4,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pho 36 ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 4 lượt review. Xếp hạng: 17/29.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/7c/4a/17/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.99349,
+                11.57892
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17341167",
+        "title": "5°f Coffee By Iq Media",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 0,
+        "ranking": "18/29",
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "657.894.720 ₫ - 1.473.684.224 ₫",
+        "description": "5°F Coffee nằm tại địa chỉ 109 Trần Quang Diệu, Thanh Sơn, Phan Rang - Tháp Chàm. Quán phục vụ các loại trà, cafe, soda và đặt biệt các món đá xay. Quán có bãi giữ xe miễn phí, chấp nhận thanh toán thẻ. Hẹn gặp lại các bạn tại quán",
+        "embedding": null,
+        "searchText": "5°f Coffee By Iq Media ở Phan Rang-Tháp Chàm. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: 5°F Coffee nằm tại địa chỉ 109 Trần Quang Diệu, Thanh Sơn, Phan Rang - Tháp Chàm. Quán phục vụ các loại trà, cafe, soda và đặt biệt các món đá xay. Quán có bãi giữ xe miễn phí, chấp nhận thanh toán thẻ. Hẹn gặp lại các bạn tại quán Xếp hạng: 18/29. Giá: 657.894.720 ₫ - 1.473.684.224 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/a5/b0/5d/5-f-coffee-team.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.997185,
+                11.567463
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32986359",
+        "title": "Gánh_ Cừu Núi Cơm Nhà",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 4.0,
+        "ranking": "19/29",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Gánh_ Cừu Núi Cơm Nhà ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 19/29.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.20661,
+                16.05775
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19887381",
+        "title": "Nhà Hàng Hương Việt",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 5.0,
+        "ranking": "20/29",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hương Việt ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 20/29.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/a6/34/1f/ga-tre-h-m-bi-d.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.99508,
+                11.562483
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19743066",
+        "title": "Nhà Hàng Xứ Phan",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 5.0,
+        "ranking": "21/29",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Xứ Phan ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 21/29.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/5b/55/ce/khong-gian-ngoai-tr-i.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.00166,
+                11.570999
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13550294",
+        "title": "Bánh Canh Chả Cuốn Mai Lý",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 5.0,
+        "ranking": "22/29",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bánh Canh Chả Cuốn Mai Lý ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 22/29.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.99226,
+                11.56317
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7813121",
+        "title": "Quán ăn Chốn Quê",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 3.7,
+        "ranking": "23/29",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán ăn Chốn Quê ở Phan Rang-Tháp Chàm. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.7/5 từ 3 lượt review. Xếp hạng: 23/29.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/53/07/e3/chon-que.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27161086",
+        "title": "Karinox Coffee Ninh Thuận",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 3.5,
+        "ranking": "24/29",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "684.210.496 ₫ - 2.147.483.647 ₫",
+        "description": "Khu tổ hợp Karinox Coffee, Khui vui chơi trẻ em & Gà Rán Pippy Kids Chi Nhánh Phan Rang",
+        "embedding": null,
+        "searchText": "Karinox Coffee Ninh Thuận ở Phan Rang-Tháp Chàm. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Khu tổ hợp Karinox Coffee, Khui vui chơi trẻ em & Gà Rán Pippy Kids Chi Nhánh Phan Rang Đánh giá: 3.5/5 từ 2 lượt review. Xếp hạng: 24/29. Giá: 684.210.496 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/75/46/71/karinox-coffee-ninh-thu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.998276,
+                11.572918
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8125627",
+        "title": "Quán Ăn Lộc Phát 2",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 3.3,
+        "ranking": "25/29",
+        "reviewsCount": 6,
+        "category": "Ngồi xuống",
+        "priceRange": "26.316 ₫ - 526.316 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Ăn Lộc Phát 2 ở Phan Rang-Tháp Chàm. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.3/5 từ 6 lượt review. Xếp hạng: 25/29. Giá: 26.316 ₫ - 526.316 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/45/30/7c/khong-gian.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.98965,
+                11.56713
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14445944",
+        "title": "Nhà Hàng Cơm Niêu Lộc Ký",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 3.7,
+        "ranking": "26/29",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Cơm Niêu Lộc Ký ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.7/5 từ 3 lượt review. Xếp hạng: 26/29.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/e3/f1/e6/nha-hang-loc-ky.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.99921,
+                11.60792
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26258555",
+        "title": "Oishi Shusi",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 3.0,
+        "ranking": "27/29",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Oishi Shusi ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 27/29.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.99003,
+                11.56305
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21378601",
+        "title": "MaxVik Mexico",
+        "city": "Binh Tien",
+        "totalScore": 3.0,
+        "ranking": "28/29",
+        "reviewsCount": 1,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "1.052.632 ₫ - 2.631.579 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "MaxVik Mexico ở Binh Tien. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 28/29. Giá: 1.052.632 ₫ - 2.631.579 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12610202",
+        "title": "Hoa Thiên Lý",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 3.0,
+        "ranking": "29/29",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hoa Thiên Lý ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 2 lượt review. Xếp hạng: 29/29.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/c7/9d/f3/hoa-thien-ly.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.99508,
+                11.55741
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21392233",
+        "title": "Quán Hoàng Sơn",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "263.157.888 ₫ - 2.147.483.647 ₫",
+        "description": "Được làm từ các món ăn Dê tươi",
+        "embedding": null,
+        "searchText": "Quán Hoàng Sơn ở Phan Rang-Tháp Chàm. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Được làm từ các món ăn Dê tươi Giá: 263.157.888 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.01553,
+                11.565788
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21392230",
+        "title": "Dê Hoàng Sơn",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "263.157.888 ₫ - 2.147.483.647 ₫",
+        "description": "Được làm từ các món ăn Dê tươi",
+        "embedding": null,
+        "searchText": "Dê Hoàng Sơn ở Phan Rang-Tháp Chàm. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Được làm từ các món ăn Dê tươi Giá: 263.157.888 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.01553,
+                11.565788
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20004632",
+        "title": "Vườn Bia Tươi",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn Bia Tươi ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.98951,
+                11.587413
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17757857",
+        "title": "Nhà Hàng Phong Ký",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Phong Ký ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.99391,
+                11.55889
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33323189",
+        "title": "Quan Radio Food & Bia",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quan Radio Food & Bia ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.98931,
+                11.576132
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27421377",
+        "title": "Quán Nướng Số 1",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Nướng Số 1 ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2b/87/08/35/quan-nu-ng-chu-n-ch-t.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.92471,
+                13.908957
+            ]
+        },
+        "openingHours": {
+            "display": "16:30-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27982038",
+        "title": "Quán Đá Đen - Tôm Khổng Lồ Phan Rang",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "105.263 ₫ - 236.842 ₫",
+        "description": "Restaurant Giant Tiger Prawn Da Den Phan Rang là một địa điểm ăn uống nổi tiếng ở Phan Rang. Nhà hàng này chuyên về các món ăn từ tôm sú, đặc biệt là tôm sú khổng lồ, một loại hải sản độc đáo được nuôi trồng tại vùng biển mặn của Ninh Thuận. Đây không chỉ là một địa điểm dành cho những ai yêu thích hải sản, mà còn phục vụ nhiều món ăn nhà hàng khác như thịt bò, gà, nghêu, sò, ốc... Đặc biệt, món lẩu tôm khổng lồ tại nhà hàng là một trải nghiệm ẩm thực không thể bỏ qua khi đến Phan Rang. Nước lẩu vừa chua vừa cay, kết hợp cùng vị ngọt của tôm sú tạo nên một món ăn hấp dẫn, khó quên.\"",
+        "embedding": null,
+        "searchText": "Quán Đá Đen - Tôm Khổng Lồ Phan Rang ở Phan Rang-Tháp Chàm. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Restaurant Giant Tiger Prawn Da Den Phan Rang là một địa điểm ăn uống nổi tiếng ở Phan Rang. Nhà hàng này chuyên về các món ăn từ tôm sú, đặc biệt là tôm sú khổng lồ, một loại hải sản độc đáo được nuôi trồng tại vùng biển mặn của Ninh Thuận. Đây không chỉ là một địa điểm dành cho những ai yêu thích hải sản, mà còn phục vụ nhiều món ăn nhà hàng khác như thịt bò, gà, nghêu, sò, ốc... Đặc biệt, món lẩu tôm khổng lồ tại nhà hàng là một trải nghiệm ẩm thực không thể bỏ qua khi đến Phan Rang. Nước lẩu vừa chua vừa cay, kết hợp cùng vị ngọt của tôm sú tạo nên một món ăn hấp dẫn, khó quên.\" Giá: 105.263 ₫ - 236.842 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/0e/6a/b2/restaurant-giant-tiger.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.01382,
+                11.565022
+            ]
+        },
+        "openingHours": {
+            "display": "10:30-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33055543",
+        "title": "Jeju Restaurant",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Jeju Restaurant ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/89/4a/78/nha-hang-jeju-chuyen.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.952156,
+                11.595257
+            ]
+        },
+        "openingHours": {
+            "display": "11:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26493568",
+        "title": "Bun Dau Phu Quy Mam Tom",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bun Dau Phu Quy Mam Tom ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.99535,
+                11.570029
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26493564",
+        "title": "Bún Dâu Phú Quy - Bún Dâu Mãm Tôm",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bún Dâu Phú Quy - Bún Dâu Mãm Tôm ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.01404,
+                11.56188
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14162994",
+        "title": "Lẫu Bò Sơ Ri",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lẫu Bò Sơ Ri ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.992874,
+                11.559654
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32834293",
+        "title": "Dang Quang Travel",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dang Quang Travel ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.04493,
+                11.591608
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15784834",
+        "title": "Hội Quán Văn Nghệ Coffee",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hội Quán Văn Nghệ Coffee ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.02133,
+                11.56309
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33324371",
+        "title": "Trung Tâm Hội Nghị Tiệc Cưới Hera Center",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trung Tâm Hội Nghị Tiệc Cưới Hera Center ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.96956,
+                11.58524
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28138420",
+        "title": "Quán Bia Khô Mực Mộc",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Bia Khô Mực Mộc ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.92471,
+                13.908957
+            ]
+        },
+        "openingHours": {
+            "display": "17:00-25:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1500
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25555912",
+        "title": "Bánh mì chảo (Thúy)",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "81A Yên Ninh, KP4, Phường Mỹ Hải, Phan Rang-Tháp Chàm, Ninh Thuận Bánh mì chảo Thúy - món ăn Bánh mì với nguyên liệu xíu mại, xúc xích, pa tê, trứng ốp la, chà bông… cùng với nước xốt thơm ngon. Giá: 15,000 - 25,000 VND /phần",
+        "embedding": null,
+        "searchText": "Bánh mì chảo (Thúy) ở Phan Rang-Tháp Chàm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: 81A Yên Ninh, KP4, Phường Mỹ Hải, Phan Rang-Tháp Chàm, Ninh Thuận Bánh mì chảo Thúy - món ăn Bánh mì với nguyên liệu xíu mại, xúc xích, pa tê, trứng ốp la, chà bông… cùng với nước xốt thơm ngon. Giá: 15,000 - 25,000 VND /phần",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.021355,
+                11.559718
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-10:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 630
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 630
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 630
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 630
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 630
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 630
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 630
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "20139486",
+        "title": "Q Lounge - Beer",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "1.315.789.440 ₫ - 2.147.483.647 ₫",
+        "description": "Q Lounge & Beer Phan Rang được biết đến là một trong những nhà hàng bar sang trọng, đẳng cấp tại Ninh Thuận hiện nay. Q Louge – Beer club Phan Rang đúng là địa điểm vui chơi, giải trí, thưởng thức âm nhạc kết hợp trải nghiệm beer và ẩm thực về đêm nên đến một lần khi đi du lịch tại Ninh Thuận. Q Lounge & Beer hiện tọa lạc tại 283 Ngô Gia Tự, phường Tấn Tài, thành phố Phan Rang. Cách chợ đêm du lị",
+        "embedding": null,
+        "searchText": "Q Lounge - Beer ở Phan Rang-Tháp Chàm. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Q Lounge & Beer Phan Rang được biết đến là một trong những nhà hàng bar sang trọng, đẳng cấp tại Ninh Thuận hiện nay. Q Louge – Beer club Phan Rang đúng là địa điểm vui chơi, giải trí, thưởng thức âm nhạc kết hợp trải nghiệm beer và ẩm thực về đêm nên đến một lần khi đi du lịch tại Ninh Thuận. Q Lounge & Beer hiện tọa lạc tại 283 Ngô Gia Tự, phường Tấn Tài, thành phố Phan Rang. Cách chợ đêm du lị Giá: 1.315.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/e6/43/d7/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.99513,
+                11.562681
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33239010",
+        "title": "Bếp Nhà Văn - Phở Gold",
+        "city": "Ninh Thuan Province",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bếp Nhà Văn - Phở Gold ở Ninh Thuan Province. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.18432,
+                11.701668
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25051399",
+        "title": "Cami Restaurant & Bar",
+        "city": "Mỹ Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "\"Nhà hàng CAMI từ lâu đã được rất nhiều thực khách đam mê ẩm thực biết đến là một trong những Nhà hàng ngon ở đảo Phú Quốc, không chỉ các thực khách trong nước mà còn có cả những thực khách ngoại quốc cũng rất hài lòng khi có dịp thưởng thức ẩm thực tại CAMI. Tại Mỹ Hoà, CAMI sở hữu một không gian thoáng đãng, cạnh bờ biển, rất lãng mạn. Thực đơn CAMI rất phong phú và đa dạng với nhiều món Á - Âu vô cùng hấp dẫn. Nguồn thực phẩm bò, heo, cừu, dê, hải sản tươi sống tại địa phương, chắc chắn sẽ làm xiêu lòng các thực khách.\"",
+        "embedding": null,
+        "searchText": "Cami Restaurant & Bar ở Mỹ Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: \"Nhà hàng CAMI từ lâu đã được rất nhiều thực khách đam mê ẩm thực biết đến là một trong những Nhà hàng ngon ở đảo Phú Quốc, không chỉ các thực khách trong nước mà còn có cả những thực khách ngoại quốc cũng rất hài lòng khi có dịp thưởng thức ẩm thực tại CAMI. Tại Mỹ Hoà, CAMI sở hữu một không gian thoáng đãng, cạnh bờ biển, rất lãng mạn. Thực đơn CAMI rất phong phú và đa dạng với nhiều món Á - Âu vô cùng hấp dẫn. Nguồn thực phẩm bò, heo, cừu, dê, hải sản tươi sống tại địa phương, chắc chắn sẽ làm xiêu lòng các thực khách.\"",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/27/b4/cd/ad/garden-by-the-beach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.14774,
+                11.616042
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-23:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1410
+                    }
+                ]
+            ]
+        }
+    }
+]

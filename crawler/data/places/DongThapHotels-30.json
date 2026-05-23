@@ -1,0 +1,844 @@
+[
+    {
+        "sourceLocationId": "25403589",
+        "title": "Khách Sạn Wildbird",
+        "city": "Tram Chim, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 5.0,
+        "ranking": "1/150",
+        "reviewsCount": 21,
+        "category": "Khách sạn nhỏ",
+        "priceRange": "710.526 ₫ - 894.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn Wildbird ở Tram Chim, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 5.0/5 từ 21 lượt review. Xếp hạng: 1/150. Giá: 710.526 ₫ - 894.737 ₫.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/3b/8c/2e/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.555725,
+                10.686327
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15521495",
+        "title": "The Mandarin Homestay",
+        "city": "Lai Vung, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 5.0,
+        "ranking": "2/150",
+        "reviewsCount": 10,
+        "category": "Cơ sở kinh doanh có dịch vụ giới hạn",
+        "priceRange": "657.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The Mandarin Homestay ở Lai Vung, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Cơ sở kinh doanh có dịch vụ giới hạn. Tags: Cơ sở kinh doanh có dịch vụ giới hạn. Đánh giá: 5.0/5 từ 10 lượt review. Xếp hạng: 2/150. Giá: 657.895 ₫.",
+        "tags": [
+            "Cơ sở kinh doanh có dịch vụ giới hạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/86/62/b6/the-mandarin-homestay.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.61929,
+                10.26722
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13862046",
+        "title": "Huynh Duc 2 Hotel",
+        "city": "Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 4.4,
+        "ranking": "3/150",
+        "reviewsCount": 7,
+        "category": "Khách sạn đặc biệt",
+        "priceRange": "342.105 ₫ - 657.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Huynh Duc 2 Hotel ở Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Khách sạn đặc biệt. Tags: Khách sạn đặc biệt. Đánh giá: 4.4/5 từ 7 lượt review. Xếp hạng: 3/150. Giá: 342.105 ₫ - 657.895 ₫.",
+        "tags": [
+            "Khách sạn đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/93/4f/33/huynh-duc-2-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.64013,
+                10.45955
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12195858",
+        "title": "Maison en Bambou Phong -Le Vent",
+        "city": "Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 4.8,
+        "ranking": "4/150",
+        "reviewsCount": 9,
+        "category": "Nhà khách",
+        "priceRange": "447.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Maison en Bambou Phong -Le Vent ở Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Nhà khách. Tags: Nhà khách. Đánh giá: 4.8/5 từ 9 lượt review. Xếp hạng: 4/150. Giá: 447.368 ₫.",
+        "tags": [
+            "Nhà khách"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/0e/86/aa/e5/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.74213,
+                10.323327
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "2078648",
+        "title": "Thao Ngan Hotel",
+        "city": "Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 4.2,
+        "ranking": "5/150",
+        "reviewsCount": 20,
+        "category": "Nhà khách",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thao Ngan Hotel ở Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Nhà khách. Tags: Nhà khách. Đánh giá: 4.2/5 từ 20 lượt review. Xếp hạng: 5/150.",
+        "tags": [
+            "Nhà khách"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/01/d1/44/a0/twinbett-zimmer.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.74896,
+                10.3103
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19458650",
+        "title": "Papaya Homestay Sadec",
+        "city": "Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 5.0,
+        "ranking": "6/150",
+        "reviewsCount": 6,
+        "category": "Nhà khách",
+        "priceRange": "657.895 ₫ - 1.052.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Papaya Homestay Sadec ở Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Nhà khách. Tags: Nhà khách. Đánh giá: 5.0/5 từ 6 lượt review. Xếp hạng: 6/150. Giá: 657.895 ₫ - 1.052.632 ₫.",
+        "tags": [
+            "Nhà khách"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/ba/95/6c/flower-blooming-for-new.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.844246,
+                10.258986
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9771401",
+        "title": "Khách Sạn Huỳnh Đức",
+        "city": "Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 4.7,
+        "ranking": "7/150",
+        "reviewsCount": 7,
+        "category": "Khách sạn nhỏ",
+        "priceRange": "342.105 ₫ - 842.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn Huỳnh Đức ở Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 4.7/5 từ 7 lượt review. Xếp hạng: 7/150. Giá: 342.105 ₫ - 842.105 ₫.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/d5/0b/72/ti-p-tan.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.63419,
+                10.468004
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13949276",
+        "title": "Phuc Hotel",
+        "city": "Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 4.0,
+        "ranking": "8/150",
+        "reviewsCount": 5,
+        "category": "Khách sạn nhỏ",
+        "priceRange": "263.158 ₫ - 368.421 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Phuc Hotel ở Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 4.0/5 từ 5 lượt review. Xếp hạng: 8/150. Giá: 263.158 ₫ - 368.421 ₫.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/2e/0a/61/0c/phuc-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.639,
+                10.4622
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13955647",
+        "title": "Ha Anh Hotel",
+        "city": "Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 5.0,
+        "ranking": "9/150",
+        "reviewsCount": 4,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ha Anh Hotel ở Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 9/150.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/97/46/c7/ha-anh-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.63344,
+                10.46459
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13518078",
+        "title": "Khách sạn ven sông Sao Khue",
+        "city": "Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 5.0,
+        "ranking": "10/150",
+        "reviewsCount": 3,
+        "category": "Nhà trọ",
+        "priceRange": "289.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn ven sông Sao Khue ở Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 10/150. Giá: 289.474 ₫.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/0f/f5/60/photo1jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.780396,
+                10.280784
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1894065",
+        "title": "Khách Sạn Phương Nam",
+        "city": "Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 4.3,
+        "ranking": "11/150",
+        "reviewsCount": 6,
+        "category": "Khách sạn",
+        "priceRange": "368.421 ₫ - 394.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn Phương Nam ở Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.3/5 từ 6 lượt review. Xếp hạng: 11/150. Giá: 368.421 ₫ - 394.737 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/1b/73/1a/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.76296,
+                10.290577
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21421636",
+        "title": "Khách SạN Thư Lê",
+        "city": "Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 5.0,
+        "ranking": "12/150",
+        "reviewsCount": 1,
+        "category": "Khách sạn",
+        "priceRange": "421.053 ₫ - 763.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách SạN Thư Lê ở Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 12/150. Giá: 421.053 ₫ - 763.158 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/6b/a0/70/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.63437,
+                10.45623
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19682659",
+        "title": "Hotel My Anh",
+        "city": "Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 5.0,
+        "ranking": "13/150",
+        "reviewsCount": 1,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hotel My Anh ở Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 13/150.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.74596,
+                10.31222
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8686892",
+        "title": "Huong Sen Hotel",
+        "city": "Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 3.4,
+        "ranking": "14/150",
+        "reviewsCount": 11,
+        "category": "Khách sạn nhỏ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Huong Sen Hotel ở Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 3.4/5 từ 11 lượt review. Xếp hạng: 14/150.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/57/c0/d7/huong-sen-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.63367,
+                10.45942
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23027584",
+        "title": "Khách sạn Cao Lãnh",
+        "city": "Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 5.0,
+        "ranking": "15/150",
+        "reviewsCount": 1,
+        "category": "Khách sạn",
+        "priceRange": "315.789 ₫ - 605.263 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Cao Lãnh ở Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 15/150. Giá: 315.789 ₫ - 605.263 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/a7/8e/65/khach-s-n-cao-lanh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.69498,
+                10.442656
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17499892",
+        "title": "Life House Sadec",
+        "city": "Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 5.0,
+        "ranking": "16/150",
+        "reviewsCount": 1,
+        "category": "Khách sạn đặc biệt",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Life House Sadec ở Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Khách sạn đặc biệt. Tags: Khách sạn đặc biệt. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 16/150.",
+        "tags": [
+            "Khách sạn đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/1a/50/73/1f/life-house-sadec.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.74596,
+                10.31222
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19751455",
+        "title": "Sky Hotel",
+        "city": "Hong Ngu, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 4.0,
+        "ranking": "17/150",
+        "reviewsCount": 1,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sky Hotel ở Hong Ngu, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 17/150.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/29/01/34/7c/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.348335,
+                10.80984
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12941974",
+        "title": "Lan Thai Ngoc Hotel",
+        "city": "Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 4.0,
+        "ranking": "18/150",
+        "reviewsCount": 2,
+        "category": "Nhà nghỉ",
+        "priceRange": "263.158 ₫ - 500.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Lan Thai Ngoc Hotel ở Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 18/150. Giá: 263.158 ₫ - 500.000 ₫.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/77/a4/94/lan-thai-ngoc-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.63139,
+                10.461138
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21389053",
+        "title": "Neverland De Papillons - Country Cottage in Sa Dec, Mekong Delta",
+        "city": "Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 3.2,
+        "ranking": "19/150",
+        "reviewsCount": 6,
+        "category": "B&B",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Neverland De Papillons - Country Cottage in Sa Dec, Mekong Delta ở Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: B&B. Tags: B&B. Đánh giá: 3.2/5 từ 6 lượt review. Xếp hạng: 19/150.",
+        "tags": [
+            "B&B"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/06/ed/fd/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.7265,
+                10.298479
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15007996",
+        "title": "Van Kim Long Hotel",
+        "city": "Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 3.8,
+        "ranking": "20/150",
+        "reviewsCount": 4,
+        "category": "Khách sạn",
+        "priceRange": "578.947 ₫ - 631.579 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Van Kim Long Hotel ở Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 3.8/5 từ 4 lượt review. Xếp hạng: 20/150. Giá: 578.947 ₫ - 631.579 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/29/d4/0b/ba/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.75017,
+                10.29293
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9750190",
+        "title": "Khách Sạn Thành Công",
+        "city": "Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 3.7,
+        "ranking": "21/150",
+        "reviewsCount": 3,
+        "category": "Nhà trọ",
+        "priceRange": "289.474 ₫ - 394.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn Thành Công ở Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 3.7/5 từ 3 lượt review. Xếp hạng: 21/150. Giá: 289.474 ₫ - 394.737 ₫.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.746,
+                10.30259
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "3221737",
+        "title": "Khách Sạn Sao Mai",
+        "city": "Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 2.8,
+        "ranking": "22/150",
+        "reviewsCount": 13,
+        "category": "Khách sạn",
+        "priceRange": "552.632 ₫ - 736.842 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn Sao Mai ở Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 2.8/5 từ 13 lượt review. Xếp hạng: 22/150. Giá: 552.632 ₫ - 736.842 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/24/dc/96/photo2jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.63814,
+                10.45737
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17537368",
+        "title": "Khách Sạn B.O.B",
+        "city": "Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 4.0,
+        "ranking": "23/150",
+        "reviewsCount": 1,
+        "category": "Khách sạn đặc biệt",
+        "priceRange": "473.684 ₫ - 789.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn B.O.B ở Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Khách sạn đặc biệt. Tags: Khách sạn đặc biệt. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 23/150. Giá: 473.684 ₫ - 789.474 ₫.",
+        "tags": [
+            "Khách sạn đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/fa/87/d2/photo5jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.634544,
+                10.465356
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12826199",
+        "title": "Flower & Frog Homestay",
+        "city": "Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 3.5,
+        "ranking": "24/150",
+        "reviewsCount": 2,
+        "category": "Nhà trọ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Flower & Frog Homestay ở Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 3.5/5 từ 2 lượt review. Xếp hạng: 24/150.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/e8/47/01/decor-simple-mais-tres.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.7583,
+                10.314413
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12858964",
+        "title": "L'Amant Homestay Marguerite Duras",
+        "city": "Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 2.7,
+        "ranking": "25/150",
+        "reviewsCount": 3,
+        "category": "Biệt thự",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "L'Amant Homestay Marguerite Duras ở Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Biệt thự. Tags: Biệt thự. Đánh giá: 2.7/5 từ 3 lượt review. Xếp hạng: 25/150.",
+        "tags": [
+            "Biệt thự"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.76889,
+                10.293196
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6216725",
+        "title": "Winter Hotel",
+        "city": "Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 4.0,
+        "ranking": "26/150",
+        "reviewsCount": 1,
+        "category": "Khách sạn nhỏ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Winter Hotel ở Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 26/150.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.63167,
+                10.44045
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9734308",
+        "title": "Mai Khanh Hotel",
+        "city": "Hong Ngu, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 3.0,
+        "ranking": "27/150",
+        "reviewsCount": 1,
+        "category": "Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mai Khanh Hotel ở Hong Ngu, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 27/150.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.34422,
+                10.80595
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7154752",
+        "title": "Khách sạn Xuân Mai",
+        "city": "Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 3.0,
+        "ranking": "28/150",
+        "reviewsCount": 3,
+        "category": "Khách sạn nhỏ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Xuân Mai ở Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 3.0/5 từ 3 lượt review. Xếp hạng: 28/150.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.63573,
+                10.45653
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6707403",
+        "title": "Sa Dec Hotel",
+        "city": "Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 3.0,
+        "ranking": "29/150",
+        "reviewsCount": 1,
+        "category": "Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sa Dec Hotel ở Sa Đéc, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 29/150.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/16/dc/8c/89/sa-dec-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.76642,
+                10.29388
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9771409",
+        "title": "Kim Le Hotel",
+        "city": "Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong",
+        "totalScore": 3.0,
+        "ranking": "30/150",
+        "reviewsCount": 1,
+        "category": "Khách sạn nhỏ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kim Le Hotel ở Cao Lãnh, Tỉnh Đồng Tháp, Đồng bằng Mekong. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 30/150.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.63634,
+                10.45521
+            ]
+        },
+        "openingHours": null
+    }
+]

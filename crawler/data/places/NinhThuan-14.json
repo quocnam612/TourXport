@@ -1,0 +1,650 @@
+[
+    {
+        "sourceLocationId": "3506921",
+        "title": "Po Klong Garai Cham Temple Towers",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 4.5,
+        "ranking": "1/14",
+        "reviewsCount": 99,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Po Klong Garai Cham Temple Towers ở Phan Rang-Tháp Chàm. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 99 lượt review. Xếp hạng: 1/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/bb/45/2d/thap-du-c-vua-jaya-simhavarman.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.99921,
+                11.60792
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7746998",
+        "title": "Phan Rang Beach",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 4.2,
+        "ranking": "2/14",
+        "reviewsCount": 78,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phan Rang Beach ở Phan Rang-Tháp Chàm. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.2/5 từ 78 lượt review. Xếp hạng: 2/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/6f/40/b8/phan-rang-beach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.02295,
+                11.55601
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17337535",
+        "title": "Tháp Po Klong Garai",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 5.0,
+        "ranking": "6/14",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tháp Po Klong Garai ở Phan Rang-Tháp Chàm. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 6/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/15/00/83/photo2jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.94818,
+                11.60449
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12855897",
+        "title": "Nam Cuong Sand Dunes",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 4.1,
+        "ranking": "3/14",
+        "reviewsCount": 10,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nam Cuong Sand Dunes ở Phan Rang-Tháp Chàm. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.1/5 từ 10 lượt review. Xếp hạng: 3/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/73/07/ed/img-20180323-104722-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8571576",
+        "title": "Phuoc bInh National Park",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 3.5,
+        "ranking": "7/14",
+        "reviewsCount": 2,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phuoc bInh National Park ở Phan Rang-Tháp Chàm. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.5/5 từ 2 lượt review. Xếp hạng: 7/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.99921,
+                11.60792
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15019508",
+        "title": "Hang Rái",
+        "city": "Vinh Hai",
+        "totalScore": 5.0,
+        "ranking": "4/14",
+        "reviewsCount": 3,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hang Rái ở Vinh Hai. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 4/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/42/38/74/hang-rai.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32836060",
+        "title": "Dang Quang Travel",
+        "city": "Khanh Hai",
+        "totalScore": 5.0,
+        "ranking": "5/14",
+        "reviewsCount": 1,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dang Quang Travel ở Khanh Hai. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Thông tin cho khách du lịch. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 5/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/8d/e1/4c/d-ch-v-r-t-ok-xe-s-ch.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.044304,
+                11.591378
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34327327",
+        "title": "Ivexe Travel",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ivexe Travel ở Phan Rang-Tháp Chàm. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Thông tin cho khách du lịch.",
+        "tags": [
+            "Điểm du lịch",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.02296,
+                11.556195
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34327304",
+        "title": "Dailyve Travel",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dailyve Travel ở Phan Rang-Tháp Chàm. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Thông tin cho khách du lịch.",
+        "tags": [
+            "Điểm du lịch",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.994896,
+                11.562285
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32881966",
+        "title": "Trùng Sơn Cổ Tự",
+        "city": "Ninh Thuan Province",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trùng Sơn Cổ Tự ở Ninh Thuan Province. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.190895,
+                12.256987
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32835991",
+        "title": "Dang Quang Travel",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dang Quang Travel ở Phan Rang-Tháp Chàm. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Thông tin cho khách du lịch.",
+        "tags": [
+            "Điểm du lịch",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.04478,
+                11.591465
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27982059",
+        "title": "Đồng Cừu Suối Tiên",
+        "city": "Cong Hai",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đồng Cừu Suối Tiên ở Cong Hai. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.115204,
+                11.804987
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26672161",
+        "title": "Vườn Nho Ninh Thuận",
+        "city": "Vinh Hai",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Đồ ăn & Đồ uống",
+        "priceRange": null,
+        "description": "Vườn Nho của chung tôi có rất nhiều các loại nho như nho kẹo, nho ngón tay, nho mẫu đơn ... Nho được trồng trọt quanh năm nên đại đa số thời gian mọi người tới tham quan đều có nho. Vườn chúng tôi mở cửa miễn phí và không thu bất cứ chi phí nào khác nên mọi người có thể an tâm tham quan.",
+        "embedding": null,
+        "searchText": "Vườn Nho Ninh Thuận ở Vinh Hai. Loại địa điểm: Đồ ăn & Đồ uống. Tags: Điểm du lịch, Đồ ăn & Đồ uống. Mô tả: Vườn Nho của chung tôi có rất nhiều các loại nho như nho kẹo, nho ngón tay, nho mẫu đơn ... Nho được trồng trọt quanh năm nên đại đa số thời gian mọi người tới tham quan đều có nho. Vườn chúng tôi mở cửa miễn phí và không thu bất cứ chi phí nào khác nên mọi người có thể an tâm tham quan.",
+        "tags": [
+            "Điểm du lịch",
+            "Đồ ăn & Đồ uống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.157265,
+                11.653576
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17479411",
+        "title": "Bai Thung Beach",
+        "city": "Vinh Hai",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bai Thung Beach ở Vinh Hai. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    }
+]

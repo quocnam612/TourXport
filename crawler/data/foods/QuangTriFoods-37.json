@@ -1,0 +1,2028 @@
+[
+    {
+        "sourceLocationId": "27944439",
+        "title": "Sepon Farm-to-table Restaurant",
+        "city": "Quang Tri",
+        "totalScore": 5.0,
+        "ranking": "1/24",
+        "reviewsCount": 6,
+        "category": "Ngồi xuống",
+        "priceRange": "52.632 ₫ - 131.579 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Sepon Farm-to-table Restaurant ở Quang Tri. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 6 lượt review. Xếp hạng: 1/24. Giá: 52.632 ₫ - 131.579 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/8a/d2/37/sepon-farm-to-table-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.260735,
+                16.676271
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13372827",
+        "title": "Nhà hàng Sachi",
+        "city": "Đông Hà",
+        "totalScore": 4.8,
+        "ranking": "2/24",
+        "reviewsCount": 13,
+        "category": "Ngồi xuống",
+        "priceRange": "26.316 ₫ - 657.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Sachi ở Đông Hà. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.8/5 từ 13 lượt review. Xếp hạng: 2/24. Giá: 26.316 ₫ - 657.895 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/b9/c1/67/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.10302,
+                16.810036
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13837220",
+        "title": "Retro Coffee",
+        "city": "Đông Hà",
+        "totalScore": 4.9,
+        "ranking": "3/24",
+        "reviewsCount": 7,
+        "category": "Quán cafe",
+        "priceRange": "289.473.696 ₫ - 921.052.608 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Retro Coffee ở Đông Hà. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 4.9/5 từ 7 lượt review. Xếp hạng: 3/24. Giá: 289.473.696 ₫ - 921.052.608 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/82/e4/c6/cappuccino-black-hot.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.10212,
+                16.81241
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15699772",
+        "title": "Kim's Corner",
+        "city": "Đông Hà",
+        "totalScore": 4.6,
+        "ranking": "4/24",
+        "reviewsCount": 9,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kim's Corner ở Đông Hà. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.6/5 từ 9 lượt review. Xếp hạng: 4/24.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/1c/db/58/khong-gian-ben-trong.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.09429,
+                16.81457
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12203698",
+        "title": "Quán Cà Phê Tamarind",
+        "city": "Đông Hà",
+        "totalScore": 5.0,
+        "ranking": "5/24",
+        "reviewsCount": 5,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Cà Phê Tamarind ở Đông Hà. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 5 lượt review. Xếp hạng: 5/24.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/16/73/11/db/m-t-ngay-xuan.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.12069,
+                16.8038
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16152154",
+        "title": "Tam’s Cafe",
+        "city": "Khe Sanh",
+        "totalScore": 5.0,
+        "ranking": "6/24",
+        "reviewsCount": 4,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tam’s Cafe ở Khe Sanh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 6/24.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/17/89/7d/8f/nhi-u-lo-i-th-c-an-cho.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.73855,
+                16.63045
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33396271",
+        "title": "Maison Liberica",
+        "city": "Khe Sanh",
+        "totalScore": 5.0,
+        "ranking": "7/24",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Maison Liberica ở Khe Sanh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 7/24.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/30/d8/ef/df/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.09916,
+                16.81772
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10768959",
+        "title": "Nhà Hàng Tân Châu",
+        "city": "Đông Hà",
+        "totalScore": 3.6,
+        "ranking": "8/24",
+        "reviewsCount": 20,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Tân Châu ở Đông Hà. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.6/5 từ 20 lượt review. Xếp hạng: 8/24. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/25/1a/04/4f/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.106316,
+                16.81855
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28031186",
+        "title": "Nhà hàng Phúc An",
+        "city": "Quang Tri",
+        "totalScore": 5.0,
+        "ranking": "9/24",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Phúc An ở Quang Tri. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 9/24. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2d/17/2d/14/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.197,
+                16.753014
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8637760",
+        "title": "Tik Tik Talk Coffee & Tea",
+        "city": "Đông Hà",
+        "totalScore": 5.0,
+        "ranking": "10/24",
+        "reviewsCount": 5,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": "Tik Tik Talk là một không gian thưởng thức cà phê mới cho những ai muốn khám phá hương vị cà phê Ý. Một ly Espresso/Cappuchino/Latte sẽ giúp bạnc cảm nhận vị chua đặc trưng của Arabica. Không chỉ có cà phê, bạn còn có thể thưởng thức các thức uống đá xay và các loại trà tuyệt vời khác. Các hương vị xoài, dâu, đào, vải được kết hợp theo sẽ xua tan đi mọi mệt nhọc sau ngày làm việc vất vả/",
+        "embedding": null,
+        "searchText": "Tik Tik Talk Coffee & Tea ở Đông Hà. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Tik Tik Talk là một không gian thưởng thức cà phê mới cho những ai muốn khám phá hương vị cà phê Ý. Một ly Espresso/Cappuchino/Latte sẽ giúp bạnc cảm nhận vị chua đặc trưng của Arabica. Không chỉ có cà phê, bạn còn có thể thưởng thức các thức uống đá xay và các loại trà tuyệt vời khác. Các hương vị xoài, dâu, đào, vải được kết hợp theo sẽ xua tan đi mọi mệt nhọc sau ngày làm việc vất vả/ Đánh giá: 5.0/5 từ 5 lượt review. Xếp hạng: 10/24. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/ff/60/12/tik-tik-talk-coffee-tea.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.09425,
+                16.822426
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6496040",
+        "title": "Pho Hang",
+        "city": "Đông Hà",
+        "totalScore": 4.8,
+        "ranking": "11/24",
+        "reviewsCount": 4,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pho Hang ở Đông Hà. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.8/5 từ 4 lượt review. Xếp hạng: 11/24.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.08155,
+                16.81651
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25236715",
+        "title": "Rex Restaurant & Bar",
+        "city": "Đông Hà",
+        "totalScore": 5.0,
+        "ranking": "12/24",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "789.473.664 ₫ - 2.147.483.647 ₫",
+        "description": "Chúng tôi cung cấp các món ăn Âu - Á hiện đại và đặc sản Quảng Trị được chế biến và chọn lựa cẩn thận bởi đầu bếp tài năng của REX. Thức uống phong phú với hơn 20 loại bia phổ biến và nổi tiếng trên thế giới, các loại cocktail đặc trưng và cổ điển, REX sẽ là nơi để bạn thỏa mãn vị giác của mình. Vị trí đắc địa, ẩm thực tinh tế và phong phú, REX với không gian thiết kế hiện đại trẻ trung, sẽ điểm đến yêu thích của giới trẻ Đông Hà, Quảng Trị, đáp ứng mọi nhu cầu dù bạn đi với nhóm bạn thân, tổ chức một bữa tiệc hay bạn cần không gian riêng tư lãng mạn.",
+        "embedding": null,
+        "searchText": "Rex Restaurant & Bar ở Đông Hà. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Chúng tôi cung cấp các món ăn Âu - Á hiện đại và đặc sản Quảng Trị được chế biến và chọn lựa cẩn thận bởi đầu bếp tài năng của REX. Thức uống phong phú với hơn 20 loại bia phổ biến và nổi tiếng trên thế giới, các loại cocktail đặc trưng và cổ điển, REX sẽ là nơi để bạn thỏa mãn vị giác của mình. Vị trí đắc địa, ẩm thực tinh tế và phong phú, REX với không gian thiết kế hiện đại trẻ trung, sẽ điểm đến yêu thích của giới trẻ Đông Hà, Quảng Trị, đáp ứng mọi nhu cầu dù bạn đi với nhóm bạn thân, tổ chức một bữa tiệc hay bạn cần không gian riêng tư lãng mạn. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 12/24. Giá: 789.473.664 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/32/9d/51/signature-grilled-chicken.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.09329,
+                16.82873
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17695314",
+        "title": "Tiệm Cơm Hoàng Chân",
+        "city": "Đông Hà",
+        "totalScore": 5.0,
+        "ranking": "13/24",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "526.315.776 ₫ - 1.315.789.440 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Tiệm Cơm Hoàng Chân ở Đông Hà. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 13/24. Giá: 526.315.776 ₫ - 1.315.789.440 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/36/ed/a6/ruteo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.10338,
+                16.82141
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12457337",
+        "title": "Paris Cafe & Patisserie",
+        "city": "Đông Hà",
+        "totalScore": 5.0,
+        "ranking": "14/24",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Paris Cafe & Patisserie ở Đông Hà. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 14/24.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/fb/4c/bb/bong-da.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.09939,
+                16.81866
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25197975",
+        "title": "Ha Coffee",
+        "city": "Lao Bảo",
+        "totalScore": 5.0,
+        "ranking": "15/24",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ha Coffee ở Lao Bảo. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 15/24.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/27/6e/7d/a3/nice-new-coffee-place.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.59756,
+                16.612858
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17838822",
+        "title": "Công Viên Dừa",
+        "city": "Đông Hà",
+        "totalScore": 5.0,
+        "ranking": "16/24",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "526.315.776 ₫ - 1.315.789.440 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Công Viên Dừa ở Đông Hà. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 16/24. Giá: 526.315.776 ₫ - 1.315.789.440 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/18/a4/48/2e/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.10076,
+                16.82224
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "7776516",
+        "title": "Phố Coffee",
+        "city": "Đông Hà",
+        "totalScore": 5.0,
+        "ranking": "17/24",
+        "reviewsCount": 2,
+        "category": "Quán cafe",
+        "priceRange": "26.316 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Phố Coffee ở Đông Hà. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 17/24. Giá: 26.316 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/75/39/26/new-zealand-family-after.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.03301,
+                23.024109
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-11:00, 17:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19070267",
+        "title": "HAI COFFEE",
+        "city": "Khe Sanh",
+        "totalScore": 5.0,
+        "ranking": "18/24",
+        "reviewsCount": 1,
+        "category": "Quán cafe",
+        "priceRange": "263.157.888 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "HAI COFFEE ở Khe Sanh. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 18/24. Giá: 263.157.888 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/29/e8/b6/just-dropped-infor-a.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.74141,
+                16.63452
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14003658",
+        "title": "Trà Tiên Hưởng",
+        "city": "Đông Hà",
+        "totalScore": 5.0,
+        "ranking": "19/24",
+        "reviewsCount": 1,
+        "category": "Quán cafe",
+        "priceRange": "394.736.832 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Trà Tiên Hưởng ở Đông Hà. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 19/24. Giá: 394.736.832 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/a8/a3/03/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.1008,
+                16.814219
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25215951",
+        "title": "Bamboo Resturant",
+        "city": "Lao Bảo",
+        "totalScore": 4.0,
+        "ranking": "20/24",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bamboo Resturant ở Lao Bảo. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 20/24.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/27/a1/c4/64/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.59901,
+                16.616388
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "5043982",
+        "title": "Phu Tho Pho",
+        "city": "Đông Hà",
+        "totalScore": 4.0,
+        "ranking": "21/24",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phu Tho Pho ở Đông Hà. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 21/24.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.10366,
+                16.81624
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12238382",
+        "title": "Quán Cà Phê Doha",
+        "city": "Đông Hà",
+        "totalScore": 3.7,
+        "ranking": "22/24",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Cà Phê Doha ở Đông Hà. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.7/5 từ 3 lượt review. Xếp hạng: 22/24.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/a6/b6/b5/dong-ha.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.10064,
+                16.82051
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34319103",
+        "title": "secret garden cafe & pizza",
+        "city": "Quang Tri",
+        "totalScore": 5.0,
+        "ranking": "23/24",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "secret garden cafe & pizza ở Quang Tri. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 23/24.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/33/0e/43/49/chu-n-d-an-vi-t.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.3122,
+                17.609922
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13422836",
+        "title": "Cheese",
+        "city": "Khe Sanh",
+        "totalScore": 2.9,
+        "ranking": "24/24",
+        "reviewsCount": 7,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cheese ở Khe Sanh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 2.9/5 từ 7 lượt review. Xếp hạng: 24/24.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/20/9b/95/cheese.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.73939,
+                16.62837
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33366999",
+        "title": "The Charmcharm Phong Nha",
+        "city": "Quang Tri",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Charmcharm Phong Nha ở Quang Tri. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.60399,
+                17.472322
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                []
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28200742",
+        "title": "Triệu Mẫn Garden",
+        "city": "Tan Hop",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Triệu Mẫn Garden ở Tan Hop. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.75681,
+                16.635057
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28117988",
+        "title": "Phở Lý Quốc Sư",
+        "city": "Đông Hà",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phở Lý Quốc Sư ở Đông Hà. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.71605,
+                21.296122
+            ]
+        },
+        "openingHours": {
+            "display": "05:30-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25223033",
+        "title": "GECKO - Pub & Coffee",
+        "city": "Đông Hà",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "GECKO - Pub & Coffee ở Đông Hà. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.101944,
+                16.811752
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27794677",
+        "title": "Nhà Hàng Làng Nghệ - Quảng Trị",
+        "city": "Đông Hà",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Làng Nghệ - Quảng Trị ở Đông Hà. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.10031,
+                16.81625
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28145923",
+        "title": "Phở Lâm Lý Quốc Sư",
+        "city": "Đông Hà",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phở Lâm Lý Quốc Sư ở Đông Hà. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.71605,
+                21.296122
+            ]
+        },
+        "openingHours": {
+            "display": "05:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "20860846",
+        "title": "Hawaii's Pizza",
+        "city": "Đông Hà",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "526.315.776 ₫ - 2.147.483.647 ₫",
+        "description": "Ẩm thực Ý giữa lòng Đông Hà với Pizza, Mỳ Ý và nhiều món đặc trưng khác",
+        "embedding": null,
+        "searchText": "Hawaii's Pizza ở Đông Hà. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Ẩm thực Ý giữa lòng Đông Hà với Pizza, Mỳ Ý và nhiều món đặc trưng khác Giá: 526.315.776 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/56/8c/18/pizza-hawaii-s-dong-ha.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10470442",
+        "title": "Bike Pub 05 Nguyễn Trãi",
+        "city": "Đông Hà",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Quán cafe",
+        "priceRange": "263.157.888 ₫ - 2.147.483.647 ₫",
+        "description": "Không gian tuyệt vời, giá cả hợp lý, bar, bia, rượu, âm nhạc sẽ làm hài lòng quý vị!",
+        "embedding": null,
+        "searchText": "Bike Pub 05 Nguyễn Trãi ở Đông Hà. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Mô tả: Không gian tuyệt vời, giá cả hợp lý, bar, bia, rượu, âm nhạc sẽ làm hài lòng quý vị! Giá: 263.157.888 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/5e/4b/e6/bike-pub.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.10535,
+                16.819157
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27509554",
+        "title": "Mỳ Quảng - Bún Chả Cá - Cô Hạnh",
+        "city": "Đông Hà",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mỳ Quảng - Bún Chả Cá - Cô Hạnh ở Đông Hà. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.0991,
+                16.820143
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-11:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 660
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14985841",
+        "title": "Cháo Cá Lóc Bà Vui",
+        "city": "Đông Hà",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cháo Cá Lóc Bà Vui ở Đông Hà. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.0998,
+                16.811127
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33441776",
+        "title": "Nhà Hàng Cơm Niêu Tân Châu",
+        "city": "Đông Hà",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Cơm Niêu Tân Châu ở Đông Hà. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/f2/bd/f9/nha-hang-com-nieu-tan.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.1054,
+                16.818384
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27975407",
+        "title": "Tiệm Pizza 07",
+        "city": "Đông Hà",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tiệm Pizza 07 ở Đông Hà. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/a9/6c/58/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.10426,
+                16.815277
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33442339",
+        "title": "Nhà Hàng Cơm Niêu Tân Châu",
+        "city": "Đông Hà",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Cơm Niêu Tân Châu ở Đông Hà. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.10552,
+                16.818272
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    }
+]

@@ -1,0 +1,432 @@
+[
+    {
+        "sourceLocationId": "6224355",
+        "title": "Vinh Trang Temple",
+        "city": "Mỹ Tho",
+        "totalScore": 4.3,
+        "ranking": "1/10",
+        "reviewsCount": 279,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vinh Trang Temple ở Mỹ Tho. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 279 lượt review. Xếp hạng: 1/10.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/18/0c/65/facade-of-the-main-building.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.373505,
+                10.362574
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-19:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1140
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "9883093",
+        "title": "Trại rắn Đồng Tâm",
+        "city": "Mỹ Tho",
+        "totalScore": 2.6,
+        "ranking": "6/10",
+        "reviewsCount": 54,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trại rắn Đồng Tâm ở Mỹ Tho. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 2.6/5 từ 54 lượt review. Xếp hạng: 6/10.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/12/a1/1d/viper.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.36764,
+                10.35658
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24892488",
+        "title": "Vườn Má Chín",
+        "city": "Mỹ Tho",
+        "totalScore": 5.0,
+        "ranking": "2/10",
+        "reviewsCount": 5,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn Má Chín ở Mỹ Tho. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 5 lượt review. Xếp hạng: 2/10.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/5d/47/2f/enjoying-local-tea-under.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.29034,
+                10.337578
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15296125",
+        "title": "Thiền Viện Trúc Lâm Chánh Giác",
+        "city": "Thạnh Tan",
+        "totalScore": 5.0,
+        "ranking": "3/10",
+        "reviewsCount": 3,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thiền Viện Trúc Lâm Chánh Giác ở Thạnh Tan. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 3/10.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/22/29/b0/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.16597,
+                10.543651
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27132386",
+        "title": "Cồn Tân Long Mỹ Tho",
+        "city": "Mỹ Tho",
+        "totalScore": 5.0,
+        "ranking": "4/10",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cồn Tân Long Mỹ Tho ở Mỹ Tho. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 4/10.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/9b/f3/4d/hoang-hon-m-t-tr-i-to.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.38023,
+                10.342864
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23178093",
+        "title": "Cau Rach Mieu",
+        "city": "Mỹ Tho",
+        "totalScore": 3.3,
+        "ranking": "5/10",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cau Rach Mieu ở Mỹ Tho. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.3/5 từ 4 lượt review. Xếp hạng: 5/10.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/ad/13/39/cau-rach-mieu-propojuje.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.343895,
+                10.339375
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27458128",
+        "title": "Chùa An Long",
+        "city": "Mỹ Tho",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa An Long ở Mỹ Tho. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.38961,
+                10.369866
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21051496",
+        "title": "Khu Du Lịch Làng Yến",
+        "city": "Phu Tan",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Công viên nước & giải trí",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu Du Lịch Làng Yến ở Phu Tan. Loại địa điểm: Công viên nước & giải trí. Tags: Điểm du lịch, Công viên nước & giải trí.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.740974,
+                10.230396
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15193361",
+        "title": "Tượng đài Thủ Khoa Huân",
+        "city": "Mỹ Tho",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tượng đài Thủ Khoa Huân ở Mỹ Tho. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/18/af/df/d1/tu-ng-dai-th-khoa-huan.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.3678,
+                10.35556
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15142848",
+        "title": "Điền Lan Thôn Trang",
+        "city": "Tỉnh Tiền Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Điền Lan Thôn Trang ở Tỉnh Tiền Giang. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/14/c3/11/f3/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.311356,
+                10.40512
+            ]
+        },
+        "openingHours": null
+    }
+]

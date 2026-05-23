@@ -1,0 +1,60 @@
+[
+    {
+        "sourceLocationId": "7309384",
+        "title": "Khách sạn Mường Thanh Grand Quảng Trị",
+        "city": "Đông Hà",
+        "totalScore": 4.5,
+        "ranking": null,
+        "reviewsCount": 162,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Mường Thanh Grand Quảng Trị ở Đông Hà. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.5/5 từ 162 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/bc/4e/94/muong-thanh-grand-quang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.10545,
+                16.818903
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "3318087",
+        "title": "Sai Gon Dong Ha Hotel",
+        "city": "Đông Hà",
+        "totalScore": 4.3,
+        "ranking": null,
+        "reviewsCount": 78,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sai Gon Dong Ha Hotel ở Đông Hà. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.3/5 từ 78 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/72/7e/bb/sai-gon-dong-ha-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.10171,
+                16.82425
+            ]
+        },
+        "openingHours": null
+    }
+]

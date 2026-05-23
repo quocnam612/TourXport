@@ -1,0 +1,736 @@
+[
+    {
+        "sourceLocationId": "5095627",
+        "title": "Hoi Khanh Pagoda",
+        "city": "Thủ Dầu Một",
+        "totalScore": 4.5,
+        "ranking": "2/13",
+        "reviewsCount": 24,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hoi Khanh Pagoda ở Thủ Dầu Một. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 24 lượt review. Xếp hạng: 2/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/6b/7a/1f/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.67168,
+                10.98125
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15097451",
+        "title": "Khu du lịch Sinh thái Thủy Châu",
+        "city": "Di An",
+        "totalScore": 3.0,
+        "ranking": "11/13",
+        "reviewsCount": 3,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu du lịch Sinh thái Thủy Châu ở Di An. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.0/5 từ 3 lượt review. Xếp hạng: 11/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/54/fc/51/d-p-gia-c-ok.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12703664",
+        "title": "Bảo tàng Dược học cổ truyền Việt Nam",
+        "city": "Thuan An",
+        "totalScore": 4.9,
+        "ranking": "1/13",
+        "reviewsCount": 18,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bảo tàng Dược học cổ truyền Việt Nam ở Thuan An. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.9/5 từ 18 lượt review. Xếp hạng: 1/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/0c/3d/d8/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "18543673",
+        "title": "Sân Vận Động Gò Đậu",
+        "city": "Thủ Dầu Một",
+        "totalScore": 3.0,
+        "ranking": "10/13",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sân Vận Động Gò Đậu ở Thủ Dầu Một. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 10/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/19/10/bd/e2/stadion.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.670235,
+                10.976742
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25219451",
+        "title": "Go-kart Vietnam - Dai Nam Racetrack",
+        "city": "Thủ Dầu Một",
+        "totalScore": 5.0,
+        "ranking": "3/13",
+        "reviewsCount": 2,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Go-kart Vietnam - Dai Nam Racetrack ở Thủ Dầu Một. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 3/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/27/c7/ff/24/this-is-my-friend.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.63528,
+                11.033193
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 960
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1005
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1005
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1005
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1005
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 960
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33502556",
+        "title": "Tượng Phật Thích Ca Nhập Niết Bàn",
+        "city": "Thủ Dầu Một",
+        "totalScore": 5.0,
+        "ranking": "4/13",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tượng Phật Thích Ca Nhập Niết Bàn ở Thủ Dầu Một. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 4/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/0b/76/7a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.65891,
+                10.980828
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33502553",
+        "title": "Nhà Thờ Chánh Tòa Phú Cường",
+        "city": "Thủ Dầu Một",
+        "totalScore": 5.0,
+        "ranking": "5/13",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Thờ Chánh Tòa Phú Cường ở Thủ Dầu Một. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 5/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/04/40/81/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.65404,
+                10.981602
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27914758",
+        "title": "Sun Vape Store",
+        "city": "Di An",
+        "totalScore": 5.0,
+        "ranking": "6/13",
+        "reviewsCount": 1,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sun Vape Store ở Di An. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 6/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.77402,
+                10.914465
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34049033",
+        "title": "Aeon Midori Park",
+        "city": "Thủ Dầu Một",
+        "totalScore": 3.0,
+        "ranking": "7/13",
+        "reviewsCount": 1,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Aeon Midori Park ở Thủ Dầu Một. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 7/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/31/eb/f3/46/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.70084,
+                11.045639
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27935717",
+        "title": "Go! Bình Dương",
+        "city": "Thủ Dầu Một",
+        "totalScore": 3.0,
+        "ranking": "8/13",
+        "reviewsCount": 1,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Go! Bình Dương ở Thủ Dầu Một. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 8/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/02/dc/6e/shopping-mall-ground.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.66436,
+                10.98699
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "24116817",
+        "title": "Binh An Cemetery",
+        "city": "Di An",
+        "totalScore": 3.0,
+        "ranking": "9/13",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Binh An Cemetery ở Di An. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 9/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/23/fe/8d/b9/binh-an-cemetery.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.80196,
+                10.90674
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28603087",
+        "title": "SORA Garden SC Aeon Mall",
+        "city": "Thủ Dầu Một",
+        "totalScore": 2.7,
+        "ranking": "12/13",
+        "reviewsCount": 3,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "SORA Garden SC Aeon Mall ở Thủ Dầu Một. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 2.7/5 từ 3 lượt review. Xếp hạng: 12/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/e6/c1/aa/evening.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.6783,
+                11.0454
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27186637",
+        "title": "mậu tiến thịnh",
+        "city": "Tan Uyen",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "mậu tiến thịnh ở Tan Uyen. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.83936,
+                11.133536
+            ]
+        },
+        "openingHours": null
+    }
+]

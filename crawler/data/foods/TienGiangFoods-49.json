@@ -1,0 +1,2396 @@
+[
+    {
+        "sourceLocationId": "2704137",
+        "title": "Le Longanier",
+        "city": "Cái Bè",
+        "totalScore": 4.4,
+        "ranking": "1/31",
+        "reviewsCount": 99,
+        "category": "Ngồi xuống",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Le Longanier ở Cái Bè. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.4/5 từ 99 lượt review. Xếp hạng: 1/31. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/e1/e3/9b/le-longanier-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.048805,
+                10.367226
+            ]
+        },
+        "openingHours": {
+            "display": "11:00-15:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 900
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26586060",
+        "title": "Le 68 Bistro & Café",
+        "city": "Mỹ Tho",
+        "totalScore": 5.0,
+        "ranking": "2/31",
+        "reviewsCount": 21,
+        "category": "Ngồi xuống",
+        "priceRange": "105.263 ₫ - 526.316 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Le 68 Bistro & Café ở Mỹ Tho. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 21 lượt review. Xếp hạng: 2/31. Giá: 105.263 ₫ - 526.316 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/1b/51/fa/chef-patrick-berenger.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.36359,
+                10.35667
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "7094359",
+        "title": "Nhà cổ Ông Kiệt",
+        "city": "Cái Bè",
+        "totalScore": 4.4,
+        "ranking": "3/31",
+        "reviewsCount": 77,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà cổ Ông Kiệt ở Cái Bè. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.4/5 từ 77 lượt review. Xếp hạng: 3/31. Giá: 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/4e/9f/44/mrkietsancienthouse-nhacoongki.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.02183,
+                10.338083
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32908428",
+        "title": "Benaras Delta",
+        "city": "Mỹ Tho",
+        "totalScore": 4.6,
+        "ranking": "4/31",
+        "reviewsCount": 17,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Benaras Delta ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.6/5 từ 17 lượt review. Xếp hạng: 4/31.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/2c/59/d9/0971-250-117-sales-benarasclub.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.3568,
+                10.353585
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "2062428",
+        "title": "Mekong Rest Stop",
+        "city": "Tỉnh Tiền Giang",
+        "totalScore": 3.5,
+        "ranking": "5/31",
+        "reviewsCount": 415,
+        "category": "Ngồi xuống",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Mekong Rest Stop ở Tỉnh Tiền Giang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.5/5 từ 415 lượt review. Xếp hạng: 5/31. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/10/7f/41/photo1jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.33997,
+                10.414556
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14915382",
+        "title": "Mekong Taste",
+        "city": "Mỹ Tho",
+        "totalScore": 4.6,
+        "ranking": "6/31",
+        "reviewsCount": 17,
+        "category": "Ngồi xuống",
+        "priceRange": "78.947 ₫ - 2.105.263 ₫",
+        "description": "Nhà Hàng Mekong Taste là một trong những nhà hàng có chất lượng dịch vụ tốt nhất tại Cồn Thới Sơn. Đồ ăn ngon, giá cả phải chăng, cảnh bờ sông rất thoáng mát, có bến tàu ngay bờ sông, khách có thể đi tàu từ Bến tàu Chương Dương và cập bến tại Mekong Taste ăn trưa.",
+        "embedding": null,
+        "searchText": "Mekong Taste ở Mỹ Tho. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà Hàng Mekong Taste là một trong những nhà hàng có chất lượng dịch vụ tốt nhất tại Cồn Thới Sơn. Đồ ăn ngon, giá cả phải chăng, cảnh bờ sông rất thoáng mát, có bến tàu ngay bờ sông, khách có thể đi tàu từ Bến tàu Chương Dương và cập bến tại Mekong Taste ăn trưa. Đánh giá: 4.6/5 từ 17 lượt review. Xếp hạng: 6/31. Giá: 78.947 ₫ - 2.105.263 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/18/db/59/83/pesce-fritto.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.36288,
+                10.341151
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-16:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 990
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33220202",
+        "title": "Côté Rivìere Café & Restaurant",
+        "city": "Mỹ Tho",
+        "totalScore": 5.0,
+        "ranking": "7/31",
+        "reviewsCount": 5,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "Thiết kế theo phong cách châu Âu mang lại cảm nhận sang trọng, ấm cúng và lãng mạn. Khám phá Mỹ Tho qua hương vị đặc trưng",
+        "embedding": null,
+        "searchText": "Côté Rivìere Café & Restaurant ở Mỹ Tho. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Thiết kế theo phong cách châu Âu mang lại cảm nhận sang trọng, ấm cúng và lãng mạn. Khám phá Mỹ Tho qua hương vị đặc trưng Đánh giá: 5.0/5 từ 5 lượt review. Xếp hạng: 7/31. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/f8/b2/50/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.356,
+                10.351483
+            ]
+        },
+        "openingHours": {
+            "display": "14:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 870,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 870,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 870,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 870,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 870,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 870,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 870,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12571432",
+        "title": "Nhà hàng Trung Lương",
+        "city": "Mỹ Tho",
+        "totalScore": 4.1,
+        "ranking": "8/31",
+        "reviewsCount": 10,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Trung Lương ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.1/5 từ 10 lượt review. Xếp hạng: 8/31. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/65/5c/85/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.38339,
+                10.35167
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12002672",
+        "title": "Ẩm Thực Chay - Quán Cơm Niêu",
+        "city": "Mỹ Tho",
+        "totalScore": 5.0,
+        "ranking": "9/31",
+        "reviewsCount": 4,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ẩm Thực Chay - Quán Cơm Niêu ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 9/31.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/2e/5a/43/vegan-food-pot-rice-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.35964,
+                10.355597
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19465940",
+        "title": "Ciao Vợ Đẹp",
+        "city": "Mỹ Tho",
+        "totalScore": 5.0,
+        "ranking": "10/31",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ciao Vợ Đẹp ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 10/31.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.35996,
+                10.35793
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14011776",
+        "title": "Bắc Kim Thang",
+        "city": "Tỉnh Tiền Giang",
+        "totalScore": 4.1,
+        "ranking": "11/31",
+        "reviewsCount": 7,
+        "category": "Ngồi xuống",
+        "priceRange": "1.052.631.552 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Bắc Kim Thang ở Tỉnh Tiền Giang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.1/5 từ 7 lượt review. Xếp hạng: 11/31. Giá: 1.052.631.552 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/6f/db/a5/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.31598,
+                10.430671
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13359338",
+        "title": "Nhà hàng Làng Việt",
+        "city": "Mỹ Tho",
+        "totalScore": 5.0,
+        "ranking": "12/31",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Làng Việt ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 12/31.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/7c/f7/5b/nha-hang-lang-vi-t-noi.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.36958,
+                10.34891
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21347557",
+        "title": "Sua Chua Tran Chau Cot Dua Ha Long",
+        "city": "Mỹ Tho",
+        "totalScore": 5.0,
+        "ranking": "13/31",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "526.315.776 ₫ - 1.973.684.224 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Sua Chua Tran Chau Cot Dua Ha Long ở Mỹ Tho. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 13/31. Giá: 526.315.776 ₫ - 1.973.684.224 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/38/e4/6b/sua-chua-tran-chau-cot.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.34568,
+                10.358319
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15197158",
+        "title": "Bánh Xèo Thu 46",
+        "city": "Mỹ Tho",
+        "totalScore": 4.5,
+        "ranking": "14/31",
+        "reviewsCount": 4,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bánh Xèo Thu 46 ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.5/5 từ 4 lượt review. Xếp hạng: 14/31.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/16/ba/ad/da/photo4jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.36725,
+                10.35897
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12871611",
+        "title": "Kem Ý Biwee's Gelato",
+        "city": "Mỹ Tho",
+        "totalScore": 4.2,
+        "ranking": "15/31",
+        "reviewsCount": 6,
+        "category": "Ngồi xuống",
+        "priceRange": "26.316 ₫ - 131.579 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Kem Ý Biwee's Gelato ở Mỹ Tho. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.2/5 từ 6 lượt review. Xếp hạng: 15/31. Giá: 26.316 ₫ - 131.579 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/ad/6d/19/artisan-gelato-was-made.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.35973,
+                10.356412
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33093000",
+        "title": "Nhà Hàng Xẻo Mây 1",
+        "city": "Cái Bè",
+        "totalScore": 5.0,
+        "ranking": "16/31",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Nhà hàng Xẻo Mây tại Cái Bè mang đến trải nghiệm ẩm thực miền Tây chính gốc, với các món ăn đặc sản dân dã, nguyên liệu tươi ngon và không gian ven sông mát mẻ, thân thiện.",
+        "embedding": null,
+        "searchText": "Nhà Hàng Xẻo Mây 1 ở Cái Bè. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Nhà hàng Xẻo Mây tại Cái Bè mang đến trải nghiệm ẩm thực miền Tây chính gốc, với các món ăn đặc sản dân dã, nguyên liệu tươi ngon và không gian ven sông mát mẻ, thân thiện. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 16/31.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/b3/b4/c0/nha-hang-x-o-may-mang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.02849,
+                10.3282
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28205030",
+        "title": "Ẩm Thực Amazing",
+        "city": "Mỹ Tho",
+        "totalScore": 5.0,
+        "ranking": "17/31",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ẩm Thực Amazing ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 17/31.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/b0/3e/b2/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.35996,
+                10.36004
+            ]
+        },
+        "openingHours": {
+            "display": "09:30-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "4992359",
+        "title": "Banh Xeo Cay Quynh Anh",
+        "city": "Cái Bè",
+        "totalScore": 5.0,
+        "ranking": "18/31",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Banh Xeo Cay Quynh Anh ở Cái Bè. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 18/31.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.39807,
+                10.35098
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19776180",
+        "title": "Tiệm Cơm Oanh",
+        "city": "Cái Bè",
+        "totalScore": 5.0,
+        "ranking": "19/31",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tiệm Cơm Oanh ở Cái Bè. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 19/31.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17414641",
+        "title": "Dona House Coffee & Dining",
+        "city": "Cái Bè",
+        "totalScore": 5.0,
+        "ranking": "20/31",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dona House Coffee & Dining ở Cái Bè. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 20/31.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/e4/03/89/welcome-board.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.02066,
+                10.329275
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15757564",
+        "title": "Cafe du Mekong",
+        "city": "Cái Bè",
+        "totalScore": 5.0,
+        "ranking": "21/31",
+        "reviewsCount": 1,
+        "category": "Quán cafe",
+        "priceRange": "131.579 ₫ - 657.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Cafe du Mekong ở Cái Bè. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 21/31. Giá: 131.579 ₫ - 657.895 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.00341,
+                10.330185
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-20:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15320021",
+        "title": "Cafe Khánh Minh",
+        "city": "Mỹ Tho",
+        "totalScore": 5.0,
+        "ranking": "22/31",
+        "reviewsCount": 1,
+        "category": "Quán cafe",
+        "priceRange": "368.421.056 ₫ - 1.447.368.448 ₫",
+        "description": "Quán cafe sân vườn với nhiều mảng xanh, yên tĩnh. Nhân viên phục vụ thân thiện, nhiệt tình. Có khu vui chơi cho thiếu nhi, đặc biệt các trò chơi với thiên nhiên.Có bãi đỗ xe thoáng mát dưới hàng tre.",
+        "embedding": null,
+        "searchText": "Cafe Khánh Minh ở Mỹ Tho. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Mô tả: Quán cafe sân vườn với nhiều mảng xanh, yên tĩnh. Nhân viên phục vụ thân thiện, nhiệt tình. Có khu vui chơi cho thiếu nhi, đặc biệt các trò chơi với thiên nhiên.Có bãi đỗ xe thoáng mát dưới hàng tre. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 22/31. Giá: 368.421.056 ₫ - 1.447.368.448 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/49/ba/87/du-ng-len-phong-h-p.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.35078,
+                10.360519
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25429888",
+        "title": "Quán Cơm Tấm Cây Bàng 65A",
+        "city": "Mỹ Tho",
+        "totalScore": 4.0,
+        "ranking": "23/31",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Cơm Tấm Cây Bàng 65A ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 23/31.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/c0/88/8d/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.363754,
+                10.362385
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-13:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 780
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 780
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 780
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 780
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 780
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 780
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 780
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14179570",
+        "title": "Quán Ăn Sân Vườn Hoàng Thành",
+        "city": "Mỹ Tho",
+        "totalScore": 5.0,
+        "ranking": "24/31",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Ăn Sân Vườn Hoàng Thành ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 24/31.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/4a/8d/f6/quan-an-san-vuon-hoang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.35988,
+                10.357814
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17558544",
+        "title": "Long Dinh Rest Stop",
+        "city": "Tỉnh Tiền Giang",
+        "totalScore": 4.0,
+        "ranking": "25/31",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Long Dinh Rest Stop ở Tỉnh Tiền Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 25/31.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.95693,
+                10.23825
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10737051",
+        "title": "Nhà hàng Rạng Đông",
+        "city": "Mỹ Tho",
+        "totalScore": 3.5,
+        "ranking": "26/31",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Rạng Đông ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.5/5 từ 2 lượt review. Xếp hạng: 26/31.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.3476,
+                10.35163
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "3989810",
+        "title": "Ngoc Gia Trang",
+        "city": "Mỹ Tho",
+        "totalScore": 3.3,
+        "ranking": "27/31",
+        "reviewsCount": 8,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ngoc Gia Trang ở Mỹ Tho. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.3/5 từ 8 lượt review. Xếp hạng: 27/31.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/03/a6/a9/8e/restaurant-entrance.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.348564,
+                10.37273
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17595475",
+        "title": "Hủ Tiếu Tuyết Ngân",
+        "city": "Mỹ Tho",
+        "totalScore": 3.0,
+        "ranking": "28/31",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hủ Tiếu Tuyết Ngân ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 28/31.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.35375,
+                10.36793
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13166663",
+        "title": "Quán Nướng Khói",
+        "city": "Mỹ Tho",
+        "totalScore": 3.0,
+        "ranking": "29/31",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Nướng Khói ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 2 lượt review. Xếp hạng: 29/31.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/81/5a/d6/quan-nu-ng-khoi-ph-c.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.3689,
+                10.355999
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15074520",
+        "title": "Rodstarz Mỹ Tho",
+        "city": "Mỹ Tho",
+        "totalScore": 2.0,
+        "ranking": "30/31",
+        "reviewsCount": 1,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "500.000.000 ₫ - 2.147.483.647 ₫",
+        "description": "Nhà hàng thức ăn nhanh Rodstarz chuyên phục vụ các loại Burger, Spaghetti, Fried Chickens với views đẹp trong thành phố Mỹ Tho, giá cả phù hợp.",
+        "embedding": null,
+        "searchText": "Rodstarz Mỹ Tho ở Mỹ Tho. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Mô tả: Nhà hàng thức ăn nhanh Rodstarz chuyên phục vụ các loại Burger, Spaghetti, Fried Chickens với views đẹp trong thành phố Mỹ Tho, giá cả phù hợp. Đánh giá: 2.0/5 từ 1 lượt review. Xếp hạng: 30/31. Giá: 500.000.000 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/16/bb/5a/19/facade.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.35968,
+                10.354937
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14915433",
+        "title": "Nhà Hàng Hải Sản Phố Biển",
+        "city": "Mỹ Tho",
+        "totalScore": 1.0,
+        "ranking": "31/31",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hải Sản Phố Biển ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 1.0/5 từ 1 lượt review. Xếp hạng: 31/31.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.34706,
+                10.3585
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27980914",
+        "title": "Hủ Tiếu Mực, Cơm Hải Sản",
+        "city": "Cho Gao",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hủ Tiếu Mực, Cơm Hải Sản ở Cho Gao. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.46436,
+                10.358829
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-15:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 930
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 930
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 930
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 930
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 930
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 930
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 930
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23146624",
+        "title": "Restaurant Mai Trâm",
+        "city": "Cái Bè",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Restaurant Mai Trâm ở Cái Bè. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21357208",
+        "title": "Quán Ăn Gia Đình - Karaoke Thiên Lý",
+        "city": "Cái Bè",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "789.473.664 ₫ - 1.842.105.216 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Ăn Gia Đình - Karaoke Thiên Lý ở Cái Bè. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 789.473.664 ₫ - 1.842.105.216 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.94649,
+                10.371887
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32991394",
+        "title": "Tiem Nha Beo",
+        "city": "Cái Bè",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tiem Nha Beo ở Cái Bè. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.74831,
+                10.303982
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33988710",
+        "title": "KATINAT Mỹ Tho",
+        "city": "Mỹ Tho",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "KATINAT Mỹ Tho ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/99/bb/ce/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.224686,
+                21.400251
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27702599",
+        "title": "Nhà Hàng Thượng Uyển",
+        "city": "Mỹ Tho",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Thượng Uyển ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.354965,
+                10.367185
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15662778",
+        "title": "KT Garden",
+        "city": "Mỹ Tho",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "KT Garden ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.36764,
+                10.35658
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23086074",
+        "title": "The Pizza Company",
+        "city": "Mỹ Tho",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The Pizza Company ở Mỹ Tho. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.34105,
+                10.358823
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27700144",
+        "title": "Nhà Hàng Thượng Uyển",
+        "city": "Mỹ Tho",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Thượng Uyển ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.35536,
+                10.36681
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27461511",
+        "title": "Duda - Heritage Tea",
+        "city": "Mỹ Tho",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Duda - Heritage Tea ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.35996,
+                10.36004
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-02:00, 09:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 120
+                    },
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 120
+                    },
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 120
+                    },
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 120
+                    },
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 120
+                    },
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 120
+                    },
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 120
+                    },
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27461541",
+        "title": "Duda 2 - Heritage Tea",
+        "city": "Mỹ Tho",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Duda 2 - Heritage Tea ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.36534,
+                10.366359
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-02:00, 09:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 120
+                    },
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 120
+                    },
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 120
+                    },
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 120
+                    },
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 120
+                    },
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 120
+                    },
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 120
+                    },
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27085954",
+        "title": "Lang Viet Bamboo Garden",
+        "city": "Mỹ Tho",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lang Viet Bamboo Garden ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.36454,
+                10.359973
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17739347",
+        "title": "Buffet Á Âu Phúc Anh",
+        "city": "Mỹ Tho",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "26.316 ₫ - 6.026.316 ₫",
+        "description": "Nhà hàng Buffet Á Âu Phúc Anh tự hào là nhà hàng Buffet truyền thống đầu tiên tại Mỹ Tho với thực đơn đa dạng kết hợp phục vụ chuyên nghiệp. Phúc Anh - điểm hẹn ẩm thực mới tại Mỹ Tho.",
+        "embedding": null,
+        "searchText": "Buffet Á Âu Phúc Anh ở Mỹ Tho. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà hàng Buffet Á Âu Phúc Anh tự hào là nhà hàng Buffet truyền thống đầu tiên tại Mỹ Tho với thực đơn đa dạng kết hợp phục vụ chuyên nghiệp. Phúc Anh - điểm hẹn ẩm thực mới tại Mỹ Tho. Giá: 26.316 ₫ - 6.026.316 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/56/cb/06/indoor-view-from-outside.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37222,
+                10.358497
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34168200",
+        "title": "The 1679 CAFE",
+        "city": "Mỹ Tho",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The 1679 CAFE ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.367256,
+                10.352778
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28205028",
+        "title": "Ẩm Thực Amazing Mỹ Tho",
+        "city": "Mỹ Tho",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ẩm Thực Amazing Mỹ Tho ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.35996,
+                10.36004
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20323738",
+        "title": "Tây Tàu Kitchen",
+        "city": "Mỹ Tho",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tây Tàu Kitchen ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.3408,
+                10.358422
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34399784",
+        "title": "Showroom Yen Sao Chim Nho",
+        "city": "Mỹ Tho",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Showroom Yen Sao Chim Nho ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.35996,
+                10.36004
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-21:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23088383",
+        "title": "Cơm tấm la cà mỹ tho",
+        "city": "Mỹ Tho",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "657.895 ₫ - 921.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Cơm tấm la cà mỹ tho ở Mỹ Tho. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 657.895 ₫ - 921.053 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.35996,
+                10.36004
+            ]
+        },
+        "openingHours": null
+    }
+]

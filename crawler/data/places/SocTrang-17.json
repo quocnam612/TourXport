@@ -1,0 +1,572 @@
+[
+    {
+        "sourceLocationId": "12171382",
+        "title": "Chùa Dơi",
+        "city": "Sóc Trăng",
+        "totalScore": 3.9,
+        "ranking": "3/17",
+        "reviewsCount": 12,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Dơi ở Sóc Trăng. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.9/5 từ 12 lượt review. Xếp hạng: 3/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/f6/89/97/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97265,
+                9.5994
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12184227",
+        "title": "Chùa Vĩnh Hưng",
+        "city": "Sóc Trăng",
+        "totalScore": 4.2,
+        "ranking": "2/17",
+        "reviewsCount": 5,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Vĩnh Hưng ở Sóc Trăng. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 5 lượt review. Xếp hạng: 2/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/d3/e5/aa/vinh-trang-pagoda.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97109,
+                9.596484
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13229477",
+        "title": "Super Dong",
+        "city": "Sóc Trăng",
+        "totalScore": 4.2,
+        "ranking": "5/17",
+        "reviewsCount": 5,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Super Dong ở Sóc Trăng. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Phương tiện giao thông. Đánh giá: 4.2/5 từ 5 lượt review. Xếp hạng: 5/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Phương tiện giao thông"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/f1/44/ca/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97447,
+                9.59465
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12179022",
+        "title": "Chùa Sà Lôn (Chùa Chén Kiểu)",
+        "city": "Sóc Trăng",
+        "totalScore": 5.0,
+        "ranking": "7/17",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Sà Lôn (Chùa Chén Kiểu) ở Sóc Trăng. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 7/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/90/3f/6f/photo-prise-par-guy-lazignac.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12182845",
+        "title": "Chùa Phật Học 2",
+        "city": "Sóc Trăng",
+        "totalScore": 3.8,
+        "ranking": "9/17",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Phật Học 2 ở Sóc Trăng. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.8/5 từ 4 lượt review. Xếp hạng: 9/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/8f/be/4c/photo-prise-par-guy-lazignac.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97265,
+                9.5994
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12222043",
+        "title": "Hồ Nước Ngọt",
+        "city": "Sóc Trăng",
+        "totalScore": 4.5,
+        "ranking": "10/17",
+        "reviewsCount": 2,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hồ Nước Ngọt ở Sóc Trăng. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 10/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/cf/24/01/photo-prise-par-guythu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97265,
+                9.5994
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12171389",
+        "title": "Chùa Kh'leang",
+        "city": "Sóc Trăng",
+        "totalScore": 3.8,
+        "ranking": "8/17",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Kh'leang ở Sóc Trăng. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.8/5 từ 4 lượt review. Xếp hạng: 8/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/cd/8f/8b/kh-leang-pagode.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.9863,
+                9.62865
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13347617",
+        "title": "Ánh Quang Plaza",
+        "city": "Sóc Trăng",
+        "totalScore": 0,
+        "ranking": "1/17",
+        "reviewsCount": 0,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": "Ánh Quang Plaza là khu phức hợp thương mại, dịch vụ, giải trí lớn nhất Sóc Trăng gồm: Siêu thị mua sắm tự chọn, Siêu thị điện máy, Chuỗi ẩm thực đa dạng văn hoá Việt, Nhật, Hàn… Khu vui chơi điện tử hiện đại, Sky Club, Karaoke, Rạp chiếu phim... được đầu tư các trang thiết bị hiện đại, tối tân đáp ứng nhu cầu giải trí cho du khách trong và ngoài nước.",
+        "embedding": null,
+        "searchText": "Ánh Quang Plaza ở Sóc Trăng. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Mô tả: Ánh Quang Plaza là khu phức hợp thương mại, dịch vụ, giải trí lớn nhất Sóc Trăng gồm: Siêu thị mua sắm tự chọn, Siêu thị điện máy, Chuỗi ẩm thực đa dạng văn hoá Việt, Nhật, Hàn… Khu vui chơi điện tử hiện đại, Sky Club, Karaoke, Rạp chiếu phim... được đầu tư các trang thiết bị hiện đại, tối tân đáp ứng nhu cầu giải trí cho du khách trong và ngoài nước. Xếp hạng: 1/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/20/d3/b6/party-with-light-colors.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.9758,
+                9.606878
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23189902",
+        "title": "Wat Som Rong",
+        "city": "Sóc Trăng",
+        "totalScore": 5.0,
+        "ranking": "4/17",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Wat Som Rong ở Sóc Trăng. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 4/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/48/c4/46/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.9834,
+                9.623036
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13969538",
+        "title": "Tân Huê Viên",
+        "city": "Sóc Trăng",
+        "totalScore": 4.3,
+        "ranking": "2/3",
+        "reviewsCount": 3,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tân Huê Viên ở Sóc Trăng. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 4.3/5 từ 3 lượt review. Xếp hạng: 2/3.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/25/22/f8/6c/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34088828",
+        "title": "Tam Giang lagoon, Thuy Bieu eco village, zen tour, spiritual tourism, religious tourism",
+        "city": "Phu Loc",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": "We understand that its long-term success is deeply connected to the success of the destinations it operates within. Therefore, always takes its responsibility to the environment and community as well as develops travel products and business activities basing on the mutual benefit for both us and community.",
+        "embedding": null,
+        "searchText": "Tam Giang lagoon, Thuy Bieu eco village, zen tour, spiritual tourism, religious tourism ở Phu Loc. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Chuyến tham quan, Khác, Phương tiện giao thông. Mô tả: We understand that its long-term success is deeply connected to the success of the destinations it operates within. Therefore, always takes its responsibility to the environment and community as well as develops travel products and business activities basing on the mutual benefit for both us and community.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Khác",
+            "Phương tiện giao thông"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/0a/0f/22/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34048268",
+        "title": "Ferry VN Soc Trang",
+        "city": "Sóc Trăng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ferry VN Soc Trang ở Sóc Trăng. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Khác, Phương tiện giao thông.",
+        "tags": [
+            "Điểm du lịch",
+            "Khác",
+            "Phương tiện giao thông"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/ce/91/59/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27743157",
+        "title": "Chùa Đất Sét (bửu Sơn Tự)",
+        "city": "Sóc Trăng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Đất Sét (bửu Sơn Tự) ở Sóc Trăng. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2c/30/45/49/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.99636,
+                9.648051
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27724929",
+        "title": "The Floating Market of Nga Nam",
+        "city": "Nga Nam",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Floating Market of Nga Nam ở Nga Nam. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/12/43/61/visitors-taking-the-small.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.61779,
+                9.521517
+            ]
+        },
+        "openingHours": {
+            "display": "04:00-11:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 240,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 240,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 240,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 240,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 240,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 240,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 240,
+                        "close_time": 660
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27120020",
+        "title": "Mr Four Happy",
+        "city": "Phu Loc",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "I was born and raised in Phu Loc - Hue city, below is the poetic Cau Hai - Tam Giang Lagoon, above is the majestic Bach Ma National Park. I am also a local guide who will bring you the most authentic experience of the culture, cuisine, lifestyle and wonderful scenery in my Hometown.\nTrekking Bach Ma National Park and Explore Cau Hai Lagoon",
+        "embedding": null,
+        "searchText": "Mr Four Happy ở Phu Loc. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Khác, Hoạt động ngoài trời. Mô tả: I was born and raised in Phu Loc - Hue city, below is the poetic Cau Hai - Tam Giang Lagoon, above is the majestic Bach Ma National Park. I am also a local guide who will bring you the most authentic experience of the culture, cuisine, lifestyle and wonderful scenery in my Hometown.\nTrekking Bach Ma National Park and Explore Cau Hai Lagoon",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Khác",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/2a/8d/14/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23186865",
+        "title": "Thien Hau Quang Chau Temlp",
+        "city": "Sóc Trăng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thien Hau Quang Chau Temlp ở Sóc Trăng. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97846,
+                9.603502
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19121863",
+        "title": "Yen Local",
+        "city": "Sóc Trăng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Yen Local ở Sóc Trăng. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Khác, Chuyến tham quan bằng thuyền & thể thao dưới nước, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Khác",
+            "Chuyến tham quan bằng thuyền & thể thao dưới nước",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/19/89/b1/fc/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    }
+]

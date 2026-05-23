@@ -1,0 +1,1622 @@
+[
+    {
+        "sourceLocationId": "32972793",
+        "title": "Piazza Sapa Restaurant",
+        "city": "Sapa",
+        "totalScore": 4.7,
+        "ranking": "49/269",
+        "reviewsCount": 51,
+        "category": "Ngồi xuống",
+        "priceRange": "1.578.947.328 ₫ - 2.147.483.647 ₫",
+        "description": "Piazza restaurant is conveniently located in the most crowded area of ​​Sapa's old town. With over 20 years of experience in the restaurant industry, we always try to serve our customers the best food and the best service.",
+        "embedding": null,
+        "searchText": "Piazza Sapa Restaurant ở Sapa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Piazza restaurant is conveniently located in the most crowded area of ​​Sapa's old town. With over 20 years of experience in the restaurant industry, we always try to serve our customers the best food and the best service. Đánh giá: 4.7/5 từ 51 lượt review. Xếp hạng: 49/269. Giá: 1.578.947.328 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/d1/e8/20/grill-fish.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.83284,
+                21.59396
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "4542278",
+        "title": "Khu Bảo Tồn Làng Nhà Sàn Dân Tộc Sinh Thái Thái Hải",
+        "city": "Thái Nguyên",
+        "totalScore": 4.8,
+        "ranking": "1/14",
+        "reviewsCount": 38,
+        "category": "Ngồi xuống",
+        "priceRange": "184.211 ₫ - 526.316 ₫",
+        "description": "Khu bảo tồn với 30 ngôi nhà sàn truyền thống của dân tộc Tày với tuổi đời gần trăm năm giữa cây rừng xanh tươi thấp thoáng bóng áo chàm. Bản làng đón khách với các hoạt động chính: Tìm hiểu văn hóa truyền thống dân tộc Tày (cuộc sống sinh hoạt, phong tục tập quán, trang phục, văn hóa văn nghệ, các nghi lễ, ẩm thực…) Thưởng thức ẩm thực dân tộc với hương vị núi rừng Nghỉ dưỡng hoặc lưu trú ngắn hạn giữa không gian tươi xanh Trải nghiệm cuộc sống sinh hoạt hàng ngày cùng “bản làng” (trồng rau, hái rau, hái chè, đánh cá, giã bánh giày, giã cốm, rang ngô, nướng khoai, thưởng thức trà xanh bếp lửa nhà sàn, nghe đàn tính, hát then,..) Vui chơi các trò chơi các trò chơi truyền thống và hiện đại (ném còn, đi cầu thăng bằng, đi cà kheo, bịt mắt bắt dê, đập niêu, kéo co, đi thiên nga trên hồ…) Tham gia các chương trình biểu diễn nghệ thuật và giao lưu văn nghệ (nhảy sạp, ca hát, múa rồng lân, đánh trống hội...) Tổ chức hội nghị, hội thảo, tập huấn, liên hoan hay họp mặt",
+        "embedding": null,
+        "searchText": "Khu Bảo Tồn Làng Nhà Sàn Dân Tộc Sinh Thái Thái Hải ở Thái Nguyên. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Khu bảo tồn với 30 ngôi nhà sàn truyền thống của dân tộc Tày với tuổi đời gần trăm năm giữa cây rừng xanh tươi thấp thoáng bóng áo chàm. Bản làng đón khách với các hoạt động chính: Tìm hiểu văn hóa truyền thống dân tộc Tày (cuộc sống sinh hoạt, phong tục tập quán, trang phục, văn hóa văn nghệ, các nghi lễ, ẩm thực…) Thưởng thức ẩm thực dân tộc với hương vị núi rừng Nghỉ dưỡng hoặc lưu trú ngắn hạn giữa không gian tươi xanh Trải nghiệm cuộc sống sinh hoạt hàng ngày cùng “bản làng” (trồng rau, hái rau, hái chè, đánh cá, giã bánh giày, giã cốm, rang ngô, nướng khoai, thưởng thức trà xanh bếp lửa nhà sàn, nghe đàn tính, hát then,..) Vui chơi các trò chơi các trò chơi truyền thống và hiện đại (ném còn, đi cầu thăng bằng, đi cà kheo, bịt mắt bắt dê, đập niêu, kéo co, đi thiên nga trên hồ…) Tham gia các chương trình biểu diễn nghệ thuật và giao lưu văn nghệ (nhảy sạp, ca hát, múa rồng lân, đánh trống hội...) Tổ chức hội nghị, hội thảo, tập huấn, liên hoan hay họp mặt Đánh giá: 4.8/5 từ 38 lượt review. Xếp hạng: 1/14. Giá: 184.211 ₫ - 526.316 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/d8/3a/70/thai-hai-tay-ethnic-village.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.81339,
+                21.532064
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13912807",
+        "title": "Quán Nhà Tôi",
+        "city": "Thái Nguyên",
+        "totalScore": 4.8,
+        "ranking": "2/14",
+        "reviewsCount": 19,
+        "category": "Ngồi xuống",
+        "priceRange": "78.947 ₫ - 9.131.579 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Nhà Tôi ở Thái Nguyên. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.8/5 từ 19 lượt review. Xếp hạng: 2/14. Giá: 78.947 ₫ - 9.131.579 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/66/6d/8b/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78892,
+                21.643229
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12610217",
+        "title": "Cafe Đầm Xanh",
+        "city": "Thái Nguyên",
+        "totalScore": 5.0,
+        "ranking": "3/14",
+        "reviewsCount": 7,
+        "category": "Ngồi xuống",
+        "priceRange": "526.315.776 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Cafe Đầm Xanh ở Thái Nguyên. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 7 lượt review. Xếp hạng: 3/14. Giá: 526.315.776 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/22/30/a6/67/cafe-d-m-xanh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.84095,
+                21.5919
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-22:45",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1365
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1365
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1365
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1365
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1365
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1365
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1365
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10687616",
+        "title": "Tafelu Quán",
+        "city": "Thái Nguyên",
+        "totalScore": 4.6,
+        "ranking": "4/14",
+        "reviewsCount": 5,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Tafelu Quán ở Thái Nguyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.6/5 từ 5 lượt review. Xếp hạng: 4/14. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/64/65/eb/more-food-there-was-a.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.83911,
+                21.59502
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33116909",
+        "title": "Thịt Chó Chiến Đen - Quán Nhậu Thịt Chó Ngon Bến Xe Mới Thái Nguyên",
+        "city": "Thái Nguyên",
+        "totalScore": 5.0,
+        "ranking": "5/14",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thịt Chó Chiến Đen - Quán Nhậu Thịt Chó Ngon Bến Xe Mới Thái Nguyên ở Thái Nguyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 5/14.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/2f/d2/ef/64/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.831116,
+                21.575129
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13325365",
+        "title": "Nhà hàng Nhật Bản Tokyo",
+        "city": "Thái Nguyên",
+        "totalScore": 5.0,
+        "ranking": "6/14",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Nhật Bản Tokyo ở Thái Nguyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 6/14.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/09/c6/e9/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.842735,
+                21.586374
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8862116",
+        "title": "Cafe New Space",
+        "city": "Thái Nguyên",
+        "totalScore": 4.5,
+        "ranking": "7/14",
+        "reviewsCount": 4,
+        "category": "Quán cafe",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cafe New Space ở Thái Nguyên. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 4.5/5 từ 4 lượt review. Xếp hạng: 7/14.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/ca/a0/6c/hay-d-n-va-thu-ng-th.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.84624,
+                21.59163
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12542767",
+        "title": "Bia 158 Minh Cầu",
+        "city": "Thái Nguyên",
+        "totalScore": 4.3,
+        "ranking": "8/14",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": "526.315.776 ₫ - 2.147.483.647 ₫",
+        "description": "Nhà hàng nằm trong khuôn viên nhà mày bia thái nguyên, bia tươi, ngon và giá cả hợp lý kèm theo nhiều đồ ăn hấp dẫn như dê tái chanh, dê nướng tảng, lợn quay, lạc rang, nem nướng v.v....",
+        "embedding": null,
+        "searchText": "Bia 158 Minh Cầu ở Thái Nguyên. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà hàng nằm trong khuôn viên nhà mày bia thái nguyên, bia tươi, ngon và giá cả hợp lý kèm theo nhiều đồ ăn hấp dẫn như dê tái chanh, dê nướng tảng, lợn quay, lạc rang, nem nướng v.v.... Đánh giá: 4.3/5 từ 3 lượt review. Xếp hạng: 8/14. Giá: 526.315.776 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/91/11/02/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.838486,
+                21.588198
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6708874",
+        "title": "Mình Hoach Fresh Chicken King Restaurant",
+        "city": "Thái Nguyên",
+        "totalScore": 4.5,
+        "ranking": "9/14",
+        "reviewsCount": 4,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mình Hoach Fresh Chicken King Restaurant ở Thái Nguyên. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.5/5 từ 4 lượt review. Xếp hạng: 9/14.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/06/06/1b/minh-hoach-fresh-chicken.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.84553,
+                21.59539
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26220362",
+        "title": "Skybeer Restaurant",
+        "city": "Thái Nguyên",
+        "totalScore": 5.0,
+        "ranking": "10/14",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Skybeer Restaurant ở Thái Nguyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 10/14.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/29/76/60/c0/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.83911,
+                21.59502
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12331304",
+        "title": "Osaka Sushi",
+        "city": "Thái Nguyên",
+        "totalScore": 5.0,
+        "ranking": "11/14",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Osaka Sushi ở Thái Nguyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 11/14.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.82983,
+                21.58586
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32976399",
+        "title": "Madam Tu Hong",
+        "city": "Hà Nội",
+        "totalScore": 5.0,
+        "ranking": "393/3710",
+        "reviewsCount": 30,
+        "category": "Ngồi xuống",
+        "priceRange": "131.579 ₫ - 263.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Madam Tu Hong ở Hà Nội. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 30 lượt review. Xếp hạng: 393/3710. Giá: 131.579 ₫ - 263.158 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/29/05/85/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.846405,
+                21.510574
+            ]
+        },
+        "openingHours": {
+            "display": "11:00-13:30, 17:00-21:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14938633",
+        "title": "Gogi House Thái Nguyên",
+        "city": "Thái Nguyên",
+        "totalScore": 3.0,
+        "ranking": "12/14",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Gogi House Thái Nguyên ở Thái Nguyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 2 lượt review. Xếp hạng: 12/14.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/e1/fc/4d/bu-i-t-i-lung-linh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.83881,
+                21.590738
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10004601",
+        "title": "City View Coffee",
+        "city": "Thái Nguyên",
+        "totalScore": 2.5,
+        "ranking": "13/14",
+        "reviewsCount": 2,
+        "category": "Quán cafe",
+        "priceRange": "131.579 ₫ - 1.315.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "City View Coffee ở Thái Nguyên. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 2.5/5 từ 2 lượt review. Xếp hạng: 13/14. Giá: 131.579 ₫ - 1.315.789 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/d7/b7/63/passion.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.83451,
+                21.591536
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33321975",
+        "title": "Nhà Hàng Mufa Tam Đảo",
+        "city": "Tam Đảo",
+        "totalScore": 5.0,
+        "ranking": "6/7",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Mufa Tam Đảo ở Tam Đảo. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 6/7.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/0d/0a/e7/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.87671,
+                21.53879
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32876932",
+        "title": "Hân Trang Quán Ram Bún Thit Nuöng Cà Phé",
+        "city": "Quảng Ngãi",
+        "totalScore": 4.0,
+        "ranking": "14/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hân Trang Quán Ram Bún Thit Nuöng Cà Phé ở Quảng Ngãi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 14/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/b0/aa/fe/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.81767,
+                21.581722
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19055854",
+        "title": "Nhà Hàng Tuấn Hằng",
+        "city": "Thái Nguyên",
+        "totalScore": 1.0,
+        "ranking": "14/14",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Tuấn Hằng ở Thái Nguyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 1.0/5 từ 1 lượt review. Xếp hạng: 14/14.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.83901,
+                21.53899
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27532352",
+        "title": "Đồng Xuân",
+        "city": "Đồng Tiến",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đồng Xuân ở Đồng Tiến. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.05789,
+                21.20636
+            ]
+        },
+        "openingHours": {
+            "display": "18:00-33:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1980
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1980
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1980
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1980
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1980
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1980
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1980
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27656189",
+        "title": "Chicacu - Kem Dừa Bến Tre",
+        "city": "Thái Nguyên",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chicacu - Kem Dừa Bến Tre ở Thái Nguyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.83333,
+                21.66667
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26685097",
+        "title": "SẠP HẢI SẢN PHỐ",
+        "city": "Thái Nguyên",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "SẠP HẢI SẢN PHỐ ở Thái Nguyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.8305,
+                21.59623
+            ]
+        },
+        "openingHours": {
+            "display": "18:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21410154",
+        "title": "Thành Công BBQ Hotpot Buffet",
+        "city": "Thái Nguyên",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Thành Công BBQ Hotpot Buffet ở Thái Nguyên. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.81165,
+                21.568102
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26685067",
+        "title": "Chum",
+        "city": "Thái Nguyên",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chum ở Thái Nguyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/72/04/3f/at-chum-we-re-here-to.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.83251,
+                21.593489
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26685083",
+        "title": "MÓN NGON BẢN THÁI",
+        "city": "Thái Nguyên",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "MÓN NGON BẢN THÁI ở Thái Nguyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/71/f5/6e/indulge-in-a-diverse.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.83911,
+                21.59502
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32999293",
+        "title": "The King Coffee 99 Bắc Sơn",
+        "city": "Thái Nguyên",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The King Coffee 99 Bắc Sơn ở Thái Nguyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.83365,
+                21.59717
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "18378576",
+        "title": "Nhà Hàng Thịt Chó Đức Thắng",
+        "city": "Thái Nguyên",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "- Nhà hàng thịt chó Đức Thắng, chuyên tất cả các món ăn về Chó tại Thái Nguyên - Là một trong những nhà hàng lâu năm nhất tại Thành Phố - Các món nổi tiếng nhất: chó quay, chả nướng, chân chó nướng, lẩu cho bia tàu ... - Đảm bảo vệ sinh an toàn thực phẩm, có chỗ để xe máy và ô tô riêng ; có phòng điều hòa ... - Nhân đồ mang về (gọi điện đặt trước hay trực tiếp đến mua sớm) -",
+        "embedding": null,
+        "searchText": "Nhà Hàng Thịt Chó Đức Thắng ở Thái Nguyên. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: - Nhà hàng thịt chó Đức Thắng, chuyên tất cả các món ăn về Chó tại Thái Nguyên - Là một trong những nhà hàng lâu năm nhất tại Thành Phố - Các món nổi tiếng nhất: chó quay, chả nướng, chân chó nướng, lẩu cho bia tàu ... - Đảm bảo vệ sinh an toàn thực phẩm, có chỗ để xe máy và ô tô riêng ; có phòng điều hòa ... - Nhân đồ mang về (gọi điện đặt trước hay trực tiếp đến mua sớm) - Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.81931,
+                21.59884
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34317722",
+        "title": "Bi's Flame Pizza",
+        "city": "Thái Nguyên",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bi's Flame Pizza ở Thái Nguyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.83147,
+                21.576456
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 930,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 930,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 930,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 930,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 930,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 930,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 930,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32999249",
+        "title": "Breakfast Buffet The King Hotel",
+        "city": "Thái Nguyên",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Breakfast Buffet The King Hotel ở Thái Nguyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.826164,
+                21.59389
+            ]
+        },
+        "openingHours": {
+            "display": "06:45-09:15",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 405,
+                        "close_time": 555
+                    }
+                ],
+                [
+                    {
+                        "open_time": 405,
+                        "close_time": 555
+                    }
+                ],
+                [
+                    {
+                        "open_time": 405,
+                        "close_time": 555
+                    }
+                ],
+                [
+                    {
+                        "open_time": 405,
+                        "close_time": 555
+                    }
+                ],
+                [
+                    {
+                        "open_time": 405,
+                        "close_time": 555
+                    }
+                ],
+                [
+                    {
+                        "open_time": 405,
+                        "close_time": 555
+                    }
+                ],
+                [
+                    {
+                        "open_time": 405,
+                        "close_time": 555
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32707001",
+        "title": "The King Coffee And Restaurant",
+        "city": "Thái Nguyên",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The King Coffee And Restaurant ở Thái Nguyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.826004,
+                21.59415
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26311694",
+        "title": "Thái Nguyên Botanic Gardens",
+        "city": "Thái Nguyên",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Đây là một không gian đẹp kết hợp thiết kế hiện đại với nhiều cây xanh đa dạng. Không gian phục vụ quy mô với nhiều dịch vụ khác nhau như nhà hàng ăn uống, không gian tổ chức sự kiện lớn, teambuilding, trải nghiệm ngoài trời,...Có các phòng ngủ lưu trú gồm đầy đủ tiện nghi phục vụ các các đoàn tham quan cũng như các đoàn công tác khi về tới Thái Nguyên.",
+        "embedding": null,
+        "searchText": "Thái Nguyên Botanic Gardens ở Thái Nguyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Đây là một không gian đẹp kết hợp thiết kế hiện đại với nhiều cây xanh đa dạng. Không gian phục vụ quy mô với nhiều dịch vụ khác nhau như nhà hàng ăn uống, không gian tổ chức sự kiện lớn, teambuilding, trải nghiệm ngoài trời,...Có các phòng ngủ lưu trú gồm đầy đủ tiện nghi phục vụ các các đoàn tham quan cũng như các đoàn công tác khi về tới Thái Nguyên.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.74544,
+                21.559126
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    }
+]

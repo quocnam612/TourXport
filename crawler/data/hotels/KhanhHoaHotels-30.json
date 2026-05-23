@@ -1,0 +1,872 @@
+[
+    {
+        "sourceLocationId": "13422454",
+        "title": "Boton Blue Hotel & Spa",
+        "city": "Nha Trang, Khánh Hòa",
+        "totalScore": 4.9,
+        "ranking": "1/2437",
+        "reviewsCount": 2407,
+        "category": "Khách sạn",
+        "priceRange": "894.737 ₫ - 2.763.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Boton Blue Hotel & Spa ở Nha Trang, Khánh Hòa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 2407 lượt review. Xếp hạng: 1/2437. Giá: 894.737 ₫ - 2.763.158 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/82/92/d3/boton-blue-hotel-spa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.20389,
+                12.284777
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23927165",
+        "title": "Wyndham Garden Cam Ranh Resort",
+        "city": "Cam Hải Đông, Cam Lâm District, Khánh Hòa",
+        "totalScore": 5.0,
+        "ranking": "2/2437",
+        "reviewsCount": 675,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "3.236.842 ₫ - 7.657.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Wyndham Garden Cam Ranh Resort ở Cam Hải Đông, Cam Lâm District, Khánh Hòa. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 5.0/5 từ 675 lượt review. Xếp hạng: 2/2437. Giá: 3.236.842 ₫ - 7.657.895 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/22/b8/b0/3b/hotel-exterior.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.21308,
+                12.030672
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1534400",
+        "title": "Khách sạn và Spa Sheraton Nha Trang",
+        "city": "Nha Trang, Khánh Hòa",
+        "totalScore": 4.7,
+        "ranking": "3/2437",
+        "reviewsCount": 4131,
+        "category": "Khách sạn",
+        "priceRange": "3.500.000 ₫ - 4.736.842 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn và Spa Sheraton Nha Trang ở Nha Trang, Khánh Hòa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.7/5 từ 4131 lượt review. Xếp hạng: 3/2437. Giá: 3.500.000 ₫ - 4.736.842 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/33/02/05/7e/infinity-pool.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.196,
+                12.246327
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21397079",
+        "title": "Potique Hotel",
+        "city": "Nha Trang, Khánh Hòa",
+        "totalScore": 5.0,
+        "ranking": "4/2437",
+        "reviewsCount": 879,
+        "category": "Khách sạn",
+        "priceRange": "2.447.368 ₫ - 4.157.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Potique Hotel ở Nha Trang, Khánh Hòa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 879 lượt review. Xếp hạng: 4/2437. Giá: 2.447.368 ₫ - 4.157.895 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/23/e0/3d/4e/potique-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.19476,
+                12.241179
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25310293",
+        "title": "Best Western Premier Marvella Nha Trang Hotel",
+        "city": "Nha Trang, Khánh Hòa",
+        "totalScore": 5.0,
+        "ranking": "5/2437",
+        "reviewsCount": 934,
+        "category": "Khách sạn",
+        "priceRange": "1.447.368 ₫ - 2.289.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Best Western Premier Marvella Nha Trang Hotel ở Nha Trang, Khánh Hòa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 934 lượt review. Xếp hạng: 5/2437. Giá: 1.447.368 ₫ - 2.289.474 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/ad/5d/60/bw-premier-marvella-nha.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.20087,
+                12.224931
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12215504",
+        "title": "Melia Vinpearl Cam Ranh Beach Resort",
+        "city": "Cam Hải Đông, Cam Lâm District, Khánh Hòa",
+        "totalScore": 4.9,
+        "ranking": "6/2437",
+        "reviewsCount": 1953,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "5.763.158 ₫ - 15.605.263 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Melia Vinpearl Cam Ranh Beach Resort ở Cam Hải Đông, Cam Lâm District, Khánh Hòa. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.9/5 từ 1953 lượt review. Xếp hạng: 6/2437. Giá: 5.763.158 ₫ - 15.605.263 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/c3/44/1f/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.19269,
+                12.076614
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27744030",
+        "title": "Adamas Boutique Hotel Nha Trang",
+        "city": "Nha Trang, Khánh Hòa",
+        "totalScore": 4.9,
+        "ranking": "7/2437",
+        "reviewsCount": 382,
+        "category": "Khách sạn",
+        "priceRange": "1.131.579 ₫ - 3.026.316 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Adamas Boutique Hotel Nha Trang ở Nha Trang, Khánh Hòa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 382 lượt review. Xếp hạng: 7/2437. Giá: 1.131.579 ₫ - 3.026.316 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/80/cb/e1/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.196,
+                12.233441
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27912456",
+        "title": "Sea Soul Hotel",
+        "city": "Nha Trang, Khánh Hòa",
+        "totalScore": 4.9,
+        "ranking": "8/2437",
+        "reviewsCount": 320,
+        "category": "Khách sạn",
+        "priceRange": "1.026.316 ₫ - 3.605.263 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Sea Soul Hotel ở Nha Trang, Khánh Hòa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 320 lượt review. Xếp hạng: 8/2437. Giá: 1.026.316 ₫ - 3.605.263 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/e9/61/c5/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.195694,
+                12.231335
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4328685",
+        "title": "Havana Nha Trang Hotel",
+        "city": "Nha Trang, Khánh Hòa",
+        "totalScore": 4.8,
+        "ranking": "9/2437",
+        "reviewsCount": 3521,
+        "category": "Khách sạn",
+        "priceRange": "1.184.211 ₫ - 2.710.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Havana Nha Trang Hotel ở Nha Trang, Khánh Hòa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 3521 lượt review. Xếp hạng: 9/2437. Giá: 1.184.211 ₫ - 2.710.526 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/85/56/bc/havana-nha-trang-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.19584,
+                12.243395
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8385436",
+        "title": "Champa Island Nha Trang - Resort Hotel & Spa",
+        "city": "Nha Trang, Khánh Hòa",
+        "totalScore": 4.9,
+        "ranking": "10/2437",
+        "reviewsCount": 1070,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "894.737 ₫ - 3.421.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Champa Island Nha Trang - Resort Hotel & Spa ở Nha Trang, Khánh Hòa. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.9/5 từ 1070 lượt review. Xếp hạng: 10/2437. Giá: 894.737 ₫ - 3.421.053 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/29/ea/fb/16/cheo-sup-tr-phi.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.19196,
+                12.263958
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23381411",
+        "title": "Pax Ana Doc Let Resort & Spa",
+        "city": "Ninh Hai, Ninh Hoa, Khánh Hòa",
+        "totalScore": 4.9,
+        "ranking": "11/2437",
+        "reviewsCount": 401,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "2.052.632 ₫ - 5.421.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Pax Ana Doc Let Resort & Spa ở Ninh Hai, Ninh Hoa, Khánh Hòa. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.9/5 từ 401 lượt review. Xếp hạng: 11/2437. Giá: 2.052.632 ₫ - 5.421.053 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/71/44/2b/pax-ana-doc-let-resort.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.22903,
+                12.548481
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14974315",
+        "title": "Libra Hotel Nha Trang",
+        "city": "Nha Trang, Khánh Hòa",
+        "totalScore": 4.9,
+        "ranking": "12/2437",
+        "reviewsCount": 488,
+        "category": "Khách sạn",
+        "priceRange": "631.579 ₫ - 1.184.211 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Libra Hotel Nha Trang ở Nha Trang, Khánh Hòa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 488 lượt review. Xếp hạng: 12/2437. Giá: 631.579 ₫ - 1.184.211 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/78/6c/ac/khach-s-n-libra-nha-trang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.19465,
+                12.241545
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1200978",
+        "title": "Novotel Nha Trang",
+        "city": "Nha Trang, Khánh Hòa",
+        "totalScore": 4.6,
+        "ranking": "13/2437",
+        "reviewsCount": 2769,
+        "category": "Khách sạn",
+        "priceRange": "1.526.316 ₫ - 6.447.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Novotel Nha Trang ở Nha Trang, Khánh Hòa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 2769 lượt review. Xếp hạng: 13/2437. Giá: 1.526.316 ₫ - 6.447.368 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/f1/e7/de/entrance--v8270354.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.19671,
+                12.237778
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25437159",
+        "title": "Annova Nha Trang Hotel",
+        "city": "Nha Trang, Khánh Hòa",
+        "totalScore": 4.9,
+        "ranking": "14/2437",
+        "reviewsCount": 573,
+        "category": "Khách sạn",
+        "priceRange": "1.421.053 ₫ - 2.921.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Annova Nha Trang Hotel ở Nha Trang, Khánh Hòa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 573 lượt review. Xếp hạng: 14/2437. Giá: 1.421.053 ₫ - 2.921.053 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/cc/78/c7/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.19423,
+                12.247444
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "2179503",
+        "title": "Vinpearl Luxury Nha Trang",
+        "city": "Nha Trang, Khánh Hòa",
+        "totalScore": 4.8,
+        "ranking": "15/2437",
+        "reviewsCount": 1595,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "4.210.526 ₫ - 9.236.842 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Vinpearl Luxury Nha Trang ở Nha Trang, Khánh Hòa. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.8/5 từ 1595 lượt review. Xếp hạng: 15/2437. Giá: 4.210.526 ₫ - 9.236.842 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1d/29/f4/b5/vinpearl-luxury-nha-trang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.24374,
+                12.212904
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24164529",
+        "title": "Ana Mandara Cam Ranh",
+        "city": "Cam Hải Đông, Cam Lâm District, Khánh Hòa",
+        "totalScore": 4.9,
+        "ranking": "16/2437",
+        "reviewsCount": 1358,
+        "category": "Khách sạn",
+        "priceRange": "2.921.053 ₫ - 8.000.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Ana Mandara Cam Ranh ở Cam Hải Đông, Cam Lâm District, Khánh Hòa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 1358 lượt review. Xếp hạng: 16/2437. Giá: 2.921.053 ₫ - 8.000.000 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/b8/3b/59/ana-mandara-cam-ranh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.193695,
+                12.082331
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19722575",
+        "title": "Green Beach Hotel Nha Trang",
+        "city": "Nha Trang, Khánh Hòa",
+        "totalScore": 4.9,
+        "ranking": "17/2437",
+        "reviewsCount": 335,
+        "category": "Khách sạn",
+        "priceRange": "552.632 ₫ - 1.263.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Green Beach Hotel Nha Trang ở Nha Trang, Khánh Hòa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 335 lượt review. Xếp hạng: 17/2437. Giá: 552.632 ₫ - 1.263.158 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/b3/5e/85/khach-s-n-bi-n-xanh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.19569,
+                12.233107
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15142275",
+        "title": "Vinpearl Beachfront Nha Trang",
+        "city": "Nha Trang, Khánh Hòa",
+        "totalScore": 4.9,
+        "ranking": "18/2437",
+        "reviewsCount": 2123,
+        "category": "Khách sạn",
+        "priceRange": "1.605.263 ₫ - 2.315.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Vinpearl Beachfront Nha Trang ở Nha Trang, Khánh Hòa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 2123 lượt review. Xếp hạng: 18/2437. Giá: 1.605.263 ₫ - 2.315.789 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/0f/b7/39/restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.197136,
+                12.23296
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1940949",
+        "title": "Khách sạn cao cấp TTC Premium - Michelia",
+        "city": "Nha Trang, Khánh Hòa",
+        "totalScore": 4.7,
+        "ranking": "19/2437",
+        "reviewsCount": 2089,
+        "category": "Khách sạn",
+        "priceRange": "684.211 ₫ - 1.710.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn cao cấp TTC Premium - Michelia ở Nha Trang, Khánh Hòa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.7/5 từ 2089 lượt review. Xếp hạng: 19/2437. Giá: 684.211 ₫ - 1.710.526 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/a9/a3/93/khach-s-n-cao-c-p-ttc.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.19547,
+                12.25317
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11742790",
+        "title": "Khách Sạn Nha Trang Prince",
+        "city": "Nha Trang, Khánh Hòa",
+        "totalScore": 4.9,
+        "ranking": "20/2437",
+        "reviewsCount": 164,
+        "category": "Khách sạn",
+        "priceRange": "578.947 ₫ - 894.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn Nha Trang Prince ở Nha Trang, Khánh Hòa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 164 lượt review. Xếp hạng: 20/2437. Giá: 578.947 ₫ - 894.737 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/b0/97/08/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.19305,
+                12.243268
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25455452",
+        "title": "Villa Le Corail, a Gran Melia Hotel",
+        "city": "Nha Trang, Khánh Hòa",
+        "totalScore": 4.9,
+        "ranking": "21/2437",
+        "reviewsCount": 756,
+        "category": "Khách sạn",
+        "priceRange": "7.184.211 ₫ - 12.447.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Villa Le Corail, a Gran Melia Hotel ở Nha Trang, Khánh Hòa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 756 lượt review. Xếp hạng: 21/2437. Giá: 7.184.211 ₫ - 12.447.368 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/e0/1e/5a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.238846,
+                12.302257
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10587972",
+        "title": "The Anam",
+        "city": "Cam Hải Đông, Cam Lâm District, Khánh Hòa",
+        "totalScore": 4.8,
+        "ranking": "22/2437",
+        "reviewsCount": 1671,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "4.552.632 ₫ - 7.421.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The Anam ở Cam Hải Đông, Cam Lâm District, Khánh Hòa. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.8/5 từ 1671 lượt review. Xếp hạng: 22/2437. Giá: 4.552.632 ₫ - 7.421.053 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/e8/b3/78/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.192116,
+                12.100622
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7905210",
+        "title": "Fusion Resort Cam Ranh",
+        "city": "Cam Hải Đông, Cam Lâm District, Khánh Hòa",
+        "totalScore": 4.7,
+        "ranking": "23/2437",
+        "reviewsCount": 907,
+        "category": "Khách sạn",
+        "priceRange": "6.684.211 ₫ - 13.105.263 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Fusion Resort Cam Ranh ở Cam Hải Đông, Cam Lâm District, Khánh Hòa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.7/5 từ 907 lượt review. Xếp hạng: 23/2437. Giá: 6.684.211 ₫ - 13.105.263 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/98/d6/69/beach-front-pool-villa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.2054,
+                12.051439
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "2316221",
+        "title": "Mia Nha Trang Resort",
+        "city": "Nha Trang, Khánh Hòa",
+        "totalScore": 4.8,
+        "ranking": "24/2437",
+        "reviewsCount": 2077,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "3.736.842 ₫ - 8.736.842 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Mia Nha Trang Resort ở Nha Trang, Khánh Hòa. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.8/5 từ 2077 lượt review. Xếp hạng: 24/2437. Giá: 3.736.842 ₫ - 8.736.842 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/29/3d/70/f3/welcome-to-mia-resort.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.21223,
+                12.134329
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7808999",
+        "title": "Cam Ranh Riviera Beach Resort & Spa",
+        "city": "Cam Hải Đông, Cam Lâm District, Khánh Hòa",
+        "totalScore": 4.6,
+        "ranking": "25/2437",
+        "reviewsCount": 775,
+        "category": "Khách sạn",
+        "priceRange": "2.631.579 ₫ - 4.342.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Cam Ranh Riviera Beach Resort & Spa ở Cam Hải Đông, Cam Lâm District, Khánh Hòa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 775 lượt review. Xếp hạng: 25/2437. Giá: 2.631.579 ₫ - 4.342.105 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1d/4b/27/ee/foam-party.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.19126,
+                12.095702
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12565823",
+        "title": "An Lam Retreats Ninh Van Bay",
+        "city": "Ninh Vân, Ninh Hoa, Khánh Hòa",
+        "totalScore": 4.8,
+        "ranking": "26/2437",
+        "reviewsCount": 758,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "6.552.632 ₫ - 9.263.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "An Lam Retreats Ninh Van Bay ở Ninh Vân, Ninh Hoa, Khánh Hòa. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.8/5 từ 758 lượt review. Xếp hạng: 26/2437. Giá: 6.552.632 ₫ - 9.263.158 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/33/02/ba/a6/ninh-van-bay-an-lam-overview.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.250984,
+                12.390091
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20359633",
+        "title": "ALMA RESORT CAM RANH",
+        "city": "Cam Hải Đông, Cam Lâm District, Khánh Hòa",
+        "totalScore": 4.9,
+        "ranking": "27/2437",
+        "reviewsCount": 2190,
+        "category": "Khách sạn",
+        "priceRange": "4.815.789 ₫ - 8.236.842 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "ALMA RESORT CAM RANH ở Cam Hải Đông, Cam Lâm District, Khánh Hòa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 2190 lượt review. Xếp hạng: 27/2437. Giá: 4.815.789 ₫ - 8.236.842 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/79/f9/c6/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.1955,
+                12.072664
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12454421",
+        "title": "Swandor Hotels & Resorts Cam Ranh",
+        "city": "Cam Hải Đông, Cam Lâm District, Khánh Hòa",
+        "totalScore": 4.8,
+        "ranking": "28/2437",
+        "reviewsCount": 1439,
+        "category": "Khách sạn",
+        "priceRange": "4.973.684 ₫ - 8.342.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Swandor Hotels & Resorts Cam Ranh ở Cam Hải Đông, Cam Lâm District, Khánh Hòa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 1439 lượt review. Xếp hạng: 28/2437. Giá: 4.973.684 ₫ - 8.342.105 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/49/7a/b3/swandor-cam-ranh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.21293,
+                12.03699
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "2141273",
+        "title": "L'Alya Ninh Van Bay",
+        "city": "Ninh Vân, Ninh Hoa, Khánh Hòa",
+        "totalScore": 4.8,
+        "ranking": "29/2437",
+        "reviewsCount": 1174,
+        "category": "Khách sạn",
+        "priceRange": "6.552.632 ₫ - 11.315.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "L'Alya Ninh Van Bay ở Ninh Vân, Ninh Hoa, Khánh Hòa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 1174 lượt review. Xếp hạng: 29/2437. Giá: 6.552.632 ₫ - 11.315.789 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/a0/55/6a/l-alya-ninh-van-bay.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.26312,
+                12.377482
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28030682",
+        "title": "Aquamarine Resort Hotel",
+        "city": "Nha Trang, Khánh Hòa",
+        "totalScore": 4.8,
+        "ranking": "30/2437",
+        "reviewsCount": 280,
+        "category": "Khách sạn",
+        "priceRange": "5.605.263 ₫ - 10.473.684 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Aquamarine Resort Hotel ở Nha Trang, Khánh Hòa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 280 lượt review. Xếp hạng: 30/2437. Giá: 5.605.263 ₫ - 10.473.684 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/e4/38/54/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.19104,
+                12.1037
+            ]
+        },
+        "openingHours": null
+    }
+]

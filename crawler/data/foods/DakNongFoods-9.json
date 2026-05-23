@@ -1,0 +1,427 @@
+[
+    {
+        "sourceLocationId": "23110075",
+        "title": "Nhà hàng K'Jang Tà Đùng",
+        "city": "Dak Som",
+        "totalScore": 5.0,
+        "ranking": "1/6",
+        "reviewsCount": 6,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng K'Jang Tà Đùng ở Dak Som. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 6 lượt review. Xếp hạng: 1/6.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/8f/69/de/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.9303,
+                11.874311
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25366700",
+        "title": "Sky Garden BBQ Gia Nghia Daknong",
+        "city": "Gia Nghĩa",
+        "totalScore": 5.0,
+        "ranking": "2/6",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sky Garden BBQ Gia Nghia Daknong ở Gia Nghĩa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 2/6.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/d6/cf/c8/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.68422,
+                11.978087
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33502480",
+        "title": "Enjoy Factory Coffee",
+        "city": "Gia Nghĩa",
+        "totalScore": 5.0,
+        "ranking": "3/6",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Enjoy Factory Coffee ở Gia Nghĩa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 3/6.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/0d/e4/a7/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.68523,
+                12.003099
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33502479",
+        "title": "Bánh Canh Cua Thố Đá Good",
+        "city": "Gia Nghĩa",
+        "totalScore": 5.0,
+        "ranking": "4/6",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bánh Canh Cua Thố Đá Good ở Gia Nghĩa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 4/6.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/06/95/77/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.68374,
+                12.001393
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17453925",
+        "title": "Bún Bà Mô",
+        "city": "Gia Nghĩa",
+        "totalScore": 5.0,
+        "ranking": "5/6",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bún Bà Mô ở Gia Nghĩa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 5/6.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.68506,
+                12.00553
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10755163",
+        "title": "Nhà Hàng Không Gian Xanh",
+        "city": "Ea T'Ling",
+        "totalScore": 4.0,
+        "ranking": "6/6",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Không Gian Xanh ở Ea T'Ling. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 6/6.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.89267,
+                12.592602
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25431966",
+        "title": "NT Cofee SITE",
+        "city": "Gia Nghĩa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "394.736.832 ₫ - 921.052.608 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "NT Cofee SITE ở Gia Nghĩa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 394.736.832 ₫ - 921.052.608 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/c3/59/13/xin-chao.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.686806,
+                12.024068
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-21:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26651153",
+        "title": "Dây Coffee & Roastery",
+        "city": "Thuan An",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Điểm dừng chân có quán cà phê, phòng rang, vườn ươm cây giống",
+        "embedding": null,
+        "searchText": "Dây Coffee & Roastery ở Thuan An. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Điểm dừng chân có quán cà phê, phòng rang, vườn ươm cây giống",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.57049,
+                12.392949
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "18378541",
+        "title": "Làng May Mắn",
+        "city": "Dak Sor",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Làng May Mắn ở Dak Sor. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.82912,
+                12.50069
+            ]
+        },
+        "openingHours": null
+    }
+]

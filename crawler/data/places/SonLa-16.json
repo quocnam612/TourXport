@@ -1,0 +1,604 @@
+[
+    {
+        "sourceLocationId": "8074589",
+        "title": "Cao Nguyên Mộc Châu",
+        "city": "Mộc Châu",
+        "totalScore": 4.7,
+        "ranking": "3/18",
+        "reviewsCount": 29,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cao Nguyên Mộc Châu ở Mộc Châu. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.7/5 từ 29 lượt review. Xếp hạng: 3/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/01/db/bf/m-t-cao-nguyen-co-d-cao.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.85969,
+                20.77498
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8803750",
+        "title": "Đồi chè trái tim Mộc Châu",
+        "city": "Mộc Châu",
+        "totalScore": 4.1,
+        "ranking": "4/18",
+        "reviewsCount": 56,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đồi chè trái tim Mộc Châu ở Mộc Châu. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Hoạt động ngoài trời. Đánh giá: 4.1/5 từ 56 lượt review. Xếp hạng: 4/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/09/46/ef/2b/mo-c-chau.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.68615,
+                20.890833
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11893991",
+        "title": "Mỏm Tà Xùa",
+        "city": "Sơn La",
+        "totalScore": 4.8,
+        "ranking": "2/18",
+        "reviewsCount": 25,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mỏm Tà Xùa ở Sơn La. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên. Đánh giá: 4.8/5 từ 25 lượt review. Xếp hạng: 2/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/8a/a2/53/ta-xua-peak.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7923509",
+        "title": "Đồi Chè Mộc Sương",
+        "city": "Mộc Châu",
+        "totalScore": 4.4,
+        "ranking": "6/18",
+        "reviewsCount": 18,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đồi Chè Mộc Sương ở Mộc Châu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.4/5 từ 18 lượt review. Xếp hạng: 6/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/79/4b/65/img-20160528-191152-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.69212,
+                20.831926
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7928467",
+        "title": "Thác Dải Yếm",
+        "city": "Mộc Châu",
+        "totalScore": 4.0,
+        "ranking": "5/18",
+        "reviewsCount": 39,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thác Dải Yếm ở Mộc Châu. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.0/5 từ 39 lượt review. Xếp hạng: 5/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/cb/9a/69/dai-yem-waterfall.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.592026,
+                20.81751
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14120384",
+        "title": "Nha Nhung Cave",
+        "city": "Chieng On",
+        "totalScore": 4.0,
+        "ranking": "14/18",
+        "reviewsCount": 2,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nha Nhung Cave ở Chieng On. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 14/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/09/aa/1d/the-entrance-to-nha-nhung.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.23745,
+                21.09896
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7928974",
+        "title": "Rừng Thông Bản Áng",
+        "city": "Mộc Châu",
+        "totalScore": 3.5,
+        "ranking": "9/18",
+        "reviewsCount": 27,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Rừng Thông Bản Áng ở Mộc Châu. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.5/5 từ 27 lượt review. Xếp hạng: 9/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/6d/69/d1/view-of-the-lake.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.62992,
+                20.827503
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13549085",
+        "title": "Hang Dơi",
+        "city": "Mộc Châu",
+        "totalScore": 4.1,
+        "ranking": "8/18",
+        "reviewsCount": 8,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hang Dơi ở Mộc Châu. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.1/5 từ 8 lượt review. Xếp hạng: 8/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/ef/68/25/inside-the-cave.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13436723",
+        "title": "Chimi Farm",
+        "city": "Mộc Châu",
+        "totalScore": 4.0,
+        "ranking": "13/18",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chimi Farm ở Mộc Châu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 13/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/51/aa/c7/chimi-farm-m-c-chau-son.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.62648,
+                20.830946
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17464973",
+        "title": "Ban Quản Lý Khu Du Lịch Quốc Gia Mộc Châu",
+        "city": "Mộc Châu",
+        "totalScore": 5.0,
+        "ranking": "15/18",
+        "reviewsCount": 1,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ban Quản Lý Khu Du Lịch Quốc Gia Mộc Châu ở Mộc Châu. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Thông tin cho khách du lịch. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 15/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/8a/46/ac/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.6883,
+                20.819443
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12703619",
+        "title": "Đỉnh Pha Luông",
+        "city": "Mộc Châu",
+        "totalScore": 3.7,
+        "ranking": "16/18",
+        "reviewsCount": 3,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đỉnh Pha Luông ở Mộc Châu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.7/5 từ 3 lượt review. Xếp hạng: 16/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/1b/a9/7f/a-breathtaking-view-from.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17288297",
+        "title": "Nhà Tù Sơn La",
+        "city": "Sơn La",
+        "totalScore": 4.8,
+        "ranking": "7/18",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Tù Sơn La ở Sơn La. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.8/5 từ 4 lượt review. Xếp hạng: 7/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/f0/b8/ff/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.9068,
+                21.33869
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24049985",
+        "title": "Bach Long Glass Bridge",
+        "city": "Muong Sang",
+        "totalScore": 4.7,
+        "ranking": "1/18",
+        "reviewsCount": 24,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bach Long Glass Bridge ở Muong Sang. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.7/5 từ 24 lượt review. Xếp hạng: 1/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/46/c2/63/spring-at-bach-long-glass.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.576355,
+                20.842756
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32998058",
+        "title": "Cascade De Chieng Khoa",
+        "city": "Van Ho",
+        "totalScore": 5.0,
+        "ranking": "10/18",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cascade De Chieng Khoa ở Van Ho. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 10/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/3d/71/8d/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.77529,
+                20.81336
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32926676",
+        "title": "Bản Nậm Nghiệp",
+        "city": "Ngoc Chien",
+        "totalScore": 5.0,
+        "ranking": "11/18",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bản Nậm Nghiệp ở Ngoc Chien. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 11/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2f/35/de/52/mua-hoa-son-tra-2025.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.865875,
+                21.057175
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25203917",
+        "title": "Moc Chau Island",
+        "city": "Sơn La",
+        "totalScore": 5.0,
+        "ranking": "12/18",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Moc Chau Island ở Sơn La. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 12/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/27/6d/bd/b8/moc-chau-island-attractions.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.57718,
+                20.8326
+            ]
+        },
+        "openingHours": null
+    }
+]

@@ -1,0 +1,864 @@
+[
+    {
+        "sourceLocationId": "19609103",
+        "title": "Fusion Suites Vung Tau",
+        "city": "Vũng Tàu, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.9,
+        "ranking": "1/2346",
+        "reviewsCount": 1430,
+        "category": "Khách sạn",
+        "priceRange": "1.631.579 ₫ - 3.184.211 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Fusion Suites Vung Tau ở Vũng Tàu, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 1430 lượt review. Xếp hạng: 1/2346. Giá: 1.631.579 ₫ - 3.184.211 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/58/89/2f/breeze-roof-top-sky-bar.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.07589,
+                10.3418
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33003136",
+        "title": "Iconic Long Hai Hotel",
+        "city": "Long Hải, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.9,
+        "ranking": "2/2346",
+        "reviewsCount": 224,
+        "category": "Khách sạn",
+        "priceRange": "1.105.263 ₫ - 1.763.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Iconic Long Hai Hotel ở Long Hải, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 224 lượt review. Xếp hạng: 2/2346. Giá: 1.105.263 ₫ - 1.763.158 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/48/f1/c9/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.23344,
+                10.388753
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1229249",
+        "title": "Mercure Vung Tau",
+        "city": "Vũng Tàu, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.9,
+        "ranking": "3/2346",
+        "reviewsCount": 1290,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "2.026.316 ₫ - 3.947.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Mercure Vung Tau ở Vũng Tàu, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.9/5 từ 1290 lượt review. Xếp hạng: 3/2346. Giá: 2.026.316 ₫ - 3.947.368 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.08123,
+                10.326949
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10625368",
+        "title": "Poulo Condor Boutique Resort & Spa",
+        "city": "Côn Sơn, Quần đảo Côn Đảo, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.8,
+        "ranking": "4/2346",
+        "reviewsCount": 690,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "3.657.895 ₫ - 5.473.684 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Poulo Condor Boutique Resort & Spa ở Côn Sơn, Quần đảo Côn Đảo, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.8/5 từ 690 lượt review. Xếp hạng: 4/2346. Giá: 3.657.895 ₫ - 5.473.684 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/ce/e2/c4/poulo-condor-pool-villa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.635704,
+                8.714154
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8778363",
+        "title": "Pullman Vung Tau",
+        "city": "Vũng Tàu, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.7,
+        "ranking": "5/2346",
+        "reviewsCount": 1331,
+        "category": "Khách sạn",
+        "priceRange": "2.289.474 ₫ - 3.421.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Pullman Vung Tau ở Vũng Tàu, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.7/5 từ 1331 lượt review. Xếp hạng: 5/2346. Giá: 2.289.474 ₫ - 3.421.053 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.09446,
+                10.348163
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1174442",
+        "title": "Khu nghỉ dưỡng & Spa Bãi Biển Hồ Tràm",
+        "city": "Hồ Tràm, Phuoc Thuan, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.6,
+        "ranking": "6/2346",
+        "reviewsCount": 904,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "1.763.158 ₫ - 2.578.947 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu nghỉ dưỡng & Spa Bãi Biển Hồ Tràm ở Hồ Tràm, Phuoc Thuan, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.6/5 từ 904 lượt review. Xếp hạng: 6/2346. Giá: 1.763.158 ₫ - 2.578.947 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/2f/30/72/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.43627,
+                10.472529
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23956920",
+        "title": "Vias Hotel Vung Tau",
+        "city": "Vũng Tàu, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.9,
+        "ranking": "7/2346",
+        "reviewsCount": 634,
+        "category": "Khách sạn",
+        "priceRange": "1.763.158 ₫ - 3.078.947 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Vias Hotel Vung Tau ở Vũng Tàu, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 634 lượt review. Xếp hạng: 7/2346. Giá: 1.763.158 ₫ - 3.078.947 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/7e/73/b2/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.10144,
+                10.352433
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1929892",
+        "title": "Six Senses Con Dao",
+        "city": "Côn Sơn, Quần đảo Côn Đảo, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.7,
+        "ranking": "8/2346",
+        "reviewsCount": 1451,
+        "category": "Khách sạn",
+        "priceRange": "18.894.736 ₫ - 39.473.684 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Six Senses Con Dao ở Côn Sơn, Quần đảo Côn Đảo, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.7/5 từ 1451 lượt review. Xếp hạng: 8/2346. Giá: 18.894.736 ₫ - 39.473.684 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/0b/41/a0/hiking.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.63374,
+                8.70095
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23118030",
+        "title": "Khu Nghỉ Dưỡng Biển Seava Hồ Tràm",
+        "city": "Bung Rieng, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.9,
+        "ranking": "9/2346",
+        "reviewsCount": 131,
+        "category": "Khách sạn",
+        "priceRange": "1.315.789 ₫ - 3.157.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu Nghỉ Dưỡng Biển Seava Hồ Tràm ở Bung Rieng, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 131 lượt review. Xếp hạng: 9/2346. Giá: 1.315.789 ₫ - 3.157.895 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/64/fa/41/h-boi-nu-c-bi-n-va-khuon.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.48231,
+                10.501061
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15240267",
+        "title": "Melia Ho Tram Beach Resort",
+        "city": "Phuoc Thuan, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.8,
+        "ranking": "10/2346",
+        "reviewsCount": 1551,
+        "category": "Khách sạn",
+        "priceRange": "3.131.579 ₫ - 6.605.263 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Melia Ho Tram Beach Resort ở Phuoc Thuan, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 1551 lượt review. Xếp hạng: 10/2346. Giá: 3.131.579 ₫ - 6.605.263 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/30/ce/dd/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.38676,
+                10.471641
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25319979",
+        "title": "Angsana Ho Tram",
+        "city": "Hồ Tràm, Phuoc Thuan, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.9,
+        "ranking": "11/2346",
+        "reviewsCount": 170,
+        "category": "Khách sạn",
+        "priceRange": "3.026.316 ₫ - 5.210.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Angsana Ho Tram ở Hồ Tràm, Phuoc Thuan, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 170 lượt review. Xếp hạng: 11/2346. Giá: 3.026.316 ₫ - 5.210.526 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/29/4c/d2/ec/angsana-ho-tram.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.37712,
+                10.468821
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "22939248",
+        "title": "Premier Pearl Hotel Vung Tau",
+        "city": "Vũng Tàu, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.9,
+        "ranking": "12/2346",
+        "reviewsCount": 306,
+        "category": "Khách sạn",
+        "priceRange": "1.131.579 ₫ - 2.157.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Premier Pearl Hotel Vung Tau ở Vũng Tàu, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 306 lượt review. Xếp hạng: 12/2346. Giá: 1.131.579 ₫ - 2.157.895 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/f1/e9/d4/premier-pearl-hotel-vung.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.08897,
+                10.332249
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21180229",
+        "title": "The Secret Côn Đảo",
+        "city": "Côn Sơn, Quần đảo Côn Đảo, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.8,
+        "ranking": "13/2346",
+        "reviewsCount": 756,
+        "category": "Khách sạn",
+        "priceRange": "1.973.684 ₫ - 3.210.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The Secret Côn Đảo ở Côn Sơn, Quần đảo Côn Đảo, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 756 lượt review. Xếp hạng: 13/2346. Giá: 1.973.684 ₫ - 3.210.526 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/21/92/c6/84/the-secret-con-dao.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.61338,
+                8.6859
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1488402",
+        "title": "Khách sạn Imperial Vũng Tàu",
+        "city": "Vũng Tàu, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.4,
+        "ranking": "14/2346",
+        "reviewsCount": 1369,
+        "category": "Khách sạn",
+        "priceRange": "1.842.105 ₫ - 4.736.842 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Imperial Vũng Tàu ở Vũng Tàu, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.4/5 từ 1369 lượt review. Xếp hạng: 14/2346. Giá: 1.842.105 ₫ - 4.736.842 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/e8/f5/88/the-imperial-hotel-resort.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.094986,
+                10.34394
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23430670",
+        "title": "Holiday Inn Resort Ho Tram Beach By IHG",
+        "city": "Bong Trang, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.8,
+        "ranking": "15/2346",
+        "reviewsCount": 154,
+        "category": "Khách sạn",
+        "priceRange": "2.526.316 ₫ - 4.684.211 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Holiday Inn Resort Ho Tram Beach By IHG ở Bong Trang, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 154 lượt review. Xếp hạng: 15/2346. Giá: 2.526.316 ₫ - 4.684.211 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/30/b8/9e/ff/holiday-inn-resort-ho.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.4562,
+                10.486115
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25132254",
+        "title": "Hôtel D'Melin",
+        "city": "Vũng Tàu, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.9,
+        "ranking": "16/2346",
+        "reviewsCount": 76,
+        "category": "Khách sạn đặc biệt",
+        "priceRange": "894.737 ₫ - 2.973.684 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hôtel D'Melin ở Vũng Tàu, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khách sạn đặc biệt. Tags: Khách sạn đặc biệt. Đánh giá: 4.9/5 từ 76 lượt review. Xếp hạng: 16/2346. Giá: 894.737 ₫ - 2.973.684 ₫.",
+        "tags": [
+            "Khách sạn đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/26/fd/2d/d0/fine-dining-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.07617,
+                10.341902
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11740637",
+        "title": "The Wind Resort - Tropical Hillside Escape",
+        "city": "Vũng Tàu, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.7,
+        "ranking": "17/2346",
+        "reviewsCount": 168,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "763.158 ₫ - 2.473.684 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The Wind Resort - Tropical Hillside Escape ở Vũng Tàu, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.7/5 từ 168 lượt review. Xếp hạng: 17/2346. Giá: 763.158 ₫ - 2.473.684 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/7f/c5/bc/the-wind-boutique-resort.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.08078,
+                10.336044
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "3800222",
+        "title": "InterContinental Grand Ho Tram by IHG",
+        "city": "Phuoc Thuan, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.2,
+        "ranking": "18/2346",
+        "reviewsCount": 806,
+        "category": "Khách sạn",
+        "priceRange": "3.157.895 ₫ - 4.421.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "InterContinental Grand Ho Tram by IHG ở Phuoc Thuan, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.2/5 từ 806 lượt review. Xếp hạng: 18/2346. Giá: 3.157.895 ₫ - 4.421.053 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/e0/fb/22/intercontinetal-grand.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.45544,
+                10.485802
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4996396",
+        "title": "Carmelina Beach Resort",
+        "city": "Hồ Tràm, Phuoc Thuan, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.6,
+        "ranking": "19/2346",
+        "reviewsCount": 194,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "1.894.737 ₫ - 3.789.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Carmelina Beach Resort ở Hồ Tràm, Phuoc Thuan, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.6/5 từ 194 lượt review. Xếp hạng: 19/2346. Giá: 1.894.737 ₫ - 3.789.474 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/e8/cf/69/carmelina-beach-resort.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.44664,
+                10.474302
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "3912064",
+        "title": "Khách sạn Mường Thanh Vũng Tàu",
+        "city": "Vũng Tàu, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.6,
+        "ranking": "20/2346",
+        "reviewsCount": 203,
+        "category": "Khách sạn",
+        "priceRange": "631.579 ₫ - 1.447.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Mường Thanh Vũng Tàu ở Vũng Tàu, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 203 lượt review. Xếp hạng: 20/2346. Giá: 631.579 ₫ - 1.447.368 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/3d/43/58/deluxe-king.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.07547,
+                10.345875
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25319982",
+        "title": "Dhawa Ho Tram",
+        "city": "Hồ Tràm, Phuoc Thuan, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.6,
+        "ranking": "21/2346",
+        "reviewsCount": 197,
+        "category": "Khách sạn",
+        "priceRange": "2.263.158 ₫ - 4.789.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Dhawa Ho Tram ở Hồ Tràm, Phuoc Thuan, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 197 lượt review. Xếp hạng: 21/2346. Giá: 2.263.158 ₫ - 4.789.474 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/29/a8/95/e8/exterior-view.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.37596,
+                10.469508
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "626362",
+        "title": "Fleur De Lys Resort & Spa Long Hai",
+        "city": "Long Hải, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.3,
+        "ranking": "22/2346",
+        "reviewsCount": 329,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "1.447.368 ₫ - 2.921.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Fleur De Lys Resort & Spa Long Hai ở Long Hải, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.3/5 từ 329 lượt review. Xếp hạng: 22/2346. Giá: 1.447.368 ₫ - 2.921.053 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/bc/ee/d5/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.243095,
+                10.382349
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1885456",
+        "title": "Palace Long Hai Resort",
+        "city": "Long Hải, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.7,
+        "ranking": "23/2346",
+        "reviewsCount": 87,
+        "category": "Khách sạn",
+        "priceRange": "1.078.947 ₫ - 2.421.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Palace Long Hai Resort ở Long Hải, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.7/5 từ 87 lượt review. Xếp hạng: 23/2346. Giá: 1.078.947 ₫ - 2.421.053 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/6a/46/16/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.23271,
+                10.388092
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12436800",
+        "title": "Villa Maison Con Dao Boutique Hotel",
+        "city": "Côn Sơn, Quần đảo Côn Đảo, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.9,
+        "ranking": "24/2346",
+        "reviewsCount": 125,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Villa Maison Con Dao Boutique Hotel ở Côn Sơn, Quần đảo Côn Đảo, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 125 lượt review. Xếp hạng: 24/2346.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/7f/6d/ef/villa-maison-con-dao.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.607445,
+                8.68403
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26874119",
+        "title": "Emerald Ho Tram Resort",
+        "city": "Hồ Tràm, Phuoc Thuan, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.9,
+        "ranking": "25/2346",
+        "reviewsCount": 53,
+        "category": "Khách sạn",
+        "priceRange": "1.526.316 ₫ - 11.078.947 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Emerald Ho Tram Resort ở Hồ Tràm, Phuoc Thuan, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 53 lượt review. Xếp hạng: 25/2346. Giá: 1.526.316 ₫ - 11.078.947 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/8f/16/57/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.39821,
+                10.471156
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15243254",
+        "title": "Eden House & Coffee Côn Đảo",
+        "city": "Côn Sơn, Quần đảo Côn Đảo, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 5.0,
+        "ranking": "26/2346",
+        "reviewsCount": 62,
+        "category": "Nhà khách",
+        "priceRange": "868.421 ₫ - 1.500.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Eden House & Coffee Côn Đảo ở Côn Sơn, Quần đảo Côn Đảo, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Nhà khách. Tags: Nhà khách. Đánh giá: 5.0/5 từ 62 lượt review. Xếp hạng: 26/2346. Giá: 868.421 ₫ - 1.500.000 ₫.",
+        "tags": [
+            "Nhà khách"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/e5/19/f8/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.60165,
+                8.67894
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16916928",
+        "title": "Khu Nghỉ Dưỡng Marina Bay Vũng Tàu",
+        "city": "Vũng Tàu, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.8,
+        "ranking": "27/2346",
+        "reviewsCount": 93,
+        "category": "Khách sạn",
+        "priceRange": "1.736.842 ₫ - 3.131.579 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu Nghỉ Dưỡng Marina Bay Vũng Tàu ở Vũng Tàu, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 93 lượt review. Xếp hạng: 27/2346. Giá: 1.736.842 ₫ - 3.131.579 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/9b/a5/28/ca-nh-nhi-n-tu-pho-ng.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.0556,
+                10.38
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33985192",
+        "title": "Sala Ho Tram Homestay & Villa",
+        "city": "Hồ Tràm, Phuoc Thuan, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 5.0,
+        "ranking": "28/2346",
+        "reviewsCount": 30,
+        "category": "Khách sạn",
+        "priceRange": "552.632 ₫ - 1.000.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Sala Ho Tram Homestay & Villa ở Hồ Tràm, Phuoc Thuan, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 30 lượt review. Xếp hạng: 28/2346. Giá: 552.632 ₫ - 1.000.000 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/f7/d6/f8/about-3-km-from-the-grand.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.42293,
+                10.482634
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23236799",
+        "title": "Le Palmier Ho Tram Resort",
+        "city": "Hồ Tràm, Phuoc Thuan, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 4.7,
+        "ranking": "29/2346",
+        "reviewsCount": 55,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "1.421.053 ₫ - 5.552.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Le Palmier Ho Tram Resort ở Hồ Tràm, Phuoc Thuan, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.7/5 từ 55 lượt review. Xếp hạng: 29/2346. Giá: 1.421.053 ₫ - 5.552.632 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/33/22/9d/15/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.42553,
+                10.471771
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33304701",
+        "title": "Phạm Gia Home Retreat",
+        "city": "Vũng Tàu, Tỉnh Bà Rịa-Vũng Tàu",
+        "totalScore": 5.0,
+        "ranking": "30/2346",
+        "reviewsCount": 30,
+        "category": "Khách sạn nhỏ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phạm Gia Home Retreat ở Vũng Tàu, Tỉnh Bà Rịa-Vũng Tàu. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 5.0/5 từ 30 lượt review. Xếp hạng: 30/2346.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/79/87/57/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.07318,
+                10.359858
+            ]
+        },
+        "openingHours": null
+    }
+]

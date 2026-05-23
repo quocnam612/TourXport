@@ -1,0 +1,617 @@
+[
+    {
+        "sourceLocationId": "11489001",
+        "title": "Thung Lũng  Bắc Sơn",
+        "city": "Lạng Sơn",
+        "totalScore": 4.7,
+        "ranking": "1/12",
+        "reviewsCount": 26,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thung Lũng  Bắc Sơn ở Lạng Sơn. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.7/5 từ 26 lượt review. Xếp hạng: 1/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/d9/d1/d0/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.58333,
+                21.91667
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "2266644",
+        "title": "Động Tam Thanh",
+        "city": "Lạng Sơn",
+        "totalScore": 4.5,
+        "ranking": "2/12",
+        "reviewsCount": 21,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Động Tam Thanh ở Lạng Sơn. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 21 lượt review. Xếp hạng: 2/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/aa/43/f5/photo5jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.75145,
+                21.85472
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1005
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 930
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                []
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "2266672",
+        "title": "Nhi Thanh grotto",
+        "city": "Lạng Sơn",
+        "totalScore": 3.5,
+        "ranking": "4/12",
+        "reviewsCount": 12,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhi Thanh grotto ở Lạng Sơn. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.5/5 từ 12 lượt review. Xếp hạng: 4/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/86/0a/f7/nhi-thanh-grotto.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.75263,
+                21.85184
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33994727",
+        "title": "Lang Son UNESCO Global Geopark",
+        "city": "Lạng Sơn",
+        "totalScore": 5.0,
+        "ranking": "3/12",
+        "reviewsCount": 3,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lang Son UNESCO Global Geopark ở Lạng Sơn. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 3/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/b8/8e/94/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.58333,
+                21.83333
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 60,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33088385",
+        "title": "Hava Travel Lạng Sơn",
+        "city": "Lạng Sơn",
+        "totalScore": 5.0,
+        "ranking": "1/4",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "Discover Lang Son like a local with Hava Travel! Trek through the majestic Mau Son mountains, enjoy lunch with mountain views, and savor authentic local cuisine for a truly immersive cultural adventure.",
+        "embedding": null,
+        "searchText": "Hava Travel Lạng Sơn ở Lạng Sơn. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Hoạt động ngoài trời. Mô tả: Discover Lang Son like a local with Hava Travel! Trek through the majestic Mau Son mountains, enjoy lunch with mountain views, and savor authentic local cuisine for a truly immersive cultural adventure. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 1/4.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/b0/7f/1a/discover-lang-son-like.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.762474,
+                21.847664
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:45",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33321127",
+        "title": "Thành Nhà Mạc Lạng Sơn",
+        "city": "Lạng Sơn",
+        "totalScore": 5.0,
+        "ranking": "2/7",
+        "reviewsCount": 1,
+        "category": "Chuyến tham quan",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thành Nhà Mạc Lạng Sơn ở Lạng Sơn. Loại địa điểm: Chuyến tham quan. Tags: Điểm du lịch, Chuyến tham quan. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 2/7.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/7c/3d/44/thanh-nha-m-c.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.75664,
+                21.839384
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26828314",
+        "title": "Vietnam Expeditions",
+        "city": "Lạng Sơn",
+        "totalScore": 5.0,
+        "ranking": "1/2",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "Bạn thích những chuyến đi dài, khám phá những hang động hùng vĩ, bơi và cắm trại bên trong hang, hay đơn giản chỉ là tham gia một chuyến trải nghiệm trong ngày, tất cả đều dành cho bạn.",
+        "embedding": null,
+        "searchText": "Vietnam Expeditions ở Lạng Sơn. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Khác, Phương tiện giao thông, Hoạt động ngoài trời. Mô tả: Bạn thích những chuyến đi dài, khám phá những hang động hùng vĩ, bơi và cắm trại bên trong hang, hay đơn giản chỉ là tham gia một chuyến trải nghiệm trong ngày, tất cả đều dành cho bạn. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 1/2.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Khác",
+            "Phương tiện giao thông",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/c5/c1/8c/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "09:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23132221",
+        "title": "Pagoda Cuong Xa",
+        "city": "Bac Son",
+        "totalScore": 5.0,
+        "ranking": "8/12",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pagoda Cuong Xa ở Bac Son. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 8/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/9e/3d/c1/pagoda-cuong-xa-pod-horami.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.332016,
+                20.940937
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33970853",
+        "title": "Trạm Dừng nghỉ Hoa Hồi Lạng Sơn",
+        "city": "Lạng Sơn",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Chuyến tham quan",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trạm Dừng nghỉ Hoa Hồi Lạng Sơn ở Lạng Sơn. Loại địa điểm: Chuyến tham quan. Tags: Điểm du lịch, Nơi mua sắm, Chuyến tham quan.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Chuyến tham quan"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.77169,
+                21.851807
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33090483",
+        "title": "Hava Travel Lang Son",
+        "city": "Lạng Sơn",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Khác",
+        "priceRange": null,
+        "description": "Explore the untouched beauty of Lang Son with Hava Travel. Our guided tours offer authentic experiences through majestic mountains, vibrant local markets, and rich cultural heritage. Join us for unforgettable journeys off the beaten path.",
+        "embedding": null,
+        "searchText": "Hava Travel Lang Son ở Lạng Sơn. Loại địa điểm: Khác. Tags: Điểm du lịch, Đồ ăn & Đồ uống, Chuyến tham quan, Khác. Mô tả: Explore the untouched beauty of Lang Son with Hava Travel. Our guided tours offer authentic experiences through majestic mountains, vibrant local markets, and rich cultural heritage. Join us for unforgettable journeys off the beaten path.",
+        "tags": [
+            "Điểm du lịch",
+            "Đồ ăn & Đồ uống",
+            "Chuyến tham quan",
+            "Khác"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/ad/8e/4a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26828320",
+        "title": "Lang Son Expeditions",
+        "city": "Lạng Sơn",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "Journey exploring Lan Ty Lake, an emerald hidden in the midst of the mountain, took two days and two nights of exploration through forests and steppe. Here, there are no people and only beautiful feng shui water. With one night spent camping in the forest and another spent at a local's home, the trip offers the opportunity to experience life in the center of nature.",
+        "embedding": null,
+        "searchText": "Lang Son Expeditions ở Lạng Sơn. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Khác, Chuyến tham quan bằng thuyền & thể thao dưới nước, Phương tiện giao thông, Hoạt động ngoài trời. Mô tả: Journey exploring Lan Ty Lake, an emerald hidden in the midst of the mountain, took two days and two nights of exploration through forests and steppe. Here, there are no people and only beautiful feng shui water. With one night spent camping in the forest and another spent at a local's home, the trip offers the opportunity to experience life in the center of nature.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Khác",
+            "Chuyến tham quan bằng thuyền & thể thao dưới nước",
+            "Phương tiện giao thông",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/f1/f5/07/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "09:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13476682",
+        "title": "Vietnam CBT",
+        "city": "Lạng Sơn",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vietnam CBT ở Lạng Sơn. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/46/46/89/sails-of-indochina.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    }
+]

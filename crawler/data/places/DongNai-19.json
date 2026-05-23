@@ -1,0 +1,1006 @@
+[
+    {
+        "sourceLocationId": "7305746",
+        "title": "Núi Bửu Long",
+        "city": "Biên Hòa",
+        "totalScore": 4.0,
+        "ranking": "4/19",
+        "reviewsCount": 18,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Núi Bửu Long ở Biên Hòa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.0/5 từ 18 lượt review. Xếp hạng: 4/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/59/99/db/buu-long-mountain.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8012514",
+        "title": "Khu Du Lịch Sinh Thái Vườn Xoài",
+        "city": "Biên Hòa",
+        "totalScore": 3.3,
+        "ranking": "8/19",
+        "reviewsCount": 22,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "ECOTOURISM ZONE FOR FULL DAY OF RELAXATION & BONDING MOMENT",
+        "embedding": null,
+        "searchText": "Khu Du Lịch Sinh Thái Vườn Xoài ở Biên Hòa. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Sở thú & Thủy cung, Thiên nhiên & Công viên, Hoạt động ngoài trời. Mô tả: ECOTOURISM ZONE FOR FULL DAY OF RELAXATION & BONDING MOMENT Đánh giá: 3.3/5 từ 22 lượt review. Xếp hạng: 8/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Sở thú & Thủy cung",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/13/9a/4c/bengal-tiger.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.93779,
+                10.915504
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8289994",
+        "title": "Khu Bảo Tồn Thiên Nhiên - Văn Hóa Đồng Nai",
+        "city": "Tỉnh Đồng Nai",
+        "totalScore": 4.7,
+        "ranking": "3/19",
+        "reviewsCount": 7,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu Bảo Tồn Thiên Nhiên - Văn Hóa Đồng Nai ở Tỉnh Đồng Nai. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.7/5 từ 7 lượt review. Xếp hạng: 3/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/2f/ee/ad/ba-hao-lake.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.051926,
+                11.111189
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10956053",
+        "title": "Buu Phong Temple",
+        "city": "Biên Hòa",
+        "totalScore": 2.5,
+        "ranking": "13/19",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Buu Phong Temple ở Biên Hòa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 2.5/5 từ 2 lượt review. Xếp hạng: 13/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/b1/eb/b3/lam-sao-ma.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.80043,
+                10.9767
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8067787",
+        "title": "Khu Du Lịch Sinh Thái Thác Giang Điền",
+        "city": "Trảng Bom",
+        "totalScore": 3.5,
+        "ranking": "7/19",
+        "reviewsCount": 19,
+        "category": "Công viên nước & giải trí",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu Du Lịch Sinh Thái Thác Giang Điền ở Trảng Bom. Loại địa điểm: Công viên nước & giải trí. Tags: Điểm du lịch, Công viên nước & giải trí. Đánh giá: 3.5/5 từ 19 lượt review. Xếp hạng: 7/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/17/95/64/giang-dien-waterfall.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.99306,
+                10.914954
+            ]
+        },
+        "openingHours": {
+            "display": "19:30-41:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1170,
+                        "close_time": 2490
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1170,
+                        "close_time": 2490
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1170,
+                        "close_time": 2490
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1170,
+                        "close_time": 2490
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1170,
+                        "close_time": 2490
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1170,
+                        "close_time": 2490
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1170,
+                        "close_time": 2490
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10813520",
+        "title": "Khu Du Lịch Sinh Thái Cao Minh",
+        "city": "Tỉnh Đồng Nai",
+        "totalScore": 3.8,
+        "ranking": "10/19",
+        "reviewsCount": 5,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu Du Lịch Sinh Thái Cao Minh ở Tỉnh Đồng Nai. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.8/5 từ 5 lượt review. Xếp hạng: 10/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/dc/03/f6/kdl-sinh-thai-cao-minh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.01968,
+                11.033493
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12162656",
+        "title": "Cat Tien Park",
+        "city": "Nam Cát Tiên",
+        "totalScore": 4.2,
+        "ranking": "1/19",
+        "reviewsCount": 142,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cat Tien Park ở Nam Cát Tiên. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.2/5 từ 142 lượt review. Xếp hạng: 1/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/d4/db/f2/a-corner-in-cat-tien.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.44296,
+                11.422869
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19796661",
+        "title": "Công Viên Suối Mơ",
+        "city": "Tan Phu",
+        "totalScore": 4.0,
+        "ranking": "12/19",
+        "reviewsCount": 1,
+        "category": "Công viên nước & giải trí",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Công Viên Suối Mơ ở Tan Phu. Loại địa điểm: Công viên nước & giải trí. Tags: Điểm du lịch, Công viên nước & giải trí. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 12/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/29/70/65/76/une-grande-etendue-d.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23382593",
+        "title": "The Amazing Bay",
+        "city": "Biên Hòa",
+        "totalScore": 4.6,
+        "ranking": "2/19",
+        "reviewsCount": 31,
+        "category": "Công viên nước & giải trí",
+        "priceRange": null,
+        "description": "Siêu công viên nước The Amazing Bay – Vịnh Kỳ Diệu la công viên nước lớn nhất Việt Nam với tổng vốn đầu tư hơn 2.500 tỷ đồng, tổng diện tích dự án là 25ha và tổng sức chứa lên đến 30,000 du khách. The Amazing Bay tọa lạc tại phường An Hòa, Thành phố Biên Hòa, Tỉnh Đồng Nai. Chỉ cách trung tâm TP Hồ Chí Minh 45 phút di chuyển. Ngoài vị trí lý tưởng, các cụm trò chơi dưới nước theo tiêu chuẩn Canada, du khách còn thỏa thích hòa mình vào ngọn sóng thần kỳ cao đến 4m trên bãi biển Thiên Đường với 10,000 tấn cát trắng được xác lập kỷ lục Việt Nam The Amazing Bay – Vịnh Kỳ Diệu là siêu công viên nước đẳng cấp Quốc tế được xác lập 05 kỷ lục ấn tượng: 1. Công viên nước lớn nhất Việt Nam 2. Biển nhân tạo lớn nhất Việt Nam 3. Sóng nhân tạo cao nhất Việt Nam 4. Dòng Sông Kỳ Diệu dài nhất Việt Nam 5. Màn hình Led ngoài trời lớn nhất Việt Nam.",
+        "embedding": null,
+        "searchText": "The Amazing Bay ở Biên Hòa. Loại địa điểm: Công viên nước & giải trí. Tags: Điểm du lịch, Công viên nước & giải trí. Mô tả: Siêu công viên nước The Amazing Bay – Vịnh Kỳ Diệu la công viên nước lớn nhất Việt Nam với tổng vốn đầu tư hơn 2.500 tỷ đồng, tổng diện tích dự án là 25ha và tổng sức chứa lên đến 30,000 du khách. The Amazing Bay tọa lạc tại phường An Hòa, Thành phố Biên Hòa, Tỉnh Đồng Nai. Chỉ cách trung tâm TP Hồ Chí Minh 45 phút di chuyển. Ngoài vị trí lý tưởng, các cụm trò chơi dưới nước theo tiêu chuẩn Canada, du khách còn thỏa thích hòa mình vào ngọn sóng thần kỳ cao đến 4m trên bãi biển Thiên Đường với 10,000 tấn cát trắng được xác lập kỷ lục Việt Nam The Amazing Bay – Vịnh Kỳ Diệu là siêu công viên nước đẳng cấp Quốc tế được xác lập 05 kỷ lục ấn tượng: 1. Công viên nước lớn nhất Việt Nam 2. Biển nhân tạo lớn nhất Việt Nam 3. Sóng nhân tạo cao nhất Việt Nam 4. Dòng Sông Kỳ Diệu dài nhất Việt Nam 5. Màn hình Led ngoài trời lớn nhất Việt Nam. Đánh giá: 4.6/5 từ 31 lượt review. Xếp hạng: 2/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/26/b2/60/7a/take-advantage-of-the.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.8718,
+                10.877272
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27965345",
+        "title": "Our Lady Of Nui Cui",
+        "city": "Gia Tan 1",
+        "totalScore": 5.0,
+        "ranking": "5/19",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Our Lady Of Nui Cui ở Gia Tan 1. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 5/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/d5/8e/8f/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.16945,
+                10.499732
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27964202",
+        "title": "Trung Tâm Hành Hương Đức Mẹ Núi Cúi",
+        "city": "Gia Tan 1",
+        "totalScore": 5.0,
+        "ranking": "6/19",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trung Tâm Hành Hương Đức Mẹ Núi Cúi ở Gia Tan 1. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 6/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.24829,
+                11.163887
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27964089",
+        "title": "Our Lady Of Nui Cui",
+        "city": "Doc Mo",
+        "totalScore": 5.0,
+        "ranking": "9/19",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Our Lady Of Nui Cui ở Doc Mo. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 9/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.164696,
+                11.061143
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9996369",
+        "title": "tiNiWorld",
+        "city": "Biên Hòa",
+        "totalScore": 4.5,
+        "ranking": "11/19",
+        "reviewsCount": 2,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "tiNiWorld ở Biên Hòa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Vui chơi & Giải trí, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 11/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Vui chơi & Giải trí",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/ab/5f/ce/ti-nh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33100560",
+        "title": "Vietnature Tour (cattien Wild Tour)",
+        "city": "Tỉnh Đồng Nai",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vietnature Tour (cattien Wild Tour) ở Tỉnh Đồng Nai. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/bf/ba/9a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.42241,
+                11.409466
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32963012",
+        "title": "Hang",
+        "city": "Thái Thiên",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hang ở Thái Thiên. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Thông tin cho khách du lịch.",
+        "tags": [
+            "Điểm du lịch",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.70205,
+                10.770403
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23958223",
+        "title": "Cửa Hàng Rong Nho Khô",
+        "city": "Nhon Trach",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": "Cửa hàng Rong Nho Khô chuyên cung cấp các sản phẩm về rong nho tách nước, giúp người tiêu dùng trên toàn quốc có thể dễ dàng tiếp cận với các sản phẩm rong nho chất lượng, tốt cho sức khỏe, đảm bảo an toàn. Các thương hiệu Cửa Hàng Rong Nho Khô cung cấp bao gồm: Sabudo, Namiso, Trường Thọ, Yukibudo,...",
+        "embedding": null,
+        "searchText": "Cửa Hàng Rong Nho Khô ở Nhon Trach. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Mô tả: Cửa hàng Rong Nho Khô chuyên cung cấp các sản phẩm về rong nho tách nước, giúp người tiêu dùng trên toàn quốc có thể dễ dàng tiếp cận với các sản phẩm rong nho chất lượng, tốt cho sức khỏe, đảm bảo an toàn. Các thương hiệu Cửa Hàng Rong Nho Khô cung cấp bao gồm: Sabudo, Namiso, Trường Thọ, Yukibudo,...",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.94293,
+                10.760059
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21117090",
+        "title": "Thien Tam Mineral Mud Bath",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Công viên nước & giải trí",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thien Tam Mineral Mud Bath ở Biên Hòa. Loại địa điểm: Công viên nước & giải trí. Tags: Điểm du lịch, Công viên nước & giải trí.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/86/c9/d0/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12455885",
+        "title": "Khu Du Lịch Sinh Thái Thác Giang Điền",
+        "city": "Trảng Bom",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu Du Lịch Sinh Thái Thác Giang Điền ở Trảng Bom. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/18/8d/ca/3b/thac-giang-di-n.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12368382",
+        "title": "Chùa Viên Giác Thiền Tự (Chùa Đèn)",
+        "city": "Trảng Bom",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": "Vào những thập niên 90 của thế kỷ trước, một nhà sư trẻ đã rời khỏi chốn thị thành Sài Gòn về nơi vùng ven hẻo lánh để kiến tạo nên ngôi Thiền Tự uy nghiêm, thanh nhã ngay trên miệng hố bom – tàn tích của vùng chiến địa Đồng Nai xưa. Để giờ đây, Viên Giác Thiền Tự sớm tối vang vọng tiếng kinh, đã và đang là điểm hành hương tâm linh của hàng phật tử vào những ngày lễ trọng của Phật Giáo, đặc biệt",
+        "embedding": null,
+        "searchText": "Chùa Viên Giác Thiền Tự (Chùa Đèn) ở Trảng Bom. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Mô tả: Vào những thập niên 90 của thế kỷ trước, một nhà sư trẻ đã rời khỏi chốn thị thành Sài Gòn về nơi vùng ven hẻo lánh để kiến tạo nên ngôi Thiền Tự uy nghiêm, thanh nhã ngay trên miệng hố bom – tàn tích của vùng chiến địa Đồng Nai xưa. Để giờ đây, Viên Giác Thiền Tự sớm tối vang vọng tiếng kinh, đã và đang là điểm hành hương tâm linh của hàng phật tử vào những ngày lễ trọng của Phật Giáo, đặc biệt",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/0f/79/a0/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "07:00-11:00, 13:30-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    }
+]

@@ -1,0 +1,520 @@
+[
+    {
+        "sourceLocationId": "2663594",
+        "title": "Vườn Quốc Gia Yokdon",
+        "city": "Cu Jut District",
+        "totalScore": 3.6,
+        "ranking": "3/13",
+        "reviewsCount": 40,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn Quốc Gia Yokdon ở Cu Jut District. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.6/5 từ 40 lượt review. Xếp hạng: 3/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/48/ac/8f/yokdon.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.71679,
+                12.700934
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19125797",
+        "title": "Nhà Trưng Bày Nhạc Cụ Cổ Xưa",
+        "city": "Gia Nghĩa",
+        "totalScore": 4.0,
+        "ranking": "7/13",
+        "reviewsCount": 1,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Trưng Bày Nhạc Cụ Cổ Xưa ở Gia Nghĩa. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 7/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.68117,
+                12.00435
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15292310",
+        "title": "Vườn Quốc Gia Tà Đùng",
+        "city": "Dak Som",
+        "totalScore": 5.0,
+        "ranking": "1/13",
+        "reviewsCount": 8,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn Quốc Gia Tà Đùng ở Dak Som. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 8 lượt review. Xếp hạng: 1/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/36/cb/cc/ta-dung-by-vietnamvoyagesplus.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.97366,
+                11.86625
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8256573",
+        "title": "Thác Lưu Ly",
+        "city": "Gia Nghĩa",
+        "totalScore": 4.5,
+        "ranking": "6/13",
+        "reviewsCount": 2,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thác Lưu Ly ở Gia Nghĩa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 6/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/d8/20/c9/luu-ly-waterfall-located.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15785532",
+        "title": "Freedom Green Village",
+        "city": "Quang Khe",
+        "totalScore": 5.0,
+        "ranking": "2/13",
+        "reviewsCount": 7,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Freedom Green Village ở Quang Khe. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 7 lượt review. Xếp hạng: 2/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.84411,
+                11.925672
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23063300",
+        "title": "Đak Nong Eco Farm",
+        "city": "Gia Nghĩa",
+        "totalScore": 5.0,
+        "ranking": "4/13",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đak Nong Eco Farm ở Gia Nghĩa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 4/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/83/54/dd/dance-in-another-place.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.686005,
+                11.994299
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-19:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15686087",
+        "title": "Dak G’Lung Waterfall",
+        "city": "Tuy Duc",
+        "totalScore": 5.0,
+        "ranking": "5/13",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dak G’Lung Waterfall ở Tuy Duc. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 5/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/90/14/c4/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33502478",
+        "title": "Thung Lũng Mặt Trời Mọc",
+        "city": "Nam N'Jang",
+        "totalScore": 3.0,
+        "ranking": "8/13",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thung Lũng Mặt Trời Mọc ở Nam N'Jang. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 8/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/04/b9/46/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.34017,
+                12.950183
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25296343",
+        "title": "Tịnh xá,ngọc Đắc,Giáo Đoàn 3",
+        "city": "Dak Mil",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tịnh xá,ngọc Đắc,Giáo Đoàn 3 ở Dak Mil. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25296340",
+        "title": "Tịnh Xá Ngọc Giác",
+        "city": "Dak Mil",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tịnh Xá Ngọc Giác ở Dak Mil. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25296339",
+        "title": "Chùa Linh Sơn",
+        "city": "Dak Mil",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Linh Sơn ở Dak Mil. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24147306",
+        "title": "EXP TRAVEL",
+        "city": "Quang Khe",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "Exp-Travel là đơn vị chuyên tổ chức dịch vụ du lịch khám phá chuyên đề tại Việt Nam với mục tiêu mang đến khách hàng những thông tin, kiến thức bổ ích về điểm đến cũng như những trải nghiệm độc đáo một cách an toàn.",
+        "embedding": null,
+        "searchText": "EXP TRAVEL ở Quang Khe. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Khác, Chuyến tham quan bằng thuyền & thể thao dưới nước, Phương tiện giao thông, Hoạt động ngoài trời. Mô tả: Exp-Travel là đơn vị chuyên tổ chức dịch vụ du lịch khám phá chuyên đề tại Việt Nam với mục tiêu mang đến khách hàng những thông tin, kiến thức bổ ích về điểm đến cũng như những trải nghiệm độc đáo một cách an toàn.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Khác",
+            "Chuyến tham quan bằng thuyền & thể thao dưới nước",
+            "Phương tiện giao thông",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/24/52/f8/70/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17739336",
+        "title": "Savitravel",
+        "city": "Gia Nghĩa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Chuyến tham quan",
+        "priceRange": null,
+        "description": "Tỉnh Đăk Nông nằm trọn trên cao nguyên M'Nông với độ cao trung bình 800m so với mực nước biển, sở hữu khí hậu mát mẻ quanh năm, có diện tích rừng tự nhiên lớn với nhiều loài động thực vật quý hiếm, có hơn 40 dân tộc anh em cùng sinh sống với văn hóa dân tộc đậm đà bản sắc, là nơi lý tưởng cho kỳ nghỉ dưỡng tham quan của khách du lịch.",
+        "embedding": null,
+        "searchText": "Savitravel ở Gia Nghĩa. Loại địa điểm: Chuyến tham quan. Tags: Điểm du lịch, Chuyến tham quan. Mô tả: Tỉnh Đăk Nông nằm trọn trên cao nguyên M'Nông với độ cao trung bình 800m so với mực nước biển, sở hữu khí hậu mát mẻ quanh năm, có diện tích rừng tự nhiên lớn với nhiều loài động thực vật quý hiếm, có hơn 40 dân tộc anh em cùng sinh sống với văn hóa dân tộc đậm đà bản sắc, là nơi lý tưởng cho kỳ nghỉ dưỡng tham quan của khách du lịch.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.93588,
+                12.105803
+            ]
+        },
+        "openingHours": null
+    }
+]

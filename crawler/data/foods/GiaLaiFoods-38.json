@@ -1,0 +1,2083 @@
+[
+    {
+        "sourceLocationId": "6781089",
+        "title": "Quán Nhà Tôi",
+        "city": "Pleiku",
+        "totalScore": 4.7,
+        "ranking": "1/34",
+        "reviewsCount": 63,
+        "category": "Ngồi xuống",
+        "priceRange": "26.316 ₫ - 263.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Nhà Tôi ở Pleiku. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.7/5 từ 63 lượt review. Xếp hạng: 1/34. Giá: 26.316 ₫ - 263.158 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/dd/98/d0/dem-nha-toi.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.04632,
+                14.008757
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15521888",
+        "title": "L'amant Cafe",
+        "city": "Pleiku",
+        "totalScore": 4.9,
+        "ranking": "2/34",
+        "reviewsCount": 9,
+        "category": "Quán cafe",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "L'amant Cafe ở Pleiku. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 4.9/5 từ 9 lượt review. Xếp hạng: 2/34.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/98/9a/aa/bar.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00499,
+                13.977863
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17764974",
+        "title": "KAP Bistro",
+        "city": "Pleiku",
+        "totalScore": 4.4,
+        "ranking": "3/34",
+        "reviewsCount": 8,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "KAP Bistro ở Pleiku. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.4/5 từ 8 lượt review. Xếp hạng: 3/34.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/19/d4/6e/88/nh-nhang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.0078,
+                13.97927
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17282073",
+        "title": "Passata Bistro",
+        "city": "Pleiku",
+        "totalScore": 4.8,
+        "ranking": "4/34",
+        "reviewsCount": 5,
+        "category": "Ngồi xuống",
+        "priceRange": "52.632 ₫ - 236.842 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Passata Bistro ở Pleiku. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.8/5 từ 5 lượt review. Xếp hạng: 4/34. Giá: 52.632 ₫ - 236.842 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/c7/2f/fa/all-view.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.997406,
+                13.973384
+            ]
+        },
+        "openingHours": {
+            "display": "09:30-14:00, 16:00-21:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "1654207",
+        "title": "Thien Thanh",
+        "city": "Pleiku",
+        "totalScore": 4.1,
+        "ranking": "5/34",
+        "reviewsCount": 16,
+        "category": "Ngồi xuống",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Thien Thanh ở Pleiku. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.1/5 từ 16 lượt review. Xếp hạng: 5/34. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/05/21/c1/5b/thien-thanh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00526,
+                13.989409
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "3461853",
+        "title": "My Tam",
+        "city": "Pleiku",
+        "totalScore": 3.8,
+        "ranking": "7/34",
+        "reviewsCount": 18,
+        "category": "Ngồi xuống",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "My Tam ở Pleiku. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.8/5 từ 18 lượt review. Xếp hạng: 7/34. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/d2/a4/28/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.01682,
+                13.9517
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6774965",
+        "title": "Quan Se San Xanh, Tay Nguyen",
+        "city": "Pleiku",
+        "totalScore": 3.9,
+        "ranking": "10/34",
+        "reviewsCount": 18,
+        "category": "Ngồi xuống",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quan Se San Xanh, Tay Nguyen ở Pleiku. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.9/5 từ 18 lượt review. Xếp hạng: 10/34. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/2f/9a/44/bop-fish-210vnd-l300.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00301,
+                13.968207
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12369364",
+        "title": "Nhà Hàng Ngon 3 Miền",
+        "city": "Pleiku",
+        "totalScore": 3.8,
+        "ranking": "11/34",
+        "reviewsCount": 5,
+        "category": "Ngồi xuống",
+        "priceRange": "526.315.776 ₫ - 2.147.483.647 ₫",
+        "description": "NGON 3 MIỀN khao khát chia sẻ văn hóa ẩm thực truyền thống qua từng món ăn, giao thoa giữa kỹ thuật nấu nướng hiện đại và hương vị truyền thống",
+        "embedding": null,
+        "searchText": "Nhà Hàng Ngon 3 Miền ở Pleiku. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: NGON 3 MIỀN khao khát chia sẻ văn hóa ẩm thực truyền thống qua từng món ăn, giao thoa giữa kỹ thuật nấu nướng hiện đại và hương vị truyền thống Đánh giá: 3.8/5 từ 5 lượt review. Xếp hạng: 11/34. Giá: 526.315.776 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/79/6c/20/ngon-3-mien-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.993256,
+                13.979547
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13614979",
+        "title": "Gà Nướng Plit",
+        "city": "Pleiku",
+        "totalScore": 4.5,
+        "ranking": "12/34",
+        "reviewsCount": 4,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Gà Nướng Plit ở Pleiku. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.5/5 từ 4 lượt review. Xếp hạng: 12/34.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/31/7e/97/pleiku.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21251649",
+        "title": "Gà Nướng Ksor Hnao",
+        "city": "Pleiku",
+        "totalScore": 0,
+        "ranking": "13/34",
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Gà Nướng Ksor Hnao ở Pleiku. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Xếp hạng: 13/34.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.0,
+                13.98333
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33950757",
+        "title": "XOM Organic Farm Stay",
+        "city": "Pleiku",
+        "totalScore": 5.0,
+        "ranking": "14/34",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "XOM Organic Farm Stay ở Pleiku. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 14/34.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00068,
+                13.975521
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15575982",
+        "title": "Lau Nho 1975",
+        "city": "Pleiku",
+        "totalScore": 5.0,
+        "ranking": "17/34",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "263.157.888 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Lau Nho 1975 ở Pleiku. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 17/34. Giá: 263.157.888 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/1a/20/9b/3b/l-u.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00912,
+                13.983086
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27952319",
+        "title": "Pleiku Balcony - Bar & Pub",
+        "city": "Pleiku",
+        "totalScore": 5.0,
+        "ranking": "18/34",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pleiku Balcony - Bar & Pub ở Pleiku. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 18/34.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/8f/8a/cf/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.0,
+                13.98333
+            ]
+        },
+        "openingHours": {
+            "display": "17:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10778673",
+        "title": "Nhà Hàng Bazan",
+        "city": "Pleiku",
+        "totalScore": 3.7,
+        "ranking": "19/34",
+        "reviewsCount": 7,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Bazan ở Pleiku. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.7/5 từ 7 lượt review. Xếp hạng: 19/34.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.04592,
+                13.971179
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13358503",
+        "title": "Bo Ne 3 Ngon",
+        "city": "Pleiku",
+        "totalScore": 4.0,
+        "ranking": "21/34",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bo Ne 3 Ngon ở Pleiku. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 3 lượt review. Xếp hạng: 21/34.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.998505,
+                13.97919
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17558550",
+        "title": "Bốn Mùa Garden Coffee House and Tea Leaf",
+        "city": "Pleiku",
+        "totalScore": 5.0,
+        "ranking": "22/34",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bốn Mùa Garden Coffee House and Tea Leaf ở Pleiku. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 22/34.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/89/82/a1/khuon-vien-cafe.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.996056,
+                13.983821
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    },
+                    {
+                        "open_time": 1380,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    },
+                    {
+                        "open_time": 1380,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    },
+                    {
+                        "open_time": 1380,
+                        "close_time": 1560
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17487761",
+        "title": "Fast Coffee",
+        "city": "Pleiku",
+        "totalScore": 5.0,
+        "ranking": "24/34",
+        "reviewsCount": 1,
+        "category": "Quán cafe",
+        "priceRange": "263.157.888 ₫ - 2.147.483.647 ₫",
+        "description": "Mang đến bạn những ly Espresso tuyệt vời!",
+        "embedding": null,
+        "searchText": "Fast Coffee ở Pleiku. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Mô tả: Mang đến bạn những ly Espresso tuyệt vời! Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 24/34. Giá: 263.157.888 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/7d/fa/16/sang-don-gi-n-v-i-fast.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.02249,
+                13.96999
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17631928",
+        "title": "Cháo Dinh Dưỡng Wow",
+        "city": "Pleiku",
+        "totalScore": 5.0,
+        "ranking": "25/34",
+        "reviewsCount": 1,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "263.157.888 ₫ - 526.315.776 ₫",
+        "description": "Với kinh nghiệm hơn 20 năm phát triển, Cây Thị luôn tự hào là Thương hiệu cháo dinh dưỡng - sản phẩm dinh dưỡng lâu đời nhất Việt Nam. Dây chuyền sản xuất khép kín hiện đại, vệ sinh an toàn thực phẩm, chất lượng cao, sản phẩm của Cây Thị luôn được khách hàng cả nước tin dùng và bình chọn. Chúng tôi cam kết mang đến cho khách hàng một sự lựa chọn hoàn hảo cho con của bạn!",
+        "embedding": null,
+        "searchText": "Cháo Dinh Dưỡng Wow ở Pleiku. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Mô tả: Với kinh nghiệm hơn 20 năm phát triển, Cây Thị luôn tự hào là Thương hiệu cháo dinh dưỡng - sản phẩm dinh dưỡng lâu đời nhất Việt Nam. Dây chuyền sản xuất khép kín hiện đại, vệ sinh an toàn thực phẩm, chất lượng cao, sản phẩm của Cây Thị luôn được khách hàng cả nước tin dùng và bình chọn. Chúng tôi cam kết mang đến cho khách hàng một sự lựa chọn hoàn hảo cho con của bạn! Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 25/34. Giá: 263.157.888 ₫ - 526.315.776 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/1a/3c/aa/chao-dinh-duong-wow.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.99568,
+                13.975098
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15667655",
+        "title": "Nhà Hàng Phố Biển",
+        "city": "Pleiku",
+        "totalScore": 4.0,
+        "ranking": "26/34",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Phố Biển ở Pleiku. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 26/34.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/80/02/ae/con-gh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.99368,
+                13.97938
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17398965",
+        "title": "Bún Quậy Phú Quốc - Gia Lai",
+        "city": "Pleiku",
+        "totalScore": 5.0,
+        "ranking": "27/34",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "526.315.776 ₫ - 789.473.664 ₫",
+        "description": "Bún quậy Phú Quốc. Bún được ép tại chỗ , bảo đảm sạch sẽ , không phụ gia, hóa chất . Nguyên liệu chính là hải sản được nhập về và làm trong ngày . Đây là món ăn không dầu mỡ , không hóa chất. An toàn cho sức khỏe!!!",
+        "embedding": null,
+        "searchText": "Bún Quậy Phú Quốc - Gia Lai ở Pleiku. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Bún quậy Phú Quốc. Bún được ép tại chỗ , bảo đảm sạch sẽ , không phụ gia, hóa chất . Nguyên liệu chính là hải sản được nhập về và làm trong ngày . Đây là món ăn không dầu mỡ , không hóa chất. An toàn cho sức khỏe!!! Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 27/34. Giá: 526.315.776 ₫ - 789.473.664 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/d0/5a/d5/bun-qu-y-phu-qu-c-gia.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00227,
+                13.983271
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-11:30, 15:00-20:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8862305",
+        "title": "Đỉnh coffee & lifestyle",
+        "city": "Thi Xa An Khe",
+        "totalScore": 5.0,
+        "ranking": "28/34",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đỉnh coffee & lifestyle ở Thi Xa An Khe. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 28/34.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/3f/52/21/customer.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.65605,
+                13.95283
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "7055485",
+        "title": "Nhà Hàng Biển Hồ Xanh",
+        "city": "Pleiku",
+        "totalScore": 5.0,
+        "ranking": "29/34",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Biển Hồ Xanh ở Pleiku. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 29/34.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/97/de/38/very-nice-romantic-spot.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.99061,
+                14.02493
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20913860",
+        "title": "To Nung Restaurant",
+        "city": "Pleiku",
+        "totalScore": 4.0,
+        "ranking": "30/34",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "To Nung Restaurant ở Pleiku. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 30/34.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1d/2e/f5/73/nha-hang-t-nung-pleiku.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.99946,
+                14.03375
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13358505",
+        "title": "Phở Nữ",
+        "city": "Pleiku",
+        "totalScore": 4.0,
+        "ranking": "32/34",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phở Nữ ở Pleiku. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 32/34.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00559,
+                13.97952
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13358513",
+        "title": "Lộc Vừng",
+        "city": "Pleiku",
+        "totalScore": 3.0,
+        "ranking": "33/34",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lộc Vừng ở Pleiku. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 2 lượt review. Xếp hạng: 33/34.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/17/d5/ef/43/l-c-v-ng.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00112,
+                13.96813
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17450365",
+        "title": "Ruby Koi Gia Lai",
+        "city": "Pleiku",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ruby Koi Gia Lai ở Pleiku. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.99194,
+                13.96463
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17807216",
+        "title": "Nhà Hàng Pleiku Ngon",
+        "city": "Pleiku",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Pleiku Ngon ở Pleiku. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/d5/e3/a2/pleiku-s-ngon-27-le-h.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.99686,
+                13.97646
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23839225",
+        "title": "Siixsen - Sofa Restaurant",
+        "city": "Pleiku",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Siixsen được hình thành và định hướng phát triển theo mô hình nhà hàng Cuisine & Mixology. Chuyên phục vụ ẩm thực Fusion Cuisine và nghệ thuật pha chế Cocktail Mixology với âm nhạc thời thượng, Siixsen tin rằng sẽ mang đến cho mọi người một không gian ẩm thực kết nối, giải trí đúng nghĩa.",
+        "embedding": null,
+        "searchText": "Siixsen - Sofa Restaurant ở Pleiku. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Siixsen được hình thành và định hướng phát triển theo mô hình nhà hàng Cuisine & Mixology. Chuyên phục vụ ẩm thực Fusion Cuisine và nghệ thuật pha chế Cocktail Mixology với âm nhạc thời thượng, Siixsen tin rằng sẽ mang đến cho mọi người một không gian ẩm thực kết nối, giải trí đúng nghĩa.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/21/e9/97/7a/best-restaurant-in-town.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.99896,
+                13.97492
+            ]
+        },
+        "openingHours": {
+            "display": "18:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25264613",
+        "title": "The Black Steakhouse & Bar",
+        "city": "Pleiku",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Black Steakhouse & Bar ở Pleiku. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.01595,
+                13.992672
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26648275",
+        "title": "Nhà Hàng Thiên Thanh",
+        "city": "Pleiku",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Nhà hàng sân vườn kinh doanh hình thức ăn uống, quán nhậu, hội nghị, tiệc cưới…",
+        "embedding": null,
+        "searchText": "Nhà Hàng Thiên Thanh ở Pleiku. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Nhà hàng sân vườn kinh doanh hình thức ăn uống, quán nhậu, hội nghị, tiệc cưới…",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00512,
+                13.989908
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-20:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27114838",
+        "title": "Black House - Restaurant and Bar",
+        "city": "Pleiku",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Black House - Restaurant and Bar ở Pleiku. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.01592,
+                13.992696
+            ]
+        },
+        "openingHours": {
+            "display": "15:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27114854",
+        "title": "Black House Restaurant & Bar",
+        "city": "Pleiku",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Black House Restaurant & Bar ở Pleiku. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.0158,
+                13.992809
+            ]
+        },
+        "openingHours": {
+            "display": "15:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27938448",
+        "title": "Lúa Ngô Sơn",
+        "city": "Chu Jor",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lúa Ngô Sơn ở Chu Jor. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/8e/60/d9/di-m-checkin-lua-n_r.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.03547,
+                14.087057
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27997574",
+        "title": "Quán Cafe Song Thanh",
+        "city": "Pleiku",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Cafe Song Thanh ở Pleiku. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00478,
+                13.969885
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                []
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28164150",
+        "title": "81 Garden Quán",
+        "city": "Pleiku",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "81 Garden Quán ở Pleiku. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/ca/c2/a0/81-garden-04-dinh-tien.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.99577,
+                13.9755
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32789740",
+        "title": "Dốc Bò Nướng",
+        "city": "Pleiku",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dốc Bò Nướng ở Pleiku. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.0,
+                13.98333
+            ]
+        },
+        "openingHours": {
+            "display": "17:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33022123",
+        "title": "Tiệm Ăn Âu Việt",
+        "city": "Pleiku",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tiệm Ăn Âu Việt ở Pleiku. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.99289,
+                13.980024
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34312566",
+        "title": "Hery local food & drink",
+        "city": "Pleiku",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hery local food & drink ở Pleiku. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00881,
+                14.03404
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    }
+]

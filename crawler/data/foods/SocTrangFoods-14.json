@@ -1,0 +1,517 @@
+[
+    {
+        "sourceLocationId": "12171884",
+        "title": "Quán Bún Đậu Mắm Tôm",
+        "city": "Sóc Trăng",
+        "totalScore": 5.0,
+        "ranking": "1/8",
+        "reviewsCount": 4,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Bún Đậu Mắm Tôm ở Sóc Trăng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 1/8.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/8b/c4/a5/photo-prise-par-guy-lazignac.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97243,
+                9.6049
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12238328",
+        "title": "Quán Bò Nướng Ngói",
+        "city": "Sóc Trăng",
+        "totalScore": 4.5,
+        "ranking": "2/8",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Bò Nướng Ngói ở Sóc Trăng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 2/8.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/19/27/9b/photo-prise-par-guythu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97012,
+                9.59815
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19924259",
+        "title": "Tiệm bánh Cô Ba",
+        "city": "Sóc Trăng",
+        "totalScore": 5.0,
+        "ranking": "3/8",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "394.736.832 ₫ - 1.052.631.552 ₫",
+        "description": "Xin chào mọi người, Chúng mình là Tiệm bánh Cô Ba tại Quốc lộ Nam Sông Hậu, Thị trấn Trần Đề, tỉnh Sóc Trăng, Việt nam. Các bạn cùng ghé tiệm để thưởng thức các loại bánh như bông lan trứng muối, bông lan chuối, tiramisu, tart trứng cheescake chanh dây, sầu riêng,... và các loại nước ép táo dưa, cóc nho... cùng các loại sữa từ hạt nhé.",
+        "embedding": null,
+        "searchText": "Tiệm bánh Cô Ba ở Sóc Trăng. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Xin chào mọi người, Chúng mình là Tiệm bánh Cô Ba tại Quốc lộ Nam Sông Hậu, Thị trấn Trần Đề, tỉnh Sóc Trăng, Việt nam. Các bạn cùng ghé tiệm để thưởng thức các loại bánh như bông lan trứng muối, bông lan chuối, tiramisu, tart trứng cheescake chanh dây, sầu riêng,... và các loại nước ép táo dưa, cóc nho... cùng các loại sữa từ hạt nhé. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 3/8. Giá: 394.736.832 ₫ - 1.052.631.552 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/63/7c/37/ti-m-banh-co-ba.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.194145,
+                9.515908
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12196177",
+        "title": "Làng Nướng 292",
+        "city": "Sóc Trăng",
+        "totalScore": 4.3,
+        "ranking": "4/8",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Làng Nướng 292 ở Sóc Trăng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.3/5 từ 3 lượt review. Xếp hạng: 4/8.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/95/94/a8/photo-prise-par-guy-lazignac.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97265,
+                9.5994
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12175780",
+        "title": "Nhà Hàng Hằng Ký",
+        "city": "Sóc Trăng",
+        "totalScore": 3.5,
+        "ranking": "5/8",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hằng Ký ở Sóc Trăng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.5/5 từ 2 lượt review. Xếp hạng: 5/8.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/78/70/a9/photo-prise-par-guy-lazignac.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97265,
+                9.5994
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12215933",
+        "title": "Nhà Hàng Khu Du Lịch Chùa Dơi",
+        "city": "Sóc Trăng",
+        "totalScore": 4.0,
+        "ranking": "6/8",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Khu Du Lịch Chùa Dơi ở Sóc Trăng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 6/8.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/6e/f6/cf/photo-prise-par-guythu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97262,
+                9.58035
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17713892",
+        "title": "T-Bike",
+        "city": "Sóc Trăng",
+        "totalScore": 3.0,
+        "ranking": "7/8",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "T-Bike ở Sóc Trăng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 7/8.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97035,
+                9.59509
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12215897",
+        "title": "Nhà Hàng Ánh Quang",
+        "city": "Sóc Trăng",
+        "totalScore": 3.0,
+        "ranking": "8/8",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Ánh Quang ở Sóc Trăng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 8/8.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23034064",
+        "title": "Laos Food",
+        "city": "Đà Nẵng",
+        "totalScore": 0,
+        "ranking": "1413/1751",
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Laos Food ở Đà Nẵng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Xếp hạng: 1413/1751.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.04722,
+                9.57667
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33311862",
+        "title": "Mama Masala Indian Cuisine Da Nang",
+        "city": "Đà Nẵng",
+        "totalScore": 4.8,
+        "ranking": "285/1751",
+        "reviewsCount": 20,
+        "category": "Ngồi xuống",
+        "priceRange": "52.632 ₫ - 315.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Mama Masala Indian Cuisine Da Nang ở Đà Nẵng. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.8/5 từ 20 lượt review. Xếp hạng: 285/1751. Giá: 52.632 ₫ - 315.789 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/30/c3/6c/54/the-best-starters-from.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.8552,
+                9.862177
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "20305923",
+        "title": "Nhà hàng The Light",
+        "city": "Sóc Trăng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "1.315.789.440 ₫ - 2.147.483.647 ₫",
+        "description": "Nhà hàng The Light sẽ mang đến cho Quý khách trải nghiệm ẩm thực đa dạng, đậm đà vùng miền và quốc tế. Quý khách sẽ trải nghiệm được hương vị tuyệt vời, an toàn và chất lượng khi đến với nhà hàng của chúng tôi. Trải nghiệm ở đây không chỉ là về ăn uống, mà là một sự thay đổi độc đáo về trải nghiệm tư duy, trong đó khứu giác, vị giác, xúc giác và thính giác mang đến cho bạn cảm giác trọn vẹn. Một hành trình mới - thông qua các giác quan. NHÀ HÀNG THE LIGHT - Vẻ đẹp một kỳ quan",
+        "embedding": null,
+        "searchText": "Nhà hàng The Light ở Sóc Trăng. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Mô tả: Nhà hàng The Light sẽ mang đến cho Quý khách trải nghiệm ẩm thực đa dạng, đậm đà vùng miền và quốc tế. Quý khách sẽ trải nghiệm được hương vị tuyệt vời, an toàn và chất lượng khi đến với nhà hàng của chúng tôi. Trải nghiệm ở đây không chỉ là về ăn uống, mà là một sự thay đổi độc đáo về trải nghiệm tư duy, trong đó khứu giác, vị giác, xúc giác và thính giác mang đến cho bạn cảm giác trọn vẹn. Một hành trình mới - thông qua các giác quan. NHÀ HÀNG THE LIGHT - Vẻ đẹp một kỳ quan Giá: 1.315.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/25/e2/a3/colorful-restaurant-multicultu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "09:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34088991",
+        "title": "Sarang Cafe & Space",
+        "city": "Sóc Trăng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sarang Cafe & Space ở Sóc Trăng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/32/40/0e/35/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.96442,
+                9.598685
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17739358",
+        "title": "MrC Fastfood",
+        "city": "Sóc Trăng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "MrC Fastfood ở Sóc Trăng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97491,
+                9.59933
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17341203",
+        "title": "One Coffee",
+        "city": "Sóc Trăng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "One Coffee ở Sóc Trăng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97427,
+                9.59818
+            ]
+        },
+        "openingHours": null
+    }
+]

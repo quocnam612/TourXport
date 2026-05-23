@@ -1,0 +1,1796 @@
+[
+    {
+        "sourceLocationId": "455150",
+        "title": "Chợ Nổi Cái Răng",
+        "city": "Cần Thơ",
+        "totalScore": 4.1,
+        "ranking": "1/41",
+        "reviewsCount": 1903,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Nổi Cái Răng ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Nơi mua sắm, Danh lam & Thắng cảnh. Đánh giá: 4.1/5 từ 1903 lượt review. Xếp hạng: 1/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/ef/e8/2e/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.74523,
+                10.00541
+            ]
+        },
+        "openingHours": {
+            "display": "04:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 240,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 240,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 240,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 240,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 240,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 240,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 240,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "6973903",
+        "title": "Nhà cổ Bình Thủy",
+        "city": "Cần Thơ",
+        "totalScore": 3.9,
+        "ranking": "3/41",
+        "reviewsCount": 167,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà cổ Bình Thủy ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.9/5 từ 167 lượt review. Xếp hạng: 3/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/b5/7d/84/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.74969,
+                10.06704
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6983486",
+        "title": "Chùa Ông",
+        "city": "Cần Thơ",
+        "totalScore": 4.2,
+        "ranking": "2/41",
+        "reviewsCount": 159,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Ông ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 159 lượt review. Xếp hạng: 2/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/44/fd/21/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78753,
+                10.03022
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8602396",
+        "title": "Thiền Viện Trúc Lâm Phương Nam",
+        "city": "Cần Thơ",
+        "totalScore": 4.8,
+        "ranking": "6/41",
+        "reviewsCount": 28,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thiền Viện Trúc Lâm Phương Nam ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.8/5 từ 28 lượt review. Xếp hạng: 6/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/99/0c/5d/photo-prise-par-guy-lazignac.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.54294,
+                10.26115
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8095256",
+        "title": "Chợ Đêm Tây Đô",
+        "city": "Cần Thơ",
+        "totalScore": 3.6,
+        "ranking": "13/41",
+        "reviewsCount": 67,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Đêm Tây Đô ở Cần Thơ. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 3.6/5 từ 67 lượt review. Xếp hạng: 13/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/63/51/cc/street-food-vietnam.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78754,
+                10.031558
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12231604",
+        "title": "Phố Đi Bộ Hai Bà Trưng",
+        "city": "Cần Thơ",
+        "totalScore": 4.0,
+        "ranking": "9/41",
+        "reviewsCount": 35,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phố Đi Bộ Hai Bà Trưng ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 35 lượt review. Xếp hạng: 9/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/00/ec/e1/insegna-luminosa-del.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78799,
+                10.03184
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11624355",
+        "title": "Viện Bảo Tàng của Tarot",
+        "city": "Cần Thơ",
+        "totalScore": 4.5,
+        "ranking": "5/41",
+        "reviewsCount": 46,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Viện Bảo Tàng của Tarot ở Cần Thơ. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.5/5 từ 46 lượt review. Xếp hạng: 5/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/56/59/2f/in-frond-of-the-museum.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.783165,
+                10.034442
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15581608",
+        "title": "Vườn Ca Cao Mười Cương",
+        "city": "Cần Thơ",
+        "totalScore": 4.4,
+        "ranking": "11/41",
+        "reviewsCount": 20,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn Ca Cao Mười Cương ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.4/5 từ 20 lượt review. Xếp hạng: 11/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/a0/c5/3b/muoi-cuong-cocoa-farm.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.70925,
+                9.9893
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 720
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12150973",
+        "title": "Thiền Viện Trúc Lâm Phương Nam",
+        "city": "Cần Thơ",
+        "totalScore": 4.8,
+        "ranking": "4/41",
+        "reviewsCount": 22,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thiền Viện Trúc Lâm Phương Nam ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.8/5 từ 22 lượt review. Xếp hạng: 4/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/98/cb/d4/photo-prise-par-guy-lazignac.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.703674,
+                9.989714
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8305188",
+        "title": "Munirangsyaram Pagoda",
+        "city": "Cần Thơ",
+        "totalScore": 4.0,
+        "ranking": "8/41",
+        "reviewsCount": 54,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Munirangsyaram Pagoda ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 54 lượt review. Xếp hạng: 8/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/fe/5c/15/tempio-di-fronte.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78481,
+                10.03389
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16121214",
+        "title": "Bến Ninh Kiều",
+        "city": "Cần Thơ",
+        "totalScore": 4.6,
+        "ranking": "14/41",
+        "reviewsCount": 13,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bến Ninh Kiều ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.6/5 từ 13 lượt review. Xếp hạng: 14/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/16/5c/7d/0f/view-of-section-of-ninh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78843,
+                10.03835
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "7305654",
+        "title": "Bảo tàng Cần Thơ",
+        "city": "Cần Thơ",
+        "totalScore": 3.6,
+        "ranking": "16/41",
+        "reviewsCount": 64,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bảo tàng Cần Thơ ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.6/5 từ 64 lượt review. Xếp hạng: 16/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/11/49/0b/99/b-o-tang-c-n-tho-c-nh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78546,
+                10.03441
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4831701",
+        "title": "Quang Duc Pagoda",
+        "city": "Cần Thơ",
+        "totalScore": 4.2,
+        "ranking": "10/41",
+        "reviewsCount": 44,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quang Duc Pagoda ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 44 lượt review. Xếp hạng: 10/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/2b/c3/14/quang-duc-pagoda.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.774765,
+                10.032009
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16656387",
+        "title": "Cầu Cần Thơ",
+        "city": "Cần Thơ",
+        "totalScore": 4.5,
+        "ranking": "7/41",
+        "reviewsCount": 24,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cầu Cần Thơ ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 24 lượt review. Xếp hạng: 7/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/17/e1/6c/ad/photo5jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.77049,
+                10.04862
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "5866311",
+        "title": "Can Tho Market",
+        "city": "Cần Thơ",
+        "totalScore": 3.5,
+        "ranking": "12/41",
+        "reviewsCount": 57,
+        "category": "Đồ ăn & Đồ uống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Can Tho Market ở Cần Thơ. Loại địa điểm: Đồ ăn & Đồ uống. Tags: Điểm du lịch, Nơi mua sắm, Đồ ăn & Đồ uống. Đánh giá: 3.5/5 từ 57 lượt review. Xếp hạng: 12/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Đồ ăn & Đồ uống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/a7/8c/0a/cantho-market.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78779,
+                10.031503
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14796248",
+        "title": "Chùa Phật Học",
+        "city": "Cần Thơ",
+        "totalScore": 4.3,
+        "ranking": "18/41",
+        "reviewsCount": 7,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Phật Học ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 7 lượt review. Xếp hạng: 18/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/14/85/9f/09/phat-hoc-pagoda.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78383,
+                10.032857
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8598730",
+        "title": "Biển Cần Thơ",
+        "city": "Cần Thơ",
+        "totalScore": 3.4,
+        "ranking": "21/41",
+        "reviewsCount": 32,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Biển Cần Thơ ở Cần Thơ. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.4/5 từ 32 lượt review. Xếp hạng: 21/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/da/61/b0/bi-n-c-n-tho.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.79374,
+                10.04264
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12189783",
+        "title": "Pitu Khosa Rangsay",
+        "city": "Cần Thơ",
+        "totalScore": 4.1,
+        "ranking": "19/41",
+        "reviewsCount": 8,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pitu Khosa Rangsay ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.1/5 từ 8 lượt review. Xếp hạng: 19/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/9e/2f/42/photo-prise-par-guy-lazignac.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.782455,
+                10.036253
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16122794",
+        "title": "Cầu Đi Bộ Bến Ninh Kiều",
+        "city": "Cần Thơ",
+        "totalScore": 4.0,
+        "ranking": "17/41",
+        "reviewsCount": 7,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cầu Đi Bộ Bến Ninh Kiều ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 7 lượt review. Xếp hạng: 17/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/5c/80/0e/daytime-view-of-the-bridge.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78818,
+                10.032276
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15871940",
+        "title": "Tượng Đài Hồ Chí Minh",
+        "city": "Cần Thơ",
+        "totalScore": 3.8,
+        "ranking": "15/41",
+        "reviewsCount": 22,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tượng Đài Hồ Chí Minh ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.8/5 từ 22 lượt review. Xếp hạng: 15/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/87/73/08/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78885,
+                10.03461
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "11435988",
+        "title": "Nha tho Chinh Toa Can Tho",
+        "city": "Cần Thơ",
+        "totalScore": 4.5,
+        "ranking": "24/41",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nha tho Chinh Toa Can Tho ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 4 lượt review. Xếp hạng: 24/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/21/2f/a2/photo-prise-par-guythu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.779,
+                10.02573
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "18996550",
+        "title": "Cá lóc bay Tín Hoà",
+        "city": "Cần Thơ",
+        "totalScore": 4.5,
+        "ranking": "22/41",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": "Nếu bạn muốn tránh xa ồn ào nơi thành thị? Tận hưởng không gian yên tĩnh nơi miền quê? Thưởng thức những món ngon miền tây sông nước? Thì Cá lóc bay Tín Hòa luôn là địa điểm hội tụ đầy đủ các yêu cầu của quý bà con như trên... Vừa bước vào đến nhà vườn, quý bà con sẽ cảm nhận được 1 bầu không khí vô cùng trong lành nơi đây được bao phủ bởi rất nhiều cây xanh, hoa quả, trái cây,.. cùng với đó là sự trầm trồ của những loại hoa rực rỡ sắc màu như cát đằng, tử đằng đơn, xử quân tử,... Chưa hết, ao sen, cầu tre, cầu dừa phía sau nhà sẽ ít nhiều gợi lại cho chúng ta những bức tranh phong cảnh một thời thơ ấu. Tại đây quý bà con cũng sẽ được thưởng thức ổi vườn, trà sen nhà làm, trãi nghiệm chèo xuồng, checkin,... Và sau cùng, hơn tất cả, quý bà con sẽ được chứng kiến tận mắt tuyệt chiêu Cá lóc bay do chú Tín - chủ nhà vườn sáng tạo ra, đây chắc chắn sẽ là 1 trong những kỉ niệm tuyệt vời mà quý bà con sẽ nhớ mãi. Rất hân hạnh và đón chào quý bà con đến thăm Cá lóc bay Tín Hòa!",
+        "embedding": null,
+        "searchText": "Cá lóc bay Tín Hoà ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Mô tả: Nếu bạn muốn tránh xa ồn ào nơi thành thị? Tận hưởng không gian yên tĩnh nơi miền quê? Thưởng thức những món ngon miền tây sông nước? Thì Cá lóc bay Tín Hòa luôn là địa điểm hội tụ đầy đủ các yêu cầu của quý bà con như trên... Vừa bước vào đến nhà vườn, quý bà con sẽ cảm nhận được 1 bầu không khí vô cùng trong lành nơi đây được bao phủ bởi rất nhiều cây xanh, hoa quả, trái cây,.. cùng với đó là sự trầm trồ của những loại hoa rực rỡ sắc màu như cát đằng, tử đằng đơn, xử quân tử,... Chưa hết, ao sen, cầu tre, cầu dừa phía sau nhà sẽ ít nhiều gợi lại cho chúng ta những bức tranh phong cảnh một thời thơ ấu. Tại đây quý bà con cũng sẽ được thưởng thức ổi vườn, trà sen nhà làm, trãi nghiệm chèo xuồng, checkin,... Và sau cùng, hơn tất cả, quý bà con sẽ được chứng kiến tận mắt tuyệt chiêu Cá lóc bay do chú Tín - chủ nhà vườn sáng tạo ra, đây chắc chắn sẽ là 1 trong những kỉ niệm tuyệt vời mà quý bà con sẽ nhớ mãi. Rất hân hạnh và đón chào quý bà con đến thăm Cá lóc bay Tín Hòa! Đánh giá: 4.5/5 từ 4 lượt review. Xếp hạng: 22/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/50/e0/c5/ca-loc-bay-tin-hoa-la.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.752304,
+                10.08283
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14796336",
+        "title": "Bảo Tàng Quân Khu 9",
+        "city": "Cần Thơ",
+        "totalScore": 4.8,
+        "ranking": "20/41",
+        "reviewsCount": 4,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bảo Tàng Quân Khu 9 ở Cần Thơ. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.8/5 từ 4 lượt review. Xếp hạng: 20/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/15/11/c1/20/ho-chi-minh-museum-front.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.785515,
+                10.035652
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12257677",
+        "title": "Chùa Thới Long Cổ Tự",
+        "city": "Cần Thơ",
+        "totalScore": 4.0,
+        "ranking": "28/41",
+        "reviewsCount": 3,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Thới Long Cổ Tự ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 3 lượt review. Xếp hạng: 28/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/c4/5e/74/photo-prise-par-guythu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.77779,
+                10.04161
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13170138",
+        "title": "Chợ Xuân Khánh",
+        "city": "Cần Thơ",
+        "totalScore": 5.0,
+        "ranking": "31/41",
+        "reviewsCount": 1,
+        "category": "Đồ ăn & Đồ uống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Xuân Khánh ở Cần Thơ. Loại địa điểm: Đồ ăn & Đồ uống. Tags: Điểm du lịch, Nơi mua sắm, Đồ ăn & Đồ uống. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 31/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Đồ ăn & Đồ uống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.77246,
+                10.02295
+            ]
+        },
+        "openingHours": {
+            "display": "05:00-20:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15614805",
+        "title": "Bang Lang Stork Sanctuary",
+        "city": "Cần Thơ",
+        "totalScore": 3.2,
+        "ranking": "35/41",
+        "reviewsCount": 6,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bang Lang Stork Sanctuary ở Cần Thơ. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.2/5 từ 6 lượt review. Xếp hạng: 35/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/13/91/fd/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.75491,
+                10.07071
+            ]
+        },
+        "openingHours": {
+            "display": "05:00-19:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1170
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1170
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1170
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1170
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1170
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1170
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1170
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17537409",
+        "title": "Chợ Cần Thơ",
+        "city": "Cần Thơ",
+        "totalScore": 4.3,
+        "ranking": "23/41",
+        "reviewsCount": 4,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Cần Thơ ở Cần Thơ. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 4.3/5 từ 4 lượt review. Xếp hạng: 23/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/16/b8/a7/love-this-street-food.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.7869,
+                10.02818
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12415913",
+        "title": "Nhà Thờ An Hòa",
+        "city": "Cần Thơ",
+        "totalScore": 4.0,
+        "ranking": "33/41",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Thờ An Hòa ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 33/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/67/4b/df/photo-prise-par-guythu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.77178,
+                10.01797
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15855141",
+        "title": "Khám Lớn Cần Thơ",
+        "city": "Cần Thơ",
+        "totalScore": 4.0,
+        "ranking": "32/41",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khám Lớn Cần Thơ ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 32/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/4a/b4/7b/temple-in-the-courtyard.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78842,
+                10.03552
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1020
+                    }
+                ],
+                []
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "4832223",
+        "title": "Tin Lanh Baptist Church",
+        "city": "Cần Thơ",
+        "totalScore": 3.4,
+        "ranking": "27/41",
+        "reviewsCount": 8,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tin Lanh Baptist Church ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.4/5 từ 8 lượt review. Xếp hạng: 27/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/04/84/0f/4b/tin-lanh-baptist-church.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.76311,
+                10.04608
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4832225",
+        "title": "Tham Tuong Church",
+        "city": "Cần Thơ",
+        "totalScore": 3.3,
+        "ranking": "30/41",
+        "reviewsCount": 9,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tham Tuong Church ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.3/5 từ 9 lượt review. Xếp hạng: 30/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/05/77/f9/21/tham-tuong-church.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.76311,
+                10.04608
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14796256",
+        "title": "Chùa Bảo An",
+        "city": "Cần Thơ",
+        "totalScore": 3.0,
+        "ranking": "34/41",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Bảo An ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 34/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/77/53/83/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78658,
+                10.03113
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34120283",
+        "title": "Tombeau de M. Ham Huynh Ky",
+        "city": "Cần Thơ",
+        "totalScore": 0,
+        "ranking": "25/41",
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tombeau de M. Ham Huynh Ky ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Xếp hạng: 25/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.25208,
+                16.011427
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25061907",
+        "title": "Chợ Nổi Cái Răng",
+        "city": "Cần Thơ",
+        "totalScore": 5.0,
+        "ranking": "26/41",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Nổi Cái Răng ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 26/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/01/aa/f1/cai-rang-floating-market.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78838,
+                10.033985
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32759799",
+        "title": "Vincom Plaza Xuan Khanh",
+        "city": "Cần Thơ",
+        "totalScore": 4.0,
+        "ranking": "29/41",
+        "reviewsCount": 1,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vincom Plaza Xuan Khanh ở Cần Thơ. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 29/41.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/61/63/b5/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78825,
+                10.03711
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28525543",
+        "title": "Chợ Nổi Cái Răng",
+        "city": "Cần Thơ",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Nổi Cái Răng ở Cần Thơ. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.7501,
+                10.006663
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27498423",
+        "title": "Can Tho Floating Market",
+        "city": "Cần Thơ",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Can Tho Floating Market ở Cần Thơ. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78888,
+                10.034986
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27492992",
+        "title": "Cai Rang Floating Market",
+        "city": "Cần Thơ",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cai Rang Floating Market ở Cần Thơ. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/a9/73/0e/the-floating-market.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.77355,
+                10.017676
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 630
+                    }
+                ],
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 600
+                    }
+                ],
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 630
+                    }
+                ],
+                [],
+                [],
+                [],
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 630
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25329474",
+        "title": "Lang Chai Thom Rom",
+        "city": "Cần Thơ",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lang Chai Thom Rom ở Cần Thơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.76704,
+                10.044067
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24092685",
+        "title": "Cần Thơ",
+        "city": "Cần Thơ",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": "Thành Phố Cần Thơ",
+        "embedding": null,
+        "searchText": "Cần Thơ ở Cần Thơ. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Thông tin cho khách du lịch. Mô tả: Thành Phố Cần Thơ",
+        "tags": [
+            "Điểm du lịch",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78866,
+                10.03309
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21297642",
+        "title": "Chợ Nổi Cái Răng",
+        "city": "Cần Thơ",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Đồ ăn & Đồ uống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Nổi Cái Răng ở Cần Thơ. Loại địa điểm: Đồ ăn & Đồ uống. Tags: Điểm du lịch, Nơi mua sắm, Đồ ăn & Đồ uống.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Đồ ăn & Đồ uống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/ad/88/77/chuy-n-tham-quan-tuy.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78838,
+                10.033985
+            ]
+        },
+        "openingHours": null
+    }
+]

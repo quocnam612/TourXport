@@ -1,0 +1,4681 @@
+[
+    {
+        "sourceLocationId": "28405448",
+        "title": "Phù An Quán",
+        "city": "Biên Hòa",
+        "totalScore": 5.0,
+        "ranking": "1/50",
+        "reviewsCount": 10,
+        "category": "Ngồi xuống",
+        "priceRange": "1.315.789.440 ₫ - 2.147.483.647 ₫",
+        "description": "Một nơi để về, không chỉ để ăn\n\nVới người sáng lập Phù An, điều quý giá nhất không phải là doanh thu hay những lời khen trên mạng xã hội, mà là khi nhìn thấy một gia đình ba thế hệ cùng ngồi ăn với nhau và kể chuyện cũ, hay một bạn trẻ gọi món rồi thốt lên: “Ôi, giống món mẹ em nấu quá!”.\n\nPhù An mong muốn trở thành một phần trong ký ức hạnh phúc của mọi người, là nơi mà mỗi lần ghé qua là một lần tìm thấy bình yên. Giữa phố thị ồn ào, một góc nhỏ xanh mát, thơm mùi cỏ cây, nóng hổi mùi cơm nhà – chỉ vậy thôi, cũng đủ để giữ người ta lại lâu hơn.\n\n⸻",
+        "embedding": null,
+        "searchText": "Phù An Quán ở Biên Hòa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Một nơi để về, không chỉ để ăn\n\nVới người sáng lập Phù An, điều quý giá nhất không phải là doanh thu hay những lời khen trên mạng xã hội, mà là khi nhìn thấy một gia đình ba thế hệ cùng ngồi ăn với nhau và kể chuyện cũ, hay một bạn trẻ gọi món rồi thốt lên: “Ôi, giống món mẹ em nấu quá!”.\n\nPhù An mong muốn trở thành một phần trong ký ức hạnh phúc của mọi người, là nơi mà mỗi lần ghé qua là một lần tìm thấy bình yên. Giữa phố thị ồn ào, một góc nhỏ xanh mát, thơm mùi cỏ cây, nóng hổi mùi cơm nhà – chỉ vậy thôi, cũng đủ để giữ người ta lại lâu hơn.\n\n⸻ Đánh giá: 5.0/5 từ 10 lượt review. Xếp hạng: 1/50. Giá: 1.315.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/37/e9/33/quan-an-vi-t-nam-t-i.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.82938,
+                10.946247
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-15:00, 17:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 900
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 900
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 900
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 900
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 900
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 900
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 900
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25126528",
+        "title": "GOT PIZZA Số 41- 43 đường Võ Thị Sáu, phường Quyết Thắng, Biên Hoà - Đồng Nai.",
+        "city": "Biên Hòa",
+        "totalScore": 4.7,
+        "ranking": "2/50",
+        "reviewsCount": 10,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Got Pizza tọa lạc trên đường Võ Thị Sáu - con đường sầm uất ngay trung tâm thành phố Biên Hòa. Với diện tích hơn 2000m2 phục vụ nhu cầu ăn uống và hội họp, Got Pizza được biết đến là điểm đến lý tưởng cho những buổi họp mặt gia đình hoặc công sở. Với nguồn nguyên liệu chọn lọc, đảm bảo an toàn và giữ được hương vị đặc trưng trong từng món ăn. Thực đơn đa dạng và phong cách trang trí tiệc đa dạng, nhà hàng phục vụ các món Á – Âu, đặc biệt là pizza và các món mỳ, salad, gà rán, gà nướng. Đội ngũ nhân viên trẻ, thân thiện và chu đáo, phục vụ tận tình, nhiệt tình.",
+        "embedding": null,
+        "searchText": "GOT PIZZA Số 41- 43 đường Võ Thị Sáu, phường Quyết Thắng, Biên Hoà - Đồng Nai. ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Got Pizza tọa lạc trên đường Võ Thị Sáu - con đường sầm uất ngay trung tâm thành phố Biên Hòa. Với diện tích hơn 2000m2 phục vụ nhu cầu ăn uống và hội họp, Got Pizza được biết đến là điểm đến lý tưởng cho những buổi họp mặt gia đình hoặc công sở. Với nguồn nguyên liệu chọn lọc, đảm bảo an toàn và giữ được hương vị đặc trưng trong từng món ăn. Thực đơn đa dạng và phong cách trang trí tiệc đa dạng, nhà hàng phục vụ các món Á – Âu, đặc biệt là pizza và các món mỳ, salad, gà rán, gà nướng. Đội ngũ nhân viên trẻ, thân thiện và chu đáo, phục vụ tận tình, nhiệt tình. Đánh giá: 4.7/5 từ 10 lượt review. Xếp hạng: 2/50.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/27/22/74/c4/khu-v-c-tren-l-u-c-a.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.69722,
+                18.665554
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25365952",
+        "title": "Nhà Hàng Recall 1987",
+        "city": "Nhon Trach",
+        "totalScore": 5.0,
+        "ranking": "3/50",
+        "reviewsCount": 13,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "NHÀ HÀNG CHUYÊN MÓN HOA",
+        "embedding": null,
+        "searchText": "Nhà Hàng Recall 1987 ở Nhon Trach. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: NHÀ HÀNG CHUYÊN MÓN HOA Đánh giá: 5.0/5 từ 13 lượt review. Xếp hạng: 3/50. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/92/c0/4f/one-of-the-best-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.90635,
+                10.748264
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "20217567",
+        "title": "Quán cà phê trong công viên BINON CA CAO",
+        "city": "Xa Bang",
+        "totalScore": 4.9,
+        "ranking": "1/1",
+        "reviewsCount": 9,
+        "category": "Quán cafe",
+        "priceRange": "789.473.664 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán cà phê trong công viên BINON CA CAO ở Xa Bang. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 4.9/5 từ 9 lượt review. Xếp hạng: 1/1. Giá: 789.473.664 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/1b/01/0b/dd/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.260574,
+                10.723135
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 990
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 990
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27766442",
+        "title": "Bia Ông Kẹ",
+        "city": "Long Thanh",
+        "totalScore": 5.0,
+        "ranking": "5/50",
+        "reviewsCount": 4,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bia Ông Kẹ ở Long Thanh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 5/50.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/6d/9b/7b/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.9555,
+                10.77536
+            ]
+        },
+        "openingHours": {
+            "display": "17:00-27:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1620
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1620
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1620
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1620
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1620
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1620
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1620
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "4832584",
+        "title": "Nhà Hàng Kaiserin",
+        "city": "Biên Hòa",
+        "totalScore": 4.1,
+        "ranking": "6/50",
+        "reviewsCount": 14,
+        "category": "Ngồi xuống",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Kaiserin ở Biên Hòa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.1/5 từ 14 lượt review. Xếp hạng: 6/50. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/7b/eb/f2/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.83236,
+                10.94768
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4793284",
+        "title": "Tram Dung Chan Dai Phu- Dai Phu Rest Stop",
+        "city": "Xuân Phú",
+        "totalScore": 3.7,
+        "ranking": "7/50",
+        "reviewsCount": 27,
+        "category": "Ngồi xuống",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Tram Dung Chan Dai Phu- Dai Phu Rest Stop ở Xuân Phú. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.7/5 từ 27 lượt review. Xếp hạng: 7/50. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/49/7b/69/tram-dung-chan-dai-phu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.32434,
+                10.905316
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16881914",
+        "title": "Bò Nằm Nhúng",
+        "city": "Biên Hòa",
+        "totalScore": 5.0,
+        "ranking": "9/50",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": "789.473.664 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Bò Nằm Nhúng ở Biên Hòa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 9/50. Giá: 789.473.664 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/6a/a9/61/m-t-quan-ban-chuyen-cac.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.81214,
+                10.951767
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "16710902",
+        "title": "Nakharat Thai Restaurant",
+        "city": "Biên Hòa",
+        "totalScore": 4.5,
+        "ranking": "10/50",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nakharat Thai Restaurant ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 10/50.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2a/12/d0/44/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.831,
+                10.94704
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "3813565",
+        "title": "Nhã Viên Quán",
+        "city": "Biên Hòa",
+        "totalScore": 4.0,
+        "ranking": "11/50",
+        "reviewsCount": 13,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhã Viên Quán ở Biên Hòa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.0/5 từ 13 lượt review. Xếp hạng: 11/50.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/05/bd/d0/5f/the-beautiful-scenery.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.85462,
+                10.96886
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27179770",
+        "title": "Cat Tien Backpackers Bar & Restaurant",
+        "city": "Nam Cát Tiên",
+        "totalScore": 4.5,
+        "ranking": "12/50",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "52.632 ₫ - 157.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Cat Tien Backpackers Bar & Restaurant ở Nam Cát Tiên. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 12/50. Giá: 52.632 ₫ - 157.895 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/73/cd/3d/best-hamburger-in-cat.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.68765,
+                10.710356
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33870573",
+        "title": "Nhà tú garden",
+        "city": "Nhon Trach",
+        "totalScore": 5.0,
+        "ranking": "14/50",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà tú garden ở Nhon Trach. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 14/50.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/59/98/78/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.85949,
+                10.704206
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 900
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "11616143",
+        "title": "May Coffee & Beer",
+        "city": "Biên Hòa",
+        "totalScore": 5.0,
+        "ranking": "15/50",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "263.157.888 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "May Coffee & Beer ở Biên Hòa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 15/50. Giá: 263.157.888 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/1b/f9/81/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.81992,
+                10.95079
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "22987422",
+        "title": "Búa Restaurant",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": "16/50",
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "1.552.632 ₫ - 6.815.789 ₫",
+        "description": "BÚA RESTAURANT - BÚA \"STOP THINKING_START DRINK\" BÚA RESTAURANT - Một khoảng trời riêng của đường Võ Thị Sáu sầm uất và kiêu hãnh. Nơi neo giữ cái hồn thật \"Chill\".",
+        "embedding": null,
+        "searchText": "Búa Restaurant ở Biên Hòa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: BÚA RESTAURANT - BÚA \"STOP THINKING_START DRINK\" BÚA RESTAURANT - Một khoảng trời riêng của đường Võ Thị Sáu sầm uất và kiêu hãnh. Nơi neo giữ cái hồn thật \"Chill\". Xếp hạng: 16/50. Giá: 1.552.632 ₫ - 6.815.789 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/75/72/4f/fun.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.833015,
+                10.948263
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13480970",
+        "title": "Trạm Dừng Chân Huyền Hậu",
+        "city": "Long Khánh",
+        "totalScore": 5.0,
+        "ranking": "17/50",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trạm Dừng Chân Huyền Hậu ở Long Khánh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 17/50.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/fd/da/0d/huyen-hau-rest-stop-will.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.25383,
+                10.93475
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "7161743",
+        "title": "GoGi House Bien Hoa",
+        "city": "Biên Hòa",
+        "totalScore": 3.4,
+        "ranking": "21/50",
+        "reviewsCount": 5,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "GoGi House Bien Hoa ở Biên Hòa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.4/5 từ 5 lượt review. Xếp hạng: 21/50.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/07/5a/83/ae/gogi-house-bien-hoa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.82257,
+                10.945704
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17807197",
+        "title": "Wellington Restaurant & Cafe",
+        "city": "Biên Hòa",
+        "totalScore": 4.0,
+        "ranking": "22/50",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "131.578.944 ₫ - 2.147.483.647 ₫",
+        "description": "Với phong cách ẩm thực đa dạng, Wellington Restaurant & Cafe mang đến cho các thực khách gần xa hương vị của các món ăn mang đậm truyền thống Việt quen thuộc.",
+        "embedding": null,
+        "searchText": "Wellington Restaurant & Cafe ở Biên Hòa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Với phong cách ẩm thực đa dạng, Wellington Restaurant & Cafe mang đến cho các thực khách gần xa hương vị của các món ăn mang đậm truyền thống Việt quen thuộc. Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 22/50. Giá: 131.578.944 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/6a/51/a8/wellington-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.86191,
+                10.957192
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "7161744",
+        "title": "Vuvuzela Bien Hoa",
+        "city": "Biên Hòa",
+        "totalScore": 3.8,
+        "ranking": "23/50",
+        "reviewsCount": 6,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vuvuzela Bien Hoa ở Biên Hòa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.8/5 từ 6 lượt review. Xếp hạng: 23/50.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/0e/55/4f/ee/vuvuzela-bien-hoa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.82257,
+                10.945704
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23400136",
+        "title": "Vntopfood",
+        "city": "Tan Phu",
+        "totalScore": 5.0,
+        "ranking": "24/50",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vntopfood ở Tan Phu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 24/50.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/fe/f7/77/v-nh-h-long-la-m-t-di.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.60759,
+                10.792486
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19616798",
+        "title": "Zodiac - Wings and Beers",
+        "city": "Trảng Bom",
+        "totalScore": 5.0,
+        "ranking": "26/50",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Zodiac - Wings and Beers ở Trảng Bom. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 26/50.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/88/11/d7/20200426-212623-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.061424,
+                10.944814
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 2040
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 2040
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 2040
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 2040
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 2040
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 2040
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "20893415",
+        "title": "Bánh Mì Grandma Lu",
+        "city": "Biên Hòa",
+        "totalScore": 5.0,
+        "ranking": "27/50",
+        "reviewsCount": 1,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "26.316 ₫ - 78.947 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Bánh Mì Grandma Lu ở Biên Hòa. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 27/50. Giá: 26.316 ₫ - 78.947 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/53/cd/d3/front-view.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.82776,
+                10.943915
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19882030",
+        "title": "Quan Hanh - Cheap Local Cuisine",
+        "city": "Nam Cát Tiên",
+        "totalScore": 5.0,
+        "ranking": "28/50",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quan Hanh - Cheap Local Cuisine ở Nam Cát Tiên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 28/50.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "3869934",
+        "title": "Chez PLISSON",
+        "city": "Biên Hòa",
+        "totalScore": 4.0,
+        "ranking": "29/50",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chez PLISSON ở Biên Hòa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.0/5 từ 3 lượt review. Xếp hạng: 29/50.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/03/fa/94/c3/there-s-a-seafoods-pizza.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.82266,
+                10.941975
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28245487",
+        "title": "Tippy's @the Dive / The Dive Saigon",
+        "city": "Tỉnh Đồng Nai",
+        "totalScore": 4.0,
+        "ranking": "30/50",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tippy's @the Dive / The Dive Saigon ở Tỉnh Đồng Nai. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 30/50.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/de/87/ae/tippy-s-the-dive-new.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.72913,
+                10.721534
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1560
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "11619246",
+        "title": "Mat Xi Mum",
+        "city": "Biên Hòa",
+        "totalScore": 4.5,
+        "ranking": "31/50",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mat Xi Mum ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 31/50.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.831,
+                10.94773
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19073369",
+        "title": "Khổ Qua Rừng",
+        "city": "Biên Hòa",
+        "totalScore": 5.0,
+        "ranking": "32/50",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khổ Qua Rừng ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 32/50.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/19/69/1b/1e/bo-nu-ng-r-t-ngon-va.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.84744,
+                10.9575
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "18192728",
+        "title": "Hand’s Bistro",
+        "city": "Long Thanh",
+        "totalScore": 5.0,
+        "ranking": "33/50",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hand’s Bistro ở Long Thanh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 33/50.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/18/d3/1d/7d/hand-s-bistro.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.95459,
+                10.78385
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7070120",
+        "title": "Kichi Kichi BigC Đồng Nai",
+        "city": "Biên Hòa",
+        "totalScore": 5.0,
+        "ranking": "34/50",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kichi Kichi BigC Đồng Nai ở Biên Hòa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 34/50.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/06/94/cc/25/kichi-kichi.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.85066,
+                10.905597
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11445335",
+        "title": "Zcafe",
+        "city": "Biên Hòa",
+        "totalScore": 5.0,
+        "ranking": "36/50",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Zcafe ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 36/50.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.82921,
+                10.947149
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13921797",
+        "title": "Cơm Heo Quay",
+        "city": "Biên Hòa",
+        "totalScore": 5.0,
+        "ranking": "37/50",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cơm Heo Quay ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 37/50.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/7a/45/b2/com-heo-quay.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.78275,
+                10.9575
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15764316",
+        "title": "Hầm Rượu Nhà Hàng Cây Dừa",
+        "city": "Biên Hòa",
+        "totalScore": 4.0,
+        "ranking": "38/50",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hầm Rượu Nhà Hàng Cây Dừa ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 38/50.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.807465,
+                10.943863
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13076864",
+        "title": "King BBQ Buffet Biên Hòa",
+        "city": "Biên Hòa",
+        "totalScore": 4.0,
+        "ranking": "39/50",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "King BBQ Buffet Biên Hòa ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 39/50.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/29/bf/9c/king-bbq-buffet-bien.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.85256,
+                10.95392
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13954790",
+        "title": "Pizza Hut",
+        "city": "Biên Hòa",
+        "totalScore": 4.0,
+        "ranking": "40/50",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pizza Hut ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 40/50.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/8d/da/1b/photo1jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.832794,
+                10.95764
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14155651",
+        "title": "Nhà Hàng Cơm Niêu Cao Phát",
+        "city": "Long Khánh",
+        "totalScore": 3.0,
+        "ranking": "41/50",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Cơm Niêu Cao Phát ở Long Khánh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 3 lượt review. Xếp hạng: 41/50.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/22/98/18/64/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.23898,
+                10.933006
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14003583",
+        "title": "The Pizza Company",
+        "city": "Biên Hòa",
+        "totalScore": 4.0,
+        "ranking": "44/50",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Pizza Company ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 3 lượt review. Xếp hạng: 44/50.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/ae/77/6e/photo7jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.85256,
+                10.95392
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11895279",
+        "title": "Nhà Hàng Tre Vàng",
+        "city": "Nam Cát Tiên",
+        "totalScore": 3.0,
+        "ranking": "45/50",
+        "reviewsCount": 9,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Tre Vàng ở Nam Cát Tiên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 9 lượt review. Xếp hạng: 45/50.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/f2/77/74/yellow-bamboo-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13984680",
+        "title": "Mekong Rest Stop Restaurant",
+        "city": "Long Thanh",
+        "totalScore": 3.0,
+        "ranking": "46/50",
+        "reviewsCount": 23,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mekong Rest Stop Restaurant ở Long Thanh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 23 lượt review. Xếp hạng: 46/50.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/69/20/88/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.9237,
+                10.863953
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17627066",
+        "title": "Phở Lan Hương",
+        "city": "Biên Hòa",
+        "totalScore": 1.0,
+        "ranking": "47/50",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phở Lan Hương ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 1.0/5 từ 1 lượt review. Xếp hạng: 47/50.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.84588,
+                10.905529
+            ]
+        },
+        "openingHours": {
+            "display": "05:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "11931142",
+        "title": "Sky Coffee",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": "48/50",
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sky Coffee ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Xếp hạng: 48/50.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.84342,
+                10.95929
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15349355",
+        "title": "Mongkok",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": "49/50",
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "1.842.105.216 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Mongkok ở Biên Hòa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Xếp hạng: 49/50. Giá: 1.842.105.216 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.83744,
+                10.94914
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-13:30, 16:30-21:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "11549960",
+        "title": "Sky Rooftop Cafe & BBQ",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": "50/50",
+        "reviewsCount": 0,
+        "category": "Quán cafe",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sky Rooftop Cafe & BBQ ở Biên Hòa. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Xếp hạng: 50/50.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/ee/29/4e/party-birthday.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.8497,
+                10.961178
+            ]
+        },
+        "openingHours": {
+            "display": "17:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "9555337",
+        "title": "Phở 360",
+        "city": "Long Thanh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "921.052.608 ₫ - 1.315.789.440 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Phở 360 ở Long Thanh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 921.052.608 ₫ - 1.315.789.440 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/ae/13/e2/haaa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.95452,
+                10.781399
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12411547",
+        "title": "Quán Kem Fanny - Vincom Biên Hòa",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "578.947.392 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Kem Fanny - Vincom Biên Hòa ở Biên Hòa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 578.947.392 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.84358,
+                10.957503
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12530641",
+        "title": "Alley Cafe Biên Hòa",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Quán cafe",
+        "priceRange": "789.474 ₫ - 1.052.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Alley Cafe Biên Hòa ở Biên Hòa. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Giá: 789.474 ₫ - 1.052.632 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/85/a5/11/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.82332,
+                10.952188
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13131788",
+        "title": "Nhà Hàng Giang Điền",
+        "city": "Trảng Bom",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Giang Điền ở Trảng Bom. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.98845,
+                10.917416
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-19:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1140
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15686644",
+        "title": "Biên Hòa Beer Garden",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "– Biên Hòa Beer Garden đang là điểm đến của những cuộc hội ngộ bạn bè sau giờ làm việc, hay những bữa tiệc giải trí cuối tuần của người dân Biên Hòa. Với sự kết hợp của 4 yếu tố: phong cách mới lạ, bia đa dạng, thức ăn ngon, nhạc hay. – Biên Hòa Beer Garden sẽ mang đến cho bạn những cảm nhận hoàn toàn mới lạ và những phú giây thực sự thư giãn bên bạn bè và người thân.",
+        "embedding": null,
+        "searchText": "Biên Hòa Beer Garden ở Biên Hòa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: – Biên Hòa Beer Garden đang là điểm đến của những cuộc hội ngộ bạn bè sau giờ làm việc, hay những bữa tiệc giải trí cuối tuần của người dân Biên Hòa. Với sự kết hợp của 4 yếu tố: phong cách mới lạ, bia đa dạng, thức ăn ngon, nhạc hay. – Biên Hòa Beer Garden sẽ mang đến cho bạn những cảm nhận hoàn toàn mới lạ và những phú giây thực sự thư giãn bên bạn bè và người thân. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.85717,
+                10.962277
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16871223",
+        "title": "Hoa Viên Tiệc Cưới 79",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hoa Viên Tiệc Cưới 79 ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/ea/99/dd/hoa-vien-tiec-cuoi-79.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.8718,
+                10.89443
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17609529",
+        "title": "Otoke Chicken",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "894.736.832 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Otoke Chicken ở Biên Hòa. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Giá: 894.736.832 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.82657,
+                10.94698
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17750781",
+        "title": "Sài Gòn Xưa",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sài Gòn Xưa ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.85442,
+                10.95144
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "18995708",
+        "title": "Bình Spaghetti",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bình Spaghetti ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19385247",
+        "title": "Yumyum Thai Biên Hoà",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.105.263.104 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Yumyum Thai Biên Hoà ở Biên Hòa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 2.105.263.104 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/f1/6e/1c/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.83026,
+                10.944473
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19452388",
+        "title": "Mr.Cua Bien Hoa",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.052.631.552 ₫ - 2.147.483.647 ₫",
+        "description": "Nhà hàng MR CUA là thiên đường của các loại hải sản tươi sống như cua Cà Mau, Crawfish, Cua Hoàng Đế - Kingcrab, Tôm hùm Canada, Tôm càng xanh, Vẹm Xanh NewZealand, Chân Cua Tuyết, các loại Ngao, Sò, Ốc, Hàu... Nổi tiếng với các loại sốt độc quyền mang đậm phong cách ẩm thực Á Châu như Cajun, Hoàng Kim, Ớt Singapore, Sa Trà được chế biến đặc biệt sẽ làm hài lòng những vị khách sành ăn nhất.",
+        "embedding": null,
+        "searchText": "Mr.Cua Bien Hoa ở Biên Hòa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà hàng MR CUA là thiên đường của các loại hải sản tươi sống như cua Cà Mau, Crawfish, Cua Hoàng Đế - Kingcrab, Tôm hùm Canada, Tôm càng xanh, Vẹm Xanh NewZealand, Chân Cua Tuyết, các loại Ngao, Sò, Ốc, Hàu... Nổi tiếng với các loại sốt độc quyền mang đậm phong cách ẩm thực Á Châu như Cajun, Hoàng Kim, Ớt Singapore, Sa Trà được chế biến đặc biệt sẽ làm hài lòng những vị khách sành ăn nhất. Giá: 2.052.631.552 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.84372,
+                10.96057
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19983897",
+        "title": "Manwah - Taiwanese Hot Pot (Pegasus Biên Hòa)",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Manwah - Taiwanese Hot Pot (Pegasus Biên Hòa) ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.82512,
+                10.947113
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20091846",
+        "title": "Nordys",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "1.184.210.560 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nordys ở Biên Hòa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 1.184.210.560 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/cb/aa/26/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.8272,
+                10.943678
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20871355",
+        "title": "Quận 5 - Asian Bar & Kitchen",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quận 5 - Asian Bar & Kitchen ở Biên Hòa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.828415,
+                10.947126
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21165622",
+        "title": "The Workplace Café",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Quán cafe",
+        "priceRange": "1.026.315.776 ₫ - 2.147.483.647 ₫",
+        "description": "Là một không gian cà phê phương Tây mới với sự rung cảm lạ ngay lòng thành phốBiên Hòa cho người địa phương và cả bạn bè quốc tế. Là nơi của những cuộc hẹn, cuộc gặp gỡ vào mỗi buổi sáng lẫn buổi chiều mát mẻ và tận hưởng những món ăn, nước uống đa dạng theo phong cách Tây lẫn “Ta”, hưởng thức những ly cà phê sạch giá cả phải chang ! Là nơi mà mọi người dễ dàng bắt gặp và kết bạn với những người bạn đến từ các nước và tham gia vào những sự kiện anh ngữ để tìm hiểu, trao dồi, học hỏi anh ngữ trực tiếp với những người bạn, giáo viên quốc tế.",
+        "embedding": null,
+        "searchText": "The Workplace Café ở Biên Hòa. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Mô tả: Là một không gian cà phê phương Tây mới với sự rung cảm lạ ngay lòng thành phốBiên Hòa cho người địa phương và cả bạn bè quốc tế. Là nơi của những cuộc hẹn, cuộc gặp gỡ vào mỗi buổi sáng lẫn buổi chiều mát mẻ và tận hưởng những món ăn, nước uống đa dạng theo phong cách Tây lẫn “Ta”, hưởng thức những ly cà phê sạch giá cả phải chang ! Là nơi mà mọi người dễ dàng bắt gặp và kết bạn với những người bạn đến từ các nước và tham gia vào những sự kiện anh ngữ để tìm hiểu, trao dồi, học hỏi anh ngữ trực tiếp với những người bạn, giáo viên quốc tế. Giá: 1.026.315.776 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1d/1c/f3/02/cafe-atmosphere.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21249849",
+        "title": "Nhà Hàng Hải Sản Keeng",
+        "city": "Long Thanh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hải Sản Keeng ở Long Thanh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/e1/8f/38/nha-hang-hai-san.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.9484,
+                10.80306
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21360925",
+        "title": "Mì Ý Bình Spaghetti",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mì Ý Bình Spaghetti ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.81667,
+                10.95
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "22893373",
+        "title": "Wellington Restaurant",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Wellington Restaurant ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.86193,
+                10.95717
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23086113",
+        "title": "The Pizza Company",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The Pizza Company ở Biên Hòa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.82512,
+                10.947113
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23219882",
+        "title": "Seashell Restaurant",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "Chào mừng bạn đã đến với Nhà hàng Seashell, nhà hàng Hải Sản của The Mira Central Park Hotel! Nơi bạn có thể tìm thấy những loại hải sản tươi sống và những hương vị tuyệt vời tại Thành Phố Biên Hòa! Mở cửa mỗi ngày từ 10:00 - 23:00, Nhà hàng Seashell có rất nhiều món ngon với thực đơn phong phú, có thể thỏa mãn khẩu vị của gia đình và bạn bè của các thực khách khi đến đây. Chúng tôi mong rằng khá",
+        "embedding": null,
+        "searchText": "Seashell Restaurant ở Biên Hòa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Chào mừng bạn đã đến với Nhà hàng Seashell, nhà hàng Hải Sản của The Mira Central Park Hotel! Nơi bạn có thể tìm thấy những loại hải sản tươi sống và những hương vị tuyệt vời tại Thành Phố Biên Hòa! Mở cửa mỗi ngày từ 10:00 - 23:00, Nhà hàng Seashell có rất nhiều món ngon với thực đơn phong phú, có thể thỏa mãn khẩu vị của gia đình và bạn bè của các thực khách khi đến đây. Chúng tôi mong rằng khá Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/22/f7/4c/ba/mon-an-l-y-l-i-nang-lu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.83353,
+                10.959839
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25125984",
+        "title": "Got Pizza",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "GOT Pizza là một nhà hàng mang phong cách Ý giữa Thành phố Biên Hoà. Mang phong cách Châu Âu, không gian ấm cúng, thiết kế hiện đại, món ăn chất lượng, phù hợp với khẩu vị của nhiều người",
+        "embedding": null,
+        "searchText": "Got Pizza ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: GOT Pizza là một nhà hàng mang phong cách Ý giữa Thành phố Biên Hoà. Mang phong cách Châu Âu, không gian ấm cúng, thiết kế hiện đại, món ăn chất lượng, phù hợp với khẩu vị của nhiều người",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/27/22/7e/0a/bay-tri-n-tu-ng.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.82419,
+                10.94662
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25256220",
+        "title": "Nhà Hàng Hoa Viên 79",
+        "city": "Gia Tan 2",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hoa Viên 79 ở Gia Tan 2. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.17384,
+                11.050256
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25327896",
+        "title": "Bún Bò Biên Châu",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "52.632 ₫ - 105.263 ₫",
+        "description": "Bún bò Biên Châu được truyền thụ bí quyết của Cung Đình xưa, có hương vị độc tôn khác biệt. Thưởng thức bún bò Biên Châu chính là tận hưởng tinh hoa được truyền thụ từ cung cấm - là nơi nhiều thế hệ \"trù sư\" thiện xảo nhất thiên hạ phục vụ cho ngôi cửu trùng và gia đình ngài. Biên Châu áp dụng ẩm thực phân tử, sáng tạo ra BÍ QUYẾT DÙNG MEN VI SINH Ủ RAU CỦ THÀNH NƯỚC CỐT SỬ DỤNG THAY CHO BỘT NGỌT. Quý khách hoàn toàn yêu tâm vì: KHÔNG SỬ DỤNG VIÊN GIA VỊ KHÔNG SAY BỘT NGỌT",
+        "embedding": null,
+        "searchText": "Bún Bò Biên Châu ở Biên Hòa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Bún bò Biên Châu được truyền thụ bí quyết của Cung Đình xưa, có hương vị độc tôn khác biệt. Thưởng thức bún bò Biên Châu chính là tận hưởng tinh hoa được truyền thụ từ cung cấm - là nơi nhiều thế hệ \"trù sư\" thiện xảo nhất thiên hạ phục vụ cho ngôi cửu trùng và gia đình ngài. Biên Châu áp dụng ẩm thực phân tử, sáng tạo ra BÍ QUYẾT DÙNG MEN VI SINH Ủ RAU CỦ THÀNH NƯỚC CỐT SỬ DỤNG THAY CHO BỘT NGỌT. Quý khách hoàn toàn yêu tâm vì: KHÔNG SỬ DỤNG VIÊN GIA VỊ KHÔNG SAY BỘT NGỌT Giá: 52.632 ₫ - 105.263 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/8c/a7/75/logo-bun-bo-bien-chau.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.8531,
+                10.96942
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-13:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 810
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 810
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 810
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 810
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 810
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 810
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 810
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26250439",
+        "title": "Tokyo Deli",
+        "city": "Quan Tom",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tokyo Deli ở Quan Tom. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                26.06321,
+                44.28616
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26452950",
+        "title": "Quán Bia Đồng Nai",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Bia Đồng Nai ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.83208,
+                10.959529
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27417393",
+        "title": "Nhà Hàng Hầm Rượu Karaoke Phương Thủy Phát",
+        "city": "Long Giao",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hầm Rượu Karaoke Phương Thủy Phát ở Long Giao. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.23373,
+                10.827486
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27662182",
+        "title": "Beer Garden 234",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Beer Garden 234 ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.834564,
+                10.96127
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27702740",
+        "title": "Saling&#39;s Cocktail",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Saling&#39;s Cocktail ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.84951,
+                20.992834
+            ]
+        },
+        "openingHours": {
+            "display": "19:00-26:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1560
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27990599",
+        "title": "Aaaasdsad",
+        "city": "Gia Tan 1",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Aaaasdsad ở Gia Tan 1. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.703384,
+                10.730115
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28020915",
+        "title": "Big Bang Beer Garden",
+        "city": "Gia Tan 1",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Big Bang Beer Garden ở Gia Tan 1. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.703384,
+                10.730115
+            ]
+        },
+        "openingHours": {
+            "display": "16:00-26:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1560
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28024772",
+        "title": "Ai Craft Beer",
+        "city": "Quang Trung",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ai Craft Beer ở Quang Trung. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.825294,
+                10.9544
+            ]
+        },
+        "openingHours": {
+            "display": "12:00-23:45",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 720,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 720,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 720,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 720,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 720,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 720,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 720,
+                        "close_time": 1425
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28152881",
+        "title": "Wineshop.vn Biên Hoà",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Wineshop.vn Biên Hoà ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.82432,
+                10.94469
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28538299",
+        "title": "Fruit Story Dalat",
+        "city": "Gia Tan 1",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Fruit Story Dalat ở Gia Tan 1. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.43607,
+                11.943862
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "31970076",
+        "title": "Maktub Eatery & Homebar",
+        "city": "Phú Hữu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Maktub Eatery & Homebar ở Phú Hữu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/3c/a4/e8/floop-1.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.79283,
+                10.746829
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32793991",
+        "title": "Tea Deli Aqua City",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tea Deli Aqua City ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.878105,
+                21.04715
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32793996",
+        "title": "Cơm Tấm Vietnam House",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cơm Tấm Vietnam House ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.89061,
+                10.89857
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32794075",
+        "title": "Monte Rosa Aqua City",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Monte Rosa Aqua City ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.76028,
+                10.821757
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32794077",
+        "title": "Gà Rán Yumyum Aqua City",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Gà Rán Yumyum Aqua City ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.878105,
+                21.04715
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32794079",
+        "title": "Garden Palace",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Garden Palace ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.82432,
+                10.94469
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32794083",
+        "title": "Aqua Market",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Aqua Market ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.66571,
+                10.80787
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32824978",
+        "title": "Saling's Cocktail & Bites",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Saling's Cocktail & Bites ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.84658,
+                10.959195
+            ]
+        },
+        "openingHours": {
+            "display": "18:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33296477",
+        "title": "Lẩu Gà Lá É",
+        "city": "Tan Binh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lẩu Gà Lá É ở Tan Binh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.58731,
+                10.795312
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33296613",
+        "title": "Mì Ramen Peco Peco",
+        "city": "Vinh Thanh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mì Ramen Peco Peco ở Vinh Thanh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.71006,
+                10.791062
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-15:00, 17:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 900
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 900
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 900
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 900
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 900
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 900
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 900
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33297001",
+        "title": "Nhà Hàng Tràm Chim - Bình Tân",
+        "city": "Tan Binh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Tràm Chim - Bình Tân ở Tan Binh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.614815,
+                10.745437
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-23:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1410
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33297225",
+        "title": "Mì Gà Xá Kén",
+        "city": "Tan Binh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mì Gà Xá Kén ở Tan Binh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.588936,
+                10.770812
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33297298",
+        "title": "Bánh Canh Cá Lóc Quốc Hưng",
+        "city": "Phú Hữu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bánh Canh Cá Lóc Quốc Hưng ở Phú Hữu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.635185,
+                10.779312
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33297508",
+        "title": "Quan Chay Trung Thanh",
+        "city": "Vinh Thanh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quan Chay Trung Thanh ở Vinh Thanh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.711685,
+                10.792813
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33297619",
+        "title": "Xe Cá Viên Chiên Cô Tiền",
+        "city": "Tan Binh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Xe Cá Viên Chiên Cô Tiền ở Tan Binh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.59306,
+                10.810313
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33297868",
+        "title": "Hủ Tiếu Sa Đéc",
+        "city": "Tan Binh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hủ Tiếu Sa Đéc ở Tan Binh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.59931,
+                10.788312
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33298074",
+        "title": "Quán Bún Bò",
+        "city": "Tan Binh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Bún Bò ở Tan Binh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.59894,
+                10.818188
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33298172",
+        "title": "Olaohara Bình Định",
+        "city": "Tan Binh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Olaohara Bình Định ở Tan Binh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.619064,
+                10.729188
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33298243",
+        "title": "Bún Riêu Sáo Danh",
+        "city": "Phú Hữu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bún Riêu Sáo Danh ở Phú Hữu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.62257,
+                10.774437
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33298266",
+        "title": "Ông Chú Sủi Cảo",
+        "city": "Vinh Thanh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ông Chú Sủi Cảo ở Vinh Thanh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.71331,
+                10.788438
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33298321",
+        "title": "Bánh Tráng Cuốn Tân Vinh Long",
+        "city": "Vinh Thanh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bánh Tráng Cuốn Tân Vinh Long ở Vinh Thanh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.711685,
+                10.789813
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33298509",
+        "title": "Bún Bò - Bún Riêu - Bún Vịt Chị Mai",
+        "city": "Tan Binh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bún Bò - Bún Riêu - Bún Vịt Chị Mai ở Tan Binh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.58844,
+                10.809812
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33298582",
+        "title": "Bánh Căn Nhà Làm 557",
+        "city": "Tan Binh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bánh Căn Nhà Làm 557 ở Tan Binh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.60857,
+                10.804937
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33298916",
+        "title": "Vịt Quay Da Giòn",
+        "city": "Tan Binh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vịt Quay Da Giòn ở Tan Binh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.58856,
+                10.789687
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33298951",
+        "title": "Phở Thố Đá - Sá Sùng Mr.huy",
+        "city": "Tan Binh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phở Thố Đá - Sá Sùng Mr.huy ở Tan Binh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.617065,
+                10.751938
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33960188",
+        "title": "Chay Tuệ Biên Hoà",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chay Tuệ Biên Hoà ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.82979,
+                10.94885
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33988718",
+        "title": "KATINAT Đồng Khởi Biên Hòa",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "KATINAT Đồng Khởi Biên Hòa ở Biên Hòa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.87047,
+                10.951565
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34270346",
+        "title": "Buffet Poseidon Biên Hòa",
+        "city": "Biên Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "657.895 ₫ - 921.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Buffet Poseidon Biên Hòa ở Biên Hòa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 657.895 ₫ - 921.053 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/33/3a/0d/dc/cua-d-i-h-p-t-i-poseidon.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.8103,
+                10.956221
+            ]
+        },
+        "openingHours": {
+            "display": "11:00-14:00, 17:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    }
+]

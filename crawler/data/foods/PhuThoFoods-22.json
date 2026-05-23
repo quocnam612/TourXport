@@ -1,0 +1,1221 @@
+[
+    {
+        "sourceLocationId": "32872799",
+        "title": "Dakbukso Coffee Roasters",
+        "city": "Viet Tri",
+        "totalScore": 5.0,
+        "ranking": "1/4",
+        "reviewsCount": 7,
+        "category": "Ngồi xuống",
+        "priceRange": "789.473.664 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Dakbukso Coffee Roasters ở Viet Tri. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 7 lượt review. Xếp hạng: 1/4. Giá: 789.473.664 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/a9/39/e5/dakbukso-coffee-roasters.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.38839,
+                21.323814
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-23:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1410
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33304492",
+        "title": "Lazy Bug",
+        "city": "Cao Bằng",
+        "totalScore": 5.0,
+        "ranking": "8/34",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lazy Bug ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 8/34.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/32/9e/b8/0a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.218544,
+                21.397738
+            ]
+        },
+        "openingHours": {
+            "display": "11:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17321414",
+        "title": "I SuShi BBQ Việt Trì",
+        "city": "Viet Tri",
+        "totalScore": 5.0,
+        "ranking": "2/4",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": "1.315.789.440 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "I SuShi BBQ Việt Trì ở Viet Tri. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 2/4. Giá: 1.315.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/21/be/22/combo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.41036,
+                21.313644
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13287663",
+        "title": "Kindiback Restaurant",
+        "city": "Viet Tri",
+        "totalScore": 4.2,
+        "ranking": "3/4",
+        "reviewsCount": 5,
+        "category": "Ngồi xuống",
+        "priceRange": "1.184.211 ₫ - 9.210.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Kindiback Restaurant ở Viet Tri. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.2/5 từ 5 lượt review. Xếp hạng: 3/4. Giá: 1.184.211 ₫ - 9.210.526 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/3b/45/46/mixed-garden-salad-w.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.3912,
+                21.32602
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-23:45",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1425
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33342256",
+        "title": "Phở Liên",
+        "city": "Cao Bằng",
+        "totalScore": 4.0,
+        "ranking": "24/34",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phở Liên ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 24/34.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/30/8f/c5/9a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.218155,
+                21.3972
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12685185",
+        "title": "Sakanabar Ebisu",
+        "city": "Hà Nội",
+        "totalScore": 4.5,
+        "ranking": "1952/3710",
+        "reviewsCount": 6,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sakanabar Ebisu ở Hà Nội. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.5/5 từ 6 lượt review. Xếp hạng: 1952/3710.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/13/50/79/photo1jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.39396,
+                21.12389
+            ]
+        },
+        "openingHours": {
+            "display": "17:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15130201",
+        "title": "Bống Béo Bread",
+        "city": "Viet Tri",
+        "totalScore": 0,
+        "ranking": "4/4",
+        "reviewsCount": 0,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "394.736.832 ₫ - 1.578.947.328 ₫",
+        "description": "Bánh mỳ Bống Béo nằm ở trung tâm thành phố, mở cửa hàng ngày từ 6.00 am tới tối. Quán phục vụ bánh mỳ Hội An và các đồ uống thích hợp cho cả người ăn chay và không. Quán có áp dụng giao hàng miễn phí trong bán kính 3km. Với thiết kế đẹp, đồ ăn ngon đầy đăn, giá rẻ, Bánh mỳ Bống Béo sẽ là lựa chọn tốt nhất cho bữa sáng, bữa trưa hay bữa chiều tại văn phòng của bạn, và địa điểm check in lý tưởng.",
+        "embedding": null,
+        "searchText": "Bống Béo Bread ở Viet Tri. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Mô tả: Bánh mỳ Bống Béo nằm ở trung tâm thành phố, mở cửa hàng ngày từ 6.00 am tới tối. Quán phục vụ bánh mỳ Hội An và các đồ uống thích hợp cho cả người ăn chay và không. Quán có áp dụng giao hàng miễn phí trong bán kính 3km. Với thiết kế đẹp, đồ ăn ngon đầy đăn, giá rẻ, Bánh mỳ Bống Béo sẽ là lựa chọn tốt nhất cho bữa sáng, bữa trưa hay bữa chiều tại văn phòng của bạn, và địa điểm check in lý tưởng. Xếp hạng: 4/4. Giá: 394.736.832 ₫ - 1.578.947.328 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/af/7e/bd/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.39586,
+                21.324715
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-20:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27137821",
+        "title": "Nhà hàng dung tiến ba vì",
+        "city": "Ba Vi",
+        "totalScore": 5.0,
+        "ranking": "1/1",
+        "reviewsCount": 20,
+        "category": "Ngồi xuống",
+        "priceRange": "1.315.789.440 ₫ - 2.147.483.647 ₫",
+        "description": "Nhà hàng dung tiến ẩm thực ba vì là Nhà Hàng Đẹp Nhất ở Ba Vì, Nhà hàng Dung Tiến ẩm thực ba vì luôn tự hào về những món ăn ngon, đặc sản và dịch vụ tốt. Nhưng đến với nhà hàng Dung Tiến nhà hàng đẹp nhất còn có thể trở nên tuyệt vời hơn với những cảnh đẹp và không gian êm ái. Nhà hàng đẹp nhất luôn tạo ra một không gian rất tinh tế với những ánh sáng đèn lung linh tạo một khung cảnh rất thơ mộng và lãng mạn. Bạn có thể thưởng thức những món ăn ngon từ đầu bếp tài hoa, cùng với những ly rượu mang hương vị đậm chất văn hóa dân tộc vùng cao. Bạn đang tìm kiếm một địa điểm ăn uống tuyệt vời, với một không gian tinh tế làm say đắm lòng người hãy đến với nhà hàng Dung Tiến. Nhà hàng đẹp đáp ứng mọi kỳ vọng của bạn Hãy đến với nhà hàng Dung Tiến ngay hôm nay",
+        "embedding": null,
+        "searchText": "Nhà hàng dung tiến ba vì ở Ba Vi. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà hàng dung tiến ẩm thực ba vì là Nhà Hàng Đẹp Nhất ở Ba Vì, Nhà hàng Dung Tiến ẩm thực ba vì luôn tự hào về những món ăn ngon, đặc sản và dịch vụ tốt. Nhưng đến với nhà hàng Dung Tiến nhà hàng đẹp nhất còn có thể trở nên tuyệt vời hơn với những cảnh đẹp và không gian êm ái. Nhà hàng đẹp nhất luôn tạo ra một không gian rất tinh tế với những ánh sáng đèn lung linh tạo một khung cảnh rất thơ mộng và lãng mạn. Bạn có thể thưởng thức những món ăn ngon từ đầu bếp tài hoa, cùng với những ly rượu mang hương vị đậm chất văn hóa dân tộc vùng cao. Bạn đang tìm kiếm một địa điểm ăn uống tuyệt vời, với một không gian tinh tế làm say đắm lòng người hãy đến với nhà hàng Dung Tiến. Nhà hàng đẹp đáp ứng mọi kỳ vọng của bạn Hãy đến với nhà hàng Dung Tiến ngay hôm nay Đánh giá: 5.0/5 từ 20 lượt review. Xếp hạng: 1/1. Giá: 1.315.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/41/bf/a4/nha-hang-m-cung-tr-i.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.40984,
+                21.06491
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33077778",
+        "title": "Nhà Vân",
+        "city": "Hà Nội",
+        "totalScore": 5.0,
+        "ranking": "1842/3710",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "NHÀ VÂN – DỆT HƯƠNG DI SẢN VIỆT Nhà Vân tự hào là doanh nghiệp tiên phong trong nghệ thuật ủ, lưu trữ và bảo quản trà Shan Tuyết cổ thụ bằng hũ gốm men hỏa biến – một phương pháp giúp trà không ngừng phát triển tầng hương vị theo thời gian. Đồng thời, chúng tôi cũng gìn giữ và phát triển trà cụ men hỏa biến thủ công, được chế tác bởi đôi tay tài hoa của những nghệ nhân Việt. Hành trình của Nhà Vân không chỉ là sản xuất trà, mà là hành trình tìm lại bản sắc văn hóa Trà Việt, nơi gốm và trà hòa quyện, tái hiện tinh hoa của ông cha, lưu giữ những giá trị lâu đời trong từng tách trà. Mỗi tách trà Nhà Vân không chỉ là một thức uống, mà là một câu chuyện, một trải nghiệm. Trà khi hòa quyện cùng gốm men hỏa biến trở thành \"người kể chuyện\" thầm lặng, lưu giữ hương vị nguyên bản và kết tinh những giá trị tinh túy nhất của trà Việt.",
+        "embedding": null,
+        "searchText": "Nhà Vân ở Hà Nội. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: NHÀ VÂN – DỆT HƯƠNG DI SẢN VIỆT Nhà Vân tự hào là doanh nghiệp tiên phong trong nghệ thuật ủ, lưu trữ và bảo quản trà Shan Tuyết cổ thụ bằng hũ gốm men hỏa biến – một phương pháp giúp trà không ngừng phát triển tầng hương vị theo thời gian. Đồng thời, chúng tôi cũng gìn giữ và phát triển trà cụ men hỏa biến thủ công, được chế tác bởi đôi tay tài hoa của những nghệ nhân Việt. Hành trình của Nhà Vân không chỉ là sản xuất trà, mà là hành trình tìm lại bản sắc văn hóa Trà Việt, nơi gốm và trà hòa quyện, tái hiện tinh hoa của ông cha, lưu giữ những giá trị lâu đời trong từng tách trà. Mỗi tách trà Nhà Vân không chỉ là một thức uống, mà là một câu chuyện, một trải nghiệm. Trà khi hòa quyện cùng gốm men hỏa biến trở thành \"người kể chuyện\" thầm lặng, lưu giữ hương vị nguyên bản và kết tinh những giá trị tinh túy nhất của trà Việt. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 1842/3710.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/b0/bf/bb/nha-van-d-t-huong-di.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.469734,
+                21.157269
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-17:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21378704",
+        "title": "Bếp làng Đường Lâm",
+        "city": "Hà Nội",
+        "totalScore": 5.0,
+        "ranking": "1759/3710",
+        "reviewsCount": 4,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "Bếp làng Đường Lâm - Nhà hàng phục vụ đồ ăn tươi ngon với những món ăn truyền thống và đặc sắc của ngôi làng cổ ở Việt Nam",
+        "embedding": null,
+        "searchText": "Bếp làng Đường Lâm ở Hà Nội. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Bếp làng Đường Lâm - Nhà hàng phục vụ đồ ăn tươi ngon với những món ăn truyền thống và đặc sắc của ngôi làng cổ ở Việt Nam Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 1759/3710. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/4a/dd/43/khong-gian-d-m-ch-t-truy.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.471855,
+                21.157907
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-20:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15082680",
+        "title": "Chiko Đường Lâm",
+        "city": "Hà Nội",
+        "totalScore": 5.0,
+        "ranking": "3094/3710",
+        "reviewsCount": 1,
+        "category": "Quán cafe",
+        "priceRange": "526.315.776 ₫ - 1.184.210.560 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Chiko Đường Lâm ở Hà Nội. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 3094/3710. Giá: 526.315.776 ₫ - 1.184.210.560 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/8a/30/d7/interior.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.47044,
+                21.16218
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10202617",
+        "title": "Vietnamese street food",
+        "city": "Hà Nội",
+        "totalScore": 4.6,
+        "ranking": "1625/3710",
+        "reviewsCount": 11,
+        "category": "Ngồi xuống",
+        "priceRange": "789.474 ₫ - 2.631.579 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Vietnamese street food ở Hà Nội. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.6/5 từ 11 lượt review. Xếp hạng: 1625/3710. Giá: 789.474 ₫ - 2.631.579 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/94/50/98/also-named-as-bun-duoi.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.4843,
+                21.16111
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10792013",
+        "title": "Nhà hàng nướng GoGi House",
+        "city": "Hà Nội",
+        "totalScore": 3.0,
+        "ranking": "3447/3710",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "2.631.579 ₫ - 7.894.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng nướng GoGi House ở Hà Nội. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 3447/3710. Giá: 2.631.579 ₫ - 7.894.737 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.4843,
+                21.16111
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27487004",
+        "title": "Ducanh Cafe",
+        "city": "Phú Thọ",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ducanh Cafe ở Phú Thọ. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.390366,
+                21.321768
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26560108",
+        "title": "Maay House",
+        "city": "Phú Thọ",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Maay House ở Phú Thọ. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.68312,
+                10.963039
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27648684",
+        "title": "Ducanh Cafe",
+        "city": "Phú Thọ",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ducanh Cafe ở Phú Thọ. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.296234,
+                21.256348
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23115479",
+        "title": "The Pizza Company",
+        "city": "Phú Thọ",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The Pizza Company ở Phú Thọ. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.39571,
+                21.312662
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15097169",
+        "title": "Kichi Kichi Việt Trì",
+        "city": "Viet Tri",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "1.315.789.440 ₫ - 2.147.483.647 ₫",
+        "description": "Kichi-Kichi là chuỗi nhà hàng chuyên về buffet lẩu hàng đầu Việt Nam. Các món ăn ngon và đa dạng được phục vụ với hình thức băng chuyền độc đáo, hiện đại, vốn là sự kết hợp của phong cách phục vụ Kaiten đến từ Nhật Bản với kiến trúc hiện đại. Chỉ với một giá cố định, khách hàng được thưởng thức không hạn chế gần 100 sản phẩm nhúng lẩu đặc sắc như bò Mỹ nhập khẩu, cá hồi nguyên con, rau sạch, nấm..",
+        "embedding": null,
+        "searchText": "Kichi Kichi Việt Trì ở Viet Tri. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Kichi-Kichi là chuỗi nhà hàng chuyên về buffet lẩu hàng đầu Việt Nam. Các món ăn ngon và đa dạng được phục vụ với hình thức băng chuyền độc đáo, hiện đại, vốn là sự kết hợp của phong cách phục vụ Kaiten đến từ Nhật Bản với kiến trúc hiện đại. Chỉ với một giá cố định, khách hàng được thưởng thức không hạn chế gần 100 sản phẩm nhúng lẩu đặc sắc như bò Mỹ nhập khẩu, cá hồi nguyên con, rau sạch, nấm.. Giá: 1.315.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/7e/9a/f3/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.36062,
+                21.34543
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24120952",
+        "title": "Cafe - Trà Đài Loan Nhà Khách Quân Khu 2",
+        "city": "Viet Tri",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Quán Cafe Trà Đài Loan Thi Hiển Là một quán dành cho các bạn trẻ và những người có niềm yêu thích với cafe và trà Đài Loan nổi tiếng Tại đây chúng tôi rất nhiệt tình chào đón tất cả các bạn Ẩn bớt",
+        "embedding": null,
+        "searchText": "Cafe - Trà Đài Loan Nhà Khách Quân Khu 2 ở Viet Tri. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Quán Cafe Trà Đài Loan Thi Hiển Là một quán dành cho các bạn trẻ và những người có niềm yêu thích với cafe và trà Đài Loan nổi tiếng Tại đây chúng tôi rất nhiệt tình chào đón tất cả các bạn Ẩn bớt",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.33948,
+                21.366869
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25299969",
+        "title": "Sydney Việt Tri",
+        "city": "Viet Tri",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sydney Việt Tri ở Viet Tri. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/28/18/5f/68/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.40459,
+                21.317179
+            ]
+        },
+        "openingHours": {
+            "display": "11:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15273951",
+        "title": "Secret K-Bar",
+        "city": "Viet Tri",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Secret K-Bar ở Viet Tri. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/31/cf/ff/2a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.36062,
+                21.34543
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15273949",
+        "title": "K3 Underground",
+        "city": "Viet Tri",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "K3 Underground ở Viet Tri. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.36062,
+                21.34543
+            ]
+        },
+        "openingHours": null
+    }
+]

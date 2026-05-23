@@ -1,0 +1,1520 @@
+[
+    {
+        "sourceLocationId": "33375912",
+        "title": "Mufa Restaurant & Craft Beer",
+        "city": "Tam Đảo",
+        "totalScore": 5.0,
+        "ranking": "1/15",
+        "reviewsCount": 30,
+        "category": "Ngồi xuống",
+        "priceRange": "5.263.158 ₫ - 10.526.316 ₫",
+        "description": "Nhà hàng farm to table về nấm tươi đầu tiên ở Tam Đảo, với phong cách ẩm thực fusion kết hợp với các nguyên liệu địa phương.",
+        "embedding": null,
+        "searchText": "Mufa Restaurant & Craft Beer ở Tam Đảo. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà hàng farm to table về nấm tươi đầu tiên ở Tam Đảo, với phong cách ẩm thực fusion kết hợp với các nguyên liệu địa phương. Đánh giá: 5.0/5 từ 30 lượt review. Xếp hạng: 1/15. Giá: 5.263.158 ₫ - 10.526.316 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/33/3f/03/12/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.83199,
+                21.2036
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33104453",
+        "title": "Kadhai Indian Restaurant & Bar -Tam Đảo",
+        "city": "Tam Đảo",
+        "totalScore": 5.0,
+        "ranking": "2/15",
+        "reviewsCount": 9,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Kadhai Indian Restaurant & Bar -Tam Đảo ở Tam Đảo. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 9 lượt review. Xếp hạng: 2/15. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/03/a0/51/wow-what-an-incredible.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.64518,
+                21.45701
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34118443",
+        "title": "Phùng Cafe & Wine Corner",
+        "city": "Vĩnh Yên",
+        "totalScore": 5.0,
+        "ranking": "3/15",
+        "reviewsCount": 6,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phùng Cafe & Wine Corner ở Vĩnh Yên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 6 lượt review. Xếp hạng: 3/15.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/32/3d/a9/40/nothing-beats-a-relaxing.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.60634,
+                21.316458
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14767220",
+        "title": "Quán Gió Tam Đảo",
+        "city": "Tam Đảo",
+        "totalScore": 4.1,
+        "ranking": "4/15",
+        "reviewsCount": 14,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Gió Tam Đảo ở Tam Đảo. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.1/5 từ 14 lượt review. Xếp hạng: 4/15. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/a8/93/30/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.64609,
+                21.451159
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14789368",
+        "title": "Rock Cafe Tam Đảo",
+        "city": "Tam Đảo",
+        "totalScore": 3.8,
+        "ranking": "5/15",
+        "reviewsCount": 24,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Rock Cafe Tam Đảo ở Tam Đảo. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.8/5 từ 24 lượt review. Xếp hạng: 5/15. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/79/73/5d/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.64426,
+                21.45608
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27107254",
+        "title": "Nhà Hàng Bò Tơ B88",
+        "city": "Vĩnh Yên",
+        "totalScore": 5.0,
+        "ranking": "6/15",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Nhà hàng Bò Tơ B88 chuyên các món về Bò Tơ, quán ãn phù hợp với tất cả mọi người. Các món ãn của nhà hàng Bò Tơ B88 với tiêu chí Tươi, Ngon, Sạch, đảm bảo vệ sinh. Nhà hàng luôn lắng nghe ý kiến của khách hàng và cải thiện các món än của mình để đem tới cho khách hàng sự hài lòng với các món än ngon miệng nhất.",
+        "embedding": null,
+        "searchText": "Nhà Hàng Bò Tơ B88 ở Vĩnh Yên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Nhà hàng Bò Tơ B88 chuyên các món về Bò Tơ, quán ãn phù hợp với tất cả mọi người. Các món ãn của nhà hàng Bò Tơ B88 với tiêu chí Tươi, Ngon, Sạch, đảm bảo vệ sinh. Nhà hàng luôn lắng nghe ý kiến của khách hàng và cải thiện các món än của mình để đem tới cho khách hàng sự hài lòng với các món än ngon miệng nhất. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 6/15.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/2a/fb/da/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.61933,
+                21.308828
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23745629",
+        "title": "Nhà hàng Phố núi",
+        "city": "Tam Đảo",
+        "totalScore": 5.0,
+        "ranking": "7/15",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Phố núi ở Tam Đảo. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 7/15.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/21/6b/db/be/nha-hang-ph-nui.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.570885,
+                21.474707
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33321975",
+        "title": "Nhà Hàng Mufa Tam Đảo",
+        "city": "Tam Đảo",
+        "totalScore": 5.0,
+        "ranking": "8/15",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Mufa Tam Đảo ở Tam Đảo. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 8/15.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/0d/0a/e7/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.87671,
+                21.53879
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25332245",
+        "title": "Bánh Cuốn Bà Hiền - Ngõ Nhà Thờ",
+        "city": "Vĩnh Yên",
+        "totalScore": 5.0,
+        "ranking": "9/15",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "789.473.664 ₫ - 1.315.789.440 ₫",
+        "description": "Địa điểm ăn sáng địa phương",
+        "embedding": null,
+        "searchText": "Bánh Cuốn Bà Hiền - Ngõ Nhà Thờ ở Vĩnh Yên. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Địa điểm ăn sáng địa phương Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 9/15. Giá: 789.473.664 ₫ - 1.315.789.440 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/28/4f/5e/2e/d-an-luon-tuoi-ngon.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.59514,
+                21.302055
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-14:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 840
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 840
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 840
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 840
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 840
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 840
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 840
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27992998",
+        "title": "Pizza Vanh Restaurant",
+        "city": "Vĩnh Yên",
+        "totalScore": 4.0,
+        "ranking": "10/15",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pizza Vanh Restaurant ở Vĩnh Yên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 10/15.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2d/ca/99/35/nha-hang-pizza-ki-u-y.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.62244,
+                21.316954
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-14:00, 17:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19552710",
+        "title": "Nhà Hàng Thảo Nguyên",
+        "city": "Tam Đảo",
+        "totalScore": 5.0,
+        "ranking": "11/15",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Thảo Nguyên ở Tam Đảo. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 11/15.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/d1/4f/62/t-t.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.619705,
+                21.411308
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17838832",
+        "title": "Hải Sản Làng Chài",
+        "city": "Vĩnh Yên",
+        "totalScore": 5.0,
+        "ranking": "12/15",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hải Sản Làng Chài ở Vĩnh Yên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 12/15.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/68/8f/a1/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.60596,
+                21.323277
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "16639735",
+        "title": "Nhà Hàng Hoa Lâm",
+        "city": "Vĩnh Yên",
+        "totalScore": 4.0,
+        "ranking": "13/15",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hoa Lâm ở Vĩnh Yên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 13/15.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/27/56/9d/90/hoa-lam-co-phong-cach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.60875,
+                21.32332
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23322037",
+        "title": "Nhà Hàng Tú Còi",
+        "city": "Phúc Yên",
+        "totalScore": 4.0,
+        "ranking": "14/15",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Tú Còi ở Phúc Yên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 14/15.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/df/c4/33/photo6jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.73208,
+                21.277655
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11873493",
+        "title": "Nhà Hàng Tây Hồ",
+        "city": "Vĩnh Yên",
+        "totalScore": 2.5,
+        "ranking": "15/15",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Tây Hồ ở Vĩnh Yên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 2.5/5 từ 2 lượt review. Xếp hạng: 15/15.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/b6/81/f0/facade-of-the-louis-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.59641,
+                21.31315
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14086957",
+        "title": "Beer Club Garden X",
+        "city": "Phúc Yên",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Beer Club Garden X ở Phúc Yên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.70544,
+                21.236902
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24115606",
+        "title": "Nhà hàng Thảo Nguyên Xanh",
+        "city": "Phúc Yên",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Chuyên cá và đồ đồng quê",
+        "embedding": null,
+        "searchText": "Nhà hàng Thảo Nguyên Xanh ở Phúc Yên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Chuyên cá và đồ đồng quê",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.560196,
+                21.358833
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27775609",
+        "title": "Hải Sản Tú Trọc",
+        "city": "Vĩnh Yên",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hải Sản Tú Trọc ở Vĩnh Yên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.61122,
+                21.323132
+            ]
+        },
+        "openingHours": {
+            "display": "15:00-27:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1620
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1620
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1620
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1620
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1620
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1620
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1620
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25801477",
+        "title": "Dê Tây nguyên",
+        "city": "Vĩnh Yên",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dê Tây nguyên ở Vĩnh Yên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.61333,
+                21.30823
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27095587",
+        "title": "Rock Restaurant & Cafe Tam Đao",
+        "city": "Tam Đảo",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Rock Restaurant & Cafe là điểm must-go của du khách khi có dịp đến Tam Đảo. Được bao quanh bởi cây cỏ hoa lá, từ Rock, đi vài bước chân là đến quảng trường, đối diện với Nhà thờ Đá. Tuy nằm giữa nơi sầm uất nhất thị trấn, thế nhưng Rock lại mang dáng vẻ âm trầm, tĩnh lặng rất riêng, thôi thúc sự tò mò khám phá của du khách khi bước chân ngang qua. Khi đến Rock Restaurant & Cafe, du khách như được lạc vào không gian đẹp tựa cổ tích. Lan can gỗ được thiết kế theo phong cách Thụy Sĩ cổ điển, mái nhà đá, đèn chùm lộng lẫy cùng chiếc lò sưởi lớn gợi nhớ đến những ngôi nhà Bắc Âu cổ kính, mang lại cảm giác ấm áp vô cùng. Chìm đắm trong không gian đó, du khách vừa có thể thưởng thức những món ngon hấp dẫn, vừa check-in những bức hình kỉ niệm đáng nhớ tại thị trấn sương mờ. Đây cũng địa điểm thích hợp cho những buổi hẹn hò của các cặp đôi, bữa tiệc gia đình hay dịp gặp gỡ bè bạn. Rock Restaurant & Cafe phục vụ quý khách hàng bằng những món ăn phong cách Âu chuẩn vị với vô vàn sự lựa chọn hấp dẫn như Pizza tươi, mỳ Ý, Steak mềm mọng, Sườn quyện đẫm sốt hay Cánh gà BBQ thơm đậm đà. Rock càng không thể thiếu cà phê đậm vị, trà, ly sinh tố ngọt mát hay những món bánh thơm lừng. Mỗi món ăn, nước uống tại đây là một loại mỹ vị, sẵn sàng mê hoặc thực khách ngay lần gặp gỡ đầu tiên. Lên Tam Đảo đừng quên ghé đến Rock Restaurant & Cafe để thưởng thức nhiều món ngon hấp dẫn, tận hưởng niềm vui bất tận và vun đắp thêm kỉ niệm tuyệt vời cùng những người thân yêu bạn nhé!",
+        "embedding": null,
+        "searchText": "Rock Restaurant & Cafe Tam Đao ở Tam Đảo. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Rock Restaurant & Cafe là điểm must-go của du khách khi có dịp đến Tam Đảo. Được bao quanh bởi cây cỏ hoa lá, từ Rock, đi vài bước chân là đến quảng trường, đối diện với Nhà thờ Đá. Tuy nằm giữa nơi sầm uất nhất thị trấn, thế nhưng Rock lại mang dáng vẻ âm trầm, tĩnh lặng rất riêng, thôi thúc sự tò mò khám phá của du khách khi bước chân ngang qua. Khi đến Rock Restaurant & Cafe, du khách như được lạc vào không gian đẹp tựa cổ tích. Lan can gỗ được thiết kế theo phong cách Thụy Sĩ cổ điển, mái nhà đá, đèn chùm lộng lẫy cùng chiếc lò sưởi lớn gợi nhớ đến những ngôi nhà Bắc Âu cổ kính, mang lại cảm giác ấm áp vô cùng. Chìm đắm trong không gian đó, du khách vừa có thể thưởng thức những món ngon hấp dẫn, vừa check-in những bức hình kỉ niệm đáng nhớ tại thị trấn sương mờ. Đây cũng địa điểm thích hợp cho những buổi hẹn hò của các cặp đôi, bữa tiệc gia đình hay dịp gặp gỡ bè bạn. Rock Restaurant & Cafe phục vụ quý khách hàng bằng những món ăn phong cách Âu chuẩn vị với vô vàn sự lựa chọn hấp dẫn như Pizza tươi, mỳ Ý, Steak mềm mọng, Sườn quyện đẫm sốt hay Cánh gà BBQ thơm đậm đà. Rock càng không thể thiếu cà phê đậm vị, trà, ly sinh tố ngọt mát hay những món bánh thơm lừng. Mỗi món ăn, nước uống tại đây là một loại mỹ vị, sẵn sàng mê hoặc thực khách ngay lần gặp gỡ đầu tiên. Lên Tam Đảo đừng quên ghé đến Rock Restaurant & Cafe để thưởng thức nhiều món ngon hấp dẫn, tận hưởng niềm vui bất tận và vun đắp thêm kỉ niệm tuyệt vời cùng những người thân yêu bạn nhé!",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.64419,
+                21.45323
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-14:00, 17:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21125835",
+        "title": "Nhà hàng - Bar Lounge - Cafe Bistro Tamdao Legend",
+        "city": "Tam Đảo",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Nằm ngay tại Công viên trung tâm của thị trấn, với thiết kế độc đáo và sang trọng, Tam Dao Legend là điểm đến hoàn hảo để thưởng ngoạn vẻ đẹp của núi non hùng vĩ, lắng nghe hơi thở của thiên nhiên, hoà mình vào nhịp sống của những con người hết mực hiền hoà và hiếu khách nơi đây. Đội ngũ đầu bếp tài hoa, luôn tỷ mỉ chú trọng tới từng chi tiết của mỗi món ăn cùng đội ngũ nhân viên phục vụ tràn đầy nhiệt huyết, Tam Dao Legend tự hào mang đến những trải nhiệm ẩm thực phong phú, đặc sắc và đáng giá nhất. Từ hương vị biển cả đến những đặc sản miền núi rừng tại nhà hàng hải sản Seafood Garden, từ những ly cocktail tinh tế, đầy màu sắc tại T Bar & Lounge đến những ly trà sữa, tách café, chiếc bánh kem tươi hằng ngày tại T Bistro & Coffee,… mỗi lựa chọn đều sẽ mang đến sự hài lòng cho quý khách. Hãy để chúng tôi kể cho bạn nghe về một Tam Đảo Huyền Thoại bằng sự hiếu khách và những món ăn ngon!",
+        "embedding": null,
+        "searchText": "Nhà hàng - Bar Lounge - Cafe Bistro Tamdao Legend ở Tam Đảo. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Nằm ngay tại Công viên trung tâm của thị trấn, với thiết kế độc đáo và sang trọng, Tam Dao Legend là điểm đến hoàn hảo để thưởng ngoạn vẻ đẹp của núi non hùng vĩ, lắng nghe hơi thở của thiên nhiên, hoà mình vào nhịp sống của những con người hết mực hiền hoà và hiếu khách nơi đây. Đội ngũ đầu bếp tài hoa, luôn tỷ mỉ chú trọng tới từng chi tiết của mỗi món ăn cùng đội ngũ nhân viên phục vụ tràn đầy nhiệt huyết, Tam Dao Legend tự hào mang đến những trải nhiệm ẩm thực phong phú, đặc sắc và đáng giá nhất. Từ hương vị biển cả đến những đặc sản miền núi rừng tại nhà hàng hải sản Seafood Garden, từ những ly cocktail tinh tế, đầy màu sắc tại T Bar & Lounge đến những ly trà sữa, tách café, chiếc bánh kem tươi hằng ngày tại T Bistro & Coffee,… mỗi lựa chọn đều sẽ mang đến sự hài lòng cho quý khách. Hãy để chúng tôi kể cho bạn nghe về một Tam Đảo Huyền Thoại bằng sự hiếu khách và những món ăn ngon!",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/b5/f5/31/logo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.64385,
+                21.45592
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "24433151",
+        "title": "May Vietnamese Restaurant Tam Đảo",
+        "city": "Tam Đảo",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "May Vietnamese Restaurant Tam Đảo ở Tam Đảo. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/24/f3/a0/57/front.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.64385,
+                21.455795
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19085545",
+        "title": "Nhà Hàng Phúc Hương Viên Tam Đảo",
+        "city": "Tam Đảo",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Phúc Hương Viên Tam Đảo ở Tam Đảo. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/03/30/46/khong-gian-day-r-ng-va.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.61967,
+                21.403547
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19336822",
+        "title": "Le Vent Restaurant & Bar",
+        "city": "Tam Đảo",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "1.315.789.440 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Le Vent Restaurant & Bar ở Tam Đảo. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 1.315.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/e8/2f/1f/our-atmosphere.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.637665,
+                21.451527
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    }
+]

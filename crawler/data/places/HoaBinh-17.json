@@ -1,0 +1,729 @@
+[
+    {
+        "sourceLocationId": "17757766",
+        "title": "Bản Lác",
+        "city": "Mai Châu",
+        "totalScore": 4.6,
+        "ranking": "1/17",
+        "reviewsCount": 49,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bản Lác ở Mai Châu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.6/5 từ 49 lượt review. Xếp hạng: 1/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/1a/4a/fc/1a/ban-lac-en-pom-coong.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13161996",
+        "title": "Chieu Cave",
+        "city": "Mai Châu",
+        "totalScore": 4.0,
+        "ranking": "2/17",
+        "reviewsCount": 28,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chieu Cave ở Mai Châu. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.0/5 từ 28 lượt review. Xếp hạng: 2/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/b9/f8/87/20180423-155736-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17695815",
+        "title": "Go Lao Waterfall",
+        "city": "Mai Châu",
+        "totalScore": 4.3,
+        "ranking": "11/17",
+        "reviewsCount": 3,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Go Lao Waterfall ở Mai Châu. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.3/5 từ 3 lượt review. Xếp hạng: 11/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/91/f0/91/leider-nur-wenig-wasser.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13326200",
+        "title": "Thung Khe Pass",
+        "city": "Mai Châu",
+        "totalScore": 4.4,
+        "ranking": "3/17",
+        "reviewsCount": 15,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thung Khe Pass ở Mai Châu. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Hoạt động ngoài trời. Đánh giá: 4.4/5 từ 15 lượt review. Xếp hạng: 3/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/b9/9c/1f/mai-chau-vista-dal-thung.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.94117,
+                20.73786
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17757774",
+        "title": "Đèo Đá Trắng",
+        "city": "Mai Châu",
+        "totalScore": 4.8,
+        "ranking": "6/17",
+        "reviewsCount": 4,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đèo Đá Trắng ở Mai Châu. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Hoạt động ngoài trời. Đánh giá: 4.8/5 từ 4 lượt review. Xếp hạng: 6/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/50/7d/c6/white-rock-pass.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.08009,
+                20.68192
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14134872",
+        "title": "Thác Mu",
+        "city": "Hòa Bình",
+        "totalScore": 4.8,
+        "ranking": "8/17",
+        "reviewsCount": 4,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thác Mu ở Hòa Bình. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.8/5 từ 4 lượt review. Xếp hạng: 8/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/99/e8/7d/mu-waterfall.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.37569,
+                20.394897
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "2534111",
+        "title": "Khu Bảo Tồn Thiên Nhiên Ngọc Sơn Ngổ Luông",
+        "city": "Tỉnh Hòa Bình",
+        "totalScore": 5.0,
+        "ranking": "7/17",
+        "reviewsCount": 8,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu Bảo Tồn Thiên Nhiên Ngọc Sơn Ngổ Luông ở Tỉnh Hòa Bình. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 8 lượt review. Xếp hạng: 7/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/e9/c7/0d/20161215-142419-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.172844,
+                20.465904
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8672492",
+        "title": "Bản Giang Mỗ",
+        "city": "Hòa Bình",
+        "totalScore": 4.4,
+        "ranking": "4/17",
+        "reviewsCount": 15,
+        "category": "Khác",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bản Giang Mỗ ở Hòa Bình. Loại địa điểm: Khác. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Khác. Đánh giá: 4.4/5 từ 15 lượt review. Xếp hạng: 4/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Khác"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/25/13/d9/sight-about-ethnic-village.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.35205,
+                20.790148
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16754737",
+        "title": "Hồ Thủy Điện Hòa Bình",
+        "city": "Hòa Bình",
+        "totalScore": 4.5,
+        "ranking": "5/17",
+        "reviewsCount": 4,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hồ Thủy Điện Hòa Bình ở Hòa Bình. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 4 lượt review. Xếp hạng: 5/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/ec/a2/f4/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6759651",
+        "title": "BẢO TÀNG KHÔNG GIAN VĂN HÓA MƯỜNG",
+        "city": "Hòa Bình",
+        "totalScore": 4.0,
+        "ranking": "10/17",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "BẢO TÀNG KHÔNG GIAN VĂN HÓA MƯỜNG ở Hòa Bình. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 4 lượt review. Xếp hạng: 10/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/82/7c/a3/b-o-tang-khong-gian-van.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.32658,
+                20.83066
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13326273",
+        "title": "Pa Co Market",
+        "city": "Pà Cò",
+        "totalScore": 4.5,
+        "ranking": "13/17",
+        "reviewsCount": 2,
+        "category": "Đồ ăn & Đồ uống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pa Co Market ở Pà Cò. Loại địa điểm: Đồ ăn & Đồ uống. Tags: Điểm du lịch, Nơi mua sắm, Đồ ăn & Đồ uống. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 13/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Đồ ăn & Đồ uống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/a2/90/ed/riot-of-colour.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1260
+                    }
+                ],
+                [],
+                [],
+                [],
+                [],
+                [],
+                []
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23179462",
+        "title": "Dịch vụ cầm đồ Ngọc Hà",
+        "city": "Hòa Bình",
+        "totalScore": 0,
+        "ranking": "9/17",
+        "reviewsCount": 0,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dịch vụ cầm đồ Ngọc Hà ở Hòa Bình. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Nơi mua sắm, Bảo tàng. Xếp hạng: 9/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Bảo tàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.35263,
+                20.785141
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "22899131",
+        "title": "Công Viên Di Sản Các Nhà Khoa Học Việt Nam",
+        "city": "Hòa Bình",
+        "totalScore": 5.0,
+        "ranking": "12/17",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Công Viên Di Sản Các Nhà Khoa Học Việt Nam ở Hòa Bình. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 12/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2b/1f/d5/72/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21182779",
+        "title": "Meddom Park",
+        "city": "Cao Phong",
+        "totalScore": 0,
+        "ranking": "14/17",
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": "Meddom Park là nơi lưu giữ và trưng bày những kỷ vật và ký ức của các nhà khoa học Việt Nam. Với khuôn viên xanh mát 34ha cùng các công trình kiến trúc độc đạo: tòa nhà Quyển sách mở, Tòa nhà Cánh Cam, Tòa nhà Cánh Bướm,... Meddom Park xứng đáng là điểm tham quan giải trí mang định hướng giáo dục khoa học vô cùng lý tưởng cho quý khách!",
+        "embedding": null,
+        "searchText": "Meddom Park ở Cao Phong. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Mô tả: Meddom Park là nơi lưu giữ và trưng bày những kỷ vật và ký ức của các nhà khoa học Việt Nam. Với khuôn viên xanh mát 34ha cùng các công trình kiến trúc độc đạo: tòa nhà Quyển sách mở, Tòa nhà Cánh Cam, Tòa nhà Cánh Bướm,... Meddom Park xứng đáng là điểm tham quan giải trí mang định hướng giáo dục khoa học vô cùng lý tưởng cho quý khách! Xếp hạng: 14/17.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/6a/2d/00/ch-p-t-tren-cao-xu-ng.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26528899",
+        "title": "Cloud Hunting Paradise",
+        "city": "Hang Kia",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cloud Hunting Paradise ở Hang Kia. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/22/04/96/thien-nhien-hung-vi.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.89683,
+                20.723448
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26528896",
+        "title": "Pa Co Tea Plantation",
+        "city": "Pà Cò",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pa Co Tea Plantation ở Pà Cò. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/39/0f/8a/noi-nay-th-t-binh-yen.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.91603,
+                20.74004
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26528888",
+        "title": "Pa Co Night Market",
+        "city": "Mai Châu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pa Co Night Market ở Mai Châu. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.90534,
+                20.749796
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1560
+                    }
+                ]
+            ]
+        }
+    }
+]

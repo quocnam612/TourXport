@@ -1,0 +1,780 @@
+[
+    {
+        "sourceLocationId": "20072797",
+        "title": "Motel M&M",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "31/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Motel M&M ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 31/87.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.993935,
+                8.762403
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7193738",
+        "title": "Nhà Khách Cà Mau",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "32/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Khách Cà Mau ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 32/87.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.15036,
+                9.17994
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15152448",
+        "title": "Nha Khach Ken",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "33/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "263.158 ₫ - 289.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nha Khach Ken ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 33/87. Giá: 263.158 ₫ - 289.474 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.15045,
+                9.17608
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34301058",
+        "title": "Khach San Nguyen Huong",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "34/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khach San Nguyen Huong ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 34/87.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.24221,
+                9.162711
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21121593",
+        "title": "The One Hotel",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "35/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "578.947 ₫ - 657.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The One Hotel ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 35/87. Giá: 578.947 ₫ - 657.895 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/89/92/1c/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33702392",
+        "title": "Nha nghi Phat 39",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "36/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nha nghi Phat 39 ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 36/87.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.14854,
+                9.18213
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10351397",
+        "title": "Song Kim Hotel",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "37/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Song Kim Hotel ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 37/87.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.1476,
+                9.18194
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12549329",
+        "title": "Happy Guesthouse",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "38/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Happy Guesthouse ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 38/87.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-s/21/10/83/72/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.15045,
+                9.17608
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12696642",
+        "title": "Huynh Nhu 2 Hotel",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "39/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Huynh Nhu 2 Hotel ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 39/87.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.15045,
+                9.17608
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34177903",
+        "title": "Khach San Quoc TE",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "40/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "500.000 ₫ - 789.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khach San Quoc TE ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 40/87. Giá: 500.000 ₫ - 789.474 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.15697,
+                9.175219
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7257095",
+        "title": "Khách sạn Đông Á",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "41/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Đông Á ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 41/87.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19894066",
+        "title": "Roots Hotel",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "42/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Roots Hotel ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 42/87.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.15905,
+                9.198375
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34232847",
+        "title": "Ca Mau Eco",
+        "city": "Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "43/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ca Mau Eco ở Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 43/87.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98194,
+                9.197516
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10795968",
+        "title": "Le Anh Hostel",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "44/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Le Anh Hostel ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 44/87.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.1407,
+                9.18354
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34178230",
+        "title": "Khach san Hong Đuc - Hong Đuc Hotel",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "45/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khach san Hong Đuc - Hong Đuc Hotel ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 45/87.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.17693,
+                9.19287
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26999116",
+        "title": "Motel Như Ngọc",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "46/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "289.474 ₫ - 368.421 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Motel Như Ngọc ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 46/87. Giá: 289.474 ₫ - 368.421 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/2e/17/d9/7f/nhu-ng-c-motel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.15863,
+                9.17633
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33431994",
+        "title": "Hotel Van Minh - Nam Can",
+        "city": "Năm Căn, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "47/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hotel Van Minh - Nam Can ở Năm Căn, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 47/87.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.99736,
+                8.77563
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26356793",
+        "title": "Vin Hotel",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "48/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "473.684 ₫ - 710.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Vin Hotel ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 48/87. Giá: 473.684 ₫ - 710.526 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.13906,
+                9.192755
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23343133",
+        "title": "Đất Mũi Cà Mau",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "49/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đất Mũi Cà Mau ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 49/87.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-s/21/2c/e2/9c/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.722946,
+                8.605564
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21415398",
+        "title": "Khách Sạn Ngọc Bích",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "50/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn Ngọc Bích ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 50/87.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.821075,
+                9.03718
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9787767",
+        "title": "Anh Thu Motel",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "51/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "342.105 ₫ - 368.421 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Anh Thu Motel ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 51/87. Giá: 342.105 ₫ - 368.421 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.15045,
+                9.17608
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33441180",
+        "title": "Homestay Hai Nam Dat Mui",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "52/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "315.789 ₫ - 342.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Homestay Hai Nam Dat Mui ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 52/87. Giá: 315.789 ₫ - 342.105 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/31/63/9f/b9/bed.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.73711,
+                8.618698
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26351316",
+        "title": "Ruby Hotel Ca Mau",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "53/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ruby Hotel Ca Mau ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 53/87.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.15014,
+                9.17575
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33873845",
+        "title": "Hotel Công Tử Bạc Liêu",
+        "city": "Ap Da Bac, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "54/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "1.236.842 ₫ - 1.447.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hotel Công Tử Bạc Liêu ở Ap Da Bac, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 54/87. Giá: 1.236.842 ₫ - 1.447.368 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.72248,
+                9.28358
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34099536",
+        "title": "Nha Khach Van Thanh",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "55/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "342.105 ₫ - 473.684 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nha Khach Van Thanh ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 55/87. Giá: 342.105 ₫ - 473.684 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/32/54/0b/da/nha-khach-v-n-thanh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.15263,
+                9.170345
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7249408",
+        "title": "Phuong Nam Hotel",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "56/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phuong Nam Hotel ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 56/87.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/c8/90/c5/phuong-nam-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.14819,
+                9.183034
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33679421",
+        "title": "Nhà Khách 369",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "57/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "263.158 ₫ - 421.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Khách 369 ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 57/87. Giá: 263.158 ₫ - 421.053 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/31/69/b8/9c/nha-khach-369.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.12994,
+                9.192132
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17693038",
+        "title": "Hoang Thien",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "58/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hoang Thien ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 58/87.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/18/2c/98/8e/3945765.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.14701,
+                9.18106
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23282840",
+        "title": "Khach san Anh Trang",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "59/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khach san Anh Trang ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 59/87.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.17323,
+                9.175344
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25197242",
+        "title": "Khanh Nhi Motel",
+        "city": "Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong",
+        "totalScore": 0,
+        "ranking": "60/87",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "289.474 ₫ - 368.421 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khanh Nhi Motel ở Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 60/87. Giá: 289.474 ₫ - 368.421 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/30/20/6a/19/motel-khanh-nhi.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.15981,
+                9.177865
+            ]
+        },
+        "openingHours": null
+    }
+]

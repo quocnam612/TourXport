@@ -1,0 +1,1784 @@
+[
+    {
+        "sourceLocationId": "28162784",
+        "title": "Huynh Đệ Quán",
+        "city": "Hà Tĩnh",
+        "totalScore": 5.0,
+        "ranking": "1/9",
+        "reviewsCount": 6,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "HUYNH ĐỆ QUÁN - số 69 Quang Trung Hà Tĩnh * Cách Trung tâm thành phố chỉ khoảng 1,5km di chuyển * Không gian xanh 2 Tầng và Thoáng đảng, cùng với các dịch vụ PHÒNG VIP ăn uống hát Karaoke, Tầng 2 ẩm thực Lẩu Nướng, Vỉa Hè nhậu bình dân .sẽ mang đến không khí thoải mái cho khách hàng sau những ngày làm việc căng thẳng * Với hệ thống phòng VIP trang thiết bị âm thanh ánh sáng karaoke đầy đủ. Sức chứa lên tới 30 người Tầng 2 cực rộng rãi, sức chứa lên đến hơn 100 người * Đội ngũ nhân viên tận tâm,nhiệt tình, vui vẻ, hoà đồng Hotline để đặt bàn và được hỗ trợ tư vấn : 0962 113 145",
+        "embedding": null,
+        "searchText": "Huynh Đệ Quán ở Hà Tĩnh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: HUYNH ĐỆ QUÁN - số 69 Quang Trung Hà Tĩnh * Cách Trung tâm thành phố chỉ khoảng 1,5km di chuyển * Không gian xanh 2 Tầng và Thoáng đảng, cùng với các dịch vụ PHÒNG VIP ăn uống hát Karaoke, Tầng 2 ẩm thực Lẩu Nướng, Vỉa Hè nhậu bình dân .sẽ mang đến không khí thoải mái cho khách hàng sau những ngày làm việc căng thẳng * Với hệ thống phòng VIP trang thiết bị âm thanh ánh sáng karaoke đầy đủ. Sức chứa lên tới 30 người Tầng 2 cực rộng rãi, sức chứa lên đến hơn 100 người * Đội ngũ nhân viên tận tâm,nhiệt tình, vui vẻ, hoà đồng Hotline để đặt bàn và được hỗ trợ tư vấn : 0962 113 145 Đánh giá: 5.0/5 từ 6 lượt review. Xếp hạng: 1/9.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/93/2a/bf/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.897766,
+                18.361992
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21160151",
+        "title": "Nhà Hàng Corona",
+        "city": "Hà Tĩnh",
+        "totalScore": 5.0,
+        "ranking": "2/9",
+        "reviewsCount": 6,
+        "category": "Ngồi xuống",
+        "priceRange": "1.315.789.440 ₫ - 2.147.483.647 ₫",
+        "description": "Nhà hàng CORONA phục vụ: -Cơm trưa, cơm đoàn, cơm gia đình. -Phòng lạnh riêng. -Bia tươi sân thượng. -Đồ nướng và lẩu. -Tổ chức tiệc, Các món mang hương vị vùng miền và tươi ngon. phong cách phục vụ tận tình, chu đáo.",
+        "embedding": null,
+        "searchText": "Nhà Hàng Corona ở Hà Tĩnh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà hàng CORONA phục vụ: -Cơm trưa, cơm đoàn, cơm gia đình. -Phòng lạnh riêng. -Bia tươi sân thượng. -Đồ nướng và lẩu. -Tổ chức tiệc, Các món mang hương vị vùng miền và tươi ngon. phong cách phục vụ tận tình, chu đáo. Đánh giá: 5.0/5 từ 6 lượt review. Xếp hạng: 2/9. Giá: 1.315.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/b5/da/91/nha-hang-corona.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.88577,
+                18.330862
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "11826873",
+        "title": "Nhà Tôi Restaurant",
+        "city": "Hà Tĩnh",
+        "totalScore": 4.8,
+        "ranking": "3/9",
+        "reviewsCount": 5,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Tôi Restaurant ở Hà Tĩnh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.8/5 từ 5 lượt review. Xếp hạng: 3/9.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/9f/ed/bb/nha-toi-luc-nao-cung.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.89063,
+                18.338799
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9751156",
+        "title": "Milano Pizza",
+        "city": "Kỳ Anh",
+        "totalScore": 4.4,
+        "ranking": "4/9",
+        "reviewsCount": 7,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "52.632 ₫ - 526.316 ₫",
+        "description": "Milano pizza là tiệm bánh với quy mô nhỏ ,với phong cách trang trí nhẹ , ấm cúng. là điểm đến cho tất cả mọi người. chúng tôi chuyên phục vụ những món ăn âu : gồm pizza ,spagheti , hamburger, salad, griled couse ... . với giá cực kỳ hấp dẫn. chúng tôi rất hân hạnh được phục vụ quý khách hàng !",
+        "embedding": null,
+        "searchText": "Milano Pizza ở Kỳ Anh. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Mô tả: Milano pizza là tiệm bánh với quy mô nhỏ ,với phong cách trang trí nhẹ , ấm cúng. là điểm đến cho tất cả mọi người. chúng tôi chuyên phục vụ những món ăn âu : gồm pizza ,spagheti , hamburger, salad, griled couse ... . với giá cực kỳ hấp dẫn. chúng tôi rất hân hạnh được phục vụ quý khách hàng ! Đánh giá: 4.4/5 từ 7 lượt review. Xếp hạng: 4/9. Giá: 52.632 ₫ - 526.316 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/01/9b/83/milano-pizza.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.410645,
+                18.020123
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15016410",
+        "title": "Hoa Ori",
+        "city": "Hà Tĩnh",
+        "totalScore": 4.6,
+        "ranking": "5/9",
+        "reviewsCount": 5,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hoa Ori ở Hà Tĩnh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.6/5 từ 5 lượt review. Xếp hạng: 5/9.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/14/41/48/85/pizza-chicago.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.90933,
+                18.346523
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33019095",
+        "title": "Bún Chả Hợp Thành",
+        "city": "Hà Tĩnh",
+        "totalScore": 5.0,
+        "ranking": "6/9",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": "789.473.664 ₫ - 1.315.789.440 ₫",
+        "description": "Bún Chả Hợp Thành là quán ăn gia đình lâu năm tại Hà Tĩnh, có hơn 15 năm kinh doanh tại 36 Nguyễn Khắc Viện, nay đã chuyển về địa chỉ mới: 21 La Sơn Phu Tử, TP Hà Tĩnh, Việt Nam. Quán chuyên phục vụ bún chả nướng hương vị truyền thống, chú trọng chất lượng món ăn, vệ sinh và phong cách phục vụ thân thiện.",
+        "embedding": null,
+        "searchText": "Bún Chả Hợp Thành ở Hà Tĩnh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Bún Chả Hợp Thành là quán ăn gia đình lâu năm tại Hà Tĩnh, có hơn 15 năm kinh doanh tại 36 Nguyễn Khắc Viện, nay đã chuyển về địa chỉ mới: 21 La Sơn Phu Tử, TP Hà Tĩnh, Việt Nam. Quán chuyên phục vụ bún chả nướng hương vị truyền thống, chú trọng chất lượng món ăn, vệ sinh và phong cách phục vụ thân thiện. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 6/9. Giá: 789.473.664 ₫ - 1.315.789.440 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/7e/b4/95/bo-ng-da-nhi.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.8925,
+                18.34676
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33342043",
+        "title": "Nhà Hàng Cao Nguyên Đồng Văn",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "35/52",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Cao Nguyên Đồng Văn ở Hà Giang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 35/52.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/8f/c4/b7/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.89818,
+                18.34253
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17637201",
+        "title": "Nhà hàng Fusion",
+        "city": "Hà Tĩnh",
+        "totalScore": 5.0,
+        "ranking": "7/9",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "78.947 ₫ - 2.147.483.647 ₫",
+        "description": "\" Nhà hàng Fusion phục vụ điểm tâm sáng , Alacarte với hơn 70 món ăn đặc sắc từ các nền văn hóa khác nhau trên toàn thế giới . Kèm theo đó là những món ăn của địa phương .Quý khách cũng sẽ hài lòng với nhân viên phục vụ chuyên nghiệp và thân thiện.",
+        "embedding": null,
+        "searchText": "Nhà hàng Fusion ở Hà Tĩnh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: \" Nhà hàng Fusion phục vụ điểm tâm sáng , Alacarte với hơn 70 món ăn đặc sắc từ các nền văn hóa khác nhau trên toàn thế giới . Kèm theo đó là những món ăn của địa phương .Quý khách cũng sẽ hài lòng với nhân viên phục vụ chuyên nghiệp và thân thiện. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 7/9. Giá: 78.947 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/19/cb/d9/tr-i-nghi-m-v-i-nha-hangf.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.89525,
+                18.336918
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17637291",
+        "title": "Skyview Bar",
+        "city": "Hà Tĩnh",
+        "totalScore": 4.0,
+        "ranking": "8/9",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "1.052.631.552 ₫",
+        "description": "Skyview là một nơi tuyệt vời để tận hưởng trọn vẹn của vẻ đẹp thành phố ,để ngắm nhìn những chân trời bình minh và hàng triệu ánh đèn vào ban đêm . Đến đây quý khách có thể thưởng thức các loại đồ uống cực kỳ hấp đẫn được pha chế bởi những bartender chuyên nghiệp .\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\nSkyview là một nơi tuyệt vời để tận hưởng trọn vẹn của\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n          ",
+        "embedding": null,
+        "searchText": "Skyview Bar ở Hà Tĩnh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Skyview là một nơi tuyệt vời để tận hưởng trọn vẹn của vẻ đẹp thành phố ,để ngắm nhìn những chân trời bình minh và hàng triệu ánh đèn vào ban đêm . Đến đây quý khách có thể thưởng thức các loại đồ uống cực kỳ hấp đẫn được pha chế bởi những bartender chuyên nghiệp .\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\nSkyview là một nơi tuyệt vời để tận hưởng trọn vẹn của\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n           Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 8/9. Giá: 1.052.631.552 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/19/ce/4e/di-m-d-n-v-i-sky-bar.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.89708,
+                18.33662
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33412509",
+        "title": "Corner Cuisine _ Restaurant",
+        "city": "Lào Cai",
+        "totalScore": 5.0,
+        "ranking": "14/39",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Corner Cuisine _ Restaurant ở Lào Cai. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 14/39.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/dd/c2/04/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.878586,
+                18.334864
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17550328",
+        "title": "Nha Hang Quang Dai Duong",
+        "city": "Hà Tĩnh",
+        "totalScore": 3.5,
+        "ranking": "9/9",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nha Hang Quang Dai Duong ở Hà Tĩnh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.5/5 từ 2 lượt review. Xếp hạng: 9/9.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.89592,
+                18.338724
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33295900",
+        "title": "Huyền Trà",
+        "city": "Duc Tho",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Huyền Trà ở Duc Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.54106,
+                21.105562
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33296313",
+        "title": "Bún Bò Huế O Hoài",
+        "city": "Duc Tho",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bún Bò Huế O Hoài ở Duc Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.54069,
+                21.105688
+            ]
+        },
+        "openingHours": {
+            "display": "05:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33296265",
+        "title": "Ốc Ba Hoa",
+        "city": "Duc Tho",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ốc Ba Hoa ở Duc Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.55469,
+                21.141312
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33295797",
+        "title": "Nhà Hàng Mạnh Hoàng Minh",
+        "city": "Duc Tho",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Mạnh Hoàng Minh ở Duc Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.58719,
+                21.091436
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33295838",
+        "title": "Nhà Hàng Tre Mộc",
+        "city": "Duc Tho",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Tre Mộc ở Duc Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.71556,
+                21.001062
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25284146",
+        "title": "Nhật Nam Cafe",
+        "city": "Thiên Cầm",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhật Nam Cafe ở Thiên Cầm. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.0843,
+                18.272064
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-13:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 780
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 780
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 780
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 780
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 780
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 780
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 780
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19408722",
+        "title": "Ốc Đêm Sài Gòn",
+        "city": "Kỳ Anh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ốc Đêm Sài Gòn ở Kỳ Anh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33738806",
+        "title": "Trung nguyên E- Coffee",
+        "city": "Hà Tĩnh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trung nguyên E- Coffee ở Hà Tĩnh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.895615,
+                18.33402
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-22:15",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1335
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1335
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1335
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1335
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1335
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1335
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1335
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25549999",
+        "title": "Cape Nao Beach Club",
+        "city": "Hà Tĩnh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cape Nao Beach Club ở Hà Tĩnh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.881874,
+                18.512094
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27457319",
+        "title": "Shaney Station",
+        "city": "Hà Tĩnh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Shaney Station ở Hà Tĩnh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.9,
+                18.33333
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "18114641",
+        "title": "Nhà Hàng Quang Thọ 3",
+        "city": "Hà Tĩnh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Quang Thọ 3 ở Hà Tĩnh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.88726,
+                18.34663
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33738826",
+        "title": "Trung nguyen E coffee",
+        "city": "Hà Tĩnh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trung nguyen E coffee ở Hà Tĩnh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.89215,
+                18.335747
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-22:15",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1335
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1335
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1335
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1335
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1335
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1335
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1335
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "18189484",
+        "title": "Nha Hang Quang Tho 3",
+        "city": "Hà Tĩnh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nha Hang Quang Tho 3 ở Hà Tĩnh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.024765,
+                18.30538
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17849461",
+        "title": "Kkum Kkum BBQ",
+        "city": "Hà Tĩnh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kkum Kkum BBQ ở Hà Tĩnh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.8989,
+                18.349142
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25241292",
+        "title": "Tan Thuy Son Tay Huong Son Ha Tinh",
+        "city": "Hà Tĩnh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tan Thuy Son Tay Huong Son Ha Tinh ở Hà Tĩnh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.2663,
+                18.5118
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33070264",
+        "title": "Bún Đậu Cậu Út",
+        "city": "Hà Tĩnh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bún Đậu Cậu Út ở Hà Tĩnh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.888664,
+                18.34008
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-13:30, 16:30-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14982696",
+        "title": "Quán Chay Nhân Duyên",
+        "city": "Hà Tĩnh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Chay Nhân Duyên ở Hà Tĩnh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.90261,
+                18.337934
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19055865",
+        "title": "Budo Steak",
+        "city": "Hà Tĩnh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "657.894.720 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Budo Steak ở Hà Tĩnh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 657.894.720 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/19/79/48/89/the-best-beef-steak-in.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.886856,
+                18.339258
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-13:00, 16:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26867890",
+        "title": "Zenith Bar",
+        "city": "Hà Tĩnh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Zenith Bar ở Hà Tĩnh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.89526,
+                18.337227
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33296360",
+        "title": "The Cozy",
+        "city": "Phuong Dien",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Cozy ở Phuong Dien. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.67094,
+                21.082438
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14098213",
+        "title": "Mộc 81 Coffee & Tea",
+        "city": "Phuong Dien",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Quán cafe",
+        "priceRange": "394.736.832 ₫ - 1.447.368.448 ₫",
+        "description": "Cà phê pha máy. Trà sữa trân châu. Smoothies, sinh tố truyền thống. Đồ uống đá xay....vv.",
+        "embedding": null,
+        "searchText": "Mộc 81 Coffee & Tea ở Phuong Dien. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Mô tả: Cà phê pha máy. Trà sữa trân châu. Smoothies, sinh tố truyền thống. Đồ uống đá xay....vv. Giá: 394.736.832 ₫ - 1.447.368.448 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.62368,
+                18.29424
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33295713",
+        "title": "Phở Cồ",
+        "city": "Phuong Dien",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phở Cồ ở Phuong Dien. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.67781,
+                21.081688
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33295447",
+        "title": "Chất - Tây Bắc Hương Vị Quán",
+        "city": "Phuong Dien",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chất - Tây Bắc Hương Vị Quán ở Phuong Dien. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.69931,
+                21.075188
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1410
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33296193",
+        "title": "Xiên Nướng Tây Bắc",
+        "city": "Phuong Dien",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Xiên Nướng Tây Bắc ở Phuong Dien. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.700066,
+                21.075687
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33296192",
+        "title": "Halloween Chicken",
+        "city": "Phuong Dien",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Halloween Chicken ở Phuong Dien. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.701935,
+                21.073687
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33296191",
+        "title": "Seoul Boss Đan Phượng",
+        "city": "Phuong Dien",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Seoul Boss Đan Phượng ở Phuong Dien. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.70181,
+                21.075687
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33295563",
+        "title": "Phở Cồ Gia Truyền",
+        "city": "Phuong Dien",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phở Cồ Gia Truyền ở Phuong Dien. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.646935,
+                21.118938
+            ]
+        },
+        "openingHours": null
+    }
+]

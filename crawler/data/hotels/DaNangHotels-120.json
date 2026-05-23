@@ -1,0 +1,3482 @@
+[
+    {
+        "sourceLocationId": "20100319",
+        "title": "Shilla Monogram Danang",
+        "city": "Đà Nẵng",
+        "totalScore": 5.0,
+        "ranking": "1/3419",
+        "reviewsCount": 1607,
+        "category": "Khách sạn",
+        "priceRange": "3.263.158 ₫ - 5.368.421 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Shilla Monogram Danang ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 1607 lượt review. Xếp hạng: 1/3419. Giá: 3.263.158 ₫ - 5.368.421 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/12/de/87/adult-pool.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.28898,
+                15.962902
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24102969",
+        "title": "Cozy Danang Boutique Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 5.0,
+        "ranking": "2/3419",
+        "reviewsCount": 3350,
+        "category": "Khách sạn",
+        "priceRange": "1.236.842 ₫ - 1.868.421 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Cozy Danang Boutique Hotel ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 3350 lượt review. Xếp hạng: 2/3419. Giá: 1.236.842 ₫ - 1.868.421 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/26/cf/db/a1/cozy-danang-boutique.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.221756,
+                16.061607
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23915429",
+        "title": "Le Sands Oceanfront Danang Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 5.0,
+        "ranking": "3/3419",
+        "reviewsCount": 1916,
+        "category": "Khách sạn",
+        "priceRange": "1.789.474 ₫ - 11.157.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Le Sands Oceanfront Danang Hotel ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 1916 lượt review. Xếp hạng: 3/3419. Giá: 1.789.474 ₫ - 11.157.895 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/24/35/00/fd/le-sands-oceanfront-danang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24821,
+                16.085749
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12645634",
+        "title": "Parosand Danang Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "4/3419",
+        "reviewsCount": 5301,
+        "category": "Khách sạn",
+        "priceRange": "1.236.842 ₫ - 3.157.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Parosand Danang Hotel ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 5301 lượt review. Xếp hạng: 4/3419. Giá: 1.236.842 ₫ - 3.157.895 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/b7/48/33/infinity-swimming-pool.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.2452,
+                16.06762
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21015072",
+        "title": "Golden Lotus Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 5.0,
+        "ranking": "5/3419",
+        "reviewsCount": 1026,
+        "category": "Khách sạn",
+        "priceRange": "1.078.947 ₫ - 2.921.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Golden Lotus Hotel ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 1026 lượt review. Xếp hạng: 5/3419. Giá: 1.078.947 ₫ - 2.921.053 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/3e/50/dc/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24663,
+                16.05353
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12458667",
+        "title": "Mandila Beach Hotel Danang",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "6/3419",
+        "reviewsCount": 2030,
+        "category": "Khách sạn",
+        "priceRange": "1.263.158 ₫ - 3.605.263 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Mandila Beach Hotel Danang ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 2030 lượt review. Xếp hạng: 6/3419. Giá: 1.263.158 ₫ - 3.605.263 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/ec/1f/13/infinity-pool.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.244865,
+                16.06746
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20063843",
+        "title": "HAIAN Riverfront Hotel Danang",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "7/3419",
+        "reviewsCount": 1973,
+        "category": "Khách sạn",
+        "priceRange": "1.052.632 ₫ - 2.342.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "HAIAN Riverfront Hotel Danang ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 1973 lượt review. Xếp hạng: 7/3419. Giá: 1.052.632 ₫ - 2.342.105 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/19/91/7f/haian-riverfront-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.22443,
+                16.06619
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13297744",
+        "title": "Nhu Minh Plaza Danang Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 5.0,
+        "ranking": "8/3419",
+        "reviewsCount": 1380,
+        "category": "Khách sạn",
+        "priceRange": "736.842 ₫ - 3.789.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhu Minh Plaza Danang Hotel ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 1380 lượt review. Xếp hạng: 8/3419. Giá: 736.842 ₫ - 3.789.474 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/14/c5/ea/ba/swimming-pool.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.238434,
+                16.069696
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "302750",
+        "title": "Furama Resort Danang",
+        "city": "Đà Nẵng",
+        "totalScore": 4.7,
+        "ranking": "9/3419",
+        "reviewsCount": 7092,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "3.105.263 ₫ - 7.947.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Furama Resort Danang ở Đà Nẵng. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.7/5 từ 7092 lượt review. Xếp hạng: 9/3419. Giá: 3.105.263 ₫ - 7.947.368 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/af/a1/f4/beach-leisure.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.25107,
+                16.039944
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6434836",
+        "title": "Doha Central Bliss Danang Hotel By Haviland",
+        "city": "Đà Nẵng",
+        "totalScore": 5.0,
+        "ranking": "10/3419",
+        "reviewsCount": 260,
+        "category": "Khách sạn",
+        "priceRange": "447.368 ₫ - 1.236.842 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Doha Central Bliss Danang Hotel By Haviland ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 260 lượt review. Xếp hạng: 10/3419. Giá: 447.368 ₫ - 1.236.842 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/9e/e6/5b/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.214,
+                16.06015
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12832158",
+        "title": "Monarque Hotel",
+        "city": "Phuoc My, Son Tra Peninsula, Đà Nẵng",
+        "totalScore": 5.0,
+        "ranking": "11/3419",
+        "reviewsCount": 3772,
+        "category": "Khách sạn",
+        "priceRange": "1.289.474 ₫ - 3.657.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Monarque Hotel ở Phuoc My, Son Tra Peninsula, Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 3772 lượt review. Xếp hạng: 11/3419. Giá: 1.289.474 ₫ - 3.657.895 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/c2/3b/f1/swimming-pool.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24515,
+                16.066126
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13084590",
+        "title": "New Orient Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "12/3419",
+        "reviewsCount": 2024,
+        "category": "Khách sạn",
+        "priceRange": "1.000.000 ₫ - 2.578.947 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "New Orient Hotel ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 2024 lượt review. Xếp hạng: 12/3419. Giá: 1.000.000 ₫ - 2.578.947 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/ef/78/ac/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.221214,
+                16.082575
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12404186",
+        "title": "Furama Villas Danang",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "13/3419",
+        "reviewsCount": 1824,
+        "category": "Khách sạn",
+        "priceRange": "7.500.000 ₫ - 13.684.211 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Furama Villas Danang ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 1824 lượt review. Xếp hạng: 13/3419. Giá: 7.500.000 ₫ - 13.684.211 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/8c/7f/d3/birdview.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.25117,
+                16.037031
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25973130",
+        "title": "Golden Lotus Luxury Hotel",
+        "city": "Ngu Hanh Son, Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "14/3419",
+        "reviewsCount": 1550,
+        "category": "Khách sạn",
+        "priceRange": "1.236.842 ₫ - 2.526.316 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Golden Lotus Luxury Hotel ở Ngu Hanh Son, Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 1550 lượt review. Xếp hạng: 14/3419. Giá: 1.236.842 ₫ - 2.526.316 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/89/f5/50/golden-lotus-luxury-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24662,
+                16.0525
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24073544",
+        "title": "Nesta Hotel - Đà Nẵng",
+        "city": "My An, Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "15/3419",
+        "reviewsCount": 1039,
+        "category": "Khách sạn",
+        "priceRange": "1.236.842 ₫ - 3.500.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nesta Hotel - Đà Nẵng ở My An, Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 1039 lượt review. Xếp hạng: 15/3419. Giá: 1.236.842 ₫ - 3.500.000 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/23/85/d8/99/overview.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.247025,
+                16.054115
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26554265",
+        "title": "Awaken Danang Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "16/3419",
+        "reviewsCount": 1170,
+        "category": "Khách sạn",
+        "priceRange": "1.631.579 ₫ - 2.868.421 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Awaken Danang Hotel ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 1170 lượt review. Xếp hạng: 16/3419. Giá: 1.631.579 ₫ - 2.868.421 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/13/48/45/executive-ocean-front.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24483,
+                16.075691
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16891462",
+        "title": "Sala Danang Beach Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "17/3419",
+        "reviewsCount": 3131,
+        "category": "Khách sạn",
+        "priceRange": "1.342.105 ₫ - 3.763.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Sala Danang Beach Hotel ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 3131 lượt review. Xếp hạng: 17/3419. Giá: 1.342.105 ₫ - 3.763.158 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/e8/37/9b/infinity-pool-at-25th.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.2452,
+                16.062225
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25463081",
+        "title": "Estrella Boutique Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "18/3419",
+        "reviewsCount": 782,
+        "category": "Khách sạn",
+        "priceRange": "868.421 ₫ - 2.000.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Estrella Boutique Hotel ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 782 lượt review. Xếp hạng: 18/3419. Giá: 868.421 ₫ - 2.000.000 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/29/5c/d9/a0/estrella-boutique-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.240974,
+                16.054918
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16828636",
+        "title": "Khách sạn & Spa Salmalia Boutique",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "19/3419",
+        "reviewsCount": 528,
+        "category": "Khách sạn",
+        "priceRange": "1.342.105 ₫ - 4.157.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn & Spa Salmalia Boutique ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 528 lượt review. Xếp hạng: 19/3419. Giá: 1.342.105 ₫ - 4.157.895 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/97/34/cb/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24541,
+                16.060814
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1732187",
+        "title": "Pullman Danang Beach Resort",
+        "city": "Đà Nẵng",
+        "totalScore": 4.7,
+        "ranking": "20/3419",
+        "reviewsCount": 3517,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "4.210.526 ₫ - 10.552.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Pullman Danang Beach Resort ở Đà Nẵng. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.7/5 từ 3517 lượt review. Xếp hạng: 20/3419. Giá: 4.210.526 ₫ - 10.552.632 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/33/4d/52/34/exterior.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.250084,
+                16.040554
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "2368744",
+        "title": "Intercontinental Danang Sun Peninsula Resort by IHG",
+        "city": "Son Tra Peninsula, Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "21/3419",
+        "reviewsCount": 7655,
+        "category": "Khách sạn",
+        "priceRange": "12.947.368 ₫ - 28.684.212 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Intercontinental Danang Sun Peninsula Resort by IHG ở Son Tra Peninsula, Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 7655 lượt review. Xếp hạng: 21/3419. Giá: 12.947.368 ₫ - 28.684.212 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/f1/75/ed/bai-bac-bay-villa-aerial.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.30681,
+                16.12099
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27775804",
+        "title": "Fusion Resort & Villas Da Nang - Wellness Inclusive",
+        "city": "Hoa Hai, Đà Nẵng",
+        "totalScore": 5.0,
+        "ranking": "22/3419",
+        "reviewsCount": 403,
+        "category": "Khách sạn",
+        "priceRange": "4.526.316 ₫ - 16.947.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Fusion Resort & Villas Da Nang - Wellness Inclusive ở Hoa Hai, Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 403 lượt review. Xếp hạng: 22/3419. Giá: 4.526.316 ₫ - 16.947.368 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/31/53/48/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.282394,
+                15.972477
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32900788",
+        "title": "PHUC LONG LUXURY Da nang",
+        "city": "An Hai, Son Tra Peninsula, Đà Nẵng",
+        "totalScore": 5.0,
+        "ranking": "23/3419",
+        "reviewsCount": 321,
+        "category": "Khách sạn",
+        "priceRange": "1.052.632 ₫ - 2.947.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "PHUC LONG LUXURY Da nang ở An Hai, Son Tra Peninsula, Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 321 lượt review. Xếp hạng: 23/3419. Giá: 1.052.632 ₫ - 2.947.368 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/d1/d4/85/khach-s-n-phuc-long-luxury.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24501,
+                16.065582
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7787047",
+        "title": "Diamond Sea Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 4.7,
+        "ranking": "24/3419",
+        "reviewsCount": 2575,
+        "category": "Khách sạn",
+        "priceRange": "1.210.526 ₫ - 4.789.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Diamond Sea Hotel ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.7/5 từ 2575 lượt review. Xếp hạng: 24/3419. Giá: 1.210.526 ₫ - 4.789.474 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/47/3a/f6/diamond-sea-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24506,
+                16.06647
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9874032",
+        "title": "Serene Beach Hotel Danang",
+        "city": "Ngu Hanh Son, Đà Nẵng",
+        "totalScore": 5.0,
+        "ranking": "25/3419",
+        "reviewsCount": 1186,
+        "category": "Khách sạn",
+        "priceRange": "8.236.842 ₫ - 9.763.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Serene Beach Hotel Danang ở Ngu Hanh Son, Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 1186 lượt review. Xếp hạng: 25/3419. Giá: 8.236.842 ₫ - 9.763.158 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/f7/e7/c1/outdoor-pool-with-panoramic.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24767,
+                16.053497
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19935841",
+        "title": "Santa Luxury Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "26/3419",
+        "reviewsCount": 1098,
+        "category": "Khách sạn",
+        "priceRange": "973.684 ₫ - 2.236.842 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Santa Luxury Hotel ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 1098 lượt review. Xếp hạng: 26/3419. Giá: 973.684 ₫ - 2.236.842 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/26/f9/59/6a/santa-luxury-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24676,
+                16.051777
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23848924",
+        "title": "Bliss Hoi An Beach Resort & Wellness",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "27/3419",
+        "reviewsCount": 1076,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "2.236.842 ₫ - 4.000.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Bliss Hoi An Beach Resort & Wellness ở Đà Nẵng. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.9/5 từ 1076 lượt review. Xếp hạng: 27/3419. Giá: 2.236.842 ₫ - 4.000.000 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/29/76/61/4f/bliss-hoi-an-beach-resort.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.42949,
+                15.778858
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9702684",
+        "title": "Hadana Boutique Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "28/3419",
+        "reviewsCount": 2295,
+        "category": "Khách sạn",
+        "priceRange": "789.474 ₫ - 1.815.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hadana Boutique Hotel ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 2295 lượt review. Xếp hạng: 28/3419. Giá: 789.474 ₫ - 1.815.789 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/27/56/95/af/khach-s-n-hadana-boutique.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.23547,
+                16.071444
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17324749",
+        "title": "Stella Maris Beach Đà Nẵng",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "29/3419",
+        "reviewsCount": 2876,
+        "category": "Khách sạn",
+        "priceRange": "1.421.053 ₫ - 2.789.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Stella Maris Beach Đà Nẵng ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 2876 lượt review. Xếp hạng: 29/3419. Giá: 1.421.053 ₫ - 2.789.474 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/29/aa/f2/4d/stella-maris-beach-danang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.244896,
+                16.063501
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12919657",
+        "title": "Hilton Da Nang",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "30/3419",
+        "reviewsCount": 3484,
+        "category": "Khách sạn",
+        "priceRange": "2.131.579 ₫ - 3.842.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hilton Da Nang ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 3484 lượt review. Xếp hạng: 30/3419. Giá: 2.131.579 ₫ - 3.842.105 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/db/04/09/restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.22429,
+                16.072672
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6161470",
+        "title": "Fivitel Boutique Da Nang",
+        "city": "Đà Nẵng",
+        "totalScore": 4.5,
+        "ranking": "121/3419",
+        "reviewsCount": 418,
+        "category": "Khách sạn",
+        "priceRange": "815.789 ₫ - 2.000.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Fivitel Boutique Da Nang ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.5/5 từ 418 lượt review. Xếp hạng: 121/3419. Giá: 815.789 ₫ - 2.000.000 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/f6/ad/4e/fivitel-boutique-da-nang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.22054,
+                16.064295
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14800987",
+        "title": "Aria Grand Da Nang Hotel & Spa",
+        "city": "Đà Nẵng",
+        "totalScore": 4.8,
+        "ranking": "122/3419",
+        "reviewsCount": 163,
+        "category": "Khách sạn",
+        "priceRange": "921.053 ₫ - 2.684.211 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Aria Grand Da Nang Hotel & Spa ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 163 lượt review. Xếp hạng: 122/3419. Giá: 921.053 ₫ - 2.684.211 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/29/90/fc/66/khach-s-n-aria-grand.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.2448,
+                16.052206
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28663070",
+        "title": "Signature By M Village Đà Nẵng Heritage",
+        "city": "Đà Nẵng",
+        "totalScore": 5.0,
+        "ranking": "123/3419",
+        "reviewsCount": 53,
+        "category": "Khách sạn",
+        "priceRange": "973.684 ₫ - 2.947.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Signature By M Village Đà Nẵng Heritage ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 53 lượt review. Xếp hạng: 123/3419. Giá: 973.684 ₫ - 2.947.368 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/5a/f5/08/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.22129,
+                16.080345
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "589319",
+        "title": "Sandy Beach Non Nuoc Resort",
+        "city": "Đà Nẵng",
+        "totalScore": 4.1,
+        "ranking": "124/3419",
+        "reviewsCount": 1366,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "868.421 ₫ - 2.447.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Sandy Beach Non Nuoc Resort ở Đà Nẵng. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.1/5 từ 1366 lượt review. Xếp hạng: 124/3419. Giá: 868.421 ₫ - 2.447.368 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/7d/f8/5c/centara-sandy-beach-resort.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.2713,
+                15.998307
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7374825",
+        "title": "Khách sạn Night Sky",
+        "city": "Đà Nẵng",
+        "totalScore": 4.6,
+        "ranking": "125/3419",
+        "reviewsCount": 326,
+        "category": "Khách sạn",
+        "priceRange": "394.737 ₫ - 552.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Night Sky ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 326 lượt review. Xếp hạng: 125/3419. Giá: 394.737 ₫ - 552.632 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/73/70/ef/night-sky-restaurant--v12852349.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.21945,
+                16.088682
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34043139",
+        "title": "Khách sạn Prince Đà Nẵng",
+        "city": "Đà Nẵng",
+        "totalScore": 4.8,
+        "ranking": "126/3419",
+        "reviewsCount": 58,
+        "category": "Khách sạn",
+        "priceRange": "2.210.526 ₫ - 3.289.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Prince Đà Nẵng ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 58 lượt review. Xếp hạng: 126/3419. Giá: 2.210.526 ₫ - 3.289.474 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/2c/22/fd/superior-city-view.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24675,
+                16.080597
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27122159",
+        "title": "Khách sạn Palazzo Boutique",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "127/3419",
+        "reviewsCount": 61,
+        "category": "Khách sạn",
+        "priceRange": "684.211 ₫ - 1.578.947 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Palazzo Boutique ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 61 lượt review. Xếp hạng: 127/3419. Giá: 684.211 ₫ - 1.578.947 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/31/36/a2/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24777,
+                16.049204
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8431339",
+        "title": "Cicilia Hotels & Spa",
+        "city": "My An, Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "128/3419",
+        "reviewsCount": 1229,
+        "category": "Khách sạn",
+        "priceRange": "1.289.474 ₫ - 4.184.211 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Cicilia Hotels & Spa ở My An, Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 1229 lượt review. Xếp hạng: 128/3419. Giá: 1.289.474 ₫ - 4.184.211 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/75/93/08/rooftop-pool-19th-floor.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.246704,
+                16.0521
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8544487",
+        "title": "Avatar Hotel Da Nang",
+        "city": "Đà Nẵng",
+        "totalScore": 4.8,
+        "ranking": "129/3419",
+        "reviewsCount": 1187,
+        "category": "Khách sạn",
+        "priceRange": "921.053 ₫ - 2.921.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Avatar Hotel Da Nang ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 1187 lượt review. Xếp hạng: 129/3419. Giá: 921.053 ₫ - 2.921.053 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/3a/e1/71/avatar-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24698,
+                16.04965
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23169144",
+        "title": "Khách sạn Radisson Đà Nẵng",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "130/3419",
+        "reviewsCount": 1721,
+        "category": "Khách sạn",
+        "priceRange": "2.289.474 ₫ - 3.736.842 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Radisson Đà Nẵng ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 1721 lượt review. Xếp hạng: 130/3419. Giá: 2.289.474 ₫ - 3.736.842 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/33/4a/f0/92/entrance.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24463,
+                16.07395
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7787334",
+        "title": "Khách sạn Green House",
+        "city": "Đà Nẵng",
+        "totalScore": 4.5,
+        "ranking": "131/3419",
+        "reviewsCount": 279,
+        "category": "Khách sạn",
+        "priceRange": "763.158 ₫ - 1.552.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Green House ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.5/5 từ 279 lượt review. Xếp hạng: 131/3419. Giá: 763.158 ₫ - 1.552.632 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/d2/68/f8/khach-s-n-green-house.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24419,
+                16.065382
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17379315",
+        "title": "The Memory Đà Nẵng",
+        "city": "Đà Nẵng",
+        "totalScore": 4.8,
+        "ranking": "132/3419",
+        "reviewsCount": 124,
+        "category": "Nhà trọ",
+        "priceRange": "1.078.947 ₫ - 1.657.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The Memory Đà Nẵng ở Đà Nẵng. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 4.8/5 từ 124 lượt review. Xếp hạng: 132/3419. Giá: 1.078.947 ₫ - 1.657.895 ₫.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/3c/95/40/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.243225,
+                16.06702
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12970369",
+        "title": "Haka Hotel & Apartment",
+        "city": "Đà Nẵng",
+        "totalScore": 4.8,
+        "ranking": "133/3419",
+        "reviewsCount": 206,
+        "category": "Khách sạn có căn hộ",
+        "priceRange": "526.316 ₫ - 1.184.211 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Haka Hotel & Apartment ở Đà Nẵng. Loại địa điểm: Khách sạn có căn hộ. Tags: Khách sạn có căn hộ. Đánh giá: 4.8/5 từ 206 lượt review. Xếp hạng: 133/3419. Giá: 526.316 ₫ - 1.184.211 ₫.",
+        "tags": [
+            "Khách sạn có căn hộ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/5b/7f/da/exterior.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24457,
+                16.078905
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26531902",
+        "title": "Mercy Emerald Hotel",
+        "city": "Ngu Hanh Son, Đà Nẵng",
+        "totalScore": 4.8,
+        "ranking": "134/3419",
+        "reviewsCount": 100,
+        "category": "Khách sạn",
+        "priceRange": "789.474 ₫ - 2.210.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Mercy Emerald Hotel ở Ngu Hanh Son, Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 100 lượt review. Xếp hạng: 134/3419. Giá: 789.474 ₫ - 2.210.526 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/eb/6b/38/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24527,
+                16.055872
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15142242",
+        "title": "Eden Hotel Danang",
+        "city": "Đà Nẵng",
+        "totalScore": 4.6,
+        "ranking": "135/3419",
+        "reviewsCount": 335,
+        "category": "Khách sạn",
+        "priceRange": "1.157.895 ₫ - 3.947.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Eden Hotel Danang ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 335 lượt review. Xếp hạng: 135/3419. Giá: 1.157.895 ₫ - 3.947.368 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/63/6c/5a/direct-booking-promotion.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24835,
+                16.050957
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14969237",
+        "title": "Seashore Hotel & Apartment",
+        "city": "Man Thai, Son Tra Peninsula, Đà Nẵng",
+        "totalScore": 4.6,
+        "ranking": "136/3419",
+        "reviewsCount": 175,
+        "category": "Khách sạn",
+        "priceRange": "763.158 ₫ - 2.052.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Seashore Hotel & Apartment ở Man Thai, Son Tra Peninsula, Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 175 lượt review. Xếp hạng: 136/3419. Giá: 763.158 ₫ - 2.052.632 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/1c/23/d9/suites-balcony-view.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24927,
+                16.089334
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33104303",
+        "title": "Courtyard by Marriott Danang Han River",
+        "city": "Đà Nẵng",
+        "totalScore": 4.7,
+        "ranking": "137/3419",
+        "reviewsCount": 85,
+        "category": "Khách sạn",
+        "priceRange": "2.263.158 ₫ - 3.631.579 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Courtyard by Marriott Danang Han River ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.7/5 từ 85 lượt review. Xếp hạng: 137/3419. Giá: 2.263.158 ₫ - 3.631.579 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/33/43/b5/49/executive-corner-river.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.22456,
+                16.07253
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12676316",
+        "title": "Central Hotel & Spa",
+        "city": "Đà Nẵng",
+        "totalScore": 4.6,
+        "ranking": "138/3419",
+        "reviewsCount": 220,
+        "category": "Khách sạn",
+        "priceRange": "394.737 ₫ - 1.973.684 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Central Hotel & Spa ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 220 lượt review. Xếp hạng: 138/3419. Giá: 394.737 ₫ - 1.973.684 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/fe/a8/66/central-hotel-spa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.21951,
+                16.065262
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15638266",
+        "title": "Seahorse Han Market Da Nang Hostel by Haviland",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "139/3419",
+        "reviewsCount": 109,
+        "category": "Nhà trọ",
+        "priceRange": "789.474 ₫ - 3.157.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Seahorse Han Market Da Nang Hostel by Haviland ở Đà Nẵng. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 4.9/5 từ 109 lượt review. Xếp hạng: 139/3419. Giá: 789.474 ₫ - 3.157.895 ₫.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/ff/a9/0e/seahorse-hostel-bar-by.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.22459,
+                16.067839
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15521854",
+        "title": "Khách sạn Grand Citiview Đà Nẵng",
+        "city": "Đà Nẵng",
+        "totalScore": 4.8,
+        "ranking": "140/3419",
+        "reviewsCount": 157,
+        "category": "Khách sạn",
+        "priceRange": "763.158 ₫ - 1.842.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Grand Citiview Đà Nẵng ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 157 lượt review. Xếp hạng: 140/3419. Giá: 763.158 ₫ - 1.842.105 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/22/8d/7a/b-boi-swimming-pool.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.223915,
+                16.033367
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13073497",
+        "title": "Halina Hotel and Apartment",
+        "city": "Đà Nẵng",
+        "totalScore": 4.5,
+        "ranking": "141/3419",
+        "reviewsCount": 254,
+        "category": "Khách sạn",
+        "priceRange": "578.947 ₫ - 3.052.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Halina Hotel and Apartment ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.5/5 từ 254 lượt review. Xếp hạng: 141/3419. Giá: 578.947 ₫ - 3.052.632 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/c2/bb/d1/family-apartment-2br.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24668,
+                16.053072
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28116478",
+        "title": "M Village Hotel Da Nang Centre",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "142/3419",
+        "reviewsCount": 50,
+        "category": "Khách sạn",
+        "priceRange": "947.368 ₫ - 2.500.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "M Village Hotel Da Nang Centre ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 50 lượt review. Xếp hạng: 142/3419. Giá: 947.368 ₫ - 2.500.000 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/cf/27/b2/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.223854,
+                16.066422
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "22000058",
+        "title": "Hotel Le Bouton",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "143/3419",
+        "reviewsCount": 43,
+        "category": "Khách sạn",
+        "priceRange": "1.026.316 ₫ - 2.184.211 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hotel Le Bouton ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 43 lượt review. Xếp hạng: 143/3419. Giá: 1.026.316 ₫ - 2.184.211 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/33/29/58/5b/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24347,
+                16.079187
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14120429",
+        "title": "Melia Vinpearl Danang Riverfront",
+        "city": "An Hai Bac, Son Tra Peninsula, Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "144/3419",
+        "reviewsCount": 3405,
+        "category": "Khách sạn",
+        "priceRange": "1.894.737 ₫ - 3.289.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Melia Vinpearl Danang Riverfront ở An Hai Bac, Son Tra Peninsula, Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 3405 lượt review. Xếp hạng: 144/3419. Giá: 1.894.737 ₫ - 3.289.474 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/26/f4/89/4a/pool-bar.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.229485,
+                16.071285
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12391393",
+        "title": "Khách Sạn SEN Boutique",
+        "city": "Đà Nẵng",
+        "totalScore": 4.6,
+        "ranking": "145/3419",
+        "reviewsCount": 244,
+        "category": "Khách sạn",
+        "priceRange": "473.684 ₫ - 763.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn SEN Boutique ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 244 lượt review. Xếp hạng: 145/3419. Giá: 473.684 ₫ - 763.158 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/33/2b/ef/khach-s-n-sen-boutique.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24553,
+                16.055527
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9570796",
+        "title": "Ana Maison Boutique Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 4.4,
+        "ranking": "146/3419",
+        "reviewsCount": 298,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ana Maison Boutique Hotel ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.4/5 từ 298 lượt review. Xếp hạng: 146/3419.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/8e/74/34/ana-maison-hotel-and.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24594,
+                16.055138
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12730279",
+        "title": "Khách sạn Pavilion",
+        "city": "Đà Nẵng",
+        "totalScore": 4.5,
+        "ranking": "147/3419",
+        "reviewsCount": 161,
+        "category": "Khách sạn",
+        "priceRange": "1.052.632 ₫ - 2.921.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Pavilion ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.5/5 từ 161 lượt review. Xếp hạng: 147/3419. Giá: 1.052.632 ₫ - 2.921.053 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/25/3d/99/ab/khach-s-n-pavilion.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24418,
+                16.063442
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12117671",
+        "title": "Khách Sạn Adaline",
+        "city": "Đà Nẵng",
+        "totalScore": 4.4,
+        "ranking": "148/3419",
+        "reviewsCount": 271,
+        "category": "Khách sạn",
+        "priceRange": "684.211 ₫ - 1.763.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn Adaline ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.4/5 từ 271 lượt review. Xếp hạng: 148/3419. Giá: 684.211 ₫ - 1.763.158 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/ee/c9/b9/adaline-hotel-suites.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24368,
+                16.06322
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10627716",
+        "title": "Star City Riverside Hotel By Haviland",
+        "city": "Son Tra Peninsula, Đà Nẵng",
+        "totalScore": 4.5,
+        "ranking": "149/3419",
+        "reviewsCount": 259,
+        "category": "Khách sạn",
+        "priceRange": "394.737 ₫ - 947.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Star City Riverside Hotel By Haviland ở Son Tra Peninsula, Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.5/5 từ 259 lượt review. Xếp hạng: 149/3419. Giá: 394.737 ₫ - 947.368 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/fc/e1/7b/ff.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.22897,
+                16.079323
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1575735",
+        "title": "Khách sạn One Opera Đà Nẵng",
+        "city": "Đà Nẵng",
+        "totalScore": 4.5,
+        "ranking": "150/3419",
+        "reviewsCount": 211,
+        "category": "Khách sạn",
+        "priceRange": "894.737 ₫ - 1.868.421 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn One Opera Đà Nẵng ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.5/5 từ 211 lượt review. Xếp hạng: 150/3419. Giá: 894.737 ₫ - 1.868.421 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/70/d2/e6/one-opera-danang-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.217,
+                16.060436
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12492352",
+        "title": "Dịch Vụ Lưu Trú Rom Casa Đà Nẵng",
+        "city": "Đà Nẵng",
+        "totalScore": 4.7,
+        "ranking": "181/3419",
+        "reviewsCount": 68,
+        "category": "Nhà trọ",
+        "priceRange": "710.526 ₫ - 1.052.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Dịch Vụ Lưu Trú Rom Casa Đà Nẵng ở Đà Nẵng. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 4.7/5 từ 68 lượt review. Xếp hạng: 181/3419. Giá: 710.526 ₫ - 1.052.632 ₫.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/63/46/e2/rom-casa-hotel-da-nang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24653,
+                16.048307
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15757823",
+        "title": "Khách Sạn EverLand",
+        "city": "An Hai Bac, Son Tra Peninsula, Đà Nẵng",
+        "totalScore": 4.4,
+        "ranking": "182/3419",
+        "reviewsCount": 89,
+        "category": "Khách sạn đặc biệt",
+        "priceRange": "763.158 ₫ - 2.342.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn EverLand ở An Hai Bac, Son Tra Peninsula, Đà Nẵng. Loại địa điểm: Khách sạn đặc biệt. Tags: Khách sạn đặc biệt. Đánh giá: 4.4/5 từ 89 lượt review. Xếp hạng: 182/3419. Giá: 763.158 ₫ - 2.342.105 ₫.",
+        "tags": [
+            "Khách sạn đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/a2/d2/68/khach-s-n-everland.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.23758,
+                16.071804
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15097614",
+        "title": "The Blossom House",
+        "city": "Đà Nẵng",
+        "totalScore": 4.6,
+        "ranking": "183/3419",
+        "reviewsCount": 76,
+        "category": "Khách sạn",
+        "priceRange": "736.842 ₫ - 1.394.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The Blossom House ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 76 lượt review. Xếp hạng: 183/3419. Giá: 736.842 ₫ - 1.394.737 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/44/f8/5c/onsen-in-cham-spa-area.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.244514,
+                16.066294
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12458922",
+        "title": "Tâm House Villa & Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 4.8,
+        "ranking": "184/3419",
+        "reviewsCount": 56,
+        "category": "Biệt thự",
+        "priceRange": "1.368.421 ₫ - 2.315.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Tâm House Villa & Hotel ở Đà Nẵng. Loại địa điểm: Biệt thự. Tags: Biệt thự. Đánh giá: 4.8/5 từ 56 lượt review. Xếp hạng: 184/3419. Giá: 1.368.421 ₫ - 2.315.789 ₫.",
+        "tags": [
+            "Biệt thự"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/a5/43/e2/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.2431,
+                16.057371
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4972563",
+        "title": "Homestay Sea Kite",
+        "city": "Đà Nẵng",
+        "totalScore": 4.8,
+        "ranking": "185/3419",
+        "reviewsCount": 72,
+        "category": "Nhà khách",
+        "priceRange": "394.737 ₫ - 1.315.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Homestay Sea Kite ở Đà Nẵng. Loại địa điểm: Nhà khách. Tags: Nhà khách. Đánh giá: 4.8/5 từ 72 lượt review. Xếp hạng: 185/3419. Giá: 394.737 ₫ - 1.315.789 ₫.",
+        "tags": [
+            "Nhà khách"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/ad/08/46/homestay-sea-kite.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24637,
+                16.050396
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9593925",
+        "title": "Memory Hostel",
+        "city": "Đà Nẵng",
+        "totalScore": 4.4,
+        "ranking": "186/3419",
+        "reviewsCount": 121,
+        "category": "Nhà trọ",
+        "priceRange": "236.842 ₫ - 684.211 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Memory Hostel ở Đà Nẵng. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 4.4/5 từ 121 lượt review. Xếp hạng: 186/3419. Giá: 236.842 ₫ - 684.211 ₫.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/da/42/05/mixed-dorm.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.22389,
+                16.06611
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11699614",
+        "title": "Travellers Nest Hostel",
+        "city": "Đà Nẵng",
+        "totalScore": 4.6,
+        "ranking": "187/3419",
+        "reviewsCount": 98,
+        "category": "Nhà trọ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Travellers Nest Hostel ở Đà Nẵng. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 4.6/5 từ 98 lượt review. Xếp hạng: 187/3419.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/06/bc/30/standard-double-room.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.2443,
+                16.043343
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10151876",
+        "title": "OYO 157 Centre Hotelạn Centre",
+        "city": "Đà Nẵng",
+        "totalScore": 4.4,
+        "ranking": "188/3419",
+        "reviewsCount": 123,
+        "category": "Khách sạn",
+        "priceRange": "342.105 ₫ - 1.526.316 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "OYO 157 Centre Hotelạn Centre ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.4/5 từ 123 lượt review. Xếp hạng: 188/3419. Giá: 342.105 ₫ - 1.526.316 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/71/38/7b/oyo-157-centre-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.22444,
+                16.067377
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8462721",
+        "title": "Khách sạn Le House",
+        "city": "Đà Nẵng",
+        "totalScore": 4.3,
+        "ranking": "189/3419",
+        "reviewsCount": 139,
+        "category": "Khách sạn nhỏ sang trọng",
+        "priceRange": "631.579 ₫ - 3.315.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Le House ở Đà Nẵng. Loại địa điểm: Khách sạn nhỏ sang trọng. Tags: Khách sạn nhỏ sang trọng. Đánh giá: 4.3/5 từ 139 lượt review. Xếp hạng: 189/3419. Giá: 631.579 ₫ - 3.315.789 ₫.",
+        "tags": [
+            "Khách sạn nhỏ sang trọng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/14/e7/e5/13/khach-s-n-le-house.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24438,
+                16.06692
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6729668",
+        "title": "Montgomerie Links Hotel & Villas",
+        "city": "Đà Nẵng",
+        "totalScore": 4.6,
+        "ranking": "190/3419",
+        "reviewsCount": 39,
+        "category": "Biệt thự",
+        "priceRange": "1.657.895 ₫ - 2.289.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Montgomerie Links Hotel & Villas ở Đà Nẵng. Loại địa điểm: Biệt thự. Tags: Biệt thự. Đánh giá: 4.6/5 từ 39 lượt review. Xếp hạng: 190/3419. Giá: 1.657.895 ₫ - 2.289.474 ₫.",
+        "tags": [
+            "Biệt thự"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/10/57/e4/montgomerie-links-villas.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.28508,
+                15.963001
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24074473",
+        "title": "Nature Hotel And Spa",
+        "city": "An Hai Bac, Son Tra Peninsula, Đà Nẵng",
+        "totalScore": 4.7,
+        "ranking": "191/3419",
+        "reviewsCount": 43,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nature Hotel And Spa ở An Hai Bac, Son Tra Peninsula, Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.7/5 từ 43 lượt review. Xếp hạng: 191/3419.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/29/35/4e/b7/nature-hotel-and-spa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.23458,
+                16.071795
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12967220",
+        "title": "Mitisa Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 4.6,
+        "ranking": "192/3419",
+        "reviewsCount": 67,
+        "category": "Khách sạn",
+        "priceRange": "736.842 ₫ - 2.552.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Mitisa Hotel ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 67 lượt review. Xếp hạng: 192/3419. Giá: 736.842 ₫ - 2.552.632 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/c9/a1/b5/pool-bar.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.220245,
+                16.060734
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15618199",
+        "title": "Avora Boutique Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 4.6,
+        "ranking": "193/3419",
+        "reviewsCount": 61,
+        "category": "Khách sạn",
+        "priceRange": "631.579 ₫ - 1.394.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Avora Boutique Hotel ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 61 lượt review. Xếp hạng: 193/3419. Giá: 631.579 ₫ - 1.394.737 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/e8/22/3a/avora-boutique-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.21552,
+                16.070803
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8132288",
+        "title": "Khách sạn Jazz",
+        "city": "Đà Nẵng",
+        "totalScore": 4.0,
+        "ranking": "194/3419",
+        "reviewsCount": 214,
+        "category": "Khách sạn",
+        "priceRange": "1.894.737 ₫ - 3.052.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Jazz ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.0/5 từ 214 lượt review. Xếp hạng: 194/3419. Giá: 1.894.737 ₫ - 3.052.632 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/72/55/e7/fo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24772,
+                16.08312
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "3794014",
+        "title": "D&c Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 4.2,
+        "ranking": "195/3419",
+        "reviewsCount": 130,
+        "category": "Khách sạn nhỏ",
+        "priceRange": "368.421 ₫ - 1.447.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "D&c Hotel ở Đà Nẵng. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 4.2/5 từ 130 lượt review. Xếp hạng: 195/3419. Giá: 368.421 ₫ - 1.447.368 ₫.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/c4/4c/d2/d-c-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.23109,
+                16.06609
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14016792",
+        "title": "Greenery Hotel Danang",
+        "city": "Đà Nẵng",
+        "totalScore": 4.6,
+        "ranking": "196/3419",
+        "reviewsCount": 108,
+        "category": "Khách sạn",
+        "priceRange": "657.895 ₫ - 3.236.842 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Greenery Hotel Danang ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 108 lượt review. Xếp hạng: 196/3419. Giá: 657.895 ₫ - 3.236.842 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/f7/b0/57/greenery-hotel-lobby.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24439,
+                16.065723
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19116387",
+        "title": "Bridges Danang Boutique Hotel",
+        "city": "Son Tra Peninsula, Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "197/3419",
+        "reviewsCount": 32,
+        "category": "Khách sạn",
+        "priceRange": "631.579 ₫ - 1.052.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Bridges Danang Boutique Hotel ở Son Tra Peninsula, Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 32 lượt review. Xếp hạng: 197/3419. Giá: 631.579 ₫ - 1.052.632 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/9a/0a/ea/danang-bridges-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24431,
+                16.06649
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12634554",
+        "title": "Pariat River Front Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 4.1,
+        "ranking": "198/3419",
+        "reviewsCount": 106,
+        "category": "Khách sạn đặc biệt",
+        "priceRange": "473.684 ₫ - 1.710.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Pariat River Front Hotel ở Đà Nẵng. Loại địa điểm: Khách sạn đặc biệt. Tags: Khách sạn đặc biệt. Đánh giá: 4.1/5 từ 106 lượt review. Xếp hạng: 198/3419. Giá: 473.684 ₫ - 1.710.526 ₫.",
+        "tags": [
+            "Khách sạn đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/25/5d/06/b8/pariat-hotel-danang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.22405,
+                16.065418
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27540572",
+        "title": "V-hotel Da Nang Beach",
+        "city": "Đà Nẵng",
+        "totalScore": 4.8,
+        "ranking": "199/3419",
+        "reviewsCount": 23,
+        "category": "Khách sạn",
+        "priceRange": "684.211 ₫ - 1.009.184.192 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "V-hotel Da Nang Beach ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 23 lượt review. Xếp hạng: 199/3419. Giá: 684.211 ₫ - 1.009.184.192 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/d7/24/ac/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.25031,
+                16.037851
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "3514372",
+        "title": "Grand Mango Hotel Danang",
+        "city": "Đà Nẵng",
+        "totalScore": 4.3,
+        "ranking": "200/3419",
+        "reviewsCount": 163,
+        "category": "Khách sạn",
+        "priceRange": "736.842 ₫ - 1.315.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Grand Mango Hotel Danang ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.3/5 từ 163 lượt review. Xếp hạng: 200/3419. Giá: 736.842 ₫ - 1.315.789 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/04/db/50/grand-mango-hotel-danang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24846,
+                16.048662
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1236495",
+        "title": "Khách sạn Đại Á",
+        "city": "Đà Nẵng",
+        "totalScore": 3.8,
+        "ranking": "201/3419",
+        "reviewsCount": 299,
+        "category": "Khách sạn",
+        "priceRange": "421.053 ₫ - 815.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Đại Á ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 3.8/5 từ 299 lượt review. Xếp hạng: 201/3419. Giá: 421.053 ₫ - 815.789 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/oyster/2600/0e/91/4c/d1/twin-room--v15652328.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.22254,
+                16.066063
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17458537",
+        "title": "Ponte Boutique Villa",
+        "city": "Đà Nẵng",
+        "totalScore": 4.7,
+        "ranking": "202/3419",
+        "reviewsCount": 47,
+        "category": "Khách sạn",
+        "priceRange": "1.184.211 ₫ - 2.815.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Ponte Boutique Villa ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.7/5 từ 47 lượt review. Xếp hạng: 202/3419. Giá: 1.184.211 ₫ - 2.815.789 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/99/98/df/ponte-boutique-villa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.242836,
+                16.074617
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15841583",
+        "title": "Sunny Ocean Hotel & Spa",
+        "city": "Đà Nẵng",
+        "totalScore": 4.3,
+        "ranking": "203/3419",
+        "reviewsCount": 82,
+        "category": "Khách sạn",
+        "priceRange": "842.105 ₫ - 3.342.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Sunny Ocean Hotel & Spa ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.3/5 từ 82 lượt review. Xếp hạng: 203/3419. Giá: 842.105 ₫ - 3.342.105 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/32/ef/75/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24588,
+                16.0552
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6922927",
+        "title": "Nhat Linh Danang Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 4.4,
+        "ranking": "204/3419",
+        "reviewsCount": 66,
+        "category": "Khách sạn",
+        "priceRange": "394.737 ₫ - 2.210.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhat Linh Danang Hotel ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.4/5 từ 66 lượt review. Xếp hạng: 204/3419. Giá: 394.737 ₫ - 2.210.526 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/2e/71/39/phong-deluxe-view-thanh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.220535,
+                16.064577
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9454948",
+        "title": "Khách sạn Titan Đà Nẵng",
+        "city": "Đà Nẵng",
+        "totalScore": 4.1,
+        "ranking": "205/3419",
+        "reviewsCount": 128,
+        "category": "Khách sạn",
+        "priceRange": "473.684 ₫ - 2.289.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Titan Đà Nẵng ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.1/5 từ 128 lượt review. Xếp hạng: 205/3419. Giá: 473.684 ₫ - 2.289.474 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/25/4e/6a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24669,
+                16.039764
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "454978",
+        "title": "Saigon Tourane Hotel",
+        "city": "Hai Chau, Đà Nẵng",
+        "totalScore": 4.3,
+        "ranking": "206/3419",
+        "reviewsCount": 73,
+        "category": "Khách sạn",
+        "priceRange": "4.789.474 ₫ - 5.710.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Saigon Tourane Hotel ở Hai Chau, Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.3/5 từ 73 lượt review. Xếp hạng: 206/3419. Giá: 4.789.474 ₫ - 5.710.526 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/6d/5a/53/sai-gon-tourane-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.22135,
+                16.082247
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "3793990",
+        "title": "Khách sạn Nemo",
+        "city": "Đà Nẵng",
+        "totalScore": 4.4,
+        "ranking": "207/3419",
+        "reviewsCount": 118,
+        "category": "Khách sạn nhỏ",
+        "priceRange": "315.789 ₫ - 710.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Nemo ở Đà Nẵng. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 4.4/5 từ 118 lượt review. Xếp hạng: 207/3419. Giá: 315.789 ₫ - 710.526 ₫.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/e9/13/1a/standard-double-room.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24105,
+                16.054482
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13348177",
+        "title": "Essenza Hotel & Spa",
+        "city": "Đà Nẵng",
+        "totalScore": 4.6,
+        "ranking": "208/3419",
+        "reviewsCount": 56,
+        "category": "Nhà trọ đặc biệt",
+        "priceRange": "421.053 ₫ - 789.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Essenza Hotel & Spa ở Đà Nẵng. Loại địa điểm: Nhà trọ đặc biệt. Tags: Nhà trọ đặc biệt. Đánh giá: 4.6/5 từ 56 lượt review. Xếp hạng: 208/3419. Giá: 421.053 ₫ - 789.474 ₫.",
+        "tags": [
+            "Nhà trọ đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/c6/cf/b3/essenza-hotel-spa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24597,
+                16.050564
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "3801152",
+        "title": "Monaco Hotel Danang",
+        "city": "Đà Nẵng",
+        "totalScore": 4.5,
+        "ranking": "209/3419",
+        "reviewsCount": 44,
+        "category": "Khách sạn",
+        "priceRange": "1.052.632 ₫ - 3.184.211 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Monaco Hotel Danang ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.5/5 từ 44 lượt review. Xếp hạng: 209/3419. Giá: 1.052.632 ₫ - 3.184.211 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/98/c1/ae/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24178,
+                16.068657
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "807151",
+        "title": "SenRiver Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 3.9,
+        "ranking": "210/3419",
+        "reviewsCount": 284,
+        "category": "Khách sạn",
+        "priceRange": "1.578.947 ₫ - 4.868.421 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "SenRiver Hotel ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 3.9/5 từ 284 lượt review. Xếp hạng: 210/3419. Giá: 1.578.947 ₫ - 4.868.421 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/02/d7/32/senriver-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.22404,
+                16.063408
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17732168",
+        "title": "Minh Boutique",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "61/3419",
+        "reviewsCount": 440,
+        "category": "Khách sạn",
+        "priceRange": "1.184.211 ₫ - 3.526.316 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Minh Boutique ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 440 lượt review. Xếp hạng: 61/3419. Giá: 1.184.211 ₫ - 3.526.316 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/e9/29/1e/minh-boutique.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24182,
+                16.069538
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23276595",
+        "title": "M Suite Danang",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "62/3419",
+        "reviewsCount": 240,
+        "category": "Khách sạn đặc biệt",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "M Suite Danang ở Đà Nẵng. Loại địa điểm: Khách sạn đặc biệt. Tags: Khách sạn đặc biệt. Đánh giá: 4.9/5 từ 240 lượt review. Xếp hạng: 62/3419.",
+        "tags": [
+            "Khách sạn đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/26/f4/21/d3/m-suite-danang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24606,
+                16.066544
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27935364",
+        "title": "M Hotel Danang",
+        "city": "Đà Nẵng",
+        "totalScore": 4.8,
+        "ranking": "63/3419",
+        "reviewsCount": 636,
+        "category": "Khách sạn",
+        "priceRange": "2.552.632 ₫ - 10.500.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "M Hotel Danang ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 636 lượt review. Xếp hạng: 63/3419. Giá: 2.552.632 ₫ - 10.500.000 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/3e/e9/da/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24803,
+                16.051664
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24948586",
+        "title": "Wink Danang Centre, Unscripted by Hyatt",
+        "city": "Hai Chau, Đà Nẵng",
+        "totalScore": 5.0,
+        "ranking": "64/3419",
+        "reviewsCount": 589,
+        "category": "Khách sạn",
+        "priceRange": "1.263.158 ₫ - 2.157.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Wink Danang Centre, Unscripted by Hyatt ở Hai Chau, Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 589 lượt review. Xếp hạng: 64/3419. Giá: 1.263.158 ₫ - 2.157.895 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/27/67/df/71/wink-hotel-danang-centre.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.22349,
+                16.065496
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "3511123",
+        "title": "Novotel Danang Premier Han River",
+        "city": "Đà Nẵng",
+        "totalScore": 4.8,
+        "ranking": "65/3419",
+        "reviewsCount": 4451,
+        "category": "Khách sạn",
+        "priceRange": "2.078.947 ₫ - 4.447.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Novotel Danang Premier Han River ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 4451 lượt review. Xếp hạng: 65/3419. Giá: 2.078.947 ₫ - 4.447.368 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/6b/bb/ff/exterior.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.223656,
+                16.077372
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26101972",
+        "title": "Danang Marriott Resort & Spa, Non Nuoc Beach Villas",
+        "city": "Hoa Hai, Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "66/3419",
+        "reviewsCount": 1933,
+        "category": "Khách sạn",
+        "priceRange": "9.078.947 ₫ - 18.578.948 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Danang Marriott Resort & Spa, Non Nuoc Beach Villas ở Hoa Hai, Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 1933 lượt review. Xếp hạng: 66/3419. Giá: 9.078.947 ₫ - 18.578.948 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/33/30/5f/73/resort-overview.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.26927,
+                15.994055
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7617524",
+        "title": "Naman Retreat",
+        "city": "Đà Nẵng",
+        "totalScore": 4.8,
+        "ranking": "67/3419",
+        "reviewsCount": 4114,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "3.210.526 ₫ - 6.157.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Naman Retreat ở Đà Nẵng. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.8/5 từ 4114 lượt review. Xếp hạng: 67/3419. Giá: 3.210.526 ₫ - 6.157.895 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/3e/1d/5d/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.28425,
+                15.969726
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19254969",
+        "title": "Sofiana My Khe Hotel & Spa",
+        "city": "My An, Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "68/3419",
+        "reviewsCount": 678,
+        "category": "Khách sạn",
+        "priceRange": "973.684 ₫ - 3.052.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Sofiana My Khe Hotel & Spa ở My An, Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 678 lượt review. Xếp hạng: 68/3419. Giá: 973.684 ₫ - 3.052.632 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/09/89/30/sofiana-my-khe-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.247765,
+                16.049671
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12250113",
+        "title": "Khách Sạn Lê Hoàng Beach",
+        "city": "Phuoc My, Son Tra Peninsula, Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "69/3419",
+        "reviewsCount": 765,
+        "category": "Khách sạn",
+        "priceRange": "1.605.263 ₫ - 3.657.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn Lê Hoàng Beach ở Phuoc My, Son Tra Peninsula, Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 765 lượt review. Xếp hạng: 69/3419. Giá: 1.605.263 ₫ - 3.657.895 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/8c/8e/a3/le-hoang-beach-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24518,
+                16.06552
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13008083",
+        "title": "San Marino Boutique Danang",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "70/3419",
+        "reviewsCount": 856,
+        "category": "Khách sạn nhỏ sang trọng",
+        "priceRange": "815.789 ₫ - 2.684.211 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "San Marino Boutique Danang ở Đà Nẵng. Loại địa điểm: Khách sạn nhỏ sang trọng. Tags: Khách sạn nhỏ sang trọng. Đánh giá: 4.9/5 từ 856 lượt review. Xếp hạng: 70/3419. Giá: 815.789 ₫ - 2.684.211 ₫.",
+        "tags": [
+            "Khách sạn nhỏ sang trọng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/78/9c/22/san-marino-boutique-da.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.23756,
+                16.061941
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11807888",
+        "title": "Khách sạn Paracel Đà Nẵng",
+        "city": "Đà Nẵng",
+        "totalScore": 4.8,
+        "ranking": "71/3419",
+        "reviewsCount": 263,
+        "category": "Khách sạn",
+        "priceRange": "947.368 ₫ - 2.526.316 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Paracel Đà Nẵng ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 263 lượt review. Xếp hạng: 71/3419. Giá: 947.368 ₫ - 2.526.316 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/c9/17/84/lobby.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24542,
+                16.068527
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6533098",
+        "title": "Khách sạn A La Carte",
+        "city": "Đà Nẵng",
+        "totalScore": 4.5,
+        "ranking": "72/3419",
+        "reviewsCount": 2495,
+        "category": "Khách sạn",
+        "priceRange": "1.657.895 ₫ - 3.815.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn A La Carte ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.5/5 từ 2495 lượt review. Xếp hạng: 72/3419. Giá: 1.657.895 ₫ - 3.815.789 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/b2/2b/6d/sunrise-yoga-at-the-rooftop.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24466,
+                16.068745
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24864837",
+        "title": "The Sail Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "73/3419",
+        "reviewsCount": 149,
+        "category": "Khách sạn",
+        "priceRange": "868.421 ₫ - 3.315.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The Sail Hotel ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 149 lượt review. Xếp hạng: 73/3419. Giá: 868.421 ₫ - 3.315.789 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/29/25/49/5d/the-sail-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.246445,
+                16.05173
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7932663",
+        "title": "Vanda Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 4.7,
+        "ranking": "74/3419",
+        "reviewsCount": 1413,
+        "category": "Khách sạn",
+        "priceRange": "1.184.211 ₫ - 2.421.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Vanda Hotel ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.7/5 từ 1413 lượt review. Xếp hạng: 74/3419. Giá: 1.184.211 ₫ - 2.421.053 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/78/68/51/hotel-overview.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.22279,
+                16.060658
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20309935",
+        "title": "Khu nghỉ dưỡng The Five Villas & Resort Quangnam Đà Nẵng",
+        "city": "Điện Bàn, Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "75/3419",
+        "reviewsCount": 189,
+        "category": "Khách sạn",
+        "priceRange": "7.342.105 ₫ - 11.789.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu nghỉ dưỡng The Five Villas & Resort Quangnam Đà Nẵng ở Điện Bàn, Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 189 lượt review. Xếp hạng: 75/3419. Giá: 7.342.105 ₫ - 11.789.474 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/b8/6b/06/the-five-villas-resort.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.2881,
+                15.963483
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33154466",
+        "title": "Caro Premium Danang Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "76/3419",
+        "reviewsCount": 96,
+        "category": "Khách sạn",
+        "priceRange": "1.236.842 ₫ - 3.263.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Caro Premium Danang Hotel ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 96 lượt review. Xếp hạng: 76/3419. Giá: 1.236.842 ₫ - 3.263.158 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/e8/90/ce/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.23028,
+                16.063255
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13140547",
+        "title": "Fivitel Da Nang Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 4.8,
+        "ranking": "77/3419",
+        "reviewsCount": 978,
+        "category": "Khách sạn",
+        "priceRange": "842.105 ₫ - 1.710.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Fivitel Da Nang Hotel ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 978 lượt review. Xếp hạng: 77/3419. Giá: 842.105 ₫ - 1.710.526 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1d/2e/8f/fe/fivitel-da-nang-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.2328,
+                16.051952
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19730171",
+        "title": "Senorita Boutique Hotel",
+        "city": "My An, Đà Nẵng",
+        "totalScore": 4.8,
+        "ranking": "78/3419",
+        "reviewsCount": 302,
+        "category": "Khách sạn",
+        "priceRange": "710.526 ₫ - 1.578.947 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Senorita Boutique Hotel ở My An, Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 302 lượt review. Xếp hạng: 78/3419. Giá: 710.526 ₫ - 1.578.947 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/be/b0/b2/senorita-boutique-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.247795,
+                16.049791
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19453440",
+        "title": "Mường Thanh Luxury Sông Hàn Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "79/3419",
+        "reviewsCount": 361,
+        "category": "Khách sạn",
+        "priceRange": "763.158 ₫ - 2.078.947 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Mường Thanh Luxury Sông Hàn Hotel ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 361 lượt review. Xếp hạng: 79/3419. Giá: 763.158 ₫ - 2.078.947 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/ae/7e/df/khach-s-n-mu-ng-thanh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.21682,
+                16.060448
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11779930",
+        "title": "Sofia Suite Hotel & Spa Danang",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "80/3419",
+        "reviewsCount": 954,
+        "category": "Khách sạn",
+        "priceRange": "605.263 ₫ - 1.552.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Sofia Suite Hotel & Spa Danang ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 954 lượt review. Xếp hạng: 80/3419. Giá: 605.263 ₫ - 1.552.632 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/75/3c/6a/the-balcony-from-the.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24413,
+                16.055
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "634749",
+        "title": "Khách sạn Nam Hải Hội An",
+        "city": "Đà Nẵng",
+        "totalScore": 4.8,
+        "ranking": "81/3419",
+        "reviewsCount": 2562,
+        "category": "Khách sạn",
+        "priceRange": "20.526.316 ₫ - 36.052.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Nam Hải Hội An ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 2562 lượt review. Xếp hạng: 81/3419. Giá: 20.526.316 ₫ - 36.052.632 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/49/80/69/resort-view.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.317375,
+                15.929191
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14932943",
+        "title": "Grand Gold Hotel",
+        "city": "Tho Quang, Son Tra Peninsula, Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "82/3419",
+        "reviewsCount": 529,
+        "category": "Khách sạn",
+        "priceRange": "894.737 ₫ - 2.131.579 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Grand Gold Hotel ở Tho Quang, Son Tra Peninsula, Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 529 lượt review. Xếp hạng: 82/3419. Giá: 894.737 ₫ - 2.131.579 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/14/97/a8/d5/swimming-pool.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.251434,
+                16.09379
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19507734",
+        "title": "Minh Toan SAFI Ocean Hotel",
+        "city": "Phuoc My, Son Tra Peninsula, Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "83/3419",
+        "reviewsCount": 397,
+        "category": "Khách sạn",
+        "priceRange": "1.263.158 ₫ - 3.157.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Minh Toan SAFI Ocean Hotel ở Phuoc My, Son Tra Peninsula, Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 397 lượt review. Xếp hạng: 83/3419. Giá: 1.263.158 ₫ - 3.157.895 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/12/e1/eb/minh-toan-ocean-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.244934,
+                16.06696
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12268599",
+        "title": "Grandvrio City Danang By Route Inn Group",
+        "city": "Đà Nẵng",
+        "totalScore": 4.8,
+        "ranking": "84/3419",
+        "reviewsCount": 1018,
+        "category": "Khách sạn",
+        "priceRange": "842.105 ₫ - 1.657.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Grandvrio City Danang By Route Inn Group ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 1018 lượt review. Xếp hạng: 84/3419. Giá: 842.105 ₫ - 1.657.895 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/81/50/3e/swimming-pool.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.22193,
+                16.082464
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6609499",
+        "title": "Melia Danang Beach Resort",
+        "city": "Đà Nẵng",
+        "totalScore": 4.6,
+        "ranking": "85/3419",
+        "reviewsCount": 2225,
+        "category": "Khách sạn",
+        "priceRange": "3.526.316 ₫ - 6.184.211 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Melia Danang Beach Resort ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 2225 lượt review. Xếp hạng: 85/3419. Giá: 3.526.316 ₫ - 6.184.211 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/0e/58/47/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.26926,
+                16.000534
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24838643",
+        "title": "Alan Sea Hotel Danang",
+        "city": "Đà Nẵng",
+        "totalScore": 4.8,
+        "ranking": "86/3419",
+        "reviewsCount": 174,
+        "category": "Khách sạn",
+        "priceRange": "1.000.000 ₫ - 1.605.263 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Alan Sea Hotel Danang ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 174 lượt review. Xếp hạng: 86/3419. Giá: 1.000.000 ₫ - 1.605.263 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/25/a6/eb/77/alan-sea-hotel-danang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.23205,
+                16.100618
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1823746",
+        "title": "TIA Wellness Resort",
+        "city": "Ngu Hanh Son, Đà Nẵng",
+        "totalScore": 4.7,
+        "ranking": "87/3419",
+        "reviewsCount": 2532,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "10.394.737 ₫ - 14.947.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "TIA Wellness Resort ở Ngu Hanh Son, Đà Nẵng. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.7/5 từ 2532 lượt review. Xếp hạng: 87/3419. Giá: 10.394.737 ₫ - 14.947.368 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/17/97/95/grounds--v10250167.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.256035,
+                16.031431
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "18207115",
+        "title": "Maximilan DaNang Beach Hotel",
+        "city": "Phuoc My, Son Tra Peninsula, Đà Nẵng",
+        "totalScore": 4.8,
+        "ranking": "88/3419",
+        "reviewsCount": 468,
+        "category": "Khách sạn",
+        "priceRange": "1.263.158 ₫ - 3.473.684 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Maximilan DaNang Beach Hotel ở Phuoc My, Son Tra Peninsula, Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 468 lượt review. Xếp hạng: 88/3419. Giá: 1.263.158 ₫ - 3.473.684 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/8f/a3/c4/maximilan-danang-beach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24494,
+                16.067234
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9761938",
+        "title": "Royal Lotus Hotel Danang",
+        "city": "Đà Nẵng",
+        "totalScore": 4.9,
+        "ranking": "89/3419",
+        "reviewsCount": 3179,
+        "category": "Khách sạn",
+        "priceRange": "921.053 ₫ - 2.157.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Royal Lotus Hotel Danang ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 3179 lượt review. Xếp hạng: 89/3419. Giá: 921.053 ₫ - 2.157.895 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/4a/b2/97/royal-lotus-hotel-danang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.243576,
+                16.054722
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6697462",
+        "title": "Sanouva Danang Hotel",
+        "city": "Đà Nẵng",
+        "totalScore": 4.8,
+        "ranking": "90/3419",
+        "reviewsCount": 2043,
+        "category": "Khách sạn",
+        "priceRange": "1.078.947 ₫ - 2.184.211 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Sanouva Danang Hotel ở Đà Nẵng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 2043 lượt review. Xếp hạng: 90/3419. Giá: 1.078.947 ₫ - 2.184.211 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/de/1d/45/sanouva-danang-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.22006,
+                16.066936
+            ]
+        },
+        "openingHours": null
+    }
+]
