@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 import 'dart:ui';
 
@@ -39,12 +40,20 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   int _previousIndex = 0;
   int _navIndex = 0;
   bool _showLikedOnly = false;
+  String _searchQuery = '';
+  late final TextEditingController _searchController;
+  late final FocusNode _searchFocusNode;
+  String _currentBgPath = 'assets/images/halong.jpg';
+  String _previousBgPath = 'assets/images/halong.jpg';
 
   final Set<String> _savedNames = {};
   final Set<String> _likedNames = {};
   final Set<String> _updatingSavedNames = {};
   List<Destination> _savedDestinations = const [];
   bool _isLoadingSavedPlaces = false;
+
+  List<Destination> _realDestinations = [];
+  bool _isLoadingDestinations = false;
 
   Map<String, dynamic>? _userData;
   bool _isLoadingProfile = false;
@@ -56,6 +65,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   late final AnimationController _entranceController;
   late final Animation<double> _cardEntrance;
   late final PageController _pageController;
+  Timer? _autoPlayTimer;
+  Timer? _searchDebounceTimer;
+  List<Destination> _searchResults = [];
+  List<Destination> _searchSuggestions = [];
 
   static const Map<String, int> _fakeLikeSeeds = {
     'Hạ Long Bay': 1243,
@@ -69,7 +82,19 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     super.initState();
 
     _currentUserName = widget.userName;
-    _pageController = PageController(viewportFraction: 0.82);
+    _pageController = PageController(viewportFraction: 0.82, initialPage: 1000);
+    _searchController = TextEditingController();
+    _searchFocusNode = FocusNode();
+    _searchFocusNode.addListener(() {
+      setState(() {});
+    });
+
+    // Set initial background image paths
+    final activeList = sampleDestinations;
+    if (activeList.isNotEmpty) {
+      _currentBgPath = activeList[0].bgBlurPath;
+      _previousBgPath = activeList[0].bgBlurPath;
+    }
 
     _bgFadeController = AnimationController(
       vsync: this,
@@ -92,22 +117,66 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
     _loadSavedPlaces();
     _loadProfile();
+    _fetchDestinations();
+    _startAutoPlay();
   }
 
   @override
   void dispose() {
+    _stopAutoPlay();
+    _searchDebounceTimer?.cancel();
+    _searchController.dispose();
+    _searchFocusNode.dispose();
     _bgFadeController.dispose();
     _entranceController.dispose();
     _pageController.dispose();
     super.dispose();
   }
 
-  void _onPageChanged(int index) {
-    setState(() {
-      _previousIndex = _currentIndex;
-      _currentIndex = index;
+  void _startAutoPlay() {
+    _stopAutoPlay();
+    if (_navIndex != 0) return;
+
+    _autoPlayTimer = Timer.periodic(const Duration(seconds: 4), (timer) {
+      if (!mounted) return;
+      if (_navIndex != 0) {
+        _stopAutoPlay();
+        return;
+      }
+
+      final destinations = _homeDestinations;
+      if (destinations.isEmpty) return;
+
+      if (_pageController.hasClients) {
+        int nextPage = (_pageController.page ?? 1000.0).round() + 1;
+        _pageController.animateToPage(
+          nextPage,
+          duration: const Duration(milliseconds: 800),
+          curve: Curves.easeInOutCubic,
+        );
+      }
     });
-    _bgFadeController.forward(from: 0);
+  }
+
+  void _stopAutoPlay() {
+    _autoPlayTimer?.cancel();
+    _autoPlayTimer = null;
+  }
+
+  void _onPageChanged(int index) {
+    final activeList = _homeDestinations;
+    if (index >= 0 && index < activeList.length) {
+      final nextPath = activeList[index].bgBlurPath;
+      if (nextPath != _currentBgPath) {
+        setState(() {
+          _previousBgPath = _currentBgPath;
+          _currentBgPath = nextPath;
+          _previousIndex = _currentIndex;
+          _currentIndex = index;
+        });
+        _bgFadeController.forward(from: 0);
+      }
+    }
   }
 
   Future<void> _loadSavedPlaces({bool showError = false}) async {
@@ -137,6 +206,45 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     } finally {
       if (mounted) {
         setState(() => _isLoadingSavedPlaces = false);
+      }
+    }
+  }
+
+  Future<void> _fetchDestinations() async {
+    if (mounted) {
+      setState(() => _isLoadingDestinations = true);
+    }
+    try {
+      final response = await apiGet('/locations');
+      final data = tryDecodeJsonObject(response.body);
+      if (response.statusCode == 200 && data?['success'] == true) {
+        final rawList = data!['data'];
+        if (rawList is List) {
+          final List<Destination> loaded = [];
+          for (var item in rawList) {
+            try {
+              loaded.add(Destination.fromJson(Map<String, dynamic>.from(item)));
+            } catch (e) {
+              debugPrint('Error parsing place item: $e');
+            }
+          }
+          if (mounted) {
+            setState(() {
+              _realDestinations = loaded.take(25).toList();
+              if (_realDestinations.isNotEmpty) {
+                _currentBgPath = _realDestinations[0].bgBlurPath;
+                _previousBgPath = _realDestinations[0].bgBlurPath;
+              }
+            });
+            _startAutoPlay();
+          }
+        }
+      }
+    } catch (e) {
+      debugPrint('Error fetching destinations: $e');
+    } finally {
+      if (mounted) {
+        setState(() => _isLoadingDestinations = false);
       }
     }
   }
@@ -933,6 +1041,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       }
     }
 
+    _stopAutoPlay();
+
     final result = await Navigator.push<Map<String, bool>>(
       context,
       PageRouteBuilder(
@@ -974,6 +1084,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       ),
     );
 
+    _startAutoPlay();
+
     if (!mounted || result == null) return;
     final isSaved = result['isSaved'];
     final isLiked = result['isLiked'];
@@ -1002,21 +1114,111 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     final destinations = _homeDestinations;
     final idx = destinations.indexWhere((d) => d.province == region);
     if (idx >= 0 && idx != _currentIndex) {
-      _pageController.animateToPage(
-        idx,
-        duration: const Duration(milliseconds: 400),
-        curve: Curves.easeInOut,
-      );
+      if (_pageController.hasClients) {
+        final currentPage = _pageController.page?.round() ?? 1000;
+        final currentListIndex = currentPage % destinations.length;
+        final offset = idx - currentListIndex;
+        _pageController.animateToPage(
+          currentPage + offset,
+          duration: const Duration(milliseconds: 400),
+          curve: Curves.easeInOut,
+        );
+      }
     } else if (idx < 0) {
       _showMessage('Không có địa điểm phù hợp bộ lọc hiện tại');
     }
   }
 
   List<Destination> get _homeDestinations {
-    if (!_showLikedOnly) return sampleDestinations;
-    return sampleDestinations
-        .where((d) => _likedNames.contains(d.name))
-        .toList();
+    if (_searchQuery.isNotEmpty) {
+      var list = _searchResults;
+      if (_showLikedOnly) {
+        list = list.where((d) => _likedNames.contains(d.name)).toList();
+      }
+      return list;
+    }
+    var list = _realDestinations.isNotEmpty ? _realDestinations : sampleDestinations;
+    if (_showLikedOnly) {
+      list = list.where((d) => _likedNames.contains(d.name)).toList();
+    }
+    return list;
+  }
+
+  void _onSearchChanged(String value) {
+    setState(() {
+      _searchQuery = value;
+      _currentIndex = 0;
+    });
+
+    _searchDebounceTimer?.cancel();
+    if (value.trim().isEmpty) {
+      setState(() {
+        _searchResults = [];
+        _searchSuggestions = [];
+      });
+      _resetCarouselPosition();
+      final list = _homeDestinations;
+      if (list.isNotEmpty) {
+        setState(() {
+          _currentBgPath = list[0].bgBlurPath;
+          _previousBgPath = list[0].bgBlurPath;
+        });
+      }
+      return;
+    }
+
+    _searchDebounceTimer = Timer(const Duration(milliseconds: 300), () async {
+      await _performBackendSearch(value);
+    });
+  }
+
+  Future<void> _performBackendSearch(String query) async {
+    if (query.trim().isEmpty) return;
+    try {
+      final response = await apiPostJson(
+        '/locations/search',
+        {'query': query, 'limit': 15},
+      );
+      final data = tryDecodeJsonObject(response.body);
+      if (response.statusCode == 200 && data?['success'] == true) {
+        final rawList = data!['data'];
+        if (rawList is List) {
+          final List<Destination> loaded = [];
+          for (var item in rawList) {
+            try {
+              loaded.add(Destination.fromJson(Map<String, dynamic>.from(item)));
+            } catch (e) {
+              debugPrint('Error parsing search item: $e');
+            }
+          }
+          if (mounted && _searchQuery == query) {
+            setState(() {
+              _searchResults = loaded;
+              _searchSuggestions = loaded.take(5).toList();
+              
+              if (_searchResults.isNotEmpty) {
+                _currentBgPath = _searchResults[0].bgBlurPath;
+                _previousBgPath = _searchResults[0].bgBlurPath;
+              }
+            });
+            _resetCarouselPosition();
+          }
+        }
+      }
+    } catch (e) {
+      debugPrint('Error performing backend search: $e');
+    }
+  }
+
+  void _resetCarouselPosition() {
+    if (_pageController.hasClients) {
+      final list = _homeDestinations;
+      if (list.length > 3) {
+        _pageController.jumpToPage(1000 - (1000 % list.length));
+      } else {
+        _pageController.jumpToPage(0);
+      }
+    }
   }
 
   void _toggleLikedOnlyView() {
@@ -1028,24 +1230,14 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       return;
     }
 
-    final first = destinations.first;
-    final firstSampleIndex =
-        sampleDestinations.indexWhere((d) => d.name == first.name);
-    if (firstSampleIndex >= 0) {
-      setState(() {
-        _previousIndex = _currentIndex;
-        _currentIndex = firstSampleIndex;
-      });
-      _bgFadeController.forward(from: 0);
-    }
+    setState(() {
+      _previousIndex = _currentIndex;
+      _currentIndex = 0;
+      _currentBgPath = destinations[0].bgBlurPath;
+      _previousBgPath = destinations[0].bgBlurPath;
+    });
 
-    if (_pageController.hasClients) {
-      _pageController.animateToPage(
-        0,
-        duration: const Duration(milliseconds: 320),
-        curve: Curves.easeOutCubic,
-      );
-    }
+    _resetCarouselPosition();
   }
 
   void _jumpToRandomDestination() {
@@ -1058,8 +1250,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     final idx = seed % destinations.length;
 
     if (_pageController.hasClients) {
+      final currentPage = _pageController.page?.round() ?? 1000;
+      final currentListIndex = currentPage % destinations.length;
+      final offset = idx - currentListIndex;
       _pageController.animateToPage(
-        idx,
+        currentPage + offset,
         duration: const Duration(milliseconds: 420),
         curve: Curves.easeInOutCubic,
       );
@@ -1267,6 +1462,118 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     final size = MediaQuery.sizeOf(context);
 
+    if (_isLoadingDestinations && _realDestinations.isEmpty) {
+      return Scaffold(
+        backgroundColor: const Color(0xFF0F1E1B),
+        body: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const SizedBox(height: 16),
+                // Header Shimmer
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        ShimmerWidget(
+                          width: 140,
+                          height: 24,
+                          borderRadius: BorderRadius.circular(6),
+                        ),
+                        const SizedBox(height: 8),
+                        ShimmerWidget(
+                          width: 80,
+                          height: 14,
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                      ],
+                    ),
+                    ShimmerWidget(
+                      width: 46,
+                      height: 46,
+                      borderRadius: BorderRadius.circular(23),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 32),
+                // Search Bar Shimmer
+                ShimmerWidget(
+                  width: double.infinity,
+                  height: 54,
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                const SizedBox(height: 32),
+                // Categories Shimmer
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  physics: const NeverScrollableScrollPhysics(),
+                  child: Row(
+                    children: List.generate(4, (index) => Padding(
+                      padding: const EdgeInsets.only(right: 12.0),
+                      child: ShimmerWidget(
+                        width: 90,
+                        height: 36,
+                        borderRadius: BorderRadius.circular(18),
+                      ),
+                    )),
+                  ),
+                ),
+                const SizedBox(height: 32),
+                // Large Card Shimmer
+                Expanded(
+                  child: Container(
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF1E2E2A).withValues(alpha: 0.2),
+                      borderRadius: BorderRadius.circular(28),
+                      border: Border.all(
+                        color: const Color(0xFFD4AF7A).withValues(alpha: 0.15),
+                        width: 1.5,
+                      ),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(24.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Spacer(),
+                          ShimmerWidget(
+                            width: 220,
+                            height: 28,
+                            borderRadius: BorderRadius.circular(6),
+                          ),
+                          const SizedBox(height: 12),
+                          ShimmerWidget(
+                            width: 130,
+                            height: 16,
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 32),
+                // Bottom indicators Shimmer
+                Center(
+                  child: ShimmerWidget(
+                    width: 60,
+                    height: 8,
+                    borderRadius: BorderRadius.circular(4),
+                  ),
+                ),
+                const SizedBox(height: 16),
+              ],
+            ),
+          ),
+        ),
+      );
+    }
+
     return Scaffold(
       body: Stack(
         fit: StackFit.expand,
@@ -1293,13 +1600,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       child: Stack(
         fit: StackFit.expand,
         children: [
-          Image.asset(
-            sampleDestinations[_previousIndex].bgBlurPath,
-            fit: BoxFit.cover,
-            errorBuilder: (_, __, ___) => Container(
-              color: const Color(0xFF1C302D),
-            ),
-          ),
+          Destination.buildImage(_previousBgPath),
           BackdropFilter(
             filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
             child: Container(color: Colors.transparent),
@@ -1320,13 +1621,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         child: Stack(
           fit: StackFit.expand,
           children: [
-            Image.asset(
-              sampleDestinations[_currentIndex].bgBlurPath,
-              fit: BoxFit.cover,
-              errorBuilder: (_, __, ___) => Container(
-                color: const Color(0xFF1C302D),
-              ),
-            ),
+            Destination.buildImage(_currentBgPath),
             BackdropFilter(
               filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
               child: Container(color: Colors.transparent),
@@ -1358,47 +1653,31 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Widget _buildUIContent(Size size) {
-    return AnimatedSwitcher(
-      duration: const Duration(milliseconds: 360),
-      reverseDuration: const Duration(milliseconds: 280),
-      switchInCurve: Curves.easeOutCubic,
-      switchOutCurve: Curves.easeInCubic,
-      transitionBuilder: (child, animation) {
-        final slide = Tween<Offset>(
-          begin: const Offset(0, 0.03),
-          end: Offset.zero,
-        ).animate(animation);
-
-        return FadeTransition(
-          opacity: animation,
-          child: SlideTransition(
-            position: slide,
-            child: child,
-          ),
-        );
-      },
-      child: _buildSelectedSection(size),
-    );
-  }
-
-  Widget _buildSelectedSection(Size size) {
-    switch (_navIndex) {
-      case 1:
-        return SavedPlacesSection(
+    return IndexedStack(
+      index: _navIndex,
+      children: [
+        _buildHomeTabBody(size),
+        SavedPlacesSection(
           entranceAnimation: _cardEntrance,
           savedDestinations: _savedDestinations,
           updatingSavedNames: _updatingSavedNames,
           isLoading: _isLoadingSavedPlaces,
-          onBack: () => setState(() => _navIndex = 0),
+          onBack: () {
+            setState(() => _navIndex = 0);
+            _startAutoPlay();
+          },
           onOpenDetail: _openPlaceDetail,
           onToggleSaved: _toggleSaved,
-        );
-      case 3:
-        return ProfileSection(
+        ),
+        const SizedBox.shrink(),
+        ProfileSection(
           entranceAnimation: _cardEntrance,
           userData: _userData,
           isLoading: _isLoadingProfile,
-          onBack: () => setState(() => _navIndex = 0),
+          onBack: () {
+            setState(() => _navIndex = 0);
+            _startAutoPlay();
+          },
           onLogout: _logout,
           onUpdateAvatar: () => _showEditImageDialog(true),
           onUpdateCover: () => _showEditImageDialog(false),
@@ -1409,10 +1688,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           onEditNotifications: _editNotifications,
           onEditLanguage: _editLanguage,
           onEditHelpSupport: _editHelpSupport,
-        );
-      default:
-        return _buildHomeTabBody(size);
-    }
+        ),
+      ],
+    );
   }
 
   Widget _buildHomeTabBody(Size size) {
@@ -1423,14 +1701,32 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         const SizedBox(height: 8),
         _buildTitle(),
         const SizedBox(height: 12),
-        _buildSearchBar(),
-        const SizedBox(height: 12),
-        _buildRegionTabs(),
-        const SizedBox(height: 12),
         Expanded(
-          child: _buildCardCarousel(size),
+          child: Stack(
+            clipBehavior: Clip.none,
+            children: [
+              Column(
+                children: [
+                  _buildSearchBar(),
+                  const SizedBox(height: 12),
+                  _buildRegionTabs(),
+                  const SizedBox(height: 12),
+                  Expanded(
+                    child: _buildCardCarousel(size),
+                  ),
+                  const SizedBox(height: 16),
+                ],
+              ),
+              if (_searchFocusNode.hasFocus)
+                Positioned(
+                  top: 60, // Relative top offset exactly below the search bar container
+                  left: 0,
+                  right: 0,
+                  child: _buildSuggestionsDropdown(),
+                ),
+            ],
+          ),
         ),
-        const SizedBox(height: 16),
       ],
     );
   }
@@ -1526,6 +1822,125 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     );
   }
 
+  List<Destination> get _suggestions {
+    final query = _searchQuery.trim().toLowerCase();
+    if (query.isEmpty) {
+      final all = _realDestinations.isNotEmpty ? _realDestinations : sampleDestinations;
+      return all.take(3).toList();
+    }
+    if (_searchSuggestions.isNotEmpty) {
+      return _searchSuggestions;
+    }
+    final all = _realDestinations.isNotEmpty ? _realDestinations : sampleDestinations;
+    return all.where((d) {
+      return d.name.toLowerCase().contains(query) ||
+             d.province.toLowerCase().contains(query);
+    }).take(5).toList();
+  }
+
+  Widget _buildSuggestionsDropdown() {
+    final list = _suggestions;
+    if (list.isEmpty) return const SizedBox.shrink();
+
+    return Container(
+      margin: const EdgeInsets.symmetric(horizontal: 24),
+      decoration: BoxDecoration(
+        color: const Color(0xEE11221D),
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: Colors.white.withOpacity(0.18)),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.5),
+            blurRadius: 25,
+            spreadRadius: 2,
+            offset: const Offset(0, 12),
+          ),
+        ],
+      ),
+      clipBehavior: Clip.antiAlias,
+      child: BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 16, sigmaY: 16),
+        child: ListView.separated(
+          shrinkWrap: true,
+          padding: const EdgeInsets.symmetric(vertical: 8),
+          physics: const NeverScrollableScrollPhysics(),
+          itemCount: list.length,
+          separatorBuilder: (_, __) => Divider(
+            height: 1,
+            color: Colors.white.withOpacity(0.08),
+            indent: 16,
+            endIndent: 16,
+          ),
+          itemBuilder: (context, i) {
+            final dest = list[i];
+            return Material(
+              color: Colors.transparent,
+              child: InkWell(
+                onTap: () {
+                  setState(() {
+                    _searchQuery = dest.name;
+                    _searchController.text = dest.name;
+                  });
+                  _searchFocusNode.unfocus();
+                  _onSearchChanged(dest.name);
+                },
+                hoverColor: Colors.white.withOpacity(0.05),
+                splashColor: const Color(0xFFB5956A).withOpacity(0.2),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                  child: Row(
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(8),
+                        child: SizedBox(
+                          width: 32,
+                          height: 32,
+                          child: Destination.buildImage(dest.imagePath, fit: BoxFit.cover),
+                        ),
+                      ),
+                      const SizedBox(width: 14),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              dest.name,
+                              style: const TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 14,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const SizedBox(height: 2),
+                            Text(
+                              dest.province,
+                              style: TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 11,
+                                color: Colors.white.withOpacity(0.55),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Icon(
+                        Icons.north_west_rounded,
+                        color: Colors.white.withOpacity(0.35),
+                        size: 16,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
+      ),
+    );
+  }
+
   Widget _buildSearchBar() {
     return FadeTransition(
       opacity: _cardEntrance,
@@ -1535,51 +1950,103 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           end: Offset.zero,
         ).animate(_cardEntrance),
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24),
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
           child: Container(
-            height: 48,
+            height: 52,
             decoration: BoxDecoration(
-              color: Colors.black.withOpacity(0.40),
-              borderRadius: BorderRadius.circular(16),
-              border: Border.all(color: Colors.white.withOpacity(0.15)),
+              color: Colors.black.withOpacity(0.48),
+              borderRadius: BorderRadius.circular(26),
+              border: Border.all(color: Colors.white.withOpacity(0.22)),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.25),
+                  blurRadius: 10,
+                  offset: const Offset(0, 4),
+                ),
+              ],
             ),
             child: Row(
               children: [
-                const SizedBox(width: 14),
-                Icon(Icons.search_rounded,
-                    color: Colors.white.withOpacity(0.7), size: 22),
-                const SizedBox(width: 10),
+                const SizedBox(width: 16),
+                Icon(
+                  Icons.search_rounded,
+                  color: Colors.white.withOpacity(0.7),
+                  size: 22,
+                ),
+                const SizedBox(width: 12),
                 Expanded(
                   child: TextField(
+                    controller: _searchController,
+                    focusNode: _searchFocusNode,
+                    onChanged: _onSearchChanged,
                     style: const TextStyle(
                       fontFamily: 'Montserrat',
                       fontSize: 14,
                       color: Colors.white,
                     ),
                     decoration: InputDecoration(
-                      hintText: 'Tìm kiếm điểm đến, tour...',
+                      hintText: 'Tìm kiếm trên TourXport...',
                       hintStyle: TextStyle(
                         fontFamily: 'Montserrat',
                         fontSize: 14,
                         color: Colors.white.withOpacity(0.4),
                       ),
                       border: InputBorder.none,
-                      contentPadding: EdgeInsets.zero,
+                      contentPadding: const EdgeInsets.symmetric(vertical: 2),
                       isDense: true,
                     ),
                     cursorColor: const Color(0xFFB5956A),
                   ),
                 ),
-                Container(
-                  width: 38,
-                  height: 38,
-                  margin: const EdgeInsets.all(5),
-                  decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.12),
-                    borderRadius: BorderRadius.circular(12),
+                if (_searchQuery.isNotEmpty)
+                  IconButton(
+                    icon: Icon(
+                      Icons.close_rounded,
+                      color: Colors.white.withOpacity(0.5),
+                      size: 20,
+                    ),
+                    onPressed: () {
+                      _searchController.clear();
+                      _onSearchChanged('');
+                    },
+                    tooltip: 'Xoá tìm kiếm',
+                    splashRadius: 18,
+                    constraints: const BoxConstraints(),
+                    padding: const EdgeInsets.symmetric(horizontal: 6),
                   ),
-                  child: Icon(Icons.tune_rounded,
-                      color: Colors.white.withOpacity(0.7), size: 20),
+                IconButton(
+                  icon: Icon(
+                    Icons.mic_rounded,
+                    color: Colors.white.withOpacity(0.7),
+                    size: 22,
+                  ),
+                  onPressed: () {
+                    _showMessage('Tính năng tìm kiếm bằng giọng nói đang được phát triển');
+                  },
+                  tooltip: 'Tìm kiếm bằng giọng nói',
+                  splashRadius: 20,
+                  constraints: const BoxConstraints(),
+                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                ),
+                Container(
+                  width: 1,
+                  height: 24,
+                  color: Colors.white.withOpacity(0.15),
+                  margin: const EdgeInsets.symmetric(horizontal: 6),
+                ),
+                IconButton(
+                  icon: Icon(
+                    Icons.tune_rounded,
+                    color: Colors.white.withOpacity(0.7),
+                    size: 21,
+                  ),
+                  onPressed: () {
+                    _openSearchToolsSheet();
+                  },
+                  tooltip: 'Bộ lọc nâng cao',
+                  splashRadius: 20,
+                  constraints: const BoxConstraints(),
+                  padding: const EdgeInsets.only(left: 8, right: 16),
                 ),
               ],
             ),
@@ -1604,18 +2071,33 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           itemCount: regions.length,
           separatorBuilder: (_, __) => const SizedBox(width: 10),
           itemBuilder: (context, i) {
-            final isSelected =
-                sampleDestinations[_currentIndex].province == regions[i];
+            final list = _homeDestinations;
+            String currentProv = '';
+            if (list.isNotEmpty) {
+              int activeListIndex = 0;
+              if (_pageController.hasClients) {
+                final page = _pageController.page?.round() ?? 1000;
+                activeListIndex = page % list.length;
+              }
+              if (activeListIndex >= 0 && activeListIndex < list.length) {
+                currentProv = list[activeListIndex].province;
+              }
+            }
+            final isSelected = currentProv == regions[i];
             return GestureDetector(
               onTap: () {
-                final idx = sampleDestinations
-                    .indexWhere((d) => d.province == regions[i]);
+                final idx = list.indexWhere((d) => d.province == regions[i]);
                 if (idx >= 0 && idx != _currentIndex) {
-                  _pageController.animateToPage(
-                    idx,
-                    duration: const Duration(milliseconds: 400),
-                    curve: Curves.easeInOut,
-                  );
+                  if (_pageController.hasClients) {
+                    final currentPage = _pageController.page?.round() ?? 1000;
+                    final currentListIndex = currentPage % list.length;
+                    final offset = idx - currentListIndex;
+                    _pageController.animateToPage(
+                      currentPage + offset,
+                      duration: const Duration(milliseconds: 400),
+                      curve: Curves.easeInOut,
+                    );
+                  }
                 }
               },
               child: AnimatedContainer(
@@ -1659,6 +2141,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       );
     }
 
+    final showInfinite = destinations.length > 3;
+
     return FadeTransition(
       opacity: _cardEntrance,
       child: SlideTransition(
@@ -1668,14 +2152,17 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         ).animate(_cardEntrance),
         child: PageView.builder(
           controller: _pageController,
-          itemCount: destinations.length,
+          itemCount: showInfinite ? 100000 : destinations.length,
           onPageChanged: (index) {
-            final selected = destinations[index];
-            final mappedIndex =
-                sampleDestinations.indexWhere((d) => d.name == selected.name);
-            _onPageChanged(mappedIndex >= 0 ? mappedIndex : index);
+            final listIndex = destinations.isEmpty 
+                ? 0 
+                : (showInfinite ? (index % destinations.length) : index);
+            _onPageChanged(listIndex);
+            _startAutoPlay();
           },
           itemBuilder: (context, index) {
+            if (destinations.isEmpty) return const SizedBox.shrink();
+            final listIndex = showInfinite ? (index % destinations.length) : index;
             return AnimBuilder(
               animation: _pageController,
               builder: (context, child) {
@@ -1699,7 +2186,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   ),
                 );
               },
-              child: _buildDestinationCard(destinations[index]),
+              child: _buildDestinationCard(destinations[listIndex]),
             );
           },
         ),
@@ -1739,16 +2226,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 child: Stack(
                   fit: StackFit.expand,
                   children: [
-                    Image.asset(
+                    Destination.buildImage(
                       dest.imagePath,
                       fit: BoxFit.cover,
-                      errorBuilder: (_, __, ___) => Container(
-                        color: const Color(0xFF2A4A3E),
-                        child: const Center(
-                          child: Icon(Icons.image,
-                              color: Colors.white38, size: 60),
-                        ),
-                      ),
                     ),
                     Positioned(
                       top: 14,
@@ -1909,7 +2389,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                 ),
                                 const SizedBox(height: 4),
                                 Text(
-                                  dest.price,
+                                  dest.province,
                                   style: TextStyle(
                                     fontFamily: 'Montserrat',
                                     fontSize: 14,
@@ -1994,10 +2474,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               children: List.generate(items.length, (i) {
                 final isActive = _navIndex == i;
                 return GestureDetector(
-                  onTap: () {
+                  onTap: () async {
                     if (i == 2) {
                       // Mở khảo sát khi nhấn vào nút Explore (Safari-like)
-                      Navigator.push(
+                      _stopAutoPlay();
+                      await Navigator.push(
                         context,
                         PageRouteBuilder(
                           pageBuilder: (_, __, ___) => SurveyScreen(
@@ -2026,8 +2507,14 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                           },
                         ),
                       );
+                      _startAutoPlay();
                     } else {
                       setState(() => _navIndex = i);
+                      if (i == 0) {
+                        _startAutoPlay();
+                      } else {
+                        _stopAutoPlay();
+                      }
                     }
                   },
                   child: AnimatedContainer(
@@ -2051,6 +2538,71 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           ),
         ),
       ),
+    );
+  }
+}
+
+class ShimmerWidget extends StatefulWidget {
+  final double width;
+  final double height;
+  final BorderRadius borderRadius;
+
+  const ShimmerWidget({
+    super.key,
+    required this.width,
+    required this.height,
+    this.borderRadius = BorderRadius.zero,
+  });
+
+  @override
+  State<ShimmerWidget> createState() => _ShimmerWidgetState();
+}
+
+class _ShimmerWidgetState extends State<ShimmerWidget> with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 1500),
+    )..repeat();
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedBuilder(
+      animation: _controller,
+      builder: (context, child) {
+        return Container(
+          width: widget.width,
+          height: widget.height,
+          decoration: BoxDecoration(
+            borderRadius: widget.borderRadius,
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: const [
+                Color(0xFF152A25),
+                Color(0xFF28443D),
+                Color(0xFF152A25),
+              ],
+              stops: [
+                _controller.value - 0.3,
+                _controller.value,
+                _controller.value + 0.3,
+              ],
+            ),
+          ),
+        );
+      },
     );
   }
 }

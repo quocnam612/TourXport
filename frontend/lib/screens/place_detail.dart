@@ -235,7 +235,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
   ) {
     if (widget.cardRect == null) {
       return Positioned.fill(
-        child: Image.asset(dest.imagePath, fit: BoxFit.cover),
+        child: Destination.buildImage(dest.imagePath, fit: BoxFit.cover),
       );
     }
 
@@ -252,7 +252,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
           return Positioned.fill(
             child: Transform.translate(
               offset: Offset(0, offsetY),
-              child: Image.asset(dest.imagePath, fit: BoxFit.cover),
+              child: Destination.buildImage(dest.imagePath, fit: BoxFit.cover),
             ),
           );
         }
@@ -304,7 +304,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
               child: Stack(
                 fit: StackFit.expand,
                 children: [
-                  Image.asset(dest.imagePath, fit: BoxFit.cover),
+                  Destination.buildImage(dest.imagePath, fit: BoxFit.cover),
                   
                   if (cardInfoOpacity > 0)
                     Opacity(
@@ -390,7 +390,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
           parent: parentAnim,
           curve: Curves.easeOut,
         ),
-        child: Image.asset(dest.imagePath, fit: BoxFit.cover),
+        child: Destination.buildImage(dest.imagePath, fit: BoxFit.cover),
       ),
     );
   }
@@ -653,8 +653,10 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
           borderRadius: BorderRadius.circular(16),
           child: SizedBox(
             width: 130,
-            child: Image.asset(images[i], fit: BoxFit.cover,
-              errorBuilder: (_, __, ___) => Container(color: Colors.white10)),
+            child: Destination.buildImage(
+              images[i],
+              fit: BoxFit.cover,
+            ),
           ),
         ),
       ),

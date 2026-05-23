@@ -7,10 +7,10 @@ export const getLocations = async (req, res) => {
     try {
         const data = await PlaceDB.find()
             .sort({
-                totalScore: -1,
-                reviewsCount: -1
+                reviewsCount: -1,
+                totalScore: -1
             })
-            .limit(50);
+            .limit(120);
 
         res.status(200).json({
             success: true,
