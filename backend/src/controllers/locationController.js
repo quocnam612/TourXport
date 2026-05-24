@@ -1,6 +1,109 @@
 import mongoose from 'mongoose';
 import PlaceDB from '../models/PlaceDB.js';
 
+// Vietnamese diacritic-insensitive regex helper
+const generateDiacriticRegex = (str) => {
+    if (!str) return '';
+    const accentMap = {
+        'a': '[aàáảãạăằắẳẵặâầấẩẫậ]',
+        'à': '[aàáảãạăằắẳẵặâầấẩẫậ]',
+        'á': '[aàáảãạăằắẳẵặâầấẩẫậ]',
+        'ả': '[aàáảãạăằắẳẵặâầấẩẫậ]',
+        'ã': '[aàáảãạăằắẳẵặâầấẩẫậ]',
+        'ạ': '[aàáảãạăằắẳẵặâầấẩẫậ]',
+        'ă': '[aàáảãạăằắẳẵặâầấẩẫậ]',
+        'ằ': '[aàáảãạăằắẳẵặâầấẩẫậ]',
+        'ắ': '[aàáảãạăằắẳẵặâầấẩẫậ]',
+        'ẳ': '[aàáảãạăằắẳẵặâầấẩẫậ]',
+        'ẵ': '[aàáảãạăằắẳẵặâầấẩẫậ]',
+        'ặ': '[aàáảãạăằắẳẵặâầấẩẫậ]',
+        'â': '[aàáảãạăằắẳẵặâầấẩẫậ]',
+        'ầ': '[aàáảãạăằắẳẵặâầấẩẫậ]',
+        'ấ': '[aàáảãạăằắẳẵặâầấẩẫậ]',
+        'ẩ': '[aàáảãạăằắẳẵặâầấẩẫậ]',
+        'ẫ': '[aàáảãạăằắẳẵặâầấẩẫậ]',
+        'ậ': '[aàáảãạăằắẳẵặâầấẩẫậ]',
+        
+        'e': '[eèéẻẽẹêềếểễệ]',
+        'è': '[eèéẻẽẹêềếểễệ]',
+        'é': '[eèéẻẽẹêềếểễệ]',
+        'ẻ': '[eèéẻẽẹêềếểễệ]',
+        'ẽ': '[eèéẻẽẹêềếểễệ]',
+        'ẹ': '[eèéẻẽẹêềếểễệ]',
+        'ê': '[eèéẻẽẹêềếểễệ]',
+        'ề': '[eèéẻẽẹêềếểễệ]',
+        'ế': '[eèéẻẽẹêềếểễệ]',
+        'ể': '[eèéẻẽẹêềếểễệ]',
+        'ễ': '[eèéẻẽẹêềếểễệ]',
+        'ệ': '[eèéẻẽẹêềếểễệ]',
+        
+        'i': '[iìíỉĩị]',
+        'ì': '[iìíỉĩị]',
+        'í': '[iìíỉĩị]',
+        'ỉ': '[iìíỉĩị]',
+        'ĩ': '[iìíỉĩị]',
+        'ị': '[iìíỉĩị]',
+        
+        'o': '[oòóỏõọôồốổỗộơờớởỡợ]',
+        'ò': '[oòóỏõọôồốổỗộơờớởỡợ]',
+        'ó': '[oòóỏõọôồốổỗộơờớởỡợ]',
+        'ỏ': '[oòóỏõọôồốổỗộơờớởỡợ]',
+        'õ': '[oòóỏõọôồốổỗộơờớởỡợ]',
+        'ọ': '[oòóỏõọôồốổỗộơờớởỡợ]',
+        'ô': '[oòóỏõọôồốổỗộơờớởỡợ]',
+        'ồ': '[oòóỏõọôồốổỗộơờớởỡợ]',
+        'ố': '[oòóỏõọôồốổỗộơờớởỡợ]',
+        'ổ': '[oòóỏõọôồốổỗộơờớởỡợ]',
+        'ỗ': '[oòóỏõọôồốổỗộơờớởỡợ]',
+        'ộ': '[oòóỏõọôồốổỗộơờớởỡợ]',
+        'ơ': '[oòóỏõọôồốổỗộơờớởỡợ]',
+        'ờ': '[oòóỏõọôồốổỗộơờớởỡợ]',
+        'ớ': '[oòóỏõọôồốổỗộơờớởỡợ]',
+        'ở': '[oòóỏõọôồốổỗộơờớởỡợ]',
+        'ỡ': '[oòóỏõọôồốổỗộơờớởỡợ]',
+        'ợ': '[oòóỏõọôồốổỗộơờớởỡợ]',
+        
+        'u': '[uùúủũụưừứửữự]',
+        'ù': '[uùúủũụưừứửữự]',
+        'ú': '[uùúủũụưừứửữự]',
+        'ủ': '[uùúủũụưừứửữự]',
+        'ũ': '[uùúủũụưừứửữự]',
+        'ụ': '[uùúủũụưừứửữự]',
+        'ư': '[uùúủũụưừứửữự]',
+        'ừ': '[uùúủũụưừứửữự]',
+        'ứ': '[uùúủũụưừứửữự]',
+        'ử': '[uùúủũụưừứửữự]',
+        'ữ': '[uùúủũụưừứửữự]',
+        'ự': '[uùúủũụưừứửữự]',
+        
+        'y': '[yỳýỷỹỵ]',
+        'ỳ': '[yỳýỷỹỵ]',
+        'ý': '[yỳýỷỹỵ]',
+        'ỷ': '[yỳýỷỹỵ]',
+        'ỹ': '[yỳýỷỹỵ]',
+        'ỵ': '[yỳýỷỹỵ]',
+        
+        'd': '[dđ]',
+        'đ': '[dđ]'
+    };
+    
+    let regexStr = '';
+    for (let i = 0; i < str.length; i++) {
+        const char = str[i].toLowerCase();
+        if (accentMap[char]) {
+            regexStr += accentMap[char];
+        } else {
+            // Escape special regex characters
+            if ('^$.*+?=!:|\\/()[]{}'.indexOf(char) !== -1) {
+                regexStr += '\\' + char;
+            } else {
+                regexStr += char;
+            }
+        }
+    }
+    return regexStr;
+};
+
 
 // GET ALL LOCATIONS
 export const getLocations = async (req, res) => {
@@ -76,22 +179,23 @@ export const searchLocations = async (req, res) => {
 
         // SEARCH QUERY
         if (query) {
+            const queryRegexStr = generateDiacriticRegex(query);
             filter.$or = [
                 {
                     title: {
-                        $regex: query,
+                        $regex: queryRegexStr,
                         $options: 'i'
                     }
                 },
                 {
                     searchText: {
-                        $regex: query,
+                        $regex: queryRegexStr,
                         $options: 'i'
                     }
                 },
                 {
                     tags: {
-                        $regex: query,
+                        $regex: queryRegexStr,
                         $options: 'i'
                     }
                 }
@@ -101,7 +205,7 @@ export const searchLocations = async (req, res) => {
         // FILTER CITY
         if (city) {
             filter.city = {
-                $regex: city,
+                $regex: generateDiacriticRegex(city),
                 $options: 'i'
             };
         }
@@ -109,7 +213,7 @@ export const searchLocations = async (req, res) => {
         // FILTER CATEGORY
         if (category) {
             filter.category = {
-                $regex: category,
+                $regex: generateDiacriticRegex(category),
                 $options: 'i'
             };
         }
