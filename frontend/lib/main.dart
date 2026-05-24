@@ -1,6 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'screens/landing_page.dart';
+import 'screens/sign_in.dart';
 
 void main() {
   runApp(const TourXportApp());
@@ -30,7 +30,7 @@ class TourXportApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      home: const LandingPage(),
+      home: const SignInScreen(),
     );
   }
 }
