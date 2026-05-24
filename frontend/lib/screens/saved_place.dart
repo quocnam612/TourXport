@@ -230,12 +230,9 @@ class SavedPlacesSection extends StatelessWidget {
                   child: Stack(
                     fit: StackFit.expand,
                     children: [
-                      Image.asset(
+                      Destination.buildImage(
                         dest.imagePath,
                         fit: BoxFit.cover,
-                        errorBuilder: (_, __, ___) => Container(
-                          color: const Color(0xFF2A4A3E),
-                        ),
                       ),
                       Container(
                         decoration: BoxDecoration(
