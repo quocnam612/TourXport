@@ -2,20 +2,18 @@ import bcrypt from 'bcrypt';
 
 import UserDB from '../models/UserDB.js';
 import PlaceDB from '../models/PlaceDB.js';
-import config from '../config/config.js';
-import validate from '../utils/validators.js';
+import TourDB from '../models/TourDB.js';
+
+import respond from '../utils/respond.js';
 import { generateToken } from '../utils/jwt.js';
 
-export const login = async (req, res) => {
+export const login = async (req, res, next) => {
     try {
         const { phone, email, password } = req.body;
         const identifier = phone || email;
 
         if (!identifier || !password) {
-            return res.status(400).json({
-                success: false,
-                message: 'Please provide enough login credentials!'
-            });
+            return next(respond.httpError('Please provide enough login credentials!', 400));
         }
 
         const user = await UserDB.findOne({
@@ -23,18 +21,12 @@ export const login = async (req, res) => {
         }).select('+password');
 
         if (!user) {
-            return res.status(401).json({
-                success: false,
-                message: 'Invalid login credentials!'
-            });
+            return next(respond.httpError('Invalid login credentials!', 401));
         }
 
         const isMatch = await bcrypt.compare(password, user.password);
         if (!isMatch) {
-            return res.status(401).json({
-                success: false,
-                message: 'Invalid login credentials!'
-            });
+            return next(respond.httpError('Invalid login credentials!', 401));
         }
 
         const token = generateToken(user);
@@ -50,37 +42,24 @@ export const login = async (req, res) => {
         });
 
     } catch (error) {
-        res.status(500).json({
-            success: false,
-            message: 'Server error, please try again later!',
-            error: error.message
-        });
+        next(error);
     }
 };
 
-export const register = async (req, res) => {
+export const register = async (req, res, next) => {
     try {
         const { name, phone, email, password } = req.body;
 
         if (!name || !email || !password) {
-            return res.status(400).json({
-                success: false,
-                message: 'Please provide all required fields!'
-            });
+            return next(respond.httpError('Please provide all required fields!', 400));
         }
 
         if (await UserDB.findOne({ email })) {
-            return res.status(409).json({
-                success: false,
-                message: 'User with this email already exists!'
-            });
+            return next(respond.httpError('User with this email already exists!', 409));
         }
 
         if (phone && await UserDB.findOne({ phone })) {
-            return res.status(409).json({
-                success: false,
-                message: 'User with this phone number already exists!'
-            });
+            return next(respond.httpError('User with this phone number already exists!', 409));
         }
 
         const hashedPassword = await bcrypt.hash(password, 10);
@@ -106,24 +85,16 @@ export const register = async (req, res) => {
         });
 
     } catch (error) {
-        res.status(500).json({
-            success: false,
-            message: 'Server error, please try again later!',
-            error: error.message
-        });
+        next(error);
     }
 };
 
-export const getProfile = async (req, res) => {
+export const getProfile = async (req, res, next) => {
     try {
-        const user = await UserDB.findById(req.user.id)
-            .select('-savedPlaces -savedTours -password');
+        const user = await UserDB.findById(req.user.id).select('-savedPlaces -savedTours -password');
 
         if (!user) {
-            return res.status(404).json({
-                success: false,
-                message: 'User not found!'
-            });
+            return next(respond.httpError('User not found!', 404));
         }
 
         res.status(200).json({
@@ -138,15 +109,11 @@ export const getProfile = async (req, res) => {
             }
         });
     } catch (error) {
-        res.status(500).json({
-            success: false,
-            message: 'Server error, please try again later!',
-            error: error.message
-        });
+        next(error);
     }
 };
 
-export const updateProfile = async (req, res) => {
+export const updateProfile = async (req, res, next) => {
     try {
         const { name, phone, email } = req.body;
         const userId = req.user.id;
@@ -157,7 +124,7 @@ export const updateProfile = async (req, res) => {
         if (phone) {
             const existingPhone = await UserDB.findOne({ phone, _id: { $ne: userId } });
             if (existingPhone) {
-                return res.status(409).json({ success: false, message: 'Phone number is already in use!' });
+                return next(respond.httpError('Phone number is already in use!', 409));
             }
             updates.phone = phone;
         }
@@ -165,7 +132,7 @@ export const updateProfile = async (req, res) => {
         if (email) {
             const existingEmail = await UserDB.findOne({ email, _id: { $ne: userId } });
             if (existingEmail) {
-                return res.status(409).json({ success: false, message: 'Email is already in use!' });
+                return next(respond.httpError('Email is already in use!', 409));
             }
             updates.email = email;
         }
@@ -177,7 +144,7 @@ export const updateProfile = async (req, res) => {
         );
 
         if (!user) {
-            return res.status(404).json({ success: false, message: 'User not found!' });
+            return next(respond.httpError('User not found!', 404));
         }
 
         res.status(200).json({
@@ -192,18 +159,18 @@ export const updateProfile = async (req, res) => {
             }
         });
     } catch (err) {
-        res.status(500).json({ success: false, message: err.message });
+        next(err);
     }
 };
 
-export const changePassword = async (req, res) => {
+export const changePassword = async (req, res, next) => {
     try {
         const { oldPassword, newPassword } = req.body;
         const user = await UserDB.findById(req.user.id).select('+password');
 
         const isMatch = await bcrypt.compare(oldPassword, user.password);
         if (!isMatch) {
-            return res.status(401).json({ success: false, message: 'Old password is incorrect!' });
+            return next(respond.httpError('Old password is incorrect!', 401));
         }
 
         user.password = await bcrypt.hash(newPassword, 10);
@@ -211,16 +178,16 @@ export const changePassword = async (req, res) => {
 
         res.status(200).json({ success: true, message: 'Password changed successfully!' });
     } catch (error) {
-        res.status(500).json({ success: false, message: error.message });
+        next(error);
     }
 };
 
-export const getSavedPlaces = async (req, res) => {
+export const getSavedPlaces = async (req, res, next) => {
     try {
         const user = await UserDB.findById(req.user.id).populate('savedPlaces');
 
         if (!user) {
-            return res.status(404).json({ success: false, message: 'User not found' });
+            return next(respond.httpError('User not found', 404));
         }
 
         res.status(200).json({ 
@@ -228,16 +195,16 @@ export const getSavedPlaces = async (req, res) => {
             savedPlaces: user.savedPlaces || [] 
         });
     } catch (err) {
-        res.status(500).json({ success: false, message: err.message });
+        next(err);
     }
 };
 
-export const addSavedPlace = async (req, res) => {
+export const addSavedPlace = async (req, res, next) => {
     try {
         const { placeId } = req.body;
 
         if (!placeId) {
-            return res.status(400).json({ success: false, message: 'Place ID is required' });
+            return next(respond.httpError('Place ID is required', 400));
         }
 
         const user = await UserDB.findByIdAndUpdate(
@@ -246,7 +213,7 @@ export const addSavedPlace = async (req, res) => {
         );
 
         if (!user) {
-            return res.status(404).json({ success: false, message: 'User not found' });
+            return next(respond.httpError('User not found', 404));
         }
 
         const newSavedPlace = await PlaceDB.findById(placeId);
@@ -257,39 +224,39 @@ export const addSavedPlace = async (req, res) => {
             newPlace: newSavedPlace 
         });
     } catch (err) {
-        res.status(500).json({ success: false, message: err.message });
+        next(err);
     }
 };
 
-export const removeSavedPlace = async (req, res) => {
+export const removeSavedPlace = async (req, res, next) => {
     try {
-        const { placeId } = req.params; 
+        const { id } = req.params; 
 
-        if (!placeId) {
-            return res.status(400).json({ success: false, message: 'Place ID is required' });
+        if (!id) {
+            return next(respond.httpError('Place ID is required', 400));
         }
 
         await UserDB.findByIdAndUpdate(
             req.user.id,
-            { $pull: { savedPlaces: placeId } }
+            { $pull: { savedPlaces: id } }
         );
 
         res.status(200).json({ 
             success: true, 
             message: 'Removed from favorites successfully!',
-            removedId: placeId
+            removedId: id
         });
     } catch (err) {
-        res.status(500).json({ success: false, message: err.message });
+        next(err);
     }
 };
 
-export const getSavedTours = async (req, res) => {
+export const getSavedTours = async (req, res, next) => {
     try {
         const user = await UserDB.findById(req.user.id).populate('savedTours');
 
         if (!user) {
-            return res.status(404).json({ success: false, message: 'User not found' });
+            return next(respond.httpError('User not found', 404));
         }
 
         res.status(200).json({ 
@@ -297,16 +264,16 @@ export const getSavedTours = async (req, res) => {
             savedTours: user.savedTours || [] 
         });
     } catch (err) {
-        res.status(500).json({ success: false, message: err.message });
+        next(err);
     }
 };
 
-export const addSavedTour = async (req, res) => {
+export const addSavedTour = async (req, res, next) => {
     try {
         const { tourId } = req.body;
 
         if (!tourId) {
-            return res.status(400).json({ success: false, message: 'Tour ID is required' });
+            return next(respond.httpError('Tour ID is required', 400));
         }
 
         const user = await UserDB.findByIdAndUpdate(
@@ -315,7 +282,7 @@ export const addSavedTour = async (req, res) => {
         );
 
         if (!user) {
-            return res.status(404).json({ success: false, message: 'User not found' });
+            return next(respond.httpError('User not found', 404));
         }
 
         const newSavedTour = await TourDB.findById(tourId);
@@ -326,29 +293,29 @@ export const addSavedTour = async (req, res) => {
             newTour: newSavedTour 
         });
     } catch (err) {
-        res.status(500).json({ success: false, message: err.message });
+        next(err);
     }
 };
 
-export const removeSavedTour = async (req, res) => {
+export const removeSavedTour = async (req, res, next) => {
     try {
-        const { tourId } = req.params; 
+        const { id } = req.params; 
 
-        if (!tourId) {
-            return res.status(400).json({ success: false, message: 'Tour ID is required' });
+        if (!id) {
+            return next(respond.httpError('Tour ID is required', 400));
         }
 
         await UserDB.findByIdAndUpdate(
             req.user.id,
-            { $pull: { savedTours: tourId } }
+            { $pull: { savedTours: id } }
         );
 
         res.status(200).json({ 
             success: true, 
             message: 'Removed from favorites successfully!',
-            removedId: tourId
+            removedId: id
         });
     } catch (err) {
-        res.status(500).json({ success: false, message: err.message });
+        next(err);
     }
 };

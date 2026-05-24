@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const placeSchema = new mongoose.Schema({
+const hotelSchema = new mongoose.Schema({
     sourceLocationId: {
         type: String,
         default: null
@@ -109,4 +109,4 @@ const placeSchema = new mongoose.Schema({
 });
 
 
-export default mongoose.model('PlaceDB', placeSchema, 'places');
+export default mongoose.model('HotelDB', hotelSchema, 'hotels');

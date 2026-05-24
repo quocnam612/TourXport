@@ -16,11 +16,11 @@ router.put('/profile/change-password', authenticate, userController.changePasswo
 router.route('/profile/saved-places')
     .get(authenticate, userController.getSavedPlaces)
     .post(authenticate, userController.addSavedPlace);
-router.delete('/profile/saved-places/:placeId', authenticate, userController.removeSavedPlace);
+router.delete('/profile/saved-places/:id', authenticate, userController.removeSavedPlace);
 
 router.route('/profile/saved-tours')
     .get(authenticate, userController.getSavedTours)
     .post(authenticate, userController.addSavedTour);
-router.delete('/profile/saved-tours/:tourId', authenticate, userController.removeSavedTour);
+router.delete('/profile/saved-tours/:id', authenticate, userController.removeSavedTour);
 
 export default router;
