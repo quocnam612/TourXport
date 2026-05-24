@@ -154,10 +154,233 @@ class _SignInScreenState extends State<SignInScreen>
   }
 
   @override
+  @override
   Widget build(BuildContext context) {
     final screenW = MediaQuery.sizeOf(context).width;
+    final isDesktop = screenW >= 800;
     final contentW = screenW > 600 ? 500.0 : screenW;
     final s = contentW / 412;
+
+    if (isDesktop) {
+      return Scaffold(
+        resizeToAvoidBottomInset: true,
+        body: Stack(
+          children: [
+            // ── Background image
+            _buildHeroImage(s),
+
+            // ── Centered glassmorphic card for Desktop Web
+            Center(
+              child: Container(
+                width: 480,
+                decoration: BoxDecoration(
+                  color: Colors.black.withOpacity(0.50),
+                  borderRadius: BorderRadius.circular(36),
+                  border: Border.all(
+                    color: Colors.white.withOpacity(0.12),
+                    width: 1,
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.4),
+                      blurRadius: 30,
+                      offset: const Offset(0, 15),
+                    ),
+                  ],
+                ),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(36),
+                  child: BackdropFilter(
+                    filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
+                    child: SingleChildScrollView(
+                      padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 36),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          // Title
+                          Center(
+                            child: Text(
+                              'Đăng nhập',
+                              style: const TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontWeight: FontWeight.w400,
+                                fontSize: 32,
+                                letterSpacing: 0.35,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(height: 24),
+
+                          // Tab bar
+                          _buildTabBar(1.0, 480 - 40 * 2),
+                          const SizedBox(height: 24),
+
+                          // Fields
+                          AnimatedSwitcher(
+                            duration: const Duration(milliseconds: 300),
+                            transitionBuilder: (child, animation) {
+                              return FadeTransition(opacity: animation, child: child);
+                            },
+                            child: _buildField(
+                              key: ValueKey<bool>(_useEmail),
+                              label: _useEmail ? 'Địa chỉ Email' : 'Số điện thoại',
+                              hint: _useEmail ? 'abc@gmail.com' : '0123456789',
+                              controller: _inputController,
+                              keyboardType: _useEmail
+                                  ? TextInputType.emailAddress
+                                  : TextInputType.phone,
+                              s: 1.0,
+                            ),
+                          ),
+                          const SizedBox(height: 16),
+
+                          _buildField(
+                            label: 'Mật khẩu',
+                            hint: '123abc',
+                            controller: _passwordController,
+                            isPassword: true,
+                            s: 1.0,
+                          ),
+                          const SizedBox(height: 28),
+
+                          // Continue button
+                          _buildContinueButton(1.0),
+                          const SizedBox(height: 24),
+
+                          // Divider
+                          Row(
+                            children: [
+                              Expanded(
+                                child: Divider(
+                                  color: Colors.white.withOpacity(0.4),
+                                  thickness: 1,
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 10),
+                                child: Text(
+                                  'Đăng nhập bằng',
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 14,
+                                    color: Colors.white.withOpacity(0.8),
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                child: Divider(
+                                  color: Colors.white.withOpacity(0.4),
+                                  thickness: 1,
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 16),
+
+                          // Social buttons
+                          SizedBox(
+                            height: 60,
+                            child: Row(
+                              children: [
+                                _buildSocialBtn(
+                                  label: 'Tiếp tục với Google',
+                                  iconAsset: 'assets/icons/gg_logo.png',
+                                  s: 1.0,
+                                ),
+                                const SizedBox(width: 10),
+                                _buildSocialBtn(
+                                  label: 'Tiếp tục với Facebook',
+                                  iconAsset: 'assets/icons/fb_logo.png',
+                                  s: 1.0,
+                                ),
+                              ],
+                            ),
+                          ),
+                          const SizedBox(height: 24),
+
+                          // Sign up link
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Text(
+                                'Bạn chưa có tài khoản? ',
+                                style: TextStyle(
+                                  fontFamily: 'Montserrat',
+                                  fontWeight: FontWeight.w400,
+                                  fontSize: 14,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              GestureDetector(
+                                onTap: () => Navigator.push(
+                                  context,
+                                  PageRouteBuilder(
+                                    pageBuilder: (_, __, ___) => const SignUpScreen(),
+                                    transitionDuration: const Duration(milliseconds: 400),
+                                    reverseTransitionDuration: const Duration(milliseconds: 350),
+                                    transitionsBuilder: (_, animation, __, child) {
+                                      return FadeTransition(
+                                        opacity: CurvedAnimation(
+                                          parent: animation,
+                                          curve: Curves.easeInOut,
+                                        ),
+                                        child: SlideTransition(
+                                          position: Tween<Offset>(
+                                            begin: const Offset(0.05, 0),
+                                            end: Offset.zero,
+                                          ).animate(CurvedAnimation(
+                                            parent: animation,
+                                            curve: Curves.easeOutCubic,
+                                          )),
+                                          child: child,
+                                        ),
+                                      );
+                                    },
+                                  ),
+                                ),
+                                child: const Text(
+                                  'Đăng ký',
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 14,
+                                    color: Colors.white,
+                                    decoration: TextDecoration.underline,
+                                    decorationColor: Colors.white70,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 16),
+
+                          // Tagline
+                          const Text(
+                            '"Hạnh phúc không phải là điểm đến\nmà là cả một hành trình."',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontFamily: 'Montserrat',
+                              fontWeight: FontWeight.w300,
+                              fontSize: 13,
+                              letterSpacing: 0.3,
+                              color: Colors.white,
+                              height: 1.5,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      );
+    }
 
     return Scaffold(
       resizeToAvoidBottomInset: true,
@@ -265,7 +488,7 @@ class _SignInScreenState extends State<SignInScreen>
                       SizedBox(height: 24 * s),
 
                       // ── Tab: Điện thoại / Email
-                      _buildTabBar(s),
+                      _buildTabBar(s, MediaQuery.sizeOf(context).width),
                       SizedBox(height: 24 * s),
 
                       // ── Email / Phone field
@@ -439,7 +662,8 @@ class _SignInScreenState extends State<SignInScreen>
   }
 
   // ── Tab bar ──
-  Widget _buildTabBar(double s) {
+  Widget _buildTabBar(double s, double containerWidth) {
+    final tabWidth = (containerWidth - 48 * s) / 2;
     return SizedBox(
       height: 50 * s,
       child: Stack(
@@ -457,9 +681,9 @@ class _SignInScreenState extends State<SignInScreen>
           AnimatedPositioned(
             duration: const Duration(milliseconds: 250),
             curve: Curves.easeInOutCubic,
-            left: _useEmail ? (MediaQuery.sizeOf(context).width - 48 * s) / 2 + 5 : 5,
+            left: _useEmail ? tabWidth + 5 : 5,
             top: 5,
-            width: (MediaQuery.sizeOf(context).width - 48 * s) / 2 - 10,
+            width: tabWidth - 10,
             height: 40 * s,
             child: AnimatedContainer(
               duration: const Duration(milliseconds: 250),
@@ -479,7 +703,7 @@ class _SignInScreenState extends State<SignInScreen>
           // Điện thoại label
           Positioned(
             left: 0,
-            width: (MediaQuery.sizeOf(context).width - 48 * s) / 2,
+            width: tabWidth,
             top: 0,
             bottom: 0,
             child: GestureDetector(
@@ -503,7 +727,7 @@ class _SignInScreenState extends State<SignInScreen>
           ),
           // Email label
           Positioned(
-            left: (MediaQuery.sizeOf(context).width - 48 * s) / 2,
+            left: tabWidth,
             right: 0,
             top: 0,
             bottom: 0,

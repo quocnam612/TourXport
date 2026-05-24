@@ -210,10 +210,231 @@ class _SignUpScreenState extends State<SignUpScreen>
   }
 
   @override
+  @override
   Widget build(BuildContext context) {
     final screenW = MediaQuery.sizeOf(context).width;
+    final isDesktop = screenW >= 800;
     final contentW = screenW > 600 ? 500.0 : screenW;
     final s = contentW / 412;
+
+    if (isDesktop) {
+      return Scaffold(
+        resizeToAvoidBottomInset: true,
+        body: Stack(
+          children: [
+            // Background
+            _buildHeroImage(s),
+
+            // Back button
+            _buildBackButton(),
+
+            // Centered form card
+            Center(
+              child: Container(
+                width: 480,
+                margin: const EdgeInsets.symmetric(vertical: 40),
+                decoration: BoxDecoration(
+                  color: Colors.black.withOpacity(0.50),
+                  borderRadius: BorderRadius.circular(36),
+                  border: Border.all(
+                    color: Colors.white.withOpacity(0.12),
+                    width: 1,
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.4),
+                      blurRadius: 30,
+                      offset: const Offset(0, 15),
+                    ),
+                  ],
+                ),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(36),
+                  child: BackdropFilter(
+                    filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
+                    child: SingleChildScrollView(
+                      padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 36),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          // Title
+                          Center(
+                            child: Text(
+                              'Tạo tài khoản',
+                              style: const TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontWeight: FontWeight.w400,
+                                fontSize: 32,
+                                letterSpacing: 0.175,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(height: 24),
+
+                          // Fields
+                          _buildField(
+                            label: 'Họ tên',
+                            hint: 'Nguyen Van A',
+                            controller: _nameController,
+                            s: 1.0,
+                          ),
+                          const SizedBox(height: 14),
+
+                          _buildField(
+                            label: 'Số điện thoại (Không bắt buộc)',
+                            hint: '0123456789',
+                            controller: _phoneController,
+                            keyboardType: TextInputType.phone,
+                            s: 1.0,
+                          ),
+                          const SizedBox(height: 14),
+
+                          _buildField(
+                            label: 'Địa chỉ Email',
+                            hint: 'abc@gmail.com',
+                            controller: _emailController,
+                            keyboardType: TextInputType.emailAddress,
+                            s: 1.0,
+                          ),
+                          const SizedBox(height: 14),
+
+                          _buildField(
+                            label: 'Mật khẩu',
+                            hint: 'abc123',
+                            controller: _passwordController,
+                            isPassword: true,
+                            obscure: _obscurePassword,
+                            onToggleObscure: () => setState(
+                              () => _obscurePassword = !_obscurePassword,
+                            ),
+                            s: 1.0,
+                          ),
+                          const SizedBox(height: 14),
+
+                          _buildField(
+                            label: 'Xác nhận mật khẩu',
+                            hint: 'abc123',
+                            controller: _confirmController,
+                            isPassword: true,
+                            obscure: _obscureConfirm,
+                            onToggleObscure: () =>
+                                setState(() => _obscureConfirm = !_obscureConfirm),
+                            s: 1.0,
+                          ),
+                          const SizedBox(height: 16),
+
+                          // Terms text
+                          const Text(
+                            'Bằng việc tiếp tục, bạn đồng ý với Điều khoản dịch vụ của TourXport và Chính sách quyền riêng tư.',
+                            style: TextStyle(
+                              fontFamily: 'Montserrat',
+                              fontWeight: FontWeight.w300,
+                              fontSize: 12,
+                              letterSpacing: 0.12,
+                              color: Colors.white,
+                              height: 1.4,
+                            ),
+                          ),
+                          const SizedBox(height: 24),
+
+                          // Register button
+                          _buildRegisterButton(1.0),
+                          const SizedBox(height: 24),
+
+                          // Divider
+                          Row(
+                            children: [
+                              Expanded(
+                                child: Divider(
+                                  color: Colors.white.withOpacity(0.4),
+                                  thickness: 1,
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 10),
+                                child: Text(
+                                  'Hoặc',
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 14,
+                                    color: Colors.white.withOpacity(0.8),
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                child: Divider(
+                                  color: Colors.white.withOpacity(0.4),
+                                  thickness: 1,
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 16),
+
+                          // Social buttons
+                          SizedBox(
+                            height: 60,
+                            child: Row(
+                              children: [
+                                _buildSocialBtn(
+                                  label: 'Đăng kí với Google',
+                                  iconAsset: 'assets/icons/gg_logo.png',
+                                  s: 1.0,
+                                ),
+                                const SizedBox(width: 10),
+                                _buildSocialBtn(
+                                  label: 'Đăng kí với Facebook',
+                                  iconAsset: 'assets/icons/fb_logo.png',
+                                  s: 1.0,
+                                ),
+                              ],
+                            ),
+                          ),
+                          const SizedBox(height: 24),
+
+                          // Login link
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Text(
+                                'Đã có tài khoản? ',
+                                style: TextStyle(
+                                  fontFamily: 'Montserrat',
+                                  fontWeight: FontWeight.w400,
+                                  fontSize: 14,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              GestureDetector(
+                                onTap: () => Navigator.pop(context),
+                                child: const Text(
+                                  'Đăng nhập',
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 14,
+                                    color: Colors.white,
+                                    decoration: TextDecoration.underline,
+                                    decorationColor: Colors.white70,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      );
+    }
 
     return Scaffold(
       resizeToAvoidBottomInset: true,
@@ -435,47 +656,7 @@ class _SignUpScreenState extends State<SignUpScreen>
                       SizedBox(height: 16 * s),
 
                       // ── Đăng ký button
-                      GestureDetector(
-                        onTap: _isLoading ? null : _handleRegister,
-                        child: Container(
-                          height: 50 * s,
-                          decoration: BoxDecoration(
-                            color: Colors.black.withOpacity(0.5),
-                            borderRadius: BorderRadius.circular(40),
-                            border: Border.all(
-                              color: Colors.white.withOpacity(0.15),
-                              width: 1,
-                            ),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.black.withOpacity(0.3),
-                                blurRadius: 12,
-                                offset: const Offset(0, 4),
-                              ),
-                            ],
-                          ),
-                          alignment: Alignment.center,
-                          child: _isLoading
-                              ? const SizedBox(
-                                  width: 24,
-                                  height: 24,
-                                  child: CircularProgressIndicator(
-                                    color: Colors.white,
-                                    strokeWidth: 2,
-                                  ),
-                                )
-                              : Text(
-                                  'Đăng ký',
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat',
-                                    fontWeight: FontWeight.w500,
-                                    fontSize: 24 * s,
-                                    color: Colors.white.withOpacity(0.9),
-                                    letterSpacing: 0.5,
-                                  ),
-                                ),
-                        ),
-                      ),
+                      _buildRegisterButton(s),
                       SizedBox(height: 20 * s),
 
                       // ── Divider "Hoặc"
@@ -698,6 +879,50 @@ class _SignUpScreenState extends State<SignUpScreen>
             ),
           ),
         ),
+      ),
+    );
+  }
+
+  Widget _buildRegisterButton(double s) {
+    return GestureDetector(
+      onTap: _isLoading ? null : _handleRegister,
+      child: Container(
+        height: 50 * s,
+        decoration: BoxDecoration(
+          color: Colors.black.withOpacity(0.5),
+          borderRadius: BorderRadius.circular(40),
+          border: Border.all(
+            color: Colors.white.withOpacity(0.15),
+            width: 1,
+          ),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.3),
+              blurRadius: 12,
+              offset: const Offset(0, 4),
+            ),
+          ],
+        ),
+        alignment: Alignment.center,
+        child: _isLoading
+            ? const SizedBox(
+                width: 24,
+                height: 24,
+                child: CircularProgressIndicator(
+                  color: Colors.white,
+                  strokeWidth: 2,
+                ),
+              )
+            : Text(
+                'Đăng ký',
+                style: TextStyle(
+                  fontFamily: 'Montserrat',
+                  fontWeight: FontWeight.w500,
+                  fontSize: 24 * s,
+                  color: Colors.white.withOpacity(0.9),
+                  letterSpacing: 0.5,
+                ),
+              ),
       ),
     );
   }
