@@ -11,6 +11,7 @@ class SavedPlacesSection extends StatelessWidget {
   final Future<void> Function(Destination dest, BuildContext cardContext)
       onOpenDetail;
   final Future<bool> Function(Destination dest) onToggleSaved;
+  final bool isGuest;
 
   const SavedPlacesSection({
     super.key,
@@ -21,6 +22,7 @@ class SavedPlacesSection extends StatelessWidget {
     required this.onBack,
     required this.onOpenDetail,
     required this.onToggleSaved,
+    this.isGuest = false,
   });
 
   @override
@@ -174,8 +176,8 @@ class SavedPlacesSection extends StatelessWidget {
                 color: Colors.white.withOpacity(0.75),
               ),
               const SizedBox(height: 18),
-              const Text(
-                'Chưa có địa điểm nào được lưu',
+              Text(
+                isGuest ? 'Đăng nhập để sử dụng tính năng này' : 'Chưa có địa điểm nào được lưu',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: 'Montserrat',

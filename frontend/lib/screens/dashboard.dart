@@ -485,6 +485,37 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   void _logout() {
+    final token = widget.authToken?.trim();
+    if (token == null || token.isEmpty) {
+      Navigator.push(
+        context,
+        PageRouteBuilder(
+          pageBuilder: (_, __, ___) => const SignInScreen(),
+          transitionDuration: const Duration(milliseconds: 600),
+          reverseTransitionDuration: const Duration(milliseconds: 400),
+          transitionsBuilder: (_, animation, __, child) {
+            return FadeTransition(
+              opacity: CurvedAnimation(
+                parent: animation,
+                curve: Curves.easeInOut,
+              ),
+              child: SlideTransition(
+                position: Tween<Offset>(
+                  begin: const Offset(0, 0.05),
+                  end: Offset.zero,
+                ).animate(CurvedAnimation(
+                  parent: animation,
+                  curve: Curves.easeOutCubic,
+                )),
+                child: child,
+              ),
+            );
+          },
+        ),
+      );
+      return;
+    }
+
     showDialog(
       context: context,
       builder: (context) => BackdropFilter(
@@ -1624,6 +1655,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Widget _buildSidebar() {
+    final isGuest = widget.authToken == null || widget.authToken!.isEmpty;
     final menuItems = [
       (Icons.home_rounded, 'Khám phá'),
       (Icons.bookmark_rounded, 'Đã lưu'),
@@ -1802,20 +1834,26 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               child: InkWell(
                 onTap: _logout,
                 borderRadius: BorderRadius.circular(16),
-                hoverColor: const Color(0xFFE74C3C).withOpacity(0.1),
+                hoverColor: isGuest
+                    ? const Color(0xFFD4AF7A).withOpacity(0.1)
+                    : const Color(0xFFE74C3C).withOpacity(0.1),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
                   child: Row(
                     children: [
-                      const Icon(Icons.logout_rounded, color: Color(0xFFE74C3C), size: 22),
+                      Icon(
+                        isGuest ? Icons.login_rounded : Icons.logout_rounded,
+                        color: isGuest ? const Color(0xFFD4AF7A) : const Color(0xFFE74C3C),
+                        size: 22,
+                      ),
                       const SizedBox(width: 14),
-                      const Text(
-                        'Đăng xuất',
+                      Text(
+                        isGuest ? 'Tài khoản' : 'Đăng xuất',
                         style: TextStyle(
                           fontFamily: 'Montserrat',
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
-                          color: Color(0xFFE74C3C),
+                          color: isGuest ? const Color(0xFFD4AF7A) : const Color(0xFFE74C3C),
                         ),
                       ),
                     ],
@@ -1907,6 +1945,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           },
           onOpenDetail: _openPlaceDetail,
           onToggleSaved: _toggleSaved,
+          isGuest: widget.authToken == null || widget.authToken!.isEmpty,
         ),
         const SizedBox.shrink(),
         ProfileSection(
@@ -2638,6 +2677,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Widget _buildTopBar() {
+    final isGuest = widget.authToken == null || widget.authToken!.isEmpty;
     return FadeTransition(
       opacity: _cardEntrance,
       child: Padding(
@@ -2674,6 +2714,17 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               ],
             ),
             const Spacer(),
+
+            IconButton(
+              icon: Icon(
+                isGuest ? Icons.login_rounded : Icons.logout_rounded,
+                color: isGuest ? const Color(0xFFD4AF7A) : const Color(0xFFE74C3C),
+                size: 24,
+              ),
+              onPressed: _logout,
+            ),
+            const SizedBox(width: 8), // Gap spacing
+
             GestureDetector(
               onTap: () {},
               child: Container(

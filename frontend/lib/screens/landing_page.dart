@@ -6,9 +6,17 @@ import '../widgets/responsive_builder.dart';
 import '../models/destination.dart';
 import 'sign_in.dart';
 import 'sign_up.dart';
+import 'dashboard.dart';
 
 class LandingPage extends StatefulWidget {
-  const LandingPage({super.key});
+  final String? authToken;
+  final String? userName;
+
+  const LandingPage({
+    super.key,
+    this.authToken,
+    this.userName,
+  });
 
   @override
   State<LandingPage> createState() => _LandingPageState();
@@ -202,6 +210,40 @@ class _LandingPageState extends State<LandingPage>
   }
 
   void _navigateToSignIn(BuildContext context, bool goToSignUp) {
+    if (widget.authToken != null && widget.authToken!.isNotEmpty) {
+      Navigator.pushAndRemoveUntil(
+        context,
+        PageRouteBuilder(
+          pageBuilder: (_, __, ___) => HomeScreen(
+            userName: widget.userName ?? 'bạn',
+            authToken: widget.authToken,
+          ),
+          transitionDuration: const Duration(milliseconds: 600),
+          reverseTransitionDuration: const Duration(milliseconds: 400),
+          transitionsBuilder: (_, animation, __, child) {
+            return FadeTransition(
+              opacity: CurvedAnimation(
+                parent: animation,
+                curve: Curves.easeInOut,
+              ),
+              child: SlideTransition(
+                position: Tween<Offset>(
+                  begin: const Offset(0, 0.05),
+                  end: Offset.zero,
+                ).animate(CurvedAnimation(
+                  parent: animation,
+                  curve: Curves.easeOutCubic,
+                )),
+                child: child,
+              ),
+            );
+          },
+        ),
+        (route) => false,
+      );
+      return;
+    }
+
     Navigator.push(
       context,
       PageRouteBuilder(
@@ -417,43 +459,78 @@ class _LandingPageState extends State<LandingPage>
 
               // Auth Buttons (right)
               Row(
-                children: [
-                  WebHoverable(
-                    onTap: () => _navigateToSignIn(context, false),
-                    child: const Text(
-                      'ĐĂNG NHẬP',
-                      style: TextStyle(
-                        fontFamily: 'Montserrat',
-                        fontSize: 13,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                        letterSpacing: 1.0,
-                      ),
-                    ),
-                  ),
-                  const SizedBox(width: 24),
-                  WebHoverable(
-                    onTap: () => _navigateToSignIn(context, true),
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                      decoration: BoxDecoration(
-                        border: Border.all(color: const Color(0xFFD4AF7A), width: 1.5),
-                        borderRadius: BorderRadius.circular(30),
-                        color: Colors.transparent,
-                      ),
-                      child: const Text(
-                        'ĐĂNG KÝ',
-                        style: TextStyle(
-                          fontFamily: 'Montserrat',
-                          fontSize: 13,
-                          fontWeight: FontWeight.bold,
-                          color: Color(0xFFD4AF7A),
-                          letterSpacing: 1.0,
+                children: widget.authToken != null && widget.authToken!.isNotEmpty
+                    ? [
+                        Text(
+                          'XIN CHÀO, ${widget.userName?.toUpperCase() ?? 'BẠN'}!',
+                          style: const TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 13,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white70,
+                            letterSpacing: 1.0,
+                          ),
                         ),
-                      ),
-                    ),
-                  ),
-                ],
+                        const SizedBox(width: 24),
+                        WebHoverable(
+                          onTap: () => _navigateToSignIn(context, false),
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                            decoration: BoxDecoration(
+                              border: Border.all(color: const Color(0xFFD4AF7A), width: 1.5),
+                              borderRadius: BorderRadius.circular(30),
+                              color: Colors.transparent,
+                            ),
+                            child: const Text(
+                              'VÀO TRANG CHỦ',
+                              style: TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 13,
+                                fontWeight: FontWeight.bold,
+                                color: Color(0xFFD4AF7A),
+                                letterSpacing: 1.0,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ]
+                    : [
+                        WebHoverable(
+                          onTap: () => _navigateToSignIn(context, false),
+                          child: const Text(
+                            'ĐĂNG NHẬP',
+                            style: TextStyle(
+                              fontFamily: 'Montserrat',
+                              fontSize: 13,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                              letterSpacing: 1.0,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: 24),
+                        WebHoverable(
+                          onTap: () => _navigateToSignIn(context, true),
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                            decoration: BoxDecoration(
+                              border: Border.all(color: const Color(0xFFD4AF7A), width: 1.5),
+                              borderRadius: BorderRadius.circular(30),
+                              color: Colors.transparent,
+                            ),
+                            child: const Text(
+                              'ĐĂNG KÝ',
+                              style: TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 13,
+                                fontWeight: FontWeight.bold,
+                                color: Color(0xFFD4AF7A),
+                                letterSpacing: 1.0,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
               ),
             ],
           ),
