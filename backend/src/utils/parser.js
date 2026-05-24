@@ -61,6 +61,36 @@ export const parseBoolean = (value, fallback = undefined) => {
     return fallback;
 };
 
+export const parseGps = (value) => {
+    if (value === undefined || value === null || value === '') {
+        return null;
+    }
+
+    const coordinates = Array.isArray(value)
+        ? value
+        : String(value).split(',');
+
+    if (coordinates.length !== 2) {
+        return null;
+    }
+
+    const longitude = parseNumber(coordinates[0]);
+    const latitude = parseNumber(coordinates[1]);
+
+    if (
+        longitude === undefined
+        || latitude === undefined
+        || longitude < -180
+        || longitude > 180
+        || latitude < -90
+        || latitude > 90
+    ) {
+        return null;
+    }
+
+    return [longitude, latitude];
+};
+
 export const parsePriceRange = (priceRange) => {
     if (priceRange === undefined || priceRange === null || priceRange === '') {
         return null;
@@ -208,6 +238,16 @@ export const buildLocationFilter = (query) => {
         filter.totalScore = { ...(filter.totalScore || {}), $lte: maxScore };
     }
 
+    const gps = parseGps(query.gps);
+    const radius = parseNumber(query.radius);
+    if (gps && radius !== undefined) {
+        filter.location = {
+            $geoWithin: {
+                $centerSphere: [gps, radius / 6378137]
+            }
+        };
+    }
+
     const hasDate = query.date !== undefined && query.date !== null && query.date !== '';
     const hasTime = query.time !== undefined && query.time !== null && query.time !== '';
     const time = parseTimeToMinutes(query.time);
@@ -331,6 +371,7 @@ export default {
     parsePositiveInt,
     parseNumber,
     parseBoolean,
+    parseGps,
     parsePriceRange,
     filterByPriceRange,
     parseTimeToMinutes,

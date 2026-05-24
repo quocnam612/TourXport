@@ -108,5 +108,6 @@ const placeSchema = new mongoose.Schema({
     timestamps: true
 });
 
+placeSchema.index({ location: '2dsphere' });
 
 export default mongoose.model('PlaceDB', placeSchema, 'places');

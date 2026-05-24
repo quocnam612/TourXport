@@ -108,5 +108,6 @@ const restaurantSchema = new mongoose.Schema({
     timestamps: true
 });
 
+restaurantSchema.index({ location: '2dsphere' });
 
 export default mongoose.model('RestaurantDB', restaurantSchema, 'restaurants');

@@ -1,4 +1,4 @@
-import { parseBoolean, parseDateToWeekday, parseNumber, parseTimeToMinutes } from './parser.js';
+import { parseBoolean, parseDateToWeekday, parseGps, parseNumber, parseTimeToMinutes } from './parser.js';
 
 export const isValidEmail = (email) => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -61,6 +61,8 @@ export const validateLocationLookupQuery = (query) => {
 export const validateLocationListQuery = (query) => {
     const hasDate = query.date !== undefined && query.date !== null && query.date !== '';
     const hasTime = query.time !== undefined && query.time !== null && query.time !== '';
+    const hasGps = query.gps !== undefined && query.gps !== null && query.gps !== '';
+    const hasRadius = query.radius !== undefined && query.radius !== null && query.radius !== '';
 
     if (hasDate && parseDateToWeekday(query.date) === null) {
         return 'date must use YYYY-MM-DD format or weekday number from 1 to 7';
@@ -72,6 +74,21 @@ export const validateLocationListQuery = (query) => {
 
     if (query.price !== undefined && query.price !== null && query.price !== '' && parseNumber(query.price) === undefined) {
         return 'price must be a number';
+    }
+
+    if (hasGps !== hasRadius) {
+        return 'gps and radius must be provided together';
+    }
+
+    if (hasGps && parseGps(query.gps) === null) {
+        return 'gps must use longitude,latitude format';
+    }
+
+    if (hasRadius) {
+        const radius = parseNumber(query.radius);
+        if (radius === undefined || radius <= 0) {
+            return 'radius must be a positive number in meters';
+        }
     }
 
     if (

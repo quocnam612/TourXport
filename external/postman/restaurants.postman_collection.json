@@ -1,0 +1,302 @@
+{
+  "info": {
+    "_postman_id": "d4760a5b-b2e5-4447-9d8b-6ab733135e98",
+    "name": "restaurants",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "50791744"
+  },
+  "item": [
+    {
+      "name": "get restaurants list",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/restaurants?limit=10&page=1&tag=Ngồi xuống&sortBy=reviewsCount&order=desc&time=08:00&date=2&price=6000000&nullPrice=false&gps=108.26409,16.002966&radius=5000",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "restaurants"
+          ],
+          "query": [
+            {
+              "key": "limit",
+              "value": "10",
+              "description": "Số item mỗi trang "
+            },
+            {
+              "key": "page",
+              "value": "1",
+              "description": "Trang hiện tại, default 1"
+            },
+            {
+              "key": "query",
+              "value": "Sơn",
+              "description": "Tìm text theo title, city, category, searchText, tags",
+              "disabled": true
+            },
+            {
+              "key": "city",
+              "value": "Đà Nẵng",
+              "description": "Lọc theo city",
+              "disabled": true
+            },
+            {
+              "key": "category",
+              "value": "Nhà hàng",
+              "description": "Lọc theo category",
+              "disabled": true
+            },
+            {
+              "key": "tag",
+              "value": "Nhà hàng",
+              "description": "Lọc theo tag, muốn lọc nhiều tag thì tiếp tuc thêm param tag",
+              "type": "text",
+              "disabled": true
+            },
+            {
+              "key": "tag",
+              "value": "Ngồi xuống"
+            },
+            {
+              "key": "minScore",
+              "value": "4",
+              "description": "Lọc totalScore >= minScore",
+              "disabled": true
+            },
+            {
+              "key": "maxScore",
+              "value": "5",
+              "description": "Lọc totalScore <= maxScore",
+              "disabled": true
+            },
+            {
+              "key": "sortBy",
+              "value": "reviewsCount",
+              "description": "Field để sort (title, city, totalScore, reviewsCount, createdAt, updatedAt)"
+            },
+            {
+              "key": "order",
+              "value": "desc",
+              "description": "asc hoặc desc"
+            },
+            {
+              "key": "time",
+              "value": "08:00",
+              "description": "Thời gian mà địa điểm có mở cửa, có thể dùng 1 trong 2 format"
+            },
+            {
+              "key": "time",
+              "value": "480",
+              "description": "phút thứ bao nhiêu trong ngày",
+              "type": "text",
+              "disabled": true
+            },
+            {
+              "key": "date",
+              "value": "2026-05-24",
+              "description": "Ngày mà địa điểm có mở cửa, có thể dùng 1 trong 2 format",
+              "type": "text",
+              "disabled": true
+            },
+            {
+              "key": "date",
+              "value": "2",
+              "description": "1 = Chủ nhật; 2 = Thứ hai; 3 = Thứ ba; ...; 7 = Thứ bảy"
+            },
+            {
+              "key": "price",
+              "value": "6000000",
+              "description": "Gía thành"
+            },
+            {
+              "key": "nullPrice",
+              "value": "false",
+              "description": "hiện các địa điểm có giá bằng nul (true, false)"
+            },
+            {
+              "key": "gps",
+              "value": "108.26409,16.002966",
+              "description": "lon, lat. đi chung với radius"
+            },
+            {
+              "key": "radius",
+              "value": "5000",
+              "description": "đơn vị mét,, đi chung với gps"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create restaurant",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMDczZmI2ZTQ5ZDc0NWQ5OGQ1NjQ0OCIsIm5hbWUiOiIxMjMiLCJlbWFpbCI6IjEyMyIsImlhdCI6MTc3OTYzODQ5OSwiZXhwIjoxNzc5ODk3Njk5fQ.e4SC5inW6vYkWgZFMPM0qVedyScydffDkLStdcCo80s",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"sourceLocationId\": \"454980\",\n    \"title\": \"Núi Ngũ Hành Sơn\",\n    \"city\": \"Đà Nẵng\",\n    \"totalScore\": 4.2,\n    \"ranking\": \"8/166\",\n    \"reviewsCount\": 8236,\n    \"category\": \"Thiên nhiên & Công viên\",\n    \"priceRange\": null,\n    \"description\": null,\n    \"embedding\": null,\n    \"searchText\": \"Núi Ngũ Hành Sơn ở Đà Nẵng. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên. Đánh giá: 4.2/5 từ 8236 lượt review. Xếp hạng: 8/166.\",\n    \"tags\": [\n        \"Điểm du lịch\",\n        \"Danh lam & Thắng cảnh\",\n        \"Thiên nhiên & Công viên\"\n    ],\n    \"image\": {\n        \"url\": \"https://media-cdn.tripadvisor.com/media/photo-o/0d/88/ad/7a/img-20161028-163214-hdr.jpg\",\n        \"publicId\": null,\n        \"source\": \"tripadvisor\"\n    },\n    \"location\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n            108.26409,\n            16.002966\n        ]\n    },\n    \"openingHours\": {\n        \"display\": \"07:00-17:30\",\n        \"weekRanges\": [\n            [\n                {\n                    \"open_time\": 420,\n                    \"close_time\": 1050\n                }\n            ],\n            [\n                {\n                    \"open_time\": 420,\n                    \"close_time\": 1050\n                }\n            ],\n            [\n                {\n                    \"open_time\": 420,\n                    \"close_time\": 1050\n                }\n            ],\n            [\n                {\n                    \"open_time\": 420,\n                    \"close_time\": 1050\n                }\n            ],\n            [\n                {\n                    \"open_time\": 420,\n                    \"close_time\": 1050\n                }\n            ],\n            [\n                {\n                    \"open_time\": 420,\n                    \"close_time\": 1050\n                }\n            ],\n            [\n                {\n                    \"open_time\": 420,\n                    \"close_time\": 1050\n                }\n            ]\n        ]\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/restaurants",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "restaurants"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get restaurant",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/restaurants/search?sourceLocationId=454980",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "restaurants",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "6a11ba7acf7dee35d7315fe7",
+              "type": "text",
+              "disabled": true
+            },
+            {
+              "key": "sourceLocationId",
+              "value": "454980",
+              "description": "Chọn 1 trong 2 cách tìm (Id hoặc sourceLocationId)"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update restaurant",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMDczZmI2ZTQ5ZDc0NWQ5OGQ1NjQ0OCIsIm5hbWUiOiIxMjMiLCJlbWFpbCI6IjEyMyIsImlhdCI6MTc3OTYzODQ5OSwiZXhwIjoxNzc5ODk3Njk5fQ.e4SC5inW6vYkWgZFMPM0qVedyScydffDkLStdcCo80s",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"description\": \"Danh thắng nổi tiếng tại Đà Nẵng, gồm nhiều hang động, chùa và điểm ngắm cảnh.\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/restaurants/search?sourceLocationId=454980",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "restaurants",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "sourceLocationId",
+              "value": "454980",
+              "description": "Chọn 1 trong 2 cách tìm (Id hoặc sourceLocationId)"
+            },
+            {
+              "key": "id",
+              "value": "6a11ba7acf7dee35d7315fe7",
+              "type": "text",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete restaurant",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMDczZmI2ZTQ5ZDc0NWQ5OGQ1NjQ0OCIsIm5hbWUiOiIxMjMiLCJlbWFpbCI6IjEyMyIsImlhdCI6MTc3OTYzODQ5OSwiZXhwIjoxNzc5ODk3Njk5fQ.e4SC5inW6vYkWgZFMPM0qVedyScydffDkLStdcCo80s",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/restaurants/search?sourceLocationId=454980",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "restaurants",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "sourceLocationId",
+              "value": "454980",
+              "description": "Chọn 1 trong 2 cách tìm (Id hoặc sourceLocationId)"
+            },
+            {
+              "key": "id",
+              "value": "6a11ba7acf7dee35d7315fe7",
+              "type": "text",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
