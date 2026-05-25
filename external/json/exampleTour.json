@@ -56,6 +56,7 @@
             "items": [
                 {
                     "order": 1,
+                    "checked": false,
                     "type": "place",
                     "title": "Bồ Đề Đạo Tràng",
                     "category": "Danh lam & Thắng cảnh",
@@ -77,6 +78,7 @@
                 },
                 {
                     "order": 2,
+                    "checked": false,
                     "type": "place",
                     "title": "Miếu Bà Chúa Xứ Núi Sam",
                     "category": "Tâm linh",
@@ -96,6 +98,7 @@
                 },
                 {
                     "order": 3,
+                    "checked": false,
                     "type": "restaurant",
                     "title": "Quán bún cá Châu Đốc",
                     "category": "Ẩm thực địa phương",
@@ -122,6 +125,7 @@
                 },
                 {
                     "order": 4,
+                    "checked": false,
                     "type": "place",
                     "title": "Núi Sam",
                     "category": "Thiên nhiên",
@@ -143,6 +147,7 @@
                 },
                 {
                     "order": 5,
+                    "checked": false,
                     "type": "hotel",
                     "title": "Khách sạn trung tâm Châu Đốc",
                     "category": "Khách sạn",
@@ -510,6 +515,7 @@
             "items": [
                 {
                     "order": 1,
+                    "checked": false,
                     "type": "place",
                     "title": "Chợ Châu Đốc",
                     "category": "Chợ địa phương",
@@ -529,6 +535,7 @@
                 },
                 {
                     "order": 2,
+                    "checked": false,
                     "type": "restaurant",
                     "title": "Quán ăn địa phương gần chợ",
                     "category": "Ẩm thực địa phương",

@@ -96,6 +96,11 @@ const itineraryItemSchema = new mongoose.Schema({
         min: 1
     },
 
+    checked: {
+        type: Boolean,
+        default: false
+    },
+
     type: {
         type: String,
         enum: ['place', 'restaurant', 'hotel'],
