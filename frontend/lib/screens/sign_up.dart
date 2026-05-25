@@ -6,6 +6,7 @@ import '../utils/auth_feedback.dart';
 import '../widgets/anim_builder.dart';
 import 'sign_in.dart';
 import 'dashboard.dart';
+import 'landing_page.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
@@ -460,7 +461,43 @@ class _SignUpScreenState extends State<SignUpScreen>
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           child: GestureDetector(
-            onTap: () => Navigator.pop(context),
+            onTap: () {
+              if (Navigator.canPop(context)) {
+                Navigator.pop(context);
+              } else {
+                Navigator.pushAndRemoveUntil(
+                  context,
+                  PageRouteBuilder(
+                    // pageBuilder: (_, __, ___) => const LandingPage(),
+                    pageBuilder: (_, __, ___) => HomeScreen(
+                        userName: "Khách",
+                        authToken: null
+                      ),
+                    transitionDuration: const Duration(milliseconds: 600),
+                    reverseTransitionDuration: const Duration(milliseconds: 400),
+                    transitionsBuilder: (_, animation, __, child) {
+                      return FadeTransition(
+                        opacity: CurvedAnimation(
+                          parent: animation,
+                          curve: Curves.easeInOut,
+                        ),
+                        child: SlideTransition(
+                          position: Tween<Offset>(
+                            begin: const Offset(0, 0.05),
+                            end: Offset.zero,
+                          ).animate(CurvedAnimation(
+                            parent: animation,
+                            curve: Curves.easeOutCubic,
+                          )),
+                          child: child,
+                        ),
+                      );
+                    },
+                  ),
+                  (route) => false,
+                );
+              }
+            },
             child: ClipOval(
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),

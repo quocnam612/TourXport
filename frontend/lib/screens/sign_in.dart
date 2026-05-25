@@ -6,6 +6,7 @@ import '../utils/auth_feedback.dart';
 import '../widgets/anim_builder.dart';
 import 'sign_up.dart';
 import 'dashboard.dart';
+import 'landing_page.dart';
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({super.key});
@@ -168,6 +169,9 @@ class _SignInScreenState extends State<SignInScreen>
           children: [
             // ── Background image
             _buildHeroImage(s),
+
+            // ── Back button
+            _buildBackButton(),
 
             // ── Centered glassmorphic card for Desktop Web
             Center(
@@ -391,7 +395,79 @@ class _SignInScreenState extends State<SignInScreen>
 
           // ── Draggable panel with green transparent overlay
           _buildDraggablePanel(s),
+
+          // ── Back button (top-left)
+          _buildBackButton(),
         ],
+      ),
+    );
+  }
+
+  Widget _buildBackButton() {
+    return SafeArea(
+      child: FadeTransition(
+        opacity: _headerFade,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          child: GestureDetector(
+            onTap: () {
+              if (Navigator.canPop(context)) {
+                Navigator.pop(context);
+              } else {
+                Navigator.pushAndRemoveUntil(
+                  context,
+                  PageRouteBuilder(
+                    // pageBuilder: (_, __, ___) => const LandingPage(),
+                    pageBuilder: (_, __, ___) => HomeScreen(
+                        userName: "Khách",
+                        authToken: null
+                      ),
+                    transitionDuration: const Duration(milliseconds: 600),
+                    reverseTransitionDuration: const Duration(milliseconds: 400),
+                    transitionsBuilder: (_, animation, __, child) {
+                      return FadeTransition(
+                        opacity: CurvedAnimation(
+                          parent: animation,
+                          curve: Curves.easeInOut,
+                        ),
+                        child: SlideTransition(
+                          position: Tween<Offset>(
+                            begin: const Offset(0, 0.05),
+                            end: Offset.zero,
+                          ).animate(CurvedAnimation(
+                            parent: animation,
+                            curve: Curves.easeOutCubic,
+                          )),
+                          child: child,
+                        ),
+                      );
+                    },
+                  ),
+                  (route) => false,
+                );
+              }
+            },
+            child: ClipOval(
+              child: BackdropFilter(
+                filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
+                child: Container(
+                  width: 46,
+                  height: 46,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.white.withOpacity(0.15),
+                    border: Border.all(color: Colors.white.withOpacity(0.25)),
+                  ),
+                  child: const Icon(
+                    Icons.arrow_back_ios_new,
+                    color: Colors.white,
+                    size: 20,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
       ),
     );
   }
