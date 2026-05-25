@@ -9,3 +9,5 @@ windows/
 .idea/
 .vscode/
 *.iml
+.postman/
+postman/
