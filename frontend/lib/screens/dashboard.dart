@@ -59,6 +59,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   bool _isLoadingSavedPlaces = false;
 
   List<Destination> _realDestinations = [];
+  List<Destination> _allDatabaseDestinations = [];
   bool _isLoadingDestinations = false;
 
   Map<String, dynamic>? _userData;
@@ -92,6 +93,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     _searchController = TextEditingController();
     _searchFocusNode = FocusNode();
     _searchFocusNode.addListener(() {
+      if (_searchFocusNode.hasFocus) {
+        _fetchSuggestionsPool();
+      }
       setState(() {});
     });
 
@@ -221,7 +225,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       setState(() => _isLoadingDestinations = true);
     }
     try {
-      final response = await apiGet('/locations');
+      // 1. Fetch top 25 featured dashboard destinations
+      final response = await apiGet('/locations?limit=25&sortBy=reviewsCount&order=desc');
       final data = tryDecodeJsonObject(response.body);
       if (response.statusCode == 200 && data?['success'] == true) {
         final rawList = data!['data'];
@@ -246,12 +251,62 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           }
         }
       }
+
+      // 2. Fetch up to 150 locations from the actual backend database for rich autocomplete search suggestions
+      final suggestionsResponse = await apiGet('/locations?limit=150&sortBy=reviewsCount&order=desc');
+      final suggestionsData = tryDecodeJsonObject(suggestionsResponse.body);
+      if (suggestionsResponse.statusCode == 200 && suggestionsData?['success'] == true) {
+        final rawSuggestions = suggestionsData!['data'];
+        if (rawSuggestions is List) {
+          final List<Destination> loadedSuggestions = [];
+          for (var item in rawSuggestions) {
+            try {
+              loadedSuggestions.add(Destination.fromJson(Map<String, dynamic>.from(item)));
+            } catch (e) {
+              debugPrint('Error parsing suggestion item: $e');
+            }
+          }
+          if (mounted) {
+            setState(() {
+              _allDatabaseDestinations = loadedSuggestions;
+            });
+          }
+        }
+      }
     } catch (e) {
       debugPrint('Error fetching destinations: $e');
     } finally {
       if (mounted) {
         setState(() => _isLoadingDestinations = false);
       }
+    }
+  }
+
+  Future<void> _fetchSuggestionsPool() async {
+    if (_allDatabaseDestinations.isNotEmpty) return;
+    try {
+      final suggestionsResponse = await apiGet('/locations?limit=100&sortBy=reviewsCount&order=desc');
+      final suggestionsData = tryDecodeJsonObject(suggestionsResponse.body);
+      if (suggestionsResponse.statusCode == 200 && suggestionsData?['success'] == true) {
+        final rawSuggestions = suggestionsData!['data'];
+        if (rawSuggestions is List) {
+          final List<Destination> loadedSuggestions = [];
+          for (var item in rawSuggestions) {
+            try {
+              loadedSuggestions.add(Destination.fromJson(Map<String, dynamic>.from(item)));
+            } catch (e) {
+              debugPrint('Error parsing suggestion item: $e');
+            }
+          }
+          if (mounted) {
+            setState(() {
+              _allDatabaseDestinations = loadedSuggestions;
+            });
+          }
+        }
+      }
+    } catch (e) {
+      debugPrint('Error fetching suggestions pool: $e');
     }
   }
 
@@ -1185,6 +1240,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     setState(() {
       _searchQuery = value;
       _currentIndex = 0;
+      _searchSuggestions = [];
     });
 
     _searchDebounceTimer?.cancel();
@@ -2929,16 +2985,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             ),
             const Spacer(),
 
-            IconButton(
-              icon: Icon(
-                isGuest ? Icons.login_rounded : Icons.logout_rounded,
-                color: isGuest ? const Color(0xFFD4AF7A) : const Color(0xFFE74C3C),
-                size: 24,
-              ),
-              onPressed: _logout,
-            ),
-            const SizedBox(width: 8), // Gap spacing
-
             GestureDetector(
               onTap: () {},
               child: Container(
@@ -2995,15 +3041,17 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   List<Destination> get _suggestions {
     final query = _searchQuery.trim().toLowerCase();
+    final pool = _allDatabaseDestinations.isNotEmpty
+        ? _allDatabaseDestinations
+        : (_realDestinations.isNotEmpty ? _realDestinations : sampleDestinations);
+
     if (query.isEmpty) {
-      final all = _realDestinations.isNotEmpty ? _realDestinations : sampleDestinations;
-      return all.take(3).toList();
+      return pool.take(3).toList();
     }
     if (_searchSuggestions.isNotEmpty) {
       return _searchSuggestions;
     }
-    final all = _realDestinations.isNotEmpty ? _realDestinations : sampleDestinations;
-    return all.where((d) {
+    return pool.where((d) {
       return d.name.toLowerCase().contains(query) ||
              d.province.toLowerCase().contains(query);
     }).take(5).toList();
@@ -3051,9 +3099,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   setState(() {
                     _searchQuery = dest.name;
                     _searchController.text = dest.name;
+                    _searchResults = [dest];
+                    _currentIndex = 0;
+                    _currentBgPath = dest.bgBlurPath;
+                    _previousBgPath = dest.bgBlurPath;
                   });
                   _searchFocusNode.unfocus();
-                  _onSearchChanged(dest.name);
+                  _resetCarouselPosition();
                 },
                 hoverColor: Colors.white.withOpacity(0.05),
                 splashColor: const Color(0xFFB5956A).withOpacity(0.2),

@@ -17,10 +17,47 @@ export const getLocations = async (req, res, next) => {
         const filter = parser.buildLocationFilter(req.query);
         const sort = parser.buildSort(req.query.sortBy, req.query.order);
 
-        const [locations, total] = await Promise.all([
-            PlaceDB.find(filter).sort(sort).skip(skip).limit(limit),
+        const poolLimit = Math.min(limit * 3, 150);
+        let [locations, total] = await Promise.all([
+            PlaceDB.find(filter).sort(sort).skip(skip).limit(poolLimit),
             PlaceDB.countDocuments(filter)
         ]);
+
+        // Regular expression for Vietnamese characters
+        const vietnameseRegex = /[àáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệđìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵ]/i;
+
+        const reqSortBy = req.query.sortBy || 'totalScore';
+        const reqOrder = req.query.order || 'desc';
+        const isDesc = reqOrder === 'desc';
+
+        locations.sort((a, b) => {
+            const aIsVietnamese = vietnameseRegex.test(a.title);
+            const bIsVietnamese = vietnameseRegex.test(b.title);
+
+            if (aIsVietnamese && !bIsVietnamese) return -1;
+            if (!aIsVietnamese && bIsVietnamese) return 1;
+
+            // Sort by the requested field
+            const valA = a[reqSortBy] !== undefined ? a[reqSortBy] : 0;
+            const valB = b[reqSortBy] !== undefined ? b[reqSortBy] : 0;
+
+            if (valA !== valB) {
+                if (typeof valA === 'number' && typeof valB === 'number') {
+                    return isDesc ? valB - valA : valA - valB;
+                }
+                return isDesc
+                    ? String(valB).localeCompare(String(valA))
+                    : String(valA).localeCompare(String(valB));
+            }
+
+            // Fallback secondary sort: reviewsCount (descending)
+            if ((b.reviewsCount || 0) !== (a.reviewsCount || 0)) {
+                return (b.reviewsCount || 0) - (a.reviewsCount || 0);
+            }
+            return 0;
+        });
+
+        locations = locations.slice(0, limit);
 
         res.status(200).json({
             success: true,
