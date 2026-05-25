@@ -1,0 +1,170 @@
+{
+    "title": "Tour Châu Đốc 2 ngày 1 đêm",
+    "destinations": ["Châu Đốc", "Cà Mau", "Rạch Giá"],
+    "totalDays": 2,
+    "totalNights": 1,
+    "travelers": {
+        "adults": 2,
+        "children": 0
+    },
+    "preferences": {
+        "budgetLevel": "medium",
+        "interests": [
+            "temple",
+            "culture",
+            "local food",
+            "scenic view"
+        ],
+        "transportMode": "auto",
+        "pace": "relaxed"
+    },
+    "estimatedCost": {
+        "min": 2500000,
+        "max": 3800000,
+        "currency": "VND",
+        "note": "Chi phí ước tính cho 2 người, chưa bao gồm vé máy bay hoặc chi phí cá nhân."
+    },
+    "days": [
+        {
+            "dayNumber": 1,
+            "date": "2026-06-10",
+            "title": "Khám phá trung tâm Châu Đốc và các điểm tâm linh",
+            "summary": "Ngày đầu tập trung vào các địa điểm văn hóa, tâm linh và ăn uống địa phương.",
+            "items": [
+                {
+                    "order": 1,
+                    "type": "place",
+                    "title": "Bồ Đề Đạo Tràng",
+                    "category": "Danh lam & Thắng cảnh",
+                    "startTime": "08:00",
+                    "endTime": "09:30",
+                    "notes": "Đi buổi sáng để tránh nắng. Phù hợp để tham quan và chụp ảnh.",
+                    "location": {
+                        "type": "Point",
+                        "coordinates": [
+                            105.1167,
+                            10.7
+                        ]
+                    },
+                    "source": {
+                        "provider": "database",
+                        "collection": "places",
+                        "id": "6a10c9a82f1b2a88a4fd15ff"
+                    }
+                },
+                {
+                    "order": 2,
+                    "type": "place",
+                    "title": "Miếu Bà Chúa Xứ Núi Sam",
+                    "category": "Tâm linh",
+                    "startTime": "10:00",
+                    "endTime": "11:30",
+                    "notes": "Một trong các điểm nổi bật nhất ở Châu Đốc.",
+                    "location": {
+                        "type": "Point",
+                        "coordinates": [
+                            105.0801,
+                            10.6822
+                        ]
+                    },
+                    "source": {
+                        "provider": "database",
+                        "collection": "places",
+                        "id": "6a10c9a82f1b2a88a4fd1600"
+                    }
+                },
+                {
+                    "order": 3,
+                    "type": "restaurant",
+                    "title": "Quán bún cá Châu Đốc",
+                    "category": "Ẩm thực địa phương",
+                    "startTime": "12:00",
+                    "endTime": "13:00",
+                    "notes": "Gợi ý ăn trưa với món địa phương.",
+                    "estimatedCost": {
+                        "min": 80000,
+                        "max": 160000,
+                        "currency": "VND"
+                    },
+                    "location": {
+                        "type": "Point",
+                        "coordinates": [
+                            105.113,
+                            10.705
+                        ]
+                    },
+                    "source": {
+                        "provider": "database",
+                        "collection": "restaurants",
+                        "id": "6a10c9a82f1b2a88a4fd1601"
+                    }
+                }
+            ]
+        },
+        {
+            "dayNumber": 2,
+            "date": "2026-06-11",
+            "title": "Chợ địa phương và trải nghiệm nhẹ trước khi kết thúc tour",
+            "summary": "Ngày thứ hai ưu tiên hoạt động nhẹ, ăn uống địa phương và mua đặc sản.",
+            "items": [
+                {
+                    "order": 1,
+                    "type": "place",
+                    "title": "Chợ Châu Đốc",
+                    "category": "Chợ địa phương",
+                    "startTime": "08:00",
+                    "endTime": "10:00",
+                    "notes": "Có thể mua mắm, khô, đặc sản An Giang.",
+                    "location": {
+                        "type": "Point",
+                        "coordinates": [
+                            105.118,
+                            10.7055
+                        ]
+                    },
+                    "source": {
+                        "provider": "database",
+                        "collection": "places",
+                        "id": "6a10c9a82f1b2a88a4fd1602"
+                    }
+                },
+                {
+                    "order": 2,
+                    "type": "restaurant",
+                    "title": "Quán ăn địa phương gần chợ",
+                    "category": "Ẩm thực địa phương",
+                    "startTime": "10:30",
+                    "endTime": "11:30",
+                    "notes": "Ăn nhẹ trước khi trả phòng hoặc di chuyển về.",
+                    "estimatedCost": {
+                        "min": 100000,
+                        "max": 200000,
+                        "currency": "VND"
+                    },
+                    "location": {
+                        "type": "Point",
+                        "coordinates": [
+                            105.119,
+                            10.7048
+                        ]
+                    },
+                    "source": {
+                        "provider": "database",
+                        "collection": "restaurants",
+                        "id": "6a10c9a82f1b2a88a4fd1603"
+                    }
+                }
+            ]
+        }
+    ],
+    "ai": {
+        "generatedBy": "ai_backend",
+        "model": "gpt-4.1-mini",
+        "embeddingModel": "text-embedding-3-small",
+        "retrieval": {
+            "strategy": "vector_search",
+            "index": "places_vector_index",
+            "topK": 20
+        }
+    }
+}
