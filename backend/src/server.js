@@ -9,7 +9,7 @@ import authRoutes from './routes/authRoutes.js';
 import hotelRoutes from './routes/hotelRoutes.js';
 import locationsRoutes from './routes/locationRoutes.js';
 import restaurantRoutes from './routes/restaurantRoutes.js';
-// import tourRoutes from './routes/tourRoutes.js';
+import tourRoutes from './routes/tourRoutes.js';
 
 const app = express();
 
@@ -21,8 +21,9 @@ app.use('/auth', authRoutes);
 app.use('/locations', locationsRoutes);
 app.use('/hotels', hotelRoutes);
 app.use('/restaurants', restaurantRoutes);
-// app.use('/tours', tourRoutes);
+app.use('/tours', tourRoutes);
 
+// Default route
 app.get('/', (req, res, next) => {
     res.status(200).json({
         success: true,
@@ -30,7 +31,6 @@ app.get('/', (req, res, next) => {
     });
 });
 
-// 404 handler
 app.use((req, res, next) => {
     res.status(404).json({
         success: false,

@@ -54,20 +54,26 @@ const lineStringSchema = new mongoose.Schema({
     type: {
         type: String,
         enum: ['LineString'],
+        required: true,
         default: 'LineString'
     },
 
     coordinates: {
         type: [[Number]],
         required: true,
-        default: []
+        validate: {
+            validator: value => Array.isArray(value)
+                && value.length >= 2
+                && value.every(point => Array.isArray(point) && point.length === 2),
+            message: 'LineString coordinates must contain at least two [longitude, latitude] points'
+        }
     }
 }, { _id: false });
 
 const sourceSchema = new mongoose.Schema({
     provider: {
         type: String,
-        enum: ['database', 'websearch', 'ai', 'manual'],
+        enum: ['database', 'websearch'],
         required: true
     },
 
@@ -92,7 +98,7 @@ const itineraryItemSchema = new mongoose.Schema({
 
     type: {
         type: String,
-        enum: ['place', 'restaurant', 'hotel', 'activity', 'transport'],
+        enum: ['place', 'restaurant', 'hotel'],
         required: true
     },
 
@@ -331,7 +337,6 @@ const tourSchema = new mongoose.Schema({
     preferences: {
         budgetLevel: {
             type: String,
-            enum: ['low', 'medium', 'high', 'luxury'],
             default: 'medium'
         },
 
@@ -342,13 +347,11 @@ const tourSchema = new mongoose.Schema({
 
         transportMode: {
             type: String,
-            enum: ['auto', 'car', 'motorbike', 'walking', 'public_transport'],
             default: 'auto'
         },
 
         pace: {
             type: String,
-            enum: ['relaxed', 'balanced', 'fast'],
             default: 'balanced'
         }
     },
@@ -405,8 +408,5 @@ const tourSchema = new mongoose.Schema({
 }, {
     timestamps: true
 });
-
-tourSchema.index({ title: 'text', destinations: 'text' });
-tourSchema.index({ 'days.items.location': '2dsphere' });
 
 export default mongoose.model('TourDB', tourSchema, 'tours');
