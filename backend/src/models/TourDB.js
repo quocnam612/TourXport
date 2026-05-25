@@ -1,54 +1,412 @@
 import mongoose from 'mongoose';
 
-const activitySchema = new mongoose.Schema({
-    timeSlot: { 
-        type: String, 
-        required: true 
-    },
-    placeName: { 
-        type: String, 
-        required: true 
-    },
-    placeId: { 
-        type: String
-    },
-    estimatedCost: { 
-        type: Number, 
-        default: 0 
-    },
-    rationale: { 
-        type: String 
-    }
-});
+const bboxSchema = new mongoose.Schema({
+    minLng: { type: Number, required: true },
+    minLat: { type: Number, required: true },
+    maxLng: { type: Number, required: true },
+    maxLat: { type: Number, required: true }
+}, { _id: false });
 
-const itineraryDaySchema = new mongoose.Schema({
-    day: { 
-        type: Number, 
-        required: true 
+const costSchema = new mongoose.Schema({
+    min: {
+        type: Number,
+        min: 0,
+        default: null
     },
-    activities: [activitySchema]
-});
+
+    max: {
+        type: Number,
+        min: 0,
+        default: null
+    },
+
+    currency: {
+        type: String,
+        trim: true,
+        default: 'VND'
+    },
+
+    note: {
+        type: String,
+        trim: true,
+        default: null
+    }
+}, { _id: false });
+
+const pointSchema = new mongoose.Schema({
+    type: {
+        type: String,
+        enum: ['Point'],
+        default: 'Point'
+    },
+
+    coordinates: {
+        type: [Number],
+        required: true,
+        validate: {
+            validator: value => Array.isArray(value) && value.length === 2,
+            message: 'Point coordinates must contain [longitude, latitude]'
+        }
+    }
+}, { _id: false });
+
+const lineStringSchema = new mongoose.Schema({
+    type: {
+        type: String,
+        enum: ['LineString'],
+        default: 'LineString'
+    },
+
+    coordinates: {
+        type: [[Number]],
+        required: true,
+        default: []
+    }
+}, { _id: false });
+
+const sourceSchema = new mongoose.Schema({
+    provider: {
+        type: String,
+        enum: ['database', 'websearch', 'ai', 'manual'],
+        required: true
+    },
+
+    collection: {
+        type: String,
+        enum: ['places', 'restaurants', 'hotels'],
+        default: null
+    },
+
+    id: {
+        type: String,
+        default: null
+    }
+}, { _id: false });
+
+const itineraryItemSchema = new mongoose.Schema({
+    order: {
+        type: Number,
+        required: true,
+        min: 1
+    },
+
+    type: {
+        type: String,
+        enum: ['place', 'restaurant', 'hotel', 'activity', 'transport'],
+        required: true
+    },
+
+    title: {
+        type: String,
+        required: true,
+        trim: true
+    },
+
+    category: {
+        type: String,
+        trim: true,
+        default: null
+    },
+
+    startTime: {
+        type: String,
+        default: null,
+        trim: true
+    },
+
+    endTime: {
+        type: String,
+        default: null,
+        trim: true
+    },
+
+    notes: {
+        type: String,
+        default: null,
+        trim: true
+    },
+
+    estimatedCost: {
+        type: costSchema,
+        default: null
+    },
+
+    location: {
+        type: pointSchema,
+        required: true
+    },
+
+    source: {
+        type: sourceSchema,
+        required: true
+    }
+}, { _id: false });
+
+const routeStepSchema = new mongoose.Schema({
+    instruction: {
+        type: String,
+        required: true,
+        trim: true
+    },
+
+    name: {
+        type: String,
+        default: null,
+        trim: true
+    },
+
+    distanceMeters: {
+        type: Number,
+        min: 0,
+        default: 0
+    },
+
+    type: {
+        type: Number,
+        default: null
+    },
+
+    wayPoints: {
+        type: [Number],
+        default: []
+    }
+}, { _id: false });
+
+const routeSchema = new mongoose.Schema({
+    fromOrder: {
+        type: Number,
+        required: true,
+        min: 1
+    },
+
+    toOrder: {
+        type: Number,
+        required: true,
+        min: 1
+    },
+
+    provider: {
+        type: String,
+        required: true,
+        trim: true
+    },
+
+    profile: {
+        type: String,
+        required: true,
+        trim: true
+    },
+
+    distanceMeters: {
+        type: Number,
+        min: 0,
+        default: 0
+    },
+
+    bbox: {
+        type: bboxSchema,
+        default: null
+    },
+
+    geometry: {
+        type: lineStringSchema,
+        required: true
+    },
+
+    steps: {
+        type: [routeStepSchema],
+        default: []
+    }
+}, { _id: false });
+
+const daySchema = new mongoose.Schema({
+    dayNumber: {
+        type: Number,
+        required: true,
+        min: 1
+    },
+
+    date: {
+        type: Date,
+        default: null
+    },
+
+    title: {
+        type: String,
+        required: true,
+        trim: true
+    },
+
+    summary: {
+        type: String,
+        default: null,
+        trim: true
+    },
+
+    distanceMeters: {
+        type: Number,
+        min: 0,
+        default: 0
+    },
+
+    bbox: {
+        type: bboxSchema,
+        default: null
+    },
+
+    items: {
+        type: [itineraryItemSchema],
+        default: []
+    },
+
+    routes: {
+        type: [routeSchema],
+        default: []
+    }
+}, { _id: false });
 
 const tourSchema = new mongoose.Schema({
-    userId: { 
-        type: mongoose.Schema.Types.ObjectId, 
-        ref: 'User', 
-        required: true 
-    },
-    title: { type: String, default: 'Chuyến đi Vũng Tàu' }, // Tên tour để user dễ quản lý
-    totalEstimatedCost: { type: Number, default: 0 },
-    isFromDb: { type: Boolean, default: true },
-    
-    // Lưu lại input của User để sau này AI có thể "học" hoặc tái tạo lại
-    userInput: {
-        budget: { type: Number },
-        duration_days: { type: Number },
-        preferences: { type: String }
+    userId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'UserDB',
+        required: true,
+        index: true
     },
 
-    itinerary: [itineraryDaySchema]
-}, { 
+    title: {
+        type: String,
+        required: true,
+        trim: true
+    },
+
+    destinations: {
+        type: [String],
+        default: []
+    },
+
+    visibility: {
+        type: String,
+        enum: ['private', 'public'],
+        default: 'private',
+        index: true
+    },
+
+    totalDays: {
+        type: Number,
+        required: true,
+        min: 1
+    },
+
+    totalNights: {
+        type: Number,
+        min: 0,
+        default: 0
+    },
+
+    totalDistanceMeters: {
+        type: Number,
+        min: 0,
+        default: 0
+    },
+
+    bbox: {
+        type: bboxSchema,
+        default: null
+    },
+
+    travelers: {
+        adults: {
+            type: Number,
+            min: 1,
+            default: 1
+        },
+
+        children: {
+            type: Number,
+            min: 0,
+            default: 0
+        }
+    },
+
+    preferences: {
+        budgetLevel: {
+            type: String,
+            enum: ['low', 'medium', 'high', 'luxury'],
+            default: 'medium'
+        },
+
+        interests: {
+            type: [String],
+            default: []
+        },
+
+        transportMode: {
+            type: String,
+            enum: ['auto', 'car', 'motorbike', 'walking', 'public_transport'],
+            default: 'auto'
+        },
+
+        pace: {
+            type: String,
+            enum: ['relaxed', 'balanced', 'fast'],
+            default: 'balanced'
+        }
+    },
+
+    estimatedCost: {
+        type: costSchema,
+        default: null
+    },
+
+    days: {
+        type: [daySchema],
+        default: []
+    },
+
+    ai: {
+        generatedBy: {
+            type: String,
+            default: null,
+            trim: true
+        },
+
+        model: {
+            type: String,
+            default: null,
+            trim: true
+        },
+
+        embeddingModel: {
+            type: String,
+            default: null,
+            trim: true
+        },
+
+        retrieval: {
+            strategy: {
+                type: String,
+                default: null,
+                trim: true
+            },
+
+            index: {
+                type: String,
+                default: null,
+                trim: true
+            },
+
+            topK: {
+                type: Number,
+                min: 0,
+                default: null
+            }
+        }
+    }
+}, {
     timestamps: true
 });
+
+tourSchema.index({ title: 'text', destinations: 'text' });
+tourSchema.index({ 'days.items.location': '2dsphere' });
 
 export default mongoose.model('TourDB', tourSchema, 'tours');
