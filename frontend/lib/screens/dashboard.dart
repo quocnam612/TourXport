@@ -226,7 +226,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     }
     try {
       // 1. Fetch top 25 featured dashboard destinations
-      final response = await apiGet('/locations?limit=25&sortBy=reviewsCount&order=desc');
+      final response =
+          await apiGet('/locations?limit=25&sortBy=reviewsCount&order=desc');
       final data = tryDecodeJsonObject(response.body);
       if (response.statusCode == 200 && data?['success'] == true) {
         final rawList = data!['data'];
@@ -253,15 +254,18 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       }
 
       // 2. Fetch up to 150 locations from the actual backend database for rich autocomplete search suggestions
-      final suggestionsResponse = await apiGet('/locations?limit=150&sortBy=reviewsCount&order=desc');
+      final suggestionsResponse =
+          await apiGet('/locations?limit=150&sortBy=reviewsCount&order=desc');
       final suggestionsData = tryDecodeJsonObject(suggestionsResponse.body);
-      if (suggestionsResponse.statusCode == 200 && suggestionsData?['success'] == true) {
+      if (suggestionsResponse.statusCode == 200 &&
+          suggestionsData?['success'] == true) {
         final rawSuggestions = suggestionsData!['data'];
         if (rawSuggestions is List) {
           final List<Destination> loadedSuggestions = [];
           for (var item in rawSuggestions) {
             try {
-              loadedSuggestions.add(Destination.fromJson(Map<String, dynamic>.from(item)));
+              loadedSuggestions
+                  .add(Destination.fromJson(Map<String, dynamic>.from(item)));
             } catch (e) {
               debugPrint('Error parsing suggestion item: $e');
             }
@@ -285,15 +289,18 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   Future<void> _fetchSuggestionsPool() async {
     if (_allDatabaseDestinations.isNotEmpty) return;
     try {
-      final suggestionsResponse = await apiGet('/locations?limit=100&sortBy=reviewsCount&order=desc');
+      final suggestionsResponse =
+          await apiGet('/locations?limit=100&sortBy=reviewsCount&order=desc');
       final suggestionsData = tryDecodeJsonObject(suggestionsResponse.body);
-      if (suggestionsResponse.statusCode == 200 && suggestionsData?['success'] == true) {
+      if (suggestionsResponse.statusCode == 200 &&
+          suggestionsData?['success'] == true) {
         final rawSuggestions = suggestionsData!['data'];
         if (rawSuggestions is List) {
           final List<Destination> loadedSuggestions = [];
           for (var item in rawSuggestions) {
             try {
-              loadedSuggestions.add(Destination.fromJson(Map<String, dynamic>.from(item)));
+              loadedSuggestions
+                  .add(Destination.fromJson(Map<String, dynamic>.from(item)));
             } catch (e) {
               debugPrint('Error parsing suggestion item: $e');
             }
@@ -1229,7 +1236,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       }
       return list;
     }
-    var list = _realDestinations.isNotEmpty ? _realDestinations : sampleDestinations;
+    var list =
+        _realDestinations.isNotEmpty ? _realDestinations : sampleDestinations;
     if (_showLikedOnly) {
       list = list.where((d) => _likedNames.contains(d.name)).toList();
     }
@@ -1276,7 +1284,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       }
       queryParams['sortBy'] = _sortBy;
       queryParams['order'] = _sortOrder;
-      
+
       if (_nearbyEnabled) {
         // Đà Nẵng coordinates
         queryParams['gps'] = '108.26409,16.002966';
@@ -1284,7 +1292,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       }
 
       final queryString = Uri(queryParameters: queryParams).query;
-      final path = queryString.isNotEmpty ? '/locations?$queryString' : '/locations';
+      final path =
+          queryString.isNotEmpty ? '/locations?$queryString' : '/locations';
 
       final response = await apiGet(path);
       final data = tryDecodeJsonObject(response.body);
@@ -1303,7 +1312,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             setState(() {
               _searchResults = loaded;
               _searchSuggestions = loaded.take(5).toList();
-              
+
               if (_searchResults.isNotEmpty) {
                 _currentBgPath = _searchResults[0].bgBlurPath;
                 _previousBgPath = _searchResults[0].bgBlurPath;
@@ -1370,7 +1379,14 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Future<void> _openSearchToolsSheet() async {
-    final cities = ['Đà Nẵng', 'Hà Nội', 'TP. Hồ Chí Minh', 'Quảng Nam', 'Quảng Ninh', 'Khánh Hòa'];
+    final cities = [
+      'Đà Nẵng',
+      'Hà Nội',
+      'TP. Hồ Chí Minh',
+      'Quảng Nam',
+      'Quảng Ninh',
+      'Khánh Hòa'
+    ];
     final sortOptions = [
       {'label': 'Lượt review', 'field': 'reviewsCount', 'order': 'desc'},
       {'label': 'Điểm số', 'field': 'totalScore', 'order': 'desc'},
@@ -1387,8 +1403,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             return Container(
               decoration: BoxDecoration(
                 color: const Color(0xFF131D1A).withOpacity(0.98),
-                borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
-                border: Border.all(color: Colors.white.withOpacity(0.08), width: 1.5),
+                borderRadius:
+                    const BorderRadius.vertical(top: Radius.circular(28)),
+                border: Border.all(
+                    color: Colors.white.withOpacity(0.08), width: 1.5),
               ),
               padding: EdgeInsets.only(
                 left: 20,
@@ -1425,7 +1443,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                             letterSpacing: -0.5,
                           ),
                         ),
-                        if (_selectedCity != null || _nearbyEnabled || _showLikedOnly || _sortBy != 'reviewsCount')
+                        if (_selectedCity != null ||
+                            _nearbyEnabled ||
+                            _showLikedOnly ||
+                            _sortBy != 'reviewsCount')
                           GestureDetector(
                             onTap: () {
                               setSheetState(() {
@@ -1451,7 +1472,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       ],
                     ),
                     const SizedBox(height: 20),
-                    
+
                     // SECTION 1: QUICK TOOLS
                     Text(
                       'Công cụ nhanh',
@@ -1468,7 +1489,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       children: [
                         Expanded(
                           child: _toolFilterChip(
-                            icon: _showLikedOnly ? Icons.favorite_rounded : Icons.favorite_border_rounded,
+                            icon: _showLikedOnly
+                                ? Icons.favorite_rounded
+                                : Icons.favorite_border_rounded,
                             label: 'Đã thích',
                             isActive: _showLikedOnly,
                             onTap: () {
@@ -1560,7 +1583,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         final isSelected = _sortBy == opt['field'];
                         return Expanded(
                           child: Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 4.0),
+                            padding:
+                                const EdgeInsets.symmetric(horizontal: 4.0),
                             child: _choiceChip(
                               label: opt['label']!,
                               isSelected: isSelected,
@@ -1586,7 +1610,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       decoration: BoxDecoration(
                         color: Colors.white.withOpacity(0.04),
                         borderRadius: BorderRadius.circular(16),
-                        border: Border.all(color: Colors.white.withOpacity(0.08)),
+                        border:
+                            Border.all(color: Colors.white.withOpacity(0.08)),
                       ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -1598,7 +1623,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                 children: [
                                   Icon(
                                     Icons.my_location_rounded,
-                                    color: _nearbyEnabled ? const Color(0xFFD4AF7A) : Colors.white60,
+                                    color: _nearbyEnabled
+                                        ? const Color(0xFFD4AF7A)
+                                        : Colors.white60,
                                     size: 20,
                                   ),
                                   const SizedBox(width: 10),
@@ -1615,7 +1642,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                               ),
                               Switch.adaptive(
                                 activeColor: const Color(0xFFD4AF7A),
-                                activeTrackColor: const Color(0xFFD4AF7A).withOpacity(0.3),
+                                activeTrackColor:
+                                    const Color(0xFFD4AF7A).withOpacity(0.3),
                                 value: _nearbyEnabled,
                                 onChanged: (val) {
                                   setSheetState(() {
@@ -1685,17 +1713,23 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 12),
         decoration: BoxDecoration(
-          color: isActive ? const Color(0xFFD4AF7A).withOpacity(0.15) : Colors.white.withOpacity(0.05),
+          color: isActive
+              ? const Color(0xFFD4AF7A).withOpacity(0.15)
+              : Colors.white.withOpacity(0.05),
           borderRadius: BorderRadius.circular(14),
           border: Border.all(
-            color: isActive ? const Color(0xFFD4AF7A) : Colors.white.withOpacity(0.08),
+            color: isActive
+                ? const Color(0xFFD4AF7A)
+                : Colors.white.withOpacity(0.08),
             width: 1.2,
           ),
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(icon, color: isActive ? const Color(0xFFD4AF7A) : Colors.white70, size: 18),
+            Icon(icon,
+                color: isActive ? const Color(0xFFD4AF7A) : Colors.white70,
+                size: 18),
             const SizedBox(width: 8),
             Text(
               label,
@@ -1723,17 +1757,22 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
         decoration: BoxDecoration(
-          color: isSelected ? const Color(0xFFD4AF7A) : Colors.white.withOpacity(0.06),
+          color: isSelected
+              ? const Color(0xFFD4AF7A)
+              : Colors.white.withOpacity(0.06),
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: isSelected ? const Color(0xFFD4AF7A) : Colors.white.withOpacity(0.08),
+            color: isSelected
+                ? const Color(0xFFD4AF7A)
+                : Colors.white.withOpacity(0.08),
           ),
         ),
         child: isSelected && !centerText
             ? Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const Icon(Icons.check_rounded, color: Colors.black, size: 14),
+                  const Icon(Icons.check_rounded,
+                      color: Colors.black, size: 14),
                   const SizedBox(width: 4),
                   Text(
                     label,
@@ -1769,7 +1808,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         backgroundColor: const Color(0xFF0F1E1B),
         body: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
+            padding:
+                const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -1814,14 +1854,16 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   scrollDirection: Axis.horizontal,
                   physics: const NeverScrollableScrollPhysics(),
                   child: Row(
-                    children: List.generate(4, (index) => Padding(
-                      padding: const EdgeInsets.only(right: 12.0),
-                      child: ShimmerWidget(
-                        width: 90,
-                        height: 36,
-                        borderRadius: BorderRadius.circular(18),
-                      ),
-                    )),
+                    children: List.generate(
+                        4,
+                        (index) => Padding(
+                              padding: const EdgeInsets.only(right: 12.0),
+                              child: ShimmerWidget(
+                                width: 90,
+                                height: 36,
+                                borderRadius: BorderRadius.circular(18),
+                              ),
+                            )),
                   ),
                 ),
                 const SizedBox(height: 32),
@@ -1936,8 +1978,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     return Container(
       width: 260,
       decoration: BoxDecoration(
-        color: const Color(0xFF0C1412).withOpacity(0.95),
-        border: const Border(right: BorderSide(color: Colors.white10, width: 1)),
+        color: const Color(0xFF0C1412),
+        border:
+            const Border(right: BorderSide(color: Colors.white10, width: 1)),
       ),
       child: Column(
         children: [
@@ -1946,15 +1989,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                width: 36, height: 36,
-                decoration: const BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: Color(0xFF2D6A4F),
-                ),
-                child: const Center(
-                  child: Icon(Icons.travel_explore_rounded, color: Colors.white, size: 20),
-                ),
+              Image.asset(
+                'assets/images/logo.png',
+                width: 40,
+                height: 40,
+                fit: BoxFit.contain,
               ),
               const SizedBox(width: 12),
               const Text(
@@ -1977,9 +2016,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             child: Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.05),
+                color: Colors.white.withOpacity(0.1),
                 borderRadius: BorderRadius.circular(16),
-                border: Border.all(color: Colors.white.withOpacity(0.08)),
+                border: Border.all(color: Colors.white.withOpacity(0.15)),
               ),
               child: Row(
                 children: [
@@ -1988,9 +2027,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     height: 38,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Colors.white.withOpacity(0.2),
+                      color: Colors.white.withOpacity(0.3),
                     ),
-                    child: const Icon(Icons.person, color: Colors.white, size: 20),
+                    child:
+                        const Icon(Icons.person, color: Colors.white, size: 20),
                   ),
                   const SizedBox(width: 10),
                   Expanded(
@@ -2013,7 +2053,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                           style: TextStyle(
                             fontFamily: 'Montserrat',
                             fontSize: 11,
-                            color: Colors.white.withOpacity(0.7),
+                            color: Colors.white.withOpacity(0.9),
                           ),
                         ),
                       ],
@@ -2062,19 +2102,26 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     hoverColor: Colors.white.withOpacity(0.05),
                     child: AnimatedContainer(
                       duration: const Duration(milliseconds: 200),
-                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 16, vertical: 14),
                       decoration: BoxDecoration(
-                        color: isActive ? const Color(0xFF2D6A4F).withOpacity(0.2) : Colors.transparent,
+                        color: isActive
+                            ? const Color(0xFF2D6A4F).withOpacity(0.2)
+                            : Colors.transparent,
                         borderRadius: BorderRadius.circular(16),
                         border: Border.all(
-                          color: isActive ? const Color(0xFF2D6A4F).withOpacity(0.4) : Colors.transparent,
+                          color: isActive
+                              ? const Color(0xFF2D6A4F).withOpacity(0.4)
+                              : Colors.transparent,
                         ),
                       ),
                       child: Row(
                         children: [
                           Icon(
                             item.$1,
-                            color: isActive ? const Color(0xFFD4AF7A) : Colors.white.withOpacity(0.9),
+                            color: isActive
+                                ? const Color(0xFFD4AF7A)
+                                : Colors.white.withOpacity(0.9),
                             size: 22,
                           ),
                           const SizedBox(width: 14),
@@ -2083,8 +2130,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                             style: TextStyle(
                               fontFamily: 'Montserrat',
                               fontSize: 14,
-                              fontWeight: isActive ? FontWeight.bold : FontWeight.w600,
-                              color: isActive ? Colors.white : Colors.white.withOpacity(0.9),
+                              fontWeight:
+                                  isActive ? FontWeight.bold : FontWeight.w600,
+                              color: isActive
+                                  ? Colors.white
+                                  : Colors.white.withOpacity(0.9),
                             ),
                           ),
                         ],
@@ -2108,12 +2158,15 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     ? const Color(0xFFD4AF7A).withOpacity(0.1)
                     : const Color(0xFFE74C3C).withOpacity(0.1),
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
                   child: Row(
                     children: [
                       Icon(
                         isGuest ? Icons.login_rounded : Icons.logout_rounded,
-                        color: isGuest ? const Color(0xFFD4AF7A) : const Color(0xFFE74C3C),
+                        color: isGuest
+                            ? const Color(0xFFD4AF7A)
+                            : const Color(0xFFE74C3C),
                         size: 22,
                       ),
                       const SizedBox(width: 14),
@@ -2123,7 +2176,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                           fontFamily: 'Montserrat',
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
-                          color: isGuest ? const Color(0xFFD4AF7A) : const Color(0xFFE74C3C),
+                          color: isGuest
+                              ? const Color(0xFFD4AF7A)
+                              : const Color(0xFFE74C3C),
                         ),
                       ),
                     ],
@@ -2188,9 +2243,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             end: Alignment.bottomCenter,
             stops: const [0.0, 0.3, 0.7, 1.0],
             colors: [
-              Colors.black.withOpacity(isDesktop ? 0.35 : 0.33),
-              Colors.black.withOpacity(isDesktop ? 0.15 : 0.06),
-              Colors.black.withOpacity(isDesktop ? 0.45 : 0.18),
+              Colors.black.withOpacity(isDesktop ? 0.15 : 0.33),
+              Colors.black.withOpacity(isDesktop ? 0.05 : 0.06),
+              Colors.black.withOpacity(isDesktop ? 0.20 : 0.18),
               isDesktop ? const Color(0xFF0C1412) : const Color(0xBB000000),
             ],
           ),
@@ -2250,19 +2305,45 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       final prov = d.province.toLowerCase();
       final name = d.name.toLowerCase();
       if (category == 'vịnh biển') {
-        if (prov.contains('quảng ninh') || prov.contains('khánh hòa') || prov.contains('vũng tàu') || prov.contains('kiên giang') || name.contains('vịnh') || name.contains('biển') || name.contains('đảo')) {
+        if (prov.contains('quảng ninh') ||
+            prov.contains('khánh hòa') ||
+            prov.contains('vũng tàu') ||
+            prov.contains('kiên giang') ||
+            name.contains('vịnh') ||
+            name.contains('biển') ||
+            name.contains('đảo')) {
           return i;
         }
       } else if (category == 'núi rừng') {
-        if (prov.contains('lào cai') || prov.contains('quảng bình') || prov.contains('sơn la') || prov.contains('hà giang') || name.contains('núi') || name.contains('động') || name.contains('hang') || name.contains('phong nha')) {
+        if (prov.contains('lào cai') ||
+            prov.contains('quảng bình') ||
+            prov.contains('sơn la') ||
+            prov.contains('hà giang') ||
+            name.contains('núi') ||
+            name.contains('động') ||
+            name.contains('hang') ||
+            name.contains('phong nha')) {
           return i;
         }
       } else if (category == 'di sản') {
-        if (prov.contains('quảng nam') || prov.contains('huế') || prov.contains('hà nội') || prov.contains('ninh bình') || name.contains('cổ') || name.contains('di tích') || name.contains('tự') || name.contains('lăng') || name.contains('chùa')) {
+        if (prov.contains('quảng nam') ||
+            prov.contains('huế') ||
+            prov.contains('hà nội') ||
+            prov.contains('ninh bình') ||
+            name.contains('cổ') ||
+            name.contains('di tích') ||
+            name.contains('tự') ||
+            name.contains('lăng') ||
+            name.contains('chùa')) {
           return i;
         }
       } else if (category == 'đô thị') {
-        if (prov.contains('chí minh') || prov.contains('đà nẵng') || prov.contains('hà nội') || name.contains('tháp') || name.contains('cầu') || name.contains('nhà hát')) {
+        if (prov.contains('chí minh') ||
+            prov.contains('đà nẵng') ||
+            prov.contains('hà nội') ||
+            name.contains('tháp') ||
+            name.contains('cầu') ||
+            name.contains('nhà hát')) {
           return i;
         }
       }
@@ -2276,13 +2357,19 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       return 'Vịnh Hạ Long là di sản thiên nhiên thế giới được UNESCO công nhận, nổi tiếng với hàng nghìn hòn đảo đá vôi kỳ vĩ và làn nước xanh lục bảo thanh bình.';
     } else if (name.contains('hội an')) {
       return 'Phố cổ Hội An là thương cảng cổ xưa được bảo tồn nguyên vẹn, lung linh với ánh đèn lồng rực rỡ và những mái nhà rêu phong hoài cổ bên dòng sông Thu Bồn.';
-    } else if (name.contains('đà nẵng') || name.contains('mỹ khê') || name.contains('bà nà')) {
+    } else if (name.contains('đà nẵng') ||
+        name.contains('mỹ khê') ||
+        name.contains('bà nà')) {
       return 'Đà Nẵng là thành phố biển đáng sống nhất Việt Nam, nơi giao thoa tuyệt vời giữa những cây cầu biểu tượng, bãi cát trắng mịn và đỉnh Bà Nà quanh năm sương mờ.';
     } else if (name.contains('phong nha') || name.contains('kẻ bàng')) {
       return 'Phong Nha - Kẻ Bàng được mệnh danh là vương quốc hang động thế giới, ẩn chứa hệ thống thạch nhũ tráng lệ triệu năm tuổi sâu bên dưới cánh rừng nguyên sinh xanh mướt.';
-    } else if (name.contains('hồ chí minh') || name.contains('sài gòn') || name.contains('củ chi')) {
+    } else if (name.contains('hồ chí minh') ||
+        name.contains('sài gòn') ||
+        name.contains('củ chi')) {
       return 'Thành phố Hồ Chí Minh năng động và sôi động bậc nhất, nơi lịch sử hào hùng hội tụ với nhịp sống hiện đại, tòa tháp chọc trời và các di tích văn hóa độc đáo.';
-    } else if (name.contains('hà nội') || name.contains('hoàn kiếm') || name.contains('lăng chủ tịch')) {
+    } else if (name.contains('hà nội') ||
+        name.contains('hoàn kiếm') ||
+        name.contains('lăng chủ tịch')) {
       return 'Thủ đô Hà Nội nghìn năm văn hiến, bình yên với Hồ Gươm liễu rủ, phố cổ trầm mặc, ẩm thực thanh lịch và những di tích lịch sử in đậm dấu ấn thời gian.';
     } else if (name.contains('huế') || name.contains('thiên mụ')) {
       return 'Thừa Thiên Huế mang vẻ đẹp mộng mơ, tĩnh lặng với Đại Nội cổ kính, hệ thống lăng tẩm hoàng gia uy nghiêm soi bóng bên dòng sông Hương thơ mộng.';
@@ -2326,7 +2413,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           ),
         );
       }
-      
+
       if (_currentIndex >= destinations.length) {
         _currentIndex = 0;
       }
@@ -2375,31 +2462,63 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       Row(
                         children: List.generate(categoryList.length, (idx) {
                           final cat = categoryList[idx];
-                          
+
                           bool isThisCatActive = false;
-                          final prov = destinations[_currentIndex].province.toLowerCase();
-                          final name = destinations[_currentIndex].name.toLowerCase();
+                          final prov = destinations[_currentIndex]
+                              .province
+                              .toLowerCase();
+                          final name =
+                              destinations[_currentIndex].name.toLowerCase();
                           if (cat == 'VỊNH BIỂN') {
-                            isThisCatActive = prov.contains('quảng ninh') || prov.contains('khánh hòa') || prov.contains('vũng tàu') || prov.contains('kiên giang') || name.contains('vịnh') || name.contains('biển') || name.contains('đảo');
+                            isThisCatActive = prov.contains('quảng ninh') ||
+                                prov.contains('khánh hòa') ||
+                                prov.contains('vũng tàu') ||
+                                prov.contains('kiên giang') ||
+                                name.contains('vịnh') ||
+                                name.contains('biển') ||
+                                name.contains('đảo');
                           } else if (cat == 'NÚI RỪNG') {
-                            isThisCatActive = prov.contains('lào cai') || prov.contains('quảng bình') || prov.contains('sơn la') || prov.contains('hà giang') || name.contains('núi') || name.contains('động') || name.contains('hang') || name.contains('phong nha');
+                            isThisCatActive = prov.contains('lào cai') ||
+                                prov.contains('quảng bình') ||
+                                prov.contains('sơn la') ||
+                                prov.contains('hà giang') ||
+                                name.contains('núi') ||
+                                name.contains('động') ||
+                                name.contains('hang') ||
+                                name.contains('phong nha');
                           } else if (cat == 'DI SẢN') {
-                            isThisCatActive = prov.contains('quảng nam') || prov.contains('huế') || prov.contains('hà nội') || prov.contains('ninh bình') || name.contains('cổ') || name.contains('di tích') || name.contains('tự') || name.contains('lăng') || name.contains('chùa');
+                            isThisCatActive = prov.contains('quảng nam') ||
+                                prov.contains('huế') ||
+                                prov.contains('hà nội') ||
+                                prov.contains('ninh bình') ||
+                                name.contains('cổ') ||
+                                name.contains('di tích') ||
+                                name.contains('tự') ||
+                                name.contains('lăng') ||
+                                name.contains('chùa');
                           } else if (cat == 'ĐÔ THỊ') {
-                            isThisCatActive = prov.contains('chí minh') || prov.contains('đà nẵng') || prov.contains('hà nội') || name.contains('tháp') || name.contains('cầu') || name.contains('nhà hát');
+                            isThisCatActive = prov.contains('chí minh') ||
+                                prov.contains('đà nẵng') ||
+                                prov.contains('hà nội') ||
+                                name.contains('tháp') ||
+                                name.contains('cầu') ||
+                                name.contains('nhà hát');
                           }
 
                           return WebHoverable(
                             onTap: () {
-                              final firstIdx = _findFirstIndexForCategory(cat.toLowerCase());
+                              final firstIdx =
+                                  _findFirstIndexForCategory(cat.toLowerCase());
                               if (firstIdx != -1) {
                                 _selectDestination(firstIdx);
                               } else {
-                                _showMessage('Không có địa điểm thuộc danh mục này hiện tại');
+                                _showMessage(
+                                    'Không có địa điểm thuộc danh mục này hiện tại');
                               }
                             },
                             child: Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 16),
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 16),
                               child: Column(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
@@ -2408,8 +2527,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                     style: TextStyle(
                                       fontFamily: 'Montserrat',
                                       fontSize: 13,
-                                      fontWeight: isThisCatActive ? FontWeight.bold : FontWeight.w500,
-                                      color: isThisCatActive ? Colors.white : Colors.white60,
+                                      fontWeight: isThisCatActive
+                                          ? FontWeight.bold
+                                          : FontWeight.w500,
+                                      color: isThisCatActive
+                                          ? Colors.white
+                                          : Colors.white60,
                                     ),
                                   ),
                                   const SizedBox(height: 4),
@@ -2467,10 +2590,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       Column(
                         mainAxisSize: MainAxisSize.min,
                         crossAxisAlignment: CrossAxisAlignment.end,
-                        children: List.generate(destinations.length.clamp(0, 5), (i) {
+                        children:
+                            List.generate(destinations.length.clamp(0, 5), (i) {
                           final isActive = i == _currentIndex;
                           final numStr = (i + 1).toString().padLeft(2, '0');
-                          
+
                           return WebHoverable(
                             onTap: () => _selectDestination(i),
                             child: Padding(
@@ -2517,9 +2641,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
                   // 3. Bottom 3-column description row
                   Builder(builder: (ctx) {
-                    final prevIdx = (_currentIndex - 1 + destinations.length) % destinations.length;
+                    final prevIdx = (_currentIndex - 1 + destinations.length) %
+                        destinations.length;
                     final nextIdx = (_currentIndex + 1) % destinations.length;
-                    final nextNextIdx = (_currentIndex + 2) % destinations.length;
+                    final nextNextIdx =
+                        (_currentIndex + 2) % destinations.length;
 
                     final prevDest = destinations[prevIdx];
                     final nextDest = destinations[nextIdx];
@@ -2545,7 +2671,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                 ),
                                 const SizedBox(height: 16),
                                 WebHoverable(
-                                  onTap: () => _openPlaceDetail(activeDest, ctx),
+                                  onTap: () =>
+                                      _openPlaceDetail(activeDest, ctx),
                                   child: const Text(
                                     'XEM CHI TIẾT >>',
                                     style: TextStyle(
@@ -2683,15 +2810,16 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     ),
                   ),
                   const SizedBox(height: 48),
-
                   Wrap(
                     alignment: WrapAlignment.center,
                     spacing: 24,
                     runSpacing: 24,
-                    children: List.generate(destinations.length.clamp(0, 4), (i) {
+                    children:
+                        List.generate(destinations.length.clamp(0, 4), (i) {
                       final dest = destinations[i];
-                      final rankName = '${i + 1}${i == 0 ? "st" : i == 1 ? "nd" : i == 2 ? "rd" : "th"} place';
-                      
+                      final rankName =
+                          '${i + 1}${i == 0 ? "st" : i == 1 ? "nd" : i == 2 ? "rd" : "th"} place';
+
                       return WebHoverable(
                         onTap: () => _openPlaceDetail(dest, context),
                         child: Container(
@@ -2712,7 +2840,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                             child: Stack(
                               fit: StackFit.expand,
                               children: [
-                                Destination.buildImage(dest.imagePath, fit: BoxFit.cover),
+                                Destination.buildImage(dest.imagePath,
+                                    fit: BoxFit.cover),
                                 Container(
                                   decoration: BoxDecoration(
                                     gradient: LinearGradient(
@@ -2770,7 +2899,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             Container(
               color: const Color(0xFF0C1412),
               width: double.infinity,
-              padding: const EdgeInsets.only(left: 50, right: 50, bottom: 80, top: 20),
+              padding: const EdgeInsets.only(
+                  left: 50, right: 50, bottom: 80, top: 20),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -2812,7 +2942,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                 height: 50,
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
-                                  border: Border.all(color: Colors.white, width: 1.5),
+                                  border: Border.all(
+                                      color: Colors.white, width: 1.5),
                                 ),
                                 child: const Icon(
                                   Icons.play_arrow_rounded,
@@ -2873,7 +3004,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                 width: 150,
                                 height: 100,
                                 child: Destination.buildImage(
-                                  destinations[destinations.length > 1 ? 1 : 0].imagePath,
+                                  destinations[destinations.length > 1 ? 1 : 0]
+                                      .imagePath,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -2883,7 +3015,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         const SizedBox(height: 56),
                         WebHoverable(
                           onTap: () {
-                            _showMessage('Chào mừng bạn đến với kênh Instagram TourXport!');
+                            _showMessage(
+                                'Chào mừng bạn đến với kênh Instagram TourXport!');
                           },
                           child: Text(
                             'http://instagram.com/tourxport_',
@@ -2984,7 +3117,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               ],
             ),
             const Spacer(),
-
             GestureDetector(
               onTap: () {},
               child: Container(
@@ -3043,7 +3175,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     final query = _searchQuery.trim().toLowerCase();
     final pool = _allDatabaseDestinations.isNotEmpty
         ? _allDatabaseDestinations
-        : (_realDestinations.isNotEmpty ? _realDestinations : sampleDestinations);
+        : (_realDestinations.isNotEmpty
+            ? _realDestinations
+            : sampleDestinations);
 
     if (query.isEmpty) {
       return pool.take(3).toList();
@@ -3051,10 +3185,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     if (_searchSuggestions.isNotEmpty) {
       return _searchSuggestions;
     }
-    return pool.where((d) {
-      return d.name.toLowerCase().contains(query) ||
-             d.province.toLowerCase().contains(query);
-    }).take(5).toList();
+    return pool
+        .where((d) {
+          return d.name.toLowerCase().contains(query) ||
+              d.province.toLowerCase().contains(query);
+        })
+        .take(5)
+        .toList();
   }
 
   Widget _buildSuggestionsDropdown() {
@@ -3110,7 +3247,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 hoverColor: Colors.white.withOpacity(0.05),
                 splashColor: const Color(0xFFB5956A).withOpacity(0.2),
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                   child: Row(
                     children: [
                       ClipRRect(
@@ -3118,7 +3256,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         child: SizedBox(
                           width: 32,
                           height: 32,
-                          child: Destination.buildImage(dest.imagePath, fit: BoxFit.cover),
+                          child: Destination.buildImage(dest.imagePath,
+                              fit: BoxFit.cover),
                         ),
                       ),
                       const SizedBox(width: 14),
@@ -3244,7 +3383,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     size: 22,
                   ),
                   onPressed: () {
-                    _showMessage('Tính năng tìm kiếm bằng giọng nói đang được phát triển');
+                    _showMessage(
+                        'Tính năng tìm kiếm bằng giọng nói đang được phát triển');
                   },
                   tooltip: 'Tìm kiếm bằng giọng nói',
                   splashRadius: 20,
@@ -3377,15 +3517,16 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           controller: _pageController,
           itemCount: showInfinite ? 100000 : destinations.length,
           onPageChanged: (index) {
-            final listIndex = destinations.isEmpty 
-                ? 0 
+            final listIndex = destinations.isEmpty
+                ? 0
                 : (showInfinite ? (index % destinations.length) : index);
             _onPageChanged(listIndex);
             _startAutoPlay();
           },
           itemBuilder: (context, index) {
             if (destinations.isEmpty) return const SizedBox.shrink();
-            final listIndex = showInfinite ? (index % destinations.length) : index;
+            final listIndex =
+                showInfinite ? (index % destinations.length) : index;
             return AnimBuilder(
               animation: _pageController,
               builder: (context, child) {
@@ -3781,7 +3922,8 @@ class ShimmerWidget extends StatefulWidget {
   State<ShimmerWidget> createState() => _ShimmerWidgetState();
 }
 
-class _ShimmerWidgetState extends State<ShimmerWidget> with SingleTickerProviderStateMixin {
+class _ShimmerWidgetState extends State<ShimmerWidget>
+    with SingleTickerProviderStateMixin {
   late AnimationController _controller;
 
   @override
