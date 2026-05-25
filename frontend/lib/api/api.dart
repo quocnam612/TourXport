@@ -149,9 +149,9 @@ Map<String, dynamic>? tryDecodeJsonObject(String body) {
 Future<String?> resolvePlaceIdByName(String name, {String? token}) async {
   if (name.isEmpty) return null;
   try {
-    final response = await apiPostJson(
-      '/locations/search',
-      {'query': name},
+    final encodedName = Uri.encodeComponent(name);
+    final response = await apiGet(
+      '/locations?query=$encodedName&limit=1',
       token: token,
     );
     final data = tryDecodeJsonObject(response.body);

@@ -42,6 +42,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   int _navIndex = 0;
   bool _showLikedOnly = false;
   String _searchQuery = '';
+  String? _selectedCity;
+  String _sortBy = 'reviewsCount';
+  String _sortOrder = 'desc';
+  bool _nearbyEnabled = false;
+  double _radius = 5000.0;
   late final TextEditingController _searchController;
   late final FocusNode _searchFocusNode;
   String _currentBgPath = 'assets/images/halong.jpg';
@@ -1162,7 +1167,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   List<Destination> get _homeDestinations {
-    if (_searchQuery.isNotEmpty) {
+    if (_searchQuery.isNotEmpty || _selectedCity != null || _nearbyEnabled) {
       var list = _searchResults;
       if (_showLikedOnly) {
         list = list.where((d) => _likedNames.contains(d.name)).toList();
@@ -1183,7 +1188,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     });
 
     _searchDebounceTimer?.cancel();
-    if (value.trim().isEmpty) {
+    if (value.trim().isEmpty && _selectedCity == null && !_nearbyEnabled) {
       setState(() {
         _searchResults = [];
         _searchSuggestions = [];
@@ -1205,12 +1210,27 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Future<void> _performBackendSearch(String query) async {
-    if (query.trim().isEmpty) return;
     try {
-      final response = await apiPostJson(
-        '/locations/search',
-        {'query': query, 'limit': 15},
-      );
+      final queryParams = <String, String>{};
+      if (query.trim().isNotEmpty) {
+        queryParams['query'] = query;
+      }
+      if (_selectedCity != null) {
+        queryParams['city'] = _selectedCity!;
+      }
+      queryParams['sortBy'] = _sortBy;
+      queryParams['order'] = _sortOrder;
+      
+      if (_nearbyEnabled) {
+        // Đà Nẵng coordinates
+        queryParams['gps'] = '108.26409,16.002966';
+        queryParams['radius'] = _radius.round().toString();
+      }
+
+      final queryString = Uri(queryParameters: queryParams).query;
+      final path = queryString.isNotEmpty ? '/locations?$queryString' : '/locations';
+
+      final response = await apiGet(path);
       final data = tryDecodeJsonObject(response.body);
       if (response.statusCode == 200 && data?['success'] == true) {
         final rawList = data!['data'];
@@ -1294,198 +1314,392 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Future<void> _openSearchToolsSheet() async {
-    final regions = _homeDestinations.map((d) => d.province).toSet().toList();
+    final cities = ['Đà Nẵng', 'Hà Nội', 'TP. Hồ Chí Minh', 'Quảng Nam', 'Quảng Ninh', 'Khánh Hòa'];
+    final sortOptions = [
+      {'label': 'Lượt review', 'field': 'reviewsCount', 'order': 'desc'},
+      {'label': 'Điểm số', 'field': 'totalScore', 'order': 'desc'},
+      {'label': 'Tên A-Z', 'field': 'title', 'order': 'asc'},
+    ];
 
     await showModalBottomSheet<void>(
       context: context,
       backgroundColor: Colors.transparent,
       isScrollControlled: true,
       builder: (context) {
-        return Container(
-          decoration: BoxDecoration(
-            color: const Color(0xFF1B2321).withOpacity(0.96),
-            borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
-            border: Border.all(color: Colors.white.withOpacity(0.12)),
-          ),
-          padding: const EdgeInsets.fromLTRB(20, 16, 20, 26),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Center(
-                child: Container(
-                  width: 42,
-                  height: 5,
-                  decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.26),
-                    borderRadius: BorderRadius.circular(999),
-                  ),
-                ),
+        return StatefulBuilder(
+          builder: (BuildContext context, StateSetter setSheetState) {
+            return Container(
+              decoration: BoxDecoration(
+                color: const Color(0xFF131D1A).withOpacity(0.98),
+                borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
+                border: Border.all(color: Colors.white.withOpacity(0.08), width: 1.5),
               ),
-              const SizedBox(height: 16),
-              const Text(
-                'Công cụ nhanh',
-                style: TextStyle(
-                  fontFamily: 'Montserrat',
-                  fontSize: 18,
-                  fontWeight: FontWeight.w700,
-                  color: Colors.white,
-                ),
+              padding: EdgeInsets.only(
+                left: 20,
+                right: 20,
+                top: 16,
+                bottom: MediaQuery.of(context).padding.bottom + 26,
               ),
-              const SizedBox(height: 14),
-              _toolActionTile(
-                icon: _showLikedOnly
-                    ? Icons.visibility_rounded
-                    : Icons.favorite_rounded,
-                title: _showLikedOnly
-                    ? 'Hiện tất cả địa điểm'
-                    : 'Chỉ xem đã thích',
-                subtitle:
-                    _showLikedOnly ? 'Tắt lọc theo tim' : 'Lọc nhanh theo tim',
-                onTap: () {
-                  Navigator.pop(context);
-                  _toggleLikedOnlyView();
-                },
-              ),
-              const SizedBox(height: 8),
-              _toolActionTile(
-                icon: Icons.casino_rounded,
-                title: 'Điểm đến ngẫu nhiên',
-                subtitle: 'Nhảy đến một địa điểm bất kỳ',
-                onTap: () {
-                  Navigator.pop(context);
-                  _jumpToRandomDestination();
-                },
-              ),
-              const SizedBox(height: 8),
-              _toolActionTile(
-                icon: Icons.refresh_rounded,
-                title: 'Làm mới dữ liệu đã lưu',
-                subtitle: 'Tải lại từ server',
-                onTap: () {
-                  Navigator.pop(context);
-                  _loadSavedPlaces(showError: true);
-                },
-              ),
-              const SizedBox(height: 14),
-              Text(
-                'Đi nhanh theo khu vực',
-                style: TextStyle(
-                  fontFamily: 'Montserrat',
-                  fontSize: 13,
-                  fontWeight: FontWeight.w600,
-                  color: Colors.white.withOpacity(0.82),
-                ),
-              ),
-              const SizedBox(height: 10),
-              if (regions.isEmpty)
-                Text(
-                  'Không có khu vực nào cho bộ lọc hiện tại.',
-                  style: TextStyle(
-                    fontFamily: 'Montserrat',
-                    fontSize: 12,
-                    color: Colors.white.withOpacity(0.7),
-                  ),
-                )
-              else
-                Wrap(
-                  spacing: 8,
-                  runSpacing: 8,
-                  children: regions.map((region) {
-                    return GestureDetector(
-                      onTap: () {
-                        Navigator.pop(context);
-                        _jumpToRegion(region);
-                      },
+              child: SingleChildScrollView(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Center(
                       child: Container(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 12,
-                          vertical: 8,
-                        ),
+                        width: 46,
+                        height: 5,
                         decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.12),
-                          borderRadius: BorderRadius.circular(18),
-                          border:
-                              Border.all(color: Colors.white.withOpacity(0.2)),
-                        ),
-                        child: Text(
-                          region,
-                          style: const TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 12,
-                            color: Colors.white,
-                          ),
+                          color: Colors.white.withOpacity(0.2),
+                          borderRadius: BorderRadius.circular(999),
                         ),
                       ),
-                    );
-                  }).toList(),
+                    ),
+                    const SizedBox(height: 20),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text(
+                          'Bộ lọc & Công cụ',
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 20,
+                            fontWeight: FontWeight.w800,
+                            color: Colors.white,
+                            letterSpacing: -0.5,
+                          ),
+                        ),
+                        if (_selectedCity != null || _nearbyEnabled || _showLikedOnly || _sortBy != 'reviewsCount')
+                          GestureDetector(
+                            onTap: () {
+                              setSheetState(() {
+                                _selectedCity = null;
+                                _nearbyEnabled = false;
+                                _sortBy = 'reviewsCount';
+                                _sortOrder = 'desc';
+                                _showLikedOnly = false;
+                              });
+                              setState(() {});
+                              _performBackendSearch(_searchQuery);
+                            },
+                            child: const Text(
+                              'Đặt lại',
+                              style: TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 13,
+                                fontWeight: FontWeight.bold,
+                                color: Color(0xFFD4AF7A),
+                              ),
+                            ),
+                          ),
+                      ],
+                    ),
+                    const SizedBox(height: 20),
+                    
+                    // SECTION 1: QUICK TOOLS
+                    Text(
+                      'Công cụ nhanh',
+                      style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white.withOpacity(0.4),
+                        letterSpacing: 1,
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: _toolFilterChip(
+                            icon: _showLikedOnly ? Icons.favorite_rounded : Icons.favorite_border_rounded,
+                            label: 'Đã thích',
+                            isActive: _showLikedOnly,
+                            onTap: () {
+                              setSheetState(() {
+                                _showLikedOnly = !_showLikedOnly;
+                              });
+                              _toggleLikedOnlyView();
+                            },
+                          ),
+                        ),
+                        const SizedBox(width: 10),
+                        Expanded(
+                          child: _toolFilterChip(
+                            icon: Icons.casino_rounded,
+                            label: 'Ngẫu nhiên',
+                            isActive: false,
+                            onTap: () {
+                              Navigator.pop(context);
+                              _jumpToRandomDestination();
+                            },
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 24),
+
+                    // SECTION 2: CHOOSE CITY
+                    Text(
+                      'Lọc theo Thành phố',
+                      style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white.withOpacity(0.4),
+                        letterSpacing: 1,
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: [
+                          _choiceChip(
+                            label: 'Tất cả',
+                            isSelected: _selectedCity == null,
+                            onTap: () {
+                              setSheetState(() {
+                                _selectedCity = null;
+                              });
+                              setState(() {});
+                              _performBackendSearch(_searchQuery);
+                            },
+                          ),
+                          ...cities.map((city) {
+                            return Padding(
+                              padding: const EdgeInsets.only(left: 8.0),
+                              child: _choiceChip(
+                                label: city,
+                                isSelected: _selectedCity == city,
+                                onTap: () {
+                                  setSheetState(() {
+                                    _selectedCity = city;
+                                  });
+                                  setState(() {});
+                                  _performBackendSearch(_searchQuery);
+                                },
+                              ),
+                            );
+                          }).toList(),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 24),
+
+                    // SECTION 3: SORT BY
+                    Text(
+                      'Sắp xếp theo',
+                      style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white.withOpacity(0.4),
+                        letterSpacing: 1,
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    Row(
+                      children: sortOptions.map((opt) {
+                        final isSelected = _sortBy == opt['field'];
+                        return Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 4.0),
+                            child: _choiceChip(
+                              label: opt['label']!,
+                              isSelected: isSelected,
+                              centerText: true,
+                              onTap: () {
+                                setSheetState(() {
+                                  _sortBy = opt['field']!;
+                                  _sortOrder = opt['order']!;
+                                });
+                                setState(() {});
+                                _performBackendSearch(_searchQuery);
+                              },
+                            ),
+                          ),
+                        );
+                      }).toList(),
+                    ),
+                    const SizedBox(height: 24),
+
+                    // SECTION 4: NEARBY / GPS
+                    Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(0.04),
+                        borderRadius: BorderRadius.circular(16),
+                        border: Border.all(color: Colors.white.withOpacity(0.08)),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.my_location_rounded,
+                                    color: _nearbyEnabled ? const Color(0xFFD4AF7A) : Colors.white60,
+                                    size: 20,
+                                  ),
+                                  const SizedBox(width: 10),
+                                  const Text(
+                                    'Tìm kiếm xung quanh (GPS)',
+                                    style: TextStyle(
+                                      fontFamily: 'Montserrat',
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Switch.adaptive(
+                                activeColor: const Color(0xFFD4AF7A),
+                                activeTrackColor: const Color(0xFFD4AF7A).withOpacity(0.3),
+                                value: _nearbyEnabled,
+                                onChanged: (val) {
+                                  setSheetState(() {
+                                    _nearbyEnabled = val;
+                                  });
+                                  setState(() {});
+                                  _performBackendSearch(_searchQuery);
+                                },
+                              ),
+                            ],
+                          ),
+                          if (_nearbyEnabled) ...[
+                            const SizedBox(height: 12),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  'Bán kính: ${_radius >= 1000 ? "${(_radius / 1000).toStringAsFixed(1)} km" : "${_radius.round()} m"}',
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontSize: 12,
+                                    color: Colors.white.withOpacity(0.7),
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Slider(
+                              activeColor: const Color(0xFFD4AF7A),
+                              inactiveColor: Colors.white.withOpacity(0.12),
+                              min: 1000.0,
+                              max: 20000.0,
+                              divisions: 19,
+                              value: _radius,
+                              onChanged: (val) {
+                                setSheetState(() {
+                                  _radius = val;
+                                });
+                              },
+                              onChangeEnd: (val) {
+                                setState(() {});
+                                _performBackendSearch(_searchQuery);
+                              },
+                            ),
+                          ],
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
-            ],
-          ),
+              ),
+            );
+          },
         );
       },
     );
   }
 
-  Widget _toolActionTile({
+  Widget _toolFilterChip({
     required IconData icon,
-    required String title,
-    required String subtitle,
+    required String label,
+    required bool isActive,
     required VoidCallback onTap,
   }) {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+        padding: const EdgeInsets.symmetric(vertical: 12),
         decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.08),
+          color: isActive ? const Color(0xFFD4AF7A).withOpacity(0.15) : Colors.white.withOpacity(0.05),
           borderRadius: BorderRadius.circular(14),
-          border: Border.all(color: Colors.white.withOpacity(0.14)),
+          border: Border.all(
+            color: isActive ? const Color(0xFFD4AF7A) : Colors.white.withOpacity(0.08),
+            width: 1.2,
+          ),
         ),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(
-              width: 34,
-              height: 34,
-              decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.1),
-                borderRadius: BorderRadius.circular(10),
+            Icon(icon, color: isActive ? const Color(0xFFD4AF7A) : Colors.white70, size: 18),
+            const SizedBox(width: 8),
+            Text(
+              label,
+              style: TextStyle(
+                fontFamily: 'Montserrat',
+                fontSize: 13,
+                fontWeight: FontWeight.bold,
+                color: isActive ? const Color(0xFFD4AF7A) : Colors.white70,
               ),
-              child: Icon(icon, color: const Color(0xFFD4AF7A), size: 20),
-            ),
-            const SizedBox(width: 10),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    title,
-                    style: const TextStyle(
-                      fontFamily: 'Montserrat',
-                      fontSize: 14,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.white,
-                    ),
-                  ),
-                  const SizedBox(height: 2),
-                  Text(
-                    subtitle,
-                    style: TextStyle(
-                      fontFamily: 'Montserrat',
-                      fontSize: 12,
-                      color: Colors.white.withOpacity(0.72),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Icon(
-              Icons.chevron_right_rounded,
-              color: Colors.white.withOpacity(0.7),
-              size: 20,
             ),
           ],
         ),
+      ),
+    );
+  }
+
+  Widget _choiceChip({
+    required String label,
+    required bool isSelected,
+    required VoidCallback onTap,
+    bool centerText = false,
+  }) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+        decoration: BoxDecoration(
+          color: isSelected ? const Color(0xFFD4AF7A) : Colors.white.withOpacity(0.06),
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(
+            color: isSelected ? const Color(0xFFD4AF7A) : Colors.white.withOpacity(0.08),
+          ),
+        ),
+        child: isSelected && !centerText
+            ? Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Icon(Icons.check_rounded, color: Colors.black, size: 14),
+                  const SizedBox(width: 4),
+                  Text(
+                    label,
+                    style: const TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontSize: 12,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.black,
+                    ),
+                  ),
+                ],
+              )
+            : Text(
+                label,
+                textAlign: centerText ? TextAlign.center : null,
+                style: TextStyle(
+                  fontFamily: 'Montserrat',
+                  fontSize: 12,
+                  fontWeight: isSelected ? FontWeight.w800 : FontWeight.w600,
+                  color: isSelected ? Colors.black : Colors.white70,
+                ),
+              ),
       ),
     );
   }
