@@ -60,7 +60,7 @@ class _SignInScreenState extends State<SignInScreen>
           Navigator.pushAndRemoveUntil(
             context,
             PageRouteBuilder(
-              pageBuilder: (_, __, ___) => LandingPage(
+              pageBuilder: (_, __, ___) => HomeScreen(
                 userName: userName ?? 'bạn',
                 authToken: authToken,
               ),

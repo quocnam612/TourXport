@@ -109,7 +109,7 @@ class _SignUpScreenState extends State<SignUpScreen>
           Navigator.pushAndRemoveUntil(
             context,
             PageRouteBuilder(
-              pageBuilder: (_, __, ___) => LandingPage(
+              pageBuilder: (_, __, ___) => HomeScreen(
                 userName: name,
                 authToken: data?['token'] as String?,
               ),

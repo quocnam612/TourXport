@@ -1,10 +1,10 @@
-import PlaceDB from '../models/PlaceDB.js';
+import RestaurantDB from '../models/RestaurantDB.js';
 import config from '../config/config.js';
 import parser from '../utils/parser.js';
 import respond from '../utils/respond.js';
 import validator from '../utils/validators.js';
 
-export const getLocations = async (req, res, next) => {
+export const getRestaurants = async (req, res, next) => {
     try {
         const queryError = validator.validateLocationListQuery(req.query);
         if (queryError) {
@@ -17,47 +17,46 @@ export const getLocations = async (req, res, next) => {
         const filter = parser.buildLocationFilter(req.query);
         const sort = parser.buildSort(req.query.sortBy, req.query.order);
 
-        const [locations, total] = await Promise.all([
-            PlaceDB.find(filter).sort(sort).skip(skip).limit(limit),
-            PlaceDB.countDocuments(filter)
-        ]);
+        const restaurants = await RestaurantDB.find(filter).sort(sort);
+        const filteredRestaurants = parser.filterByPriceRange(restaurants, req.query.price, req.query.nullPrice);
+        const pagedRestaurants = filteredRestaurants.slice(skip, skip + limit);
 
         res.status(200).json({
             success: true,
-            count: locations.length,
-            total,
+            count: pagedRestaurants.length,
+            total: filteredRestaurants.length,
             page,
-            totalPages: Math.ceil(total / limit),
-            data: locations
+            totalPages: Math.ceil(filteredRestaurants.length / limit),
+            data: pagedRestaurants
         });
     } catch (error) {
         next(error);
     }
 };
 
-export const getLocation = async (req, res, next) => {
+export const getRestaurant = async (req, res, next) => {
     try {
         const lookupError = validator.validateLocationLookupQuery(req.query);
         if (lookupError) {
             return next(respond.httpError(lookupError, 400));
         }
 
-        const location = await PlaceDB.findOne(parser.buildLocationLookupFilter(req.query));
+        const restaurant = await RestaurantDB.findOne(parser.buildLocationLookupFilter(req.query));
 
-        if (!location) {
-            return next(respond.httpError('Location not found', 404));
+        if (!restaurant) {
+            return next(respond.httpError('Restaurant not found', 404));
         }
 
         res.status(200).json({
             success: true,
-            data: location
+            data: restaurant
         });
     } catch (error) {
         next(error);
     }
 };
 
-export const createLocation = async (req, res, next) => {
+export const createRestaurant = async (req, res, next) => {
     try {
         const payload = parser.normalizeLocationPayload(req.body);
         const validationError = validator.validateLocationPayload(payload);
@@ -66,19 +65,19 @@ export const createLocation = async (req, res, next) => {
             return next(respond.httpError(validationError, 400));
         }
 
-        const location = await PlaceDB.create(payload);
+        const restaurant = await RestaurantDB.create(payload);
 
         res.status(201).json({
             success: true,
-            message: 'Location created successfully!',
-            data: location
+            message: 'Restaurant created successfully!',
+            data: restaurant
         });
     } catch (error) {
         next(error);
     }
 };
 
-export const updateLocation = async (req, res, next) => {
+export const updateRestaurant = async (req, res, next) => {
     try {
         const lookupError = validator.validateLocationLookupQuery(req.query);
         if (lookupError) {
@@ -96,44 +95,44 @@ export const updateLocation = async (req, res, next) => {
             return next(respond.httpError('No fields provided for update', 400));
         }
 
-        const location = await PlaceDB.findOneAndUpdate(
+        const restaurant = await RestaurantDB.findOneAndUpdate(
             parser.buildLocationLookupFilter(req.query),
             { $set: payload },
             { new: true, runValidators: true }
         );
 
-        if (!location) {
-            return next(respond.httpError('Location not found', 404));
+        if (!restaurant) {
+            return next(respond.httpError('Restaurant not found', 404));
         }
 
         res.status(200).json({
             success: true,
-            message: 'Location updated successfully!',
-            data: location
+            message: 'Restaurant updated successfully!',
+            data: restaurant
         });
     } catch (error) {
         next(error);
     }
 };
 
-export const deleteLocation = async (req, res, next) => {
+export const deleteRestaurant = async (req, res, next) => {
     try {
         const lookupError = validator.validateLocationLookupQuery(req.query);
         if (lookupError) {
             return next(respond.httpError(lookupError, 400));
         }
 
-        const location = await PlaceDB.findOneAndDelete(parser.buildLocationLookupFilter(req.query));
+        const restaurant = await RestaurantDB.findOneAndDelete(parser.buildLocationLookupFilter(req.query));
 
-        if (!location) {
-            return next(respond.httpError('Location not found', 404));
+        if (!restaurant) {
+            return next(respond.httpError('Restaurant not found', 404));
         }
 
         res.status(200).json({
             success: true,
-            message: 'Location deleted successfully!',
-            deletedId: location._id,
-            deletedSourceLocationId: location.sourceLocationId
+            message: 'Restaurant deleted successfully!',
+            deletedId: restaurant._id,
+            deletedSourceLocationId: restaurant.sourceLocationId
         });
     } catch (error) {
         next(error);

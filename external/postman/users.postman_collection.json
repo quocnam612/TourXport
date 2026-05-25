@@ -1,0 +1,696 @@
+{
+  "info": {
+    "_postman_id": "52ff5bc2-4bad-478c-95fb-f7bd1927a6e9",
+    "name": "users",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "50791744"
+  },
+  "item": [
+    {
+      "name": "register",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Nguyen Anh Duc\",\n    \"email\": \"nguyenanhduc@gmail.com\",\n    \"password\": \"123\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/auth/register",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "auth",
+            "register"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "used",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"123\",\n    \"email\": \"123\",\n    \"password\": \"123\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/auth/register",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "register"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        }
+      ]
+    },
+    {
+      "name": "login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"email\": \"123\",\n    \"password\": \"123\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "main",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\": \"nguyenanhduc@gmail.com\",\n    \"password\": \"123\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/auth/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        },
+        {
+          "name": "123",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\": \"123\",\n    \"password\": \"123\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/auth/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        }
+      ]
+    },
+    {
+      "name": "see profife info",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMDczZmI2ZTQ5ZDc0NWQ5OGQ1NjQ0OCIsIm5hbWUiOiIxMjMiLCJlbWFpbCI6IjEyMyIsImlhdCI6MTc3OTYzNDc2MiwiZXhwIjoxNzc5ODkzOTYyfQ.bougYeMuILjMSdiKUSK4kLSYxsDV6-sZaYm25_445nU",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/auth/profile",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "auth",
+            "profile"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "change profile info",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMDcyZDA3NmQ5NGMwMDkxOWU2NjQ5MiIsIm5hbWUiOiJOZ3V5ZW4gQW5oIER1YyIsImVtYWlsIjoibmd1eWVuYW5oZHVjQGdtYWlsLmNvbSIsImlhdCI6MTc3ODg1NTgwNSwiZXhwIjoxNzc5MTE1MDA1fQ.lsc5c4DNjPyNjnmfQGd8v7T5OjayGjKWiGjx4PhSRM0",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Nguyen Anh\",\n    \"phone\": \"1203\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/auth/profile",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "auth",
+            "profile"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "phone",
+          "originalRequest": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMDcyZDA3NmQ5NGMwMDkxOWU2NjQ5MiIsIm5hbWUiOiJOZ3V5ZW4gQW5oIER1YyIsImVtYWlsIjoibmd1eWVuYW5oZHVjQGdtYWlsLmNvbSIsImlhdCI6MTc3ODg1NTgwNSwiZXhwIjoxNzc5MTE1MDA1fQ.lsc5c4DNjPyNjnmfQGd8v7T5OjayGjKWiGjx4PhSRM0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"phone\": \"123\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/auth/profile",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "profile"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        },
+        {
+          "name": "email",
+          "originalRequest": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMDcyZDA3NmQ5NGMwMDkxOWU2NjQ5MiIsIm5hbWUiOiJOZ3V5ZW4gQW5oIER1YyIsImVtYWlsIjoibmd1eWVuYW5oZHVjQGdtYWlsLmNvbSIsImlhdCI6MTc3ODg1NTgwNSwiZXhwIjoxNzc5MTE1MDA1fQ.lsc5c4DNjPyNjnmfQGd8v7T5OjayGjKWiGjx4PhSRM0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\": \"abc123@gmail.com\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/auth/profile",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "profile"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        }
+      ]
+    },
+    {
+      "name": "change password",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMDczZmI2ZTQ5ZDc0NWQ5OGQ1NjQ0OCIsIm5hbWUiOiIxMjMiLCJlbWFpbCI6IjEyMyIsImlhdCI6MTc3OTYzOTAzNCwiZXhwIjoxNzc5ODk4MjM0fQ.aJZhw0LbzYu8NiUz4BnB4vo6wprBiGcWwXfEGTQ46dk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"oldPassword\" : \"1234\",\n  \"newPassword\" : \"1234\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/auth/profile/change-password",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "auth",
+            "profile",
+            "change-password"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "to 123",
+          "originalRequest": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMDcyZDA3NmQ5NGMwMDkxOWU2NjQ5MiIsIm5hbWUiOiJOZ3V5ZW4gQW5oIER1YyIsImVtYWlsIjoibmd1eWVuYW5oZHVjQGdtYWlsLmNvbSIsImlhdCI6MTc3ODg1NTgwNSwiZXhwIjoxNzc5MTE1MDA1fQ.lsc5c4DNjPyNjnmfQGd8v7T5OjayGjKWiGjx4PhSRM0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"oldPassword\" : \"1234\",\n  \"newPassword\" : \"123\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/auth/profile/change-password",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "profile",
+                "change-password"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        },
+        {
+          "name": "to 1234",
+          "originalRequest": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMDcyZDA3NmQ5NGMwMDkxOWU2NjQ5MiIsIm5hbWUiOiJOZ3V5ZW4gQW5oIER1YyIsImVtYWlsIjoibmd1eWVuYW5oZHVjQGdtYWlsLmNvbSIsImlhdCI6MTc3ODg1NTgwNSwiZXhwIjoxNzc5MTE1MDA1fQ.lsc5c4DNjPyNjnmfQGd8v7T5OjayGjKWiGjx4PhSRM0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"oldPassword\" : \"123\",\n  \"newPassword\" : \"1234\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/auth/profile/change-password",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "profile",
+                "change-password"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        },
+        {
+          "name": "blank",
+          "originalRequest": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMDcyZDA3NmQ5NGMwMDkxOWU2NjQ5MiIsIm5hbWUiOiJOZ3V5ZW4gQW5oIER1YyIsImVtYWlsIjoibmd1eWVuYW5oZHVjQGdtYWlsLmNvbSIsImlhdCI6MTc3ODg1NTgwNSwiZXhwIjoxNzc5MTE1MDA1fQ.lsc5c4DNjPyNjnmfQGd8v7T5OjayGjKWiGjx4PhSRM0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/auth/profile/change-password",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "profile",
+                "change-password"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        }
+      ]
+    },
+    {
+      "name": "get saved places",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMDczZmI2ZTQ5ZDc0NWQ5OGQ1NjQ0OCIsIm5hbWUiOiIxMjMiLCJlbWFpbCI6IjEyMyIsImlhdCI6MTc3OTYzOTAzNCwiZXhwIjoxNzc5ODk4MjM0fQ.aJZhw0LbzYu8NiUz4BnB4vo6wprBiGcWwXfEGTQ46dk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/auth/profile/saved-places",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "auth",
+            "profile",
+            "saved-places"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "save a place",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMDczZmI2ZTQ5ZDc0NWQ5OGQ1NjQ0OCIsIm5hbWUiOiIxMjMiLCJlbWFpbCI6IjEyMyIsImlhdCI6MTc3OTYzOTAzNCwiZXhwIjoxNzc5ODk4MjM0fQ.aJZhw0LbzYu8NiUz4BnB4vo6wprBiGcWwXfEGTQ46dk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"placeId\": \"6a11ba7acf7dee35d7315fe7\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/auth/profile/saved-places",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "auth",
+            "profile",
+            "saved-places"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete a saved place",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMDczZmI2ZTQ5ZDc0NWQ5OGQ1NjQ0OCIsIm5hbWUiOiIxMjMiLCJlbWFpbCI6IjEyMyIsImlhdCI6MTc3OTYzOTE0NCwiZXhwIjoxNzc5ODk4MzQ0fQ.ZDZwy4Fu6gUdsPKdzNKELjSpLNkizw_t4ZqDDPBKM28",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/auth/profile/saved-places/6a11ba7acf7dee35d7315fe7",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "auth",
+            "profile",
+            "saved-places",
+            "6a11ba7acf7dee35d7315fe7"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get saved tours",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMDcyZDA3NmQ5NGMwMDkxOWU2NjQ5MiIsIm5hbWUiOiJOZ3V5ZW4gQW5oIER1YyIsImVtYWlsIjoibmd1eWVuYW5oZHVjQGdtYWlsLmNvbSIsImlhdCI6MTc3ODg1NTgwNSwiZXhwIjoxNzc5MTE1MDA1fQ.lsc5c4DNjPyNjnmfQGd8v7T5OjayGjKWiGjx4PhSRM0",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/auth/profile/saved-tours",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "auth",
+            "profile",
+            "saved-tours"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "save a tour",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMDcyZDA3NmQ5NGMwMDkxOWU2NjQ5MiIsIm5hbWUiOiJOZ3V5ZW4gQW5oIER1YyIsImVtYWlsIjoibmd1eWVuYW5oZHVjQGdtYWlsLmNvbSIsImlhdCI6MTc3ODg1NTgwNSwiZXhwIjoxNzc5MTE1MDA1fQ.lsc5c4DNjPyNjnmfQGd8v7T5OjayGjKWiGjx4PhSRM0",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"placeId\": \"6a07320f4d5acca1f9413d18\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/auth/profile/saved-tours",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "auth",
+            "profile",
+            "saved-tours"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete a saved tour",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMDcyZDA3NmQ5NGMwMDkxOWU2NjQ5MiIsIm5hbWUiOiJOZ3V5ZW4gQW5oIER1YyIsImVtYWlsIjoibmd1eWVuYW5oZHVjQGdtYWlsLmNvbSIsImlhdCI6MTc3ODg1NTgwNSwiZXhwIjoxNzc5MTE1MDA1fQ.lsc5c4DNjPyNjnmfQGd8v7T5OjayGjKWiGjx4PhSRM0",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/auth/profile/saved-tours/6a07320f4d5acca1f9413d18",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "auth",
+            "profile",
+            "saved-tours",
+            "6a07320f4d5acca1f9413d18"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

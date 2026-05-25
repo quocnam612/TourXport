@@ -10,17 +10,18 @@ const String _kApiBaseFromEnv = String.fromEnvironment('API_BASE_URL', defaultVa
 
 /// Base URL cho API Node. Emulator Android dùng 10.0.2.2 để trỏ về máy host.
 String get apiBaseUrl {
-  final override = _kApiBaseFromEnv.trim();
-  if (override.isNotEmpty) {
-    return override.endsWith('/') ? override.substring(0, override.length - 1) : override;
-  }
-  if (kIsWeb) {
+    final override = _kApiBaseFromEnv.trim();
+    if (override.isNotEmpty) {
+        return override.endsWith('/') ? override.substring(0, override.length - 1) : override;
+    }
+    if (kIsWeb) {
+        return 'http://localhost:3000';
+    }
+    if (Platform.isAndroid) {
+        // Thay vì dùng 10.0.2.2 của máy ảo, đổi thành localhost để thông qua cáp USB
+        return 'http://127.0.0.1:3000'; 
+    }
     return 'http://localhost:3000';
-  }
-  if (Platform.isAndroid) {
-    return 'http://10.0.2.2:3000';
-  }
-  return 'http://localhost:3000';
 }
 
 /// Base URL cho AI Backend (Python - FastAPI)
@@ -163,5 +164,3 @@ Future<String?> resolvePlaceIdByName(String name, {String? token}) async {
   } catch (_) {}
   return null;
 }
-
-
