@@ -1,11 +1,24 @@
 import config from '../config/config.js';
 
 const ORS_BASE_URL = 'https://api.openrouteservice.org';
+const EARTH_RADIUS_METERS = 6371000;
+
+const toRadians = (degrees) => degrees * Math.PI / 180;
 
 const isCoordinate = (value) => {
     return Array.isArray(value)
         && value.length === 2
         && value.every((coordinate) => Number.isFinite(Number(coordinate)));
+};
+
+const haversineDistance = ([lng1, lat1], [lng2, lat2]) => {
+    const deltaLat = toRadians(lat2 - lat1);
+    const deltaLng = toRadians(lng2 - lng1);
+    const a = Math.sin(deltaLat / 2) ** 2
+        + Math.cos(toRadians(lat1)) * Math.cos(toRadians(lat2)) * Math.sin(deltaLng / 2) ** 2;
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+
+    return Math.round(EARTH_RADIUS_METERS * c);
 };
 
 const bboxFromCoordinates = (coordinates) => {
@@ -50,6 +63,18 @@ const openRouteServiceError = (message, statusCode = 502) => {
     return Object.assign(new Error(message), { statusCode });
 };
 
+const routeContext = (fromItem, toItem) => {
+    const fromCoordinates = fromItem.location.coordinates;
+    const toCoordinates = toItem.location.coordinates;
+    const straightDistance = haversineDistance(fromCoordinates, toCoordinates);
+
+    return `${fromItem.title} ${fromCoordinates.join(',')} -> ${toItem.title} ${toCoordinates.join(',')} (${straightDistance}m straight-line)`;
+};
+
+const shouldSkipRouteError = (message) => {
+    return /approximated route distance must not be greater than/i.test(message);
+};
+
 export const getDirections = async (fromItem, toItem, { transportMode = 'auto' } = {}) => {
     if (!isCoordinate(fromItem?.location?.coordinates) || !isCoordinate(toItem?.location?.coordinates)) {
         return null;
@@ -62,19 +87,37 @@ export const getDirections = async (fromItem, toItem, { transportMode = 'auto' }
     }
 
     try {
-        const params = new URLSearchParams({
-            api_key: config.openRouteService.apiKey,
-            start: fromItem.location.coordinates.join(','),
-            end: toItem.location.coordinates.join(',')
+        const response = await fetch(`${ORS_BASE_URL}/v2/directions/${profile}/geojson`, {
+            method: 'POST',
+            headers: {
+                Authorization: config.openRouteService.apiKey,
+                'Content-Type': 'application/json',
+                Accept: 'application/json, application/geo+json'
+            },
+            body: JSON.stringify({
+                coordinates: [
+                    fromItem.location.coordinates,
+                    toItem.location.coordinates
+                ],
+                options: {
+                    avoid_borders: 'all'
+                }
+            })
         });
-        const response = await fetch(`${ORS_BASE_URL}/v2/directions/${profile}?${params.toString()}`);
 
         const data = await response.json().catch(() => null);
         if (!response.ok) {
             const message = typeof data?.error === 'string'
                 ? data.error
                 : data?.error?.message || data?.message || `OpenRouteService failed with status ${response.status}`;
-            throw openRouteServiceError(message, 502);
+            const detailedMessage = `${message}. Segment: ${routeContext(fromItem, toItem)}`;
+
+            if (shouldSkipRouteError(message)) {
+                console.warn(`Skipping route segment: ${detailedMessage}`);
+                return null;
+            }
+
+            throw openRouteServiceError(detailedMessage, 502);
         }
 
         const feature = data?.features?.[0];
@@ -103,7 +146,7 @@ export const getDirections = async (fromItem, toItem, { transportMode = 'auto' }
             throw error;
         }
 
-        throw openRouteServiceError(`OpenRouteService request failed: ${error.message}`);
+        throw openRouteServiceError(`OpenRouteService request failed: ${error.message}. Segment: ${routeContext(fromItem, toItem)}`);
     }
 };
 
