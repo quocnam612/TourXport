@@ -1,4 +1,4 @@
-import { parseBoolean, parseDateToWeekday, parseGps, parseNumber, parseTimeToMinutes } from './parser.js';
+import { parseBoolean, parseDateToWeekday, parseGps, parseNumber, parsePositiveInt, parseTimeToMinutes } from './parser.js';
 
 export const isValidEmail = (email) => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -103,6 +103,41 @@ export const validateLocationListQuery = (query) => {
     return null;
 };
 
+export const validateTourListQuery = (query) => {
+    if (query.totalDays !== undefined && query.totalDays !== null && query.totalDays !== '' && parsePositiveInt(query.totalDays) === undefined) {
+        return 'totalDays must be a positive integer';
+    }
+
+    if (query.totalNights !== undefined && query.totalNights !== null && query.totalNights !== '') {
+        const totalNights = parseNumber(query.totalNights);
+        if (totalNights === undefined || totalNights < 0) {
+            return 'totalNights must be a number greater than or equal to 0';
+        }
+    }
+
+    if (query.visibility && !['private', 'public'].includes(query.visibility)) {
+        return 'visibility must be private or public';
+    }
+
+    if (query.order && !['asc', 'desc'].includes(query.order)) {
+        return 'order must be asc or desc';
+    }
+
+    return null;
+};
+
+export const validateTourUpdatePayload = (payload) => {
+    if (!payload || Object.keys(payload).length === 0) {
+        return 'No fields provided for update';
+    }
+
+    if (payload.visibility && !['private', 'public'].includes(payload.visibility)) {
+        return 'visibility must be private or public';
+    }
+
+    return null;
+};
+
 export default {
     isValidEmail,
     isValidPhone,
@@ -110,5 +145,7 @@ export default {
     isValidGeoCoordinates,
     validateLocationPayload,
     validateLocationLookupQuery,
-    validateLocationListQuery
+    validateLocationListQuery,
+    validateTourListQuery,
+    validateTourUpdatePayload
 };

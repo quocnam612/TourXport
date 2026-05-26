@@ -24,6 +24,10 @@ const config = {
         uri: process.env.MONGO_URI_TEST || process.env.MONGO_URI,
     },
 
+    aiBackend: {
+        url: process.env.AI_BACKEND_URL || `http://localhost:${process.env.PORT_AI || 8000}`,
+    },
+
     openRouteService: {
         apiKey: process.env.OPENROUTESERVICE_API_KEY,
     },

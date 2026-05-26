@@ -302,6 +302,154 @@ export const buildSort = (sortBy = 'totalScore', order = 'desc') => {
     return { [field]: direction, reviewsCount: -1, _id: 1 };
 };
 
+export const buildTourListFilter = (query) => {
+    const filter = {};
+
+    if (query.query) {
+        const variants = regexVariants(query.query);
+        filter.$or = variants.flatMap((regex) => [
+            { title: regex },
+            { destinations: regex }
+        ]);
+    }
+
+    if (query.destination) {
+        Object.assign(filter, textFilterForField('destinations', query.destination));
+    }
+
+    if (query.visibility) {
+        filter.visibility = query.visibility;
+    }
+
+    const totalDays = parsePositiveInt(query.totalDays);
+    if (totalDays !== undefined) {
+        filter.totalDays = totalDays;
+    }
+
+    const totalNights = parseNumber(query.totalNights);
+    if (totalNights !== undefined) {
+        filter.totalNights = totalNights;
+    }
+
+    return filter;
+};
+
+export const buildTourSort = (sortBy = 'updatedAt', order = 'desc') => {
+    const allowedFields = new Set([
+        'createdAt',
+        'updatedAt',
+        'title',
+        'totalDays',
+        'totalNights',
+        'totalDistanceMeters'
+    ]);
+
+    const field = allowedFields.has(sortBy) ? sortBy : 'updatedAt';
+    const direction = order === 'asc' ? 1 : -1;
+
+    return { [field]: direction, _id: 1 };
+};
+
+const allowedTourItemTypes = new Set(['place', 'restaurant', 'hotel']);
+const allowedTourSourceProviders = new Set(['database', 'websearch']);
+const allowedTourSourceCollections = new Set(['places', 'restaurants', 'hotels']);
+
+const normalizeTourSource = (source = {}) => {
+    const provider = allowedTourSourceProviders.has(source.provider) ? source.provider : 'websearch';
+    const collection = allowedTourSourceCollections.has(source.collection) ? source.collection : null;
+
+    return {
+        provider,
+        collection,
+        id: source.id || null
+    };
+};
+
+const isTourCoordinate = (coordinates) => {
+    return Array.isArray(coordinates)
+        && coordinates.length === 2
+        && coordinates.every((coordinate) => Number.isFinite(Number(coordinate)));
+};
+
+const normalizeTourLocation = (location) => {
+    if (!isTourCoordinate(location?.coordinates)) {
+        return null;
+    }
+
+    return {
+        type: location.type || 'Point',
+        coordinates: location.coordinates
+    };
+};
+
+const normalizeTourItem = (item) => ({
+    ...item,
+    checked: Boolean(item.checked),
+    type: allowedTourItemTypes.has(item.type) ? item.type : 'place',
+    location: normalizeTourLocation(item.location),
+    source: normalizeTourSource(item.source)
+});
+
+const coordinatesFromTourItems = (items) => {
+    return items
+        .map((item) => item.location?.coordinates)
+        .filter(isTourCoordinate);
+};
+
+const coordinatesFromTourRoutes = (routes) => {
+    return routes.flatMap((route) => route.geometry?.coordinates || []);
+};
+
+export const normalizeTourPayloadFromAI = async (aiTour, userId, routeService) => {
+    const transportMode = aiTour.preferences?.transportMode || 'auto';
+
+    const days = await Promise.all((aiTour.days || []).map(async (day) => {
+        const items = (day.items || [])
+            .map(normalizeTourItem)
+            .sort((a, b) => a.order - b.order);
+        const routes = await routeService.buildDayRoutes(items, { transportMode });
+        const distanceMeters = routes.reduce((sum, route) => sum + (route.distanceMeters || 0), 0);
+        const bbox = routeService.calculateBbox([
+            ...coordinatesFromTourItems(items),
+            ...coordinatesFromTourRoutes(routes)
+        ]);
+
+        return {
+            ...day,
+            items,
+            routes,
+            distanceMeters,
+            bbox
+        };
+    }));
+
+    const allCoordinates = days.flatMap((day) => [
+        ...coordinatesFromTourItems(day.items || []),
+        ...coordinatesFromTourRoutes(day.routes || [])
+    ]);
+
+    return {
+        userId,
+        title: aiTour.title,
+        destinations: aiTour.destinations || [],
+        visibility: aiTour.visibility || 'private',
+        totalDays: aiTour.totalDays,
+        totalNights: aiTour.totalNights,
+        totalDistanceMeters: days.reduce((sum, day) => sum + (day.distanceMeters || 0), 0),
+        bbox: routeService.calculateBbox(allCoordinates),
+        travelers: aiTour.travelers,
+        preferences: aiTour.preferences,
+        estimatedCost: aiTour.estimatedCost,
+        days,
+        ai: aiTour.ai
+    };
+};
+
+export const removeProtectedTourFields = (payload) => {
+    const { _id, userId, createdAt, updatedAt, ...updates } = payload;
+    return updates;
+};
+
 export const buildLocationLookupFilter = (query) => {
     const id = query.id || query._id;
     const sourceLocationId = query.sourceLocationId || query.sourceLocationID;
@@ -380,5 +528,9 @@ export default {
     buildLocationFilter,
     buildLocationLookupFilter,
     buildSort,
-    normalizeLocationPayload
+    normalizeLocationPayload,
+    buildTourListFilter,
+    buildTourSort,
+    normalizeTourPayloadFromAI,
+    removeProtectedTourFields
 };

@@ -144,7 +144,7 @@ const itineraryItemSchema = new mongoose.Schema({
 
     location: {
         type: pointSchema,
-        required: true
+        default: null
     },
 
     source: {
