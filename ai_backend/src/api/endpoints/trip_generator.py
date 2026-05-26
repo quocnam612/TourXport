@@ -6,7 +6,7 @@ from src.services.trip_generator.ai_orchestrator import TripOrchestrator, get_tr
 
 router = APIRouter()
 
-@router.post("/generate", response_model=TripGeneratorResponse)
+@router.post("/generate", response_model=TripGeneratorResponse, response_model_by_alias=True)
 async def generate_trip(
     request_data: TripGenerateRequest,
     orchestrator: TripOrchestrator = Depends(get_trip_orchestrator),
