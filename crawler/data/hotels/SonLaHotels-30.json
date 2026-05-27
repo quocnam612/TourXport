@@ -1,0 +1,860 @@
+[
+    {
+        "sourceLocationId": "24996311",
+        "title": "Glenda Tower Moc Chau Hotel",
+        "city": "Mộc Châu, Tỉnh Sơn La",
+        "totalScore": 5.0,
+        "ranking": "1/338",
+        "reviewsCount": 110,
+        "category": "Khách sạn",
+        "priceRange": "1.000.000 ₫ - 1.947.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Glenda Tower Moc Chau Hotel ở Mộc Châu, Tỉnh Sơn La. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 110 lượt review. Xếp hạng: 1/338. Giá: 1.000.000 ₫ - 1.947.368 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/27/29/ca/72/deluxe-double-room.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.6204,
+                20.853184
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10351175",
+        "title": "Khách Sạn Mường Thanh Holiday Mộc Châu",
+        "city": "Mộc Châu, Tỉnh Sơn La",
+        "totalScore": 4.7,
+        "ranking": "2/338",
+        "reviewsCount": 211,
+        "category": "Nhà nghỉ",
+        "priceRange": "763.158 ₫ - 1.921.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn Mường Thanh Holiday Mộc Châu ở Mộc Châu, Tỉnh Sơn La. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 4.7/5 từ 211 lượt review. Xếp hạng: 2/338. Giá: 763.158 ₫ - 1.921.053 ₫.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/cd/a4/93/khach-s-n-mu-ng-thanh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.66035,
+                20.84621
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26771990",
+        "title": "Natalie's Villa & Resort Mộc Châu",
+        "city": "Mộc Châu, Tỉnh Sơn La",
+        "totalScore": 5.0,
+        "ranking": "3/338",
+        "reviewsCount": 76,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "1.342.105 ₫ - 2.342.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Natalie's Villa & Resort Mộc Châu ở Mộc Châu, Tỉnh Sơn La. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 5.0/5 từ 76 lượt review. Xếp hạng: 3/338. Giá: 1.342.105 ₫ - 2.342.105 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/ac/f6/8a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.60065,
+                20.84005
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15220701",
+        "title": "Mường Thanh Luxury Sơn La Hotel",
+        "city": "Sơn La, Tỉnh Sơn La",
+        "totalScore": 4.9,
+        "ranking": "4/338",
+        "reviewsCount": 85,
+        "category": "Khách sạn",
+        "priceRange": "526.316 ₫ - 894.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Mường Thanh Luxury Sơn La Hotel ở Sơn La, Tỉnh Sơn La. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 85 lượt review. Xếp hạng: 4/338. Giá: 526.316 ₫ - 894.737 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/14/ba/55/muong-thanh-grand-son.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.913025,
+                21.327572
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26294720",
+        "title": "1941M Homestay Tà Xùa",
+        "city": "Ta Xua, Bac Yen, Tỉnh Sơn La",
+        "totalScore": 4.9,
+        "ranking": "5/338",
+        "reviewsCount": 33,
+        "category": "Nhà trọ",
+        "priceRange": "2.026.316 ₫ - 2.315.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "1941M Homestay Tà Xùa ở Ta Xua, Bac Yen, Tỉnh Sơn La. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 4.9/5 từ 33 lượt review. Xếp hạng: 5/338. Giá: 2.026.316 ₫ - 2.315.789 ₫.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/29/bc/94/50/1941m-homestay-ta-xua.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.46409,
+                21.304571
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25982901",
+        "title": "Ta Xua Ecolodge",
+        "city": "Ta Xua, Bac Yen, Tỉnh Sơn La",
+        "totalScore": 5.0,
+        "ranking": "6/338",
+        "reviewsCount": 7,
+        "category": "Nhà trọ",
+        "priceRange": "368.421 ₫ - 1.368.421 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Ta Xua Ecolodge ở Ta Xua, Bac Yen, Tỉnh Sơn La. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 5.0/5 từ 7 lượt review. Xếp hạng: 6/338. Giá: 368.421 ₫ - 1.368.421 ₫.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/27/8d/c3/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.46651,
+                21.278828
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24988493",
+        "title": "Moc Chau Island - Lune Camping",
+        "city": "Muong Sang, Tỉnh Sơn La",
+        "totalScore": 4.5,
+        "ranking": "7/338",
+        "reviewsCount": 14,
+        "category": "Khách sạn",
+        "priceRange": "868.421 ₫ - 1.842.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Moc Chau Island - Lune Camping ở Muong Sang, Tỉnh Sơn La. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.5/5 từ 14 lượt review. Xếp hạng: 7/338. Giá: 868.421 ₫ - 1.842.105 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/46/bc/58/m-c-chau-island-mountain.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.5762,
+                20.843021
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11906770",
+        "title": "Homestay Mộc Châu",
+        "city": "Mộc Châu, Tỉnh Sơn La",
+        "totalScore": 5.0,
+        "ranking": "8/338",
+        "reviewsCount": 12,
+        "category": "Nhà khách",
+        "priceRange": "289.474 ₫ - 2.394.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Homestay Mộc Châu ở Mộc Châu, Tỉnh Sơn La. Loại địa điểm: Nhà khách. Tags: Nhà khách. Đánh giá: 5.0/5 từ 12 lượt review. Xếp hạng: 8/338. Giá: 289.474 ₫ - 2.394.737 ₫.",
+        "tags": [
+            "Nhà khách"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/2a/18/19/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.72999,
+                20.995098
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13415273",
+        "title": "A Chu Homestay",
+        "city": "Van Ho, Tỉnh Sơn La",
+        "totalScore": 4.4,
+        "ranking": "9/338",
+        "reviewsCount": 10,
+        "category": "Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "A Chu Homestay ở Van Ho, Tỉnh Sơn La. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 4.4/5 từ 10 lượt review. Xếp hạng: 9/338.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/e1/44/44/le-diner-copieux-varie.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.7862,
+                20.779116
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12874070",
+        "title": "Nhà Ta Homestay",
+        "city": "Mộc Châu, Tỉnh Sơn La",
+        "totalScore": 4.6,
+        "ranking": "10/338",
+        "reviewsCount": 9,
+        "category": "Nhà nghỉ",
+        "priceRange": "78.947 ₫ - 263.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Ta Homestay ở Mộc Châu, Tỉnh Sơn La. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 4.6/5 từ 9 lượt review. Xếp hạng: 10/338. Giá: 78.947 ₫ - 263.158 ₫.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/94/77/9d/overview.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.63869,
+                20.847063
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26186883",
+        "title": "Happy Vietnam Tours",
+        "city": "Bac Yen, Tỉnh Sơn La",
+        "totalScore": 5.0,
+        "ranking": "11/338",
+        "reviewsCount": 10,
+        "category": "Nhà trọ",
+        "priceRange": "552.632 ₫ - 1.236.842 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Happy Vietnam Tours ở Bac Yen, Tỉnh Sơn La. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 5.0/5 từ 10 lượt review. Xếp hạng: 11/338. Giá: 552.632 ₫ - 1.236.842 ₫.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/29/78/a8/51/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.46651,
+                21.278828
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23409940",
+        "title": "Tà Xùa Lu Trế",
+        "city": "Sơn La, Tỉnh Sơn La",
+        "totalScore": 4.4,
+        "ranking": "12/338",
+        "reviewsCount": 5,
+        "category": "Cơ sở kinh doanh có dịch vụ giới hạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tà Xùa Lu Trế ở Sơn La, Tỉnh Sơn La. Loại địa điểm: Cơ sở kinh doanh có dịch vụ giới hạn. Tags: Cơ sở kinh doanh có dịch vụ giới hạn. Đánh giá: 4.4/5 từ 5 lượt review. Xếp hạng: 12/338.",
+        "tags": [
+            "Cơ sở kinh doanh có dịch vụ giới hạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/27/1e/3a/83/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.45013,
+                21.269714
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14888381",
+        "title": "Lavallee - Mocchau",
+        "city": "Mộc Châu, Tỉnh Sơn La",
+        "totalScore": 5.0,
+        "ranking": "13/338",
+        "reviewsCount": 5,
+        "category": "Nhà ngoại ô",
+        "priceRange": "684.211 ₫ - 1.736.842 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Lavallee - Mocchau ở Mộc Châu, Tỉnh Sơn La. Loại địa điểm: Nhà ngoại ô. Tags: Nhà ngoại ô. Đánh giá: 5.0/5 từ 5 lượt review. Xếp hạng: 13/338. Giá: 684.211 ₫ - 1.736.842 ₫.",
+        "tags": [
+            "Nhà ngoại ô"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/cf/df/13/nhin-t-ngoai-vao.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.66127,
+                20.843525
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25367416",
+        "title": "Vigolando Vân Hồ Resort",
+        "city": "Van Ho, Tỉnh Sơn La",
+        "totalScore": 5.0,
+        "ranking": "14/338",
+        "reviewsCount": 3,
+        "category": "Nhà trọ",
+        "priceRange": "1.263.158 ₫ - 2.842.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Vigolando Vân Hồ Resort ở Van Ho, Tỉnh Sơn La. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 14/338. Giá: 1.263.158 ₫ - 2.842.105 ₫.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/f9/b3/76/t-ng-th.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.72357,
+                20.7835
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17627418",
+        "title": "Fairy House Homestay Mộc Châu",
+        "city": "Mộc Châu, Tỉnh Sơn La",
+        "totalScore": 5.0,
+        "ranking": "15/338",
+        "reviewsCount": 4,
+        "category": "Khách sạn",
+        "priceRange": "657.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Fairy House Homestay Mộc Châu ở Mộc Châu, Tỉnh Sơn La. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 15/338. Giá: 657.895 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/19/4a/0a/89/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.63071,
+                20.823812
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24042132",
+        "title": "Muong Sang Retreat",
+        "city": "Muong Sang, Tỉnh Sơn La",
+        "totalScore": 4.5,
+        "ranking": "16/338",
+        "reviewsCount": 4,
+        "category": "Nhà trọ",
+        "priceRange": "368.421 ₫ - 842.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Muong Sang Retreat ở Muong Sang, Tỉnh Sơn La. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 4.5/5 từ 4 lượt review. Xếp hạng: 16/338. Giá: 368.421 ₫ - 842.105 ₫.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/29/1b/c6/b4/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.66487,
+                20.81048
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33266399",
+        "title": "Cloud Valley Háng Đồng",
+        "city": "Ta Xua, Bac Yen, Tỉnh Sơn La",
+        "totalScore": 5.0,
+        "ranking": "17/338",
+        "reviewsCount": 2,
+        "category": "Khách sạn nhỏ",
+        "priceRange": "1.105.263 ₫ - 1.500.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Cloud Valley Háng Đồng ở Ta Xua, Bac Yen, Tỉnh Sơn La. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 17/338. Giá: 1.105.263 ₫ - 1.500.000 ₫.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/49/2b/69/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.484375,
+                21.302223
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23186298",
+        "title": "Mộc Châu Eco Garden Resort",
+        "city": "Mộc Châu, Tỉnh Sơn La",
+        "totalScore": 4.3,
+        "ranking": "18/338",
+        "reviewsCount": 4,
+        "category": "Khách sạn",
+        "priceRange": "1.447.368 ₫ - 3.473.684 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Mộc Châu Eco Garden Resort ở Mộc Châu, Tỉnh Sơn La. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.3/5 từ 4 lượt review. Xếp hạng: 18/338. Giá: 1.447.368 ₫ - 3.473.684 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/2e/16/3a/c1/natural-landscape.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.5822,
+                20.83748
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27843818",
+        "title": "Happy House Moc Chau Hotel",
+        "city": "Phieng Luong, Tỉnh Sơn La",
+        "totalScore": 5.0,
+        "ranking": "19/338",
+        "reviewsCount": 2,
+        "category": "Khách sạn",
+        "priceRange": "368.421 ₫ - 1.131.579 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Happy House Moc Chau Hotel ở Phieng Luong, Tỉnh Sơn La. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 19/338. Giá: 368.421 ₫ - 1.131.579 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/a5/4b/b1/room-happy-house-moc.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.66574,
+                20.843857
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21420057",
+        "title": "Homestay Đỉnh Tà Xùa",
+        "city": "Sơn La, Tỉnh Sơn La",
+        "totalScore": 5.0,
+        "ranking": "20/338",
+        "reviewsCount": 2,
+        "category": "Khách sạn",
+        "priceRange": "526.316 ₫ - 763.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Homestay Đỉnh Tà Xùa ở Sơn La, Tỉnh Sơn La. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 20/338. Giá: 526.316 ₫ - 763.158 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/79/57/06/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.46651,
+                21.278828
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13743154",
+        "title": "A Chu Homestay",
+        "city": "Sơn La, Tỉnh Sơn La",
+        "totalScore": 4.8,
+        "ranking": "21/338",
+        "reviewsCount": 4,
+        "category": "Nhà trọ đặc biệt",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "A Chu Homestay ở Sơn La, Tỉnh Sơn La. Loại địa điểm: Nhà trọ đặc biệt. Tags: Nhà trọ đặc biệt. Đánh giá: 4.8/5 từ 4 lượt review. Xếp hạng: 21/338.",
+        "tags": [
+            "Nhà trọ đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/42/a6/b0/la-terrasse-de-la-chambre.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25153682",
+        "title": "Retreat Home Bản Dọi Mộc Châu",
+        "city": "Mộc Châu, Tỉnh Sơn La",
+        "totalScore": 5.0,
+        "ranking": "22/338",
+        "reviewsCount": 2,
+        "category": "B&B",
+        "priceRange": "447.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Retreat Home Bản Dọi Mộc Châu ở Mộc Châu, Tỉnh Sơn La. Loại địa điểm: B&B. Tags: B&B. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 22/338. Giá: 447.368 ₫.",
+        "tags": [
+            "B&B"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/15/8a/77/retreat-home-b-n-d-i.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.642395,
+                20.948708
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8408484",
+        "title": "Mộc Châu Arena Village",
+        "city": "Mộc Châu, Tỉnh Sơn La",
+        "totalScore": 3.6,
+        "ranking": "23/338",
+        "reviewsCount": 21,
+        "category": "Nhà nghỉ",
+        "priceRange": "500.000 ₫ - 710.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Mộc Châu Arena Village ở Mộc Châu, Tỉnh Sơn La. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 3.6/5 từ 21 lượt review. Xếp hạng: 23/338. Giá: 500.000 ₫ - 710.526 ₫.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/40/39/0b/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.69442,
+                20.811071
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7244499",
+        "title": "Khách sạn Sao Xanh",
+        "city": "Sơn La, Tỉnh Sơn La",
+        "totalScore": 3.8,
+        "ranking": "24/338",
+        "reviewsCount": 10,
+        "category": "Khách sạn nhỏ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Sao Xanh ở Sơn La, Tỉnh Sơn La. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 3.8/5 từ 10 lượt review. Xếp hạng: 24/338.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/ac/0c/02/view-from-hotel-room.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24974390",
+        "title": "Mộc Châu Peachy Garden Homestay",
+        "city": "Mộc Châu, Tỉnh Sơn La",
+        "totalScore": 5.0,
+        "ranking": "25/338",
+        "reviewsCount": 1,
+        "category": "B&B đặc biệt",
+        "priceRange": "500.000 ₫ - 552.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Mộc Châu Peachy Garden Homestay ở Mộc Châu, Tỉnh Sơn La. Loại địa điểm: B&B đặc biệt. Tags: B&B đặc biệt. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 25/338. Giá: 500.000 ₫ - 552.632 ₫.",
+        "tags": [
+            "B&B đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/30/ce/24/80/m-c-chau-peachy-garde.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.6241,
+                20.92024
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4274092",
+        "title": "Khách Sạn Sao Xanh Mộc Châu",
+        "city": "Mộc Châu, Tỉnh Sơn La",
+        "totalScore": 3.5,
+        "ranking": "26/338",
+        "reviewsCount": 14,
+        "category": "Khách sạn",
+        "priceRange": "342.105 ₫ - 1.500.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn Sao Xanh Mộc Châu ở Mộc Châu, Tỉnh Sơn La. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 3.5/5 từ 14 lượt review. Xếp hạng: 26/338. Giá: 342.105 ₫ - 1.500.000 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/be/73/6c/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.59644,
+                20.863396
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33461718",
+        "title": "Gobies Garden",
+        "city": "Mộc Châu, Tỉnh Sơn La",
+        "totalScore": 5.0,
+        "ranking": "27/338",
+        "reviewsCount": 1,
+        "category": "Khách sạn",
+        "priceRange": "1.052.632 ₫ - 1.210.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Gobies Garden ở Mộc Châu, Tỉnh Sơn La. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 27/338. Giá: 1.052.632 ₫ - 1.210.526 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/31/63/d4/4a/gobies-garden.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.64687,
+                20.84113
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11884823",
+        "title": "Khách Sạn Phương Nam",
+        "city": "Sơn La, Tỉnh Sơn La",
+        "totalScore": 4.5,
+        "ranking": "28/338",
+        "reviewsCount": 2,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn Phương Nam ở Sơn La, Tỉnh Sơn La. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 28/338.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/b6/2e/d0/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.91895,
+                21.323847
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21391017",
+        "title": "The Nordic Village",
+        "city": "Sơn La, Tỉnh Sơn La",
+        "totalScore": 5.0,
+        "ranking": "29/338",
+        "reviewsCount": 1,
+        "category": "B&B",
+        "priceRange": "1.026.316 ₫ - 1.500.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The Nordic Village ở Sơn La, Tỉnh Sơn La. Loại địa điểm: B&B. Tags: B&B. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 29/338. Giá: 1.026.316 ₫ - 1.500.000 ₫.",
+        "tags": [
+            "B&B"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/db/5d/e8/villa-2-bedroom.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.78042,
+                20.780005
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14178323",
+        "title": "Thao Nguyen Hotel & Resort - Moc Chau",
+        "city": "Mộc Châu, Tỉnh Sơn La",
+        "totalScore": 3.5,
+        "ranking": "30/338",
+        "reviewsCount": 4,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "868.421 ₫ - 1.789.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Thao Nguyen Hotel & Resort - Moc Chau ở Mộc Châu, Tỉnh Sơn La. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 3.5/5 từ 4 lượt review. Xếp hạng: 30/338. Giá: 868.421 ₫ - 1.789.474 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/60/3c/88/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.668274,
+                20.835714
+            ]
+        },
+        "openingHours": null
+    }
+]

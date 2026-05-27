@@ -1,0 +1,407 @@
+[
+    {
+        "sourceLocationId": "8855040",
+        "title": "Đồi A1",
+        "city": "Điện Biên Phủ",
+        "totalScore": 4.3,
+        "ranking": "1/13",
+        "reviewsCount": 66,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đồi A1 ở Điện Biên Phủ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 66 lượt review. Xếp hạng: 1/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/f5/22/b8/eliane-2.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.01842,
+                21.392456
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11918847",
+        "title": "Bảo Tàng Chiên Thắng Điện Biên Phủ",
+        "city": "Điện Biên Phủ",
+        "totalScore": 4.2,
+        "ranking": "2/13",
+        "reviewsCount": 53,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bảo Tàng Chiên Thắng Điện Biên Phủ ở Điện Biên Phủ. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.2/5 từ 53 lượt review. Xếp hạng: 2/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/98/69/19/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.0151,
+                21.380707
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8861348",
+        "title": "Nghĩa trang Liệt sỹ Điện Biên Phủ",
+        "city": "Điện Biên Phủ",
+        "totalScore": 4.2,
+        "ranking": "3/13",
+        "reviewsCount": 28,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nghĩa trang Liệt sỹ Điện Biên Phủ ở Điện Biên Phủ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 28 lượt review. Xếp hạng: 3/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/af/cb/85/overview.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.03338,
+                21.40724
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "379363",
+        "title": "Điện Biên Phủ",
+        "city": "Điện Biên Phủ",
+        "totalScore": 5.0,
+        "ranking": "7/13",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Điện Biên Phủ ở Điện Biên Phủ. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 7/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/a9/11/a8/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12883863",
+        "title": "Cột Mốc Số 0",
+        "city": "Điện Biên Phủ",
+        "totalScore": 4.8,
+        "ranking": "6/13",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cột Mốc Số 0 ở Điện Biên Phủ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.8/5 từ 4 lượt review. Xếp hạng: 6/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/b8/dd/5f/img-20181003-163811-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8861351",
+        "title": "Bunker of Colonel de Castries",
+        "city": "Điện Biên Phủ",
+        "totalScore": 3.7,
+        "ranking": "4/13",
+        "reviewsCount": 57,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bunker of Colonel de Castries ở Điện Biên Phủ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.7/5 từ 57 lượt review. Xếp hạng: 4/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/75/88/9a/outside.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.00572,
+                21.41224
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11635855",
+        "title": "Khu Du Lịch Khoáng Nóng Uva",
+        "city": "Điện Biên Phủ",
+        "totalScore": 4.3,
+        "ranking": "5/13",
+        "reviewsCount": 8,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu Du Lịch Khoáng Nóng Uva ở Điện Biên Phủ. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.3/5 từ 8 lượt review. Xếp hạng: 5/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/db/4f/90/uva-reception.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                102.99644,
+                21.283794
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17667276",
+        "title": "Du Lịch Cộng Đồng Mường Phăng",
+        "city": "Điện Biên Phủ",
+        "totalScore": 4.0,
+        "ranking": "10/13",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": "Quý Khách sẽ được tham gia các tour du lịch trải nghiệm. Ăn uống và gnủ gnhỉ tại Homestay\n          ",
+        "embedding": null,
+        "searchText": "Du Lịch Cộng Đồng Mường Phăng ở Điện Biên Phủ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Mô tả: Quý Khách sẽ được tham gia các tour du lịch trải nghiệm. Ăn uống và gnủ gnhỉ tại Homestay\n           Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 10/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/18/12/d9/1a/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.141106,
+                21.445078
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19758237",
+        "title": "Khu Di Tích Lịch Sử Mường Phăng",
+        "city": "Muong Phan",
+        "totalScore": 5.0,
+        "ranking": "8/13",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu Di Tích Lịch Sử Mường Phăng ở Muong Phan. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 8/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/61/3b/19/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27065693",
+        "title": "Victory Monument",
+        "city": "Điện Biên Phủ",
+        "totalScore": 4.0,
+        "ranking": "9/13",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Victory Monument ở Điện Biên Phủ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 9/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/7c/23/ad/victory-monument-june.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.21571,
+                22.312418
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19507246",
+        "title": "Chợ Cầu Mường Thanh",
+        "city": "Điện Biên Phủ",
+        "totalScore": 2.5,
+        "ranking": "11/13",
+        "reviewsCount": 2,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Cầu Mường Thanh ở Điện Biên Phủ. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 2.5/5 từ 2 lượt review. Xếp hạng: 11/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/05/21/84/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.01351,
+                21.38726
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19595644",
+        "title": "Noong Chun Village",
+        "city": "Điện Biên Phủ",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Noong Chun Village ở Điện Biên Phủ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19513905",
+        "title": "Hồ Pa Khoang",
+        "city": "Muong Phan",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hồ Pa Khoang ở Muong Phan. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.11085,
+                21.434196
+            ]
+        },
+        "openingHours": null
+    }
+]

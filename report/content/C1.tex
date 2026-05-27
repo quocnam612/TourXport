@@ -1,0 +1,65 @@
+\chapter{TỔNG QUAN VÀ PHÂN TÍCH YÊU CẦU}
+
+\section{Giới thiệu dự án}
+
+\quad TourXport là ứng dụng du lịch thông minh, giúp người dùng khám phá và tìm kiếm những địa điểm tham quan ở Việt Nam một cách cá nhân hóa. Dựa trên sở thích và điều kiện của từng người, ứng dụng gợi ý các điểm đến phù hợp, tích hợp bản đồ định vị và xây dựng lộ trình di chuyển tối ưu. Ứng dụng được xây dựng theo định hướng Flutter \cite{flutter_doc}, bám theo các chuẩn giao diện hiện đại của Material Design 3 \cite{material3} để đảm bảo tính nhất quán trên nhiều nền tảng.
+
+\quad Điểm khác biệt của TourXport là kết hợp dữ liệu bản đồ, thời tiết và hướng dẫn di chuyển trong cùng một hệ thống, mang lại trải nghiệm du lịch trọn vẹn và thuận tiện hơn. Phần giao diện được triển khai bằng Dart \cite{dart_guide} với phong cách thiết kế trực quan, trong đó các hiệu ứng trong suốt lấy cảm hứng từ glassmorphism \cite{glassmorphism} được dùng cho một số màn hình chính.
+
+\section{Phân tích bài toán}
+
+\quad Hiện nay, người dùng khi lên kế hoạch du lịch thường phải sử dụng nhiều ứng dụng khác nhau để tìm kiếm địa điểm, tra cứu bản đồ và tìm đường di chuyển. Điều này gây mất thời gian, thiếu tính đồng bộ và làm giảm trải nghiệm người dùng.
+
+\quad Ngoài ra, việc lựa chọn địa điểm phù hợp với sở thích cá nhân còn gặp nhiều khó khăn do thiếu hệ thống gợi ý hiệu quả. Người dùng thường phải tự tìm kiếm và đánh giá thông tin từ nhiều nguồn khác nhau.
+
+\quad Từ thực tế đó, TourXport được đề xuất nhằm xây dựng một hệ thống hỗ trợ du lịch thông minh, giúp:
+\begin{itemize}
+    \item Cá nhân hóa việc gợi ý địa điểm
+    \item Tích hợp bản đồ và định vị
+    \item Xây dựng lộ trình di chuyển tối ưu
+\end{itemize}
+
+\quad Hệ thống giải quyết các yêu cầu chính:
+\begin{itemize}
+    \item Gợi ý địa điểm dựa trên nhu cầu người dùng.
+    \item Hiển thị thông tin điểm đến.
+    \item Xác định vị trí người dùng.
+    \item Tạo đường đi giữa các địa điểm.
+    \item Cung cấp giao diện trực quan và dễ sử dụng.
+\end{itemize}
+
+\section{Mục tiêu và phạm vi POC}
+
+\subsection{Mục tiêu POC}
+
+\quad POC (Proof of Concept) của dự án TourXport được xây dựng nhằm kiểm chứng tính khả thi của việc phát triển một ứng dụng hỗ trợ du lịch thông minh trên nền tảng di động.
+
+\quad Các mục tiêu chính bao gồm:
+\begin{itemize}
+    \item Hiển thị danh sách gợi ý các địa điểm tham quan.
+    \item Xây dựng giao diện trực quan, dễ thao tác với người dùng.
+    \item Khảo sát nhu cầu người dùng.
+    \item Xây dựng chức năng tạo tuyến đường giữa các địa điểm.
+\end{itemize}
+
+\subsection{Phạm vi POC}
+
+\quad Trong giai đoạn POC, nhóm tập trung phát triển các chức năng cốt lõi nhằm chứng minh tính khả thi của hệ thống, bao gồm:
+\begin{itemize}
+    \item Chức năng thực hiện:
+    \begin{itemize}
+        \item Đăng ký, đăng nhập
+        \item Hiển thị danh sách gợi ý các địa điểm tham quan.
+        \item Lưu danh sách những địa điểm đã thích
+        \item Khảo sát nhu cầu người dùng
+        \item Tạo và hiển thị tuyến đường di chuyển.
+        \item Giao diện trực quan, dễ thao tác với người dùng.
+    \end{itemize}
+
+    \item Ngoài phạm vi POC:
+    \begin{itemize}
+        \item Hệ thống AI gợi ý địa điểm theo nhu cầu người dùng.
+        \item Tối ưu hiệu năng cho quy mô lớn.
+        \item Bảo mật thông tin người dùng.
+    \end{itemize}
+\end{itemize}

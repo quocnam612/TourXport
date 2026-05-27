@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../api/api.dart';
 import '../models/destination.dart';
+import 'map_screen.dart';
 
 class PlaceDetailScreen extends StatefulWidget {
   final Destination destination;
@@ -101,15 +102,25 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     final dest = widget.destination;
 
     try {
+      String? placeId = dest.id;
+      if (placeId == null || placeId.isEmpty) {
+        placeId = await resolvePlaceIdByName(dest.name, token: token);
+      }
+
+      if (placeId == null || placeId.isEmpty) {
+        _showMessage('Không tìm thấy thông tin địa điểm này trên hệ thống');
+        return;
+      }
+
       final response = _isSaved
           ? await apiDeleteJson(
-              '/auth/saved-places',
-              {'name': dest.name},
+              '/auth/profile/saved-places/$placeId',
+              {},
               token: token,
             )
           : await apiPostJson(
-              '/auth/saved-places',
-              dest.toJson(),
+              '/auth/profile/saved-places',
+              {'placeId': placeId},
               token: token,
             );
 
@@ -154,6 +165,14 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     final screenH = MediaQuery.of(context).size.height;
     final screenW = MediaQuery.of(context).size.width;
     final parentAnim = _routeAnimation ?? const AlwaysStoppedAnimation(1.0);
+    final isDesktop = screenW >= 800;
+
+    if (isDesktop) {
+      return Scaffold(
+        backgroundColor: const Color(0xFF0F1E1B),
+        body: _buildDesktopLayout(dest, screenH, screenW),
+      );
+    }
 
     return WillPopScope(
       onWillPop: () async {
@@ -216,6 +235,241 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     );
   }
 
+  Widget _buildDesktopLayout(Destination dest, double screenH, double screenW) {
+    return Center(
+      child: Container(
+        constraints: const BoxConstraints(maxWidth: 1200),
+        padding: const EdgeInsets.all(32),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Left Half: Image & Gallery
+            Expanded(
+              flex: 4,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // Beautiful back button and title
+                  Row(
+                    children: [
+                      _glassCircle(Icons.arrow_back_ios_new, () => Navigator.pop(context, {
+                        'isSaved': _isSaved,
+                        'isLiked': _isLiked,
+                      })),
+                      const SizedBox(width: 16),
+                      Expanded(
+                        child: Text(
+                          dest.name,
+                          style: const TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 32,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 24),
+
+                  // Image Container
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(28),
+                        border: Border.all(color: Colors.white.withOpacity(0.1), width: 1),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.3),
+                            blurRadius: 20,
+                            offset: const Offset(0, 10),
+                          ),
+                        ],
+                      ),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(28),
+                        child: Stack(
+                          fit: StackFit.expand,
+                          children: [
+                            Destination.buildImage(dest.imagePath, fit: BoxFit.cover),
+                            
+                            // Top overlay with actions
+                            Positioned(
+                              top: 20,
+                              right: 20,
+                              child: Row(
+                                children: [
+                                  _glassCircleAnimatedIcon(
+                                    isActive: _isLiked,
+                                    activeIcon: Icons.favorite,
+                                    inactiveIcon: Icons.favorite_border,
+                                    onTap: _toggleLike,
+                                    activeColor: const Color(0xFFE74C3C),
+                                  ),
+                                  const SizedBox(width: 12),
+                                  _glassCircleAnimatedIcon(
+                                    isActive: _isSaved,
+                                    activeIcon: Icons.bookmark,
+                                    inactiveIcon: Icons.bookmark_border,
+                                    onTap: _toggleSaved,
+                                    activeColor: const Color(0xFFD4AF7A),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+
+                  // Gallery title
+                  _sectionTitle('Bộ sưu tập'),
+                  const SizedBox(height: 12),
+
+                  // Gallery
+                  _buildGallery(dest),
+                ],
+              ),
+            ),
+            const SizedBox(width: 48),
+
+            // Right Half: Details, Description, Reviews, CTA
+            Expanded(
+              flex: 5,
+              child: Card(
+                color: const Color(0xFF15221F).withOpacity(0.6),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(28),
+                  side: BorderSide(color: Colors.white.withOpacity(0.08)),
+                ),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(28),
+                  child: BackdropFilter(
+                    filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+                    child: Padding(
+                      padding: const EdgeInsets.all(32),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          // Details
+                          Row(
+                            children: [
+                              const Icon(Icons.location_on, color: Color(0xFFD4AF7A), size: 20),
+                              const SizedBox(width: 6),
+                              Text(
+                                dest.province,
+                                style: const TextStyle(
+                                  fontFamily: 'Montserrat',
+                                  fontSize: 16,
+                                  color: Colors.white70,
+                                ),
+                              ),
+                              const Spacer(),
+                              const Icon(Icons.star_rounded, color: Color(0xFFFFB74D), size: 22),
+                              const SizedBox(width: 6),
+                              const Text(
+                                '4.9 (1.2k nhận xét)',
+                                style: TextStyle(
+                                  fontFamily: 'Montserrat',
+                                  fontSize: 15,
+                                  color: Colors.white70,
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 28),
+
+                          // Tab bar
+                          _buildTabBar(),
+                          const SizedBox(height: 20),
+
+                          // Tab content
+                          Expanded(
+                            child: SingleChildScrollView(
+                              child: AnimatedSwitcher(
+                                duration: const Duration(milliseconds: 300),
+                                child: _selectedTab == 0
+                                    ? _buildOverviewTabForDesktop(dest)
+                                    : _buildReviewsTab(),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(height: 28),
+
+                          // CTA Button
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => MapScreen(destination: widget.destination),
+                                ),
+                              );
+                            },
+                            child: Container(
+                              height: 56,
+                              decoration: BoxDecoration(
+                                gradient: const LinearGradient(
+                                  colors: [Color(0xFFB5956A), Color(0xFFD4AF7A)],
+                                ),
+                                borderRadius: BorderRadius.circular(20),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: const Color(0xFFB5956A).withOpacity(0.4),
+                                    blurRadius: 20,
+                                    offset: const Offset(0, 8),
+                                  ),
+                                ],
+                              ),
+                              child: const Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(Icons.directions_rounded, color: Colors.white, size: 24),
+                                  SizedBox(width: 10),
+                                  Text(
+                                    'Đường đi',
+                                    style: TextStyle(
+                                      fontFamily: 'Montserrat',
+                                      fontWeight: FontWeight.w700,
+                                      fontSize: 16,
+                                      color: Colors.white,
+                                      letterSpacing: 1,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildOverviewTabForDesktop(Destination dest) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        _sectionTitle('Mô tả'),
+        const SizedBox(height: 8),
+        _buildAboutSection(dest),
+        const SizedBox(height: 24),
+        _sectionTitle('Điểm nổi bật'),
+        const SizedBox(height: 12),
+        _buildHighlightChips(),
+      ],
+    );
+  }
+
   Widget _buildCinematicImage(
     Destination dest,
     double screenH,
@@ -224,7 +478,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
   ) {
     if (widget.cardRect == null) {
       return Positioned.fill(
-        child: Image.asset(dest.imagePath, fit: BoxFit.cover),
+        child: Destination.buildImage(dest.imagePath, fit: BoxFit.cover),
       );
     }
 
@@ -241,7 +495,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
           return Positioned.fill(
             child: Transform.translate(
               offset: Offset(0, offsetY),
-              child: Image.asset(dest.imagePath, fit: BoxFit.cover),
+              child: Destination.buildImage(dest.imagePath, fit: BoxFit.cover),
             ),
           );
         }
@@ -293,7 +547,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
               child: Stack(
                 fit: StackFit.expand,
                 children: [
-                  Image.asset(dest.imagePath, fit: BoxFit.cover),
+                  Destination.buildImage(dest.imagePath, fit: BoxFit.cover),
                   
                   if (cardInfoOpacity > 0)
                     Opacity(
@@ -379,7 +633,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
           parent: parentAnim,
           curve: Curves.easeOut,
         ),
-        child: Image.asset(dest.imagePath, fit: BoxFit.cover),
+        child: Destination.buildImage(dest.imagePath, fit: BoxFit.cover),
       ),
     );
   }
@@ -642,8 +896,10 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
           borderRadius: BorderRadius.circular(16),
           child: SizedBox(
             width: 130,
-            child: Image.asset(images[i], fit: BoxFit.cover,
-              errorBuilder: (_, __, ___) => Container(color: Colors.white10)),
+            child: Destination.buildImage(
+              images[i],
+              fit: BoxFit.cover,
+            ),
           ),
         ),
       ),
@@ -666,7 +922,14 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
               children: [
                 Expanded(
                   child: GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MapScreen(destination: widget.destination),
+                        ),
+                      );
+                    },
                     child: Container(
                       height: 56,
                       decoration: BoxDecoration(

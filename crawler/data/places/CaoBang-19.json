@@ -1,0 +1,759 @@
+[
+    {
+        "sourceLocationId": "5043013",
+        "title": "Nguom Ngao Cave",
+        "city": "Cao Bằng",
+        "totalScore": 4.6,
+        "ranking": "2/19",
+        "reviewsCount": 123,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nguom Ngao Cave ở Cao Bằng. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.6/5 từ 123 lượt review. Xếp hạng: 2/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/2c/49/3f/nguom-ngao-cave.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.70528,
+                22.845833
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 960
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14080639",
+        "title": "Hồ Thang Hen",
+        "city": "Cao Bằng",
+        "totalScore": 4.1,
+        "ranking": "5/19",
+        "reviewsCount": 11,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hồ Thang Hen ở Cao Bằng. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.1/5 từ 11 lượt review. Xếp hạng: 5/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/14/41/1c/ba/thang-hen-lake.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.32872,
+                22.749237
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23896690",
+        "title": "Thác Bản Giốc",
+        "city": "Dam Thuy",
+        "totalScore": 4.7,
+        "ranking": "1/19",
+        "reviewsCount": 325,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": "Thác Bản Giốc được mệnh danh là một trong những thác nước đẹp nhất Việt Nam, là thác nước tự nhiên lớn nhất khu vực Đông Nam Á và là thác lớn thứ tư thế giới trong các thác nước nằm trên một đường biên giới.",
+        "embedding": null,
+        "searchText": "Thác Bản Giốc ở Dam Thuy. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên. Mô tả: Thác Bản Giốc được mệnh danh là một trong những thác nước đẹp nhất Việt Nam, là thác nước tự nhiên lớn nhất khu vực Đông Nam Á và là thác lớn thứ tư thế giới trong các thác nước nằm trên một đường biên giới. Đánh giá: 4.7/5 từ 325 lượt review. Xếp hạng: 1/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/19/65/00/8a/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.7241,
+                22.854677
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28006312",
+        "title": "Núi Mắt Thần",
+        "city": "Cao Bằng",
+        "totalScore": 4.3,
+        "ranking": "3/19",
+        "reviewsCount": 16,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Núi Mắt Thần ở Cao Bằng. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.3/5 từ 16 lượt review. Xếp hạng: 3/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/c6/52/70/another-comprehensive.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.2972,
+                22.76903
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23792961",
+        "title": "Khám phá hang động Ngườm Ngao - Thác Bản Giốc",
+        "city": "Dam Thuy",
+        "totalScore": 5.0,
+        "ranking": "4/19",
+        "reviewsCount": 7,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khám phá hang động Ngườm Ngao - Thác Bản Giốc ở Dam Thuy. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 7 lượt review. Xếp hạng: 4/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/a2/44/a8/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.70741,
+                22.83516
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-16:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 960
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14038933",
+        "title": "Hang Pác Bó",
+        "city": "Truong Ha",
+        "totalScore": 4.4,
+        "ranking": "6/19",
+        "reviewsCount": 5,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hang Pác Bó ở Truong Ha. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.4/5 từ 5 lượt review. Xếp hạng: 6/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/fb/5b/46/lenin-stream.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.05156,
+                22.97785
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24142413",
+        "title": "Kim Dong Walking Street",
+        "city": "Cao Bằng",
+        "totalScore": 4.5,
+        "ranking": "7/19",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kim Dong Walking Street ở Cao Bằng. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 4 lượt review. Xếp hạng: 7/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/8b/5b/22/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.2606,
+                22.664064
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [],
+                [],
+                [],
+                [],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25420183",
+        "title": "Đèo Khau Cốc Chà _ Đèo 15 Tầng",
+        "city": "Bao Lac",
+        "totalScore": 5.0,
+        "ranking": "8/19",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đèo Khau Cốc Chà _ Đèo 15 Tầng ở Bao Lac. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 8/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/29/18/d0/58/wellcome-top-cao-bang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78249,
+                22.92668
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25434087",
+        "title": "Khuoi Ky Stone Village",
+        "city": "Dam Thuy",
+        "totalScore": 4.0,
+        "ranking": "9/19",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khuoi Ky Stone Village ở Dam Thuy. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 9/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/8b/37/19/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.600204,
+                21.616962
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25436968",
+        "title": "Phuc Sen Forging Village",
+        "city": "Phuc Sen",
+        "totalScore": 5.0,
+        "ranking": "10/19",
+        "reviewsCount": 1,
+        "category": "Khác",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phuc Sen Forging Village ở Phuc Sen. Loại địa điểm: Khác. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Khác. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 10/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Khác"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/c9/6c/91/villagers.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.42059,
+                22.685362
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25434067",
+        "title": "Trung Khanh Market",
+        "city": "Trung Khanh",
+        "totalScore": 5.0,
+        "ranking": "11/19",
+        "reviewsCount": 1,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trung Khanh Market ở Trung Khanh. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 11/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/c4/b2/24/tasty-treats.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.526,
+                22.835443
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25433689",
+        "title": "Truc Lam Pagoda",
+        "city": "Trung Khanh",
+        "totalScore": 5.0,
+        "ranking": "12/19",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Truc Lam Pagoda ở Trung Khanh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 12/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/c4/b3/d4/view-of-ban-gioc-from.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.68809,
+                22.855707
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25432202",
+        "title": "Cho Xanh market",
+        "city": "Cao Bằng",
+        "totalScore": 5.0,
+        "ranking": "13/19",
+        "reviewsCount": 1,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cho Xanh market ở Cao Bằng. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 13/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/c2/88/2b/the-market.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.260506,
+                22.664099
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25434209",
+        "title": "Kim Dong's Tomb",
+        "city": "Truong Ha",
+        "totalScore": 4.0,
+        "ranking": "14/19",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kim Dong's Tomb ở Truong Ha. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 14/19.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/c4/b5/27/small-temple.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.0352,
+                22.954086
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34258027",
+        "title": "Thung Lũng Khuổi Hân",
+        "city": "Cao Bằng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thung Lũng Khuổi Hân ở Cao Bằng. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.218544,
+                21.397738
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33228466",
+        "title": "Cao Bang UNESCO Global Geopark",
+        "city": "Cao Bằng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cao Bang UNESCO Global Geopark ở Cao Bằng. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.3029,
+                22.66174
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33226917",
+        "title": "Vinh Quy Grass Hill",
+        "city": "Tỉnh Cao Bằng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vinh Quy Grass Hill ở Tỉnh Cao Bằng. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.616325,
+                22.669685
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33226890",
+        "title": "Sông Quây Sơn",
+        "city": "Tỉnh Cao Bằng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sông Quây Sơn ở Tỉnh Cao Bằng. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.70848,
+                22.863924
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27951798",
+        "title": "Thác Cò Là",
+        "city": "Cao Bằng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thác Cò Là ở Cao Bằng. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.08333,
+                22.75
+            ]
+        },
+        "openingHours": null
+    }
+]

@@ -19,7 +19,7 @@ def reviews_list(
         "offset": offset,
         "lang": lang
     }
-    max_retries = 3
+    max_retries = 1
     data = None
     
     for attempt in range(max_retries):
@@ -27,9 +27,11 @@ def reviews_list(
             data = travel_advisor_client.get(endpoint, params)
             # Check if data is empty or if "data" array is empty
             if not data or ("data" in data and not data["data"]):
-                print(f"Attempt {attempt + 1}: 0 results found, retrying in 5 seconds...")
-                time.sleep(5)
-                continue
+                print(f"Attempt {attempt + 1}: 0 results found.")
+                if attempt < max_retries - 1:
+                    time.sleep(5)
+                    continue
+                return None
             break # Success, we have data
         except Exception as e:
             print(f"Error fetching data on attempt {attempt + 1}: {e}")
@@ -59,7 +61,7 @@ def photos_list(
         "currency": currency,
         "lang": lang
     }
-    max_retries = 3
+    max_retries = 1
     data = None
     
     for attempt in range(max_retries):
@@ -67,9 +69,11 @@ def photos_list(
             data = travel_advisor_client.get(endpoint, params)
             # Check if data is empty or if "data" array is empty
             if not data or ("data" in data and not data["data"]):
-                print(f"Attempt {attempt + 1}: 0 results found, retrying in 5 seconds...")
-                time.sleep(5)
-                continue
+                print(f"Attempt {attempt + 1}: 0 results found.")
+                if attempt < max_retries - 1:
+                    time.sleep(5)
+                    continue
+                return None
             break # Success, we have data
         except Exception as e:
             print(f"Error fetching data on attempt {attempt + 1}: {e}")
@@ -95,7 +99,7 @@ def questions_list(
         "limit": limit,
         "offset": offset
     }
-    max_retries = 3
+    max_retries = 1
     data = None
     
     for attempt in range(max_retries):
@@ -103,9 +107,11 @@ def questions_list(
             data = travel_advisor_client.get(endpoint, params)
             # Check if data is empty or if "data" array is empty
             if not data or ("data" in data and not data["data"]):
-                print(f"Attempt {attempt + 1}: 0 results found, retrying in 5 seconds...")
-                time.sleep(5)
-                continue
+                print(f"Attempt {attempt + 1}: 0 results found.")
+                if attempt < max_retries - 1:
+                    time.sleep(5)
+                    continue
+                return None
             break # Success, we have data
         except Exception as e:
             print(f"Error fetching data on attempt {attempt + 1}: {e}")
@@ -131,7 +137,7 @@ def answers_list(
         "offset": offset,
         "limit": limit
     }
-    max_retries = 3
+    max_retries = 1
     data = None
     
     for attempt in range(max_retries):
@@ -139,9 +145,11 @@ def answers_list(
             data = travel_advisor_client.get(endpoint, params)
             # Check if data is empty or if "data" array is empty
             if not data or ("data" in data and not data["data"]):
-                print(f"Attempt {attempt + 1}: 0 results found, retrying in 5 seconds...")
-                time.sleep(5)
-                continue
+                print(f"Attempt {attempt + 1}: 0 results found.")
+                if attempt < max_retries - 1:
+                    time.sleep(5)
+                    continue
+                return None
             break # Success, we have data
         except Exception as e:
             print(f"Error fetching data on attempt {attempt + 1}: {e}")

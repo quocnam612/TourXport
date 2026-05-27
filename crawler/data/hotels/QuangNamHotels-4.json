@@ -1,0 +1,118 @@
+[
+    {
+        "sourceLocationId": "4339781",
+        "title": "La Siesta Hoi An Resort & Spa",
+        "city": "Hội An",
+        "totalScore": 5.0,
+        "ranking": null,
+        "reviewsCount": 8382,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "La Siesta Hoi An Resort & Spa ở Hội An. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 8382 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/c5/2c/86/la-siesta-resort-the.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.31638,
+                15.880024
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "578971",
+        "title": "Palm Garden Beach Resort & Spa",
+        "city": "Hội An",
+        "totalScore": 4.6,
+        "ranking": null,
+        "reviewsCount": 5061,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Palm Garden Beach Resort & Spa ở Hội An. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 5061 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/db/75/b5/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.35877,
+                15.900794
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13980353",
+        "title": "Vinpearl Resort & Golf Nam Hội An",
+        "city": "Bình Minh",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 3651,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vinpearl Resort & Golf Nam Hội An ở Bình Minh. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 3651 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/56/4b/5a/vinpearl-resort-golf.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.41855,
+                15.793787
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20344583",
+        "title": "Robinson Nam Hoi An",
+        "city": "Tam Tien",
+        "totalScore": 4.8,
+        "ranking": null,
+        "reviewsCount": 353,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Robinson Nam Hoi An ở Tam Tien. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 353 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/80/1c/86/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.57339,
+                15.561775
+            ]
+        },
+        "openingHours": null
+    }
+]

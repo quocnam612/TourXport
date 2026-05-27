@@ -120,4 +120,105 @@ class SurveyAnswer {
       'vibe_style': vibeStyle,
     };
   }
+
+  // ── AI Helpers ──
+
+  /// Chuyển đổi chuỗi ngân sách sang số (VND)
+  double parseAiBudget() {
+    if (budget == null) return 5000000.0;
+    switch (budget) {
+      case 'Dưới 2 triệu': return 2000000.0;
+      case 'Tối đa 3 triệu': return 3000000.0;
+      case 'Tối đa 5 triệu': return 5000000.0;
+      case 'Tối đa 10 triệu': return 10000000.0;
+      case 'Tối đa 20 triệu': return 20000000.0;
+      case 'Không giới hạn': return 40000000.0;
+      default:
+        final clean = budget!.replaceAll(RegExp(r'[^0-9]'), '');
+        final number = double.tryParse(clean);
+        if (number != null) {
+          if (budget!.contains('triệu')) return number * 1000000.0;
+          return number;
+        }
+        return 5000000.0;
+    }
+  }
+
+  /// Chuyển đổi chuỗi thời gian sang số ngày
+  int parseAiDurationDays() {
+    if (duration == null) return 3;
+    final clean = duration!.replaceAll(RegExp(r'[^0-9]'), '');
+    return int.tryParse(clean) ?? 3;
+  }
+
+  /// Tổng hợp tất cả câu trả lời thành 1 chuỗi mô tả sở thích cho AI
+  String toAiPreferencesString() {
+    final buffer = StringBuffer();
+    
+    if (travelFeelings.isNotEmpty) {
+      buffer.write("Cảm giác & phong cách chuyến đi: ${travelFeelings.join(', ')}. ");
+    }
+    if (groupType != null) {
+      buffer.write("Đi du lịch theo hình thức: $groupType. ");
+    }
+    
+    // Câu 3: Map thanh trượt thành từ khóa rõ ràng
+    final relaxExploreText = sliderRelaxExplore <= 0.3 
+        ? "thiên về nghỉ dưỡng" 
+        : (sliderRelaxExplore >= 0.7 ? "thích khám phá, di chuyển nhiều" : "muốn cân bằng giữa nghỉ dưỡng và khám phá");
+    
+    final quietLivelyText = sliderQuietLively <= 0.3 
+        ? "ưu tiên không gian yên tĩnh, thanh bình" 
+        : (sliderQuietLively >= 0.7 ? "thích không khí sôi động, nhộn nhịp" : "thích sự yên tĩnh đan xen các hoạt động nhộn nhịp");
+
+    final plannedFreeText = sliderPlannedFree <= 0.3 
+        ? "cần lên kế hoạch rõ ràng, chi tiết" 
+        : (sliderPlannedFree >= 0.7 ? "thích tự do trải nghiệm, ngẫu hứng" : "lên kế hoạch linh hoạt, có thể thay đổi");
+
+    final natureCityText = sliderNatureCity <= 0.3 
+        ? "yêu thích thiên nhiên hoang sơ, trong lành" 
+        : (sliderNatureCity >= 0.7 ? "thích trải nghiệm đô thị, thành phố hiện đại" : "thích kết hợp cả thiên nhiên và phố thị");
+
+    buffer.write("Đặc điểm mong muốn: $relaxExploreText, $quietLivelyText, $plannedFreeText, $natureCityText. ");
+
+    if (activities.isNotEmpty) {
+      buffer.write("Hoạt động yêu thích: ${activities.join(', ')}. ");
+    }
+    if (placeTypes.isNotEmpty) {
+      buffer.write("Kiểu địa điểm mong muốn: ${placeTypes.join(', ')}. ");
+    }
+    if (vibeStyle != null) {
+      buffer.write("Vibe phong cách: $vibeStyle. ");
+    }
+
+    // Câu 12: Thích thử điều mới (Star ratings 1-5)
+    final foodPref = adventureFood >= 4 
+        ? "rất thích trải nghiệm ẩm thực độc lạ, thử món ăn mới" 
+        : (adventureFood <= 2 ? "ưu tiên món ăn quen thuộc, dễ ăn" : "sẵn sàng thử món ăn địa phương ở mức vừa phải");
+    
+    final extremePref = adventureExtreme >= 4 
+        ? "thích trải nghiệm các hoạt động mạo hiểm phiêu lưu mạnh" 
+        : (adventureExtreme <= 2 ? "chỉ muốn hoạt động an toàn, nhẹ nhàng" : "có thể tham gia hoạt động mạo hiểm nhẹ nhàng");
+
+    final hiddenPref = adventureHidden >= 4 
+        ? "thích khám phá những địa điểm ẩn giấu, hoang sơ ít người biết" 
+        : (adventureHidden <= 2 ? "ưu tiên các địa điểm du lịch nổi tiếng, phổ biến" : "thích cả địa điểm nổi tiếng lẫn nơi hoang sơ");
+
+    buffer.write("Mức độ trải nghiệm: $foodPref, $extremePref, $hiddenPref. ");
+
+    if (avoidList.isNotEmpty) {
+      buffer.write("Muốn tránh: ${avoidList.join(', ')}. ");
+    }
+    if (specialNeeds.isNotEmpty) {
+      buffer.write("Yêu cầu đặc biệt: ${specialNeeds.join(', ')}. ");
+    }
+    
+    // Câu 15: Gửi nhãn ảnh người dùng đã chọn
+    if (inspirationImages.isNotEmpty) {
+      buffer.write("Bức ảnh truyền cảm hứng muốn ghé thăm: ${inspirationImages.join(', ')}. ");
+    }
+
+    return buffer.toString().trim();
+  }
 }
+

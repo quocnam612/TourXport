@@ -1,0 +1,564 @@
+[
+    {
+        "sourceLocationId": "10840155",
+        "title": "Chợ Tam Đường",
+        "city": "Lai Châu",
+        "totalScore": 4.4,
+        "ranking": "1/11",
+        "reviewsCount": 11,
+        "category": "Đồ ăn & Đồ uống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Tam Đường ở Lai Châu. Loại địa điểm: Đồ ăn & Đồ uống. Tags: Điểm du lịch, Nơi mua sắm, Đồ ăn & Đồ uống. Đánh giá: 4.4/5 từ 11 lượt review. Xếp hạng: 1/11.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Đồ ăn & Đồ uống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/18/e9/32/a7/tam-duong-market.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.62504,
+                22.32084
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "20087238",
+        "title": "Bản Sì Thâu Chải",
+        "city": "Tam Đường",
+        "totalScore": 5.0,
+        "ranking": "6/11",
+        "reviewsCount": 1,
+        "category": "Khác",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bản Sì Thâu Chải ở Tam Đường. Loại địa điểm: Khác. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Khác. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 6/11.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Khác"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/e0/c3/80/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "09:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17398941",
+        "title": "Pu Sam Cap Caves",
+        "city": "Lai Châu",
+        "totalScore": 3.0,
+        "ranking": "7/11",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pu Sam Cap Caves ở Lai Châu. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 7/11.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27084111",
+        "title": "Theo Travel",
+        "city": "Lai Châu",
+        "totalScore": 5.0,
+        "ranking": "1/8",
+        "reviewsCount": 2,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "Theo Travel is a travel company based in Lai Chau province, a border province in the northwest of Viet Nam. \nWe offer memorable travel experiences that are deeply rooted in local culture, unique, and authentic, with a focus on sustainability in Lai Chau province in particular and Viet Nam in general.",
+        "embedding": null,
+        "searchText": "Theo Travel ở Lai Châu. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Khác, Phương tiện giao thông, Hoạt động ngoài trời. Mô tả: Theo Travel is a travel company based in Lai Chau province, a border province in the northwest of Viet Nam. \nWe offer memorable travel experiences that are deeply rooted in local culture, unique, and authentic, with a focus on sustainability in Lai Chau province in particular and Viet Nam in general. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 1/8.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Khác",
+            "Phương tiện giao thông",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/0c/84/92/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21375826",
+        "title": "Kien Tour Guide",
+        "city": "Lai Châu",
+        "totalScore": 5.0,
+        "ranking": "2/6",
+        "reviewsCount": 2,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kien Tour Guide ở Lai Châu. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 2/6.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/45/dd/ae/kien-tour-guide.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.45824,
+                22.39644
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32796357",
+        "title": "Lai Chau Tour",
+        "city": "Lai Châu",
+        "totalScore": 5.0,
+        "ranking": "3/8",
+        "reviewsCount": 1,
+        "category": "Khác",
+        "priceRange": null,
+        "description": "With more than 10 years experience working in the tourism industry, working as both a tour operator and hotel ",
+        "embedding": null,
+        "searchText": "Lai Chau Tour ở Lai Châu. Loại địa điểm: Khác. Tags: Điểm du lịch, Chuyến tham quan, Khác. Mô tả: With more than 10 years experience working in the tourism industry, working as both a tour operator and hotel  Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 3/8.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Khác"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/72/d8/f0/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19597524",
+        "title": "Sin Suoi Ho Resort",
+        "city": "Lai Châu",
+        "totalScore": 4.5,
+        "ranking": "2/3",
+        "reviewsCount": 2,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "Sin Suoi Ho village is populated by the Flower Hmong minority. The village has approximately 115 households with 100% of them being Hmong. Sin Suoi Ho village is located around 30km from the center of Lai Chau. ",
+        "embedding": null,
+        "searchText": "Sin Suoi Ho Resort ở Lai Châu. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Khác, Phương tiện giao thông, Hoạt động ngoài trời. Mô tả: Sin Suoi Ho village is populated by the Flower Hmong minority. The village has approximately 115 households with 100% of them being Hmong. Sin Suoi Ho village is located around 30km from the center of Lai Chau.  Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 2/3.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Khác",
+            "Phương tiện giao thông",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/30/20/e1/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 690
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 690
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 810
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 690
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 690
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 690
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34118937",
+        "title": "Sapa Beyond Adventures",
+        "city": "Lai Châu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Khác",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sapa Beyond Adventures ở Lai Châu. Loại địa điểm: Khác. Tags: Điểm du lịch, Chuyến tham quan, Khác.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Khác"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/19/0e/7c/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34049160",
+        "title": "Lai Châu Trails",
+        "city": "Lai Châu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lai Châu Trails ở Lai Châu. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Khác, Phương tiện giao thông, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Khác",
+            "Phương tiện giao thông",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/d4/fa/a8/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34036773",
+        "title": "Lai Châu Trails",
+        "city": "Lai Châu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lai Châu Trails ở Lai Châu. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.70669,
+                10.826051
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33108784",
+        "title": "Sin Suoi Ho Tour",
+        "city": "Phong Tho",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sin Suoi Ho Tour ở Phong Tho. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/cc/37/91/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.3964,
+                21.327269
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    }
+]

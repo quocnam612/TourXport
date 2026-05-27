@@ -1,0 +1,256 @@
+[
+    {
+        "sourceLocationId": "8616836",
+        "title": "Chợ Thông",
+        "city": "Thái Bình",
+        "totalScore": 4.2,
+        "ranking": "2/8",
+        "reviewsCount": 5,
+        "category": "Đồ ăn & Đồ uống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Thông ở Thái Bình. Loại địa điểm: Đồ ăn & Đồ uống. Tags: Điểm du lịch, Nơi mua sắm, Đồ ăn & Đồ uống. Đánh giá: 4.2/5 từ 5 lượt review. Xếp hạng: 2/8.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Đồ ăn & Đồ uống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/e8/2e/a1/thong-market.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8077912",
+        "title": "Nhà Thờ Chính Tòa Thái Bình",
+        "city": "Thái Bình",
+        "totalScore": 4.0,
+        "ranking": "3/8",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Thờ Chính Tòa Thái Bình ở Thái Bình. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 4 lượt review. Xếp hạng: 3/8.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/e8/a6/4d/sacred-heart-of-jesus.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.33812,
+                20.4472
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8077878",
+        "title": "Chùa Keo",
+        "city": "Duy Nhat",
+        "totalScore": 4.9,
+        "ranking": "1/8",
+        "reviewsCount": 7,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Keo ở Duy Nhat. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.9/5 từ 7 lượt review. Xếp hạng: 1/8.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/1d/15/e1/keo-pagoda.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.29719,
+                20.361267
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12268862",
+        "title": "Vườn Quốc Gia Xuân Thủy",
+        "city": "Thái Bình",
+        "totalScore": 4.0,
+        "ranking": "4/8",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn Quốc Gia Xuân Thủy ở Thái Bình. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 4/8.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/4e/06/56/20170119-120243-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8077986",
+        "title": "Làng chạm bạc Đồng Xâm",
+        "city": "Thái Bình",
+        "totalScore": 4.0,
+        "ranking": "2/3",
+        "reviewsCount": 1,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Làng chạm bạc Đồng Xâm ở Thái Bình. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 2/3.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/b6/94/b9/dong-xam-silver-village.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28125237",
+        "title": "Danh Danh Bus",
+        "city": "Dong Hung District",
+        "totalScore": 1.5,
+        "ranking": "1/1",
+        "reviewsCount": 2,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Danh Danh Bus ở Dong Hung District. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Phương tiện giao thông. Đánh giá: 1.5/5 từ 2 lượt review. Xếp hạng: 1/1.",
+        "tags": [
+            "Điểm du lịch",
+            "Phương tiện giao thông"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.63928,
+                10.820338
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33065719",
+        "title": "Htx Lụa Đũi Nam Cao",
+        "city": "Thái Bình",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Htx Lụa Đũi Nam Cao ở Thái Bình. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Nơi mua sắm, Chuyến tham quan, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Chuyến tham quan",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.18058,
+                21.051073
+            ]
+        },
+        "openingHours": {
+            "display": "08:30-19:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1140
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12657395",
+        "title": "Đồng Châu",
+        "city": "Thái Bình",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đồng Châu ở Thái Bình. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    }
+]

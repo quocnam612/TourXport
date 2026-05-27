@@ -1,34 +1,30 @@
 import express from 'express';
-import {
-    register,
-    login,
-    getProfile,
-    getSavedPlaces,
-    addSavedPlace,
-    removeSavedPlace,
-    updateProfile
-} from '../controllers/authController.js';
-import { authenticate } from '../middlewares/authMiddleware.js';
 
-// import { upload } from '../middlewares/uploadMiddleware.js';
+import { authenticate } from '../middlewares/authMiddleware.js';
+import * as userController from '../controllers/userController.js';
 
 const router = express.Router();
 
-router.post('/register', register);
-router.post('/login', login);
-router.get('/profile', authenticate, getProfile);
-router.put('/profile', authenticate, updateProfile);
-// router.post('/upload', authenticate, upload.single('image'), (req, res) => {
-//     if (!req.file) {
-//         return res.status(400).json({ success: false, message: 'No file uploaded' });
-//     }
-//     const imageUrl = `/uploads/${req.file.filename}`;
-//     res.json({ success: true, imageUrl });
-// });
+router.post('/register', userController.register);
+router.post('/login', userController.login);
+router.post('/google', userController.googleLogin);
+router.post('/facebook', userController.facebookLogin);
 
-// Saved places routes
-router.get('/saved-places', authenticate, getSavedPlaces);
-router.post('/saved-places', authenticate, addSavedPlace);
-router.delete('/saved-places', authenticate, removeSavedPlace);
+router.route('/profile')
+    .get(authenticate, userController.getProfile)
+    .put(authenticate, userController.updateProfile);
+    
+router.put('/profile/change-password', authenticate, userController.changePassword);
+router.put('/profile/add-login-method', authenticate, userController.addLoginMethod);
+
+router.route('/profile/saved-places')
+    .get(authenticate, userController.getSavedPlaces)
+    .post(authenticate, userController.addSavedPlace);
+router.delete('/profile/saved-places/:id', authenticate, userController.removeSavedPlace);
+
+router.route('/profile/saved-tours')
+    .get(authenticate, userController.getSavedTours)
+    .post(authenticate, userController.addSavedTour);
+router.delete('/profile/saved-tours/:id', authenticate, userController.removeSavedTour);
 
 export default router;

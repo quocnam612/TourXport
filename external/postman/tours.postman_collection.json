@@ -1,0 +1,263 @@
+{
+  "info": {
+    "_postman_id": "3f74fc1a-ed73-461f-a716-aa21ba4c57bd",
+    "name": "tours",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "50791744"
+  },
+  "item": [
+    {
+      "name": "get tours list",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/tours?limit=10&page=1&query=Châu%20Đốc&destination=Rạch%20Giá&totalDays=2&sortBy=updatedAt&order=desc",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "tours"
+          ],
+          "query": [
+            {
+              "key": "limit",
+              "value": "10"
+            },
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "query",
+              "value": "Châu%20Đốc"
+            },
+            {
+              "key": "destination",
+              "value": "Rạch%20Giá"
+            },
+            {
+              "key": "totalDays",
+              "value": "2"
+            },
+            {
+              "key": "sortBy",
+              "value": "updatedAt"
+            },
+            {
+              "key": "order",
+              "value": "desc"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "public tour detail",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/tours/TOUR_ID",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "tours",
+            "TOUR_ID"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create tour",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMDczZmI2ZTQ5ZDc0NWQ5OGQ1NjQ0OCIsIm5hbWUiOiIxMjMiLCJlbWFpbCI6IjEyMyIsImlhdCI6MTc3OTc5Nzc3OCwiZXhwIjoxNzgwMDU2OTc4fQ.-vCOacvM_0hh7o7z-N54hMWcVrGEZpP0L-5izP7SstA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"destinations\": [\n        \"Châu Đốc\",\n        \"Cà Mau\",\n        \"Rạch Giá\"\n    ],\n    \"totalDays\": 2,\n    \"totalNights\": 1,\n    \"travelers\": {\n        \"adults\": 2,\n        \"children\": 0\n    },\n    \"preferences\": {\n        \"budgetLevel\": \"medium\",\n        \"interests\": [\n            \"temple\",\n            \"culture\",\n            \"local food\",\n            \"scenic view\"\n        ],\n        \"transportMode\": \"auto\",\n        \"pace\": \"relaxed\"\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/tours",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "tours"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "my tours list",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMDczZmI2ZTQ5ZDc0NWQ5OGQ1NjQ0OCIsIm5hbWUiOiIxMjMiLCJlbWFpbCI6IjEyMyIsImlhdCI6MTc3OTc5Nzc3OCwiZXhwIjoxNzgwMDU2OTc4fQ.-vCOacvM_0hh7o7z-N54hMWcVrGEZpP0L-5izP7SstA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/tours/my-tours?query=Châu%20Đốc&page=1&limit=10",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "tours",
+            "my-tours"
+          ],
+          "query": [
+            {
+              "key": "query",
+              "value": "Châu%20Đốc"
+            },
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "limit",
+              "value": "10"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "my tour detail",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMDczZmI2ZTQ5ZDc0NWQ5OGQ1NjQ0OCIsIm5hbWUiOiIxMjMiLCJlbWFpbCI6IjEyMyIsImlhdCI6MTc3OTc5Nzc3OCwiZXhwIjoxNzgwMDU2OTc4fQ.-vCOacvM_0hh7o7z-N54hMWcVrGEZpP0L-5izP7SstA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/tours/my-tours/6a15922360b46eb207712dea",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "tours",
+            "my-tours",
+            "6a15922360b46eb207712dea"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update tour",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMDczZmI2ZTQ5ZDc0NWQ5OGQ1NjQ0OCIsIm5hbWUiOiIxMjMiLCJlbWFpbCI6IjEyMyIsImlhdCI6MTc3OTc5Nzc3OCwiZXhwIjoxNzgwMDU2OTc4fQ.-vCOacvM_0hh7o7z-N54hMWcVrGEZpP0L-5izP7SstA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"title\": \"Tour Châu Đốc cuối tuần\",\n    \"visibility\": \"public\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/tours/my-tours/6a15922360b46eb207712dea",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "tours",
+            "my-tours",
+            "6a15922360b46eb207712dea"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete tour",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMDczZmI2ZTQ5ZDc0NWQ5OGQ1NjQ0OCIsIm5hbWUiOiIxMjMiLCJlbWFpbCI6IjEyMyIsImlhdCI6MTc3OTc5Nzc3OCwiZXhwIjoxNzgwMDU2OTc4fQ.-vCOacvM_0hh7o7z-N54hMWcVrGEZpP0L-5izP7SstA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/tours/my-tours/6a15989fc86c96639d02b924",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "tours",
+            "my-tours",
+            "6a15989fc86c96639d02b924"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+[
+    {
+        "sourceLocationId": "6561773",
+        "title": "Khách San Mường Thanh Luxury Quảng Ninh",
+        "city": "Bai Chay",
+        "totalScore": 4.1,
+        "ranking": null,
+        "reviewsCount": 215,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách San Mường Thanh Luxury Quảng Ninh ở Bai Chay. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.1/5 từ 215 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/9b/e8/1a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.04929,
+                20.956617
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15016168",
+        "title": "Legacy Yen Tu - MGallery",
+        "city": "Uong Bi",
+        "totalScore": 4.8,
+        "ranking": null,
+        "reviewsCount": 626,
+        "category": "Cơ sở lưu trú đặc biệt",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Legacy Yen Tu - MGallery ở Uong Bi. Loại địa điểm: Cơ sở lưu trú đặc biệt. Tags: Khách sạn, Cơ sở lưu trú đặc biệt. Đánh giá: 4.8/5 từ 626 lượt review.",
+        "tags": [
+            "Khách sạn",
+            "Cơ sở lưu trú đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/1b/83/fa/legacy-yen-tu-mgallery.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.72407,
+                21.138466
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8595372",
+        "title": "Vinpearl Resort & Spa Ha Long",
+        "city": "Vịnh Hạ Long",
+        "totalScore": 4.6,
+        "ranking": null,
+        "reviewsCount": 1425,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vinpearl Resort & Spa Ha Long ở Vịnh Hạ Long. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 1425 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1d/2a/4f/c2/vinpearl-resort-spa-ha.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.02545,
+                20.942146
+            ]
+        },
+        "openingHours": null
+    }
+]

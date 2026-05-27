@@ -1,0 +1,872 @@
+[
+    {
+        "sourceLocationId": "3334545",
+        "title": "Banyan Tree Lang Co",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.9,
+        "ranking": "1/1253",
+        "reviewsCount": 3658,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "9.921.053 ₫ - 14.710.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Banyan Tree Lang Co ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.9/5 từ 3658 lượt review. Xếp hạng: 1/1253. Giá: 9.921.053 ₫ - 14.710.526 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/33/6d/04/beach-pool-villa--v7431736.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.95379,
+                16.338781
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10717602",
+        "title": "The Scarlett Boutique Hotel",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.9,
+        "ranking": "2/1253",
+        "reviewsCount": 1444,
+        "category": "Khách sạn",
+        "priceRange": "684.211 ₫ - 1.289.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The Scarlett Boutique Hotel ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 1444 lượt review. Xếp hạng: 2/1253. Giá: 684.211 ₫ - 1.289.474 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/3f/af/7e/the-scarlett-suite.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59489,
+                16.46714
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7388707",
+        "title": "Khách Sạn Thanh Lịch Huế",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.8,
+        "ranking": "3/1253",
+        "reviewsCount": 1099,
+        "category": "Khách sạn",
+        "priceRange": "684.211 ₫ - 1.657.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn Thanh Lịch Huế ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 1099 lượt review. Xếp hạng: 3/1253. Giá: 684.211 ₫ - 1.657.895 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/27/93/aa/ee/thanh-lich-hue-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.595856,
+                16.470325
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4357913",
+        "title": "Hue Serene Palace Hotel",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.8,
+        "ranking": "4/1253",
+        "reviewsCount": 3573,
+        "category": "Khách sạn",
+        "priceRange": "815.789 ₫ - 1.394.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hue Serene Palace Hotel ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 3573 lượt review. Xếp hạng: 4/1253. Giá: 815.789 ₫ - 1.394.737 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/cd/1c/77/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59746,
+                16.470415
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1488735",
+        "title": "Muong Thanh Holiday Hue Hotel",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.6,
+        "ranking": "5/1253",
+        "reviewsCount": 1229,
+        "category": "Khách sạn",
+        "priceRange": "973.684 ₫ - 1.500.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Muong Thanh Holiday Hue Hotel ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 1229 lượt review. Xếp hạng: 5/1253. Giá: 973.684 ₫ - 1.500.000 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/05/b1/79/a0/muong-thanh-hue-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59344,
+                16.469374
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32758780",
+        "title": "The Orchid Premium Hotel",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 5.0,
+        "ranking": "6/1253",
+        "reviewsCount": 175,
+        "category": "Khách sạn",
+        "priceRange": "736.842 ₫ - 973.684 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The Orchid Premium Hotel ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 175 lượt review. Xếp hạng: 6/1253. Giá: 736.842 ₫ - 973.684 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/17/0e/ff/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.598816,
+                16.46444
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "22974817",
+        "title": "Anhill Boutique",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 5.0,
+        "ranking": "7/1253",
+        "reviewsCount": 313,
+        "category": "Khách sạn",
+        "priceRange": "2.657.895 ₫ - 3.947.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Anhill Boutique ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 313 lượt review. Xếp hạng: 7/1253. Giá: 2.657.895 ₫ - 3.947.368 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/93/2d/a5/anhill-boutique.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58985,
+                16.417194
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "633695",
+        "title": "Thanh Lịch Royal Boutique",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.7,
+        "ranking": "8/1253",
+        "reviewsCount": 1673,
+        "category": "Khách sạn",
+        "priceRange": "1.000.000 ₫ - 2.236.842 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Thanh Lịch Royal Boutique ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.7/5 từ 1673 lượt review. Xếp hạng: 8/1253. Giá: 1.000.000 ₫ - 2.236.842 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/55/3d/38/thanh-lich-royal-boutique.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.5894,
+                16.460434
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25179951",
+        "title": "Jade Scene Hotel",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.9,
+        "ranking": "9/1253",
+        "reviewsCount": 454,
+        "category": "Khách sạn",
+        "priceRange": "815.789 ₫ - 1.736.842 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Jade Scene Hotel ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 454 lượt review. Xếp hạng: 9/1253. Giá: 815.789 ₫ - 1.736.842 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/2d/9d/19/swiming-pool-outside.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.597015,
+                16.469536
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "582872",
+        "title": "Pilgrimage Village Boutique Resort & Spa",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.7,
+        "ranking": "10/1253",
+        "reviewsCount": 3836,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "1.763.158 ₫ - 5.710.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Pilgrimage Village Boutique Resort & Spa ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.7/5 từ 3836 lượt review. Xếp hạng: 10/1253. Giá: 1.763.158 ₫ - 5.710.526 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/80/72/3d/exterior.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.579605,
+                16.42499
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1792003",
+        "title": "Vedana Lagoon Resort & Spa",
+        "city": "Phú Lộc, Phu Loc District, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.8,
+        "ranking": "11/1253",
+        "reviewsCount": 1321,
+        "category": "Khách sạn",
+        "priceRange": "1.921.053 ₫ - 5.026.316 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Vedana Lagoon Resort & Spa ở Phú Lộc, Phu Loc District, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 1321 lượt review. Xếp hạng: 11/1253. Giá: 1.921.053 ₫ - 5.026.316 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/0c/12/14/overview.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.86064,
+                16.290224
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23036858",
+        "title": "Kobi Onsen Resort Huế, liên kết với Meliá",
+        "city": "Phú Dương, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.9,
+        "ranking": "12/1253",
+        "reviewsCount": 228,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "1.157.895 ₫ - 2.447.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Kobi Onsen Resort Huế, liên kết với Meliá ở Phú Dương, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.9/5 từ 228 lượt review. Xếp hạng: 12/1253. Giá: 1.157.895 ₫ - 2.447.368 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/55/86/7b/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.61344,
+                16.521101
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "633334",
+        "title": "Khách sạn Êmm Huế",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.8,
+        "ranking": "13/1253",
+        "reviewsCount": 2458,
+        "category": "Khách sạn",
+        "priceRange": "921.053 ₫ - 1.342.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Êmm Huế ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 2458 lượt review. Xếp hạng: 13/1253. Giá: 921.053 ₫ - 1.342.105 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/a8/ca/8e/exterior-day-time.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.591606,
+                16.46029
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12291545",
+        "title": "Laguna Lang Co",
+        "city": "Cu Du, Loc Vinh, Phu Loc District, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.8,
+        "ranking": "14/1253",
+        "reviewsCount": 156,
+        "category": "Khu nghỉ dưỡng (Trọn gói)",
+        "priceRange": "4.421.053 ₫ - 7.421.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Laguna Lang Co ở Cu Du, Loc Vinh, Phu Loc District, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khu nghỉ dưỡng (Trọn gói). Tags: Khu nghỉ dưỡng (Trọn gói). Đánh giá: 4.8/5 từ 156 lượt review. Xếp hạng: 14/1253. Giá: 4.421.053 ₫ - 7.421.053 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng (Trọn gói)"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/cd/2c/5b/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.956985,
+                16.33118
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "585172",
+        "title": "Azerai La Residence Hue",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.7,
+        "ranking": "15/1253",
+        "reviewsCount": 3111,
+        "category": "Khách sạn",
+        "priceRange": "3.210.526 ₫ - 4.473.684 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Azerai La Residence Hue ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.7/5 từ 3111 lượt review. Xếp hạng: 15/1253. Giá: 3.210.526 ₫ - 4.473.684 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/33/4d/ea/c9/azerai-la-residence.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58013,
+                16.45938
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10717679",
+        "title": "Hotel La Perle - Hue",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.9,
+        "ranking": "16/1253",
+        "reviewsCount": 1163,
+        "category": "Khách sạn",
+        "priceRange": "394.737 ₫ - 631.579 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hotel La Perle - Hue ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 1163 lượt review. Xếp hạng: 16/1253. Giá: 394.737 ₫ - 631.579 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/b6/34/03/terrace.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59697,
+                16.469618
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "614747",
+        "title": "TTC Imperial Hotel",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.6,
+        "ranking": "17/1253",
+        "reviewsCount": 2791,
+        "category": "Khách sạn",
+        "priceRange": "1.263.158 ₫ - 1.973.684 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "TTC Imperial Hotel ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 2791 lượt review. Xếp hạng: 17/1253. Giá: 1.263.158 ₫ - 1.973.684 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/09/d8/3b/imperial-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.591545,
+                16.465858
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19501676",
+        "title": "Senna Hue Hotel",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.9,
+        "ranking": "18/1253",
+        "reviewsCount": 419,
+        "category": "Khách sạn",
+        "priceRange": "1.342.105 ₫ - 2.894.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Senna Hue Hotel ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 419 lượt review. Xếp hạng: 18/1253. Giá: 1.342.105 ₫ - 2.894.737 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/24/b6/c1/premier-suite.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59372,
+                16.465744
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11958919",
+        "title": "Biệt Thự Huế Riverside",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.9,
+        "ranking": "19/1253",
+        "reviewsCount": 392,
+        "category": "Khách sạn",
+        "priceRange": "1.105.263 ₫ - 1.500.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Biệt Thự Huế Riverside ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 392 lượt review. Xếp hạng: 19/1253. Giá: 1.105.263 ₫ - 1.500.000 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/0a/b0/1d/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59626,
+                16.472912
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15113220",
+        "title": "Meliá Vinpearl Hue",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.8,
+        "ranking": "20/1253",
+        "reviewsCount": 1388,
+        "category": "Khách sạn",
+        "priceRange": "1.842.105 ₫ - 2.736.842 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Meliá Vinpearl Hue ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 1388 lượt review. Xếp hạng: 20/1253. Giá: 1.842.105 ₫ - 2.736.842 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/c1/f0/55/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.594345,
+                16.463087
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "653958",
+        "title": "Silk Path Grand Hue Hotel",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.9,
+        "ranking": "21/1253",
+        "reviewsCount": 309,
+        "category": "Khách sạn",
+        "priceRange": "1.631.579 ₫ - 2.684.211 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Silk Path Grand Hue Hotel ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 309 lượt review. Xếp hạng: 21/1253. Giá: 1.631.579 ₫ - 2.684.211 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/69/bf/84/silk-path-grand-hue-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.57984,
+                16.457697
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "3504912",
+        "title": "Angsana Lăng Cô",
+        "city": "Loc Vinh, Phu Loc District, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.8,
+        "ranking": "22/1253",
+        "reviewsCount": 3669,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "3.657.895 ₫ - 6.342.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Angsana Lăng Cô ở Loc Vinh, Phu Loc District, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.8/5 từ 3669 lượt review. Xếp hạng: 22/1253. Giá: 3.657.895 ₫ - 6.342.105 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/a6/cf/e4/an-lang-co-family-suite.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.95583,
+                16.334291
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1090179",
+        "title": "Indochine Palace",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.8,
+        "ranking": "23/1253",
+        "reviewsCount": 2525,
+        "category": "Khách sạn",
+        "priceRange": "1.368.421 ₫ - 2.184.211 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Indochine Palace ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 2525 lượt review. Xếp hạng: 23/1253. Giá: 1.368.421 ₫ - 2.184.211 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/c8/e0/0d/indochine-palace.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.598175,
+                16.461426
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17202021",
+        "title": "Ancient Hue Garden Houses & French Villas",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.9,
+        "ranking": "24/1253",
+        "reviewsCount": 192,
+        "category": "Khách sạn",
+        "priceRange": "3.210.526 ₫ - 5.184.211 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Ancient Hue Garden Houses & French Villas ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 192 lượt review. Xếp hạng: 24/1253. Giá: 3.210.526 ₫ - 5.184.211 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/a2/97/3a/ancient-hue-garden-houses.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.56257,
+                16.46264
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26266619",
+        "title": "Hue Rustic Homestay Apartment",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.9,
+        "ranking": "25/1253",
+        "reviewsCount": 92,
+        "category": "Cơ sở kinh doanh có dịch vụ giới hạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hue Rustic Homestay Apartment ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Cơ sở kinh doanh có dịch vụ giới hạn. Tags: Cơ sở kinh doanh có dịch vụ giới hạn. Đánh giá: 4.9/5 từ 92 lượt review. Xếp hạng: 25/1253.",
+        "tags": [
+            "Cơ sở kinh doanh có dịch vụ giới hạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/29/a4/54/1a/swimming-pool.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.617,
+                16.463518
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8755459",
+        "title": "Hue Serene Shining Hotel & Spa",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.8,
+        "ranking": "26/1253",
+        "reviewsCount": 1153,
+        "category": "Khách sạn",
+        "priceRange": "1.052.632 ₫ - 1.842.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hue Serene Shining Hotel & Spa ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 1153 lượt review. Xếp hạng: 26/1253. Giá: 1.052.632 ₫ - 1.842.105 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/7c/de/24/hue-serene-shining-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59804,
+                16.471594
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "623907",
+        "title": "KHÁCH SẠN ORCHID",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.7,
+        "ranking": "27/1253",
+        "reviewsCount": 2953,
+        "category": "Khách sạn",
+        "priceRange": "657.895 ₫ - 1.000.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "KHÁCH SẠN ORCHID ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.7/5 từ 2953 lượt review. Xếp hạng: 27/1253. Giá: 657.895 ₫ - 1.000.000 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/02/da/ce/family-rooms.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59525,
+                16.46976
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "5498733",
+        "title": "Hue Four Seasons Hotel",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.9,
+        "ranking": "28/1253",
+        "reviewsCount": 913,
+        "category": "Khách sạn nhỏ",
+        "priceRange": "394.737 ₫ - 473.684 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hue Four Seasons Hotel ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 4.9/5 từ 913 lượt review. Xếp hạng: 28/1253. Giá: 394.737 ₫ - 473.684 ₫.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/1f/9f/90/happy-honey-moon-room.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.596375,
+                16.472284
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "3751393",
+        "title": "Khách sạn Casablanca",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.8,
+        "ranking": "29/1253",
+        "reviewsCount": 383,
+        "category": "Khách sạn nhỏ",
+        "priceRange": "315.789 ₫ - 500.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Casablanca ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 4.8/5 từ 383 lượt review. Xếp hạng: 29/1253. Giá: 315.789 ₫ - 500.000 ₫.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/b1/b1/a8/casablanca-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59808,
+                16.470865
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7309524",
+        "title": "Dịch vụ lưu trú Huế Happy",
+        "city": "Huế, Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.8,
+        "ranking": "30/1253",
+        "reviewsCount": 292,
+        "category": "Nhà trọ",
+        "priceRange": "289.474 ₫ - 315.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Dịch vụ lưu trú Huế Happy ở Huế, Tỉnh Thừa Thiên - Huế. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 4.8/5 từ 292 lượt review. Xếp hạng: 30/1253. Giá: 289.474 ₫ - 315.789 ₫.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/0a/d3/89/dorm-room-at-hue-happy.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59658,
+                16.469946
+            ]
+        },
+        "openingHours": null
+    }
+]

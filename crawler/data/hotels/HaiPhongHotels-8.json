@@ -1,0 +1,230 @@
+[
+    {
+        "sourceLocationId": "13819420",
+        "title": "Manoir Des Arts Hotel",
+        "city": "Thành phố Hải Phòng",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 702,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Manoir Des Arts Hotel ở Thành phố Hải Phòng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 702 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/29/f1/ef/4d/manoir-des-arts-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.6836,
+                20.861797
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7179446",
+        "title": "Somerset Central TD Hai Phong City",
+        "city": "Thành phố Hải Phòng",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 293,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Somerset Central TD Hai Phong City ở Thành phố Hải Phòng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 293 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/21/ae/02/bathroom-of-1bedroom.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.706345,
+                20.846666
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15671162",
+        "title": "Sheraton Hai Phong",
+        "city": "Thành phố Hải Phòng",
+        "totalScore": 4.8,
+        "ranking": null,
+        "reviewsCount": 372,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sheraton Hai Phong ở Thành phố Hải Phòng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 372 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/33/40/d5/7e/hotel-exterior-day.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.66165,
+                20.863008
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "5823617",
+        "title": "Flamingo Cat Ba Resorts",
+        "city": "Cat Ba Town",
+        "totalScore": 4.8,
+        "ranking": null,
+        "reviewsCount": 1483,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Flamingo Cat Ba Resorts ở Cat Ba Town. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 1483 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/5b/f0/44/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.052666,
+                20.718296
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "451038",
+        "title": "Hai Phong Harbour View Hotel",
+        "city": "Thành phố Hải Phòng",
+        "totalScore": 4.5,
+        "ranking": null,
+        "reviewsCount": 520,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hai Phong Harbour View Hotel ở Thành phố Hải Phòng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.5/5 từ 520 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/19/30/17/ea/royal-suite-separate.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.689575,
+                20.86426
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19888012",
+        "title": "Hotel Perle D'Orient Cat Ba",
+        "city": "Thành phố Hải Phòng",
+        "totalScore": 4.5,
+        "ranking": null,
+        "reviewsCount": 212,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hotel Perle D'Orient Cat Ba ở Thành phố Hải Phòng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.5/5 từ 212 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/29/d1/a9/eb/hotel-perle-d-orient.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.049706,
+                20.715813
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13530445",
+        "title": "Mercure Hai Phong",
+        "city": "Thành phố Hải Phòng",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 237,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mercure Hai Phong ở Thành phố Hải Phòng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 237 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.68686,
+                20.851269
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19055813",
+        "title": "Meliá Vinpearl Hai Phong Rivera",
+        "city": "Thành phố Hải Phòng",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 333,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Meliá Vinpearl Hai Phong Rivera ở Thành phố Hải Phòng. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 333 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/c3/75/9c/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.663445,
+                20.86684
+            ]
+        },
+        "openingHours": null
+    }
+]

@@ -1,0 +1,2484 @@
+[
+    {
+        "sourceLocationId": "4572513",
+        "title": "3D Coffee",
+        "city": "Bến Tre",
+        "totalScore": 4.6,
+        "ranking": "1/25",
+        "reviewsCount": 69,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "3D Coffee ở Bến Tre. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.6/5 từ 69 lượt review. Xếp hạng: 1/25.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/04/43/84/d8/3d-coffee.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.36799,
+                10.226957
+            ]
+        },
+        "openingHours": {
+            "display": "15:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "3742958",
+        "title": "Hai Ho Family",
+        "city": "Bến Tre",
+        "totalScore": 4.4,
+        "ranking": "2/25",
+        "reviewsCount": 31,
+        "category": "Ngồi xuống",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hai Ho Family ở Bến Tre. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.4/5 từ 31 lượt review. Xếp hạng: 2/25. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/cb/8d/c7/famoso-pez-oreja-de-elefante.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37521,
+                10.210248
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27990912",
+        "title": "Ygg Bar",
+        "city": "Bình Thạnh",
+        "totalScore": 5.0,
+        "ranking": "3/25",
+        "reviewsCount": 9,
+        "category": "Ngồi xuống",
+        "priceRange": "1.578.947.328 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Ygg Bar ở Bình Thạnh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 9 lượt review. Xếp hạng: 3/25. Giá: 1.578.947.328 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/3f/f1/28/chill.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.71946,
+                10.801887
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1620
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1620
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "9995584",
+        "title": "Mien Tay River Side Restaurant",
+        "city": "Tan Thạch",
+        "totalScore": 4.1,
+        "ranking": "4/25",
+        "reviewsCount": 60,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Mien Tay River Side Restaurant ở Tan Thạch. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.1/5 từ 60 lượt review. Xếp hạng: 4/25. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/a8/60/db/mien-tay-river-side-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37767,
+                10.331298
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12119166",
+        "title": "Nhà Hàng Diễm Phượng",
+        "city": "Tan Thạch",
+        "totalScore": 4.2,
+        "ranking": "5/25",
+        "reviewsCount": 26,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Diễm Phượng ở Tan Thạch. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.2/5 từ 26 lượt review. Xếp hạng: 5/25. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/8a/f6/07/dinosaur-egg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.36903,
+                10.336472
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20376713",
+        "title": "Nhà Hàng Xứ Dừa",
+        "city": "Bến Tre",
+        "totalScore": 4.7,
+        "ranking": "6/25",
+        "reviewsCount": 10,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Xứ Dừa ở Bến Tre. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.7/5 từ 10 lượt review. Xếp hạng: 6/25. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/1c/fc/a3/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37876,
+                10.211466
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14795372",
+        "title": "Coco Mint",
+        "city": "Bến Tre",
+        "totalScore": 4.6,
+        "ranking": "7/25",
+        "reviewsCount": 15,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Coco Mint ở Bến Tre. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.6/5 từ 15 lượt review. Xếp hạng: 7/25.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/60/35/0e/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.38673,
+                10.236706
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7855813",
+        "title": "Nhà Hàng Sông Nước Miền Tây",
+        "city": "Tan Thach",
+        "totalScore": 4.1,
+        "ranking": "8/25",
+        "reviewsCount": 34,
+        "category": "Ngồi xuống",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Sông Nước Miền Tây ở Tan Thach. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.1/5 từ 34 lượt review. Xếp hạng: 8/25. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/97/1d/35/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37767,
+                10.331187
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33712133",
+        "title": "Chilli Thai - Vincom Thao Dien",
+        "city": "Thành phố Hồ Chí Minh",
+        "totalScore": 5.0,
+        "ranking": "518/4905",
+        "reviewsCount": 17,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Chilli Thai - Vincom Thao Dien ở Thành phố Hồ Chí Minh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 17 lượt review. Xếp hạng: 518/4905. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/36/54/d3/deep-fried-seabass-with.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.35396,
+                10.24608
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21034460",
+        "title": "Tiem Ba Khoang Hidden Cocktail Bar",
+        "city": "Bến Tre",
+        "totalScore": 5.0,
+        "ranking": "9/25",
+        "reviewsCount": 4,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "789.473.664 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Tiem Ba Khoang Hidden Cocktail Bar ở Bến Tre. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 9/25. Giá: 789.473.664 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/27/1c/ac/cc/logo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.38447,
+                10.26157
+            ]
+        },
+        "openingHours": {
+            "display": "17:30-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27156572",
+        "title": "Nhà hàng nổi TTC Bến Tre",
+        "city": "Bến Tre",
+        "totalScore": 3.8,
+        "ranking": "10/25",
+        "reviewsCount": 8,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng nổi TTC Bến Tre ở Bến Tre. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.8/5 từ 8 lượt review. Xếp hạng: 10/25.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/32/1c/71/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.38037,
+                10.234272
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13430576",
+        "title": "Lucid Dream - Tea & Coffee",
+        "city": "Bến Tre",
+        "totalScore": 4.8,
+        "ranking": "11/25",
+        "reviewsCount": 4,
+        "category": "Quán cafe",
+        "priceRange": "315.789.472 ₫ - 842.105.280 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Lucid Dream - Tea & Coffee ở Bến Tre. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 4.8/5 từ 4 lượt review. Xếp hạng: 11/25. Giá: 315.789.472 ₫ - 842.105.280 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/de/42/28/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37553,
+                10.228943
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8152664",
+        "title": "Công Ty TNHH DL DV TM Cồn Phụng",
+        "city": "Tan Thạch",
+        "totalScore": 4.0,
+        "ranking": "12/25",
+        "reviewsCount": 7,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Công Ty TNHH DL DV TM Cồn Phụng ở Tan Thạch. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 7 lượt review. Xếp hạng: 12/25. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/02/ad/ae/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.36946,
+                10.336279
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33352923",
+        "title": "Little India, Ho Chi Minh City",
+        "city": "Bình Thạnh",
+        "totalScore": 5.0,
+        "ranking": "13/25",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Little India, Ho Chi Minh City ở Bình Thạnh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 13/25.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/9f/20/0e/pakora-platter-and-masala.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.71206,
+                10.78999
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33305016",
+        "title": "Bít Tết Cô Thảo (miss Thảo's Steakhouse)",
+        "city": "Bến Tre",
+        "totalScore": 5.0,
+        "ranking": "14/25",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bít Tết Cô Thảo (miss Thảo's Steakhouse) ở Bến Tre. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 14/25.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/30/74/30/32/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.376724,
+                10.249897
+            ]
+        },
+        "openingHours": {
+            "display": "06:15-12:00, 16:15-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 375,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 975,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 375,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 975,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 375,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 975,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 375,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 975,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 375,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 975,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 375,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 975,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 375,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 975,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33120187",
+        "title": "La Cafe",
+        "city": "Bình Thạnh",
+        "totalScore": 5.0,
+        "ranking": "15/25",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "La Cafe ở Bình Thạnh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 15/25.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/d2/b1/9b/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.720375,
+                10.798727
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33023172",
+        "title": "Happy Cow Vegan Bahn Mi",
+        "city": "Hội An",
+        "totalScore": 5.0,
+        "ranking": "1165/1424",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Happy Cow Vegan Bahn Mi ở Hội An. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 1165/1424.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.38089,
+                10.234859
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27153404",
+        "title": "Moso Garden - Cocktail Bar",
+        "city": "Bến Tre",
+        "totalScore": 5.0,
+        "ranking": "16/25",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Moso Garden - Cocktail Bar ở Bến Tre. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 16/25.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/5d/73/94/cozy-space-diverse-and.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.375206,
+                10.241095
+            ]
+        },
+        "openingHours": {
+            "display": "17:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "29017810",
+        "title": "Nhà Hàng Du Lịch Anh Giang",
+        "city": "Quới Sơn",
+        "totalScore": 5.0,
+        "ranking": "17/25",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Du Lịch Anh Giang ở Quới Sơn. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 17/25.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.42168,
+                10.31546
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16666129",
+        "title": "LeKao's Coffee",
+        "city": "Bến Tre",
+        "totalScore": 5.0,
+        "ranking": "18/25",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "LeKao's Coffee ở Bến Tre. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 18/25.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/16/92/14/9d/mur.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.40311,
+                10.23554
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15758164",
+        "title": "Sweet Home",
+        "city": "Bến Tre",
+        "totalScore": 5.0,
+        "ranking": "19/25",
+        "reviewsCount": 1,
+        "category": "Quán cafe",
+        "priceRange": "421.052.640 ₫ - 1.000.000.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Sweet Home ở Bến Tre. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 19/25. Giá: 421.052.640 ₫ - 1.000.000.000 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/14/7f/7e/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37908,
+                10.245627
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7740312",
+        "title": "Vườn Ẩm Thực Út An",
+        "city": "Bến Tre",
+        "totalScore": 4.0,
+        "ranking": "20/25",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn Ẩm Thực Út An ở Bến Tre. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.0/5 từ 3 lượt review. Xếp hạng: 20/25.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37624,
+                10.23847
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8559372",
+        "title": "Wine House",
+        "city": "Bến Tre",
+        "totalScore": 5.0,
+        "ranking": "21/25",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "921.052.608 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Wine House ở Bến Tre. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 21/25. Giá: 921.052.608 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/ca/c5/7e/wine-house.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.355865,
+                10.228592
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17531641",
+        "title": "WinWin Quán",
+        "city": "Bến Tre",
+        "totalScore": 3.0,
+        "ranking": "22/25",
+        "reviewsCount": 1,
+        "category": "Quán cafe",
+        "priceRange": "26.316 ₫",
+        "description": "Quán cà phê cạnh bờ Hồ Trúc Giang, mát mẻ, sạch sẽ, phục vụ nhanh, menu có cà phê nguyên chất pha máy, trà sữa, nước trái cây, sinh tố, yogurt, và những thức uống khác.",
+        "embedding": null,
+        "searchText": "WinWin Quán ở Bến Tre. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Mô tả: Quán cà phê cạnh bờ Hồ Trúc Giang, mát mẻ, sạch sẽ, phục vụ nhanh, menu có cà phê nguyên chất pha máy, trà sữa, nước trái cây, sinh tố, yogurt, và những thức uống khác. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 22/25. Giá: 26.316 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/d8/52/0f/chilling.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37944,
+                10.23752
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19893497",
+        "title": "Nhà hàng vườn Cồn Quy",
+        "city": "Bến Tre",
+        "totalScore": 3.0,
+        "ranking": "23/25",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng vườn Cồn Quy ở Bến Tre. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 23/25.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": {
+            "display": "08:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "11618684",
+        "title": "Mekong River Seafood Restaurant",
+        "city": "Bến Tre",
+        "totalScore": 3.0,
+        "ranking": "24/25",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mekong River Seafood Restaurant ở Bến Tre. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 24/25.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.36665,
+                10.218357
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17702621",
+        "title": "Làng ẩm Thực Sinh Thái Quê Dừa",
+        "city": "An Khánh",
+        "totalScore": 1.0,
+        "ranking": "25/25",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Làng ẩm Thực Sinh Thái Quê Dừa ở An Khánh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 1.0/5 từ 1 lượt review. Xếp hạng: 25/25.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.35274,
+                10.328188
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26586060",
+        "title": "Le 68 Bistro & Café",
+        "city": "Mỹ Tho",
+        "totalScore": 5.0,
+        "ranking": "1/21",
+        "reviewsCount": 21,
+        "category": "Ngồi xuống",
+        "priceRange": "105.263 ₫ - 526.316 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Le 68 Bistro & Café ở Mỹ Tho. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 21 lượt review. Xếp hạng: 1/21. Giá: 105.263 ₫ - 526.316 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/1b/51/fa/chef-patrick-berenger.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.36359,
+                10.35667
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10495220",
+        "title": "Coc Cafe Trà Vinh",
+        "city": "Trà Vinh",
+        "totalScore": 4.5,
+        "ranking": "7/9",
+        "reviewsCount": 2,
+        "category": "Quán cafe",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Coc Cafe Trà Vinh ở Trà Vinh. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 7/9.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/d5/82/55/jellyfish-noodle-water.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.339165,
+                9.961987
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10673522",
+        "title": "Déjà Vu Huỳnh Kha",
+        "city": "Trà Vinh",
+        "totalScore": 4.3,
+        "ranking": "3/9",
+        "reviewsCount": 7,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Déjà Vu Huỳnh Kha ở Trà Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.3/5 từ 7 lượt review. Xếp hạng: 3/9. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/71/5f/83/restaurant-on-water.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.346306,
+                9.955471
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14915382",
+        "title": "Mekong Taste",
+        "city": "Mỹ Tho",
+        "totalScore": 4.6,
+        "ranking": "3/21",
+        "reviewsCount": 17,
+        "category": "Ngồi xuống",
+        "priceRange": "78.947 ₫ - 2.105.263 ₫",
+        "description": "Nhà Hàng Mekong Taste là một trong những nhà hàng có chất lượng dịch vụ tốt nhất tại Cồn Thới Sơn. Đồ ăn ngon, giá cả phải chăng, cảnh bờ sông rất thoáng mát, có bến tàu ngay bờ sông, khách có thể đi tàu từ Bến tàu Chương Dương và cập bến tại Mekong Taste ăn trưa.",
+        "embedding": null,
+        "searchText": "Mekong Taste ở Mỹ Tho. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà Hàng Mekong Taste là một trong những nhà hàng có chất lượng dịch vụ tốt nhất tại Cồn Thới Sơn. Đồ ăn ngon, giá cả phải chăng, cảnh bờ sông rất thoáng mát, có bến tàu ngay bờ sông, khách có thể đi tàu từ Bến tàu Chương Dương và cập bến tại Mekong Taste ăn trưa. Đánh giá: 4.6/5 từ 17 lượt review. Xếp hạng: 3/21. Giá: 78.947 ₫ - 2.105.263 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/18/db/59/83/pesce-fritto.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.36288,
+                10.341151
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-16:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 990
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "4992359",
+        "title": "Banh Xeo Cay Quynh Anh",
+        "city": "Cái Bè",
+        "totalScore": 5.0,
+        "ranking": "4/7",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Banh Xeo Cay Quynh Anh ở Cái Bè. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 4/7.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.39807,
+                10.35098
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8603429",
+        "title": "Cafe De PARIS",
+        "city": "Trà Vinh",
+        "totalScore": 4.0,
+        "ranking": "2/9",
+        "reviewsCount": 11,
+        "category": "Quán cafe",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Cafe De PARIS ở Trà Vinh. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 4.0/5 từ 11 lượt review. Xếp hạng: 2/9. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/e4/a7/73/pastries-and-drinks-in.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.340576,
+                9.948237
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12571432",
+        "title": "Nhà hàng Trung Lương",
+        "city": "Mỹ Tho",
+        "totalScore": 4.1,
+        "ranking": "5/21",
+        "reviewsCount": 10,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Trung Lương ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.1/5 từ 10 lượt review. Xếp hạng: 5/21. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/65/5c/85/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.38339,
+                10.35167
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11706772",
+        "title": "Nhà Hàng La Vang",
+        "city": "Trà Vinh",
+        "totalScore": 4.1,
+        "ranking": "1/9",
+        "reviewsCount": 8,
+        "category": "Ngồi xuống",
+        "priceRange": "131.579 ₫ - 394.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng La Vang ở Trà Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.1/5 từ 8 lượt review. Xếp hạng: 1/9. Giá: 131.579 ₫ - 394.737 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/28/96/b9/m-t-ti-n.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.33987,
+                9.94612
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32908428",
+        "title": "Benaras Delta",
+        "city": "Mỹ Tho",
+        "totalScore": 4.6,
+        "ranking": "2/21",
+        "reviewsCount": 17,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Benaras Delta ở Mỹ Tho. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.6/5 từ 17 lượt review. Xếp hạng: 2/21.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/2c/59/d9/0971-250-117-sales-benarasclub.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.3568,
+                10.353585
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "5074402",
+        "title": "Cafe - Kem",
+        "city": "Trà Vinh",
+        "totalScore": 3.8,
+        "ranking": "8/9",
+        "reviewsCount": 4,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cafe - Kem ở Trà Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.8/5 từ 4 lượt review. Xếp hạng: 8/9.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/04/b6/1b/8b/cafe-kem.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.341805,
+                9.94789
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25355176",
+        "title": "Ẩm Thực Mộc Thiên",
+        "city": "Bến Tre",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Nhà hàng ẩm thực mộc thiên với đa dạng phong cách . lãng mạng , sang trọng, ấm áp ,thiên nhiên . các món ăn dân dã đặc sản bến tre . các món ăn đặc sắc nổi bật của nhà hàng",
+        "embedding": null,
+        "searchText": "Ẩm Thực Mộc Thiên ở Bến Tre. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Nhà hàng ẩm thực mộc thiên với đa dạng phong cách . lãng mạng , sang trọng, ấm áp ,thiên nhiên . các món ăn dân dã đặc sản bến tre . các món ăn đặc sắc nổi bật của nhà hàng",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.354645,
+                10.245986
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28032515",
+        "title": "Tiệm Cà Phê - Trà 1999 Coffee & Tea 1999",
+        "city": "Bến Tre",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tiệm Cà Phê - Trà 1999 Coffee & Tea 1999 ở Bến Tre. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/eb/8b/fb/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.379906,
+                10.197641
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17885937",
+        "title": "Bún Riêu Tú Điền",
+        "city": "Bến Tre",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bún Riêu Tú Điền ở Bến Tre. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.3828,
+                10.257048
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19723198",
+        "title": "Quán Cafe Vườn Hồng",
+        "city": "Bến Tre",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Cafe Vườn Hồng ở Bến Tre. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27151826",
+        "title": "Moso Cocktail & Whisky bar",
+        "city": "Bến Tre",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Là một quán bar mang phong cách cổ điển. Với không gian ấm cúng, đồ uống hiện đại, nhạc Jazz, lives acoutic vào cuối tuần sẽ đem đến cho bạn một trải nghiệm tuyệt vời.",
+        "embedding": null,
+        "searchText": "Moso Cocktail & Whisky bar ở Bến Tre. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Là một quán bar mang phong cách cổ điển. Với không gian ấm cúng, đồ uống hiện đại, nhạc Jazz, lives acoutic vào cuối tuần sẽ đem đến cho bạn một trải nghiệm tuyệt vời.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37529,
+                10.241151
+            ]
+        },
+        "openingHours": {
+            "display": "17:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12593008",
+        "title": "Kim Coffee Garden",
+        "city": "Bến Tre",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kim Coffee Garden ở Bến Tre. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25179488",
+        "title": "Tiệm Ba Khoang Cocktails, Beer & Dining",
+        "city": "Bến Tre",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tiệm Ba Khoang Cocktails, Beer & Dining ở Bến Tre. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37669,
+                10.228883
+            ]
+        },
+        "openingHours": {
+            "display": "17:30-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23115482",
+        "title": "The Pizza Company",
+        "city": "Bến Tre",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The Pizza Company ở Bến Tre. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37671,
+                10.24175
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27928692",
+        "title": "Bên Ô Cửa Sổ Coffee & Music",
+        "city": "Bến Tre",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bên Ô Cửa Sổ Coffee & Music ở Bến Tre. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/7c/e1/22/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37876,
+                10.249397
+            ]
+        },
+        "openingHours": {
+            "display": "08:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25392517",
+        "title": "Tergus Coffee Roastery",
+        "city": "Bến Tre",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Chúng tôi sản xuất và có phục vụ cà phê chất lượng cao tại quán.",
+        "embedding": null,
+        "searchText": "Tergus Coffee Roastery ở Bến Tre. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Chúng tôi sản xuất và có phục vụ cà phê chất lượng cao tại quán.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/9e/6e/d6/noi-s-n-xu-t-ra-nh-ng.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37596,
+                10.249687
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17424071",
+        "title": "Ngoc Giao Milk Tea",
+        "city": "Phu Tuc",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ngoc Giao Milk Tea ở Phu Tuc. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.27442,
+                10.30906
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27801533",
+        "title": "Orientalbest",
+        "city": "An Khánh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Orientalbest ở An Khánh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24515,
+                16.057396
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34335401",
+        "title": "Bbq 1976",
+        "city": "Thừa Đức",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bbq 1976 ở Thừa Đức. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.730896,
+                10.796681
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1380
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    }
+]

@@ -1,0 +1,544 @@
+[
+    {
+        "sourceLocationId": "13223368",
+        "title": "Nhà thờ đổ Hải Hậu",
+        "city": "Nam Dinh",
+        "totalScore": 4.8,
+        "ranking": "2/18",
+        "reviewsCount": 5,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà thờ đổ Hải Hậu ở Nam Dinh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.8/5 từ 5 lượt review. Xếp hạng: 2/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/80/3f/af/hai-hau-church.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12635453",
+        "title": "Đền Trần",
+        "city": "Nam Dinh",
+        "totalScore": 4.4,
+        "ranking": "1/18",
+        "reviewsCount": 15,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đền Trần ở Nam Dinh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.4/5 từ 15 lượt review. Xếp hạng: 1/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/0c/85/b5/20180217-163825-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.25488,
+                20.37698
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13321824",
+        "title": "Vương Cung Thánh đường Phú Nhai",
+        "city": "Nam Dinh",
+        "totalScore": 4.8,
+        "ranking": "5/18",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vương Cung Thánh đường Phú Nhai ở Nam Dinh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.8/5 từ 4 lượt review. Xếp hạng: 5/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/b1/80/e2/basilica-of-immaculate.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12635426",
+        "title": "Nhà thờ lớn Nam Định",
+        "city": "Nam Dinh",
+        "totalScore": 4.6,
+        "ranking": "4/18",
+        "reviewsCount": 5,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà thờ lớn Nam Định ở Nam Dinh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.6/5 từ 5 lượt review. Xếp hạng: 4/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/10/bd/36/5c/toan-c-nh-nha-th-l-n.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8365965",
+        "title": "Tòa Giám Mục Bùi Chu",
+        "city": "Nam Dinh",
+        "totalScore": 4.0,
+        "ranking": "3/18",
+        "reviewsCount": 11,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tòa Giám Mục Bùi Chu ở Nam Dinh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 11 lượt review. Xếp hạng: 3/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/8f/87/27/bui-chu-cathedral.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13321849",
+        "title": "Nhà Thờ Phú An",
+        "city": "Nam Dinh",
+        "totalScore": 4.3,
+        "ranking": "7/18",
+        "reviewsCount": 3,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Thờ Phú An ở Nam Dinh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 3 lượt review. Xếp hạng: 7/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/91/34/17/nam-dinh-province.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11548340",
+        "title": "Biển Quất Lâm",
+        "city": "Nam Dinh",
+        "totalScore": 4.0,
+        "ranking": "8/18",
+        "reviewsCount": 3,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Biển Quất Lâm ở Nam Dinh. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.0/5 từ 3 lượt review. Xếp hạng: 8/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/d0/6d/c4/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.36667,
+                20.2
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13366642",
+        "title": "Đền thánh Hưng Nghĩa",
+        "city": "Nam Dinh",
+        "totalScore": 4.3,
+        "ranking": "6/18",
+        "reviewsCount": 3,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đền thánh Hưng Nghĩa ở Nam Dinh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 3 lượt review. Xếp hạng: 6/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/b9/32/f9/khung-c-nh-nhu-m-t-toa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13358734",
+        "title": "Giáo Xứ Lạc Đạo",
+        "city": "Nam Dinh",
+        "totalScore": 4.0,
+        "ranking": "9/18",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Giáo Xứ Lạc Đạo ở Nam Dinh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 9/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/be/87/ed/tu-i-tho-g-n-bo-ben-thap.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.19778,
+                20.19917
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13201259",
+        "title": "Nhà Thờ Hai Giáp",
+        "city": "Nam Dinh",
+        "totalScore": 5.0,
+        "ranking": "10/18",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Thờ Hai Giáp ở Nam Dinh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 10/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/61/7e/f5/nam-dinh-province.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13366876",
+        "title": "Giáo xứ Quần Phương",
+        "city": "Nam Dinh",
+        "totalScore": 3.5,
+        "ranking": "11/18",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Giáo xứ Quần Phương ở Nam Dinh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.5/5 từ 2 lượt review. Xếp hạng: 11/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/b2/69/17/nam-dinh-province.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13384874",
+        "title": "Giáo Xứ Sa Châu",
+        "city": "Nam Dinh",
+        "totalScore": 3.0,
+        "ranking": "13/18",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Giáo Xứ Sa Châu ở Nam Dinh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 13/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/cb/d6/0e/sa-chau-parish.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13201205",
+        "title": "Cầu Ngói Chợ Lương",
+        "city": "Nam Dinh",
+        "totalScore": 4.0,
+        "ranking": "12/18",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cầu Ngói Chợ Lương ở Nam Dinh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 12/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/73/50/b4/cau-ngoi-cho-luong.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13366750",
+        "title": "Giáo Xứ Giáp Nam",
+        "city": "Nam Dinh",
+        "totalScore": 3.0,
+        "ranking": "14/18",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Giáo Xứ Giáp Nam ở Nam Dinh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 14/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28261525",
+        "title": "Sartorial Chu",
+        "city": "Nam Dinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sartorial Chu ở Nam Dinh. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.844475,
+                21.02776
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-18:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1110
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26723781",
+        "title": "Amazing Nam Dinh 2 days 1 night",
+        "city": "Nam Dinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "We offer an unique experience to explore local life and handicraft villages around Nam Dinh province. You will have a chance to explore the local culture, enjoy local cuisine and experience a night stay in ancient Tonkin style house",
+        "embedding": null,
+        "searchText": "Amazing Nam Dinh 2 days 1 night ở Nam Dinh. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Khác, Hoạt động ngoài trời. Mô tả: We offer an unique experience to explore local life and handicraft villages around Nam Dinh province. You will have a chance to explore the local culture, enjoy local cuisine and experience a night stay in ancient Tonkin style house",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Khác",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/6b/8d/f8/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26442660",
+        "title": "Nam Dinh Cultural Trip",
+        "city": "Nam Dinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "We offer an experience at Tonkin ancient style homestay and day trips to surroundings in Nam Dinh province. Our day trips lead you to explore local lifestyle, cultural activities, craft villages and local cuisine.",
+        "embedding": null,
+        "searchText": "Nam Dinh Cultural Trip ở Nam Dinh. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Khác, Hoạt động ngoài trời. Mô tả: We offer an experience at Tonkin ancient style homestay and day trips to surroundings in Nam Dinh province. Our day trips lead you to explore local lifestyle, cultural activities, craft villages and local cuisine.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Khác",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/29/ad/ac/8d/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25461103",
+        "title": "Bao Duong Furniture",
+        "city": "Nam Dinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bao Duong Furniture ở Nam Dinh. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.25148,
+                20.237942
+            ]
+        },
+        "openingHours": null
+    }
+]

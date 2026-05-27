@@ -1,0 +1,121 @@
+[
+    {
+        "sourceLocationId": "6028667",
+        "title": "Konklor Hotel",
+        "city": "Kontum",
+        "totalScore": 4.5,
+        "ranking": null,
+        "reviewsCount": 136,
+        "category": "B&B",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Konklor Hotel ở Kontum. Loại địa điểm: B&B. Tags: Khách sạn, B&B. Đánh giá: 4.5/5 từ 136 lượt review.",
+        "tags": [
+            "Khách sạn",
+            "B&B"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/e4/98/6c/konklor-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.03357,
+                14.350283
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14886252",
+        "title": "Vuon Thu Guest House Garden",
+        "city": "Kontum",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 7,
+        "category": "Cơ sở lưu trú đặc biệt",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vuon Thu Guest House Garden ở Kontum. Loại địa điểm: Cơ sở lưu trú đặc biệt. Tags: Khách sạn, Cơ sở lưu trú đặc biệt. Đánh giá: 4.9/5 từ 7 lượt review.",
+        "tags": [
+            "Khách sạn",
+            "Cơ sở lưu trú đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/14/2c/ff/89/vuon-thu-home-stay.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.98668,
+                14.341386
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "2005862",
+        "title": "Indochine hotel",
+        "city": "Kontum",
+        "totalScore": 3.1,
+        "ranking": null,
+        "reviewsCount": 73,
+        "category": "B&B",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Indochine hotel ở Kontum. Loại địa điểm: B&B. Tags: Khách sạn, B&B. Đánh giá: 3.1/5 từ 73 lượt review.",
+        "tags": [
+            "Khách sạn",
+            "B&B"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/e7/53/1b/view-from-indochine-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00137,
+                14.345642
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23450318",
+        "title": "Golden Sun Hotel - Mangden",
+        "city": "Măng Đen",
+        "totalScore": 4.7,
+        "ranking": null,
+        "reviewsCount": 29,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Golden Sun Hotel - Mangden ở Măng Đen. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.7/5 từ 29 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/21/e5/ee/37/grande-suite.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.280945,
+                14.585491
+            ]
+        },
+        "openingHours": null
+    }
+]

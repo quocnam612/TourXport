@@ -1,14 +1,20 @@
 import mongoose from 'mongoose';
 
 const userSchema = new mongoose.Schema({
-    name: {
-        type: String,
-        required: true,
-        trim: true
+    authProvider: {
+        type: [{
+            type: String,
+            enum: ['local', 'google', 'facebook']
+        }],
+        default: ['local']
     },
-    phone: {
+    googleId: { 
+        type: String, 
+        unique: true, 
+        sparse: true 
+    },
+    facebookId: {
         type: String,
-        required: false,
         unique: true,
         sparse: true
     },
@@ -20,20 +26,35 @@ const userSchema = new mongoose.Schema({
     },
     password: {
         type: String,
-        required: true,
         select: false
     },
+    name: {
+        type: String,
+        required: true,
+        trim: true
+    },
+    phone: {
+        type: String,
+        unique: true,
+        sparse: true
+    },
     savedPlaces: {
-        type: Array,
+        type: [{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'PlaceDB'
+        }],
         default: []
     },
-    avatarUrl: {
-        type: String,
-        default: ''
+    savedTours: {
+        type: [{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'TourDB'
+        }],
+        default: []
     },
-    coverUrl: {
-        type: String,
-        default: ''
+    avatar: {
+        url: { type: String, default: '' },
+        public_id: { type: String, default: '' }
     }
 }, { timestamps: true });
 

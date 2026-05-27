@@ -1,0 +1,872 @@
+[
+    {
+        "sourceLocationId": "2243645",
+        "title": "Emeralda Resort Ninh Binh",
+        "city": "Ninh Bình, Tỉnh Ninh Bình",
+        "totalScore": 4.3,
+        "ranking": "31/1250",
+        "reviewsCount": 1396,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "1.500.000 ₫ - 3.842.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Emeralda Resort Ninh Binh ở Ninh Bình, Tỉnh Ninh Bình. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.3/5 từ 1396 lượt review. Xếp hạng: 31/1250. Giá: 1.500.000 ₫ - 3.842.105 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/f8/c1/8f/emeralda-resort-ninh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.87921,
+                20.358288
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12445739",
+        "title": "Lotus Field Homestay",
+        "city": "Ninh Xuân, Huyện Hoa Lư, Tỉnh Ninh Bình",
+        "totalScore": 4.8,
+        "ranking": "32/1250",
+        "reviewsCount": 120,
+        "category": "Nhà nghỉ",
+        "priceRange": "1.815.789 ₫ - 2.894.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Lotus Field Homestay ở Ninh Xuân, Huyện Hoa Lư, Tỉnh Ninh Bình. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 4.8/5 từ 120 lượt review. Xếp hạng: 32/1250. Giá: 1.815.789 ₫ - 2.894.737 ₫.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/30/47/2c/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.92047,
+                20.243748
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12923549",
+        "title": "Trang An Heritage Garden",
+        "city": "Truong Yen, Huyện Hoa Lư, Tỉnh Ninh Bình",
+        "totalScore": 4.7,
+        "ranking": "33/1250",
+        "reviewsCount": 133,
+        "category": "Nhà nghỉ",
+        "priceRange": "631.579 ₫ - 1.263.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Trang An Heritage Garden ở Truong Yen, Huyện Hoa Lư, Tỉnh Ninh Bình. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 4.7/5 từ 133 lượt review. Xếp hạng: 33/1250. Giá: 631.579 ₫ - 1.263.158 ₫.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/f4/86/78/overview.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.92141,
+                20.265814
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14025331",
+        "title": "Phi Hung's Unique Homestay",
+        "city": "Ninh Bình, Tỉnh Ninh Bình",
+        "totalScore": 5.0,
+        "ranking": "34/1250",
+        "reviewsCount": 108,
+        "category": "B&B đặc biệt",
+        "priceRange": "605.263 ₫ - 894.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Phi Hung's Unique Homestay ở Ninh Bình, Tỉnh Ninh Bình. Loại địa điểm: B&B đặc biệt. Tags: B&B đặc biệt. Đánh giá: 5.0/5 từ 108 lượt review. Xếp hạng: 34/1250. Giá: 605.263 ₫ - 894.737 ₫.",
+        "tags": [
+            "B&B đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/60/9c/60/phi-hung-s-unique-homestay.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.9386,
+                20.216133
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1761735",
+        "title": "Ninh Binh Legend Hotel",
+        "city": "Ninh Bình, Tỉnh Ninh Bình",
+        "totalScore": 4.0,
+        "ranking": "35/1250",
+        "reviewsCount": 633,
+        "category": "Khách sạn",
+        "priceRange": "1.736.842 ₫ - 3.789.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Ninh Binh Legend Hotel ở Ninh Bình, Tỉnh Ninh Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.0/5 từ 633 lượt review. Xếp hạng: 35/1250. Giá: 1.736.842 ₫ - 3.789.474 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/26/c7/9e/3c/t-m-nhin-chung-khach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.95836,
+                20.274387
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12537100",
+        "title": "Greenland Homestay",
+        "city": "Ninh Xuân, Huyện Hoa Lư, Tỉnh Ninh Bình",
+        "totalScore": 4.7,
+        "ranking": "36/1250",
+        "reviewsCount": 117,
+        "category": "Nhà khách",
+        "priceRange": "368.421 ₫ - 684.211 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Greenland Homestay ở Ninh Xuân, Huyện Hoa Lư, Tỉnh Ninh Bình. Loại địa điểm: Nhà khách. Tags: Nhà khách. Đánh giá: 4.7/5 từ 117 lượt review. Xếp hạng: 36/1250. Giá: 368.421 ₫ - 684.211 ₫.",
+        "tags": [
+            "Nhà khách"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/23/6a/93/4c/ninh-binh-greenland-homestay.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.93254,
+                20.246109
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20085967",
+        "title": "Le Clos Du Fil",
+        "city": "Ninh Hai, Huyện Hoa Lư, Tỉnh Ninh Bình",
+        "totalScore": 4.6,
+        "ranking": "37/1250",
+        "reviewsCount": 95,
+        "category": "Khách sạn",
+        "priceRange": "1.947.368 ₫ - 2.500.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Le Clos Du Fil ở Ninh Hai, Huyện Hoa Lư, Tỉnh Ninh Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 95 lượt review. Xếp hạng: 37/1250. Giá: 1.947.368 ₫ - 2.500.000 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/d1/80/d9/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.9375,
+                20.21425
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13385236",
+        "title": "Tam Coc Tropical Homestay",
+        "city": "Ninh Hai, Huyện Hoa Lư, Tỉnh Ninh Bình",
+        "totalScore": 4.9,
+        "ranking": "38/1250",
+        "reviewsCount": 94,
+        "category": "Nhà trọ đặc biệt",
+        "priceRange": "631.579 ₫ - 19.973.684 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Tam Coc Tropical Homestay ở Ninh Hai, Huyện Hoa Lư, Tỉnh Ninh Bình. Loại địa điểm: Nhà trọ đặc biệt. Tags: Nhà trọ đặc biệt. Đánh giá: 4.9/5 từ 94 lượt review. Xếp hạng: 38/1250. Giá: 631.579 ₫ - 19.973.684 ₫.",
+        "tags": [
+            "Nhà trọ đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/fd/9e/c1/tam-coc-tropical-homestay.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.936615,
+                20.21476
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13866872",
+        "title": "Trang An Retreat",
+        "city": "Truong Yen, Huyện Hoa Lư, Tỉnh Ninh Bình",
+        "totalScore": 4.8,
+        "ranking": "39/1250",
+        "reviewsCount": 112,
+        "category": "Khách sạn",
+        "priceRange": "473.684 ₫ - 973.684 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Trang An Retreat ở Truong Yen, Huyện Hoa Lư, Tỉnh Ninh Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 112 lượt review. Xếp hạng: 39/1250. Giá: 473.684 ₫ - 973.684 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/26/56/9b/trang-an-retreat.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.91477,
+                20.264896
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8517695",
+        "title": "Ninh Binh Family Homestay",
+        "city": "Gia Sinh, Tỉnh Ninh Bình",
+        "totalScore": 4.7,
+        "ranking": "40/1250",
+        "reviewsCount": 150,
+        "category": "Nhà nghỉ",
+        "priceRange": "473.684 ₫ - 1.500.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Ninh Binh Family Homestay ở Gia Sinh, Tỉnh Ninh Bình. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 4.7/5 từ 150 lượt review. Xếp hạng: 40/1250. Giá: 473.684 ₫ - 1.500.000 ₫.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/fb/1b/95/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.86397,
+                20.282991
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "5281649",
+        "title": "Anna Tham Hotel View",
+        "city": "Ninh Bình, Tỉnh Ninh Bình",
+        "totalScore": 4.6,
+        "ranking": "41/1250",
+        "reviewsCount": 211,
+        "category": "Khách sạn nhỏ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Anna Tham Hotel View ở Ninh Bình, Tỉnh Ninh Bình. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 4.6/5 từ 211 lượt review. Xếp hạng: 41/1250.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/05/e0/a8/09/anna-tham-hotel-view.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.91768,
+                20.21737
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26432970",
+        "title": "Trang An Spring Garden Homestay",
+        "city": "Ninh Hoa, Huyện Hoa Lư, Tỉnh Ninh Bình",
+        "totalScore": 5.0,
+        "ranking": "42/1250",
+        "reviewsCount": 38,
+        "category": "Khách sạn",
+        "priceRange": "605.263 ₫ - 1.578.947 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Trang An Spring Garden Homestay ở Ninh Hoa, Huyện Hoa Lư, Tỉnh Ninh Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 38 lượt review. Xếp hạng: 42/1250. Giá: 605.263 ₫ - 1.578.947 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/0f/f6/88/trang-an-spring-garden.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.922646,
+                20.26337
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13002006",
+        "title": "Tam Coc Boutique Garden",
+        "city": "Ninh Hai, Huyện Hoa Lư, Tỉnh Ninh Bình",
+        "totalScore": 4.7,
+        "ranking": "43/1250",
+        "reviewsCount": 98,
+        "category": "Nhà trọ đặc biệt",
+        "priceRange": "842.105 ₫ - 1.526.316 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Tam Coc Boutique Garden ở Ninh Hai, Huyện Hoa Lư, Tỉnh Ninh Bình. Loại địa điểm: Nhà trọ đặc biệt. Tags: Nhà trọ đặc biệt. Đánh giá: 4.7/5 từ 98 lượt review. Xếp hạng: 43/1250. Giá: 842.105 ₫ - 1.526.316 ₫.",
+        "tags": [
+            "Nhà trọ đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/17/82/9d/tam-coc-boutique-garden.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.93437,
+                20.217102
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "29016339",
+        "title": "Khu nghỉ dưỡng sinh thái Trang An",
+        "city": "Ninh Bình, Tỉnh Ninh Bình",
+        "totalScore": 5.0,
+        "ranking": "44/1250",
+        "reviewsCount": 35,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "684.211 ₫ - 1.289.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu nghỉ dưỡng sinh thái Trang An ở Ninh Bình, Tỉnh Ninh Bình. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 5.0/5 từ 35 lượt review. Xếp hạng: 44/1250. Giá: 684.211 ₫ - 1.289.474 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/07/eb/d1/villas-river-view.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.9144,
+                20.266647
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17546229",
+        "title": "Tam Coc Village Bungalow",
+        "city": "Ninh Bình, Tỉnh Ninh Bình",
+        "totalScore": 5.0,
+        "ranking": "45/1250",
+        "reviewsCount": 48,
+        "category": "Nhà trọ đặc biệt",
+        "priceRange": "552.632 ₫ - 1.157.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Tam Coc Village Bungalow ở Ninh Bình, Tỉnh Ninh Bình. Loại địa điểm: Nhà trọ đặc biệt. Tags: Nhà trọ đặc biệt. Đánh giá: 5.0/5 từ 48 lượt review. Xếp hạng: 45/1250. Giá: 552.632 ₫ - 1.157.895 ₫.",
+        "tags": [
+            "Nhà trọ đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/19/9f/8f/84/photo3jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.93941,
+                20.220007
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10198202",
+        "title": "La Belle Vie Tam Coc Homestay",
+        "city": "Ninh Bình, Tỉnh Ninh Bình",
+        "totalScore": 4.4,
+        "ranking": "46/1250",
+        "reviewsCount": 265,
+        "category": "Nhà nghỉ",
+        "priceRange": "394.737 ₫ - 710.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "La Belle Vie Tam Coc Homestay ở Ninh Bình, Tỉnh Ninh Bình. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 4.4/5 từ 265 lượt review. Xếp hạng: 46/1250. Giá: 394.737 ₫ - 710.526 ₫.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/4e/e1/9a/la-belle-vie-tam-coc.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.93575,
+                20.214464
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12384835",
+        "title": "Đinh Gia Home Villa & Resort",
+        "city": "Gia Sinh, Tỉnh Ninh Bình",
+        "totalScore": 5.0,
+        "ranking": "47/1250",
+        "reviewsCount": 74,
+        "category": "Nhà khách",
+        "priceRange": "473.684 ₫ - 2.263.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Đinh Gia Home Villa & Resort ở Gia Sinh, Tỉnh Ninh Bình. Loại địa điểm: Nhà khách. Tags: Nhà khách. Đánh giá: 5.0/5 từ 74 lượt review. Xếp hạng: 47/1250. Giá: 473.684 ₫ - 2.263.158 ₫.",
+        "tags": [
+            "Nhà khách"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/dd/6c/f6/nh-nhin-t-tren-cao-xu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.86053,
+                20.287672
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26453044",
+        "title": "Emeralda Resort Tam Cốc",
+        "city": "Ninh Hai, Huyện Hoa Lư, Tỉnh Ninh Bình",
+        "totalScore": 4.6,
+        "ranking": "48/1250",
+        "reviewsCount": 69,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "1.894.737 ₫ - 6.052.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Emeralda Resort Tam Cốc ở Ninh Hai, Huyện Hoa Lư, Tỉnh Ninh Bình. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 4.6/5 từ 69 lượt review. Xếp hạng: 48/1250. Giá: 1.894.737 ₫ - 6.052.632 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/b6/25/54/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.98041,
+                20.248623
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15592887",
+        "title": "Tam Coc Rocky Bungalow",
+        "city": "Ninh Hai, Huyện Hoa Lư, Tỉnh Ninh Bình",
+        "totalScore": 5.0,
+        "ranking": "49/1250",
+        "reviewsCount": 43,
+        "category": "Khách sạn",
+        "priceRange": "500.000 ₫ - 1.657.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Tam Coc Rocky Bungalow ở Ninh Hai, Huyện Hoa Lư, Tỉnh Ninh Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 43 lượt review. Xếp hạng: 49/1250. Giá: 500.000 ₫ - 1.657.895 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/ae/5b/6a/img-20190524-101511-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.91715,
+                20.216274
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6668067",
+        "title": "Tuan Ngoc Hotel",
+        "city": "Ninh Bình, Tỉnh Ninh Bình",
+        "totalScore": 4.5,
+        "ranking": "50/1250",
+        "reviewsCount": 208,
+        "category": "Khách sạn nhỏ",
+        "priceRange": "473.684 ₫ - 1.236.842 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Tuan Ngoc Hotel ở Ninh Bình, Tỉnh Ninh Bình. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 4.5/5 từ 208 lượt review. Xếp hạng: 50/1250. Giá: 473.684 ₫ - 1.236.842 ₫.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/9e/b7/f6/tuan-ngoc-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.93305,
+                20.217056
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "2206839",
+        "title": "Green Papaya Home Stay",
+        "city": "Ninh Bình, Tỉnh Ninh Bình",
+        "totalScore": 4.4,
+        "ranking": "51/1250",
+        "reviewsCount": 268,
+        "category": "B&B đặc biệt",
+        "priceRange": "315.789 ₫ - 526.316 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Green Papaya Home Stay ở Ninh Bình, Tỉnh Ninh Bình. Loại địa điểm: B&B đặc biệt. Tags: B&B đặc biệt. Đánh giá: 4.4/5 từ 268 lượt review. Xếp hạng: 51/1250. Giá: 315.789 ₫ - 526.316 ₫.",
+        "tags": [
+            "B&B đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/4a/c2/bb/guest-house-kim-lien.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.96767,
+                20.250914
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24107182",
+        "title": "Tam Coc Full House Homestay",
+        "city": "Ninh Bình, Tỉnh Ninh Bình",
+        "totalScore": 5.0,
+        "ranking": "52/1250",
+        "reviewsCount": 41,
+        "category": "Khách sạn",
+        "priceRange": "631.579 ₫ - 947.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Tam Coc Full House Homestay ở Ninh Bình, Tỉnh Ninh Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 41 lượt review. Xếp hạng: 52/1250. Giá: 631.579 ₫ - 947.368 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/29/1f/0f/5a/tam-coc-full-house-homestay.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.93813,
+                20.216034
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19296879",
+        "title": "Tràng An Lamia Bungalow",
+        "city": "Ninh Hoa, Huyện Hoa Lư, Tỉnh Ninh Bình",
+        "totalScore": 4.8,
+        "ranking": "53/1250",
+        "reviewsCount": 48,
+        "category": "Khách sạn",
+        "priceRange": "552.632 ₫ - 1.605.263 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Tràng An Lamia Bungalow ở Ninh Hoa, Huyện Hoa Lư, Tỉnh Ninh Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 48 lượt review. Xếp hạng: 53/1250. Giá: 552.632 ₫ - 1.605.263 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/5b/1f/19/trang-an-lamia-bungalow.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.92226,
+                20.276064
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12380963",
+        "title": "Sierra Homestay",
+        "city": "Ninh Bình, Tỉnh Ninh Bình",
+        "totalScore": 4.9,
+        "ranking": "54/1250",
+        "reviewsCount": 84,
+        "category": "Khách sạn nhỏ",
+        "priceRange": "342.105 ₫ - 526.316 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Sierra Homestay ở Ninh Bình, Tỉnh Ninh Bình. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 4.9/5 từ 84 lượt review. Xếp hạng: 54/1250. Giá: 342.105 ₫ - 526.316 ₫.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/cf/65/5a/lovey-view-from-the-room.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.93718,
+                20.25111
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13122654",
+        "title": "Green Peace Bungalow",
+        "city": "Ninh Hai, Huyện Hoa Lư, Tỉnh Ninh Bình",
+        "totalScore": 4.9,
+        "ranking": "55/1250",
+        "reviewsCount": 95,
+        "category": "Nhà trọ đặc biệt",
+        "priceRange": "763.158 ₫ - 1.789.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Green Peace Bungalow ở Ninh Hai, Huyện Hoa Lư, Tỉnh Ninh Bình. Loại địa điểm: Nhà trọ đặc biệt. Tags: Nhà trọ đặc biệt. Đánh giá: 4.9/5 từ 95 lượt review. Xếp hạng: 55/1250. Giá: 763.158 ₫ - 1.789.474 ₫.",
+        "tags": [
+            "Nhà trọ đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/29/1c/c1/29/swimming-pool.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.93476,
+                20.214834
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33405790",
+        "title": "Tam Coc Horizon Retreat",
+        "city": "Ninh Hai, Huyện Hoa Lư, Tỉnh Ninh Bình",
+        "totalScore": 5.0,
+        "ranking": "56/1250",
+        "reviewsCount": 27,
+        "category": "Khách sạn",
+        "priceRange": "552.632 ₫ - 1.236.842 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Tam Coc Horizon Retreat ở Ninh Hai, Huyện Hoa Lư, Tỉnh Ninh Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 27 lượt review. Xếp hạng: 56/1250. Giá: 552.632 ₫ - 1.236.842 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/81/1e/01/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.92698,
+                20.217176
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25086560",
+        "title": "ChezCao Rice Field Ecolodge Ninh Binh",
+        "city": "Ninh Bình, Tỉnh Ninh Bình",
+        "totalScore": 4.9,
+        "ranking": "57/1250",
+        "reviewsCount": 32,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "ChezCao Rice Field Ecolodge Ninh Binh ở Ninh Bình, Tỉnh Ninh Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 32 lượt review. Xếp hạng: 57/1250.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/2b/be/87/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.94525,
+                20.240538
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13284302",
+        "title": "Trang An River View Homestay",
+        "city": "Ninh Bình, Tỉnh Ninh Bình",
+        "totalScore": 4.7,
+        "ranking": "58/1250",
+        "reviewsCount": 79,
+        "category": "Nhà trọ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trang An River View Homestay ở Ninh Bình, Tỉnh Ninh Bình. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 4.7/5 từ 79 lượt review. Xếp hạng: 58/1250.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/23/11/c4/57/trang-an-river-view-homestay.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.92149,
+                20.265314
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20940826",
+        "title": "Trang An Ecolodge",
+        "city": "Ninh Bình, Tỉnh Ninh Bình",
+        "totalScore": 4.9,
+        "ranking": "59/1250",
+        "reviewsCount": 32,
+        "category": "Khách sạn",
+        "priceRange": "2.236.842 ₫ - 2.868.421 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Trang An Ecolodge ở Ninh Bình, Tỉnh Ninh Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 32 lượt review. Xếp hạng: 59/1250. Giá: 2.236.842 ₫ - 2.868.421 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/b2/97/ef/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.911736,
+                20.268068
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8153149",
+        "title": "Hang Múa EcoLodge",
+        "city": "Ninh Bình, Tỉnh Ninh Bình",
+        "totalScore": 4.0,
+        "ranking": "60/1250",
+        "reviewsCount": 474,
+        "category": "Nhà nghỉ",
+        "priceRange": "500.000 ₫ - 2.157.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hang Múa EcoLodge ở Ninh Bình, Tỉnh Ninh Bình. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 4.0/5 từ 474 lượt review. Xếp hạng: 60/1250. Giá: 500.000 ₫ - 2.157.895 ₫.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/79/d3/bc/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.93764,
+                20.230972
+            ]
+        },
+        "openingHours": null
+    }
+]

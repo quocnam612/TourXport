@@ -1,0 +1,295 @@
+[
+    {
+        "sourceLocationId": "306941",
+        "title": "Khu nghỉ dưỡng Victoria Cần Thơ",
+        "city": "Cần Thơ",
+        "totalScore": 4.7,
+        "ranking": null,
+        "reviewsCount": 2350,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu nghỉ dưỡng Victoria Cần Thơ ở Cần Thơ. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.7/5 từ 2350 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/dd/a1/fe/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.79295,
+                10.039781
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11743875",
+        "title": "Sheraton Can Tho",
+        "city": "Cần Thơ",
+        "totalScore": 4.8,
+        "ranking": null,
+        "reviewsCount": 1474,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sheraton Can Tho ở Cần Thơ. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 1474 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/30/0a/83/18/hotel-exterior.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.77416,
+                10.024356
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8595509",
+        "title": "Khách sạn cao cấp TTC - Cần Thơ",
+        "city": "Cần Thơ",
+        "totalScore": 4.6,
+        "ranking": null,
+        "reviewsCount": 936,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn cao cấp TTC - Cần Thơ ở Cần Thơ. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 936 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/29/ba/d6/9f/khach-s-n-nhin-t-b-n.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.7892,
+                10.035647
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17595894",
+        "title": "Khu Nghỉ Dưỡng Cao cấp Cồn Khương Cần Thơ",
+        "city": "Cần Thơ",
+        "totalScore": 4.7,
+        "ranking": null,
+        "reviewsCount": 127,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu Nghỉ Dưỡng Cao cấp Cồn Khương Cần Thơ ở Cần Thơ. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.7/5 từ 127 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/f7/08/bf/khu-ngh-du-ng-cao-c-p.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.7771,
+                10.066964
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8119592",
+        "title": "Muong Thanh Luxury Can Tho Hotel",
+        "city": "Cần Thơ",
+        "totalScore": 4.6,
+        "ranking": null,
+        "reviewsCount": 891,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Muong Thanh Luxury Can Tho Hotel ở Cần Thơ. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 891 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/af/46/9b/mu-ng-thanh-luxury-can.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.7901,
+                10.042677
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17528812",
+        "title": "Can Tho Ecolodge",
+        "city": "Cần Thơ",
+        "totalScore": 4.4,
+        "ranking": null,
+        "reviewsCount": 228,
+        "category": "Cơ sở lưu trú đặc biệt",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Can Tho Ecolodge ở Cần Thơ. Loại địa điểm: Cơ sở lưu trú đặc biệt. Tags: Khách sạn, Cơ sở lưu trú đặc biệt. Đánh giá: 4.4/5 từ 228 lượt review.",
+        "tags": [
+            "Khách sạn",
+            "Cơ sở lưu trú đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/00/88/be/can-tho-ecolodge.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.7401,
+                9.987649
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7395365",
+        "title": "Nesta Hotel",
+        "city": "Cần Thơ",
+        "totalScore": 4.7,
+        "ranking": null,
+        "reviewsCount": 206,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nesta Hotel ở Cần Thơ. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.7/5 từ 206 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/42/01/9e/nhin-t-tren-phong-xu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.789375,
+                10.052109
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12295295",
+        "title": "Mekong Rustic Cần Thơ",
+        "city": "Cần Thơ",
+        "totalScore": 4.5,
+        "ranking": null,
+        "reviewsCount": 176,
+        "category": "Cơ sở lưu trú đặc biệt",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mekong Rustic Cần Thơ ở Cần Thơ. Loại địa điểm: Cơ sở lưu trú đặc biệt. Tags: Khách sạn, Cơ sở lưu trú đặc biệt. Đánh giá: 4.5/5 từ 176 lượt review.",
+        "tags": [
+            "Khách sạn",
+            "Cơ sở lưu trú đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/26/cf/21/eb/mekong-rustic-can-tho.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.69888,
+                9.997807
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12603981",
+        "title": "Green Village Mekong",
+        "city": "Cần Thơ",
+        "totalScore": 4.8,
+        "ranking": null,
+        "reviewsCount": 191,
+        "category": "Cơ sở lưu trú đặc biệt",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Green Village Mekong ở Cần Thơ. Loại địa điểm: Cơ sở lưu trú đặc biệt. Tags: Khách sạn, Cơ sở lưu trú đặc biệt. Đánh giá: 4.8/5 từ 191 lượt review.",
+        "tags": [
+            "Khách sạn",
+            "Cơ sở lưu trú đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/9e/e4/ec/sunset-at-green-village.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.803825,
+                9.972323
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6446809",
+        "title": "The Hiris",
+        "city": "Cần Thơ",
+        "totalScore": 3.8,
+        "ranking": null,
+        "reviewsCount": 517,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Hiris ở Cần Thơ. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 3.8/5 từ 517 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/4b/cf/c7/iris-hotel-can-tho.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.76863,
+                10.020028
+            ]
+        },
+        "openingHours": null
+    }
+]

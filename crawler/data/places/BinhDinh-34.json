@@ -1,0 +1,1119 @@
+[
+    {
+        "sourceLocationId": "10001241",
+        "title": "Ky Co Beach",
+        "city": "Quy Nhơn",
+        "totalScore": 4.2,
+        "ranking": "2/34",
+        "reviewsCount": 217,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ky Co Beach ở Quy Nhơn. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.2/5 từ 217 lượt review. Xếp hạng: 2/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/8f/7b/60/photo2jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.2918,
+                13.85017
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4084712",
+        "title": "Bai Xep Beach",
+        "city": "Quy Nhơn",
+        "totalScore": 4.3,
+        "ranking": "4/34",
+        "reviewsCount": 158,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bai Xep Beach ở Quy Nhơn. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.3/5 từ 158 lượt review. Xếp hạng: 4/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/03/c3/e3/ab/beautiful-bai-xep.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.2313,
+                13.684639
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7989053",
+        "title": "Eo Gio",
+        "city": "Quy Nhơn",
+        "totalScore": 4.1,
+        "ranking": "3/34",
+        "reviewsCount": 167,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Eo Gio ở Quy Nhơn. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.1/5 từ 167 lượt review. Xếp hạng: 3/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/64/a4/09/eo-gio.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.28945,
+                13.886825
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10000808",
+        "title": "Tháp Đôi",
+        "city": "Quy Nhơn",
+        "totalScore": 4.1,
+        "ranking": "5/34",
+        "reviewsCount": 110,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tháp Đôi ở Quy Nhơn. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.1/5 từ 110 lượt review. Xếp hạng: 5/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/86/49/51/img-20190206-125359-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.22696,
+                13.78319
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7313071",
+        "title": "Bãi biển Quy Hòa",
+        "city": "Quy Nhơn",
+        "totalScore": 4.1,
+        "ranking": "6/34",
+        "reviewsCount": 45,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bãi biển Quy Hòa ở Quy Nhơn. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.1/5 từ 45 lượt review. Xếp hạng: 6/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/69/c0/7e/quy-hoa-beach-sunday.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.21803,
+                13.72275
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10034667",
+        "title": "Núi Vũng Chua Mountain",
+        "city": "Quy Nhơn",
+        "totalScore": 4.5,
+        "ranking": "10/34",
+        "reviewsCount": 18,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Núi Vũng Chua Mountain ở Quy Nhơn. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 18 lượt review. Xếp hạng: 10/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/64/e6/b1/sunday-morning-to-hike.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.19628,
+                13.741974
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16780452",
+        "title": "Chùa Ông Núi",
+        "city": "Quy Nhơn",
+        "totalScore": 4.6,
+        "ranking": "7/34",
+        "reviewsCount": 17,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Ông Núi ở Quy Nhơn. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.6/5 từ 17 lượt review. Xếp hạng: 7/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/16/d4/fe/ea/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.23452,
+                13.952875
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8115624",
+        "title": "Đảo Hòn Khô",
+        "city": "Quy Nhơn",
+        "totalScore": 4.1,
+        "ranking": "8/34",
+        "reviewsCount": 56,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đảo Hòn Khô ở Quy Nhơn. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.1/5 từ 56 lượt review. Xếp hạng: 8/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/f5/d5/49/hon-kho-island.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12698371",
+        "title": "Long Khanh Pagoda",
+        "city": "Quy Nhơn",
+        "totalScore": 4.2,
+        "ranking": "12/34",
+        "reviewsCount": 15,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Long Khanh Pagoda ở Quy Nhơn. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 15 lượt review. Xếp hạng: 12/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/12/69/1f/long-khanh-pagoda_rotated_90.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.23045,
+                13.77362
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14928737",
+        "title": "Cù Lao Xanh",
+        "city": "Quy Nhơn",
+        "totalScore": 4.9,
+        "ranking": "14/34",
+        "reviewsCount": 7,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cù Lao Xanh ở Quy Nhơn. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.9/5 từ 7 lượt review. Xếp hạng: 14/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/18/08/6e/fa/photo3jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.35217,
+                13.61618
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14928620",
+        "title": "Chùa Thiên Hưng",
+        "city": "Quy Nhơn",
+        "totalScore": 4.7,
+        "ranking": "13/34",
+        "reviewsCount": 9,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Thiên Hưng ở Quy Nhơn. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.7/5 từ 9 lượt review. Xếp hạng: 13/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/14/c3/49/lotus-lake.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12419938",
+        "title": "Công Viên Động Vật Hoang Dã Quy Nhơn",
+        "city": "Quy Nhơn",
+        "totalScore": 3.1,
+        "ranking": "22/34",
+        "reviewsCount": 22,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "Công viên động vật hoang dã đầu tiên tại Quy Nhơn thuộc dải đất Nam Trung Bộ với khí hậu ấm áp quanh năm, nhiều cồn cát tự nhiên và cây lá kim.\n Công viên động vật hoang dã FLC Quy Nhơn với tổng diện tích 129.1ha được thiết kế xây dựng theo quy mô safari chuẩn thế giới sẽ là nơi bảo tồn gần 900 cá thể động vật.",
+        "embedding": null,
+        "searchText": "Công Viên Động Vật Hoang Dã Quy Nhơn ở Quy Nhơn. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Sở thú & Thủy cung, Thiên nhiên & Công viên, Hoạt động ngoài trời. Mô tả: Công viên động vật hoang dã đầu tiên tại Quy Nhơn thuộc dải đất Nam Trung Bộ với khí hậu ấm áp quanh năm, nhiều cồn cát tự nhiên và cây lá kim.\n Công viên động vật hoang dã FLC Quy Nhơn với tổng diện tích 129.1ha được thiết kế xây dựng theo quy mô safari chuẩn thế giới sẽ là nơi bảo tồn gần 900 cá thể động vật. Đánh giá: 3.1/5 từ 22 lượt review. Xếp hạng: 22/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Sở thú & Thủy cung",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/41/85/74/flc-zoo-safari-park-quy.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.22369,
+                13.77238
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "6353684",
+        "title": "Bảo Tàng Bình Định",
+        "city": "Quy Nhơn",
+        "totalScore": 3.2,
+        "ranking": "21/34",
+        "reviewsCount": 22,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bảo Tàng Bình Định ở Quy Nhơn. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 3.2/5 từ 22 lượt review. Xếp hạng: 21/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/a2/fa/9b/ban-dinh-museum.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.23395,
+                13.77027
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19102683",
+        "title": "Chính Tòa Quy Nhơn",
+        "city": "Quy Nhơn",
+        "totalScore": 3.8,
+        "ranking": "17/34",
+        "reviewsCount": 5,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chính Tòa Quy Nhơn ở Quy Nhơn. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.8/5 từ 5 lượt review. Xếp hạng: 17/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/21/ee/b7/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.25172,
+                13.76189
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14145172",
+        "title": "Hầm Hô",
+        "city": "Quy Nhơn",
+        "totalScore": 3.3,
+        "ranking": "25/34",
+        "reviewsCount": 3,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hầm Hô ở Quy Nhơn. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.3/5 từ 3 lượt review. Xếp hạng: 25/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/92/9c/80/ham-ho.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16731497",
+        "title": "Gautama Buddha Statue",
+        "city": "Tỉnh Bình Định",
+        "totalScore": 4.0,
+        "ranking": "20/34",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Gautama Buddha Statue ở Tỉnh Bình Định. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 4 lượt review. Xếp hạng: 20/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/9e/36/24/844-steps-to-the-top.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8141188",
+        "title": "Bảo Tàng Quang Trung",
+        "city": "Tay Son",
+        "totalScore": 3.8,
+        "ranking": "15/34",
+        "reviewsCount": 13,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bảo Tàng Quang Trung ở Tay Son. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 3.8/5 từ 13 lượt review. Xếp hạng: 15/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/0f/48/4e/b-o-tang-quang-trung.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.92086,
+                13.92389
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6941949",
+        "title": "Tháp Bánh Ít (Tháp Bạc)",
+        "city": "Phuoc Hiep",
+        "totalScore": 4.6,
+        "ranking": "9/34",
+        "reviewsCount": 18,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tháp Bánh Ít (Tháp Bạc) ở Phuoc Hiep. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.6/5 từ 18 lượt review. Xếp hạng: 9/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/de/3f/f7/great-ancient-temples.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.135445,
+                13.868528
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14175877",
+        "title": "Suối Nước Nóng Hội Vân",
+        "city": "Hoi Van",
+        "totalScore": 4.0,
+        "ranking": "26/34",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Suối Nước Nóng Hội Vân ở Hoi Van. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 26/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/4c/02/e5/dsc-0048-01-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12643548",
+        "title": "Nhà thờ Lòng Sông",
+        "city": "Phuoc Thuan",
+        "totalScore": 4.0,
+        "ranking": "24/34",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà thờ Lòng Sông ở Phuoc Thuan. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 24/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/03/8e/2b/entree-de-long-song.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.20151,
+                13.78755
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21041543",
+        "title": "The Vietage by Anantara",
+        "city": "Quy Nhơn",
+        "totalScore": 4.9,
+        "ranking": "1/34",
+        "reviewsCount": 285,
+        "category": "Chuyến tham quan",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Vietage by Anantara ở Quy Nhơn. Loại địa điểm: Chuyến tham quan. Tags: Điểm du lịch, Chuyến tham quan. Đánh giá: 4.9/5 từ 285 lượt review. Xếp hạng: 1/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/78/78/69/seating-area.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.22196,
+                13.69996
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26790200",
+        "title": "Cat Tien Bear Sanctuary, Free the Bears",
+        "city": "Cát Tiến",
+        "totalScore": 5.0,
+        "ranking": "11/34",
+        "reviewsCount": 6,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cat Tien Bear Sanctuary, Free the Bears ở Cát Tiến. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 6 lượt review. Xếp hạng: 11/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/48/d2/c3/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.413956,
+                11.408152
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 525,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 525,
+                        "close_time": 1005
+                    }
+                ],
+                [
+                    {
+                        "open_time": 525,
+                        "close_time": 1005
+                    }
+                ],
+                [
+                    {
+                        "open_time": 525,
+                        "close_time": 1005
+                    }
+                ],
+                [
+                    {
+                        "open_time": 525,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 525,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 525,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17219948",
+        "title": "Trung Luong Beach",
+        "city": "Cát Tiến",
+        "totalScore": 4.7,
+        "ranking": "16/34",
+        "reviewsCount": 3,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trung Luong Beach ở Cát Tiến. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.7/5 từ 3 lượt review. Xếp hạng: 16/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/24/8a/91/55/quy-nhon-binh-d-nh-2022.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.24147,
+                13.95155
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33110334",
+        "title": "Tam An Pagoda",
+        "city": "Quy Nhơn",
+        "totalScore": 4.0,
+        "ranking": "18/34",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tam An Pagoda ở Quy Nhơn. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 18/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/cf/5d/dc/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.23107,
+                13.773022
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33113956",
+        "title": "Chua Minh Tinh Tempel",
+        "city": "Quy Nhơn",
+        "totalScore": 5.0,
+        "ranking": "19/34",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chua Minh Tinh Tempel ở Quy Nhơn. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 19/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/d1/7d/c2/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.217026,
+                13.765722
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33121480",
+        "title": "Ghen Rang Church",
+        "city": "Quy Nhơn",
+        "totalScore": 4.0,
+        "ranking": "23/34",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ghen Rang Church ở Quy Nhơn. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 23/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/d5/37/3c/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.21324,
+                13.74769
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33131169",
+        "title": "Park Ghenh Rang Tien Sa",
+        "city": "Quy Nhơn",
+        "totalScore": 3.0,
+        "ranking": "27/34",
+        "reviewsCount": 2,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Park Ghenh Rang Tien Sa ở Quy Nhơn. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.0/5 từ 2 lượt review. Xếp hạng: 27/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/64/0f/d7/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.212906,
+                13.745471
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15106348",
+        "title": "Mũi Vi Rồng",
+        "city": "My Tho",
+        "totalScore": 0,
+        "ranking": "28/34",
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mũi Vi Rồng ở My Tho. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Xếp hạng: 28/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.19544,
+                14.232942
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34343158",
+        "title": "mini Mart 24h",
+        "city": "Quy Nhơn",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "mini Mart 24h ở Quy Nhơn. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/33/22/94/be/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.21371,
+                13.746999
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33131792",
+        "title": "Ghenh Rang Tien Sa Parkt",
+        "city": "Quy Nhơn",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ghenh Rang Tien Sa Parkt ở Quy Nhơn. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1260
+                    }
+                ],
+                [],
+                [],
+                [],
+                [],
+                [],
+                []
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33129512",
+        "title": "Mo Han Mac Tu",
+        "city": "Quy Nhơn",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mo Han Mac Tu ở Quy Nhơn. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.212906,
+                13.745471
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24139900",
+        "title": "Khung Anh Thuan Cuong",
+        "city": "Quy Nhơn",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khung Anh Thuan Cuong ở Quy Nhơn. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Nơi mua sắm, Bảo tàng.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Bảo tàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.23027,
+                13.768881
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-19:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21034463",
+        "title": "Đồi Cát Phương Mai",
+        "city": "Quy Nhơn",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đồi Cát Phương Mai ở Quy Nhơn. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15292372",
+        "title": "Đầm Thị Nại",
+        "city": "Quy Nhơn",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đầm Thị Nại ở Quy Nhơn. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/a1/3d/a0/the-marsh-located-along.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    }
+]

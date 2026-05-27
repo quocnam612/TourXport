@@ -1,0 +1,3793 @@
+[
+    {
+        "sourceLocationId": "1452026",
+        "title": "Fansipan Hiking Trips",
+        "city": "Sapa",
+        "totalScore": 4.5,
+        "ranking": "2/81",
+        "reviewsCount": 1513,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Fansipan Hiking Trips ở Sapa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 1513 lượt review. Xếp hạng: 2/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/ef/5d/38/the-valley.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.847115,
+                22.339806
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "4909270",
+        "title": "Muong Hoa Valley",
+        "city": "Sapa",
+        "totalScore": 4.7,
+        "ranking": "1/81",
+        "reviewsCount": 1202,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Muong Hoa Valley ở Sapa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.7/5 từ 1202 lượt review. Xếp hạng: 1/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/05/7e/4a/3d/muong-hoa-valley.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.8491,
+                22.327908
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "9861921",
+        "title": "Khu du lịch Fansipan Legend",
+        "city": "Sapa",
+        "totalScore": 4.3,
+        "ranking": "3/81",
+        "reviewsCount": 1068,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": "Nằm tại phía Tây Nam thị trấn Sa Pa, Fansipan Legend là quần thể công trình du lịch văn hóa, dịch vụ cáp treo, vui chơi giải trí và khách sạn nghỉ dưỡng đẳng cấp, trong khung cảnh thiên nhiên hùng vĩ đã trở thành huyền thoại trên đỉnh Fansipan. Sau khi đưa vào sử dụng, Fansipan Legend đã được tổ chức Guiness ghi nhận là hệ thống cáp treo ba dây cao nhất, dài nhất và hiện đại nhất thế giới.",
+        "embedding": null,
+        "searchText": "Khu du lịch Fansipan Legend ở Sapa. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Phương tiện giao thông. Mô tả: Nằm tại phía Tây Nam thị trấn Sa Pa, Fansipan Legend là quần thể công trình du lịch văn hóa, dịch vụ cáp treo, vui chơi giải trí và khách sạn nghỉ dưỡng đẳng cấp, trong khung cảnh thiên nhiên hùng vĩ đã trở thành huyền thoại trên đỉnh Fansipan. Sau khi đưa vào sử dụng, Fansipan Legend đã được tổ chức Guiness ghi nhận là hệ thống cáp treo ba dây cao nhất, dài nhất và hiện đại nhất thế giới. Đánh giá: 4.3/5 từ 1068 lượt review. Xếp hạng: 3/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Phương tiện giao thông"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/79/a6/e0/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.82451,
+                22.337189
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11900026",
+        "title": "Bản Cát Cát",
+        "city": "Sapa",
+        "totalScore": 3.5,
+        "ranking": "23/81",
+        "reviewsCount": 1139,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bản Cát Cát ở Sapa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.5/5 từ 1139 lượt review. Xếp hạng: 23/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/5c/58/14/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.83248,
+                22.329992
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "1977169",
+        "title": "Bac Ha Market",
+        "city": "Bắc Hà",
+        "totalScore": 4.3,
+        "ranking": "4/81",
+        "reviewsCount": 507,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bac Ha Market ở Bắc Hà. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 4.3/5 từ 507 lượt review. Xếp hạng: 4/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/36/29/65/wwwenglishspeakingdrivercom.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.29284,
+                22.53491
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "6375794",
+        "title": "Thac Bac Waterfall (Silver Falls)",
+        "city": "Sapa",
+        "totalScore": 3.9,
+        "ranking": "7/81",
+        "reviewsCount": 512,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thac Bac Waterfall (Silver Falls) ở Sapa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.9/5 từ 512 lượt review. Xếp hạng: 7/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/e8/df/b8/view-from-halfway-up.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.77772,
+                22.361902
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19116157",
+        "title": "Cổng Trời Ô Quy Hồ",
+        "city": "Tỉnh Lào Cai",
+        "totalScore": 3.9,
+        "ranking": "28/81",
+        "reviewsCount": 12,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cổng Trời Ô Quy Hồ ở Tỉnh Lào Cai. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.9/5 từ 12 lượt review. Xếp hạng: 28/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/02/6a/fe/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.764946,
+                22.352503
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8851158",
+        "title": "Chợ phiên Sín Chéng",
+        "city": "Lào Cai",
+        "totalScore": 4.9,
+        "ranking": "30/81",
+        "reviewsCount": 8,
+        "category": "Đồ ăn & Đồ uống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ phiên Sín Chéng ở Lào Cai. Loại địa điểm: Đồ ăn & Đồ uống. Tags: Điểm du lịch, Nơi mua sắm, Đồ ăn & Đồ uống. Đánh giá: 4.9/5 từ 8 lượt review. Xếp hạng: 30/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Đồ ăn & Đồ uống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/9a/d1/90/20190227-112658-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4563075",
+        "title": "Làng Tả Phìn",
+        "city": "Sapa",
+        "totalScore": 4.3,
+        "ranking": "6/81",
+        "reviewsCount": 350,
+        "category": "Khác",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Làng Tả Phìn ở Sapa. Loại địa điểm: Khác. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Khác. Đánh giá: 4.3/5 từ 350 lượt review. Xếp hạng: 6/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Khác"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/3e/63/4b/ta-phin-village.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.83651,
+                22.39964
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6963743",
+        "title": "Ham Rong Mountain",
+        "city": "Sapa",
+        "totalScore": 4.0,
+        "ranking": "8/81",
+        "reviewsCount": 326,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ham Rong Mountain ở Sapa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.0/5 từ 326 lượt review. Xếp hạng: 8/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/0c/45/74/ham-rong-mountain.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84796,
+                22.33559
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7250589",
+        "title": "Terraced Rice Fields in Shin Chai Village",
+        "city": "Sapa",
+        "totalScore": 4.6,
+        "ranking": "5/81",
+        "reviewsCount": 205,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Terraced Rice Fields in Shin Chai Village ở Sapa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.6/5 từ 205 lượt review. Xếp hạng: 5/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/a9/6a/42/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.83651,
+                22.39964
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "11802355",
+        "title": "Đèo Ô Quy Hồ",
+        "city": "Sapa",
+        "totalScore": 4.5,
+        "ranking": "16/81",
+        "reviewsCount": 47,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đèo Ô Quy Hồ ở Sapa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 47 lượt review. Xếp hạng: 16/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/87/12/d6/o-quy-ho-mountain-pass.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.77556,
+                22.354168
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6116491",
+        "title": "Tram Ton Pass",
+        "city": "Sapa",
+        "totalScore": 4.2,
+        "ranking": "11/81",
+        "reviewsCount": 131,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tram Ton Pass ở Sapa. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Hoạt động ngoài trời. Đánh giá: 4.2/5 từ 131 lượt review. Xếp hạng: 11/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/76/22/e7/photo2jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.82465,
+                22.34542
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7953632",
+        "title": "Thôn Giàng Tả Chải",
+        "city": "Sapa",
+        "totalScore": 4.6,
+        "ranking": "12/81",
+        "reviewsCount": 64,
+        "category": "Khác",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thôn Giàng Tả Chải ở Sapa. Loại địa điểm: Khác. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Khác. Đánh giá: 4.6/5 từ 64 lượt review. Xếp hạng: 12/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Khác"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/96/bc/a9/photo8jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.83651,
+                22.39964
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 1155,
+                        "close_time": 2580
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1155,
+                        "close_time": 2580
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1155,
+                        "close_time": 2580
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1155,
+                        "close_time": 2580
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1155,
+                        "close_time": 2580
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1155,
+                        "close_time": 2580
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "5994398",
+        "title": "Nhà Thờ Đá",
+        "city": "Sapa",
+        "totalScore": 3.9,
+        "ranking": "9/81",
+        "reviewsCount": 293,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Thờ Đá ở Sapa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.9/5 từ 293 lượt review. Xếp hạng: 9/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/33/0e/4d/8d/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84233,
+                22.335102
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15327222",
+        "title": "Bản Tả Van",
+        "city": "Sapa",
+        "totalScore": 4.2,
+        "ranking": "15/81",
+        "reviewsCount": 54,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bản Tả Van ở Sapa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 54 lượt review. Xếp hạng: 15/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/71/79/0b/ru-ng-b-c-thang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.89009,
+                22.303501
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "1962969",
+        "title": "Chợ Cán Cấu",
+        "city": "Sapa",
+        "totalScore": 4.3,
+        "ranking": "17/81",
+        "reviewsCount": 72,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Cán Cấu ở Sapa. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 4.3/5 từ 72 lượt review. Xếp hạng: 17/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/d1/c7/0b/can-cau-market-sapa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.31527,
+                22.651472
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13534081",
+        "title": "Hồ Sapa",
+        "city": "Sapa",
+        "totalScore": 3.8,
+        "ranking": "19/81",
+        "reviewsCount": 84,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hồ Sapa ở Sapa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.8/5 từ 84 lượt review. Xếp hạng: 19/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/a4/b1/8b/by-the-lake.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84611,
+                22.338083
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "5996688",
+        "title": "Quảng Trường Sapa",
+        "city": "Sapa",
+        "totalScore": 3.8,
+        "ranking": "10/81",
+        "reviewsCount": 346,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quảng Trường Sapa ở Sapa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.8/5 từ 346 lượt review. Xếp hạng: 10/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/41/69/9b/sapa-scenes.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84154,
+                22.335272
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6974704",
+        "title": "Cao Son Market",
+        "city": "Lào Cai",
+        "totalScore": 4.6,
+        "ranking": "32/81",
+        "reviewsCount": 7,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cao Son Market ở Lào Cai. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.6/5 từ 7 lượt review. Xếp hạng: 32/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/43/3b/91/cao-son-market.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12574933",
+        "title": "Bản Ý Linh Hồ",
+        "city": "Sapa",
+        "totalScore": 4.7,
+        "ranking": "20/81",
+        "reviewsCount": 20,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bản Ý Linh Hồ ở Sapa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.7/5 từ 20 lượt review. Xếp hạng: 20/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/2a/e7/7a/img20180711090541-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.85,
+                22.3
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8012589",
+        "title": "Sapa Culture Museum",
+        "city": "Sapa",
+        "totalScore": 3.7,
+        "ranking": "18/81",
+        "reviewsCount": 104,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sapa Culture Museum ở Sapa. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 3.7/5 từ 104 lượt review. Xếp hạng: 18/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/51/18/ad/photo1jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84008,
+                22.335583
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14054841",
+        "title": "La Pán Tẩn",
+        "city": "Mu Cang Chai",
+        "totalScore": 4.5,
+        "ranking": "27/81",
+        "reviewsCount": 12,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "La Pán Tẩn ở Mu Cang Chai. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 12 lượt review. Xếp hạng: 27/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/47/84/c9/la-pan-tan-commune.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12268871",
+        "title": "Vườn Quốc Gia Hoàng Liên",
+        "city": "Sapa",
+        "totalScore": 4.4,
+        "ranking": "34/81",
+        "reviewsCount": 8,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn Quốc Gia Hoàng Liên ở Sapa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.4/5 từ 8 lượt review. Xếp hạng: 34/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/db/52/c1/hoang-lien-national-park.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10818188",
+        "title": "Dinh Hoàng A Tưởng",
+        "city": "Bắc Hà",
+        "totalScore": 3.5,
+        "ranking": "33/81",
+        "reviewsCount": 23,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dinh Hoàng A Tưởng ở Bắc Hà. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.5/5 từ 23 lượt review. Xếp hạng: 33/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-c/2560x500/0a/ec/f1/6b/bac-ha.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.29551,
+                22.54101
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10304794",
+        "title": "Bản Hồ",
+        "city": "Sapa",
+        "totalScore": 4.0,
+        "ranking": "24/81",
+        "reviewsCount": 29,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bản Hồ ở Sapa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.0/5 từ 29 lượt review. Xếp hạng: 24/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/50/3e/a8/ban-ho-village.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.96547,
+                22.264061
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "7339860",
+        "title": "Trung tâm thông tin du lịch Sapa",
+        "city": "Sapa",
+        "totalScore": 3.5,
+        "ranking": "21/81",
+        "reviewsCount": 108,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trung tâm thông tin du lịch Sapa ở Sapa. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Thông tin cho khách du lịch. Đánh giá: 3.5/5 từ 108 lượt review. Xếp hạng: 21/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/d7/e0/6f/our-office-entry-sign.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.8409,
+                22.335207
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10304765",
+        "title": "Hang Dá Village",
+        "city": "Sapa",
+        "totalScore": 4.5,
+        "ranking": "25/81",
+        "reviewsCount": 15,
+        "category": "Khác",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hang Dá Village ở Sapa. Loại địa điểm: Khác. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Khác. Đánh giá: 4.5/5 từ 15 lượt review. Xếp hạng: 25/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Khác"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/50/3f/c9/hang-da-village.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.85517,
+                22.328444
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6000599",
+        "title": "Ho Chi Minh Friendship Monument",
+        "city": "Sapa",
+        "totalScore": 3.3,
+        "ranking": "29/81",
+        "reviewsCount": 73,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ho Chi Minh Friendship Monument ở Sapa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.3/5 từ 73 lượt review. Xếp hạng: 29/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/45/70/26/ho-chi-minh-friendship.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84545,
+                22.33868
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8263439",
+        "title": "Amazing Swimming Pool",
+        "city": "Sapa",
+        "totalScore": 4.4,
+        "ranking": "36/81",
+        "reviewsCount": 5,
+        "category": "Vui chơi & Giải trí",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Amazing Swimming Pool ở Sapa. Loại địa điểm: Vui chơi & Giải trí. Tags: Điểm du lịch, Vui chơi & Giải trí. Đánh giá: 4.4/5 từ 5 lượt review. Xếp hạng: 36/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Vui chơi & Giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/0c/0f/57/the-view-to-the-mountains.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84131,
+                22.33267
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34239422",
+        "title": "Centa Travel",
+        "city": "Sapa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Centa Travel ở Sapa. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Thông tin cho khách du lịch.",
+        "tags": [
+            "Điểm du lịch",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/9e/c9/ad/trekking.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84831,
+                22.33762
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34233029",
+        "title": "Triple s Travel Base",
+        "city": "Lào Cai",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Triple s Travel Base ở Lào Cai. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Thông tin cho khách du lịch.",
+        "tags": [
+            "Điểm du lịch",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.34922,
+                22.373627
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33353379",
+        "title": "Nature Dual Expeditions",
+        "city": "Lào Cai",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nature Dual Expeditions ở Lào Cai. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.19861,
+                12.264293
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33112414",
+        "title": "Tiệm Tranh Nhỏ",
+        "city": "Sapa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tiệm Tranh Nhỏ ở Sapa. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Nơi mua sắm, Bảo tàng.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Bảo tàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.86667,
+                22.35
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "31067976",
+        "title": "Pơ Mu Sa Pa",
+        "city": "Sapa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pơ Mu Sa Pa ở Sapa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.82064,
+                22.3443
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28635617",
+        "title": "Lảo Thẩn",
+        "city": "Lào Cai",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lảo Thẩn ở Lào Cai. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.384476,
+                22.138638
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27934646",
+        "title": "Vườn Vô Cực Sa Pa",
+        "city": "Lao Chai",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn Vô Cực Sa Pa ở Lao Chai. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.86938,
+                22.321957
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27146603",
+        "title": "Fansipan",
+        "city": "Sapa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Fansipan ở Sapa. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/0a/fa/0b/english-speaking-taxi.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84032,
+                22.341185
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26700366",
+        "title": "Sapa Tours",
+        "city": "Sapa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sapa Tours ở Sapa. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84032,
+                22.341185
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26532446",
+        "title": "Giang thi sang",
+        "city": "Sapa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Giang thi sang ở Sapa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.862206,
+                22.287453
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26352254",
+        "title": "Sapa Weather Trekking Tour",
+        "city": "Sapa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sapa Weather Trekking Tour ở Sapa. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/29/c3/34/98/1-day-trek.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.83955,
+                22.332537
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1110,
+                        "close_time": 1740
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1110,
+                        "close_time": 2460
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26348648",
+        "title": "Sapa Weather Trekking Tours",
+        "city": "Lào Cai",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sapa Weather Trekking Tours ở Lào Cai. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/29/be/79/ed/sapa-vietnam.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.20486,
+                22.332293
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-17:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26327228",
+        "title": "Travel to Sápa with Thao",
+        "city": "Sapa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Travel to Sápa with Thao ở Sapa. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/29/c1/80/6b/hiking-tour-in-sapa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84032,
+                22.341185
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26247401",
+        "title": "Sapa trekking adventure",
+        "city": "Sapa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sapa trekking adventure ở Sapa. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.99333,
+                22.51871
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25228550",
+        "title": "Sapa With So Ly Trek And Homestay",
+        "city": "Sapa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sapa With So Ly Trek And Homestay ở Sapa. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.9289,
+                22.296247
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24145535",
+        "title": "Đền Ken",
+        "city": "Lào Cai",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đền Ken ở Lào Cai. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24066303",
+        "title": "Artika Sculpture Park",
+        "city": "Sapa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Artika Sculpture Park ở Sapa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.83902,
+                22.394493
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24010687",
+        "title": "Su Trekking And Homestay",
+        "city": "Sapa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Su Trekking And Homestay ở Sapa. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84379,
+                22.33636
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21270869",
+        "title": "Sapa Trekking Tour Local Hmong",
+        "city": "Sapa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sapa Trekking Tour Local Hmong ở Sapa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/b8/d0/b4/black-h-mong-trekking.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "16803278",
+        "title": "Tu Viện Tả Phìn",
+        "city": "Ta Phin",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tu Viện Tả Phìn ở Ta Phin. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/f4/ef/b3/tu-vi-n-c-th-i-phap.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17779636",
+        "title": "Cầu Kính Rồng Mây",
+        "city": "Sapa",
+        "totalScore": 4.3,
+        "ranking": "14/81",
+        "reviewsCount": 42,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cầu Kính Rồng Mây ở Sapa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 42 lượt review. Xếp hạng: 14/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/26/f7/86/cau-kinh-rong-may.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.7575,
+                22.37236
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "11639346",
+        "title": "Ta Phin Cave",
+        "city": "Sapa",
+        "totalScore": 2.8,
+        "ranking": "59/81",
+        "reviewsCount": 13,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ta Phin Cave ở Sapa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 2.8/5 từ 13 lượt review. Xếp hạng: 59/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/34/4f/49/at-the-entrance-of-the.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6040804",
+        "title": "Sapa Ancient Rock Field",
+        "city": "Sapa",
+        "totalScore": 3.5,
+        "ranking": "35/81",
+        "reviewsCount": 31,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sapa Ancient Rock Field ở Sapa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.5/5 từ 31 lượt review. Xếp hạng: 35/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/32/22/9f/sapa-ancient-rock-field.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.85434,
+                22.323648
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17602026",
+        "title": "Sun Plaza",
+        "city": "Sapa",
+        "totalScore": 2.7,
+        "ranking": "60/81",
+        "reviewsCount": 15,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sun Plaza ở Sapa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 2.7/5 từ 15 lượt review. Xếp hạng: 60/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/cd/c6/cf/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84081,
+                22.334978
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14086596",
+        "title": "Làng Y Tý",
+        "city": "Lào Cai",
+        "totalScore": 4.5,
+        "ranking": "50/81",
+        "reviewsCount": 2,
+        "category": "Khác",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Làng Y Tý ở Lào Cai. Loại địa điểm: Khác. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Khác. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 50/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Khác"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/f5/49/4f/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.844574,
+                22.33634
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13549116",
+        "title": "Đèo Khau Phạ",
+        "city": "Mu Cang Chai",
+        "totalScore": 4.5,
+        "ranking": "31/81",
+        "reviewsCount": 8,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đèo Khau Phạ ở Mu Cang Chai. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 8 lượt review. Xếp hạng: 31/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/8e/14/d2/view-3km-south-of-khau.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14090566",
+        "title": "Làng Y Tý",
+        "city": "Lào Cai",
+        "totalScore": 5.0,
+        "ranking": "56/81",
+        "reviewsCount": 1,
+        "category": "Khác",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Làng Y Tý ở Lào Cai. Loại địa điểm: Khác. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Khác. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 56/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Khác"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/bb/3d/f8/lao-than-is-located-in.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8797433",
+        "title": "Đền Mẫu",
+        "city": "Lào Cai",
+        "totalScore": 3.3,
+        "ranking": "47/81",
+        "reviewsCount": 16,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đền Mẫu ở Lào Cai. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.3/5 từ 16 lượt review. Xếp hạng: 47/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/30/81/29/den-mau.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13313014",
+        "title": "Bạch Mộc Lương Tử",
+        "city": "Lào Cai",
+        "totalScore": 5.0,
+        "ranking": "57/81",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bạch Mộc Lương Tử ở Lào Cai. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 57/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/a0/7e/3f/photo6jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6974773",
+        "title": "Đền Mẫu Lào Cai",
+        "city": "Lào Cai",
+        "totalScore": 4.0,
+        "ranking": "58/81",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đền Mẫu Lào Cai ở Lào Cai. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 58/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/52/b3/93/t-xa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.97345,
+                22.47611
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15334197",
+        "title": "Bản Lìm Mông",
+        "city": "Mu Cang Chai",
+        "totalScore": 4.3,
+        "ranking": "44/81",
+        "reviewsCount": 3,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bản Lìm Mông ở Mu Cang Chai. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 3 lượt review. Xếp hạng: 44/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/44/d2/f1/lim-mong-village.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.09097,
+                21.84999
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26136968",
+        "title": "Sapa Trekking Mama Zuzu",
+        "city": "Sapa",
+        "totalScore": 5.0,
+        "ranking": "13/81",
+        "reviewsCount": 17,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sapa Trekking Mama Zuzu ở Sapa. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 17 lượt review. Xếp hạng: 13/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/a3/bf/26/great-trip-you-guys-should.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84379,
+                22.33636
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25314420",
+        "title": "Happy Trip With Vu",
+        "city": "Sapa",
+        "totalScore": 5.0,
+        "ranking": "22/81",
+        "reviewsCount": 9,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Happy Trip With Vu ở Sapa. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 9 lượt review. Xếp hạng: 22/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/c6/4b/4e/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84032,
+                22.341185
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28983403",
+        "title": "Moana Sapa",
+        "city": "Lào Cai",
+        "totalScore": 3.8,
+        "ranking": "26/81",
+        "reviewsCount": 16,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Moana Sapa ở Lào Cai. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.8/5 từ 16 lượt review. Xếp hạng: 26/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/9a/ca/7d/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84596,
+                22.327358
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26448978",
+        "title": "Trekking Fansipan Adventure",
+        "city": "Sapa",
+        "totalScore": 5.0,
+        "ranking": "37/81",
+        "reviewsCount": 2,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trekking Fansipan Adventure ở Sapa. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 37/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/12/d3/e7/m-t-ngay-trekking-v-i.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.8796,
+                22.245102
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25321276",
+        "title": "Sapa Brocade Handmade",
+        "city": "Sapa",
+        "totalScore": 5.0,
+        "ranking": "38/81",
+        "reviewsCount": 2,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sapa Brocade Handmade ở Sapa. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 38/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/9b/7c/78/sapa-brocade-handmade.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84475,
+                22.336046
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27179169",
+        "title": "Khu family homestay",
+        "city": "Hau Thao",
+        "totalScore": 0,
+        "ranking": "39/81",
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu family homestay ở Hau Thao. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Xếp hạng: 39/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.896935,
+                22.319529
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25249361",
+        "title": "Ngu Chi Son Mountain - The Sacred Five Fingers Mountain",
+        "city": "Sapa",
+        "totalScore": 4.0,
+        "ranking": "40/81",
+        "reviewsCount": 3,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ngu Chi Son Mountain - The Sacred Five Fingers Mountain ở Sapa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.0/5 từ 3 lượt review. Xếp hạng: 40/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/9a/91/9a/mountain-climbing-tour.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.76367,
+                22.44187
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33274740",
+        "title": "Loa Cai Crossing (vietnam To China)",
+        "city": "Lào Cai",
+        "totalScore": 5.0,
+        "ranking": "41/81",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Loa Cai Crossing (vietnam To China) ở Lào Cai. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 41/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/b1/1e/db/crossing-border.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.96797,
+                22.499113
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28130386",
+        "title": "May Art Gallery Sapa",
+        "city": "Sapa",
+        "totalScore": 5.0,
+        "ranking": "42/81",
+        "reviewsCount": 1,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "May Art Gallery Sapa ở Sapa. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Nơi mua sắm, Bảo tàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 42/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/41/77/f7/nh-tru-c-c-a-hang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84264,
+                22.333176
+            ]
+        },
+        "openingHours": {
+            "display": "08:30-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25801279",
+        "title": "Em’s Sapa Hiking",
+        "city": "Sapa",
+        "totalScore": 5.0,
+        "ranking": "43/81",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Em’s Sapa Hiking ở Sapa. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 43/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84032,
+                22.341185
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26226969",
+        "title": "SaPa local tourist guide",
+        "city": "Sapa",
+        "totalScore": 5.0,
+        "ranking": "45/81",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "SaPa local tourist guide ở Sapa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 45/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/9a/51/8d/trekking-in-lau-cai-with.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84379,
+                22.33636
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26264486",
+        "title": "Pang Trekking Sapa",
+        "city": "Sapa",
+        "totalScore": 5.0,
+        "ranking": "46/81",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pang Trekking Sapa ở Sapa. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 46/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/29/01/93/trekking-is-sapa-i-m.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.896996,
+                22.319443
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25442853",
+        "title": "Ruộng Bậc Thang Sa Pa trail",
+        "city": "Sapa",
+        "totalScore": 5.0,
+        "ranking": "48/81",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ruộng Bậc Thang Sa Pa trail ở Sapa. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 48/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/d1/d6/55/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.85025,
+                22.316236
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25439194",
+        "title": "Lao Chai Trail",
+        "city": "Sapa",
+        "totalScore": 5.0,
+        "ranking": "49/81",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lao Chai Trail ở Sapa. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 49/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/73/64/da/b-n-lao-ch-i-n-m-t-i.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.86688,
+                22.310452
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "24064871",
+        "title": "Artika Sculpture Park",
+        "city": "Sapa",
+        "totalScore": 5.0,
+        "ranking": "51/81",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Artika Sculpture Park ở Sapa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 51/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/23/70/c5/df/b-n-ch-t-tinh-xam-l-n.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.83902,
+                22.394493
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23259101",
+        "title": "Tibetan House",
+        "city": "Lào Cai",
+        "totalScore": 5.0,
+        "ranking": "52/81",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tibetan House ở Lào Cai. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 52/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/fb/09/21/in-front-of-the-house.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.83777,
+                22.33676
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "29741490",
+        "title": "Sapa Center",
+        "city": "Sapa",
+        "totalScore": 4.0,
+        "ranking": "53/81",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sapa Center ở Sapa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 53/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/15/d5/d5/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84153,
+                22.335466
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "29741476",
+        "title": "Quảng Trường Hồ Sa Pa",
+        "city": "Sapa",
+        "totalScore": 4.0,
+        "ranking": "54/81",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quảng Trường Hồ Sa Pa ở Sapa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 54/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/15/d6/61/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84436,
+                22.33692
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "29737737",
+        "title": "Sapa Station - Ga Tàu Leo Núi",
+        "city": "Sapa",
+        "totalScore": 4.0,
+        "ranking": "55/81",
+        "reviewsCount": 1,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sapa Station - Ga Tàu Leo Núi ở Sapa. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Phương tiện giao thông. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 55/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Phương tiện giao thông"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/15/d6/ab/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84037,
+                22.334192
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24061612",
+        "title": "Cáp Treo Fansipan",
+        "city": "Lào Cai",
+        "totalScore": 1.0,
+        "ranking": "61/81",
+        "reviewsCount": 1,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cáp Treo Fansipan ở Lào Cai. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Phương tiện giao thông. Đánh giá: 1.0/5 từ 1 lượt review. Xếp hạng: 61/81.",
+        "tags": [
+            "Điểm du lịch",
+            "Phương tiện giao thông"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/70/35/41/trekking-sapa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.844086,
+                22.336807
+            ]
+        },
+        "openingHours": null
+    }
+]

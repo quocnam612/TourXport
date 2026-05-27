@@ -1,0 +1,1210 @@
+[
+    {
+        "sourceLocationId": "17562896",
+        "title": "Nhà Hàng Tam Thanh",
+        "city": "Lạng Sơn",
+        "totalScore": 4.9,
+        "ranking": "1/17",
+        "reviewsCount": 36,
+        "category": "Ngồi xuống",
+        "priceRange": "2.105.263 ₫ - 14.473.684 ₫",
+        "description": "Với nhà hàng buffet và A la carte diện tích linh hoạt, có đủ không gian riêng tư, phục vụ đa dạng các món ăn từ phong vị địa phương tới những món ăn Âu – Á tiêu chuẩn 5 sao – Vinpearl Hotel Lạng Sơn không chỉ là nơi thưởng thức những món ăn ngon của du khách lưu trú, mà còn là điểm hẹn của những bữa tiệc doanh nhân hay các gia đình cuối tuần.",
+        "embedding": null,
+        "searchText": "Nhà Hàng Tam Thanh ở Lạng Sơn. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Với nhà hàng buffet và A la carte diện tích linh hoạt, có đủ không gian riêng tư, phục vụ đa dạng các món ăn từ phong vị địa phương tới những món ăn Âu – Á tiêu chuẩn 5 sao – Vinpearl Hotel Lạng Sơn không chỉ là nơi thưởng thức những món ăn ngon của du khách lưu trú, mà còn là điểm hẹn của những bữa tiệc doanh nhân hay các gia đình cuối tuần. Đánh giá: 4.9/5 từ 36 lượt review. Xếp hạng: 1/17. Giá: 2.105.263 ₫ - 14.473.684 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/c5/b9/1f/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.75784,
+                21.847569
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33026034",
+        "title": "Lela Station - Coffee & Homestay",
+        "city": "Huu Lien",
+        "totalScore": 5.0,
+        "ranking": "2/17",
+        "reviewsCount": 4,
+        "category": "Ngồi xuống",
+        "priceRange": "526.315.776 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Lela Station - Coffee & Homestay ở Huu Lien. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 2/17. Giá: 526.315.776 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/f7/23/d7/b-a-sang-t-i-home.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37179,
+                21.69781
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13114893",
+        "title": "Túc Tắc Coffee & Cakes",
+        "city": "Lạng Sơn",
+        "totalScore": 5.0,
+        "ranking": "3/17",
+        "reviewsCount": 7,
+        "category": "Quán cafe",
+        "priceRange": "26.316 ₫ - 78.947 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Túc Tắc Coffee & Cakes ở Lạng Sơn. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 5.0/5 từ 7 lượt review. Xếp hạng: 3/17. Giá: 26.316 ₫ - 78.947 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/22/2a/ad/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.75629,
+                21.86756
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25204985",
+        "title": "Nhà Hàng Cơm Niêu Huế Xưa",
+        "city": "Lạng Sơn",
+        "totalScore": 5.0,
+        "ranking": "4/17",
+        "reviewsCount": 4,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Cơm Niêu Huế Xưa ở Lạng Sơn. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 4/17.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/22/5a/6d/noi-tinh-hoa-m-th-c-x.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.750015,
+                21.845247
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17809883",
+        "title": "Little Pie",
+        "city": "Lạng Sơn",
+        "totalScore": 4.7,
+        "ranking": "5/17",
+        "reviewsCount": 6,
+        "category": "Quán cafe",
+        "priceRange": "789.473.664 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Little Pie ở Lạng Sơn. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 4.7/5 từ 6 lượt review. Xếp hạng: 5/17. Giá: 789.473.664 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/18/9e/8a/8b/scramble-with-sandwich.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.76216,
+                21.854855
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12238248",
+        "title": "Nhà Hàng Thảo Viên",
+        "city": "Lạng Sơn",
+        "totalScore": 4.0,
+        "ranking": "6/17",
+        "reviewsCount": 5,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Thảo Viên ở Lạng Sơn. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 5 lượt review. Xếp hạng: 6/17.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/7d/73/06/day-la-m-t-nha-hang-co.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.76725,
+                21.84912
+            ]
+        },
+        "openingHours": {
+            "display": "08:30-21:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23028325",
+        "title": "phở thìn G15 Phạm Văn Đồng",
+        "city": "Đà Nẵng",
+        "totalScore": 5.0,
+        "ranking": "1022/1751",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "phở thìn G15 Phạm Văn Đồng ở Đà Nẵng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 1022/1751.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/21/fb/97/80/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.76667,
+                21.86667
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-14:00, 17:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34080498",
+        "title": "Bamboo Hill Restaurant & Coffe",
+        "city": "Huu Lien",
+        "totalScore": 5.0,
+        "ranking": "7/17",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bamboo Hill Restaurant & Coffe ở Huu Lien. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 7/17.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/41/81/e7/nha-hang-h-u-lien-bamboo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37579,
+                21.708042
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15200902",
+        "title": "Gác Mái Cake And Drink",
+        "city": "Lạng Sơn",
+        "totalScore": 5.0,
+        "ranking": "8/17",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Gác Mái Cake And Drink ở Lạng Sơn. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 8/17.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/f6/65/29/gac-mai-cake-and-drink.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.76159,
+                21.85495
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4881226",
+        "title": "Trung Xuan Restaurant",
+        "city": "Lạng Sơn",
+        "totalScore": 5.0,
+        "ranking": "9/17",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trung Xuan Restaurant ở Lạng Sơn. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 9/17.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/04/c7/ec/69/prepare-for-a-weeding.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8274278",
+        "title": "New Century",
+        "city": "Lạng Sơn",
+        "totalScore": 3.4,
+        "ranking": "10/17",
+        "reviewsCount": 12,
+        "category": "Quán cafe",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "New Century ở Lạng Sơn. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 3.4/5 từ 12 lượt review. Xếp hạng: 10/17. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/6c/ca/a4/20151105-082300-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.61667,
+                21.78333
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23163133",
+        "title": "A Vang",
+        "city": "Bac Son",
+        "totalScore": 5.0,
+        "ranking": "11/17",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "A Vang ở Bac Son. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 11/17.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/a8/43/55/pohled-z-restaurace-a.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.31441,
+                21.89988
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33442626",
+        "title": "Ngoc Café",
+        "city": "Bao Lac",
+        "totalScore": 4.0,
+        "ranking": "4/6",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ngoc Café ở Bao Lac. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 4/6.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/f5/ed/6a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.7599,
+                21.870838
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33342309",
+        "title": "Nhà Hàng Vịt Quay Hải Xồm",
+        "city": "Lạng Sơn",
+        "totalScore": 4.0,
+        "ranking": "12/17",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Vịt Quay Hải Xồm ở Lạng Sơn. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 12/17.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/8f/ca/a9/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.75666,
+                21.866913
+            ]
+        },
+        "openingHours": {
+            "display": "04:30-19:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 270,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 270,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 270,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 270,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 270,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 270,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 270,
+                        "close_time": 1140
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17623262",
+        "title": "Quán Xưa Lạng Sơn",
+        "city": "Lạng Sơn",
+        "totalScore": 5.0,
+        "ranking": "13/17",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Xưa Lạng Sơn ở Lạng Sơn. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 13/17.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/db/31/c4/photo3jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.76921,
+                21.82717
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15652661",
+        "title": "Nhà Hàng Kinh Bắc",
+        "city": "Lạng Sơn",
+        "totalScore": 5.0,
+        "ranking": "14/17",
+        "reviewsCount": 1,
+        "category": "Quán cafe",
+        "priceRange": "394.736.832 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Kinh Bắc ở Lạng Sơn. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 14/17. Giá: 394.736.832 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/87/0f/15/m-th-c-h-p-d-n-ph-c-v.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.75202,
+                21.87619
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13422813",
+        "title": "Nhà hàng Linh Dẩn",
+        "city": "Lạng Sơn",
+        "totalScore": 4.0,
+        "ranking": "15/17",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Linh Dẩn ở Lạng Sơn. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 15/17.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.75426,
+                21.85576
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8415377",
+        "title": "Quán Anh Phong",
+        "city": "Lạng Sơn",
+        "totalScore": 2.0,
+        "ranking": "16/17",
+        "reviewsCount": 1,
+        "category": "Đồ ăn nhanh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Anh Phong ở Lạng Sơn. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 2.0/5 từ 1 lượt review. Xếp hạng: 16/17.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/b4/5c/3f/cho-cai-nh-cho-no-oach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.7715,
+                21.85348
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11669141",
+        "title": "Nha Hang Xanh",
+        "city": "Lạng Sơn",
+        "totalScore": 0,
+        "ranking": "17/17",
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nha Hang Xanh ở Lạng Sơn. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Xếp hạng: 17/17.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/14/15/46/74/nha-hang-ngon-nh-t-l.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.75512,
+                21.86887
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33970871",
+        "title": "Hoa Hồi Lạng Sơn Restaurant",
+        "city": "Lạng Sơn",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hoa Hồi Lạng Sơn Restaurant ở Lạng Sơn. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.8757,
+                21.500927
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25461556",
+        "title": "Bún chả Giang Hà",
+        "city": "Lạng Sơn",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Bún Chả Giang Hà (chợ Tỉnh - Gia Truyền) Since 1990. Bún chả là một món ăn của Việt Nam, bao gồm bún, chả thịt lợn nướng trên than hoa và bát nước mắm chua cay mặn ngọt. Món ăn xuất xứ từ miền Bắc Việt Nam",
+        "embedding": null,
+        "searchText": "Bún chả Giang Hà ở Lạng Sơn. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Bún Chả Giang Hà (chợ Tỉnh - Gia Truyền) Since 1990. Bún chả là một món ăn của Việt Nam, bao gồm bún, chả thịt lợn nướng trên than hoa và bát nước mắm chua cay mặn ngọt. Món ăn xuất xứ từ miền Bắc Việt Nam",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.75655,
+                21.846577
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-19:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27515822",
+        "title": "Nhà Hàng Khánh Vân",
+        "city": "Lạng Sơn",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Khánh Vân ở Lạng Sơn. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/c0/8f/1f/khuon-vien-nha-hang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.5,
+                20.48333
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    }
+]

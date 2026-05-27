@@ -1,0 +1,245 @@
+[
+    {
+        "sourceLocationId": "2503109",
+        "title": "Công Viên Quốc Gia Ba Bể",
+        "city": "Nam Mau",
+        "totalScore": 4.4,
+        "ranking": "1/5",
+        "reviewsCount": 166,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Công Viên Quốc Gia Ba Bể ở Nam Mau. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.4/5 từ 166 lượt review. Xếp hạng: 1/5.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/80/61/de/ba-be-national-park-an.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.60607,
+                22.411238
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19682197",
+        "title": "Ba Be Voyages",
+        "city": "Bắc Kạn",
+        "totalScore": 5.0,
+        "ranking": "1/4",
+        "reviewsCount": 31,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ba Be Voyages ở Bắc Kạn. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Chuyến tham quan bằng thuyền & thể thao dưới nước, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 31 lượt review. Xếp hạng: 1/4.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Chuyến tham quan bằng thuyền & thể thao dưới nước",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/48/ce/4d/cave-discovering.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.64613,
+                22.422964
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13225763",
+        "title": "Mr Linh's Adventures",
+        "city": "Bắc Kạn",
+        "totalScore": 4.9,
+        "ranking": "2/4",
+        "reviewsCount": 15,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mr Linh's Adventures ở Bắc Kạn. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Chuyến tham quan bằng thuyền & thể thao dưới nước, Hoạt động ngoài trời. Đánh giá: 4.9/5 từ 15 lượt review. Xếp hạng: 2/4.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Chuyến tham quan bằng thuyền & thể thao dưới nước",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.61808,
+                22.399494
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20158036",
+        "title": "Ba Be Lake View Homestay",
+        "city": "Ba Be",
+        "totalScore": 5.0,
+        "ranking": "3/4",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "Ba Be Lake View Homestay is located in Pác Ngòi village, Ba Be National Park. We offer nice accommodation with the best view to the lake. We also arrange some special activities in Ba Be National Park, such as: boat trip, biking, swimming, bamboo rafting, trekking, visiting cave.\nLet's come and enjoy with us.",
+        "embedding": null,
+        "searchText": "Ba Be Lake View Homestay ở Ba Be. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Khác, Chuyến tham quan bằng thuyền & thể thao dưới nước, Hoạt động ngoài trời. Mô tả: Ba Be Lake View Homestay is located in Pác Ngòi village, Ba Be National Park. We offer nice accommodation with the best view to the lake. We also arrange some special activities in Ba Be National Park, such as: boat trip, biking, swimming, bamboo rafting, trekking, visiting cave.\nLet's come and enjoy with us. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 3/4.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Khác",
+            "Chuyến tham quan bằng thuyền & thể thao dưới nước",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/f1/84/51/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.64131,
+                22.38523
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33677365",
+        "title": "Ba Be National Park",
+        "city": "Ba Be",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "These Adventure Tours at Ba Be National Park are designed for adventure lovers who dream of exploring mystical caves, trekking through thick tropical jungles, and sleeping in the forest. Each tour will have a local English-speaking guide who will accompany you on your adventure through the wild and exciting landscapes of Ba Be National Park. ",
+        "embedding": null,
+        "searchText": "Ba Be National Park ở Ba Be. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Khác, Chuyến tham quan bằng thuyền & thể thao dưới nước, Phương tiện giao thông, Hoạt động ngoài trời. Mô tả: These Adventure Tours at Ba Be National Park are designed for adventure lovers who dream of exploring mystical caves, trekking through thick tropical jungles, and sleeping in the forest. Each tour will have a local English-speaking guide who will accompany you on your adventure through the wild and exciting landscapes of Ba Be National Park. ",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Khác",
+            "Chuyến tham quan bằng thuyền & thể thao dưới nước",
+            "Phương tiện giao thông",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/1d/33/5d/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 600
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 600
+                    }
+                ]
+            ]
+        }
+    }
+]

@@ -1,0 +1,284 @@
+[
+    {
+        "sourceLocationId": "6025395",
+        "title": "Ghềnh Đá Dĩa",
+        "city": "Tuy Hòa",
+        "totalScore": 4.6,
+        "ranking": "1/7",
+        "reviewsCount": 187,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": "Ghềnh Đá Đĩa hay gành Đá Dĩa là thắng cảnh nổi tiếng của tỉnh Phú Yên, nằm cách trung tâm thành phố Tuy Hòa khoảng 40 km. Ấn tượng đầu tiên với du khách khi đặt chân đến đây là những khối đá đen huyền hình lăng trụ độc đáo, trông xa như một tổ ong khổng lồ nằm bình yên bên bờ biển.",
+        "embedding": null,
+        "searchText": "Ghềnh Đá Dĩa ở Tuy Hòa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Mô tả: Ghềnh Đá Đĩa hay gành Đá Dĩa là thắng cảnh nổi tiếng của tỉnh Phú Yên, nằm cách trung tâm thành phố Tuy Hòa khoảng 40 km. Ấn tượng đầu tiên với du khách khi đặt chân đến đây là những khối đá đen huyền hình lăng trụ độc đáo, trông xa như một tổ ong khổng lồ nằm bình yên bên bờ biển. Đánh giá: 4.6/5 từ 187 lượt review. Xếp hạng: 1/7.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/a1/0f/b9/ghenh-da-dia.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.29274,
+                13.354345
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17750647",
+        "title": "Hòn Yến",
+        "city": "Tuy Hòa",
+        "totalScore": 5.0,
+        "ranking": "4/7",
+        "reviewsCount": 2,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hòn Yến ở Tuy Hòa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 4/7.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12945687",
+        "title": "Quang Đuc Xua",
+        "city": "Tuy Hòa",
+        "totalScore": 4.4,
+        "ranking": "2/7",
+        "reviewsCount": 5,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": "Một điểm tham quan mới, nằm cạch những điểm tham quan nổi tiếng của Phú Yên như Gành Đá Dĩa, Nhà thờ Mằng Lăng (được coi nhà thờ cổ nhất tỉnh Phú Yên và là một trong những nhà thờ lâu đời nhất của Việt Nam) .\nMôt nơi lý tưởng để tìm hiểu, để trải nghiệm một góc nhỏ trong nền văn hóa địa phương với bộ sưu tầm gốm Quảng Đức nổi tiếng ở vùng đất nơi đây, các vật dụng hàng ngày quen thuộc, mộc mạc, đơn sơ gắn liền với cuộc sống",
+        "embedding": null,
+        "searchText": "Quang Đuc Xua ở Tuy Hòa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Mô tả: Một điểm tham quan mới, nằm cạch những điểm tham quan nổi tiếng của Phú Yên như Gành Đá Dĩa, Nhà thờ Mằng Lăng (được coi nhà thờ cổ nhất tỉnh Phú Yên và là một trong những nhà thờ lâu đời nhất của Việt Nam) .\nMôt nơi lý tưởng để tìm hiểu, để trải nghiệm một góc nhỏ trong nền văn hóa địa phương với bộ sưu tầm gốm Quảng Đức nổi tiếng ở vùng đất nơi đây, các vật dụng hàng ngày quen thuộc, mộc mạc, đơn sơ gắn liền với cuộc sống Đánh giá: 4.4/5 từ 5 lượt review. Xếp hạng: 2/7.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/c0/df/eb/the-entrance.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.21336,
+                13.322216
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "6454070",
+        "title": "Mai Nha Island",
+        "city": "Tuy Hòa",
+        "totalScore": 4.5,
+        "ranking": "5/7",
+        "reviewsCount": 4,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mai Nha Island ở Tuy Hòa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 4 lượt review. Xếp hạng: 5/7.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/7c/e3/2c/front-beach-from-mai.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32834788",
+        "title": "Nghinh Phong Tower",
+        "city": "Tuy Hòa",
+        "totalScore": 5.0,
+        "ranking": "3/7",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nghinh Phong Tower ở Tuy Hòa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 3/7.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/32/c0/84/da/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.30713,
+                13.116178
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33250134",
+        "title": "Thap Nhan, Tuy Hoa (nhan Temple)",
+        "city": "Tuy Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thap Nhan, Tuy Hoa (nhan Temple) ở Tuy Hòa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.328674,
+                20.936438
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15688877",
+        "title": "Chợ Tuy Hòa",
+        "city": "Tuy Hòa",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Tuy Hòa ở Tuy Hòa. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/fd/0f/7f/hot-steam-rice-cake-made.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.3061,
+                13.08867
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1140
+                    }
+                ]
+            ]
+        }
+    }
+]

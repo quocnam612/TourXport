@@ -1,0 +1,836 @@
+[
+    {
+        "sourceLocationId": "19261155",
+        "title": "Freedom Green Farm & Lodge",
+        "city": "Dak Som, Tỉnh Đăk Nông",
+        "totalScore": 4.8,
+        "ranking": "1/59",
+        "reviewsCount": 20,
+        "category": "Nhà ngoại ô",
+        "priceRange": "1.000.000 ₫ - 1.500.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Freedom Green Farm & Lodge ở Dak Som, Tỉnh Đăk Nông. Loại địa điểm: Nhà ngoại ô. Tags: Nhà ngoại ô. Đánh giá: 4.8/5 từ 20 lượt review. Xếp hạng: 1/59. Giá: 1.000.000 ₫ - 1.500.000 ₫.",
+        "tags": [
+            "Nhà ngoại ô"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/c5/c0/99/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.908104,
+                11.861008
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32983885",
+        "title": "Homestay A Súy Tà Đùng",
+        "city": "Dak Som, Tỉnh Đăk Nông",
+        "totalScore": 5.0,
+        "ranking": "2/59",
+        "reviewsCount": 3,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Homestay A Súy Tà Đùng ở Dak Som, Tỉnh Đăk Nông. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 2/59.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/5f/48/94/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.887535,
+                13.053706
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32867378",
+        "title": "Soria Hotel",
+        "city": "Dak Mil, Tỉnh Đăk Nông",
+        "totalScore": 5.0,
+        "ranking": "3/59",
+        "reviewsCount": 2,
+        "category": "Khách sạn",
+        "priceRange": "315.789 ₫ - 368.421 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Soria Hotel ở Dak Mil, Tỉnh Đăk Nông. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 3/59. Giá: 315.789 ₫ - 368.421 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/56/98/d5/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.618576,
+                12.446474
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26533109",
+        "title": "Robin Hotel",
+        "city": "Gia Nghĩa, Tỉnh Đăk Nông",
+        "totalScore": 4.3,
+        "ranking": "4/59",
+        "reviewsCount": 3,
+        "category": "Khách sạn",
+        "priceRange": "763.158 ₫ - 1.342.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Robin Hotel ở Gia Nghĩa, Tỉnh Đăk Nông. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.3/5 từ 3 lượt review. Xếp hạng: 4/59. Giá: 763.158 ₫ - 1.342.105 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/8f/70/59/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.69758,
+                12.00104
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4723618",
+        "title": "Daknong Lodge Resort",
+        "city": "Gia Nghĩa, Tỉnh Đăk Nông",
+        "totalScore": 3.9,
+        "ranking": "5/59",
+        "reviewsCount": 7,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Daknong Lodge Resort ở Gia Nghĩa, Tỉnh Đăk Nông. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 3.9/5 từ 7 lượt review. Xếp hạng: 5/59.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/e6/a6/f4/daknong-lodge-resort.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.70014,
+                11.990707
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23535995",
+        "title": "Khách Sạn – Nhà Hàng – Sài Gòn Dak Nông",
+        "city": "Gia Nghĩa, Tỉnh Đăk Nông",
+        "totalScore": 5.0,
+        "ranking": "6/59",
+        "reviewsCount": 1,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn – Nhà Hàng – Sài Gòn Dak Nông ở Gia Nghĩa, Tỉnh Đăk Nông. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 6/59.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1d/5d/40/d2/phong-vip2-1-giu-ng.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.687675,
+                12.017137
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21300310",
+        "title": "MeGarden",
+        "city": "Nhan Co, Tỉnh Đăk Nông",
+        "totalScore": 5.0,
+        "ranking": "7/59",
+        "reviewsCount": 1,
+        "category": "Cơ sở kinh doanh có dịch vụ giới hạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "MeGarden ở Nhan Co, Tỉnh Đăk Nông. Loại địa điểm: Cơ sở kinh doanh có dịch vụ giới hạn. Tags: Cơ sở kinh doanh có dịch vụ giới hạn. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 7/59.",
+        "tags": [
+            "Cơ sở kinh doanh có dịch vụ giới hạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/22/e5/e9/megarden.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.635925,
+                11.976759
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26828628",
+        "title": "Thông Reo Glamping",
+        "city": "Nam N'Jang, Tỉnh Đăk Nông",
+        "totalScore": 5.0,
+        "ranking": "8/59",
+        "reviewsCount": 1,
+        "category": "Nhà gỗ nhỏ/Khu cắm trại",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thông Reo Glamping ở Nam N'Jang, Tỉnh Đăk Nông. Loại địa điểm: Nhà gỗ nhỏ/Khu cắm trại. Tags: Nhà gỗ nhỏ/Khu cắm trại. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 8/59.",
+        "tags": [
+            "Nhà gỗ nhỏ/Khu cắm trại"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/ed/ef/fe/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.60593,
+                12.21921
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26611051",
+        "title": "Star Hill Daknong Retreat",
+        "city": "Quang Khe, Tỉnh Đăk Nông",
+        "totalScore": 5.0,
+        "ranking": "9/59",
+        "reviewsCount": 1,
+        "category": "Biệt thự",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Star Hill Daknong Retreat ở Quang Khe, Tỉnh Đăk Nông. Loại địa điểm: Biệt thự. Tags: Biệt thự. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 9/59.",
+        "tags": [
+            "Biệt thự"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/2a/3f/a1/03/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.84048,
+                11.921977
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15208937",
+        "title": "Khách Sạn Quốc Huấn",
+        "city": "Dak Mam, Tỉnh Đăk Nông",
+        "totalScore": 5.0,
+        "ranking": "10/59",
+        "reviewsCount": 1,
+        "category": "Cơ sở kinh doanh có dịch vụ giới hạn",
+        "priceRange": "263.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn Quốc Huấn ở Dak Mam, Tỉnh Đăk Nông. Loại địa điểm: Cơ sở kinh doanh có dịch vụ giới hạn. Tags: Cơ sở kinh doanh có dịch vụ giới hạn. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 10/59. Giá: 263.158 ₫.",
+        "tags": [
+            "Cơ sở kinh doanh có dịch vụ giới hạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/14/f2/08/60/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.86251,
+                12.45924
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17693009",
+        "title": "Nha Nghi Thanh Tam",
+        "city": "Dak Mil, Tỉnh Đăk Nông",
+        "totalScore": 5.0,
+        "ranking": "11/59",
+        "reviewsCount": 1,
+        "category": "Cơ sở kinh doanh có dịch vụ giới hạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nha Nghi Thanh Tam ở Dak Mil, Tỉnh Đăk Nông. Loại địa điểm: Cơ sở kinh doanh có dịch vụ giới hạn. Tags: Cơ sở kinh doanh có dịch vụ giới hạn. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 11/59.",
+        "tags": [
+            "Cơ sở kinh doanh có dịch vụ giới hạn"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.62216,
+                12.45005
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15297019",
+        "title": "Tà Đùng TopView Homestay",
+        "city": "Nhan Co, Tỉnh Đăk Nông",
+        "totalScore": 3.3,
+        "ranking": "12/59",
+        "reviewsCount": 11,
+        "category": "Cơ sở kinh doanh có dịch vụ giới hạn",
+        "priceRange": "684.211 ₫ - 763.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Tà Đùng TopView Homestay ở Nhan Co, Tỉnh Đăk Nông. Loại địa điểm: Cơ sở kinh doanh có dịch vụ giới hạn. Tags: Cơ sở kinh doanh có dịch vụ giới hạn. Đánh giá: 3.3/5 từ 11 lượt review. Xếp hạng: 12/59. Giá: 684.211 ₫ - 763.158 ₫.",
+        "tags": [
+            "Cơ sở kinh doanh có dịch vụ giới hạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/3f/a0/70/ta-dung-topview-homestay.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58176,
+                11.979106
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32814445",
+        "title": "Higg Farm - Resort & Glamping",
+        "city": "Nam N'Jang, Tỉnh Đăk Nông",
+        "totalScore": 4.0,
+        "ranking": "13/59",
+        "reviewsCount": 1,
+        "category": "Nhà gỗ nhỏ/Khu cắm trại",
+        "priceRange": "263.158 ₫ - 394.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Higg Farm - Resort & Glamping ở Nam N'Jang, Tỉnh Đăk Nông. Loại địa điểm: Nhà gỗ nhỏ/Khu cắm trại. Tags: Nhà gỗ nhỏ/Khu cắm trại. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 13/59. Giá: 263.158 ₫ - 394.737 ₫.",
+        "tags": [
+            "Nhà gỗ nhỏ/Khu cắm trại"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/83/f0/83/room-are-all-surrounding.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.628296,
+                12.188736
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12716334",
+        "title": "Khách sạn Sài Gòn - Đắk Nông",
+        "city": "Gia Nghĩa, Tỉnh Đăk Nông",
+        "totalScore": 5.0,
+        "ranking": "14/59",
+        "reviewsCount": 1,
+        "category": "Khách sạn nhỏ",
+        "priceRange": "263.158 ₫ - 368.421 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Sài Gòn - Đắk Nông ở Gia Nghĩa, Tỉnh Đăk Nông. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 14/59. Giá: 263.158 ₫ - 368.421 ₫.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/ed/ac/e1/outside-view.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.68773,
+                12.017169
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34015667",
+        "title": "Layla's cottage Daksong",
+        "city": "Gia Nghĩa, Tỉnh Đăk Nông",
+        "totalScore": 5.0,
+        "ranking": "15/59",
+        "reviewsCount": 1,
+        "category": "Nhà nghỉ",
+        "priceRange": "263.158 ₫ - 342.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Layla's cottage Daksong ở Gia Nghĩa, Tỉnh Đăk Nông. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 15/59. Giá: 263.158 ₫ - 342.105 ₫.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.69103,
+                12.013567
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19514015",
+        "title": "Nhà Nghỉ Hồng Ngọc",
+        "city": "Gia Nghĩa, Tỉnh Đăk Nông",
+        "totalScore": 0,
+        "ranking": "16/59",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Nghỉ Hồng Ngọc ở Gia Nghĩa, Tỉnh Đăk Nông. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 16/59.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.68153,
+                12.00171
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "2172379",
+        "title": "Sunrise Hotel",
+        "city": "Gia Nghĩa, Tỉnh Đăk Nông",
+        "totalScore": 3.5,
+        "ranking": "17/59",
+        "reviewsCount": 4,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sunrise Hotel ở Gia Nghĩa, Tỉnh Đăk Nông. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 3.5/5 từ 4 lượt review. Xếp hạng: 17/59.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/02/a8/5a/c5/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.699,
+                11.99813
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33442845",
+        "title": "Bao Tran Hotel",
+        "city": "Dak Mil, Tỉnh Đăk Nông",
+        "totalScore": 0,
+        "ranking": "18/59",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bao Tran Hotel ở Dak Mil, Tỉnh Đăk Nông. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 18/59.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.619965,
+                12.441074
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33686326",
+        "title": "Homestay Ho Sen",
+        "city": "Ea T'Ling, Tỉnh Đăk Nông",
+        "totalScore": 0,
+        "ranking": "19/59",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "342.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Homestay Ho Sen ở Ea T'Ling, Tỉnh Đăk Nông. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 19/59. Giá: 342.105 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/31/6d/20/13/homestay-h-sen.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.03638,
+                12.4896
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12977763",
+        "title": "Tay Nguyen Hotel",
+        "city": "Ea T'Ling, Tỉnh Đăk Nông",
+        "totalScore": 0,
+        "ranking": "20/59",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tay Nguyen Hotel ở Ea T'Ling, Tỉnh Đăk Nông. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 20/59.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.68147,
+                12.0003
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20865124",
+        "title": "Homestay Bien Rung",
+        "city": "Quang Khe, Tỉnh Đăk Nông",
+        "totalScore": 0,
+        "ranking": "21/59",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Homestay Bien Rung ở Quang Khe, Tỉnh Đăk Nông. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 21/59.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.79474,
+                11.909182
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21363670",
+        "title": "Khach Sạn Hoa Yen",
+        "city": "Gia Nghĩa, Tỉnh Đăk Nông",
+        "totalScore": 0,
+        "ranking": "22/59",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "263.158 ₫ - 315.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khach Sạn Hoa Yen ở Gia Nghĩa, Tỉnh Đăk Nông. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 22/59. Giá: 263.158 ₫ - 315.789 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/7a/06/29/khach-s-n-vao-ban-dem.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.68776,
+                12.017584
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34120640",
+        "title": "Cai Gui Ta Dung",
+        "city": "Tỉnh Đăk Nông",
+        "totalScore": 0,
+        "ranking": "23/59",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "1.684.211 ₫ - 1.921.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Cai Gui Ta Dung ở Tỉnh Đăk Nông. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 23/59. Giá: 1.684.211 ₫ - 1.921.053 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/32/71/fd/96/cai-gui-ta-dung.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.922646,
+                11.859767
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7241898",
+        "title": "Khách sạn Alumin",
+        "city": "Gia Nghĩa, Tỉnh Đăk Nông",
+        "totalScore": 0,
+        "ranking": "24/59",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Alumin ở Gia Nghĩa, Tỉnh Đăk Nông. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 24/59.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.6827,
+                11.99182
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17325067",
+        "title": "Khách Sạn Sông Hiếu",
+        "city": "Dak Mam, Tỉnh Đăk Nông",
+        "totalScore": 0,
+        "ranking": "25/59",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn Sông Hiếu ở Dak Mam, Tỉnh Đăk Nông. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 25/59.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.89903,
+                12.5926
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34237355",
+        "title": "Hong Ngoc 2 Hotel Ta Dung",
+        "city": "Quang Khe, Tỉnh Đăk Nông",
+        "totalScore": 0,
+        "ranking": "26/59",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "289.474 ₫ - 578.947 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hong Ngoc 2 Hotel Ta Dung ở Quang Khe, Tỉnh Đăk Nông. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 26/59. Giá: 289.474 ₫ - 578.947 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/32/c9/dc/fe/property-building.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.80384,
+                11.907726
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17790957",
+        "title": "Nguyen Ngoc Hotel",
+        "city": "Ea T'Ling, Tỉnh Đăk Nông",
+        "totalScore": 0,
+        "ranking": "27/59",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "263.158 ₫ - 289.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nguyen Ngoc Hotel ở Ea T'Ling, Tỉnh Đăk Nông. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 27/59. Giá: 263.158 ₫ - 289.474 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.8717,
+                12.58166
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33235768",
+        "title": "2anh_vietnam",
+        "city": "Dak Som, Tỉnh Đăk Nông",
+        "totalScore": 0,
+        "ranking": "28/59",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "2anh_vietnam ở Dak Som, Tỉnh Đăk Nông. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 28/59.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/30/0d/45/07/granite-waterfall-also.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.92586,
+                11.875113
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26612656",
+        "title": "Star Hill Dak Nong Retreat",
+        "city": "Quang Khe, Tỉnh Đăk Nông",
+        "totalScore": 0,
+        "ranking": "29/59",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "894.737 ₫ - 1.657.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Star Hill Dak Nong Retreat ở Quang Khe, Tỉnh Đăk Nông. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 29/59. Giá: 894.737 ₫ - 1.657.895 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/5e/22/fd/quiet-and-completely.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.84057,
+                11.921929
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34157558",
+        "title": "Khach San Duc Loc Phat",
+        "city": "Tỉnh Đăk Nông",
+        "totalScore": 0,
+        "ranking": "30/59",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "263.158 ₫ - 289.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khach San Duc Loc Phat ở Tỉnh Đăk Nông. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 30/59. Giá: 263.158 ₫ - 289.474 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/32/8e/05/a7/property-building.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.54351,
+                11.993894
+            ]
+        },
+        "openingHours": null
+    }
+]

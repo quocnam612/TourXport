@@ -1,0 +1,1614 @@
+[
+    {
+        "sourceLocationId": "3169590",
+        "title": "Động Thiên Đường",
+        "city": "Tỉnh Quảng Bình",
+        "totalScore": 4.7,
+        "ranking": "2/31",
+        "reviewsCount": 2018,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Động Thiên Đường ở Tỉnh Quảng Bình. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.7/5 từ 2018 lượt review. Xếp hạng: 2/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/a1/95/a9/1-km-tour-inside-paradise.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.22329,
+                17.519453
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "321298",
+        "title": "Động Phong Nha",
+        "city": "Tỉnh Quảng Bình",
+        "totalScore": 4.6,
+        "ranking": "3/31",
+        "reviewsCount": 1339,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Động Phong Nha ở Tỉnh Quảng Bình. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên. Đánh giá: 4.6/5 từ 1339 lượt review. Xếp hạng: 3/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/60/06/2c/amazing.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.283104,
+                17.615866
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12878877",
+        "title": "The Duck Stop",
+        "city": "Hung Trach",
+        "totalScore": 4.8,
+        "ranking": "1/31",
+        "reviewsCount": 484,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Duck Stop ở Hung Trach. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.8/5 từ 484 lượt review. Xếp hạng: 1/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/d6/11/a9/amazing-our-farm-food.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.36568,
+                17.604454
+            ]
+        },
+        "openingHours": {
+            "display": "08:30-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "4079347",
+        "title": "Son Doong Cave",
+        "city": "Tỉnh Quảng Bình",
+        "totalScore": 4.9,
+        "ranking": "4/31",
+        "reviewsCount": 160,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Son Doong Cave ở Tỉnh Quảng Bình. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.9/5 từ 160 lượt review. Xếp hạng: 4/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/f5/b8/58/son-doong-cave-is-known.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.144,
+                17.546938
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "9466008",
+        "title": "Động Tiên Sơn",
+        "city": "Đồng Hới",
+        "totalScore": 4.6,
+        "ranking": "7/31",
+        "reviewsCount": 82,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Động Tiên Sơn ở Đồng Hới. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.6/5 từ 82 lượt review. Xếp hạng: 7/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/ca/4a/6e/foto-1.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.30581,
+                17.6125
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-15:45",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 945
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 945
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 945
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 945
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 945
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 945
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 945
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "4155190",
+        "title": "Tu Lan Caving Center",
+        "city": "Đồng Hới",
+        "totalScore": 4.9,
+        "ranking": "5/31",
+        "reviewsCount": 142,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tu Lan Caving Center ở Đồng Hới. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.9/5 từ 142 lượt review. Xếp hạng: 5/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/36/cb/55/tu-lan-caving-center.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.07906,
+                17.771484
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8602546",
+        "title": "Hang Tối",
+        "city": "Son Trach",
+        "totalScore": 4.0,
+        "ranking": "6/31",
+        "reviewsCount": 502,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hang Tối ở Son Trach. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.0/5 từ 502 lượt review. Xếp hạng: 6/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/08/ab/7c/hang-toi-dark-cave.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.25087,
+                17.573849
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-15:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 930
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 930
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 930
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 930
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 930
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 930
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 930
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8263812",
+        "title": "Vườn Thực Vật Phong Nha",
+        "city": "Son Trach",
+        "totalScore": 3.9,
+        "ranking": "9/31",
+        "reviewsCount": 291,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn Thực Vật Phong Nha ở Son Trach. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.9/5 từ 291 lượt review. Xếp hạng: 9/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/d6/02/b3/gio-waterfall.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.30141,
+                17.552517
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8291263",
+        "title": "Núi U Bò",
+        "city": "Tỉnh Quảng Bình",
+        "totalScore": 4.8,
+        "ranking": "19/31",
+        "reviewsCount": 5,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Núi U Bò ở Tỉnh Quảng Bình. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.8/5 từ 5 lượt review. Xếp hạng: 19/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/56/31/af/u-bo-mountain-nui-u-bo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.39941,
+                17.430826
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7184334",
+        "title": "Bãi Đá Nhảy",
+        "city": "Đồng Hới",
+        "totalScore": 4.3,
+        "ranking": "10/31",
+        "reviewsCount": 62,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bãi Đá Nhảy ở Đồng Hới. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.3/5 từ 62 lượt review. Xếp hạng: 10/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/bd/f9/2b/20160322-140304-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.59336,
+                17.46106
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15009724",
+        "title": "Water Buffalo Springs",
+        "city": "Tỉnh Quảng Bình",
+        "totalScore": 4.5,
+        "ranking": "25/31",
+        "reviewsCount": 2,
+        "category": "Công viên nước & giải trí",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Water Buffalo Springs ở Tỉnh Quảng Bình. Loại địa điểm: Công viên nước & giải trí. Tags: Điểm du lịch, Công viên nước & giải trí. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 25/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/7d/52/6f/water-buffalo-springs.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "07:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8114832",
+        "title": "Suoi Nuoc Mooc",
+        "city": "Tỉnh Quảng Bình",
+        "totalScore": 3.3,
+        "ranking": "24/31",
+        "reviewsCount": 53,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Suoi Nuoc Mooc ở Tỉnh Quảng Bình. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.3/5 từ 53 lượt review. Xếp hạng: 24/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/1e/ff/7e/exicited-activities.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.238304,
+                17.55815
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-15:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 930
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 930
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 930
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 930
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 930
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 930
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 930
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "20125364",
+        "title": "Yoga Phong Nha",
+        "city": "Phong Nha",
+        "totalScore": 5.0,
+        "ranking": "15/31",
+        "reviewsCount": 7,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Yoga Phong Nha ở Phong Nha. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Lớp học & hội thảo, Khác, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 7 lượt review. Xếp hạng: 15/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Lớp học & hội thảo",
+            "Khác",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/27/6b/f5/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11631472",
+        "title": "Quang Phu Sand Dunes",
+        "city": "Đồng Hới",
+        "totalScore": 4.4,
+        "ranking": "11/31",
+        "reviewsCount": 34,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quang Phu Sand Dunes ở Đồng Hới. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.4/5 từ 34 lượt review. Xếp hạng: 11/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/14/1b/64/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.6188,
+                17.50321
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17284844",
+        "title": "Biển Nhật Lệ",
+        "city": "Đồng Hới",
+        "totalScore": 4.4,
+        "ranking": "12/31",
+        "reviewsCount": 22,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Biển Nhật Lệ ở Đồng Hới. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.4/5 từ 22 lượt review. Xếp hạng: 12/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/1a/e9/60/nh-t-l-sea.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.62583,
+                17.495087
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9563810",
+        "title": "Quang Binh Caves Adventure Travel",
+        "city": "Đồng Hới",
+        "totalScore": 5.0,
+        "ranking": "16/31",
+        "reviewsCount": 15,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": "Phong Nha Viet Tourism and Consulting Co., Ltd specializes in the fields of tourism, and resources and environment. Our goal is to serve our clients our best products and services on the basic of mutual benefit.\nOur products include eco-tours, cultural and historical tours, all the wonders of Phong Nha – Ke Bang World Heritage, and famous places of Quang Binh province. Join our tours, we will take you to Phong Nha First Wonder, Paradise case – the longest dry cave in Asia, Ecological area of Mooc stream, Chay River, Dark Cave, Botanical garden, zone of semi-wild primates, U Bo Mountain, The Eight-lady cave...",
+        "embedding": null,
+        "searchText": "Quang Binh Caves Adventure Travel ở Đồng Hới. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Mô tả: Phong Nha Viet Tourism and Consulting Co., Ltd specializes in the fields of tourism, and resources and environment. Our goal is to serve our clients our best products and services on the basic of mutual benefit.\nOur products include eco-tours, cultural and historical tours, all the wonders of Phong Nha – Ke Bang World Heritage, and famous places of Quang Binh province. Join our tours, we will take you to Phong Nha First Wonder, Paradise case – the longest dry cave in Asia, Ecological area of Mooc stream, Chay River, Dark Cave, Botanical garden, zone of semi-wild primates, U Bo Mountain, The Eight-lady cave... Đánh giá: 5.0/5 từ 15 lượt review. Xếp hạng: 16/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/16/71/cb/hang-toi.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.61923,
+                17.478024
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13549094",
+        "title": "Nhà Thờ Tam Tòa",
+        "city": "Đồng Hới",
+        "totalScore": 4.1,
+        "ranking": "17/31",
+        "reviewsCount": 15,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Thờ Tam Tòa ở Đồng Hới. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.1/5 từ 15 lượt review. Xếp hạng: 17/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/9e/36/66/dong-hoi-la-chiesa-di.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.62303,
+                17.47492
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15044398",
+        "title": "Hang Rục Mòn",
+        "city": "Minh Hoa",
+        "totalScore": 4.9,
+        "ranking": "14/31",
+        "reviewsCount": 11,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hang Rục Mòn ở Minh Hoa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.9/5 từ 11 lượt review. Xếp hạng: 14/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/55/22/ca/everyone-enjoying-swim.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "07:15-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 435,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 435,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 435,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 435,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 435,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 435,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 435,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14206125",
+        "title": "Bong Lai Rattan House",
+        "city": "Hung Trach",
+        "totalScore": 4.9,
+        "ranking": "13/31",
+        "reviewsCount": 21,
+        "category": "Công viên nước & giải trí",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bong Lai Rattan House ở Hung Trach. Loại địa điểm: Công viên nước & giải trí. Tags: Điểm du lịch, Công viên nước & giải trí. Đánh giá: 4.9/5 từ 21 lượt review. Xếp hạng: 13/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/fe/3c/de/20181009-150859-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.35697,
+                17.592628
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15528029",
+        "title": "Vũng Chùa - Đảo Yến",
+        "city": "Quang Đong",
+        "totalScore": 4.5,
+        "ranking": "22/31",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vũng Chùa - Đảo Yến ở Quang Đong. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 22/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/76/30/05/du-ng-vao.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27743334",
+        "title": "Tang's Farm Quang Binh",
+        "city": "Hung Trach",
+        "totalScore": 4.9,
+        "ranking": "8/31",
+        "reviewsCount": 32,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tang's Farm Quang Binh ở Hung Trach. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.9/5 từ 32 lượt review. Xếp hạng: 8/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/9e/36/25/tr-i-nghi-m-tuy-t-v-i.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.33333,
+                17.5
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34023500",
+        "title": "Bến Phà Tuần Châu",
+        "city": "Quang Ninh",
+        "totalScore": 5.0,
+        "ranking": "18/31",
+        "reviewsCount": 2,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bến Phà Tuần Châu ở Quang Ninh. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 18/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/d5/6a/ba/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.98573,
+                20.93512
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-13:00, 13:30-15:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 900
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34367276",
+        "title": "Phong Nha 4500m by Kayak",
+        "city": "Phong Nha",
+        "totalScore": 5.0,
+        "ranking": "20/31",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phong Nha 4500m by Kayak ở Phong Nha. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 20/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/33/3e/7d/3d/tuy-n-kham-pha-d-ng-phong.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.32099,
+                17.60025
+            ]
+        },
+        "openingHours": {
+            "display": "08:30-15:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 900
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 900
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "30344343",
+        "title": "Bảo Ninh Beach - Biển Bảo Ninh",
+        "city": "Đồng Hới",
+        "totalScore": 0,
+        "ranking": "21/31",
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bảo Ninh Beach - Biển Bảo Ninh ở Đồng Hới. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Hoạt động ngoài trời. Xếp hạng: 21/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.63723,
+                17.474527
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27782050",
+        "title": "Tang's Farm Quang Binh",
+        "city": "Hung Trach",
+        "totalScore": 5.0,
+        "ranking": "23/31",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tang's Farm Quang Binh ở Hung Trach. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 23/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/58/7b/d1/m-t-tr-i-nghi-m-tuy-t.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.665924,
+                18.683533
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23375862",
+        "title": "Mocnam Adventure",
+        "city": "Đồng Hới",
+        "totalScore": 5.0,
+        "ranking": "26/31",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mocnam Adventure ở Đồng Hới. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 26/31.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/24/62/c4/bb/caving.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.61752,
+                17.477995
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33278671",
+        "title": "Tuần Châu Hạ Long",
+        "city": "Quang Ninh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tuần Châu Hạ Long ở Quang Ninh. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/32/4b/72/16/otter-valley-cafe.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.98573,
+                20.93512
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27688851",
+        "title": "Hava Valley",
+        "city": "Phúc Trạch",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hava Valley ở Phúc Trạch. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.6158,
+                21.311205
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-16:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 990
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23276445",
+        "title": "Thung lũng Sinh Tồn",
+        "city": "Tỉnh Quảng Bình",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thung lũng Sinh Tồn ở Tỉnh Quảng Bình. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/29/be/7f/86/trekking-trong-thung.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.283394,
+                17.59078
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14041827",
+        "title": "Làng Bích Họa Cảnh Dương",
+        "city": "Canh Duong",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Làng Bích Họa Cảnh Dương ở Canh Duong. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.44852,
+                17.871914
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8640899",
+        "title": "Đảo Chim",
+        "city": "Quang Đong",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đảo Chim ở Quang Đong. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/e3/1b/ba/t-nh-qu-ng-binh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    }
+]

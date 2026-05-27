@@ -1,0 +1,26 @@
+[
+    {
+        "sourceLocationId": "12387705",
+        "title": "Tịnh Xá Ngọc Chương",
+        "city": "Vi Thanh",
+        "totalScore": 4.0,
+        "ranking": "1/1",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tịnh Xá Ngọc Chương ở Vi Thanh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 1/1.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/31/96/9f/photo-prise-par-guythu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    }
+]

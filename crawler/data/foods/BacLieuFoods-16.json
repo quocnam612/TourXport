@@ -1,0 +1,888 @@
+[
+    {
+        "sourceLocationId": "26618269",
+        "title": "Lạc dining",
+        "city": "Bac Lieu",
+        "totalScore": 4.6,
+        "ranking": "1/10",
+        "reviewsCount": 9,
+        "category": "Ngồi xuống",
+        "priceRange": "1.315.789.440 ₫ - 2.147.483.647 ₫",
+        "description": "Lạc Dining là quán ăn nhỏ tại Bạc Liêu, phục vụ giới hạn theo mỗi khung giờ. Không gian yên tĩnh, phù hợp cho những buổi dùng bữa nhẹ nhàng và trò chuyện. Ưu tiên khách đặt trước để đảm bảo chất lượng phục vụ.",
+        "embedding": null,
+        "searchText": "Lạc dining ở Bac Lieu. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Lạc Dining là quán ăn nhỏ tại Bạc Liêu, phục vụ giới hạn theo mỗi khung giờ. Không gian yên tĩnh, phù hợp cho những buổi dùng bữa nhẹ nhàng và trò chuyện. Ưu tiên khách đặt trước để đảm bảo chất lượng phục vụ. Đánh giá: 4.6/5 từ 9 lượt review. Xếp hạng: 1/10. Giá: 1.315.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/c7/a3/0c/steak-tenderloin.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.71718,
+                9.294834
+            ]
+        },
+        "openingHours": {
+            "display": "16:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28297922",
+        "title": "De Tam Coc Restaurant & Coffee",
+        "city": "Ninh Bình",
+        "totalScore": 5.0,
+        "ranking": "95/213",
+        "reviewsCount": 4,
+        "category": "Ngồi xuống",
+        "priceRange": "26.316 ₫ - 157.895 ₫",
+        "description": "Nhà hàng cung cấp thực phẩm tươi ngon .phục vụ cả ăn chay và thuần chay .",
+        "embedding": null,
+        "searchText": "De Tam Coc Restaurant & Coffee ở Ninh Bình. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà hàng cung cấp thực phẩm tươi ngon .phục vụ cả ăn chay và thuần chay . Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 95/213. Giá: 26.316 ₫ - 157.895 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/65/15/83/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.72325,
+                9.280734
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8591805",
+        "title": "Thuyền Trăng Quán",
+        "city": "Bac Lieu",
+        "totalScore": 4.4,
+        "ranking": "2/10",
+        "reviewsCount": 7,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "nhà hàng sân vườn",
+        "embedding": null,
+        "searchText": "Thuyền Trăng Quán ở Bac Lieu. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: nhà hàng sân vườn Đánh giá: 4.4/5 từ 7 lượt review. Xếp hạng: 2/10. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/58/1b/c3/ch-p-trong-thuy-n-trang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.7102,
+                9.294065
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28985304",
+        "title": "Forest Sunset",
+        "city": "Ninh Bình",
+        "totalScore": 5.0,
+        "ranking": "132/213",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Forest Sunset ở Ninh Bình. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 132/213.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/68/c1/d6/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.72325,
+                9.280734
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28296788",
+        "title": "Lạc Hồng Terrace",
+        "city": "Ninh Bình",
+        "totalScore": 5.0,
+        "ranking": "137/213",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lạc Hồng Terrace ở Ninh Bình. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 137/213.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/c5/8b/56/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.72325,
+                9.280734
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-21:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14057826",
+        "title": "Bún Nước Lèo Cá Đồng Út Mén",
+        "city": "Bac Lieu",
+        "totalScore": 5.0,
+        "ranking": "3/10",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "526.315.776 ₫ - 789.473.664 ₫",
+        "description": "Nhà hàng chúng tôi hân hạnh phục vụ quý khách với phương châm: Ngon, bổ, rẻ và phục vụ tận tình. Không gian thoải mái, thưởng thức tô bún nước lèo hương vị Sóc Trăng kết hợp với Bạc Liêu thì chỉ có tại ÚT MÉN. Cá lóc, tôm tươi rói, rau sạch trồng nhà sẽ đem đến hương vị gia đình làng quê (chỉ có tại ÚT MÉN mới đem lại cho quý khách điều đó). Hãy đến ÚT MÉN DREAM PALACE tận hưởng hương vị Đồng Quê",
+        "embedding": null,
+        "searchText": "Bún Nước Lèo Cá Đồng Út Mén ở Bac Lieu. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà hàng chúng tôi hân hạnh phục vụ quý khách với phương châm: Ngon, bổ, rẻ và phục vụ tận tình. Không gian thoải mái, thưởng thức tô bún nước lèo hương vị Sóc Trăng kết hợp với Bạc Liêu thì chỉ có tại ÚT MÉN. Cá lóc, tôm tươi rói, rau sạch trồng nhà sẽ đem đến hương vị gia đình làng quê (chỉ có tại ÚT MÉN mới đem lại cho quý khách điều đó). Hãy đến ÚT MÉN DREAM PALACE tận hưởng hương vị Đồng Quê Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 3/10. Giá: 526.315.776 ₫ - 789.473.664 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/18/16/fd/06/bun-nu-c-leo-ca-d-ng.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.715645,
+                9.33998
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26661069",
+        "title": "Tiệm Bánh Huỳnh Minh Thành",
+        "city": "Bac Lieu",
+        "totalScore": 5.0,
+        "ranking": "4/10",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tiệm Bánh Huỳnh Minh Thành ở Bac Lieu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 4/10.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.53421,
+                9.25122
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26661107",
+        "title": "Bún Nước Lèo Năm Hớn",
+        "city": "Bac Lieu",
+        "totalScore": 5.0,
+        "ranking": "5/10",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bún Nước Lèo Năm Hớn ở Bac Lieu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 5/10.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.72033,
+                9.306917
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26661119",
+        "title": "Quán Ăn Chay Nhân Duyên Quán",
+        "city": "Bac Lieu",
+        "totalScore": 5.0,
+        "ranking": "6/10",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Ăn Chay Nhân Duyên Quán ở Bac Lieu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 6/10.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.717064,
+                9.295155
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26661081",
+        "title": "Bánh Xèo A Mật",
+        "city": "Bac Lieu",
+        "totalScore": 5.0,
+        "ranking": "7/10",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bánh Xèo A Mật ở Bac Lieu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 7/10.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.53421,
+                9.25122
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26661113",
+        "title": "Bánh Tằm Ngan Dừa (Cô Nhãn)",
+        "city": "Bac Lieu",
+        "totalScore": 5.0,
+        "ranking": "8/10",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bánh Tằm Ngan Dừa (Cô Nhãn) ở Bac Lieu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 8/10.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.7287,
+                9.2942
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-09:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 570
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 570
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 570
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 570
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 570
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 570
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 570
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "7813461",
+        "title": "Công Tử Bạc Liêu",
+        "city": "Bac Lieu",
+        "totalScore": 3.4,
+        "ranking": "9/10",
+        "reviewsCount": 10,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Công Tử Bạc Liêu ở Bac Lieu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.4/5 từ 10 lượt review. Xếp hạng: 9/10.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/6d/0e/d4/d-ng-di-vao-cu-i-tu-n.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.72372,
+                9.284128
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27489663",
+        "title": "Nhà Hàng Thành Dê",
+        "city": "Ninh Bình",
+        "totalScore": 5.0,
+        "ranking": "181/213",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Thành Dê ở Ninh Bình. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 181/213.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.72325,
+                9.280734
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13969582",
+        "title": "Làng Nướng 89",
+        "city": "Bac Lieu",
+        "totalScore": 4.0,
+        "ranking": "10/10",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Làng Nướng 89 ở Bac Lieu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 10/10.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.72088,
+                9.29984
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27945183",
+        "title": "Restaurants Trường An",
+        "city": "Ninh Bình",
+        "totalScore": 3.0,
+        "ranking": "207/213",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Restaurants Trường An ở Ninh Bình. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 207/213.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.72325,
+                9.280734
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26866994",
+        "title": "Vịt & Bao Tử Hầm Tiêu Cô Châu - Bạc Liêu",
+        "city": "Bac Lieu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Toạ lạc chính tại đường 30/4, phường 3; một trong những con đường lớn nhất nhì và nhộn nhịp nhất của trung tâm Thành phố Bạc Liêu. QUÁN VỊT & BAO TỬ HẦM TIÊU CÔ CHÂU ra đời từ năm 1997 với món ăn mang đậm hương vị đặc trưng truyền thống từ hai nền ẩm thực Hoa - Việt, là một sự lựa chọn “không thể bỏ lỡ” cho tất cả du khách mỗi khi du lịch đến Bạc Liêu",
+        "embedding": null,
+        "searchText": "Vịt & Bao Tử Hầm Tiêu Cô Châu - Bạc Liêu ở Bac Lieu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Toạ lạc chính tại đường 30/4, phường 3; một trong những con đường lớn nhất nhì và nhộn nhịp nhất của trung tâm Thành phố Bạc Liêu. QUÁN VỊT & BAO TỬ HẦM TIÊU CÔ CHÂU ra đời từ năm 1997 với món ăn mang đậm hương vị đặc trưng truyền thống từ hai nền ẩm thực Hoa - Việt, là một sự lựa chọn “không thể bỏ lỡ” cho tất cả du khách mỗi khi du lịch đến Bạc Liêu",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": {
+            "display": "06:00-10:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 630
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 630
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 630
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 630
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 630
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 630
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 630
+                    }
+                ]
+            ]
+        }
+    }
+]

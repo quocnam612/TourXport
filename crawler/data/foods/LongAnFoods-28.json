@@ -1,0 +1,1353 @@
+[
+    {
+        "sourceLocationId": "33472280",
+        "title": "Nhà Hàng Pù Luông Emotion",
+        "city": "Thanh Hóa",
+        "totalScore": 5.0,
+        "ranking": "13/31",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Pù Luông Emotion ở Thanh Hóa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 13/31.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/2f/db/da/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.180214,
+                10.776521
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10766357",
+        "title": "Nhà Hàng & Khách Sạn Thanh Vân 2",
+        "city": "Tân An",
+        "totalScore": 4.0,
+        "ranking": "1/2",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "Nhà hàng khách sạn Thanh Vân 2 chuyên phục vụ tiệc cưới hỏi, liên hoa, sinh nhật, hội nghị, tổ chức hội thảo...",
+        "embedding": null,
+        "searchText": "Nhà Hàng & Khách Sạn Thanh Vân 2 ở Tân An. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà hàng khách sạn Thanh Vân 2 chuyên phục vụ tiệc cưới hỏi, liên hoa, sinh nhật, hội nghị, tổ chức hội thảo... Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 1/2. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.405846,
+                10.542881
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "5975843",
+        "title": "Hao Ai",
+        "city": "Tân An",
+        "totalScore": 4.0,
+        "ranking": "2/2",
+        "reviewsCount": 4,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hao Ai ở Tân An. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 4 lượt review. Xếp hạng: 2/2.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/05/ff/d8/fc/hao-ai.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33382547",
+        "title": "Al Dente Restaurant , Dalat, Vietnam",
+        "city": "Dalat",
+        "totalScore": 5.0,
+        "ranking": "3/8",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Al Dente Restaurant , Dalat, Vietnam ở Dalat. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 3/8.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.427956,
+                10.533358
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34254240",
+        "title": "Sala Tayninh Restaurant",
+        "city": "Tây Ninh",
+        "totalScore": 2.0,
+        "ranking": "25/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sala Tayninh Restaurant ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 2.0/5 từ 1 lượt review. Xếp hạng: 25/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.42254,
+                10.89007
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14011776",
+        "title": "Bắc Kim Thang",
+        "city": "Tỉnh Tiền Giang",
+        "totalScore": 4.1,
+        "ranking": "2/3",
+        "reviewsCount": 7,
+        "category": "Ngồi xuống",
+        "priceRange": "1.052.631.552 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Bắc Kim Thang ở Tỉnh Tiền Giang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.1/5 từ 7 lượt review. Xếp hạng: 2/3. Giá: 1.052.631.552 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/6f/db/a5/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.31598,
+                10.430671
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32895282",
+        "title": "Miss Hoi An Cafe",
+        "city": "Hội An",
+        "totalScore": 5.0,
+        "ranking": "981/1424",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Miss Hoi An Cafe ở Hội An. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 981/1424.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/33/20/41/86/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.50576,
+                10.802679
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "2062428",
+        "title": "Mekong Rest Stop",
+        "city": "Tỉnh Tiền Giang",
+        "totalScore": 3.5,
+        "ranking": "1/3",
+        "reviewsCount": 415,
+        "category": "Ngồi xuống",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Mekong Rest Stop ở Tỉnh Tiền Giang. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.5/5 từ 415 lượt review. Xếp hạng: 1/3. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/10/7f/41/photo1jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.33997,
+                10.414556
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10784287",
+        "title": "Nhà Hàng Hoàng Yến",
+        "city": "Thành phố Hồ Chí Minh",
+        "totalScore": 4.2,
+        "ranking": "2340/4905",
+        "reviewsCount": 6,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hoàng Yến ở Thành phố Hồ Chí Minh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.2/5 từ 6 lượt review. Xếp hạng: 2340/4905. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/c7/d4/5e/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.373634,
+                10.993852
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15637586",
+        "title": "Cơm Niêu Thiên Lý",
+        "city": "Thành phố Hồ Chí Minh",
+        "totalScore": 5.0,
+        "ranking": "2107/4905",
+        "reviewsCount": 4,
+        "category": "Ngồi xuống",
+        "priceRange": "657.895 ₫ - 5.263.158 ₫",
+        "description": "Cơm niêu Thiên Lý – Cơm ngon cho mọi gia đình! Nếu lâu nay bạn nghĩ hình ảnh những niêu cơm chỉ còn trong quá khứ thì khi đến với cơm niêu Thiên Lý, bạn sẽ dễ dàng thưởng thức món cơm niêu chứa đựng hương vị của cả một tuổi thơ dữ dội. Thực khách một lần ghé chân nơi đây, chắc chắm sẽ trở thành những khách hàng quen của món cơm tuyệt vời này.",
+        "embedding": null,
+        "searchText": "Cơm Niêu Thiên Lý ở Thành phố Hồ Chí Minh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Cơm niêu Thiên Lý – Cơm ngon cho mọi gia đình! Nếu lâu nay bạn nghĩ hình ảnh những niêu cơm chỉ còn trong quá khứ thì khi đến với cơm niêu Thiên Lý, bạn sẽ dễ dàng thưởng thức món cơm niêu chứa đựng hương vị của cả một tuổi thơ dữ dội. Thực khách một lần ghé chân nơi đây, chắc chắm sẽ trở thành những khách hàng quen của món cơm tuyệt vời này. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 2107/4905. Giá: 657.895 ₫ - 5.263.158 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/db/90/5b/com-nieu-thien-ly.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37895,
+                10.99326
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28161402",
+        "title": "Cơm Niêu An Hòa",
+        "city": "Tây Ninh",
+        "totalScore": 3.0,
+        "ranking": "20/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cơm Niêu An Hòa ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 20/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/4f/59/8f/squid.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.321815,
+                11.016252
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "16762634",
+        "title": "Trịnh Cafe",
+        "city": "Thành phố Hồ Chí Minh",
+        "totalScore": 4.0,
+        "ranking": "4319/4905",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trịnh Cafe ở Thành phố Hồ Chí Minh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 4319/4905.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/18/e8/48/5b/photo3jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37199,
+                10.99644
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11946651",
+        "title": "Nhà Hàng Thaiexpress Crescent Plaza",
+        "city": "Thành phố Hồ Chí Minh",
+        "totalScore": 2.5,
+        "ranking": "4660/4905",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Thaiexpress Crescent Plaza ở Thành phố Hồ Chí Minh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 2.5/5 từ 2 lượt review. Xếp hạng: 4660/4905.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/17/91/ed/7e/photo1jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.373764,
+                10.993852
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26342791",
+        "title": "The Coffee Bean And Tea Leaf Han Thuyen",
+        "city": "Thành phố Hồ Chí Minh",
+        "totalScore": 5.0,
+        "ranking": "585/4905",
+        "reviewsCount": 17,
+        "category": "Ngồi xuống",
+        "priceRange": "1.447.368.448 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The Coffee Bean And Tea Leaf Han Thuyen ở Thành phố Hồ Chí Minh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 17 lượt review. Xếp hạng: 585/4905. Giá: 1.447.368.448 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/86/a0/3d/located-in-the-heart.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.5582,
+                10.799399
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28161297",
+        "title": "Hội Quán Bê Thui Hải Sản Trung Chỉnh",
+        "city": "Tây Ninh",
+        "totalScore": 4.0,
+        "ranking": "15/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hội Quán Bê Thui Hải Sản Trung Chỉnh ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 15/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/5e/76/b5/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.32531,
+                11.028291
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-23:45",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32713598",
+        "title": "Since 1988 Café",
+        "city": "Tây Ninh",
+        "totalScore": 3.0,
+        "ranking": "23/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Since 1988 Café ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 23/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/53/7d/fe/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.32592,
+                11.030372
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32711331",
+        "title": "Phở Đạt Hà Nội",
+        "city": "Tây Ninh",
+        "totalScore": 3.0,
+        "ranking": "22/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phở Đạt Hà Nội ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 22/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/53/57/de/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.327965,
+                11.032964
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27500541",
+        "title": "Bánh Canh Năm Dung 2",
+        "city": "Tây Ninh",
+        "totalScore": 4.0,
+        "ranking": "16/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bánh Canh Năm Dung 2 ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 16/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/ae/c2/3e/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.34883,
+                11.038496
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28047819",
+        "title": "Xocoati Saigon",
+        "city": "Thành phố Hồ Chí Minh",
+        "totalScore": 5.0,
+        "ranking": "3028/4905",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Xocoati Saigon ở Thành phố Hồ Chí Minh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 3028/4905.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/2e/38/0d/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.56794,
+                10.763347
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 780,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 780,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 780,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 780,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 780,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27931191",
+        "title": "Holy Annie's",
+        "city": "Ben Luc",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Holy Annie's ở Ben Luc. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.48528,
+                10.638806
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25381527",
+        "title": "Lam Cafe",
+        "city": "Ben Luc",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Lam cafe mang phong cách tropical garden trên nên gỗ reclaim một không gian nhiều mảng xanh, sáng tạo và khơi nguồn hứng khởi",
+        "embedding": null,
+        "searchText": "Lam Cafe ở Ben Luc. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Lam cafe mang phong cách tropical garden trên nên gỗ reclaim một không gian nhiều mảng xanh, sáng tạo và khơi nguồn hứng khởi",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/28/78/70/d9/lam-la-ph-n-ng-c-a-tr.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14061522",
+        "title": "Jollibee",
+        "city": "Ben Luc",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Jollibee ở Ben Luc. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.482124,
+                10.637538
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27461553",
+        "title": "Duda 3 - Heritage Tea",
+        "city": "Tân An",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Duda 3 - Heritage Tea ở Tân An. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.41022,
+                10.535152
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-02:00, 09:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 120
+                    },
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 120
+                    },
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 120
+                    },
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 120
+                    },
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 120
+                    },
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 120
+                    },
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 120
+                    },
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19454036",
+        "title": "Bánh Mì Tuấn Mập Sài Gòn",
+        "city": "Tân An",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bánh Mì Tuấn Mập Sài Gòn ở Tân An. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.417,
+                10.53516
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19273574",
+        "title": "Jisan - Bep Tra Truyen Thong",
+        "city": "Tân An",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Quán cafe",
+        "priceRange": "263.157.888 ₫ - 657.894.720 ₫",
+        "description": "JISAN - Bếp trà truyền thống sử dụng nguyên liệu tự nhiên theo cách mà các bậc tiền nhân ngày xưa để lại. * Giải thưởng: The Best Natural and Traditional Taste - Tea Show 2019 (Japan)",
+        "embedding": null,
+        "searchText": "Jisan - Bep Tra Truyen Thong ở Tân An. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Mô tả: JISAN - Bếp trà truyền thống sử dụng nguyên liệu tự nhiên theo cách mà các bậc tiền nhân ngày xưa để lại. * Giải thưởng: The Best Natural and Traditional Taste - Tea Show 2019 (Japan) Giá: 263.157.888 ₫ - 657.894.720 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2c/fc/c8/7c/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.41274,
+                10.53703
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23086072",
+        "title": "The Pizza Company",
+        "city": "Tân An",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The Pizza Company ở Tân An. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.40536,
+                10.537411
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34048643",
+        "title": "Xay ngũ cốc Út Dín",
+        "city": "Can Giuoc",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Xay ngũ cốc Út Dín ở Can Giuoc. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/f8/e1/19/xay-ngu-coc-ut-din.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.58811,
+                10.64588
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33298897",
+        "title": "Ăn Gì Hông",
+        "city": "Can Giuoc",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ăn Gì Hông ở Can Giuoc. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.778564,
+                10.661437
+            ]
+        },
+        "openingHours": null
+    }
+]

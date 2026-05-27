@@ -4,6 +4,10 @@ services:
     ports:
       - "${PORT_BACKEND:-3000}:3000"
     env_file: .env
+    environment:
+      AI_BACKEND_URL: http://ai_backend:8000
+    depends_on:
+      - ai_backend
     volumes:
       - ./backend:/app
       - /app/node_modules
@@ -19,8 +23,8 @@ services:
 
   ai_backend:
     build: ./ai_backend
-    expose:
-      - "8000" # Chỉ mở nội bộ
+    ports:
+      - "${PORT_AI:-8000}:8000"
     env_file: .env
     develop:
       watch:

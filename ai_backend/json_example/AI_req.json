@@ -1,0 +1,16 @@
+{
+    "destinations": ["Châu Đốc", "Cà Mau", "Rạch Giá"],
+    // Hoặc "destinations": "auto",
+    "totalDays": 2,
+    "totalNights": 1, // Optional, nếu không có sẽ mặc định là totalNight = totalDays - 1
+    "travelers": {
+        "adults": 2,
+        "children": 0
+    }, // Optional, nếu không có sẽ mặc định là 1 người lớn
+    "preferences": {
+        "budgetLevel": "medium",
+        "interests": ["temple", "culture", "local food", "scenic view"],
+        "transportMode": "auto",
+        "pace": "relaxed"
+    }
+}

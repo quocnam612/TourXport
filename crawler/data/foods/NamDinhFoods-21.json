@@ -1,0 +1,1263 @@
+[
+    {
+        "sourceLocationId": "34025551",
+        "title": "Cuisine Restaurant",
+        "city": "Sapa",
+        "totalScore": 4.9,
+        "ranking": "95/269",
+        "reviewsCount": 9,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "Convenient location, peaceful. We serve Italian and Vietnamese food, especially fresh wood-fired pizza that tastes like home.",
+        "embedding": null,
+        "searchText": "Cuisine Restaurant ở Sapa. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Convenient location, peaceful. We serve Italian and Vietnamese food, especially fresh wood-fired pizza that tastes like home. Đánh giá: 4.9/5 từ 9 lượt review. Xếp hạng: 95/269. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/ee/3b/dc/pizza.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.16924,
+                20.420473
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 630
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15097173",
+        "title": "GoGi House",
+        "city": "Nam Dinh",
+        "totalScore": 4.9,
+        "ranking": "1/7",
+        "reviewsCount": 10,
+        "category": "Ngồi xuống",
+        "priceRange": "1.578.947.328 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "GoGi House ở Nam Dinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.9/5 từ 10 lượt review. Xếp hạng: 1/7. Giá: 1.578.947.328 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/89/cf/03/fb-img-1564321568692.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.15467,
+                20.437248
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23285266",
+        "title": "LƯU GIA TRANG",
+        "city": "Nam Dinh",
+        "totalScore": 4.2,
+        "ranking": "2/7",
+        "reviewsCount": 5,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "LƯU GIA TRANG ở Nam Dinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.2/5 từ 5 lượt review. Xếp hạng: 2/7. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/c2/dc/ba/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.17328,
+                20.4137
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33097516",
+        "title": "Nhà Hàng Chay Hương Vân",
+        "city": "Nam Dinh",
+        "totalScore": 5.0,
+        "ranking": "3/7",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Chay Hương Vân ở Nam Dinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 3/7.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/fd/e9/e0/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.179146,
+                20.438866
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28879811",
+        "title": "AN Kinh Bắc - Signature",
+        "city": "Bắc Ninh",
+        "totalScore": 5.0,
+        "ranking": "4/19",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "AN Kinh–Bắc Signature – Kể lại hành trình khám phá văn hóa địa phương. Tự hào là thương hiệu cà phê từ vùng đất Bắc Ninh, AN Kinh–Bắc khởi tạo cửa hàng Signature đầu tiên của thương hiệu trên chính vùng đất này. Cửa hàng AN Signature được xây dựng dựa trên mô phỏng “kể lại” hành trình khám phá miền Kinh–Bắc. Điểm nhấn trong không gian là hình ảnh mái đình địa phương, cách điệu mềm mại tựa một dải lụa đào, ôm lấy bầu không khí nhộn nhịp của văn hóa sinh hoạt đình làng truyền thống Bắc Bộ. Kết hợp “vừa bổ trợ, vừa tương phản” trong hình khối, vật liệu và màu sắc, thiết kế không gian tại đây phản chiếu tính khớp nối các giá trị quá khứ, hiện tại và tương lai trong văn hóa bản địa. Tất cả nhịp nhàng kết nối để tạo ra những xúc cảm đa chiều dành cho những vị khách đến chơi nhà, về một vùng Kinh–Bắc không chỉ giàu đẹp về văn hóa mà còn chu đáo, thịnh tình.",
+        "embedding": null,
+        "searchText": "AN Kinh Bắc - Signature ở Bắc Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: AN Kinh–Bắc Signature – Kể lại hành trình khám phá văn hóa địa phương. Tự hào là thương hiệu cà phê từ vùng đất Bắc Ninh, AN Kinh–Bắc khởi tạo cửa hàng Signature đầu tiên của thương hiệu trên chính vùng đất này. Cửa hàng AN Signature được xây dựng dựa trên mô phỏng “kể lại” hành trình khám phá miền Kinh–Bắc. Điểm nhấn trong không gian là hình ảnh mái đình địa phương, cách điệu mềm mại tựa một dải lụa đào, ôm lấy bầu không khí nhộn nhịp của văn hóa sinh hoạt đình làng truyền thống Bắc Bộ. Kết hợp “vừa bổ trợ, vừa tương phản” trong hình khối, vật liệu và màu sắc, thiết kế không gian tại đây phản chiếu tính khớp nối các giá trị quá khứ, hiện tại và tương lai trong văn hóa bản địa. Tất cả nhịp nhàng kết nối để tạo ra những xúc cảm đa chiều dành cho những vị khách đến chơi nhà, về một vùng Kinh–Bắc không chỉ giàu đẹp về văn hóa mà còn chu đáo, thịnh tình. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 4/19.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/28/73/9a/giang-sinh-an-kbs-2024.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.17738,
+                20.428381
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8650511",
+        "title": "Cà phê Cát Tường",
+        "city": "Nam Dinh",
+        "totalScore": 4.8,
+        "ranking": "4/7",
+        "reviewsCount": 5,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cà phê Cát Tường ở Nam Dinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.8/5 từ 5 lượt review. Xếp hạng: 4/7.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/91/79/53/photo1jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.16507,
+                20.42099
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33863441",
+        "title": "Míao Kafe",
+        "city": "Hà Nội",
+        "totalScore": 5.0,
+        "ranking": "2383/3710",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Míao Kafe ở Hà Nội. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 2383/3710.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/f9/3b/3e/blue-swimmer-tours.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.17333,
+                20.440935
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34386651",
+        "title": "Co Lau Kitchen Tam Coc",
+        "city": "Ninh Bình",
+        "totalScore": 5.0,
+        "ranking": "161/213",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Co Lau Kitchen Tam Coc ở Ninh Bình. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 161/213.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/33/3f/cf/36/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.16878,
+                20.420393
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15097208",
+        "title": "Hutong Nam Định",
+        "city": "Nam Dinh",
+        "totalScore": 5.0,
+        "ranking": "5/7",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": "1.315.789.440 ₫ - 2.147.483.647 ₫",
+        "description": "Lẩu Hồng Kông Không giống bất cứ nơi đâu, nước lẩu Hồng Kông đậm đà tỏa hương thảo quả, ớt khô, quế, hồi… Thiên đường với hơn 99 vị nhúng lẩu từ thịt bào, hải sản tới rau củ, đặc biệt là các loại viên thả lẩu tươi như cá, bò, tôm, há cảo,... chỉ được làm khi khách bắt đầu gọi món.",
+        "embedding": null,
+        "searchText": "Hutong Nam Định ở Nam Dinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Lẩu Hồng Kông Không giống bất cứ nơi đâu, nước lẩu Hồng Kông đậm đà tỏa hương thảo quả, ớt khô, quế, hồi… Thiên đường với hơn 99 vị nhúng lẩu từ thịt bào, hải sản tới rau củ, đặc biệt là các loại viên thả lẩu tươi như cá, bò, tôm, há cảo,... chỉ được làm khi khách bắt đầu gọi món. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 5/7. Giá: 1.315.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/7e/ad/94/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.16091,
+                20.435383
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25461196",
+        "title": "Bít Tết Phương Liên",
+        "city": "Nam Dinh",
+        "totalScore": 5.0,
+        "ranking": "6/7",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Nhà hàng phục vụ Bánh mì Bít tết, Bánh mì Chảo",
+        "embedding": null,
+        "searchText": "Bít Tết Phương Liên ở Nam Dinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Nhà hàng phục vụ Bánh mì Bít tết, Bánh mì Chảo Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 6/7.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/f0/9d/2a/outside-at-night.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.17875,
+                20.42349
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "6781075",
+        "title": "Lotteria - Big C",
+        "city": "Nam Dinh",
+        "totalScore": 3.3,
+        "ranking": "7/7",
+        "reviewsCount": 9,
+        "category": "Đồ ăn nhanh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lotteria - Big C ở Nam Dinh. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 3.3/5 từ 9 lượt review. Xếp hạng: 7/7.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/a1/4d/0d/photo4jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.15278,
+                20.43805
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33280504",
+        "title": "Ecoeats - Vegetarian Bistro And Pub",
+        "city": "Đà Nẵng",
+        "totalScore": 5.0,
+        "ranking": "907/1751",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ecoeats - Vegetarian Bistro And Pub ở Đà Nẵng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 907/1751.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/67/90/17/we-are-what-we-eat.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.16531,
+                20.419146
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34093675",
+        "title": "Hoa Sơn Tra Sapa",
+        "city": "Sapa",
+        "totalScore": 5.0,
+        "ranking": "200/269",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hoa Sơn Tra Sapa ở Sapa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 200/269.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/14/ba/f5/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.15163,
+                20.432787
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33254785",
+        "title": "Sapa Rasa Sayang Halal Buffet Restaurant",
+        "city": "Sapa",
+        "totalScore": 5.0,
+        "ranking": "151/269",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Sapa Rasa Sayang Halal Buffet Restaurant ở Sapa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 151/269. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/a7/4e/a9/sapa-rasa-sayang-halal.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.14782,
+                20.433664
+            ]
+        },
+        "openingHours": {
+            "display": "11:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34232738",
+        "title": "Mr.James chicken",
+        "city": "Phong Nha",
+        "totalScore": 5.0,
+        "ranking": "16/21",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mr.James chicken ở Phong Nha. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 16/21.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/88/59/2c/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.16403,
+                20.411945
+            ]
+        },
+        "openingHours": {
+            "display": "11:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33114504",
+        "title": "Nhà Hàng Thiên Trường Garden Nam Định",
+        "city": "Nam Dinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Thiên Trường Garden Nam Định ở Nam Dinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/cf/30/47/khuon-vien-nha-hang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.17798,
+                20.440145
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1560
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 240,
+                        "close_time": 1320
+                    },
+                    {
+                        "open_time": 600,
+                        "close_time": 870
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 240,
+                        "close_time": 1320
+                    },
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15645728",
+        "title": "Nhà Hàng Trâu Ngon Thành Nam",
+        "city": "Nam Dinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Trâu Ngon Thành Nam ở Nam Dinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/18/f7/83/e4/khong-gian-d-p.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.17474,
+                20.441961
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25383238",
+        "title": "365BBQ - Nhà Hàng Thịt Nướng Hàn Quốc",
+        "city": "Nam Dinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Nhà hàng Buffet Lẩu Nướng Hàn Quốc - Chuẩn Vị Hàn 100% - Thịt tươi, Panchan phong phú, quầy line đẳng cấp miễn phí",
+        "embedding": null,
+        "searchText": "365BBQ - Nhà Hàng Thịt Nướng Hàn Quốc ở Nam Dinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Nhà hàng Buffet Lẩu Nướng Hàn Quốc - Chuẩn Vị Hàn 100% - Thịt tươi, Panchan phong phú, quầy line đẳng cấp miễn phí",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/84/47/6c/365bbq-nha-hang-th-t.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.15917,
+                20.435574
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15270695",
+        "title": "Pyzzi Pizza",
+        "city": "Nam Dinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pyzzi Pizza ở Nam Dinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/1b/73/4f/e3/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.177986,
+                20.439135
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23085858",
+        "title": "The Pizza Company",
+        "city": "Nam Dinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The Pizza Company ở Nam Dinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.1589,
+                20.438936
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13152117",
+        "title": "#Hippie",
+        "city": "Nam Dinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Quán cafe",
+        "priceRange": "78.947.368 ₫ - 789.473.664 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "#Hippie ở Nam Dinh. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Giá: 78.947.368 ₫ - 789.473.664 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.18778,
+                20.433796
+            ]
+        },
+        "openingHours": {
+            "display": "17:30-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    }
+]

@@ -1,0 +1,3918 @@
+[
+    {
+        "sourceLocationId": "17157808",
+        "title": "Nhà hàng The American Steak",
+        "city": "Vinh",
+        "totalScore": 4.4,
+        "ranking": "1/51",
+        "reviewsCount": 26,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng The American Steak ở Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.4/5 từ 26 lượt review. Xếp hạng: 1/51. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/07/35/2c/one-of-their-many-steak.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.68167,
+                18.666714
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14944262",
+        "title": "Ladybird Cafe & Restaurant",
+        "city": "Thai Hoa",
+        "totalScore": 5.0,
+        "ranking": "2/51",
+        "reviewsCount": 16,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "157.895 ₫ - 315.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Ladybird Cafe & Restaurant ở Thai Hoa. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 5.0/5 từ 16 lượt review. Xếp hạng: 2/51. Giá: 157.895 ₫ - 315.789 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/d3/3b/90/ladybird-cafe.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.47982,
+                19.28028
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15749868",
+        "title": "Nocenco Coffee",
+        "city": "Vinh",
+        "totalScore": 4.8,
+        "ranking": "3/51",
+        "reviewsCount": 12,
+        "category": "Quán cafe",
+        "priceRange": "52.632 ₫ - 105.263 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nocenco Coffee ở Vinh. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 4.8/5 từ 12 lượt review. Xếp hạng: 3/51. Giá: 52.632 ₫ - 105.263 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/4b/1f/21/n-u-nhu-b-n-mu-n-tim.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.673874,
+                18.670431
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "18970342",
+        "title": "Nhà Hàng Lan Châu",
+        "city": "Cửa Lò",
+        "totalScore": 4.8,
+        "ranking": "4/51",
+        "reviewsCount": 12,
+        "category": "Ngồi xuống",
+        "priceRange": "184.211 ₫ - 1.315.789 ₫",
+        "description": "Nhà hàng Lan Châu là nhà hàng nổi tiếng tại bãi biển lo. Với view đẹp, bạn có thể thấy tất cả view bãi biển của lo. thức ăn ngon và rẻ. nhân viên rất thân thiện và chuyên nghiệp ...",
+        "embedding": null,
+        "searchText": "Nhà Hàng Lan Châu ở Cửa Lò. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà hàng Lan Châu là nhà hàng nổi tiếng tại bãi biển lo. Với view đẹp, bạn có thể thấy tất cả view bãi biển của lo. thức ăn ngon và rẻ. nhân viên rất thân thiện và chuyên nghiệp ... Đánh giá: 4.8/5 từ 12 lượt review. Xếp hạng: 4/51. Giá: 184.211 ₫ - 1.315.789 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/ce/f8/67/ban-cong-t-ng-2-nha-hang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.72159,
+                18.820253
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12621390",
+        "title": "Gin' Pizza",
+        "city": "Vinh",
+        "totalScore": 4.6,
+        "ranking": "5/51",
+        "reviewsCount": 12,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Gin' Pizza ở Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.6/5 từ 12 lượt review. Xếp hạng: 5/51.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/e9/49/bb/gin-pizza.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.70191,
+                18.666174
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12457241",
+        "title": "Ngầu Coffee & Store Vinh",
+        "city": "Vinh",
+        "totalScore": 4.7,
+        "ranking": "6/51",
+        "reviewsCount": 6,
+        "category": "Quán cafe",
+        "priceRange": "526.315.776 ₫ - 1.315.789.440 ₫",
+        "description": "Ngầu Coffee & Store ở Vinh, Nghệ An là quán cà phê có phong cách Indie Art lai một chút xíu Vintage, với những món đồ uống phổ biến như Cà phê Ý, những món đồ uống take away lẫn bánh ngọt tráng miệng. Không quan quán khoảng hơn 100m2 gồm 2 tầng, có không gian trong nhà lẫn ngoài trời/sân vườn.",
+        "embedding": null,
+        "searchText": "Ngầu Coffee & Store Vinh ở Vinh. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Mô tả: Ngầu Coffee & Store ở Vinh, Nghệ An là quán cà phê có phong cách Indie Art lai một chút xíu Vintage, với những món đồ uống phổ biến như Cà phê Ý, những món đồ uống take away lẫn bánh ngọt tráng miệng. Không quan quán khoảng hơn 100m2 gồm 2 tầng, có không gian trong nhà lẫn ngoài trời/sân vườn. Đánh giá: 4.7/5 từ 6 lượt review. Xếp hạng: 6/51. Giá: 526.315.776 ₫ - 1.315.789.440 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/4b/68/f4/ng-u-coffee-house-of.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.6747,
+                18.682152
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13975482",
+        "title": "Lươn Cay Gia Truyền Phương Đào",
+        "city": "Cửa Lò",
+        "totalScore": 4.8,
+        "ranking": "7/51",
+        "reviewsCount": 12,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lươn Cay Gia Truyền Phương Đào ở Cửa Lò. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.8/5 từ 12 lượt review. Xếp hạng: 7/51.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/12/95/ff/53/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.72132,
+                18.804487
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23016501",
+        "title": "D'Art Chocolate Vinh - Nghệ An",
+        "city": "Vinh",
+        "totalScore": 5.0,
+        "ranking": "8/51",
+        "reviewsCount": 6,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "D'Art Chocolate Vinh mang đến cho bạn nhưng hộp quà thật ý nghĩa dành cho người thương. Với socola tươi với hơn 30 vị khác nhau",
+        "embedding": null,
+        "searchText": "D'Art Chocolate Vinh - Nghệ An ở Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: D'Art Chocolate Vinh mang đến cho bạn nhưng hộp quà thật ý nghĩa dành cho người thương. Với socola tươi với hơn 30 vị khác nhau Đánh giá: 5.0/5 từ 6 lượt review. Xếp hạng: 8/51. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/76/c4/f0/h-p-socola.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.69968,
+                18.679382
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12269249",
+        "title": "Nhà Hàng Sura BBQ",
+        "city": "Vinh",
+        "totalScore": 4.4,
+        "ranking": "9/51",
+        "reviewsCount": 8,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Sura BBQ ở Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.4/5 từ 8 lượt review. Xếp hạng: 9/51.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/d5/a7/a7/d-nu-ng-th-ga-nha.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.67909,
+                18.66586
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "4773910",
+        "title": "Saigon Kim Lien Restaurant",
+        "city": "Vinh",
+        "totalScore": 3.8,
+        "ranking": "10/51",
+        "reviewsCount": 25,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Saigon Kim Lien Restaurant ở Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.8/5 từ 25 lượt review. Xếp hạng: 10/51. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/fb/46/47/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.6741,
+                18.67106
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7070091",
+        "title": "Gogi House",
+        "city": "Vinh",
+        "totalScore": 4.0,
+        "ranking": "11/51",
+        "reviewsCount": 22,
+        "category": "Ngồi xuống",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Gogi House ở Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.0/5 từ 22 lượt review. Xếp hạng: 11/51. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/e1/e0/44/photo1jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.67435,
+                18.675072
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17704139",
+        "title": "Nhà hàng Padma",
+        "city": "Cửa Lò",
+        "totalScore": 5.0,
+        "ranking": "12/51",
+        "reviewsCount": 4,
+        "category": "Ngồi xuống",
+        "priceRange": "2.105.263 ₫ - 18.421.052 ₫",
+        "description": "Với nhà hàng Buffet và A la carte diện tích linh hoạt, có đủ không gian riêng tư, phục vụ đa dạng các món ăn từ phong vị địa phương tới những món ăn Âu - Á tiêu chuẩn 5 sao - Vinpearl Discovery Cửa Hội không chỉ là nơi thưởng thức những món ăn ngon của du khách lưu trú, mà còn là điểm hẹn của những bữa tiệc doanh nhân hay các gia đình cuối tuần.",
+        "embedding": null,
+        "searchText": "Nhà hàng Padma ở Cửa Lò. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Với nhà hàng Buffet và A la carte diện tích linh hoạt, có đủ không gian riêng tư, phục vụ đa dạng các món ăn từ phong vị địa phương tới những món ăn Âu - Á tiêu chuẩn 5 sao - Vinpearl Discovery Cửa Hội không chỉ là nơi thưởng thức những món ăn ngon của du khách lưu trú, mà còn là điểm hẹn của những bữa tiệc doanh nhân hay các gia đình cuối tuần. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 12/51. Giá: 2.105.263 ₫ - 18.421.052 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/13/18/a8/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.756584,
+                18.7712
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14199127",
+        "title": "Nhà Hàng Gà Thanh Chương",
+        "city": "Vinh",
+        "totalScore": 4.0,
+        "ranking": "13/51",
+        "reviewsCount": 5,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "52.632 ₫ - 263.158 ₫",
+        "description": "Với không gian rộng rãi, thoáng mát. Phong cách phục vụ chuyên nghiệp, với các món ăn đa dạng phong phú chắc chắn sẽ làm quý khách hài lòng",
+        "embedding": null,
+        "searchText": "Nhà Hàng Gà Thanh Chương ở Vinh. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Mô tả: Với không gian rộng rãi, thoáng mát. Phong cách phục vụ chuyên nghiệp, với các món ăn đa dạng phong phú chắc chắn sẽ làm quý khách hài lòng Đánh giá: 4.0/5 từ 5 lượt review. Xếp hạng: 13/51. Giá: 52.632 ₫ - 263.158 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/30/51/33/ga-khong-l-i-thoat.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.67758,
+                18.65909
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "16813042",
+        "title": "Nhà Hàng Hải Sản Biển Xanh",
+        "city": "Vinh",
+        "totalScore": 4.8,
+        "ranking": "14/51",
+        "reviewsCount": 4,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "🐠🐋🦐🦀NHÀ HÀNG HẢI SẢN BIỂN XANH-ỐC LÁ🦀🦐🦑🐬🐠\n 🕹🕹Add1: Số 152 Nguyễn Thái Học, TP Vinh\n 🕹🕹Add2: Số 71 Lê Khôi, TP Vinh, Nghệ An\n 📖Fpafe: #Nhà_Hàng_Hải_Sản_Biển_Xanh\n 💻Wsite: haisanbienxanh.com.vn\n 👍👍Chuyên hải, thuỷ sản tươi sống toàn quốc. \n Nhận đặt tiệc, sinh nhật, hội nghị, tổng kết, tiếp khách với 1 phòng lớn 70 người, 3 phòng VIP được setup đầy đủ điều hoà, loa đài, máy chiếu, karaoke, ... cho các buổ",
+        "embedding": null,
+        "searchText": "Nhà Hàng Hải Sản Biển Xanh ở Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: 🐠🐋🦐🦀NHÀ HÀNG HẢI SẢN BIỂN XANH-ỐC LÁ🦀🦐🦑🐬🐠\n 🕹🕹Add1: Số 152 Nguyễn Thái Học, TP Vinh\n 🕹🕹Add2: Số 71 Lê Khôi, TP Vinh, Nghệ An\n 📖Fpafe: #Nhà_Hàng_Hải_Sản_Biển_Xanh\n 💻Wsite: haisanbienxanh.com.vn\n 👍👍Chuyên hải, thuỷ sản tươi sống toàn quốc. \n Nhận đặt tiệc, sinh nhật, hội nghị, tổng kết, tiếp khách với 1 phòng lớn 70 người, 3 phòng VIP được setup đầy đủ điều hoà, loa đài, máy chiếu, karaoke, ... cho các buổ Đánh giá: 4.8/5 từ 4 lượt review. Xếp hạng: 14/51. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/ba/5b/1f/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.673065,
+                18.676424
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6028218",
+        "title": "Miao's Pizza",
+        "city": "Vinh",
+        "totalScore": 3.5,
+        "ranking": "15/51",
+        "reviewsCount": 31,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Miao's Pizza ở Vinh. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 3.5/5 từ 31 lượt review. Xếp hạng: 15/51. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/05/63/aa/d9/valentines-2014.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.67822,
+                18.678047
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13124568",
+        "title": "Bachi Bachi Restaurant",
+        "city": "Vinh",
+        "totalScore": 5.0,
+        "ranking": "16/51",
+        "reviewsCount": 5,
+        "category": "Ngồi xuống",
+        "priceRange": "2.105.263 ₫ - 8.684.211 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Bachi Bachi Restaurant ở Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 5 lượt review. Xếp hạng: 16/51. Giá: 2.105.263 ₫ - 8.684.211 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/40/2b/02/1510484805558-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.69926,
+                18.671791
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16871317",
+        "title": "Nhà Hàng Vạn Chài - TP Vinh Nghệ An",
+        "city": "Vinh",
+        "totalScore": 4.6,
+        "ranking": "17/51",
+        "reviewsCount": 5,
+        "category": "Ngồi xuống",
+        "priceRange": "26.316 ₫ - 2.147.483.647 ₫",
+        "description": "Nhà hàng Vạn Chài - một trong những nhà hàng hải sản tươi sống chất lượng nhất tại thành phố Vinh - Nghệ An Nhà hàng Vạn chài nằm ở vị trí đắc địa tại trung tâm thành phố Vinh nên thuận tiện cho giao thông đi lại, Nhà hàng Vạn chài có diện tích trên 700m2 nên có thể tiếp đón những đoàn lớn, tổ chức sự kiện trong một không gian thoáng mát và có điều hoà",
+        "embedding": null,
+        "searchText": "Nhà Hàng Vạn Chài - TP Vinh Nghệ An ở Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà hàng Vạn Chài - một trong những nhà hàng hải sản tươi sống chất lượng nhất tại thành phố Vinh - Nghệ An Nhà hàng Vạn chài nằm ở vị trí đắc địa tại trung tâm thành phố Vinh nên thuận tiện cho giao thông đi lại, Nhà hàng Vạn chài có diện tích trên 700m2 nên có thể tiếp đón những đoàn lớn, tổ chức sự kiện trong một không gian thoáng mát và có điều hoà Đánh giá: 4.6/5 từ 5 lượt review. Xếp hạng: 17/51. Giá: 26.316 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/eb/f5/97/m-t-tru-c-c-a-nha-hang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.68583,
+                18.697105
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "24110782",
+        "title": "Nhà Hàng Kinh Vĩ",
+        "city": "Vinh",
+        "totalScore": 5.0,
+        "ranking": "18/51",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Kinh Vĩ ở Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 18/51.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/25/0b/25/85/nha-hang-kinh-vi.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.68687,
+                18.686428
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26321561",
+        "title": "Nhà hàng Nemo Sóng xanh",
+        "city": "Vinh",
+        "totalScore": 5.0,
+        "ranking": "19/51",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Nhà hàng Nemo Sóng xanh Chuyên đặc sản Rừng - Biển. Với đội ngũ Bàn - Bếp chuyên nghiệp, nhiệt tình, chu đáo. Cơ sở vật chất được trang bị hiện đại, view đẹp. tất cả các phòng được trang bị điều hòa. Vị trí nhà hàng tại trung tâm thành phố Vinh xinh đẹp sẽ làm vừa lòng các thực khash khó tính nhất.",
+        "embedding": null,
+        "searchText": "Nhà hàng Nemo Sóng xanh ở Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Nhà hàng Nemo Sóng xanh Chuyên đặc sản Rừng - Biển. Với đội ngũ Bàn - Bếp chuyên nghiệp, nhiệt tình, chu đáo. Cơ sở vật chất được trang bị hiện đại, view đẹp. tất cả các phòng được trang bị điều hòa. Vị trí nhà hàng tại trung tâm thành phố Vinh xinh đẹp sẽ làm vừa lòng các thực khash khó tính nhất. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 19/51.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/29/af/f9/b6/anh-ngoai-nha-hang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.67821,
+                18.658634
+            ]
+        },
+        "openingHours": {
+            "display": "08:30-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26350926",
+        "title": "Feribe cafe & bistro",
+        "city": "Vinh",
+        "totalScore": 5.0,
+        "ranking": "20/51",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Feribe cafe & bistro ở Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 20/51.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/13/5e/2a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.69721,
+                18.682184
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-26:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1560
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "7070092",
+        "title": "Vuvuzela",
+        "city": "Vinh",
+        "totalScore": 3.5,
+        "ranking": "21/51",
+        "reviewsCount": 36,
+        "category": "Ngồi xuống",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Vuvuzela ở Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.5/5 từ 36 lượt review. Xếp hạng: 21/51. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/06/94/cb/70/vuvuzela.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.67438,
+                18.675035
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27136449",
+        "title": "Aota Garden",
+        "city": "Vinh",
+        "totalScore": 5.0,
+        "ranking": "22/51",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Aota Garden ở Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 22/51.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2b/41/71/2b/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.69164,
+                18.677069
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14199266",
+        "title": "Nhà Hàng Gà Thanh Chương 2",
+        "city": "Vinh",
+        "totalScore": 4.2,
+        "ranking": "23/51",
+        "reviewsCount": 5,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "2.078.947.328 ₫ - 2.147.483.647 ₫",
+        "description": "Với diện tích hơn 1000m2 không gian mở gần gữi với thiên nhiên, có phòng rộng có sức chứa hơn 150 khách và hệ thống phòng riêng. Nhà hàng Gà Thanh Chương 2 xứng đáng là địa điểm để thực khách đến thưởng thức hương vị của quê hương ...",
+        "embedding": null,
+        "searchText": "Nhà Hàng Gà Thanh Chương 2 ở Vinh. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Mô tả: Với diện tích hơn 1000m2 không gian mở gần gữi với thiên nhiên, có phòng rộng có sức chứa hơn 150 khách và hệ thống phòng riêng. Nhà hàng Gà Thanh Chương 2 xứng đáng là địa điểm để thực khách đến thưởng thức hương vị của quê hương ... Đánh giá: 4.2/5 từ 5 lượt review. Xếp hạng: 23/51. Giá: 2.078.947.328 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/28/ac/be/ga-khong-l-i-thoat.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.67758,
+                18.659086
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23089961",
+        "title": "D'Art Socola Vinh - Nghệ An",
+        "city": "Vinh",
+        "totalScore": 5.0,
+        "ranking": "24/51",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "D'Art Socola với socola tươi và socola nghệ thuật sẽ luôn mang đến cho bạn sự lựa chọn tuyệt vời",
+        "embedding": null,
+        "searchText": "D'Art Socola Vinh - Nghệ An ở Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: D'Art Socola với socola tươi và socola nghệ thuật sẽ luôn mang đến cho bạn sự lựa chọn tuyệt vời Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 24/51. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/8c/fa/ae/h-p-va-tui-xach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.69971,
+                18.679405
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14041608",
+        "title": "Nhà hàng Hải Sản Đại Dương",
+        "city": "Vinh",
+        "totalScore": 4.7,
+        "ranking": "25/51",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "hai san tươi sống đang bơi tại bể",
+        "embedding": null,
+        "searchText": "Nhà hàng Hải Sản Đại Dương ở Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: hai san tươi sống đang bơi tại bể Đánh giá: 4.7/5 từ 3 lượt review. Xếp hạng: 25/51. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/c1/71/d9/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.678505,
+                18.709217
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34383980",
+        "title": "Korean BBQ. KyungBokKung Vinh Garden",
+        "city": "Vinh",
+        "totalScore": 5.0,
+        "ranking": "26/51",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Korean BBQ. KyungBokKung Vinh Garden ở Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 26/51.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.69521,
+                18.681093
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33107922",
+        "title": "Nathan Thai Fusion Restaurant",
+        "city": "Vinh",
+        "totalScore": 5.0,
+        "ranking": "27/51",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "131.579 ₫ - 394.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nathan Thai Fusion Restaurant ở Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 27/51. Giá: 131.579 ₫ - 394.737 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/c8/63/bd/nathan-thai-contemporary.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.6985,
+                18.672012
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-14:00, 17:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "4758191",
+        "title": "Viet Duc",
+        "city": "Vinh",
+        "totalScore": 4.4,
+        "ranking": "28/51",
+        "reviewsCount": 5,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Viet Duc ở Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.4/5 từ 5 lượt review. Xếp hạng: 28/51.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/f2/8c/49/c-m-giac-m-cung-ben-gia.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.70403,
+                18.68043
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21191920",
+        "title": "Horus Boardgames Cafe",
+        "city": "Vinh",
+        "totalScore": 5.0,
+        "ranking": "29/51",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "526.315.776 ₫ - 1.315.789.440 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Horus Boardgames Cafe ở Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 29/51. Giá: 526.315.776 ₫ - 1.315.789.440 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/b5/c4/a9/horus-board-game-cafe.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.685875,
+                18.674664
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-12:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27859420",
+        "title": "Hải Vị Buffet - Nhà Hàng Hải Sản",
+        "city": "Vinh",
+        "totalScore": 5.0,
+        "ranking": "30/51",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hải Vị Buffet - Nhà Hàng Hải Sản ở Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 30/51.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/24/cd/0f/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.6887,
+                18.658821
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17379458",
+        "title": "Nhà Sàng Sơn Quế - Từ Năm 1999",
+        "city": "Vinh",
+        "totalScore": 5.0,
+        "ranking": "31/51",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Sàng Sơn Quế - Từ Năm 1999 ở Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 31/51.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/3e/c4/89/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.59209,
+                18.67757
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-20:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23761375",
+        "title": "Gourmet Pizza",
+        "city": "Vinh",
+        "totalScore": 5.0,
+        "ranking": "32/51",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Gourmet Pizza ở Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 32/51.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/21/70/0b/9a/the-wood-fired-oven.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.6818,
+                18.671598
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17281924",
+        "title": "Nhà Hàng Con Bò Vàng",
+        "city": "Vinh",
+        "totalScore": 5.0,
+        "ranking": "33/51",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Con Bò Vàng ở Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 33/51.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.68151,
+                18.66667
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15603084",
+        "title": "King BBQ",
+        "city": "Vinh",
+        "totalScore": 4.0,
+        "ranking": "34/51",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "King BBQ ở Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 34/51.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/29/8d/30/b1/excellent-meal-w-friends.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.6662,
+                18.68762
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19546742",
+        "title": "Nhà Hàng Sen Quê",
+        "city": "Kim Lien",
+        "totalScore": 5.0,
+        "ranking": "35/51",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "Nhà hàng Sen Quê Nam đàn (Quê hương Chủ tịch Hồ Chí Minh) Với các món ăn đa dạng được các đầu bếp hàng đầu xứ Nghệ chế biến. Đội ngũ nhân viên phục vụ được trải qua đào tạo chuyên nghiệp và đã có kinh nghiệm trong ngành Du lịch - khach sạn. Không gian nhà hàng rộng, thoáng mát được thiết kế tân cổ điển tạo cảm giác ấm cúng thân thiện cho du khách. Hay đến với Sen Quê để được trải nghiệm ẩm thực đặc sắc xứ nghệ.",
+        "embedding": null,
+        "searchText": "Nhà Hàng Sen Quê ở Kim Lien. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà hàng Sen Quê Nam đàn (Quê hương Chủ tịch Hồ Chí Minh) Với các món ăn đa dạng được các đầu bếp hàng đầu xứ Nghệ chế biến. Đội ngũ nhân viên phục vụ được trải qua đào tạo chuyên nghiệp và đã có kinh nghiệm trong ngành Du lịch - khach sạn. Không gian nhà hàng rộng, thoáng mát được thiết kế tân cổ điển tạo cảm giác ấm cúng thân thiện cho du khách. Hay đến với Sen Quê để được trải nghiệm ẩm thực đặc sắc xứ nghệ. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 35/51. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/52/53/ac/c-ng-nha-hang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.569626,
+                18.68529
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19125768",
+        "title": "Phủi BQ",
+        "city": "Thai Hoa",
+        "totalScore": 5.0,
+        "ranking": "36/51",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phủi BQ ở Thai Hoa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 36/51.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/19/9c/56/c5/photo2jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.66929,
+                18.66159
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19042286",
+        "title": "Nhà Hàng Hương Sơn 69 Cửa Lò",
+        "city": "Cửa Lò",
+        "totalScore": 5.0,
+        "ranking": "37/51",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hương Sơn 69 Cửa Lò ở Cửa Lò. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 37/51.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/19/61/5e/9f/nha-hang-huong-son-69.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "18114302",
+        "title": "Nhà Hàng Fujimo",
+        "city": "Vinh",
+        "totalScore": 5.0,
+        "ranking": "38/51",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Fujimo ở Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 38/51.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/18/b6/88/db/fujimo-restaurant-add.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "09:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15749932",
+        "title": "Shogun Vinh - Japanese Street BBQ",
+        "city": "Vinh",
+        "totalScore": 5.0,
+        "ranking": "39/51",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Shogun Vinh - Japanese Street BBQ ở Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 39/51.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/1b/94/60/a5/shogun-vinh-japanese.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.67729,
+                18.676504
+            ]
+        },
+        "openingHours": {
+            "display": "01:00-14:00, 17:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 60,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 60,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 60,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 60,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 60,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 60,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 60,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10865599",
+        "title": "Nhà Hàng Hoàng An Villa",
+        "city": "Vinh",
+        "totalScore": 5.0,
+        "ranking": "40/51",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hoàng An Villa ở Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 40/51.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/8a/a8/5e/mon-ngon-ba-mi-n.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.67198,
+                18.66587
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    },
+                    {
+                        "open_time": 1080,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 780
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    },
+                    {
+                        "open_time": 1080,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    },
+                    {
+                        "open_time": 1080,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    },
+                    {
+                        "open_time": 1080,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    },
+                    {
+                        "open_time": 1080,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12415484",
+        "title": "Quán Kem Fanny - Eco City",
+        "city": "Vinh",
+        "totalScore": 5.0,
+        "ranking": "41/51",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "578.947.392 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Kem Fanny - Eco City ở Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 41/51. Giá: 578.947.392 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/0f/36/7f/5f/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.67081,
+                18.707111
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "18891897",
+        "title": "Bánh Mướt Bà Lan",
+        "city": "Vinh",
+        "totalScore": 4.0,
+        "ranking": "42/51",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bánh Mướt Bà Lan ở Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 42/51.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.69784,
+                18.66477
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11874314",
+        "title": "Lassy Coffee",
+        "city": "Vinh",
+        "totalScore": 4.0,
+        "ranking": "43/51",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lassy Coffee ở Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 43/51.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.69423,
+                18.66004
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12882086",
+        "title": "Nhà hàng Du thuyền Hải Châu",
+        "city": "Vinh",
+        "totalScore": 4.0,
+        "ranking": "44/51",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Du thuyền Hải Châu ở Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 44/51.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/a6/69/19/nha-hang-du-thuy-n-h.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.69959,
+                18.644093
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13784257",
+        "title": "Nhà Hàng Vượng Giang",
+        "city": "Hoang Mai",
+        "totalScore": 4.0,
+        "ranking": "45/51",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Vượng Giang ở Hoang Mai. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 45/51.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/3e/df/78/clams-and-snails.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23115477",
+        "title": "The Pizza Company",
+        "city": "Vinh",
+        "totalScore": 3.0,
+        "ranking": "46/51",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The Pizza Company ở Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.0/5 từ 2 lượt review. Xếp hạng: 46/51. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/32/0c/29/5e/pizza-company-nguy-n.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.681335,
+                18.679585
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12330833",
+        "title": "Tôm Tít",
+        "city": "Cửa Lò",
+        "totalScore": 2.5,
+        "ranking": "47/51",
+        "reviewsCount": 2,
+        "category": "Quán cafe",
+        "priceRange": "263.157.888 ₫ - 1.315.789.440 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Tôm Tít ở Cửa Lò. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 2.5/5 từ 2 lượt review. Xếp hạng: 47/51. Giá: 263.157.888 ₫ - 1.315.789.440 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.71194,
+                18.79998
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13128515",
+        "title": "Khong Gian Xanh Restaurant",
+        "city": "Vinh",
+        "totalScore": 1.0,
+        "ranking": "48/51",
+        "reviewsCount": 1,
+        "category": "Quán cafe",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "Nhà hàng Không Gian Xanh, phục vụ các món ăn đặc sản trên rừng dưới biển từ dân dã đến cao cấp,với các phòng VIP nhỏ sang trọng, riêng tư đến các phòng lớn, sân vườn phục vụ các buổi tiệc liên hoan, Nhà hàng còn phục vụ đầy đủ cac món ăn sáng và coffee, giải khát đa dạng, phong phú.",
+        "embedding": null,
+        "searchText": "Khong Gian Xanh Restaurant ở Vinh. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Mô tả: Nhà hàng Không Gian Xanh, phục vụ các món ăn đặc sản trên rừng dưới biển từ dân dã đến cao cấp,với các phòng VIP nhỏ sang trọng, riêng tư đến các phòng lớn, sân vườn phục vụ các buổi tiệc liên hoan, Nhà hàng còn phục vụ đầy đủ cac món ăn sáng và coffee, giải khát đa dạng, phong phú. Đánh giá: 1.0/5 từ 1 lượt review. Xếp hạng: 48/51. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/b1/f6/b0/nha-hang-khong-gian-xanh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.68347,
+                18.701878
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17464894",
+        "title": "Nhà Hàng Cường Hằng 129",
+        "city": "Cửa Lò",
+        "totalScore": 1.0,
+        "ranking": "49/51",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "789.473.664 ₫ - 2.147.483.647 ₫",
+        "description": "phục vụ tất cả các du khách đến với thành phố biển",
+        "embedding": null,
+        "searchText": "Nhà Hàng Cường Hằng 129 ở Cửa Lò. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: phục vụ tất cả các du khách đến với thành phố biển Đánh giá: 1.0/5 từ 1 lượt review. Xếp hạng: 49/51. Giá: 789.473.664 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/8a/9c/9b/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.72648,
+                18.804188
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15293126",
+        "title": "Cafe Babylon",
+        "city": "Vinh",
+        "totalScore": 0,
+        "ranking": "50/51",
+        "reviewsCount": 0,
+        "category": "Quán cafe",
+        "priceRange": "526.315.776 ₫ - 1.315.789.440 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Cafe Babylon ở Vinh. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Xếp hạng: 50/51. Giá: 526.315.776 ₫ - 1.315.789.440 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/41/9d/2f/cafe-san-vu-n-su-i-ch.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.67465,
+                18.701801
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19552717",
+        "title": "Nhà Hàng Chay Hoan Châu",
+        "city": "Vinh",
+        "totalScore": 0,
+        "ranking": "51/51",
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "1.315.789.440 ₫ - 2.147.483.647 ₫",
+        "description": "Hoan Châu, cái tên cổ huyền thoại của vùng đất địa linh nhân kiệt Xứ Nghệ. Đến Vinh, mời bạn ghé thăm Nhà hàng chay Hoan Châu để được thưởng thức các món chay thắm đượm, xao lòng,...",
+        "embedding": null,
+        "searchText": "Nhà Hàng Chay Hoan Châu ở Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Hoan Châu, cái tên cổ huyền thoại của vùng đất địa linh nhân kiệt Xứ Nghệ. Đến Vinh, mời bạn ghé thăm Nhà hàng chay Hoan Châu để được thưởng thức các món chay thắm đượm, xao lòng,... Xếp hạng: 51/51. Giá: 1.315.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/33/f6/5c/ban-an-co-b-n-cho-1-ban.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.680176,
+                18.685976
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32972904",
+        "title": "Đa Sắc",
+        "city": "Tràng Sơn",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đa Sắc ở Tràng Sơn. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.85252,
+                21.025509
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33298624",
+        "title": "Bánh Canh Ghẹ",
+        "city": "Mon Son",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bánh Canh Ghẹ ở Mon Son. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.58981,
+                10.857563
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33298965",
+        "title": "Ốc Chảo Bo",
+        "city": "Mon Son",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ốc Chảo Bo ở Mon Son. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.63994,
+                10.904937
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27782824",
+        "title": "Nhà Hàng Gió Biển - 252 Bình Minh, Cửa Lò",
+        "city": "Cửa Lò",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Gió Biển - 252 Bình Minh, Cửa Lò ở Cửa Lò. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.60293,
+                10.7692
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-23:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1410
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "24107395",
+        "title": "NHÀ HÀNG HẢI NHẬT 1, SỐ 116/1",
+        "city": "Cửa Lò",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Nhà Hàng Hải Sản",
+        "embedding": null,
+        "searchText": "NHÀ HÀNG HẢI NHẬT 1, SỐ 116/1 ở Cửa Lò. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Nhà Hàng Hải Sản",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.7251,
+                18.804699
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "16814106",
+        "title": "Nha Hang Bien Sach",
+        "city": "Cửa Lò",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nha Hang Bien Sach ở Cửa Lò. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.75359,
+                18.767939
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17806839",
+        "title": "Song Ngư Sơn",
+        "city": "Cửa Lò",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "Nhà hàng Lan châu nằm trên đỉnh bán đảo lan châu tại bãi biển Cửa lò với 2 tầng sức chứa 170 khách tối đa. là nơi lý tưởng để sử dụng bữa tiệc với view đẹp nhất biển cửa lò, từ nhà hàng có thể quan sát toàn bộ bãi biển cửa lò. Đặc biệt với thực đơn đa dạng, phong phú tươi sống được chế biến bởi các đầu bếp hàng đầu tại nghệ an. Chắc chắn quý khách sẽ hài lòng về nhà hàng Lan Châu.",
+        "embedding": null,
+        "searchText": "Song Ngư Sơn ở Cửa Lò. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà hàng Lan châu nằm trên đỉnh bán đảo lan châu tại bãi biển Cửa lò với 2 tầng sức chứa 170 khách tối đa. là nơi lý tưởng để sử dụng bữa tiệc với view đẹp nhất biển cửa lò, từ nhà hàng có thể quan sát toàn bộ bãi biển cửa lò. Đặc biệt với thực đơn đa dạng, phong phú tươi sống được chế biến bởi các đầu bếp hàng đầu tại nghệ an. Chắc chắn quý khách sẽ hài lòng về nhà hàng Lan Châu. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.72199,
+                18.820677
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15512386",
+        "title": "Espresso Coffee Cửa Lò",
+        "city": "Cửa Lò",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Quán cafe",
+        "priceRange": "526.316 ₫ - 1.315.789 ₫",
+        "description": "Quán coffee espresso phong cách hiện đại, sang trọng, giá cả phải chăng, nhân viên vui vẻ và mến khách. Chúng tôi có máy pha coffee hiện đại và cho ra những ly cafe sạch sẽ với vị thơm quyến rũ.",
+        "embedding": null,
+        "searchText": "Espresso Coffee Cửa Lò ở Cửa Lò. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Mô tả: Quán coffee espresso phong cách hiện đại, sang trọng, giá cả phải chăng, nhân viên vui vẻ và mến khách. Chúng tôi có máy pha coffee hiện đại và cho ra những ly cafe sạch sẽ với vị thơm quyến rũ. Giá: 526.316 ₫ - 1.315.789 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.720566,
+                18.80419
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21232830",
+        "title": "Nhà Hàng Hoa Ban",
+        "city": "Vinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "Tọa lạc tại tầng 1 - Khách sạn Thông Đỏ, Nhà hàng Hoa Ban có không gian sang trọng trong nội khu khách sạn, sở hữu khuôn viên rộng rãi mang nhiều hơi hướng của văn hoá ẩm thực Việt Nam, từ bài trí, mùi vị, cách thưởng thức cho đến phục vụ. Với menu đa dạng dưới bàn tay tài tình của đầu bếp, chúng tôi mang đến những câu chuyện thú vị dành cho bạn và gia đình. Hãy thưởng thức và trải nghiệm.",
+        "embedding": null,
+        "searchText": "Nhà Hàng Hoa Ban ở Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Tọa lạc tại tầng 1 - Khách sạn Thông Đỏ, Nhà hàng Hoa Ban có không gian sang trọng trong nội khu khách sạn, sở hữu khuôn viên rộng rãi mang nhiều hơi hướng của văn hoá ẩm thực Việt Nam, từ bài trí, mùi vị, cách thưởng thức cho đến phục vụ. Với menu đa dạng dưới bàn tay tài tình của đầu bếp, chúng tôi mang đến những câu chuyện thú vị dành cho bạn và gia đình. Hãy thưởng thức và trải nghiệm. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/cc/f6/5a/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.67199,
+                18.647114
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12661078",
+        "title": "Phố - Cà phê Sạch",
+        "city": "Vinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Quán cafe",
+        "priceRange": "526.315.776 ₫ - 1.052.631.552 ₫",
+        "description": "Quán chuyên cà phê Espresso hảo hạng",
+        "embedding": null,
+        "searchText": "Phố - Cà phê Sạch ở Vinh. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Mô tả: Quán chuyên cà phê Espresso hảo hạng Giá: 526.315.776 ₫ - 1.052.631.552 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.694405,
+                18.677116
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17653478",
+        "title": "Quán Dì Quý - Bánh Canh Cá Lóc",
+        "city": "Vinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "657.894.720 ₫ - 1.973.684.224 ₫",
+        "description": "Bánh canh dì Quý đậm đà hương vị Huế. Cực ngon, cực sạch, cực rẻ. Quán dì Quý - Hương vị thật thà!",
+        "embedding": null,
+        "searchText": "Quán Dì Quý - Bánh Canh Cá Lóc ở Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Bánh canh dì Quý đậm đà hương vị Huế. Cực ngon, cực sạch, cực rẻ. Quán dì Quý - Hương vị thật thà! Giá: 657.894.720 ₫ - 1.973.684.224 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/18/9e/5e/56/great-recipe.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.688896,
+                18.68203
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-21:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33988733",
+        "title": "KATINAT Trường Thi Vinh",
+        "city": "Vinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "KATINAT Trường Thi Vinh ở Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.68969,
+                18.665691
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 630
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "20225273",
+        "title": "Nhà hàng Hải sản 179",
+        "city": "Vinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Hải sản 179 ở Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.68497,
+                18.697308
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21332596",
+        "title": "Nhà hàng Hàn Quốc",
+        "city": "Vinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Hàn Quốc ở Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.66667,
+                18.66667
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27016364",
+        "title": "Vegan Planet",
+        "city": "Vinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vegan Planet ở Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/76/fa/f3/vegan.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.66896,
+                18.728985
+            ]
+        },
+        "openingHours": {
+            "display": "11:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "20199917",
+        "title": "Rêver Café",
+        "city": "Vinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Quán cafe",
+        "priceRange": "657.894.720 ₫ - 2.147.483.647 ₫",
+        "description": "Rêver hy vọng trong tương lai gần, \"Rêver nhé\" sẽ là câu trả lời cho mọi câu hỏi \"Đi mô, ăn chi?\" của giới trẻ thành Vinh.",
+        "embedding": null,
+        "searchText": "Rêver Café ở Vinh. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Mô tả: Rêver hy vọng trong tương lai gần, \"Rêver nhé\" sẽ là câu trả lời cho mọi câu hỏi \"Đi mô, ăn chi?\" của giới trẻ thành Vinh. Giá: 657.894.720 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/47/ba/24/3.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.6845,
+                18.681501
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14003696",
+        "title": "Kung Pao",
+        "city": "Vinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kung Pao ở Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.69259,
+                18.69391
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23218516",
+        "title": "SASIN - Mì Cay 7 Cấp Độ Hàn Quốc - Vinh",
+        "city": "Vinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "SASIN - Mì Cay 7 Cấp Độ Hàn Quốc - Vinh ở Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.68337,
+                18.682436
+            ]
+        },
+        "openingHours": {
+            "display": "08:30-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21229885",
+        "title": "Nhà Hàng Hoa Ban",
+        "city": "Vinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "157.895 ₫ - 394.737 ₫",
+        "description": "Nhà hàng Hoa Ban có không gian sang trọng trong nội khu Khách sạn Thông Đỏ, sở hữu khuôn viên rộng rãi mang hơi hướng văn hóa ẩm thực Việt Nam từ cách bài trí, hương vị, thưởng thức đến phục vụ. Với thực đơn đa dạng dưới bàn tay tài hoa của đầu bếp Thông Đỗ mang đến những câu chuyện thú vị cho bạn và gia đình. Hãy thưởng thức và trải nghiệm tại nhà hàng Hoa Ban",
+        "embedding": null,
+        "searchText": "Nhà Hàng Hoa Ban ở Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà hàng Hoa Ban có không gian sang trọng trong nội khu Khách sạn Thông Đỏ, sở hữu khuôn viên rộng rãi mang hơi hướng văn hóa ẩm thực Việt Nam từ cách bài trí, hương vị, thưởng thức đến phục vụ. Với thực đơn đa dạng dưới bàn tay tài hoa của đầu bếp Thông Đỗ mang đến những câu chuyện thú vị cho bạn và gia đình. Hãy thưởng thức và trải nghiệm tại nhà hàng Hoa Ban Giá: 157.895 ₫ - 394.737 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/ca/65/af/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.67135,
+                18.647165
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12860554",
+        "title": "Nhà Hàng GoGi House",
+        "city": "Vinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng GoGi House ở Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.6861,
+                18.670778
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15320067",
+        "title": "Nhà Hàng Sakura",
+        "city": "Vinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "1.052.631.552 ₫ - 2.147.483.647 ₫",
+        "description": "Nhà hàng Sakura được thành lập bởi giám đốc Takase Minoru đến từ Cty FUKAGAWA TARO-Tokyo Nhật Bản. Nhà hàng chúng tôi phục vụ Cơm văn phòng kiểu Nhật, các món nhậu từ bình dân đến cao cấp mang đậm phong cách Nhật Bản tại TP Vinh - Nghệ An.Rất hân hạnh được đón tiếp quý thực khách!",
+        "embedding": null,
+        "searchText": "Nhà Hàng Sakura ở Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà hàng Sakura được thành lập bởi giám đốc Takase Minoru đến từ Cty FUKAGAWA TARO-Tokyo Nhật Bản. Nhà hàng chúng tôi phục vụ Cơm văn phòng kiểu Nhật, các món nhậu từ bình dân đến cao cấp mang đậm phong cách Nhật Bản tại TP Vinh - Nghệ An.Rất hân hạnh được đón tiếp quý thực khách! Giá: 1.052.631.552 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/a4/47/fe/kem-theo-cac-mon-vi-t.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.68166,
+                18.68756
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11978945",
+        "title": "Pub Welove",
+        "city": "Vinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Quán cafe",
+        "priceRange": "526.315.776 ₫ - 2.147.483.647 ₫",
+        "description": "Giữa một Thành Phố Vinh đang từng ngày vươn mình rộng lớn với vô vàn địa điểm ăn chơi thì yếu tố “chơi được” đã trở nên quá bình thường, thay vào đó là “chơi đỉnh”, “chơi tới bến” với rượu ngon, nhạc đỉnh và các bóng hồng xinh tươi… mới là những yếu tố đáng để thượng khách quan tâm nhất. Nhưng đâu mới là nơi có thể đáp ứng các tiêu chí cầu kì này? Pub Welove chính là câu trả lời của bạn.",
+        "embedding": null,
+        "searchText": "Pub Welove ở Vinh. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Mô tả: Giữa một Thành Phố Vinh đang từng ngày vươn mình rộng lớn với vô vàn địa điểm ăn chơi thì yếu tố “chơi được” đã trở nên quá bình thường, thay vào đó là “chơi đỉnh”, “chơi tới bến” với rượu ngon, nhạc đỉnh và các bóng hồng xinh tươi… mới là những yếu tố đáng để thượng khách quan tâm nhất. Nhưng đâu mới là nơi có thể đáp ứng các tiêu chí cầu kì này? Pub Welove chính là câu trả lời của bạn. Giá: 526.315.776 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.6938,
+                18.668455
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23086047",
+        "title": "The Pizza Company",
+        "city": "Vinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The Pizza Company ở Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.67393,
+                18.670464
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27747784",
+        "title": "Nhà Hàng Gió Biển",
+        "city": "Nghi Yen",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Gió Biển ở Nghi Yen. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.727104,
+                18.801262
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14058802",
+        "title": "Bún Chả Thắng Bốn",
+        "city": "Diễn Châu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "657.894.720 ₫ - 2.147.483.647 ₫",
+        "description": "Địa chỉ ăn ngon ở Thị trấn Diễn Châu Nằm trên trục đường QL1A, dễ dàng đi lại, có chỗ đậu xe thoải mái Chúng tôi có 2 món: Bún Chả: 25.000VND/Suất Vịt Quay: 150.000VND/con",
+        "embedding": null,
+        "searchText": "Bún Chả Thắng Bốn ở Diễn Châu. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Địa chỉ ăn ngon ở Thị trấn Diễn Châu Nằm trên trục đường QL1A, dễ dàng đi lại, có chỗ đậu xe thoải mái Chúng tôi có 2 món: Bún Chả: 25.000VND/Suất Vịt Quay: 150.000VND/con Giá: 657.894.720 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.60075,
+                18.967972
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32789664",
+        "title": "Sun Mountain Bar",
+        "city": "Diễn Thành",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sun Mountain Bar ở Diễn Thành. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.43333,
+                18.95
+            ]
+        },
+        "openingHours": null
+    }
+]

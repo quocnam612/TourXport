@@ -1,0 +1,601 @@
+[
+    {
+        "sourceLocationId": "14054065",
+        "title": "Đồng Cao",
+        "city": "Thạch Son",
+        "totalScore": 5.0,
+        "ranking": "4/15",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đồng Cao ở Thạch Son. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 4/15.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/df/82/31/photo8jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.88116,
+                21.409761
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24061065",
+        "title": "Hoang Hoa Tham Park",
+        "city": "Bac Giang",
+        "totalScore": 5.0,
+        "ranking": "1/15",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hoang Hoa Tham Park ở Bac Giang. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 1/15.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/48/12/97/kimspa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.20662,
+                21.272757
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15292490",
+        "title": "Chùa Bổ Đà",
+        "city": "Thuong Lat",
+        "totalScore": 5.0,
+        "ranking": "2/15",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Bổ Đà ở Thuong Lat. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 2/15.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/d6/62/c9/visiting-buddhist-padoda.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15190038",
+        "title": "Quán Bà Tám Tour - Bắc Giang Tourism",
+        "city": "Thi tran Nenh",
+        "totalScore": 5.0,
+        "ranking": "1/2",
+        "reviewsCount": 1,
+        "category": "Chuyến tham quan",
+        "priceRange": null,
+        "description": "OnedayOnetrip là chuyến đi trải nghiệm thực tế trong vòng một ngày Chủ Nhật hằng tuần với hai địa danh nổi bật là Chùa Bổ Đà Sơn và Làng nghề truyền thống Thổ Hà tại huyện Việt Yên, tỉnh Bắc Giang – nằm bên bờ Bắc con sông Cầu ngăn cách 2 tỉnh Bắc Ninh và Bắc Giang.\nQuán Bà Tám Tour được hình thành với mong muốn giữ gìn các giá trị truyền thống thông qua chia sẻ những nét đẹp văn hóa của Bắc Giang",
+        "embedding": null,
+        "searchText": "Quán Bà Tám Tour - Bắc Giang Tourism ở Thi tran Nenh. Loại địa điểm: Chuyến tham quan. Tags: Điểm du lịch, Chuyến tham quan. Mô tả: OnedayOnetrip là chuyến đi trải nghiệm thực tế trong vòng một ngày Chủ Nhật hằng tuần với hai địa danh nổi bật là Chùa Bổ Đà Sơn và Làng nghề truyền thống Thổ Hà tại huyện Việt Yên, tỉnh Bắc Giang – nằm bên bờ Bắc con sông Cầu ngăn cách 2 tỉnh Bắc Ninh và Bắc Giang.\nQuán Bà Tám Tour được hình thành với mong muốn giữ gìn các giá trị truyền thống thông qua chia sẻ những nét đẹp văn hóa của Bắc Giang Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 1/2.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/24/e5/de/get-around-visit-ancient.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34301313",
+        "title": "Ninh Anh Travel",
+        "city": "Bac Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ninh Anh Travel ở Bac Giang. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Thông tin cho khách du lịch.",
+        "tags": [
+            "Điểm du lịch",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.12535,
+                21.390814
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33733270",
+        "title": "Phòng khám Đa khoa Y học Bắc Giang",
+        "city": "Bac Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Spa & Sức khỏe",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phòng khám Đa khoa Y học Bắc Giang ở Bac Giang. Loại địa điểm: Spa & Sức khỏe. Tags: Điểm du lịch, Spa & Sức khỏe.",
+        "tags": [
+            "Điểm du lịch",
+            "Spa & Sức khỏe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/40/fc/e9/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.19418,
+                21.27966
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-20:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33268220",
+        "title": "Quang",
+        "city": "Thạch Son",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quang ở Thạch Son. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.862755,
+                18.404211
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32825466",
+        "title": "Chung Cư Green City",
+        "city": "Bac Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chung Cư Green City ở Bac Giang. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.19479,
+                21.273586
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28236316",
+        "title": "Bo Da Pogoda",
+        "city": "Bac Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bo Da Pogoda ở Bac Giang. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.10018,
+                21.204056
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27699654",
+        "title": "SKY HOTEL",
+        "city": "Bac Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "Khách Sạn Sky Hotel Bắc Giang \nĐịa chỉ: Lô 41 42 đường Văn Cao, đường Xương Giang, tp Bắc Giang ",
+        "embedding": null,
+        "searchText": "SKY HOTEL ở Bac Giang. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Khác, Hoạt động ngoài trời. Mô tả: Khách Sạn Sky Hotel Bắc Giang \nĐịa chỉ: Lô 41 42 đường Văn Cao, đường Xương Giang, tp Bắc Giang ",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Khác",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/ed/e4/7d/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "07:00-23:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1410
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26321482",
+        "title": "Diệu Chinh",
+        "city": "Bac Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Spa & Sức khỏe",
+        "priceRange": null,
+        "description": "FILLER-BOTX TIÊM TAN MỠ ĐÀO TẠO HỌC VIÊN",
+        "embedding": null,
+        "searchText": "Diệu Chinh ở Bac Giang. Loại địa điểm: Spa & Sức khỏe. Tags: Điểm du lịch, Spa & Sức khỏe. Mô tả: FILLER-BOTX TIÊM TAN MỠ ĐÀO TẠO HỌC VIÊN",
+        "tags": [
+            "Điểm du lịch",
+            "Spa & Sức khỏe"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.20713,
+                21.284582
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [],
+                [],
+                [],
+                [],
+                []
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "24062848",
+        "title": "Quảng Trường 3/2 TP. Bắc Giang",
+        "city": "Bac Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quảng Trường 3/2 TP. Bắc Giang ở Bac Giang. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.2772,
+                14.058324
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "24061700",
+        "title": "Lotte Cinema Bac Giang",
+        "city": "Bac Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Vui chơi & Giải trí",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lotte Cinema Bac Giang ở Bac Giang. Loại địa điểm: Vui chơi & Giải trí. Tags: Điểm du lịch, Vui chơi & Giải trí.",
+        "tags": [
+            "Điểm du lịch",
+            "Vui chơi & Giải trí"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.70204,
+                10.741023
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24061697",
+        "title": "Thuong Market",
+        "city": "Bac Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thuong Market ở Bac Giang. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.19127,
+                21.274155
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24060267",
+        "title": "Xuong Giang Temple",
+        "city": "Bac Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Xuong Giang Temple ở Bac Giang. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.21275,
+                21.292444
+            ]
+        },
+        "openingHours": null
+    }
+]

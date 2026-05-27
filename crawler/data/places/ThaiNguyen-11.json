@@ -1,0 +1,595 @@
+[
+    {
+        "sourceLocationId": "8445597",
+        "title": "Bảo tàng Văn hóa các Dân tộc Việt Nam",
+        "city": "Thái Nguyên",
+        "totalScore": 4.7,
+        "ranking": "1/12",
+        "reviewsCount": 27,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bảo tàng Văn hóa các Dân tộc Việt Nam ở Thái Nguyên. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.7/5 từ 27 lượt review. Xếp hạng: 1/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/e9/86/62/tribal-carvings.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.83863,
+                21.597364
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12409668",
+        "title": "Thác Cửa Tử",
+        "city": "Thái Nguyên",
+        "totalScore": 5.0,
+        "ranking": "5/12",
+        "reviewsCount": 4,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thác Cửa Tử ở Thái Nguyên. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 5/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/6a/3b/91/natural-waterfall-in.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.56205,
+                21.618122
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1751998",
+        "title": "Nui Coc Lake",
+        "city": "Thái Nguyên",
+        "totalScore": 4.0,
+        "ranking": "2/12",
+        "reviewsCount": 24,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nui Coc Lake ở Thái Nguyên. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.0/5 từ 24 lượt review. Xếp hạng: 2/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/75/64/c2/photo3jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.70069,
+                21.58558
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12496219",
+        "title": "Quảng Trường Võ Nguyên Giáp",
+        "city": "Thái Nguyên",
+        "totalScore": 5.0,
+        "ranking": "10/12",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quảng Trường Võ Nguyên Giáp ở Thái Nguyên. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 10/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/a3/0f/dd/qu-ng-tru-ng-vo-nguyen.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.84128,
+                21.59707
+            ]
+        },
+        "openingHours": {
+            "display": "19:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12409692",
+        "title": "Hang Phượng Hoàng, Suối Mỏ Gà",
+        "city": "Thái Nguyên",
+        "totalScore": 5.0,
+        "ranking": "3/12",
+        "reviewsCount": 3,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hang Phượng Hoàng, Suối Mỏ Gà ở Thái Nguyên. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 3/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/96/b8/5b/cestou-k-jeskyni-puong.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.11667,
+                21.76667
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12530048",
+        "title": "Không Gian Văn Hóa Trà Tân Cương",
+        "city": "Thái Nguyên",
+        "totalScore": 4.0,
+        "ranking": "4/12",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Không Gian Văn Hóa Trà Tân Cương ở Thái Nguyên. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 4 lượt review. Xếp hạng: 4/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/0f/81/d4/79/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.76469,
+                21.539019
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12496284",
+        "title": "Khu Di Tích Lịch Sử - Sinh Thái ATK Định Hóa Thái Nguyên",
+        "city": "Thái Nguyên",
+        "totalScore": 3.0,
+        "ranking": "11/12",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu Di Tích Lịch Sử - Sinh Thái ATK Định Hóa Thái Nguyên ở Thái Nguyên. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 11/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/f3/97/09/nha-san-gia-dinh-ngu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "19:00-41:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 2460
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 2460
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 2460
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 2460
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 2460
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 2460
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 2460
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28002521",
+        "title": "Hồ Gò Miếu",
+        "city": "Thái Nguyên",
+        "totalScore": 0,
+        "ranking": "6/12",
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hồ Gò Miếu ở Thái Nguyên. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Xếp hạng: 6/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.648766,
+                21.533329
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28002524",
+        "title": "Thác Chiểm",
+        "city": "Thái Nguyên",
+        "totalScore": 5.0,
+        "ranking": "7/12",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thác Chiểm ở Thái Nguyên. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 7/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/db/ea/d2/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.83333,
+                21.66667
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28002555",
+        "title": "Thác Ngao",
+        "city": "Thái Nguyên",
+        "totalScore": 5.0,
+        "ranking": "8/12",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thác Ngao ở Thái Nguyên. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 8/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/2c/d0/a0/b4/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.83333,
+                21.66667
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28002527",
+        "title": "Suối Đá Cổng",
+        "city": "Thái Nguyên",
+        "totalScore": 5.0,
+        "ranking": "9/12",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Suối Đá Cổng ở Thái Nguyên. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 9/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/d0/a4/40/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.83333,
+                21.66667
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    }
+]

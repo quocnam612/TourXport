@@ -45,9 +45,13 @@ class ProfileSection extends StatelessWidget {
       );
     }
 
-    final name = userData?['name'] ?? 'Người dùng';
-    final email = userData?['email'] ?? 'Chưa cập nhật email';
-    final phone = userData?['phone'] ?? 'Chưa cập nhật số điện thoại';
+    final isGuest = userData == null;
+    final name = isGuest ? 'Khách du lịch' : (userData?['name'] ?? 'Người dùng');
+    final email = isGuest ? 'Đăng nhập để xem email' : (userData?['email'] ?? 'Chưa cập nhật email');
+    final phone = isGuest ? 'Đăng nhập để xem số điện thoại' : (userData?['phone'] ?? 'Chưa cập nhật số điện thoại');
+    final bio = isGuest 
+        ? 'Hãy đăng nhập để mọi người biết thêm về bạn!.'
+        : (userData?['bio'] ?? 'Chưa có tiểu sử. Hãy cập nhật để mọi người biết thêm về bạn!');
     final avatarUrl = userData?['avatarUrl'] ?? '';
     final coverUrl = userData?['coverUrl'] ?? '';
 
@@ -102,61 +106,156 @@ class ProfileSection extends StatelessWidget {
             physics: const BouncingScrollPhysics(),
             child: Column(
               children: [
-                _buildHeader(context, name, avatarUrl, coverUrl),
-              Transform.translate(
-                offset: const Offset(0, -60),
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 24),
-                  child: Column(
-                    children: [
-                      _buildMenuGroup(
-                        context,
-                        items: [
-                          _MenuDataItem(
-                            icon: Icons.person_outline_rounded,
-                            title: 'Thông tin cá nhân',
-                            subtitle: name,
-                            onTap: onEditName,
+                _buildHeader(context, name, avatarUrl, coverUrl, bio, isGuest),
+                Transform.translate(
+                  offset: const Offset(0, -60),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 24),
+                    child: Column(
+                      children: [
+                        if (isGuest) ...[
+                          // Beautiful Guest CTA Card
+                          Container(
+                            margin: const EdgeInsets.only(bottom: 20),
+                            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 24),
+                            decoration: BoxDecoration(
+                              color: Colors.black.withOpacity(0.32),
+                              borderRadius: BorderRadius.circular(28),
+                              border: Border.all(
+                                color: const Color(0xFFD4AF7A).withOpacity(0.25),
+                                width: 1.2,
+                              ),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: const Color(0xFFD4AF7A).withOpacity(0.04),
+                                  blurRadius: 40,
+                                  spreadRadius: 2,
+                                ),
+                              ],
+                            ),
+                            child: Column(
+                              children: [
+                                Container(
+                                  padding: const EdgeInsets.all(16),
+                                  decoration: BoxDecoration(
+                                    color: const Color(0xFFD4AF7A).withOpacity(0.1),
+                                    shape: BoxShape.circle,
+                                  ),
+                                  child: const Icon(
+                                    Icons.login_rounded,
+                                    color: Color(0xFFD4AF7A),
+                                    size: 32,
+                                  ),
+                                ),
+                                const SizedBox(height: 16),
+                                const Text(
+                                  'Khám phá nhiều hơn!',
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                const SizedBox(height: 8),
+                                Text(
+                                  'Hãy đăng nhập tài khoản của bạn để lưu lại các điểm đến yêu thích và lên lịch trình du lịch cá nhân hóa với trí tuệ nhân tạo.',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontSize: 13,
+                                    color: Colors.white.withOpacity(0.7),
+                                    height: 1.5,
+                                  ),
+                                ),
+                                const SizedBox(height: 20),
+                                ElevatedButton(
+                                  onPressed: onLogout, // Directs to Sign In screen for guest
+                                  style: ElevatedButton.styleFrom(
+                                    backgroundColor: const Color(0xFFD4AF7A),
+                                    foregroundColor: const Color(0xFF1B2321),
+                                    padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 14),
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(20),
+                                    ),
+                                    elevation: 4,
+                                  ),
+                                  child: const Text(
+                                    'ĐĂNG NHẬP / ĐĂNG KÝ',
+                                    style: TextStyle(
+                                      fontFamily: 'Montserrat',
+                                      fontWeight: FontWeight.bold,
+                                      letterSpacing: 1,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
-                          _MenuDataItem(
-                            icon: Icons.email_outlined,
-                            title: 'Email',
-                            subtitle: email,
-                            onTap: onEditEmail,
+                          // General settings group for guest
+                          _buildMenuGroup(
+                            context,
+                            items: [
+                              _MenuDataItem(icon: Icons.language_rounded, title: 'Ngôn ngữ', subtitle: 'Tiếng Việt', onTap: onEditLanguage),
+                              _MenuDataItem(icon: Icons.help_outline_rounded, title: 'Trợ giúp & Hỗ trợ', onTap: onEditHelpSupport),
+                              _MenuDataItem(
+                                icon: Icons.login_rounded,
+                                title: 'Đăng nhập / Đăng ký',
+                                titleColor: const Color(0xFFD4AF7A),
+                                onTap: onLogout,
+                              ),
+                            ],
                           ),
-                          _MenuDataItem(
-                            icon: Icons.phone_android_rounded,
-                            title: 'Số điện thoại',
-                            subtitle: phone,
-                            onTap: onEditPhone,
+                        ] else ...[
+                          _buildMenuGroup(
+                            context,
+                            items: [
+                              _MenuDataItem(
+                                icon: Icons.person_outline_rounded,
+                                title: 'Thông tin cá nhân',
+                                subtitle: name,
+                                onTap: onEditName,
+                              ),
+                              _MenuDataItem(
+                                icon: Icons.email_outlined,
+                                title: 'Email',
+                                subtitle: email,
+                                onTap: onEditEmail,
+                              ),
+                              _MenuDataItem(
+                                icon: Icons.phone_android_rounded,
+                                title: 'Số điện thoại',
+                                subtitle: phone,
+                                onTap: onEditPhone,
+                              ),
+                            ],
+                          ),
+                          _buildMenuGroup(
+                            context,
+                            items: [
+                              _MenuDataItem(icon: Icons.notifications_none_rounded, title: 'Thông báo', onTap: onEditNotifications),
+                              _MenuDataItem(icon: Icons.language_rounded, title: 'Ngôn ngữ', subtitle: 'Tiếng Việt', onTap: onEditLanguage),
+                              _MenuDataItem(icon: Icons.security_rounded, title: 'Bảo mật', onTap: onEditSecurity),
+                            ],
+                          ),
+                          _buildMenuGroup(
+                            context,
+                            items: [
+                              _MenuDataItem(icon: Icons.help_outline_rounded, title: 'Trợ giúp & Hỗ trợ', onTap: onEditHelpSupport),
+                              _MenuDataItem(
+                                icon: Icons.logout_rounded,
+                                title: 'Đăng xuất',
+                                titleColor: const Color(0xFFE74C3C),
+                                onTap: onLogout,
+                              ),
+                            ],
                           ),
                         ],
-                      ),
-                      _buildMenuGroup(
-                        context,
-                        items: [
-                          _MenuDataItem(icon: Icons.notifications_none_rounded, title: 'Thông báo', onTap: onEditNotifications),
-                          _MenuDataItem(icon: Icons.language_rounded, title: 'Ngôn ngữ', subtitle: 'Tiếng Việt', onTap: onEditLanguage),
-                          _MenuDataItem(icon: Icons.security_rounded, title: 'Bảo mật', onTap: onEditSecurity),
-                        ],
-                      ),
-                      _buildMenuGroup(
-                        context,
-                        items: [
-                          _MenuDataItem(icon: Icons.help_outline_rounded, title: 'Trợ giúp & Hỗ trợ', onTap: onEditHelpSupport),
-                          _MenuDataItem(
-                            icon: Icons.logout_rounded,
-                            title: 'Đăng xuất',
-                            titleColor: const Color(0xFFE74C3C),
-                            onTap: onLogout,
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 40),
-                    ],
+                        const SizedBox(height: 40),
+                      ],
+                    ),
                   ),
                 ),
-              ),
               ],
             ),
           ),
@@ -165,7 +264,7 @@ class ProfileSection extends StatelessWidget {
     );
   }
 
-  Widget _buildHeader(BuildContext context, String name, String avatarUrl, String coverUrl) {
+  Widget _buildHeader(BuildContext context, String name, String avatarUrl, String coverUrl, String bio, bool isGuest) {
     final screenW = MediaQuery.of(context).size.width;
     final topPadding = MediaQuery.of(context).padding.top;
     
@@ -195,7 +294,7 @@ class ProfileSection extends StatelessWidget {
             child: Column(
               children: [
                 // Avatar with Glowing Ring
-                _buildAvatar(name, avatarUrl),
+                _buildAvatar(name, avatarUrl, isGuest),
                 const SizedBox(height: 20),
                 // Name
                 Text(
@@ -216,7 +315,7 @@ class ProfileSection extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 48),
                   child: Text(
-                    userData?['bio'] ?? 'Chưa có tiểu sử. Hãy cập nhật để mọi người biết thêm về bạn!',
+                    bio,
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontFamily: 'Montserrat',
@@ -267,7 +366,7 @@ class ProfileSection extends StatelessWidget {
     );
   }
 
-  Widget _buildAvatar(String name, String avatarUrl) {
+  Widget _buildAvatar(String name, String avatarUrl, bool isGuest) {
     return Stack(
       alignment: Alignment.center,
       children: [
@@ -343,33 +442,34 @@ class ProfileSection extends StatelessWidget {
           ),
         ),
         // Edit Avatar Badge
-        Positioned(
-          bottom: 4,
-          right: 4,
-          child: GestureDetector(
-            onTap: onUpdateAvatar,
-            child: Container(
-              padding: const EdgeInsets.all(8),
-              decoration: BoxDecoration(
-                color: const Color(0xFFD4AF7A),
-                shape: BoxShape.circle,
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.3),
-                    blurRadius: 10,
-                    offset: const Offset(0, 2),
-                  ),
-                ],
-                border: Border.all(color: const Color(0xFF1B2321), width: 2),
-              ),
-              child: const Icon(
-                Icons.camera_alt_rounded,
-                color: Colors.white,
-                size: 16,
+        if (!isGuest)
+          Positioned(
+            bottom: 4,
+            right: 4,
+            child: GestureDetector(
+              onTap: onUpdateAvatar,
+              child: Container(
+                padding: const EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                  color: const Color(0xFFD4AF7A),
+                  shape: BoxShape.circle,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.3),
+                      blurRadius: 10,
+                      offset: const Offset(0, 2),
+                    ),
+                  ],
+                  border: Border.all(color: const Color(0xFF1B2321), width: 2),
+                ),
+                child: const Icon(
+                  Icons.camera_alt_rounded,
+                  color: Colors.white,
+                  size: 16,
+                ),
               ),
             ),
           ),
-        ),
       ],
     );
   }

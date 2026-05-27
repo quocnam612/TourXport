@@ -3,25 +3,42 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 
 import config from './config/config.js'; 
+import errorMiddleware from './middlewares/errorMiddleware.js';
+
 import authRoutes from './routes/authRoutes.js';
-import locationsRoutes from './routes/locationsRoutes.js';
-
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+import hotelRoutes from './routes/hotelRoutes.js';
+import locationsRoutes from './routes/locationRoutes.js';
+import restaurantRoutes from './routes/restaurantRoutes.js';
+import tourRoutes from './routes/tourRoutes.js';
 
 const app = express();
 
-// Middlewares
 app.use(express.json());
-app.use(cors({origin: config.cors.allowedOrigins}));
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+app.use(cors());
 
 // API routes
 app.use('/auth', authRoutes);
 app.use('/locations', locationsRoutes);
+app.use('/hotels', hotelRoutes);
+app.use('/restaurants', restaurantRoutes);
+app.use('/tours', tourRoutes);
+
+// Default route
+app.get('/', (req, res, next) => {
+    res.status(200).json({
+        success: true,
+        message: 'Welcome to Smart Tourism API'
+    });
+});
+
+app.use((req, res, next) => {
+    res.status(404).json({
+        success: false,
+        message: 'Route not found'
+    });
+});
+
+app.use(errorMiddleware);
 
 mongoose.connect(config.database.uri)
 .then(() => {

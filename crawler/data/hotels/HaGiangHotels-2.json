@@ -1,0 +1,62 @@
+[
+    {
+        "sourceLocationId": "13921425",
+        "title": "Ha Giang Hostel",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": null,
+        "reviewsCount": 384,
+        "category": "Cơ sở lưu trú đặc biệt",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ha Giang Hostel ở Hà Giang. Loại địa điểm: Cơ sở lưu trú đặc biệt. Tags: Khách sạn, Cơ sở lưu trú đặc biệt. Đánh giá: 5.0/5 từ 384 lượt review.",
+        "tags": [
+            "Khách sạn",
+            "Cơ sở lưu trú đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/56/5d/2a/phong-ng.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.960625,
+                22.817959
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10361049",
+        "title": "Bong Hostel, Ha Giang Loop",
+        "city": "Hà Giang",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 1235,
+        "category": "Cơ sở lưu trú đặc biệt",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bong Hostel, Ha Giang Loop ở Hà Giang. Loại địa điểm: Cơ sở lưu trú đặc biệt. Tags: Khách sạn, Cơ sở lưu trú đặc biệt. Đánh giá: 4.9/5 từ 1235 lượt review.",
+        "tags": [
+            "Khách sạn",
+            "Cơ sở lưu trú đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/26/cc/9c/ff/ha-giang-group-tour-with.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98464,
+                22.821255
+            ]
+        },
+        "openingHours": null
+    }
+]

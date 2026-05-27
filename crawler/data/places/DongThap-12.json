@@ -1,0 +1,587 @@
+[
+    {
+        "sourceLocationId": "10000843",
+        "title": "Làng Hoa Sa Đéc",
+        "city": "Sa Đéc",
+        "totalScore": 4.3,
+        "ranking": "2/12",
+        "reviewsCount": 41,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Làng Hoa Sa Đéc ở Sa Đéc. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.3/5 từ 41 lượt review. Xếp hạng: 2/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/64/6a/a4/cu-c-mam-xoi.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "5971077",
+        "title": "Sa Dec Market",
+        "city": "Sa Đéc",
+        "totalScore": 4.4,
+        "ranking": "1/12",
+        "reviewsCount": 78,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sa Dec Market ở Sa Đéc. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 4.4/5 từ 78 lượt review. Xếp hạng: 1/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/dd/0e/a5/legumes.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.76851,
+                10.292274
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19377917",
+        "title": "Khu Di Tích Xẻo Quýt",
+        "city": "Cao Lãnh",
+        "totalScore": 5.0,
+        "ranking": "5/12",
+        "reviewsCount": 3,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu Di Tích Xẻo Quýt ở Cao Lãnh. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 5/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/e6/d4/96/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.8047,
+                10.397862
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12250596",
+        "title": "Vườn Quốc Gia Tràm Chim",
+        "city": "Cao Lãnh",
+        "totalScore": 4.1,
+        "ranking": "4/12",
+        "reviewsCount": 24,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn Quốc Gia Tràm Chim ở Cao Lãnh. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.1/5 từ 24 lượt review. Xếp hạng: 4/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-c/2560x500/0e/bb/21/9a/scenic-tram-chim-national.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "06:00-20:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "5029723",
+        "title": "Huynh Thuy Le Ancient House",
+        "city": "Sa Đéc",
+        "totalScore": 3.5,
+        "ranking": "3/12",
+        "reviewsCount": 114,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Huynh Thuy Le Ancient House ở Sa Đéc. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.5/5 từ 114 lượt review. Xếp hạng: 3/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-c/2560x500/0e/4d/22/19/house-of-huynh-thuy-le.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.76839,
+                10.29387
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27108931",
+        "title": "Dragon Mekong Travel",
+        "city": "Sa Đéc",
+        "totalScore": 5.0,
+        "ranking": "1/2",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "Let’s enjoy the Mekong Delta and experience an authentic lifestyle with locals. We offer customized tours in HCM City and especially in Mekong Delta with both experienced and knowledgeable local guides.",
+        "embedding": null,
+        "searchText": "Dragon Mekong Travel ở Sa Đéc. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Khác, Hoạt động ngoài trời. Mô tả: Let’s enjoy the Mekong Delta and experience an authentic lifestyle with locals. We offer customized tours in HCM City and especially in Mekong Delta with both experienced and knowledgeable local guides. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 1/2.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Khác",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/1e/e1/b3/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "00:00-23:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1410
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23044668",
+        "title": "KDL Vườn Hồng Tư Tôn",
+        "city": "Sa Đéc",
+        "totalScore": 5.0,
+        "ranking": "7/12",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "KDL Vườn Hồng Tư Tôn ở Sa Đéc. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 7/12.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/82/11/34/great.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.76667,
+                10.3
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33989031",
+        "title": "Transfeero",
+        "city": "Hong Ngu",
+        "totalScore": 1.0,
+        "ranking": "1/1",
+        "reviewsCount": 1,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Transfeero ở Hong Ngu. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Phương tiện giao thông. Đánh giá: 1.0/5 từ 1 lượt review. Xếp hạng: 1/1.",
+        "tags": [
+            "Điểm du lịch",
+            "Phương tiện giao thông"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28137588",
+        "title": "Tú Martell Tattoo Studio",
+        "city": "Cao Lãnh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tú Martell Tattoo Studio ở Cao Lãnh. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Nơi mua sắm, Bảo tàng.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Bảo tàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.63294,
+                10.46017
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "24993499",
+        "title": "công viên Văn Miếu cao lãnh",
+        "city": "Cao Lãnh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "công viên Văn Miếu cao lãnh ở Cao Lãnh. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.636314,
+                10.45772
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23347861",
+        "title": "Việt Mekong farmstay",
+        "city": "Tram Chim",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "Quý khách yêu quý hệ sinh thái tự nhiên, thích trải nghiệm hoạt động nông nghiệp khẩn hoang Đồng Tháp Mười – vùng văn hóa độc đáo, nhiều giá trị sáng tạo của người Việt ở Nam bộ trong thời kì khẩn hoang - mở cõi; sống cân bằng trong không gian hoa cỏ tự nhiên của hệ sinh thái ngập nước ngọt và những cánh đồng lúa bao la. ",
+        "embedding": null,
+        "searchText": "Việt Mekong farmstay ở Tram Chim. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Khác, Hoạt động ngoài trời. Mô tả: Quý khách yêu quý hệ sinh thái tự nhiên, thích trải nghiệm hoạt động nông nghiệp khẩn hoang Đồng Tháp Mười – vùng văn hóa độc đáo, nhiều giá trị sáng tạo của người Việt ở Nam bộ trong thời kì khẩn hoang - mở cõi; sống cân bằng trong không gian hoa cỏ tự nhiên của hệ sinh thái ngập nước ngọt và những cánh đồng lúa bao la. ",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Khác",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/e0/e3/bb/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "20546879",
+        "title": "Sa Nhiên Garden",
+        "city": "Sa Đéc",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sa Nhiên Garden ở Sa Đéc. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": {
+            "display": "19:00-42:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 2520
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 2520
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 2520
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 2520
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 2520
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 2520
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 2520
+                    }
+                ]
+            ]
+        }
+    }
+]

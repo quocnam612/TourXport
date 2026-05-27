@@ -1,0 +1,486 @@
+[
+    {
+        "sourceLocationId": "14199599",
+        "title": "Nhà Máy Điện Gió Bạc Liêu",
+        "city": "Bac Lieu",
+        "totalScore": 4.4,
+        "ranking": "3/11",
+        "reviewsCount": 7,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Máy Điện Gió Bạc Liêu ở Bac Lieu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.4/5 từ 7 lượt review. Xếp hạng: 3/11.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/f4/eb/6f/stunning-view.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13969559",
+        "title": "Nhà thờ Tắc Sậy - Cha Trương Bửu Diệp",
+        "city": "Bac Lieu",
+        "totalScore": 4.2,
+        "ranking": "2/11",
+        "reviewsCount": 10,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà thờ Tắc Sậy - Cha Trương Bửu Diệp ở Bac Lieu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 10 lượt review. Xếp hạng: 2/11.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/4b/43/d1/20181110-091350-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.3974,
+                9.221886
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8071683",
+        "title": "Nhà Công Tử Bạc Liêu",
+        "city": "Bac Lieu",
+        "totalScore": 3.7,
+        "ranking": "1/11",
+        "reviewsCount": 30,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Công Tử Bạc Liêu ở Bac Lieu. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 3.7/5 từ 30 lượt review. Xếp hạng: 1/11.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/f4/48/f1/cong-tu-bac-lieu-house.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.72361,
+                9.284167
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8071662",
+        "title": "Quan Âm Phật Đài",
+        "city": "Bac Lieu",
+        "totalScore": 4.1,
+        "ranking": "4/11",
+        "reviewsCount": 10,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quan Âm Phật Đài ở Bac Lieu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.1/5 từ 10 lượt review. Xếp hạng: 4/11.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/5e/87/e0/20181027-092930-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.73922,
+                9.21874
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20138353",
+        "title": "Chùa Xiêm Cán",
+        "city": "Bac Lieu",
+        "totalScore": 5.0,
+        "ranking": "5/11",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Xiêm Cán ở Bac Lieu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 5/11.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/5c/c9/08/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.79805,
+                9.253544
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17395909",
+        "title": "Điện Gió Bạc Liêu",
+        "city": "Bac Lieu",
+        "totalScore": 4.0,
+        "ranking": "7/11",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Điện Gió Bạc Liêu ở Bac Lieu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 7/11.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/19/61/11/c1/photo1jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26661175",
+        "title": "Thiền Viện Trúc Lâm Bạc Liêu",
+        "city": "Bac Lieu",
+        "totalScore": 5.0,
+        "ranking": "6/11",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thiền Viện Trúc Lâm Bạc Liêu ở Bac Lieu. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 6/11.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.7407,
+                9.2156
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-16:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 960
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26661814",
+        "title": "Nhà Công Tử Bạc Liêu",
+        "city": "Bac Lieu",
+        "totalScore": 4.0,
+        "ranking": "8/11",
+        "reviewsCount": 1,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Công Tử Bạc Liêu ở Bac Lieu. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 8/11.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.72381,
+                9.284086
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-18:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1110
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8610634",
+        "title": "My Uyen Spa",
+        "city": "Bac Lieu",
+        "totalScore": 5.0,
+        "ranking": "1/1",
+        "reviewsCount": 1,
+        "category": "Spa & Sức khỏe",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "My Uyen Spa ở Bac Lieu. Loại địa điểm: Spa & Sức khỏe. Tags: Điểm du lịch, Spa & Sức khỏe. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 1/1.",
+        "tags": [
+            "Điểm du lịch",
+            "Spa & Sức khỏe"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.72103,
+                9.30315
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28028671",
+        "title": "Isabella Cruises",
+        "city": "Tỉnh Bạc Liêu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Isabella Cruises ở Tỉnh Bạc Liêu. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Chuyến tham quan bằng thuyền & thể thao dưới nước, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Chuyến tham quan bằng thuyền & thể thao dưới nước",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.853424,
+                21.034342
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-20:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1230
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15334057",
+        "title": "Kitty Bar & Kitty Sky Lounge",
+        "city": "Bac Lieu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Giải trí về đêm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kitty Bar & Kitty Sky Lounge ở Bac Lieu. Loại địa điểm: Giải trí về đêm. Tags: Điểm du lịch, Giải trí về đêm.",
+        "tags": [
+            "Điểm du lịch",
+            "Giải trí về đêm"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.72267,
+                9.286844
+            ]
+        },
+        "openingHours": null
+    }
+]

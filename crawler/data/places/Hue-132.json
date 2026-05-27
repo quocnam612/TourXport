@@ -1,0 +1,5998 @@
+[
+    {
+        "sourceLocationId": "317599",
+        "title": "Hoàng Thành Huế",
+        "city": "Huế",
+        "totalScore": 4.3,
+        "ranking": "1/132",
+        "reviewsCount": 11398,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hoàng Thành Huế ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 11398 lượt review. Xếp hạng: 1/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/7a/57/7b/vue-interieure.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.57835,
+                16.468744
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "562580",
+        "title": "Bach Ma National Park",
+        "city": "Huế",
+        "totalScore": 4.5,
+        "ranking": "6/132",
+        "reviewsCount": 343,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bach Ma National Park ở Huế. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 343 lượt review. Xếp hạng: 6/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/d3/92/57/bach-ma-national-park.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.893715,
+                16.216366
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "451127",
+        "title": "Mausoleum of Emperor Minh Mang",
+        "city": "Huế",
+        "totalScore": 4.5,
+        "ranking": "4/132",
+        "reviewsCount": 2657,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mausoleum of Emperor Minh Mang ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 2657 lượt review. Xếp hạng: 4/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/65/ea/fd/tumba-de-minh-mang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.56918,
+                16.387653
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "451126",
+        "title": "Chùa Thiên Mụ",
+        "city": "Huế",
+        "totalScore": 4.2,
+        "ranking": "7/132",
+        "reviewsCount": 3915,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Thiên Mụ ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 3915 lượt review. Xếp hạng: 7/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/9b/d8/ca/thien-mu-pagoda.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.54485,
+                16.453144
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "451128",
+        "title": "Tomb of Tu Duc",
+        "city": "Huế",
+        "totalScore": 4.2,
+        "ranking": "12/132",
+        "reviewsCount": 2133,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tomb of Tu Duc ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 2133 lượt review. Xếp hạng: 12/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/01/ae/52/24/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.56644,
+                16.433016
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "451120",
+        "title": "Tử Cấm Thành",
+        "city": "Huế",
+        "totalScore": 4.2,
+        "ranking": "11/132",
+        "reviewsCount": 997,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tử Cấm Thành ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 997 lượt review. Xếp hạng: 11/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/01/6a/9f/33/view-of-thai-hoa-palace.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.57792,
+                16.46925
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "3741185",
+        "title": "Cầu Ngói Thanh Toàn",
+        "city": "Huế",
+        "totalScore": 4.4,
+        "ranking": "8/132",
+        "reviewsCount": 428,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cầu Ngói Thanh Toàn ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.4/5 từ 428 lượt review. Xếp hạng: 8/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/3e/13/84/photo2jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.64267,
+                16.466808
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8546743",
+        "title": "Imperial Tomb of Dong Khanh",
+        "city": "Huế",
+        "totalScore": 4.5,
+        "ranking": "2/132",
+        "reviewsCount": 584,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Imperial Tomb of Dong Khanh ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 584 lượt review. Xếp hạng: 2/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/5c/2e/8a/lang-kh-i-d-nh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.57,
+                16.429956
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "555721",
+        "title": "Royal Tombs",
+        "city": "Huế",
+        "totalScore": 4.5,
+        "ranking": "5/132",
+        "reviewsCount": 973,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Royal Tombs ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 973 lượt review. Xếp hạng: 5/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/eb/7f/ef/tombs-in-hue.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59028,
+                16.398949
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "455407",
+        "title": "Hải Vân Pass",
+        "city": "Lăng Cô",
+        "totalScore": 4.3,
+        "ranking": "9/132",
+        "reviewsCount": 637,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hải Vân Pass ở Lăng Cô. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Hoạt động ngoài trời. Đánh giá: 4.3/5 từ 637 lượt review. Xếp hạng: 9/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/39/0e/87/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.13334,
+                16.200014
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "456107",
+        "title": "Perfume River",
+        "city": "Huế",
+        "totalScore": 3.6,
+        "ranking": "20/132",
+        "reviewsCount": 2275,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Perfume River ở Huế. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.6/5 từ 2275 lượt review. Xếp hạng: 20/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/04/9f/ca/13/stunning-arrival-to-the.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58908,
+                16.46863
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11620834",
+        "title": "Hồ Thủy Tiên",
+        "city": "Huế",
+        "totalScore": 4.3,
+        "ranking": "26/132",
+        "reviewsCount": 125,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hồ Thủy Tiên ở Huế. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.3/5 từ 125 lượt review. Xếp hạng: 26/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/69/ae/59/park-entrance.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.57859,
+                16.408033
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "2519037",
+        "title": "Dong Ba Market",
+        "city": "Huế",
+        "totalScore": 3.4,
+        "ranking": "37/132",
+        "reviewsCount": 398,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dong Ba Market ở Huế. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 3.4/5 từ 398 lượt review. Xếp hạng: 37/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/25/e1/ff/superbe-melange-de-fruits.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58879,
+                16.472315
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4597923",
+        "title": "Thuan An Beach",
+        "city": "Huế",
+        "totalScore": 3.9,
+        "ranking": "32/132",
+        "reviewsCount": 139,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thuan An Beach ở Huế. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.9/5 từ 139 lượt review. Xếp hạng: 32/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/cd/08/c9/thuan-an-beach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.65321,
+                16.56026
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6941969",
+        "title": "Chùa Từ Hiếu",
+        "city": "Huế",
+        "totalScore": 4.6,
+        "ranking": "21/132",
+        "reviewsCount": 52,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Từ Hiếu ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.6/5 từ 52 lượt review. Xếp hạng: 21/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/2b/66/c9/tu-hieu-pagoda.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58186,
+                16.439032
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11437075",
+        "title": "Bãi Biển Lăng Cô",
+        "city": "Huế",
+        "totalScore": 3.9,
+        "ranking": "33/132",
+        "reviewsCount": 98,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bãi Biển Lăng Cô ở Huế. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.9/5 từ 98 lượt review. Xếp hạng: 33/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/9d/cf/9b/lang-co.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.0659,
+                16.263931
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12898894",
+        "title": "Bảo tàng Nghệ thuật Thêu XQ",
+        "city": "Huế",
+        "totalScore": 4.8,
+        "ranking": "27/132",
+        "reviewsCount": 59,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bảo tàng Nghệ thuật Thêu XQ ở Huế. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.8/5 từ 59 lượt review. Xếp hạng: 27/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/fa/b5/7e/amazing-detail-hand-embroidere.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58861,
+                16.466055
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "600750",
+        "title": "Truong Tien Bridge",
+        "city": "Huế",
+        "totalScore": 3.9,
+        "ranking": "13/132",
+        "reviewsCount": 625,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Truong Tien Bridge ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.9/5 từ 625 lượt review. Xếp hạng: 13/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/01/46/84/55/truong-tien-bridge.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.590004,
+                16.46763
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "2416127",
+        "title": "Đầm Tam Giang",
+        "city": "Huế",
+        "totalScore": 4.4,
+        "ranking": "22/132",
+        "reviewsCount": 97,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đầm Tam Giang ở Huế. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.4/5 từ 97 lượt review. Xếp hạng: 22/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/c6/73/3b/tam-giang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.85837,
+                16.387165
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-18:45",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1125
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1125
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1125
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1125
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1125
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1125
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1125
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "4333898",
+        "title": "Tu Dam Pagoda",
+        "city": "Huế",
+        "totalScore": 4.3,
+        "ranking": "10/132",
+        "reviewsCount": 402,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tu Dam Pagoda ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 402 lượt review. Xếp hạng: 10/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/05/c0/18/ca/tu-dam-pagoda.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58177,
+                16.453259
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7019039",
+        "title": "Le Ba Dang Art Museum",
+        "city": "Huế",
+        "totalScore": 4.6,
+        "ranking": "18/132",
+        "reviewsCount": 96,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Le Ba Dang Art Museum ở Huế. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.6/5 từ 96 lượt review. Xếp hạng: 18/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/d8/5b/f9/le-ba-dang-art-museum.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58798,
+                16.465225
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "451116",
+        "title": "Lăng Khải Định",
+        "city": "Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.5,
+        "ranking": "3/132",
+        "reviewsCount": 1245,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": "Lang Khai Đinh - Mot Ngoi Lang bieu tuong cua xu Hue mong mo, ngoi lang co nien đai hon 100 nam đang la điem đen thu hut khach du lich tu phuong",
+        "embedding": null,
+        "searchText": "Lăng Khải Định ở Tỉnh Thừa Thiên - Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Mô tả: Lang Khai Đinh - Mot Ngoi Lang bieu tuong cua xu Hue mong mo, ngoi lang co nien đai hon 100 nam đang la điem đen thu hut khach du lich tu phuong Đánh giá: 4.5/5 từ 1245 lượt review. Xếp hạng: 3/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/d5/b3/36/the-tomb-at-the-very.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59028,
+                16.398949
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "451117",
+        "title": "Thái Hoà Palace",
+        "city": "Huế",
+        "totalScore": 4.2,
+        "ranking": "17/132",
+        "reviewsCount": 153,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thái Hoà Palace ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 153 lượt review. Xếp hạng: 17/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/a5/01/dd/thai-hoa-palace.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.57829,
+                16.46864
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "451125",
+        "title": "The Noon Gate (Cua Ngo Mon)",
+        "city": "Huế",
+        "totalScore": 4.2,
+        "ranking": "14/132",
+        "reviewsCount": 212,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Noon Gate (Cua Ngo Mon) ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 212 lượt review. Xếp hạng: 14/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/01/5b/7b/d6/ng-mon.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.579185,
+                16.467745
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "555735",
+        "title": "Museum of Royal Antiquities",
+        "city": "Huế",
+        "totalScore": 3.8,
+        "ranking": "29/132",
+        "reviewsCount": 143,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Museum of Royal Antiquities ở Huế. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 3.8/5 từ 143 lượt review. Xếp hạng: 29/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/85/36/c7/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58203,
+                16.4711
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12898868",
+        "title": "Phố Đi Bộ Nguyễn Đình Chiểu",
+        "city": "Huế",
+        "totalScore": 3.7,
+        "ranking": "45/132",
+        "reviewsCount": 46,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phố Đi Bộ Nguyễn Đình Chiểu ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.7/5 từ 46 lượt review. Xếp hạng: 45/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/11/36/94/fb-img-1508845177500.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.589035,
+                16.466976
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "11680443",
+        "title": "Không Gian Văn Hóa Lục Bộ",
+        "city": "Huế",
+        "totalScore": 5.0,
+        "ranking": "24/132",
+        "reviewsCount": 41,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Không Gian Văn Hóa Lục Bộ ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 41 lượt review. Xếp hạng: 24/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/b1/fe/0f/luc-bo-culture-space.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58051,
+                16.473001
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-17:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15292231",
+        "title": "Đèo Hải Vân",
+        "city": "Lăng Cô",
+        "totalScore": 4.3,
+        "ranking": "19/132",
+        "reviewsCount": 85,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đèo Hải Vân ở Lăng Cô. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Hoạt động ngoài trời. Đánh giá: 4.3/5 từ 85 lượt review. Xếp hạng: 19/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/3d/b7/13/view-breathtaking.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.10897,
+                16.2101
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "5895985",
+        "title": "Tịnh cư Cát Tường Quân",
+        "city": "Huế",
+        "totalScore": 4.7,
+        "ranking": "35/132",
+        "reviewsCount": 37,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": "Tịnh cư Cát Tường Quân, không gian sống thanh bình, môi trường sống thanh sạch, phong cách sống thanh nhã cùng với tất cả thành viên - những con người có thể chưa chuyên nghiệp trong phục vụ du khách - nhưng siêng năng, chân thành, lành tính và trong sáng. Gia chủ tin rằng cảnh, vật và người tại Tịnh cư Cát Tường Quân sẽ trợ duyên để khách quý tìm lại sự phúc lạc của thân và tâm.",
+        "embedding": null,
+        "searchText": "Tịnh cư Cát Tường Quân ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Mô tả: Tịnh cư Cát Tường Quân, không gian sống thanh bình, môi trường sống thanh sạch, phong cách sống thanh nhã cùng với tất cả thành viên - những con người có thể chưa chuyên nghiệp trong phục vụ du khách - nhưng siêng năng, chân thành, lành tính và trong sáng. Gia chủ tin rằng cảnh, vật và người tại Tịnh cư Cát Tường Quân sẽ trợ duyên để khách quý tìm lại sự phúc lạc của thân và tâm. Đánh giá: 4.7/5 từ 37 lượt review. Xếp hạng: 35/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/dd/05/d6/cat-tuong-quan-zen-house.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58188,
+                16.41475
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-20:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "554928",
+        "title": "Trường Quốc Học Huế",
+        "city": "Huế",
+        "totalScore": 4.2,
+        "ranking": "31/132",
+        "reviewsCount": 78,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trường Quốc Học Huế ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 78 lượt review. Xếp hạng: 31/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/7b/46/19/20151107-171416-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58305,
+                16.460482
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25572772",
+        "title": "Mausoleum of Emperor Khai Dinh",
+        "city": "Huế",
+        "totalScore": 4.5,
+        "ranking": "42/132",
+        "reviewsCount": 11,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mausoleum of Emperor Khai Dinh ở Huế. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.5/5 từ 11 lượt review. Xếp hạng: 42/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/94/4a/76/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.5825,
+                16.395441
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26558441",
+        "title": "ARA Bird Garden",
+        "city": "Phú Lộc",
+        "totalScore": 5.0,
+        "ranking": "52/132",
+        "reviewsCount": 6,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "ARA Bird Garden ở Phú Lộc. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Sở thú & Thủy cung, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 6 lượt review. Xếp hạng: 52/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Sở thú & Thủy cung",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/d3/dc/b6/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.85912,
+                16.286915
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 960
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32878349",
+        "title": "AEON MALL Hue (VN)",
+        "city": "Huế",
+        "totalScore": 4.8,
+        "ranking": "53/132",
+        "reviewsCount": 5,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": "(English) AEON MALL Hue – The Ultimate Shopping & Entertainment Destination in Central Vietnam As the first and largest AEON MALL in Central Vietnam, we offer a world-class experience with over 140 international and domestic brands. Discover the region's first MUJI, UNIQLO, and AEON Supermarket, alongside a diverse food court and modern entertainment facilities. Whether you are looking for trendy fashion, local delicacies, or a relaxing family space, AEON MALL Hue is your must-visit stop in the Ancient Capital. (Tiếng Việt) AEON MALL Huế – Điểm đến mua sắm và giải trí hàng đầu Miền Trung Là trung tâm thương mại AEON MALL đầu tiên và lớn nhất tại Miền Trung, chúng tôi mang đến trải nghiệm hấp dẫn với hơn 140 thương hiệu trong và ngoài nước. Hãy đến và khám phá cửa hàng MUJI, UNIQLO và Siêu thị AEON đầu tiên tại khu vực, cùng khu ẩm thực đa dạng và các khu vui chơi giải trí hiện đại.",
+        "embedding": null,
+        "searchText": "AEON MALL Hue (VN) ở Huế. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Mô tả: (English) AEON MALL Hue – The Ultimate Shopping & Entertainment Destination in Central Vietnam As the first and largest AEON MALL in Central Vietnam, we offer a world-class experience with over 140 international and domestic brands. Discover the region's first MUJI, UNIQLO, and AEON Supermarket, alongside a diverse food court and modern entertainment facilities. Whether you are looking for trendy fashion, local delicacies, or a relaxing family space, AEON MALL Hue is your must-visit stop in the Ancient Capital. (Tiếng Việt) AEON MALL Huế – Điểm đến mua sắm và giải trí hàng đầu Miền Trung Là trung tâm thương mại AEON MALL đầu tiên và lớn nhất tại Miền Trung, chúng tôi mang đến trải nghiệm hấp dẫn với hơn 140 thương hiệu trong và ngoài nước. Hãy đến và khám phá cửa hàng MUJI, UNIQLO và Siêu thị AEON đầu tiên tại khu vực, cùng khu ẩm thực đa dạng và các khu vui chơi giải trí hiện đại. Đánh giá: 4.8/5 từ 5 lượt review. Xếp hạng: 53/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/d2/54/08/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.61538,
+                16.454107
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25234266",
+        "title": "Thuy Xuan",
+        "city": "Huế",
+        "totalScore": 4.0,
+        "ranking": "57/132",
+        "reviewsCount": 9,
+        "category": "Khác",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thuy Xuan ở Huế. Loại địa điểm: Khác. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Khác. Đánh giá: 4.0/5 từ 9 lượt review. Xếp hạng: 57/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Khác"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/0c/fa/9a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.5724,
+                16.43631
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25228501",
+        "title": "Nine Holy Cannons",
+        "city": "Huế",
+        "totalScore": 4.5,
+        "ranking": "71/132",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nine Holy Cannons ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 71/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/04/2b/47/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.590866,
+                16.463713
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25233329",
+        "title": "Le Loi Park",
+        "city": "Huế",
+        "totalScore": 4.5,
+        "ranking": "77/132",
+        "reviewsCount": 2,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Le Loi Park ở Huế. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 77/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/e5/53/55/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58717,
+                16.464357
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25236612",
+        "title": "Gieng Ba Le",
+        "city": "Huế",
+        "totalScore": 3.8,
+        "ranking": "78/132",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Gieng Ba Le ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.8/5 từ 4 lượt review. Xếp hạng: 78/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/65/bd/ee/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.32821,
+                15.879871
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24989605",
+        "title": "Suoi Mo Waterfall (dream Waterfall)",
+        "city": "Lăng Cô",
+        "totalScore": 3.8,
+        "ranking": "80/132",
+        "reviewsCount": 4,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Suoi Mo Waterfall (dream Waterfall) ở Lăng Cô. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.8/5 từ 4 lượt review. Xếp hạng: 80/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/ab/d5/4c/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.03101,
+                16.215088
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34273214",
+        "title": "Huế Gaming Club",
+        "city": "Huế",
+        "totalScore": 5.0,
+        "ranking": "82/132",
+        "reviewsCount": 1,
+        "category": "Vui chơi & Giải trí",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Huế Gaming Club ở Huế. Loại địa điểm: Vui chơi & Giải trí. Tags: Điểm du lịch, Sòng bạc & Đánh bạc, Vui chơi & Giải trí. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 82/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Sòng bạc & Đánh bạc",
+            "Vui chơi & Giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/b9/c9/2b/one-more-roulette-to.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59181,
+                16.466103
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33422238",
+        "title": "Quang Loi Beach",
+        "city": "Quảng Lợi",
+        "totalScore": 5.0,
+        "ranking": "83/132",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quang Loi Beach ở Quảng Lợi. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 83/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.77866,
+                19.750809
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33352483",
+        "title": "Nhà Thờ Giáo Xứ Phanxicô Xaviê",
+        "city": "Huế",
+        "totalScore": 5.0,
+        "ranking": "84/132",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Thờ Giáo Xứ Phanxicô Xaviê ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 84/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/9d/88/6c/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59179,
+                16.464365
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32895737",
+        "title": "Hue Luggage Storage",
+        "city": "Huế",
+        "totalScore": 5.0,
+        "ranking": "86/132",
+        "reviewsCount": 1,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hue Luggage Storage ở Huế. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Thông tin cho khách du lịch. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 86/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2f/45/65/87/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59455,
+                16.470678
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32851743",
+        "title": "The Rhythm Of Hué",
+        "city": "Huế",
+        "totalScore": 5.0,
+        "ranking": "87/132",
+        "reviewsCount": 1,
+        "category": "Sự kiện",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Rhythm Of Hué ở Huế. Loại địa điểm: Sự kiện. Tags: Điểm du lịch, Sự kiện. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 87/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Sự kiện"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/95/b5/bc/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.587746,
+                16.465248
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26655350",
+        "title": "Tiểu đình Thương Bạc",
+        "city": "Huế",
+        "totalScore": 5.0,
+        "ranking": "90/132",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tiểu đình Thương Bạc ở Huế. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 90/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/6b/10/e9/2023-8.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.57917,
+                16.467237
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25229876",
+        "title": "Co Ha Royal Gardens",
+        "city": "Huế",
+        "totalScore": 4.0,
+        "ranking": "96/132",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Co Ha Royal Gardens ở Huế. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 96/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/27/a1/c8/74/the-gardens.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.590866,
+                16.463713
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25229891",
+        "title": "Thai Binh Pavilion",
+        "city": "Huế",
+        "totalScore": 4.0,
+        "ranking": "97/132",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thai Binh Pavilion ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 97/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/27/a3/10/6a/display.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.590866,
+                16.463713
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26694395",
+        "title": "Thanh Toan market",
+        "city": "Huế",
+        "totalScore": 3.0,
+        "ranking": "105/132",
+        "reviewsCount": 1,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thanh Toan market ở Huế. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 105/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.57917,
+                16.467237
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25215910",
+        "title": "Thuong Tu Gate",
+        "city": "Huế",
+        "totalScore": 3.0,
+        "ranking": "106/132",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thuong Tu Gate ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 106/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/27/8e/4d/1c/other-side-of-the-gate.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.5724,
+                16.284552
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20328096",
+        "title": "Khu du lịch YesHue Eco - Thác Mơ Nam Đông",
+        "city": "Tỉnh Thừa Thiên - Huế",
+        "totalScore": 0,
+        "ranking": "111/132",
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": "YesHue Eco là khu du lịch sinh thái nghỉ dưỡng và vui chơi với tổng diện tích 50.000 m2, tọa lạc tại thôn Xuân Phú, xã Hương Phú, huyện Nam Đông, tỉnh Thừa Thiên Huế.Khu du lịch cách trung tâm thành phố Huế 45 km về phía Nam và cách trung tâm thành phố Đà Nẵng 60 km.\n          \n          ",
+        "embedding": null,
+        "searchText": "Khu du lịch YesHue Eco - Thác Mơ Nam Đông ở Tỉnh Thừa Thiên - Huế. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Mô tả: YesHue Eco là khu du lịch sinh thái nghỉ dưỡng và vui chơi với tổng diện tích 50.000 m2, tọa lạc tại thôn Xuân Phú, xã Hương Phú, huyện Nam Đông, tỉnh Thừa Thiên Huế.Khu du lịch cách trung tâm thành phố Huế 45 km về phía Nam và cách trung tâm thành phố Đà Nẵng 60 km.\n          \n           Xếp hạng: 111/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26516934",
+        "title": "Elephant Springs",
+        "city": "Lộc Tiễn",
+        "totalScore": 2.4,
+        "ranking": "112/132",
+        "reviewsCount": 97,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Elephant Springs ở Lộc Tiễn. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 2.4/5 từ 97 lượt review. Xếp hạng: 112/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/0a/40/fe/what-you-see-on-the-way.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.989296,
+                16.241762
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34365373",
+        "title": "Tetta Co-working Space & Art Store",
+        "city": "Huế",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tetta Co-working Space & Art Store ở Huế. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Nơi mua sắm, Bảo tàng.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Bảo tàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.5849,
+                16.444586
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34342954",
+        "title": "Golden E-Gaming Club",
+        "city": "Huế",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Vui chơi & Giải trí",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Golden E-Gaming Club ở Huế. Loại địa điểm: Vui chơi & Giải trí. Tags: Điểm du lịch, Sòng bạc & Đánh bạc, Vui chơi & Giải trí.",
+        "tags": [
+            "Điểm du lịch",
+            "Sòng bạc & Đánh bạc",
+            "Vui chơi & Giải trí"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59174,
+                16.466095
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33247748",
+        "title": "Madam Thu Farm",
+        "city": "Huế",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Madam Thu Farm ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59559,
+                16.469555
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32971483",
+        "title": "Cocodo Tattoo Studio",
+        "city": "Huế",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cocodo Tattoo Studio ở Huế. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Nơi mua sắm, Bảo tàng.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2f/77/f5/4b/hello.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58109,
+                16.473719
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-19:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32877352",
+        "title": "An Bang Cemetery, City Of Ghosts",
+        "city": "Huế",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "An Bang Cemetery, City Of Ghosts ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.71838,
+                21.007175
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32877345",
+        "title": "Hai Van Fort",
+        "city": "Huế",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hai Van Fort ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.65809,
+                20.793625
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32772536",
+        "title": "Nhouse",
+        "city": "Huế",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhouse ở Huế. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58813,
+                16.456772
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27460753",
+        "title": "Plage Thaun Hai Hue Vietnam",
+        "city": "Huế",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Plage Thaun Hai Hue Vietnam ở Huế. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/55/fc/43/blue-swimmer-travel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.600945,
+                16.49705
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 675,
+                        "close_time": 1830
+                    }
+                ],
+                [],
+                [],
+                [],
+                [],
+                [
+                    {
+                        "open_time": 675,
+                        "close_time": 1830
+                    }
+                ],
+                [
+                    {
+                        "open_time": 675,
+                        "close_time": 1830
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25280044",
+        "title": "Tinh Tam Lake",
+        "city": "Huế",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tinh Tam Lake ở Huế. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/55/fc/0d/blue-swimmer-travel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.576744,
+                16.477938
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25228578",
+        "title": "Duyet Thi Duong Theater",
+        "city": "Huế",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hòa nhạc & chương trình biểu diễn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Duyet Thi Duong Theater ở Huế. Loại địa điểm: Hòa nhạc & chương trình biểu diễn. Tags: Điểm du lịch, Hòa nhạc & chương trình biểu diễn.",
+        "tags": [
+            "Điểm du lịch",
+            "Hòa nhạc & chương trình biểu diễn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/27/a1/a3/d1/display-inside-theater.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59086,
+                16.46371
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25228528",
+        "title": "Royal Treasury, Hue",
+        "city": "Huế",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Royal Treasury, Hue ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/27/a0/ad/c3/european-style.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.590866,
+                16.463713
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21513190",
+        "title": "Nón Spa",
+        "city": "Huế",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nón Spa ở Huế. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Lớp học & hội thảo, Khác, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Lớp học & hội thảo",
+            "Khác",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/62/9a/d9/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59375,
+                16.46871
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21001236",
+        "title": "Diem Phung Thi Art Museum",
+        "city": "Tỉnh Thừa Thiên - Huế",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": "Trung tâm Nghệ thuật Điềm Phùng Thị trưng bày các tác phẩm nghệ thuật của Điêu khắc gia Điềm Phùng Thị",
+        "embedding": null,
+        "searchText": "Diem Phung Thi Art Museum ở Tỉnh Thừa Thiên - Huế. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Mô tả: Trung tâm Nghệ thuật Điềm Phùng Thị trưng bày các tác phẩm nghệ thuật của Điêu khắc gia Điềm Phùng Thị",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58976,
+                16.466892
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19924319",
+        "title": "Truc Lam Pagoda",
+        "city": "Huế",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Truc Lam Pagoda ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "18978610",
+        "title": "Chùa Phổ Minh",
+        "city": "Huong Thuy",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Phổ Minh ở Huong Thuy. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58935,
+                16.46215
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "18717797",
+        "title": "Thác Bồ Ghè",
+        "city": "Phú Lộc",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thác Bồ Ghè ở Phú Lộc. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58944,
+                16.4763
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17796180",
+        "title": "Nhà Thờ Sơn Quả",
+        "city": "Phong Son",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Thờ Sơn Quả ở Phong Son. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/18/88/40/e0/nha-th-son-qu-mang-ki.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17337840",
+        "title": "Hue Style Gift",
+        "city": "Huế",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hue Style Gift ở Huế. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59517,
+                16.472067
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 900,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "16695028",
+        "title": "Cầu Gỗ Lim",
+        "city": "Huế",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cầu Gỗ Lim ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.56722,
+                16.46452
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10794954",
+        "title": "Virgo Travel Viet nam",
+        "city": "Huế",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Virgo Travel Viet nam ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.60166,
+                16.462126
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15632400",
+        "title": "Hồ Thuỷ Tiên",
+        "city": "Huế",
+        "totalScore": 3.9,
+        "ranking": "34/132",
+        "reviewsCount": 67,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hồ Thuỷ Tiên ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.9/5 từ 67 lượt review. Xếp hạng: 34/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/f8/55/ea/lrm-export-113902229372015.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.578575,
+                16.40793
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6106529",
+        "title": "Huyen Tran Princess Temple",
+        "city": "Huế",
+        "totalScore": 4.6,
+        "ranking": "28/132",
+        "reviewsCount": 65,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Huyen Tran Princess Temple ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.6/5 từ 65 lượt review. Xếp hạng: 28/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/28/9b/10/huyen-tran-princess-temple.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.60845,
+                16.417793
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8617302",
+        "title": "Gakka Art Gallery",
+        "city": "Huế",
+        "totalScore": 4.9,
+        "ranking": "23/132",
+        "reviewsCount": 47,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Gakka Art Gallery ở Huế. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Nơi mua sắm, Bảo tàng. Đánh giá: 4.9/5 từ 47 lượt review. Xếp hạng: 23/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/e7/9d/5c/gakka-gallery.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.57976,
+                16.469866
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "451124",
+        "title": "The Mieu Temple",
+        "city": "Huế",
+        "totalScore": 4.4,
+        "ranking": "16/132",
+        "reviewsCount": 133,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Mieu Temple ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.4/5 từ 133 lượt review. Xếp hạng: 16/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/82/17/ce/20160813-121051-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.57666,
+                16.466944
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10818173",
+        "title": "Chùa Huyền Không Sơn Thượng",
+        "city": "Huế",
+        "totalScore": 4.8,
+        "ranking": "49/132",
+        "reviewsCount": 15,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Huyền Không Sơn Thượng ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.8/5 từ 15 lượt review. Xếp hạng: 49/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/47/9e/73/san-ch-r-t-mat-s-ch-s.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12951151",
+        "title": "Cung An Dinh",
+        "city": "Huế",
+        "totalScore": 4.2,
+        "ranking": "38/132",
+        "reviewsCount": 38,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cung An Dinh ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 38 lượt review. Xếp hạng: 38/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/51/b7/48/an-dinh-palace-exterior.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59839,
+                16.45649
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "600402",
+        "title": "Nine Dynastic Urns",
+        "city": "Huế",
+        "totalScore": 4.3,
+        "ranking": "15/132",
+        "reviewsCount": 179,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nine Dynastic Urns ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 179 lượt review. Xếp hạng: 15/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/4f/82/dc/nice.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.576836,
+                16.466784
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "451118",
+        "title": "The Flag Tower",
+        "city": "Huế",
+        "totalScore": 3.6,
+        "ranking": "25/132",
+        "reviewsCount": 323,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Flag Tower ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.6/5 từ 323 lượt review. Xếp hạng: 25/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/90/3b/a9/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.579796,
+                16.467426
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12997006",
+        "title": "Hue War Museum",
+        "city": "Huế",
+        "totalScore": 3.2,
+        "ranking": "104/132",
+        "reviewsCount": 24,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hue War Museum ở Huế. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 3.2/5 từ 24 lượt review. Xếp hạng: 104/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/0d/9f/ab/hue-war-museum.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58246,
+                16.469736
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "9985180",
+        "title": "Phòng triển lãm nghệ thuật Điềm Phùng Thị",
+        "city": "Huế",
+        "totalScore": 4.4,
+        "ranking": "48/132",
+        "reviewsCount": 16,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phòng triển lãm nghệ thuật Điềm Phùng Thị ở Huế. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.4/5 từ 16 lượt review. Xếp hạng: 48/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/71/1c/9e/main-entrance-and-a-space.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58962,
+                16.466974
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-11:30, 14:00-17:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17546777",
+        "title": "Lập An Lagoon",
+        "city": "Lăng Cô",
+        "totalScore": 4.2,
+        "ranking": "44/132",
+        "reviewsCount": 14,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lập An Lagoon ở Lăng Cô. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.2/5 từ 14 lượt review. Xếp hạng: 44/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/04/07/83/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9563786",
+        "title": "Đầm Chuồn Hương Quán",
+        "city": "Huế",
+        "totalScore": 4.5,
+        "ranking": "47/132",
+        "reviewsCount": 17,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đầm Chuồn Hương Quán ở Huế. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 17 lượt review. Xếp hạng: 47/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/46/71/9e/il-ristorante-al-tramonto.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59908,
+                16.47016
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12997061",
+        "title": "Hue Walking Street",
+        "city": "Huế",
+        "totalScore": 4.1,
+        "ranking": "43/132",
+        "reviewsCount": 20,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hue Walking Street ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.1/5 từ 20 lượt review. Xếp hạng: 43/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/0d/a1/88/walking-street.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1560
+                    }
+                ],
+                [],
+                [],
+                [],
+                [],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1560
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "6224999",
+        "title": "Ho Quyen",
+        "city": "Huế",
+        "totalScore": 3.8,
+        "ranking": "39/132",
+        "reviewsCount": 64,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ho Quyen ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.8/5 từ 64 lượt review. Xếp hạng: 39/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/05/c7/fd/a2/ho-quyen.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.55383,
+                16.450014
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4795480",
+        "title": "Hue's Garden Houses",
+        "city": "Huế",
+        "totalScore": 3.7,
+        "ranking": "46/132",
+        "reviewsCount": 79,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hue's Garden Houses ở Huế. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.7/5 từ 79 lượt review. Xếp hạng: 46/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/05/4e/ca/6b/hue-s-garden-houses.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58747,
+                16.48689
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12003409",
+        "title": "Đồi Vọng Cảnh",
+        "city": "Huế",
+        "totalScore": 4.3,
+        "ranking": "50/132",
+        "reviewsCount": 18,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đồi Vọng Cảnh ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 18 lượt review. Xếp hạng: 50/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/fb/23/2c/perfume-river.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.55729,
+                16.44852
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6204773",
+        "title": "Redemptorist Church",
+        "city": "Huế",
+        "totalScore": 3.9,
+        "ranking": "41/132",
+        "reviewsCount": 66,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Redemptorist Church ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.9/5 từ 66 lượt review. Xếp hạng: 41/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/44/3c/be/side-view-with-tower.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59441,
+                16.458551
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8861907",
+        "title": "Biển Cảnh Dương",
+        "city": "Lăng Cô",
+        "totalScore": 4.2,
+        "ranking": "89/132",
+        "reviewsCount": 5,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Biển Cảnh Dương ở Lăng Cô. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.2/5 từ 5 lượt review. Xếp hạng: 89/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/c6/e0/07/sunset.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14758714",
+        "title": "Nhà Vườn Xuân Đài",
+        "city": "Huế",
+        "totalScore": 4.9,
+        "ranking": "51/132",
+        "reviewsCount": 11,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Vườn Xuân Đài ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.9/5 từ 11 lượt review. Xếp hạng: 51/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/81/67/cf/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.54061,
+                16.44419
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10813361",
+        "title": "Đan Viện Thiên An",
+        "city": "Huế",
+        "totalScore": 4.0,
+        "ranking": "60/132",
+        "reviewsCount": 11,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đan Viện Thiên An ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 11 lượt review. Xếp hạng: 60/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/e5/5d/f6/thien-an-monastery.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4186902",
+        "title": "Ho Chi Minh Museum of Thua Thien Hue",
+        "city": "Huế",
+        "totalScore": 3.4,
+        "ranking": "62/132",
+        "reviewsCount": 47,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ho Chi Minh Museum of Thua Thien Hue ở Huế. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 3.4/5 từ 47 lượt review. Xếp hạng: 62/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/3a/1e/fd/ho-chi-minh-museum.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58117,
+                16.45954
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 840
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 840
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 840
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 840
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 840
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 840
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14947959",
+        "title": "Holiday Bar Loc Binh Beach Camp",
+        "city": "Phú Lộc",
+        "totalScore": 5.0,
+        "ranking": "95/132",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Holiday Bar Loc Binh Beach Camp ở Phú Lộc. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 95/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-c/2560x500/13/e4/e6/48/good.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6941973",
+        "title": "Bảo tàng lịch sử và cách mạng",
+        "city": "Huế",
+        "totalScore": 3.5,
+        "ranking": "75/132",
+        "reviewsCount": 17,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bảo tàng lịch sử và cách mạng ở Huế. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 3.5/5 từ 17 lượt review. Xếp hạng: 75/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/50/70/db/historical-and-revolutionary.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58258,
+                16.469849
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8091159",
+        "title": "Nhà Thờ Chính Tòa Phủ Cam",
+        "city": "Huế",
+        "totalScore": 4.4,
+        "ranking": "54/132",
+        "reviewsCount": 18,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Thờ Chính Tòa Phủ Cam ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.4/5 từ 18 lượt review. Xếp hạng: 54/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/e2/fe/af/phu-cam-cathedral.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7073497",
+        "title": "Nhà Vườn Phú Mộng",
+        "city": "Huế",
+        "totalScore": 3.9,
+        "ranking": "65/132",
+        "reviewsCount": 17,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Vườn Phú Mộng ở Huế. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.9/5 từ 17 lượt review. Xếp hạng: 65/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/8b/e2/ac/phu-mong-garden-house.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.55705,
+                16.46027
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14074103",
+        "title": "Nhà Vườn An Hiên",
+        "city": "Huế",
+        "totalScore": 3.9,
+        "ranking": "63/132",
+        "reviewsCount": 9,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Vườn An Hiên ở Huế. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên. Đánh giá: 3.9/5 từ 9 lượt review. Xếp hạng: 63/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/23/5f/3e/9e/the-romantic-stone-path.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.55399,
+                16.45509
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8115964",
+        "title": "Điện Hòn Chén",
+        "city": "Huế",
+        "totalScore": 3.6,
+        "ranking": "76/132",
+        "reviewsCount": 18,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Điện Hòn Chén ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.6/5 từ 18 lượt review. Xếp hạng: 76/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/5c/3d/84/bottom-altar-at-hon-chen.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12925672",
+        "title": "Bảo tàng Văn hóa Huế",
+        "city": "Huế",
+        "totalScore": 4.0,
+        "ranking": "70/132",
+        "reviewsCount": 7,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bảo tàng Văn hóa Huế ở Huế. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.0/5 từ 7 lượt review. Xếp hạng: 70/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/ca/19/53/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58869,
+                16.465921
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12614256",
+        "title": "Công viên 3 Tháng 2",
+        "city": "Huế",
+        "totalScore": 4.2,
+        "ranking": "59/132",
+        "reviewsCount": 9,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Công viên 3 Tháng 2 ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 9 lượt review. Xếp hạng: 59/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/a4/68/62/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9705672",
+        "title": "Chùa Diệu Đế",
+        "city": "Huế",
+        "totalScore": 3.0,
+        "ranking": "107/132",
+        "reviewsCount": 17,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Diệu Đế ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.0/5 từ 17 lượt review. Xếp hạng: 107/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/d5/10/ae/hue.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.5869,
+                16.47743
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6956754",
+        "title": "Hue Water Puppet Theatre",
+        "city": "Huế",
+        "totalScore": 3.9,
+        "ranking": "61/132",
+        "reviewsCount": 15,
+        "category": "Hòa nhạc & chương trình biểu diễn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hue Water Puppet Theatre ở Huế. Loại địa điểm: Hòa nhạc & chương trình biểu diễn. Tags: Điểm du lịch, Hòa nhạc & chương trình biểu diễn. Đánh giá: 3.9/5 từ 15 lượt review. Xếp hạng: 61/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Hòa nhạc & chương trình biểu diễn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/67/f4/1f/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58061,
+                16.45876
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12918273",
+        "title": "On the King's tracks",
+        "city": "Huế",
+        "totalScore": 5.0,
+        "ranking": "66/132",
+        "reviewsCount": 5,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "On the King's tracks ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 5 lượt review. Xếp hạng: 66/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/96/15/3a/temple.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59555,
+                16.472317
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "554166",
+        "title": "Halls of the Mandarins",
+        "city": "Huế",
+        "totalScore": 3.7,
+        "ranking": "58/132",
+        "reviewsCount": 25,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Halls of the Mandarins ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.7/5 từ 25 lượt review. Xếp hạng: 58/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/0f/b9/1e/sala-dei-mandarini-lato.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12980946",
+        "title": "Thien Lam Pagoda",
+        "city": "Huế",
+        "totalScore": 4.8,
+        "ranking": "72/132",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thien Lam Pagoda ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.8/5 từ 4 lượt review. Xếp hạng: 72/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/00/2e/c0/thien-lam-pagoda.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.57064,
+                16.43596
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15688952",
+        "title": "Đèo Hải Vân",
+        "city": "Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.5,
+        "ranking": "40/132",
+        "reviewsCount": 22,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đèo Hải Vân ở Tỉnh Thừa Thiên - Huế. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 22 lượt review. Xếp hạng: 40/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/0d/ec/0b/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.68235,
+                16.40502
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14159539",
+        "title": "Chợ An Cựu",
+        "city": "Huế",
+        "totalScore": 4.0,
+        "ranking": "93/132",
+        "reviewsCount": 2,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ An Cựu ở Huế. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 93/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/7c/0f/59/ch-an-c-u-nhin-t-ben.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59889,
+                16.45987
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12409874",
+        "title": "Khu Di Tích Lịch Sử Chín Hầm",
+        "city": "Huế",
+        "totalScore": 3.3,
+        "ranking": "103/132",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu Di Tích Lịch Sử Chín Hầm ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.3/5 từ 4 lượt review. Xếp hạng: 103/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/66/3e/60/photo8jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58863,
+                16.42506
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14436044",
+        "title": "City of Ghosts - An Bang Cemetery",
+        "city": "Vinh An",
+        "totalScore": 4.8,
+        "ranking": "36/132",
+        "reviewsCount": 18,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "City of Ghosts - An Bang Cemetery ở Vinh An. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.8/5 từ 18 lượt review. Xếp hạng: 36/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/67/70/b3/city-of-ghosts-an-bang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.826126,
+                16.424643
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "6224444",
+        "title": "Đàn Nam Giao",
+        "city": "Huế",
+        "totalScore": 3.3,
+        "ranking": "88/132",
+        "reviewsCount": 16,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đàn Nam Giao ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.3/5 từ 16 lượt review. Xếp hạng: 88/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/81/6c/fd/nam-giau.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58459,
+                16.44827
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14166344",
+        "title": "Cầu Phú Xuân",
+        "city": "Huế",
+        "totalScore": 2.9,
+        "ranking": "108/132",
+        "reviewsCount": 7,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cầu Phú Xuân ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 2.9/5 từ 7 lượt review. Xếp hạng: 108/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/50/72/7d/phu-xuan-bridge.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58663,
+                16.46395
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14770585",
+        "title": "Lăng Vua Thiệu Trị",
+        "city": "Huế",
+        "totalScore": 3.7,
+        "ranking": "69/132",
+        "reviewsCount": 9,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lăng Vua Thiệu Trị ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.7/5 từ 9 lượt review. Xếp hạng: 69/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/9b/7f/79/thieu-tri-tomb.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.57219,
+                16.417221
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10798520",
+        "title": "Văn Miếu Huế",
+        "city": "Huế",
+        "totalScore": 4.2,
+        "ranking": "67/132",
+        "reviewsCount": 5,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Văn Miếu Huế ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 5 lượt review. Xếp hạng: 67/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/e5/73/12/hue-temple.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.57956,
+                16.454062
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12971181",
+        "title": "Tây Lộc Airfield",
+        "city": "Huế",
+        "totalScore": 4.0,
+        "ranking": "101/132",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tây Lộc Airfield ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 101/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/f6/87/9f/monument.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13279450",
+        "title": "St Francis Xavier Cathedral",
+        "city": "Huế",
+        "totalScore": 4.0,
+        "ranking": "64/132",
+        "reviewsCount": 6,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "St Francis Xavier Cathedral ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 6 lượt review. Xếp hạng: 64/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/98/50/fc/st-francis-church-christmastim.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59134,
+                16.463926
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13077659",
+        "title": "Phan Boi Chau Street Monument",
+        "city": "Huế",
+        "totalScore": 3.4,
+        "ranking": "91/132",
+        "reviewsCount": 7,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phan Boi Chau Street Monument ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.4/5 từ 7 lượt review. Xếp hạng: 91/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/24/2b/08/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59458,
+                16.471304
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12874261",
+        "title": "Hue Tourist Information Center",
+        "city": "Huế",
+        "totalScore": 4.7,
+        "ranking": "56/132",
+        "reviewsCount": 6,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hue Tourist Information Center ở Huế. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Thông tin cho khách du lịch. Đánh giá: 4.7/5 từ 6 lượt review. Xếp hạng: 56/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/23/3c/32/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14796212",
+        "title": "Lăng Dục Đức",
+        "city": "Huế",
+        "totalScore": 4.0,
+        "ranking": "79/132",
+        "reviewsCount": 3,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lăng Dục Đức ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 3 lượt review. Xếp hạng: 79/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/a9/18/e3/lang-duc-duc.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13836708",
+        "title": "Bao Quoc Temple",
+        "city": "Huế",
+        "totalScore": 3.8,
+        "ranking": "74/132",
+        "reviewsCount": 5,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bao Quoc Temple ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.8/5 từ 5 lượt review. Xếp hạng: 74/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/66/04/91/bao-quoc-temple.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.57899,
+                16.45437
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16820874",
+        "title": "Gác Trịnh",
+        "city": "Huế",
+        "totalScore": 5.0,
+        "ranking": "94/132",
+        "reviewsCount": 1,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Gác Trịnh ở Huế. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Nơi mua sắm, Bảo tàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 94/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/d3/49/b6/little-gallery-on-nguy.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.587074,
+                16.45494
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10798554",
+        "title": "Chùa Từ Hiếu",
+        "city": "Huế",
+        "totalScore": 4.3,
+        "ranking": "81/132",
+        "reviewsCount": 3,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Từ Hiếu ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 3 lượt review. Xếp hạng: 81/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/bc/64/3f/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.56487,
+                16.46839
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13077667",
+        "title": "Oratories Vinh Loi",
+        "city": "Huế",
+        "totalScore": 3.8,
+        "ranking": "85/132",
+        "reviewsCount": 5,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Oratories Vinh Loi ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.8/5 từ 5 lượt review. Xếp hạng: 85/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/24/2e/1a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.60019,
+                16.458067
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14795706",
+        "title": "Emperor Quang Trung's Statue",
+        "city": "Huế",
+        "totalScore": 3.5,
+        "ranking": "98/132",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Emperor Quang Trung's Statue ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.5/5 từ 2 lượt review. Xếp hạng: 98/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/a9/19/a0/emperor-quang-trung-s.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58705,
+                16.442984
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "7927677",
+        "title": "Cua Hang Nong Dan Hue",
+        "city": "Huế",
+        "totalScore": 4.6,
+        "ranking": "68/132",
+        "reviewsCount": 9,
+        "category": "Đồ ăn & Đồ uống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cua Hang Nong Dan Hue ở Huế. Loại địa điểm: Đồ ăn & Đồ uống. Tags: Điểm du lịch, Nơi mua sắm, Đồ ăn & Đồ uống. Đánh giá: 4.6/5 từ 9 lượt review. Xếp hạng: 68/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Đồ ăn & Đồ uống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/a7/54/02/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58908,
+                16.460178
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8472012",
+        "title": "Trung tâm thương mại Phong Phú",
+        "city": "Huế",
+        "totalScore": 3.5,
+        "ranking": "92/132",
+        "reviewsCount": 6,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trung tâm thương mại Phong Phú ở Huế. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 3.5/5 từ 6 lượt review. Xếp hạng: 92/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.59899,
+                16.45972
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13115702",
+        "title": "Truong Tien Plaza",
+        "city": "Huế",
+        "totalScore": 3.5,
+        "ranking": "100/132",
+        "reviewsCount": 2,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Truong Tien Plaza ở Huế. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 3.5/5 từ 2 lượt review. Xếp hạng: 100/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/38/93/7a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.56738,
+                16.47263
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12574727",
+        "title": "Nhà Lưu Niệm Danh Nhân Phan Bội Châu",
+        "city": "Huế",
+        "totalScore": 3.3,
+        "ranking": "99/132",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Lưu Niệm Danh Nhân Phan Bội Châu ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.3/5 từ 4 lượt review. Xếp hạng: 99/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/23/3f/0b/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.5824,
+                16.451523
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12242659",
+        "title": "Điện Voi Ré (Long Châu MIếu)",
+        "city": "Huế",
+        "totalScore": 4.0,
+        "ranking": "102/132",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Điện Voi Ré (Long Châu MIếu) ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 102/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "456193",
+        "title": "Demilitarized Zone",
+        "city": "Tỉnh Thừa Thiên - Huế",
+        "totalScore": 3.8,
+        "ranking": "55/132",
+        "reviewsCount": 32,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Demilitarized Zone ở Tỉnh Thừa Thiên - Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.8/5 từ 32 lượt review. Xếp hạng: 55/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/8c/3f/a3/20160815-102516-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.11239,
+                16.813263
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10813260",
+        "title": "Võ Thánh Huế",
+        "city": "Huế",
+        "totalScore": 2.0,
+        "ranking": "110/132",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Võ Thánh Huế ở Huế. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 2.0/5 từ 2 lượt review. Xếp hạng: 110/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/e5/59/e4/vo-thanh-hue.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17713528",
+        "title": "Không Gian Lưu Niệm Lê Bá Đảng",
+        "city": "Huong Thuy",
+        "totalScore": 4.9,
+        "ranking": "30/132",
+        "reviewsCount": 21,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Không Gian Lưu Niệm Lê Bá Đảng ở Huong Thuy. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.9/5 từ 21 lượt review. Xếp hạng: 30/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/18/1e/99/32/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.58311,
+                16.404272
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1080
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "9996861",
+        "title": "Nhà Trưng Bày Nông Cụ Thanh Toàn",
+        "city": "Tỉnh Thừa Thiên - Huế",
+        "totalScore": 4.0,
+        "ranking": "73/132",
+        "reviewsCount": 7,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Trưng Bày Nông Cụ Thanh Toàn ở Tỉnh Thừa Thiên - Huế. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.0/5 từ 7 lượt review. Xếp hạng: 73/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/7f/08/f0/front-view-of-thanh-toan.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.64225,
+                16.46674
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10859601",
+        "title": "Suối Voi",
+        "city": "Phú Lộc",
+        "totalScore": 2.8,
+        "ranking": "109/132",
+        "reviewsCount": 5,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Suối Voi ở Phú Lộc. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 2.8/5 từ 5 lượt review. Xếp hạng: 109/132.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/d9/2d/66/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    }
+]

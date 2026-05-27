@@ -1,1 +1,13 @@
 .env
+.dart_tool/
+build/
+android/
+ios/
+linux/
+macos/
+windows/
+.idea/
+.vscode/
+*.iml
+.postman/
+postman/

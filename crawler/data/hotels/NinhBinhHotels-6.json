@@ -1,0 +1,176 @@
+[
+    {
+        "sourceLocationId": "2243645",
+        "title": "Emeralda Resort Ninh Binh",
+        "city": "Ninh Bình",
+        "totalScore": 4.3,
+        "ranking": null,
+        "reviewsCount": 1396,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Emeralda Resort Ninh Binh ở Ninh Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.3/5 từ 1396 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/f8/c1/8f/emeralda-resort-ninh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.87921,
+                20.358288
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9770834",
+        "title": "Khu nghỉ dưỡng & Khách sạn Ninh Bình Hidden Charm",
+        "city": "Ninh Hai",
+        "totalScore": 4.7,
+        "ranking": null,
+        "reviewsCount": 1659,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu nghỉ dưỡng & Khách sạn Ninh Bình Hidden Charm ở Ninh Hai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.7/5 từ 1659 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/8e/98/b3/0e1889824d1b4a36ad1a2bf987ca7e.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.94235,
+                20.217424
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21491783",
+        "title": "Lalita Boutique Hotel & Spa Ninh Binh",
+        "city": "Ninh Bình",
+        "totalScore": 4.8,
+        "ranking": null,
+        "reviewsCount": 805,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lalita Boutique Hotel & Spa Ninh Binh ở Ninh Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 805 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/74/13/35/lalita-boutique-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.95236,
+                20.21672
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1761735",
+        "title": "Ninh Binh Legend Hotel",
+        "city": "Ninh Bình",
+        "totalScore": 4.0,
+        "ranking": null,
+        "reviewsCount": 633,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ninh Binh Legend Hotel ở Ninh Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.0/5 từ 633 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/26/c7/9e/3c/t-m-nhin-chung-khach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.95836,
+                20.274387
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8356916",
+        "title": "Khách sạn The Reed",
+        "city": "Ninh Bình",
+        "totalScore": 4.3,
+        "ranking": null,
+        "reviewsCount": 187,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn The Reed ở Ninh Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.3/5 từ 187 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/5a/12/56/s-nh-chinh-khach-s-n.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97755,
+                20.271084
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "18207133",
+        "title": "Nan House",
+        "city": "Ninh Hai",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 261,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nan House ở Ninh Hai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 261 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/2f/1e/9d/a-lotus-garden-at-the.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.93971,
+                20.208485
+            ]
+        },
+        "openingHours": null
+    }
+]

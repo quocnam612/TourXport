@@ -10,17 +10,38 @@ const String _kApiBaseFromEnv = String.fromEnvironment('API_BASE_URL', defaultVa
 
 /// Base URL cho API Node. Emulator Android dùng 10.0.2.2 để trỏ về máy host.
 String get apiBaseUrl {
+    final override = _kApiBaseFromEnv.trim();
+    if (override.isNotEmpty) {
+        return override.endsWith('/') ? override.substring(0, override.length - 1) : override;
+    }
+    if (kIsWeb) {
+        return 'http://localhost:3000';
+    }
+    if (Platform.isAndroid) {
+        // Thay vì dùng 10.0.2.2 của máy ảo, đổi thành localhost để thông qua cáp USB
+        return 'http://127.0.0.1:3000'; 
+    }
+    return 'http://localhost:3000';
+}
+
+/// Base URL cho AI Backend (Python - FastAPI)
+String get aiBaseUrl {
   final override = _kApiBaseFromEnv.trim();
   if (override.isNotEmpty) {
-    return override.endsWith('/') ? override.substring(0, override.length - 1) : override;
+    // Nếu override có chứa port, ta giả định nó là base chung, nhưng AI thường chạy port khác.
+    // Tuy nhiên để đơn giản, nếu người dùng cung cấp API_BASE_URL, ta dùng nó làm base cho cả 2 hoặc xử lý logic riêng.
+    // Ở đây ta mặc định port 8000 cho AI.
+    final base = override.endsWith('/') ? override.substring(0, override.length - 1) : override;
+    if (base.contains(':3000')) return base.replaceFirst(':3000', ':8000');
+    return base;
   }
   if (kIsWeb) {
-    return 'http://localhost:3000';
+    return 'http://localhost:8000';
   }
   if (Platform.isAndroid) {
-    return 'http://10.0.2.2:3000';
+    return 'http://10.0.2.2:8000';
   }
-  return 'http://localhost:3000';
+  return 'http://localhost:8000';
 }
 
 final http.Client _client = http.Client();
@@ -52,6 +73,21 @@ Future<http.Response> apiPostJson(
     headers: _buildHeaders(token: token),
     body: jsonEncode(body),
   );
+}
+
+/// Gọi API tới AI Backend (timeout dài hơn vì OpenAI cần xử lý 15-60s)
+Future<http.Response> apiAiPostJson(
+  String path,
+  Map<String, dynamic> body, {
+  String? token,
+  Duration timeout = const Duration(seconds: 120),
+}) {
+  final uri = Uri.parse('$aiBaseUrl$path');
+  return _client.post(
+    uri,
+    headers: _buildHeaders(token: token),
+    body: jsonEncode(body),
+  ).timeout(timeout);
 }
 
 Future<http.Response> apiDeleteJson(
@@ -105,6 +141,26 @@ Map<String, dynamic>? tryDecodeJsonObject(String body) {
     final decoded = jsonDecode(trimmed);
     if (decoded is Map<String, dynamic>) return decoded;
     if (decoded is Map) return Map<String, dynamic>.from(decoded);
+  } catch (_) {}
+  return null;
+}
+
+/// Resolves a place ID by searching the backend using `/locations/search`
+Future<String?> resolvePlaceIdByName(String name, {String? token}) async {
+  if (name.isEmpty) return null;
+  try {
+    final encodedName = Uri.encodeComponent(name);
+    final response = await apiGet(
+      '/locations?query=$encodedName&limit=1',
+      token: token,
+    );
+    final data = tryDecodeJsonObject(response.body);
+    if (response.statusCode == 200 && data?['success'] == true) {
+      final list = data!['data'];
+      if (list is List && list.isNotEmpty) {
+        return list.first['_id'] as String?;
+      }
+    }
   } catch (_) {}
   return null;
 }

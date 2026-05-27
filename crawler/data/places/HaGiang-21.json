@@ -1,0 +1,1043 @@
+[
+    {
+        "sourceLocationId": "4108068",
+        "title": "Cao nguyên đá Đồng Văn",
+        "city": "Hà Giang",
+        "totalScore": 4.9,
+        "ranking": "1/21",
+        "reviewsCount": 239,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cao nguyên đá Đồng Văn ở Hà Giang. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.9/5 từ 239 lượt review. Xếp hạng: 1/21.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/92/3b/9c/photo2jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.2534,
+                23.23101
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "11019378",
+        "title": "Đèo Mã Pí Lèng",
+        "city": "Hà Giang",
+        "totalScore": 4.9,
+        "ranking": "2/21",
+        "reviewsCount": 229,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đèo Mã Pí Lèng ở Hà Giang. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Hoạt động ngoài trời. Đánh giá: 4.9/5 từ 229 lượt review. Xếp hạng: 2/21.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/d7/c3/b5/ma-pi-leng.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.40812,
+                23.23656
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "6932298",
+        "title": "Lung Cu Flag Tower",
+        "city": "Hà Giang",
+        "totalScore": 4.2,
+        "ranking": "3/21",
+        "reviewsCount": 175,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lung Cu Flag Tower ở Hà Giang. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 175 lượt review. Xếp hạng: 3/21.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/6e/d1/16/lung-cu-flag-tower.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.31639,
+                23.363604
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8291670",
+        "title": "Thôn Tha",
+        "city": "Hà Giang",
+        "totalScore": 4.9,
+        "ranking": "4/21",
+        "reviewsCount": 68,
+        "category": "Khác",
+        "priceRange": null,
+        "description": "Tham gia chuyến đi trải nghiệm này để khám phá những vẻ đẹp tiềm ẩn của Việt Nam. Dọc khắp cung đường khung cảnh thiên nhiên thật hùng vĩ, vào thăm một khu chợ vùng cao, hay một ngôi làng của bà con dân tộc thiểu số, các điểm di tích, du khách sẽ có cơ hội trải nghiệm những nét đẹp văn hóa địa phương đặc sắc. Du Lịch Trách Nhiệm Hà Giang được thành lập với mục đích mang lại cuộc sống tốt đẹp hơn, tương lai tươi đẹp hơn cho cộng đồng địa phương tại Thôn Tha, Phương Độ, Hà Giang. Tham gia vào các hoạt động của chúng tôi, các bạn đang đóng góp vào chiến dịch xóa đói giảm nghèo và bảo tổn văn hóa người dân tộc Tày tại Hà Giang. Để thực hiện dự án này, chúng tôi đặc biệt tôn trọng các nguyên tắc du lịch trách nhiệm. Hãy là một du khách có trách nhiệm với văn hóa, xã hội và môi trường, chúng tôi khuyến khích tất cả du khách tuân thủ những nguyên tắc du lịch này để hướng tới một sự phát triển bền vững. Các dịch vụ homestay, đồ thổ cẩm, tắm thuốc lá, đạp xe, tour đi bộ, tour xe máy hay thử trải nghiệm cuộc sống nông dân là các hoạt động chính tại thôn chúng tôi.",
+        "embedding": null,
+        "searchText": "Thôn Tha ở Hà Giang. Loại địa điểm: Khác. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Khác. Mô tả: Tham gia chuyến đi trải nghiệm này để khám phá những vẻ đẹp tiềm ẩn của Việt Nam. Dọc khắp cung đường khung cảnh thiên nhiên thật hùng vĩ, vào thăm một khu chợ vùng cao, hay một ngôi làng của bà con dân tộc thiểu số, các điểm di tích, du khách sẽ có cơ hội trải nghiệm những nét đẹp văn hóa địa phương đặc sắc. Du Lịch Trách Nhiệm Hà Giang được thành lập với mục đích mang lại cuộc sống tốt đẹp hơn, tương lai tươi đẹp hơn cho cộng đồng địa phương tại Thôn Tha, Phương Độ, Hà Giang. Tham gia vào các hoạt động của chúng tôi, các bạn đang đóng góp vào chiến dịch xóa đói giảm nghèo và bảo tổn văn hóa người dân tộc Tày tại Hà Giang. Để thực hiện dự án này, chúng tôi đặc biệt tôn trọng các nguyên tắc du lịch trách nhiệm. Hãy là một du khách có trách nhiệm với văn hóa, xã hội và môi trường, chúng tôi khuyến khích tất cả du khách tuân thủ những nguyên tắc du lịch này để hướng tới một sự phát triển bền vững. Các dịch vụ homestay, đồ thổ cẩm, tắm thuốc lá, đạp xe, tour đi bộ, tour xe máy hay thử trải nghiệm cuộc sống nông dân là các hoạt động chính tại thôn chúng tôi. Đánh giá: 4.9/5 từ 68 lượt review. Xếp hạng: 4/21.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Khác"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/e4/f5/6c/explore-thon-tha-village.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.94778,
+                22.835361
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "18841359",
+        "title": "Pao's House",
+        "city": "Hà Giang",
+        "totalScore": 4.0,
+        "ranking": "11/21",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pao's House ở Hà Giang. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 4 lượt review. Xếp hạng: 11/21.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/9f/4f/75/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14217017",
+        "title": "Lung Khuy Cave",
+        "city": "Quan Ba",
+        "totalScore": 4.5,
+        "ranking": "7/21",
+        "reviewsCount": 8,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lung Khuy Cave ở Quan Ba. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 8 lượt review. Xếp hạng: 7/21.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/14/af/bd/e8/20180917-122957-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.992,
+                23.06494
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15275829",
+        "title": "Pháo Đài Đồn Cao",
+        "city": "Đồng Văn",
+        "totalScore": 5.0,
+        "ranking": "8/21",
+        "reviewsCount": 5,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pháo Đài Đồn Cao ở Đồng Văn. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 5 lượt review. Xếp hạng: 8/21.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/2b/a0/4c/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.2534,
+                23.23101
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14061340",
+        "title": "Cổng trời Quản Bạ",
+        "city": "Quan Ba",
+        "totalScore": 4.5,
+        "ranking": "10/21",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cổng trời Quản Bạ ở Quan Ba. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 4 lượt review. Xếp hạng: 10/21.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/15/a7/af/76/du-ng-qua-qu-n-b-len.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8380132",
+        "title": "Dinh Vua Mèo",
+        "city": "Đồng Văn",
+        "totalScore": 4.2,
+        "ranking": "5/21",
+        "reviewsCount": 59,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dinh Vua Mèo ở Đồng Văn. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 59 lượt review. Xếp hạng: 5/21.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/5b/c4/cf/central-courtyard.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.262115,
+                23.256063
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15292271",
+        "title": "Chiêu Lầu Thi",
+        "city": "Xin Man",
+        "totalScore": 4.0,
+        "ranking": "18/21",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chiêu Lầu Thi ở Xin Man. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 18/21.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/88/71/89/the-road-to-the-top.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14058074",
+        "title": "Làng Văn Hóa Du Lịch Lũng Cấm",
+        "city": "Đồng Văn",
+        "totalScore": 4.0,
+        "ranking": "12/21",
+        "reviewsCount": 3,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Làng Văn Hóa Du Lịch Lũng Cấm ở Đồng Văn. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 3 lượt review. Xếp hạng: 12/21.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/89/89/7a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.20181,
+                23.22683
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19776584",
+        "title": "Sông Nho Quế",
+        "city": "Đồng Văn",
+        "totalScore": 5.0,
+        "ranking": "6/21",
+        "reviewsCount": 9,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sông Nho Quế ở Đồng Văn. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 9 lượt review. Xếp hạng: 6/21.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/33/47/10/8b/wonderful-experiences.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27845319",
+        "title": "Tu San Canyon",
+        "city": "Mèo Vạc",
+        "totalScore": 5.0,
+        "ranking": "9/21",
+        "reviewsCount": 2,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tu San Canyon ở Mèo Vạc. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 9/21.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/77/9c/63/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.0,
+                22.75
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34109861",
+        "title": "HaGiang Loop Tour - HaGiang Go Ecolodge",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "13/21",
+        "reviewsCount": 1,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "HaGiang Loop Tour - HaGiang Go Ecolodge ở Hà Giang. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thông tin cho khách du lịch. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 13/21.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/2c/a4/d3/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.46581,
+                9.78177
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33233739",
+        "title": "Lung Tam Village",
+        "city": "Quan Ba",
+        "totalScore": 5.0,
+        "ranking": "14/21",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lung Tam Village ở Quan Ba. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 14/21.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/3e/99/81/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.055855,
+                23.033642
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33308221",
+        "title": "Ha Giang Loop",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "15/21",
+        "reviewsCount": 1,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ha Giang Loop ở Hà Giang. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Công viên nước & giải trí, Thông tin cho khách du lịch. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 15/21.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/77/09/de/ha-giang-loop.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98299,
+                22.830454
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33341538",
+        "title": "Làng Lô Lô Chải",
+        "city": "Hà Giang",
+        "totalScore": 5.0,
+        "ranking": "16/21",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Làng Lô Lô Chải ở Hà Giang. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 16/21.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/8f/9c/60/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.774086,
+                10.663965
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19776591",
+        "title": "Điểm Cực Bắc",
+        "city": "Đồng Văn",
+        "totalScore": 5.0,
+        "ranking": "17/21",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Điểm Cực Bắc ở Đồng Văn. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 17/21.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/8a/34/2d/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33228543",
+        "title": "Bac Sum Pass",
+        "city": "Quan Ba",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bac Sum Pass ở Quan Ba. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/30/fb/cc/d5/bac-sum-pass-is-one-of.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.93426,
+                22.99701
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26590824",
+        "title": "Bảo tàng Hà Giang - Ha Giang museum",
+        "city": "Hà Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": "Bảo tàng Hà Giang kính chào quý khách. Bảo tàng có diện tích hơn 4.000 m. Gồm: nhà trưng bày có 2 tầng 4 chủ đề là Hà Giang những dấu mốc lịch sử; Ba vùng sinh thái; Văn hóa đa dạng; Xây dựng cuộc sống mới. Không gian trưng bày ngoài trời có khuân viên bảo tàng, hệ thống trưng bày ngoài trời, nhà sàn trải nghiệm. Welcome to Ha Giang Museum. The museum covers an area of more than 4,000 square meters. Including: exhibition house with 2 floors and 4 themes: Ha Giang and historical landmarks; Three ecological zones; Diverse culture; Build a new life. The outdoor display space includes museum grounds, outdoor display systems, and experience houses on stilts.",
+        "embedding": null,
+        "searchText": "Bảo tàng Hà Giang - Ha Giang museum ở Hà Giang. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Mô tả: Bảo tàng Hà Giang kính chào quý khách. Bảo tàng có diện tích hơn 4.000 m. Gồm: nhà trưng bày có 2 tầng 4 chủ đề là Hà Giang những dấu mốc lịch sử; Ba vùng sinh thái; Văn hóa đa dạng; Xây dựng cuộc sống mới. Không gian trưng bày ngoài trời có khuân viên bảo tàng, hệ thống trưng bày ngoài trời, nhà sàn trải nghiệm. Welcome to Ha Giang Museum. The museum covers an area of more than 4,000 square meters. Including: exhibition house with 2 floors and 4 themes: Ha Giang and historical landmarks; Three ecological zones; Diverse culture; Build a new life. The outdoor display space includes museum grounds, outdoor display systems, and experience houses on stilts.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/40/0f/4c/b-o-tang-ha-giang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98383,
+                22.830605
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1020
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1020
+                    },
+                    {
+                        "open_time": 1170,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 660
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1020
+                    },
+                    {
+                        "open_time": 1170,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12455427",
+        "title": "Khau Vai Love Market",
+        "city": "Hà Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Sự kiện",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khau Vai Love Market ở Hà Giang. Loại địa điểm: Sự kiện. Tags: Điểm du lịch, Khác, Sự kiện.",
+        "tags": [
+            "Điểm du lịch",
+            "Khác",
+            "Sự kiện"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/50/75/f1/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    }
+]

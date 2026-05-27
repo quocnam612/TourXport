@@ -1,0 +1,1741 @@
+[
+    {
+        "sourceLocationId": "14027866",
+        "title": "Vườn Sinh Thái Hương Quê",
+        "city": "Sa Đéc",
+        "totalScore": 4.8,
+        "ranking": "1/10",
+        "reviewsCount": 5,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn Sinh Thái Hương Quê ở Sa Đéc. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.8/5 từ 5 lượt review. Xếp hạng: 1/10. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/c0/05/57/20180408-131548-hdr-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.75175,
+                10.290126
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25338273",
+        "title": "Pizza ita",
+        "city": "Sa Đéc",
+        "totalScore": 4.5,
+        "ranking": "2/10",
+        "reviewsCount": 4,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pizza ita ở Sa Đéc. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.5/5 từ 4 lượt review. Xếp hạng: 2/10.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2b/25/6d/3b/bonne-equipe-encore-merci.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.759995,
+                10.299963
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13550247",
+        "title": "Phở Việt",
+        "city": "Sa Đéc",
+        "totalScore": 4.3,
+        "ranking": "3/10",
+        "reviewsCount": 4,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phở Việt ở Sa Đéc. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.3/5 từ 4 lượt review. Xếp hạng: 3/10.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/27/1c/df/back-again-for-good-reason.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.76808,
+                10.29086
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16762734",
+        "title": "Hu Tieu Ba Sam",
+        "city": "Sa Đéc",
+        "totalScore": 4.3,
+        "ranking": "4/10",
+        "reviewsCount": 4,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hu Tieu Ba Sam ở Sa Đéc. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.3/5 từ 4 lượt review. Xếp hạng: 4/10.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/3d/1a/66/hu-tieu-with-broth.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.766655,
+                10.295613
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27099241",
+        "title": "Quan Oc 96",
+        "city": "Sa Đéc",
+        "totalScore": 5.0,
+        "ranking": "5/10",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quan Oc 96 ở Sa Đéc. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 5/10.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/16/d4/37/restaurant-view-at-night.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.76649,
+                10.300058
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17395723",
+        "title": "Phở Lẩu Bò Thịnh",
+        "city": "Cao Lãnh",
+        "totalScore": 5.0,
+        "ranking": "6/10",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phở Lẩu Bò Thịnh ở Cao Lãnh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 6/10.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/a2/9c/74/bun-bo-hue-hue-style.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.62881,
+                10.46637
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "20497715",
+        "title": "Lẩu Cua Đồng Cô Út",
+        "city": "Sa Đéc",
+        "totalScore": 5.0,
+        "ranking": "7/10",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lẩu Cua Đồng Cô Út ở Sa Đéc. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 7/10.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/60/f7/a1/vegetable.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "08:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "3896160",
+        "title": "Dragon Palace",
+        "city": "Sa Đéc",
+        "totalScore": 3.8,
+        "ranking": "8/10",
+        "reviewsCount": 4,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dragon Palace ở Sa Đéc. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.8/5 từ 4 lượt review. Xếp hạng: 8/10.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/ee/2c/09/dragon-palace.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.74596,
+                10.31222
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12145651",
+        "title": "Quán Cà Phê Hoa Culy",
+        "city": "Cao Lãnh",
+        "totalScore": 4.0,
+        "ranking": "9/10",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Cà Phê Hoa Culy ở Cao Lãnh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 9/10.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/70/bb/f5/hoa-culy-cafe.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.63335,
+                10.465629
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16714840",
+        "title": "Ẩm Thực Thành Phát",
+        "city": "Sa Đéc",
+        "totalScore": 1.0,
+        "ranking": "10/10",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "1.052.631.552 ₫ - 2.147.483.647 ₫",
+        "description": "Chuyên phục vụ các món Việt Nam: Hải Sản Tươi Sống & Lẩu Tom Yum Thái Lan...",
+        "embedding": null,
+        "searchText": "Ẩm Thực Thành Phát ở Sa Đéc. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Chuyên phục vụ các món Việt Nam: Hải Sản Tươi Sống & Lẩu Tom Yum Thái Lan... Đánh giá: 1.0/5 từ 1 lượt review. Xếp hạng: 10/10. Giá: 1.052.631.552 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/8a/d8/b2/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.75699,
+                10.298379
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23117084",
+        "title": "Oh La La Paris",
+        "city": "Long Xuyên",
+        "totalScore": 4.9,
+        "ranking": "2/20",
+        "reviewsCount": 22,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Oh La La Paris ở Long Xuyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.9/5 từ 22 lượt review. Xếp hạng: 2/20.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/a9/30/fb/merci.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.435,
+                10.379904
+            ]
+        },
+        "openingHours": {
+            "display": "16:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32893733",
+        "title": "Joki Enkai - Nhà Hàng Hấp Thủy Nhiệt Nhật Bản ",
+        "city": "Long Xuyên",
+        "totalScore": 5.0,
+        "ranking": "1/20",
+        "reviewsCount": 19,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Joki Enkai - Nhà Hàng Hấp Thủy Nhiệt Nhật Bản  ở Long Xuyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 19 lượt review. Xếp hạng: 1/20. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/0b/ae/0d/m-i-ban-an-la-m-t-tac.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.41854,
+                10.375942
+            ]
+        },
+        "openingHours": {
+            "display": "10:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33060039",
+        "title": "Banh Mi Trang Nhung Lan",
+        "city": "Long Xuyên",
+        "totalScore": 5.0,
+        "ranking": "7/20",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Banh Mi Trang Nhung Lan ở Long Xuyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 7/20.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.44191,
+                10.383695
+            ]
+        },
+        "openingHours": {
+            "display": "05:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27773461",
+        "title": "Thị trấn cà phê",
+        "city": "Long Xuyên",
+        "totalScore": 4.5,
+        "ranking": "5/20",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "657.894.720 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Thị trấn cà phê ở Long Xuyên. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 5/20. Giá: 657.894.720 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2c/3e/80/ed/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.435684,
+                10.39227
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "11907384",
+        "title": "Bún Cá Hiếu Thuận",
+        "city": "Long Xuyên",
+        "totalScore": 4.5,
+        "ranking": "13/20",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bún Cá Hiếu Thuận ở Long Xuyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 13/20.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/0e/d3/30/49/bun-ca-hieu-thuan.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.43817,
+                10.38915
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6642059",
+        "title": "Nem Nuong  Nha Trang",
+        "city": "Long Xuyên",
+        "totalScore": 4.3,
+        "ranking": "14/20",
+        "reviewsCount": 4,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nem Nuong  Nha Trang ở Long Xuyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.3/5 từ 4 lượt review. Xếp hạng: 14/20.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/c1/61/af/nem-nuong.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.46757,
+                10.34507
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "5495088",
+        "title": "Tra Ca SauLong Xuyen",
+        "city": "Long Xuyên",
+        "totalScore": 3.4,
+        "ranking": "9/20",
+        "reviewsCount": 29,
+        "category": "Ngồi xuống",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Tra Ca SauLong Xuyen ở Long Xuyên. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.4/5 từ 29 lượt review. Xếp hạng: 9/20. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/a1/c5/71/tra-ca-saulong-xuyen.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.47195,
+                10.338605
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12788271",
+        "title": "Vườn Hạnh Phúc - Restaurant & Lounge",
+        "city": "Long Xuyên",
+        "totalScore": 4.0,
+        "ranking": "4/20",
+        "reviewsCount": 9,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn Hạnh Phúc - Restaurant & Lounge ở Long Xuyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 9 lượt review. Xếp hạng: 4/20.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/9c/de/7a/restaurant-entrance.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.4357,
+                10.387019
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4793613",
+        "title": "Lang Toi",
+        "city": "Long Xuyên",
+        "totalScore": 3.7,
+        "ranking": "3/20",
+        "reviewsCount": 17,
+        "category": "Ngồi xuống",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Lang Toi ở Long Xuyên. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.7/5 từ 17 lượt review. Xếp hạng: 3/20. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/04/84/02/fa/lang-toi.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.44068,
+                10.377663
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7131269",
+        "title": "BO UC QUYEN TRAN",
+        "city": "Long Xuyên",
+        "totalScore": 4.5,
+        "ranking": "11/20",
+        "reviewsCount": 4,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "BO UC QUYEN TRAN ở Long Xuyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.5/5 từ 4 lượt review. Xếp hạng: 11/20.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/ce/40/f7/bo-uc-quyen-tran.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.435875,
+                10.386561
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10818848",
+        "title": "Quán Cơm Quế Phát",
+        "city": "Long Xuyên",
+        "totalScore": 4.3,
+        "ranking": "8/20",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Cơm Quế Phát ở Long Xuyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.3/5 từ 3 lượt review. Xếp hạng: 8/20. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/fe/70/b3/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.44036,
+                10.377323
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12411550",
+        "title": "Quán Kem Fanny - Vincom Long Xuyên",
+        "city": "Long Xuyên",
+        "totalScore": 3.2,
+        "ranking": "19/20",
+        "reviewsCount": 5,
+        "category": "Ngồi xuống",
+        "priceRange": "578.947.392 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Kem Fanny - Vincom Long Xuyên ở Long Xuyên. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.2/5 từ 5 lượt review. Xếp hạng: 19/20. Giá: 578.947.392 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/ff/de/df/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.43711,
+                10.383555
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13417246",
+        "title": "Kichi Kichi",
+        "city": "Long Xuyên",
+        "totalScore": 4.0,
+        "ranking": "20/20",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kichi Kichi ở Long Xuyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 20/20.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/dd/bd/66/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.43722,
+                10.383417
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26772514",
+        "title": "THE HOUSE 56 - Hidden Pub",
+        "city": "Long Xuyên",
+        "totalScore": 5.0,
+        "ranking": "10/20",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "THE HOUSE 56 - Hidden Pub ở Long Xuyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 10/20.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/a7/f8/83/mini-pub-in-long-xuyen.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.43294,
+                10.385967
+            ]
+        },
+        "openingHours": {
+            "display": "18:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23442223",
+        "title": "Boba Ca Phe",
+        "city": "Long Xuyên",
+        "totalScore": 4.0,
+        "ranking": "17/20",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Boba Ca Phe ở Long Xuyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 17/20.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.429375,
+                10.390528
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23442213",
+        "title": "Quán Cơm Nhà",
+        "city": "Long Xuyên",
+        "totalScore": 4.0,
+        "ranking": "18/20",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Cơm Nhà ở Long Xuyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 18/20.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.42705,
+                10.392292
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7221461",
+        "title": "Boss Café",
+        "city": "Long Xuyên",
+        "totalScore": 4.5,
+        "ranking": "16/20",
+        "reviewsCount": 2,
+        "category": "Quán cafe",
+        "priceRange": null,
+        "description": "Hướng vào Trường Đại Học An Giang mới",
+        "embedding": null,
+        "searchText": "Boss Café ở Long Xuyên. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Mô tả: Hướng vào Trường Đại Học An Giang mới Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 16/20.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/f7/ce/26/boss-cafe.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.43215,
+                10.37538
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21019945",
+        "title": "Quán Đồng Bằng-Bò Tơ Củ Chi",
+        "city": "Long Xuyên",
+        "totalScore": 5.0,
+        "ranking": "15/20",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "1.315.789.440 ₫ - 2.147.483.647 ₫",
+        "description": "Bạn muốn có một trải nghiệm tuyệt vời, bên cạnh bữa ăn ngon? Quán bò tơ Củ Chi Đồng Bằng có thực đơn phong phú, ngoài đặc sản nhất định phải thử là bò tơ hấp cuốn bánh tráng với rau rừng, thực khách còn nhiều lựa chọn từ gà tre, cá biển, hải sản tươi ngon, v.v Với không gian ngoài trời rộng rãi, thoáng mát, quán Đồng Bằng là nơi lý tưởng khi bạn muốn tụ họp bạn bè, đồng nghiệp, dẫn gia đình đi ăn tối hay kể cả khi cần tiếp đón đối tác. Chúng tôi có khu vực bàn ăn sát bờ sông, khu vực riêng cho nhóm đông người, hay phòng lạnh khi quý khách không ưa sự ồn ào náo nhiệt bên ngoài. Hãy đến với quán Đồng Bằng và thưởng thức nhé.",
+        "embedding": null,
+        "searchText": "Quán Đồng Bằng-Bò Tơ Củ Chi ở Long Xuyên. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Bạn muốn có một trải nghiệm tuyệt vời, bên cạnh bữa ăn ngon? Quán bò tơ Củ Chi Đồng Bằng có thực đơn phong phú, ngoài đặc sản nhất định phải thử là bò tơ hấp cuốn bánh tráng với rau rừng, thực khách còn nhiều lựa chọn từ gà tre, cá biển, hải sản tươi ngon, v.v Với không gian ngoài trời rộng rãi, thoáng mát, quán Đồng Bằng là nơi lý tưởng khi bạn muốn tụ họp bạn bè, đồng nghiệp, dẫn gia đình đi ăn tối hay kể cả khi cần tiếp đón đối tác. Chúng tôi có khu vực bàn ăn sát bờ sông, khu vực riêng cho nhóm đông người, hay phòng lạnh khi quý khách không ưa sự ồn ào náo nhiệt bên ngoài. Hãy đến với quán Đồng Bằng và thưởng thức nhé. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 15/20. Giá: 1.315.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/79/c7/9a/bo-to-cu-chi-our-signature.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.436264,
+                10.368046
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34251297",
+        "title": "Là Cafe",
+        "city": "Long Xuyên",
+        "totalScore": 5.0,
+        "ranking": "6/20",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Là Cafe ở Long Xuyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 6/20.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.43195,
+                10.367136
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13131996",
+        "title": "Nhà hàng Khoa Trí",
+        "city": "Long Xuyên",
+        "totalScore": 5.0,
+        "ranking": "12/20",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Khoa Trí ở Long Xuyên. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 12/20.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.41631,
+                10.39476
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19055867",
+        "title": "Nhà Hàng Việt Hà",
+        "city": "Cao Lãnh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Việt Hà ở Cao Lãnh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.63016,
+                10.44724
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26770499",
+        "title": "Oh la la Paris Cao Lãnh",
+        "city": "Cao Lãnh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Nhà hàng Pháp",
+        "embedding": null,
+        "searchText": "Oh la la Paris Cao Lãnh ở Cao Lãnh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Nhà hàng Pháp",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21171754",
+        "title": "Nhà Hàng Thuần Việt",
+        "city": "Cao Lãnh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Thuần Việt ở Cao Lãnh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33876422",
+        "title": "Song Ngư - Ẩm thực làng bè Nam Bộ",
+        "city": "Hong Ngu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Song Ngư - Ẩm thực làng bè Nam Bộ ở Hong Ngu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.63246,
+                10.46362
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33216296",
+        "title": "Taxi @387.50.40.30_quan An Tam Ri",
+        "city": "Sa Đéc",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Taxi @387.50.40.30_quan An Tam Ri ở Sa Đéc. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.87021,
+                10.257741
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15609198",
+        "title": "Vườn Sinh Thái Hương Quê",
+        "city": "Sa Đéc",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn Sinh Thái Hương Quê ở Sa Đéc. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.74406,
+                10.27936
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33357957",
+        "title": "Nghệ Eatery",
+        "city": "Sa Đéc",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.631.579 ₫ - 7.894.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nghệ Eatery ở Sa Đéc. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 2.631.579 ₫ - 7.894.737 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/a4/2d/dc/quan.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.75865,
+                10.292529
+            ]
+        },
+        "openingHours": {
+            "display": "16:30-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25398592",
+        "title": "Nhà hàng Cơm Niêu Senta",
+        "city": "Tram Chim",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Nhà hàng SENTA là đơn vị trực thuộc Khách san Wildbird, nằm cạnh VQG Tràm Chim. Nhà hàng phục vụ các món ăn Âu Á và đặc biệt là Cơm Niêu dành cho gia đình và các đoàn du khách.",
+        "embedding": null,
+        "searchText": "Nhà hàng Cơm Niêu Senta ở Tram Chim. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Nhà hàng SENTA là đơn vị trực thuộc Khách san Wildbird, nằm cạnh VQG Tràm Chim. Nhà hàng phục vụ các món ăn Âu Á và đặc biệt là Cơm Niêu dành cho gia đình và các đoàn du khách.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/a1/81/bf/nha-hang-com-nieu-senta.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.55637,
+                10.68489
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    }
+]

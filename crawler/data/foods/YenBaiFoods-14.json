@@ -1,0 +1,710 @@
+[
+    {
+        "sourceLocationId": "27422960",
+        "title": "Mr. Pig Banh Mi",
+        "city": "Minh An",
+        "totalScore": 5.0,
+        "ranking": "9/12",
+        "reviewsCount": 4,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mr. Pig Banh Mi ở Minh An. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 9/12.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/5e/9a/92/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.80564,
+                21.72883
+            ]
+        },
+        "openingHours": {
+            "display": "15:00-27:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1620
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1620
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1620
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1620
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1620
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1620
+                    }
+                ],
+                [
+                    {
+                        "open_time": 900,
+                        "close_time": 1620
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33119240",
+        "title": "Mely Farm Muong Lo",
+        "city": "Yên Bái",
+        "totalScore": 5.0,
+        "ranking": "1/9",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": "210.526 ₫ - 394.737 ₫",
+        "description": "Mely Farm là nhà hàng farm-to-table duyên dáng tọa lạc giữa thung lũng Mường Lò trù phú, nơi kiến trúc gỗ mộc mạc hòa quyện cùng tiện nghi hiện đại. Thực đơn của chúng tôi tập trung vào nguyên liệu theo mùa, canh tác hữu cơ và sản phẩm thủ công: salad tươi ngon từ vườn, rau rừng xào nóng hổi và các món thịt địa phương nướng chậm, thấm đẫm hương vị thảo mộc bản địa. Thưởng thức tầm nhìn bao quát cánh đồng lúa xanh mướt qua khung cửa kính cao sát trần, hoặc dùng bữa ngoài trời dưới những chòi tre lung linh ánh đèn lồng. Dù bạn muốn khám phá hương vị nguyên bản của người Dao–Thái hay chỉ đơn giản tận hưởng bữa tiệc đồng quê ấm cúng, Mely Farm sẽ mang đến trải nghiệm khó quên.",
+        "embedding": null,
+        "searchText": "Mely Farm Muong Lo ở Yên Bái. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Mely Farm là nhà hàng farm-to-table duyên dáng tọa lạc giữa thung lũng Mường Lò trù phú, nơi kiến trúc gỗ mộc mạc hòa quyện cùng tiện nghi hiện đại. Thực đơn của chúng tôi tập trung vào nguyên liệu theo mùa, canh tác hữu cơ và sản phẩm thủ công: salad tươi ngon từ vườn, rau rừng xào nóng hổi và các món thịt địa phương nướng chậm, thấm đẫm hương vị thảo mộc bản địa. Thưởng thức tầm nhìn bao quát cánh đồng lúa xanh mướt qua khung cửa kính cao sát trần, hoặc dùng bữa ngoài trời dưới những chòi tre lung linh ánh đèn lồng. Dù bạn muốn khám phá hương vị nguyên bản của người Dao–Thái hay chỉ đơn giản tận hưởng bữa tiệc đồng quê ấm cúng, Mely Farm sẽ mang đến trải nghiệm khó quên. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 1/9. Giá: 210.526 ₫ - 394.737 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/d4/f1/c0/rustic-wooden-lodges.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.49731,
+                21.592838
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-14:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 870
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 870
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 870
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 870
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 870
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 870
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 870
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12260164",
+        "title": "Nhà Hàng Sành BBQ",
+        "city": "Yên Bái",
+        "totalScore": 5.0,
+        "ranking": "2/9",
+        "reviewsCount": 6,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Sành BBQ ở Yên Bái. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 6 lượt review. Xếp hạng: 2/9.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/29/5f/72/photo4jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.91914,
+                21.7214
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32683910",
+        "title": "Ty Bread Bánh Mì",
+        "city": "Minh An",
+        "totalScore": 5.0,
+        "ranking": "12/12",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ty Bread Bánh Mì ở Minh An. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 12/12.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/96/44/82/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.80564,
+                21.72883
+            ]
+        },
+        "openingHours": {
+            "display": "21:00-28:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1260,
+                        "close_time": 1680
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1260,
+                        "close_time": 1680
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1260,
+                        "close_time": 1680
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1260,
+                        "close_time": 1680
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1260,
+                        "close_time": 1680
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1260,
+                        "close_time": 1680
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1260,
+                        "close_time": 1680
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27983113",
+        "title": "Yen Bai Restaurant",
+        "city": "Yên Bái",
+        "totalScore": 5.0,
+        "ranking": "3/9",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Yen Bai Restaurant ở Yên Bái. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 3/9.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/ad/68/12/yen-bai-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.58333,
+                21.75
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25172473",
+        "title": "Yen Bai Tv",
+        "city": "Yên Bái",
+        "totalScore": 5.0,
+        "ranking": "4/9",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Yen Bai Tv ở Yên Bái. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 4/9.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/27/1c/dd/81/yen-bai-tv-tours.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.933044,
+                21.679401
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15122773",
+        "title": "Nhà Hàng Nghĩa Lộ",
+        "city": "Nghĩa Lộ",
+        "totalScore": 4.5,
+        "ranking": "5/9",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Nghĩa Lộ ở Nghĩa Lộ. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 5/9.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.892,
+                21.7166
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33323260",
+        "title": "Long Hehe",
+        "city": "Yên Bái",
+        "totalScore": 0,
+        "ranking": "6/9",
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Long Hehe ở Yên Bái. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Xếp hạng: 6/9.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.852325,
+                21.012737
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-21:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25070767",
+        "title": "Sen Và Boss",
+        "city": "Yên Bái",
+        "totalScore": 4.0,
+        "ranking": "7/9",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sen Và Boss ở Yên Bái. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 7/9.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.88081,
+                21.70564
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24876206",
+        "title": "Nhà hàng Bảo Hưng Ẩm Thực Tây Bắc",
+        "city": "Tú Lệ",
+        "totalScore": 4.0,
+        "ranking": "8/9",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Bảo Hưng Ẩm Thực Tây Bắc ở Tú Lệ. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 8/9.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/25/2f/d7/bc/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.30783,
+                21.787907
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15208739",
+        "title": "Nhà Hàng Thùy Linh",
+        "city": "Mu Cang Chai",
+        "totalScore": 3.3,
+        "ranking": "1/1",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Thùy Linh ở Mu Cang Chai. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.3/5 từ 3 lượt review. Xếp hạng: 1/1.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/53/eb/db/hotpot.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.87518,
+                21.69709
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14206340",
+        "title": "Trạm Dừng Chân Km 171 Cao Tốc Hà Nội - Lào Cai",
+        "city": "Yên Bái",
+        "totalScore": 1.0,
+        "ranking": "9/9",
+        "reviewsCount": 5,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trạm Dừng Chân Km 171 Cao Tốc Hà Nội - Lào Cai ở Yên Bái. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 1.0/5 từ 5 lượt review. Xếp hạng: 9/9.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/cb/d4/5a/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19523448",
+        "title": "Nhà Hàng Phương Hân",
+        "city": "Yên Bái",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Phương Hân ở Yên Bái. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.91838,
+                21.72464
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14094716",
+        "title": "Món Huế O Thanh",
+        "city": "Yên Bái",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "789.473.664 ₫ - 1.578.947.328 ₫",
+        "description": "Nhà hàng Món Huế O Thanh có các món Huế đặc trưng mang lại hương vị ẩm thực có nét riêng ở thành phố Yên Bái. Bún bò sợi to không lo bị ngán, bánh canh, bánh bột lọc, chè huế cũng đều mang hương vị đặm đà khó quên. Kính mời!",
+        "embedding": null,
+        "searchText": "Món Huế O Thanh ở Yên Bái. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà hàng Món Huế O Thanh có các món Huế đặc trưng mang lại hương vị ẩm thực có nét riêng ở thành phố Yên Bái. Bún bò sợi to không lo bị ngán, bánh canh, bánh bột lọc, chè huế cũng đều mang hương vị đặm đà khó quên. Kính mời! Giá: 789.473.664 ₫ - 1.578.947.328 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/13/68/64/bun-bo-hu-o-thanh-414.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.87353,
+                21.697598
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    }
+]

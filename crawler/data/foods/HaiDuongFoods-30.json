@@ -1,0 +1,1503 @@
+[
+    {
+        "sourceLocationId": "33066269",
+        "title": "Đảo Matcha Số 34 Phố Ngô Quyền",
+        "city": "Hà Nội",
+        "totalScore": 5.0,
+        "ranking": "813/3710",
+        "reviewsCount": 10,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đảo Matcha Số 34 Phố Ngô Quyền ở Hà Nội. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 10 lượt review. Xếp hạng: 813/3710.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/c5/b7/1a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.33479,
+                20.93897
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-23:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1410
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "1743469",
+        "title": "Ristorante Italia",
+        "city": "Hải Dương",
+        "totalScore": 4.6,
+        "ranking": "1/15",
+        "reviewsCount": 50,
+        "category": "Ngồi xuống",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Ristorante Italia ở Hải Dương. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.6/5 từ 50 lượt review. Xếp hạng: 1/15. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/c5/dd/c8/you-want-to-tell-somebody.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.30179,
+                20.936588
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-14:00, 16:00-21:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26697557",
+        "title": "Indian Rasoi",
+        "city": "Hải Dương",
+        "totalScore": 4.8,
+        "ranking": "2/15",
+        "reviewsCount": 4,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Indian Rasoi ở Hải Dương. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.8/5 từ 4 lượt review. Xếp hạng: 2/15. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/6f/a6/19/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.33784,
+                20.923363
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19385259",
+        "title": "Nhà Hàng Vịt Quay Lu Chính Hà",
+        "city": "Hải Dương",
+        "totalScore": 4.8,
+        "ranking": "3/15",
+        "reviewsCount": 5,
+        "category": "Ngồi xuống",
+        "priceRange": "105.263 ₫ - 157.895 ₫",
+        "description": "VỊT QUAY LU CHÍNH HÀ: Nhà hàng nằm ở ngay bên cầu Tân Kim, phục vụ thực khách chủ yếu các món quay nướng như vịt quay, thịt quay. Vịt quay rất mềm, đậm vị, không bị khô. Không giống thịt quay ở các hàng khác, ở đây thịt rất chắc, không bị bở, tẩm ướp vừa miệng, da giòn, thịt mềm. Giá cả rất phải chăng nhé!",
+        "embedding": null,
+        "searchText": "Nhà Hàng Vịt Quay Lu Chính Hà ở Hải Dương. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: VỊT QUAY LU CHÍNH HÀ: Nhà hàng nằm ở ngay bên cầu Tân Kim, phục vụ thực khách chủ yếu các món quay nướng như vịt quay, thịt quay. Vịt quay rất mềm, đậm vị, không bị khô. Không giống thịt quay ở các hàng khác, ở đây thịt rất chắc, không bị bở, tẩm ướp vừa miệng, da giòn, thịt mềm. Giá cả rất phải chăng nhé! Đánh giá: 4.8/5 từ 5 lượt review. Xếp hạng: 3/15. Giá: 105.263 ₫ - 157.895 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/fb/bb/35/nu-ng-lu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.32051,
+                20.932583
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-20:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12495770",
+        "title": "Quán Cà Phê Oasis",
+        "city": "Hải Dương",
+        "totalScore": 4.7,
+        "ranking": "4/15",
+        "reviewsCount": 6,
+        "category": "Quán cafe",
+        "priceRange": "526.315.776 ₫ - 1.184.210.560 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Cà Phê Oasis ở Hải Dương. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 4.7/5 từ 6 lượt review. Xếp hạng: 4/15. Giá: 526.315.776 ₫ - 1.184.210.560 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/cb/9c/c2/aircon-indoor.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.2887,
+                20.934893
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13993696",
+        "title": "Ẩm Thực Chay Thiên Trúc",
+        "city": "Hải Dương",
+        "totalScore": 4.4,
+        "ranking": "5/15",
+        "reviewsCount": 5,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Ẩm Thực Chay Thiên Trúc ở Hải Dương. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.4/5 từ 5 lượt review. Xếp hạng: 5/15. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/9d/b8/1b/photo2jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.31472,
+                20.935587
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34237805",
+        "title": "TOHOKU Japanese Restaurant",
+        "city": "Thành phố Hồ Chí Minh",
+        "totalScore": 5.0,
+        "ranking": "2820/4905",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "TOHOKU Japanese Restaurant ở Thành phố Hồ Chí Minh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 2820/4905.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/d2/91/61/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.324814,
+                20.931032
+            ]
+        },
+        "openingHours": {
+            "display": "10:30-21:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33863505",
+        "title": "Buffet Cửu Vân Long Premium Landmark",
+        "city": "Thành phố Hồ Chí Minh",
+        "totalScore": 5.0,
+        "ranking": "2932/4905",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Buffet Cửu Vân Long Premium Landmark ở Thành phố Hồ Chí Minh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 2932/4905.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/7a/0c/02/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.32776,
+                20.950085
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15597897",
+        "title": "GoGi House Hai Duong",
+        "city": "Hải Dương",
+        "totalScore": 5.0,
+        "ranking": "6/15",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "GoGi House (Quán thịt nướng Hàn Quốc) sẽ đưa bạn đến Seoul, nơi những con phố bình dị, những quán ăn đã trở nên quen thuộc với người dân xứ Hàn. Nếu đã một lần thưởng thức thịt nướng tại GoGi House, bạn sẽ không thể quên được hương vị \"ngất ngây\" của những món sườn non bò Mỹ, nạc vai bò Mỹ, dẻ sườn tươi.... khi hòa quyện vào với các loại gia vị đặc trưng của xứ sở Kimchi đã trở nên hấp dẫn",
+        "embedding": null,
+        "searchText": "GoGi House Hai Duong ở Hải Dương. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: GoGi House (Quán thịt nướng Hàn Quốc) sẽ đưa bạn đến Seoul, nơi những con phố bình dị, những quán ăn đã trở nên quen thuộc với người dân xứ Hàn. Nếu đã một lần thưởng thức thịt nướng tại GoGi House, bạn sẽ không thể quên được hương vị \"ngất ngây\" của những món sườn non bò Mỹ, nạc vai bò Mỹ, dẻ sườn tươi.... khi hòa quyện vào với các loại gia vị đặc trưng của xứ sở Kimchi đã trở nên hấp dẫn Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 6/15. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/37/0f/c4/2019-08-12-11-56-23-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.32773,
+                20.94092
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24040291",
+        "title": "Napolis Pizza Hải Dương",
+        "city": "Hải Dương",
+        "totalScore": 5.0,
+        "ranking": "7/15",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Napolis Pizza Hải Dương ở Hải Dương. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 7/15.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/24/7d/55/35/napolis-pizza-h-i-duong.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.317055,
+                20.941187
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19864994",
+        "title": "Gió Coffee",
+        "city": "Hải Dương",
+        "totalScore": 5.0,
+        "ranking": "8/15",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Gió Coffee ở Hải Dương. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 8/15.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/98/d9/2b/terrace-on-the-lake-side.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.33775,
+                20.938408
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13288192",
+        "title": "Nhà Hàng Hương Biển",
+        "city": "Hải Dương",
+        "totalScore": 5.0,
+        "ranking": "9/15",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hương Biển ở Hải Dương. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 9/15.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.33456,
+                20.94949
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17219911",
+        "title": "Lina Hana",
+        "city": "Hải Dương",
+        "totalScore": 4.0,
+        "ranking": "10/15",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "1.315.789.440 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Lina Hana ở Hải Dương. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 10/15. Giá: 1.315.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/2b/d4/ff/lina-hana.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.2929,
+                20.936277
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16740058",
+        "title": "Cafe 360",
+        "city": "Hải Dương",
+        "totalScore": 4.0,
+        "ranking": "11/15",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cafe 360 ở Hải Dương. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 11/15.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/b2/a8/83/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.32783,
+                20.9368
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15829134",
+        "title": "1988 Pizza",
+        "city": "Hải Dương",
+        "totalScore": 4.0,
+        "ranking": "12/15",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "1988 Pizza ở Hải Dương. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 12/15.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/99/d2/97/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.33072,
+                20.94268
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15836079",
+        "title": "Lotteria Hải Dương",
+        "city": "Hải Dương",
+        "totalScore": 4.0,
+        "ranking": "13/15",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lotteria Hải Dương ở Hải Dương. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 13/15.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.32974,
+                20.94698
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17631981",
+        "title": "Nhà Hàng Hải Sản Hồng Hà",
+        "city": "Hải Dương",
+        "totalScore": 3.0,
+        "ranking": "14/15",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hải Sản Hồng Hà ở Hải Dương. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 14/15.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/cc/82/5b/photo1jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.3205,
+                20.93352
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33076243",
+        "title": "The Coop By Chookies",
+        "city": "Ninh Bình",
+        "totalScore": 4.7,
+        "ranking": "118/213",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Coop By Chookies ở Ninh Bình. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.7/5 từ 3 lượt review. Xếp hạng: 118/213.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/31/0e/0f/a9/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.34153,
+                20.945957
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14057807",
+        "title": "V52 Trạm Dịch Vụ Hải Dương",
+        "city": "Hải Dương",
+        "totalScore": 2.7,
+        "ranking": "15/15",
+        "reviewsCount": 9,
+        "category": "Quán cafe",
+        "priceRange": "26.316 ₫ - 263.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "V52 Trạm Dịch Vụ Hải Dương ở Hải Dương. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 2.7/5 từ 9 lượt review. Xếp hạng: 15/15. Giá: 26.316 ₫ - 263.158 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/17/03/75/6b/right-now.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.33262,
+                20.857578
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12063682",
+        "title": "Quán Cà Phê Minnano",
+        "city": "Hải Dương",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Quán cafe",
+        "priceRange": "394.736.832 ₫ - 1.315.789.440 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Cà Phê Minnano ở Hải Dương. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Giá: 394.736.832 ₫ - 1.315.789.440 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/2b/8d/70/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.36783,
+                20.959354
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24189999",
+        "title": "Decent Kàfe",
+        "city": "Hải Dương",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Là một Tiệm Cà phê nhỏ với đồ uống chủ đạo là Cà phê, với các phương pháp pha cổ điển và hiện đại cùng với các hạt cà phê trên thế giới và Việt Nam. Ngoài ra, tiệm còn có một số đồ uống khác như Trà, Trái cây, và một số loại bánh ngọt tráng miệng.",
+        "embedding": null,
+        "searchText": "Decent Kàfe ở Hải Dương. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Là một Tiệm Cà phê nhỏ với đồ uống chủ đạo là Cà phê, với các phương pháp pha cổ điển và hiện đại cùng với các hạt cà phê trên thế giới và Việt Nam. Ngoài ra, tiệm còn có một số đồ uống khác như Trà, Trái cây, và một số loại bánh ngọt tráng miệng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/24/f7/fb/0e/egg-coffee-ca-phe-tr.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "07:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26579204",
+        "title": "66 Đỗ Ngọc Du - Tân Bình - Hải Dương",
+        "city": "Hải Dương",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Đậu mẹt phố xưa - 66 Đỗ Ngọc Du - Tp Hải dương Hotline : 0333138588",
+        "embedding": null,
+        "searchText": "66 Đỗ Ngọc Du - Tân Bình - Hải Dương ở Hải Dương. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Đậu mẹt phố xưa - 66 Đỗ Ngọc Du - Tp Hải dương Hotline : 0333138588",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.31454,
+                20.928349
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "24036717",
+        "title": "Napolis Pizza Hải Dương",
+        "city": "Hải Dương",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Ẩm thực & Pizza Ý cổ điển trong một bầu không khí tuyệt đẹp, đầy cảm hứng chuyên về bánh pizza đốt bằng củi dành cho người sành ăn trong một chiếc lò gạch đích thực, được xây dựng theo yêu cầu khổng lồ. Khu ăn uống ngoài trời, chỗ ngồi máy lạnh trong nhà, quầy bar phục vụ cocktail mang đi và giao hàng tận nơi trên phố đi bộ / đại lộ giải trí và café hàng đầu thành phố Hải Dương. Hệ thống âm thanh hiện đại có tính năng giải trí trực tiếp.",
+        "embedding": null,
+        "searchText": "Napolis Pizza Hải Dương ở Hải Dương. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Ẩm thực & Pizza Ý cổ điển trong một bầu không khí tuyệt đẹp, đầy cảm hứng chuyên về bánh pizza đốt bằng củi dành cho người sành ăn trong một chiếc lò gạch đích thực, được xây dựng theo yêu cầu khổng lồ. Khu ăn uống ngoài trời, chỗ ngồi máy lạnh trong nhà, quầy bar phục vụ cocktail mang đi và giao hàng tận nơi trên phố đi bộ / đại lộ giải trí và café hàng đầu thành phố Hải Dương. Hệ thống âm thanh hiện đại có tính năng giải trí trực tiếp.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/23/54/c1/fa/mon-ngon-delicious-food.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.31706,
+                20.941427
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16724634",
+        "title": "Muối Coffee",
+        "city": "Hải Dương",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Muối Coffee ở Hải Dương. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.335304,
+                20.930382
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28121034",
+        "title": "Green Field Bowl",
+        "city": "Hải Dương",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Green Field Bowl ở Hải Dương. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.33306,
+                20.915688
+            ]
+        },
+        "openingHours": {
+            "display": "17:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15597899",
+        "title": "Kichi Kichi Hải Dương",
+        "city": "Hải Dương",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "KICHI-KICHI là hệ thống nhà hàng Buffet lẩu băng chuyền đầu tiên và duy nhất tại Việt Nam. Đến Kichi-Kichi, khách hàng có thể thưởng thức các hương vị nước lẩu đặc trưng với hơn 60 món nhúng lẩu không-giới-hạn thơm ngon hấp dẫn. Đặc biệt, phong cách lẩu băng chuyền độc đáo hiện đại cùng đội ngũ nhân viên nhiệt tình tận tâm sẽ mang đến niềm vui bất tận cho khách hàng khi trải nghiệm dịch vụ.",
+        "embedding": null,
+        "searchText": "Kichi Kichi Hải Dương ở Hải Dương. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: KICHI-KICHI là hệ thống nhà hàng Buffet lẩu băng chuyền đầu tiên và duy nhất tại Việt Nam. Đến Kichi-Kichi, khách hàng có thể thưởng thức các hương vị nước lẩu đặc trưng với hơn 60 món nhúng lẩu không-giới-hạn thơm ngon hấp dẫn. Đặc biệt, phong cách lẩu băng chuyền độc đáo hiện đại cùng đội ngũ nhân viên nhiệt tình tận tâm sẽ mang đến niềm vui bất tận cho khách hàng khi trải nghiệm dịch vụ. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/a1/47/55/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.30905,
+                20.937355
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19483332",
+        "title": "Ẩm Thực Cung Đình",
+        "city": "Hải Dương",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "ẩm thực cung đình là nhà hàng chuyên về đồ nướng và những món lẩu . thực đơn phong phú , phục vụ chuyên nghiệp , giá cả hợp lí !",
+        "embedding": null,
+        "searchText": "Ẩm Thực Cung Đình ở Hải Dương. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: ẩm thực cung đình là nhà hàng chuyên về đồ nướng và những món lẩu . thực đơn phong phú , phục vụ chuyên nghiệp , giá cả hợp lí ! Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.51069,
+                20.90156
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19354279",
+        "title": "Sky 26 Bar Nam Cuong Hotel",
+        "city": "Hải Dương",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "1.578.947.328 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Sky 26 Bar Nam Cuong Hotel ở Hải Dương. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 1.578.947.328 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/e5/d1/69/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.49162,
+                20.76126
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15016319",
+        "title": "Tamaya Nhà Hàng Nhật Bản",
+        "city": "Cam Phuc",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "Nhà hàng Nhật Bản.",
+        "embedding": null,
+        "searchText": "Tamaya Nhà Hàng Nhật Bản ở Cam Phuc. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà hàng Nhật Bản. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/14/1e/f4/17/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.19277,
+                20.933876
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28560154",
+        "title": "Phở 6am",
+        "city": "Hưng Đạo",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phở 6am ở Hưng Đạo. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.85801,
+                10.61455
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-13:30, 17:00-20:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 1020,
+                        "close_time": 1230
+                    }
+                ]
+            ]
+        }
+    }
+]

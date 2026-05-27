@@ -1,0 +1,89 @@
+[
+    {
+        "sourceLocationId": "2570316",
+        "title": "TTC Resort - Ninh Thuận",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 4.2,
+        "ranking": null,
+        "reviewsCount": 245,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "TTC Resort - Ninh Thuận ở Phan Rang-Tháp Chàm. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.2/5 từ 245 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/0b/5f/ae/ttc-resort-premium-ninh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.02813,
+                11.581744
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "5784629",
+        "title": "Amanoi",
+        "city": "Vinh Hai",
+        "totalScore": 4.8,
+        "ranking": null,
+        "reviewsCount": 307,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Amanoi ở Vinh Hai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 307 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/30/f2/79/f3/amanoi-vietnam-accommodation.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.19763,
+                11.709109
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23269592",
+        "title": "Hoan MY Resort Ninh Chu",
+        "city": "Phan Rang-Tháp Chàm",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 67,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hoan MY Resort Ninh Chu ở Phan Rang-Tháp Chàm. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 67 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/27/a0/6f/f1/hoan-m-resort-ninh-ch.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.02396,
+                11.57481
+            ]
+        },
+        "openingHours": null
+    }
+]

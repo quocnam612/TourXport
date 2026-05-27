@@ -1,0 +1,426 @@
+[
+    {
+        "sourceLocationId": "12123781",
+        "title": "JW Marriott Phu Quoc Emerald Bay Resort & Spa",
+        "city": "An Thoi",
+        "totalScore": 4.8,
+        "ranking": null,
+        "reviewsCount": 1944,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "JW Marriott Phu Quoc Emerald Bay Resort & Spa ở An Thoi. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 1944 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/a4/6e/15/shell-pool.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.02825,
+                10.032
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23138346",
+        "title": "New World Phu Quoc Resort",
+        "city": "An Thoi",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 2182,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "New World Phu Quoc Resort ở An Thoi. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 2182 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1d/d4/5f/d2/new-world-phu-quoc-resort.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.02751,
+                10.039026
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6920092",
+        "title": "Vinpearl Resort & Spa Phu Quoc",
+        "city": "Ganh Dau",
+        "totalScore": 4.7,
+        "ranking": null,
+        "reviewsCount": 4508,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vinpearl Resort & Spa Phu Quoc ở Ganh Dau. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.7/5 từ 4508 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1d/28/ec/88/pearl-club-vinpearl-membership.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.85218,
+                10.331287
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9595723",
+        "title": "Khách sạn Novotel Phú Quốc",
+        "city": "Duong Bao",
+        "totalScore": 4.6,
+        "ranking": null,
+        "reviewsCount": 3627,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Novotel Phú Quốc ở Duong Bao. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 3627 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.98019,
+                10.128704
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6406839",
+        "title": "Khu nghỉ dưỡng Salinda Phú Quốc",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 2449,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu nghỉ dưỡng Salinda Phú Quốc ở Tỉnh Kiên Giang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 2449 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/6d/8e/4b/overview-to-the-pool.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.96831,
+                10.183177
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12311302",
+        "title": "Meliá Vinpearl Phu Quoc",
+        "city": "Ganh Dau",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 3922,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Meliá Vinpearl Phu Quoc ở Ganh Dau. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 3922 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/cd/0d/6b/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.8496,
+                10.358005
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19942799",
+        "title": "Pullman Phu Quoc Beach Resort",
+        "city": "Dương Tơ",
+        "totalScore": 4.8,
+        "ranking": null,
+        "reviewsCount": 1195,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pullman Phu Quoc Beach Resort ở Dương Tơ. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 1195 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.98346,
+                10.120162
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11741744",
+        "title": "SOL by Meliá Phu Quoc",
+        "city": "Dương Tơ",
+        "totalScore": 4.5,
+        "ranking": null,
+        "reviewsCount": 2333,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "SOL by Meliá Phu Quoc ở Dương Tơ. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.5/5 từ 2333 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/0c/8d/55/sol-beach-house-phu-quoc.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.976776,
+                10.146081
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12830447",
+        "title": "Khách sạn Seashells Phu Quoc Hotel & Spa",
+        "city": "Dương Đông",
+        "totalScore": 4.2,
+        "ranking": null,
+        "reviewsCount": 407,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Seashells Phu Quoc Hotel & Spa ở Dương Đông. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.2/5 từ 407 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/ec/af/21/seashells-phu-quoc-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.95821,
+                10.215335
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20224467",
+        "title": "Mövenpick Villas & Residences Phu Quoc",
+        "city": "Cua Duong",
+        "totalScore": 4.8,
+        "ranking": null,
+        "reviewsCount": 3316,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mövenpick Villas & Residences Phu Quoc ở Cua Duong. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 3316 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.92455,
+                10.283616
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13376509",
+        "title": "Premier Village Phu Quoc Resort - Managed By Accor",
+        "city": "An Thoi",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 3127,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Premier Village Phu Quoc Resort - Managed By Accor ở An Thoi. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 3127 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/78/b5/f0/premier-village-phu-quoc.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.03922,
+                10.015984
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8792182",
+        "title": "Rocks Beach Boutique",
+        "city": "Hàm Ninh",
+        "totalScore": 4.6,
+        "ranking": null,
+        "reviewsCount": 85,
+        "category": "Cơ sở lưu trú đặc biệt",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Rocks Beach Boutique ở Hàm Ninh. Loại địa điểm: Cơ sở lưu trú đặc biệt. Tags: Khách sạn, Cơ sở lưu trú đặc biệt. Đánh giá: 4.6/5 từ 85 lượt review.",
+        "tags": [
+            "Khách sạn",
+            "Cơ sở lưu trú đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/22/f1/95/1d/toanh-c-nh-rocks-beach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.07282,
+                10.221203
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13341164",
+        "title": "InterContinental Phu Quoc Long Beach Resort by IHG",
+        "city": "Dương Tơ",
+        "totalScore": 4.8,
+        "ranking": null,
+        "reviewsCount": 2800,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "InterContinental Phu Quoc Long Beach Resort by IHG ở Dương Tơ. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 2800 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/11/27/32/hotel-exterior.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.98459,
+                10.112299
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12393526",
+        "title": "Wyndham Grand Phu Quoc",
+        "city": "Ganh Dau",
+        "totalScore": 4.8,
+        "ranking": null,
+        "reviewsCount": 2570,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Wyndham Grand Phu Quoc ở Ganh Dau. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 2570 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/e8/8d/f6/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.85531,
+                10.330132
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15688764",
+        "title": "Vinpearl Wonderworld Phu Quoc",
+        "city": "Ganh Dau",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 3122,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vinpearl Wonderworld Phu Quoc ở Ganh Dau. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 3122 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1d/28/ec/2e/pearl-club-vinpearl-membership.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.85129,
+                10.342263
+            ]
+        },
+        "openingHours": null
+    }
+]

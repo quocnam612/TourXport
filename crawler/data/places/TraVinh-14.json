@@ -1,0 +1,524 @@
+[
+    {
+        "sourceLocationId": "8095676",
+        "title": "Chùa Âng",
+        "city": "Trà Vinh",
+        "totalScore": 4.2,
+        "ranking": "1/14",
+        "reviewsCount": 18,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Âng ở Trà Vinh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 18 lượt review. Xếp hạng: 1/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/ea/4e/c4/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.30378,
+                9.915944
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8305021",
+        "title": "Chùa Ông",
+        "city": "Trà Vinh",
+        "totalScore": 4.1,
+        "ranking": "3/14",
+        "reviewsCount": 8,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Ông ở Trà Vinh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.1/5 từ 8 lượt review. Xếp hạng: 3/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/98/d6/7d/photo1jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.3416,
+                9.93551
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7084297",
+        "title": "Bai Bien Ba Dong",
+        "city": "Trường Long Hòa",
+        "totalScore": 4.0,
+        "ranking": "6/14",
+        "reviewsCount": 5,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bai Bien Ba Dong ở Trường Long Hòa. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.0/5 từ 5 lượt review. Xếp hạng: 6/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/a6/ff/84/20160612-083653-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8041149",
+        "title": "Chùa Hang",
+        "city": "Thị Tran Chau Thanh",
+        "totalScore": 4.4,
+        "ranking": "5/14",
+        "reviewsCount": 5,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Hang ở Thị Tran Chau Thanh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.4/5 từ 5 lượt review. Xếp hạng: 5/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/a7/8f/f9/hang-pagoda.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.345024,
+                9.887058
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19730049",
+        "title": "Mita Tour",
+        "city": "Trà Vinh",
+        "totalScore": 5.0,
+        "ranking": "1/1",
+        "reviewsCount": 2,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "Du lịch MITA ra đời trong xu thế hội nhập phát triển theo nhu cầu của địa phương. Tuy còn là doanh nghiệp non trẻ nhưng du lịch MITA với đội ngủ nhân viên có nhiều năm kinh nghiệm làm việc tại các đơn vị lữ hành hàng đầu sẽ mang đến cho quý khách hàng những sản phẩm và dịch vụ ưng ý nhất.\nVới đội ngũ lãnh đạo và nhân viên nhiều kinh nghiệm trong ngành Du Lịch nhất là các tuyến xa như Âu -Úc",
+        "embedding": null,
+        "searchText": "Mita Tour ở Trà Vinh. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Đồ ăn & Đồ uống, Chuyến tham quan, Khác, Chuyến tham quan bằng thuyền & thể thao dưới nước, Hoạt động ngoài trời. Mô tả: Du lịch MITA ra đời trong xu thế hội nhập phát triển theo nhu cầu của địa phương. Tuy còn là doanh nghiệp non trẻ nhưng du lịch MITA với đội ngủ nhân viên có nhiều năm kinh nghiệm làm việc tại các đơn vị lữ hành hàng đầu sẽ mang đến cho quý khách hàng những sản phẩm và dịch vụ ưng ý nhất.\nVới đội ngũ lãnh đạo và nhân viên nhiều kinh nghiệm trong ngành Du Lịch nhất là các tuyến xa như Âu -Úc Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 1/1.",
+        "tags": [
+            "Điểm du lịch",
+            "Đồ ăn & Đồ uống",
+            "Chuyến tham quan",
+            "Khác",
+            "Chuyến tham quan bằng thuyền & thể thao dưới nước",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/52/55/15/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                []
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8180898",
+        "title": "Mộc Nhiên Spa",
+        "city": "Trà Vinh",
+        "totalScore": 5.0,
+        "ranking": "1/1",
+        "reviewsCount": 5,
+        "category": "Spa & Sức khỏe",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mộc Nhiên Spa ở Trà Vinh. Loại địa điểm: Spa & Sức khỏe. Tags: Điểm du lịch, Spa & Sức khỏe. Đánh giá: 5.0/5 từ 5 lượt review. Xếp hạng: 1/1.",
+        "tags": [
+            "Điểm du lịch",
+            "Spa & Sức khỏe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/93/d7/c2/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.34156,
+                9.937042
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34123821",
+        "title": "Maison de M. Ham Huynh Ky",
+        "city": "Trà Vinh",
+        "totalScore": 5.0,
+        "ranking": "7/14",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Maison de M. Ham Huynh Ky ở Trà Vinh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 7/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/3d/93/97/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.34356,
+                9.93777
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34120277",
+        "title": "Tombeau de M. Ham Huynh Ky",
+        "city": "Trà Vinh",
+        "totalScore": 5.0,
+        "ranking": "8/14",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tombeau de M. Ham Huynh Ky ở Trà Vinh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 8/14.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/3d/9c/04/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.60046,
+                21.315863
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "29909163",
+        "title": "Color Me Pottery",
+        "city": "Tan Binh",
+        "totalScore": 5.0,
+        "ranking": "1/1",
+        "reviewsCount": 1,
+        "category": "Vui chơi & Giải trí",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Color Me Pottery ở Tan Binh. Loại địa điểm: Vui chơi & Giải trí. Tags: Điểm du lịch, Lớp học & hội thảo, Vui chơi & Giải trí. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 1/1.",
+        "tags": [
+            "Điểm du lịch",
+            "Lớp học & hội thảo",
+            "Vui chơi & Giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/23/18/85/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.66661,
+                10.805702
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-20:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33733247",
+        "title": "Tiệm Vàng",
+        "city": "Trà Vinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tiệm Vàng ở Trà Vinh. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.34303,
+                9.941027
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27422323",
+        "title": "Farmstay Sokfarm",
+        "city": "Phu Can",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Farmstay Sokfarm ở Phu Can. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.34528,
+                9.93472
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24111395",
+        "title": "Brackish Tour",
+        "city": "Duyên Hải",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Brackish Tour ở Duyên Hải. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.50538,
+                9.635698
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17386202",
+        "title": "Khmer Cultural Museum",
+        "city": "Trà Vinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khmer Cultural Museum ở Trà Vinh. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.34256,
+                9.93466
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "5001698",
+        "title": "Teka",
+        "city": "Trà Vinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Teka ở Trà Vinh. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.34081,
+                9.92838
+            ]
+        },
+        "openingHours": null
+    }
+]

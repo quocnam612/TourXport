@@ -2,10 +2,12 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import '../api/api.dart';
+import '../services/google_auth_service.dart';
 import '../utils/auth_feedback.dart';
 import '../widgets/anim_builder.dart';
 import 'sign_up.dart';
 import 'dashboard.dart';
+import 'landing_page.dart';
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({super.key});
@@ -101,6 +103,81 @@ class _SignInScreenState extends State<SignInScreen>
     }
   }
 
+  void _handleGoogleLogin() async {
+    if (_isLoading) return;
+
+    setState(() => _isLoading = true);
+
+    try {
+      final idToken = await GoogleAuthService.signInAndGetIdToken();
+      if (!mounted) return;
+
+      if (idToken == null) {
+        setState(() => _isLoading = false);
+        return;
+      }
+
+      final response = await apiPostJson('/auth/google', {
+        'idToken': idToken,
+      });
+
+      if (!mounted) return;
+      setState(() => _isLoading = false);
+
+      final data = tryDecodeJsonObject(response.body);
+      final msg = data?['message'] as String?;
+
+      if (response.statusCode == 200 && data?['success'] == true) {
+        final user = data?['user'];
+        final userName = user is Map ? user['name'] as String? : null;
+        final authToken = data?['token'] as String?;
+
+        showAuthSuccessToast(
+          context,
+          'Đăng nhập Google thành công — chào ${userName ?? 'bạn'}!',
+        );
+
+        Navigator.pushAndRemoveUntil(
+          context,
+          PageRouteBuilder(
+            pageBuilder: (_, __, ___) => HomeScreen(
+              userName: userName ?? 'bạn',
+              authToken: authToken,
+            ),
+            transitionDuration: const Duration(milliseconds: 600),
+            reverseTransitionDuration: const Duration(milliseconds: 400),
+            transitionsBuilder: (_, animation, __, child) {
+              return FadeTransition(
+                opacity: CurvedAnimation(
+                  parent: animation,
+                  curve: Curves.easeInOut,
+                ),
+                child: SlideTransition(
+                  position: Tween<Offset>(
+                    begin: const Offset(0, 0.05),
+                    end: Offset.zero,
+                  ).animate(CurvedAnimation(
+                    parent: animation,
+                    curve: Curves.easeOutCubic,
+                  )),
+                  child: child,
+                ),
+              );
+            },
+          ),
+          (route) => false,
+        );
+        return;
+      }
+
+      showAuthErrorToast(context, msg ?? 'Đăng nhập Google thất bại');
+    } catch (e) {
+      if (!mounted) return;
+      setState(() => _isLoading = false);
+      showAuthErrorToast(context, 'Đăng nhập Google thất bại ($e)');
+    }
+  }
+
   // ── Animations ──
   late final AnimationController _entranceController;
   late final Animation<double> _headerFade;
@@ -154,10 +231,238 @@ class _SignInScreenState extends State<SignInScreen>
   }
 
   @override
+  @override
   Widget build(BuildContext context) {
     final screenW = MediaQuery.sizeOf(context).width;
+    final isDesktop = screenW >= 800;
     final contentW = screenW > 600 ? 500.0 : screenW;
     final s = contentW / 412;
+
+    if (isDesktop) {
+      return Scaffold(
+        resizeToAvoidBottomInset: true,
+        body: Stack(
+          children: [
+            // ── Background image
+            _buildHeroImage(s),
+
+            // ── Back button
+            _buildBackButton(),
+
+            // ── Centered glassmorphic card for Desktop Web
+            Align(
+              alignment: const Alignment(0.0, -0.20),
+              child: Container(
+                width: 480,
+                decoration: BoxDecoration(
+                  color: Colors.black.withOpacity(0.50),
+                  borderRadius: BorderRadius.circular(36),
+                  border: Border.all(
+                    color: Colors.white.withOpacity(0.12),
+                    width: 1,
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.4),
+                      blurRadius: 30,
+                      offset: const Offset(0, 15),
+                    ),
+                  ],
+                ),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(36),
+                  child: BackdropFilter(
+                    filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
+                    child: SingleChildScrollView(
+                      padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 36),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          // Title
+                          Center(
+                            child: Text(
+                              'Đăng nhập',
+                              style: const TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontWeight: FontWeight.w400,
+                                fontSize: 32,
+                                letterSpacing: 0.35,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(height: 24),
+
+                          // Tab bar
+                          _buildTabBar(1.0, 480 - 40 * 2),
+                          const SizedBox(height: 19),
+
+                          // Fields
+                          AnimatedSwitcher(
+                            duration: const Duration(milliseconds: 300),
+                            transitionBuilder: (child, animation) {
+                              return FadeTransition(opacity: animation, child: child);
+                            },
+                            child: _buildField(
+                              key: ValueKey<bool>(_useEmail),
+                              label: _useEmail ? 'Địa chỉ Email' : 'Số điện thoại',
+                              hint: _useEmail ? 'abc@gmail.com' : '0123456789',
+                              controller: _inputController,
+                              keyboardType: _useEmail
+                                  ? TextInputType.emailAddress
+                                  : TextInputType.phone,
+                              s: 1.0,
+                            ),
+                          ),
+                          const SizedBox(height: 16),
+
+                          _buildField(
+                            label: 'Mật khẩu',
+                            hint: '123abc',
+                            controller: _passwordController,
+                            isPassword: true,
+                            s: 1.0,
+                          ),
+                          const SizedBox(height: 28),
+
+                          // Continue button
+                          _buildContinueButton(1.0),
+                          const SizedBox(height: 24),
+
+                          // Divider
+                          Row(
+                            children: [
+                              Expanded(
+                                child: Divider(
+                                  color: Colors.white.withOpacity(0.4),
+                                  thickness: 1,
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 10),
+                                child: Text(
+                                  'Đăng nhập bằng',
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 14,
+                                    color: Colors.white.withOpacity(0.8),
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                child: Divider(
+                                  color: Colors.white.withOpacity(0.4),
+                                  thickness: 1,
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 16),
+
+                          // Social buttons
+                          SizedBox(
+                            height: 60,
+                            child: Row(
+                              children: [
+                                _buildSocialBtn(
+                                  label: 'Tiếp tục với Google',
+                                  iconAsset: 'assets/icons/gg_logo.png',
+                                  s: 1.0,
+                                  onTap: _handleGoogleLogin,
+                                ),
+                                const SizedBox(width: 10),
+                                _buildSocialBtn(
+                                  label: 'Tiếp tục với Facebook',
+                                  iconAsset: 'assets/icons/fb_logo.png',
+                                  s: 1.0,
+                                ),
+                              ],
+                            ),
+                          ),
+                          const SizedBox(height: 24),
+
+                          // Sign up link
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Text(
+                                'Bạn chưa có tài khoản? ',
+                                style: TextStyle(
+                                  fontFamily: 'Montserrat',
+                                  fontWeight: FontWeight.w400,
+                                  fontSize: 14,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              GestureDetector(
+                                onTap: () => Navigator.push(
+                                  context,
+                                  PageRouteBuilder(
+                                    pageBuilder: (_, __, ___) => const SignUpScreen(),
+                                    transitionDuration: const Duration(milliseconds: 400),
+                                    reverseTransitionDuration: const Duration(milliseconds: 350),
+                                    transitionsBuilder: (_, animation, __, child) {
+                                      return FadeTransition(
+                                        opacity: CurvedAnimation(
+                                          parent: animation,
+                                          curve: Curves.easeInOut,
+                                        ),
+                                        child: SlideTransition(
+                                          position: Tween<Offset>(
+                                            begin: const Offset(0.05, 0),
+                                            end: Offset.zero,
+                                          ).animate(CurvedAnimation(
+                                            parent: animation,
+                                            curve: Curves.easeOutCubic,
+                                          )),
+                                          child: child,
+                                        ),
+                                      );
+                                    },
+                                  ),
+                                ),
+                                child: const Text(
+                                  'Đăng ký',
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 14,
+                                    color: Colors.white,
+                                    decoration: TextDecoration.underline,
+                                    decorationColor: Colors.white70,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 16),
+
+                          // Tagline
+                          const Text(
+                            '"Hạnh phúc không phải là điểm đến\nmà là cả một hành trình."',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontFamily: 'Montserrat',
+                              fontWeight: FontWeight.w300,
+                              fontSize: 13,
+                              letterSpacing: 0.3,
+                              color: Colors.white,
+                              height: 1.5,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      );
+    }
 
     return Scaffold(
       resizeToAvoidBottomInset: true,
@@ -168,7 +473,79 @@ class _SignInScreenState extends State<SignInScreen>
 
           // ── Draggable panel with green transparent overlay
           _buildDraggablePanel(s),
+
+          // ── Back button (top-left)
+          _buildBackButton(),
         ],
+      ),
+    );
+  }
+
+  Widget _buildBackButton() {
+    return SafeArea(
+      child: FadeTransition(
+        opacity: _headerFade,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          child: GestureDetector(
+            onTap: () {
+              if (Navigator.canPop(context)) {
+                Navigator.pop(context);
+              } else {
+                Navigator.pushAndRemoveUntil(
+                  context,
+                  PageRouteBuilder(
+                    // pageBuilder: (_, __, ___) => const LandingPage(),
+                    pageBuilder: (_, __, ___) => HomeScreen(
+                        userName: "Khách",
+                        authToken: null
+                      ),
+                    transitionDuration: const Duration(milliseconds: 600),
+                    reverseTransitionDuration: const Duration(milliseconds: 400),
+                    transitionsBuilder: (_, animation, __, child) {
+                      return FadeTransition(
+                        opacity: CurvedAnimation(
+                          parent: animation,
+                          curve: Curves.easeInOut,
+                        ),
+                        child: SlideTransition(
+                          position: Tween<Offset>(
+                            begin: const Offset(0, 0.05),
+                            end: Offset.zero,
+                          ).animate(CurvedAnimation(
+                            parent: animation,
+                            curve: Curves.easeOutCubic,
+                          )),
+                          child: child,
+                        ),
+                      );
+                    },
+                  ),
+                  (route) => false,
+                );
+              }
+            },
+            child: ClipOval(
+              child: BackdropFilter(
+                filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
+                child: Container(
+                  width: 46,
+                  height: 46,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.white.withOpacity(0.15),
+                    border: Border.all(color: Colors.white.withOpacity(0.25)),
+                  ),
+                  child: const Icon(
+                    Icons.arrow_back_ios_new,
+                    color: Colors.white,
+                    size: 20,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
       ),
     );
   }
@@ -265,8 +642,8 @@ class _SignInScreenState extends State<SignInScreen>
                       SizedBox(height: 24 * s),
 
                       // ── Tab: Điện thoại / Email
-                      _buildTabBar(s),
-                      SizedBox(height: 24 * s),
+                      _buildTabBar(s, MediaQuery.sizeOf(context).width),
+                      SizedBox(height: 19 * s),
 
                       // ── Email / Phone field
                       AnimatedSwitcher(
@@ -341,6 +718,7 @@ class _SignInScreenState extends State<SignInScreen>
                               label: 'Tiếp tục với Google',
                               iconAsset: 'assets/icons/gg_logo.png',
                               s: s,
+                              onTap: _handleGoogleLogin,
                             ),
                             SizedBox(width: 10 * s),
                             _buildSocialBtn(
@@ -439,94 +817,101 @@ class _SignInScreenState extends State<SignInScreen>
   }
 
   // ── Tab bar ──
-  Widget _buildTabBar(double s) {
-    return SizedBox(
-      height: 50 * s,
-      child: Stack(
-        children: [
-          // Nền tối
-          Positioned.fill(
-            child: Container(
-              decoration: BoxDecoration(
-                color: Colors.black.withOpacity(0.5),
-                borderRadius: BorderRadius.circular(40),
+  Widget _buildTabBar(double s, double containerWidth) {
+    final bool isDesktop = MediaQuery.sizeOf(context).width >= 800;
+    final double actualWidth = isDesktop ? containerWidth : containerWidth - 48 * s;
+    final tabWidth = actualWidth / 2;
+
+    return Center(
+      child: SizedBox(
+        width: actualWidth,
+        height: 50 * s,
+        child: Stack(
+          children: [
+            // Nền tối
+            Positioned.fill(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.black.withOpacity(0.5),
+                  borderRadius: BorderRadius.circular(40),
+                ),
               ),
             ),
-          ),
-          // Pill trắng active — animated
-          AnimatedPositioned(
-            duration: const Duration(milliseconds: 250),
-            curve: Curves.easeInOutCubic,
-            left: _useEmail ? (MediaQuery.sizeOf(context).width - 48 * s) / 2 + 5 : 5,
-            top: 5,
-            width: (MediaQuery.sizeOf(context).width - 48 * s) / 2 - 10,
-            height: 40 * s,
-            child: AnimatedContainer(
+            // Pill trắng active — animated
+            AnimatedPositioned(
               duration: const Duration(milliseconds: 250),
-              decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.9),
-                borderRadius: BorderRadius.circular(40),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.25),
-                    blurRadius: 8,
-                    offset: const Offset(0, 4),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          // Điện thoại label
-          Positioned(
-            left: 0,
-            width: (MediaQuery.sizeOf(context).width - 48 * s) / 2,
-            top: 0,
-            bottom: 0,
-            child: GestureDetector(
-              behavior: HitTestBehavior.opaque,
-              onTap: () => setState(() => _useEmail = false),
-              child: Center(
-                child: AnimatedDefaultTextStyle(
-                  duration: const Duration(milliseconds: 200),
-                  style: TextStyle(
-                    fontFamily: 'Montserrat',
-                    fontWeight: FontWeight.w600,
-                    fontSize: 18 * s,
-                    color: _useEmail
-                        ? Colors.white
-                        : const Color(0xFF1C302D),
-                  ),
-                  child: const Text('Điện thoại'),
+              curve: Curves.easeInOutCubic,
+              left: _useEmail ? tabWidth + 5 : 5,
+              top: 5,
+              width: tabWidth - 10,
+              height: 40 * s,
+              child: AnimatedContainer(
+                duration: const Duration(milliseconds: 250),
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.9),
+                  borderRadius: BorderRadius.circular(40),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.25),
+                      blurRadius: 8,
+                      offset: const Offset(0, 4),
+                    ),
+                  ],
                 ),
               ),
             ),
-          ),
-          // Email label
-          Positioned(
-            left: (MediaQuery.sizeOf(context).width - 48 * s) / 2,
-            right: 0,
-            top: 0,
-            bottom: 0,
-            child: GestureDetector(
-              behavior: HitTestBehavior.opaque,
-              onTap: () => setState(() => _useEmail = true),
-              child: Center(
-                child: AnimatedDefaultTextStyle(
-                  duration: const Duration(milliseconds: 200),
-                  style: TextStyle(
-                    fontFamily: 'Montserrat',
-                    fontWeight: FontWeight.w600,
-                    fontSize: 18 * s,
-                    color: _useEmail
-                        ? const Color(0xFF1C302D)
-                        : Colors.white,
+            // Điện thoại label
+            Positioned(
+              left: 0,
+              width: tabWidth,
+              top: 0,
+              bottom: 0,
+              child: GestureDetector(
+                behavior: HitTestBehavior.opaque,
+                onTap: () => setState(() => _useEmail = false),
+                child: Center(
+                  child: AnimatedDefaultTextStyle(
+                    duration: const Duration(milliseconds: 200),
+                    style: TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontWeight: FontWeight.w600,
+                      fontSize: 18 * s,
+                      color: _useEmail
+                          ? Colors.white
+                          : const Color(0xFF1C302D),
+                    ),
+                    child: const Text('Điện thoại'),
                   ),
-                  child: const Text('Email'),
                 ),
               ),
             ),
-          ),
-        ],
+            // Email label
+            Positioned(
+              left: tabWidth,
+              width: tabWidth,
+              top: 0,
+              bottom: 0,
+              child: GestureDetector(
+                behavior: HitTestBehavior.opaque,
+                onTap: () => setState(() => _useEmail = true),
+                child: Center(
+                  child: AnimatedDefaultTextStyle(
+                    duration: const Duration(milliseconds: 200),
+                    style: TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontWeight: FontWeight.w600,
+                      fontSize: 18 * s,
+                      color: _useEmail
+                          ? const Color(0xFF1C302D)
+                          : Colors.white,
+                    ),
+                    child: const Text('Email'),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -669,12 +1054,13 @@ class _SignInScreenState extends State<SignInScreen>
     required String label,
     required String iconAsset,
     required double s,
+    VoidCallback? onTap,
   }) {
     return Expanded(
       child: Material(
         color: Colors.transparent,
         child: InkWell(
-          onTap: () {},
+          onTap: _isLoading ? null : onTap,
           borderRadius: BorderRadius.circular(20),
           splashColor: Colors.white.withOpacity(0.1),
           highlightColor: Colors.white.withOpacity(0.05),

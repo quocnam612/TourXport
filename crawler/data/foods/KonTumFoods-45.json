@@ -1,0 +1,2704 @@
+[
+    {
+        "sourceLocationId": "5324478",
+        "title": "Eva Cafe",
+        "city": "Kontum",
+        "totalScore": 4.8,
+        "ranking": "1/37",
+        "reviewsCount": 157,
+        "category": "Ngồi xuống",
+        "priceRange": "26.316 ₫ - 78.947 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Eva Cafe ở Kontum. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.8/5 từ 157 lượt review. Xếp hạng: 1/37. Giá: 26.316 ₫ - 78.947 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/07/8b/88/61/eva-cafe.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.01938,
+                14.35254
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33052979",
+        "title": "Gỏi Lá Yến Vy Kon Tum",
+        "city": "Kontum",
+        "totalScore": 5.0,
+        "ranking": "2/37",
+        "reviewsCount": 14,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Gỏi Lá Yến Vy Kon Tum ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 14 lượt review. Xếp hạng: 2/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/8f/12/a5/quan-quan-h-i-thi-sang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.69644,
+                10.78317
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21170146",
+        "title": "Xô Xôn Café",
+        "city": "Kontum",
+        "totalScore": 5.0,
+        "ranking": "3/37",
+        "reviewsCount": 14,
+        "category": "Ngồi xuống",
+        "priceRange": "26.316 ₫ - 78.947 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Xô Xôn Café ở Kontum. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 14 lượt review. Xếp hạng: 3/37. Giá: 26.316 ₫ - 78.947 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/24/8a/bf/2c/family-time.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 630
+                    },
+                    {
+                        "open_time": 870,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 630
+                    },
+                    {
+                        "open_time": 870,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 630
+                    },
+                    {
+                        "open_time": 870,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 630
+                    },
+                    {
+                        "open_time": 870,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 630
+                    },
+                    {
+                        "open_time": 870,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 630
+                    },
+                    {
+                        "open_time": 870,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 630
+                    },
+                    {
+                        "open_time": 870,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "6209224",
+        "title": "Indochine Cafe",
+        "city": "Kontum",
+        "totalScore": 4.0,
+        "ranking": "4/37",
+        "reviewsCount": 36,
+        "category": "Quán cafe",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Indochine Cafe ở Kontum. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 4.0/5 từ 36 lượt review. Xếp hạng: 4/37. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/41/76/2e/cafe-indochine.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.98102,
+                14.38039
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19139045",
+        "title": "Gác Măng Rê Café",
+        "city": "Kontum",
+        "totalScore": 5.0,
+        "ranking": "5/37",
+        "reviewsCount": 7,
+        "category": "Quán cafe",
+        "priceRange": "315.789.472 ₫ - 2.147.483.647 ₫",
+        "description": "Gác Măng Rê Café & Restaurant là một quán cà phê và cũng là một nhà hàng phục vụ những bữa ăn đảm bảo chất lượng.",
+        "embedding": null,
+        "searchText": "Gác Măng Rê Café ở Kontum. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Mô tả: Gác Măng Rê Café & Restaurant là một quán cà phê và cũng là một nhà hàng phục vụ những bữa ăn đảm bảo chất lượng. Đánh giá: 5.0/5 từ 7 lượt review. Xếp hạng: 5/37. Giá: 315.789.472 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/cf/c1/dc/gac-mang-re-cafe-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.01522,
+                14.350231
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33502559",
+        "title": "Trường Thịnh Garden Coffee",
+        "city": "Kontum",
+        "totalScore": 5.0,
+        "ranking": "6/37",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trường Thịnh Garden Coffee ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 6/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/14/b9/84/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.9997,
+                14.35255
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "11886124",
+        "title": "Gỏi Lá Út Cưng",
+        "city": "Kontum",
+        "totalScore": 4.6,
+        "ranking": "7/37",
+        "reviewsCount": 10,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Gỏi Lá Út Cưng ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.6/5 từ 10 lượt review. Xếp hạng: 7/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/c1/c3/31/real-deal-jungle-food.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.01426,
+                14.3497
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10200263",
+        "title": "Nhà Hàng BBQ Đệ Nhất Quán",
+        "city": "Kontum",
+        "totalScore": 4.1,
+        "ranking": "8/37",
+        "reviewsCount": 11,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng BBQ Đệ Nhất Quán ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.1/5 từ 11 lượt review. Xếp hạng: 8/37. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/75/e6/f5/inside.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.025764,
+                14.362658
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23899268",
+        "title": "Cô Sinh - Gà Nướng & Cơm Lam",
+        "city": "Măng Đen",
+        "totalScore": 4.7,
+        "ranking": "9/37",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cô Sinh - Gà Nướng & Cơm Lam ở Măng Đen. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.7/5 từ 3 lượt review. Xếp hạng: 9/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.300545,
+                14.59836
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1110
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33593494",
+        "title": "The Dé",
+        "city": "Kontum",
+        "totalScore": 5.0,
+        "ranking": "10/37",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Dé ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 10/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/31/0d/e2/4a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.99996,
+                14.355005
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21302525",
+        "title": "Măng Đỏ Quán",
+        "city": "Măng Đen",
+        "totalScore": 5.0,
+        "ranking": "11/37",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "1.052.631.552 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Măng Đỏ Quán ở Măng Đen. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 11/37. Giá: 1.052.631.552 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/33/29/79/06/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.300545,
+                14.59836
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11886686",
+        "title": "Hnam Chang Ngeh",
+        "city": "Kontum",
+        "totalScore": 4.4,
+        "ranking": "12/37",
+        "reviewsCount": 7,
+        "category": "Ngồi xuống",
+        "priceRange": "1.184.210.560 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hnam Chang Ngeh ở Kontum. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.4/5 từ 7 lượt review. Xếp hạng: 12/37. Giá: 1.184.210.560 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/ec/1c/3e/hnam-chang-ngeh-salad.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00737,
+                14.34443
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33408705",
+        "title": "Nhà Hàng Sân Vườn Đồi Tuyết",
+        "city": "Kontum",
+        "totalScore": 4.8,
+        "ranking": "13/37",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Sân Vườn Đồi Tuyết ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.8/5 từ 2 lượt review. Xếp hạng: 13/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/88/a8/b3/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.99784,
+                14.3717
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "7074832",
+        "title": "Hiệp Thành",
+        "city": "Kontum",
+        "totalScore": 3.8,
+        "ranking": "14/37",
+        "reviewsCount": 14,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hiệp Thành ở Kontum. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.8/5 từ 14 lượt review. Xếp hạng: 14/37.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/74/de/31/inside-hiep-thanh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00223,
+                14.34605
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-20:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1230
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23345215",
+        "title": "Silent Beans",
+        "city": "Kontum",
+        "totalScore": 5.0,
+        "ranking": "15/37",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Silent Beans ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 15/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/7a/46/b6/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.229095,
+                16.07908
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23949781",
+        "title": "Mì Cay Kitachi",
+        "city": "Kontum",
+        "totalScore": 5.0,
+        "ranking": "16/37",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mì Cay Kitachi ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 16/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/27/be/35/43/5.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.66703,
+                10.752705
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33671875",
+        "title": "Quán nhậu Tâm",
+        "city": "Kontum",
+        "totalScore": 5.0,
+        "ranking": "17/37",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán nhậu Tâm ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 17/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/31/17/87/ed/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.99316,
+                14.366815
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33671877",
+        "title": "Trâm Cháo Vịt",
+        "city": "Kontum",
+        "totalScore": 5.0,
+        "ranking": "18/37",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trâm Cháo Vịt ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 18/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/31/17/88/4f/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.002174,
+                14.349293
+            ]
+        },
+        "openingHours": {
+            "display": "14:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33670463",
+        "title": "HaLong Tea",
+        "city": "Kontum",
+        "totalScore": 5.0,
+        "ranking": "19/37",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "HaLong Tea ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 19/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/15/1c/44/menu-da-d-ng.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00291,
+                14.352423
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33559640",
+        "title": "An Yên Farm and coffee",
+        "city": "Kontum",
+        "totalScore": 5.0,
+        "ranking": "20/37",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "An Yên Farm and coffee ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 20/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/0d/31/01/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00894,
+                14.349008
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33593499",
+        "title": "Quán ăn Bà Nội",
+        "city": "Kontum",
+        "totalScore": 5.0,
+        "ranking": "21/37",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán ăn Bà Nội ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 21/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/0d/e2/a3/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.011116,
+                14.349966
+            ]
+        },
+        "openingHours": {
+            "display": "11:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33502594",
+        "title": "Gà Nướng Cơm Lam Phố Núi",
+        "city": "Măng Đen",
+        "totalScore": 5.0,
+        "ranking": "22/37",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Gà Nướng Cơm Lam Phố Núi ở Măng Đen. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 22/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/0b/f2/6f/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.273285,
+                14.56588
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-20:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33502410",
+        "title": "Tiệm Cà Phê Bên Suối",
+        "city": "Kontum",
+        "totalScore": 5.0,
+        "ranking": "23/37",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tiệm Cà Phê Bên Suối ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 23/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/04/a7/56/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.99386,
+                14.36839
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33502396",
+        "title": "Dốc Cà Phê",
+        "city": "Kontum",
+        "totalScore": 5.0,
+        "ranking": "24/37",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dốc Cà Phê ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 24/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/04/a3/c0/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.0059,
+                14.350948
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33502442",
+        "title": "Nâu Garden",
+        "city": "Kontum",
+        "totalScore": 5.0,
+        "ranking": "25/37",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nâu Garden ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 25/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/04/a8/1a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.06442,
+                12.695536
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33502592",
+        "title": "Tiệm Cà Phê Thung Lũng Mây Măng Đen",
+        "city": "Măng Đen",
+        "totalScore": 5.0,
+        "ranking": "26/37",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tiệm Cà Phê Thung Lũng Mây Măng Đen ở Măng Đen. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 26/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/04/a2/b4/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.96988,
+                22.488888
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "5936602",
+        "title": "Nem ninh hoa, Kontum",
+        "city": "Kontum",
+        "totalScore": 3.9,
+        "ranking": "27/37",
+        "reviewsCount": 9,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nem ninh hoa, Kontum ở Kontum. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.9/5 từ 9 lượt review. Xếp hạng: 27/37.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/e6/e8/f9/vous-pouvez-aussi-emporter.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00545,
+                14.34968
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25325961",
+        "title": "Le Paris",
+        "city": "Kontum",
+        "totalScore": 5.0,
+        "ranking": "28/37",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Le Paris ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 28/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/40/7e/76/plaisir-d-une-table-sympathiqu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00837,
+                14.35507
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "24122845",
+        "title": "Maru Ice Cream And Tea",
+        "city": "Kontum",
+        "totalScore": 5.0,
+        "ranking": "29/37",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Maru Ice Cream And Tea ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 29/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/24/33/71/bc/ice-cream.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00591,
+                14.350277
+            ]
+        },
+        "openingHours": {
+            "display": "16:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10745974",
+        "title": "Rita - Nhà hàng Pizza & Pasta",
+        "city": "Kontum",
+        "totalScore": 3.8,
+        "ranking": "30/37",
+        "reviewsCount": 12,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Rita - Nhà hàng Pizza & Pasta ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.8/5 từ 12 lượt review. Xếp hạng: 30/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/0e/f4/0d/d9/grilled-salmon-with-lemon.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00438,
+                14.350046
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15216474",
+        "title": "Journey Cafe",
+        "city": "Kontum",
+        "totalScore": 4.5,
+        "ranking": "31/37",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Journey Cafe ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 31/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/15/13/32/96/logo-journey-cafe.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.99375,
+                14.35968
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23949771",
+        "title": "Gu Coffee",
+        "city": "Kontum",
+        "totalScore": 5.0,
+        "ranking": "32/37",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Gu Coffee ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 32/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.0044,
+                14.345411
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33502439",
+        "title": "Quán 15",
+        "city": "Kontum",
+        "totalScore": 4.0,
+        "ranking": "33/37",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán 15 ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 33/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/0d/e5/cb/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.99889,
+                14.349182
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33502413",
+        "title": "Quán Bò Né Lam",
+        "city": "Kontum",
+        "totalScore": 4.0,
+        "ranking": "34/37",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Bò Né Lam ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 34/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/04/a6/1a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00281,
+                14.356782
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-20:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1230
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13875471",
+        "title": "Phở Khô",
+        "city": "Kontum",
+        "totalScore": 4.0,
+        "ranking": "35/37",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phở Khô ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 35/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00964,
+                14.34552
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10825950",
+        "title": "Kon Tum Foods & Drinks",
+        "city": "Kontum",
+        "totalScore": 3.5,
+        "ranking": "36/37",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kon Tum Foods & Drinks ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.5/5 từ 2 lượt review. Xếp hạng: 36/37.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/7b/0c/b3/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00099,
+                14.35206
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10797826",
+        "title": "Freedom Pub",
+        "city": "Kontum",
+        "totalScore": 2.0,
+        "ranking": "37/37",
+        "reviewsCount": 2,
+        "category": "Quán cafe",
+        "priceRange": "394.736.832 ₫ - 1.578.947.328 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Freedom Pub ở Kontum. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 2.0/5 từ 2 lượt review. Xếp hạng: 37/37. Giá: 394.736.832 ₫ - 1.578.947.328 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/8d/37/67/freedom-pub-luon-don.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00811,
+                14.345302
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20973838",
+        "title": "Hannara - Korean Food & Drink",
+        "city": "Kontum",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "789.473.664 ₫ - 1.578.947.328 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hannara - Korean Food & Drink ở Kontum. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 789.473.664 ₫ - 1.578.947.328 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/57/49/4b/pork-kimchi-jjigae.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.0007,
+                14.35519
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13943355",
+        "title": "Quán Nhậu 10h",
+        "city": "Kontum",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Nhậu 10h ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.01638,
+                14.358122
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27518204",
+        "title": "Định Kontum",
+        "city": "Kontum",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Định Kontum ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00759,
+                14.35451
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ],
+                [],
+                [],
+                [],
+                []
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "4212701",
+        "title": "Com Nieu Bon Mua",
+        "city": "Kontum",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Com Nieu Bon Mua ở Kontum. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00223,
+                14.34605
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23919293",
+        "title": "Chò Nâu Vibes",
+        "city": "Kontum",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Nhà hàng Âu giữa thành phố núi, nơi mọi thực khách đều là người nhà. Chúng tôi mong muốn mang nét Âu đến gần người Kon Tum hơn qua các món ăn tinh tế, rượu vang cổ điển và sự giàu lòng hiếu khách.",
+        "embedding": null,
+        "searchText": "Chò Nâu Vibes ở Kontum. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Nhà hàng Âu giữa thành phố núi, nơi mọi thực khách đều là người nhà. Chúng tôi mong muốn mang nét Âu đến gần người Kon Tum hơn qua các món ăn tinh tế, rượu vang cổ điển và sự giàu lòng hiếu khách.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.01062,
+                14.349938
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "24100381",
+        "title": "VegAn Home Măng Đen",
+        "city": "Măng Đen",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Homestay Có Phục Vụ Bữa Ăn Thuần Chay",
+        "embedding": null,
+        "searchText": "VegAn Home Măng Đen ở Măng Đen. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Homestay Có Phục Vụ Bữa Ăn Thuần Chay",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/24/c5/21/fb/banh-m-nha-lam.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.24929,
+                14.604521
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34260045",
+        "title": "1300'S Coffee Măng Đen",
+        "city": "Măng Đen",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "526.315.776 ₫ - 2.147.483.647 ₫",
+        "description": "Traveling to ̆ Đ - The Hidden Gem of Central Highlands Vietnam? Stop at ’ enjoying highland grown at 1,300m above the sea level. A cozy mountain stop for road-trippers, hikers, couples & coffee lovers.",
+        "embedding": null,
+        "searchText": "1300'S Coffee Măng Đen ở Măng Đen. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Traveling to ̆ Đ - The Hidden Gem of Central Highlands Vietnam? Stop at ’ enjoying highland grown at 1,300m above the sea level. A cozy mountain stop for road-trippers, hikers, couples & coffee lovers. Giá: 526.315.776 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/d5/0c/24/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.00948,
+                14.379292
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33311938",
+        "title": "H're Grilling Mang Den",
+        "city": "Măng Đen",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "H're Grilling Mang Den ở Măng Đen. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/6c/fa/2e/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.99817,
+                14.35988
+            ]
+        },
+        "openingHours": null
+    }
+]

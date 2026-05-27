@@ -1,0 +1,872 @@
+[
+    {
+        "sourceLocationId": "15179918",
+        "title": "Melia Vinpearl Quang Binh",
+        "city": "Đồng Hới, Tỉnh Quảng Bình",
+        "totalScore": 4.9,
+        "ranking": "1/557",
+        "reviewsCount": 671,
+        "category": "Khách sạn",
+        "priceRange": "1.342.105 ₫ - 2.973.684 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Melia Vinpearl Quang Binh ở Đồng Hới, Tỉnh Quảng Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 671 lượt review. Xếp hạng: 1/557. Giá: 1.342.105 ₫ - 2.973.684 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/26/d2/ee/e2/melia-vinpearl-quang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.62647,
+                17.465631
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23365248",
+        "title": "SAM Quảng Bình Hotel",
+        "city": "Đồng Hới, Tỉnh Quảng Bình",
+        "totalScore": 5.0,
+        "ranking": "2/557",
+        "reviewsCount": 190,
+        "category": "Khách sạn",
+        "priceRange": "868.421 ₫ - 1.342.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "SAM Quảng Bình Hotel ở Đồng Hới, Tỉnh Quảng Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 190 lượt review. Xếp hạng: 2/557. Giá: 868.421 ₫ - 1.342.105 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1d/48/11/84/sam-qu-ng-binh-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.60665,
+                17.46976
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8627203",
+        "title": "Khách sạn Mường Thanh Luxury Nhật Lệ",
+        "city": "Đồng Hới, Tỉnh Quảng Bình",
+        "totalScore": 4.7,
+        "ranking": "3/557",
+        "reviewsCount": 536,
+        "category": "Khách sạn",
+        "priceRange": "868.421 ₫ - 2.789.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Mường Thanh Luxury Nhật Lệ ở Đồng Hới, Tỉnh Quảng Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.7/5 từ 536 lượt review. Xếp hạng: 3/557. Giá: 868.421 ₫ - 2.789.474 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/d2/26/09/khach-s-n-mu-ng-thanh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.627014,
+                17.486885
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23746412",
+        "title": "Bến du thuyền Citadines  Hạ Long",
+        "city": "Quang Ninh, Tỉnh Quảng Bình",
+        "totalScore": 4.9,
+        "ranking": "4/557",
+        "reviewsCount": 329,
+        "category": "Khách sạn",
+        "priceRange": "789.474 ₫ - 2.552.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Bến du thuyền Citadines  Hạ Long ở Quang Ninh, Tỉnh Quảng Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 329 lượt review. Xếp hạng: 4/557. Giá: 789.474 ₫ - 2.552.632 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/2e/ae/f2/studio-deluxe.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.0132,
+                20.953678
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1930272",
+        "title": "Phong Nha Farmstay",
+        "city": "Vườn quốc gia Phong Nha-Kẻ Bàng, Tỉnh Quảng Bình",
+        "totalScore": 4.6,
+        "ranking": "5/557",
+        "reviewsCount": 1509,
+        "category": "Khách sạn",
+        "priceRange": "315.789 ₫ - 2.684.211 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Phong Nha Farmstay ở Vườn quốc gia Phong Nha-Kẻ Bàng, Tỉnh Quảng Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 1509 lượt review. Xếp hạng: 5/557. Giá: 315.789 ₫ - 2.684.211 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/02/43/4c/swim-and-unwind-by-our.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.38546,
+                17.624653
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23297198",
+        "title": "Celina Peninsula Resort",
+        "city": "Đồng Hới, Tỉnh Quảng Bình",
+        "totalScore": 4.9,
+        "ranking": "6/557",
+        "reviewsCount": 196,
+        "category": "Khách sạn",
+        "priceRange": "1.657.895 ₫ - 2.342.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Celina Peninsula Resort ở Đồng Hới, Tỉnh Quảng Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 196 lượt review. Xếp hạng: 6/557. Giá: 1.657.895 ₫ - 2.342.105 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/25/76/4c/23/c-nh-quan-resort.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.64465,
+                17.459763
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14494713",
+        "title": "Nguyen Shack Retreat",
+        "city": "Phong Nha, Tỉnh Quảng Bình",
+        "totalScore": 4.9,
+        "ranking": "7/557",
+        "reviewsCount": 208,
+        "category": "Khách sạn",
+        "priceRange": "289.474 ₫ - 473.684 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nguyen Shack Retreat ở Phong Nha, Tỉnh Quảng Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 208 lượt review. Xếp hạng: 7/557. Giá: 289.474 ₫ - 473.684 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/b9/8c/1a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.32889,
+                17.600622
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12847152",
+        "title": "Victory Road Villas",
+        "city": "Vườn quốc gia Phong Nha-Kẻ Bàng, Tỉnh Quảng Bình",
+        "totalScore": 4.9,
+        "ranking": "8/557",
+        "reviewsCount": 171,
+        "category": "Khách sạn",
+        "priceRange": "1.578.947 ₫ - 5.921.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Victory Road Villas ở Vườn quốc gia Phong Nha-Kẻ Bàng, Tỉnh Quảng Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 171 lượt review. Xếp hạng: 8/557. Giá: 1.578.947 ₫ - 5.921.053 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/00/65/d0/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.3008,
+                17.606667
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4841606",
+        "title": "Muong Thanh Holiday Quang Binh Hotel",
+        "city": "Đồng Hới, Tỉnh Quảng Bình",
+        "totalScore": 4.6,
+        "ranking": "9/557",
+        "reviewsCount": 453,
+        "category": "Khách sạn",
+        "priceRange": "710.526 ₫ - 1.447.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Muong Thanh Holiday Quang Binh Hotel ở Đồng Hới, Tỉnh Quảng Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 453 lượt review. Xếp hạng: 9/557. Giá: 710.526 ₫ - 1.447.368 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/43/dc/92/khu-v-c-h-boi.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.62701,
+                17.4863
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "5970422",
+        "title": "Khách Sạn Nam Long Plus",
+        "city": "Đồng Hới, Tỉnh Quảng Bình",
+        "totalScore": 4.8,
+        "ranking": "10/557",
+        "reviewsCount": 537,
+        "category": "Khách sạn",
+        "priceRange": "368.421 ₫ - 552.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn Nam Long Plus ở Đồng Hới, Tỉnh Quảng Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 537 lượt review. Xếp hạng: 10/557. Giá: 368.421 ₫ - 552.632 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/ff/0c/13/nam-long-plus-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.62306,
+                17.478376
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8090821",
+        "title": "Jungle Boss Homestay",
+        "city": "Vườn quốc gia Phong Nha-Kẻ Bàng, Tỉnh Quảng Bình",
+        "totalScore": 4.9,
+        "ranking": "11/557",
+        "reviewsCount": 230,
+        "category": "Khách sạn nhỏ sang trọng",
+        "priceRange": "368.421 ₫ - 447.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Jungle Boss Homestay ở Vườn quốc gia Phong Nha-Kẻ Bàng, Tỉnh Quảng Bình. Loại địa điểm: Khách sạn nhỏ sang trọng. Tags: Khách sạn nhỏ sang trọng. Đánh giá: 4.9/5 từ 230 lượt review. Xếp hạng: 11/557. Giá: 368.421 ₫ - 447.368 ₫.",
+        "tags": [
+            "Khách sạn nhỏ sang trọng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/42/94/6f/jungle-boss-homestay.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.29131,
+                17.595081
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1817901",
+        "title": "Khách sạn Nam Long",
+        "city": "Đồng Hới, Tỉnh Quảng Bình",
+        "totalScore": 4.5,
+        "ranking": "12/557",
+        "reviewsCount": 565,
+        "category": "Khách sạn nhỏ",
+        "priceRange": "263.158 ₫ - 421.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Nam Long ở Đồng Hới, Tỉnh Quảng Bình. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 4.5/5 từ 565 lượt review. Xếp hạng: 12/557. Giá: 263.158 ₫ - 421.053 ₫.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/05/6a/31/7f/nam-long-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.62313,
+                17.476435
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4354810",
+        "title": "Phong Nha Lake House Resort",
+        "city": "Hung Trach, Tỉnh Quảng Bình",
+        "totalScore": 4.5,
+        "ranking": "13/557",
+        "reviewsCount": 723,
+        "category": "Khách sạn",
+        "priceRange": "921.053 ₫ - 1.526.316 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Phong Nha Lake House Resort ở Hung Trach, Tỉnh Quảng Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.5/5 từ 723 lượt review. Xếp hạng: 13/557. Giá: 921.053 ₫ - 1.526.316 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/77/5c/d1/phong-nha-lake-house.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.376015,
+                17.617764
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17427009",
+        "title": "Funny Monkeys Homestay",
+        "city": "Phong Nha, Tỉnh Quảng Bình",
+        "totalScore": 4.9,
+        "ranking": "14/557",
+        "reviewsCount": 105,
+        "category": "Nhà ngoại ô",
+        "priceRange": "578.947 ₫ - 921.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Funny Monkeys Homestay ở Phong Nha, Tỉnh Quảng Bình. Loại địa điểm: Nhà ngoại ô. Tags: Nhà ngoại ô. Đánh giá: 4.9/5 từ 105 lượt review. Xếp hạng: 14/557. Giá: 578.947 ₫ - 921.053 ₫.",
+        "tags": [
+            "Nhà ngoại ô"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/5e/7a/a0/dinner-time-in-riverside.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.30287,
+                17.610304
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8338057",
+        "title": "Phong Nha Mountain House",
+        "city": "Vườn quốc gia Phong Nha-Kẻ Bàng, Tỉnh Quảng Bình",
+        "totalScore": 4.8,
+        "ranking": "15/557",
+        "reviewsCount": 195,
+        "category": "Nhà nghỉ",
+        "priceRange": "605.263 ₫ - 789.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Phong Nha Mountain House ở Vườn quốc gia Phong Nha-Kẻ Bàng, Tỉnh Quảng Bình. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 4.8/5 từ 195 lượt review. Xếp hạng: 15/557. Giá: 605.263 ₫ - 789.474 ₫.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/80/d3/23/ho-an-owner-phong-nha.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.2869,
+                17.594566
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11741817",
+        "title": "Nguyễn Shack Retreat",
+        "city": "Tỉnh Quảng Bình",
+        "totalScore": 4.7,
+        "ranking": "16/557",
+        "reviewsCount": 233,
+        "category": "Nhà nghỉ",
+        "priceRange": "289.474 ₫ - 657.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nguyễn Shack Retreat ở Tỉnh Quảng Bình. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 4.7/5 từ 233 lượt review. Xếp hạng: 16/557. Giá: 289.474 ₫ - 657.895 ₫.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/82/94/34/nguyen-shack-phong-nha.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.32888,
+                17.600624
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "18178823",
+        "title": "Karst Villas Phong Nha",
+        "city": "Hung Trach, Tỉnh Quảng Bình",
+        "totalScore": 5.0,
+        "ranking": "17/557",
+        "reviewsCount": 49,
+        "category": "Khách sạn",
+        "priceRange": "921.053 ₫ - 1.105.263 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Karst Villas Phong Nha ở Hung Trach, Tỉnh Quảng Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 49 lượt review. Xếp hạng: 17/557. Giá: 921.053 ₫ - 1.105.263 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/e1/17/84/karst-villas-phong-nha.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.33629,
+                17.610563
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8595503",
+        "title": "Thảo Nguyên Homestay",
+        "city": "Vườn quốc gia Phong Nha-Kẻ Bàng, Tỉnh Quảng Bình",
+        "totalScore": 4.8,
+        "ranking": "18/557",
+        "reviewsCount": 113,
+        "category": "Nhà trọ",
+        "priceRange": "394.737 ₫ - 815.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Thảo Nguyên Homestay ở Vườn quốc gia Phong Nha-Kẻ Bàng, Tỉnh Quảng Bình. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 4.8/5 từ 113 lượt review. Xếp hạng: 18/557. Giá: 394.737 ₫ - 815.789 ₫.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/ba/f5/b1/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.30949,
+                17.61002
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15632619",
+        "title": "Hưng Phát Bungalow",
+        "city": "Son Trach, Tỉnh Quảng Bình",
+        "totalScore": 4.8,
+        "ranking": "19/557",
+        "reviewsCount": 77,
+        "category": "Nhà nghỉ",
+        "priceRange": "500.000 ₫ - 763.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hưng Phát Bungalow ở Son Trach, Tỉnh Quảng Bình. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 4.8/5 từ 77 lượt review. Xếp hạng: 19/557. Giá: 500.000 ₫ - 763.158 ₫.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/c6/f0/01/hung-phat-bungalow.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.32354,
+                17.617186
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10680494",
+        "title": "Khu nghỉ dưỡng Chày Lập Farmstay",
+        "city": "Vườn quốc gia Phong Nha-Kẻ Bàng, Tỉnh Quảng Bình",
+        "totalScore": 4.4,
+        "ranking": "20/557",
+        "reviewsCount": 261,
+        "category": "Nhà trại",
+        "priceRange": "868.421 ₫ - 1.421.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu nghỉ dưỡng Chày Lập Farmstay ở Vườn quốc gia Phong Nha-Kẻ Bàng, Tỉnh Quảng Bình. Loại địa điểm: Nhà trại. Tags: Nhà trại. Đánh giá: 4.4/5 từ 261 lượt review. Xếp hạng: 20/557. Giá: 868.421 ₫ - 1.421.053 ₫.",
+        "tags": [
+            "Nhà trại"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/76/c2/3e/the-farm-house-has-a.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.26147,
+                17.6033
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8553821",
+        "title": "Nhà nghỉ du lịch Green River",
+        "city": "Vườn quốc gia Phong Nha-Kẻ Bàng, Tỉnh Quảng Bình",
+        "totalScore": 4.8,
+        "ranking": "21/557",
+        "reviewsCount": 116,
+        "category": "Nhà trọ",
+        "priceRange": "500.000 ₫ - 657.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà nghỉ du lịch Green River ở Vườn quốc gia Phong Nha-Kẻ Bàng, Tỉnh Quảng Bình. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 4.8/5 từ 116 lượt review. Xếp hạng: 21/557. Giá: 500.000 ₫ - 657.895 ₫.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/5a/e0/ae/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.29902,
+                17.604336
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27738193",
+        "title": "Poseido Hotel Quảng Bình",
+        "city": "Đồng Hới, Tỉnh Quảng Bình",
+        "totalScore": 4.9,
+        "ranking": "22/557",
+        "reviewsCount": 50,
+        "category": "Khách sạn nhỏ",
+        "priceRange": "1.210.526 ₫ - 3.842.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Poseido Hotel Quảng Bình ở Đồng Hới, Tỉnh Quảng Bình. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 4.9/5 từ 50 lượt review. Xếp hạng: 22/557. Giá: 1.210.526 ₫ - 3.842.105 ₫.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/6b/7e/1c/m-t-ti-n-khach-s-n-hu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.621605,
+                17.49993
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12999387",
+        "title": "Phong Nha-Tuan Garden House",
+        "city": "Vườn quốc gia Phong Nha-Kẻ Bàng, Tỉnh Quảng Bình",
+        "totalScore": 4.9,
+        "ranking": "23/557",
+        "reviewsCount": 83,
+        "category": "Nhà trọ",
+        "priceRange": "657.895 ₫ - 815.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Phong Nha-Tuan Garden House ở Vườn quốc gia Phong Nha-Kẻ Bàng, Tỉnh Quảng Bình. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 4.9/5 từ 83 lượt review. Xếp hạng: 23/557. Giá: 657.895 ₫ - 815.789 ₫.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/24/b8/fd/phong-nha-tuan-garden.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.316154,
+                17.613882
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13810487",
+        "title": "Carambola Bungalow",
+        "city": "Phong Nha, Tỉnh Quảng Bình",
+        "totalScore": 4.8,
+        "ranking": "24/557",
+        "reviewsCount": 107,
+        "category": "B&B",
+        "priceRange": "500.000 ₫ - 710.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Carambola Bungalow ở Phong Nha, Tỉnh Quảng Bình. Loại địa điểm: B&B. Tags: B&B. Đánh giá: 4.8/5 từ 107 lượt review. Xếp hạng: 24/557. Giá: 500.000 ₫ - 710.526 ₫.",
+        "tags": [
+            "B&B"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/50/2e/c2/new-photos.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.29126,
+                17.599054
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4895548",
+        "title": "Khách sạn Geminai",
+        "city": "Đồng Hới, Tỉnh Quảng Bình",
+        "totalScore": 4.5,
+        "ranking": "25/557",
+        "reviewsCount": 229,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Geminai ở Đồng Hới, Tỉnh Quảng Bình. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.5/5 từ 229 lượt review. Xếp hạng: 25/557.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/14/41/20/4f/a-tropical-house.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.62361,
+                17.477135
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10514141",
+        "title": "Sy's Homestay",
+        "city": "Vườn quốc gia Phong Nha-Kẻ Bàng, Tỉnh Quảng Bình",
+        "totalScore": 4.8,
+        "ranking": "26/557",
+        "reviewsCount": 133,
+        "category": "Nhà nghỉ",
+        "priceRange": "763.158 ₫ - 868.421 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Sy's Homestay ở Vườn quốc gia Phong Nha-Kẻ Bàng, Tỉnh Quảng Bình. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 4.8/5 từ 133 lượt review. Xếp hạng: 26/557. Giá: 763.158 ₫ - 868.421 ₫.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/26/c2/1b/48/local-food.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.32382,
+                17.615667
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4328716",
+        "title": "Pepperhouse Homestay",
+        "city": "Vườn quốc gia Phong Nha-Kẻ Bàng, Tỉnh Quảng Bình",
+        "totalScore": 4.8,
+        "ranking": "27/557",
+        "reviewsCount": 154,
+        "category": "Nhà trọ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pepperhouse Homestay ở Vườn quốc gia Phong Nha-Kẻ Bàng, Tỉnh Quảng Bình. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 4.8/5 từ 154 lượt review. Xếp hạng: 27/557.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/b8/22/8d/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37188,
+                17.612638
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13005625",
+        "title": "Dolphin Home",
+        "city": "Đồng Hới, Tỉnh Quảng Bình",
+        "totalScore": 4.9,
+        "ranking": "28/557",
+        "reviewsCount": 68,
+        "category": "Nhà trọ",
+        "priceRange": "289.474 ₫ - 368.421 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Dolphin Home ở Đồng Hới, Tỉnh Quảng Bình. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 4.9/5 từ 68 lượt review. Xếp hạng: 28/557. Giá: 289.474 ₫ - 368.421 ₫.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/71/96/df/breakfast.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.62339,
+                17.476679
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10202450",
+        "title": "Paradise Hotel",
+        "city": "Vườn quốc gia Phong Nha-Kẻ Bàng, Tỉnh Quảng Bình",
+        "totalScore": 4.5,
+        "ranking": "29/557",
+        "reviewsCount": 141,
+        "category": "Khách sạn nhỏ",
+        "priceRange": "289.474 ₫ - 894.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Paradise Hotel ở Vườn quốc gia Phong Nha-Kẻ Bàng, Tỉnh Quảng Bình. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 4.5/5 từ 141 lượt review. Xếp hạng: 29/557. Giá: 289.474 ₫ - 894.737 ₫.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/04/98/7c/paradise-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.30941,
+                17.610338
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "648918",
+        "title": "Sun Spa Resort Quảng Bình Việt Nam",
+        "city": "Bao Ninh, Tỉnh Quảng Bình",
+        "totalScore": 3.8,
+        "ranking": "30/557",
+        "reviewsCount": 442,
+        "category": "Khu nghỉ dưỡng",
+        "priceRange": "1.684.211 ₫ - 4.342.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Sun Spa Resort Quảng Bình Việt Nam ở Bao Ninh, Tỉnh Quảng Bình. Loại địa điểm: Khu nghỉ dưỡng. Tags: Khu nghỉ dưỡng. Đánh giá: 3.8/5 từ 442 lượt review. Xếp hạng: 30/557. Giá: 1.684.211 ₫ - 4.342.105 ₫.",
+        "tags": [
+            "Khu nghỉ dưỡng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/de/51/de/peninsula.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.63397,
+                17.479565
+            ]
+        },
+        "openingHours": null
+    }
+]

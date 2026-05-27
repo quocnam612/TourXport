@@ -1,0 +1,2102 @@
+[
+    {
+        "sourceLocationId": "22956426",
+        "title": "Troc's Pizza",
+        "city": "Tây Ninh",
+        "totalScore": 5.0,
+        "ranking": "1/26",
+        "reviewsCount": 19,
+        "category": "Ngồi xuống",
+        "priceRange": "1.815.789.440 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Troc's Pizza ở Tây Ninh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 19 lượt review. Xếp hạng: 1/26. Giá: 1.815.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/21/c8/6b/8d/troc-s-pizza-in-tay-ninh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.15442,
+                11.313558
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "31063646",
+        "title": "Twitter Beans Coffee_ Phan Bội Châu",
+        "city": "Hà Nội",
+        "totalScore": 5.0,
+        "ranking": "968/3710",
+        "reviewsCount": 8,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Twitter Beans Coffee_ Phan Bội Châu ở Hà Nội. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 8 lượt review. Xếp hạng: 968/3710. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/4e/69/72/m-t-quan-cafe-gay-thuong.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.09174,
+                11.316792
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13446451",
+        "title": "La Dem Bistro",
+        "city": "Tây Ninh",
+        "totalScore": 4.7,
+        "ranking": "2/26",
+        "reviewsCount": 24,
+        "category": "Ngồi xuống",
+        "priceRange": "26.316 ₫ - 1.315.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "La Dem Bistro ở Tây Ninh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.7/5 từ 24 lượt review. Xếp hạng: 2/26. Giá: 26.316 ₫ - 1.315.789 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/0e/a1/9e/double-dem-burger-also.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.10886,
+                11.324254
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1260
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26449149",
+        "title": "Nhà Phức Hợp UChinbébé - Tiệm trà LiLak",
+        "city": "Tây Ninh",
+        "totalScore": 5.0,
+        "ranking": "3/26",
+        "reviewsCount": 5,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Phức Hợp UChinbébé - Tiệm trà LiLak ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 5 lượt review. Xếp hạng: 3/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/03/a4/2d/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.0993,
+                11.32273
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-21:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23959844",
+        "title": "V7 Coffee And Restaurant",
+        "city": "Tây Ninh",
+        "totalScore": 5.0,
+        "ranking": "4/26",
+        "reviewsCount": 5,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Phục vụ các món ăn Á - Âu, cà phê đặc sản.",
+        "embedding": null,
+        "searchText": "V7 Coffee And Restaurant ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Phục vụ các món ăn Á - Âu, cà phê đặc sản. Đánh giá: 5.0/5 từ 5 lượt review. Xếp hạng: 4/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/23/19/38/c5/ghe-v7-vao-ngay-co-s.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.1033,
+                11.318322
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26805144",
+        "title": "Mr Tống Burger and more",
+        "city": "Tây Ninh",
+        "totalScore": 4.8,
+        "ranking": "5/26",
+        "reviewsCount": 4,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mr Tống Burger and more ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.8/5 từ 4 lượt review. Xếp hạng: 5/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/d1/e7/62/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.11964,
+                11.374358
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-09:00, 16:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 540
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 540
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 540
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 540
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 540
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 540
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 540
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34125160",
+        "title": "Home Cooking",
+        "city": "Ninh Hai",
+        "totalScore": 5.0,
+        "ranking": "78/103",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Home Cooking ở Ninh Hai. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 78/103.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/3f/98/8c/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.091606,
+                11.31014
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12171573",
+        "title": "Nhà Hàng Sunflower",
+        "city": "Tây Ninh",
+        "totalScore": 5.0,
+        "ranking": "6/26",
+        "reviewsCount": 4,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Nhà hàng Sunflower phục vụ các món ăn Âu – Á và nhiều sự lựa chọn ẩm thực cho Quý khách từ những bữa ăn đơn giản hàng ngày cho đến những bữa tiệc tối sang trọng. Đội ngũ đầu bếp giàu kinh nghiệm tại Khách sạn SUNRISE luôn “thổi hồn” vào từng món ăn, hướng đến sự hài hòa trong khẩu vị cũng như cân bằng trong dinh dưỡng, chăm chút, tỉ mỉ từ khâu chọn nguyên liệu, chế biến, đến cả cách bày trí món ăn,… nhằm đem đến sự hài lòng cho tất cả thực khách. Bên cạnh đó, 3 phòng tiệc VIP với không gian riêng biệt, chuyên phục vụ các loại hình tiệc quy mô nhỏ, các bữa tiệc gia đình, giao lưu gặp gỡ, tiệc sinh nhật… có sức chứa từ 15 đến 40 khách. Giờ hoạt động của Nhà hàng: Sáng: 06:00 giờ – 10:00 giờ. Trưa: 11:00 giờ – 14:00 giờ. Tối: 17:00 giờ – 21:00 giờ.",
+        "embedding": null,
+        "searchText": "Nhà Hàng Sunflower ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Nhà hàng Sunflower phục vụ các món ăn Âu – Á và nhiều sự lựa chọn ẩm thực cho Quý khách từ những bữa ăn đơn giản hàng ngày cho đến những bữa tiệc tối sang trọng. Đội ngũ đầu bếp giàu kinh nghiệm tại Khách sạn SUNRISE luôn “thổi hồn” vào từng món ăn, hướng đến sự hài hòa trong khẩu vị cũng như cân bằng trong dinh dưỡng, chăm chút, tỉ mỉ từ khâu chọn nguyên liệu, chế biến, đến cả cách bày trí món ăn,… nhằm đem đến sự hài lòng cho tất cả thực khách. Bên cạnh đó, 3 phòng tiệc VIP với không gian riêng biệt, chuyên phục vụ các loại hình tiệc quy mô nhỏ, các bữa tiệc gia đình, giao lưu gặp gỡ, tiệc sinh nhật… có sức chứa từ 15 đến 40 khách. Giờ hoạt động của Nhà hàng: Sáng: 06:00 giờ – 10:00 giờ. Trưa: 11:00 giờ – 14:00 giờ. Tối: 17:00 giờ – 21:00 giờ. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 6/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/c9/e3/10/nha-hang-sunflower.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.10531,
+                11.304686
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33861402",
+        "title": "Bò Bản Gang - Beefsteak Vietnam style",
+        "city": "Tây Ninh",
+        "totalScore": 5.0,
+        "ranking": "7/26",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "921.052.608 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Bò Bản Gang - Beefsteak Vietnam style ở Tây Ninh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 7/26. Giá: 921.052.608 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/47/39/f8/bo-vi-t-nam-va-bo-uc.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.11143,
+                11.298001
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "24079600",
+        "title": "Banh Mi Xiu Mai Nong",
+        "city": "Tây Ninh",
+        "totalScore": 4.5,
+        "ranking": "8/26",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Banh Mi Xiu Mai Nong ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 8/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/23/8c/8f/71/banh-mi-xiu-mai-nong.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.09274,
+                11.31452
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-11:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 660
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 660
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33405222",
+        "title": "Bò Tơ Năm Sánh",
+        "city": "Tây Ninh",
+        "totalScore": 5.0,
+        "ranking": "9/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bò Tơ Năm Sánh ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 9/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/d3/bd/68/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.1532,
+                11.258549
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33235864",
+        "title": "Tiệm Pizza 1995 Tây Ninh",
+        "city": "Tây Ninh",
+        "totalScore": 5.0,
+        "ranking": "10/26",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "1.578.947.328 ₫ - 2.147.483.647 ₫",
+        "description": "🍕Pizza - Pasta- Food - Beefsteak- Chicken- Koreafood - Drinks\n⏰Open : 09h00 - 21h30\n☎️0966651595 - 0908424695\n🏡150 nguyễn trãi , Phường 3 , Thành Phố Tây Ninh 🌼",
+        "embedding": null,
+        "searchText": "Tiệm Pizza 1995 Tây Ninh ở Tây Ninh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: 🍕Pizza - Pasta- Food - Beefsteak- Chicken- Koreafood - Drinks\n⏰Open : 09h00 - 21h30\n☎️0966651595 - 0908424695\n🏡150 nguyễn trãi , Phường 3 , Thành Phố Tây Ninh 🌼 Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 10/26. Giá: 1.578.947.328 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/3a/84/50/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.10649,
+                11.300256
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-21:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21124851",
+        "title": "GARBO 986",
+        "city": "Tây Ninh",
+        "totalScore": 5.0,
+        "ranking": "11/26",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "GARBO 986 ở Tây Ninh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 11/26. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/ef/21/b9/at-garbo986-you-can-see.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.102875,
+                11.31792
+            ]
+        },
+        "openingHours": {
+            "display": "16:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "6415657",
+        "title": "Tao Ngo Ca Phe",
+        "city": "Tây Ninh",
+        "totalScore": 4.3,
+        "ranking": "12/26",
+        "reviewsCount": 4,
+        "category": "Quán cafe",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tao Ngo Ca Phe ở Tây Ninh. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 4.3/5 từ 4 lượt review. Xếp hạng: 12/26.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.09777,
+                11.31205
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33404631",
+        "title": "Bánh Canh Út Thiên",
+        "city": "Tây Ninh",
+        "totalScore": 4.0,
+        "ranking": "13/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bánh Canh Út Thiên ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 13/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/d3/be/e1/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.09106,
+                11.315773
+            ]
+        },
+        "openingHours": {
+            "display": "11:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "11791549",
+        "title": "Nhà Hàng Lạc Viên",
+        "city": "Tây Ninh",
+        "totalScore": 4.0,
+        "ranking": "14/26",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Lạc Viên ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 3 lượt review. Xếp hạng: 14/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/8d/1d/3e/grilled-king-prawns.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.13038,
+                11.318832
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28161297",
+        "title": "Hội Quán Bê Thui Hải Sản Trung Chỉnh",
+        "city": "Tây Ninh",
+        "totalScore": 4.0,
+        "ranking": "15/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hội Quán Bê Thui Hải Sản Trung Chỉnh ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 15/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/5e/76/b5/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.32531,
+                11.028291
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-23:45",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27500541",
+        "title": "Bánh Canh Năm Dung 2",
+        "city": "Tây Ninh",
+        "totalScore": 4.0,
+        "ranking": "16/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bánh Canh Năm Dung 2 ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 16/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/ae/c2/3e/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.34883,
+                11.038496
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "16806052",
+        "title": "Nhà Hàng Kubo Sushi BBQ",
+        "city": "Tây Ninh",
+        "totalScore": 5.0,
+        "ranking": "17/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Kubo Sushi BBQ ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 17/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/c2/c1/e9/photo4jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.11261,
+                11.30541
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10834334",
+        "title": "Le Petit Cafe",
+        "city": "Tây Ninh",
+        "totalScore": 4.3,
+        "ranking": "18/26",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Le Petit Cafe ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.3/5 từ 3 lượt review. Xếp hạng: 18/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/fb/0b/50/modern-decoration-cleanliness.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.09961,
+                11.31087
+            ]
+        },
+        "openingHours": {
+            "display": "19:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1170,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1170,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1170,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1170,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1170,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1170,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1170,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "9554513",
+        "title": "Lotteria",
+        "city": "Tây Ninh",
+        "totalScore": 3.4,
+        "ranking": "19/26",
+        "reviewsCount": 5,
+        "category": "Đồ ăn nhanh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lotteria ở Tây Ninh. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 3.4/5 từ 5 lượt review. Xếp hạng: 19/26.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/c5/af/d8/lotteria.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.10618,
+                11.30954
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28161402",
+        "title": "Cơm Niêu An Hòa",
+        "city": "Tây Ninh",
+        "totalScore": 3.0,
+        "ranking": "20/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cơm Niêu An Hòa ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 20/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/4f/59/8f/squid.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.321815,
+                11.016252
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10750105",
+        "title": "Bus Station Coffee",
+        "city": "Tây Ninh",
+        "totalScore": 3.0,
+        "ranking": "21/26",
+        "reviewsCount": 1,
+        "category": "Quán cafe",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bus Station Coffee ở Tây Ninh. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 21/26.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.08145,
+                11.31067
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32711331",
+        "title": "Phở Đạt Hà Nội",
+        "city": "Tây Ninh",
+        "totalScore": 3.0,
+        "ranking": "22/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phở Đạt Hà Nội ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 22/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/53/57/de/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.327965,
+                11.032964
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32713598",
+        "title": "Since 1988 Café",
+        "city": "Tây Ninh",
+        "totalScore": 3.0,
+        "ranking": "23/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Since 1988 Café ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 23/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/53/7d/fe/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.32592,
+                11.030372
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "9554521",
+        "title": "Jollibee Co.opmart Tây Ninh",
+        "city": "Tây Ninh",
+        "totalScore": 3.0,
+        "ranking": "24/26",
+        "reviewsCount": 3,
+        "category": "Đồ ăn nhanh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Jollibee Co.opmart Tây Ninh ở Tây Ninh. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 3.0/5 từ 3 lượt review. Xếp hạng: 24/26.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/c5/bc/8c/jollibee.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.108505,
+                11.307734
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34254240",
+        "title": "Sala Tayninh Restaurant",
+        "city": "Tây Ninh",
+        "totalScore": 2.0,
+        "ranking": "25/26",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sala Tayninh Restaurant ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 2.0/5 từ 1 lượt review. Xếp hạng: 25/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.42254,
+                10.89007
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10132520",
+        "title": "Quán Ăn Lan Phương",
+        "city": "Tây Ninh",
+        "totalScore": 2.6,
+        "ranking": "26/26",
+        "reviewsCount": 22,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Ăn Lan Phương ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 2.6/5 từ 22 lượt review. Xếp hạng: 26/26.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/64/df/f3/lan-phuong-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.136406,
+                11.305489
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33007183",
+        "title": "Little Forest",
+        "city": "Go Dau Ha",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Little Forest ở Go Dau Ha. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.74779,
+                11.993621
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-21:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33007191",
+        "title": "Little Sweet",
+        "city": "Trang Bang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Little Sweet ở Trang Bang. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.40639,
+                10.537076
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23282806",
+        "title": "Phương Linh Garden",
+        "city": "Tây Ninh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "1.289.473.664 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Phương Linh Garden ở Tây Ninh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 1.289.473.664 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1d/01/f5/60/nha-hang-phuong-linh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.13824,
+                11.348175
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28161399",
+        "title": "Cơm Niêu An Hòa",
+        "city": "Tây Ninh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cơm Niêu An Hòa ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.16667,
+                11.33333
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20056637",
+        "title": "Mì Cay Seoul",
+        "city": "Tây Ninh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mì Cay Seoul ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.11383,
+                11.308547
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25368885",
+        "title": "NHÀ HÀNG HẦM RƯỢU SÔNG CẦU TÂY NINH",
+        "city": "Tây Ninh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "NHÀ HÀNG HẦM RƯỢU SÔNG CẦU TÂY NINH ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.10462,
+                11.316398
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-23:45",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1425
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13124436",
+        "title": "Gà Nướng Ò Ó O",
+        "city": "Tây Ninh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "394.736.832 ₫ - 2.147.483.647 ₫",
+        "description": "O luôn tâm niệm rằng, món ăn ngon và được làm tận tâm, thì tự khắc sẽ được yêu quý dù ở bất cứ đâu. Nêm thêm vô số niềm vui và đong thêm rất nhiều niềm tin vào từng món gà, O mong, giấc mơ được đem gà đi bán khắp nhân gian của O sẽ có ngày trở thành hiện thực.",
+        "embedding": null,
+        "searchText": "Gà Nướng Ò Ó O ở Tây Ninh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: O luôn tâm niệm rằng, món ăn ngon và được làm tận tâm, thì tự khắc sẽ được yêu quý dù ở bất cứ đâu. Nêm thêm vô số niềm vui và đong thêm rất nhiều niềm tin vào từng món gà, O mong, giấc mơ được đem gà đi bán khắp nhân gian của O sẽ có ngày trở thành hiện thực. Giá: 394.736.832 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.13546,
+                11.28525
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27734827",
+        "title": "Thềm Xưa Quán",
+        "city": "Tây Ninh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thềm Xưa Quán ở Tây Ninh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/3e/22/28/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.107544,
+                11.307707
+            ]
+        },
+        "openingHours": {
+            "display": "10:30-11:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 690
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 690
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 690
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 690
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 690
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 690
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 690
+                    }
+                ]
+            ]
+        }
+    }
+]

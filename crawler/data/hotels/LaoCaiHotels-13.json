@@ -1,0 +1,381 @@
+[
+    {
+        "sourceLocationId": "8552235",
+        "title": "Muong Thanh Grand Lao Cai Hotel",
+        "city": "Lào Cai",
+        "totalScore": 4.7,
+        "ranking": null,
+        "reviewsCount": 139,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Muong Thanh Grand Lao Cai Hotel ở Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.7/5 từ 139 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/2b/f4/fc/muong-thanh-grand-lao.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.96558,
+                22.502111
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "585724",
+        "title": "Topas Ecolodge",
+        "city": "Sapa",
+        "totalScore": 4.5,
+        "ranking": null,
+        "reviewsCount": 1496,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Topas Ecolodge ở Sapa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.5/5 từ 1496 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/c2/09/d2/topas-ecolodge.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.967026,
+                22.276207
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15028320",
+        "title": "Hotel de la Coupole - MGallery",
+        "city": "Sapa",
+        "totalScore": 4.8,
+        "ranking": null,
+        "reviewsCount": 1239,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hotel de la Coupole - MGallery ở Sapa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 1239 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/33/4d/78/b8/exterior.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84025,
+                22.334553
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8299368",
+        "title": "Eco Palms House",
+        "city": "Sapa",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 1109,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Eco Palms House ở Sapa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 1109 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/22/57/a3/79/infinity-swimming-pool.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.88297,
+                22.314425
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24927608",
+        "title": "SOJO Hotel Lao Cai",
+        "city": "Lào Cai",
+        "totalScore": 5.0,
+        "ranking": null,
+        "reviewsCount": 26,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "SOJO Hotel Lao Cai ở Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 26 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/a8/d2/fe/sojo-hotel-lao-cai.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.96794,
+                22.501837
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11908224",
+        "title": "Sapa Clay House",
+        "city": "Sapa",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 1117,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sapa Clay House ở Sapa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 1117 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/8c/85/c0/the-infinity-pool.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.8578,
+                22.318916
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4168248",
+        "title": "Khách sạn Sapaly Lào Cai",
+        "city": "Lào Cai",
+        "totalScore": 4.1,
+        "ranking": null,
+        "reviewsCount": 57,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Sapaly Lào Cai ở Lào Cai. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.1/5 từ 57 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/57/0b/06/kha-ch-sa-n-sapaly-la.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.9665,
+                22.50628
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12786956",
+        "title": "Pao's Sapa Leisure Hotel",
+        "city": "Sapa",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 1416,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pao's Sapa Leisure Hotel ở Sapa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 1416 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/89/94/ba/khach-s-n-pao-sa-pa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84658,
+                22.32716
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17376363",
+        "title": "Duc Huy Grand Hotel & Spa",
+        "city": "Lào Cai",
+        "totalScore": 5.0,
+        "ranking": null,
+        "reviewsCount": 69,
+        "category": "Cơ sở lưu trú đặc biệt",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Duc Huy Grand Hotel & Spa ở Lào Cai. Loại địa điểm: Cơ sở lưu trú đặc biệt. Tags: Khách sạn, Cơ sở lưu trú đặc biệt. Đánh giá: 5.0/5 từ 69 lượt review.",
+        "tags": [
+            "Khách sạn",
+            "Cơ sở lưu trú đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/5c/01/b9/a-nh-chi-nh-toa-n-bo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.98372,
+                22.470253
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12843531",
+        "title": "Khu nghỉ dưỡng và spa Silk Path Grand Sapa",
+        "city": "Sapa",
+        "totalScore": 4.8,
+        "ranking": null,
+        "reviewsCount": 832,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu nghỉ dưỡng và spa Silk Path Grand Sapa ở Sapa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 832 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/82/f4/9f/coffee-yard.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.83822,
+                22.337702
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7154741",
+        "title": "Chau Long Sapa 2 Hotel",
+        "city": "Sapa",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 411,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chau Long Sapa 2 Hotel ở Sapa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 411 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/75/a6/6a/c-nh-nhin-t-ngoai.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84228,
+                22.332706
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12505863",
+        "title": "Viettrekking Sapa Hotel",
+        "city": "Sapa",
+        "totalScore": 3.7,
+        "ranking": null,
+        "reviewsCount": 41,
+        "category": "Cơ sở lưu trú đặc biệt",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Viettrekking Sapa Hotel ở Sapa. Loại địa điểm: Cơ sở lưu trú đặc biệt. Tags: Khách sạn, Cơ sở lưu trú đặc biệt. Đánh giá: 3.7/5 từ 41 lượt review.",
+        "tags": [
+            "Khách sạn",
+            "Cơ sở lưu trú đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/f6/71/23/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.83673,
+                22.333817
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19055925",
+        "title": "KK Sapa Hotel",
+        "city": "Sapa",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 889,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "KK Sapa Hotel ở Sapa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 889 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/6d/9c/e6/c-nh-quan-ben-ngoai-khach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.844505,
+                22.33115
+            ]
+        },
+        "openingHours": null
+    }
+]

@@ -1,0 +1,3002 @@
+[
+    {
+        "sourceLocationId": "26440631",
+        "title": "Bo Luong Restaurant",
+        "city": "Mai Châu",
+        "totalScore": 4.9,
+        "ranking": "1/27",
+        "reviewsCount": 86,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Bo Luong Restaurant ở Mai Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.9/5 từ 86 lượt review. Xếp hạng: 1/27. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/39/f1/a5/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.00899,
+                20.690134
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27534403",
+        "title": "MẸT Vietnamese Restaurant & Vegetarian Food 7",
+        "city": "Hội An",
+        "totalScore": 4.8,
+        "ranking": "105/1424",
+        "reviewsCount": 244,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "MẸT Vietnamese Restaurant & Vegetarian Food 7 ở Hội An. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.8/5 từ 244 lượt review. Xếp hạng: 105/1424. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/4f/c1/0c/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.50271,
+                21.137814
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15180050",
+        "title": "Quán 3 Chị Em",
+        "city": "Mai Châu",
+        "totalScore": 4.7,
+        "ranking": "2/27",
+        "reviewsCount": 147,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "131.579 ₫ - 7.894.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán 3 Chị Em ở Mai Châu. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 4.7/5 từ 147 lượt review. Xếp hạng: 2/27. Giá: 131.579 ₫ - 7.894.737 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/fb/c3/86/best-banh-my.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.08056,
+                20.659834
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27137821",
+        "title": "Nhà hàng dung tiến ba vì",
+        "city": "Ba Vi",
+        "totalScore": 5.0,
+        "ranking": "1/1",
+        "reviewsCount": 20,
+        "category": "Ngồi xuống",
+        "priceRange": "1.315.789.440 ₫ - 2.147.483.647 ₫",
+        "description": "Nhà hàng dung tiến ẩm thực ba vì là Nhà Hàng Đẹp Nhất ở Ba Vì, Nhà hàng Dung Tiến ẩm thực ba vì luôn tự hào về những món ăn ngon, đặc sản và dịch vụ tốt. Nhưng đến với nhà hàng Dung Tiến nhà hàng đẹp nhất còn có thể trở nên tuyệt vời hơn với những cảnh đẹp và không gian êm ái. Nhà hàng đẹp nhất luôn tạo ra một không gian rất tinh tế với những ánh sáng đèn lung linh tạo một khung cảnh rất thơ mộng và lãng mạn. Bạn có thể thưởng thức những món ăn ngon từ đầu bếp tài hoa, cùng với những ly rượu mang hương vị đậm chất văn hóa dân tộc vùng cao. Bạn đang tìm kiếm một địa điểm ăn uống tuyệt vời, với một không gian tinh tế làm say đắm lòng người hãy đến với nhà hàng Dung Tiến. Nhà hàng đẹp đáp ứng mọi kỳ vọng của bạn Hãy đến với nhà hàng Dung Tiến ngay hôm nay",
+        "embedding": null,
+        "searchText": "Nhà hàng dung tiến ba vì ở Ba Vi. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà hàng dung tiến ẩm thực ba vì là Nhà Hàng Đẹp Nhất ở Ba Vì, Nhà hàng Dung Tiến ẩm thực ba vì luôn tự hào về những món ăn ngon, đặc sản và dịch vụ tốt. Nhưng đến với nhà hàng Dung Tiến nhà hàng đẹp nhất còn có thể trở nên tuyệt vời hơn với những cảnh đẹp và không gian êm ái. Nhà hàng đẹp nhất luôn tạo ra một không gian rất tinh tế với những ánh sáng đèn lung linh tạo một khung cảnh rất thơ mộng và lãng mạn. Bạn có thể thưởng thức những món ăn ngon từ đầu bếp tài hoa, cùng với những ly rượu mang hương vị đậm chất văn hóa dân tộc vùng cao. Bạn đang tìm kiếm một địa điểm ăn uống tuyệt vời, với một không gian tinh tế làm say đắm lòng người hãy đến với nhà hàng Dung Tiến. Nhà hàng đẹp đáp ứng mọi kỳ vọng của bạn Hãy đến với nhà hàng Dung Tiến ngay hôm nay Đánh giá: 5.0/5 từ 20 lượt review. Xếp hạng: 1/1. Giá: 1.315.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/41/bf/a4/nha-hang-m-cung-tr-i.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.40984,
+                21.06491
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "7742161",
+        "title": "Sunset Bar",
+        "city": "Mai Châu",
+        "totalScore": 4.3,
+        "ranking": "3/27",
+        "reviewsCount": 67,
+        "category": "Quán cafe",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Sunset Bar ở Mai Châu. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 4.3/5 từ 67 lượt review. Xếp hạng: 3/27. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/77/27/24/rooftop-seating.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.07311,
+                20.654058
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23172426",
+        "title": "Mai Chau Hideaway Restaurant",
+        "city": "Hòa Bình",
+        "totalScore": 5.0,
+        "ranking": "4/27",
+        "reviewsCount": 12,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Mai Chau Hideaway Restaurant ở Hòa Bình. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 12 lượt review. Xếp hạng: 4/27. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/5e/6d/13/sping-roll.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.07365,
+                20.752287
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23014072",
+        "title": "Nhà Hàng Hợp Thủy - Ẩm Thực Mai Châu",
+        "city": "Mai Châu",
+        "totalScore": 4.7,
+        "ranking": "5/27",
+        "reviewsCount": 14,
+        "category": "Ngồi xuống",
+        "priceRange": "789.473.664 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hợp Thủy - Ẩm Thực Mai Châu ở Mai Châu. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.7/5 từ 14 lượt review. Xếp hạng: 5/27. Giá: 789.473.664 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/26/c7/c1/94/nhan-vien-nha-hang-h.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.083755,
+                20.665394
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27689895",
+        "title": "Mai Chau No.9 Bistro",
+        "city": "Mai Châu",
+        "totalScore": 4.6,
+        "ranking": "6/27",
+        "reviewsCount": 10,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Mai Chau No.9 Bistro ở Mai Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.6/5 từ 10 lượt review. Xếp hạng: 6/27. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/78/78/43/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.33333,
+                20.66667
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "16657155",
+        "title": "Coffe Lốp",
+        "city": "Mai Châu",
+        "totalScore": 4.4,
+        "ranking": "7/27",
+        "reviewsCount": 16,
+        "category": "Quán cafe",
+        "priceRange": "657.894.720 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Coffe Lốp ở Mai Châu. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 4.4/5 từ 16 lượt review. Xếp hạng: 7/27. Giá: 657.894.720 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/ad/d5/2b/wellcome.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.072266,
+                20.65056
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33295857",
+        "title": "Tuyết Beer",
+        "city": "Ha Dong",
+        "totalScore": 5.0,
+        "ranking": "2/16",
+        "reviewsCount": 4,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tuyết Beer ở Ha Dong. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 2/16.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.51819,
+                21.010187
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10777833",
+        "title": "Mai Chau Countryside Homestay - Mini bar & Food",
+        "city": "Mai Châu",
+        "totalScore": 4.4,
+        "ranking": "8/27",
+        "reviewsCount": 16,
+        "category": "Quán cafe",
+        "priceRange": "26.316 ₫ - 394.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Mai Chau Countryside Homestay - Mini bar & Food ở Mai Châu. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 4.4/5 từ 16 lượt review. Xếp hạng: 8/27. Giá: 26.316 ₫ - 394.737 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/f0/69/6b/mai-chau-countryside.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.07284,
+                20.653656
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1305
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25250516",
+        "title": "Green Homestay - Mai Châu",
+        "city": "Mai Châu",
+        "totalScore": 5.0,
+        "ranking": "9/27",
+        "reviewsCount": 4,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Cà phê take away, nhà hàng các món ăn dân tộc",
+        "embedding": null,
+        "searchText": "Green Homestay - Mai Châu ở Mai Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Cà phê take away, nhà hàng các món ăn dân tộc Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 9/27.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/10/ed/2d/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.06643,
+                20.655554
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32831872",
+        "title": "Jungle Brews Mai Chau",
+        "city": "Mai Châu",
+        "totalScore": 5.0,
+        "ranking": "10/27",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Jungle Brews Mai Chau ở Mai Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 10/27.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/05/db/0c/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.03145,
+                20.66296
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "16763041",
+        "title": "Mai Chau Home",
+        "city": "Mai Châu",
+        "totalScore": 5.0,
+        "ranking": "11/27",
+        "reviewsCount": 5,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mai Chau Home ở Mai Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 5 lượt review. Xếp hạng: 11/27.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/db/73/99/20191029-065043-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.07127,
+                20.65271
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25250593",
+        "title": "Cà phê cánh đồng",
+        "city": "Na Phon",
+        "totalScore": 5.0,
+        "ranking": "12/27",
+        "reviewsCount": 4,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Caffe take away, đồ ăn nhanh, các món ăn bản địa",
+        "embedding": null,
+        "searchText": "Cà phê cánh đồng ở Na Phon. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Caffe take away, đồ ăn nhanh, các món ăn bản địa Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 12/27.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/21/e0/d9/ca-phe-canh-d-ng.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.066574,
+                20.65556
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15843201",
+        "title": "Chou",
+        "city": "Mai Châu",
+        "totalScore": 5.0,
+        "ranking": "13/27",
+        "reviewsCount": 6,
+        "category": "Quán cafe",
+        "priceRange": "263.158 ₫ - 3.157.895 ₫",
+        "description": "Cung cấp dịch vụ ăn uống. Đồ ăn nhanh, nước ép trái cây, sinh tố, trà , cà phê. Có cả các món nóng, phục vụ cả bữa trưa và bữa tối",
+        "embedding": null,
+        "searchText": "Chou ở Mai Châu. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Mô tả: Cung cấp dịch vụ ăn uống. Đồ ăn nhanh, nước ép trái cây, sinh tố, trà , cà phê. Có cả các món nóng, phục vụ cả bữa trưa và bữa tối Đánh giá: 5.0/5 từ 6 lượt review. Xếp hạng: 13/27. Giá: 263.158 ₫ - 3.157.895 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/47/ba/41/outside-the-front-and.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.085045,
+                20.667963
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28144428",
+        "title": "Valley Coffee",
+        "city": "Mai Châu",
+        "totalScore": 5.0,
+        "ranking": "14/27",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Valley Coffee ở Mai Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 14/27.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/7f/8f/fa/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.07921,
+                20.654942
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24906951",
+        "title": "Nha Hàng Mai Chau Sunset",
+        "city": "Mai Châu",
+        "totalScore": 4.8,
+        "ranking": "15/27",
+        "reviewsCount": 4,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nha Hàng Mai Chau Sunset ở Mai Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.8/5 từ 4 lượt review. Xếp hạng: 15/27.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/25/6c/09/08/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.07326,
+                20.653996
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12685185",
+        "title": "Sakanabar Ebisu",
+        "city": "Hà Nội",
+        "totalScore": 4.5,
+        "ranking": "1952/3710",
+        "reviewsCount": 6,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sakanabar Ebisu ở Hà Nội. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.5/5 từ 6 lượt review. Xếp hạng: 1952/3710.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/13/50/79/photo1jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.39396,
+                21.12389
+            ]
+        },
+        "openingHours": {
+            "display": "17:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "24076101",
+        "title": "Nhà Hàng Tuyết Sơn",
+        "city": "Hòa Bình",
+        "totalScore": 4.3,
+        "ranking": "16/27",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Tuyết Sơn ở Hòa Bình. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.3/5 từ 3 lượt review. Xếp hạng: 16/27.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/23/85/2d/e7/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.34602,
+                20.82399
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20857676",
+        "title": "A Cau Cafe",
+        "city": "Mai Châu",
+        "totalScore": 5.0,
+        "ranking": "17/27",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "A Cau Cafe ở Mai Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 17/27.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/4f/7a/8b/quan-d-p-n-m-ngay-trung.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.03639,
+                20.62241
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33113374",
+        "title": "Green Garden Mai Châu - Hòa Bình",
+        "city": "Tỉnh Hòa Bình",
+        "totalScore": 5.0,
+        "ranking": "18/27",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Green Garden Mai Châu - Hòa Bình ở Tỉnh Hòa Bình. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 18/27.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/cf/5c/a4/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.348015,
+                20.821983
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24006375",
+        "title": "Ap Plaza Restaurant",
+        "city": "Hòa Bình",
+        "totalScore": 4.0,
+        "ranking": "19/27",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ap Plaza Restaurant ở Hòa Bình. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 19/27.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2f/71/8e/a5/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.34542,
+                20.823254
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28104543",
+        "title": "Pho Co Nam Dinh",
+        "city": "Mai Châu",
+        "totalScore": 5.0,
+        "ranking": "20/27",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pho Co Nam Dinh ở Mai Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 20/27.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/1f/9c/30/pho-and-the-sign-to-look.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.03333,
+                20.71667
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23980124",
+        "title": "Meadow Mai Chau Restaurant And Bar",
+        "city": "Mai Châu",
+        "totalScore": 5.0,
+        "ranking": "21/27",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "1.315.789.440 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Meadow Mai Chau Restaurant And Bar ở Mai Châu. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 21/27. Giá: 1.315.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/ac/ff/9e/view-ban-an.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.06824,
+                20.661402
+            ]
+        },
+        "openingHours": {
+            "display": "11:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 690,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 690,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 690,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 690,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 690,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 690,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 690,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15300998",
+        "title": "Tan Thanh Homestay and Restaurant",
+        "city": "Mai Châu",
+        "totalScore": 5.0,
+        "ranking": "22/27",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tan Thanh Homestay and Restaurant ở Mai Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 22/27.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/43/eb/4d/photo3jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.07127,
+                20.65271
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-20:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19298440",
+        "title": "Nhà Hàng Gia Nguyễn",
+        "city": "Hòa Bình",
+        "totalScore": 4.5,
+        "ranking": "23/27",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Gia Nguyễn ở Hòa Bình. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 23/27.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/1a/16/67/65/goose.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.34858,
+                20.8251
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10174041",
+        "title": "Nhà hàng Baly",
+        "city": "Hà Nội",
+        "totalScore": 5.0,
+        "ranking": "2156/3710",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": "131.579 ₫ - 657.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Baly ở Hà Nội. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 2156/3710. Giá: 131.579 ₫ - 657.895 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/92/c3/6b/baly-convention-building.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.49621,
+                21.11784
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25400367",
+        "title": "Cafe Vuon Hong",
+        "city": "Ky Son",
+        "totalScore": 4.0,
+        "ranking": "24/27",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cafe Vuon Hong ở Ky Son. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 24/27.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/bb/0a/9e/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.34645,
+                20.871788
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "7964023",
+        "title": "Nhà Hàng Nhà Nghỉ 79",
+        "city": "Mai Châu",
+        "totalScore": 5.0,
+        "ranking": "25/27",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Nhà Nghỉ 79 ở Mai Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 25/27.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/00/d6/10/nha-hang-nha-nghi-79.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24077508",
+        "title": "Nhà Hàng Thuấn Hà",
+        "city": "Ky Son",
+        "totalScore": 3.0,
+        "ranking": "26/27",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Thuấn Hà ở Ky Son. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 26/27.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/23/88/61/27/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.442535,
+                20.916245
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12556462",
+        "title": "G-Pub Coffee Boutique Station Brunch",
+        "city": "Ninh Bình",
+        "totalScore": 4.3,
+        "ranking": "116/213",
+        "reviewsCount": 14,
+        "category": "Quán cafe",
+        "priceRange": "789.473.664 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "G-Pub Coffee Boutique Station Brunch ở Ninh Bình. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 4.3/5 từ 14 lượt review. Xếp hạng: 116/213. Giá: 789.473.664 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/f4/f1/02/photo1jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.49606,
+                20.562145
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23513813",
+        "title": "Nhà Hàng Hải Đăng",
+        "city": "Mai Châu",
+        "totalScore": 2.0,
+        "ranking": "27/27",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hải Đăng ở Mai Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 2.0/5 từ 1 lượt review. Xếp hạng: 27/27.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/21/53/d1/76/ca-h-i-tuoi-s-ng-ph-c.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.08102,
+                20.656345
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33077778",
+        "title": "Nhà Vân",
+        "city": "Hà Nội",
+        "totalScore": 5.0,
+        "ranking": "1842/3710",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "NHÀ VÂN – DỆT HƯƠNG DI SẢN VIỆT Nhà Vân tự hào là doanh nghiệp tiên phong trong nghệ thuật ủ, lưu trữ và bảo quản trà Shan Tuyết cổ thụ bằng hũ gốm men hỏa biến – một phương pháp giúp trà không ngừng phát triển tầng hương vị theo thời gian. Đồng thời, chúng tôi cũng gìn giữ và phát triển trà cụ men hỏa biến thủ công, được chế tác bởi đôi tay tài hoa của những nghệ nhân Việt. Hành trình của Nhà Vân không chỉ là sản xuất trà, mà là hành trình tìm lại bản sắc văn hóa Trà Việt, nơi gốm và trà hòa quyện, tái hiện tinh hoa của ông cha, lưu giữ những giá trị lâu đời trong từng tách trà. Mỗi tách trà Nhà Vân không chỉ là một thức uống, mà là một câu chuyện, một trải nghiệm. Trà khi hòa quyện cùng gốm men hỏa biến trở thành \"người kể chuyện\" thầm lặng, lưu giữ hương vị nguyên bản và kết tinh những giá trị tinh túy nhất của trà Việt.",
+        "embedding": null,
+        "searchText": "Nhà Vân ở Hà Nội. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: NHÀ VÂN – DỆT HƯƠNG DI SẢN VIỆT Nhà Vân tự hào là doanh nghiệp tiên phong trong nghệ thuật ủ, lưu trữ và bảo quản trà Shan Tuyết cổ thụ bằng hũ gốm men hỏa biến – một phương pháp giúp trà không ngừng phát triển tầng hương vị theo thời gian. Đồng thời, chúng tôi cũng gìn giữ và phát triển trà cụ men hỏa biến thủ công, được chế tác bởi đôi tay tài hoa của những nghệ nhân Việt. Hành trình của Nhà Vân không chỉ là sản xuất trà, mà là hành trình tìm lại bản sắc văn hóa Trà Việt, nơi gốm và trà hòa quyện, tái hiện tinh hoa của ông cha, lưu giữ những giá trị lâu đời trong từng tách trà. Mỗi tách trà Nhà Vân không chỉ là một thức uống, mà là một câu chuyện, một trải nghiệm. Trà khi hòa quyện cùng gốm men hỏa biến trở thành \"người kể chuyện\" thầm lặng, lưu giữ hương vị nguyên bản và kết tinh những giá trị tinh túy nhất của trà Việt. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 1842/3710.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/b0/bf/bb/nha-van-d-t-huong-di.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.469734,
+                21.157269
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-17:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21378704",
+        "title": "Bếp làng Đường Lâm",
+        "city": "Hà Nội",
+        "totalScore": 5.0,
+        "ranking": "1759/3710",
+        "reviewsCount": 4,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "Bếp làng Đường Lâm - Nhà hàng phục vụ đồ ăn tươi ngon với những món ăn truyền thống và đặc sắc của ngôi làng cổ ở Việt Nam",
+        "embedding": null,
+        "searchText": "Bếp làng Đường Lâm ở Hà Nội. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Bếp làng Đường Lâm - Nhà hàng phục vụ đồ ăn tươi ngon với những món ăn truyền thống và đặc sắc của ngôi làng cổ ở Việt Nam Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 1759/3710. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/4a/dd/43/khong-gian-d-m-ch-t-truy.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.471855,
+                21.157907
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-20:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "22239346",
+        "title": "Nhà Hàng Mạnh Cường Trâu Cá",
+        "city": "Son Tay",
+        "totalScore": 4.5,
+        "ranking": "1/1",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Mạnh Cường Trâu Cá ở Son Tay. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 1/1.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/26/ab/e8/36/deliciosa-sopa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.498795,
+                21.146402
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11670029",
+        "title": "Gu-i92 BBQ",
+        "city": "Hà Nội",
+        "totalScore": 4.5,
+        "ranking": "3020/3710",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Gu-i92 BBQ ở Hà Nội. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 3020/3710.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/ce/62/12/gu-i92-bbq-13.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.50503,
+                21.14336
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-26:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1560
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10202617",
+        "title": "Vietnamese street food",
+        "city": "Hà Nội",
+        "totalScore": 4.6,
+        "ranking": "1625/3710",
+        "reviewsCount": 11,
+        "category": "Ngồi xuống",
+        "priceRange": "789.474 ₫ - 2.631.579 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Vietnamese street food ở Hà Nội. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.6/5 từ 11 lượt review. Xếp hạng: 1625/3710. Giá: 789.474 ₫ - 2.631.579 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/94/50/98/also-named-as-bun-duoi.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.4843,
+                21.16111
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15082680",
+        "title": "Chiko Đường Lâm",
+        "city": "Hà Nội",
+        "totalScore": 5.0,
+        "ranking": "3094/3710",
+        "reviewsCount": 1,
+        "category": "Quán cafe",
+        "priceRange": "526.315.776 ₫ - 1.184.210.560 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Chiko Đường Lâm ở Hà Nội. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 3094/3710. Giá: 526.315.776 ₫ - 1.184.210.560 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/8a/30/d7/interior.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.47044,
+                21.16218
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10792013",
+        "title": "Nhà hàng nướng GoGi House",
+        "city": "Hà Nội",
+        "totalScore": 3.0,
+        "ranking": "3447/3710",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "2.631.579 ₫ - 7.894.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng nướng GoGi House ở Hà Nội. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 3447/3710. Giá: 2.631.579 ₫ - 7.894.737 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.4843,
+                21.16111
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33226002",
+        "title": "Mai Châu Farm & Coffee Shop",
+        "city": "Chieng Chau",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mai Châu Farm & Coffee Shop ở Chieng Chau. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.067245,
+                20.65008
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:45",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1365
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1365
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1365
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1365
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1365
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1365
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1365
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33315996",
+        "title": "Nhà Hàng Nón - Serena Resort Kim Boi",
+        "city": "Kim Boi",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Nón - Serena Resort Kim Boi ở Kim Boi. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.78153,
+                21.129795
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33960561",
+        "title": "Cháo Bà Bừng",
+        "city": "Hòa Bình",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cháo Bà Bừng ở Hòa Bình. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.33149,
+                20.783737
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17623244",
+        "title": "Bếp Mường Đà Giang",
+        "city": "Hòa Bình",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Bếp Mường Đà Giang ở Hòa Bình. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/e1/1b/0f/canh-bon.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.33533,
+                20.817656
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24906922",
+        "title": "Nhà Hàng Mai Chau Sunset",
+        "city": "Mai Châu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Mai Chau Sunset ở Mai Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/29/ef/a4/77/interieur-du-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.08284,
+                20.66003
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33984329",
+        "title": "Nghĩa Đoàn Quán",
+        "city": "Mai Châu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nghĩa Đoàn Quán ở Mai Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.839294,
+                21.018068
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33984298",
+        "title": "NGHĨA Đoàn Quán",
+        "city": "Mai Châu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "NGHĨA Đoàn Quán ở Mai Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/fd/17/ae/great.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.839294,
+                21.018068
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25291284",
+        "title": "Nhà Hàng Hoa Ban Mai Châu",
+        "city": "Mai Châu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "✅ ̀ ̀ ̂ ́ ̂̀ - Đ̣̆ ̉ ̂ ̆́ ́ ̂ ̀ Đ̂̀ ̆ ̂́ ̛̛̣ ̂́ ̂ -̀ ̀ ☘️ Nhà hàng nằm vị trí thuận tiện, trên cung đường quốc lộ 6 qua Mai Châu và một số tuyến điểm như Mộc Châu - Sơn La - Mai Châu -Pù Luông. Sức chứa khoảng 200 khách, Cơ sở vật chất tiện nghi, có bãi để xe rộng, khuân viên sạch đẹp. Nhân viên phục vụ nhiệt tình chu đáo. Đầy đủ thực đơn khách lẻ, khách đoàn với menu phong phú đa dạng, các suất ăn từ 150-300k/khách. Ngoài ra Nhà Hàng Hoa Ban Mai Châu có Miễn Phí ship đồ ăn với hoá đơn từ 500k, quanh khu vực trung tâm thị trấn, các Homestay, Khách Sạn, Resort. Rất tiện lợi cho khách hàng có nhu cầu từ xa. Kính chào Quý Khách và hân hạnh được đón tiếp!",
+        "embedding": null,
+        "searchText": "Nhà Hàng Hoa Ban Mai Châu ở Mai Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: ✅ ̀ ̀ ̂ ́ ̂̀ - Đ̣̆ ̉ ̂ ̆́ ́ ̂ ̀ Đ̂̀ ̆ ̂́ ̛̛̣ ̂́ ̂ -̀ ̀ ☘️ Nhà hàng nằm vị trí thuận tiện, trên cung đường quốc lộ 6 qua Mai Châu và một số tuyến điểm như Mộc Châu - Sơn La - Mai Châu -Pù Luông. Sức chứa khoảng 200 khách, Cơ sở vật chất tiện nghi, có bãi để xe rộng, khuân viên sạch đẹp. Nhân viên phục vụ nhiệt tình chu đáo. Đầy đủ thực đơn khách lẻ, khách đoàn với menu phong phú đa dạng, các suất ăn từ 150-300k/khách. Ngoài ra Nhà Hàng Hoa Ban Mai Châu có Miễn Phí ship đồ ăn với hoá đơn từ 500k, quanh khu vực trung tâm thị trấn, các Homestay, Khách Sạn, Resort. Rất tiện lợi cho khách hàng có nhu cầu từ xa. Kính chào Quý Khách và hân hạnh được đón tiếp!",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/cb/11/d7/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.07362,
+                20.701088
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27981927",
+        "title": "Ban Bakery & Tea",
+        "city": "Mai Châu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "526.315.776 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Ban Bakery & Tea ở Mai Châu. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 526.315.776 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/af/a0/80/co-banh-mi-vi-t-nam.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.07933,
+                20.654785
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33116571",
+        "title": "Green Garden",
+        "city": "Na Phon",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Green Garden ở Na Phon. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.06161,
+                20.655638
+            ]
+        },
+        "openingHours": {
+            "display": "08:30-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25278330",
+        "title": "Green Restaurant & Bar",
+        "city": "Na Phon",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Nhà hàng phục vụ các món ăn Âu - Á, ẩm thực địa phương và đồ uống",
+        "embedding": null,
+        "searchText": "Green Restaurant & Bar ở Na Phon. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Nhà hàng phục vụ các món ăn Âu - Á, ẩm thực địa phương và đồ uống",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.06617,
+                20.655214
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26782510",
+        "title": "Quán Mái Lá",
+        "city": "Na Phon",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Mái Lá ở Na Phon. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.05866,
+                20.665392
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    }
+]

@@ -1,0 +1,501 @@
+[
+    {
+        "sourceLocationId": "6210059",
+        "title": "Quán 257",
+        "city": "Cà Mau",
+        "totalScore": 3.8,
+        "ranking": "1/6",
+        "reviewsCount": 6,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán 257 ở Cà Mau. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.8/5 từ 6 lượt review. Xếp hạng: 1/6.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/88/7c/b5/quan-257.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.152054,
+                9.179014
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12481041",
+        "title": "Quán Phượng 76 - Cơm Tấm",
+        "city": "Cà Mau",
+        "totalScore": 4.3,
+        "ranking": "2/6",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Phượng 76 - Cơm Tấm ở Cà Mau. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.3/5 từ 3 lượt review. Xếp hạng: 2/6.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/71/7d/a4/com-ga-chicken-rice.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.146286,
+                9.181443
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26223053",
+        "title": "Nhà hàng Thăng Long Đất Mũi",
+        "city": "Cà Mau",
+        "totalScore": 0,
+        "ranking": "3/6",
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Nhà hàng phục vụ các món ăn đặc sản vùng Đất Mũi Cà Mau",
+        "embedding": null,
+        "searchText": "Nhà hàng Thăng Long Đất Mũi ở Cà Mau. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Nhà hàng phục vụ các món ăn đặc sản vùng Đất Mũi Cà Mau Xếp hạng: 3/6.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.825005,
+                8.570195
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12906588",
+        "title": "Nhà hàng Vân Thủy",
+        "city": "Cà Mau",
+        "totalScore": 4.5,
+        "ranking": "4/6",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "Nằm ở vị trí trung tâm Đảo Uyên Ương thuộc Hồ Vân Thủy, Nhà hàng Vân Thủy là nơi quý khách có thể thưởng thức ẩm thực chính hiệu của Cà Mau, từ món ăn dân dã đến các món cao lương mỹ vị của xứ sở Đất Mũi.",
+        "embedding": null,
+        "searchText": "Nhà hàng Vân Thủy ở Cà Mau. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nằm ở vị trí trung tâm Đảo Uyên Ương thuộc Hồ Vân Thủy, Nhà hàng Vân Thủy là nơi quý khách có thể thưởng thức ẩm thực chính hiệu của Cà Mau, từ món ăn dân dã đến các món cao lương mỹ vị của xứ sở Đất Mũi. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 4/6. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/10/a9/9b/1b/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.16122,
+                9.179738
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12894983",
+        "title": "Cua Thứ Thiệt-Đặc Sản Cà Mau",
+        "city": "Cà Mau",
+        "totalScore": 5.0,
+        "ranking": "5/6",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "52.632 ₫ - 2.631.579 ₫",
+        "description": "Nhà hàng chuyên các món về Cua đầu tiên và duy nhất tại Thành Phố Cà Mau với các món ăn chính như: Cua Rang Muối, Cua Rang Me, Cua Sốt Trừng Muối, Cua Hấp Bia, Cua Sốt Bắp, Lẩu Cua, Miến Cua Tay Cầm, Cơm Chiên Cua,..ngoài ra nhà hàng cũng có nhiều món hải sản: Tôm, Mực, Hàu, ... Thêm nữa các đầu bếp của nhà hàng còn chế biến các món đồng quê: Vọp kho, Cá nâu nấu mẻ, kho trái giác, Cá Đuối nướng mở hành, Canh chua cá Bóp, Cá Rô kho tộ,...ngon bá cháy nhé.",
+        "embedding": null,
+        "searchText": "Cua Thứ Thiệt-Đặc Sản Cà Mau ở Cà Mau. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà hàng chuyên các món về Cua đầu tiên và duy nhất tại Thành Phố Cà Mau với các món ăn chính như: Cua Rang Muối, Cua Rang Me, Cua Sốt Trừng Muối, Cua Hấp Bia, Cua Sốt Bắp, Lẩu Cua, Miến Cua Tay Cầm, Cơm Chiên Cua,..ngoài ra nhà hàng cũng có nhiều món hải sản: Tôm, Mực, Hàu, ... Thêm nữa các đầu bếp của nhà hàng còn chế biến các món đồng quê: Vọp kho, Cá nâu nấu mẻ, kho trái giác, Cá Đuối nướng mở hành, Canh chua cá Bóp, Cá Rô kho tộ,...ngon bá cháy nhé. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 5/6. Giá: 52.632 ₫ - 2.631.579 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/29/18/c5/cua-s-t-bo-t-i.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.15771,
+                9.184072
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 840,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "16666099",
+        "title": "Trung Nguyen Legend Cafe",
+        "city": "Cà Mau",
+        "totalScore": 0,
+        "ranking": "6/6",
+        "reviewsCount": 0,
+        "category": "Quán cafe",
+        "priceRange": "789.473.664 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Trung Nguyen Legend Cafe ở Cà Mau. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Xếp hạng: 6/6. Giá: 789.473.664 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/77/a3/7a/coffee-room-1.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.14011,
+                9.18396
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32990970",
+        "title": "Thèm Bánh Mì Que",
+        "city": "Cà Mau",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thèm Bánh Mì Que ở Cà Mau. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.14284,
+                9.164021
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1560
+                    }
+                ],
+                [],
+                [],
+                [],
+                [],
+                []
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23086349",
+        "title": "The Pizza Company",
+        "city": "Cà Mau",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The Pizza Company ở Cà Mau. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.15489,
+                9.178391
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23309399",
+        "title": "First Class Pizza",
+        "city": "Cà Mau",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "First Class Pizza ở Cà Mau. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13076912",
+        "title": "King BBQ Buffet Cà Mau",
+        "city": "Cà Mau",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "King BBQ Buffet Cà Mau ở Cà Mau. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.15437,
+                9.178036
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19728534",
+        "title": "Nhà Hàng Cua Ngon Năm Căn",
+        "city": "Năm Căn",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Cua Ngon Năm Căn ở Năm Căn. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/54/fc/aa/food.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.99745,
+                8.776674
+            ]
+        },
+        "openingHours": null
+    }
+]

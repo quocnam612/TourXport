@@ -1,0 +1,5115 @@
+[
+    {
+        "sourceLocationId": "9748314",
+        "title": "Vinpearl Safari Phu Quoc",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 4.4,
+        "ranking": "5/102",
+        "reviewsCount": 864,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vinpearl Safari Phu Quoc ở Tỉnh Kiên Giang. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Sở thú & Thủy cung, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.4/5 từ 864 lượt review. Xếp hạng: 5/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Sở thú & Thủy cung",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/25/76/46/vinpearl-safari.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.89126,
+                10.337193
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-16:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 960
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8180427",
+        "title": "Chợ Dương Đông",
+        "city": "Dương Đông",
+        "totalScore": 3.5,
+        "ranking": "13/102",
+        "reviewsCount": 758,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Dương Đông ở Dương Đông. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 3.5/5 từ 758 lượt review. Xếp hạng: 13/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/55/2b/f9/20171107-190226-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.95977,
+                10.220317
+            ]
+        },
+        "openingHours": {
+            "display": "19:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "11948172",
+        "title": "Làng Chài Rạch Vèm",
+        "city": "Dương Đông",
+        "totalScore": 3.9,
+        "ranking": "26/102",
+        "reviewsCount": 120,
+        "category": "Đồ ăn & Đồ uống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Làng Chài Rạch Vèm ở Dương Đông. Loại địa điểm: Đồ ăn & Đồ uống. Tags: Điểm du lịch, Nơi mua sắm, Đồ ăn & Đồ uống. Đánh giá: 3.9/5 từ 120 lượt review. Xếp hạng: 26/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Đồ ăn & Đồ uống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/05/5f/e9/on-sea.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.93766,
+                10.372852
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "6429146",
+        "title": "Bãi Dài",
+        "city": "Dương Đông",
+        "totalScore": 3.5,
+        "ranking": "18/102",
+        "reviewsCount": 1187,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bãi Dài ở Dương Đông. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.5/5 từ 1187 lượt review. Xếp hạng: 18/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/02/30/ea/7e/bai-truong-long-beach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.96541,
+                10.188424
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1990359",
+        "title": "Phu Quoc Prison History Museum",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 3.9,
+        "ranking": "6/102",
+        "reviewsCount": 1703,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phu Quoc Prison History Museum ở Tỉnh Kiên Giang. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.9/5 từ 1703 lượt review. Xếp hạng: 6/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/84/a2/7c/aufpasser.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.01869,
+                10.043349
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "6962454",
+        "title": "Cao Dai Temple",
+        "city": "Dương Đông",
+        "totalScore": 4.1,
+        "ranking": "14/102",
+        "reviewsCount": 122,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cao Dai Temple ở Dương Đông. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.1/5 từ 122 lượt review. Xếp hạng: 14/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/c0/b4/c0/cao-dai-temple.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.96014,
+                10.21674
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13563044",
+        "title": "Cáp Treo Hòn Thơm",
+        "city": "An Thoi",
+        "totalScore": 4.4,
+        "ranking": "4/102",
+        "reviewsCount": 895,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cáp Treo Hòn Thơm ở An Thoi. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Phương tiện giao thông. Đánh giá: 4.4/5 từ 895 lượt review. Xếp hạng: 4/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Phương tiện giao thông"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/79/e3/dc/sun-world-hon-thom-nature.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.00738,
+                10.027111
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "7238096",
+        "title": "Tranh Stream",
+        "city": "Dương Đông",
+        "totalScore": 3.7,
+        "ranking": "15/102",
+        "reviewsCount": 328,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tranh Stream ở Dương Đông. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.7/5 từ 328 lượt review. Xếp hạng: 15/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/73/a8/9f/waterfall.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.01526,
+                10.183774
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12010702",
+        "title": "Bãi biển Ông Lang",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 4.2,
+        "ranking": "8/102",
+        "reviewsCount": 327,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bãi biển Ông Lang ở Tỉnh Kiên Giang. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.2/5 từ 327 lượt review. Xếp hạng: 8/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/eb/aa/2d/20181229-102357-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.92714,
+                10.269885
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8520250",
+        "title": "Bảo tàng Cội Nguồn",
+        "city": "Dương Đông",
+        "totalScore": 3.6,
+        "ranking": "33/102",
+        "reviewsCount": 70,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bảo tàng Cội Nguồn ở Dương Đông. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 3.6/5 từ 70 lượt review. Xếp hạng: 33/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/cb/09/a0/coi-nguon-museum.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.967224,
+                10.192905
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14916526",
+        "title": "Dinh Bà Thủy Long Thánh Mẫu",
+        "city": "Dương Đông",
+        "totalScore": 4.4,
+        "ranking": "30/102",
+        "reviewsCount": 16,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dinh Bà Thủy Long Thánh Mẫu ở Dương Đông. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.4/5 từ 16 lượt review. Xếp hạng: 30/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/c8/1f/fb/20180718-102808-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.95733,
+                10.216933
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6960622",
+        "title": "Su Muon Pagoda",
+        "city": "Dương Đông",
+        "totalScore": 4.0,
+        "ranking": "24/102",
+        "reviewsCount": 68,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Su Muon Pagoda ở Dương Đông. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 68 lượt review. Xếp hạng: 24/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/58/46/2c/outside.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.98591,
+                10.19926
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8587940",
+        "title": "Chùa Hộ Quốc",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 4.4,
+        "ranking": "2/102",
+        "reviewsCount": 466,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Hộ Quốc ở Tỉnh Kiên Giang. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.4/5 từ 466 lượt review. Xếp hạng: 2/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/06/79/23/ho-quoc-pagoda.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.02982,
+                10.111257
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16754765",
+        "title": "Bãi Dinh Cậu",
+        "city": "Dương Đông",
+        "totalScore": 4.1,
+        "ranking": "34/102",
+        "reviewsCount": 21,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bãi Dinh Cậu ở Dương Đông. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.1/5 từ 21 lượt review. Xếp hạng: 34/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/b2/2e/c4/rock-formation-at-end.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.47866,
+                10.38905
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "6499579",
+        "title": "Đá Bàn Stream",
+        "city": "Dương Đông",
+        "totalScore": 3.1,
+        "ranking": "66/102",
+        "reviewsCount": 115,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đá Bàn Stream ở Dương Đông. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.1/5 từ 115 lượt review. Xếp hạng: 66/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/e0/47/bb/da-ban-stream.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.03272,
+                10.244829
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15275820",
+        "title": "Phu Quoc Mushroom",
+        "city": "Dương Tơ",
+        "totalScore": 4.3,
+        "ranking": "64/102",
+        "reviewsCount": 7,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phu Quoc Mushroom ở Dương Tơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 7 lượt review. Xếp hạng: 64/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/36/ed/d2/very-good.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8855049",
+        "title": "Phu Quoc Biking Tours - Day Tours",
+        "city": "Dương Đông",
+        "totalScore": 4.2,
+        "ranking": "61/102",
+        "reviewsCount": 9,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phu Quoc Biking Tours - Day Tours ở Dương Đông. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Hoạt động ngoài trời. Đánh giá: 4.2/5 từ 9 lượt review. Xếp hạng: 61/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/15/cd/91/phu-quoc-biking-tours.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.48353,
+                10.37818
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17424094",
+        "title": "Hồ Dương Đông",
+        "city": "Dương Đông",
+        "totalScore": 4.5,
+        "ranking": "71/102",
+        "reviewsCount": 2,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hồ Dương Đông ở Dương Đông. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 71/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/76/c8/ce/photo8jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14982741",
+        "title": "Hòn Mây Rút",
+        "city": "An Thoi",
+        "totalScore": 4.4,
+        "ranking": "23/102",
+        "reviewsCount": 42,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hòn Mây Rút ở An Thoi. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.4/5 từ 42 lượt review. Xếp hạng: 23/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/ee/ed/a4/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.990036,
+                9.911595
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19801073",
+        "title": "Hung Quoc Tu Pagoda",
+        "city": "Dương Đông",
+        "totalScore": 5.0,
+        "ranking": "76/102",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hung Quoc Tu Pagoda ở Dương Đông. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 76/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/75/09/77/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12812590",
+        "title": "Chợ Đêm Phú Quốc",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 3.5,
+        "ranking": "25/102",
+        "reviewsCount": 381,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Đêm Phú Quốc ở Tỉnh Kiên Giang. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 3.5/5 từ 381 lượt review. Xếp hạng: 25/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/b7/1e/27/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.96035,
+                10.215991
+            ]
+        },
+        "openingHours": {
+            "display": "17:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19085779",
+        "title": "Day Market",
+        "city": "Dương Đông",
+        "totalScore": 4.3,
+        "ranking": "65/102",
+        "reviewsCount": 3,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Day Market ở Dương Đông. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 4.3/5 từ 3 lượt review. Xếp hạng: 65/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/fa/77/15/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14982748",
+        "title": "Hòn Gầm Ghì",
+        "city": "An Thoi",
+        "totalScore": 4.4,
+        "ranking": "31/102",
+        "reviewsCount": 27,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hòn Gầm Ghì ở An Thoi. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.4/5 từ 27 lượt review. Xếp hạng: 31/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/33/39/bd/04/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.015,
+                9.911353
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13562969",
+        "title": "Hon Thom Island",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 4.0,
+        "ranking": "21/102",
+        "reviewsCount": 84,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hon Thom Island ở Tỉnh Kiên Giang. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.0/5 từ 84 lượt review. Xếp hạng: 21/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/dd/97/54/20181222-110549-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.01421,
+                9.95267
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15853715",
+        "title": "Đình Nguyễn Trung Trực Pagoda",
+        "city": "Ganh Dau",
+        "totalScore": 4.5,
+        "ranking": "29/102",
+        "reviewsCount": 23,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đình Nguyễn Trung Trực Pagoda ở Ganh Dau. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 23 lượt review. Xếp hạng: 29/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/50/e2/14/templet-med-hjalten-framfor.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.84283,
+                10.373424
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1750341",
+        "title": "Bãi Tắm Sao",
+        "city": "An Thoi",
+        "totalScore": 3.4,
+        "ranking": "27/102",
+        "reviewsCount": 4227,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bãi Tắm Sao ở An Thoi. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.4/5 từ 4227 lượt review. Xếp hạng: 27/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/3b/89/69/sao-beach-in-january.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.03649,
+                10.057246
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "7220914",
+        "title": "Dinh Cau Rock (cau Temple)",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 4.1,
+        "ranking": "9/102",
+        "reviewsCount": 192,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dinh Cau Rock (cau Temple) ở Tỉnh Kiên Giang. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.1/5 từ 192 lượt review. Xếp hạng: 9/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/df/34/f3/jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.95656,
+                10.217269
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13123714",
+        "title": "Sunset Sanato Beach Club",
+        "city": "Dương Tơ",
+        "totalScore": 3.5,
+        "ranking": "46/102",
+        "reviewsCount": 142,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "Sau khi hợp tác với đại diện Epizode tại Việt Nam, một trong những lễ hội âm nhạc biển lớn nhất Đông Nam Á. Công ty đã phát triển dự án tổ hợp dịch vụ vui chơi giải trí tại bãi biển riêng với chiều dài 400m bao gồm các quán bar, khu ẩm thực và khu giải trí nhằm phục vụ cho du khách trong và ngoài nước đến Phú Quốc.\n\nSunset Sanato là lựa chọn hoàn hảo cho kỳ nghỉ của một đại gia đình nhiều thế hệ, nhóm vài ba gia đình có con nhỏ hay nhóm bạn bè, đồng nghiệp thân thiết.",
+        "embedding": null,
+        "searchText": "Sunset Sanato Beach Club ở Dương Tơ. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Hoạt động ngoài trời. Mô tả: Sau khi hợp tác với đại diện Epizode tại Việt Nam, một trong những lễ hội âm nhạc biển lớn nhất Đông Nam Á. Công ty đã phát triển dự án tổ hợp dịch vụ vui chơi giải trí tại bãi biển riêng với chiều dài 400m bao gồm các quán bar, khu ẩm thực và khu giải trí nhằm phục vụ cho du khách trong và ngoài nước đến Phú Quốc.\n\nSunset Sanato là lựa chọn hoàn hảo cho kỳ nghỉ của một đại gia đình nhiều thế hệ, nhóm vài ba gia đình có con nhỏ hay nhóm bạn bè, đồng nghiệp thân thiết. Đánh giá: 3.5/5 từ 142 lượt review. Xếp hạng: 46/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/b6/90/32/sunset.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.97337,
+                10.153608
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12729868",
+        "title": "Hòn Móng Tay",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 3.8,
+        "ranking": "35/102",
+        "reviewsCount": 61,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hòn Móng Tay ở Tỉnh Kiên Giang. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.8/5 từ 61 lượt review. Xếp hạng: 35/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/5e/75/66/photo1jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.86202,
+                10.300172
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8111328",
+        "title": "VinWonders Phú Quốc",
+        "city": "Ganh Dau",
+        "totalScore": 4.3,
+        "ranking": "3/102",
+        "reviewsCount": 1431,
+        "category": "Công viên nước & giải trí",
+        "priceRange": null,
+        "description": "Với diện tích lên tới 50ha, VinWonders Phú Quốc vô cùng tự hào khi được Tổ chức Kỷ lục Việt Nam xác lập kỷ lục Công viên chủ đề lớn nhất Việt Nam. Công viên chủ đề rộng lớn với sáu phân khu: Đại lộ Châu Âu European street mosphere, Thế giới diệu kỳ Fantasy World, Khu làng bí mật Viking village, Cung điện Hải Vương The seashell, Thế giới phiêu lưu Adventure World, Thế giới lốc xoáy Typhoon World. 12 chủ đề lấy cảm hứng từ các nền văn minh thế giới. Hơn 100 trò chơi hàng đầu thế giới với Được tạo nên bởi những đối tác có kinh nghiệm tạo nên các công viên chủ đề hàng đầu thế giới: Quantum, Legacy, AAT...",
+        "embedding": null,
+        "searchText": "VinWonders Phú Quốc ở Ganh Dau. Loại địa điểm: Công viên nước & giải trí. Tags: Điểm du lịch, Công viên nước & giải trí. Mô tả: Với diện tích lên tới 50ha, VinWonders Phú Quốc vô cùng tự hào khi được Tổ chức Kỷ lục Việt Nam xác lập kỷ lục Công viên chủ đề lớn nhất Việt Nam. Công viên chủ đề rộng lớn với sáu phân khu: Đại lộ Châu Âu European street mosphere, Thế giới diệu kỳ Fantasy World, Khu làng bí mật Viking village, Cung điện Hải Vương The seashell, Thế giới phiêu lưu Adventure World, Thế giới lốc xoáy Typhoon World. 12 chủ đề lấy cảm hứng từ các nền văn minh thế giới. Hơn 100 trò chơi hàng đầu thế giới với Được tạo nên bởi những đối tác có kinh nghiệm tạo nên các công viên chủ đề hàng đầu thế giới: Quantum, Legacy, AAT... Đánh giá: 4.3/5 từ 1431 lượt review. Xếp hạng: 3/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/5a/23/8c/vinwonders-phu-qu-c-noi.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.854935,
+                10.341201
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-19:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1170
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1170
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1170
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1170
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1170
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1170
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1170
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26768745",
+        "title": "Bà Kéo",
+        "city": "Dương Tơ",
+        "totalScore": 1.0,
+        "ranking": "86/102",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bà Kéo ở Dương Tơ. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 1.0/5 từ 1 lượt review. Xếp hạng: 86/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/bb/cf/e3/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.96368,
+                10.195259
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21511863",
+        "title": "Tàu Cao Tốc Phú Quốc Express",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 1.0,
+        "ranking": "87/102",
+        "reviewsCount": 3,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tàu Cao Tốc Phú Quốc Express ở Tỉnh Kiên Giang. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Phương tiện giao thông. Đánh giá: 1.0/5 từ 3 lượt review. Xếp hạng: 87/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Phương tiện giao thông"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/78/3a/eb/tau-cao-t-c-canh-ng-m.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.959435,
+                10.21439
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34350935",
+        "title": "Kingkong Mart Phú Quốc",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kingkong Mart Phú Quốc ở Tỉnh Kiên Giang. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.64087,
+                20.997967
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34229649",
+        "title": "Phu Quoc Basketball",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Sự kiện",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phu Quoc Basketball ở Tỉnh Kiên Giang. Loại địa điểm: Sự kiện. Tags: Điểm du lịch, Vui chơi & Giải trí, Sự kiện.",
+        "tags": [
+            "Điểm du lịch",
+            "Vui chơi & Giải trí",
+            "Sự kiện"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/32/8b/54/b0/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.96676,
+                10.22334
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1020,
+                        "close_time": 1110
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34144985",
+        "title": "Tamarind spa",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tamarind spa ở Tỉnh Kiên Giang. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Lớp học & hội thảo, Khác, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Lớp học & hội thảo",
+            "Khác",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/49/e9/86/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "08:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34119310",
+        "title": "Bai Duong, Phu Quoc",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bai Duong, Phu Quoc ở Tỉnh Kiên Giang. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.64087,
+                20.997967
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33016921",
+        "title": "Hòn Sơn",
+        "city": "Rạch Giá",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hòn Sơn ở Rạch Giá. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.07651,
+                10.01329
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "31125091",
+        "title": "Cảpe",
+        "city": "Rạch Giá",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cảpe ở Rạch Giá. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.08091,
+                10.01245
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28704756",
+        "title": "Hồng Anh Store",
+        "city": "An Thoi",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hồng Anh Store ở An Thoi. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/22/c2/58/cho-thue-xe-d-p-gia-ch.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.01047,
+                10.28715
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28121735",
+        "title": "Sunset Town Beach",
+        "city": "An Thoi",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sunset Town Beach ở An Thoi. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.01047,
+                10.28715
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28028699",
+        "title": "Hon Chuoi",
+        "city": "Rạch Giá",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hon Chuoi ở Rạch Giá. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.08091,
+                10.01245
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:45",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28028689",
+        "title": "Hon Nghe Island",
+        "city": "Rạch Giá",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hon Nghe Island ở Rạch Giá. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.08091,
+                10.01245
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:45",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1425
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28016020",
+        "title": "Coral Bay Studio",
+        "city": "Ganh Dau",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Coral Bay Studio ở Ganh Dau. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.83876,
+                10.370162
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27095901",
+        "title": "Phòng Vé Mỹ Tính",
+        "city": "Rạch Giá",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": "Phòng vé tàu phà cao tốc Mỹ Tính chuyên bán các loại vé tàu phà cao tốc đi Hòn Sơn, Nam Du, Phú Quốc, Côn Đảo. Hãy liên hệ với chúng tôi để được tư vấn tận tình về thời tiết, lịch tàu chạy, lựa chọn phương tiện tàu – phà phù hợp, thông tin giá vé,… để phục vụ tốt nhất cho chuyến đi của quý khách. Phòng vé đối diện bến tàu Rạch Giá, quý khách có thể đến trực tiếp phòng vé để lấy vé hoặc thanh toán online để nhận vé điện tử. Phòng vé thành lập từ năm 2017 đến nay đã phục vụ cho hàng trăm nghìn lượt di chuyển của quý khách. Đồng hành cùng tất cả các hãng tàu Phú Quốc Express, Superdong, phà Thạnh Thới, Hoà Bình Ship.",
+        "embedding": null,
+        "searchText": "Phòng Vé Mỹ Tính ở Rạch Giá. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Phương tiện giao thông. Mô tả: Phòng vé tàu phà cao tốc Mỹ Tính chuyên bán các loại vé tàu phà cao tốc đi Hòn Sơn, Nam Du, Phú Quốc, Côn Đảo. Hãy liên hệ với chúng tôi để được tư vấn tận tình về thời tiết, lịch tàu chạy, lựa chọn phương tiện tàu – phà phù hợp, thông tin giá vé,… để phục vụ tốt nhất cho chuyến đi của quý khách. Phòng vé đối diện bến tàu Rạch Giá, quý khách có thể đến trực tiếp phòng vé để lấy vé hoặc thanh toán online để nhận vé điện tử. Phòng vé thành lập từ năm 2017 đến nay đã phục vụ cho hàng trăm nghìn lượt di chuyển của quý khách. Đồng hành cùng tất cả các hãng tàu Phú Quốc Express, Superdong, phà Thạnh Thới, Hoà Bình Ship.",
+        "tags": [
+            "Điểm du lịch",
+            "Phương tiện giao thông"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.077896,
+                10.010695
+            ]
+        },
+        "openingHours": {
+            "display": "05:00-19:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1140
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25321834",
+        "title": "Bana Cana Beach Club",
+        "city": "Ong Lang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bana Cana Beach Club ở Ong Lang. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.94305,
+                10.259289
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17783354",
+        "title": "Hòn Gầm Ghì",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hòn Gầm Ghì ở Tỉnh Kiên Giang. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/1a/22/13/7b/gam-ghi-island-phu-quoc.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17673912",
+        "title": "Thiền Viện Trúc Lâm Hộ Quốc (Chùa Hộ Quốc)",
+        "city": "Dương Tơ",
+        "totalScore": 4.7,
+        "ranking": "43/102",
+        "reviewsCount": 7,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thiền Viện Trúc Lâm Hộ Quốc (Chùa Hộ Quốc) ở Dương Tơ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.7/5 từ 7 lượt review. Xếp hạng: 43/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/11/a5/f9/thi-n-vi-n-truc-lam-h.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6692260",
+        "title": "Vung Bau Beach",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 3.9,
+        "ranking": "19/102",
+        "reviewsCount": 156,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vung Bau Beach ở Tỉnh Kiên Giang. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.9/5 từ 156 lượt review. Xếp hạng: 19/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/1d/08/90/photo4jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.87123,
+                10.307667
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13819376",
+        "title": "Sun World Hon Thom Nature Park",
+        "city": "An Thoi",
+        "totalScore": 3.4,
+        "ranking": "41/102",
+        "reviewsCount": 144,
+        "category": "Công viên nước & giải trí",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sun World Hon Thom Nature Park ở An Thoi. Loại địa điểm: Công viên nước & giải trí. Tags: Điểm du lịch, Công viên nước & giải trí. Đánh giá: 3.4/5 từ 144 lượt review. Xếp hạng: 41/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/01/38/39/the-sunset-in-sun-world.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.007385,
+                10.027119
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-11:30, 13:30-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17623657",
+        "title": "Hòn Kim Quy",
+        "city": "An Thoi",
+        "totalScore": 5.0,
+        "ranking": "68/102",
+        "reviewsCount": 2,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hòn Kim Quy ở An Thoi. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 68/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/ee/db/67/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.98164,
+                9.919296
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "6964526",
+        "title": "Sung Hung Pagoda",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 4.1,
+        "ranking": "28/102",
+        "reviewsCount": 46,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sung Hung Pagoda ở Tỉnh Kiên Giang. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.1/5 từ 46 lượt review. Xếp hạng: 28/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/e8/6b/69/tempel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.95918,
+                10.214557
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19942511",
+        "title": "Starfish Beach",
+        "city": "Ganh Dau",
+        "totalScore": 2.4,
+        "ranking": "88/102",
+        "reviewsCount": 226,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Starfish Beach ở Ganh Dau. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 2.4/5 từ 226 lượt review. Xếp hạng: 88/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/e4/ae/45/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.93732,
+                10.372049
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17623652",
+        "title": "Bom Island",
+        "city": "An Thoi",
+        "totalScore": 3.8,
+        "ranking": "70/102",
+        "reviewsCount": 4,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bom Island ở An Thoi. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.8/5 từ 4 lượt review. Xếp hạng: 70/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/c1/34/a0/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.02181,
+                9.907336
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19859373",
+        "title": "Boutique ha spa",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 5.0,
+        "ranking": "36/102",
+        "reviewsCount": 12,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Boutique ha spa ở Tỉnh Kiên Giang. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Lớp học & hội thảo, Khác, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 12 lượt review. Xếp hạng: 36/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Lớp học & hội thảo",
+            "Khác",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/8b/0e/9d/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.9711,
+                10.188197
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10795060",
+        "title": "Bãi Biển Mũi Gành Dầu",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 3.7,
+        "ranking": "44/102",
+        "reviewsCount": 30,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bãi Biển Mũi Gành Dầu ở Tỉnh Kiên Giang. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.7/5 từ 30 lượt review. Xếp hạng: 44/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/ff/ec/89/the-rock-pile-reaching.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.83848,
+                10.372494
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10795054",
+        "title": "Bãi Thơm",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 3.5,
+        "ranking": "59/102",
+        "reviewsCount": 39,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bãi Thơm ở Tỉnh Kiên Giang. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.5/5 từ 39 lượt review. Xếp hạng: 59/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/7b/87/bf/thom-beach-bar.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.04803,
+                10.40705
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10820543",
+        "title": "Bãi Khem",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 3.8,
+        "ranking": "20/102",
+        "reviewsCount": 98,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bãi Khem ở Tỉnh Kiên Giang. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.8/5 từ 98 lượt review. Xếp hạng: 20/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/1c/f0/8d/photo1jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.030876,
+                10.036606
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "5512881",
+        "title": "Suoi Tranh Waterfall",
+        "city": "Hàm Ninh",
+        "totalScore": 3.5,
+        "ranking": "17/102",
+        "reviewsCount": 487,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Suoi Tranh Waterfall ở Hàm Ninh. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.5/5 từ 487 lượt review. Xếp hạng: 17/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/ec/eb/3c/photo3jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.013535,
+                10.178766
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8071509",
+        "title": "Bến Hàm Ninh",
+        "city": "Hàm Ninh",
+        "totalScore": 3.6,
+        "ranking": "32/102",
+        "reviewsCount": 157,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bến Hàm Ninh ở Hàm Ninh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.6/5 từ 157 lượt review. Xếp hạng: 32/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/83/64/65/the-pier.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.04915,
+                10.181105
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11622187",
+        "title": "Superdong",
+        "city": "Rạch Giá",
+        "totalScore": 3.3,
+        "ranking": "75/102",
+        "reviewsCount": 93,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Superdong ở Rạch Giá. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Phương tiện giao thông. Đánh giá: 3.3/5 từ 93 lượt review. Xếp hạng: 75/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Phương tiện giao thông"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/0f/d2/07/photo-prise-par-guythu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10818294",
+        "title": "Viện Bảo Tàng Kiên Giang",
+        "city": "Rạch Giá",
+        "totalScore": 3.8,
+        "ranking": "56/102",
+        "reviewsCount": 12,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Viện Bảo Tàng Kiên Giang ở Rạch Giá. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 3.8/5 từ 12 lượt review. Xếp hạng: 56/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/c4/8a/43/outside-of-kien-giang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.084885,
+                10.009234
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8517573",
+        "title": "Đảo Nam Du",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 0,
+        "ranking": "38/102",
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đảo Nam Du ở Tỉnh Kiên Giang. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Xếp hạng: 38/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15757774",
+        "title": "Chợ Hà Tiên",
+        "city": "Hà Tiên",
+        "totalScore": 4.5,
+        "ranking": "53/102",
+        "reviewsCount": 6,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Hà Tiên ở Hà Tiên. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 4.5/5 từ 6 lượt review. Xếp hạng: 53/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/1c/5a/5a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.96986,
+                10.223828
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19597431",
+        "title": "Anony History Museum",
+        "city": "Ganh Dau",
+        "totalScore": 2.9,
+        "ranking": "84/102",
+        "reviewsCount": 10,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Anony History Museum ở Ganh Dau. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 2.9/5 từ 10 lượt review. Xếp hạng: 84/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/5b/08/b1/khasch-du-lich.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.86096,
+                10.329317
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "16698515",
+        "title": "Đảo Hòn Một",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 3.6,
+        "ranking": "73/102",
+        "reviewsCount": 5,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đảo Hòn Một ở Tỉnh Kiên Giang. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.6/5 từ 5 lượt review. Xếp hạng: 73/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/87/94/1b/photo3jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15801647",
+        "title": "Đình Thần Nguyễn Trung Trực",
+        "city": "Rạch Giá",
+        "totalScore": 4.0,
+        "ranking": "72/102",
+        "reviewsCount": 3,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đình Thần Nguyễn Trung Trực ở Rạch Giá. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 3 lượt review. Xếp hạng: 72/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/de/1e/4c/hinh-nh-l-h-i-nguy-n.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.08625,
+                10.00562
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19924380",
+        "title": "Chùa Sùng Đức",
+        "city": "An Thoi",
+        "totalScore": 4.0,
+        "ranking": "63/102",
+        "reviewsCount": 3,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Sùng Đức ở An Thoi. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 3 lượt review. Xếp hạng: 63/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/d5/04/77/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10844693",
+        "title": "Chùa Tam Bao",
+        "city": "Rạch Giá",
+        "totalScore": 4.0,
+        "ranking": "81/102",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Tam Bao ở Rạch Giá. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 81/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/f8/26/83/temple-gardens.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19089963",
+        "title": "Vườn Quốc Gia U Minh Thượng",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 2.0,
+        "ranking": "85/102",
+        "reviewsCount": 2,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn Quốc Gia U Minh Thượng ở Tỉnh Kiên Giang. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 2.0/5 từ 2 lượt review. Xếp hạng: 85/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/19/7b/41/c4/photo2jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10196855",
+        "title": "Chùa Thanh Vân (Thanh Vân Tự)",
+        "city": "Hà Tiên",
+        "totalScore": 3.9,
+        "ranking": "49/102",
+        "reviewsCount": 15,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Thanh Vân (Thanh Vân Tự) ở Hà Tiên. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.9/5 từ 15 lượt review. Xếp hạng: 49/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/79/9b/97/thanh-van-pagoda-thach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.47381,
+                10.410089
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6109101",
+        "title": "Poivres à Phú Quốc chez Lê Hô",
+        "city": "Suoi May",
+        "totalScore": 4.3,
+        "ranking": "11/102",
+        "reviewsCount": 232,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Poivres à Phú Quốc chez Lê Hô ở Suoi May. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 232 lượt review. Xếp hạng: 11/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/4d/ef/8e/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.99708,
+                10.183721
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 720
+                    },
+                    {
+                        "open_time": 840,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10068677",
+        "title": "Phòng vé Hà Tiên-Phú Quốc Biển Hà Tiên",
+        "city": "Hà Tiên",
+        "totalScore": 3.6,
+        "ranking": "62/102",
+        "reviewsCount": 19,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": "Văn phòng đặt vé tàu cao tốc 5 sao Phú Quốc Express các tuyến Hà Tiên-Phú Quốc, Rạch Giá-Phú Quốc, Rạch Giá-Nam Du, Vũng Tàu-Côn Đảo ... và ngược lại. Đặt vé và nhận vé điện tử nhanh chóng qua e-mail hoặc whatsapp.",
+        "embedding": null,
+        "searchText": "Phòng vé Hà Tiên-Phú Quốc Biển Hà Tiên ở Hà Tiên. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Phương tiện giao thông. Mô tả: Văn phòng đặt vé tàu cao tốc 5 sao Phú Quốc Express các tuyến Hà Tiên-Phú Quốc, Rạch Giá-Phú Quốc, Rạch Giá-Nam Du, Vũng Tàu-Côn Đảo ... và ngược lại. Đặt vé và nhận vé điện tử nhanh chóng qua e-mail hoặc whatsapp. Đánh giá: 3.6/5 từ 19 lượt review. Xếp hạng: 62/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Phương tiện giao thông"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/16/28/69/1e/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.96141,
+                10.22948
+            ]
+        },
+        "openingHours": {
+            "display": "05:00-19:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1140
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13416497",
+        "title": "Chợ đêm Hà Tiên",
+        "city": "Hà Tiên",
+        "totalScore": 3.0,
+        "ranking": "83/102",
+        "reviewsCount": 7,
+        "category": "Đồ ăn & Đồ uống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ đêm Hà Tiên ở Hà Tiên. Loại địa điểm: Đồ ăn & Đồ uống. Tags: Điểm du lịch, Nơi mua sắm, Đồ ăn & Đồ uống. Đánh giá: 3.0/5 từ 7 lượt review. Xếp hạng: 83/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Đồ ăn & Đồ uống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/11/5e/89/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.47501,
+                10.37666
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10785417",
+        "title": "Khu Mộ Gia  Đình Mạc Cửu",
+        "city": "Hà Tiên",
+        "totalScore": 3.7,
+        "ranking": "60/102",
+        "reviewsCount": 11,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu Mộ Gia  Đình Mạc Cửu ở Hà Tiên. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.7/5 từ 11 lượt review. Xếp hạng: 60/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/2b/9a/a7/day-la-khu-d-n-th-dong.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.48361,
+                10.387125
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14027967",
+        "title": "Bình An Hà Tiên",
+        "city": "Hà Tiên",
+        "totalScore": 4.0,
+        "ranking": "78/102",
+        "reviewsCount": 1,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bình An Hà Tiên ở Hà Tiên. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Phương tiện giao thông. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 78/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Phương tiện giao thông"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/fd/26/da/pha-binh-an-ha-tien.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "04:15-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 255,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 255,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 255,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 255,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 255,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 255,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 255,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19649487",
+        "title": "KDL Sinh Thái Master Hải Phú Quốc",
+        "city": "Cua Can",
+        "totalScore": 4.0,
+        "ranking": "79/102",
+        "reviewsCount": 1,
+        "category": "Công viên nước & giải trí",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "KDL Sinh Thái Master Hải Phú Quốc ở Cua Can. Loại địa điểm: Công viên nước & giải trí. Tags: Điểm du lịch, Công viên nước & giải trí. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 79/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/44/34/76/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19972534",
+        "title": "Aquatopia Water Park",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 3.9,
+        "ranking": "22/102",
+        "reviewsCount": 75,
+        "category": "Công viên nước & giải trí",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Aquatopia Water Park ở Tỉnh Kiên Giang. Loại địa điểm: Công viên nước & giải trí. Tags: Điểm du lịch, Công viên nước & giải trí. Đánh giá: 3.9/5 từ 75 lượt review. Xếp hạng: 22/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/79/e5/e8/aquatopia-water-park.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.01665,
+                9.956056
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12387705",
+        "title": "Tịnh Xá Ngọc Chương",
+        "city": "Vi Thanh",
+        "totalScore": 4.0,
+        "ranking": "80/102",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tịnh Xá Ngọc Chương ở Vi Thanh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 80/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/31/96/9f/photo-prise-par-guythu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8532507",
+        "title": "Phu Quoc Bee Farm",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 4.8,
+        "ranking": "1/102",
+        "reviewsCount": 324,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": "\"Nestled in the natural beauty of Phu Quoc Island, Phu Quoc Bee Farm is a place where visitors can immerse themselves in the fascinating world of honeybees and discover the vital role these remarkable creatures play in sustaining our food chain and ecosystem. We invite you to explore our bee-friendly habitats and learn firsthand how bees create honey, pollen, and beeswax. At Phu Quoc Bee Farm, we offer more than just honey. Sip on our home-brewed Honey Kombucha and other refreshing, health-focused drinks, or savor our homemade dishes crafted with care. Plus, take a piece of the experience home by purchasing our artisanal products, knowing that each item is made with love and respect for nature! We look forward to welcoming you to our farm!\"",
+        "embedding": null,
+        "searchText": "Phu Quoc Bee Farm ở Tỉnh Kiên Giang. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Mô tả: \"Nestled in the natural beauty of Phu Quoc Island, Phu Quoc Bee Farm is a place where visitors can immerse themselves in the fascinating world of honeybees and discover the vital role these remarkable creatures play in sustaining our food chain and ecosystem. We invite you to explore our bee-friendly habitats and learn firsthand how bees create honey, pollen, and beeswax. At Phu Quoc Bee Farm, we offer more than just honey. Sip on our home-brewed Honey Kombucha and other refreshing, health-focused drinks, or savor our homemade dishes crafted with care. Plus, take a piece of the experience home by purchasing our artisanal products, knowing that each item is made with love and respect for nature! We look forward to welcoming you to our farm!\" Đánh giá: 4.8/5 từ 324 lượt review. Xếp hạng: 1/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/6b/71/c9/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.941,
+                10.315014
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "31684780",
+        "title": "Antinho Green Travel",
+        "city": "Dương Đông",
+        "totalScore": 5.0,
+        "ranking": "7/102",
+        "reviewsCount": 36,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Antinho Green Travel ở Dương Đông. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Thông tin cho khách du lịch. Đánh giá: 5.0/5 từ 36 lượt review. Xếp hạng: 7/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/69/11/ce/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.95908,
+                10.213697
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25226998",
+        "title": "Phu Quoc Centre",
+        "city": "Dương Đông",
+        "totalScore": 4.7,
+        "ranking": "10/102",
+        "reviewsCount": 72,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phu Quoc Centre ở Dương Đông. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 4.7/5 từ 72 lượt review. Xếp hạng: 10/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/cc/05/33/latest-renewed-phu-quoc.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.96002,
+                10.215075
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-26:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1560
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1560
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27100518",
+        "title": "Kiss Bridge Phu Quoc",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 4.8,
+        "ranking": "12/102",
+        "reviewsCount": 31,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kiss Bridge Phu Quoc ở Tỉnh Kiên Giang. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.8/5 từ 31 lượt review. Xếp hạng: 12/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/2b/69/cc/kiss-bridge.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.003784,
+                10.028042
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34317962",
+        "title": "Phu Quoc Island Tennis Academy",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 5.0,
+        "ranking": "16/102",
+        "reviewsCount": 13,
+        "category": "Vui chơi & Giải trí",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phu Quoc Island Tennis Academy ở Tỉnh Kiên Giang. Loại địa điểm: Vui chơi & Giải trí. Tags: Điểm du lịch, Vui chơi & Giải trí. Đánh giá: 5.0/5 từ 13 lượt review. Xếp hạng: 16/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Vui chơi & Giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/33/4d/fa/a8/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.963646,
+                10.206237
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26591585",
+        "title": "Grand World Phu Quoc",
+        "city": "Ganh Dau",
+        "totalScore": 3.4,
+        "ranking": "37/102",
+        "reviewsCount": 71,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Grand World Phu Quoc ở Ganh Dau. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.4/5 từ 71 lượt review. Xếp hạng: 37/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/33/4b/36/7c/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.86295,
+                10.328481
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27134028",
+        "title": "Công Viên Nghệ Thuật Đương Đại Urban Park - Grand World",
+        "city": "Ganh Dau",
+        "totalScore": 4.4,
+        "ranking": "39/102",
+        "reviewsCount": 8,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Công Viên Nghệ Thuật Đương Đại Urban Park - Grand World ở Ganh Dau. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.4/5 từ 8 lượt review. Xếp hạng: 39/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/c6/15/d7/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.86218,
+                10.328597
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33344409",
+        "title": "Long Beach Mart",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 4.2,
+        "ranking": "40/102",
+        "reviewsCount": 9,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Long Beach Mart ở Tỉnh Kiên Giang. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 4.2/5 từ 9 lượt review. Xếp hạng: 40/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/30/94/6f/51/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.966576,
+                10.191215
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "6936600",
+        "title": "Archipelago Anthoy",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 4.9,
+        "ranking": "42/102",
+        "reviewsCount": 11,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Archipelago Anthoy ở Tỉnh Kiên Giang. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.9/5 từ 11 lượt review. Xếp hạng: 42/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/35/49/a9/photo1jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.015,
+                9.976333
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27121706",
+        "title": "Bamboo Legend",
+        "city": "Ganh Dau",
+        "totalScore": 4.3,
+        "ranking": "45/102",
+        "reviewsCount": 7,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bamboo Legend ở Ganh Dau. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 7 lượt review. Xếp hạng: 45/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/ea/e9/70/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.8628,
+                10.328138
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26867174",
+        "title": "Corona Resort & Casino Phú Quốc",
+        "city": "Ganh Dau",
+        "totalScore": 4.0,
+        "ranking": "47/102",
+        "reviewsCount": 12,
+        "category": "Vui chơi & Giải trí",
+        "priceRange": null,
+        "description": "Tọa lạc tại vị trí đắc địa bậc nhất của Đảo Ngọc Phú Quốc, Corona Resort & Casino tự hào là một trong những tổ hợp nghỉ dưỡng sang trọng bậc nhất Việt Nam với hơn 3.000 phòng khách sạn và biệt thự từ tiêu chuẩn 3 sao đến 5 sao, các nhà hàng đẳng cấp quốc tế, sân golf 18 lỗ, hàng loạt điểm vui chơi giải trí và một sòng bạc hiện đại.",
+        "embedding": null,
+        "searchText": "Corona Resort & Casino Phú Quốc ở Ganh Dau. Loại địa điểm: Vui chơi & Giải trí. Tags: Điểm du lịch, Sòng bạc & Đánh bạc, Vui chơi & Giải trí. Mô tả: Tọa lạc tại vị trí đắc địa bậc nhất của Đảo Ngọc Phú Quốc, Corona Resort & Casino tự hào là một trong những tổ hợp nghỉ dưỡng sang trọng bậc nhất Việt Nam với hơn 3.000 phòng khách sạn và biệt thự từ tiêu chuẩn 3 sao đến 5 sao, các nhà hàng đẳng cấp quốc tế, sân golf 18 lỗ, hàng loạt điểm vui chơi giải trí và một sòng bạc hiện đại. Đánh giá: 4.0/5 từ 12 lượt review. Xếp hạng: 47/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Sòng bạc & Đánh bạc",
+            "Vui chơi & Giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/d4/eb/d9/corona-resort-casino.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.855194,
+                10.329831
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27416536",
+        "title": "Ice Jungle Phu Quoc",
+        "city": "An Thoi",
+        "totalScore": 5.0,
+        "ranking": "48/102",
+        "reviewsCount": 3,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ice Jungle Phu Quoc ở An Thoi. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 48/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/a3/19/0d/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27100602",
+        "title": "Sunset Town Beach",
+        "city": "An Thoi",
+        "totalScore": 4.2,
+        "ranking": "50/102",
+        "reviewsCount": 6,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sunset Town Beach ở An Thoi. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 6 lượt review. Xếp hạng: 50/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/40/52/94/car-and-motorbike-rental.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.00689,
+                10.029596
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27100517",
+        "title": "Sunset Town Beach",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 3.8,
+        "ranking": "51/102",
+        "reviewsCount": 8,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sunset Town Beach ở Tỉnh Kiên Giang. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.8/5 từ 8 lượt review. Xếp hạng: 51/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/6a/7c/ef/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.00667,
+                10.029101
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27524539",
+        "title": "Sunset Town Phu Quoc",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 3.4,
+        "ranking": "52/102",
+        "reviewsCount": 37,
+        "category": "Khác",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sunset Town Phu Quoc ở Tỉnh Kiên Giang. Loại địa điểm: Khác. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Khác. Đánh giá: 3.4/5 từ 37 lượt review. Xếp hạng: 52/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Khác"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/c3/3f/9d/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.0058,
+                10.03138
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27133957",
+        "title": "Bach Dang Park (Dinh Cau)",
+        "city": "Dương Đông",
+        "totalScore": 4.7,
+        "ranking": "54/102",
+        "reviewsCount": 3,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bach Dang Park (Dinh Cau) ở Dương Đông. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.7/5 từ 3 lượt review. Xếp hạng: 54/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/01/13/77/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.95806,
+                10.217312
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25168349",
+        "title": "Bãi Trường Phú Quốc",
+        "city": "Dương Tơ",
+        "totalScore": 4.3,
+        "ranking": "55/102",
+        "reviewsCount": 4,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "ở bãi biển riêng biệt",
+        "embedding": null,
+        "searchText": "Bãi Trường Phú Quốc ở Dương Tơ. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Mô tả: ở bãi biển riêng biệt Đánh giá: 4.3/5 từ 4 lượt review. Xếp hạng: 55/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/63/a1/68/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.97533,
+                10.144719
+            ]
+        },
+        "openingHours": {
+            "display": "16:30-21:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 990,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26771336",
+        "title": "Tiên Sơn Đỉnh",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 5.0,
+        "ranking": "57/102",
+        "reviewsCount": 2,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tiên Sơn Đỉnh ở Tỉnh Kiên Giang. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 57/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/9c/ab/93/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.02765,
+                10.17682
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27100610",
+        "title": "TR Mart - Phú Quốc",
+        "city": "Dương Tơ",
+        "totalScore": 5.0,
+        "ranking": "58/102",
+        "reviewsCount": 2,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "TR Mart - Phú Quốc ở Dương Tơ. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 58/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/1b/30/d0/tr-mart-supermarket-sonasea.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.98235,
+                10.132132
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 600
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 600
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32707193",
+        "title": "A Oi Theater",
+        "city": "An Thoi",
+        "totalScore": 5.0,
+        "ranking": "67/102",
+        "reviewsCount": 1,
+        "category": "Hòa nhạc & chương trình biểu diễn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "A Oi Theater ở An Thoi. Loại địa điểm: Hòa nhạc & chương trình biểu diễn. Tags: Điểm du lịch, Hòa nhạc & chương trình biểu diễn. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 67/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Hòa nhạc & chương trình biểu diễn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/5c/5a/e0/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.00411,
+                10.031542
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1080
+                    },
+                    {
+                        "open_time": 1320,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1080
+                    },
+                    {
+                        "open_time": 1320,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1080
+                    },
+                    {
+                        "open_time": 1320,
+                        "close_time": 1350
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1080
+                    },
+                    {
+                        "open_time": 1320,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1080
+                    },
+                    {
+                        "open_time": 1320,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1050,
+                        "close_time": 1080
+                    },
+                    {
+                        "open_time": 1320,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15292597",
+        "title": "Tiên Sơn Đỉnh",
+        "city": "Hàm Ninh",
+        "totalScore": 5.0,
+        "ranking": "69/102",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tiên Sơn Đỉnh ở Hàm Ninh. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 69/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/97/75/0a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23498831",
+        "title": "Hồ Bơi Cà Phê Nam Anh",
+        "city": "Dương Đông",
+        "totalScore": 5.0,
+        "ranking": "74/102",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hồ Bơi Cà Phê Nam Anh ở Dương Đông. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 74/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1d/45/10/de/a-beatiful-view-with.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.957344,
+                10.241433
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-19:45",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1185
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1185
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1185
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1185
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1185
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1185
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1185
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26773020",
+        "title": "Dam Beach",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 3.3,
+        "ranking": "77/102",
+        "reviewsCount": 3,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dam Beach ở Tỉnh Kiên Giang. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 3.3/5 từ 3 lượt review. Xếp hạng: 77/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/63/c4/60/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.02489,
+                10.096883
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33366991",
+        "title": "Sonasea Shopping Center",
+        "city": "Tỉnh Kiên Giang",
+        "totalScore": 3.0,
+        "ranking": "82/102",
+        "reviewsCount": 1,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sonasea Shopping Center ở Tỉnh Kiên Giang. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 82/102.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.98286,
+                10.130402
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    }
+]

@@ -1,0 +1,206 @@
+[
+    {
+        "sourceLocationId": "8524802",
+        "title": "Ben Tre Riverside Resort",
+        "city": "Bến Tre",
+        "totalScore": 3.9,
+        "ranking": null,
+        "reviewsCount": 258,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ben Tre Riverside Resort ở Bến Tre. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 3.9/5 từ 258 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/19/29/da/view-from-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.35053,
+                10.221187
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21275812",
+        "title": "Diamond Stars Ben Tre Hotel",
+        "city": "Bến Tre",
+        "totalScore": 4.5,
+        "ranking": null,
+        "reviewsCount": 64,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Diamond Stars Ben Tre Hotel ở Bến Tre. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.5/5 từ 64 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/66/c4/bc/elite-suite-room.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37557,
+                10.234543
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19115591",
+        "title": "Coco Happy Farm",
+        "city": "Luong Hoa",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 41,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Coco Happy Farm ở Luong Hoa. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 41 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/24/7c/92/d8/harvesting-coconuts.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.44445,
+                10.194003
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12384791",
+        "title": "Mekong Home",
+        "city": "Phước Long",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 294,
+        "category": "Cơ sở lưu trú đặc biệt",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mekong Home ở Phước Long. Loại địa điểm: Cơ sở lưu trú đặc biệt. Tags: Khách sạn, Cơ sở lưu trú đặc biệt. Đánh giá: 4.9/5 từ 294 lượt review.",
+        "tags": [
+            "Khách sạn",
+            "Cơ sở lưu trú đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/25/d6/bd/de/swimming-pool.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.3891,
+                10.15766
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1449794",
+        "title": "Khách sạn Du lịch Hàm Luông",
+        "city": "Bến Tre",
+        "totalScore": 3.8,
+        "ranking": null,
+        "reviewsCount": 72,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Du lịch Hàm Luông ở Bến Tre. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 3.8/5 từ 72 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/0f/fe/25/20170105-082132-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37083,
+                10.234245
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "3316221",
+        "title": "Viet Uc Hotel",
+        "city": "Bến Tre",
+        "totalScore": 3.8,
+        "ranking": null,
+        "reviewsCount": 93,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Viet Uc Hotel ở Bến Tre. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 3.8/5 từ 93 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/13/d4/97/photo4jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37507,
+                10.234745
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "3511670",
+        "title": "Mango Home Riverside",
+        "city": "My Thanh",
+        "totalScore": 4.4,
+        "ranking": null,
+        "reviewsCount": 361,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mango Home Riverside ở My Thanh. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.4/5 từ 361 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/28/48/80/mango-home-riverside.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.41537,
+                10.225438
+            ]
+        },
+        "openingHours": null
+    }
+]

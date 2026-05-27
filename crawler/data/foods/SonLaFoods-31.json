@@ -1,0 +1,1789 @@
+[
+    {
+        "sourceLocationId": "27500056",
+        "title": "Nhà Hàng Nàng Tiên",
+        "city": "Mộc Châu",
+        "totalScore": 4.8,
+        "ranking": "1/23",
+        "reviewsCount": 29,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Nàng Tiên ở Mộc Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.8/5 từ 29 lượt review. Xếp hạng: 1/23. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/a5/17/60/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.664,
+                20.844269
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26264252",
+        "title": "Nhà Hàng A Páo Mộc Châu",
+        "city": "Mộc Châu",
+        "totalScore": 4.9,
+        "ranking": "2/23",
+        "reviewsCount": 15,
+        "category": "Ngồi xuống",
+        "priceRange": "1.815.789.440 ₫ - 2.147.483.647 ₫",
+        "description": "Với không gian sang trọng và ấm cúng, nhà hàng mang đến cho khách hàng trải nghiệm ẩm thực độc đáo và đậm chất văn hóa dân tộc.",
+        "embedding": null,
+        "searchText": "Nhà Hàng A Páo Mộc Châu ở Mộc Châu. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Với không gian sang trọng và ấm cúng, nhà hàng mang đến cho khách hàng trải nghiệm ẩm thực độc đáo và đậm chất văn hóa dân tộc. Đánh giá: 4.9/5 từ 15 lượt review. Xếp hạng: 2/23. Giá: 1.815.789.440 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/99/34/8c/l-u-ca-h-i.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.66743,
+                20.835323
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34014174",
+        "title": "Ta Sua's Stories - Xưởng Chàm & Workshop & Cafe",
+        "city": "Ta Xua",
+        "totalScore": 5.0,
+        "ranking": "3/23",
+        "reviewsCount": 5,
+        "category": "Ngồi xuống",
+        "priceRange": "526.315.776 ₫ - 1.052.631.552 ₫",
+        "description": "Một nơi chuyên làm màu làm mè ở Tà Sùa Có đồ uống, đồ ăn và workshop nhuộm chàm tại Ta Xua.",
+        "embedding": null,
+        "searchText": "Ta Sua's Stories - Xưởng Chàm & Workshop & Cafe ở Ta Xua. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Một nơi chuyên làm màu làm mè ở Tà Sùa Có đồ uống, đồ ăn và workshop nhuộm chàm tại Ta Xua. Đánh giá: 5.0/5 từ 5 lượt review. Xếp hạng: 3/23. Giá: 526.315.776 ₫ - 1.052.631.552 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/c5/e9/d9/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.430244,
+                21.308767
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 330,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27115197",
+        "title": "Nhà Hàng Vạn Xuân",
+        "city": "Sơn La",
+        "totalScore": 5.0,
+        "ranking": "4/23",
+        "reviewsCount": 4,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Vạn Xuân ở Sơn La. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 4/23.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/3d/12/bd/gia-c-ph-i-chang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.701866,
+                20.805513
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9751058",
+        "title": "Nhà hàng Tuân Gù",
+        "city": "Mộc Châu",
+        "totalScore": 4.6,
+        "ranking": "5/23",
+        "reviewsCount": 10,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Tuân Gù ở Mộc Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.6/5 từ 10 lượt review. Xếp hạng: 5/23.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/2d/41/59/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.60312,
+                20.86041
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14051213",
+        "title": "Nhà hàng Đông Hải Mộc Châu",
+        "city": "Mộc Châu",
+        "totalScore": 5.0,
+        "ranking": "6/23",
+        "reviewsCount": 5,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "1.842.105.216 ₫ - 2.147.483.647 ₫",
+        "description": "Toạ lạc tại trung tâm huyện, Nhà hàng Đông Hải Mộc Châu được tổ chức quản lý và điều hành bởi một đội ngũ chuyên nghiệp, nhiều năm kinh nghiệm trong lĩnh vực ẩm thực… cho các tổ chức, doanh nghiệp, cá nhân trong và ngoài huyện, tỉnh cũng như khách du lịch Mộc Châu.\n \n Chúng tôi cam kết mang đến cho Quý khách những dịch vụ và tiện ích tốt nhất đồng thời sẽ tư vấn đầy đủ cho quý khách có thể lựa chọn",
+        "embedding": null,
+        "searchText": "Nhà hàng Đông Hải Mộc Châu ở Mộc Châu. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Mô tả: Toạ lạc tại trung tâm huyện, Nhà hàng Đông Hải Mộc Châu được tổ chức quản lý và điều hành bởi một đội ngũ chuyên nghiệp, nhiều năm kinh nghiệm trong lĩnh vực ẩm thực… cho các tổ chức, doanh nghiệp, cá nhân trong và ngoài huyện, tỉnh cũng như khách du lịch Mộc Châu.\n \n Chúng tôi cam kết mang đến cho Quý khách những dịch vụ và tiện ích tốt nhất đồng thời sẽ tư vấn đầy đủ cho quý khách có thể lựa chọn Đánh giá: 5.0/5 từ 5 lượt review. Xếp hạng: 6/23. Giá: 1.842.105.216 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/bf/34/69/d-c-s-n-m-c-chau-t-hoa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.63056,
+                20.849789
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27719390",
+        "title": "Nhà Hàng Mẹt 82 Mộc Châu",
+        "city": "Mộc Châu",
+        "totalScore": 5.0,
+        "ranking": "7/23",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Mẹt 82 Mộc Châu ở Mộc Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 7/23.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/2b/e2/31/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.596,
+                20.863
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25354256",
+        "title": "Vigolando Restaurant",
+        "city": "Van Ho",
+        "totalScore": 4.7,
+        "ranking": "8/23",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": "131.579 ₫ - 3.947.368 ₫",
+        "description": "Nhà Hàng - Ẩm Thực Tây Bắc - Ăn sáng - Coffee",
+        "embedding": null,
+        "searchText": "Vigolando Restaurant ở Van Ho. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà Hàng - Ẩm Thực Tây Bắc - Ăn sáng - Coffee Đánh giá: 4.7/5 từ 3 lượt review. Xếp hạng: 8/23. Giá: 131.579 ₫ - 3.947.368 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/29/1c/6d/dc/outside.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.725555,
+                20.786589
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "9982910",
+        "title": "Quán cafe Đồng Nát",
+        "city": "Sơn La",
+        "totalScore": 4.8,
+        "ranking": "9/23",
+        "reviewsCount": 6,
+        "category": "Ngồi xuống",
+        "priceRange": "26.316 ₫ - 78.947 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán cafe Đồng Nát ở Sơn La. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.8/5 từ 6 lượt review. Xếp hạng: 9/23. Giá: 26.316 ₫ - 78.947 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/3d/fe/67/dong-nat-cafe.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.90955,
+                21.332037
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-23:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1410
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27706494",
+        "title": "The Lover Hill Cafe",
+        "city": "Sơn La",
+        "totalScore": 5.0,
+        "ranking": "10/23",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Lover Hill Cafe ở Sơn La. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 10/23.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/61/5c/2f/quan-cafe-n-m-tren-may.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.088875,
+                10.376356
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12171729",
+        "title": "Quán 64 Mộc Châu",
+        "city": "Mộc Châu",
+        "totalScore": 4.5,
+        "ranking": "11/23",
+        "reviewsCount": 6,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán 64 Mộc Châu ở Mộc Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.5/5 từ 6 lượt review. Xếp hạng: 11/23.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/1b/b1/ca/img20190410125528-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.7,
+                20.81667
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33677271",
+        "title": "Nhà hàng Lá Chàm",
+        "city": "Mộc Châu",
+        "totalScore": 5.0,
+        "ranking": "12/23",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Lá Chàm ở Mộc Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 12/23.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/34/f2/a1/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.63174,
+                20.849918
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26766670",
+        "title": "Sunny Camping Moc Chau",
+        "city": "Mộc Châu",
+        "totalScore": 5.0,
+        "ranking": "13/23",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sunny Camping Moc Chau ở Mộc Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 13/23.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/32/91/d3/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.91518,
+                21.32722
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27116160",
+        "title": "Mộc Châu Restaurant",
+        "city": "Mộc Châu",
+        "totalScore": 5.0,
+        "ranking": "14/23",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mộc Châu Restaurant ở Mộc Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 14/23.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/ac/9d/8d/m-c-chau-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.66361,
+                20.84455
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21499100",
+        "title": "Nha Hang Ca Hoi Tam Beo",
+        "city": "Mộc Châu",
+        "totalScore": 5.0,
+        "ranking": "15/23",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nha Hang Ca Hoi Tam Beo ở Mộc Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 15/23. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.663,
+                20.83958
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15016282",
+        "title": "ViVu Cafe",
+        "city": "Mộc Châu",
+        "totalScore": 5.0,
+        "ranking": "16/23",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "ViVu Cafe ở Mộc Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 16/23.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.62922,
+                20.85033
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13957428",
+        "title": "Centrofarms Roastery, Cafe & Bar",
+        "city": "Sơn La",
+        "totalScore": 5.0,
+        "ranking": "17/23",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Centrofarms Roastery, Cafe & Bar ở Sơn La. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 17/23.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/8a/b6/cc/photo1jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.91774,
+                21.324697
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13556902",
+        "title": "Nhà Hàng 559 Sơn La",
+        "city": "Sơn La",
+        "totalScore": 5.0,
+        "ranking": "18/23",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng 559 Sơn La ở Sơn La. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 18/23.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/6b/de/1b/photo4jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.91816,
+                21.325377
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 240,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13162991",
+        "title": "Kem Xôi - Chè Thái Lan",
+        "city": "Sơn La",
+        "totalScore": 4.0,
+        "ranking": "19/23",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kem Xôi - Chè Thái Lan ở Sơn La. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 19/23.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/77/95/8e/20171117-165111-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.91715,
+                21.32303
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24026195",
+        "title": "Nhà Hàng Cá Hồi Hang Dơi - Mộc Châu",
+        "city": "Mộc Châu",
+        "totalScore": 4.0,
+        "ranking": "20/23",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "263.158 ₫ - 315.789 ₫",
+        "description": "Nhà Hàng Cá Hồi Hang Dơi - Mộc Châu được coi là một trong những nhà hàng đặc sản Cá Hồi tươi sống - chất lượng nhất tại Mộc Châu. sẽ đem đến cho bạn những món ăn Cá Hồi mang đậm hương vị Tây Bắc.",
+        "embedding": null,
+        "searchText": "Nhà Hàng Cá Hồi Hang Dơi - Mộc Châu ở Mộc Châu. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà Hàng Cá Hồi Hang Dơi - Mộc Châu được coi là một trong những nhà hàng đặc sản Cá Hồi tươi sống - chất lượng nhất tại Mộc Châu. sẽ đem đến cho bạn những món ăn Cá Hồi mang đậm hương vị Tây Bắc. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 20/23. Giá: 263.158 ₫ - 315.789 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/23/58/95/6b/b-ca-h-i.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.63903,
+                20.847443
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12171680",
+        "title": "Nhà Hàng 75 - Trâu Tây Bắc",
+        "city": "Mộc Châu",
+        "totalScore": 4.0,
+        "ranking": "21/23",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng 75 - Trâu Tây Bắc ở Mộc Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 21/23.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9739816",
+        "title": "Cá hồi Chiềng Đi",
+        "city": "Mộc Châu",
+        "totalScore": 4.0,
+        "ranking": "22/23",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cá hồi Chiềng Đi ở Mộc Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 22/23.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/d0/2b/7a/chieng-di-salmon.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12269162",
+        "title": "Quán Cà Phê Sonla",
+        "city": "Sơn La",
+        "totalScore": 3.0,
+        "ranking": "23/23",
+        "reviewsCount": 1,
+        "category": "Quán cafe",
+        "priceRange": "394.736.832 ₫ - 526.315.776 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Cà Phê Sonla ở Sơn La. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 23/23. Giá: 394.736.832 ₫ - 526.315.776 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/c5/75/77/front-view.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.91499,
+                21.326857
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25147966",
+        "title": "Tiệm Cà Phê Mị Ơi",
+        "city": "Bac Yen",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tiệm Cà Phê Mị Ơi ở Bac Yen. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.405876,
+                21.306072
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25024660",
+        "title": "Nhà Hàng Tabamboo",
+        "city": "Mộc Châu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Tabamboo ở Mộc Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/26/bb/04/a1/qu-y-food-court.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.54222,
+                20.917103
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33677256",
+        "title": "Nhà hàng Lá Chàm",
+        "city": "Mộc Châu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Lá Chàm ở Mộc Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.63174,
+                20.849918
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "19055740",
+        "title": "Nhà Hàng Châu Mộc Quán",
+        "city": "Mộc Châu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": "Nhà Hàng Châu Mộc Quán với đồ ăn ngon mang đậm hương vị vùng Tây Bắc",
+        "embedding": null,
+        "searchText": "Nhà Hàng Châu Mộc Quán ở Mộc Châu. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Nhà Hàng Châu Mộc Quán với đồ ăn ngon mang đậm hương vị vùng Tây Bắc Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/60/de/b2/bo-to-nu-ng-la-l-t.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.63007,
+                20.850134
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27103282",
+        "title": "Windy coffee Mộc Châu",
+        "city": "Mộc Châu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Kinh doanh nước giải khát, cà phê",
+        "embedding": null,
+        "searchText": "Windy coffee Mộc Châu ở Mộc Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Kinh doanh nước giải khát, cà phê",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/93/67/92/d-u-ng-ngon-khong-gian.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.65546,
+                20.845888
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33102971",
+        "title": "Trucha Homestay & Restaurant",
+        "city": "Sơn La",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trucha Homestay & Restaurant ở Sơn La. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.97283,
+                22.481077
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1290
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1290
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34023945",
+        "title": "RUỘNG cafe",
+        "city": "Sơn La",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "RUỘNG cafe ở Sơn La. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/31/c9/72/4d/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.83826,
+                21.035963
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26264505",
+        "title": "Nhà Hàng A Páo Mộc Châu",
+        "city": "Sơn La",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Nhà hàng A Páo Mộc Châu nằm ở 225 QL6, Vân Hồ, Mộc Châu, Sơn La, là một trong những địa điểm ẩm thực nổi tiếng và được yêu thích tại Mộc Châu. Với không gian sang trọng và ấm cúng, nhà hàng mang đến cho khách hàng trải nghiệm ẩm thực độc đáo và đậm chất văn hóa dân tộc.",
+        "embedding": null,
+        "searchText": "Nhà Hàng A Páo Mộc Châu ở Sơn La. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Nhà hàng A Páo Mộc Châu nằm ở 225 QL6, Vân Hồ, Mộc Châu, Sơn La, là một trong những địa điểm ẩm thực nổi tiếng và được yêu thích tại Mộc Châu. Với không gian sang trọng và ấm cúng, nhà hàng mang đến cho khách hàng trải nghiệm ẩm thực độc đáo và đậm chất văn hóa dân tộc.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.704384,
+                20.801228
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    }
+]

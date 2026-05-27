@@ -1,0 +1,1013 @@
+[
+    {
+        "sourceLocationId": "814880",
+        "title": "Tra Su Bird Sanctuary",
+        "city": "Châu Đốc",
+        "totalScore": 4.5,
+        "ranking": "1/34",
+        "reviewsCount": 400,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tra Su Bird Sanctuary ở Châu Đốc. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 400 lượt review. Xếp hạng: 1/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/6a/12/89/nhu-ch-n-tien-c-nh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.0487,
+                10.580957
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12622715",
+        "title": "Du Hành Xanh",
+        "city": "Châu Đốc",
+        "totalScore": 4.3,
+        "ranking": "3/34",
+        "reviewsCount": 49,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Du Hành Xanh ở Châu Đốc. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Phương tiện giao thông. Đánh giá: 4.3/5 từ 49 lượt review. Xếp hạng: 3/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Phương tiện giao thông"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/f5/76/8a/24-seat.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8304962",
+        "title": "Chùa Hang",
+        "city": "Châu Đốc",
+        "totalScore": 4.5,
+        "ranking": "4/34",
+        "reviewsCount": 38,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Hang ở Châu Đốc. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 38 lượt review. Xếp hạng: 4/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/f8/fe/d8/from-top-of-pagoda.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.0726,
+                10.676675
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14795568",
+        "title": "Bảo Tàng An Giang",
+        "city": "Long Xuyên",
+        "totalScore": 4.3,
+        "ranking": "11/34",
+        "reviewsCount": 4,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bảo Tàng An Giang ở Long Xuyên. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.3/5 từ 4 lượt review. Xếp hạng: 11/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/bb/b9/1a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.43551,
+                10.38957
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8095588",
+        "title": "Hang Chau Tourist",
+        "city": "Châu Đốc",
+        "totalScore": 3.8,
+        "ranking": "2/34",
+        "reviewsCount": 147,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hang Chau Tourist ở Châu Đốc. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Phương tiện giao thông. Đánh giá: 3.8/5 từ 147 lượt review. Xếp hạng: 2/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Phương tiện giao thông"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/82/37/be/die-boote.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.12292,
+                10.707912
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11624988",
+        "title": "Chợ Nổi Châu Đốc",
+        "city": "Châu Đốc",
+        "totalScore": 4.3,
+        "ranking": "6/34",
+        "reviewsCount": 18,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Nổi Châu Đốc ở Châu Đốc. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Nơi mua sắm, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 18 lượt review. Xếp hạng: 6/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/21/38/85/chau-doc-floating-market.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.24152,
+                10.79504
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13416465",
+        "title": "Tượng đài Tôn Đức Thắng",
+        "city": "Long Xuyên",
+        "totalScore": 4.0,
+        "ranking": "24/34",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tượng đài Tôn Đức Thắng ở Long Xuyên. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 24/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/dd/bb/b4/ton-duc-thang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.43941,
+                10.38066
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17389876",
+        "title": "Chợ Nổi Long Xuyên",
+        "city": "Long Xuyên",
+        "totalScore": 4.7,
+        "ranking": "8/34",
+        "reviewsCount": 3,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Nổi Long Xuyên ở Long Xuyên. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 4.7/5 từ 3 lượt review. Xếp hạng: 8/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/85/93/93/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.42777,
+                10.39296
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "5029728",
+        "title": "Ba Chua Xu Temple",
+        "city": "Châu Đốc",
+        "totalScore": 4.0,
+        "ranking": "5/34",
+        "reviewsCount": 60,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ba Chua Xu Temple ở Châu Đốc. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 60 lượt review. Xếp hạng: 5/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/83/a1/73/ba-chua-xu-temple.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.18068,
+                10.89862
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12189904",
+        "title": "Chùa Quảng Tế",
+        "city": "Long Xuyên",
+        "totalScore": 4.0,
+        "ranking": "27/34",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Quảng Tế ở Long Xuyên. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 27/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/7f/13/39/photo-prise-par-guy-lazignac.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.44545,
+                10.37958
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6519260",
+        "title": "Trại Cá Sấu Long Xuyên",
+        "city": "Long Xuyên",
+        "totalScore": 2.9,
+        "ranking": "31/34",
+        "reviewsCount": 47,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trại Cá Sấu Long Xuyên ở Long Xuyên. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Sở thú & Thủy cung, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 2.9/5 từ 47 lượt review. Xếp hạng: 31/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Sở thú & Thủy cung",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/1c/48/47/nice-pose.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.47101,
+                10.341963
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13416527",
+        "title": "Nhà Thờ Chánh Toà Long Xuyên",
+        "city": "Long Xuyên",
+        "totalScore": 3.5,
+        "ranking": "21/34",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Thờ Chánh Toà Long Xuyên ở Long Xuyên. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.5/5 từ 4 lượt review. Xếp hạng: 21/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/dd/bb/4a/long-xuyen.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.439674,
+                10.381161
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12199366",
+        "title": "Chùa Phước Thạnh",
+        "city": "Long Xuyên",
+        "totalScore": 4.0,
+        "ranking": "26/34",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Phước Thạnh ở Long Xuyên. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 26/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/b9/5b/37/chinh-di-n.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15586127",
+        "title": "Mieu Ba Chua Xu Nui Sam",
+        "city": "Châu Đốc",
+        "totalScore": 4.8,
+        "ranking": "7/34",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mieu Ba Chua Xu Nui Sam ở Châu Đốc. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.8/5 từ 4 lượt review. Xếp hạng: 7/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/a3/ce/89/photo2jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.07972,
+                10.68203
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12199378",
+        "title": "Chùa Quảng Tế",
+        "city": "Long Xuyên",
+        "totalScore": 3.0,
+        "ranking": "30/34",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Quảng Tế ở Long Xuyên. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.0/5 từ 2 lượt review. Xếp hạng: 30/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/87/e4/a6/photo-prise-par-guy-lazignac.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16913914",
+        "title": "Chùa Phật Lớn",
+        "city": "Tinh Bien",
+        "totalScore": 5.0,
+        "ranking": "23/34",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Phật Lớn ở Tinh Bien. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 23/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/fc/5d/94/chua-ph-t-l-n.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14795597",
+        "title": "Chùa Tây An",
+        "city": "Châu Đốc",
+        "totalScore": 3.8,
+        "ranking": "10/34",
+        "reviewsCount": 10,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Tây An ở Châu Đốc. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.8/5 từ 10 lượt review. Xếp hạng: 10/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/33/c1/b3/tay-an-pagode-am-berg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.08109,
+                10.681413
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6952535",
+        "title": "Chùa Phước Điền",
+        "city": "Châu Đốc",
+        "totalScore": 4.6,
+        "ranking": "13/34",
+        "reviewsCount": 5,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Phước Điền ở Châu Đốc. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.6/5 từ 5 lượt review. Xếp hạng: 13/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/93/6f/c9/phuoc-dien-temple.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.0731,
+                10.676847
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12257613",
+        "title": "Thánh Đường Hồi giáo Jamiul-azhar",
+        "city": "Châu Đốc",
+        "totalScore": 4.0,
+        "ranking": "20/34",
+        "reviewsCount": 3,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thánh Đường Hồi giáo Jamiul-azhar ở Châu Đốc. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 3 lượt review. Xếp hạng: 20/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/be/ee/ee/photo-prise-par-guythu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "2614549",
+        "title": "Chau Phu Temple",
+        "city": "Châu Đốc",
+        "totalScore": 3.6,
+        "ranking": "9/34",
+        "reviewsCount": 17,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chau Phu Temple ở Châu Đốc. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.6/5 từ 17 lượt review. Xếp hạng: 9/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/d2/a6/48/im-inneren-mit-einer.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.11944,
+                10.710386
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12257625",
+        "title": "Thánh Đường Hồi Giáo Masjid Al Ehsan",
+        "city": "Châu Đốc",
+        "totalScore": 4.0,
+        "ranking": "25/34",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thánh Đường Hồi Giáo Masjid Al Ehsan ở Châu Đốc. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 25/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/be/f9/51/photo-prise-par-guythu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10020704",
+        "title": "Lễ hội Bà Chúa Xứ",
+        "city": "Châu Đốc",
+        "totalScore": 4.3,
+        "ranking": "16/34",
+        "reviewsCount": 4,
+        "category": "Sự kiện",
+        "priceRange": null,
+        "description": "Vào những năm 1800, truyền thuyết kể rằng những người dân ở khu vực núi Sam ở Việt Nam tìm thấy một bức tượng người phụ nữ bằng đá cẩm thạch trong rừng. Họ xây dựng một ngôi đền để thờ cúng người phụ nữ với mong muốn rằng bà ấy sẽ mang đến mùa màng bội thu và cuộc sống sung túc, hạnh phúc hơn. Một lễ hội mang đậm tín ngưỡng, lễ hội miếu Bà Chúa Xứ đã phát triển thành một sự kiện năm ngày với việc thờ cúng, dâng lễ vật và thực hiện nghi lễ trong suốt năm ngày.",
+        "embedding": null,
+        "searchText": "Lễ hội Bà Chúa Xứ ở Châu Đốc. Loại địa điểm: Sự kiện. Tags: Điểm du lịch, Sự kiện. Mô tả: Vào những năm 1800, truyền thuyết kể rằng những người dân ở khu vực núi Sam ở Việt Nam tìm thấy một bức tượng người phụ nữ bằng đá cẩm thạch trong rừng. Họ xây dựng một ngôi đền để thờ cúng người phụ nữ với mong muốn rằng bà ấy sẽ mang đến mùa màng bội thu và cuộc sống sung túc, hạnh phúc hơn. Một lễ hội mang đậm tín ngưỡng, lễ hội miếu Bà Chúa Xứ đã phát triển thành một sự kiện năm ngày với việc thờ cúng, dâng lễ vật và thực hiện nghi lễ trong suốt năm ngày. Đánh giá: 4.3/5 từ 4 lượt review. Xếp hạng: 16/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Sự kiện"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/ec/7d/28/photo4jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.07594,
+                10.673237
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6200498",
+        "title": "Mubarak Mosque",
+        "city": "Châu Đốc",
+        "totalScore": 3.3,
+        "ranking": "17/34",
+        "reviewsCount": 29,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mubarak Mosque ở Châu Đốc. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.3/5 từ 29 lượt review. Xếp hạng: 17/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/a5/2d/42/photo2jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14795621",
+        "title": "Lăng Thoại Ngọc Hầu",
+        "city": "Châu Đốc",
+        "totalScore": 4.0,
+        "ranking": "19/34",
+        "reviewsCount": 3,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lăng Thoại Ngọc Hầu ở Châu Đốc. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 3 lượt review. Xếp hạng: 19/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/52/b4/c7/thoai-ngoc-hau-tomb.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14795686",
+        "title": "Bồ Đề Đạo Tràng",
+        "city": "Châu Đốc",
+        "totalScore": 4.0,
+        "ranking": "22/34",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bồ Đề Đạo Tràng ở Châu Đốc. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 2 lượt review. Xếp hạng: 22/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/52/b3/4f/bo-de-dao-trang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15776412",
+        "title": "Tịnh Xá Ngọc Châu",
+        "city": "Châu Đốc",
+        "totalScore": 3.0,
+        "ranking": "29/34",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tịnh Xá Ngọc Châu ở Châu Đốc. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 29/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/21/35/c9/esterno-tempio.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.13173,
+                10.70382
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24084239",
+        "title": "Ba Chua Xu Temple",
+        "city": "Châu Đốc",
+        "totalScore": 5.0,
+        "ranking": "12/34",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ba Chua Xu Temple ở Châu Đốc. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 12/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/23/9d/72/36/ba-chua-x-temple.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.10873,
+                10.702239
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23801141",
+        "title": "Trần Anh Châu Đốc",
+        "city": "Châu Đốc",
+        "totalScore": 0,
+        "ranking": "14/34",
+        "reviewsCount": 0,
+        "category": "Vui chơi & Giải trí",
+        "priceRange": null,
+        "description": "Khu Liên Hợp Thể Thao - Bất Động Sản - Vui chơi giải trí TRAN ANH CHÂU ĐỐC là một địa điểm hấp dẫn thu hút rất nhiều người đến tham quan chaeckin.\n- LƯNG TỰA SƠN MẶT HƯỚNG THỦY : là cụ từ gắn liền với Vị trí này sự sắp đặt của tạo hóa Kiến tạo nên Thành Phố Châu Đốc được vị thế rất Phong Thủy và An Lành. Phí sau lưng là dãy Núi Thất Sơn + Núi Sam Chùa Bà Châu Đốc, Trước mặt là dòng Sông Cửu Long Giang \n☀  Châu Đốc New City  sở hữu vị trí độc tôn tại trung tâm TP Châu Đốc với địa thế 2 mặt tiền trải dài mặt tiền Đường Quốc Lộ 91 và Hồ Tùng Mậu - Tp Châu Đốc - An Giang. \n\n ✪ Nằm ngay trong khu trung tâm hành chính Phường Vĩnh - TP Châu Đốc \n ✪  Cách trung thâm thương mai  và siêu thị Coop Mart chỉ 2 Phút\n ✪  Cách trung tâm TP Long Xuyên chỉ 40 Phút\n ✪  Công An Phường Vĩnh Mỹ - Chi Cục Hải Quan - Bến xe mới - Bệnh Viện Đa Khoa An Giang.... Tất cả đều nằm trong bán kính 01km di chuyển.\n ✪  Bao quanh dự án là những trục đường sầm uất, kết nối giao thông thông thuận tiện, full dịch vụ tiện ích: Đường Tân Lộ Kiều Lương ( Đi chùa Bà) - con đường rộng và sầm uất nhất TP Châu Đốc.\n ✪  Đặc biệt, chính bên trong dự án hệ thống tiện ích công viên nhạc nước, khu sân tennis hiện hữu, khu sân bóng đá mini, khu hồ bơi tràn bờ thuận tiện cho nhu cầu thể thao của các cư dân, khu sân khấu ngoài trời chuyên tổ chức các sự kiện lớn của Thành Phố.\nHàng Ngàn Tiện Ích Song Hành Cùng Châu Đốc New City\n☀  Châu Đốc New City là khu đô thị đẳng cấp với đa dịch vụ tiện ích. Đến với khu đô thị Trần Anh Châu Đốc, bạn sẽ trải nghiệm một cuộc sống đầy đủ tiện nghi thích hợp để đầu tư và nghỉ dưỡng. Chủ Đầu Tư Trần Anh Chúng Tôi với bề dày kinh nghiệm trên 10 năm, chúng Tôi tự tin sẽ mang đến cho bạn một trải nghiệm sống thực sự giá trị bậc nhất tại Thành Phố Châu Đốc. Bạn sẽ không tìm ra một khu đô thị có sẵn các tiện ích ngay trong chính dự án như: Công viên nhạc nước vi diệu, Công viên Cây Xanh ven Sông, Khu Hồ Bơi tràn bờ, khu Sân bóng đá hiện hữu ngay trong chính dự án, Khung Phòng tập gym, spa, yoga sang trọng, khu Clubhouse ngoài trời thuận tiện cho những buổi tiệc cuối tuần dã ngoại tại The New City Châu Đốc. Và đặc biệt, Trần Anh Châu Đốc còn sở hữu mặt tiền Trục chính Quốc Lộ 91 đi về Thành Phố Long Xuyên - Tp Cần Thơ và các tỉnh Đồng Bằng Sông Cửu Long.\n",
+        "embedding": null,
+        "searchText": "Trần Anh Châu Đốc ở Châu Đốc. Loại địa điểm: Vui chơi & Giải trí. Tags: Điểm du lịch, Vui chơi & Giải trí. Mô tả: Khu Liên Hợp Thể Thao - Bất Động Sản - Vui chơi giải trí TRAN ANH CHÂU ĐỐC là một địa điểm hấp dẫn thu hút rất nhiều người đến tham quan chaeckin.\n- LƯNG TỰA SƠN MẶT HƯỚNG THỦY : là cụ từ gắn liền với Vị trí này sự sắp đặt của tạo hóa Kiến tạo nên Thành Phố Châu Đốc được vị thế rất Phong Thủy và An Lành. Phí sau lưng là dãy Núi Thất Sơn + Núi Sam Chùa Bà Châu Đốc, Trước mặt là dòng Sông Cửu Long Giang \n☀  Châu Đốc New City  sở hữu vị trí độc tôn tại trung tâm TP Châu Đốc với địa thế 2 mặt tiền trải dài mặt tiền Đường Quốc Lộ 91 và Hồ Tùng Mậu - Tp Châu Đốc - An Giang. \n\n ✪ Nằm ngay trong khu trung tâm hành chính Phường Vĩnh - TP Châu Đốc \n ✪  Cách trung thâm thương mai  và siêu thị Coop Mart chỉ 2 Phút\n ✪  Cách trung tâm TP Long Xuyên chỉ 40 Phút\n ✪  Công An Phường Vĩnh Mỹ - Chi Cục Hải Quan - Bến xe mới - Bệnh Viện Đa Khoa An Giang.... Tất cả đều nằm trong bán kính 01km di chuyển.\n ✪  Bao quanh dự án là những trục đường sầm uất, kết nối giao thông thông thuận tiện, full dịch vụ tiện ích: Đường Tân Lộ Kiều Lương ( Đi chùa Bà) - con đường rộng và sầm uất nhất TP Châu Đốc.\n ✪  Đặc biệt, chính bên trong dự án hệ thống tiện ích công viên nhạc nước, khu sân tennis hiện hữu, khu sân bóng đá mini, khu hồ bơi tràn bờ thuận tiện cho nhu cầu thể thao của các cư dân, khu sân khấu ngoài trời chuyên tổ chức các sự kiện lớn của Thành Phố.\nHàng Ngàn Tiện Ích Song Hành Cùng Châu Đốc New City\n☀  Châu Đốc New City là khu đô thị đẳng cấp với đa dịch vụ tiện ích. Đến với khu đô thị Trần Anh Châu Đốc, bạn sẽ trải nghiệm một cuộc sống đầy đủ tiện nghi thích hợp để đầu tư và nghỉ dưỡng. Chủ Đầu Tư Trần Anh Chúng Tôi với bề dày kinh nghiệm trên 10 năm, chúng Tôi tự tin sẽ mang đến cho bạn một trải nghiệm sống thực sự giá trị bậc nhất tại Thành Phố Châu Đốc. Bạn sẽ không tìm ra một khu đô thị có sẵn các tiện ích ngay trong chính dự án như: Công viên nhạc nước vi diệu, Công viên Cây Xanh ven Sông, Khu Hồ Bơi tràn bờ, khu Sân bóng đá hiện hữu ngay trong chính dự án, Khung Phòng tập gym, spa, yoga sang trọng, khu Clubhouse ngoài trời thuận tiện cho những buổi tiệc cuối tuần dã ngoại tại The New City Châu Đốc. Và đặc biệt, Trần Anh Châu Đốc còn sở hữu mặt tiền Trục chính Quốc Lộ 91 đi về Thành Phố Long Xuyên - Tp Cần Thơ và các tỉnh Đồng Bằng Sông Cửu Long.\n Xếp hạng: 14/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Vui chơi & Giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/21/bc/25/fe/anh-toa-n-ca-nh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.14088,
+                10.693725
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28155297",
+        "title": "Chùa Vạn Linh",
+        "city": "Tinh Bien",
+        "totalScore": 5.0,
+        "ranking": "15/34",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Vạn Linh ở Tinh Bien. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 15/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2d/59/1d/ef/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98161,
+                10.50333
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "18969993",
+        "title": "Núi Cô Tô",
+        "city": "Tỉnh An Giang",
+        "totalScore": 5.0,
+        "ranking": "18/34",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Núi Cô Tô ở Tỉnh An Giang. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 18/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/92/ab/7b/amazing-mountain.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14795544",
+        "title": "Bảo Tàng Chủ Tịch Tôn Đức Thắng",
+        "city": "Long Xuyên",
+        "totalScore": 3.5,
+        "ranking": "28/34",
+        "reviewsCount": 2,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bảo Tàng Chủ Tịch Tôn Đức Thắng ở Long Xuyên. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 3.5/5 từ 2 lượt review. Xếp hạng: 28/34.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/76/d8/26/tiger-island.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "32699749",
+        "title": "Maitreya Buddha Statue",
+        "city": "Tinh Bien",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Maitreya Buddha Statue ở Tinh Bien. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.93669,
+                10.59591
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28159865",
+        "title": "Cánh Đồng Tà Pạ",
+        "city": "Nui To",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cánh Đồng Tà Pạ ở Nui To. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                104.98334,
+                10.399999
+            ]
+        },
+        "openingHours": null
+    }
+]

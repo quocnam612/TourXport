@@ -1,0 +1,31 @@
+[
+    {
+        "sourceLocationId": "15220701",
+        "title": "Mường Thanh Luxury Sơn La Hotel",
+        "city": "Sơn La",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 85,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mường Thanh Luxury Sơn La Hotel ở Sơn La. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 85 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/14/ba/55/muong-thanh-grand-son.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.913025,
+                21.327572
+            ]
+        },
+        "openingHours": null
+    }
+]

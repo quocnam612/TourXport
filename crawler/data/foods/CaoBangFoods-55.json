@@ -1,0 +1,2716 @@
+[
+    {
+        "sourceLocationId": "24975233",
+        "title": "Gilu's Garden",
+        "city": "Cao Bằng",
+        "totalScore": 4.9,
+        "ranking": "1/40",
+        "reviewsCount": 111,
+        "category": "Ngồi xuống",
+        "priceRange": "26.316 ₫ - 78.947 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Gilu's Garden ở Cao Bằng. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.9/5 từ 111 lượt review. Xếp hạng: 1/40. Giá: 26.316 ₫ - 78.947 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/26/fc/2c/4c/food-and-beverage.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.26115,
+                22.66446
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33093002",
+        "title": "Cao Bằng Eco Bistro & Stay",
+        "city": "Cao Bằng",
+        "totalScore": 5.0,
+        "ranking": "2/40",
+        "reviewsCount": 59,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cao Bằng Eco Bistro & Stay ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 59 lượt review. Xếp hạng: 2/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/30/1e/3b/53/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.26075,
+                22.66328
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12338176",
+        "title": "Quán Pedro's Pizza",
+        "city": "Cao Bằng",
+        "totalScore": 4.8,
+        "ranking": "3/40",
+        "reviewsCount": 116,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Pedro's Pizza ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.8/5 từ 116 lượt review. Xếp hạng: 3/40. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/be/f3/04/20170619-203550-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.26154,
+                22.667301
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27143403",
+        "title": "Bánh Mỳ Thu Thắng",
+        "city": "Cao Bằng",
+        "totalScore": 5.0,
+        "ranking": "4/40",
+        "reviewsCount": 36,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": "Bánh Mỳ Thu Thắng được ra đời với thông điệp mang đam mê của chúng tôi gửi gắm đến bạn qua những chiếc bánh và thức uống ngon, giá rẻ, vệ sinh và chất lượng luôn được đặt lên hàng đầu. Sự ra đời của mỗi chiếc bánh đều được chọn lọc kỹ lưỡng tâm huyết của đội ngũ chúng tôi từ khâu nguyên liệu, chế biến để khi đến tay của các bạn, chúng đều trở thành sản phẩm hoàn hảo nhất.",
+        "embedding": null,
+        "searchText": "Bánh Mỳ Thu Thắng ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Bánh Mỳ Thu Thắng được ra đời với thông điệp mang đam mê của chúng tôi gửi gắm đến bạn qua những chiếc bánh và thức uống ngon, giá rẻ, vệ sinh và chất lượng luôn được đặt lên hàng đầu. Sự ra đời của mỗi chiếc bánh đều được chọn lọc kỹ lưỡng tâm huyết của đội ngũ chúng tôi từ khâu nguyên liệu, chế biến để khi đến tay của các bạn, chúng đều trở thành sản phẩm hoàn hảo nhất. Đánh giá: 5.0/5 từ 36 lượt review. Xếp hạng: 4/40. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2e/90/b1/33/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.260506,
+                22.664099
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "5547643",
+        "title": "Pizza & Beefsteak Chi",
+        "city": "Cao Bằng",
+        "totalScore": 4.4,
+        "ranking": "5/40",
+        "reviewsCount": 69,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pizza & Beefsteak Chi ở Cao Bằng. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.4/5 từ 69 lượt review. Xếp hạng: 5/40.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/23/5b/b2/ef/new-location.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.25922,
+                22.670076
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25416379",
+        "title": "Yên - ngon như mẹ nấu",
+        "city": "Cao Bằng",
+        "totalScore": 5.0,
+        "ranking": "6/40",
+        "reviewsCount": 5,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Phục vụ cơm gia đình cà lẩu tại quán Yên với phong cách nhẹ nhàng, ấm cúng, an yên",
+        "embedding": null,
+        "searchText": "Yên - ngon như mẹ nấu ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Phục vụ cơm gia đình cà lẩu tại quán Yên với phong cách nhẹ nhàng, ấm cúng, an yên Đánh giá: 5.0/5 từ 5 lượt review. Xếp hạng: 6/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/96/0a/38/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.26085,
+                22.66499
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12703235",
+        "title": "Tộc cà phê",
+        "city": "Cao Bằng",
+        "totalScore": 4.3,
+        "ranking": "7/40",
+        "reviewsCount": 15,
+        "category": "Quán cafe",
+        "priceRange": "263.157.888 ₫ - 1.315.789.440 ₫",
+        "description": "Tộc cà phê được thiết kế mang hình ảnh đặc trưng dân tộc gần gũi, là điểm checkin rất đẹp khi du khách đến với Cao Bằng.",
+        "embedding": null,
+        "searchText": "Tộc cà phê ở Cao Bằng. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Mô tả: Tộc cà phê được thiết kế mang hình ảnh đặc trưng dân tộc gần gũi, là điểm checkin rất đẹp khi du khách đến với Cao Bằng. Đánh giá: 4.3/5 từ 15 lượt review. Xếp hạng: 7/40. Giá: 263.157.888 ₫ - 1.315.789.440 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/7f/73/a9/toc-ca-phe.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.25972,
+                22.660517
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33304492",
+        "title": "Lazy Bug",
+        "city": "Cao Bằng",
+        "totalScore": 5.0,
+        "ranking": "8/40",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lazy Bug ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 8/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/32/9e/b8/0a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.218544,
+                21.397738
+            ]
+        },
+        "openingHours": {
+            "display": "11:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 660,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25175797",
+        "title": "The 8th Rooftop Bar Cafe",
+        "city": "Cao Bằng",
+        "totalScore": 5.0,
+        "ranking": "9/40",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The 8th Rooftop Bar Cafe ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 9/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/42/1f/dc/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.25638,
+                22.665901
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26810768",
+        "title": "Bún Bò Huế Chị Chị Em Em Bảo Lạc",
+        "city": "Bao Lac",
+        "totalScore": 5.0,
+        "ranking": "10/40",
+        "reviewsCount": 3,
+        "category": "Ngồi xuống",
+        "priceRange": "921.052.608 ₫ - 1.315.789.440 ₫",
+        "description": "Là một trong những quán Bún bò Huế nổi tiếng nhất tại thị trấn Bảo Lạc, Cao Bằng. Bát Bún bò Huế ở đây được nấu theo đúng hương vị của người Huế, với nước dùng đậm đà, thơm mùi sả, ớt, và mắm ruốc. Thịt bò được sử dụng là thịt bò thăn, thái mỏng, ăn kèm với chả cua, giò heo, và các loại rau sống.\nCó dĩa cho khách không biết dùng đũa.\n🍜 ƁÚƝ ƁÒ HUẾ (hàng ngày)\n🍜 ƁÚƝ RIÊU CUA (Thứ7-Cn)\n☎️Alô ship: 𝟎𝟑𝟑𝟐.𝟗𝟕.𝟖𝟑𝟖𝟔 \n🏡Số nhà 94/01, Xóm 6, Xã Bảo Lạc, Tỉnh Cao Bằng.\n⏰ 6:00 AM - 12:00 PM\n\nhttps://maps.app.goo.gl/4ydU915zTK68HfiWA",
+        "embedding": null,
+        "searchText": "Bún Bò Huế Chị Chị Em Em Bảo Lạc ở Bao Lac. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Là một trong những quán Bún bò Huế nổi tiếng nhất tại thị trấn Bảo Lạc, Cao Bằng. Bát Bún bò Huế ở đây được nấu theo đúng hương vị của người Huế, với nước dùng đậm đà, thơm mùi sả, ớt, và mắm ruốc. Thịt bò được sử dụng là thịt bò thăn, thái mỏng, ăn kèm với chả cua, giò heo, và các loại rau sống.\nCó dĩa cho khách không biết dùng đũa.\n🍜 ƁÚƝ ƁÒ HUẾ (hàng ngày)\n🍜 ƁÚƝ RIÊU CUA (Thứ7-Cn)\n☎️Alô ship: 𝟎𝟑𝟑𝟐.𝟗𝟕.𝟖𝟑𝟖𝟔 \n🏡Số nhà 94/01, Xóm 6, Xã Bảo Lạc, Tỉnh Cao Bằng.\n⏰ 6:00 AM - 12:00 PM\n\nhttps://maps.app.goo.gl/4ydU915zTK68HfiWA Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 10/40. Giá: 921.052.608 ₫ - 1.315.789.440 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/e8/a5/49/4ydu915ztk68hfiwa.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.68119,
+                22.954008
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-12:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 720
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34047659",
+        "title": "VỊT QUAY GIÒN O THOA",
+        "city": "Cao Bằng",
+        "totalScore": 5.0,
+        "ranking": "11/40",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "VỊT QUAY GIÒN O THOA ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 11/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/6c/a8/5a/cao-banger.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.260056,
+                22.66275
+            ]
+        },
+        "openingHours": {
+            "display": "10:30-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26778256",
+        "title": "Vegetarian - Vegan - Chay",
+        "city": "Cao Bằng",
+        "totalScore": 5.0,
+        "ranking": "12/40",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vegetarian - Vegan - Chay ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 12/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/4c/2c/25/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.26314,
+                22.656137
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28107213",
+        "title": "Cafe 81",
+        "city": "Bao Lac",
+        "totalScore": 5.0,
+        "ranking": "13/40",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cafe 81 ở Bao Lac. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 13/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2d/2c/4e/64/gezellige-koffiebar-met.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.72223,
+                22.87162
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8126612",
+        "title": "Á Đông BBQ Pizza",
+        "city": "Cao Bằng",
+        "totalScore": 4.0,
+        "ranking": "14/40",
+        "reviewsCount": 5,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "26.316 ₫ - 1.842.105.216 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Á Đông BBQ Pizza ở Cao Bằng. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 4.0/5 từ 5 lượt review. Xếp hạng: 14/40. Giá: 26.316 ₫ - 1.842.105.216 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/4f/39/7f/koreanfood.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.25643,
+                22.665085
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10794548",
+        "title": "Nhà Hàng Mộc Quán",
+        "city": "Cao Bằng",
+        "totalScore": 4.6,
+        "ranking": "15/40",
+        "reviewsCount": 5,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Mộc Quán ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.6/5 từ 5 lượt review. Xếp hạng: 15/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/20/ef/3b/cac-mon-an-t-i-m-c-quan.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.25484,
+                22.66871
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1080,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12292840",
+        "title": "Nhà Hàng Anh Tuấn",
+        "city": "Cao Bằng",
+        "totalScore": 4.5,
+        "ranking": "16/40",
+        "reviewsCount": 4,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "789.473.664 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Anh Tuấn ở Cao Bằng. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Đánh giá: 4.5/5 từ 4 lượt review. Xếp hạng: 16/40. Giá: 789.473.664 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/76/7c/76/enseigne.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33342302",
+        "title": "Bánh Cuốn Phong Uyên",
+        "city": "Cao Bằng",
+        "totalScore": 5.0,
+        "ranking": "17/40",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bánh Cuốn Phong Uyên ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 17/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/30/8f/d0/c8/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.25706,
+                22.663942
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33024148",
+        "title": "Quán Ngói Cao Bằng",
+        "city": "Cao Bằng",
+        "totalScore": 5.0,
+        "ranking": "18/40",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Ngói Cao Bằng ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 18/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/1f/8c/68/d-tuoi-ngon-gia-c-h-p.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.26075,
+                22.66328
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17838803",
+        "title": "Lương Sơn Quán",
+        "city": "Cao Bằng",
+        "totalScore": 5.0,
+        "ranking": "19/40",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lương Sơn Quán ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 19/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/ca/c8/f3/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.25128,
+                22.67556
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17707135",
+        "title": "Cơm Thu Ngân",
+        "city": "Cao Bằng",
+        "totalScore": 5.0,
+        "ranking": "20/40",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cơm Thu Ngân ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 20/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/18/36/35/45/mixed-asian-style-buffet.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.26083,
+                22.66683
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26868559",
+        "title": "Đoàn Liễu Tiệm cơm nhà làm",
+        "city": "Bao Lac",
+        "totalScore": 5.0,
+        "ranking": "21/40",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Đoàn Liễu Tiệm cơm nhà làm",
+        "embedding": null,
+        "searchText": "Đoàn Liễu Tiệm cơm nhà làm ở Bao Lac. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Đoàn Liễu Tiệm cơm nhà làm Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 21/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/92/1d/67/d-n-v-i-doan-li-u-ti.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.68231,
+                22.942987
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13818102",
+        "title": "La Stella",
+        "city": "Cao Bằng",
+        "totalScore": 5.0,
+        "ranking": "22/40",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "1.026.315.776 ₫ - 2.105.263.104 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "La Stella ở Cao Bằng. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 22/40. Giá: 1.026.315.776 ₫ - 2.105.263.104 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/50/3d/8f/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.26601,
+                22.658962
+            ]
+        },
+        "openingHours": {
+            "display": "10:30-14:00, 16:30-22:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 630,
+                        "close_time": 840
+                    },
+                    {
+                        "open_time": 990,
+                        "close_time": 1350
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15357246",
+        "title": "Nhà Hàng 34 Nga Lương",
+        "city": "Cao Bằng",
+        "totalScore": 5.0,
+        "ranking": "23/40",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng 34 Nga Lương ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 23/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/ea/d3/68/ca-h-i-nay.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.24646,
+                22.673288
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25432120",
+        "title": "Banh Chaau",
+        "city": "Cao Bằng",
+        "totalScore": 5.0,
+        "ranking": "24/40",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Banh Chaau ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 24/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/c2/89/51/best-in-town.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.25876,
+                22.662502
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25432108",
+        "title": "Home Cafe",
+        "city": "Cao Bằng",
+        "totalScore": 5.0,
+        "ranking": "25/40",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Home Cafe ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 25/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/c2/61/9e/our-drinks.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.26039,
+                22.66328
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25432146",
+        "title": "Muong Thanh hotel",
+        "city": "Cao Bằng",
+        "totalScore": 5.0,
+        "ranking": "26/40",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Muong Thanh hotel ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 26/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/c4/b7/3c/view-from-coffee-shop.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.25961,
+                22.662466
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33442626",
+        "title": "Ngoc Café",
+        "city": "Bao Lac",
+        "totalScore": 4.0,
+        "ranking": "27/40",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ngoc Café ở Bao Lac. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 27/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/f5/ed/6a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.7599,
+                21.870838
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33342256",
+        "title": "Phở Liên",
+        "city": "Cao Bằng",
+        "totalScore": 4.0,
+        "ranking": "28/40",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phở Liên ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 28/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/30/8f/c5/9a/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.218155,
+                21.3972
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19776259",
+        "title": "Lủ Mây Uni Matcha",
+        "city": "Bao Lac",
+        "totalScore": 5.0,
+        "ranking": "29/40",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lủ Mây Uni Matcha ở Bao Lac. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 29/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/9d/d4/87/img-20191225-195510-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17436519",
+        "title": "An Hung Coffee",
+        "city": "Bao Lac",
+        "totalScore": 5.0,
+        "ranking": "30/40",
+        "reviewsCount": 1,
+        "category": "Quán cafe",
+        "priceRange": "394.737 ₫ - 1.842.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "An Hung Coffee ở Bao Lac. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 30/40. Giá: 394.737 ₫ - 1.842.105 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/74/25/be/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.679665,
+                22.947113
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14976055",
+        "title": "Cơm Phượt Cao Bằng",
+        "city": "Cao Bằng",
+        "totalScore": 5.0,
+        "ranking": "31/40",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "1.052.631.552 ₫ - 2.105.263.104 ₫",
+        "description": "Không gian ấm cúng. Nhân viên nhiệt tình",
+        "embedding": null,
+        "searchText": "Cơm Phượt Cao Bằng ở Cao Bằng. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Không gian ấm cúng. Nhân viên nhiệt tình Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 31/40. Giá: 1.052.631.552 ₫ - 2.105.263.104 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/f8/04/42/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.26072,
+                22.66725
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25434143",
+        "title": "Dac San",
+        "city": "Cao Bằng",
+        "totalScore": 4.0,
+        "ranking": "32/40",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dac San ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 32/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/c4/b6/4d/the-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.26179,
+                22.665554
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19244127",
+        "title": "Phố Nướng HT - BBQ & Beer",
+        "city": "Cao Bằng",
+        "totalScore": 3.7,
+        "ranking": "33/40",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phố Nướng HT - BBQ & Beer ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.7/5 từ 3 lượt review. Xếp hạng: 33/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/1a/34/72/65/front-entrance-don-t.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.26015,
+                22.66306
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6898663",
+        "title": "huong sen, cao bang, vietnam",
+        "city": "Cao Bằng",
+        "totalScore": 3.6,
+        "ranking": "34/40",
+        "reviewsCount": 5,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "huong sen, cao bang, vietnam ở Cao Bằng. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.6/5 từ 5 lượt review. Xếp hạng: 34/40.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/3b/a4/ba/getlstd-property-photo_rotated_90.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.26015,
+                22.66306
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15009371",
+        "title": "Nhà hàng Thu Tường",
+        "city": "Cao Bằng",
+        "totalScore": 4.0,
+        "ranking": "35/40",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Thu Tường ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 35/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.25656,
+                22.668474
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11955357",
+        "title": "Ngã Ba Sông - Lẩu Thức Yến",
+        "city": "Cao Bằng",
+        "totalScore": 4.0,
+        "ranking": "36/40",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "2.631.579 ₫ - 13.157.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Ngã Ba Sông - Lẩu Thức Yến ở Cao Bằng. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 36/40. Giá: 2.631.579 ₫ - 13.157.895 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/56/a9/e1/t-ng-2.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.25387,
+                22.673626
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13975412",
+        "title": "Tấm Food",
+        "city": "Cao Bằng",
+        "totalScore": 3.0,
+        "ranking": "37/40",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tấm Food ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 37/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.2543,
+                22.665894
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25433550",
+        "title": "Hey Kitchen",
+        "city": "Cao Bằng",
+        "totalScore": 3.0,
+        "ranking": "38/40",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hey Kitchen ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 38/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/c2/68/35/the-burger.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.26059,
+                22.663826
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12328981",
+        "title": "Nhà Hàng Hương Thịnh",
+        "city": "Cao Bằng",
+        "totalScore": 3.0,
+        "ranking": "39/40",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hương Thịnh ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 39/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.25828,
+                22.66718
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25008946",
+        "title": "Hat Dé Quàn",
+        "city": "Cao Bằng",
+        "totalScore": 2.5,
+        "ranking": "40/40",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hat Dé Quàn ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 2.5/5 từ 2 lượt review. Xếp hạng: 40/40.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.260826,
+                22.666737
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27492908",
+        "title": "Nhà hàng Nùng",
+        "city": "Pac Bo",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Nùng ở Pac Bo. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.05197,
+                22.9797
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17694971",
+        "title": "Ẩm Thực Cung Đình",
+        "city": "Cao Bằng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Ngồi xuống",
+        "priceRange": "2.147.483.647 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Ẩm Thực Cung Đình ở Cao Bằng. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Giá: 2.147.483.647 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/18/18/72/cd/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.24861,
+                22.673016
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-23:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1410
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17427106",
+        "title": "Nhà Hàng Ẩm Thực",
+        "city": "Cao Bằng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Ẩm thực Chay Cao Bằng - sự lựa chọn hàng đầu cho thực khách ăn chay. Nằm đối diện quảng trường ngay trung tâm TP. Cao Bằng, Nhà Hàng Chay Cao Bằng chinh phục được mọi thực khách nhờ không gian dân dã, thân thuộc và hương vị độc đáo của những món ăn chay dinh dưỡng. Và đặc biệt hơn cho thực khách đến với Chay Cao Bằng là, ở Chay Cao Bằng thực đơn có rất nhiều món thực đơn là món chay, phù hợp với những thực khách đến đây để thưởng thức “ẩm thực chay”.",
+        "embedding": null,
+        "searchText": "Nhà Hàng Ẩm Thực ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Ẩm thực Chay Cao Bằng - sự lựa chọn hàng đầu cho thực khách ăn chay. Nằm đối diện quảng trường ngay trung tâm TP. Cao Bằng, Nhà Hàng Chay Cao Bằng chinh phục được mọi thực khách nhờ không gian dân dã, thân thuộc và hương vị độc đáo của những món ăn chay dinh dưỡng. Và đặc biệt hơn cho thực khách đến với Chay Cao Bằng là, ở Chay Cao Bằng thực đơn có rất nhiều món thực đơn là món chay, phù hợp với những thực khách đến đây để thưởng thức “ẩm thực chay”.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/fe/99/35/review.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.22266,
+                22.679985
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15634622",
+        "title": "Đệ Nhất Lẩu Riêu",
+        "city": "Cao Bằng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đệ Nhất Lẩu Riêu ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.25828,
+                22.66718
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26162164",
+        "title": "119 phố Kim Đồng",
+        "city": "Cao Bằng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "119 phố Kim Đồng ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2a/d4/93/42/menu.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.26085,
+                22.66499
+            ]
+        },
+        "openingHours": {
+            "display": "06:15-22:45",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 375,
+                        "close_time": 1365
+                    }
+                ],
+                [
+                    {
+                        "open_time": 375,
+                        "close_time": 1365
+                    }
+                ],
+                [
+                    {
+                        "open_time": 375,
+                        "close_time": 1365
+                    }
+                ],
+                [
+                    {
+                        "open_time": 375,
+                        "close_time": 1365
+                    }
+                ],
+                [
+                    {
+                        "open_time": 375,
+                        "close_time": 1365
+                    }
+                ],
+                [
+                    {
+                        "open_time": 375,
+                        "close_time": 1365
+                    }
+                ],
+                [
+                    {
+                        "open_time": 375,
+                        "close_time": 1365
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25942779",
+        "title": "Nâng café",
+        "city": "Cao Bằng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nâng café ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.25442,
+                22.668104
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "15579493",
+        "title": "Banh Thanh Do So 1",
+        "city": "Cao Bằng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Đồ ăn nhanh",
+        "priceRange": "526.315.776 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Banh Thanh Do So 1 ở Cao Bằng. Loại địa điểm: Đồ ăn nhanh. Tags: Nhà hàng, Đồ ăn nhanh. Giá: 526.315.776 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Đồ ăn nhanh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.26119,
+                22.665478
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26572512",
+        "title": "The Old Fashioned",
+        "city": "Cao Bằng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Old Fashioned ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.25729,
+                22.667358
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-25:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1500
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1500
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25942769",
+        "title": "Nâng Café",
+        "city": "Cao Bằng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nâng Café ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.25447,
+                22.668047
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10791660",
+        "title": "Nhà Hàng Phố Mới",
+        "city": "Cao Bằng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Phố Mới ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.25828,
+                22.66718
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13980304",
+        "title": "MYMY Corner",
+        "city": "Cao Bằng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Quán cafe",
+        "priceRange": "394.736.832 ₫ - 2.147.483.647 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "MYMY Corner ở Cao Bằng. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Giá: 394.736.832 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/95/d6/bb/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.26488,
+                22.664488
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "14100621",
+        "title": "Hiền Tú Quán",
+        "city": "Cao Bằng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hiền Tú Quán ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.24166,
+                22.676563
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17750068",
+        "title": "Gia Cung Quán",
+        "city": "Cao Bằng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Gia Cung Quán là một trong những nhà hàng nổi tiếng tại địa phương. Nhà hàng được thiết kế theo lối cổ điển, dân dã, gần gũi với thiên nhiên. Bãi đỗ xe rộng rãi, góc nhìn tuyệt vời, thực phẩm tươi sạch, đồ ăn mang phong cách ẩm thực gia đình, có rất nhiều đặc sản, đặc biệt là cá sông, gà đồi, dê núi...",
+        "embedding": null,
+        "searchText": "Gia Cung Quán ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Gia Cung Quán là một trong những nhà hàng nổi tiếng tại địa phương. Nhà hàng được thiết kế theo lối cổ điển, dân dã, gần gũi với thiên nhiên. Bãi đỗ xe rộng rãi, góc nhìn tuyệt vời, thực phẩm tươi sạch, đồ ăn mang phong cách ẩm thực gia đình, có rất nhiều đặc sản, đặc biệt là cá sông, gà đồi, dê núi...",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/5d/57/bc/l-i-vao-chinh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.24853,
+                22.673231
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-23:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1410
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32875481",
+        "title": "Ăn Chay Cầu Khanh",
+        "city": "Cao Bằng",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ăn Chay Cầu Khanh ở Cao Bằng. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.17559,
+                22.71784
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34000467",
+        "title": "Chuc Quan",
+        "city": "Bao Lac",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chuc Quan ở Bao Lac. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.21816,
+                21.397573
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    }
+]

@@ -1,0 +1,798 @@
+[
+    {
+        "sourceLocationId": "11706772",
+        "title": "Nhà Hàng La Vang",
+        "city": "Trà Vinh",
+        "totalScore": 4.1,
+        "ranking": "1/9",
+        "reviewsCount": 8,
+        "category": "Ngồi xuống",
+        "priceRange": "131.579 ₫ - 394.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng La Vang ở Trà Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 4.1/5 từ 8 lượt review. Xếp hạng: 1/9. Giá: 131.579 ₫ - 394.737 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/28/96/b9/m-t-ti-n.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.33987,
+                9.94612
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8603429",
+        "title": "Cafe De PARIS",
+        "city": "Trà Vinh",
+        "totalScore": 4.0,
+        "ranking": "2/9",
+        "reviewsCount": 11,
+        "category": "Quán cafe",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Cafe De PARIS ở Trà Vinh. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 4.0/5 từ 11 lượt review. Xếp hạng: 2/9. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/e4/a7/73/pastries-and-drinks-in.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.340576,
+                9.948237
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10673522",
+        "title": "Déjà Vu Huỳnh Kha",
+        "city": "Trà Vinh",
+        "totalScore": 4.3,
+        "ranking": "3/9",
+        "reviewsCount": 7,
+        "category": "Nhà hàng",
+        "priceRange": "$$ - $$$",
+        "description": null,
+        "embedding": null,
+        "searchText": "Déjà Vu Huỳnh Kha ở Trà Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.3/5 từ 7 lượt review. Xếp hạng: 3/9. Giá: $$ - $$$.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/71/5f/83/restaurant-on-water.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.346306,
+                9.955471
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33733244",
+        "title": "SEE Drink & Coffee",
+        "city": "Trà Vinh",
+        "totalScore": 5.0,
+        "ranking": "4/9",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "SEE Drink & Coffee ở Trà Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 4/9.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/2c/b3/12/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.34303,
+                9.941027
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12556465",
+        "title": "Mandi Cafe",
+        "city": "Trà Vinh",
+        "totalScore": 4.7,
+        "ranking": "5/9",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mandi Cafe ở Trà Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.7/5 từ 3 lượt review. Xếp hạng: 5/9.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/e0/ea/40/photo1jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.34256,
+                9.93466
+            ]
+        },
+        "openingHours": {
+            "display": "19:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 1140,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33357214",
+        "title": "Soowon Bbq",
+        "city": "Trà Vinh",
+        "totalScore": 4.0,
+        "ranking": "6/9",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Soowon Bbq ở Trà Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 6/9.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.33904,
+                9.927011
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "10495220",
+        "title": "Coc Cafe Trà Vinh",
+        "city": "Trà Vinh",
+        "totalScore": 4.5,
+        "ranking": "7/9",
+        "reviewsCount": 2,
+        "category": "Quán cafe",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Coc Cafe Trà Vinh ở Trà Vinh. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 7/9.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/d5/82/55/jellyfish-noodle-water.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.339165,
+                9.961987
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "5074402",
+        "title": "Cafe - Kem",
+        "city": "Trà Vinh",
+        "totalScore": 3.8,
+        "ranking": "8/9",
+        "reviewsCount": 4,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cafe - Kem ở Trà Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.8/5 từ 4 lượt review. Xếp hạng: 8/9.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/04/b6/1b/8b/cafe-kem.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.341805,
+                9.94789
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "3774122",
+        "title": "Anh Thien",
+        "city": "Trà Vinh",
+        "totalScore": 3.5,
+        "ranking": "9/9",
+        "reviewsCount": 6,
+        "category": "Ngồi xuống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Anh Thien ở Trà Vinh. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 3.5/5 từ 6 lượt review. Xếp hạng: 9/9.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.33959,
+                9.93958
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27430809",
+        "title": "DEMO Caffee HoiAn - Coffee & Eatery",
+        "city": "Hội An",
+        "totalScore": 5.0,
+        "ranking": "509/1424",
+        "reviewsCount": 14,
+        "category": "Ngồi xuống",
+        "priceRange": "921.052.608 ₫ - 2.147.483.647 ₫",
+        "description": "Cà Phê, Thức uống\nPhục vụ thức ăn Bữa sáng - Bữa nửa buổi - Bữa Trưa",
+        "embedding": null,
+        "searchText": "DEMO Caffee HoiAn - Coffee & Eatery ở Hội An. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Cà Phê, Thức uống\nPhục vụ thức ăn Bữa sáng - Bữa nửa buổi - Bữa Trưa Đánh giá: 5.0/5 từ 14 lượt review. Xếp hạng: 509/1424. Giá: 921.052.608 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/5a/f7/40/merry-christmas-2024.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.19444,
+                9.96083
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-16:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 960
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27504288",
+        "title": "Family Restaurant & Cafe",
+        "city": "Hội An",
+        "totalScore": 5.0,
+        "ranking": "537/1424",
+        "reviewsCount": 13,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Family Restaurant & Cafe ở Hội An. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 13 lượt review. Xếp hạng: 537/1424.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/23/6f/a0/lovely-guests.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.19444,
+                9.96083
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-10:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 600
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 600
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 600
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 600
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 600
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 600
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 600
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27391270",
+        "title": "Ally 's Creamery",
+        "city": "Hội An",
+        "totalScore": 5.0,
+        "ranking": "1196/1424",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ally 's Creamery ở Hội An. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 1196/1424.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2d/09/93/8d/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.19444,
+                9.96083
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "16754628",
+        "title": "King Beer Garden Trà Vinh",
+        "city": "Trà Vinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "King Beer Garden Trà Vinh ở Trà Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.332405,
+                9.936444
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17562853",
+        "title": "Nhà Hàng A Kòi 6",
+        "city": "Trà Vinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng A Kòi 6 ở Trà Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/c5/96/51/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.33688,
+                9.968627
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "12621434",
+        "title": "Pho Xanh Coffee",
+        "city": "Trà Vinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Quán cafe",
+        "priceRange": "26.316 ₫ - 52.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Pho Xanh Coffee ở Trà Vinh. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Giá: 26.316 ₫ - 52.632 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/c7/b6/14/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.33981,
+                9.93167
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19857085",
+        "title": "Quán Ăn Kim Phụng",
+        "city": "Trà Vinh",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Ăn Kim Phụng ở Trà Vinh. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "24111387",
+        "title": "Julien's Tour",
+        "city": "Duyên Hải",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Julien's Tour ở Duyên Hải. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.49878,
+                9.636437
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    }
+]

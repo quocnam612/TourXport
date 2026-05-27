@@ -1,0 +1,205 @@
+[
+    {
+        "sourceLocationId": "15521308",
+        "title": "Muong Thanh Luxury Khanh Hoa Hotel",
+        "city": "Nha Trang",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 631,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Muong Thanh Luxury Khanh Hoa Hotel ở Nha Trang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 631 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/cb/c8/18/hinh-nh-ben-ngoai-khach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.197464,
+                12.258792
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1534400",
+        "title": "Khách sạn và Spa Sheraton Nha Trang",
+        "city": "Nha Trang",
+        "totalScore": 4.7,
+        "ranking": null,
+        "reviewsCount": 4131,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn và Spa Sheraton Nha Trang ở Nha Trang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.7/5 từ 4131 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/33/02/05/7e/infinity-pool.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.196,
+                12.246327
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "446818",
+        "title": "Vinpearl Resort Nha Trang",
+        "city": "Nha Trang",
+        "totalScore": 4.6,
+        "ranking": null,
+        "reviewsCount": 3139,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vinpearl Resort Nha Trang ở Nha Trang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 3139 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1d/17/44/ca/vinpearl-resort-nha-trang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.24735,
+                12.220934
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "2179503",
+        "title": "Vinpearl Luxury Nha Trang",
+        "city": "Nha Trang",
+        "totalScore": 4.8,
+        "ranking": null,
+        "reviewsCount": 1595,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vinpearl Luxury Nha Trang ở Nha Trang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 1595 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1d/29/f4/b5/vinpearl-luxury-nha-trang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.24374,
+                12.212904
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4172546",
+        "title": "Amiana Resort Nha Trang",
+        "city": "Nha Trang",
+        "totalScore": 4.6,
+        "ranking": null,
+        "reviewsCount": 2695,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Amiana Resort Nha Trang ở Nha Trang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 2695 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/9e/38/7f/resort-overview.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.23387,
+                12.295223
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15142275",
+        "title": "Vinpearl Beachfront Nha Trang",
+        "city": "Nha Trang",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 2123,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vinpearl Beachfront Nha Trang ở Nha Trang. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 2123 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/0f/b7/39/restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.197136,
+                12.23296
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20359633",
+        "title": "ALMA RESORT CAM RANH",
+        "city": "Cam Hải Đông",
+        "totalScore": 4.9,
+        "ranking": null,
+        "reviewsCount": 2190,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "ALMA RESORT CAM RANH ở Cam Hải Đông. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.9/5 từ 2190 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/79/f9/c6/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.1955,
+                12.072664
+            ]
+        },
+        "openingHours": null
+    }
+]

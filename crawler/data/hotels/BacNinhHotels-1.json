@@ -1,0 +1,31 @@
+[
+    {
+        "sourceLocationId": "12249992",
+        "title": "Khách Sạn Mường Thanh Luxury Bắc Ninh",
+        "city": "Bắc Ninh",
+        "totalScore": 4.6,
+        "ranking": null,
+        "reviewsCount": 28,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn Mường Thanh Luxury Bắc Ninh ở Bắc Ninh. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.6/5 từ 28 lượt review.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1d/00/66/6e/khach-s-n-mu-ng-thanh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.06632,
+                21.183506
+            ]
+        },
+        "openingHours": null
+    }
+]

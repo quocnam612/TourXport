@@ -1,0 +1,786 @@
+[
+    {
+        "sourceLocationId": "17457273",
+        "title": "Khach san Phuong Anh",
+        "city": "Hung Yen, Hung Yen Province",
+        "totalScore": 4.8,
+        "ranking": "1/74",
+        "reviewsCount": 5,
+        "category": "Khách sạn",
+        "priceRange": "842.105 ₫ - 1.000.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khach san Phuong Anh ở Hung Yen, Hung Yen Province. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.8/5 từ 5 lượt review. Xếp hạng: 1/74. Giá: 842.105 ₫ - 1.000.000 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/30/56/39/2a/property-building.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.98314,
+                20.981739
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20088665",
+        "title": "The First Stay Hotel",
+        "city": "Van Giang, Hung Yen Province",
+        "totalScore": 5.0,
+        "ranking": "2/74",
+        "reviewsCount": 3,
+        "category": "Khách sạn",
+        "priceRange": "1.236.842 ₫ - 1.315.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "The First Stay Hotel ở Van Giang, Hung Yen Province. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 2/74. Giá: 1.236.842 ₫ - 1.315.789 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/04/c0/4c/7-reception-always-ready.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.93781,
+                20.952793
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13324121",
+        "title": "Nhà Nghỉ Xuân Cầu",
+        "city": "Hung Yen, Hung Yen Province",
+        "totalScore": 5.0,
+        "ranking": "3/74",
+        "reviewsCount": 1,
+        "category": "Khách sạn nhỏ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Nghỉ Xuân Cầu ở Hung Yen, Hung Yen Province. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 3/74.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.02599,
+                20.938877
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21392421",
+        "title": "Bom Homes- Ecopark- Service Apartment",
+        "city": "Van Giang, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "4/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "1.000.000 ₫ - 1.131.579 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Bom Homes- Ecopark- Service Apartment ở Van Giang, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 4/74. Giá: 1.000.000 ₫ - 1.131.579 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.92123,
+                20.97363
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34117696",
+        "title": "Paradise Bay Hotel - Vinhomes Ocean Park 3",
+        "city": "Van Giang, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "5/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "473.684 ₫ - 921.053 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Paradise Bay Hotel - Vinhomes Ocean Park 3 ở Van Giang, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 5/74. Giá: 473.684 ₫ - 921.053 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97702,
+                20.95565
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26755326",
+        "title": "Quynh Trang Hung Yen Hotel",
+        "city": "Lạc Hồng, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "6/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "842.105 ₫ - 1.210.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quynh Trang Hung Yen Hotel ở Lạc Hồng, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 6/74. Giá: 842.105 ₫ - 1.210.526 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/2e/06/24/b7/property-building.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.00054,
+                20.96042
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23028998",
+        "title": "Crown Hotel",
+        "city": "Hung Yen, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "7/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Crown Hotel ở Hung Yen, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 7/74.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.088,
+                20.683704
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33686346",
+        "title": "The Lumen Stay",
+        "city": "Van Giang, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "8/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Lumen Stay ở Van Giang, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 8/74.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97655,
+                20.94952
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34018716",
+        "title": "Văn Lam Hotel",
+        "city": "Xuan Quan, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "9/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "631.579 ₫ - 736.842 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Văn Lam Hotel ở Xuan Quan, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 9/74. Giá: 631.579 ₫ - 736.842 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/31/f8/f6/ab/van-lam-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.99282,
+                20.96686
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33699670",
+        "title": "Rose house",
+        "city": "Van Giang, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "10/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "552.632 ₫ - 605.263 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Rose house ở Van Giang, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 10/74. Giá: 552.632 ₫ - 605.263 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97929,
+                20.95684
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33441572",
+        "title": "Homestay Swan By Kat",
+        "city": "Van Giang, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "11/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "736.842 ₫ - 973.684 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Homestay Swan By Kat ở Van Giang, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 11/74. Giá: 736.842 ₫ - 973.684 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97605,
+                20.954082
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33206178",
+        "title": "Bao An Hotel Hung Yen",
+        "city": "Van Giang, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "12/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "842.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Bao An Hotel Hung Yen ở Van Giang, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 12/74. Giá: 842.105 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/32/7d/68/c3/bed.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.94053,
+                20.94719
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33399059",
+        "title": "Vinhomes Ocean Park 2 - The Empire",
+        "city": "Van Giang, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "13/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "947.368 ₫ - 973.684 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Vinhomes Ocean Park 2 - The Empire ở Van Giang, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 13/74. Giá: 947.368 ₫ - 973.684 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/90/99/c6/ocean-park-2.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.98464,
+                20.951271
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34404792",
+        "title": "LokoOne Central Hub",
+        "city": "Hung Yen, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "14/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "LokoOne Central Hub ở Hung Yen, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 14/74.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97664,
+                20.949314
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34322299",
+        "title": "Nha nghi Hoa Hong Ocean Park 2",
+        "city": "Hung Yen, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "15/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "500.000 ₫ - 657.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nha nghi Hoa Hong Ocean Park 2 ở Hung Yen, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 15/74. Giá: 500.000 ₫ - 657.895 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97727,
+                20.951773
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33698058",
+        "title": "CalmStay swanlake Ecopark",
+        "city": "Van Giang, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "16/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "421.053 ₫ - 868.421 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "CalmStay swanlake Ecopark ở Van Giang, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 16/74. Giá: 421.053 ₫ - 868.421 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.92841,
+                20.95788
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33045608",
+        "title": "Diamond Hotel Văn Giang",
+        "city": "Van Giang, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "17/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Diamond Hotel Văn Giang ở Van Giang, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 17/74.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.84969,
+                21.042023
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23211580",
+        "title": "123",
+        "city": "Hung Yen, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "18/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "123 ở Hung Yen, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 18/74.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/1c/d2/14/15/6646668.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.05715,
+                20.644056
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33698065",
+        "title": "Pho Bien Homestay",
+        "city": "Van Giang, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "19/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "526.316 ₫ - 1.157.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Pho Bien Homestay ở Van Giang, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 19/74. Giá: 526.316 ₫ - 1.157.895 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.979675,
+                20.957127
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34260467",
+        "title": "Diamond Hotel Van Giang Hung Yen",
+        "city": "Van Giang, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "20/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "447.368 ₫ - 578.947 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Diamond Hotel Van Giang Hung Yen ở Van Giang, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 20/74. Giá: 447.368 ₫ - 578.947 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.94567,
+                20.954012
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33253297",
+        "title": "Sol Forest Ecopark Apartments",
+        "city": "Van Giang, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "21/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "605.263 ₫ - 815.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Sol Forest Ecopark Apartments ở Van Giang, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 21/74. Giá: 605.263 ₫ - 815.789 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.920296,
+                20.960814
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33114085",
+        "title": "Luxury Hotel",
+        "city": "Van Giang, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "22/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Luxury Hotel ở Van Giang, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 22/74.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.9399,
+                20.947248
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33253308",
+        "title": "Căn hộ sang trọng Onsen Landmark",
+        "city": "Phung Cong, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "23/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "815.789 ₫ - 1.236.842 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Căn hộ sang trọng Onsen Landmark ở Phung Cong, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 23/74. Giá: 815.789 ₫ - 1.236.842 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.93133,
+                20.955194
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34029131",
+        "title": "Ngôi nhà",
+        "city": "Van Giang, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "24/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "631.579 ₫ - 710.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Ngôi nhà ở Van Giang, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 24/74. Giá: 631.579 ₫ - 710.526 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.980774,
+                20.954145
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34049885",
+        "title": "Amanda Homestay",
+        "city": "Hung Yen, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "25/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "473.684 ₫ - 552.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Amanda Homestay ở Hung Yen, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 25/74. Giá: 473.684 ₫ - 552.632 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.05554,
+                20.64928
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34399256",
+        "title": "ShineAgain Luxury Hotel - Vinhomes Ocean Park 3",
+        "city": "Van Giang, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "26/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "421.053 ₫ - 710.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "ShineAgain Luxury Hotel - Vinhomes Ocean Park 3 ở Van Giang, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 26/74. Giá: 421.053 ₫ - 710.526 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.98142,
+                20.953629
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33444308",
+        "title": "Homestay Ecopark Hung Yen By QMP",
+        "city": "Xuan Quan, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "27/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "684.211 ₫ - 894.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Homestay Ecopark Hung Yen By QMP ở Xuan Quan, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 27/74. Giá: 684.211 ₫ - 894.737 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.92036,
+                20.962032
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34254555",
+        "title": "Homestay",
+        "city": "Hung Yen, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "28/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "500.000 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Homestay ở Hung Yen, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 28/74. Giá: 500.000 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/32/df/f0/59/homestay.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21302080",
+        "title": "Sky Homestay In Ecopark",
+        "city": "Van Giang, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "29/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "894.737 ₫ - 1.289.474 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Sky Homestay In Ecopark ở Van Giang, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 29/74. Giá: 894.737 ₫ - 1.289.474 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/26/26/24/e1/cong-vien-h-thien-nga.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.92106,
+                20.973783
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33684361",
+        "title": "Đa Lat Hotel",
+        "city": "Xuan Quan, Hung Yen Province",
+        "totalScore": 0,
+        "ranking": "30/74",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "605.263 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Đa Lat Hotel ở Xuan Quan, Hung Yen Province. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 30/74. Giá: 605.263 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/31/6d/2f/e4/da-l-t-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.05962,
+                20.93426
+            ]
+        },
+        "openingHours": null
+    }
+]

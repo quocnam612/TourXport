@@ -1,0 +1,2451 @@
+[
+    {
+        "sourceLocationId": "2484803",
+        "title": "Trang An Grottoes",
+        "city": "Ninh Bình",
+        "totalScore": 4.6,
+        "ranking": "3/49",
+        "reviewsCount": 2775,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trang An Grottoes ở Ninh Bình. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.6/5 từ 2775 lượt review. Xếp hạng: 3/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/d3/fa/76/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.91872,
+                20.253971
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-16:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 960
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 960
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "5321519",
+        "title": "Mua Caves (Hang Múa)",
+        "city": "Ninh Bình",
+        "totalScore": 4.5,
+        "ranking": "4/49",
+        "reviewsCount": 1839,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mua Caves (Hang Múa) ở Ninh Bình. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 1839 lượt review. Xếp hạng: 4/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/11/56/19/mua-cave.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.93492,
+                20.229855
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "552590",
+        "title": "Tam Cốc-Bích Động",
+        "city": "Ninh Hai",
+        "totalScore": 4.2,
+        "ranking": "7/49",
+        "reviewsCount": 3050,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tam Cốc-Bích Động ở Ninh Hai. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 3050 lượt review. Xếp hạng: 7/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/18/00/5f/56/tam-coc-lavender-homestay.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.93746,
+                20.216324
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "5570345",
+        "title": "Chùa Bích Động",
+        "city": "Ninh Hai",
+        "totalScore": 4.1,
+        "ranking": "8/49",
+        "reviewsCount": 788,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Bích Động ở Ninh Hai. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.1/5 từ 788 lượt review. Xếp hạng: 8/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/1e/21/cb/dsc-3633-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.91565,
+                20.217567
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "2044218",
+        "title": "Van Long Nature Reserve",
+        "city": "Ninh Bình",
+        "totalScore": 4.4,
+        "ranking": "5/49",
+        "reviewsCount": 694,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Van Long Nature Reserve ở Ninh Bình. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.4/5 từ 694 lượt review. Xếp hạng: 5/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/3a/03/15/imag2369-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.88364,
+                20.372606
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8779716",
+        "title": "Vườn quốc gia Cúc Phương",
+        "city": "Ninh Bình",
+        "totalScore": 4.1,
+        "ranking": "10/49",
+        "reviewsCount": 220,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn quốc gia Cúc Phương ở Ninh Bình. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.1/5 từ 220 lượt review. Xếp hạng: 10/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/97/0f/9f/cuc-phuong-national-park.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.71395,
+                20.250763
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13646473",
+        "title": "Tuyệt Tình Cốc",
+        "city": "Ninh Bình",
+        "totalScore": 4.5,
+        "ranking": "15/49",
+        "reviewsCount": 39,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tuyệt Tình Cốc ở Ninh Bình. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 39 lượt review. Xếp hạng: 15/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/3d/d0/cf/tuyet-tinh-coc-lake.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.91178,
+                20.281013
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1752556",
+        "title": "Nui Chua National Park",
+        "city": "Ninh Hai",
+        "totalScore": 4.3,
+        "ranking": "27/49",
+        "reviewsCount": 8,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nui Chua National Park ở Ninh Hai. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.3/5 từ 8 lượt review. Xếp hạng: 27/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-c/2560x500/0a/d1/9b/7e/realadventuresvietnam.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "3597971",
+        "title": "Phat Diem Cathedral",
+        "city": "Ninh Bình",
+        "totalScore": 4.4,
+        "ranking": "9/49",
+        "reviewsCount": 163,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phat Diem Cathedral ở Ninh Bình. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.4/5 từ 163 lượt review. Xếp hạng: 9/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/05/a2/1d/cf/phat-diem-cathedral.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.07964,
+                20.092703
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20086080",
+        "title": "Tam Cốc-Bích Động",
+        "city": "Ninh Hai",
+        "totalScore": 4.0,
+        "ranking": "28/49",
+        "reviewsCount": 6,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tam Cốc-Bích Động ở Ninh Hai. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.0/5 từ 6 lượt review. Xếp hạng: 28/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/dc/5f/af/tam-coc-bich-dong.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "5858097",
+        "title": "Hoa Lu Temples of the Dinh & le Dynasties",
+        "city": "Ninh Bình",
+        "totalScore": 3.5,
+        "ranking": "11/49",
+        "reviewsCount": 708,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hoa Lu Temples of the Dinh & le Dynasties ở Ninh Bình. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.5/5 từ 708 lượt review. Xếp hạng: 11/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/f0/c9/17/hoa-lu-temples-of-the.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.9066,
+                20.285124
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11094481",
+        "title": "Hoa Lu Temple",
+        "city": "Ninh Bình",
+        "totalScore": 3.8,
+        "ranking": "12/49",
+        "reviewsCount": 136,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hoa Lu Temple ở Ninh Bình. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.8/5 từ 136 lượt review. Xếp hạng: 12/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/ef/8d/b1/c-ng-d-n.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.908356,
+                20.284418
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13216581",
+        "title": "Chùa Linh Cốc",
+        "city": "Ninh Hai",
+        "totalScore": 3.9,
+        "ranking": "29/49",
+        "reviewsCount": 15,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Linh Cốc ở Ninh Hai. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.9/5 từ 15 lượt review. Xếp hạng: 29/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/77/25/98/linh-coc-temple.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.907295,
+                20.209251
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "2267819",
+        "title": "Chùa Bái Đính",
+        "city": "Gia Sinh",
+        "totalScore": 4.5,
+        "ranking": "1/49",
+        "reviewsCount": 2452,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Bái Đính ở Gia Sinh. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 2452 lượt review. Xếp hạng: 1/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/69/c5/52/bai-dinh-pagoda-complex.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.86583,
+                20.275927
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8071591",
+        "title": "Đền Thái Vi",
+        "city": "Ninh Bình",
+        "totalScore": 3.9,
+        "ranking": "16/49",
+        "reviewsCount": 96,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đền Thái Vi ở Ninh Bình. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.9/5 từ 96 lượt review. Xếp hạng: 16/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/8f/10/6b/thai-vi-temple.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.92986,
+                20.223846
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8099091",
+        "title": "Động Vái Giời",
+        "city": "Ninh Hai",
+        "totalScore": 4.3,
+        "ranking": "24/49",
+        "reviewsCount": 6,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Động Vái Giời ở Ninh Hai. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.3/5 từ 6 lượt review. Xếp hạng: 24/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/de/3c/fd/20180727-150456-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13550190",
+        "title": "Khu Du Lich Sinh Thai Trang An Co",
+        "city": "Ninh Bình",
+        "totalScore": 4.2,
+        "ranking": "20/49",
+        "reviewsCount": 17,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu Du Lich Sinh Thai Trang An Co ở Ninh Bình. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.2/5 từ 17 lượt review. Xếp hạng: 20/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/d5/34/c6/khu-du-l-ch-sinh-thai.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.91096,
+                20.27252
+            ]
+        },
+        "openingHours": {
+            "display": "06:30-18:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1110
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1110
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8290208",
+        "title": "Chợ Rồng Ninh Bình",
+        "city": "Ninh Bình",
+        "totalScore": 3.9,
+        "ranking": "23/49",
+        "reviewsCount": 17,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chợ Rồng Ninh Bình ở Ninh Bình. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 3.9/5 từ 17 lượt review. Xếp hạng: 23/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/d3/94/38/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.9726,
+                20.25478
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12813476",
+        "title": "Hồ Đồng Thái",
+        "city": "Ninh Bình",
+        "totalScore": 5.0,
+        "ranking": "25/49",
+        "reviewsCount": 5,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hồ Đồng Thái ở Ninh Bình. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 5 lượt review. Xếp hạng: 25/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/55/2d/75/dong-thai-lake.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.9554,
+                20.091494
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12965796",
+        "title": "Hoa Lư Ancient Capital",
+        "city": "Ninh Bình",
+        "totalScore": 3.3,
+        "ranking": "22/49",
+        "reviewsCount": 60,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hoa Lư Ancient Capital ở Ninh Bình. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.3/5 từ 60 lượt review. Xếp hạng: 22/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/30/27/11/photo1jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "639613",
+        "title": "Kenh Ga",
+        "city": "Ninh Bình",
+        "totalScore": 3.1,
+        "ranking": "38/49",
+        "reviewsCount": 60,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kenh Ga ở Ninh Bình. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.1/5 từ 60 lượt review. Xếp hạng: 38/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/01/40/05/45/kenh-ga.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.81631,
+                20.330162
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12921239",
+        "title": "Động Mã Tiên",
+        "city": "Ninh Bình",
+        "totalScore": 5.0,
+        "ranking": "35/49",
+        "reviewsCount": 2,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Động Mã Tiên ở Ninh Bình. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 35/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/1a/29/0f/dong-thai-lake.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.95921,
+                20.077559
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12231699",
+        "title": "Núi Kỳ Lân",
+        "city": "Ninh Bình",
+        "totalScore": 4.0,
+        "ranking": "34/49",
+        "reviewsCount": 4,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Núi Kỳ Lân ở Ninh Bình. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 4 lượt review. Xếp hạng: 34/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/13/35/2f/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.96894,
+                20.26168
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17414803",
+        "title": "Kong Skull Island",
+        "city": "Ninh Bình",
+        "totalScore": 3.3,
+        "ranking": "37/49",
+        "reviewsCount": 12,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kong Skull Island ở Ninh Bình. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.3/5 từ 12 lượt review. Xếp hạng: 37/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/7d/78/89/20190511-142736-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11893974",
+        "title": "Di Sản Văn Hóa và Thiên Nhiên Thế giới Tràng An",
+        "city": "Ninh Xuân",
+        "totalScore": 4.7,
+        "ranking": "6/49",
+        "reviewsCount": 189,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Di Sản Văn Hóa và Thiên Nhiên Thế giới Tràng An ở Ninh Xuân. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.7/5 từ 189 lượt review. Xếp hạng: 6/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/15/11/df/42/like-in-fairy-tale.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.91832,
+                20.252527
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9974672",
+        "title": "Trung Tâm Cứu Hộ Linh Trưởng Nguy Cấp",
+        "city": "Tỉnh Ninh Bình",
+        "totalScore": 4.1,
+        "ranking": "17/49",
+        "reviewsCount": 59,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trung Tâm Cứu Hộ Linh Trưởng Nguy Cấp ở Tỉnh Ninh Bình. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.1/5 từ 59 lượt review. Xếp hạng: 17/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/c4/0d/8c/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "08:00-11:30, 13:30-16:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 690
+                    },
+                    {
+                        "open_time": 810,
+                        "close_time": 990
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17612052",
+        "title": "Turtle Conservation Centre",
+        "city": "Tỉnh Ninh Bình",
+        "totalScore": 5.0,
+        "ranking": "36/49",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Turtle Conservation Centre ở Tỉnh Ninh Bình. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 36/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/fa/14/ac/indotestudo-elongata.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.715904,
+                20.247047
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "18670578",
+        "title": "Cơ Sở Bảo Tồn Gấu Ninh Bình",
+        "city": "Ninh Bình",
+        "totalScore": 4.9,
+        "ranking": "2/49",
+        "reviewsCount": 198,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": "Nằm trên trục đường Cúc Phương – Bái Đính, cách Vườn Quốc gia Cúc Phương 8km, CƠ SỞ BẢO TỒN GẤU Ninh Bình là ngôi nhà an toàn và phù hợp cho các cá thể gấu đã từng bị lấy mật. Bốn khu bán hoang dã với tổng diện tích trên 22.000 m2 tạo cho gấu không gian sống gần với tự nhiên, giúp gấu dần phục hồi bản năng của loài. Được tự do hoạt động ngoài trời và trong nhà, gấu có thể lựa chọn bơi lội trong hồ, leo trèo lên các bậc sàn cao, tắm nắng ngoài bãi cỏ, chơi đùa với nhau, tìm kiếm thức ăn, hay trốn vào những nơi khuất để thư giãn.",
+        "embedding": null,
+        "searchText": "Cơ Sở Bảo Tồn Gấu Ninh Bình ở Ninh Bình. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Mô tả: Nằm trên trục đường Cúc Phương – Bái Đính, cách Vườn Quốc gia Cúc Phương 8km, CƠ SỞ BẢO TỒN GẤU Ninh Bình là ngôi nhà an toàn và phù hợp cho các cá thể gấu đã từng bị lấy mật. Bốn khu bán hoang dã với tổng diện tích trên 22.000 m2 tạo cho gấu không gian sống gần với tự nhiên, giúp gấu dần phục hồi bản năng của loài. Được tự do hoạt động ngoài trời và trong nhà, gấu có thể lựa chọn bơi lội trong hồ, leo trèo lên các bậc sàn cao, tắm nắng ngoài bãi cỏ, chơi đùa với nhau, tìm kiếm thức ăn, hay trốn vào những nơi khuất để thư giãn. Đánh giá: 4.9/5 từ 198 lượt review. Xếp hạng: 2/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/07/0e/44/i-m-sexy-and-i-know-it.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.76347,
+                20.207886
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34364203",
+        "title": "Levu Silk & Craft",
+        "city": "Ninh Bình",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Levu Silk & Craft ở Ninh Bình. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/33/2c/68/7c/product-packaging-process.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.95692,
+                20.212387
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-19:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1140
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34237816",
+        "title": "Thung Ui Valley",
+        "city": "Ninh Hai",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thung Ui Valley ở Ninh Hai. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/92/04/aa/blue-swimmer-travel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.10511,
+                20.951195
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-24:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1440
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33410209",
+        "title": "Tâm Spa Tam Coc Massage - Nail",
+        "city": "Ninh Bình",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tâm Spa Tam Coc Massage - Nail ở Ninh Bình. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/8a/f3/48/cabalina-grove.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.7262,
+                9.272555
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33347032",
+        "title": "Moto Renga Ninh Binh(huong Duong)",
+        "city": "Ninh Bình",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Moto Renga Ninh Binh(huong Duong) ở Ninh Bình. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/32/8a/f8/f5/cabalina-grove.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.96292,
+                20.258627
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33304637",
+        "title": "Grottes De Tam Coc",
+        "city": "Ninh Hai",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Grottes De Tam Coc ở Ninh Hai. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/8d/f0/53/blue-swimmer-travel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.60067,
+                16.467894
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28295279",
+        "title": "Ngoa Long",
+        "city": "Ninh Bình",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ngoa Long ở Ninh Bình. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/8a/f2/b1/cabalina-grove.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.83333,
+                16.16667
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27931918",
+        "title": "Công Ty Cổ Phần Wingolf",
+        "city": "Ninh Bình",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Công Ty Cổ Phần Wingolf ở Ninh Bình. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Lớp học & hội thảo, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Lớp học & hội thảo",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.80178,
+                21.010933
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27931905",
+        "title": "Công Ty Cổ Phần Wingolf",
+        "city": "Ninh Bình",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Công Ty Cổ Phần Wingolf ở Ninh Bình. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Lớp học & hội thảo, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Lớp học & hội thảo",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.8017,
+                21.010817
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-17:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21258749",
+        "title": "Dich Long Cave And Pagoda",
+        "city": "Gia Vien",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dich Long Cave And Pagoda ở Gia Vien. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97446,
+                20.250614
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11894049",
+        "title": "Chùa Nhất Trụ",
+        "city": "Ninh Bình",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Nhất Trụ ở Ninh Bình. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/8a/f2/7e/cabalina-grove.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "06:30-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 390,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33333631",
+        "title": "Dundj Valley",
+        "city": "Ninh Bình",
+        "totalScore": 4.9,
+        "ranking": "13/49",
+        "reviewsCount": 15,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dundj Valley ở Ninh Bình. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.9/5 từ 15 lượt review. Xếp hạng: 13/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/bd/3e/dd/buffalo-grazing-in-the.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.909035,
+                20.22258
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32455624",
+        "title": "Tam Coc Museum",
+        "city": "Ninh Bình",
+        "totalScore": 4.9,
+        "ranking": "14/49",
+        "reviewsCount": 17,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tam Coc Museum ở Ninh Bình. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Nơi mua sắm, Bảo tàng, Thông tin cho khách du lịch. Đánh giá: 4.9/5 từ 17 lượt review. Xếp hạng: 14/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Bảo tàng",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/33/80/76/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.932495,
+                20.215828
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27106668",
+        "title": "Snail & Hen Farm",
+        "city": "Ninh Bình",
+        "totalScore": 5.0,
+        "ranking": "18/49",
+        "reviewsCount": 10,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Snail & Hen Farm ở Ninh Bình. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 5.0/5 từ 10 lượt review. Xếp hạng: 18/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/1e/8c/d7/cuoi-trau.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.90696,
+                20.214394
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28126339",
+        "title": "Phố Cổ Hoa Lư",
+        "city": "Ninh Bình",
+        "totalScore": 5.0,
+        "ranking": "19/49",
+        "reviewsCount": 8,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phố Cổ Hoa Lư ở Ninh Bình. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 8 lượt review. Xếp hạng: 19/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/9e/56/fc/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.96816,
+                20.263388
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33877447",
+        "title": "Trang An Farmhouse - Cooking Class",
+        "city": "Ninh Hai",
+        "totalScore": 5.0,
+        "ranking": "21/49",
+        "reviewsCount": 4,
+        "category": "Thông tin cho khách du lịch",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Trang An Farmhouse - Cooking Class ở Ninh Hai. Loại địa điểm: Thông tin cho khách du lịch. Tags: Điểm du lịch, Thông tin cho khách du lịch. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 21/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Thông tin cho khách du lịch"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/31/af/58/d0/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.9758,
+                20.249855
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33096537",
+        "title": "Plow Valley",
+        "city": "Ninh Hai",
+        "totalScore": 5.0,
+        "ranking": "26/49",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Plow Valley ở Ninh Hai. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 26/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/32/8d/ef/d6/blue-swimmer-travel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.92265,
+                20.222559
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "21071032",
+        "title": "Di sản Tràng An",
+        "city": "Ninh Bình",
+        "totalScore": 5.0,
+        "ranking": "30/49",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Di sản Tràng An ở Ninh Bình. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 30/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/a8/6d/7a/c-ng-vao-di-s-n-trang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "07:00-16:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 990
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 990
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34353205",
+        "title": "Silk Farm Bến Giá",
+        "city": "Ninh Bình",
+        "totalScore": 5.0,
+        "ranking": "31/49",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Silk Farm Bến Giá ở Ninh Bình. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 31/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/33/1f/1b/32/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.95574,
+                20.208506
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "28010943",
+        "title": "Đảo Khê Cốc",
+        "city": "Ninh Xuân",
+        "totalScore": 5.0,
+        "ranking": "32/49",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đảo Khê Cốc ở Ninh Xuân. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 32/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/ed/eb/7c/d-o-khe-c-c-nhin-t-tren.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.9,
+                20.23333
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1050
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "23924142",
+        "title": "Ba Ngàn Art",
+        "city": "Ninh Bình",
+        "totalScore": 5.0,
+        "ranking": "33/49",
+        "reviewsCount": 1,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": "Ba Ngàn là một triển lãm về con người, qua đó, người xem sẽ tiếp cận những tác phẩm của nghề, nghiệp, quan điểm và tư tưởng sống của những con người sống bên đời chúng ta!",
+        "embedding": null,
+        "searchText": "Ba Ngàn Art ở Ninh Bình. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Nơi mua sắm, Bảo tàng. Mô tả: Ba Ngàn là một triển lãm về con người, qua đó, người xem sẽ tiếp cận những tác phẩm của nghề, nghiệp, quan điểm và tư tưởng sống của những con người sống bên đời chúng ta! Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 33/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/22/54/15/70/tac-ph-m-dieu-kh-c-h.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.9733,
+                20.264084
+            ]
+        },
+        "openingHours": {
+            "display": "09:00-21:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33308508",
+        "title": "Sun World Ba Na Hills",
+        "city": "Truong Yen",
+        "totalScore": 1.0,
+        "ranking": "39/49",
+        "reviewsCount": 1,
+        "category": "Công viên nước & giải trí",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sun World Ba Na Hills ở Truong Yen. Loại địa điểm: Công viên nước & giải trí. Tags: Điểm du lịch, Công viên nước & giải trí. Đánh giá: 1.0/5 từ 1 lượt review. Xếp hạng: 39/49.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.852325,
+                21.012737
+            ]
+        },
+        "openingHours": null
+    }
+]

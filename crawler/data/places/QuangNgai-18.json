@@ -1,0 +1,794 @@
+[
+    {
+        "sourceLocationId": "2095404",
+        "title": "My Lai Massacre Museum",
+        "city": "Quảng Ngãi",
+        "totalScore": 4.4,
+        "ranking": "1/18",
+        "reviewsCount": 134,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "My Lai Massacre Museum ở Quảng Ngãi. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.4/5 từ 134 lượt review. Xếp hạng: 1/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/99/bf/0e/son-my-vestige-site.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.87289,
+                15.17724
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8599469",
+        "title": "Đảo Lý Sơn",
+        "city": "Tỉnh Quảng Ngãi",
+        "totalScore": 4.3,
+        "ranking": "2/18",
+        "reviewsCount": 99,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đảo Lý Sơn ở Tỉnh Quảng Ngãi. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.3/5 từ 99 lượt review. Xếp hạng: 2/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/31/d8/b4/d-o-be.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.13025,
+                15.386858
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12151603",
+        "title": "Di Tích Sơn Mỹ - Thảm Sát Mỹ Lai",
+        "city": "Quảng Ngãi",
+        "totalScore": 4.6,
+        "ranking": "3/18",
+        "reviewsCount": 25,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Di Tích Sơn Mỹ - Thảm Sát Mỹ Lai ở Quảng Ngãi. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.6/5 từ 25 lượt review. Xếp hạng: 3/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/1c/b3/41/my-lai-massacre-son-my.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.87289,
+                15.177243
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11435841",
+        "title": "Sa Huynh Beach",
+        "city": "Quảng Ngãi",
+        "totalScore": 4.4,
+        "ranking": "6/18",
+        "reviewsCount": 11,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sa Huynh Beach ở Quảng Ngãi. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.4/5 từ 11 lượt review. Xếp hạng: 6/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/4f/ec/14/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.08013,
+                14.66718
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19354594",
+        "title": "Chùa Thiên Ấn",
+        "city": "Quảng Ngãi",
+        "totalScore": 5.0,
+        "ranking": "8/18",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Thiên Ấn ở Quảng Ngãi. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 8/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/df/5b/ec/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33311925",
+        "title": "Thác Mờ Nanh - Quảng Ngãi",
+        "city": "Quảng Ngãi",
+        "totalScore": 5.0,
+        "ranking": "1/9",
+        "reviewsCount": 6,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "Thác Mờ Nanh - Quảng Ngãi là cung trekking đầu tiên ở Quảng Ngãi, được Quảng Ngãi Trip vận hành (Dưới sự hướng dẫn và tư vấn của cty du lịch có tuổi đời 20 năm trong ngành du lịch - Cocotravel Quảng Ngãi)\n\nThác Mờ Nanh là một điểm đến lý tưởng cho những ai yêu thiên nhiên, mê trekking và muốn trải nghiệm vùng rừng núi hoang sơ hiếm người biết đến. Đây không chỉ là cung đường chinh phục thác cao khoản 50m, mà còn là hành trình khám phá văn hóa, lịch sử và cảm nhận sâu sắc giữa đại ngàn Quảng Ngãi.\n\nNếu bạn cần thêm kinh nghiệm, tour trekking hoặc muốn đặt guide địa phương – cứ thoải mái hỏi nhé!\nThông tin liên hệ: 088.88.66.778",
+        "embedding": null,
+        "searchText": "Thác Mờ Nanh - Quảng Ngãi ở Quảng Ngãi. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Danh lam & Thắng cảnh, Hoạt động ngoài trời. Mô tả: Thác Mờ Nanh - Quảng Ngãi là cung trekking đầu tiên ở Quảng Ngãi, được Quảng Ngãi Trip vận hành (Dưới sự hướng dẫn và tư vấn của cty du lịch có tuổi đời 20 năm trong ngành du lịch - Cocotravel Quảng Ngãi)\n\nThác Mờ Nanh là một điểm đến lý tưởng cho những ai yêu thiên nhiên, mê trekking và muốn trải nghiệm vùng rừng núi hoang sơ hiếm người biết đến. Đây không chỉ là cung đường chinh phục thác cao khoản 50m, mà còn là hành trình khám phá văn hóa, lịch sử và cảm nhận sâu sắc giữa đại ngàn Quảng Ngãi.\n\nNếu bạn cần thêm kinh nghiệm, tour trekking hoặc muốn đặt guide địa phương – cứ thoải mái hỏi nhé!\nThông tin liên hệ: 088.88.66.778 Đánh giá: 5.0/5 từ 6 lượt review. Xếp hạng: 1/9.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Danh lam & Thắng cảnh",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/81/bd/39/hanh-trinh-chinh-ph-c.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.788,
+                15.130199
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1050
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 690
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25549955",
+        "title": "cửa hàng cho thuê xe máy quảng ngãi . xuân hậu",
+        "city": "Quảng Ngãi",
+        "totalScore": 5.0,
+        "ranking": "2/9",
+        "reviewsCount": 4,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "cung cấp dịch vụ cho thuê xe máy để khách du lịch được thuận tiện đi chuyển đến các địa điểm du lịch như . núi thiên ấn . biển mỹ khê , thác trắng trà bồng , ba làng an quảng ngãi",
+        "embedding": null,
+        "searchText": "cửa hàng cho thuê xe máy quảng ngãi . xuân hậu ở Quảng Ngãi. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Chuyến tham quan, Khác, Hoạt động ngoài trời. Mô tả: cung cấp dịch vụ cho thuê xe máy để khách du lịch được thuận tiện đi chuyển đến các địa điểm du lịch như . núi thiên ấn . biển mỹ khê , thác trắng trà bồng , ba làng an quảng ngãi Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 2/9.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Khác",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/ee/bc/d0/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1410
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26768175",
+        "title": "My Lai Massacre Tours",
+        "city": "Quảng Ngãi",
+        "totalScore": 5.0,
+        "ranking": "1/6",
+        "reviewsCount": 2,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "Welcome to My Lai Massacre Tours! Welcome to My Lai Massacre Tours! Welcome to My Lai Massacre Tours!",
+        "embedding": null,
+        "searchText": "My Lai Massacre Tours ở Quảng Ngãi. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Đồ ăn & Đồ uống, Chuyến tham quan, Khác, Phương tiện giao thông, Hoạt động ngoài trời. Mô tả: Welcome to My Lai Massacre Tours! Welcome to My Lai Massacre Tours! Welcome to My Lai Massacre Tours! Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 1/6.",
+        "tags": [
+            "Điểm du lịch",
+            "Đồ ăn & Đồ uống",
+            "Chuyến tham quan",
+            "Khác",
+            "Phương tiện giao thông",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/96/fd/63/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33214396",
+        "title": "Kathedrale",
+        "city": "Quảng Ngãi",
+        "totalScore": 5.0,
+        "ranking": "9/18",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kathedrale ở Quảng Ngãi. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 9/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/01/0b/d8/vietnam-hai-phong-kathedrale.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.80468,
+                15.119273
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "21404057",
+        "title": "Thành cổ Quảng Ngãi",
+        "city": "Quảng Ngãi",
+        "totalScore": 4.5,
+        "ranking": "1/1",
+        "reviewsCount": 2,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "Công ty Cổ phần Đầu tư Phát triển Đoàn Ánh Dương là đơn vị duy nhất tại Việt Nam có kinh nghiệm 30 năm sưu tập, thăm dò, khai quật 9 con tàu đắm cổ trên vùng biển Việt nam. Công ty xây dựng thành công mô hình xã hội hóa Bảo tàng Quảng Ngãi và là đơn vị đề xuất xây dựng hồ sơ trình UNESCO công nhận Công viên địa chất toàn cầu Lý Sơn – Sa Huỳnh và Không gian văn hóa Sa Huỳnh.",
+        "embedding": null,
+        "searchText": "Thành cổ Quảng Ngãi ở Quảng Ngãi. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Đồ ăn & Đồ uống, Lớp học & hội thảo, Chuyến tham quan, Khác, Vui chơi & Giải trí, Phương tiện giao thông, Hoạt động ngoài trời. Mô tả: Công ty Cổ phần Đầu tư Phát triển Đoàn Ánh Dương là đơn vị duy nhất tại Việt Nam có kinh nghiệm 30 năm sưu tập, thăm dò, khai quật 9 con tàu đắm cổ trên vùng biển Việt nam. Công ty xây dựng thành công mô hình xã hội hóa Bảo tàng Quảng Ngãi và là đơn vị đề xuất xây dựng hồ sơ trình UNESCO công nhận Công viên địa chất toàn cầu Lý Sơn – Sa Huỳnh và Không gian văn hóa Sa Huỳnh. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 1/1.",
+        "tags": [
+            "Điểm du lịch",
+            "Đồ ăn & Đồ uống",
+            "Lớp học & hội thảo",
+            "Chuyến tham quan",
+            "Khác",
+            "Vui chơi & Giải trí",
+            "Phương tiện giao thông",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/54/01/1c/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "07:30-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26823035",
+        "title": "Quang Ngai Private Transfers",
+        "city": "Quảng Ngãi",
+        "totalScore": 5.0,
+        "ranking": "1/2",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "Quang Ngai Private Transfers is proud to offer private transfer services and tours discovering popular destinations in Central Vietnam, especially: My Lai massacre museum, Ly Son island, Hoi An Old Town, Golden Bridge (Ba Na Hills), Marble Mountains, My Son Sanctuary...\n\nWe often pick our customers up at: Da Nang International Airport, Da Nang Railway Station, Chu Lai Airport, Da Nang and Hoi An.",
+        "embedding": null,
+        "searchText": "Quang Ngai Private Transfers ở Quảng Ngãi. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Nơi mua sắm, Đồ ăn & Đồ uống, Lớp học & hội thảo, Chuyến tham quan, Khác, Chuyến tham quan bằng thuyền & thể thao dưới nước, Phương tiện giao thông, Hoạt động ngoài trời. Mô tả: Quang Ngai Private Transfers is proud to offer private transfer services and tours discovering popular destinations in Central Vietnam, especially: My Lai massacre museum, Ly Son island, Hoi An Old Town, Golden Bridge (Ba Na Hills), Marble Mountains, My Son Sanctuary...\n\nWe often pick our customers up at: Da Nang International Airport, Da Nang Railway Station, Chu Lai Airport, Da Nang and Hoi An. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 1/2.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Đồ ăn & Đồ uống",
+            "Lớp học & hội thảo",
+            "Chuyến tham quan",
+            "Khác",
+            "Chuyến tham quan bằng thuyền & thể thao dưới nước",
+            "Phương tiện giao thông",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2a/c0/a5/ee/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33161402",
+        "title": "Markt",
+        "city": "Quảng Ngãi",
+        "totalScore": 4.0,
+        "ranking": "12/18",
+        "reviewsCount": 1,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Markt ở Quảng Ngãi. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 12/18.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.80596,
+                15.122745
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23924409",
+        "title": "Da Nang & Hoi An Photography & Videography",
+        "city": "Quảng Ngãi",
+        "totalScore": 2.0,
+        "ranking": "6/9",
+        "reviewsCount": 1,
+        "category": "Khác",
+        "priceRange": null,
+        "description": "Photography and filming service with reasonable price in Da Nang, Hoi An (Quang Nam). We provide specific, free advice for customers on photography and videography packages.",
+        "embedding": null,
+        "searchText": "Da Nang & Hoi An Photography & Videography ở Quảng Ngãi. Loại địa điểm: Khác. Tags: Điểm du lịch, Chuyến tham quan, Khác. Mô tả: Photography and filming service with reasonable price in Da Nang, Hoi An (Quang Nam). We provide specific, free advice for customers on photography and videography packages. Đánh giá: 2.0/5 từ 1 lượt review. Xếp hạng: 6/9.",
+        "tags": [
+            "Điểm du lịch",
+            "Chuyến tham quan",
+            "Khác"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/af/47/ed/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16881016",
+        "title": "Ly Son Travel Guide",
+        "city": "Quảng Ngãi",
+        "totalScore": 0,
+        "ranking": "2/2",
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "welcome to Ly Son Travel Guide company - Please contact us via Whatsapp: 0084947165588 for more information ",
+        "embedding": null,
+        "searchText": "Ly Son Travel Guide ở Quảng Ngãi. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Đồ ăn & Đồ uống, Chuyến tham quan, Khác, Chuyến tham quan bằng thuyền & thể thao dưới nước, Phương tiện giao thông, Hoạt động ngoài trời. Mô tả: welcome to Ly Son Travel Guide company - Please contact us via Whatsapp: 0084947165588 for more information  Xếp hạng: 2/2.",
+        "tags": [
+            "Điểm du lịch",
+            "Đồ ăn & Đồ uống",
+            "Chuyến tham quan",
+            "Khác",
+            "Chuyến tham quan bằng thuyền & thể thao dưới nước",
+            "Phương tiện giao thông",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/16/ec/45/ac/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.81038,
+                15.11399
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15141959",
+        "title": "Thuê Xe Máy Quảng Ngãi",
+        "city": "Quảng Ngãi",
+        "totalScore": 0,
+        "ranking": "9/11",
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "Hãy nhớ đến tôi khi tới Quảng Ngãi \n \n Dịch vụ thuê xe máy Quảng Ngãi\nchuyên : \n ✅ cho thuê xe máy phục vụ du lịch , sự kiện , công tác \n ✅ bán các loại vé tàu đi Lý Sơn \n ✅ hướng dẫn du lịch (free😊😊)\n ✅ cho thuê Lều Cắm Trại",
+        "embedding": null,
+        "searchText": "Thuê Xe Máy Quảng Ngãi ở Quảng Ngãi. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Hoạt động ngoài trời. Mô tả: Hãy nhớ đến tôi khi tới Quảng Ngãi \n \n Dịch vụ thuê xe máy Quảng Ngãi\nchuyên : \n ✅ cho thuê xe máy phục vụ du lịch , sự kiện , công tác \n ✅ bán các loại vé tàu đi Lý Sơn \n ✅ hướng dẫn du lịch (free😊😊)\n ✅ cho thuê Lều Cắm Trại Xếp hạng: 9/11.",
+        "tags": [
+            "Điểm du lịch",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/14/bc/2f/21/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.8039,
+                15.12105
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33190582",
+        "title": "Nhà Thờ Quang Ngai",
+        "city": "Quảng Ngãi",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Thờ Quang Ngai ở Quảng Ngãi. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.80468,
+                15.119273
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "20156906",
+        "title": "QuangNgai  Motorbike Tours",
+        "city": "Quảng Ngãi",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "Chuyến tham quan ban đêm . Tour tham quan bằng xe máy và xe tay ga . Tour tham quan thành phố , Chuyến tham quan ẩm thực , chuyến tham quan văn hoá Quảng Ngãi .",
+        "embedding": null,
+        "searchText": "QuangNgai  Motorbike Tours ở Quảng Ngãi. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Đồ ăn & Đồ uống, Chuyến tham quan, Khác, Phương tiện giao thông, Hoạt động ngoài trời. Mô tả: Chuyến tham quan ban đêm . Tour tham quan bằng xe máy và xe tay ga . Tour tham quan thành phố , Chuyến tham quan ẩm thực , chuyến tham quan văn hoá Quảng Ngãi .",
+        "tags": [
+            "Điểm du lịch",
+            "Đồ ăn & Đồ uống",
+            "Chuyến tham quan",
+            "Khác",
+            "Phương tiện giao thông",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/3a/e4/e2/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.80681,
+                15.12189
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "17171757",
+        "title": "DWU- Your transfer, Your tours in Langco, Danang, Hue, Nha Trang, Hanoi vs Ha Long",
+        "city": "Quảng Ngãi",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": "MY DEAR VALUED CUSTOMER, \nDWU is the new start up more 1 years and we are focus to become your friend in transportation, local tours and car tour service in Langco, Danang, Hue, HoiAn, Nha Trang, Hanoi and HaLong.\nWe have self tour with/without guide as your options. And also provide customize tours as your choice. \nNow we are the partner of some Korean Travel Agent like Just Tour, Travel Factory ",
+        "embedding": null,
+        "searchText": "DWU- Your transfer, Your tours in Langco, Danang, Hue, Nha Trang, Hanoi vs Ha Long ở Quảng Ngãi. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Đồ ăn & Đồ uống, Chuyến tham quan, Khác, Hoạt động ngoài trời. Mô tả: MY DEAR VALUED CUSTOMER, \nDWU is the new start up more 1 years and we are focus to become your friend in transportation, local tours and car tour service in Langco, Danang, Hue, HoiAn, Nha Trang, Hanoi and HaLong.\nWe have self tour with/without guide as your options. And also provide customize tours as your choice. \nNow we are the partner of some Korean Travel Agent like Just Tour, Travel Factory ",
+        "tags": [
+            "Điểm du lịch",
+            "Đồ ăn & Đồ uống",
+            "Chuyến tham quan",
+            "Khác",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/05/e7/b8/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    }
+]

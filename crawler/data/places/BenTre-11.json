@@ -1,0 +1,400 @@
+[
+    {
+        "sourceLocationId": "13312988",
+        "title": "Ben Tre Museum",
+        "city": "Bến Tre",
+        "totalScore": 3.5,
+        "ranking": "3/11",
+        "reviewsCount": 4,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ben Tre Museum ở Bến Tre. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 3.5/5 từ 4 lượt review. Xếp hạng: 3/11.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/17/a3/48/ea/ben-tre-museum.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37438,
+                10.23468
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "16671028",
+        "title": "Vien Minh Pagoda",
+        "city": "Bến Tre",
+        "totalScore": 3.7,
+        "ranking": "5/11",
+        "reviewsCount": 3,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vien Minh Pagoda ở Bến Tre. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.7/5 từ 3 lượt review. Xếp hạng: 5/11.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/16/74/7e/6b/tigon-coffee-acces-a.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37891,
+                10.2362
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13312993",
+        "title": "Sense City",
+        "city": "Bến Tre",
+        "totalScore": 4.0,
+        "ranking": "6/11",
+        "reviewsCount": 1,
+        "category": "Nơi mua sắm",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sense City ở Bến Tre. Loại địa điểm: Nơi mua sắm. Tags: Điểm du lịch, Nơi mua sắm. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 6/11.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.37624,
+                10.23847
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8098853",
+        "title": "Làng Cây Kiểng Cái Mơn",
+        "city": "Tỉnh Bến Tre",
+        "totalScore": 4.2,
+        "ranking": "2/11",
+        "reviewsCount": 5,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Làng Cây Kiểng Cái Mơn ở Tỉnh Bến Tre. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.2/5 từ 5 lượt review. Xếp hạng: 2/11.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/58/f3/bf/2-orchard-village.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26780978",
+        "title": "TTC Mekong Aqua Park",
+        "city": "Bến Tre",
+        "totalScore": 5.0,
+        "ranking": "1/11",
+        "reviewsCount": 1,
+        "category": "Công viên nước & giải trí",
+        "priceRange": null,
+        "description": "Công viên nước TTC Mekong Aqua Park lớn nhất Bến Tre & vườn thú cưng Tiny Zoo đầu tiên tại Bến Tre.",
+        "embedding": null,
+        "searchText": "TTC Mekong Aqua Park ở Bến Tre. Loại địa điểm: Công viên nước & giải trí. Tags: Điểm du lịch, Công viên nước & giải trí. Mô tả: Công viên nước TTC Mekong Aqua Park lớn nhất Bến Tre & vườn thú cưng Tiny Zoo đầu tiên tại Bến Tre. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 1/11.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/f6/a9/7a/khu-m-th-c-foodcourt.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.38487,
+                10.236408
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1110
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 540,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1110
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33062387",
+        "title": "Cho Long Hoa Market",
+        "city": "Châu Hưng",
+        "totalScore": 4.0,
+        "ranking": "4/11",
+        "reviewsCount": 1,
+        "category": "Đồ ăn & Đồ uống",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cho Long Hoa Market ở Châu Hưng. Loại địa điểm: Đồ ăn & Đồ uống. Tags: Điểm du lịch, Nơi mua sắm, Đồ ăn & Đồ uống. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 4/11.",
+        "tags": [
+            "Điểm du lịch",
+            "Nơi mua sắm",
+            "Đồ ăn & Đồ uống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/91/92/71/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.84374,
+                10.905036
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28147766",
+        "title": "Bus Ben Tre To Can Tho",
+        "city": "Bến Tre",
+        "totalScore": 3.0,
+        "ranking": "7/11",
+        "reviewsCount": 1,
+        "category": "Phương tiện giao thông",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bus Ben Tre To Can Tho ở Bến Tre. Loại địa điểm: Phương tiện giao thông. Tags: Điểm du lịch, Phương tiện giao thông. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 7/11.",
+        "tags": [
+            "Điểm du lịch",
+            "Phương tiện giao thông"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.376236,
+                10.241328
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27156326",
+        "title": "Hàm Luông River",
+        "city": "Bến Tre",
+        "totalScore": 3.0,
+        "ranking": "8/11",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hàm Luông River ở Bến Tre. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 8/11.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/52/ab/d4/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.34986,
+                10.221642
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "20360452",
+        "title": "Khu Du Lịch Sinh Thái Làng Xanh Bến Tre",
+        "city": "An Khánh",
+        "totalScore": 0,
+        "ranking": "9/11",
+        "reviewsCount": 0,
+        "category": "Công viên nước & giải trí",
+        "priceRange": null,
+        "description": "Khu du lịch sinh thái Làng Xanh Bến Tre – điểm đến lý tưởng mới dành cho du khách để trải nghiệm không gian thư giãn trong lành của miền quê sông nước; các dịch vụ vui chơi giải trí phong phú mang đậm nét dân dã nhưng vô cùng độc đáo sáng tạo. Bên cạnh đó Quý du khách còn được thưởng thức ẩm thực đặc sản truyền thống Việt Nam vừa ngon miệng vừa đẹp mắt. \n          ",
+        "embedding": null,
+        "searchText": "Khu Du Lịch Sinh Thái Làng Xanh Bến Tre ở An Khánh. Loại địa điểm: Công viên nước & giải trí. Tags: Điểm du lịch, Công viên nước & giải trí. Mô tả: Khu du lịch sinh thái Làng Xanh Bến Tre – điểm đến lý tưởng mới dành cho du khách để trải nghiệm không gian thư giãn trong lành của miền quê sông nước; các dịch vụ vui chơi giải trí phong phú mang đậm nét dân dã nhưng vô cùng độc đáo sáng tạo. Bên cạnh đó Quý du khách còn được thưởng thức ẩm thực đặc sản truyền thống Việt Nam vừa ngon miệng vừa đẹp mắt. \n           Xếp hạng: 9/11.",
+        "tags": [
+            "Điểm du lịch",
+            "Công viên nước & giải trí"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1b/46/87/92/the-best-destination.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.314865,
+                10.315782
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13313045",
+        "title": "Statue Of Nguyen Thi Dinh",
+        "city": "Bến Tre",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Statue Of Nguyen Thi Dinh ở Bến Tre. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/bf/90/09/phong-1-giu-ng-cho-2.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12948725",
+        "title": "Sân chim Vàm Hồ",
+        "city": "Ba Tri",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sân chim Vàm Hồ ở Ba Tri. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/c4/8a/84/vam-h-boat.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.617,
+                10.157973
+            ]
+        },
+        "openingHours": null
+    }
+]

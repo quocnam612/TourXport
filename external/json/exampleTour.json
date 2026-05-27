@@ -1,0 +1,644 @@
+{
+    "_id": {
+        "$oid": "6a13b1f81d94bd045e8c053c"
+    },
+    "userId": "6a0e8f1ae2557d3750d4da6d",
+    "title": "Tour Châu Đốc 2 ngày 1 đêm",
+    "destinations": [
+        "Cà Mau",
+        "Châu Đốc",
+        "Vũng Tàu"
+    ],
+    "visibility": "private",
+    "totalDays": 2,
+    "totalNights": 1,
+    "totalDistanceMeters": 160000,
+    "bbox": {
+        "minLng": 105.0801,
+        "minLat": 10.6822,
+        "maxLng": 106.683203,
+        "maxLat": 10.762839
+    },
+    "travelers": {
+        "adults": 2,
+        "children": 0
+    },
+    "preferences": {
+        "budgetLevel": "medium",
+        "interests": [
+            "temple",
+            "culture",
+            "local food",
+            "scenic view"
+        ],
+        "transportMode": "auto",
+        "pace": "relaxed"
+    },
+    "estimatedCost": {
+        "min": 2500000,
+        "max": 3800000,
+        "currency": "VND",
+        "note": "Chi phí ước tính cho 2 người, chưa bao gồm vé máy bay hoặc chi phí cá nhân."
+    },
+    "days": [
+        {
+            "dayNumber": 1,
+            "date": "2026-06-10",
+            "title": "Khám phá trung tâm Châu Đốc và các điểm tâm linh",
+            "summary": "Ngày đầu tập trung vào các địa điểm văn hóa, tâm linh và ăn uống địa phương.",
+            "distanceMeters": 85000,
+            "bbox": {
+                "minLng": 105.0801,
+                "minLat": 10.6822,
+                "maxLng": 106.683203,
+                "maxLat": 10.762839
+            },
+            "items": [
+                {
+                    "order": 1,
+                    "checked": false,
+                    "type": "place",
+                    "title": "Bồ Đề Đạo Tràng",
+                    "category": "Danh lam & Thắng cảnh",
+                    "startTime": "08:00",
+                    "endTime": "09:30",
+                    "notes": "Đi buổi sáng để tránh nắng. Phù hợp để tham quan và chụp ảnh.",
+                    "location": {
+                        "type": "Point",
+                        "coordinates": [
+                            105.1167,
+                            10.7
+                        ]
+                    },
+                    "source": {
+                        "provider": "database",
+                        "collection": "places",
+                        "id": "6a10c9a82f1b2a88a4fd15ff"
+                    }
+                },
+                {
+                    "order": 2,
+                    "checked": false,
+                    "type": "place",
+                    "title": "Miếu Bà Chúa Xứ Núi Sam",
+                    "category": "Tâm linh",
+                    "startTime": "10:00",
+                    "endTime": "11:30",
+                    "notes": "Một trong các điểm nổi bật nhất ở Châu Đốc.",
+                    "location": {
+                        "type": "Point",
+                        "coordinates": [
+                            105.0801,
+                            10.6822
+                        ]
+                    },
+                    "source": {
+                        "provider": "websearch"
+                    }
+                },
+                {
+                    "order": 3,
+                    "checked": false,
+                    "type": "restaurant",
+                    "title": "Quán bún cá Châu Đốc",
+                    "category": "Ẩm thực địa phương",
+                    "startTime": "12:00",
+                    "endTime": "13:00",
+                    "notes": "Gợi ý ăn trưa với món địa phương.",
+                    "estimatedCost": {
+                        "min": 80000,
+                        "max": 160000,
+                        "currency": "VND"
+                    },
+                    "location": {
+                        "type": "Point",
+                        "coordinates": [
+                            105.113,
+                            10.705
+                        ]
+                    },
+                    "source": {
+                        "provider": "database",
+                        "collection": "restaurants",
+                        "id": "6a10c9a82f1b2a88a4fd1601"
+                    }
+                },
+                {
+                    "order": 4,
+                    "checked": false,
+                    "type": "place",
+                    "title": "Núi Sam",
+                    "category": "Thiên nhiên",
+                    "startTime": "15:30",
+                    "endTime": "17:30",
+                    "notes": "Nên đi chiều để ngắm cảnh và tránh nắng gắt.",
+                    "location": {
+                        "type": "Point",
+                        "coordinates": [
+                            105.0807,
+                            10.6818
+                        ]
+                    },
+                    "source": {
+                        "provider": "database",
+                        "collection": "places",
+                        "id": "6a10c9a82f1b2a88a4fd1602"
+                    }
+                },
+                {
+                    "order": 5,
+                    "checked": false,
+                    "type": "hotel",
+                    "title": "Khách sạn trung tâm Châu Đốc",
+                    "category": "Khách sạn",
+                    "startTime": "18:30",
+                    "endTime": null,
+                    "notes": "Nhận phòng và nghỉ ngơi.",
+                    "estimatedCost": {
+                        "min": 600000,
+                        "max": 900000,
+                        "currency": "VND"
+                    },
+                    "location": {
+                        "type": "Point",
+                        "coordinates": [
+                            105.1175,
+                            10.704
+                        ]
+                    },
+                    "source": {
+                        "provider": "websearch"
+                    }
+                }
+            ],
+            "routes": [
+                {
+                    "fromOrder": 1,
+                    "toOrder": 2,
+                    "provider": "openrouteservice",
+                    "profile": "foot-walking",
+                    "distanceMeters": 526.2,
+                    "bbox": {
+                        "minLng": 106.680631,
+                        "minLat": 10.760119,
+                        "maxLng": 106.683203,
+                        "maxLat": 10.762839
+                    },
+                    "geometry": {
+                        "type": "LineString",
+                        "coordinates": [
+                            [
+                                106.682322,
+                                10.76277
+                            ],
+                            [
+                                106.682523,
+                                10.762839
+                            ],
+                            [
+                                106.682795,
+                                10.762162
+                            ],
+                            [
+                                106.682917,
+                                10.761877
+                            ],
+                            [
+                                106.68319,
+                                10.761243
+                            ],
+                            [
+                                106.683203,
+                                10.761207
+                            ],
+                            [
+                                106.683096,
+                                10.76111
+                            ],
+                            [
+                                106.682416,
+                                10.760836
+                            ],
+                            [
+                                106.682327,
+                                10.760801
+                            ],
+                            [
+                                106.681916,
+                                10.760636
+                            ],
+                            [
+                                106.681812,
+                                10.760594
+                            ],
+                            [
+                                106.68177,
+                                10.760577
+                            ],
+                            [
+                                106.681406,
+                                10.760431
+                            ],
+                            [
+                                106.680631,
+                                10.760119
+                            ]
+                        ]
+                    },
+                    "steps": [
+                        {
+                            "instruction": "Head east",
+                            "name": "-",
+                            "distanceMeters": 23.3,
+                            "type": 11,
+                            "wayPoints": [
+                                0,
+                                1
+                            ]
+                        },
+                        {
+                            "instruction": "Turn right onto Đường Nguyễn Văn Cừ",
+                            "name": "Đường Nguyễn Văn Cừ",
+                            "distanceMeters": 196.2,
+                            "type": 1,
+                            "wayPoints": [
+                                1,
+                                5
+                            ]
+                        },
+                        {
+                            "instruction": "Turn right onto An Dương Vương",
+                            "name": "An Dương Vương",
+                            "distanceMeters": 306.8,
+                            "type": 1,
+                            "wayPoints": [
+                                5,
+                                13
+                            ]
+                        },
+                        {
+                            "instruction": "Arrive at An Dương Vương, on the right",
+                            "name": "-",
+                            "distanceMeters": 0,
+                            "type": 10,
+                            "wayPoints": [
+                                13,
+                                13
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fromOrder": 2,
+                    "toOrder": 3,
+                    "provider": "openrouteservice",
+                    "profile": "driving-car",
+                    "distanceMeters": 5400,
+                    "bbox": {
+                        "minLng": 105.0801,
+                        "minLat": 10.6822,
+                        "maxLng": 105.113,
+                        "maxLat": 10.705
+                    },
+                    "geometry": {
+                        "type": "LineString",
+                        "coordinates": [
+                            [
+                                105.0801,
+                                10.6822
+                            ],
+                            [
+                                105.0875,
+                                10.6874
+                            ],
+                            [
+                                105.095,
+                                10.692
+                            ],
+                            [
+                                105.1042,
+                                10.6984
+                            ],
+                            [
+                                105.113,
+                                10.705
+                            ]
+                        ]
+                    },
+                    "steps": [
+                        {
+                            "instruction": "Depart from Miếu Bà Chúa Xứ Núi Sam",
+                            "name": "-",
+                            "distanceMeters": 300,
+                            "type": 11,
+                            "wayPoints": [
+                                0,
+                                1
+                            ]
+                        },
+                        {
+                            "instruction": "Continue toward central Châu Đốc",
+                            "name": "Đường địa phương",
+                            "distanceMeters": 3900,
+                            "type": 0,
+                            "wayPoints": [
+                                1,
+                                3
+                            ]
+                        },
+                        {
+                            "instruction": "Arrive near Quán bún cá Châu Đốc",
+                            "name": "-",
+                            "distanceMeters": 1200,
+                            "type": 10,
+                            "wayPoints": [
+                                3,
+                                4
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fromOrder": 3,
+                    "toOrder": 4,
+                    "provider": "openrouteservice",
+                    "profile": "driving-car",
+                    "distanceMeters": 6200,
+                    "bbox": {
+                        "minLng": 105.0807,
+                        "minLat": 10.6818,
+                        "maxLng": 105.113,
+                        "maxLat": 10.705
+                    },
+                    "geometry": {
+                        "type": "LineString",
+                        "coordinates": [
+                            [
+                                105.113,
+                                10.705
+                            ],
+                            [
+                                105.1054,
+                                10.6981
+                            ],
+                            [
+                                105.0968,
+                                10.691
+                            ],
+                            [
+                                105.0882,
+                                10.685
+                            ],
+                            [
+                                105.0807,
+                                10.6818
+                            ]
+                        ]
+                    },
+                    "steps": [
+                        {
+                            "instruction": "Depart from Quán bún cá Châu Đốc",
+                            "name": "-",
+                            "distanceMeters": 400,
+                            "type": 11,
+                            "wayPoints": [
+                                0,
+                                1
+                            ]
+                        },
+                        {
+                            "instruction": "Drive toward Núi Sam",
+                            "name": "Đường địa phương",
+                            "distanceMeters": 5200,
+                            "type": 0,
+                            "wayPoints": [
+                                1,
+                                3
+                            ]
+                        },
+                        {
+                            "instruction": "Arrive at Núi Sam",
+                            "name": "-",
+                            "distanceMeters": 600,
+                            "type": 10,
+                            "wayPoints": [
+                                3,
+                                4
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fromOrder": 4,
+                    "toOrder": 5,
+                    "provider": "openrouteservice",
+                    "profile": "driving-car",
+                    "distanceMeters": 6800,
+                    "bbox": {
+                        "minLng": 105.0807,
+                        "minLat": 10.6818,
+                        "maxLng": 105.1175,
+                        "maxLat": 10.704
+                    },
+                    "geometry": {
+                        "type": "LineString",
+                        "coordinates": [
+                            [
+                                105.0807,
+                                10.6818
+                            ],
+                            [
+                                105.0894,
+                                10.6872
+                            ],
+                            [
+                                105.0986,
+                                10.693
+                            ],
+                            [
+                                105.1082,
+                                10.6996
+                            ],
+                            [
+                                105.1175,
+                                10.704
+                            ]
+                        ]
+                    },
+                    "steps": [
+                        {
+                            "instruction": "Depart from Núi Sam",
+                            "name": "-",
+                            "distanceMeters": 500,
+                            "type": 11,
+                            "wayPoints": [
+                                0,
+                                1
+                            ]
+                        },
+                        {
+                            "instruction": "Return toward central Châu Đốc",
+                            "name": "Đường địa phương",
+                            "distanceMeters": 5600,
+                            "type": 0,
+                            "wayPoints": [
+                                1,
+                                3
+                            ]
+                        },
+                        {
+                            "instruction": "Arrive at Khách sạn trung tâm Châu Đốc",
+                            "name": "-",
+                            "distanceMeters": 700,
+                            "type": 10,
+                            "wayPoints": [
+                                3,
+                                4
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "dayNumber": 2,
+            "date": "2026-06-11",
+            "title": "Chợ địa phương và trải nghiệm nhẹ trước khi kết thúc tour",
+            "summary": "Ngày thứ hai ưu tiên hoạt động nhẹ, ăn uống địa phương và mua đặc sản.",
+            "distanceMeters": 75000,
+            "bbox": {
+                "minLng": 105.118,
+                "minLat": 10.7048,
+                "maxLng": 105.119,
+                "maxLat": 10.7055
+            },
+            "items": [
+                {
+                    "order": 1,
+                    "checked": false,
+                    "type": "place",
+                    "title": "Chợ Châu Đốc",
+                    "category": "Chợ địa phương",
+                    "startTime": "08:00",
+                    "endTime": "10:00",
+                    "notes": "Có thể mua mắm, khô, đặc sản An Giang.",
+                    "location": {
+                        "type": "Point",
+                        "coordinates": [
+                            105.118,
+                            10.7055
+                        ]
+                    },
+                    "source": {
+                        "provider": "websearch"
+                    }
+                },
+                {
+                    "order": 2,
+                    "checked": false,
+                    "type": "restaurant",
+                    "title": "Quán ăn địa phương gần chợ",
+                    "category": "Ẩm thực địa phương",
+                    "startTime": "10:30",
+                    "endTime": "11:30",
+                    "notes": "Ăn nhẹ trước khi trả phòng hoặc di chuyển về.",
+                    "estimatedCost": {
+                        "min": 100000,
+                        "max": 200000,
+                        "currency": "VND"
+                    },
+                    "location": {
+                        "type": "Point",
+                        "coordinates": [
+                            105.119,
+                            10.7048
+                        ]
+                    },
+                    "source": {
+                        "provider": "websearch"
+                    }
+                }
+            ],
+            "routes": [
+                {
+                    "fromOrder": 1,
+                    "toOrder": 2,
+                    "provider": "openrouteservice",
+                    "profile": "foot-walking",
+                    "distanceMeters": 800,
+                    "bbox": {
+                        "minLng": 105.118,
+                        "minLat": 10.7048,
+                        "maxLng": 105.119,
+                        "maxLat": 10.7055
+                    },
+                    "geometry": {
+                        "type": "LineString",
+                        "coordinates": [
+                            [
+                                105.118,
+                                10.7055
+                            ],
+                            [
+                                105.1184,
+                                10.7053
+                            ],
+                            [
+                                105.1187,
+                                10.705
+                            ],
+                            [
+                                105.119,
+                                10.7048
+                            ]
+                        ]
+                    },
+                    "steps": [
+                        {
+                            "instruction": "Depart from Chợ Châu Đốc",
+                            "name": "-",
+                            "distanceMeters": 100,
+                            "type": 11,
+                            "wayPoints": [
+                                0,
+                                1
+                            ]
+                        },
+                        {
+                            "instruction": "Walk toward nearby local restaurant",
+                            "name": "Đường địa phương",
+                            "distanceMeters": 600,
+                            "type": 0,
+                            "wayPoints": [
+                                1,
+                                2
+                            ]
+                        },
+                        {
+                            "instruction": "Arrive at Quán ăn địa phương gần chợ",
+                            "name": "-",
+                            "distanceMeters": 100,
+                            "type": 10,
+                            "wayPoints": [
+                                2,
+                                3
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "ai": {
+        "generatedBy": "ai_backend",
+        "model": "gpt-4.1-mini",
+        "embeddingModel": "text-embedding-3-small",
+        "retrieval": {
+            "strategy": "vector_search",
+            "index": "places_vector_index",
+            "topK": 20
+        }
+    },
+    "createdAt": "2026-05-22T10:00:00.000Z",
+    "updatedAt": "2026-05-22T10:00:00.000Z"
+}

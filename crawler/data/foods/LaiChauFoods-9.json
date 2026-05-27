@@ -1,0 +1,528 @@
+[
+    {
+        "sourceLocationId": "11825463",
+        "title": "Dreamy Coffee",
+        "city": "Lai Châu",
+        "totalScore": 4.7,
+        "ranking": "1/5",
+        "reviewsCount": 15,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dreamy Coffee ở Lai Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.7/5 từ 15 lượt review. Xếp hạng: 1/5.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/b8/a0/bb/ngay-n-ng-len-dreamy.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.46538,
+                22.393913
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1395
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1395
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1395
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1395
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1395
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1395
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "18178597",
+        "title": "Nhà Hàng Mạnh Hùng",
+        "city": "Lai Châu",
+        "totalScore": 5.0,
+        "ranking": "2/5",
+        "reviewsCount": 2,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Mạnh Hùng ở Lai Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 2/5.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/ff/b7/0b/manh-hung-restaurant.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.47245,
+                22.38322
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27118534",
+        "title": "Na Khuong Restaurant",
+        "city": "Tam Đường",
+        "totalScore": 5.0,
+        "ranking": "3/5",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Na Khuong Restaurant ở Tam Đường. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 3/5.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/43/30/4f/na-khuong-restaurat.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.6559,
+                22.231518
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "13476624",
+        "title": "Mông Caphe",
+        "city": "Lai Châu",
+        "totalScore": 4.5,
+        "ranking": "4/5",
+        "reviewsCount": 2,
+        "category": "Quán cafe",
+        "priceRange": "26.316 ₫ - 52.632 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Mông Caphe ở Lai Châu. Loại địa điểm: Quán cafe. Tags: Nhà hàng, Quán cafe. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 4/5. Giá: 26.316 ₫ - 52.632 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Quán cafe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/92/e1/19/m-t-khong-gi-n-b-n-s.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.4683,
+                22.383966
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19385276",
+        "title": "Ô Quý Hồ Cafe",
+        "city": "Tam Đường",
+        "totalScore": 1.0,
+        "ranking": "5/5",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Chuyên cung cấp dịch vụ nhà hàng, đồ ăn nhanh, đồ uống chất lượng cao, kèm theo các loại hình dịch vụ Khách Sạn Karaoke, massagera,",
+        "embedding": null,
+        "searchText": "Ô Quý Hồ Cafe ở Tam Đường. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Chuyên cung cấp dịch vụ nhà hàng, đồ ăn nhanh, đồ uống chất lượng cao, kèm theo các loại hình dịch vụ Khách Sạn Karaoke, massagera, Đánh giá: 1.0/5 từ 1 lượt review. Xếp hạng: 5/5.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/57/23/01/o-quy-ho-restaurant-coffee.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.76325,
+                22.36337
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-19:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1140
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "25374572",
+        "title": "Lasolsapa1987.",
+        "city": "Sapa",
+        "totalScore": 5.0,
+        "ranking": "163/269",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": "Lasolsapa1987 is a small establishment located in a tourist village of ethnic minorities in Sapa. The shop offers traditional souvenirs, local drinks, and especially hot mulled wine and egg coffee. The egg coffee is a favorite among many customers and a popular choice whenever they visit. Not only that, Lasolsapa1987 also organizes daily tours to visit villages in Sapa, and has gained the trust and patronage of many customers, receiving very positive feedback after these tours.",
+        "embedding": null,
+        "searchText": "Lasolsapa1987. ở Sapa. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Mô tả: Lasolsapa1987 is a small establishment located in a tourist village of ethnic minorities in Sapa. The shop offers traditional souvenirs, local drinks, and especially hot mulled wine and egg coffee. The egg coffee is a favorite among many customers and a popular choice whenever they visit. Not only that, Lasolsapa1987 also organizes daily tours to visit villages in Sapa, and has gained the trust and patronage of many customers, receiving very positive feedback after these tours. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 163/269.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/78/2e/1c/logo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.52221,
+                22.227451
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1260
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1260
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33580121",
+        "title": "Nhà Tổ Chim",
+        "city": "Lai Châu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Tổ Chim ở Lai Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.24837,
+                22.355934
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27530986",
+        "title": "Bia Phong Van",
+        "city": "Lai Châu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bia Phong Van ở Lai Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.25,
+                22.28333
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28504521",
+        "title": "Chạng Vạng Lai Châu",
+        "city": "Lai Châu",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chạng Vạng Lai Châu ở Lai Châu. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.4677,
+                22.39441
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    }
+]

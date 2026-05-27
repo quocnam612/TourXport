@@ -20,7 +20,7 @@ def auto_complete_v2(name: str, lang: str = "vi_VN", units: str = "km"):
     save_to_json(data, filename)
     return data
 
-def locations_search(query: str, lang: str = "vi_VN", units: str = "km"):
+def locations_search(query: str, lang: str = "vi_VN", units: str = "km", save_raw: bool = True):
     endpoint = "locations/search"
     params = {
         "query": query,
@@ -33,6 +33,7 @@ def locations_search(query: str, lang: str = "vi_VN", units: str = "km"):
         print(f"Error fetching data: {e}")
         return None
     
-    filename = f"{query.replace(' ', '_').lower()}_search.json"
-    save_to_json(data, filename)
+    if save_raw:
+        filename = f"{query.replace(' ', '_').lower()}_search.json"
+        save_to_json(data, filename)
     return data

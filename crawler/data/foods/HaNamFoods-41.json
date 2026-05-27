@@ -1,0 +1,2007 @@
+[
+    {
+        "sourceLocationId": "17627258",
+        "title": "Nhà Hàng Châu Giang",
+        "city": "Phu Ly",
+        "totalScore": 4.8,
+        "ranking": "1/5",
+        "reviewsCount": 4,
+        "category": "Ngồi xuống",
+        "priceRange": "2.105.263.104 ₫ - 2.147.483.647 ₫",
+        "description": "Đặt tại tầng 7 khách sạn Vinpearl Condotel Phủ Lý, nhà hàng Châu Giang được thiết kế theo phong cách Tân Cổ Điển, là sự lựa chọn hàng đầu của các vị khách yêu thích ẩm thực bốn phương. Mỗi món ăn là một tác phẩm nghệ thuật, mang đến cho quý khách trải nghiệm ẩm thực tinh tế và đặc sắc. Đến với Châu Giang, quý khách có nhiều sự lựa chọn không gian sang trọng,ấm cúng với bạn bè,đối tác và người thân",
+        "embedding": null,
+        "searchText": "Nhà Hàng Châu Giang ở Phu Ly. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Đặt tại tầng 7 khách sạn Vinpearl Condotel Phủ Lý, nhà hàng Châu Giang được thiết kế theo phong cách Tân Cổ Điển, là sự lựa chọn hàng đầu của các vị khách yêu thích ẩm thực bốn phương. Mỗi món ăn là một tác phẩm nghệ thuật, mang đến cho quý khách trải nghiệm ẩm thực tinh tế và đặc sắc. Đến với Châu Giang, quý khách có nhiều sự lựa chọn không gian sang trọng,ấm cúng với bạn bè,đối tác và người thân Đánh giá: 4.8/5 từ 4 lượt review. Xếp hạng: 1/5. Giá: 2.105.263.104 ₫ - 2.147.483.647 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/17/f4/d6/72/getlstd-property-photo.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.91678,
+                20.543737
+            ]
+        },
+        "openingHours": {
+            "display": "06:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26690316",
+        "title": "Quán Nhậu Anh Em Hà Nam",
+        "city": "Phu Ly",
+        "totalScore": 5.0,
+        "ranking": "2/5",
+        "reviewsCount": 2,
+        "category": "Ngồi xuống",
+        "priceRange": "263.157.888 ₫ - 1.842.105.216 ₫",
+        "description": "Đơn vị cung cấp cơm, bánh Healthy đầu tiền tại Hà Nam Giải pháp Eat Clean cho mọi người",
+        "embedding": null,
+        "searchText": "Quán Nhậu Anh Em Hà Nam ở Phu Ly. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Đơn vị cung cấp cơm, bánh Healthy đầu tiền tại Hà Nam Giải pháp Eat Clean cho mọi người Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 2/5. Giá: 263.157.888 ₫ - 1.842.105.216 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/32/e2/de/07/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.869415,
+                20.578964
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "29702658",
+        "title": "Quán Cafe Puna",
+        "city": "Phu Ly",
+        "totalScore": 4.0,
+        "ranking": "3/5",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quán Cafe Puna ở Phu Ly. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 3/5.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/15/d6/ec/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.94433,
+                20.539186
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19717692",
+        "title": "Nhà Hàng Hà Nam",
+        "city": "Kha Phong",
+        "totalScore": 5.0,
+        "ranking": "4/5",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Hà Nam ở Kha Phong. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 4/5.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/52/61/60/doan-famtrip-kh-o-sat.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.83246,
+                20.571192
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19882036",
+        "title": "Nhà hàng Hàn Quốc Mirae Hyang",
+        "city": "Phu Ly",
+        "totalScore": 4.0,
+        "ranking": "5/5",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Hàn Quốc Mirae Hyang ở Phu Ly. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 5/5.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/9f/85/b1/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17424057",
+        "title": "Nhà Hàng Tam Chúc - Hà Nam",
+        "city": "Liên Sơn",
+        "totalScore": 5.0,
+        "ranking": "1/2",
+        "reviewsCount": 4,
+        "category": "Ngồi xuống",
+        "priceRange": "131.579 ₫ - 394.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Hàng Tam Chúc - Hà Nam ở Liên Sơn. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 1/2. Giá: 131.579 ₫ - 394.737 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/58/db/79/nha-hang-tam-chuc-nha.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.84387,
+                20.572386
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27517347",
+        "title": "Cafe Giảng Lotte Mall Westlake, Tây Hồ",
+        "city": "Hà Nội",
+        "totalScore": 5.0,
+        "ranking": "1073/3710",
+        "reviewsCount": 7,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cafe Giảng Lotte Mall Westlake, Tây Hồ ở Hà Nội. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 7 lượt review. Xếp hạng: 1073/3710.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/3b/b7/66/cafe-gi-ng-lotte-mall.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.02292,
+                20.47366
+            ]
+        },
+        "openingHours": {
+            "display": "09:30-21:45",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1305
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1305
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1305
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1305
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1305
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1305
+                    }
+                ],
+                [
+                    {
+                        "open_time": 570,
+                        "close_time": 1305
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33074322",
+        "title": "Noi Bai Airport SHE Chocolate",
+        "city": "Hà Nội",
+        "totalScore": 4.5,
+        "ranking": "1270/3710",
+        "reviewsCount": 6,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Noi Bai Airport SHE Chocolate ở Hà Nội. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.5/5 từ 6 lượt review. Xếp hạng: 1270/3710.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/8f/33/b5/khong-gi-ng-nh-ng-chi.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.02292,
+                20.47366
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27968413",
+        "title": "Bánh Mỳ Ba Cô Gái",
+        "city": "Hà Nội",
+        "totalScore": 5.0,
+        "ranking": "1672/3710",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bánh Mỳ Ba Cô Gái ở Hà Nội. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 3 lượt review. Xếp hạng: 1672/3710.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/b9/86/4d/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.02292,
+                20.47366
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-13:30, 17:30-20:30",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1230
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 810
+                    },
+                    {
+                        "open_time": 1050,
+                        "close_time": 1230
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32762144",
+        "title": "Cơm Gà Hội An",
+        "city": "Hà Nội",
+        "totalScore": 5.0,
+        "ranking": "2529/3710",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "789.474 ₫ - 5.263.158 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Cơm Gà Hội An ở Hà Nội. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 2529/3710. Giá: 789.474 ₫ - 5.263.158 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/30/bd/34/78/old-quarter-vibe-with.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.02292,
+                20.47366
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "28121018",
+        "title": "Sunny Camping Sóc Sơn",
+        "city": "Hà Nội",
+        "totalScore": 5.0,
+        "ranking": "2586/3710",
+        "reviewsCount": 1,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Sunny Camping Sóc Sơn ở Hà Nội. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 2586/3710.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/31/e6/e7/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.02292,
+                20.47366
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "27945870",
+        "title": "Tiệm Bánh Mì Nam Pate",
+        "city": "Hà Nội",
+        "totalScore": 5.0,
+        "ranking": "2626/3710",
+        "reviewsCount": 1,
+        "category": "Ngồi xuống",
+        "priceRange": "526.315.776 ₫ - 1.842.105.216 ₫",
+        "description": "Bánh mì pate vị truyền thống phố cổ Hà nội, trên 40 năm kinh nghiệm, pate vị xưa Hà Nội, không chất bảo quản, nguyên liệu tươi 100%",
+        "embedding": null,
+        "searchText": "Tiệm Bánh Mì Nam Pate ở Hà Nội. Loại địa điểm: Ngồi xuống. Tags: Nhà hàng, Ngồi xuống. Mô tả: Bánh mì pate vị truyền thống phố cổ Hà nội, trên 40 năm kinh nghiệm, pate vị xưa Hà Nội, không chất bảo quản, nguyên liệu tươi 100% Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 2626/3710. Giá: 526.315.776 ₫ - 1.842.105.216 ₫.",
+        "tags": [
+            "Nhà hàng",
+            "Ngồi xuống"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/98/8b/35/some-groups-of-customers.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                106.02292,
+                20.47366
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "14108851",
+        "title": "Nhà hàng Mai Lâm - Chùa Hương",
+        "city": "Hà Nội",
+        "totalScore": 4.0,
+        "ranking": "2905/3710",
+        "reviewsCount": 3,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà hàng Mai Lâm - Chùa Hương ở Hà Nội. Loại địa điểm: Nhà hàng. Tags: Nhà hàng. Đánh giá: 4.0/5 từ 3 lượt review. Xếp hạng: 2905/3710.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/13/10/6a/99/mai-lam-14.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.747894,
+                20.618822
+            ]
+        },
+        "openingHours": {
+            "display": "07:30-19:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1140
+                    }
+                ],
+                [
+                    {
+                        "open_time": 450,
+                        "close_time": 1140
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33390788",
+        "title": "Minh Anh Restaurant",
+        "city": "Phu Ly",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Minh Anh Restaurant ở Phu Ly. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.92187,
+                20.547306
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33390935",
+        "title": "Lau Oc 123 - Ha Nam",
+        "city": "Phu Ly",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lau Oc 123 - Ha Nam ở Phu Ly. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.90219,
+                20.522083
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33390874",
+        "title": "Bun Mang Moc",
+        "city": "Phu Ly",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bun Mang Moc ở Phu Ly. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.9056,
+                20.520082
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25562424",
+        "title": "Garbo Bar",
+        "city": "Phu Ly",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Garbo Bar ở Phu Ly. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/29/10/92/bd/garbo-bar.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.91711,
+                20.543737
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33390895",
+        "title": "Thien Phu Restaurant",
+        "city": "Phu Ly",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thien Phu Restaurant ở Phu Ly. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.93201,
+                20.550497
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33390797",
+        "title": "Specialty Fish Soup 90",
+        "city": "Phu Ly",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Specialty Fish Soup 90 ở Phu Ly. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.92579,
+                20.547106
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 372,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 720
+                    }
+                ],
+                [
+                    {
+                        "open_time": 360,
+                        "close_time": 720
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33390913",
+        "title": "Oc Linh Hoang",
+        "city": "Duy Tien",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Oc Linh Hoang ở Duy Tien. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.904945,
+                20.641632
+            ]
+        },
+        "openingHours": {
+            "display": "16:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 960,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33390911",
+        "title": "Ba Ba Dong Que",
+        "city": "Duy Tien",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ba Ba Dong Que ở Duy Tien. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.9049,
+                20.64156
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33390758",
+        "title": "Bun Bo Hue O Le",
+        "city": "Duy Tien",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bun Bo Hue O Le ở Duy Tien. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.94618,
+                20.648434
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33390898",
+        "title": "Hot Pot Restaurant Ha Dong Cs 2",
+        "city": "Duy Tien",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hot Pot Restaurant Ha Dong Cs 2 ở Duy Tien. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.97734,
+                20.637766
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33390842",
+        "title": "De Nhat Quan",
+        "city": "Duy Tien",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "De Nhat Quan ở Duy Tien. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.92679,
+                20.644146
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33390882",
+        "title": "Ngan Pho Xua",
+        "city": "Duy Tien",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ngan Pho Xua ở Duy Tien. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.93042,
+                20.644953
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33390881",
+        "title": "Thai Delicious Restaurant",
+        "city": "Duy Tien",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Thai Delicious Restaurant ở Duy Tien. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.91502,
+                20.642288
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33390827",
+        "title": "Vua Ga 34",
+        "city": "Duy Tien",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vua Ga 34 ở Duy Tien. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.93026,
+                20.644932
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33390929",
+        "title": "Quan Ngon 68 - Dong Van",
+        "city": "Duy Tien",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Quan Ngon 68 - Dong Van ở Duy Tien. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.91989,
+                20.634241
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33390870",
+        "title": "Com Pho Huyen Trang",
+        "city": "Duy Tien",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Com Pho Huyen Trang ở Duy Tien. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.917465,
+                20.661512
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33390869",
+        "title": "Fried Chicken Tokki",
+        "city": "Duy Tien",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Fried Chicken Tokki ở Duy Tien. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.92477,
+                20.644073
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33390859",
+        "title": "Loc Vung Quan",
+        "city": "Kha Phong",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Loc Vung Quan ở Kha Phong. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.77086,
+                20.726385
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33296290",
+        "title": "Bánh Đa Cá Rô Đồng Huân Đào",
+        "city": "Kha Phong",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bánh Đa Cá Rô Đồng Huân Đào ở Kha Phong. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.84156,
+                20.706562
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33390917",
+        "title": "Street Food Restaurant",
+        "city": "Kha Phong",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Street Food Restaurant ở Kha Phong. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.90205,
+                20.770359
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33295533",
+        "title": "Phở Thìn 1",
+        "city": "Kha Phong",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phở Thìn 1 ở Kha Phong. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.73856,
+                20.694939
+            ]
+        },
+        "openingHours": {
+            "display": "10:00-15:00, 16:00-20:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 900
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 900
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 900
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 900
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 900
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 900
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 900
+                    },
+                    {
+                        "open_time": 960,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33390892",
+        "title": "Cuong Duong Restaurant",
+        "city": "Kha Phong",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cuong Duong Restaurant ở Kha Phong. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.76941,
+                20.735838
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33390790",
+        "title": "Pho Nui Quan",
+        "city": "Kha Phong",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Pho Nui Quan ở Kha Phong. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.88846,
+                20.498114
+            ]
+        },
+        "openingHours": {
+            "display": "05:00-23:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1380
+                    }
+                ],
+                [
+                    {
+                        "open_time": 300,
+                        "close_time": 1380
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33295707",
+        "title": "Cơm Bình Dân (thành Chiến)",
+        "city": "Kha Phong",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cơm Bình Dân (thành Chiến) ở Kha Phong. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.75744,
+                20.934813
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33390926",
+        "title": "Ngoc Thach Quan Dong Van",
+        "city": "Kha Phong",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ngoc Thach Quan Dong Van ở Kha Phong. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.90593,
+                20.641735
+            ]
+        },
+        "openingHours": {
+            "display": null,
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1350
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 510,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "33295887",
+        "title": "Nhà Sàn Trên Hồ",
+        "city": "Kha Phong",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Sàn Trên Hồ ở Kha Phong. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.84919,
+                20.919811
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33295932",
+        "title": "Gà Rán Fivestar Đại Nghĩa",
+        "city": "Kha Phong",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Gà Rán Fivestar Đại Nghĩa ở Kha Phong. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.74419,
+                20.683437
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33390885",
+        "title": "Mo Khoet Phu Minh",
+        "city": "Kha Phong",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Nhà hàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mo Khoet Phu Minh ở Kha Phong. Loại địa điểm: Nhà hàng. Tags: Nhà hàng.",
+        "tags": [
+            "Nhà hàng"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.91582,
+                20.781109
+            ]
+        },
+        "openingHours": null
+    }
+]

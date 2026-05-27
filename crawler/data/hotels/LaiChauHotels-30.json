@@ -1,0 +1,800 @@
+[
+    {
+        "sourceLocationId": "3229325",
+        "title": "Khách sạn Mường Thanh Lai Châu",
+        "city": "Lai Châu, Tỉnh Lai Châu",
+        "totalScore": 4.5,
+        "ranking": "1/47",
+        "reviewsCount": 250,
+        "category": "Khách sạn",
+        "priceRange": "394.737 ₫ - 710.526 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách sạn Mường Thanh Lai Châu ở Lai Châu, Tỉnh Lai Châu. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.5/5 từ 250 lượt review. Xếp hạng: 1/47. Giá: 394.737 ₫ - 710.526 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/49/57/e0/khach-s-n-mu-ng-thanh.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.47105,
+                22.396612
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26521272",
+        "title": "Tan Uyen Paradise",
+        "city": "Lai Châu, Tỉnh Lai Châu",
+        "totalScore": 5.0,
+        "ranking": "2/47",
+        "reviewsCount": 4,
+        "category": "Nhà trọ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tan Uyen Paradise ở Lai Châu, Tỉnh Lai Châu. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 2/47.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/0d/6e/f7/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.77237,
+                22.175554
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13322705",
+        "title": "Thuy Tien Hotel",
+        "city": "Lai Châu, Tỉnh Lai Châu",
+        "totalScore": 4.5,
+        "ranking": "3/47",
+        "reviewsCount": 2,
+        "category": "Khách sạn đặc biệt",
+        "priceRange": "394.737 ₫ - 447.368 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Thuy Tien Hotel ở Lai Châu, Tỉnh Lai Châu. Loại địa điểm: Khách sạn đặc biệt. Tags: Khách sạn đặc biệt. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 3/47. Giá: 394.737 ₫ - 447.368 ₫.",
+        "tags": [
+            "Khách sạn đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/de/62/9e/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.46265,
+                22.388815
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12799683",
+        "title": "Putaleng Hotel",
+        "city": "Tam Đường, Tỉnh Lai Châu",
+        "totalScore": 4.0,
+        "ranking": "4/47",
+        "reviewsCount": 7,
+        "category": "Khách sạn nhỏ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Putaleng Hotel ở Tam Đường, Tỉnh Lai Châu. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 4.0/5 từ 7 lượt review. Xếp hạng: 4/47.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/2d/fc/55/putaleng-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11770511",
+        "title": "Tay Bac Hotel",
+        "city": "Lai Châu, Tỉnh Lai Châu",
+        "totalScore": 5.0,
+        "ranking": "5/47",
+        "reviewsCount": 2,
+        "category": "Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tay Bac Hotel ở Lai Châu, Tỉnh Lai Châu. Loại địa điểm: Nhà nghỉ. Tags: Nhà nghỉ. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 5/47.",
+        "tags": [
+            "Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/87/12/48/nhin-t-d-ng-tru-c-khach.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.44622,
+                22.39967
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "25615926",
+        "title": "A Hòa Homestay",
+        "city": "Sin Sui Ho, Tỉnh Lai Châu",
+        "totalScore": 5.0,
+        "ranking": "6/47",
+        "reviewsCount": 1,
+        "category": "Nhà trọ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "A Hòa Homestay ở Sin Sui Ho, Tỉnh Lai Châu. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 6/47.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/a6/db/21/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.52055,
+                22.49774
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17822622",
+        "title": "Heaven Gate O Quy Ho",
+        "city": "Tam Đường, Tỉnh Lai Châu",
+        "totalScore": 4.0,
+        "ranking": "7/47",
+        "reviewsCount": 4,
+        "category": "Khách sạn",
+        "priceRange": "473.684 ₫ - 1.657.895 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Heaven Gate O Quy Ho ở Tam Đường, Tỉnh Lai Châu. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 4.0/5 từ 4 lượt review. Xếp hạng: 7/47. Giá: 473.684 ₫ - 1.657.895 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/1a/2b/06/13/heaven-gate-hotel-o-quy.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.7655,
+                22.353018
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13545624",
+        "title": "Nhà Khách Hương Phong",
+        "city": "Lai Châu, Tỉnh Lai Châu",
+        "totalScore": 4.0,
+        "ranking": "8/47",
+        "reviewsCount": 1,
+        "category": "Nhà khách",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Khách Hương Phong ở Lai Châu, Tỉnh Lai Châu. Loại địa điểm: Nhà khách. Tags: Nhà khách. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 8/47.",
+        "tags": [
+            "Nhà khách"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.47577,
+                22.39331
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15655002",
+        "title": "Minh Son Hotel",
+        "city": "Lai Châu, Tỉnh Lai Châu",
+        "totalScore": 3.0,
+        "ranking": "9/47",
+        "reviewsCount": 1,
+        "category": "Khách sạn",
+        "priceRange": "394.737 ₫ - 526.316 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Minh Son Hotel ở Lai Châu, Tỉnh Lai Châu. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 9/47. Giá: 394.737 ₫ - 526.316 ₫.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/2d/f9/3e/dc/minh-son-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.47831,
+                22.391085
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17532926",
+        "title": "Hoa Anh Dao Hotel",
+        "city": "Lai Châu, Tỉnh Lai Châu",
+        "totalScore": 3.0,
+        "ranking": "10/47",
+        "reviewsCount": 1,
+        "category": "Khách sạn đặc biệt",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hoa Anh Dao Hotel ở Lai Châu, Tỉnh Lai Châu. Loại địa điểm: Khách sạn đặc biệt. Tags: Khách sạn đặc biệt. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 10/47.",
+        "tags": [
+            "Khách sạn đặc biệt"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.43192,
+                22.40618
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12482946",
+        "title": "Truong Phat Hotel",
+        "city": "Lai Châu, Tỉnh Lai Châu",
+        "totalScore": 2.0,
+        "ranking": "11/47",
+        "reviewsCount": 1,
+        "category": "Khách sạn đặc biệt",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Truong Phat Hotel ở Lai Châu, Tỉnh Lai Châu. Loại địa điểm: Khách sạn đặc biệt. Tags: Khách sạn đặc biệt. Đánh giá: 2.0/5 từ 1 lượt review. Xếp hạng: 11/47.",
+        "tags": [
+            "Khách sạn đặc biệt"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/4f/61/02/20171119-085141-largejpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15180081",
+        "title": "Nhà Nghỉ Hoa Sữa",
+        "city": "Lai Châu, Tỉnh Lai Châu",
+        "totalScore": 3.0,
+        "ranking": "12/47",
+        "reviewsCount": 2,
+        "category": "Nhà trọ",
+        "priceRange": "342.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Nghỉ Hoa Sữa ở Lai Châu, Tỉnh Lai Châu. Loại địa điểm: Nhà trọ. Tags: Nhà trọ. Đánh giá: 3.0/5 từ 2 lượt review. Xếp hạng: 12/47. Giá: 342.105 ₫.",
+        "tags": [
+            "Nhà trọ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/2e/3f/8d/0a/hoa-s-a-hotel-lai-cha.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.462585,
+                22.401539
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26262757",
+        "title": "Cầu Kính Rồng Mây hotel",
+        "city": "Tam Đường, Tỉnh Lai Châu",
+        "totalScore": 1.0,
+        "ranking": "13/47",
+        "reviewsCount": 1,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Cầu Kính Rồng Mây hotel ở Tam Đường, Tỉnh Lai Châu. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 1.0/5 từ 1 lượt review. Xếp hạng: 13/47.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/d5/58/1c/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.75748,
+                22.372265
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6950379",
+        "title": "Khac hs sạn Lan Anh II",
+        "city": "Phong Tho, Tỉnh Lai Châu",
+        "totalScore": 2.2,
+        "ranking": "14/47",
+        "reviewsCount": 17,
+        "category": "Khách sạn nhỏ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khac hs sạn Lan Anh II ở Phong Tho, Tỉnh Lai Châu. Loại địa điểm: Khách sạn nhỏ. Tags: Khách sạn nhỏ. Đánh giá: 2.2/5 từ 17 lượt review. Xếp hạng: 14/47.",
+        "tags": [
+            "Khách sạn nhỏ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/c2/98/36/piscina-hotel.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1728917",
+        "title": "Lan Anh Hotel",
+        "city": "Lai Châu, Tỉnh Lai Châu",
+        "totalScore": 1.3,
+        "ranking": "15/47",
+        "reviewsCount": 9,
+        "category": "Khách sạn",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Lan Anh Hotel ở Lai Châu, Tỉnh Lai Châu. Loại địa điểm: Khách sạn. Tags: Khách sạn. Đánh giá: 1.3/5 từ 9 lượt review. Xếp hạng: 15/47.",
+        "tags": [
+            "Khách sạn"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/01/71/9c/51/cour-avec-la-lessive.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19466367",
+        "title": "Hoang Nham Luxury Hotel",
+        "city": "Lai Châu, Tỉnh Lai Châu",
+        "totalScore": 0,
+        "ranking": "16/47",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "1.105.263 ₫ - 1.842.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Hoang Nham Luxury Hotel ở Lai Châu, Tỉnh Lai Châu. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 16/47. Giá: 1.105.263 ₫ - 1.842.105 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/2e/18/1f/24/hoang-nham-luxury-hot.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.47299,
+                22.384483
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23517888",
+        "title": "Khách Sạn Hồng Ngọc Lai Châu",
+        "city": "Lai Châu, Tỉnh Lai Châu",
+        "totalScore": 0,
+        "ranking": "17/47",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khách Sạn Hồng Ngọc Lai Châu ở Lai Châu, Tỉnh Lai Châu. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 17/47.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.47026,
+                22.386223
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33980164",
+        "title": "Quynh Chi Hotel",
+        "city": "Lai Châu, Tỉnh Lai Châu",
+        "totalScore": 0,
+        "ranking": "18/47",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "342.105 ₫ - 394.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Quynh Chi Hotel ở Lai Châu, Tỉnh Lai Châu. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 18/47. Giá: 342.105 ₫ - 394.737 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.48934,
+                22.38567
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34337501",
+        "title": "Khach san Sole'a",
+        "city": "Tam Đường, Tỉnh Lai Châu",
+        "totalScore": 0,
+        "ranking": "19/47",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "394.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khach san Sole'a ở Tam Đường, Tỉnh Lai Châu. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 19/47. Giá: 394.737 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/33/4b/90/4d/night.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.58529,
+                21.314133
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33470727",
+        "title": "Frontier Hostel & Tours",
+        "city": "Lai Châu, Tỉnh Lai Châu",
+        "totalScore": 0,
+        "ranking": "20/47",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Frontier Hostel & Tours ở Lai Châu, Tỉnh Lai Châu. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 20/47.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.01102,
+                21.393
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27801350",
+        "title": "Anh Đức Hotel",
+        "city": "Lai Châu, Tỉnh Lai Châu",
+        "totalScore": 0,
+        "ranking": "21/47",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Anh Đức Hotel ở Lai Châu, Tỉnh Lai Châu. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 21/47.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.467514,
+                22.391039
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34108045",
+        "title": "Tơ Ếch Homes",
+        "city": "Phong Tho, Tỉnh Lai Châu",
+        "totalScore": 0,
+        "ranking": "22/47",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "526.316 ₫ - 605.263 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Tơ Ếch Homes ở Phong Tho, Tỉnh Lai Châu. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 22/47. Giá: 526.316 ₫ - 605.263 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.51658,
+                22.481876
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19682522",
+        "title": "Doan Ket Hotel Svd",
+        "city": "Lai Châu, Tỉnh Lai Châu",
+        "totalScore": 0,
+        "ranking": "23/47",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Doan Ket Hotel Svd ở Lai Châu, Tỉnh Lai Châu. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 23/47.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/26/8e/63/b6/phong-giu-ng-don.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.45623,
+                22.39861
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33441252",
+        "title": "A Hoa Homestay",
+        "city": "Phong Tho, Tỉnh Lai Châu",
+        "totalScore": 0,
+        "ranking": "24/47",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "684.211 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "A Hoa Homestay ở Phong Tho, Tỉnh Lai Châu. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 24/47. Giá: 684.211 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/31/64/12/c5/day.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.5183,
+                22.48201
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "19802232",
+        "title": "Phuong Thanh",
+        "city": "Lai Châu, Tỉnh Lai Châu",
+        "totalScore": 0,
+        "ranking": "25/47",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Phuong Thanh ở Lai Châu, Tỉnh Lai Châu. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 25/47.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.471725,
+                22.397583
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12678444",
+        "title": "Hanoi Hotel",
+        "city": "Lai Châu, Tỉnh Lai Châu",
+        "totalScore": 0,
+        "ranking": "26/47",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hanoi Hotel ở Lai Châu, Tỉnh Lai Châu. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 26/47.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.44622,
+                22.39967
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34101637",
+        "title": "Binh Long II Hotel",
+        "city": "Lai Châu, Tỉnh Lai Châu",
+        "totalScore": 0,
+        "ranking": "27/47",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "342.105 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Binh Long II Hotel ở Lai Châu, Tỉnh Lai Châu. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 27/47. Giá: 342.105 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/32/5a/0b/5c/property-building.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.47141,
+                22.38493
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23284513",
+        "title": "Khach san Tay Bac",
+        "city": "Lai Châu, Tỉnh Lai Châu",
+        "totalScore": 0,
+        "ranking": "28/47",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "368.421 ₫ - 394.737 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Khach san Tay Bac ở Lai Châu, Tỉnh Lai Châu. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 28/47. Giá: 368.421 ₫ - 394.737 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.45867,
+                22.399345
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17601948",
+        "title": "Nha Nghi Doan Ket-san Van Dong Lai Chau",
+        "city": "Lai Châu, Tỉnh Lai Châu",
+        "totalScore": 0,
+        "ranking": "29/47",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nha Nghi Doan Ket-san Van Dong Lai Chau ở Lai Châu, Tỉnh Lai Châu. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 29/47.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.45621,
+                22.399738
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "34152643",
+        "title": "Tran Hung Dao 186",
+        "city": "Lai Châu, Tỉnh Lai Châu",
+        "totalScore": 0,
+        "ranking": "30/47",
+        "reviewsCount": 0,
+        "category": "Khách sạn / Nhà nghỉ",
+        "priceRange": "315.789 ₫",
+        "description": null,
+        "embedding": null,
+        "searchText": "Tran Hung Dao 186 ở Lai Châu, Tỉnh Lai Châu. Loại địa điểm: Khách sạn / Nhà nghỉ. Tags: Khách sạn / Nhà nghỉ. Xếp hạng: 30/47. Giá: 315.789 ₫.",
+        "tags": [
+            "Khách sạn / Nhà nghỉ"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                103.45458,
+                22.40095
+            ]
+        },
+        "openingHours": null
+    }
+]

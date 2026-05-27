@@ -1,0 +1,1024 @@
+[
+    {
+        "sourceLocationId": "4766576",
+        "title": "Dray Nur Waterfall",
+        "city": "Buôn Ma Thuột",
+        "totalScore": 4.3,
+        "ranking": "2/33",
+        "reviewsCount": 192,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dray Nur Waterfall ở Buôn Ma Thuột. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.3/5 từ 192 lượt review. Xếp hạng: 2/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/8f/8f/d5/photo3jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.88988,
+                12.540384
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "3506904",
+        "title": "Ethnographic Museum",
+        "city": "Buôn Ma Thuột",
+        "totalScore": 4.2,
+        "ranking": "3/33",
+        "reviewsCount": 96,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ethnographic Museum ở Buôn Ma Thuột. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 4.2/5 từ 96 lượt review. Xếp hạng: 3/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/1e/8b/36/photo0jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.04224,
+                12.676147
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8010365",
+        "title": "Làng Cà Phê Trung Nguyên",
+        "city": "Buôn Ma Thuột",
+        "totalScore": 3.8,
+        "ranking": "9/33",
+        "reviewsCount": 91,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Làng Cà Phê Trung Nguyên ở Buôn Ma Thuột. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Đánh giá: 3.8/5 từ 91 lượt review. Xếp hạng: 9/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/c5/06/ad/c-ng-vao-d-c-trung-tay.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.06039,
+                12.701503
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8408673",
+        "title": "Khu du lịch sinh thái Kotam",
+        "city": "Buôn Ma Thuột",
+        "totalScore": 4.2,
+        "ranking": "10/33",
+        "reviewsCount": 25,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu du lịch sinh thái Kotam ở Buôn Ma Thuột. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.2/5 từ 25 lượt review. Xếp hạng: 10/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/06/72/e2/lake.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.09463,
+                12.685127
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6025395",
+        "title": "Ghềnh Đá Dĩa",
+        "city": "Tuy Hòa",
+        "totalScore": 4.6,
+        "ranking": "1/33",
+        "reviewsCount": 187,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": "Ghềnh Đá Đĩa hay gành Đá Dĩa là thắng cảnh nổi tiếng của tỉnh Phú Yên, nằm cách trung tâm thành phố Tuy Hòa khoảng 40 km. Ấn tượng đầu tiên với du khách khi đặt chân đến đây là những khối đá đen huyền hình lăng trụ độc đáo, trông xa như một tổ ong khổng lồ nằm bình yên bên bờ biển.",
+        "embedding": null,
+        "searchText": "Ghềnh Đá Dĩa ở Tuy Hòa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Mô tả: Ghềnh Đá Đĩa hay gành Đá Dĩa là thắng cảnh nổi tiếng của tỉnh Phú Yên, nằm cách trung tâm thành phố Tuy Hòa khoảng 40 km. Ấn tượng đầu tiên với du khách khi đặt chân đến đây là những khối đá đen huyền hình lăng trụ độc đáo, trông xa như một tổ ong khổng lồ nằm bình yên bên bờ biển. Đánh giá: 4.6/5 từ 187 lượt review. Xếp hạng: 1/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/a1/0f/b9/ghenh-da-dia.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.29274,
+                13.354345
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4869953",
+        "title": "Dray Sap Falls",
+        "city": "Buôn Ma Thuột",
+        "totalScore": 3.9,
+        "ranking": "12/33",
+        "reviewsCount": 58,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dray Sap Falls ở Buôn Ma Thuột. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.9/5 từ 58 lượt review. Xếp hạng: 12/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/07/cf/6a/cd/dray-sap-waterfall-in.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.88909,
+                12.536718
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "6931588",
+        "title": "Tượng đài chiến thắng Buôn Ma Thuột",
+        "city": "Buôn Ma Thuột",
+        "totalScore": 3.7,
+        "ranking": "11/33",
+        "reviewsCount": 40,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Tượng đài chiến thắng Buôn Ma Thuột ở Buôn Ma Thuột. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.7/5 từ 40 lượt review. Xếp hạng: 11/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/25/a0/9c/victory-monument-buon.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.04472,
+                12.680027
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15353695",
+        "title": "Bảo Tàng Thế giới Cà phê",
+        "city": "Buôn Ma Thuột",
+        "totalScore": 3.4,
+        "ranking": "14/33",
+        "reviewsCount": 47,
+        "category": "Bảo tàng",
+        "priceRange": null,
+        "description": "Bảo tàng Thế giới Cà phê là điểm đến của những tín đồ yêu và đam mê cà phê trên toàn cầu; là công trình biểu tượng cho Việt Nam và là nơi hội tụ lưu trữ hàng chục nghìn hiện vật của các nền văn minh cà phê trên thế giới.",
+        "embedding": null,
+        "searchText": "Bảo Tàng Thế giới Cà phê ở Buôn Ma Thuột. Loại địa điểm: Bảo tàng. Tags: Điểm du lịch, Bảo tàng. Mô tả: Bảo tàng Thế giới Cà phê là điểm đến của những tín đồ yêu và đam mê cà phê trên toàn cầu; là công trình biểu tượng cho Việt Nam và là nơi hội tụ lưu trữ hàng chục nghìn hiện vật của các nền văn minh cà phê trên thế giới. Đánh giá: 3.4/5 từ 47 lượt review. Xếp hạng: 14/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Bảo tàng"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/c4/b0/e3/b-o-tang-th-gi-i-ca-phe.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.04467,
+                12.690811
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-18:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1080
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "1633432",
+        "title": "Hồ Lắk",
+        "city": "Tỉnh Đắk Lắk",
+        "totalScore": 4.4,
+        "ranking": "5/33",
+        "reviewsCount": 85,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hồ Lắk ở Tỉnh Đắk Lắk. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.4/5 từ 85 lượt review. Xếp hạng: 5/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/09/c1/d5/photo1jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.04408,
+                12.68091
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12149981",
+        "title": "Vườn Troh Bư",
+        "city": "Buôn Ma Thuột",
+        "totalScore": 3.8,
+        "ranking": "23/33",
+        "reviewsCount": 4,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn Troh Bư ở Buôn Ma Thuột. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.8/5 từ 4 lượt review. Xếp hạng: 23/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/d8/2e/b8/photo3jpg.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.95721,
+                12.710166
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9747185",
+        "title": "Chùa Hoa Nghiêm",
+        "city": "Buôn Ma Thuột",
+        "totalScore": 4.5,
+        "ranking": "21/33",
+        "reviewsCount": 2,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Chùa Hoa Nghiêm ở Buôn Ma Thuột. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.5/5 từ 2 lượt review. Xếp hạng: 21/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/42/40/60/hoa-nghiem-temple.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.084305,
+                12.813219
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8631008",
+        "title": "Khu du lich sinh thái Đầu Nguồn",
+        "city": "Buôn Ma Thuột",
+        "totalScore": 3.2,
+        "ranking": "25/33",
+        "reviewsCount": 5,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu du lich sinh thái Đầu Nguồn ở Buôn Ma Thuột. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.2/5 từ 5 lượt review. Xếp hạng: 25/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/bb/cf/1f/co-nhi-u-choi-cho-du.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.05333,
+                12.6929
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "18717830",
+        "title": "Đường Sách Cà Phê Buôn Ma Thuột",
+        "city": "Buôn Ma Thuột",
+        "totalScore": 3.4,
+        "ranking": "22/33",
+        "reviewsCount": 7,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đường Sách Cà Phê Buôn Ma Thuột ở Buôn Ma Thuột. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 3.4/5 từ 7 lượt review. Xếp hạng: 22/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/19/25/d8/bc/du-ng-sach-ca-phe-buon.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                108.045135,
+                12.681507
+            ]
+        },
+        "openingHours": {
+            "display": "08:00-22:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ],
+                [
+                    {
+                        "open_time": 480,
+                        "close_time": 1320
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "10840612",
+        "title": "Mũi Đại Lãnh",
+        "city": "Hoa Tam",
+        "totalScore": 4.7,
+        "ranking": "6/33",
+        "reviewsCount": 27,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mũi Đại Lãnh ở Hoa Tam. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.7/5 từ 27 lượt review. Xếp hạng: 6/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/11/03/a2/70/mon-beach-dai-lanh-cape.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.45718,
+                12.896132
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9748267",
+        "title": "Vịnh Xuân Đài",
+        "city": "Thị trấn Sông Cầu",
+        "totalScore": 4.8,
+        "ranking": "13/33",
+        "reviewsCount": 10,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vịnh Xuân Đài ở Thị trấn Sông Cầu. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên, Hoạt động ngoài trời. Đánh giá: 4.8/5 từ 10 lượt review. Xếp hạng: 13/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0a/25/9b/6e/tr-ng-cat-xanh-bi-n.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13837515",
+        "title": "Gành Ông - Bãi Xép",
+        "city": "An Chan",
+        "totalScore": 4.3,
+        "ranking": "15/33",
+        "reviewsCount": 10,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Gành Ông - Bãi Xép ở An Chan. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 10 lượt review. Xếp hạng: 15/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/69/05/90/northern-hill-looking.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.299614,
+                13.193735
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "11641766",
+        "title": "Hải đăng Mũi Đại Điện",
+        "city": "Hoa Tam",
+        "totalScore": 4.9,
+        "ranking": "7/33",
+        "reviewsCount": 19,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hải đăng Mũi Đại Điện ở Hoa Tam. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.9/5 từ 19 lượt review. Xếp hạng: 7/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-c/2560x500/0d/b9/06/8b/toan-c-nh-mui-r-ng-dong.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.45755,
+                12.895709
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8305184",
+        "title": "Vườn Quốc Gia Chư Yang Sin",
+        "city": "Krong Bong",
+        "totalScore": 5.0,
+        "ranking": "24/33",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn Quốc Gia Chư Yang Sin ở Krong Bong. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 24/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/ad/b5/1b/chung-toi-g-n-chop-2442.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "13006824",
+        "title": "Nhà Thờ Mằng Lăng",
+        "city": "Phu My",
+        "totalScore": 4.3,
+        "ranking": "4/33",
+        "reviewsCount": 71,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nhà Thờ Mằng Lăng ở Phu My. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.3/5 từ 71 lượt review. Xếp hạng: 4/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/06/11/b5/71/eglise-de-mang-lang.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.2256,
+                13.334164
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "17750647",
+        "title": "Hòn Yến",
+        "city": "Tuy Hòa",
+        "totalScore": 5.0,
+        "ranking": "18/33",
+        "reviewsCount": 2,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Hòn Yến ở Tuy Hòa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 18/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12945687",
+        "title": "Quang Đuc Xua",
+        "city": "Tuy Hòa",
+        "totalScore": 4.4,
+        "ranking": "16/33",
+        "reviewsCount": 5,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": "Một điểm tham quan mới, nằm cạch những điểm tham quan nổi tiếng của Phú Yên như Gành Đá Dĩa, Nhà thờ Mằng Lăng (được coi nhà thờ cổ nhất tỉnh Phú Yên và là một trong những nhà thờ lâu đời nhất của Việt Nam) .\nMôt nơi lý tưởng để tìm hiểu, để trải nghiệm một góc nhỏ trong nền văn hóa địa phương với bộ sưu tầm gốm Quảng Đức nổi tiếng ở vùng đất nơi đây, các vật dụng hàng ngày quen thuộc, mộc mạc, đơn sơ gắn liền với cuộc sống",
+        "embedding": null,
+        "searchText": "Quang Đuc Xua ở Tuy Hòa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Mô tả: Một điểm tham quan mới, nằm cạch những điểm tham quan nổi tiếng của Phú Yên như Gành Đá Dĩa, Nhà thờ Mằng Lăng (được coi nhà thờ cổ nhất tỉnh Phú Yên và là một trong những nhà thờ lâu đời nhất của Việt Nam) .\nMôt nơi lý tưởng để tìm hiểu, để trải nghiệm một góc nhỏ trong nền văn hóa địa phương với bộ sưu tầm gốm Quảng Đức nổi tiếng ở vùng đất nơi đây, các vật dụng hàng ngày quen thuộc, mộc mạc, đơn sơ gắn liền với cuộc sống Đánh giá: 4.4/5 từ 5 lượt review. Xếp hạng: 16/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2b/c0/df/eb/the-entrance.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.21336,
+                13.322216
+            ]
+        },
+        "openingHours": {
+            "display": "07:00-17:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ],
+                [
+                    {
+                        "open_time": 420,
+                        "close_time": 1020
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "6454070",
+        "title": "Mai Nha Island",
+        "city": "Tuy Hòa",
+        "totalScore": 4.5,
+        "ranking": "19/33",
+        "reviewsCount": 4,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mai Nha Island ở Tuy Hòa. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 4 lượt review. Xếp hạng: 19/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/7c/e3/2c/front-beach-from-mai.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1672375",
+        "title": "Dakbla River",
+        "city": "Tỉnh Đắk Lắk",
+        "totalScore": 3.0,
+        "ranking": "26/33",
+        "reviewsCount": 1,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Dakbla River ở Tỉnh Đắk Lắk. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 3.0/5 từ 1 lượt review. Xếp hạng: 26/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "1657475",
+        "title": "Kontum Montagnard Statue",
+        "city": "Tỉnh Đắk Lắk",
+        "totalScore": 2.0,
+        "ranking": "27/33",
+        "reviewsCount": 3,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Kontum Montagnard Statue ở Tỉnh Đắk Lắk. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 2.0/5 từ 3 lượt review. Xếp hạng: 27/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/01/6a/92/9e/the-montagnard-statue.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "23902586",
+        "title": "Vườn Quốc Gia Yok Đôn",
+        "city": "Ea Huar",
+        "totalScore": 4.9,
+        "ranking": "8/33",
+        "reviewsCount": 9,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": "Vườn quốc gia Yok Don có diện tích 115.545ha, là khu rừng đặc dụng có diện tích lớn thứ hai trên toàn quốc. Lâm phận của Vườn và vùng đệm nằm trên địa giới hành chính của 7 xã, 3 huyện và 2 tỉnh gồm tỉnh Đắk Lắk và tỉnh Đắk Nông, cách thành phố Buôn Ma Thuột 38 km. Là khu bảo tồn hệ sinh thái rừng khộp duy nhất tại Việt Nam, Vườn quốc gia Yok Don có tính đa dạng sinh học cao với 1.006 loài thực vật, 650 loài động vật",
+        "embedding": null,
+        "searchText": "Vườn Quốc Gia Yok Đôn ở Ea Huar. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Thiên nhiên & Công viên. Mô tả: Vườn quốc gia Yok Don có diện tích 115.545ha, là khu rừng đặc dụng có diện tích lớn thứ hai trên toàn quốc. Lâm phận của Vườn và vùng đệm nằm trên địa giới hành chính của 7 xã, 3 huyện và 2 tỉnh gồm tỉnh Đắk Lắk và tỉnh Đắk Nông, cách thành phố Buôn Ma Thuột 38 km. Là khu bảo tồn hệ sinh thái rừng khộp duy nhất tại Việt Nam, Vườn quốc gia Yok Don có tính đa dạng sinh học cao với 1.006 loài thực vật, 650 loài động vật Đánh giá: 4.9/5 từ 9 lượt review. Xếp hạng: 8/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/e1/4a/90/the-place-to-visit-the.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.80741,
+                12.871936
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "32834788",
+        "title": "Nghinh Phong Tower",
+        "city": "Tuy Hòa",
+        "totalScore": 5.0,
+        "ranking": "17/33",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Nghinh Phong Tower ở Tuy Hòa. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 17/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/c0/84/da/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.30713,
+                13.116178
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26576509",
+        "title": "Bãi Biển Vịnh Hoà",
+        "city": "Xuan Thinh",
+        "totalScore": 5.0,
+        "ranking": "20/33",
+        "reviewsCount": 1,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bãi Biển Vịnh Hoà ở Xuan Thinh. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Hoạt động ngoài trời. Đánh giá: 5.0/5 từ 1 lượt review. Xếp hạng: 20/33.",
+        "tags": [
+            "Điểm du lịch",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.29049,
+                13.508236
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "34372065",
+        "title": "Mõm Cá Mập",
+        "city": "An Ninh Dong",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mõm Cá Mập ở An Ninh Dong. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Thiên nhiên & Công viên, Hoạt động ngoài trời.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên",
+            "Hoạt động ngoài trời"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                109.27584,
+                13.318794
+            ]
+        },
+        "openingHours": null
+    }
+]

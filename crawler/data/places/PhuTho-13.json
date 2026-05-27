@@ -1,0 +1,433 @@
+[
+    {
+        "sourceLocationId": "12231680",
+        "title": "Đền Hùng",
+        "city": "Phú Thọ",
+        "totalScore": 4.9,
+        "ranking": "1/13",
+        "reviewsCount": 14,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đền Hùng ở Phú Thọ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.9/5 từ 14 lượt review. Xếp hạng: 1/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/53/8d/71/hung-king-s-temple.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.536995,
+                21.247042
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "12010608",
+        "title": "Bản Cỏi",
+        "city": "Phú Thọ",
+        "totalScore": 5.0,
+        "ranking": "5/13",
+        "reviewsCount": 2,
+        "category": "Khác",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Bản Cỏi ở Phú Thọ. Loại địa điểm: Khác. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Khác. Đánh giá: 5.0/5 từ 2 lượt review. Xếp hạng: 5/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Khác"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/9c/99/82/khu-c-m-tr-i-ven-b-su.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "576679",
+        "title": "Đường Hồ Chí Minh",
+        "city": "Phú Thọ",
+        "totalScore": 3.8,
+        "ranking": "6/13",
+        "reviewsCount": 4,
+        "category": "Hoạt động ngoài trời",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đường Hồ Chí Minh ở Phú Thọ. Loại địa điểm: Hoạt động ngoài trời. Tags: Điểm du lịch, Danh lam & Thắng cảnh, Hoạt động ngoài trời. Đánh giá: 3.8/5 từ 4 lượt review. Xếp hạng: 6/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh",
+            "Hoạt động ngoài trời"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/05/c6/d6/05/ho-chi-minh-national.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "8540485",
+        "title": "Vườn Quốc Gia Xuân Sơn",
+        "city": "Xuan Dai",
+        "totalScore": 4.5,
+        "ranking": "3/13",
+        "reviewsCount": 4,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Vườn Quốc Gia Xuân Sơn ở Xuan Dai. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Thiên nhiên & Công viên. Đánh giá: 4.5/5 từ 4 lượt review. Xếp hạng: 3/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/08/f5/ad/ab/xuan-son-national-park.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.0553,
+                21.04463
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "15750185",
+        "title": "Đền Mẫu Âu Cơ",
+        "city": "Hien Luong",
+        "totalScore": 4.0,
+        "ranking": "7/13",
+        "reviewsCount": 1,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Đền Mẫu Âu Cơ ở Hien Luong. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh. Đánh giá: 4.0/5 từ 1 lượt review. Xếp hạng: 7/13.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/0a/d7/1d/d-n-m-u-au-co.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26889274",
+        "title": "Cơm gà Trường Sa Restaurant",
+        "city": "Viet Tri",
+        "totalScore": 5.0,
+        "ranking": "1/1",
+        "reviewsCount": 4,
+        "category": "Khác",
+        "priceRange": null,
+        "description": "Tuyệt vời nhà hàng cơm gà với món cơm chiên gà xối mỡ đậm nét châu á, miền trung . Hương vị thơm ngon",
+        "embedding": null,
+        "searchText": "Cơm gà Trường Sa Restaurant ở Viet Tri. Loại địa điểm: Khác. Tags: Điểm du lịch, Đồ ăn & Đồ uống, Chuyến tham quan, Khác. Mô tả: Tuyệt vời nhà hàng cơm gà với món cơm chiên gà xối mỡ đậm nét châu á, miền trung . Hương vị thơm ngon Đánh giá: 5.0/5 từ 4 lượt review. Xếp hạng: 1/1.",
+        "tags": [
+            "Điểm du lịch",
+            "Đồ ăn & Đồ uống",
+            "Chuyến tham quan",
+            "Khác"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/f7/10/4d/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": {
+            "display": "10:00-20:00",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1200
+                    }
+                ],
+                [
+                    {
+                        "open_time": 600,
+                        "close_time": 1200
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "8532704",
+        "title": "Khu du lịch nước khoáng nóng Thanh Thủy",
+        "city": "Phú Thọ",
+        "totalScore": 4.3,
+        "ranking": "1/4",
+        "reviewsCount": 3,
+        "category": "Spa & Sức khỏe",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Khu du lịch nước khoáng nóng Thanh Thủy ở Phú Thọ. Loại địa điểm: Spa & Sức khỏe. Tags: Điểm du lịch, Spa & Sức khỏe. Đánh giá: 4.3/5 từ 3 lượt review. Xếp hạng: 1/4.",
+        "tags": [
+            "Điểm du lịch",
+            "Spa & Sức khỏe"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.31844,
+                21.45521
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "26773220",
+        "title": "Ohayo OnSen & Spa",
+        "city": "Thanh Thuy",
+        "totalScore": 1.0,
+        "ranking": "2/4",
+        "reviewsCount": 1,
+        "category": "Spa & Sức khỏe",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Ohayo OnSen & Spa ở Thanh Thuy. Loại địa điểm: Spa & Sức khỏe. Tags: Điểm du lịch, Spa & Sức khỏe. Đánh giá: 1.0/5 từ 1 lượt review. Xếp hạng: 2/4.",
+        "tags": [
+            "Điểm du lịch",
+            "Spa & Sức khỏe"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-w/2e/00/27/fc/caption.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.28385,
+                21.147442
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "33414030",
+        "title": "Mộc Spa Tx Phú Thọ",
+        "city": "Phú Thọ",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Spa & Sức khỏe",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Mộc Spa Tx Phú Thọ ở Phú Thọ. Loại địa điểm: Spa & Sức khỏe. Tags: Điểm du lịch, Spa & Sức khỏe.",
+        "tags": [
+            "Điểm du lịch",
+            "Spa & Sức khỏe"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.216896,
+                21.3983
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "27914367",
+        "title": "The Hygge Farm",
+        "city": "Phú Thọ",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "The Hygge Farm ở Phú Thọ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                107.91667,
+                15.58333
+            ]
+        },
+        "openingHours": {
+            "display": "00:00-23:59",
+            "weekRanges": [
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ],
+                [
+                    {
+                        "open_time": 0,
+                        "close_time": 1439
+                    }
+                ]
+            ]
+        }
+    },
+    {
+        "sourceLocationId": "26867697",
+        "title": "Công Viên Khoáng Nóng Ohayo",
+        "city": "Thanh Thuy",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Spa & Sức khỏe",
+        "priceRange": null,
+        "description": "Công viên khoáng nóng đạt chuẩn 5 sao với hệ thống các bể bơi, ngâm dục và xông hơi",
+        "embedding": null,
+        "searchText": "Công Viên Khoáng Nóng Ohayo ở Thanh Thuy. Loại địa điểm: Spa & Sức khỏe. Tags: Điểm du lịch, Spa & Sức khỏe. Mô tả: Công viên khoáng nóng đạt chuẩn 5 sao với hệ thống các bể bơi, ngâm dục và xông hơi",
+        "tags": [
+            "Điểm du lịch",
+            "Spa & Sức khỏe"
+        ],
+        "image": null,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                105.28392,
+                21.149506
+            ]
+        },
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "9996385",
+        "title": "tiNiWorld",
+        "city": "Phú Thọ",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Thiên nhiên & Công viên",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "tiNiWorld ở Phú Thọ. Loại địa điểm: Thiên nhiên & Công viên. Tags: Điểm du lịch, Vui chơi & Giải trí, Thiên nhiên & Công viên.",
+        "tags": [
+            "Điểm du lịch",
+            "Vui chơi & Giải trí",
+            "Thiên nhiên & Công viên"
+        ],
+        "image": null,
+        "location": null,
+        "openingHours": null
+    },
+    {
+        "sourceLocationId": "4832229",
+        "title": "Buu Tri Pagoda",
+        "city": "Phú Thọ",
+        "totalScore": 0,
+        "ranking": null,
+        "reviewsCount": 0,
+        "category": "Danh lam & Thắng cảnh",
+        "priceRange": null,
+        "description": null,
+        "embedding": null,
+        "searchText": "Buu Tri Pagoda ở Phú Thọ. Loại địa điểm: Danh lam & Thắng cảnh. Tags: Điểm du lịch, Danh lam & Thắng cảnh.",
+        "tags": [
+            "Điểm du lịch",
+            "Danh lam & Thắng cảnh"
+        ],
+        "image": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/47/1b/03/tra-m-thu-phi-ic10-sai.jpg",
+            "publicId": null,
+            "source": "tripadvisor"
+        },
+        "location": null,
+        "openingHours": null
+    }
+]
