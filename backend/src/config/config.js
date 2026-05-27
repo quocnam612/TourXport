@@ -28,6 +28,11 @@ const config = {
         url: process.env.AI_BACKEND_URL || `http://localhost:${process.env.PORT_AI || 8000}`,
     },
 
+    travelAdvisor: {
+        apiKey: process.env.RAPIDAPI_KEY,
+        host: process.env.RAPIDAPI_HOST || 'travel-advisor.p.rapidapi.com',
+    },
+
     google: {
         clientId: process.env.GOOGLE_CLIENT_ID,
     },
@@ -63,6 +68,10 @@ if (!config.openRouteService.apiKey) {
 
 if (!config.openWeatherMap.apiKey) {
     console.warn('WARNING: OPENWEATHERMAP_API_KEY is not defined in .env file!');
+}
+
+if (!config.travelAdvisor.apiKey) {
+    console.warn('WARNING: RAPIDAPI_KEY is not defined in .env file!');
 }
 
 if (!config.cloudinary.cloudName || !config.cloudinary.apiKey || !config.cloudinary.apiSecret) {
