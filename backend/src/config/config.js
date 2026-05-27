@@ -28,6 +28,16 @@ const config = {
         url: process.env.AI_BACKEND_URL || `http://localhost:${process.env.PORT_AI || 8000}`,
     },
 
+    google: {
+        clientId: process.env.GOOGLE_CLIENT_ID,
+    },
+
+    facebook: {
+        appId: process.env.FACEBOOK_APP_ID,
+        appSecret: process.env.FACEBOOK_APP_SECRET,
+        graphVersion: process.env.FACEBOOK_GRAPH_VERSION || 'v20.0',
+    },
+
     openRouteService: {
         apiKey: process.env.OPENROUTESERVICE_API_KEY,
     },
@@ -57,6 +67,14 @@ if (!config.openWeatherMap.apiKey) {
 
 if (!config.cloudinary.cloudName || !config.cloudinary.apiKey || !config.cloudinary.apiSecret) {
     console.warn('WARNING: One or more Cloudinary configuration values are not defined in .env file!');
+}
+
+if (!config.google.clientId) {
+    console.warn('WARNING: GOOGLE_CLIENT_ID is not defined in .env file!');
+}
+
+if (!config.facebook.appId || !config.facebook.appSecret) {
+    console.warn('WARNING: FACEBOOK_APP_ID or FACEBOOK_APP_SECRET is not defined in .env file!');
 }
 
 export default config;

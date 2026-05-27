@@ -2,9 +2,11 @@ import mongoose from 'mongoose';
 
 const userSchema = new mongoose.Schema({
     authProvider: {
-        type: String,
-        enum: ['local', 'google', 'facebook'],
-        default: 'local'
+        type: [{
+            type: String,
+            enum: ['local', 'google', 'facebook']
+        }],
+        default: ['local']
     },
     googleId: { 
         type: String, 

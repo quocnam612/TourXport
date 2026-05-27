@@ -356,11 +356,12 @@ const allowedTourSourceCollections = new Set(['places', 'restaurants', 'hotels']
 
 const normalizeTourSource = (source = {}) => {
     const provider = allowedTourSourceProviders.has(source.provider) ? source.provider : 'websearch';
-    const collection = allowedTourSourceCollections.has(source.collection) ? source.collection : null;
+    const sourceCollectionValue = source.sourceCollection || source.collection;
+    const sourceCollection = allowedTourSourceCollections.has(sourceCollectionValue) ? sourceCollectionValue : null;
 
     return {
         provider,
-        collection,
+        sourceCollection,
         id: source.id || null
     };
 };

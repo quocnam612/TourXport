@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import '../api/api.dart';
+import '../services/google_auth_service.dart';
 import '../utils/auth_feedback.dart';
 import '../widgets/anim_builder.dart';
 import 'sign_in.dart';
@@ -151,6 +152,80 @@ class _SignUpScreenState extends State<SignUpScreen>
         context,
         'Không kết nối được server. Đã bật backend chưa? ($e)',
       );
+    }
+  }
+
+  void _handleGoogleLogin() async {
+    if (_isLoading) return;
+
+    setState(() => _isLoading = true);
+
+    try {
+      final idToken = await GoogleAuthService.signInAndGetIdToken();
+      if (!mounted) return;
+
+      if (idToken == null) {
+        setState(() => _isLoading = false);
+        return;
+      }
+
+      final response = await apiPostJson('/auth/google', {
+        'idToken': idToken,
+      });
+
+      if (!mounted) return;
+      setState(() => _isLoading = false);
+
+      final data = tryDecodeJsonObject(response.body);
+      final msg = data?['message'] as String?;
+
+      if (response.statusCode == 200 && data?['success'] == true) {
+        final user = data?['user'];
+        final userName = user is Map ? user['name'] as String? : null;
+
+        showAuthSuccessToast(
+          context,
+          msg ?? 'Đăng nhập Google thành công!',
+        );
+
+        Navigator.pushAndRemoveUntil(
+          context,
+          PageRouteBuilder(
+            pageBuilder: (_, __, ___) => HomeScreen(
+              userName: userName ?? 'bạn',
+              authToken: data?['token'] as String?,
+            ),
+            transitionDuration: const Duration(milliseconds: 600),
+            reverseTransitionDuration: const Duration(milliseconds: 400),
+            transitionsBuilder: (_, animation, __, child) {
+              return FadeTransition(
+                opacity: CurvedAnimation(
+                  parent: animation,
+                  curve: Curves.easeInOut,
+                ),
+                child: SlideTransition(
+                  position: Tween<Offset>(
+                    begin: const Offset(0, 0.05),
+                    end: Offset.zero,
+                  ).animate(CurvedAnimation(
+                    parent: animation,
+                    curve: Curves.easeOutCubic,
+                  )),
+                  child: child,
+                ),
+              );
+            },
+          ),
+          (route) => false,
+        );
+        return;
+      }
+
+      showAuthErrorToast(context, msg ?? 'Đăng nhập Google thất bại');
+    } catch (e) {
+      if (!mounted) return;
+      setState(() => _isLoading = false);
+      showAuthErrorToast(context, 'Đăng nhập Google thất bại ($e)');
     }
   }
 
@@ -384,6 +459,7 @@ class _SignUpScreenState extends State<SignUpScreen>
                                   label: 'Đăng kí với Google',
                                   iconAsset: 'assets/icons/gg_logo.png',
                                   s: 1.0,
+                                  onTap: _handleGoogleLogin,
                                 ),
                                 const SizedBox(width: 10),
                                 _buildSocialBtn(
@@ -736,6 +812,7 @@ class _SignUpScreenState extends State<SignUpScreen>
                               label: 'Đăng kí với Google',
                               iconAsset: 'assets/icons/gg_logo.png',
                               s: s,
+                              onTap: _handleGoogleLogin,
                             ),
                             SizedBox(width: 10 * s),
                             _buildSocialBtn(
@@ -880,12 +957,13 @@ class _SignUpScreenState extends State<SignUpScreen>
     required String label,
     required String iconAsset,
     required double s,
+    VoidCallback? onTap,
   }) {
     return Expanded(
       child: Material(
         color: Colors.transparent,
         child: InkWell(
-          onTap: () {},
+          onTap: _isLoading ? null : onTap,
           borderRadius: BorderRadius.circular(20),
           splashColor: Colors.white.withOpacity(0.1),
           highlightColor: Colors.white.withOpacity(0.05),

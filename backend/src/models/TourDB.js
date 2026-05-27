@@ -77,9 +77,10 @@ const sourceSchema = new mongoose.Schema({
         required: true
     },
 
-    collection: {
+    sourceCollection: {
         type: String,
         enum: ['places', 'restaurants', 'hotels'],
+        alias: 'collection',
         default: null
     },
 
