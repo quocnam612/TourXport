@@ -2714,7 +2714,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               ],
             ),
             const Spacer(),
-
             IconButton(
               icon: Icon(
                 isGuest ? Icons.login_rounded : Icons.logout_rounded,
@@ -2724,7 +2723,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               onPressed: _logout,
             ),
             const SizedBox(width: 8), // Gap spacing
-
             GestureDetector(
               onTap: () {},
               child: Container(
