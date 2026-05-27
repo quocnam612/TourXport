@@ -18,8 +18,9 @@ String get apiBaseUrl {
         return 'http://localhost:3000';
     }
     if (Platform.isAndroid) {
-        // Thay vì dùng 10.0.2.2 của máy ảo, đổi thành localhost để thông qua cáp USB
-        return 'http://127.0.0.1:3000'; 
+        // Android emulator dùng 10.0.2.2 để trỏ về localhost của máy host.
+        // Thiết bị thật cần truyền API_BASE_URL bằng IP LAN của máy chạy backend.
+        return 'http://10.0.2.2:3000';
     }
     return 'http://localhost:3000';
 }

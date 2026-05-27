@@ -5,6 +5,32 @@ plugins {
     id("dev.flutter.flutter-gradle-plugin")
 }
 
+fun readRootEnv(): Map<String, String> {
+    val envFile = rootProject.file("../../.env")
+    if (!envFile.exists()) return emptyMap()
+
+    return envFile.readLines()
+        .mapNotNull { line ->
+            val trimmed = line.trim()
+            if (trimmed.isEmpty() || trimmed.startsWith("#") || !trimmed.contains("=")) {
+                return@mapNotNull null
+            }
+
+            val key = trimmed.substringBefore("=").trim()
+            val value = trimmed.substringAfter("=").trim().trim('"', '\'')
+            key to value
+        }
+        .toMap()
+}
+
+val rootEnv = readRootEnv()
+
+fun envValue(name: String, fallback: String): String {
+    return providers.environmentVariable(name).orNull
+        ?: rootEnv[name]
+        ?: fallback
+}
+
 android {
     namespace = "com.example.frontend"
     compileSdk = flutter.compileSdkVersion
@@ -28,6 +54,15 @@ android {
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+
+        val facebookAppId = envValue("FACEBOOK_APP_ID", "YOUR_FACEBOOK_APP_ID")
+        resValue("string", "facebook_app_id", facebookAppId)
+        resValue(
+            "string",
+            "facebook_client_token",
+            envValue("FACEBOOK_CLIENT_TOKEN", "YOUR_FACEBOOK_CLIENT_TOKEN")
+        )
+        resValue("string", "fb_login_protocol_scheme", "fb$facebookAppId")
     }
 
     buildTypes {

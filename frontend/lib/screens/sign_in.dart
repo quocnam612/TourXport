@@ -1,7 +1,10 @@
 import 'dart:ui';
 
+import 'package:flutter/foundation.dart'
+    show TargetPlatform, defaultTargetPlatform, kIsWeb;
 import 'package:flutter/material.dart';
 import '../api/api.dart';
+import '../services/facebook_auth_service.dart';
 import '../services/google_auth_service.dart';
 import '../utils/auth_feedback.dart';
 import '../widgets/anim_builder.dart';
@@ -23,6 +26,20 @@ class _SignInScreenState extends State<SignInScreen>
   bool _isLoading = false;
   final _inputController = TextEditingController();
   final _passwordController = TextEditingController();
+
+  bool get _supportsNativeSocialAuth {
+    if (kIsWeb) return true;
+    return defaultTargetPlatform == TargetPlatform.android ||
+        defaultTargetPlatform == TargetPlatform.iOS ||
+        defaultTargetPlatform == TargetPlatform.macOS;
+  }
+
+  void _showUnsupportedSocialLogin(String provider) {
+    showAuthErrorToast(
+      context,
+      '$provider chưa hỗ trợ trên Linux/Windows desktop. Hãy test bằng Chrome, Android, iOS hoặc macOS.',
+    );
+  }
 
   void _handleLogin() async {
     final input = _inputController.text.trim();
@@ -103,20 +120,17 @@ class _SignInScreenState extends State<SignInScreen>
     }
   }
 
-  void _handleGoogleLogin() async {
-    if (_isLoading) return;
+  Future<void> _loginWithGoogleIdToken(
+    String idToken, {
+    bool loadingAlreadySet = false,
+  }) async {
+    if (_isLoading && !loadingAlreadySet) return;
 
-    setState(() => _isLoading = true);
+    if (!loadingAlreadySet) {
+      setState(() => _isLoading = true);
+    }
 
     try {
-      final idToken = await GoogleAuthService.signInAndGetIdToken();
-      if (!mounted) return;
-
-      if (idToken == null) {
-        setState(() => _isLoading = false);
-        return;
-      }
-
       final response = await apiPostJson('/auth/google', {
         'idToken': idToken,
       });
@@ -178,6 +192,113 @@ class _SignInScreenState extends State<SignInScreen>
     }
   }
 
+  void _handleGoogleLogin() async {
+    if (!_supportsNativeSocialAuth) {
+      _showUnsupportedSocialLogin('Google login');
+      return;
+    }
+
+    if (_isLoading) return;
+
+    setState(() => _isLoading = true);
+
+    try {
+      final idToken = await GoogleAuthService.signInAndGetIdToken();
+      if (!mounted) return;
+
+      if (idToken == null) {
+        setState(() => _isLoading = false);
+        return;
+      }
+
+      await _loginWithGoogleIdToken(idToken, loadingAlreadySet: true);
+    } catch (e) {
+      if (!mounted) return;
+      setState(() => _isLoading = false);
+      showAuthErrorToast(context, 'Đăng nhập Google thất bại ($e)');
+    }
+  }
+
+  void _handleFacebookLogin() async {
+    if (!_supportsNativeSocialAuth) {
+      _showUnsupportedSocialLogin('Facebook login');
+      return;
+    }
+
+    if (_isLoading) return;
+
+    setState(() => _isLoading = true);
+
+    try {
+      final accessToken = await FacebookAuthService.signInAndGetAccessToken();
+      if (!mounted) return;
+
+      if (accessToken == null) {
+        setState(() => _isLoading = false);
+        return;
+      }
+
+      final response = await apiPostJson('/auth/facebook', {
+        'accessToken': accessToken,
+      });
+
+      if (!mounted) return;
+      setState(() => _isLoading = false);
+
+      final data = tryDecodeJsonObject(response.body);
+      final msg = data?['message'] as String?;
+
+      if (response.statusCode == 200 && data?['success'] == true) {
+        final user = data?['user'];
+        final userName = user is Map ? user['name'] as String? : null;
+        final authToken = data?['token'] as String?;
+
+        showAuthSuccessToast(
+          context,
+          'Đăng nhập Facebook thành công — chào ${userName ?? 'bạn'}!',
+        );
+
+        Navigator.pushAndRemoveUntil(
+          context,
+          PageRouteBuilder(
+            pageBuilder: (_, __, ___) => HomeScreen(
+              userName: userName ?? 'bạn',
+              authToken: authToken,
+            ),
+            transitionDuration: const Duration(milliseconds: 600),
+            reverseTransitionDuration: const Duration(milliseconds: 400),
+            transitionsBuilder: (_, animation, __, child) {
+              return FadeTransition(
+                opacity: CurvedAnimation(
+                  parent: animation,
+                  curve: Curves.easeInOut,
+                ),
+                child: SlideTransition(
+                  position: Tween<Offset>(
+                    begin: const Offset(0, 0.05),
+                    end: Offset.zero,
+                  ).animate(CurvedAnimation(
+                    parent: animation,
+                    curve: Curves.easeOutCubic,
+                  )),
+                  child: child,
+                ),
+              );
+            },
+          ),
+          (route) => false,
+        );
+        return;
+      }
+
+      showAuthErrorToast(context, msg ?? 'Đăng nhập Facebook thất bại');
+    } catch (e) {
+      if (!mounted) return;
+      setState(() => _isLoading = false);
+      showAuthErrorToast(context, 'Đăng nhập Facebook thất bại ($e)');
+    }
+  }
+
   // ── Animations ──
   late final AnimationController _entranceController;
   late final Animation<double> _headerFade;
@@ -230,7 +351,6 @@ class _SignInScreenState extends State<SignInScreen>
     super.dispose();
   }
 
-  @override
   @override
   Widget build(BuildContext context) {
     final screenW = MediaQuery.sizeOf(context).width;
@@ -377,6 +497,7 @@ class _SignInScreenState extends State<SignInScreen>
                                   label: 'Tiếp tục với Facebook',
                                   iconAsset: 'assets/icons/fb_logo.png',
                                   s: 1.0,
+                                  onTap: _handleFacebookLogin,
                                 ),
                               ],
                             ),
@@ -725,6 +846,7 @@ class _SignInScreenState extends State<SignInScreen>
                               label: 'Tiếp tục với Facebook',
                               iconAsset: 'assets/icons/fb_logo.png',
                               s: s,
+                              onTap: _handleFacebookLogin,
                             ),
                           ],
                         ),

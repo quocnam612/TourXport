@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Google Login</title>
+</head>
+<body>
+  <script>
+    const params = new URLSearchParams(window.location.hash.slice(1));
+    const message = {
+      type: 'tourxport_google_oauth',
+      state: params.get('state') || '',
+      idToken: params.get('id_token') || '',
+      error: params.get('error') || ''
+    };
+
+    if (window.opener) {
+      window.opener.postMessage(message, window.location.origin);
+    }
+
+    window.close();
+  </script>
+</body>
+</html>
