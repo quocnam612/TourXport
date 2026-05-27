@@ -42,10 +42,87 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
   // ── AI Fetching logic ──
   Future<void> _fetchAiTrip() async {
     try {
+      final answer = widget.answer;
+
+      // 1. Map budget to budgetLevel
+      String budgetLevel = 'medium';
+      if (answer.budget != null) {
+        final b = answer.budget!;
+        if (b.contains('Dưới 2 triệu') || b.contains('3 triệu')) {
+          budgetLevel = 'low';
+        } else if (b.contains('5 triệu')) {
+          budgetLevel = 'medium';
+        } else if (b.contains('10 triệu') || b.contains('20 triệu')) {
+          budgetLevel = 'high';
+        } else if (b.contains('Không giới hạn')) {
+          budgetLevel = 'luxury';
+        }
+      }
+
+      // 2. Map groupType to adults
+      int adults = 1;
+      if (answer.groupType != null) {
+        final g = answer.groupType!;
+        if (g.contains('một mình')) {
+          adults = 1;
+        } else if (g.contains('Cặp đôi')) {
+          adults = 2;
+        } else if (g.contains('Nhóm bạn') || g.contains('Gia đình')) {
+          adults = 3;
+        } else if (g.contains('Công ty')) {
+          adults = 5;
+        }
+      }
+
+      // 3. Map scheduleStyle to pace
+      String pace = 'moderate';
+      if (answer.scheduleStyle != null) {
+        final s = answer.scheduleStyle!;
+        if (s.contains('Kín lịch')) {
+          pace = 'packed';
+        } else if (s.contains('Cân bằng')) {
+          pace = 'moderate';
+        } else if (s.contains('Thư thả')) {
+          pace = 'relaxed';
+        }
+      }
+
+      // 4. Map transportMode
+      String transportMode = 'auto';
+      if (answer.travelDistance != null) {
+        final d = answer.travelDistance!;
+        if (d.contains('Dưới 2 giờ') || d.contains('2–5 giờ')) {
+          transportMode = 'car';
+        } else if (d.contains('Bay')) {
+          transportMode = 'public';
+        }
+      }
+
+      // 5. Gather all interests
+      final List<String> interests = [];
+      if (answer.activities.isNotEmpty) {
+        interests.addAll(answer.activities);
+      }
+      if (answer.placeTypes.isNotEmpty) {
+        interests.addAll(answer.placeTypes);
+      }
+      if (answer.travelFeelings.isNotEmpty) {
+        interests.addAll(answer.travelFeelings);
+      }
+      if (interests.isEmpty) {
+        interests.add('culture');
+        interests.add('scenic view');
+      }
+
       final request = AiTripRequest(
-        budget: widget.answer.parseAiBudget(),
-        durationDays: widget.answer.parseAiDurationDays(),
-        preferences: widget.answer.toAiPreferencesString(),
+        destinations: 'auto',
+        totalDays: answer.parseAiDurationDays(),
+        adults: adults,
+        children: 0,
+        budgetLevel: budgetLevel,
+        interests: interests,
+        transportMode: transportMode,
+        pace: pace,
       );
 
       final response = await apiAiPostJson(

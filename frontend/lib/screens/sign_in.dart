@@ -174,7 +174,8 @@ class _SignInScreenState extends State<SignInScreen>
             _buildBackButton(),
 
             // ── Centered glassmorphic card for Desktop Web
-            Center(
+            Align(
+              alignment: const Alignment(0.0, -0.20),
               child: Container(
                 width: 480,
                 decoration: BoxDecoration(
@@ -219,7 +220,7 @@ class _SignInScreenState extends State<SignInScreen>
 
                           // Tab bar
                           _buildTabBar(1.0, 480 - 40 * 2),
-                          const SizedBox(height: 24),
+                          const SizedBox(height: 19),
 
                           // Fields
                           AnimatedSwitcher(
@@ -565,7 +566,7 @@ class _SignInScreenState extends State<SignInScreen>
 
                       // ── Tab: Điện thoại / Email
                       _buildTabBar(s, MediaQuery.sizeOf(context).width),
-                      SizedBox(height: 24 * s),
+                      SizedBox(height: 19 * s),
 
                       // ── Email / Phone field
                       AnimatedSwitcher(
@@ -739,94 +740,100 @@ class _SignInScreenState extends State<SignInScreen>
 
   // ── Tab bar ──
   Widget _buildTabBar(double s, double containerWidth) {
-    final tabWidth = (containerWidth - 48 * s) / 2;
-    return SizedBox(
-      height: 50 * s,
-      child: Stack(
-        children: [
-          // Nền tối
-          Positioned.fill(
-            child: Container(
-              decoration: BoxDecoration(
-                color: Colors.black.withOpacity(0.5),
-                borderRadius: BorderRadius.circular(40),
+    final bool isDesktop = MediaQuery.sizeOf(context).width >= 800;
+    final double actualWidth = isDesktop ? containerWidth : containerWidth - 48 * s;
+    final tabWidth = actualWidth / 2;
+
+    return Center(
+      child: SizedBox(
+        width: actualWidth,
+        height: 50 * s,
+        child: Stack(
+          children: [
+            // Nền tối
+            Positioned.fill(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.black.withOpacity(0.5),
+                  borderRadius: BorderRadius.circular(40),
+                ),
               ),
             ),
-          ),
-          // Pill trắng active — animated
-          AnimatedPositioned(
-            duration: const Duration(milliseconds: 250),
-            curve: Curves.easeInOutCubic,
-            left: _useEmail ? tabWidth + 5 : 5,
-            top: 5,
-            width: tabWidth - 10,
-            height: 40 * s,
-            child: AnimatedContainer(
+            // Pill trắng active — animated
+            AnimatedPositioned(
               duration: const Duration(milliseconds: 250),
-              decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.9),
-                borderRadius: BorderRadius.circular(40),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.25),
-                    blurRadius: 8,
-                    offset: const Offset(0, 4),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          // Điện thoại label
-          Positioned(
-            left: 0,
-            width: tabWidth,
-            top: 0,
-            bottom: 0,
-            child: GestureDetector(
-              behavior: HitTestBehavior.opaque,
-              onTap: () => setState(() => _useEmail = false),
-              child: Center(
-                child: AnimatedDefaultTextStyle(
-                  duration: const Duration(milliseconds: 200),
-                  style: TextStyle(
-                    fontFamily: 'Montserrat',
-                    fontWeight: FontWeight.w600,
-                    fontSize: 18 * s,
-                    color: _useEmail
-                        ? Colors.white
-                        : const Color(0xFF1C302D),
-                  ),
-                  child: const Text('Điện thoại'),
+              curve: Curves.easeInOutCubic,
+              left: _useEmail ? tabWidth + 5 : 5,
+              top: 5,
+              width: tabWidth - 10,
+              height: 40 * s,
+              child: AnimatedContainer(
+                duration: const Duration(milliseconds: 250),
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.9),
+                  borderRadius: BorderRadius.circular(40),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.25),
+                      blurRadius: 8,
+                      offset: const Offset(0, 4),
+                    ),
+                  ],
                 ),
               ),
             ),
-          ),
-          // Email label
-          Positioned(
-            left: tabWidth,
-            right: 0,
-            top: 0,
-            bottom: 0,
-            child: GestureDetector(
-              behavior: HitTestBehavior.opaque,
-              onTap: () => setState(() => _useEmail = true),
-              child: Center(
-                child: AnimatedDefaultTextStyle(
-                  duration: const Duration(milliseconds: 200),
-                  style: TextStyle(
-                    fontFamily: 'Montserrat',
-                    fontWeight: FontWeight.w600,
-                    fontSize: 18 * s,
-                    color: _useEmail
-                        ? const Color(0xFF1C302D)
-                        : Colors.white,
+            // Điện thoại label
+            Positioned(
+              left: 0,
+              width: tabWidth,
+              top: 0,
+              bottom: 0,
+              child: GestureDetector(
+                behavior: HitTestBehavior.opaque,
+                onTap: () => setState(() => _useEmail = false),
+                child: Center(
+                  child: AnimatedDefaultTextStyle(
+                    duration: const Duration(milliseconds: 200),
+                    style: TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontWeight: FontWeight.w600,
+                      fontSize: 18 * s,
+                      color: _useEmail
+                          ? Colors.white
+                          : const Color(0xFF1C302D),
+                    ),
+                    child: const Text('Điện thoại'),
                   ),
-                  child: const Text('Email'),
                 ),
               ),
             ),
-          ),
-        ],
+            // Email label
+            Positioned(
+              left: tabWidth,
+              width: tabWidth,
+              top: 0,
+              bottom: 0,
+              child: GestureDetector(
+                behavior: HitTestBehavior.opaque,
+                onTap: () => setState(() => _useEmail = true),
+                child: Center(
+                  child: AnimatedDefaultTextStyle(
+                    duration: const Duration(milliseconds: 200),
+                    style: TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontWeight: FontWeight.w600,
+                      fontSize: 18 * s,
+                      color: _useEmail
+                          ? const Color(0xFF1C302D)
+                          : Colors.white,
+                    ),
+                    child: const Text('Email'),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

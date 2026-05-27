@@ -23,11 +23,11 @@ class _SurveyScreenState extends State<SurveyScreen>
   late final PageController _pageCtrl;
   late final AnimationController _entranceCtrl;
   late final Animation<double> _entranceFade;
+  final _budgetController = TextEditingController(); // Custom budget numeric controller
 
   // Per-page selected sets for chip groups
   final _q1 = <String>{};
   final _q2 = <String>{};
-  final _q4 = <String>{};
   final _q5 = <String>{};
   final _q6 = <String>{};
   final _q7_9 = <String>{}; // Merged activities + placeTypes
@@ -53,6 +53,7 @@ class _SurveyScreenState extends State<SurveyScreen>
   void dispose() {
     _pageCtrl.dispose();
     _entranceCtrl.dispose();
+    _budgetController.dispose();
     super.dispose();
   }
 
@@ -101,7 +102,10 @@ class _SurveyScreenState extends State<SurveyScreen>
     _answer.vibeStyle = _q1.isEmpty ? null : _q1.first;
     
     _answer.groupType = _q2.isEmpty ? null : _q2.first;
-    _answer.budget = _q4.isEmpty ? null : _q4.first;
+    
+    final customBudgetStr = _budgetController.text.trim();
+    _answer.budget = customBudgetStr.isNotEmpty ? "$customBudgetStr đ" : null;
+    
     _answer.duration = _q5.isEmpty ? null : _q5.first;
     _answer.timing = _q6.isEmpty ? null : _q6.first;
     
@@ -486,26 +490,94 @@ class _SurveyScreenState extends State<SurveyScreen>
     section: _sectionLabels[3],
     children: [
       _questionTitle('Ngân sách dự kiến\ntối đa của bạn?'),
-      SurveyChipGroup(
-        options: const [
-          'Dưới 2 triệu', 'Tối đa 3 triệu', 'Tối đa 5 triệu',
-          'Tối đa 10 triệu', 'Tối đa 20 triệu', 'Không giới hạn'],
-        selected: _q4, maxSelections: 1,
-        icons: const {
-          'Dưới 2 triệu': Icons.savings_rounded,
-          'Tối đa 3 triệu': Icons.account_balance_wallet_rounded,
-          'Tối đa 5 triệu': Icons.monetization_on_rounded,
-          'Tối đa 10 triệu': Icons.credit_card_rounded,
-          'Tối đa 20 triệu': Icons.diamond_rounded,
-          'Không giới hạn': Icons.workspace_premium_rounded,
-        },
-        onChanged: (v) => setState(() { _q4..clear()..addAll(v); })),
+      Container(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+        decoration: BoxDecoration(
+          color: Colors.white.withOpacity(0.06),
+          borderRadius: BorderRadius.circular(24),
+          border: Border.all(color: Colors.white.withOpacity(0.12)),
+        ),
+        child: Row(
+          children: [
+            const Icon(Icons.monetization_on_rounded, color: Color(0xFFD4AF7A), size: 28),
+            const SizedBox(width: 16),
+            Expanded(
+              child: TextField(
+                controller: _budgetController,
+                keyboardType: TextInputType.number,
+                style: const TextStyle(
+                  fontFamily: 'Montserrat',
+                  fontSize: 22,
+                  fontWeight: FontWeight.w700,
+                  color: Colors.white,
+                ),
+                decoration: InputDecoration(
+                  hintText: 'Nhập số tiền (VD: 5000000)',
+                  hintStyle: TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontSize: 16,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.white.withOpacity(0.3),
+                  ),
+                  border: InputBorder.none,
+                ),
+              ),
+            ),
+            const Text(
+              'VNĐ',
+              style: TextStyle(
+                fontFamily: 'Montserrat',
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Color(0xFFD4AF7A),
+              ),
+            ),
+          ],
+        ),
+      ),
+      const SizedBox(height: 12),
+      Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          _buildBudgetSuggestion('2.000.000'),
+          _buildBudgetSuggestion('5.000.000'),
+          _buildBudgetSuggestion('10.000.000'),
+          _buildBudgetSuggestion('20.000.000'),
+        ],
+      ),
       _divider(),
       _questionTitle('Bạn dự định đi\ntrong bao nhiêu ngày?'),
       _subLabel('Nhấp hoặc chọn số ngày cụ thể'),
       _buildDurationCounter(),
     ],
   );
+
+  Widget _buildBudgetSuggestion(String amount) {
+    return GestureDetector(
+      onTap: () {
+        setState(() {
+          _budgetController.text = amount.replaceAll('.', '');
+        });
+      },
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+        decoration: BoxDecoration(
+          color: Colors.white.withOpacity(0.08),
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(color: Colors.white.withOpacity(0.1)),
+        ),
+        child: Text(
+          '$amount đ',
+          style: TextStyle(
+            fontFamily: 'Montserrat',
+            fontSize: 12,
+            fontWeight: FontWeight.w600,
+            color: Colors.white.withOpacity(0.7),
+          ),
+        ),
+      ),
+    );
+  }
 
   // Page 5: Câu 6 + 7/9 Merged — Thời điểm & Địa điểm/Hoạt động
   Widget _page5() => _pageWrap(

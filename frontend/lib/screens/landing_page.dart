@@ -378,26 +378,21 @@ class _LandingPageState extends State<LandingPage>
               // Logo/Travel branding
               Row(
                 children: [
-                  Container(
-                    width: 32,
-                    height: 32,
-                    decoration: const BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: Color(0xFFD4AF7A),
-                    ),
-                    child: const Center(
-                      child: Icon(Icons.travel_explore_rounded, color: Colors.black, size: 18),
-                    ),
+                  Image.asset(
+                    'assets/images/logo.png',
+                    width: 96, // 3x of original 32!
+                    height: 96,
+                    fit: BoxFit.contain,
                   ),
-                  const SizedBox(width: 12),
+                  const SizedBox(width: 16),
                   const Text(
                     'TourXport',
                     style: TextStyle(
                       fontFamily: 'Montserrat',
-                      fontSize: 22,
+                      fontSize: 26,
                       fontWeight: FontWeight.w900,
                       color: Color(0xFFD4AF7A),
-                      letterSpacing: 1.0,
+                      letterSpacing: 1.5,
                     ),
                   ),
                 ],
