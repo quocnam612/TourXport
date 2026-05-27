@@ -75,7 +75,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\n    \"email\": \"123\",\n    \"password\": \"123\"\n}",
+          "raw": "{\n    \"email\": \"nguy3nqu0cn4m@gmail.com\",\n    \"password\": \"12345678\"\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -503,6 +503,48 @@
           "body": null
         }
       ]
+    },
+    {
+      "name": "upload avatar",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMTY4MTlkNTI2MTljMWRlNmYwZGZhYiIsIm5hbWUiOiJOYW0gU2lnbWEiLCJlbWFpbCI6Im5ndXkzbnF1MGNuNG1AZ21haWwuY29tIiwiaWF0IjoxNzc5OTAxODE2LCJleHAiOjE3ODAxNjEwMTZ9.uoPT9oxH08Vw0EWU3xvyXOIiriRb6xDNsS4fx_SaI08",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "avatar",
+              "type": "file",
+              "uuid": "72cde1c4-b06b-49ea-a566-95956a9963d1",
+              "src": "/home/nqn612/Downloads/logo.png"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:3000/auth/profile/avatar",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "auth",
+            "profile",
+            "avatar"
+          ]
+        }
+      },
+      "response": []
     },
     {
       "name": "change password",
