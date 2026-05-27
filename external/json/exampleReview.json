@@ -1,0 +1,17 @@
+{
+    "userId": "501075215", // MongoDB ObjectId
+    "locationId": "6519260", // MongoDB ObjectId
+    "type": "restaurant", // "restaurant", "hotel", "place"
+    "rating": "4",
+    "helpful_votes": "1",
+    "travel_date": "2017-06",
+    "title": "Điểm đến lý tưởng cuối tuần",
+    "text": "Phục vụ tốt, phong cảnh thoáng mát, giá cả phải chăng, ... điểm nhấn trại nuôi cá sấu và trải nghiệm câu cá sấu.",
+    "user": {
+        "username": "TrungN495",
+        "avatar": {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-t/0e/e6/cd/6d/trung-n.jpg",
+            "public_id": "" // Cloudinary public_id
+        }
+    }
+}
