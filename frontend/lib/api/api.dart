@@ -3,6 +3,7 @@ import 'dart:io' show Platform, File;
 
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:http/http.dart' as http;
+import 'package:http_parser/http_parser.dart';
 
 /// Override từ build/run, không cần sửa backend.
 /// Ví dụ thiết bị thật: `flutter run --dart-define=API_BASE_URL=http://192.168.1.5:3000`
@@ -113,6 +114,18 @@ Future<http.Response> apiPutJson(
   );
 }
 
+MediaType _getMediaTypeForFile(String filePath) {
+  final ext = filePath.split('.').last.toLowerCase();
+  if (ext == 'jpg' || ext == 'jpeg') {
+    return MediaType('image', 'jpeg');
+  } else if (ext == 'png') {
+    return MediaType('image', 'png');
+  } else if (ext == 'webp') {
+    return MediaType('image', 'webp');
+  }
+  return MediaType('application', 'octet-stream');
+}
+
 Future<http.StreamedResponse> apiPostMultipart(
   String path,
   String fieldName,
@@ -126,7 +139,34 @@ Future<http.StreamedResponse> apiPostMultipart(
     request.headers['Authorization'] = 'Bearer ${token.trim()}';
   }
   
-  request.files.add(await http.MultipartFile.fromPath(fieldName, file.path));
+  final mediaType = _getMediaTypeForFile(file.path);
+  request.files.add(await http.MultipartFile.fromPath(
+    fieldName,
+    file.path,
+    contentType: mediaType,
+  ));
+  return request.send();
+}
+
+Future<http.StreamedResponse> apiPutMultipart(
+  String path,
+  String fieldName,
+  File file, {
+  String? token,
+}) async {
+  final uri = Uri.parse('$apiBaseUrl$path');
+  final request = http.MultipartRequest('PUT', uri);
+  
+  if (token != null && token.trim().isNotEmpty) {
+    request.headers['Authorization'] = 'Bearer ${token.trim()}';
+  }
+  
+  final mediaType = _getMediaTypeForFile(file.path);
+  request.files.add(await http.MultipartFile.fromPath(
+    fieldName,
+    file.path,
+    contentType: mediaType,
+  ));
   return request.send();
 }
 

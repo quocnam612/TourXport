@@ -52,8 +52,8 @@ class ProfileSection extends StatelessWidget {
     final bio = isGuest 
         ? 'Hãy đăng nhập để mọi người biết thêm về bạn!.'
         : (userData?['bio'] ?? 'Chưa có tiểu sử. Hãy cập nhật để mọi người biết thêm về bạn!');
-    final avatarUrl = userData?['avatarUrl'] ?? '';
-    final coverUrl = userData?['coverUrl'] ?? '';
+    final avatarUrl = userData?['avatarUrl'] ?? userData?['avatar'] ?? '';
+    final coverUrl = userData?['coverUrl'] ?? userData?['cover'] ?? '';
 
     return Stack(
       children: [

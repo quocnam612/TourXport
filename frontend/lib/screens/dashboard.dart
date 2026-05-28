@@ -9,6 +9,7 @@ import '../widgets/responsive_builder.dart';
 import '../models/destination.dart';
 import '../widgets/anim_builder.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:permission_handler/permission_handler.dart';
 import 'edit_profile_screen.dart';
 import 'email_settings_screen.dart';
 import 'help_support_screen.dart';
@@ -357,7 +358,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
       if (response.statusCode == 200 && data?['success'] == true) {
         setState(() {
-          _userData = data!['user'];
+          final userMap = Map<String, dynamic>.from(data!['user']);
+          if (userMap.containsKey('avatar') && userMap['avatar'] != null) {
+            userMap['avatarUrl'] = userMap['avatar'];
+          }
+          _userData = userMap;
           if (_userData?['name'] != null) {
             _currentUserName = _userData!['name'];
           }
@@ -374,7 +379,107 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     }
   }
 
+  Future<bool> _requestPhotoPermission() async {
+    if (!Platform.isAndroid) return true;
+
+    PermissionStatus status = PermissionStatus.denied;
+
+    try {
+      final photosStatus = await Permission.photos.status;
+      if (photosStatus.isGranted || photosStatus.isLimited) {
+        return true;
+      }
+
+      final storageStatus = await Permission.storage.status;
+      if (storageStatus.isGranted) {
+        return true;
+      }
+
+      status = await Permission.photos.request();
+      if (status.isGranted || status.isLimited) {
+        return true;
+      }
+
+      status = await Permission.storage.request();
+      if (status.isGranted) {
+        return true;
+      }
+    } catch (e) {
+      debugPrint('Error requesting permission: $e');
+    }
+
+    if (status.isPermanentlyDenied) {
+      if (mounted) {
+        _showPermissionDeniedDialog();
+      }
+      return false;
+    }
+
+    return false;
+  }
+
+  void _showPermissionDeniedDialog() {
+    showDialog(
+      context: context,
+      builder: (context) => BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
+        child: AlertDialog(
+          backgroundColor: const Color(0xFF1B2321).withOpacity(0.9),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(24),
+            side: BorderSide(color: Colors.white.withOpacity(0.12)),
+          ),
+          title: const Text(
+            'Quyền truy cập ảnh bị từ chối',
+            style: TextStyle(fontFamily: 'Montserrat', color: Colors.white),
+          ),
+          content: Text(
+            'Ứng dụng cần quyền truy cập thư viện ảnh để tải lên avatar của bạn. Vui lòng cho phép trong cài đặt ứng dụng.',
+            style: TextStyle(
+              fontFamily: 'Montserrat',
+              color: Colors.white.withOpacity(0.7),
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: Text(
+                'Hủy',
+                style: TextStyle(
+                  fontFamily: 'Montserrat',
+                  color: Colors.white.withOpacity(0.5),
+                ),
+              ),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.pop(context);
+                openAppSettings();
+              },
+              child: const Text(
+                'Mở Cài đặt',
+                style: TextStyle(
+                  fontFamily: 'Montserrat',
+                  color: Color(0xFFD4AF7A),
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
   Future<void> _pickAndUploadImage(bool isAvatar) async {
+    if (Platform.isAndroid) {
+      final hasPermission = await _requestPhotoPermission();
+      if (!hasPermission) {
+        _showMessage('Ứng dụng chưa được cấp quyền truy cập thư viện ảnh');
+        return;
+      }
+    }
+
     try {
       final XFile? image = await _picker.pickImage(
         source: ImageSource.gallery,
@@ -388,24 +493,45 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       setState(() => _isLoadingProfile = true);
 
       final file = File(image.path);
-      final response = await apiPostMultipart(
-        '/auth/upload',
-        'image',
-        file,
-        token: widget.authToken,
-      );
 
-      final responseStr = await response.stream.bytesToString();
-      final data = tryDecodeJsonObject(responseStr);
+      if (isAvatar) {
+        final response = await apiPutMultipart(
+          '/auth/profile/avatar',
+          'avatar',
+          file,
+          token: widget.authToken,
+        );
 
-      if (data != null && data['success'] == true) {
-        final newUrl = data['imageUrl'];
-        await _updateProfileImage(isAvatar, newUrl);
+        final responseStr = await response.stream.bytesToString();
+        final data = tryDecodeJsonObject(responseStr);
+
+        if (response.statusCode == 200 && data != null && data['success'] == true) {
+          _loadProfile();
+          _showMessage('Đã cập nhật ảnh đại diện thành công');
+        } else {
+          _showMessage(data?['message'] ?? 'Cập nhật avatar thất bại');
+        }
       } else {
-        _showMessage(data?['message'] ?? 'Upload thất bại');
+        final response = await apiPostMultipart(
+          '/auth/upload',
+          'image',
+          file,
+          token: widget.authToken,
+        );
+
+        final responseStr = await response.stream.bytesToString();
+        final data = tryDecodeJsonObject(responseStr);
+
+        if (data != null && data['success'] == true) {
+          final newUrl = data['imageUrl'];
+          await _updateProfileImage(isAvatar, newUrl);
+        } else {
+          _showMessage(data?['message'] ?? 'Upload ảnh bìa thất bại');
+        }
       }
     } catch (e) {
       _showMessage('Lỗi khi tải ảnh lên');
+      debugPrint('Error picking/uploading image: $e');
     } finally {
       if (mounted) setState(() => _isLoadingProfile = false);
     }
