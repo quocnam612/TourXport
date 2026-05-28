@@ -342,8 +342,8 @@ const tourSchema = new mongoose.Schema({
 
     preferences: {
         budgetLevel: {
-            type: String,
-            default: 'medium'
+            type: Number,
+            default: 2000000
         },
 
         interests: {
