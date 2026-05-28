@@ -4056,6 +4056,15 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               ],
             ),
             const Spacer(),
+            IconButton(
+              icon: Icon(
+                isGuest ? Icons.login_rounded : Icons.logout_rounded,
+                color: isGuest ? const Color(0xFFD4AF7A) : const Color(0xFFE74C3C),
+                size: 24,
+              ),
+              onPressed: _logout,
+            ),
+            const SizedBox(width: 8), // Gap spacing
             GestureDetector(
               onTap: _showNotificationCenter,
               child: Container(
