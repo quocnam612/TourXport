@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:async';
+import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:geolocator/geolocator.dart';
@@ -72,6 +73,7 @@ class _MapScreenState extends State<MapScreen> with TickerProviderStateMixin {
   final String _selectedProfile = 'driving'; // Lưu phương tiện di chuyển ('driving', 'bicycle', 'foot')
   bool _showRouteMetricsCard = true; // Điều khiển hiển thị thẻ thông số tuyến đường
   bool _showLocationCard = true; // Điều khiển hiển thị ô địa điểm bên dưới
+  bool _showLocationWarningBanner = false; // Điều khiển hiển thị banner cảnh báo vị trí
 
   // Hàm chuyển địa chỉ chữ sang tọa độ và danh sách gợi ý dùng API OpenStreetMap (Có cache & tryParse)
   Future<List<Map<String, dynamic>>> _fetchAddressSuggestions(String query) async {
@@ -502,7 +504,7 @@ class _MapScreenState extends State<MapScreen> with TickerProviderStateMixin {
     final endLocation = LatLng(widget.destination.latitude, widget.destination.longitude);
 
     // 4. Lấy dữ liệu tuyến đường từ Routing Service
-    final points = await RoutingService.getRoute(startLocation, endLocation);
+    final routeResult = await RoutingService.getRoute(startLocation, endLocation);
 
     if (mounted) {
       setState(() {
@@ -524,7 +526,7 @@ class _MapScreenState extends State<MapScreen> with TickerProviderStateMixin {
 
       if (!hasGPS) {
         _showWarning("Không thể định vị vị trí hiện tại. Bản đồ đang hiển thị đường đi từ Hà Nội.");
-      } else if (points.isEmpty) {
+      } else if (routeResult.points.isEmpty) {
         _showWarning("Không thể tính toán tuyến đường đi từ vị trí của bạn.");
       }
     }
