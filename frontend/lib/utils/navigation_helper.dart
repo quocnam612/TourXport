@@ -1,53 +1,67 @@
+import 'dart:math';
 import 'package:geolocator/geolocator.dart';
 import 'package:latlong2/latlong.dart';
 
 class NavigationHelper {
+  /// Tính khoảng cách ngắn nhất từ [p] đến đoạn thẳng nối [a] và [b] (bằng mét).
+  static double distanceToSegment(LatLng p, LatLng a, LatLng b) {
+    // Ước lượng mặt phẳng cục bộ bằng cách nhân kinh độ với cos(vĩ độ)
+    final double latRad = (a.latitude + b.latitude + p.latitude) / 3 * pi / 180.0;
+    final double cosLat = cos(latRad);
+
+    final double ax = a.longitude * cosLat;
+    final double ay = a.latitude;
+    final double bx = b.longitude * cosLat;
+    final double by = b.latitude;
+    final double px = p.longitude * cosLat;
+    final double py = p.latitude;
+
+    final double dx = bx - ax;
+    final double dy = by - ay;
+
+    if (dx == 0 && dy == 0) {
+      return Geolocator.distanceBetween(p.latitude, p.longitude, a.latitude, a.longitude);
+    }
+
+    // Chiếu điểm P lên đoạn thẳng AB
+    double t = ((px - ax) * dx + (py - ay) * dy) / (dx * dx + dy * dy);
+    t = t.clamp(0.0, 1.0); // Ràng buộc trong đoạn thẳng
+
+    // Tọa độ của điểm chiếu C
+    final double cx = ax + t * dx;
+    final double cy = ay + t * dy;
+
+    // Chuyển đổi ngược lại kinh/vĩ độ
+    final double closestLon = cx / cosLat;
+    final double closestLat = cy;
+
+    return Geolocator.distanceBetween(p.latitude, p.longitude, closestLat, closestLon);
+  }
+
   /// Kiểm tra xem vị trí hiện tại có bị lệch khỏi tuyến đường quá khoảng cách tối đa (maxDistanceMetres) hay không.
-  /// Sử dụng bộ lọc thô (coarse filter) để giảm thiểu phép tính lượng giác đắt đỏ.
+  /// Duyệt qua các đoạn thẳng (segments) nối giữa các nút để đảm bảo tính chính xác trên các đường thẳng dài.
   static bool isOffRoute(LatLng currentPos, List<LatLng> routePoints, {double maxDistanceMetres = 55.0}) {
     if (routePoints.isEmpty) return false;
-
-    double minDistance = double.infinity;
-    bool foundPotentialClosePoint = false;
-
-    // Bước 1: Bộ lọc thô (Coarse filtering) - Lọc nhanh bằng sai lệch tọa độ chữ số thập phân
-    // 0.001 độ vĩ/kinh độ tương đương khoảng 110m.
-    for (final point in routePoints) {
-      final latDiff = (point.latitude - currentPos.latitude).abs();
-      final lonDiff = (point.longitude - currentPos.longitude).abs();
-      
-      if (latDiff < 0.001 && lonDiff < 0.001) {
-        foundPotentialClosePoint = true;
-        
-        // Tính khoảng cách lượng giác chính xác chỉ cho các điểm ở gần
-        final distance = Geolocator.distanceBetween(
-          currentPos.latitude,
-          currentPos.longitude,
-          point.latitude,
-          point.longitude,
-        );
-        if (distance < minDistance) {
-          minDistance = distance;
-        }
-      }
-    }
-
-    // Nếu bộ lọc nhanh xác nhận người dùng nằm trong bán kính an toàn (<= 55m)
-    if (foundPotentialClosePoint && minDistance <= maxDistanceMetres) {
-      return false; 
-    }
-
-    // Bước 2: Chỉ khi không tìm thấy điểm gần ở bước 1 mới quét chi tiết toàn bộ tuyến đường
-    minDistance = double.infinity;
-    for (final point in routePoints) {
-      final distance = Geolocator.distanceBetween(
+    if (routePoints.length == 1) {
+      final dist = Geolocator.distanceBetween(
         currentPos.latitude,
         currentPos.longitude,
-        point.latitude,
-        point.longitude,
+        routePoints[0].latitude,
+        routePoints[0].longitude,
       );
+      return dist > maxDistanceMetres;
+    }
+
+    double minDistance = double.infinity;
+
+    for (int i = 0; i < routePoints.length - 1; i++) {
+      final double distance = distanceToSegment(currentPos, routePoints[i], routePoints[i + 1]);
       if (distance < minDistance) {
         minDistance = distance;
+      }
+      // Tối ưu hóa: Nếu đã tìm thấy khoảng cách nhỏ hơn hoặc bằng ngưỡng cho phép, chắc chắn không lệch hướng
+      if (minDistance <= maxDistanceMetres) {
+        return false;
       }
     }
 
