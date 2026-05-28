@@ -3,7 +3,7 @@ class AiTripRequest {
   final int totalDays;
   final int adults;
   final int children;
-  final String budgetLevel;
+  final int budgetLevel;
   final List<String> interests;
   final String transportMode;
   final String pace;

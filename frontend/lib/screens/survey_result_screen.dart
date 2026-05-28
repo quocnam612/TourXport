@@ -1,9 +1,11 @@
 import 'dart:ui';
+
 import 'package:flutter/material.dart';
-import '../models/survey_answer.dart';
+
 import '../api/api.dart';
 import '../models/ai_trip_request.dart';
 import '../models/ai_trip_response.dart';
+import '../models/survey_answer.dart';
 
 /// Kết quả khảo sát — hiển thị lịch trình AI gợi ý.
 class SurveyResultScreen extends StatefulWidget {
@@ -19,7 +21,7 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
     with TickerProviderStateMixin {
   late final AnimationController _entranceCtrl;
   late final Animation<double> _fadeIn;
-  
+
   bool _isLoading = true;
   String? _errorMessage;
   AiTripResponse? _aiResponse;
@@ -28,7 +30,7 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
   void initState() {
     super.initState();
     _entranceCtrl = AnimationController(
-      vsync: this, duration: const Duration(milliseconds: 1000));
+        vsync: this, duration: const Duration(milliseconds: 1000));
     _fadeIn = CurvedAnimation(parent: _entranceCtrl, curve: Curves.easeOut);
     _fetchAiTrip();
   }
@@ -44,19 +46,10 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
     try {
       final answer = widget.answer;
 
-      // 1. Map budgetPerPerson sang budgetLevel
-      String budgetLevel = 'medium';
+      // 1. Lấy ngân sách dưới dạng số nguyên VND làm budgetLevel
+      int budgetLevel = 2000000;
       if (answer.budgetPerPerson != null) {
-        final b = answer.budgetPerPerson!;
-        if (b < 2000000) {
-          budgetLevel = 'low';
-        } else if (b < 5000000) {
-          budgetLevel = 'medium';
-        } else if (b < 15000000) {
-          budgetLevel = 'high';
-        } else {
-          budgetLevel = 'luxury';
-        }
+        budgetLevel = answer.budgetPerPerson!.toInt();
       }
 
       // 2. Map transportMode sang chuẩn API
@@ -118,12 +111,13 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
         interests.add("ưu tiên lưu trú ${answer.accommodationPriority}");
       }
       if (answer.dietaryRequirements.isNotEmpty) {
-        interests.addAll(answer.dietaryRequirements.map((d) => "yêu cầu ăn uống $d"));
+        interests.addAll(
+            answer.dietaryRequirements.map((d) => "yêu cầu ăn uống $d"));
       }
       if (answer.diningStyle != null) {
         interests.add("phong cách quán ăn ${answer.diningStyle}");
       }
-      
+
       if (interests.isEmpty) {
         interests.addAll(['văn hóa', 'cảnh đẹp']);
       }
@@ -139,7 +133,8 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
         pace: pace,
       );
 
-      final isGuest = widget.authToken == null || widget.authToken!.trim().isEmpty;
+      final isGuest =
+          widget.authToken == null || widget.authToken!.trim().isEmpty;
 
       final response = await (isGuest
           ? apiAiPostJson(
@@ -178,7 +173,8 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
           } else if (detail is List) {
             errMsg = detail.map((e) {
               if (e is Map) {
-                final loc = e['loc'] is List ? (e['loc'] as List).join('.') : e['loc'];
+                final loc =
+                    e['loc'] is List ? (e['loc'] as List).join('.') : e['loc'];
                 final msg = e['msg'];
                 return "$loc: $msg";
               }
@@ -205,10 +201,10 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
         // BG
         Image.asset('assets/images/login_bg.jpg', fit: BoxFit.cover),
         BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
-          child: Container(color: Colors.black.withOpacity(0.6))),
+            filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
+            child: Container(color: Colors.black.withOpacity(0.6))),
         SafeArea(
-          child: _isLoading 
+          child: _isLoading
               ? _buildLoading()
               : _errorMessage != null
                   ? _buildError()
@@ -233,19 +229,26 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
         children: [
           Row(children: [
             const Icon(Icons.auto_awesome_rounded,
-              color: Color(0xFFD4AF7A), size: 28),
+                color: Color(0xFFD4AF7A), size: 28),
             const SizedBox(width: 10),
             const Expanded(
               child: Text('Lịch trình AI đề xuất',
-                style: TextStyle(fontFamily: 'Montserrat', fontSize: 26,
-                  fontWeight: FontWeight.w700, color: Colors.white)),
+                  style: TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontSize: 26,
+                      fontWeight: FontWeight.w700,
+                      color: Colors.white)),
             ),
           ]),
           const SizedBox(height: 8),
-          Text('Dựa trên sở thích của bạn, TourXport đã tạo ra một lịch trình cá nhân hóa!',
-            style: TextStyle(fontFamily: 'Montserrat', fontSize: 14,
-              fontWeight: FontWeight.w400,
-              color: Colors.white.withOpacity(0.7), height: 1.4)),
+          Text(
+              'Dựa trên sở thích của bạn, TourXport đã tạo ra một lịch trình cá nhân hóa!',
+              style: TextStyle(
+                  fontFamily: 'Montserrat',
+                  fontSize: 14,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.white.withOpacity(0.7),
+                  height: 1.4)),
         ],
       ),
     );
@@ -259,10 +262,14 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
           const CircularProgressIndicator(color: Color(0xFFD4AF7A)),
           const SizedBox(height: 24),
           const Text('AI đang thiết kế lịch trình cho bạn...',
-            style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w500)),
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 16,
+                  fontWeight: FontWeight.w500)),
           const SizedBox(height: 8),
           Text('Quá trình này có thể mất vài giây',
-            style: TextStyle(color: Colors.white.withOpacity(0.5), fontSize: 13)),
+              style: TextStyle(
+                  color: Colors.white.withOpacity(0.5), fontSize: 13)),
         ],
       ),
     );
@@ -275,14 +282,19 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(Icons.error_outline_rounded, color: Colors.redAccent, size: 64),
+            const Icon(Icons.error_outline_rounded,
+                color: Colors.redAccent, size: 64),
             const SizedBox(height: 24),
             Text('Đã có lỗi xảy ra',
-              style: TextStyle(color: Colors.white.withOpacity(0.9), fontSize: 20, fontWeight: FontWeight.bold)),
+                style: TextStyle(
+                    color: Colors.white.withOpacity(0.9),
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold)),
             const SizedBox(height: 12),
             Text(_errorMessage ?? 'Không thể kết nối với AI Backend',
-              textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.white.withOpacity(0.6), fontSize: 14)),
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    color: Colors.white.withOpacity(0.6), fontSize: 14)),
             const SizedBox(height: 32),
             GestureDetector(
               onTap: () {
@@ -293,12 +305,15 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
                 _fetchAiTrip();
               },
               child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
                 decoration: BoxDecoration(
                   color: const Color(0xFFD4AF7A),
                   borderRadius: BorderRadius.circular(20),
                 ),
-                child: const Text('Thử lại', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+                child: const Text('Thử lại',
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.bold)),
               ),
             ),
           ],
@@ -334,13 +349,16 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
             child: Container(
               height: 50,
               decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.1),
-                borderRadius: BorderRadius.circular(28),
-                border: Border.all(color: Colors.white.withOpacity(0.2))),
+                  color: Colors.white.withOpacity(0.1),
+                  borderRadius: BorderRadius.circular(28),
+                  border: Border.all(color: Colors.white.withOpacity(0.2))),
               child: const Center(
-                child: Text('Trang chủ',
-                  style: TextStyle(fontFamily: 'Montserrat', fontSize: 14,
-                    fontWeight: FontWeight.w500, color: Colors.white))),
+                  child: Text('Trang chủ',
+                      style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          fontSize: 14,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.white))),
             ),
           ),
         ),
@@ -350,18 +368,21 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
           flex: 2,
           child: GestureDetector(
             onTap: () {
-              final isGuest = widget.authToken == null || widget.authToken!.trim().isEmpty;
+              final isGuest =
+                  widget.authToken == null || widget.authToken!.trim().isEmpty;
               if (isGuest) {
                 ScaffoldMessenger.of(context).showSnackBar(
                   const SnackBar(
-                    content: Text('Vui lòng đăng nhập để sử dụng tính năng lưu lịch trình'),
+                    content: Text(
+                        'Vui lòng đăng nhập để sử dụng tính năng lưu lịch trình'),
                     backgroundColor: Colors.redAccent,
                   ),
                 );
               } else {
                 ScaffoldMessenger.of(context).showSnackBar(
                   const SnackBar(
-                    content: Text('Lịch trình đã được lưu thành công vào tài khoản của bạn!'),
+                    content: Text(
+                        'Lịch trình đã được lưu thành công vào tài khoản của bạn!'),
                     backgroundColor: Color(0xFF2D6A4F),
                   ),
                 );
@@ -371,23 +392,28 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
             child: Container(
               height: 50,
               decoration: BoxDecoration(
-                gradient: const LinearGradient(
-                  colors: [Color(0xFFD4AF7A), Color(0xFFB5956A)]),
-                borderRadius: BorderRadius.circular(28),
-                boxShadow: [
-                  BoxShadow(
-                    color: const Color(0xFFD4AF7A).withOpacity(0.3),
-                    blurRadius: 12, offset: const Offset(0, 4)),
-                ]),
+                  gradient: const LinearGradient(
+                      colors: [Color(0xFFD4AF7A), Color(0xFFB5956A)]),
+                  borderRadius: BorderRadius.circular(28),
+                  boxShadow: [
+                    BoxShadow(
+                        color: const Color(0xFFD4AF7A).withOpacity(0.3),
+                        blurRadius: 12,
+                        offset: const Offset(0, 4)),
+                  ]),
               child: const Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text('Lưu lịch trình',
-                    style: TextStyle(fontFamily: 'Montserrat', fontSize: 15,
-                      fontWeight: FontWeight.w600, color: Colors.white)),
-                  SizedBox(width: 6),
-                  Icon(Icons.bookmark_add_rounded, color: Colors.white, size: 18),
-                ]),
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text('Lưu lịch trình',
+                        style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.white)),
+                    SizedBox(width: 6),
+                    Icon(Icons.bookmark_add_rounded,
+                        color: Colors.white, size: 18),
+                  ]),
             ),
           ),
         ),
@@ -420,10 +446,11 @@ class _ItineraryDayCardState extends State<_ItineraryDayCard>
   void initState() {
     super.initState();
     _ctrl = AnimationController(
-      vsync: this, duration: const Duration(milliseconds: 600));
+        vsync: this, duration: const Duration(milliseconds: 600));
     _fade = CurvedAnimation(parent: _ctrl, curve: Curves.easeOut);
     _slide = Tween<Offset>(
-      begin: const Offset(0, 0.1), end: Offset.zero,
+      begin: const Offset(0, 0.1),
+      end: Offset.zero,
     ).animate(CurvedAnimation(parent: _ctrl, curve: Curves.easeOutCubic));
 
     Future.delayed(widget.delay, () {
@@ -452,16 +479,22 @@ class _ItineraryDayCardState extends State<_ItineraryDayCard>
               Row(
                 children: [
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                     decoration: BoxDecoration(
                       color: const Color(0xFFD4AF7A),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Text('Ngày ${widget.day.day}',
-                      style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16)),
+                        style: const TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16)),
                   ),
                   const SizedBox(width: 12),
-                  Expanded(child: Divider(color: Colors.white.withOpacity(0.1), thickness: 1)),
+                  Expanded(
+                      child: Divider(
+                          color: Colors.white.withOpacity(0.1), thickness: 1)),
                 ],
               ),
               const SizedBox(height: 16),
@@ -509,18 +542,29 @@ class _ItineraryDayCardState extends State<_ItineraryDayCard>
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(act.timeSlot,
-                      style: TextStyle(color: const Color(0xFFD4AF7A).withOpacity(0.8), fontSize: 12, fontWeight: FontWeight.bold)),
+                        style: TextStyle(
+                            color: const Color(0xFFD4AF7A).withOpacity(0.8),
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold)),
                     if (act.estimatedCost > 0)
                       Text('${act.estimatedCost.toInt()} đ',
-                        style: TextStyle(color: Colors.white.withOpacity(0.5), fontSize: 12)),
+                          style: TextStyle(
+                              color: Colors.white.withOpacity(0.5),
+                              fontSize: 12)),
                   ],
                 ),
                 const SizedBox(height: 4),
                 Text(act.placeName ?? 'Địa điểm',
-                  style: const TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold)),
+                    style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold)),
                 const SizedBox(height: 8),
                 Text(act.rationale,
-                  style: TextStyle(color: Colors.white.withOpacity(0.7), fontSize: 14, height: 1.4)),
+                    style: TextStyle(
+                        color: Colors.white.withOpacity(0.7),
+                        fontSize: 14,
+                        height: 1.4)),
               ],
             ),
           ),

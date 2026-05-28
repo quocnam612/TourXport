@@ -21,6 +21,7 @@ import 'profile_section.dart';
 import 'saved_place.dart';
 import 'survey_screen.dart';
 import 'sign_in.dart';
+import '../models/travel_notification.dart';
 
 class HomeScreen extends StatefulWidget {
   final String userName;
@@ -68,6 +69,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   String _currentUserName = '';
   final ImagePicker _picker = ImagePicker();
 
+  // Notification center state
+  List<TravelNotification> _notifications = [];
+  int _selectedNotificationTab = 0; // 0: Cá nhân, 1: Xu hướng Hot
+  String _selectedTrendFilter = 'day'; // 'day', 'week', 'month'
+
   late final AnimationController _bgFadeController;
   late final Animation<double> _bgFade;
   late final AnimationController _entranceController;
@@ -90,6 +96,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     super.initState();
 
     _currentUserName = widget.userName;
+    _initMockNotifications();
     _pageController = PageController(viewportFraction: 0.82, initialPage: 1000);
     _searchController = TextEditingController();
     _searchFocusNode = FocusNode();
@@ -786,6 +793,775 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         builder: (context) => SecuritySettingsScreen(
           userData: _userData!,
           authToken: widget.authToken!,
+        ),
+      ),
+    );
+  }
+
+  void _initMockNotifications() {
+    _notifications = [
+      TravelNotification(
+        id: 'notif_1',
+        title: 'Kế hoạch du lịch Đà Nẵng',
+        description: 'Lịch trình tham quan Đà Nẵng 3 ngày 2 đêm của bạn đã sẵn sàng! Chạm để xem ngay các địa điểm tối ưu.',
+        icon: Icons.map_rounded,
+        timestamp: DateTime.now().subtract(const Duration(hours: 1)),
+        type: 'itinerary',
+      ),
+      TravelNotification(
+        id: 'notif_2',
+        title: 'Cảnh báo thời tiết',
+        description: 'Dự báo thời tiết Đà Nẵng hôm nay: 26°C, trời nắng đẹp, gió mát mẻ, rất lý tưởng để đi biển hoặc ghé Bà Nà Hills.',
+        icon: Icons.wb_sunny_rounded,
+        timestamp: DateTime.now().subtract(const Duration(hours: 3)),
+        type: 'weather',
+      ),
+      TravelNotification(
+        id: 'notif_3',
+        title: 'Cập nhật ngân sách chuyến đi',
+        description: 'Tổng chi tiêu dự kiến hiện tại là 1.250.000đ. Bạn đang kiểm soát ngân sách rất tốt (đạt 62% hạn mức tự đặt).',
+        icon: Icons.account_balance_wallet_rounded,
+        timestamp: DateTime.now().subtract(const Duration(hours: 5)),
+        type: 'expense',
+      ),
+      TravelNotification(
+        id: 'notif_4',
+        title: 'Mẹo du lịch hữu ích',
+        description: 'Kinh nghiệm đắt giá: Nên di chuyển lên Cầu Vàng lúc 8h sáng để chụp hình không vướng người và ngắm trọn mây ngàn.',
+        icon: Icons.lightbulb_rounded,
+        timestamp: DateTime.now().subtract(const Duration(days: 1)),
+        type: 'tip',
+      ),
+    ];
+  }
+
+  List<AppTrendRecommendation> _getAppTrendRecommendations() {
+    final pool = _allDatabaseDestinations.isNotEmpty
+        ? _allDatabaseDestinations
+        : (_realDestinations.isNotEmpty
+            ? _realDestinations
+            : sampleDestinations);
+
+    if (pool.isEmpty) return [];
+
+    List<Destination> periodDestinations = [];
+    String periodTag = '';
+    String periodLabel = '';
+
+    if (_selectedTrendFilter == 'day') {
+      periodTag = 'HOT HÔM NAY';
+      periodLabel = 'day';
+      for (int i = 0; i < pool.length; i++) {
+        if (i % 3 == 0) periodDestinations.add(pool[i]);
+      }
+    } else if (_selectedTrendFilter == 'week') {
+      periodTag = 'XU HƯỚNG TUẦN';
+      periodLabel = 'week';
+      for (int i = 0; i < pool.length; i++) {
+        if (i % 3 == 1) periodDestinations.add(pool[i]);
+      }
+    } else {
+      periodTag = 'ĐỀ XUẤT THÁNG';
+      periodLabel = 'month';
+      for (int i = 0; i < pool.length; i++) {
+        if (i % 3 == 2) periodDestinations.add(pool[i]);
+      }
+    }
+
+    if (periodDestinations.isEmpty) {
+      periodDestinations = pool.take(3).toList();
+    }
+
+    return periodDestinations.take(10).map((dest) {
+      final name = dest.name;
+      final prov = dest.province;
+      final price = dest.price.isNotEmpty ? dest.price : 'Chỉ từ 1.500.000 đ';
+      
+      String reason = '';
+      String tag = periodTag;
+      double rating = 4.7 + ((dest.name.length % 3) * 0.1);
+      int reviews = 800 + (dest.name.length * 77) % 2500;
+
+      if (name.toLowerCase().contains('hạ long') || name.toLowerCase().contains('ha long')) {
+        reason = 'Thời tiết tại Vịnh ${prov} tuần này vô cùng dịu mát, nước biển trong xanh lý tưởng để trải nghiệm du thuyền 5 sao đẳng cấp.';
+        tag = 'DU THUYỀN 5 SAO';
+      } else if (name.toLowerCase().contains('đà nẵng') || name.toLowerCase().contains('da nang')) {
+        reason = 'Nhiệt độ hoàn hảo 26°C. Lễ hội pháo hoa quốc tế vừa diễn ra thu hút đông đảo du khách ghé thăm các cây cầu huyền thoại.';
+        tag = 'PHÁO HOA QUỐC TẾ';
+      } else if (name.toLowerCase().contains('hội an') || name.toLowerCase().contains('hoi an')) {
+        reason = 'Khí hậu bắt đầu vào mùa khô ráo tuyệt đẹp. Phố đèn lồng lung linh lộng lẫy và lễ hội hoa đăng bên sông Hoài đang diễn ra rất náo nhiệt.';
+        tag = 'PHỐ CỔ HOÀI CỔ';
+      } else if (name.toLowerCase().contains('phong nha') || name.toLowerCase().contains('quảng bình') || name.toLowerCase().contains('quang binh')) {
+        reason = 'Thời tiết khô ráo rất thích hợp để thám hiểm hệ thống hang động thạch nhũ tráng lệ bậc nhất thế giới.';
+        tag = 'KHÁM PHÁ HANG ĐỘNG';
+      } else if (name.toLowerCase().contains('phú quốc') || name.toLowerCase().contains('phu quoc')) {
+        reason = 'Biển cực kỳ êm, nắng vàng rực rỡ và nước biển trong vắt như pha lê, hoàn hảo cho tour lặn biển ngắm san hô.';
+        tag = 'THIÊN ĐƯỜNG BIỂN';
+      } else if (name.toLowerCase().contains('sapa')) {
+        reason = 'Đỉnh Fansipan xuất hiện biển mây cực đẹp vào sáng sớm, nhiệt độ se lạnh lý tưởng để thưởng thức ẩm thực Tây Bắc.';
+        tag = 'SĂN MÂY TÂY BẮC';
+      } else if (name.toLowerCase().contains('đà lạt') || name.toLowerCase().contains('da lat')) {
+        reason = 'Mùa hoa dã quỳ vàng rực rỡ khắp các triền đồi, không khí mát mẻ dễ chịu vô cùng thích hợp cho cắm trại đêm.';
+        tag = 'THÀNH PHỐ NGÀN HOA';
+      } else {
+        reason = 'Điểm đến đang nhận được sự quan tâm đột biến từ cộng đồng du lịch nhờ khí hậu thuận lợi và nhiều ưu đãi dịch vụ hấp dẫn trong thời gian này.';
+        tag = 'ĐIỂM ĐẾN VÀNG';
+      }
+
+      return AppTrendRecommendation(
+        title: '$name - Khám phá vẻ đẹp kỳ diệu',
+        province: prov,
+        price: price,
+        imagePath: dest.imagePath,
+        rating: rating,
+        reviewsCount: reviews,
+        tag: tag,
+        trendingReason: reason,
+        period: periodLabel,
+        destination: dest,
+      );
+    }).toList();
+  }
+
+  void _showNotificationCenter() {
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: Colors.transparent,
+      isScrollControlled: true,
+      barrierColor: Colors.black.withOpacity(0.6),
+      builder: (context) {
+        return StatefulBuilder(
+          builder: (context, setSheetState) {
+            final unreadCount = _notifications.where((n) => !n.isRead).length;
+
+            return BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 16, sigmaY: 16),
+              child: Container(
+                height: MediaQuery.of(context).size.height * 0.85,
+                decoration: BoxDecoration(
+                  color: const Color(0xFF070E0D).withOpacity(0.85),
+                  borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
+                  border: Border.all(
+                    color: Colors.white.withOpacity(0.08),
+                    width: 1,
+                  ),
+                ),
+                child: Column(
+                  children: [
+                    // Handle bar
+                    const SizedBox(height: 12),
+                    Container(
+                      width: 50,
+                      height: 5,
+                      decoration: BoxDecoration(
+                        color: Colors.white24,
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
+                    const SizedBox(height: 18),
+
+                    // Header Row
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 24),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          const Text(
+                            'Trung tâm thông báo',
+                            style: TextStyle(
+                              fontFamily: 'Montserrat',
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                          if (unreadCount > 0)
+                            GestureDetector(
+                              onTap: () {
+                                setSheetState(() {
+                                  for (var n in _notifications) {
+                                    n.isRead = true;
+                                  }
+                                });
+                                setState(() {});
+                              },
+                              child: Text(
+                                'Đọc tất cả ($unreadCount)',
+                                style: const TextStyle(
+                                  fontFamily: 'Montserrat',
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.w600,
+                                  color: Color(0xFFD4AF7A),
+                                ),
+                              ),
+                            ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+
+                    // Beautiful Sliding Segmented Tabs
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 20),
+                      child: Container(
+                        height: 50,
+                        padding: const EdgeInsets.all(4),
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.05),
+                          borderRadius: BorderRadius.circular(16),
+                          border: Border.all(color: Colors.white12),
+                        ),
+                        child: Row(
+                          children: [
+                            // Tab 1: Cá nhân
+                            Expanded(
+                              child: GestureDetector(
+                                onTap: () {
+                                  setSheetState(() {
+                                    _selectedNotificationTab = 0;
+                                  });
+                                  setState(() {});
+                                },
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: _selectedNotificationTab == 0
+                                        ? const Color(0xFFD4AF7A)
+                                        : Colors.transparent,
+                                    borderRadius: BorderRadius.circular(12),
+                                  ),
+                                  alignment: Alignment.center,
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Icon(
+                                        Icons.person_outline_rounded,
+                                        size: 16,
+                                        color: _selectedNotificationTab == 0
+                                            ? Colors.black
+                                            : Colors.white60,
+                                      ),
+                                      const SizedBox(width: 6),
+                                      Text(
+                                        'Cá nhân',
+                                        style: TextStyle(
+                                          fontFamily: 'Montserrat',
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.bold,
+                                          color: _selectedNotificationTab == 0
+                                              ? Colors.black
+                                              : Colors.white60,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                            // Tab 2: Xu hướng Hot
+                            Expanded(
+                              child: GestureDetector(
+                                onTap: () {
+                                  setSheetState(() {
+                                    _selectedNotificationTab = 1;
+                                  });
+                                  setState(() {});
+                                },
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: _selectedNotificationTab == 1
+                                        ? const Color(0xFFD4AF7A)
+                                        : Colors.transparent,
+                                    borderRadius: BorderRadius.circular(12),
+                                  ),
+                                  alignment: Alignment.center,
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Icon(
+                                        Icons.local_fire_department_rounded,
+                                        size: 16,
+                                        color: _selectedNotificationTab == 1
+                                            ? Colors.black
+                                            : Colors.white60,
+                                      ),
+                                      const SizedBox(width: 6),
+                                      Text(
+                                        'Xu hướng Hot',
+                                        style: TextStyle(
+                                          fontFamily: 'Montserrat',
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.bold,
+                                          color: _selectedNotificationTab == 1
+                                              ? Colors.black
+                                              : Colors.white60,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+
+                    // Tab Views
+                    Expanded(
+                      child: _selectedNotificationTab == 0
+                          ? _buildPersonalTab(setSheetState)
+                          : _buildTrendsTab(setSheetState),
+                    ),
+                  ],
+                ),
+              ),
+            );
+          },
+        );
+      },
+    );
+  }
+
+  Widget _buildPersonalTab(StateSetter setSheetState) {
+    if (_notifications.isEmpty) {
+      return Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Icon(Icons.notifications_none_rounded, color: Colors.white24, size: 64),
+            const SizedBox(height: 16),
+            Text(
+              'Chưa có thông báo nào dành cho bạn',
+              style: TextStyle(
+                fontFamily: 'Montserrat',
+                fontSize: 15,
+                color: Colors.white.withOpacity(0.5),
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+
+    return ListView.builder(
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      itemCount: _notifications.length > 10 ? 10 : _notifications.length,
+      itemBuilder: (context, index) {
+        final item = _notifications[index];
+        final typeColors = {
+          'itinerary': const Color(0xFF3498DB),
+          'weather': const Color(0xFFF1C40F),
+          'expense': const Color(0xFF2ECC71),
+          'tip': const Color(0xFFE67E22),
+          'system': const Color(0xFF95A5A6),
+        };
+        final iconBg = typeColors[item.type] ?? const Color(0xFFD4AF7A);
+
+        return GestureDetector(
+          onTap: () {
+            setSheetState(() {
+              item.isRead = true;
+            });
+            setState(() {});
+          },
+          child: Container(
+            margin: const EdgeInsets.only(bottom: 16),
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              color: item.isRead
+                  ? Colors.white.withOpacity(0.03)
+                  : const Color(0xFFD4AF7A).withOpacity(0.06),
+              borderRadius: BorderRadius.circular(20),
+              border: Border.all(
+                color: item.isRead
+                    ? Colors.white.withOpacity(0.06)
+                    : const Color(0xFFD4AF7A).withOpacity(0.2),
+                width: 1,
+              ),
+            ),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Content
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Expanded(
+                            child: Row(
+                              children: [
+                                if (!item.isRead)
+                                  Container(
+                                    margin: const EdgeInsets.only(right: 8),
+                                    width: 8,
+                                    height: 8,
+                                    decoration: const BoxDecoration(
+                                      color: Color(0xFFE74C3C),
+                                      shape: BoxShape.circle,
+                                    ),
+                                  ),
+                                Expanded(
+                                  child: Text(
+                                    item.title,
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: TextStyle(
+                                      fontFamily: 'Montserrat',
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.bold,
+                                      color: item.isRead ? Colors.white : const Color(0xFFD4AF7A),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Text(
+                            _formatTimestamp(item.timestamp),
+                            style: TextStyle(
+                              fontFamily: 'Montserrat',
+                              fontSize: 11,
+                              color: Colors.white.withOpacity(0.35),
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 6),
+                      Text(
+                        item.description,
+                        style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          fontSize: 13,
+                          height: 1.4,
+                          color: Colors.white.withOpacity(item.isRead ? 0.6 : 0.85),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  String _formatTimestamp(DateTime time) {
+    final diff = DateTime.now().difference(time);
+    if (diff.inMinutes < 60) {
+      return '${diff.inMinutes} phút trước';
+    } else if (diff.inHours < 24) {
+      return '${diff.inHours} giờ trước';
+    } else {
+      return 'Hôm qua';
+    }
+  }
+
+  Widget _buildTrendsTab(StateSetter setSheetState) {
+    final trends = _getAppTrendRecommendations();
+
+    return Column(
+      children: [
+        // Horizontal sliding segmented filters
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+          child: Row(
+            children: [
+              _buildTrendFilterButton('day', 'Hôm nay', setSheetState),
+              const SizedBox(width: 8),
+              _buildTrendFilterButton('week', 'Tuần này', setSheetState),
+              const SizedBox(width: 8),
+              _buildTrendFilterButton('month', 'Tháng này', setSheetState),
+            ],
+          ),
+        ),
+        const SizedBox(height: 10),
+
+        // Scrollable list of recommendations
+        Expanded(
+          child: trends.isEmpty
+              ? Center(
+                  child: Text(
+                    'Không có đề xuất nào cho khoảng thời gian này.',
+                    style: TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontSize: 14,
+                      color: Colors.white.withOpacity(0.5),
+                    ),
+                  ),
+                )
+              : ListView.builder(
+                  padding: const EdgeInsets.fromLTRB(20, 0, 20, 24),
+                  itemCount: trends.length,
+                  itemBuilder: (context, index) {
+                    final rec = trends[index];
+                    return Container(
+                      margin: const EdgeInsets.only(bottom: 20),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(24),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.4),
+                            blurRadius: 16,
+                            offset: const Offset(0, 8),
+                          ),
+                        ],
+                      ),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(24),
+                        child: Stack(
+                          children: [
+                            // Place image background
+                            AspectRatio(
+                              aspectRatio: 1.5,
+                              child: Container(
+                                decoration: const BoxDecoration(
+                                  color: Color(0xFF1E1E1E),
+                                ),
+                                child: Destination.buildImage(
+                                  rec.imagePath,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ),
+                            // Gradient overlay
+                            Positioned.fill(
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                    begin: Alignment.topCenter,
+                                    end: Alignment.bottomCenter,
+                                    colors: [
+                                      Colors.black.withOpacity(0.1),
+                                      Colors.black.withOpacity(0.4),
+                                      Colors.black.withOpacity(0.95),
+                                    ],
+                                    stops: const [0.0, 0.4, 1.0],
+                                  ),
+                                ),
+                              ),
+                            ),
+                            // Card details
+                            Positioned.fill(
+                              child: Padding(
+                                padding: const EdgeInsets.all(20),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    // Top row
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Container(
+                                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                                          decoration: BoxDecoration(
+                                            gradient: const LinearGradient(
+                                              colors: [Color(0xFFD4AF7A), Color(0xFFB5956A)],
+                                            ),
+                                            borderRadius: BorderRadius.circular(12),
+                                            boxShadow: [
+                                              BoxShadow(
+                                                color: const Color(0xFFD4AF7A).withOpacity(0.3),
+                                                blurRadius: 8,
+                                                offset: const Offset(0, 2),
+                                              ),
+                                            ],
+                                          ),
+                                          child: Text(
+                                            rec.tag,
+                                            style: const TextStyle(
+                                              fontFamily: 'Montserrat',
+                                              fontSize: 10,
+                                              fontWeight: FontWeight.w900,
+                                              color: Colors.black,
+                                              letterSpacing: 0.5,
+                                            ),
+                                          ),
+                                        ),
+                                        Container(
+                                          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                                          decoration: BoxDecoration(
+                                            color: Colors.black.withOpacity(0.6),
+                                            borderRadius: BorderRadius.circular(20),
+                                            border: Border.all(color: Colors.white24, width: 0.8),
+                                          ),
+                                          child: Row(
+                                            children: [
+                                              const Icon(Icons.star_rounded, color: Color(0xFFF1C40F), size: 14),
+                                              const SizedBox(width: 4),
+                                              Text(
+                                                '${rec.rating}',
+                                                style: const TextStyle(
+                                                  fontFamily: 'Montserrat',
+                                                  fontSize: 11,
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Colors.white,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+
+                                    // Bottom section
+                                    Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Row(
+                                          crossAxisAlignment: CrossAxisAlignment.end,
+                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Expanded(
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Text(
+                                                    rec.province.toUpperCase(),
+                                                    style: const TextStyle(
+                                                      fontFamily: 'Montserrat',
+                                                      fontSize: 11,
+                                                      fontWeight: FontWeight.bold,
+                                                      color: Color(0xFFD4AF7A),
+                                                      letterSpacing: 1.0,
+                                                    ),
+                                                  ),
+                                                  const SizedBox(height: 4),
+                                                  Text(
+                                                    rec.title,
+                                                    maxLines: 2,
+                                                    overflow: TextOverflow.ellipsis,
+                                                    style: const TextStyle(
+                                                      fontFamily: 'Montserrat',
+                                                      fontSize: 18,
+                                                      fontWeight: FontWeight.bold,
+                                                      color: Colors.white,
+                                                      letterSpacing: -0.2,
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                            const SizedBox(width: 10),
+                                            Text(
+                                              rec.price,
+                                              style: const TextStyle(
+                                                fontFamily: 'Montserrat',
+                                                fontSize: 14,
+                                                fontWeight: FontWeight.w900,
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        const SizedBox(height: 8),
+                                        Text(
+                                          rec.trendingReason,
+                                          maxLines: 2,
+                                          overflow: TextOverflow.ellipsis,
+                                          style: TextStyle(
+                                            fontFamily: 'Montserrat',
+                                            fontSize: 12.5,
+                                            height: 1.4,
+                                            color: Colors.white.withOpacity(0.8),
+                                          ),
+                                        ),
+                                        const SizedBox(height: 12),
+                                        Row(
+                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Text(
+                                              '⭐ ${rec.rating} · ${rec.reviewsCount} lượt quan tâm',
+                                              style: TextStyle(
+                                                fontFamily: 'Montserrat',
+                                                fontSize: 12,
+                                                color: Colors.white.withOpacity(0.5),
+                                              ),
+                                            ),
+                                            GestureDetector(
+                                              onTap: () {
+                                                Navigator.pop(context);
+                                                _openPlaceDetail(rec.destination, context);
+                                              },
+                                              child: Container(
+                                                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                                decoration: BoxDecoration(
+                                                  color: Colors.transparent,
+                                                  borderRadius: BorderRadius.circular(16),
+                                                  border: Border.all(color: const Color(0xFFD4AF7A), width: 1.5),
+                                                ),
+                                                child: const Row(
+                                                  children: [
+                                                    Text(
+                                                      'Lên lịch ngay',
+                                                      style: TextStyle(
+                                                        fontFamily: 'Montserrat',
+                                                        fontSize: 12.5,
+                                                        fontWeight: FontWeight.bold,
+                                                        color: Color(0xFFD4AF7A),
+                                                      ),
+                                                    ),
+                                                    SizedBox(width: 4),
+                                                    Icon(Icons.arrow_forward_rounded, color: Color(0xFFD4AF7A), size: 14),
+                                                  ],
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    );
+                  },
+                ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildTrendFilterButton(String key, String title, StateSetter setSheetState) {
+    final isActive = _selectedTrendFilter == key;
+    return Expanded(
+      child: GestureDetector(
+        onTap: () {
+          setSheetState(() {
+            _selectedTrendFilter = key;
+          });
+          setState(() {});
+        },
+        child: Container(
+          height: 38,
+          decoration: BoxDecoration(
+            color: isActive ? const Color(0xFFD4AF7A).withOpacity(0.15) : Colors.transparent,
+            borderRadius: BorderRadius.circular(14),
+            border: Border.all(
+              color: isActive ? const Color(0xFFD4AF7A) : Colors.white12,
+              width: 1,
+            ),
+          ),
+          alignment: Alignment.center,
+          child: Text(
+            title,
+            style: TextStyle(
+              fontFamily: 'Montserrat',
+              fontSize: 12.5,
+              fontWeight: isActive ? FontWeight.bold : FontWeight.w500,
+              color: isActive ? const Color(0xFFD4AF7A) : Colors.white60,
+            ),
+          ),
         ),
       ),
     );
@@ -2343,7 +3119,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           onEditEmail: _editEmail,
           onEditPhone: _editPhone,
           onEditSecurity: () => _editSecurity(),
-          onEditNotifications: _editNotifications,
+          onEditNotifications: _showNotificationCenter,
           onEditLanguage: _editLanguage,
           onEditHelpSupport: _editHelpSupport,
         ),
@@ -2611,6 +3387,37 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                             ),
                           );
                         }),
+                      ),
+                      const SizedBox(width: 24),
+                      GestureDetector(
+                        onTap: _showNotificationCenter,
+                        child: Container(
+                          padding: const EdgeInsets.all(8),
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(0.1),
+                            shape: BoxShape.circle,
+                            border: Border.all(color: Colors.white12, width: 1),
+                          ),
+                          child: Stack(
+                            clipBehavior: Clip.none,
+                            children: [
+                              const Icon(Icons.notifications_none_rounded, color: Colors.white, size: 20),
+                              if (_notifications.any((n) => !n.isRead))
+                                Positioned(
+                                  top: -1,
+                                  right: -1,
+                                  child: Container(
+                                    width: 7,
+                                    height: 7,
+                                    decoration: const BoxDecoration(
+                                      color: Color(0xFFE74C3C),
+                                      shape: BoxShape.circle,
+                                    ),
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
                       ),
                     ],
                   ),
@@ -3250,14 +4057,32 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             ),
             const Spacer(),
             GestureDetector(
-              onTap: () {},
+              onTap: _showNotificationCenter,
               child: Container(
                 padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
                   color: Colors.white.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(8),
                 ),
-                child: const Icon(Icons.menu, color: Colors.white, size: 26),
+                child: Stack(
+                  clipBehavior: Clip.none,
+                  children: [
+                    const Icon(Icons.notifications_none_rounded, color: Colors.white, size: 24),
+                    if (_notifications.any((n) => !n.isRead))
+                      Positioned(
+                        top: -2,
+                        right: -2,
+                        child: Container(
+                          width: 8,
+                          height: 8,
+                          decoration: const BoxDecoration(
+                            color: Color(0xFFE74C3C),
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                      ),
+                  ],
+                ),
               ),
             ),
           ],

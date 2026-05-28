@@ -30,7 +30,10 @@ class SavedPlacesSection extends StatefulWidget {
     this.isGuest = false,
     this.authToken,
     this.initialTabIndex = 0,
+    this.onSelectTour,
   });
+
+  final Function(SavedTour tour)? onSelectTour;
 
   @override
   State<SavedPlacesSection> createState() => _SavedPlacesSectionState();
@@ -557,118 +560,172 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
       itemBuilder: (context, index) {
         final tour = _savedTours[index];
 
-        return Container(
-          decoration: BoxDecoration(
-            color: Colors.black.withOpacity(0.32),
-            borderRadius: BorderRadius.circular(24),
-            border: Border.all(
-              color: Colors.white.withOpacity(0.12),
-              width: 1.2,
-            ),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black.withOpacity(0.25),
-                blurRadius: 20,
-                offset: const Offset(0, 10),
-              ),
-            ],
-          ),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(24),
-            child: BackdropFilter(
-              filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
-              child: Padding(
-                padding: const EdgeInsets.all(20),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.all(16),
-                      decoration: BoxDecoration(
-                        color: const Color(0xFFD4AF7A).withOpacity(0.1),
-                        borderRadius: BorderRadius.circular(20),
-                        border: Border.all(
-                          color: const Color(0xFFD4AF7A).withOpacity(0.2),
-                          width: 1,
+        return GestureDetector(
+          onTap: () {
+            if (widget.onSelectTour != null) {
+              widget.onSelectTour!(tour);
+              showDialog(
+                context: context,
+                builder: (context) => AlertDialog(
+                  backgroundColor: const Color(0xFF12201C),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
+                  title: const Row(
+                    children: [
+                      Icon(Icons.check_circle_rounded, color: Color(0xFFD4AF7A), size: 28),
+                      SizedBox(width: 12),
+                      Text(
+                        'Kích hoạt lịch trình',
+                        style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
                         ),
                       ),
-                      child: const Icon(
-                        Icons.route_rounded,
-                        color: Color(0xFFD4AF7A),
-                        size: 32,
-                      ),
+                    ],
+                  ),
+                  content: Text(
+                    'Đã chọn "${tour.title}" làm lịch trình hoạt động chính. Bạn sẽ nhận được các thông báo cập nhật thời gian thực ngay tại Trang chủ!',
+                    style: const TextStyle(
+                      fontFamily: 'Montserrat',
+                      color: Colors.white70,
+                      height: 1.5,
                     ),
-                    const SizedBox(width: 16),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            tour.title,
-                            style: const TextStyle(
-                              fontFamily: 'Montserrat',
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                            ),
-                          ),
-                          const SizedBox(height: 6),
-                          Text(
-                            'Thời gian: ${tour.totalDays} ngày ${tour.totalNights} đêm',
-                            style: TextStyle(
-                              fontFamily: 'Montserrat',
-                              fontSize: 13,
-                              color: Colors.white.withOpacity(0.7),
-                            ),
-                          ),
-                          if (tour.destinations.isNotEmpty) ...[
-                            const SizedBox(height: 4),
-                            Text(
-                              'Điểm đến: ${tour.destinations.join(", ")}',
-                              maxLines: 1,
-                              overflow: TextOverflow.ellipsis,
-                              style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 13,
-                                color: Colors.white.withOpacity(0.5),
-                              ),
-                            ),
-                          ],
-                          if (tour.estimatedCost != null && tour.estimatedCost! > 0) ...[
-                            const SizedBox(height: 8),
-                            Text(
-                              'Chi phí dự tính: ${tour.estimatedCost!.toInt().toString().replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (Match m) => '${m[1]}.')} đ',
-                              style: const TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 14,
-                                fontWeight: FontWeight.w600,
-                                color: Color(0xFFD4AF7A),
-                              ),
-                            ),
-                          ],
-                        ],
+                  ),
+                  actions: [
+                    TextButton(
+                      onPressed: () {
+                        Navigator.pop(context);
+                        widget.onBack();
+                      },
+                      style: TextButton.styleFrom(
+                        foregroundColor: const Color(0xFFD4AF7A),
                       ),
-                    ),
-                    const SizedBox(width: 12),
-                    GestureDetector(
-                      onTap: () => _deleteSavedTour(tour.id),
-                      child: Container(
-                        padding: const EdgeInsets.all(8),
-                        decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.06),
-                          shape: BoxShape.circle,
-                          border: Border.all(
-                            color: Colors.white.withOpacity(0.12),
-                          ),
-                        ),
-                        child: const Icon(
-                          Icons.delete_outline_rounded,
-                          color: Color(0xFFE74C3C),
-                          size: 20,
+                      child: const Text(
+                        'Xem ngay',
+                        style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     ),
                   ],
+                ),
+              );
+            }
+          },
+          child: Container(
+            decoration: BoxDecoration(
+              color: Colors.black.withOpacity(0.32),
+              borderRadius: BorderRadius.circular(24),
+              border: Border.all(
+                color: Colors.white.withOpacity(0.12),
+                width: 1.2,
+              ),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.25),
+                  blurRadius: 20,
+                  offset: const Offset(0, 10),
+                ),
+              ],
+            ),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(24),
+              child: BackdropFilter(
+                filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
+                child: Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(16),
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFD4AF7A).withOpacity(0.1),
+                          borderRadius: BorderRadius.circular(20),
+                          border: Border.all(
+                            color: const Color(0xFFD4AF7A).withOpacity(0.2),
+                            width: 1,
+                          ),
+                        ),
+                        child: const Icon(
+                          Icons.route_rounded,
+                          color: Color(0xFFD4AF7A),
+                          size: 32,
+                        ),
+                      ),
+                      const SizedBox(width: 16),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              tour.title,
+                              style: const TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const SizedBox(height: 6),
+                            Text(
+                              'Thời gian: ${tour.totalDays} ngày ${tour.totalNights} đêm',
+                              style: TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 13,
+                                color: Colors.white.withOpacity(0.7),
+                              ),
+                            ),
+                            if (tour.destinations.isNotEmpty) ...[
+                              const SizedBox(height: 4),
+                              Text(
+                                'Điểm đến: ${tour.destinations.join(", ")}',
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(
+                                  fontFamily: 'Montserrat',
+                                  fontSize: 13,
+                                  color: Colors.white.withOpacity(0.5),
+                                ),
+                              ),
+                            ],
+                            if (tour.estimatedCost != null && tour.estimatedCost! > 0) ...[
+                              const SizedBox(height: 8),
+                              Text(
+                                'Chi phí dự tính: ${tour.estimatedCost!.toInt().toString().replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (Match m) => '${m[1]}.')} đ',
+                                style: const TextStyle(
+                                  fontFamily: 'Montserrat',
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w600,
+                                  color: Color(0xFFD4AF7A),
+                                ),
+                              ),
+                            ],
+                          ],
+                        ),
+                      ),
+                      const SizedBox(width: 12),
+                      GestureDetector(
+                        onTap: () => _deleteSavedTour(tour.id),
+                        child: Container(
+                          padding: const EdgeInsets.all(8),
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(0.06),
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: Colors.white.withOpacity(0.12),
+                            ),
+                          ),
+                          child: const Icon(
+                            Icons.delete_outline_rounded,
+                            color: Color(0xFFE74C3C),
+                            size: 20,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
