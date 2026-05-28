@@ -40,6 +40,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   int _currentIndex = 0;
   int _previousIndex = 0;
   int _navIndex = 0;
+  int _savedPlacesInitialTab = 0;
   bool _showLikedOnly = false;
   String _searchQuery = '';
   String? _selectedCity;
@@ -2012,7 +2013,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 ),
                 child: Image.asset(
                   'assets/images/logo.png',
-                  width: 64, // Bigger than original 40, but fits horizontally
+                  width: 64,
                   height: 64,
                   fit: BoxFit.contain,
                 ),
@@ -2102,7 +2103,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     onTap: () async {
                       if (i == 2) {
                         _stopAutoPlay();
-                        await Navigator.push(
+                        final result = await Navigator.push(
                           context,
                           MaterialPageRoute(
                             builder: (context) => SurveyScreen(
@@ -2111,8 +2112,17 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                           ),
                         );
                         _startAutoPlay();
+                        if (result == 'go_to_saved_tours') {
+                          setState(() {
+                            _savedPlacesInitialTab = 1;
+                            _navIndex = 1;
+                          });
+                        }
                       } else {
-                        setState(() => _navIndex = i);
+                        setState(() {
+                          _navIndex = i;
+                          _savedPlacesInitialTab = 0;
+                        });
                         if (i == 0) {
                           _startAutoPlay();
                         } else {
@@ -2217,12 +2227,15 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   Widget _buildPreviousBackground() {
     final isDesktop = MediaQuery.of(context).size.width >= 800;
-    final blurVal = isDesktop ? 0.8 : 5.0;
+    final isSurveyStyle = _navIndex == 1 || _navIndex == 3;
+    final blurVal = isSurveyStyle ? 10.0 : (isDesktop ? 0.8 : 5.0);
+    final bgPath = isSurveyStyle ? 'assets/images/login_bg.jpg' : _previousBgPath;
+
     return Positioned.fill(
       child: Stack(
         fit: StackFit.expand,
         children: [
-          Destination.buildImage(_previousBgPath),
+          Destination.buildImage(bgPath),
           BackdropFilter(
             filter: ImageFilter.blur(sigmaX: blurVal, sigmaY: blurVal),
             child: Container(color: Colors.transparent),
@@ -2234,7 +2247,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   Widget _buildCurrentBackground() {
     final isDesktop = MediaQuery.of(context).size.width >= 800;
-    final blurVal = isDesktop ? 0.8 : 5.0;
+    final isSurveyStyle = _navIndex == 1 || _navIndex == 3;
+    final blurVal = isSurveyStyle ? 10.0 : (isDesktop ? 0.8 : 5.0);
+    final bgPath = isSurveyStyle ? 'assets/images/login_bg.jpg' : _currentBgPath;
+
     return Positioned.fill(
       child: AnimBuilder(
         animation: _bgFade,
@@ -2245,7 +2261,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         child: Stack(
           fit: StackFit.expand,
           children: [
-            Destination.buildImage(_currentBgPath),
+            Destination.buildImage(bgPath),
             BackdropFilter(
               filter: ImageFilter.blur(sigmaX: blurVal, sigmaY: blurVal),
               child: Container(color: Colors.transparent),
@@ -2258,6 +2274,16 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   Widget _buildDarkOverlay() {
     final isDesktop = MediaQuery.of(context).size.width >= 800;
+    final isSurveyStyle = _navIndex == 1 || _navIndex == 3;
+
+    if (isSurveyStyle) {
+      return Positioned.fill(
+        child: Container(
+          color: Colors.black.withOpacity(0.6),
+        ),
+      );
+    }
+
     return Positioned.fill(
       child: Container(
         decoration: BoxDecoration(
@@ -2284,12 +2310,17 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       children: [
         _buildHomeTabBody(size),
         SavedPlacesSection(
+          authToken: widget.authToken,
+          initialTabIndex: _savedPlacesInitialTab,
           entranceAnimation: _cardEntrance,
           savedDestinations: _savedDestinations,
           updatingSavedNames: _updatingSavedNames,
           isLoading: _isLoadingSavedPlaces,
           onBack: () {
-            setState(() => _navIndex = 0);
+            setState(() {
+              _navIndex = 0;
+              _savedPlacesInitialTab = 0;
+            });
             _startAutoPlay();
           },
           onOpenDetail: _openPlaceDetail,
@@ -3019,7 +3050,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         WebHoverable(
                           onTap: () async {
                             _stopAutoPlay();
-                            await Navigator.push(
+                            final result = await Navigator.push(
                               context,
                               MaterialPageRoute(
                                 builder: (context) => SurveyScreen(
@@ -3028,6 +3059,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                               ),
                             );
                             _startAutoPlay();
+                            if (result == 'go_to_saved_tours') {
+                              setState(() {
+                                _savedPlacesInitialTab = 1;
+                                _navIndex = 1;
+                              });
+                            }
                           },
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
@@ -3937,7 +3974,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     if (i == 2) {
                       // Mở khảo sát khi nhấn vào nút Explore (Safari-like)
                       _stopAutoPlay();
-                      await Navigator.push(
+                      final result = await Navigator.push(
                         context,
                         PageRouteBuilder(
                           pageBuilder: (_, __, ___) => SurveyScreen(
@@ -3967,8 +4004,17 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         ),
                       );
                       _startAutoPlay();
+                      if (result == 'go_to_saved_tours') {
+                        setState(() {
+                          _savedPlacesInitialTab = 1;
+                          _navIndex = 1;
+                        });
+                      }
                     } else {
-                      setState(() => _navIndex = i);
+                      setState(() {
+                        _navIndex = i;
+                        _savedPlacesInitialTab = 0;
+                      });
                       if (i == 0) {
                         _startAutoPlay();
                       } else {

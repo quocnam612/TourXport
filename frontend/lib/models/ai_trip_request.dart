@@ -21,7 +21,7 @@ class AiTripRequest {
 
   Map<String, dynamic> toJson() {
     return {
-      'destinations': destinations,
+      'destinations': destinations == 'auto' ? 'auto' : [destinations],
       'totalDays': totalDays,
       'travelers': {
         'adults': adults,

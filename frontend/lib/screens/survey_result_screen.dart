@@ -44,80 +44,94 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
     try {
       final answer = widget.answer;
 
-      // 1. Map budget to budgetLevel
+      // 1. Map budgetPerPerson sang budgetLevel
       String budgetLevel = 'medium';
-      if (answer.budget != null) {
-        final b = answer.budget!;
-        if (b.contains('Dưới 2 triệu') || b.contains('3 triệu')) {
+      if (answer.budgetPerPerson != null) {
+        final b = answer.budgetPerPerson!;
+        if (b < 2000000) {
           budgetLevel = 'low';
-        } else if (b.contains('5 triệu')) {
+        } else if (b < 5000000) {
           budgetLevel = 'medium';
-        } else if (b.contains('10 triệu') || b.contains('20 triệu')) {
+        } else if (b < 15000000) {
           budgetLevel = 'high';
-        } else if (b.contains('Không giới hạn')) {
+        } else {
           budgetLevel = 'luxury';
         }
       }
 
-      // 2. Map groupType to adults
-      int adults = 1;
-      if (answer.groupType != null) {
-        final g = answer.groupType!;
-        if (g.contains('một mình')) {
-          adults = 1;
-        } else if (g.contains('Cặp đôi')) {
-          adults = 2;
-        } else if (g.contains('Nhóm bạn') || g.contains('Gia đình')) {
-          adults = 3;
-        } else if (g.contains('Công ty')) {
-          adults = 5;
-        }
-      }
-
-      // 3. Map scheduleStyle to pace
-      String pace = 'moderate';
-      if (answer.scheduleStyle != null) {
-        final s = answer.scheduleStyle!;
-        if (s.contains('Kín lịch')) {
-          pace = 'packed';
-        } else if (s.contains('Cân bằng')) {
-          pace = 'moderate';
-        } else if (s.contains('Thư thả')) {
-          pace = 'relaxed';
-        }
-      }
-
-      // 4. Map transportMode
+      // 2. Map transportMode sang chuẩn API
       String transportMode = 'auto';
-      if (answer.travelDistance != null) {
-        final d = answer.travelDistance!;
-        if (d.contains('Dưới 2 giờ') || d.contains('2–5 giờ')) {
+      switch (answer.transportMode) {
+        case 'Xe máy':
+          transportMode = 'motorbike';
+          break;
+        case 'Ô tô':
           transportMode = 'car';
-        } else if (d.contains('Bay')) {
+          break;
+        case 'Xe khách':
           transportMode = 'public';
-        }
+          break;
+        case 'Máy bay':
+          transportMode = 'public';
+          break;
+        default:
+          transportMode = 'auto';
       }
 
-      // 5. Gather all interests
+      // 3. Map mainGoal sang pace
+      String pace = 'moderate';
+      switch (answer.mainGoal) {
+        case 'Nghỉ dưỡng':
+          pace = 'relaxed';
+          break;
+        case 'Du lịch, khám phá':
+          pace = 'moderate';
+          break;
+        case 'Công tác':
+          pace = 'packed';
+          break;
+        default:
+          pace = 'moderate';
+      }
+
+      // 4. Gom tất cả sở thích, đặc điểm để truyền vào Vector Search & prompt
       final List<String> interests = [];
       if (answer.activities.isNotEmpty) {
         interests.addAll(answer.activities);
       }
-      if (answer.placeTypes.isNotEmpty) {
-        interests.addAll(answer.placeTypes);
+      if (answer.mainGoal != null) {
+        interests.add("mục tiêu ${answer.mainGoal}");
       }
-      if (answer.travelFeelings.isNotEmpty) {
-        interests.addAll(answer.travelFeelings);
+      if (answer.spendPriority != null) {
+        interests.add("ưu tiên chi tiêu cho ${answer.spendPriority}");
       }
+      if (answer.placeVibe != null) {
+        interests.add("không gian địa điểm ${answer.placeVibe}");
+      }
+      if (answer.routePriority != null) {
+        interests.add("ưu tiên di chuyển ${answer.routePriority}");
+      }
+      if (answer.accommodationType != null) {
+        interests.add("loại hình lưu trú ${answer.accommodationType}");
+      }
+      if (answer.accommodationPriority != null) {
+        interests.add("ưu tiên lưu trú ${answer.accommodationPriority}");
+      }
+      if (answer.dietaryRequirements.isNotEmpty) {
+        interests.addAll(answer.dietaryRequirements.map((d) => "yêu cầu ăn uống $d"));
+      }
+      if (answer.diningStyle != null) {
+        interests.add("phong cách quán ăn ${answer.diningStyle}");
+      }
+      
       if (interests.isEmpty) {
-        interests.add('culture');
-        interests.add('scenic view');
+        interests.addAll(['văn hóa', 'cảnh đẹp']);
       }
 
       final request = AiTripRequest(
-        destinations: 'auto',
-        totalDays: answer.parseAiDurationDays(),
-        adults: adults,
+        destinations: answer.selectedDestination ?? 'auto',
+        totalDays: answer.totalDays,
+        adults: 1,
         children: 0,
         budgetLevel: budgetLevel,
         interests: interests,
@@ -125,26 +139,56 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
         pace: pace,
       );
 
-      final response = await apiAiPostJson(
-        '/api/trip/generate',
-        request.toJson(),
-        token: widget.authToken,
-      );
+      final isGuest = widget.authToken == null || widget.authToken!.trim().isEmpty;
 
-      if (response.statusCode == 200) {
-        final data = tryDecodeJsonObject(response.body);
-        if (data != null) {
-          setState(() {
-            _aiResponse = AiTripResponse.fromJson(data);
-            _isLoading = false;
-          });
-          _entranceCtrl.forward();
+      final response = await (isGuest
+          ? apiAiPostJson(
+              '/api/trip/generate',
+              request.toJson(),
+            )
+          : apiPostJson(
+              '/tours',
+              request.toJson(),
+              token: widget.authToken,
+            ));
+
+      if (response.statusCode == 200 || response.statusCode == 201) {
+        final decoded = tryDecodeJsonObject(response.body);
+        if (decoded != null) {
+          final tripJson = isGuest ? decoded : decoded['data'];
+          if (tripJson != null) {
+            setState(() {
+              _aiResponse = AiTripResponse.fromJson(tripJson);
+              _isLoading = false;
+            });
+            _entranceCtrl.forward();
+          } else {
+            throw Exception('Dữ liệu phản hồi rỗng');
+          }
         } else {
           throw Exception('Dữ liệu không hợp lệ');
         }
       } else {
         final errorData = tryDecodeJsonObject(response.body);
-        throw Exception(errorData?['detail'] ?? 'Lỗi kết nối server AI');
+        String errMsg = 'Lỗi kết nối máy chủ';
+        if (errorData != null) {
+          final detail = errorData['detail'];
+          if (detail is String) {
+            errMsg = detail;
+          } else if (detail is List) {
+            errMsg = detail.map((e) {
+              if (e is Map) {
+                final loc = e['loc'] is List ? (e['loc'] as List).join('.') : e['loc'];
+                final msg = e['msg'];
+                return "$loc: $msg";
+              }
+              return e.toString();
+            }).join('\n');
+          } else {
+            errMsg = errorData['message'] ?? 'Lỗi kết nối máy chủ';
+          }
+        }
+        throw Exception(errMsg);
       }
     } catch (e) {
       setState(() {
@@ -281,10 +325,12 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
     return Padding(
       padding: const EdgeInsets.fromLTRB(24, 8, 24, 20),
       child: Row(children: [
-        // Khảo sát lại
+        // Trang chủ
         Expanded(
           child: GestureDetector(
-            onTap: () => Navigator.pop(context),
+            onTap: () {
+              Navigator.popUntil(context, (route) => route.isFirst);
+            },
             child: Container(
               height: 50,
               decoration: BoxDecoration(
@@ -292,19 +338,35 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
                 borderRadius: BorderRadius.circular(28),
                 border: Border.all(color: Colors.white.withOpacity(0.2))),
               child: const Center(
-                child: Text('Khảo sát lại',
+                child: Text('Trang chủ',
                   style: TextStyle(fontFamily: 'Montserrat', fontSize: 14,
                     fontWeight: FontWeight.w500, color: Colors.white))),
             ),
           ),
         ),
         const SizedBox(width: 12),
-        // Khám phá ngay
+        // Lưu lịch trình
         Expanded(
           flex: 2,
           child: GestureDetector(
             onTap: () {
-              Navigator.popUntil(context, (route) => route.isFirst);
+              final isGuest = widget.authToken == null || widget.authToken!.trim().isEmpty;
+              if (isGuest) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(
+                    content: Text('Vui lòng đăng nhập để sử dụng tính năng lưu lịch trình'),
+                    backgroundColor: Colors.redAccent,
+                  ),
+                );
+              } else {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(
+                    content: Text('Lịch trình đã được lưu thành công vào tài khoản của bạn!'),
+                    backgroundColor: Color(0xFF2D6A4F),
+                  ),
+                );
+                Navigator.pop(context, 'go_to_saved_tours');
+              }
             },
             child: Container(
               height: 50,
@@ -320,11 +382,11 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
               child: const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text('Khám phá ngay',
+                  Text('Lưu lịch trình',
                     style: TextStyle(fontFamily: 'Montserrat', fontSize: 15,
                       fontWeight: FontWeight.w600, color: Colors.white)),
                   SizedBox(width: 6),
-                  Icon(Icons.arrow_forward_rounded, color: Colors.white, size: 18),
+                  Icon(Icons.bookmark_add_rounded, color: Colors.white, size: 18),
                 ]),
             ),
           ),
