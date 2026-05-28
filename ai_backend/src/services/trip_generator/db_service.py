@@ -24,6 +24,7 @@ from openai import AsyncOpenAI
 
 from src.dependencies.database import db
 from src.dependencies.openai_client import get_openai_client
+from src.core.config import settings
 
 import unicodedata
 
@@ -31,7 +32,7 @@ import unicodedata
 # Hằng số cấu hình
 # ──────────────────────────────────────────────
 
-DB_NAME = "test"
+DB_NAME = settings.mongo_db_name
 
 EMBEDDING_MODEL = "text-embedding-3-small"
 EMBEDDING_DIMENSIONS = 1536  # Dimension mặc định của text-embedding-3-small

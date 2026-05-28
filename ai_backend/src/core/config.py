@@ -9,6 +9,7 @@ class Settings(BaseSettings):
     jwt_key: str
     openai_api_key: str
     mongo_uri: str
+    mongo_db_name: str = "test"
 
     model_config = SettingsConfigDict(
         env_file=ROOT_ENV_FILE,
@@ -18,4 +19,3 @@ class Settings(BaseSettings):
     )
 
 settings = Settings()
-

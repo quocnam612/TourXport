@@ -39,6 +39,10 @@ app = FastAPI(
 async def root():
     return {"message": "AI Worker is running smooth!"}
 
+@app.get("/healthz")
+async def healthz():
+    return {"status": "ok"}
+
 # ĐĂNG KÝ ROUTER TỔNG VÀO APP
 # Điểm bắt đầu của mọi API sẽ có dạng: http://localhost:8000/api/...
 app.include_router(api_router, prefix="/api")
