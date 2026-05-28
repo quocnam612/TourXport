@@ -57,43 +57,23 @@ class ProfileSection extends StatelessWidget {
 
     return Stack(
       children: [
-        // Full-screen Background: Ha Long Bay image + dark green overlay
-        Positioned.fill(
-          child: Stack(
-            fit: StackFit.expand,
-            children: [
-              coverUrl.isNotEmpty
-                  ? Image.network(coverUrl, fit: BoxFit.cover)
-                  : Image.asset(
-                      'assets/images/halong.jpg',
-                      fit: BoxFit.cover,
-                    ),
-              // Dark green tinted overlay across the entire screen
-              Container(
-                decoration: BoxDecoration(
-                  color: const Color(0xFF1B2321).withOpacity(0.78),
-                ),
+        // Subtle top ambient gold glow for premium style
+        Positioned(
+          top: 0,
+          left: 0,
+          right: 0,
+          child: Container(
+            height: 150,
+            decoration: BoxDecoration(
+              gradient: RadialGradient(
+                center: Alignment.topCenter,
+                radius: 1.2,
+                colors: [
+                  const Color(0xFFD4AF7A).withOpacity(0.10),
+                  Colors.transparent,
+                ],
               ),
-              // Subtle top ambient glow
-              Positioned(
-                top: 0,
-                left: 0,
-                right: 0,
-                child: Container(
-                  height: 150,
-                  decoration: BoxDecoration(
-                    gradient: RadialGradient(
-                      center: Alignment.topCenter,
-                      radius: 1.2,
-                      colors: [
-                        const Color(0xFFD4AF7A).withOpacity(0.10),
-                        Colors.transparent,
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-            ],
+            ),
           ),
         ),
         // Scrollable Content

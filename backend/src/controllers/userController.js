@@ -6,6 +6,9 @@ import TourDB from '../models/TourDB.js';
 
 import respond from '../utils/respond.js';
 import { generateToken } from '../utils/jwt.js';
+import GoogleAuth from '../services/GoogleAuth.js';
+import FacebookAuth from '../services/FacebookAuth.js';
+import { deleteImage, uploadImageBuffer } from '../services/Cloudinary.js';
 
 export const login = async (req, res, next) => {
     try {
@@ -22,6 +25,10 @@ export const login = async (req, res, next) => {
 
         if (!user) {
             return next(respond.httpError('Invalid login credentials!', 401));
+        }
+
+        if (!user.password) {
+            return next(respond.httpError('This account uses social login. Please continue with Google or Facebook.', 401));
         }
 
         const isMatch = await bcrypt.compare(password, user.password);
@@ -54,38 +61,160 @@ export const register = async (req, res, next) => {
             return next(respond.httpError('Please provide all required fields!', 400));
         }
 
-        if (await UserDB.findOne({ email })) {
+        const existingUser = await UserDB.findOne({ email }).select('+password');
+
+        if (existingUser?.password) {
             return next(respond.httpError('User with this email already exists!', 409));
         }
 
-        if (phone && await UserDB.findOne({ phone })) {
+        if (phone && await UserDB.findOne({
+            phone,
+            ...(existingUser ? { _id: { $ne: existingUser._id } } : {})
+        })) {
             return next(respond.httpError('User with this phone number already exists!', 409));
         }
 
         const hashedPassword = await bcrypt.hash(password, 10);
 
-        const user = await UserDB.create({
-            name,
-            email,
-            phone: phone || undefined,
-            password: hashedPassword
-        });
+        const user = existingUser || new UserDB({ email });
+        user.name = user.name || name;
+        user.phone = user.phone || phone || undefined;
+        user.password = hashedPassword;
+        user.authProvider = [...new Set([...(user.authProvider || []), 'local'])];
+        await user.save();
 
         const token = generateToken(user);
 
-        res.status(201).json({
+        res.status(existingUser ? 200 : 201).json({
             success: true,
-            message: 'User registered successfully!',
+            message: existingUser
+                ? 'Local login linked successfully!'
+                : 'User registered successfully!',
             token,
             user: {
                 id: user._id,
                 name: user.name,
-                email: user.email
+                email: user.email,
+                authProvider: user.authProvider || []
             }
         });
 
     } catch (error) {
         next(error);
+    }
+};
+
+export const googleLogin = async (req, res, next) => {
+    try {
+        const { idToken } = req.body;
+        const googleProfile = await GoogleAuth.verifyGoogleIdToken(idToken);
+
+        let user = await UserDB.findOne({
+            $or: [
+                { googleId: googleProfile.googleId },
+                { email: googleProfile.email }
+            ]
+        });
+
+        if (user) {
+            user.googleId = user.googleId || googleProfile.googleId;
+            user.authProvider = [...new Set([...(user.authProvider || []), 'google'])];
+
+            if (!user.avatar?.url && googleProfile.avatarUrl) {
+                user.avatar = {
+                    url: googleProfile.avatarUrl,
+                    public_id: ''
+                };
+            }
+
+            await user.save();
+        } else {
+            user = await UserDB.create({
+                name: googleProfile.name,
+                email: googleProfile.email,
+                googleId: googleProfile.googleId,
+                authProvider: ['google'],
+                avatar: googleProfile.avatarUrl
+                    ? { url: googleProfile.avatarUrl, public_id: '' }
+                    : undefined
+            });
+        }
+
+        const token = generateToken(user);
+
+        res.status(200).json({
+            success: true,
+            message: 'Google login successful!',
+            token,
+            user: {
+                id: user._id,
+                name: user.name,
+                email: user.email,
+                avatar: user.avatar?.url || '',
+                authProvider: user.authProvider || []
+            }
+        });
+    } catch (error) {
+        next(respond.httpError(error.message || 'Google login failed', error.statusCode || 401));
+    }
+};
+
+export const facebookLogin = async (req, res, next) => {
+    try {
+        const { accessToken } = req.body;
+        const facebookProfile = await FacebookAuth.verifyFacebookAccessToken(accessToken);
+
+        let user = await UserDB.findOne({
+            $or: [
+                { facebookId: facebookProfile.facebookId },
+                ...(facebookProfile.email ? [{ email: facebookProfile.email }] : [])
+            ]
+        });
+
+        if (user) {
+            user.facebookId = user.facebookId || facebookProfile.facebookId;
+            user.authProvider = [...new Set([...(user.authProvider || []), 'facebook'])];
+
+            if (!user.avatar?.url && facebookProfile.avatarUrl) {
+                user.avatar = {
+                    url: facebookProfile.avatarUrl,
+                    public_id: ''
+                };
+            }
+
+            await user.save();
+        } else {
+            if (!facebookProfile.email) {
+                return next(respond.httpError('Facebook email permission is required to create an account', 400));
+            }
+
+            user = await UserDB.create({
+                name: facebookProfile.name,
+                email: facebookProfile.email,
+                facebookId: facebookProfile.facebookId,
+                authProvider: ['facebook'],
+                avatar: facebookProfile.avatarUrl
+                    ? { url: facebookProfile.avatarUrl, public_id: '' }
+                    : undefined
+            });
+        }
+
+        const token = generateToken(user);
+
+        res.status(200).json({
+            success: true,
+            message: 'Facebook login successful!',
+            token,
+            user: {
+                id: user._id,
+                name: user.name,
+                email: user.email,
+                avatar: user.avatar?.url || '',
+                authProvider: user.authProvider || []
+            }
+        });
+    } catch (error) {
+        next(respond.httpError(error.message || 'Facebook login failed', error.statusCode || 401));
     }
 };
 
@@ -105,6 +234,8 @@ export const getProfile = async (req, res, next) => {
                 email: user.email,
                 phone: user.phone || '',
                 avatar: user.avatar?.url || '',
+                avatarPublicId: user.avatar?.public_id || '',
+                authProvider: user.authProvider || [],
                 createdAt: user.createdAt
             }
         });
@@ -155,7 +286,8 @@ export const updateProfile = async (req, res, next) => {
                 name: user.name,
                 email: user.email,
                 phone: user.phone || '',
-                avatar: user.avatar?.url || ''
+                avatar: user.avatar?.url || '',
+                avatarPublicId: user.avatar?.public_id || ''
             }
         });
     } catch (err) {
@@ -163,10 +295,61 @@ export const updateProfile = async (req, res, next) => {
     }
 };
 
+export const updateAvatar = async (req, res, next) => {
+    try {
+        if (!req.file) {
+            return next(respond.httpError('Avatar image is required', 400));
+        }
+
+        const user = await UserDB.findById(req.user.id);
+        if (!user) {
+            return next(respond.httpError('User not found!', 404));
+        }
+
+        const oldAvatarPublicId = user.avatar?.public_id;
+        const uploadedAvatar = await uploadImageBuffer(req.file.buffer);
+
+        user.avatar = {
+            url: uploadedAvatar.secure_url,
+            public_id: uploadedAvatar.public_id
+        };
+        await user.save();
+
+        if (oldAvatarPublicId) {
+            deleteImage(oldAvatarPublicId).catch((error) => {
+                console.error(`Failed to delete old avatar ${oldAvatarPublicId}:`, error.message || error);
+            });
+        }
+
+        res.status(200).json({
+            success: true,
+            message: 'Avatar updated successfully!',
+            user: {
+                id: user._id,
+                name: user.name,
+                email: user.email,
+                phone: user.phone || '',
+                avatar: user.avatar?.url || '',
+                avatarPublicId: user.avatar?.public_id || ''
+            }
+        });
+    } catch (error) {
+        next(error);
+    }
+};
+
 export const changePassword = async (req, res, next) => {
     try {
         const { oldPassword, newPassword } = req.body;
         const user = await UserDB.findById(req.user.id).select('+password');
+
+        if (!user) {
+            return next(respond.httpError('User not found!', 404));
+        }
+
+        if (!user.password) {
+            return next(respond.httpError('Please add local login before changing password', 400));
+        }
 
         const isMatch = await bcrypt.compare(oldPassword, user.password);
         if (!isMatch) {
@@ -179,6 +362,100 @@ export const changePassword = async (req, res, next) => {
         res.status(200).json({ success: true, message: 'Password changed successfully!' });
     } catch (error) {
         next(error);
+    }
+};
+
+export const addLoginMethod = async (req, res, next) => {
+    try {
+        const { provider, password, idToken, accessToken } = req.body;
+
+        if (!['local', 'google', 'facebook'].includes(provider)) {
+            return next(respond.httpError('provider must be local, google, or facebook', 400));
+        }
+
+        const user = await UserDB.findById(req.user.id).select('+password');
+        if (!user) {
+            return next(respond.httpError('User not found!', 404));
+        }
+
+        if ((user.authProvider || []).includes(provider)) {
+            return next(respond.httpError(`${provider} login is already linked`, 409));
+        }
+
+        if (provider === 'local') {
+            if (!password || typeof password !== 'string' || password.length < 8) {
+                return next(respond.httpError('password must be at least 8 characters', 400));
+            }
+
+            user.password = await bcrypt.hash(password, 10);
+        }
+
+        if (provider === 'google') {
+            const googleProfile = await GoogleAuth.verifyGoogleIdToken(idToken);
+
+            if (googleProfile.email !== user.email) {
+                return next(respond.httpError('Google account email must match your current account email', 409));
+            }
+
+            const existingGoogleUser = await UserDB.findOne({
+                googleId: googleProfile.googleId,
+                _id: { $ne: user._id }
+            });
+            if (existingGoogleUser) {
+                return next(respond.httpError('This Google account is already linked to another user', 409));
+            }
+
+            user.googleId = googleProfile.googleId;
+
+            if (!user.avatar?.url && googleProfile.avatarUrl) {
+                user.avatar = {
+                    url: googleProfile.avatarUrl,
+                    public_id: ''
+                };
+            }
+        }
+
+        if (provider === 'facebook') {
+            const facebookProfile = await FacebookAuth.verifyFacebookAccessToken(accessToken);
+
+            if (facebookProfile.email && facebookProfile.email !== user.email) {
+                return next(respond.httpError('Facebook account email must match your current account email', 409));
+            }
+
+            const existingFacebookUser = await UserDB.findOne({
+                facebookId: facebookProfile.facebookId,
+                _id: { $ne: user._id }
+            });
+            if (existingFacebookUser) {
+                return next(respond.httpError('This Facebook account is already linked to another user', 409));
+            }
+
+            user.facebookId = facebookProfile.facebookId;
+
+            if (!user.avatar?.url && facebookProfile.avatarUrl) {
+                user.avatar = {
+                    url: facebookProfile.avatarUrl,
+                    public_id: ''
+                };
+            }
+        }
+
+        user.authProvider = [...new Set([...(user.authProvider || []), provider])];
+        await user.save();
+
+        res.status(200).json({
+            success: true,
+            message: `${provider} login linked successfully!`,
+            user: {
+                id: user._id,
+                name: user.name,
+                email: user.email,
+                avatar: user.avatar?.url || '',
+                authProvider: user.authProvider || []
+            }
+        });
+    } catch (error) {
+        next(respond.httpError(error.message || 'Failed to link login method', error.statusCode || 400));
     }
 };
 

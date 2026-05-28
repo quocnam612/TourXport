@@ -1,0 +1,9 @@
+[build]
+  base = "frontend"
+  publish = "build/web"
+  command = "bash ./build_web.sh"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

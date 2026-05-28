@@ -1,7 +1,11 @@
 import 'dart:ui';
 
+import 'package:flutter/foundation.dart'
+    show TargetPlatform, defaultTargetPlatform, kIsWeb;
 import 'package:flutter/material.dart';
 import '../api/api.dart';
+import '../services/facebook_auth_service.dart';
+import '../services/google_auth_service.dart';
 import '../utils/auth_feedback.dart';
 import '../widgets/anim_builder.dart';
 import 'sign_up.dart';
@@ -22,6 +26,20 @@ class _SignInScreenState extends State<SignInScreen>
   bool _isLoading = false;
   final _inputController = TextEditingController();
   final _passwordController = TextEditingController();
+
+  bool get _supportsNativeSocialAuth {
+    if (kIsWeb) return true;
+    return defaultTargetPlatform == TargetPlatform.android ||
+        defaultTargetPlatform == TargetPlatform.iOS ||
+        defaultTargetPlatform == TargetPlatform.macOS;
+  }
+
+  void _showUnsupportedSocialLogin(String provider) {
+    showAuthErrorToast(
+      context,
+      '$provider chưa hỗ trợ trên Linux/Windows desktop. Hãy test bằng Chrome, Android, iOS hoặc macOS.',
+    );
+  }
 
   void _handleLogin() async {
     final input = _inputController.text.trim();
@@ -102,6 +120,185 @@ class _SignInScreenState extends State<SignInScreen>
     }
   }
 
+  Future<void> _loginWithGoogleIdToken(
+    String idToken, {
+    bool loadingAlreadySet = false,
+  }) async {
+    if (_isLoading && !loadingAlreadySet) return;
+
+    if (!loadingAlreadySet) {
+      setState(() => _isLoading = true);
+    }
+
+    try {
+      final response = await apiPostJson('/auth/google', {
+        'idToken': idToken,
+      });
+
+      if (!mounted) return;
+      setState(() => _isLoading = false);
+
+      final data = tryDecodeJsonObject(response.body);
+      final msg = data?['message'] as String?;
+
+      if (response.statusCode == 200 && data?['success'] == true) {
+        final user = data?['user'];
+        final userName = user is Map ? user['name'] as String? : null;
+        final authToken = data?['token'] as String?;
+
+        showAuthSuccessToast(
+          context,
+          'Đăng nhập Google thành công — chào ${userName ?? 'bạn'}!',
+        );
+
+        Navigator.pushAndRemoveUntil(
+          context,
+          PageRouteBuilder(
+            pageBuilder: (_, __, ___) => HomeScreen(
+              userName: userName ?? 'bạn',
+              authToken: authToken,
+            ),
+            transitionDuration: const Duration(milliseconds: 600),
+            reverseTransitionDuration: const Duration(milliseconds: 400),
+            transitionsBuilder: (_, animation, __, child) {
+              return FadeTransition(
+                opacity: CurvedAnimation(
+                  parent: animation,
+                  curve: Curves.easeInOut,
+                ),
+                child: SlideTransition(
+                  position: Tween<Offset>(
+                    begin: const Offset(0, 0.05),
+                    end: Offset.zero,
+                  ).animate(CurvedAnimation(
+                    parent: animation,
+                    curve: Curves.easeOutCubic,
+                  )),
+                  child: child,
+                ),
+              );
+            },
+          ),
+          (route) => false,
+        );
+        return;
+      }
+
+      showAuthErrorToast(context, msg ?? 'Đăng nhập Google thất bại');
+    } catch (e) {
+      if (!mounted) return;
+      setState(() => _isLoading = false);
+      showAuthErrorToast(context, 'Đăng nhập Google thất bại ($e)');
+    }
+  }
+
+  void _handleGoogleLogin() async {
+    if (!_supportsNativeSocialAuth) {
+      _showUnsupportedSocialLogin('Google login');
+      return;
+    }
+
+    if (_isLoading) return;
+
+    setState(() => _isLoading = true);
+
+    try {
+      final idToken = await GoogleAuthService.signInAndGetIdToken();
+      if (!mounted) return;
+
+      if (idToken == null) {
+        setState(() => _isLoading = false);
+        return;
+      }
+
+      await _loginWithGoogleIdToken(idToken, loadingAlreadySet: true);
+    } catch (e) {
+      if (!mounted) return;
+      setState(() => _isLoading = false);
+      showAuthErrorToast(context, 'Đăng nhập Google thất bại ($e)');
+    }
+  }
+
+  void _handleFacebookLogin() async {
+    if (!_supportsNativeSocialAuth) {
+      _showUnsupportedSocialLogin('Facebook login');
+      return;
+    }
+
+    if (_isLoading) return;
+
+    setState(() => _isLoading = true);
+
+    try {
+      final accessToken = await FacebookAuthService.signInAndGetAccessToken();
+      if (!mounted) return;
+
+      if (accessToken == null) {
+        setState(() => _isLoading = false);
+        return;
+      }
+
+      final response = await apiPostJson('/auth/facebook', {
+        'accessToken': accessToken,
+      });
+
+      if (!mounted) return;
+      setState(() => _isLoading = false);
+
+      final data = tryDecodeJsonObject(response.body);
+      final msg = data?['message'] as String?;
+
+      if (response.statusCode == 200 && data?['success'] == true) {
+        final user = data?['user'];
+        final userName = user is Map ? user['name'] as String? : null;
+        final authToken = data?['token'] as String?;
+
+        showAuthSuccessToast(
+          context,
+          'Đăng nhập Facebook thành công — chào ${userName ?? 'bạn'}!',
+        );
+
+        Navigator.pushAndRemoveUntil(
+          context,
+          PageRouteBuilder(
+            pageBuilder: (_, __, ___) => HomeScreen(
+              userName: userName ?? 'bạn',
+              authToken: authToken,
+            ),
+            transitionDuration: const Duration(milliseconds: 600),
+            reverseTransitionDuration: const Duration(milliseconds: 400),
+            transitionsBuilder: (_, animation, __, child) {
+              return FadeTransition(
+                opacity: CurvedAnimation(
+                  parent: animation,
+                  curve: Curves.easeInOut,
+                ),
+                child: SlideTransition(
+                  position: Tween<Offset>(
+                    begin: const Offset(0, 0.05),
+                    end: Offset.zero,
+                  ).animate(CurvedAnimation(
+                    parent: animation,
+                    curve: Curves.easeOutCubic,
+                  )),
+                  child: child,
+                ),
+              );
+            },
+          ),
+          (route) => false,
+        );
+        return;
+      }
+
+      showAuthErrorToast(context, msg ?? 'Đăng nhập Facebook thất bại');
+    } catch (e) {
+      if (!mounted) return;
+      setState(() => _isLoading = false);
+      showAuthErrorToast(context, 'Đăng nhập Facebook thất bại ($e)');
+    }
+  }
+
   // ── Animations ──
   late final AnimationController _entranceController;
   late final Animation<double> _headerFade;
@@ -155,7 +352,6 @@ class _SignInScreenState extends State<SignInScreen>
   }
 
   @override
-  @override
   Widget build(BuildContext context) {
     final screenW = MediaQuery.sizeOf(context).width;
     final isDesktop = screenW >= 800;
@@ -174,7 +370,8 @@ class _SignInScreenState extends State<SignInScreen>
             _buildBackButton(),
 
             // ── Centered glassmorphic card for Desktop Web
-            Center(
+            Align(
+              alignment: const Alignment(0.0, -0.20),
               child: Container(
                 width: 480,
                 decoration: BoxDecoration(
@@ -219,7 +416,7 @@ class _SignInScreenState extends State<SignInScreen>
 
                           // Tab bar
                           _buildTabBar(1.0, 480 - 40 * 2),
-                          const SizedBox(height: 24),
+                          const SizedBox(height: 19),
 
                           // Fields
                           AnimatedSwitcher(
@@ -293,12 +490,14 @@ class _SignInScreenState extends State<SignInScreen>
                                   label: 'Tiếp tục với Google',
                                   iconAsset: 'assets/icons/gg_logo.png',
                                   s: 1.0,
+                                  onTap: _handleGoogleLogin,
                                 ),
                                 const SizedBox(width: 10),
                                 _buildSocialBtn(
                                   label: 'Tiếp tục với Facebook',
                                   iconAsset: 'assets/icons/fb_logo.png',
                                   s: 1.0,
+                                  onTap: _handleFacebookLogin,
                                 ),
                               ],
                             ),
@@ -565,7 +764,7 @@ class _SignInScreenState extends State<SignInScreen>
 
                       // ── Tab: Điện thoại / Email
                       _buildTabBar(s, MediaQuery.sizeOf(context).width),
-                      SizedBox(height: 24 * s),
+                      SizedBox(height: 19 * s),
 
                       // ── Email / Phone field
                       AnimatedSwitcher(
@@ -640,12 +839,14 @@ class _SignInScreenState extends State<SignInScreen>
                               label: 'Tiếp tục với Google',
                               iconAsset: 'assets/icons/gg_logo.png',
                               s: s,
+                              onTap: _handleGoogleLogin,
                             ),
                             SizedBox(width: 10 * s),
                             _buildSocialBtn(
                               label: 'Tiếp tục với Facebook',
                               iconAsset: 'assets/icons/fb_logo.png',
                               s: s,
+                              onTap: _handleFacebookLogin,
                             ),
                           ],
                         ),
@@ -739,94 +940,100 @@ class _SignInScreenState extends State<SignInScreen>
 
   // ── Tab bar ──
   Widget _buildTabBar(double s, double containerWidth) {
-    final tabWidth = (containerWidth - 48 * s) / 2;
-    return SizedBox(
-      height: 50 * s,
-      child: Stack(
-        children: [
-          // Nền tối
-          Positioned.fill(
-            child: Container(
-              decoration: BoxDecoration(
-                color: Colors.black.withOpacity(0.5),
-                borderRadius: BorderRadius.circular(40),
+    final bool isDesktop = MediaQuery.sizeOf(context).width >= 800;
+    final double actualWidth = isDesktop ? containerWidth : containerWidth - 48 * s;
+    final tabWidth = actualWidth / 2;
+
+    return Center(
+      child: SizedBox(
+        width: actualWidth,
+        height: 50 * s,
+        child: Stack(
+          children: [
+            // Nền tối
+            Positioned.fill(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.black.withOpacity(0.5),
+                  borderRadius: BorderRadius.circular(40),
+                ),
               ),
             ),
-          ),
-          // Pill trắng active — animated
-          AnimatedPositioned(
-            duration: const Duration(milliseconds: 250),
-            curve: Curves.easeInOutCubic,
-            left: _useEmail ? tabWidth + 5 : 5,
-            top: 5,
-            width: tabWidth - 10,
-            height: 40 * s,
-            child: AnimatedContainer(
+            // Pill trắng active — animated
+            AnimatedPositioned(
               duration: const Duration(milliseconds: 250),
-              decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.9),
-                borderRadius: BorderRadius.circular(40),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.25),
-                    blurRadius: 8,
-                    offset: const Offset(0, 4),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          // Điện thoại label
-          Positioned(
-            left: 0,
-            width: tabWidth,
-            top: 0,
-            bottom: 0,
-            child: GestureDetector(
-              behavior: HitTestBehavior.opaque,
-              onTap: () => setState(() => _useEmail = false),
-              child: Center(
-                child: AnimatedDefaultTextStyle(
-                  duration: const Duration(milliseconds: 200),
-                  style: TextStyle(
-                    fontFamily: 'Montserrat',
-                    fontWeight: FontWeight.w600,
-                    fontSize: 18 * s,
-                    color: _useEmail
-                        ? Colors.white
-                        : const Color(0xFF1C302D),
-                  ),
-                  child: const Text('Điện thoại'),
+              curve: Curves.easeInOutCubic,
+              left: _useEmail ? tabWidth + 5 : 5,
+              top: 5,
+              width: tabWidth - 10,
+              height: 40 * s,
+              child: AnimatedContainer(
+                duration: const Duration(milliseconds: 250),
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.9),
+                  borderRadius: BorderRadius.circular(40),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.25),
+                      blurRadius: 8,
+                      offset: const Offset(0, 4),
+                    ),
+                  ],
                 ),
               ),
             ),
-          ),
-          // Email label
-          Positioned(
-            left: tabWidth,
-            right: 0,
-            top: 0,
-            bottom: 0,
-            child: GestureDetector(
-              behavior: HitTestBehavior.opaque,
-              onTap: () => setState(() => _useEmail = true),
-              child: Center(
-                child: AnimatedDefaultTextStyle(
-                  duration: const Duration(milliseconds: 200),
-                  style: TextStyle(
-                    fontFamily: 'Montserrat',
-                    fontWeight: FontWeight.w600,
-                    fontSize: 18 * s,
-                    color: _useEmail
-                        ? const Color(0xFF1C302D)
-                        : Colors.white,
+            // Điện thoại label
+            Positioned(
+              left: 0,
+              width: tabWidth,
+              top: 0,
+              bottom: 0,
+              child: GestureDetector(
+                behavior: HitTestBehavior.opaque,
+                onTap: () => setState(() => _useEmail = false),
+                child: Center(
+                  child: AnimatedDefaultTextStyle(
+                    duration: const Duration(milliseconds: 200),
+                    style: TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontWeight: FontWeight.w600,
+                      fontSize: 18 * s,
+                      color: _useEmail
+                          ? Colors.white
+                          : const Color(0xFF1C302D),
+                    ),
+                    child: const Text('Điện thoại'),
                   ),
-                  child: const Text('Email'),
                 ),
               ),
             ),
-          ),
-        ],
+            // Email label
+            Positioned(
+              left: tabWidth,
+              width: tabWidth,
+              top: 0,
+              bottom: 0,
+              child: GestureDetector(
+                behavior: HitTestBehavior.opaque,
+                onTap: () => setState(() => _useEmail = true),
+                child: Center(
+                  child: AnimatedDefaultTextStyle(
+                    duration: const Duration(milliseconds: 200),
+                    style: TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontWeight: FontWeight.w600,
+                      fontSize: 18 * s,
+                      color: _useEmail
+                          ? const Color(0xFF1C302D)
+                          : Colors.white,
+                    ),
+                    child: const Text('Email'),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -969,12 +1176,13 @@ class _SignInScreenState extends State<SignInScreen>
     required String label,
     required String iconAsset,
     required double s,
+    VoidCallback? onTap,
   }) {
     return Expanded(
       child: Material(
         color: Colors.transparent,
         child: InkWell(
-          onTap: () {},
+          onTap: _isLoading ? null : onTap,
           borderRadius: BorderRadius.circular(20),
           splashColor: Colors.white.withOpacity(0.1),
           highlightColor: Colors.white.withOpacity(0.05),

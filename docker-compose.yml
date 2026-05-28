@@ -4,6 +4,10 @@ services:
     ports:
       - "${PORT_BACKEND:-3000}:3000"
     env_file: .env
+    environment:
+      AI_BACKEND_URL: http://ai_backend:8000
+    depends_on:
+      - ai_backend
     volumes:
       - ./backend:/app
       - /app/node_modules

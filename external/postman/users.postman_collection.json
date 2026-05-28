@@ -75,7 +75,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\n    \"email\": \"123\",\n    \"password\": \"123\"\n}",
+          "raw": "{\n    \"email\": \"nguy3nqu0cn4m@gmail.com\",\n    \"password\": \"12345678\"\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -152,6 +152,194 @@
               "path": [
                 "auth",
                 "login"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        }
+      ]
+    },
+    {
+      "name": "google login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"idToken\": \"eyJhbGciOiJSUzI1NiIsImtpZCI6IjQxYjJlMTFmZjljYTI2ZTc4YzAyNWE5ZDRhNDI5Y2IwNjAxMzk1NmUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMTIzNDA4ODM0MzgtZGZlMDQydGIxam81bHRpa2J2cmRxamwxa29vMTBudm0uYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzMTIzNDA4ODM0MzgtZGZlMDQydGIxam81bHRpa2J2cmRxamwxa29vMTBudm0uYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDg5NjQxMzA3MDk2NjQ1Mjc1MDYiLCJlbWFpbCI6Im5ndXkzbnF1MGNuNG1AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJZcUdTTWdieVc2V2FrbTdrYkY3aGpRIiwibmFtZSI6Ik5hbSBTaWdtYSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NKZm1TUkpmRlJJVjlKSE9raWtiNkxCMjVxdnZmdWVJQnlTV25pMDBJbE1ZOTctRUdrPXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6Ik5hbSIsImZhbWlseV9uYW1lIjoiU2lnbWEiLCJpYXQiOjE3Nzk4NTk4MDksImV4cCI6MTc3OTg2MzQwOX0.BxfW6T0Hg5vB9-0IyMISbf05TX9H2TMRzWJLg6pN-0hCgo0_ebzFLGjJfyYhrVCdO37LQbtG-IKD7DD2QUiveolXEZXp5ScF7BTCgvHBqC_22PlnuZjkzWtiLHZ-EU3ROqnC08qlv1fCSBojYEJH5Ofn5LmEflusItbsrj4zB67Bufg3MJGdFvwWKHjnKCfv5N_NsWTQc_alf-c8xBqeTNidzSWzeke4KgCXki-H_CmAWw1HALD6lKUNtX_sOFoV1A2XKpfKUJEJ0N0rTxFa64X8HoQJyA_zEla3lqy5VFar_A0-pYFOSpbMSOvjkf_fP_fbNBw4jw2ImASXth4mrg\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/auth/google",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "auth",
+            "google"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "facebook login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"accessToken\": \"EAGCaXpyuWd8BRs6p915kb5eEBeIAkmlbihnCxmi4AbZA1pXwjfp66TekU8Qg5jyWBkxjaDctDK7CSYbCkGApykujyeOWeZC5HWZBVyG7cRWjNpXleEhDSZCcZBNacU7DU5UrGAh3gZAPK66iw5iAQLHwQa6zD4rZArQZCWtEF4l83r85Ws9HRPFReTg8diCQ3PGouG6CimgFa7f6JkIhjctumtrUqTX50weg37GrFHZC06edPkw8FcrpvSe4p7iboZA77N0zoPsiRUcmGsbbVXtckZACsEkB70PWnzfACXPV00KFoeXdxzEBKejTEsjO23pN8nAGlggbB0ENZCn7RZCaZBOM5ooAZDZD\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/auth/facebook",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "auth",
+            "facebook"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "add login method",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"provider\": \"google\",\n    \"idToken\": \"GOOGLE_ID_TOKEN\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/auth/profile/add-login-method",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "auth",
+            "profile",
+            "add-login-method"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "local",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"provider\": \"local\",\n    \"password\": \"newPassword123\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/auth/profile/add-login-method",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "profile",
+                "add-login-method"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        },
+        {
+          "name": "google",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"provider\": \"google\",\n    \"idToken\": \"GOOGLE_ID_TOKEN\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/auth/profile/add-login-method",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "profile",
+                "add-login-method"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        },
+        {
+          "name": "facebook",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"provider\": \"facebook\",\n    \"accessToken\": \"FACEBOOK_USER_ACCESS_TOKEN\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/auth/profile/add-login-method",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "profile",
+                "add-login-method"
               ]
             }
           },
@@ -315,6 +503,48 @@
           "body": null
         }
       ]
+    },
+    {
+      "name": "upload avatar",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMTY4MTlkNTI2MTljMWRlNmYwZGZhYiIsIm5hbWUiOiJOYW0gU2lnbWEiLCJlbWFpbCI6Im5ndXkzbnF1MGNuNG1AZ21haWwuY29tIiwiaWF0IjoxNzc5OTAxODE2LCJleHAiOjE3ODAxNjEwMTZ9.uoPT9oxH08Vw0EWU3xvyXOIiriRb6xDNsS4fx_SaI08",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "avatar",
+              "type": "file",
+              "uuid": "72cde1c4-b06b-49ea-a566-95956a9963d1",
+              "src": "/home/nqn612/Downloads/logo.png"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:3000/auth/profile/avatar",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "auth",
+            "profile",
+            "avatar"
+          ]
+        }
+      },
+      "response": []
     },
     {
       "name": "change password",

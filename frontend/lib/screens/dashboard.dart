@@ -40,6 +40,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   int _currentIndex = 0;
   int _previousIndex = 0;
   int _navIndex = 0;
+  int _savedPlacesInitialTab = 0;
   bool _showLikedOnly = false;
   String _searchQuery = '';
   String? _selectedCity;
@@ -1923,22 +1924,30 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     if (isDesktop) {
       return Scaffold(
         backgroundColor: const Color(0xFF0C1412),
-        body: Row(
+        body: Stack(
+          fit: StackFit.expand,
           children: [
-            // Left sidebar navigation
-            _buildSidebar(),
+            // Background images stretch full screen under the sidebar!
+            _buildPreviousBackground(),
+            _buildCurrentBackground(),
+            _buildDarkOverlay(),
 
-            // Right active tab area
-            Expanded(
-              child: Stack(
-                fit: StackFit.expand,
-                children: [
-                  _buildPreviousBackground(),
-                  _buildCurrentBackground(),
-                  _buildDarkOverlay(),
-                  _buildUIContent(size),
-                ],
-              ),
+            // Foreground UI structure
+            Row(
+              children: [
+                // Left sidebar navigation with BackdropFilter glass blur
+                ClipRect(
+                  child: BackdropFilter(
+                    filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
+                    child: _buildSidebar(),
+                  ),
+                ),
+
+                // Right active tab content area
+                Expanded(
+                  child: _buildUIContent(size),
+                ),
+              ],
             ),
           ],
         ),
@@ -1958,7 +1967,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             curve: Curves.easeInOut,
             left: 24,
             right: 24,
-            bottom: _navIndex == 3 ? -100 : 20,
+            bottom: _navIndex == 3
+                ? -100
+                : MediaQuery.paddingOf(context).bottom + 20,
             child: _buildBottomNav(),
           ),
         ],
@@ -1978,37 +1989,49 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     return Container(
       width: 260,
       decoration: BoxDecoration(
-        color: const Color(0xFF0C1412),
+        color: const Color(0xFF070E0D).withOpacity(0.45), // Semi-transparent dark green/black background for glass effect
         border:
-            const Border(right: BorderSide(color: Colors.white10, width: 1)),
+            const Border(right: BorderSide(color: Colors.white12, width: 1)),
       ),
       child: Column(
         children: [
           const SizedBox(height: 36),
-          // Logo header
+          // Logo header (horizontal Row for large compact logo)
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset(
-                'assets/images/logo.png',
-                width: 40,
-                height: 40,
-                fit: BoxFit.contain,
+              Container(
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  boxShadow: [
+                    BoxShadow(
+                      color: const Color(0xFFD4AF7A).withOpacity(0.15),
+                      blurRadius: 20,
+                      spreadRadius: 1,
+                    ),
+                  ],
+                ),
+                child: Image.asset(
+                  'assets/images/logo.png',
+                  width: 64,
+                  height: 64,
+                  fit: BoxFit.contain,
+                ),
               ),
-              const SizedBox(width: 12),
+              const SizedBox(width: 14),
               const Text(
                 'TourXport',
                 style: TextStyle(
                   fontFamily: 'Montserrat',
-                  fontSize: 22,
-                  fontWeight: FontWeight.w800,
+                  fontSize: 26,
+                  fontWeight: FontWeight.w900,
                   color: Color(0xFFD4AF7A),
-                  letterSpacing: 1.0,
+                  letterSpacing: 1.2,
                 ),
               ),
             ],
           ),
-          const SizedBox(height: 40),
+          const SizedBox(height: 28),
 
           // User Profile Card
           Padding(
@@ -2080,7 +2103,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     onTap: () async {
                       if (i == 2) {
                         _stopAutoPlay();
-                        await Navigator.push(
+                        final result = await Navigator.push(
                           context,
                           MaterialPageRoute(
                             builder: (context) => SurveyScreen(
@@ -2089,8 +2112,17 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                           ),
                         );
                         _startAutoPlay();
+                        if (result == 'go_to_saved_tours') {
+                          setState(() {
+                            _savedPlacesInitialTab = 1;
+                            _navIndex = 1;
+                          });
+                        }
                       } else {
-                        setState(() => _navIndex = i);
+                        setState(() {
+                          _navIndex = i;
+                          _savedPlacesInitialTab = 0;
+                        });
                         if (i == 0) {
                           _startAutoPlay();
                         } else {
@@ -2106,13 +2138,14 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                           horizontal: 16, vertical: 14),
                       decoration: BoxDecoration(
                         color: isActive
-                            ? const Color(0xFF2D6A4F).withOpacity(0.2)
+                            ? const Color(0xFF2D6A4F).withOpacity(0.25)
                             : Colors.transparent,
                         borderRadius: BorderRadius.circular(16),
                         border: Border.all(
                           color: isActive
-                              ? const Color(0xFF2D6A4F).withOpacity(0.4)
+                              ? const Color(0xFFD4AF7A).withOpacity(0.65) // Subtle glowing gold border for active item
                               : Colors.transparent,
+                          width: 1.2,
                         ),
                       ),
                       child: Row(
@@ -2121,7 +2154,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                             item.$1,
                             color: isActive
                                 ? const Color(0xFFD4AF7A)
-                                : Colors.white.withOpacity(0.9),
+                                : Colors.white.withOpacity(0.65), // Crisp contrast for inactive icons
                             size: 22,
                           ),
                           const SizedBox(width: 14),
@@ -2134,7 +2167,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                   isActive ? FontWeight.bold : FontWeight.w600,
                               color: isActive
                                   ? Colors.white
-                                  : Colors.white.withOpacity(0.9),
+                                  : Colors.white.withOpacity(0.65), // Highly legible inactive text
                             ),
                           ),
                         ],
@@ -2194,12 +2227,15 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   Widget _buildPreviousBackground() {
     final isDesktop = MediaQuery.of(context).size.width >= 800;
-    final blurVal = isDesktop ? 0.8 : 5.0;
+    final isSurveyStyle = _navIndex == 1 || _navIndex == 3;
+    final blurVal = isSurveyStyle ? 10.0 : (isDesktop ? 0.8 : 5.0);
+    final bgPath = isSurveyStyle ? 'assets/images/login_bg.jpg' : _previousBgPath;
+
     return Positioned.fill(
       child: Stack(
         fit: StackFit.expand,
         children: [
-          Destination.buildImage(_previousBgPath),
+          Destination.buildImage(bgPath),
           BackdropFilter(
             filter: ImageFilter.blur(sigmaX: blurVal, sigmaY: blurVal),
             child: Container(color: Colors.transparent),
@@ -2211,7 +2247,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   Widget _buildCurrentBackground() {
     final isDesktop = MediaQuery.of(context).size.width >= 800;
-    final blurVal = isDesktop ? 0.8 : 5.0;
+    final isSurveyStyle = _navIndex == 1 || _navIndex == 3;
+    final blurVal = isSurveyStyle ? 10.0 : (isDesktop ? 0.8 : 5.0);
+    final bgPath = isSurveyStyle ? 'assets/images/login_bg.jpg' : _currentBgPath;
+
     return Positioned.fill(
       child: AnimBuilder(
         animation: _bgFade,
@@ -2222,7 +2261,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         child: Stack(
           fit: StackFit.expand,
           children: [
-            Destination.buildImage(_currentBgPath),
+            Destination.buildImage(bgPath),
             BackdropFilter(
               filter: ImageFilter.blur(sigmaX: blurVal, sigmaY: blurVal),
               child: Container(color: Colors.transparent),
@@ -2235,6 +2274,16 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   Widget _buildDarkOverlay() {
     final isDesktop = MediaQuery.of(context).size.width >= 800;
+    final isSurveyStyle = _navIndex == 1 || _navIndex == 3;
+
+    if (isSurveyStyle) {
+      return Positioned.fill(
+        child: Container(
+          color: Colors.black.withOpacity(0.6),
+        ),
+      );
+    }
+
     return Positioned.fill(
       child: Container(
         decoration: BoxDecoration(
@@ -2255,17 +2304,23 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Widget _buildUIContent(Size size) {
-    return IndexedStack(
+    final isDesktop = MediaQuery.of(context).size.width >= 800;
+    final content = IndexedStack(
       index: _navIndex,
       children: [
         _buildHomeTabBody(size),
         SavedPlacesSection(
+          authToken: widget.authToken,
+          initialTabIndex: _savedPlacesInitialTab,
           entranceAnimation: _cardEntrance,
           savedDestinations: _savedDestinations,
           updatingSavedNames: _updatingSavedNames,
           isLoading: _isLoadingSavedPlaces,
           onBack: () {
-            setState(() => _navIndex = 0);
+            setState(() {
+              _navIndex = 0;
+              _savedPlacesInitialTab = 0;
+            });
             _startAutoPlay();
           },
           onOpenDetail: _openPlaceDetail,
@@ -2293,6 +2348,15 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           onEditHelpSupport: _editHelpSupport,
         ),
       ],
+    );
+
+    if (isDesktop) {
+      return content;
+    }
+
+    return SafeArea(
+      bottom: false,
+      child: content,
     );
   }
 
@@ -2587,53 +2651,77 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         ),
                       ),
                       const SizedBox(width: 40),
-                      Column(
+                      // Left/Right Navigation controls for desktop view (unlimited browsing)
+                      Row(
                         mainAxisSize: MainAxisSize.min,
-                        crossAxisAlignment: CrossAxisAlignment.end,
-                        children:
-                            List.generate(destinations.length.clamp(0, 5), (i) {
-                          final isActive = i == _currentIndex;
-                          final numStr = (i + 1).toString().padLeft(2, '0');
-
-                          return WebHoverable(
-                            onTap: () => _selectDestination(i),
-                            child: Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 6),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  if (isActive) ...[
-                                    Text(
-                                      numStr,
-                                      style: const TextStyle(
-                                        fontFamily: 'Montserrat',
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.w800,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                    const SizedBox(width: 10),
-                                    Container(
-                                      width: 40,
-                                      height: 1.5,
-                                      color: Colors.white,
-                                    ),
-                                  ] else ...[
-                                    Text(
-                                      numStr,
-                                      style: TextStyle(
-                                        fontFamily: 'Montserrat',
-                                        fontSize: 13,
-                                        fontWeight: FontWeight.w500,
-                                        color: Colors.white.withOpacity(0.35),
-                                      ),
-                                    ),
-                                  ],
-                                ],
+                        children: [
+                          // Left Arrow Button
+                          WebHoverable(
+                            onTap: () {
+                              final prevIdx = (_currentIndex - 1 + destinations.length) % destinations.length;
+                              _selectDestination(prevIdx);
+                            },
+                            child: Container(
+                              width: 52,
+                              height: 52,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(color: Colors.white30, width: 1.5),
+                                color: Colors.white.withOpacity(0.05),
                               ),
+                              child: const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white, size: 18),
                             ),
-                          );
-                        }),
+                          ),
+                          const SizedBox(width: 16),
+                          // Dynamic Page Indicator showing current out of total destinations
+                          Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text(
+                                (_currentIndex + 1).toString().padLeft(2, '0'),
+                                style: const TextStyle(
+                                  fontFamily: 'Montserrat',
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.w900,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              Container(
+                                width: 20,
+                                height: 1.5,
+                                margin: const EdgeInsets.symmetric(vertical: 4),
+                                color: const Color(0xFFD4AF7A),
+                              ),
+                              Text(
+                                destinations.length.toString().padLeft(2, '0'),
+                                style: TextStyle(
+                                  fontFamily: 'Montserrat',
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w600,
+                                  color: Colors.white.withOpacity(0.4),
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(width: 16),
+                          // Right Arrow Button
+                          WebHoverable(
+                            onTap: () {
+                              final nextIdx = (_currentIndex + 1) % destinations.length;
+                              _selectDestination(nextIdx);
+                            },
+                            child: Container(
+                              width: 52,
+                              height: 52,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(color: Colors.white30, width: 1.5),
+                                color: Colors.white.withOpacity(0.05),
+                              ),
+                              child: const Icon(Icons.arrow_forward_ios_rounded, color: Colors.white, size: 18),
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
@@ -2670,19 +2758,57 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                   ),
                                 ),
                                 const SizedBox(height: 16),
-                                WebHoverable(
-                                  onTap: () =>
-                                      _openPlaceDetail(activeDest, ctx),
-                                  child: const Text(
-                                    'XEM CHI TIẾT >>',
-                                    style: TextStyle(
-                                      fontFamily: 'Montserrat',
-                                      fontSize: 12,
-                                      fontWeight: FontWeight.w800,
-                                      color: Color(0xFFD4AF7A),
-                                      letterSpacing: 1.0,
+                                Row(
+                                  children: [
+                                    WebHoverable(
+                                      onTap: () => _openPlaceDetail(activeDest, ctx),
+                                      child: const Text(
+                                        'XEM CHI TIẾT >>',
+                                        style: TextStyle(
+                                          fontFamily: 'Montserrat',
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.w800,
+                                          color: Color(0xFFD4AF7A),
+                                          letterSpacing: 1.0,
+                                        ),
+                                      ),
                                     ),
-                                  ),
+                                    const SizedBox(width: 24),
+                                    Builder(
+                                      builder: (buttonCtx) {
+                                        final isSaved = _savedNames.contains(activeDest.name);
+                                        final isBusy = _updatingSavedNames.contains(activeDest.name);
+                                        
+                                        return WebHoverable(
+                                          onTap: isBusy ? null : () async {
+                                            await _toggleSaved(activeDest);
+                                            setState(() {});
+                                          },
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            children: [
+                                              Icon(
+                                                isSaved ? Icons.bookmark_rounded : Icons.bookmark_border_rounded,
+                                                color: isSaved ? const Color(0xFFD4AF7A) : Colors.white70,
+                                                size: 16,
+                                              ),
+                                              const SizedBox(width: 6),
+                                              Text(
+                                                isSaved ? 'ĐÃ LƯU' : 'LƯU ĐỊA ĐIỂM',
+                                                style: TextStyle(
+                                                  fontFamily: 'Montserrat',
+                                                  fontSize: 12,
+                                                  fontWeight: FontWeight.w800,
+                                                  color: isSaved ? const Color(0xFFD4AF7A) : Colors.white70,
+                                                  letterSpacing: 1.0,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        );
+                                      }
+                                    ),
+                                  ],
                                 ),
                               ],
                             ),
@@ -2924,7 +3050,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         WebHoverable(
                           onTap: () async {
                             _stopAutoPlay();
-                            await Navigator.push(
+                            final result = await Navigator.push(
                               context,
                               MaterialPageRoute(
                                 builder: (context) => SurveyScreen(
@@ -2933,6 +3059,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                               ),
                             );
                             _startAutoPlay();
+                            if (result == 'go_to_saved_tours') {
+                              setState(() {
+                                _savedPlacesInitialTab = 1;
+                                _navIndex = 1;
+                              });
+                            }
                           },
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
@@ -3842,7 +3974,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     if (i == 2) {
                       // Mở khảo sát khi nhấn vào nút Explore (Safari-like)
                       _stopAutoPlay();
-                      await Navigator.push(
+                      final result = await Navigator.push(
                         context,
                         PageRouteBuilder(
                           pageBuilder: (_, __, ___) => SurveyScreen(
@@ -3872,8 +4004,17 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         ),
                       );
                       _startAutoPlay();
+                      if (result == 'go_to_saved_tours') {
+                        setState(() {
+                          _savedPlacesInitialTab = 1;
+                          _navIndex = 1;
+                        });
+                      }
                     } else {
-                      setState(() => _navIndex = i);
+                      setState(() {
+                        _navIndex = i;
+                        _savedPlacesInitialTab = 0;
+                      });
                       if (i == 0) {
                         _startAutoPlay();
                       } else {

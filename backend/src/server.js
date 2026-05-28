@@ -9,6 +9,7 @@ import authRoutes from './routes/authRoutes.js';
 import hotelRoutes from './routes/hotelRoutes.js';
 import locationsRoutes from './routes/locationRoutes.js';
 import restaurantRoutes from './routes/restaurantRoutes.js';
+import reviewRoutes from './routes/reviewRoutes.js';
 import tourRoutes from './routes/tourRoutes.js';
 
 const app = express();
@@ -22,6 +23,7 @@ app.use('/locations', locationsRoutes);
 app.use('/hotels', hotelRoutes);
 app.use('/restaurants', restaurantRoutes);
 app.use('/tours', tourRoutes);
+app.use('/reviews', reviewRoutes);
 
 // Default route
 app.get('/', (req, res, next) => {

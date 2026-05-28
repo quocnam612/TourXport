@@ -17,4 +17,4 @@ async def get_database():
     if db.client is None:
         raise Exception("Database client chưa được khởi tạo. Hãy kiểm tra lại lifespan ở main.py")
     
-    return db.client["tourxport_db"]
+    return db.client[settings.mongo_db_name]

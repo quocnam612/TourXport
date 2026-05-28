@@ -77,9 +77,10 @@ const sourceSchema = new mongoose.Schema({
         required: true
     },
 
-    collection: {
+    sourceCollection: {
         type: String,
         enum: ['places', 'restaurants', 'hotels'],
+        alias: 'collection',
         default: null
     },
 
@@ -144,7 +145,7 @@ const itineraryItemSchema = new mongoose.Schema({
 
     location: {
         type: pointSchema,
-        required: true
+        default: null
     },
 
     source: {
