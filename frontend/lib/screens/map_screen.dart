@@ -46,6 +46,7 @@ class _MapScreenState extends State<MapScreen> with TickerProviderStateMixin {
   // TỐI ƯU: Thay thế _gpsDebounceTimer bằng cơ chế Throttling dựa trên thời gian thực (_lastRouteCheckTime)
   // để khắc phục lỗi không thể kiểm tra lệch tuyến (off-route) khi đang di chuyển liên tục.
   DateTime? _lastRouteCheckTime; 
+  int _consecutiveOffRouteCount = 0; // Bộ lọc nhiễu GPS: đếm số lần phát hiện đi lệch hướng liên tiếp
   final Map<String, List<Map<String, dynamic>>> _suggestionsCache = {}; // Cache gợi ý tìm kiếm địa chỉ
   final Map<String, String> _reverseGeocodeCache = {}; // Cache giải mã tọa độ ngược
   Timer? _movementSimulationTimer; // Timer mô phỏng di chuyển dọc đường đi
@@ -187,13 +188,29 @@ class _MapScreenState extends State<MapScreen> with TickerProviderStateMixin {
   }
 
   // Thuật toán kiểm tra người dùng đi lệch đường (Đã được tách biệt logic sang NavigationHelper)
-  void _checkIfOffRoute(LatLng currentPos) {
+  void _checkIfOffRoute(LatLng currentPos, {bool isSimulated = false}) {
     if (_routePoints.isEmpty || _isRecalculating) return;
 
     final isOff = NavigationHelper.isOffRoute(currentPos, _routePoints);
     if (isOff) {
-      debugPrint("Người dùng đi sai đường! Kích hoạt tính toán lại lộ trình.");
-      _recalculateRoute(currentPos);
+      if (isSimulated) {
+        debugPrint("Người dùng đi sai đường (Giả lập)! Kích hoạt tính toán lại lộ trình lập tức.");
+        _consecutiveOffRouteCount = 0;
+        _recalculateRoute(currentPos);
+      } else {
+        _consecutiveOffRouteCount++;
+        debugPrint("Người dùng đi sai đường! Đếm số lần lệch liên tiếp: $_consecutiveOffRouteCount/3");
+        if (_consecutiveOffRouteCount >= 3) {
+          _consecutiveOffRouteCount = 0;
+          debugPrint("Kích hoạt tính toán lại lộ trình thực tế.");
+          _recalculateRoute(currentPos);
+        }
+      }
+    } else {
+      if (_consecutiveOffRouteCount > 0) {
+        debugPrint("Người dùng đã quay lại tuyến đường. Reset bộ đếm lệch hướng.");
+        _consecutiveOffRouteCount = 0;
+      }
     }
   }
 
@@ -319,7 +336,7 @@ class _MapScreenState extends State<MapScreen> with TickerProviderStateMixin {
     debugPrint("Tọa độ giả lập đi sai đường: ${simulatedLatLng.latitude}, ${simulatedLatLng.longitude}");
 
     // Kích hoạt hàm kiểm tra với vị trí giả lập
-    _checkIfOffRoute(simulatedLatLng);
+    _checkIfOffRoute(simulatedLatLng, isSimulated: true);
   }
 
   // Debug: Bật/Tắt chế độ mô phỏng di chuyển dọc theo tuyến đường đi thực tế
@@ -404,6 +421,8 @@ class _MapScreenState extends State<MapScreen> with TickerProviderStateMixin {
       ),
     ).then((item) async {
       if (item != null) {
+        _positionStreamSubscription?.cancel();
+        _positionStreamSubscription = null;
         // Chỉ gọi setState khi widget vẫn còn tồn tại trên màn hình
         if (mounted) {
           setState(() {
@@ -431,6 +450,7 @@ class _MapScreenState extends State<MapScreen> with TickerProviderStateMixin {
             _initialRouteDurationMin = routeResult.durationMinutes;
             _manualStartLocationName = item['display_name'] as String;
             _gpsAddress = null; // Clear GPS address to avoid state conflicts
+            _consecutiveOffRouteCount = 0; // Reset counter for manual location route
             _isLoading = false;
           });
 
@@ -443,6 +463,7 @@ class _MapScreenState extends State<MapScreen> with TickerProviderStateMixin {
   }
 
   Future<bool> _showLocationExplanationDialog() async {
+    if (!mounted) return false;
     return await showDialog<bool>(
       context: context,
       barrierDismissible: false,
@@ -480,9 +501,31 @@ class _MapScreenState extends State<MapScreen> with TickerProviderStateMixin {
     try {
       // 1. Kiểm tra Dịch vụ Vị trí (Location Services)
       bool serviceEnabled = await Geolocator.isLocationServiceEnabled();
+
+      // serviceEnabled = false;
+
+      if (!serviceEnabled) {
+        // Hiển thị popup hỏi bật GPS
+        final bool userAgreed = await _showLocationExplanationDialog();
+        if (userAgreed) {
+          await Geolocator.openLocationSettings();
+          // Kiểm tra lại sau khi người dùng quay lại từ cài đặt
+          serviceEnabled = await Geolocator.isLocationServiceEnabled();
+        }
+      }
+
       if (serviceEnabled) {
         // 2. Kiểm tra & Yêu cầu Quyền truy cập
         LocationPermission permission = await Geolocator.checkPermission();
+        if (permission == LocationPermission.denied) {
+          final bool userAgreed = await _showLocationExplanationDialog();
+          if (userAgreed) {
+            permission = await Geolocator.requestPermission();
+          }
+        } else if (permission == LocationPermission.deniedForever) {
+          _showWarning("Quyền định vị bị chặn. Hãy bật lại trong Cài đặt ứng dụng.");
+          await Geolocator.openAppSettings();
+        }
 
         if (permission == LocationPermission.always || permission == LocationPermission.whileInUse) {
           // 3. Lấy vị trí GPS hiện tại (thêm timeLimit 5 giây để tránh treo vô hạn)
@@ -521,6 +564,7 @@ class _MapScreenState extends State<MapScreen> with TickerProviderStateMixin {
         _routeDurationMin = routeResult.durationMinutes;
         _initialRouteDistanceKm = routeResult.distanceKm;
         _initialRouteDurationMin = routeResult.durationMinutes;
+        _consecutiveOffRouteCount = 0; // Reset counter for new location fetch
         _isLoading = false;
       });
 
@@ -532,6 +576,7 @@ class _MapScreenState extends State<MapScreen> with TickerProviderStateMixin {
     }
 
     if (hasGPS) {
+      _startTracking(); // Bắt đầu theo dõi di chuyển vị trí thực tế
       _fetchAddressFromCoords(startLocation).then((fetchedAddress) {
         if (mounted && fetchedAddress != null) {
           setState(() {
