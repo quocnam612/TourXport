@@ -8,6 +8,7 @@ import respond from '../utils/respond.js';
 import { generateToken } from '../utils/jwt.js';
 import GoogleAuth from '../services/GoogleAuth.js';
 import FacebookAuth from '../services/FacebookAuth.js';
+import { deleteImage, uploadImageBuffer } from '../services/Cloudinary.js';
 
 export const login = async (req, res, next) => {
     try {
@@ -233,6 +234,7 @@ export const getProfile = async (req, res, next) => {
                 email: user.email,
                 phone: user.phone || '',
                 avatar: user.avatar?.url || '',
+                avatarPublicId: user.avatar?.public_id || '',
                 authProvider: user.authProvider || [],
                 createdAt: user.createdAt
             }
@@ -284,11 +286,55 @@ export const updateProfile = async (req, res, next) => {
                 name: user.name,
                 email: user.email,
                 phone: user.phone || '',
-                avatar: user.avatar?.url || ''
+                avatar: user.avatar?.url || '',
+                avatarPublicId: user.avatar?.public_id || ''
             }
         });
     } catch (err) {
         next(err);
+    }
+};
+
+export const updateAvatar = async (req, res, next) => {
+    try {
+        if (!req.file) {
+            return next(respond.httpError('Avatar image is required', 400));
+        }
+
+        const user = await UserDB.findById(req.user.id);
+        if (!user) {
+            return next(respond.httpError('User not found!', 404));
+        }
+
+        const oldAvatarPublicId = user.avatar?.public_id;
+        const uploadedAvatar = await uploadImageBuffer(req.file.buffer);
+
+        user.avatar = {
+            url: uploadedAvatar.secure_url,
+            public_id: uploadedAvatar.public_id
+        };
+        await user.save();
+
+        if (oldAvatarPublicId) {
+            deleteImage(oldAvatarPublicId).catch((error) => {
+                console.error(`Failed to delete old avatar ${oldAvatarPublicId}:`, error.message || error);
+            });
+        }
+
+        res.status(200).json({
+            success: true,
+            message: 'Avatar updated successfully!',
+            user: {
+                id: user._id,
+                name: user.name,
+                email: user.email,
+                phone: user.phone || '',
+                avatar: user.avatar?.url || '',
+                avatarPublicId: user.avatar?.public_id || ''
+            }
+        });
+    } catch (error) {
+        next(error);
     }
 };
 

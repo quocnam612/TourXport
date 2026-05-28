@@ -1,8 +1,8 @@
 import 'dotenv/config';
 
 const config = {
-    env: 'development',
-    port: 3000,
+    env: process.env.NODE_ENV || 'development',
+    port: Number(process.env.PORT || process.env.PORT_BACKEND || 3000),
     aiPort: 8000,
 
     jwt: {

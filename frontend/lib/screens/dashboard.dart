@@ -1966,7 +1966,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             curve: Curves.easeInOut,
             left: 24,
             right: 24,
-            bottom: _navIndex == 3 ? -100 : 20,
+            bottom: _navIndex == 3
+                ? -100
+                : MediaQuery.paddingOf(context).bottom + 20,
             child: _buildBottomNav(),
           ),
         ],
@@ -2276,7 +2278,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Widget _buildUIContent(Size size) {
-    return IndexedStack(
+    final isDesktop = MediaQuery.of(context).size.width >= 800;
+    final content = IndexedStack(
       index: _navIndex,
       children: [
         _buildHomeTabBody(size),
@@ -2314,6 +2317,15 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           onEditHelpSupport: _editHelpSupport,
         ),
       ],
+    );
+
+    if (isDesktop) {
+      return content;
+    }
+
+    return SafeArea(
+      bottom: false,
+      child: content,
     );
   }
 

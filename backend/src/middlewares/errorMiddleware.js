@@ -3,7 +3,9 @@ const errorMiddleware = (err, req, res, next) => {
         return next(err);
     }
 
-    const statusCode = err.statusCode || err.status || (err.name === 'ValidationError' ? 400 : 500);
+    const statusCode = err.statusCode
+        || err.status
+        || (err.name === 'ValidationError' || err.name === 'MulterError' ? 400 : 500);
 
     console.error(err.stack || err);
 
