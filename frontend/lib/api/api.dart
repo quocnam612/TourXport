@@ -7,6 +7,7 @@ import 'package:http/http.dart' as http;
 /// Override từ build/run, không cần sửa backend.
 /// Ví dụ thiết bị thật: `flutter run --dart-define=API_BASE_URL=http://192.168.1.5:3000`
 const String _kApiBaseFromEnv = String.fromEnvironment('API_BASE_URL', defaultValue: '');
+const String _kAiBaseFromEnv = String.fromEnvironment('AI_BASE_URL', defaultValue: '');
 
 /// Base URL cho API Node. Emulator Android dùng 10.0.2.2 để trỏ về máy host.
 String get apiBaseUrl {
@@ -27,14 +28,9 @@ String get apiBaseUrl {
 
 /// Base URL cho AI Backend (Python - FastAPI)
 String get aiBaseUrl {
-  final override = _kApiBaseFromEnv.trim();
+  final override = _kAiBaseFromEnv.trim();
   if (override.isNotEmpty) {
-    // Nếu override có chứa port, ta giả định nó là base chung, nhưng AI thường chạy port khác.
-    // Tuy nhiên để đơn giản, nếu người dùng cung cấp API_BASE_URL, ta dùng nó làm base cho cả 2 hoặc xử lý logic riêng.
-    // Ở đây ta mặc định port 8000 cho AI.
-    final base = override.endsWith('/') ? override.substring(0, override.length - 1) : override;
-    if (base.contains(':3000')) return base.replaceFirst(':3000', ':8000');
-    return base;
+    return override.endsWith('/') ? override.substring(0, override.length - 1) : override;
   }
   if (kIsWeb) {
     return 'http://localhost:8000';

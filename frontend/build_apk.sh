@@ -11,18 +11,27 @@ if [[ -f "$ROOT_DIR/.env" ]]; then
   set +a
 fi
 
-API_BASE_URL="${API_BASE_URL:-http://10.0.2.2:3000}"
-AI_BASE_URL="${AI_BASE_URL:-http://10.0.2.2:8000}"
+API_BASE_URL="${API_BASE_URL:-https://tourxport.onrender.com}"
+AI_BASE_URL="${AI_BASE_URL:-https://tourxport-ai-backend.onrender.com}"
 
 args=(
-  run
-  -d "${ANDROID_DEVICE_ID:-android}"
+  build
+  apk
+  --release
   --dart-define "API_BASE_URL=$API_BASE_URL"
   --dart-define "AI_BASE_URL=$AI_BASE_URL"
 )
 
 if [[ -n "${GOOGLE_CLIENT_ID:-}" ]]; then
   args+=(--dart-define "GOOGLE_CLIENT_ID=$GOOGLE_CLIENT_ID")
+fi
+
+if [[ -n "${FACEBOOK_APP_ID:-}" ]]; then
+  args+=(--dart-define "FACEBOOK_APP_ID=$FACEBOOK_APP_ID")
+fi
+
+if [[ -n "${FACEBOOK_GRAPH_VERSION:-}" ]]; then
+  args+=(--dart-define "FACEBOOK_GRAPH_VERSION=$FACEBOOK_GRAPH_VERSION")
 fi
 
 flutter "${args[@]}"

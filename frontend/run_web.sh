@@ -14,6 +14,7 @@ fi
 WEB_HOST="${WEB_HOST:-localhost}"
 WEB_PORT="${WEB_PORT:-7357}"
 API_BASE_URL="${API_BASE_URL:-http://localhost:3000}"
+AI_BASE_URL="${AI_BASE_URL:-http://localhost:8000}"
 
 args=(
   run
@@ -21,6 +22,7 @@ args=(
   --web-hostname "$WEB_HOST"
   --web-port "$WEB_PORT"
   --dart-define "API_BASE_URL=$API_BASE_URL"
+  --dart-define "AI_BASE_URL=$AI_BASE_URL"
 )
 
 if [[ -n "${GOOGLE_CLIENT_ID:-}" ]]; then
