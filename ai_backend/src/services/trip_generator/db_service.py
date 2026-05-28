@@ -90,10 +90,14 @@ class DBService:
 
     @staticmethod
     def _build_vector_search_pipeline(
+        collection_name: str,
         query_vector: List[float],
         top_k: int = DEFAULT_TOP_K,
         city_filter: Optional[List[str]] = None,
-        budget_level: Optional[str] = None,
+        budget_level: Optional[int] = None,
+        total_days: Optional[int] = None,
+        adults: Optional[int] = None,
+        children: Optional[int] = None,
     ) -> List[Dict[str, Any]]:
         """
         Tạo MongoDB Aggregation Pipeline cho $vectorSearch.
@@ -130,13 +134,30 @@ class DBService:
         pipeline.append(vector_search_stage)
 
         # ── Stage 2: $match post-filter budget (không cần index) ──
-        budget_config = BUDGET_FILTERS.get(budget_level) if budget_level else None
-        if budget_config and "max_price" in budget_config:
+        # Tự động tính toán mức giá tối đa cho mỗi dịch vụ dựa trên công thức toán học:
+        # 1. Số người quy đổi (effective people): người lớn + 0.5 * trẻ em
+        # 2. Ngân sách bình quân đầu người mỗi ngày: daily_per_capita = budget_level / (effective_people * total_days)
+        # 3. Phân chia tỷ lệ hợp lý cho từng loại dịch vụ (hotel: 1.2, restaurant: 0.4, place: 0.3)
+        max_price = None
+        if budget_level and total_days and adults:
+            effective_people = float(adults) + 0.5 * float(children or 0)
+            daily_per_capita = float(budget_level) / (effective_people * float(total_days))
+
+            # Nếu ngân sách bình quân đầu người mỗi ngày cực cao (> 3 triệu VND/ngày), coi như Luxury -> không filter
+            if daily_per_capita < 3000000.0:
+                if collection_name == COLLECTION_HOTELS:
+                    max_price = max(daily_per_capita * 1.2, 150000.0)
+                elif collection_name == COLLECTION_RESTAURANTS:
+                    max_price = max(daily_per_capita * 0.4, 50000.0)
+                elif collection_name == COLLECTION_PLACES:
+                    max_price = max(daily_per_capita * 0.3, 30000.0)
+
+        if max_price is not None:
             pipeline.append({
                 "$match": {
                     "$or": [
                         {"priceRange": None},  # doc không có thông tin giá → cho qua
-                        {"priceRange": {"$lte": budget_config["max_price"]}},
+                        {"priceRange": {"$lte": max_price}},
                     ]
                 }
             })
@@ -161,7 +182,10 @@ class DBService:
         query_vector: List[float],
         top_k: int = DEFAULT_TOP_K,
         city_filter: Optional[List[str]] = None,
-        budget_level: Optional[str] = None,
+        budget_level: Optional[int] = None,
+        total_days: Optional[int] = None,
+        adults: Optional[int] = None,
+        children: Optional[int] = None,
     ) -> List[Dict[str, Any]]:
         """
         Chạy aggregation pipeline trên 1 collection, trả về danh sách documents.
@@ -172,10 +196,14 @@ class DBService:
         collection = database[collection_name]
 
         pipeline = self._build_vector_search_pipeline(
+            collection_name=collection_name,
             query_vector=query_vector,
             top_k=top_k,
             city_filter=city_filter,
             budget_level=budget_level,
+            total_days=total_days,
+            adults=adults,
+            children=children,
         )
 
         # Debug: log pipeline (bỏ queryVector vì quá dài)
@@ -209,7 +237,10 @@ class DBService:
         query_text: str,
         top_k: int = DEFAULT_TOP_K,
         city_filter: Optional[List[str]] = None,
-        budget_level: Optional[str] = None,
+        budget_level: Optional[int] = None,
+        total_days: Optional[int] = None,
+        adults: Optional[int] = None,
+        children: Optional[int] = None,
     ) -> Dict[str, List[Dict[str, Any]]]:
         """
         Entry point chính:
@@ -243,13 +274,13 @@ class DBService:
 
         # Chạy song song 3 collection (truyền normalized_city_filter vào thay vì city_filter gốc)
         places_task = self._search_collection(
-            COLLECTION_PLACES, query_vector, top_k, normalized_city_filter, budget_level
+            COLLECTION_PLACES, query_vector, top_k, normalized_city_filter, budget_level, total_days, adults, children
         )
         restaurants_task = self._search_collection(
-            COLLECTION_RESTAURANTS, query_vector, top_k, normalized_city_filter, budget_level
+            COLLECTION_RESTAURANTS, query_vector, top_k, normalized_city_filter, budget_level, total_days, adults, children
         )
         hotels_task = self._search_collection(
-            COLLECTION_HOTELS, query_vector, top_k, normalized_city_filter, budget_level
+            COLLECTION_HOTELS, query_vector, top_k, normalized_city_filter, budget_level, total_days, adults, children
         )
 
         places, restaurants, hotels = await asyncio.gather(
