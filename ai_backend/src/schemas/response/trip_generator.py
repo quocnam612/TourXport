@@ -16,7 +16,7 @@ class Travelers(CamelModel):
 
 
 class Preferences(CamelModel):
-    budget_level: str = Field(..., description="Mức ngân sách")
+    budget_level: int = Field(..., description="Mức ngân sách (số nguyên VND)")
     interests: List[str] = Field(default_factory=list, description="Danh sách sở thích")
     transport_mode: str = Field(default="auto", description="Phương tiện di chuyển")
     pace: str = Field(default="relaxed", description="Nhịp độ")

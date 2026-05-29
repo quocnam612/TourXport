@@ -1,28 +1,31 @@
 class AiTripRequest {
-  final String destinations;
+  final List<String> destinations;
   final int totalDays;
+  final int totalNights;
   final int adults;
   final int children;
-  final String budgetLevel;
+  final int budgetLevel;
   final List<String> interests;
   final String transportMode;
   final String pace;
 
   AiTripRequest({
-    this.destinations = 'auto',
+    List<String>? destinations,
     required this.totalDays,
+    required this.totalNights,
     this.adults = 1,
     this.children = 0,
     required this.budgetLevel,
     required this.interests,
     this.transportMode = 'auto',
     required this.pace,
-  });
+  }) : destinations = destinations ?? [];
 
   Map<String, dynamic> toJson() {
     return {
-      'destinations': destinations,
+      'destinations': destinations.isEmpty ? 'auto' : destinations,
       'totalDays': totalDays,
+      'totalNights': totalNights,
       'travelers': {
         'adults': adults,
         'children': children,

@@ -109,5 +109,7 @@ const placeSchema = new mongoose.Schema({
 });
 
 placeSchema.index({ location: '2dsphere' });
+placeSchema.index({ city: 1 });
+placeSchema.index({ reviewsCount: -1 });
 
 export default mongoose.model('PlaceDB', placeSchema, 'places');

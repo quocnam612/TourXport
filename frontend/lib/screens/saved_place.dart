@@ -1,8 +1,12 @@
+import 'dart:ui';
 import 'package:flutter/material.dart';
 
 import '../models/destination.dart';
+import '../models/saved_tour.dart';
+import '../api/api.dart';
+import 'saved_tour_detail.dart';
 
-class SavedPlacesSection extends StatelessWidget {
+class SavedPlacesSection extends StatefulWidget {
   final Animation<double> entranceAnimation;
   final List<Destination> savedDestinations;
   final Set<String> updatingSavedNames;
@@ -12,6 +16,8 @@ class SavedPlacesSection extends StatelessWidget {
       onOpenDetail;
   final Future<bool> Function(Destination dest) onToggleSaved;
   final bool isGuest;
+  final String? authToken;
+  final int initialTabIndex;
 
   const SavedPlacesSection({
     super.key,
@@ -23,7 +29,128 @@ class SavedPlacesSection extends StatelessWidget {
     required this.onOpenDetail,
     required this.onToggleSaved,
     this.isGuest = false,
+    this.authToken,
+    this.initialTabIndex = 0,
+    this.onSelectTour,
   });
+
+  final Function(SavedTour tour)? onSelectTour;
+
+  @override
+  State<SavedPlacesSection> createState() => _SavedPlacesSectionState();
+}
+
+class _SavedPlacesSectionState extends State<SavedPlacesSection> {
+  int _activeTab = 0; // 0: Places (Địa điểm), 1: Itineraries (Lịch trình)
+  List<SavedTour> _savedTours = [];
+  bool _isLoadingTours = false;
+  String? _toursError;
+
+  @override
+  void initState() {
+    super.initState();
+    _activeTab = widget.initialTabIndex;
+    if (!widget.isGuest && widget.authToken != null) {
+      _fetchSavedTours();
+    }
+  }
+
+  @override
+  void didUpdateWidget(covariant SavedPlacesSection oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.initialTabIndex != oldWidget.initialTabIndex) {
+      setState(() {
+        _activeTab = widget.initialTabIndex;
+      });
+      if (_activeTab == 1 && !widget.isGuest && widget.authToken != null) {
+        _fetchSavedTours();
+      }
+    }
+  }
+
+  Future<void> _fetchSavedTours() async {
+    if (widget.isGuest || widget.authToken == null) return;
+    setState(() {
+      _isLoadingTours = true;
+      _toursError = null;
+    });
+
+    try {
+      final response = await apiGet('/tours/my-tours', token: widget.authToken);
+      if (response.statusCode == 200) {
+        final decoded = tryDecodeJsonObject(response.body);
+        if (decoded != null && decoded['success'] == true) {
+          final list = decoded['data'] as List? ?? [];
+          setState(() {
+            _savedTours = list.map((item) => SavedTour.fromJson(item)).toList();
+            _isLoadingTours = false;
+          });
+          return;
+        }
+      }
+      setState(() {
+        _toursError = 'Không thể tải lịch trình du lịch';
+        _isLoadingTours = false;
+      });
+    } catch (e) {
+      setState(() {
+        _toursError = 'Lỗi kết nối đến máy chủ';
+        _isLoadingTours = false;
+      });
+    }
+  }
+
+  Future<void> _deleteSavedTour(String id) async {
+    if (widget.authToken == null) return;
+
+    final confirm = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: const Color(0xFF1B2321),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        title: const Text('Xóa lịch trình', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+        content: const Text('Bạn có chắc chắn muốn xóa lịch trình này khỏi danh sách đã lưu?', style: TextStyle(color: Colors.white70)),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: const Text('Hủy', style: TextStyle(color: Colors.white38)),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(context, true),
+            child: const Text('Xóa', style: TextStyle(color: Color(0xFFE74C3C), fontWeight: FontWeight.bold)),
+          ),
+        ],
+      ),
+    );
+
+    if (confirm != true) return;
+
+    try {
+      final response = await apiDeleteJson('/tours/my-tours/$id', {}, token: widget.authToken);
+      if (response.statusCode == 200) {
+        setState(() {
+          _savedTours.removeWhere((t) => t.id == id);
+        });
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Đã xóa lịch trình thành công')),
+          );
+        }
+      } else {
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Xóa lịch trình thất bại')),
+          );
+        }
+      }
+    } catch (_) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Lỗi kết nối máy chủ')),
+        );
+      }
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -34,9 +161,25 @@ class SavedPlacesSection extends StatelessWidget {
           _buildTopBar(),
           const SizedBox(height: 8),
           _buildTitle(),
-          const SizedBox(height: 12),
+          const SizedBox(height: 16),
+          _buildCustomTabBar(),
+          const SizedBox(height: 16),
           Expanded(
-            child: _buildSavedPlacesView(),
+            child: _activeTab == 0
+                ? widget.isLoading
+                    ? const Center(
+                        child: CircularProgressIndicator(
+                          valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                        ),
+                      )
+                    : _buildSavedPlacesView()
+                : _isLoadingTours
+                    ? const Center(
+                        child: CircularProgressIndicator(
+                          valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                        ),
+                      )
+                    : _buildSavedToursView(),
           ),
           const SizedBox(height: 100),
         ],
@@ -44,15 +187,92 @@ class SavedPlacesSection extends StatelessWidget {
     );
   }
 
+  Widget _buildCustomTabBar() {
+    return FadeTransition(
+      opacity: widget.entranceAnimation,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 24),
+        child: Container(
+          height: 50,
+          decoration: BoxDecoration(
+            color: Colors.white.withOpacity(0.06),
+            borderRadius: BorderRadius.circular(20),
+            border: Border.all(
+              color: Colors.white.withOpacity(0.1),
+              width: 1,
+            ),
+          ),
+          child: Row(
+            children: [
+              Expanded(
+                child: GestureDetector(
+                  onTap: () => setState(() => _activeTab = 0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: _activeTab == 0
+                          ? const Color(0xFFD4AF7A)
+                          : Colors.transparent,
+                      borderRadius: BorderRadius.circular(18),
+                    ),
+                    alignment: Alignment.center,
+                    child: Text(
+                      'Địa điểm',
+                      style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 14,
+                        fontWeight: FontWeight.bold,
+                        color: _activeTab == 0
+                            ? const Color(0xFF0C1412)
+                            : Colors.white.withOpacity(0.7),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Expanded(
+                child: GestureDetector(
+                  onTap: () {
+                    setState(() => _activeTab = 1);
+                    _fetchSavedTours();
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: _activeTab == 1
+                          ? const Color(0xFFD4AF7A)
+                          : Colors.transparent,
+                      borderRadius: BorderRadius.circular(18),
+                    ),
+                    alignment: Alignment.center,
+                    child: Text(
+                      'Lịch trình',
+                      style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 14,
+                        fontWeight: FontWeight.bold,
+                        color: _activeTab == 1
+                            ? const Color(0xFF0C1412)
+                            : Colors.white.withOpacity(0.7),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
   Widget _buildTopBar() {
     return FadeTransition(
-      opacity: entranceAnimation,
+      opacity: widget.entranceAnimation,
       child: Padding(
         padding: const EdgeInsets.fromLTRB(24, 18, 24, 6),
         child: Row(
           children: [
             GestureDetector(
-              onTap: onBack,
+              onTap: widget.onBack,
               child: Container(
                 width: 46,
                 height: 46,
@@ -103,7 +323,9 @@ class SavedPlacesSection extends StatelessWidget {
                   ),
                   const SizedBox(height: 2),
                   Text(
-                    '${savedDestinations.length} địa điểm',
+                    _activeTab == 0
+                        ? '${widget.savedDestinations.length} địa điểm'
+                        : '${_savedTours.length} lịch trình',
                     style: TextStyle(
                       fontFamily: 'Montserrat',
                       fontSize: 13,
@@ -121,19 +343,19 @@ class SavedPlacesSection extends StatelessWidget {
 
   Widget _buildTitle() {
     return FadeTransition(
-      opacity: entranceAnimation,
+      opacity: widget.entranceAnimation,
       child: SlideTransition(
         position: Tween<Offset>(
           begin: const Offset(0, 0.3),
           end: Offset.zero,
-        ).animate(entranceAnimation),
-        child: const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 24),
+        ).animate(widget.entranceAnimation),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 24),
           child: Align(
             alignment: Alignment.centerLeft,
             child: Text(
-              'Những nơi bạn muốn đến',
-              style: TextStyle(
+              _activeTab == 0 ? 'Những nơi bạn muốn đến' : 'Hành trình của riêng bạn',
+              style: const TextStyle(
                 fontFamily: 'Montserrat',
                 fontSize: 24,
                 fontWeight: FontWeight.w600,
@@ -155,66 +377,26 @@ class SavedPlacesSection extends StatelessWidget {
   }
 
   Widget _buildSavedPlacesView() {
-    if (isLoading) {
-      return const Center(
-        child: CircularProgressIndicator(
-          valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
-        ),
-      );
-    }
-
-    if (savedDestinations.isEmpty) {
-      return Center(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 28),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(
-                Icons.bookmark_border_rounded,
-                size: 72,
-                color: Colors.white.withOpacity(0.75),
-              ),
-              const SizedBox(height: 18),
-              Text(
-                isGuest ? 'Đăng nhập để sử dụng tính năng này' : 'Chưa có địa điểm nào được lưu',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontFamily: 'Montserrat',
-                  fontSize: 20,
-                  fontWeight: FontWeight.w700,
-                  color: Colors.white,
-                ),
-              ),
-              const SizedBox(height: 8),
-              Text(
-                'Hãy thêm địa điểm bạn muốn đến vào lần tới',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontFamily: 'Montserrat',
-                  fontSize: 14,
-                  color: Colors.white.withOpacity(0.75),
-                  height: 1.5,
-                ),
-              ),
-            ],
-          ),
-        ),
+    if (widget.savedDestinations.isEmpty) {
+      return _buildEmptyStateView(
+        icon: Icons.bookmark_border_rounded,
+        title: widget.isGuest ? 'Đăng nhập để sử dụng tính năng này' : 'Chưa có địa điểm nào được lưu',
+        subtitle: 'Hãy thêm địa điểm bạn muốn đến vào lần tới',
       );
     }
 
     return ListView.separated(
       padding: const EdgeInsets.fromLTRB(20, 6, 20, 110),
-      itemCount: savedDestinations.length,
+      itemCount: widget.savedDestinations.length,
       separatorBuilder: (_, __) => const SizedBox(height: 16),
       itemBuilder: (context, index) {
-        final dest = savedDestinations[index];
-        final isBusy = updatingSavedNames.contains(dest.name);
+        final dest = widget.savedDestinations[index];
+        final isBusy = widget.updatingSavedNames.contains(dest.name);
 
         return Builder(
           builder: (cardContext) {
             return GestureDetector(
-              onTap: () => onOpenDetail(dest, cardContext),
+              onTap: () => widget.onOpenDetail(dest, cardContext),
               child: Container(
                 height: 180,
                 decoration: BoxDecoration(
@@ -252,7 +434,7 @@ class SavedPlacesSection extends StatelessWidget {
                         top: 14,
                         right: 14,
                         child: GestureDetector(
-                          onTap: isBusy ? null : () => onToggleSaved(dest),
+                          onTap: isBusy ? null : () => widget.onToggleSaved(dest),
                           child: Container(
                             width: 42,
                             height: 42,
@@ -328,6 +510,297 @@ class SavedPlacesSection extends StatelessWidget {
           },
         );
       },
+    );
+  }
+
+  Widget _buildSavedToursView() {
+    if (widget.isGuest) {
+      return _buildEmptyStateView(
+        icon: Icons.explore_off_rounded,
+        title: 'Đăng nhập để xem lịch trình',
+        subtitle: 'Hãy đăng nhập tài khoản của bạn để lưu và quản lý các lịch trình du lịch cá nhân hóa.',
+      );
+    }
+
+    if (_toursError != null) {
+      return Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              _toursError!,
+              style: const TextStyle(color: Colors.white70, fontFamily: 'Montserrat', fontSize: 16),
+            ),
+            const SizedBox(height: 12),
+            ElevatedButton(
+              onPressed: _fetchSavedTours,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color(0xFFD4AF7A),
+                foregroundColor: const Color(0xFF0C1412),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+              ),
+              child: const Text('Thử lại', style: TextStyle(fontWeight: FontWeight.bold)),
+            ),
+          ],
+        ),
+      );
+    }
+
+    if (_savedTours.isEmpty) {
+      return _buildEmptyStateView(
+        icon: Icons.explore_outlined,
+        title: 'Chưa có lịch trình nào',
+        subtitle: 'Hãy thực hiện khảo sát thông minh để AI tạo riêng cho bạn một lịch trình du lịch tuyệt vời.',
+      );
+    }
+
+    return ListView.separated(
+      padding: const EdgeInsets.fromLTRB(20, 6, 20, 110),
+      itemCount: _savedTours.length,
+      separatorBuilder: (_, __) => const SizedBox(height: 16),
+      itemBuilder: (context, index) {
+        final tour = _savedTours[index];
+        return GestureDetector(
+          onTap: () async {
+            // Fetch full tour detail and open detail screen
+            if (widget.authToken == null) return;
+              try {
+              // saved tours are private; fetch via authenticated user's my-tours endpoint
+              final resp = await apiGet('/tours/my-tours/${tour.id}', token: widget.authToken);
+              if (resp.statusCode == 200) {
+                final decoded = tryDecodeJsonObject(resp.body);
+                if (decoded != null) {
+                  final data = decoded['data'] ?? decoded;
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => SavedTourDetailScreen(
+                        tourTitle: tour.title,
+                        tourJson: data is Map<String, dynamic> ? data : {},
+                      ),
+                    ),
+                  );
+                  return;
+                }
+              }
+              // fallback: open activation dialog if detail not available
+            } catch (e) {
+              // ignore and fallback
+            }
+
+            if (widget.onSelectTour != null) {
+              widget.onSelectTour!(tour);
+              showDialog(
+                context: context,
+                builder: (context) => AlertDialog(
+                  backgroundColor: const Color(0xFF12201C),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
+                  title: const Row(
+                    children: [
+                      Icon(Icons.check_circle_rounded, color: Color(0xFFD4AF7A), size: 28),
+                      SizedBox(width: 12),
+                      Text(
+                        'Kích hoạt lịch trình',
+                        style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
+                  ),
+                  content: Text(
+                    'Đã chọn "${tour.title}" làm lịch trình hoạt động chính. Bạn sẽ nhận được các thông báo cập nhật thời gian thực ngay tại Trang chủ!',
+                    style: const TextStyle(
+                      fontFamily: 'Montserrat',
+                      color: Colors.white70,
+                      height: 1.5,
+                    ),
+                  ),
+                  actions: [
+                    TextButton(
+                      onPressed: () {
+                        Navigator.pop(context);
+                        widget.onBack();
+                      },
+                      style: TextButton.styleFrom(
+                        foregroundColor: const Color(0xFFD4AF7A),
+                      ),
+                      child: const Text(
+                        'Xem ngay',
+                        style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              );
+            }
+          },
+          child: Container(
+            decoration: BoxDecoration(
+              color: Colors.black.withOpacity(0.32),
+              borderRadius: BorderRadius.circular(24),
+              border: Border.all(
+                color: Colors.white.withOpacity(0.12),
+                width: 1.2,
+              ),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.25),
+                  blurRadius: 20,
+                  offset: const Offset(0, 10),
+                ),
+              ],
+            ),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(24),
+              child: BackdropFilter(
+                filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
+                child: Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(16),
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFD4AF7A).withOpacity(0.1),
+                          borderRadius: BorderRadius.circular(20),
+                          border: Border.all(
+                            color: const Color(0xFFD4AF7A).withOpacity(0.2),
+                            width: 1,
+                          ),
+                        ),
+                        child: const Icon(
+                          Icons.route_rounded,
+                          color: Color(0xFFD4AF7A),
+                          size: 32,
+                        ),
+                      ),
+                      const SizedBox(width: 16),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              tour.title,
+                              style: const TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const SizedBox(height: 6),
+                            Text(
+                              'Thời gian: ${tour.totalDays} ngày ${tour.totalNights} đêm',
+                              style: TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 13,
+                                color: Colors.white.withOpacity(0.7),
+                              ),
+                            ),
+                            if (tour.destinations.isNotEmpty) ...[
+                              const SizedBox(height: 4),
+                              Text(
+                                'Điểm đến: ${tour.destinations.join(", ")}',
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(
+                                  fontFamily: 'Montserrat',
+                                  fontSize: 13,
+                                  color: Colors.white.withOpacity(0.5),
+                                ),
+                              ),
+                            ],
+                            if (tour.estimatedCost != null && tour.estimatedCost! > 0) ...[
+                              const SizedBox(height: 8),
+                              Text(
+                                'Chi phí dự tính: ${tour.estimatedCost!.toInt().toString().replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (Match m) => '${m[1]}.')} đ',
+                                style: const TextStyle(
+                                  fontFamily: 'Montserrat',
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w600,
+                                  color: Color(0xFFD4AF7A),
+                                ),
+                              ),
+                            ],
+                          ],
+                        ),
+                      ),
+                      const SizedBox(width: 12),
+                      GestureDetector(
+                        onTap: () => _deleteSavedTour(tour.id),
+                        child: Container(
+                          padding: const EdgeInsets.all(8),
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(0.06),
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: Colors.white.withOpacity(0.12),
+                            ),
+                          ),
+                          child: const Icon(
+                            Icons.delete_outline_rounded,
+                            color: Color(0xFFE74C3C),
+                            size: 20,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _buildEmptyStateView({
+    required IconData icon,
+    required String title,
+    required String subtitle,
+  }) {
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 28),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(
+              icon,
+              size: 72,
+              color: Colors.white.withOpacity(0.75),
+            ),
+            const SizedBox(height: 18),
+            Text(
+              title,
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                fontFamily: 'Montserrat',
+                fontSize: 20,
+                fontWeight: FontWeight.w700,
+                color: Colors.white,
+              ),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              subtitle,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontFamily: 'Montserrat',
+                fontSize: 14,
+                color: Colors.white.withOpacity(0.75),
+                height: 1.5,
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

@@ -2,6 +2,8 @@ import bcrypt from 'bcrypt';
 
 import UserDB from '../models/UserDB.js';
 import PlaceDB from '../models/PlaceDB.js';
+import RestaurantDB from '../models/RestaurantDB.js';
+import HotelDB from '../models/HotelDB.js';
 import TourDB from '../models/TourDB.js';
 
 import respond from '../utils/respond.js';
@@ -9,6 +11,8 @@ import { generateToken } from '../utils/jwt.js';
 import GoogleAuth from '../services/GoogleAuth.js';
 import FacebookAuth from '../services/FacebookAuth.js';
 import { deleteImage, uploadImageBuffer } from '../services/Cloudinary.js';
+
+const locationPublicProjection = '-embedding -searchText';
 
 export const login = async (req, res, next) => {
     try {
@@ -220,7 +224,7 @@ export const facebookLogin = async (req, res, next) => {
 
 export const getProfile = async (req, res, next) => {
     try {
-        const user = await UserDB.findById(req.user.id).select('-savedPlaces -savedTours -password');
+        const user = await UserDB.findById(req.user.id).select('-savedPlaces -savedRestaurants -savedHotels -savedTours -password');
 
         if (!user) {
             return next(respond.httpError('User not found!', 404));
@@ -461,7 +465,7 @@ export const addLoginMethod = async (req, res, next) => {
 
 export const getSavedPlaces = async (req, res, next) => {
     try {
-        const user = await UserDB.findById(req.user.id).populate('savedPlaces');
+        const user = await UserDB.findById(req.user.id).populate('savedPlaces', locationPublicProjection);
 
         if (!user) {
             return next(respond.httpError('User not found', 404));
@@ -484,6 +488,11 @@ export const addSavedPlace = async (req, res, next) => {
             return next(respond.httpError('Place ID is required', 400));
         }
 
+        const newSavedPlace = await PlaceDB.findById(placeId).select(locationPublicProjection);
+        if (!newSavedPlace) {
+            return next(respond.httpError('Place not found', 404));
+        }
+
         const user = await UserDB.findByIdAndUpdate(
             req.user.id,
             { $addToSet: { savedPlaces: placeId } },
@@ -492,8 +501,6 @@ export const addSavedPlace = async (req, res, next) => {
         if (!user) {
             return next(respond.httpError('User not found', 404));
         }
-
-        const newSavedPlace = await PlaceDB.findById(placeId);
 
         res.status(200).json({ 
             success: true, 
@@ -520,6 +527,150 @@ export const removeSavedPlace = async (req, res, next) => {
 
         res.status(200).json({ 
             success: true, 
+            message: 'Removed from favorites successfully!',
+            removedId: id
+        });
+    } catch (err) {
+        next(err);
+    }
+};
+
+export const getSavedRestaurants = async (req, res, next) => {
+    try {
+        const user = await UserDB.findById(req.user.id).populate('savedRestaurants', locationPublicProjection);
+
+        if (!user) {
+            return next(respond.httpError('User not found', 404));
+        }
+
+        res.status(200).json({
+            success: true,
+            savedRestaurants: user.savedRestaurants || []
+        });
+    } catch (err) {
+        next(err);
+    }
+};
+
+export const addSavedRestaurant = async (req, res, next) => {
+    try {
+        const { restaurantId } = req.body;
+
+        if (!restaurantId) {
+            return next(respond.httpError('Restaurant ID is required', 400));
+        }
+
+        const newSavedRestaurant = await RestaurantDB.findById(restaurantId).select(locationPublicProjection);
+        if (!newSavedRestaurant) {
+            return next(respond.httpError('Restaurant not found', 404));
+        }
+
+        const user = await UserDB.findByIdAndUpdate(
+            req.user.id,
+            { $addToSet: { savedRestaurants: restaurantId } },
+        );
+
+        if (!user) {
+            return next(respond.httpError('User not found', 404));
+        }
+
+        res.status(200).json({
+            success: true,
+            message: 'Restaurant added to favorites successfully!',
+            newRestaurant: newSavedRestaurant
+        });
+    } catch (err) {
+        next(err);
+    }
+};
+
+export const removeSavedRestaurant = async (req, res, next) => {
+    try {
+        const { id } = req.params;
+
+        if (!id) {
+            return next(respond.httpError('Restaurant ID is required', 400));
+        }
+
+        await UserDB.findByIdAndUpdate(
+            req.user.id,
+            { $pull: { savedRestaurants: id } }
+        );
+
+        res.status(200).json({
+            success: true,
+            message: 'Removed from favorites successfully!',
+            removedId: id
+        });
+    } catch (err) {
+        next(err);
+    }
+};
+
+export const getSavedHotels = async (req, res, next) => {
+    try {
+        const user = await UserDB.findById(req.user.id).populate('savedHotels', locationPublicProjection);
+
+        if (!user) {
+            return next(respond.httpError('User not found', 404));
+        }
+
+        res.status(200).json({
+            success: true,
+            savedHotels: user.savedHotels || []
+        });
+    } catch (err) {
+        next(err);
+    }
+};
+
+export const addSavedHotel = async (req, res, next) => {
+    try {
+        const { hotelId } = req.body;
+
+        if (!hotelId) {
+            return next(respond.httpError('Hotel ID is required', 400));
+        }
+
+        const newSavedHotel = await HotelDB.findById(hotelId).select(locationPublicProjection);
+        if (!newSavedHotel) {
+            return next(respond.httpError('Hotel not found', 404));
+        }
+
+        const user = await UserDB.findByIdAndUpdate(
+            req.user.id,
+            { $addToSet: { savedHotels: hotelId } },
+        );
+
+        if (!user) {
+            return next(respond.httpError('User not found', 404));
+        }
+
+        res.status(200).json({
+            success: true,
+            message: 'Hotel added to favorites successfully!',
+            newHotel: newSavedHotel
+        });
+    } catch (err) {
+        next(err);
+    }
+};
+
+export const removeSavedHotel = async (req, res, next) => {
+    try {
+        const { id } = req.params;
+
+        if (!id) {
+            return next(respond.httpError('Hotel ID is required', 400));
+        }
+
+        await UserDB.findByIdAndUpdate(
+            req.user.id,
+            { $pull: { savedHotels: id } }
+        );
+
+        res.status(200).json({
+            success: true,
             message: 'Removed from favorites successfully!',
             removedId: id
         });

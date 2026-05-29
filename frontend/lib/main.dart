@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'screens/landing_page.dart';
+import 'screens/dashboard.dart';
 
 const String _facebookAppId = String.fromEnvironment('FACEBOOK_APP_ID');
 const String _facebookGraphVersion = String.fromEnvironment(
@@ -50,6 +51,7 @@ class TourXportApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const LandingPage(),
+      // home: const HomeScreen(userName: 'User', authToken: '123'),
     );
   }
 }

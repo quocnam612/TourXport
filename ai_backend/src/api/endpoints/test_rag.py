@@ -37,10 +37,25 @@ class TestRAGRequest(CamelModel):
         description="Lọc theo thành phố. VD: ['Châu Đốc', 'Cà Mau']. "
                     "Để null nếu muốn search toàn quốc."
     )
-    budget_level: Optional[str] = Field(
+    budget_level: Optional[int] = Field(
         default=None,
-        description="Mức ngân sách: low / medium / high / luxury. "
+        description="Mức ngân sách cụ thể (số nguyên VND). VD: 1000000, 2000000. "
                     "Để null nếu không muốn filter giá."
+    )
+    total_days: int = Field(
+        default=2,
+        ge=1,
+        description="Tổng số ngày đi để tính toán ngân sách"
+    )
+    adults: int = Field(
+        default=1,
+        ge=1,
+        description="Số người lớn"
+    )
+    children: int = Field(
+        default=0,
+        ge=0,
+        description="Số trẻ em"
     )
     top_k: int = Field(
         default=5,
@@ -83,6 +98,8 @@ async def test_rag(
     print(f"[TEST-RAG] Query: {request.query}")
     print(f"[TEST-RAG] Destinations: {request.destinations}")
     print(f"[TEST-RAG] Budget: {request.budget_level}")
+    print(f"[TEST-RAG] Total Days: {request.total_days}")
+    print(f"[TEST-RAG] Adults: {request.adults} | Children: {request.children}")
     print(f"[TEST-RAG] Top-K: {request.top_k}")
     print(f"{'='*60}")
 
@@ -91,6 +108,9 @@ async def test_rag(
         top_k=request.top_k,
         city_filter=request.destinations,
         budget_level=request.budget_level,
+        total_days=request.total_days,
+        adults=request.adults,
+        children=request.children,
     )
 
     # Đếm tổng

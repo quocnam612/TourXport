@@ -354,7 +354,11 @@ class _EditProfileScreenState extends State<EditProfileScreen> with TickerProvid
                   ),
                   child: CircleAvatar(
                     radius: 50,
-                    backgroundImage: NetworkImage(widget.userData['avatarUrl'] ?? 'https://i.pravatar.cc/300'),
+                    backgroundImage: NetworkImage(
+                      (widget.userData['avatar'] ?? widget.userData['avatarUrl'] ?? '').isNotEmpty
+                          ? (widget.userData['avatar'] ?? widget.userData['avatarUrl'])
+                          : 'https://i.pravatar.cc/300',
+                    ),
                   ),
                 ),
               ),

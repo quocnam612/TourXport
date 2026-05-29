@@ -15,9 +15,9 @@ class Travelers(CamelModel):
 
 
 class Preferences(CamelModel):
-    budget_level: str = Field(
-        default="medium",
-        description="Mức ngân sách: low / medium / high / luxury"
+    budget_level: int = Field(
+        default=2000000,
+        description="Mức ngân sách cụ thể (số nguyên VND), VD: 1000000, 2000000"
     )
     interests: List[str] = Field(
         default_factory=list,
@@ -75,7 +75,7 @@ class TripGenerateRequest(CamelModel):
                     "children": 0
                 },
                 "preferences": {
-                    "budgetLevel": "medium",
+                    "budgetLevel": 2000000,
                     "interests": ["temple", "culture", "local food", "scenic view"],
                     "transportMode": "auto",
                     "pace": "relaxed"

@@ -112,6 +112,9 @@ class TripOrchestrator:
             top_k=top_k,
             city_filter=city_filter,
             budget_level=request_data.preferences.budget_level,
+            total_days=request_data.total_days,
+            adults=request_data.travelers.adults,
+            children=request_data.travelers.children,
         )
 
         # Bước 4: Kiểm tra đủ kết quả không

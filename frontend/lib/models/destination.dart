@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+const String destinationPlaceholderPath = 'assets/images/placeholder.png';
+
 class Destination {
   final String? id;
   final String name;
@@ -9,6 +11,12 @@ class Destination {
   final String bgBlurPath;
   final double latitude;
   final double longitude;
+  final String type; // e.g. 'Địa điểm', 'Nhà hàng', 'Khách sạn'
+  final String? sourceLocationId;
+  final String? description;
+  final double? totalScore;
+  final int? reviewsCount;
+  final List<String> tags;
 
   const Destination({
     this.id,
@@ -19,22 +27,34 @@ class Destination {
     required this.bgBlurPath,
     this.latitude = 0.0,
     this.longitude = 0.0,
+    this.type = 'Địa điểm',
+    this.sourceLocationId,
+    this.description,
+    this.totalScore,
+    this.reviewsCount,
+    this.tags = const [],
   });
 
   factory Destination.fromJson(Map<String, dynamic> json) {
-    final String idVal = (json['_id'] ?? json['id'] ?? '') as String;
-    final String nameVal = (json['title'] ?? json['name'] ?? '') as String;
-    final String provinceVal = (json['state'] ?? json['city'] ?? json['province'] ?? '') as String;
+    final String idVal = (json['_id'] ?? json['id'] ?? '').toString();
+    final String sourceLocationIdVal = (json['sourceLocationId'] ?? '').toString();
+    final String nameVal = (json['title'] ?? json['name'] ?? '').toString();
+    final String provinceVal = (json['state'] ?? json['city'] ?? json['province'] ?? '').toString();
+    final String typeVal = (json['type'] ?? 'Địa điểm').toString();
+    final String descriptionVal = (json['description'] ?? '').toString().trim();
+    final totalScoreVal = json['totalScore'];
+    final reviewsCountVal = json['reviewsCount'];
+    final tagsVal = json['tags'];
 
     final sample = findSampleDestination(nameVal);
 
     // TripAdvisor image.url or direct imageUrl / imagePath
     String imgUrl = '';
     if (json['image'] != null && json['image'] is Map) {
-      imgUrl = (json['image']['url'] ?? '') as String;
+      imgUrl = (json['image']['url'] ?? '').toString();
     }
     if (imgUrl.isEmpty) {
-      imgUrl = (json['imageUrl'] ?? json['imagePath'] ?? sample?.imagePath ?? 'assets/images/halong.jpg') as String;
+      imgUrl = (json['imageUrl'] ?? json['imagePath'] ?? destinationPlaceholderPath).toString();
     }
 
     // Coordinates extraction: GeoJSON is [lng, lat]
@@ -54,15 +74,29 @@ class Destination {
     final String parsedName = _translateName(nameVal.isNotEmpty ? nameVal : (sample?.name ?? ''));
     final String parsedProvince = _translateProvince(provinceVal.isNotEmpty ? provinceVal : (sample?.province ?? ''));
 
+
+    // Only fall back to the app placeholder if the image URL is empty or the legacy default image.
+    if (imgUrl.isEmpty || imgUrl == 'assets/images/halong.jpg') {
+      imgUrl = getLocalFallbackAsset(parsedName.isNotEmpty ? parsedName : parsedProvince);
+    }
+
     return Destination(
       id: idVal.isNotEmpty ? idVal : null,
       name: parsedName,
       province: parsedProvince,
-      price: (json['price'] ?? json['priceRange'] ?? sample?.price ?? 'Chỉ từ 1.5 triệu đồng') as String,
+      price: (json['price'] ?? json['priceRange'] ?? sample?.price ?? 'Chỉ từ 1.5 triệu đồng').toString(),
       imagePath: imgUrl,
       bgBlurPath: imgUrl,
       latitude: latVal,
       longitude: lngVal,
+      type: typeVal,
+      sourceLocationId: sourceLocationIdVal.isNotEmpty ? sourceLocationIdVal : null,
+      description: descriptionVal.isNotEmpty ? descriptionVal : null,
+      totalScore: totalScoreVal is num ? totalScoreVal.toDouble() : null,
+      reviewsCount: reviewsCountVal is num ? reviewsCountVal.toInt() : null,
+      tags: tagsVal is List
+          ? tagsVal.map((tag) => tag.toString()).where((tag) => tag.trim().isNotEmpty).toList()
+          : const [],
     );
   }
 
@@ -76,6 +110,12 @@ class Destination {
       'bgBlurPath': bgBlurPath,
       'latitude': latitude,
       'longitude': longitude,
+      'type': type,
+      if (sourceLocationId != null) 'sourceLocationId': sourceLocationId,
+      if (description != null) 'description': description,
+      if (totalScore != null) 'totalScore': totalScore,
+      if (reviewsCount != null) 'reviewsCount': reviewsCount,
+      'tags': tags,
     };
   }
 
@@ -87,7 +127,7 @@ class Destination {
   }) {
     if (path.isEmpty) {
       return Image.asset(
-        'assets/images/halong.jpg',
+        destinationPlaceholderPath,
         fit: fit,
         width: width,
         height: height,
@@ -101,24 +141,20 @@ class Destination {
         ),
       );
     }
-    if (path.startsWith('http://') || path.startsWith('https://')) {
-      // Beautify image by replacing TripAdvisor small thumbnail sizes with high-res original '/photo-o/' path
-      String processedPath = path;
-      if (path.contains('tripadvisor.com')) {
-        processedPath = path
-            .replaceAll('/photo-s/', '/photo-o/')
-            .replaceAll('/photo-t/', '/photo-o/')
-            .replaceAll('/photo-f/', '/photo-o/')
-            .replaceAll('/photo-l/', '/photo-o/')
-            .replaceAll('/photo-w/', '/photo-o/')
-            .replaceAll('/photo-m/', '/photo-o/');
-      }
 
+    if (path.startsWith('http://') || path.startsWith('https://')) {
+      // Load the authentic network image from the database completely unchanged,
+      // using browser header spoofing to prevent access blocks or rate-limiting.
       return Image.network(
-        processedPath,
+        path,
         fit: fit,
         width: width,
         height: height,
+        filterQuality: FilterQuality.high,
+        headers: const {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+          'Referer': 'https://www.tripadvisor.com/',
+        },
         loadingBuilder: (context, child, loadingProgress) {
           if (loadingProgress == null) return child;
           return Container(
@@ -147,56 +183,29 @@ class Destination {
           );
         },
         errorBuilder: (context, error, stackTrace) {
-          // Double network fallback: if the high-res path fails to load, fall back to the original unmodified thumbnail URL
-          if (processedPath != path) {
-            return Image.network(
-              path,
-              fit: fit,
-              width: width,
-              height: height,
-              loadingBuilder: (context, child, loadingProgress) {
-                if (loadingProgress == null) return child;
-                return Container(
-                  color: const Color(0xFF1E2E2A),
-                  width: width,
-                  height: height,
-                  child: const Center(
-                    child: SizedBox(
-                      width: 24,
-                      height: 24,
-                      child: CircularProgressIndicator(
-                        strokeWidth: 2,
-                        valueColor: AlwaysStoppedAnimation<Color>(Color(0xFFD4AF7A)),
-                      ),
-                    ),
-                  ),
-                );
-              },
-              errorBuilder: (_, __, ___) => Image.asset(
-                'assets/images/halong.jpg',
-                fit: fit,
-                width: width,
-                height: height,
-              ),
-            );
-          }
-          // If all network assets fail, return a beautiful high-quality local placeholder image
           return Image.asset(
-            'assets/images/halong.jpg',
+            destinationPlaceholderPath,
             fit: fit,
             width: width,
             height: height,
+            errorBuilder: (_, __, ___) => Image.asset(
+              destinationPlaceholderPath,
+              fit: fit,
+              width: width,
+              height: height,
+            ),
           );
         },
       );
     }
+
     return Image.asset(
       path,
       fit: fit,
       width: width,
       height: height,
       errorBuilder: (_, __, ___) => Image.asset(
-        'assets/images/halong.jpg',
+        destinationPlaceholderPath,
         fit: fit,
         width: width,
         height: height,
@@ -303,8 +312,8 @@ const List<Destination> sampleDestinations = [
     name: 'Hội An',
     province: 'Quảng Nam',
     price: 'Chỉ từ 2 triệu đồng',
-    imagePath: 'assets/images/Hoi An.jpg',
-    bgBlurPath: 'assets/images/Hoi An.jpg',
+    imagePath: 'assets/images/hoi_an.jpg',
+    bgBlurPath: 'assets/images/hoi_an.jpg',
     latitude: 15.8801,
     longitude: 108.3380,
   ),
@@ -327,3 +336,7 @@ const List<Destination> sampleDestinations = [
     longitude: 106.2731,
   ),
 ];
+
+String getLocalFallbackAsset(String query) {
+  return destinationPlaceholderPath;
+}

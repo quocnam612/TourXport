@@ -25,6 +25,16 @@ router.route('/profile/saved-places')
     .post(authenticate, userController.addSavedPlace);
 router.delete('/profile/saved-places/:id', authenticate, userController.removeSavedPlace);
 
+router.route('/profile/saved-restaurants')
+    .get(authenticate, userController.getSavedRestaurants)
+    .post(authenticate, userController.addSavedRestaurant);
+router.delete('/profile/saved-restaurants/:id', authenticate, userController.removeSavedRestaurant);
+
+router.route('/profile/saved-hotels')
+    .get(authenticate, userController.getSavedHotels)
+    .post(authenticate, userController.addSavedHotel);
+router.delete('/profile/saved-hotels/:id', authenticate, userController.removeSavedHotel);
+
 router.route('/profile/saved-tours')
     .get(authenticate, userController.getSavedTours)
     .post(authenticate, userController.addSavedTour);

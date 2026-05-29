@@ -83,7 +83,8 @@ export const getDirections = async (fromItem, toItem, { transportMode = 'auto' }
     const profile = normalizeProfile(transportMode);
 
     if (!config.openRouteService.apiKey) {
-        throw openRouteServiceError('OpenRouteService API key is missing');
+        console.warn('WARNING: OPENROUTESERVICE_API_KEY is not defined in .env file! Skipping day routes generation.');
+        return null;
     }
 
     try {

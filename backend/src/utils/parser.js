@@ -1,17 +1,111 @@
 const escapeRegex = (value) => String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
+const toVietnameseStorageVariant = (value) => {
+    const shapeMap = {
+        'a\u0306': 'ă',
+        'A\u0306': 'Ă',
+        'a\u0302': 'â',
+        'A\u0302': 'Â',
+        'e\u0302': 'ê',
+        'E\u0302': 'Ê',
+        'o\u0302': 'ô',
+        'O\u0302': 'Ô',
+        'o\u031b': 'ơ',
+        'O\u031b': 'Ơ',
+        'u\u031b': 'ư',
+        'U\u031b': 'Ư'
+    };
+    const shapeMarks = new Set(['\u0306', '\u0302', '\u031b']);
+    const normalized = String(value).normalize('NFD');
+    let result = '';
+
+    for (let i = 0; i < normalized.length; i++) {
+        const char = normalized[i];
+        if (char.codePointAt(0) >= 0x0300 && char.codePointAt(0) <= 0x036f) {
+            result += char;
+            continue;
+        }
+
+        const marks = [];
+        while (
+            i + 1 < normalized.length
+            && normalized[i + 1].codePointAt(0) >= 0x0300
+            && normalized[i + 1].codePointAt(0) <= 0x036f
+        ) {
+            marks.push(normalized[++i]);
+        }
+
+        const shapeMark = marks.find((mark) => shapeMarks.has(mark));
+        const composed = shapeMark ? shapeMap[`${char}${shapeMark}`] : undefined;
+        result += composed || char;
+        result += marks.filter((mark) => mark !== shapeMark).join('');
+    }
+
+    return result;
+};
+
 const regexVariants = (value) => {
     const text = String(value).trim();
     const variants = new Set([
         text,
         text.normalize('NFC'),
-        text.normalize('NFD')
+        text.normalize('NFD'),
+        toVietnameseStorageVariant(text)
     ]);
 
     return [...variants].map((variant) => new RegExp(escapeRegex(variant), 'i'));
 };
 
+const provinceToCities = {
+    'quảng nam': ['Hội An', 'Quảng Nam'],
+    'khánh hòa': ['Nha Trang', 'Khánh Hòa'],
+    'lâm đồng': ['Đà Lạt', 'Đà Lạt', 'Lâm Đồng'],
+    'lào cai': ['Sa Pa', 'Sapa', 'Lào Cai'],
+    'thừa thiên huế': ['Huế', 'Huế', 'Thừa Thiên Huế'],
+    'bà rịa - vũng tàu': ['Vũng Tàu', 'Bà Rịa', 'Hồ Tràm', 'Bà Rịa - Vũng Tàu'],
+    'bình thuận': ['Mũi Né', 'Mui Ne', 'Phan Thiết', 'Bình Thuận'],
+    'kiên giang': ['Phú Quốc', 'Phu Quoc', 'Kiên Giang']
+};
+
 const textFilterForField = (field, value) => {
+    if (field === 'city' && typeof value === 'string') {
+        const trimmed = value.trim();
+        const variants = new Set([trimmed]);
+        
+        const lower = trimmed.toLowerCase();
+        if (provinceToCities[lower]) {
+            for (const city of provinceToCities[lower]) {
+                variants.add(city);
+            }
+        }
+        
+        if (/^tp\.?\s+/i.test(trimmed)) {
+            const base = trimmed.replace(/^tp\.?\s+/i, '');
+            variants.add(base);
+            variants.add(`Thành phố ${base}`);
+        } else if (/^thành\s+phố\s+/i.test(trimmed)) {
+            const base = trimmed.replace(/^thành\s+phố\s+/i, '');
+            variants.add(base);
+            variants.add(`TP. ${base}`);
+            variants.add(`TP ${base}`);
+        } else {
+            variants.add(`TP. ${trimmed}`);
+            variants.add(`Thành phố ${trimmed}`);
+        }
+        
+        const allRegex = [];
+        for (const variant of variants) {
+            allRegex.push(...regexVariants(variant));
+        }
+        
+        const uniqueRegexMap = new Map();
+        for (const r of allRegex) {
+            uniqueRegexMap.set(r.source, r);
+        }
+        const uniqueRegex = [...uniqueRegexMap.values()];
+        return uniqueRegex.length === 1 ? { [field]: uniqueRegex[0] } : { [field]: { $in: uniqueRegex } };
+    }
+
     const variants = regexVariants(value);
     return variants.length === 1 ? { [field]: variants[0] } : { [field]: { $in: variants } };
 };
@@ -196,13 +290,7 @@ export const buildTextFilter = (query) => {
 
     const variants = regexVariants(query);
     return {
-        $or: variants.flatMap((regex) => [
-            { title: regex },
-            { city: regex },
-            { category: regex },
-            { searchText: regex },
-            { tags: regex }
-        ])
+        title: variants.length === 1 ? variants[0] : { $in: variants }
     };
 };
 

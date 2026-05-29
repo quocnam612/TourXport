@@ -4,6 +4,8 @@ import parser from '../utils/parser.js';
 import respond from '../utils/respond.js';
 import validator from '../utils/validators.js';
 
+const locationPublicProjection = '-embedding -searchText';
+
 export const getRestaurants = async (req, res, next) => {
     try {
         const queryError = validator.validateLocationListQuery(req.query);
@@ -17,16 +19,40 @@ export const getRestaurants = async (req, res, next) => {
         const filter = parser.buildLocationFilter(req.query);
         const sort = parser.buildSort(req.query.sortBy, req.query.order);
 
-        const restaurants = await RestaurantDB.find(filter).sort(sort);
+        const poolLimit = Math.min(limit * 3, 150);
+        let [restaurants, total] = await Promise.all([
+            RestaurantDB.find(filter).select(locationPublicProjection).skip(skip).limit(poolLimit),
+            RestaurantDB.countDocuments(filter)
+        ]);
+
+        // Sort in-memory in JS to completely bypass MongoDB's sort memory limit
+        const reqSortBy = req.query.sortBy || 'totalScore';
+        const reqOrder = req.query.order || 'desc';
+        const isDesc = reqOrder === 'desc';
+
+        restaurants.sort((a, b) => {
+            const valA = a[reqSortBy] !== undefined ? a[reqSortBy] : 0;
+            const valB = b[reqSortBy] !== undefined ? b[reqSortBy] : 0;
+            if (valA !== valB) {
+                if (typeof valA === 'number' && typeof valB === 'number') {
+                    return isDesc ? valB - valA : valA - valB;
+                }
+                return isDesc
+                    ? String(valB).localeCompare(String(valA))
+                    : String(valA).localeCompare(String(valB));
+            }
+            return (b.reviewsCount || 0) - (a.reviewsCount || 0);
+        });
+
         const filteredRestaurants = parser.filterByPriceRange(restaurants, req.query.price, req.query.nullPrice);
-        const pagedRestaurants = filteredRestaurants.slice(skip, skip + limit);
+        const pagedRestaurants = filteredRestaurants.slice(0, limit);
 
         res.status(200).json({
             success: true,
             count: pagedRestaurants.length,
-            total: filteredRestaurants.length,
+            total,
             page,
-            totalPages: Math.ceil(filteredRestaurants.length / limit),
+            totalPages: Math.ceil(total / limit),
             data: pagedRestaurants
         });
     } catch (error) {
@@ -41,7 +67,7 @@ export const getRestaurant = async (req, res, next) => {
             return next(respond.httpError(lookupError, 400));
         }
 
-        const restaurant = await RestaurantDB.findOne(parser.buildLocationLookupFilter(req.query));
+        const restaurant = await RestaurantDB.findOne(parser.buildLocationLookupFilter(req.query)).select(locationPublicProjection);
 
         if (!restaurant) {
             return next(respond.httpError('Restaurant not found', 404));
@@ -66,11 +92,14 @@ export const createRestaurant = async (req, res, next) => {
         }
 
         const restaurant = await RestaurantDB.create(payload);
+        const publicRestaurant = restaurant.toObject();
+        delete publicRestaurant.embedding;
+        delete publicRestaurant.searchText;
 
         res.status(201).json({
             success: true,
             message: 'Restaurant created successfully!',
-            data: restaurant
+            data: publicRestaurant
         });
     } catch (error) {
         next(error);
@@ -99,7 +128,7 @@ export const updateRestaurant = async (req, res, next) => {
             parser.buildLocationLookupFilter(req.query),
             { $set: payload },
             { new: true, runValidators: true }
-        );
+        ).select(locationPublicProjection);
 
         if (!restaurant) {
             return next(respond.httpError('Restaurant not found', 404));
