@@ -1,5 +1,34 @@
 const escapeRegex = (value) => String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
+const makeVietnameseRegex = (text) => {
+    let pattern = '';
+    const normalized = text.toLowerCase();
+    for (let i = 0; i < normalized.length; i++) {
+        const char = normalized[i];
+        if (char.codePointAt(0) >= 0x0300 && char.codePointAt(0) <= 0x036f) {
+            continue; // Skip combining marks
+        }
+        if ('aàáảãạăắằẳẵặâấầẩẫậ'.includes(char)) {
+            pattern += '[aàáảãạăắằẳẵặâấầẩẫậàáảãạắằẳẵặấầẩẫậa\\\\u0300\\\\u0301\\\\u0303\\\\u0309\\\\u0323\\\\u0306\\\\u0302\\\\u0103\\\\u00e2]*';
+        } else if ('eèéẻẽẹêếềểễệ'.includes(char)) {
+            pattern += '[eèéẻẽẹêếềểễệèéẻẽẹếềểễệe\\\\u0300\\\\u0301\\\\u0303\\\\u0309\\\\u0323\\\\u0302]*';
+        } else if ('iìíỉĩị'.includes(char)) {
+            pattern += '[iìíỉĩịìíỉĩịi\\\\u0300\\\\u0301\\\\u0303\\\\u0309\\\\u0323]*';
+        } else if ('oòóỏõọôốồổỗộơớờởỡợ'.includes(char)) {
+            pattern += '[oòóỏõọôốồổỗộơớờởỡợòóỏõọốồổỗộớờởỡợo\\\\u0300\\\\u0301\\\\u0303\\\\u0309\\\\u0323\\\\u0302\\\\u031b]*';
+        } else if ('uùúủũụưứừửữự'.includes(char)) {
+            pattern += '[uùúủũụưứừửữựùúủũụứừửữựu\\\\u0300\\\\u0301\\\\u0303\\\\u0309\\\\u0323\\\\u031b]*';
+        } else if ('yỳýỷỹỵ'.includes(char)) {
+            pattern += '[yỳýỷỹỵỳýỷỹỵy\\\\u0300\\\\u0301\\\\u0303\\\\u0309\\\\u0323]*';
+        } else if ('dđ'.includes(char)) {
+            pattern += '[dđ]*';
+        } else {
+            pattern += escapeRegex(char);
+        }
+    }
+    return new RegExp(pattern, 'i');
+};
+
 const regexVariants = (value) => {
     const text = String(value).trim();
     const variants = new Set([
@@ -8,10 +37,64 @@ const regexVariants = (value) => {
         text.normalize('NFD')
     ]);
 
-    return [...variants].map((variant) => new RegExp(escapeRegex(variant), 'i'));
+    const list = [...variants].map((variant) => new RegExp(escapeRegex(variant), 'i'));
+    try {
+        list.push(makeVietnameseRegex(text));
+    } catch (e) {}
+
+    return list;
+};
+
+const provinceToCities = {
+    'quảng nam': ['Hội An', 'Quảng Nam'],
+    'khánh hòa': ['Nha Trang', 'Khánh Hòa'],
+    'lâm đồng': ['Đà Lạt', 'Đà Lạt', 'Lâm Đồng'],
+    'lào cai': ['Sa Pa', 'Sapa', 'Lào Cai'],
+    'thừa thiên huế': ['Huế', 'Huế', 'Thừa Thiên Huế'],
+    'bà rịa - vũng tàu': ['Vũng Tàu', 'Bà Rịa', 'Hồ Tràm', 'Bà Rịa - Vũng Tàu'],
+    'bình thuận': ['Mũi Né', 'Mui Ne', 'Phan Thiết', 'Bình Thuận'],
+    'kiên giang': ['Phú Quốc', 'Phu Quoc', 'Kiên Giang']
 };
 
 const textFilterForField = (field, value) => {
+    if (field === 'city' && typeof value === 'string') {
+        const trimmed = value.trim();
+        const variants = new Set([trimmed]);
+        
+        const lower = trimmed.toLowerCase();
+        if (provinceToCities[lower]) {
+            for (const city of provinceToCities[lower]) {
+                variants.add(city);
+            }
+        }
+        
+        if (/^tp\.?\s+/i.test(trimmed)) {
+            const base = trimmed.replace(/^tp\.?\s+/i, '');
+            variants.add(base);
+            variants.add(`Thành phố ${base}`);
+        } else if (/^thành\s+phố\s+/i.test(trimmed)) {
+            const base = trimmed.replace(/^thành\s+phố\s+/i, '');
+            variants.add(base);
+            variants.add(`TP. ${base}`);
+            variants.add(`TP ${base}`);
+        } else {
+            variants.add(`TP. ${trimmed}`);
+            variants.add(`Thành phố ${trimmed}`);
+        }
+        
+        const allRegex = [];
+        for (const variant of variants) {
+            allRegex.push(...regexVariants(variant));
+        }
+        
+        const uniqueRegexMap = new Map();
+        for (const r of allRegex) {
+            uniqueRegexMap.set(r.source, r);
+        }
+        const uniqueRegex = [...uniqueRegexMap.values()];
+        return uniqueRegex.length === 1 ? { [field]: uniqueRegex[0] } : { [field]: { $in: uniqueRegex } };
+    }
+
     const variants = regexVariants(value);
     return variants.length === 1 ? { [field]: variants[0] } : { [field]: { $in: variants } };
 };

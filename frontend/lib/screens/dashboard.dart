@@ -84,6 +84,73 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   Timer? _searchDebounceTimer;
   List<Destination> _searchResults = [];
   List<Destination> _searchSuggestions = [];
+  final Map<String, List<Destination>> _cityCache = {};
+
+  static const List<String> vietnameseProvinces = [
+    'Đà Nẵng',
+    'Hà Nội',
+    'TP. Hồ Chí Minh',
+    'Quảng Nam',
+    'Quảng Ninh',
+    'Thừa Thiên Huế',
+    'Khánh Hòa',
+    'Lào Cai',
+    'Ninh Bình',
+    'Bình Thuận',
+    'Kiên Giang',
+    'Bà Rịa - Vũng Tàu',
+    'Quảng Bình',
+    'An Giang',
+    'Bạc Liêu',
+    'Bắc Giang',
+    'Bắc Kạn',
+    'Bắc Ninh',
+    'Bến Tre',
+    'Bình Dương',
+    'Bình Định',
+    'Bình Phước',
+    'Cà Mau',
+    'Cao Bằng',
+    'Cần Thơ',
+    'Đắk Lắk',
+    'Đắk Nông',
+    'Điện Biên',
+    'Đồng Nai',
+    'Đồng Tháp',
+    'Gia Lai',
+    'Hà Giang',
+    'Hà Nam',
+    'Hà Tĩnh',
+    'Hải Dương',
+    'Hải Phòng',
+    'Hậu Giang',
+    'Hòa Bình',
+    'Hưng Yên',
+    'Kon Tum',
+    'Lai Châu',
+    'Lạng Sơn',
+    'Lâm Đồng',
+    'Long An',
+    'Nam Định',
+    'Nghệ An',
+    'Ninh Thuận',
+    'Phú Thọ',
+    'Phú Yên',
+    'Quảng Ngãi',
+    'Quảng Trị',
+    'Sóc Trăng',
+    'Sơn La',
+    'Tây Ninh',
+    'Thái Bình',
+    'Thái Nguyên',
+    'Thanh Hóa',
+    'Tiền Giang',
+    'Trà Vinh',
+    'Tuyên Quang',
+    'Vĩnh Long',
+    'Vĩnh Phúc',
+    'Yên Bái',
+  ];
 
   static const Map<String, int> _fakeLikeSeeds = {
     'Hạ Long Bay': 1243,
@@ -97,6 +164,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     super.initState();
 
     _currentUserName = widget.userName;
+    _selectedCity = vietnameseProvinces[0];
     _initMockNotifications();
     _pageController = PageController(viewportFraction: 0.82, initialPage: 1000);
     _searchController = TextEditingController();
@@ -229,37 +297,95 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     }
   }
 
+  Future<List<Destination>> _fetchMixedDestinationsForCity(String city) async {
+    final encodedCity = Uri.encodeComponent(city);
+    final futures = [
+      apiGet('/locations?city=$encodedCity&limit=3&sortBy=reviewsCount&order=desc'),
+      apiGet('/restaurants?city=$encodedCity&limit=2&sortBy=reviewsCount&order=desc'),
+      apiGet('/hotels?city=$encodedCity&limit=2&sortBy=reviewsCount&order=desc'),
+    ];
+    final responses = await Future.wait(futures);
+
+    final List<Destination> locs = [];
+    final List<Destination> rests = [];
+    final List<Destination> hots = [];
+
+    // 1. Locations
+    try {
+      final res = responses[0];
+      final data = tryDecodeJsonObject(res.body);
+      if (res.statusCode == 200 && data?['success'] == true && data?['data'] is List) {
+        for (var item in data!['data']) {
+          final map = Map<String, dynamic>.from(item);
+          map['type'] = 'Địa điểm';
+          locs.add(Destination.fromJson(map));
+        }
+      }
+    } catch (e) {
+      debugPrint('Error parsing locations: $e');
+    }
+
+    // 2. Restaurants
+    try {
+      final res = responses[1];
+      final data = tryDecodeJsonObject(res.body);
+      if (res.statusCode == 200 && data?['success'] == true && data?['data'] is List) {
+        for (var item in data!['data']) {
+          final map = Map<String, dynamic>.from(item);
+          map['type'] = 'Nhà hàng';
+          rests.add(Destination.fromJson(map));
+        }
+      }
+    } catch (e) {
+      debugPrint('Error parsing restaurants: $e');
+    }
+
+    // 3. Hotels
+    try {
+      final res = responses[2];
+      final data = tryDecodeJsonObject(res.body);
+      if (res.statusCode == 200 && data?['success'] == true && data?['data'] is List) {
+        for (var item in data!['data']) {
+          final map = Map<String, dynamic>.from(item);
+          map['type'] = 'Khách sạn';
+          hots.add(Destination.fromJson(map));
+        }
+      }
+    } catch (e) {
+      debugPrint('Error parsing hotels: $e');
+    }
+
+    // Round-robin mix
+    final List<Destination> loaded = [];
+    while (locs.isNotEmpty || rests.isNotEmpty || hots.isNotEmpty) {
+      if (locs.isNotEmpty) loaded.add(locs.removeAt(0));
+      if (rests.isNotEmpty) loaded.add(rests.removeAt(0));
+      if (hots.isNotEmpty) loaded.add(hots.removeAt(0));
+    }
+    return loaded;
+  }
+
   Future<void> _fetchDestinations() async {
     if (mounted) {
       setState(() => _isLoadingDestinations = true);
     }
     try {
-      // 1. Fetch top 25 featured dashboard destinations
-      final response =
-          await apiGet('/locations?limit=25&sortBy=reviewsCount&order=desc');
-      final data = tryDecodeJsonObject(response.body);
-      if (response.statusCode == 200 && data?['success'] == true) {
-        final rawList = data!['data'];
-        if (rawList is List) {
-          final List<Destination> loaded = [];
-          for (var item in rawList) {
-            try {
-              loaded.add(Destination.fromJson(Map<String, dynamic>.from(item)));
-            } catch (e) {
-              debugPrint('Error parsing place item: $e');
-            }
+      // 1. Fetch top mixed destinations for the selected city
+      final city = _selectedCity ?? vietnameseProvinces[0];
+      final List<Destination> loaded = await _fetchMixedDestinationsForCity(city);
+
+      if (mounted) {
+        _cityCache[city] = loaded;
+        setState(() {
+          _realDestinations = loaded;
+          final list = _homeDestinations;
+          if (list.isNotEmpty) {
+            _currentBgPath = list[0].bgBlurPath;
+            _previousBgPath = list[0].bgBlurPath;
           }
-          if (mounted) {
-            setState(() {
-              _realDestinations = loaded.take(25).toList();
-              if (_realDestinations.isNotEmpty) {
-                _currentBgPath = _realDestinations[0].bgBlurPath;
-                _previousBgPath = _realDestinations[0].bgBlurPath;
-              }
-            });
-            _startAutoPlay();
-          }
-        }
+        });
+        _resetCarouselPosition();
+        _startAutoPlay();
       }
 
       // 2. Fetch up to 150 locations from the actual backend database for rich autocomplete search suggestions
@@ -290,6 +416,71 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       debugPrint('Error fetching destinations: $e');
     } finally {
       if (mounted) {
+        setState(() => _isLoadingDestinations = false);
+      }
+    }
+  }
+
+  Future<void> _selectCity(String city) async {
+    if (_selectedCity == city && _realDestinations.isNotEmpty && _searchQuery.isEmpty) return;
+
+    if (_cityCache.containsKey(city)) {
+      final cachedList = _cityCache[city]!;
+      setState(() {
+        _selectedCity = city;
+        _isLoadingDestinations = false;
+        _currentIndex = 0;
+        _searchResults = [];
+        _searchController.clear();
+        _searchQuery = '';
+        _realDestinations = cachedList;
+        final list = _homeDestinations;
+        if (list.isNotEmpty) {
+          _currentBgPath = list[0].bgBlurPath;
+          _previousBgPath = list[0].bgBlurPath;
+        } else {
+          _currentBgPath = 'assets/images/halong.jpg';
+          _previousBgPath = 'assets/images/halong.jpg';
+        }
+      });
+      _resetCarouselPosition();
+      _startAutoPlay();
+      return;
+    }
+
+    setState(() {
+      _selectedCity = city;
+      _isLoadingDestinations = true;
+      _currentIndex = 0;
+      _searchResults = [];
+      _searchController.clear();
+      _searchQuery = '';
+      // Keep _realDestinations as-is so the UI stays stable while loading
+    });
+
+    try {
+      final List<Destination> loaded = await _fetchMixedDestinationsForCity(city);
+
+      if (mounted && _selectedCity == city) {
+        _cityCache[city] = loaded;
+        setState(() {
+          _realDestinations = loaded;
+          final list = _homeDestinations;
+          if (list.isNotEmpty) {
+            _currentBgPath = list[0].bgBlurPath;
+            _previousBgPath = list[0].bgBlurPath;
+          } else {
+            _currentBgPath = 'assets/images/halong.jpg';
+            _previousBgPath = 'assets/images/halong.jpg';
+          }
+        });
+        _resetCarouselPosition();
+        _startAutoPlay();
+      }
+    } catch (e) {
+      debugPrint('Error fetching destinations for city $city: $e');
+    } finally {
+      if (mounted && _selectedCity == city) {
         setState(() => _isLoadingDestinations = false);
       }
     }
@@ -2114,7 +2305,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   void _jumpToRegion(String region) {
     final destinations = _homeDestinations;
-    final idx = destinations.indexWhere((d) => d.province == region);
+    final idx = destinations.indexWhere((d) => _citiesMatch(d.province, region));
     if (idx >= 0 && idx != _currentIndex) {
       if (_pageController.hasClients) {
         final currentPage = _pageController.page?.round() ?? 1000;
@@ -2131,20 +2322,63 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     }
   }
 
+  String _stripDiacritics(String str) {
+    var withDiacritics = 'àáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđĐ';
+    var withoutDiacritics = 'aaaaaaaaaaaaaaaaaeeeeeeeeeeeiiiiiooooooooooooooooouuuuuuuuuuuyyyyydd';
+    var result = str.toLowerCase();
+    result = result.replaceAll(RegExp(r'[\u0300-\u036f]'), '');
+    for (int i = 0; i < withDiacritics.length; i++) {
+      result = result.replaceAll(withDiacritics[i], withoutDiacritics[i]);
+    }
+    return result.trim().replaceAll(RegExp(r'\s+'), ' ');
+  }
+
+  String _cleanCityName(String str) {
+    var clean = _stripDiacritics(str);
+    clean = clean
+        .replaceAll('thanh pho ', '')
+        .replaceAll('tp. ', '')
+        .replaceAll('tp ', '')
+        .replaceAll('tinh ', '');
+    return clean.trim();
+  }
+
+  bool _citiesMatch(String cityA, String cityB) {
+    final a = _cleanCityName(cityA);
+    final b = _cleanCityName(cityB);
+    return a == b || a.contains(b) || b.contains(a);
+  }
+
   List<Destination> get _homeDestinations {
-    if (_searchQuery.isNotEmpty || _selectedCity != null || _nearbyEnabled) {
+    if (_searchQuery.isNotEmpty || _nearbyEnabled) {
       var list = _searchResults;
       if (_showLikedOnly) {
         list = list.where((d) => _likedNames.contains(d.name)).toList();
       }
       return list;
     }
-    var list =
-        _realDestinations.isNotEmpty ? _realDestinations : sampleDestinations;
-    if (_showLikedOnly) {
-      list = list.where((d) => _likedNames.contains(d.name)).toList();
+    
+    final activeCity = _selectedCity ?? (vietnameseProvinces.isNotEmpty ? vietnameseProvinces[0] : 'Đà Nẵng');
+    
+    // 1. Use ALL real database destinations directly (the API already filtered by city)
+    final List<Destination> list = List<Destination>.from(_realDestinations);
+    
+    // 2. Only pad with fallbacks if we have fewer than 5 database results
+    if (list.length < 5) {
+      final fallbacks = getFallbackDestinationsForProvince(activeCity);
+      for (var f in fallbacks) {
+        if (list.length >= 5) break;
+        if (!list.any((d) => d.name.toLowerCase().trim() == f.name.toLowerCase().trim())) {
+          list.add(f);
+        }
+      }
     }
-    return list;
+    
+    var filteredList = list;
+    if (_showLikedOnly) {
+      filteredList = list.where((d) => _likedNames.contains(d.name)).toList();
+    }
+    return filteredList;
   }
 
   void _onSearchChanged(String value) {
@@ -2155,7 +2389,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     });
 
     _searchDebounceTimer?.cancel();
-    if (value.trim().isEmpty && _selectedCity == null && !_nearbyEnabled) {
+    if (value.trim().isEmpty && !_nearbyEnabled) {
       setState(() {
         _searchResults = [];
         _searchSuggestions = [];
@@ -2282,14 +2516,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Future<void> _openSearchToolsSheet() async {
-    final cities = [
-      'Đà Nẵng',
-      'Hà Nội',
-      'TP. Hồ Chí Minh',
-      'Quảng Nam',
-      'Quảng Ninh',
-      'Khánh Hòa'
-    ];
+    final cities = vietnameseProvinces;
     final sortOptions = [
       {'label': 'Lượt review', 'field': 'reviewsCount', 'order': 'desc'},
       {'label': 'Điểm số', 'field': 'totalScore', 'order': 'desc'},
@@ -2346,21 +2573,25 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                             letterSpacing: -0.5,
                           ),
                         ),
-                        if (_selectedCity != null ||
+                        if (_selectedCity != vietnameseProvinces[0] ||
                             _nearbyEnabled ||
                             _showLikedOnly ||
                             _sortBy != 'reviewsCount')
                           GestureDetector(
                             onTap: () {
                               setSheetState(() {
-                                _selectedCity = null;
+                                _selectedCity = vietnameseProvinces[0];
                                 _nearbyEnabled = false;
                                 _sortBy = 'reviewsCount';
                                 _sortOrder = 'desc';
                                 _showLikedOnly = false;
                               });
                               setState(() {});
-                              _performBackendSearch(_searchQuery);
+                              if (_searchQuery.trim().isNotEmpty) {
+                                _performBackendSearch(_searchQuery);
+                              } else {
+                                _selectCity(vietnameseProvinces[0]);
+                              }
                             },
                             child: const Text(
                               'Đặt lại',
@@ -2437,20 +2668,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       scrollDirection: Axis.horizontal,
                       child: Row(
                         children: [
-                          _choiceChip(
-                            label: 'Tất cả',
-                            isSelected: _selectedCity == null,
-                            onTap: () {
-                              setSheetState(() {
-                                _selectedCity = null;
-                              });
-                              setState(() {});
-                              _performBackendSearch(_searchQuery);
-                            },
-                          ),
                           ...cities.map((city) {
+                            final isFirst = city == cities.first;
                             return Padding(
-                              padding: const EdgeInsets.only(left: 8.0),
+                              padding: EdgeInsets.only(left: isFirst ? 0.0 : 8.0),
                               child: _choiceChip(
                                 label: city,
                                 isSelected: _selectedCity == city,
@@ -2459,7 +2680,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                     _selectedCity = city;
                                   });
                                   setState(() {});
-                                  _performBackendSearch(_searchQuery);
+                                  if (_searchQuery.trim().isNotEmpty) {
+                                    _performBackendSearch(_searchQuery);
+                                  } else {
+                                    _selectCity(city);
+                                  }
                                 },
                               ),
                             );
@@ -3917,13 +4142,24 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                 Positioned(
                                   left: 20,
                                   bottom: 44,
-                                  child: Text(
-                                    rankName,
-                                    style: const TextStyle(
-                                      fontFamily: 'Montserrat',
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w900,
-                                      color: Color(0xFFD4AF7A),
+                                  child: Container(
+                                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                    decoration: BoxDecoration(
+                                      color: dest.type == 'Nhà hàng'
+                                          ? const Color(0xFFE67E22).withValues(alpha: 0.85)
+                                          : dest.type == 'Khách sạn'
+                                              ? const Color(0xFF3498DB).withValues(alpha: 0.85)
+                                              : const Color(0xFFB5956A).withValues(alpha: 0.85),
+                                      borderRadius: BorderRadius.circular(6),
+                                    ),
+                                    child: Text(
+                                      dest.type,
+                                      style: const TextStyle(
+                                        fontFamily: 'Montserrat',
+                                        fontSize: 10,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -4182,15 +4418,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               ],
             ),
             const Spacer(),
-            IconButton(
-              icon: Icon(
-                isGuest ? Icons.login_rounded : Icons.logout_rounded,
-                color: isGuest ? const Color(0xFFD4AF7A) : const Color(0xFFE74C3C),
-                size: 24,
-              ),
-              onPressed: _logout,
-            ),
-            const SizedBox(width: 8), // Gap spacing
             GestureDetector(
               onTap: _showNotificationCenter,
               child: Container(
@@ -4512,10 +4739,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Widget _buildRegionTabs() {
-    final regions = _homeDestinations.map((d) => d.province).toSet().toList();
-    if (regions.isEmpty) {
-      return const SizedBox(height: 36);
-    }
+    final regions = vietnameseProvinces;
     return FadeTransition(
       opacity: _cardEntrance,
       child: SizedBox(
@@ -4526,35 +4750,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           itemCount: regions.length,
           separatorBuilder: (_, __) => const SizedBox(width: 10),
           itemBuilder: (context, i) {
-            final list = _homeDestinations;
-            String currentProv = '';
-            if (list.isNotEmpty) {
-              int activeListIndex = 0;
-              if (_pageController.hasClients) {
-                final page = _pageController.page?.round() ?? 1000;
-                activeListIndex = page % list.length;
-              }
-              if (activeListIndex >= 0 && activeListIndex < list.length) {
-                currentProv = list[activeListIndex].province;
-              }
-            }
-            final isSelected = currentProv == regions[i];
+            final isSelected = _selectedCity == regions[i];
             return GestureDetector(
-              onTap: () {
-                final idx = list.indexWhere((d) => d.province == regions[i]);
-                if (idx >= 0 && idx != _currentIndex) {
-                  if (_pageController.hasClients) {
-                    final currentPage = _pageController.page?.round() ?? 1000;
-                    final currentListIndex = currentPage % list.length;
-                    final offset = idx - currentListIndex;
-                    _pageController.animateToPage(
-                      currentPage + offset,
-                      duration: const Duration(milliseconds: 400),
-                      curve: Curves.easeInOut,
-                    );
-                  }
-                }
-              },
+              onTap: () => _selectCity(regions[i]),
               child: AnimatedContainer(
                 duration: const Duration(milliseconds: 300),
                 padding:
@@ -4819,6 +5017,27 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisSize: MainAxisSize.min,
                               children: [
+                                Container(
+                                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                  decoration: BoxDecoration(
+                                    color: dest.type == 'Nhà hàng'
+                                        ? const Color(0xFFE67E22).withValues(alpha: 0.85)
+                                        : dest.type == 'Khách sạn'
+                                            ? const Color(0xFF3498DB).withValues(alpha: 0.85)
+                                            : const Color(0xFFB5956A).withValues(alpha: 0.85),
+                                    borderRadius: BorderRadius.circular(6),
+                                  ),
+                                  child: Text(
+                                    dest.type,
+                                    style: const TextStyle(
+                                      fontFamily: 'Montserrat',
+                                      fontSize: 10,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(height: 8),
                                 Row(
                                   children: [
                                     const Icon(Icons.pin_drop_rounded,

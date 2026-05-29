@@ -882,7 +882,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     final images = [
       dest.imagePath,
       'assets/images/halong.jpg',
-      'assets/images/Hoi An.jpg',
+      'assets/images/hoi_an.jpg',
       'assets/images/da_nang.jpg',
       'assets/images/phongnhakebang.jpg',
     ];

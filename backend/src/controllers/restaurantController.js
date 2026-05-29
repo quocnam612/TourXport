@@ -17,16 +17,40 @@ export const getRestaurants = async (req, res, next) => {
         const filter = parser.buildLocationFilter(req.query);
         const sort = parser.buildSort(req.query.sortBy, req.query.order);
 
-        const restaurants = await RestaurantDB.find(filter).sort(sort);
+        const poolLimit = Math.min(limit * 3, 150);
+        let [restaurants, total] = await Promise.all([
+            RestaurantDB.find(filter).skip(skip).limit(poolLimit),
+            RestaurantDB.countDocuments(filter)
+        ]);
+
+        // Sort in-memory in JS to completely bypass MongoDB's sort memory limit
+        const reqSortBy = req.query.sortBy || 'totalScore';
+        const reqOrder = req.query.order || 'desc';
+        const isDesc = reqOrder === 'desc';
+
+        restaurants.sort((a, b) => {
+            const valA = a[reqSortBy] !== undefined ? a[reqSortBy] : 0;
+            const valB = b[reqSortBy] !== undefined ? b[reqSortBy] : 0;
+            if (valA !== valB) {
+                if (typeof valA === 'number' && typeof valB === 'number') {
+                    return isDesc ? valB - valA : valA - valB;
+                }
+                return isDesc
+                    ? String(valB).localeCompare(String(valA))
+                    : String(valA).localeCompare(String(valB));
+            }
+            return (b.reviewsCount || 0) - (a.reviewsCount || 0);
+        });
+
         const filteredRestaurants = parser.filterByPriceRange(restaurants, req.query.price, req.query.nullPrice);
-        const pagedRestaurants = filteredRestaurants.slice(skip, skip + limit);
+        const pagedRestaurants = filteredRestaurants.slice(0, limit);
 
         res.status(200).json({
             success: true,
             count: pagedRestaurants.length,
-            total: filteredRestaurants.length,
+            total,
             page,
-            totalPages: Math.ceil(filteredRestaurants.length / limit),
+            totalPages: Math.ceil(total / limit),
             data: pagedRestaurants
         });
     } catch (error) {
