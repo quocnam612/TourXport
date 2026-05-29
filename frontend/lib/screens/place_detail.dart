@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../api/api.dart';
 import '../models/destination.dart';
+import 'create_review_screen.dart';
 import 'map_screen.dart';
 
 class PlaceDetailScreen extends StatefulWidget {
@@ -33,6 +34,10 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
   late bool _isLiked;
   bool _showFullDesc = false;
   int _selectedTab = 0; // 0 = Tổng quan, 1 = Nhận xét
+  bool _isLoadingReviews = false;
+  bool _reviewsLoaded = false;
+  String? _reviewsError;
+  List<Map<String, dynamic>> _reviews = [];
 
   Animation<double>? _routeAnimation;
   late Animation<double> _headerFade;
@@ -146,6 +151,120 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
 
   void _toggleLike() {
     setState(() => _isLiked = !_isLiked);
+  }
+
+  void _selectTab(int index) {
+    setState(() => _selectedTab = index);
+    if (index == 1) {
+      _loadReviews();
+    }
+  }
+
+  Future<void> _loadReviews() async {
+    if (_isLoadingReviews || _reviewsLoaded) return;
+
+    setState(() {
+      _isLoadingReviews = true;
+      _reviewsError = null;
+    });
+
+    final dest = widget.destination;
+
+    try {
+      String? locationId = dest.id;
+      if (locationId == null || locationId.isEmpty) {
+        locationId = await resolveLocationIdByName(
+          dest.name,
+          dest.type,
+          token: widget.authToken,
+        );
+      }
+
+      if (locationId == null || locationId.isEmpty) {
+        throw Exception('Không tìm thấy địa điểm trên hệ thống');
+      }
+
+      final type = _reviewEndpointType(dest.type);
+      final response = await apiGet(
+        '/reviews/$type/${Uri.encodeComponent(locationId)}',
+        token: widget.authToken,
+      );
+      final data = tryDecodeJsonObject(response.body);
+
+      if (response.statusCode != 200 || data?['success'] != true) {
+        throw Exception(data?['message'] ?? 'Không tải được nhận xét');
+      }
+
+      final reviewList = data?['data'];
+      if (!mounted) return;
+      setState(() {
+        _reviews = reviewList is List
+            ? reviewList
+                .whereType<Map>()
+                .map((review) => Map<String, dynamic>.from(review))
+                .toList()
+            : [];
+        _reviewsLoaded = true;
+        _isLoadingReviews = false;
+      });
+    } catch (error) {
+      if (!mounted) return;
+      setState(() {
+        _reviewsError = error.toString().replaceFirst('Exception: ', '');
+        _isLoadingReviews = false;
+      });
+    }
+  }
+
+  Future<void> _openCreateReview() async {
+    final token = widget.authToken?.trim();
+    if (token == null || token.isEmpty) {
+      _showMessage('Bạn cần đăng nhập để viết nhận xét');
+      return;
+    }
+
+    final dest = widget.destination;
+
+    try {
+      String? locationId = dest.id;
+      if (locationId == null || locationId.isEmpty) {
+        locationId = await resolveLocationIdByName(
+          dest.name,
+          dest.type,
+          token: token,
+        );
+      }
+
+      if (!mounted) return;
+      if (locationId == null || locationId.isEmpty) {
+        _showMessage('Không tìm thấy thông tin địa điểm này trên hệ thống');
+        return;
+      }
+
+      final resolvedLocationId = locationId;
+      final created = await Navigator.of(context).push<bool>(
+        MaterialPageRoute(
+          builder: (_) => CreateReviewScreen(
+            locationId: resolvedLocationId,
+            type: _reviewEndpointType(dest.type),
+            authToken: token,
+            locationName: dest.name,
+          ),
+        ),
+      );
+
+      if (!mounted || created != true) return;
+      setState(() {
+        _selectedTab = 1;
+        _reviewsLoaded = false;
+        _reviewsError = null;
+      });
+      await _loadReviews();
+    } catch (_) {
+      if (mounted) {
+        _showMessage('Không thể mở màn hình viết nhận xét');
+      }
+    }
   }
 
   void _showMessage(String message) {
@@ -371,9 +490,9 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                               const Spacer(),
                               const Icon(Icons.star_rounded, color: Color(0xFFFFB74D), size: 22),
                               const SizedBox(width: 6),
-                              const Text(
-                                '4.9 (1.2k nhận xét)',
-                                style: TextStyle(
+                              Text(
+                                _ratingSummary(dest),
+                                style: const TextStyle(
                                   fontFamily: 'Montserrat',
                                   fontSize: 15,
                                   color: Colors.white70,
@@ -394,7 +513,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                                 duration: const Duration(milliseconds: 300),
                                 child: _selectedTab == 0
                                     ? _buildOverviewTabForDesktop(dest)
-                                    : _buildReviewsTab(),
+                                    : _buildReviewsTab(dest),
                               ),
                             ),
                           ),
@@ -467,7 +586,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
         const SizedBox(height: 24),
         _sectionTitle('Điểm nổi bật'),
         const SizedBox(height: 12),
-        _buildHighlightChips(),
+        _buildHighlightChips(dest),
       ],
     );
   }
@@ -746,7 +865,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                           const Spacer(),
                           const Icon(Icons.star_rounded, color: Color(0xFFFFB74D), size: 18),
                           const SizedBox(width: 4),
-                          const Text('4.9 (1.2k nhận xét)', style: TextStyle(
+                          Text(_ratingSummary(dest), style: const TextStyle(
                             fontFamily: 'Montserrat', fontSize: 13,
                             color: Colors.white70,
                           )),
@@ -759,7 +878,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                         duration: const Duration(milliseconds: 300),
                         child: _selectedTab == 0
                             ? _buildOverviewTab(dest)
-                            : _buildReviewsTab(),
+                            : _buildReviewsTab(dest),
                       ),
                     ],
                   ),
@@ -785,7 +904,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
   Widget _tabItem(String label, int index) {
     final isActive = _selectedTab == index;
     return GestureDetector(
-      onTap: () => setState(() => _selectedTab = index),
+      onTap: () => _selectTab(index),
       child: Column(
         children: [
           Text(label, style: TextStyle(
@@ -817,7 +936,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
         const SizedBox(height: 24),
         _sectionTitle('Điểm nổi bật'),
         const SizedBox(height: 12),
-        _buildHighlightChips(),
+        _buildHighlightChips(dest),
         const SizedBox(height: 24),
         _sectionTitle('Bộ sưu tập'),
         const SizedBox(height: 12),
@@ -827,7 +946,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
   }
 
   Widget _buildAboutSection(Destination dest) {
-    final fullText = _getDescription(dest.name);
+    final fullText = _getDescription(dest);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -855,29 +974,121 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     );
   }
 
-  Widget _buildReviewsTab() {
+  Widget _buildReviewsTab(Destination dest) {
+    Widget content;
+
+    if (_isLoadingReviews) {
+      content = const Padding(
+        padding: EdgeInsets.symmetric(vertical: 28),
+        child: Center(
+          child: CircularProgressIndicator(
+            strokeWidth: 2,
+            valueColor: AlwaysStoppedAnimation<Color>(Color(0xFFD4AF7A)),
+          ),
+        ),
+      );
+    } else if (_reviewsError != null) {
+      content = Padding(
+        padding: const EdgeInsets.symmetric(vertical: 16),
+        child: Text(
+          _reviewsError!,
+          style: TextStyle(
+            fontFamily: 'Montserrat',
+            fontSize: 13,
+            color: Colors.white.withOpacity(0.75),
+            height: 1.5,
+          ),
+        ),
+      );
+    } else if (_reviews.isEmpty) {
+      content = Padding(
+        padding: const EdgeInsets.symmetric(vertical: 16),
+        child: Text(
+          _reviewsLoaded
+              ? 'Chưa có nhận xét cho địa điểm này.'
+              : 'Bấm vào thẻ Nhận xét để tải đánh giá.',
+          style: TextStyle(
+            fontFamily: 'Montserrat',
+            fontSize: 13,
+            color: Colors.white.withOpacity(0.75),
+            height: 1.5,
+          ),
+        ),
+      );
+    } else {
+      content = Column(
+        children: _reviews
+            .map((review) => Padding(
+                  padding: const EdgeInsets.only(bottom: 12),
+                  child: _buildReviewCardFromData(review),
+                ))
+            .toList(),
+      );
+    }
+
     return Column(
+      key: const ValueKey('reviews_tab'),
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        _buildReviewCard(name: 'Minh Tuấn', rating: 5,
-          text: 'Phong cảnh tuyệt đẹp, dịch vụ rất chu đáo. Nhất định sẽ quay lại!'),
-        const SizedBox(height: 12),
-        _buildReviewCard(name: 'Hồng Nhung', rating: 4,
-          text: 'Trải nghiệm rất đáng nhớ. Hướng dẫn viên nhiệt tình và thân thiện.'),
-        const SizedBox(height: 12),
-        _buildReviewCard(name: 'Anh Khoa', rating: 5,
-          text: 'Một trong những chuyến đi tuyệt vời nhất. Cảnh đẹp không thể tả!'),
+        _buildWriteReviewButton(),
+        const SizedBox(height: 16),
+        content,
       ],
     );
   }
 
-  String _getDescription(String name) {
+  Widget _buildWriteReviewButton() {
+    return GestureDetector(
+      onTap: _openCreateReview,
+      child: Container(
+        width: double.infinity,
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+        decoration: BoxDecoration(
+          gradient: const LinearGradient(
+            colors: [Color(0xFFB5956A), Color(0xFFD4AF7A)],
+          ),
+          borderRadius: BorderRadius.circular(18),
+          boxShadow: [
+            BoxShadow(
+              color: const Color(0xFFD4AF7A).withOpacity(0.22),
+              blurRadius: 18,
+              offset: const Offset(0, 8),
+            ),
+          ],
+        ),
+        child: const Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(Icons.rate_review_rounded, color: Colors.white, size: 20),
+            SizedBox(width: 8),
+            Text(
+              'Viết nhận xét',
+              style: TextStyle(
+                fontFamily: 'Montserrat',
+                fontSize: 14,
+                fontWeight: FontWeight.w800,
+                color: Colors.white,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  String _getDescription(Destination dest) {
+    final backendDescription = dest.description?.trim();
+    if (backendDescription != null && backendDescription.isNotEmpty) {
+      return backendDescription;
+    }
+
     final descriptions = {
       'Hạ Long Bay': 'Hạ Long Bay là kỳ quan thiên nhiên thế giới với hơn 1.600 hòn đảo đá vôi nhô lên từ mặt biển xanh ngọc bích. Nơi đây mang vẻ đẹp huyền bí, lung linh qua từng buổi sớm mai và hoàng hôn.',
       'Hội An': 'Hội An là phố cổ mang đậm dấu ấn lịch sử và văn hóa, nổi tiếng với những ngôi nhà cổ, đèn lồng rực rỡ và ẩm thực đường phố phong phú.',
       'Đà Nẵng': 'Đà Nẵng là thành phố biển năng động với bãi biển Mỹ Khê tuyệt đẹp, cầu Rồng ấn tượng và Bà Nà Hills lãng mạn.',
       'Phong Nha': 'Phong Nha-Kẻ Bàng là vườn quốc gia sở hữu hệ thống hang động kỳ vĩ nhất thế giới, bao gồm Sơn Đoòng — hang động lớn nhất hành tinh.',
     };
-    return descriptions[name] ?? 'Một điểm đến tuyệt vời tại Việt Nam với cảnh quan thiên nhiên hùng vĩ và văn hóa đặc sắc.';
+    return descriptions[dest.name] ?? 'Một điểm đến tuyệt vời tại Việt Nam với cảnh quan thiên nhiên hùng vĩ và văn hóa đặc sắc.';
   }
 
   Widget _buildGallery(Destination dest) {
@@ -1038,13 +1249,16 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     ));
   }
 
-  Widget _buildHighlightChips() {
-    final highlights = [
-      (Icons.landscape_rounded, 'Thiên nhiên'),
-      (Icons.camera_alt_rounded, 'Chụp ảnh'),
-      (Icons.restaurant_rounded, 'Ẩm thực'),
-      (Icons.kayaking_rounded, 'Phiêu lưu'),
-    ];
+  Widget _buildHighlightChips(Destination dest) {
+    final backendTags = dest.tags.where((tag) => tag.trim().isNotEmpty).toList();
+    final highlights = backendTags.isNotEmpty
+        ? backendTags.map((tag) => (_iconForTag(tag), tag)).toList()
+        : [
+            (Icons.landscape_rounded, 'Thiên nhiên'),
+            (Icons.camera_alt_rounded, 'Chụp ảnh'),
+            (Icons.restaurant_rounded, 'Ẩm thực'),
+            (Icons.kayaking_rounded, 'Phiêu lưu'),
+          ];
     return Wrap(
       spacing: 8, runSpacing: 8,
       children: highlights.map((h) => Container(
@@ -1069,7 +1283,36 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     );
   }
 
-  Widget _buildReviewCard({required String name, required int rating, required String text}) {
+  Widget _buildReviewCardFromData(Map<String, dynamic> review) {
+    final user = review['user'];
+    final avatar = user is Map ? user['avatar'] : null;
+    final avatarUrl = avatar is Map ? (avatar['url'] ?? '').toString() : '';
+    final name = user is Map
+        ? (user['username'] ?? 'Người dùng').toString()
+        : 'Người dùng';
+    final ratingValue = review['rating'];
+    final rating = ratingValue is num ? ratingValue.round().clamp(0, 5).toInt() : 0;
+    final title = (review['title'] ?? '').toString().trim();
+    final body = (review['text'] ?? '').toString().trim();
+    final text = [
+      if (title.isNotEmpty) title,
+      if (body.isNotEmpty) body,
+    ].join('\n\n');
+
+    return _buildReviewCard(
+      name: name.isNotEmpty ? name : 'Người dùng',
+      rating: rating,
+      text: text.isNotEmpty ? text : 'Người dùng chưa để lại nội dung.',
+      avatarUrl: avatarUrl,
+    );
+  }
+
+  Widget _buildReviewCard({
+    required String name,
+    required int rating,
+    required String text,
+    String avatarUrl = '',
+  }) {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
@@ -1084,10 +1327,13 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
             CircleAvatar(
               radius: 18,
               backgroundColor: const Color(0xFFB5956A).withOpacity(0.2),
-              child: Text(name[0], style: const TextStyle(
-                fontFamily: 'Montserrat', fontWeight: FontWeight.w700,
-                color: Color(0xFFB5956A),
-              )),
+              backgroundImage: avatarUrl.startsWith('http') ? NetworkImage(avatarUrl) : null,
+              child: avatarUrl.startsWith('http')
+                  ? null
+                  : Text(name.trim().isNotEmpty ? name.trim()[0].toUpperCase() : '?', style: const TextStyle(
+                      fontFamily: 'Montserrat', fontWeight: FontWeight.w700,
+                      color: Color(0xFFB5956A),
+                    )),
             ),
             const SizedBox(width: 10),
             Expanded(child: Column(
@@ -1112,5 +1358,81 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
         ],
       ),
     );
+  }
+
+  String _ratingSummary(Destination dest) {
+    final score = dest.totalScore;
+    final scoreText = score == null ? '--' : score.toStringAsFixed(1);
+    return '$scoreText (${_compactReviewCount(dest.reviewsCount)} nhận xét)';
+  }
+
+  String _compactReviewCount(int? count) {
+    final value = count ?? 0;
+    if (value >= 1000000) {
+      final millions = value / 1000000;
+      return '${millions.toStringAsFixed(millions >= 10 ? 0 : 1)}m';
+    }
+    if (value >= 1000) {
+      final thousands = value / 1000;
+      return '${thousands.toStringAsFixed(thousands >= 10 ? 0 : 1)}k';
+    }
+    return value.toString();
+  }
+
+  String _reviewEndpointType(String type) {
+    final normalized = type.trim().toLowerCase();
+    if (normalized.contains('restaurant') ||
+        normalized.contains('nhà hàng') ||
+        normalized.contains('nha hang')) {
+      return 'restaurants';
+    }
+    if (normalized.contains('hotel') ||
+        normalized.contains('khách sạn') ||
+        normalized.contains('khach san')) {
+      return 'hotels';
+    }
+    return 'places';
+  }
+
+  IconData _iconForTag(String tag) {
+    final normalized = tag.toLowerCase();
+    if (normalized.contains('ẩm thực') ||
+        normalized.contains('am thuc') ||
+        normalized.contains('đồ ăn') ||
+        normalized.contains('do an') ||
+        normalized.contains('restaurant')) {
+      return Icons.restaurant_rounded;
+    }
+    if (normalized.contains('khách sạn') ||
+        normalized.contains('khach san') ||
+        normalized.contains('hotel')) {
+      return Icons.hotel_rounded;
+    }
+    if (normalized.contains('biển') ||
+        normalized.contains('bien') ||
+        normalized.contains('beach')) {
+      return Icons.beach_access_rounded;
+    }
+    if (normalized.contains('mua sắm') ||
+        normalized.contains('mua sam') ||
+        normalized.contains('shopping')) {
+      return Icons.shopping_bag_rounded;
+    }
+    if (normalized.contains('bảo tàng') ||
+        normalized.contains('bao tang') ||
+        normalized.contains('museum')) {
+      return Icons.museum_rounded;
+    }
+    if (normalized.contains('thiên nhiên') ||
+        normalized.contains('thien nhien') ||
+        normalized.contains('công viên') ||
+        normalized.contains('cong vien')) {
+      return Icons.landscape_rounded;
+    }
+    if (normalized.contains('giải trí') ||
+        normalized.contains('giai tri')) {
+      return Icons.attractions_rounded;
+    }
+    return Icons.place_rounded;
   }
 }

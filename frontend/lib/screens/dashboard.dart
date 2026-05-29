@@ -1,7 +1,8 @@
 import 'dart:async';
-import 'dart:io';
 import 'dart:ui';
 
+import 'package:flutter/foundation.dart'
+    show TargetPlatform, defaultTargetPlatform, kIsWeb;
 import 'package:flutter/material.dart';
 
 import '../api/api.dart';
@@ -48,6 +49,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   String? _selectedCity;
   String _sortBy = 'reviewsCount';
   String _sortOrder = 'desc';
+  String _selectedLocationKind = 'places';
+  String? _selectedCategory;
+  final Set<String> _selectedTags = {};
+  RangeValues _scoreRange = const RangeValues(0, 5);
+  String? _filterTime;
+  String? _filterDate;
+  int _filterLimit = 10;
   bool _nearbyEnabled = false;
   double _radius = 5000.0;
   late final TextEditingController _searchController;
@@ -150,6 +158,68 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     'Vĩnh Long',
     'Vĩnh Phúc',
     'Yên Bái',
+  ];
+
+  static const List<Map<String, String>> _locationKindOptions = [
+    {'label': 'Tất cả', 'value': 'all'},
+    {'label': 'Du lịch', 'value': 'places'},
+    {'label': 'Chỗ ở', 'value': 'hotels'},
+    {'label': 'Ăn uống', 'value': 'restaurants'},
+  ];
+
+  static const List<String> _placeTags = [
+    'Điểm du lịch',
+    'Danh lam & Thắng cảnh',
+    'Thiên nhiên & Công viên',
+    'Nơi mua sắm',
+    'Hoạt động ngoài trời',
+    'Bảo tàng',
+    'Thông tin cho khách du lịch',
+    'Khác',
+    'Vui chơi & Giải trí',
+    'Chuyến tham quan',
+    'Phương tiện giao thông',
+    'Công viên nước & giải trí',
+    'Sự kiện',
+    'Đồ ăn & Đồ uống',
+    'Lớp học & hội thảo',
+    'Hòa nhạc & chương trình biểu diễn',
+    'Sòng bạc & Đánh bạc',
+    'Sở thú & Thủy cung',
+    'Chuyến tham quan bằng thuyền & thể thao dưới nước',
+    'Spa & Sức khỏe',
+    'Giải trí về đêm',
+  ];
+
+  static const List<String> _hotelTags = [
+    'Khách sạn',
+    'Khách sạn / Nhà nghỉ',
+    'Khu nghỉ dưỡng',
+    'Khách sạn nhỏ',
+    'Nhà nghỉ',
+    'Nhà trọ',
+    'Cơ sở lưu trú đặc biệt',
+    'Khách sạn đặc biệt',
+    'Nhà khách',
+    'B&B',
+    'Cơ sở kinh doanh có dịch vụ giới hạn',
+    'Nhà trọ đặc biệt',
+    'Nhà ngoại ô',
+    'Biệt thự',
+    'Khách sạn nhỏ sang trọng',
+    'B&B đặc biệt',
+    'Nhà trọ',
+    'Nhà gỗ nhỏ/Khu cắm trại',
+    'Khách sạn có căn hộ',
+    'Khu nghỉ dưỡng (Trọn gói)',
+    'Nhà trại',
+  ];
+
+  static const List<String> _restaurantTags = [
+    'Nhà hàng',
+    'Ngồi xuống',
+    'Quán cafe',
+    'Đồ ăn nhanh',
   ];
 
   static const Map<String, int> _fakeLikeSeeds = {
@@ -306,70 +376,464 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     }
   }
 
-  Future<List<Destination>> _fetchMixedDestinationsForCity(String city) async {
-    final encodedCity = Uri.encodeComponent(city);
-    final futures = [
-      apiGet('/locations?city=$encodedCity&limit=3&sortBy=reviewsCount&order=desc'),
-      apiGet('/restaurants?city=$encodedCity&limit=2&sortBy=reviewsCount&order=desc'),
-      apiGet('/hotels?city=$encodedCity&limit=2&sortBy=reviewsCount&order=desc'),
-    ];
-    final responses = await Future.wait(futures);
+  String get _selectedLocationEndpoint {
+    switch (_selectedLocationKind) {
+      case 'all':
+        return '/locations';
+      case 'hotels':
+        return '/hotels';
+      case 'restaurants':
+        return '/restaurants';
+      case 'places':
+      default:
+        return '/locations';
+    }
+  }
 
-    final List<Destination> locs = [];
-    final List<Destination> rests = [];
-    final List<Destination> hots = [];
+  String get _selectedLocationLabel {
+    switch (_selectedLocationKind) {
+      case 'all':
+        return 'Tất cả';
+      case 'hotels':
+        return 'Khách sạn';
+      case 'restaurants':
+        return 'Nhà hàng';
+      case 'places':
+      default:
+        return 'Địa điểm';
+    }
+  }
 
-    // 1. Locations
-    try {
-      final res = responses[0];
-      final data = tryDecodeJsonObject(res.body);
-      if (res.statusCode == 200 && data?['success'] == true && data?['data'] is List) {
-        for (var item in data!['data']) {
-          final map = Map<String, dynamic>.from(item);
-          map['type'] = 'Địa điểm';
-          locs.add(Destination.fromJson(map));
-        }
+  List<String> get _activeTagOptions {
+    switch (_selectedLocationKind) {
+      case 'hotels':
+        return _hotelTags;
+      case 'restaurants':
+        return _restaurantTags;
+      case 'places':
+      default:
+        return _placeTags;
+    }
+  }
+
+  String _selectedLocationKindLabel(String value) {
+    switch (value) {
+      case 'all':
+        return 'Tất cả';
+      case 'hotels':
+        return 'Chỗ ở';
+      case 'restaurants':
+        return 'Ăn uống';
+      case 'places':
+      default:
+        return 'Du lịch';
+    }
+  }
+
+  String _tagsSummary(Set<String> tags) {
+    if (tags.isEmpty) {
+      return 'Chọn tags';
+    }
+    if (tags.length <= 2) {
+      return tags.join(', ');
+    }
+    return '${tags.length} tags đã chọn';
+  }
+
+  Future<String?> _showSingleSelectPopup({
+    required String title,
+    required List<String> options,
+    required String? selectedValue,
+    String? clearLabel,
+  }) async {
+    return showModalBottomSheet<String>(
+      context: context,
+      backgroundColor: Colors.transparent,
+      isScrollControlled: true,
+      barrierColor: Colors.black.withOpacity(0.6),
+      builder: (context) {
+        return BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 16, sigmaY: 16),
+          child: Container(
+            constraints: BoxConstraints(
+              maxHeight: MediaQuery.of(context).size.height * 0.7,
+            ),
+            decoration: BoxDecoration(
+              color: const Color(0xFF070E0D).withOpacity(0.95),
+              borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
+              border: Border.all(color: Colors.white.withOpacity(0.08)),
+            ),
+            child: SafeArea(
+              top: false,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const SizedBox(height: 12),
+                  Container(
+                    width: 46,
+                    height: 5,
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(999),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 18, 20, 12),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          title,
+                          style: const TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 18,
+                            fontWeight: FontWeight.w800,
+                            color: Colors.white,
+                          ),
+                        ),
+                        GestureDetector(
+                          onTap: () => Navigator.pop(context),
+                          child: Icon(
+                            Icons.close_rounded,
+                            color: Colors.white.withOpacity(0.7),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Flexible(
+                    child: ListView.separated(
+                      shrinkWrap: true,
+                      padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                      itemCount: options.length + (clearLabel == null ? 0 : 1),
+                      separatorBuilder: (_, __) =>
+                          Divider(color: Colors.white.withOpacity(0.06), height: 1),
+                      itemBuilder: (context, index) {
+                        if (clearLabel != null && index == 0) {
+                          final isSelected = selectedValue == null;
+                          return ListTile(
+                            contentPadding: const EdgeInsets.symmetric(horizontal: 8),
+                            title: Text(
+                              clearLabel,
+                              style: TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 14,
+                                fontWeight:
+                                    isSelected ? FontWeight.w800 : FontWeight.w600,
+                                color: isSelected
+                                    ? const Color(0xFFD4AF7A)
+                                    : Colors.white,
+                              ),
+                            ),
+                            trailing: isSelected
+                                ? const Icon(Icons.check_rounded,
+                                    color: Color(0xFFD4AF7A))
+                                : null,
+                            onTap: () => Navigator.pop(context, null),
+                          );
+                        }
+
+                        final optionIndex = clearLabel == null ? index : index - 1;
+                        final option = options[optionIndex];
+                        final isSelected = option == selectedValue;
+                        return ListTile(
+                          contentPadding: const EdgeInsets.symmetric(horizontal: 8),
+                          title: Text(
+                            option,
+                            style: TextStyle(
+                              fontFamily: 'Montserrat',
+                              fontSize: 14,
+                              fontWeight:
+                                  isSelected ? FontWeight.w800 : FontWeight.w600,
+                              color: isSelected ? const Color(0xFFD4AF7A) : Colors.white,
+                            ),
+                          ),
+                          trailing: isSelected
+                              ? const Icon(Icons.check_rounded,
+                                  color: Color(0xFFD4AF7A))
+                              : null,
+                          onTap: () => Navigator.pop(context, option),
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  Future<Set<String>?> _showMultiSelectPopup({
+    required String title,
+    required List<String> options,
+    required Set<String> selectedValues,
+  }) async {
+    return showModalBottomSheet<Set<String>>(
+      context: context,
+      backgroundColor: Colors.transparent,
+      isScrollControlled: true,
+      barrierColor: Colors.black.withOpacity(0.6),
+      builder: (context) {
+        final tempSelection = {...selectedValues};
+
+        return StatefulBuilder(
+          builder: (context, setPopupState) {
+            return BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 16, sigmaY: 16),
+              child: Container(
+                constraints: BoxConstraints(
+                  maxHeight: MediaQuery.of(context).size.height * 0.78,
+                ),
+                decoration: BoxDecoration(
+                  color: const Color(0xFF070E0D).withOpacity(0.95),
+                  borderRadius:
+                      const BorderRadius.vertical(top: Radius.circular(28)),
+                  border: Border.all(color: Colors.white.withOpacity(0.08)),
+                ),
+                child: SafeArea(
+                  top: false,
+                  child: Column(
+                    children: [
+                      const SizedBox(height: 12),
+                      Container(
+                        width: 46,
+                        height: 5,
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.2),
+                          borderRadius: BorderRadius.circular(999),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(20, 18, 20, 12),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              title,
+                              style: const TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 18,
+                                fontWeight: FontWeight.w800,
+                                color: Colors.white,
+                              ),
+                            ),
+                            GestureDetector(
+                              onTap: () => Navigator.pop(context),
+                              child: Icon(
+                                Icons.close_rounded,
+                                color: Colors.white.withOpacity(0.7),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 20),
+                        child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            'Chọn một hoặc nhiều mục',
+                            style: TextStyle(
+                              fontFamily: 'Montserrat',
+                              fontSize: 12,
+                              color: Colors.white.withOpacity(0.55),
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 12),
+                      Expanded(
+                        child: SingleChildScrollView(
+                          padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                          child: Wrap(
+                            spacing: 8,
+                            runSpacing: 8,
+                            children: options.map((option) {
+                              final isSelected = tempSelection.contains(option);
+                              return GestureDetector(
+                                onTap: () {
+                                  setPopupState(() {
+                                    if (isSelected) {
+                                      tempSelection.remove(option);
+                                    } else {
+                                      tempSelection.add(option);
+                                    }
+                                  });
+                                },
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 14, vertical: 10),
+                                  decoration: BoxDecoration(
+                                    color: isSelected
+                                        ? const Color(0xFFD4AF7A)
+                                        : Colors.white.withOpacity(0.06),
+                                    borderRadius: BorderRadius.circular(12),
+                                    border: Border.all(
+                                      color: isSelected
+                                          ? const Color(0xFFD4AF7A)
+                                          : Colors.white.withOpacity(0.08),
+                                    ),
+                                  ),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      if (isSelected) ...[
+                                        const Icon(
+                                          Icons.check_rounded,
+                                          size: 14,
+                                          color: Colors.black,
+                                        ),
+                                        const SizedBox(width: 4),
+                                      ],
+                                      Text(
+                                        option,
+                                        style: TextStyle(
+                                          fontFamily: 'Montserrat',
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.w700,
+                                          color: isSelected
+                                              ? Colors.black
+                                              : Colors.white70,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              );
+                            }).toList(),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
+                        child: SizedBox(
+                          width: double.infinity,
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: const Color(0xFFD4AF7A),
+                              foregroundColor: Colors.black,
+                              padding: const EdgeInsets.symmetric(vertical: 14),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(16),
+                              ),
+                            ),
+                            onPressed: () => Navigator.pop(context, tempSelection),
+                            child: const Text(
+                              'Chọn xong',
+                              style: TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 14,
+                                fontWeight: FontWeight.w800,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            );
+          },
+        );
+      },
+    );
+  }
+
+  String _destinationCacheKey(String? city) {
+    return [
+      _selectedLocationKind,
+      city ?? '__all__',
+      _selectedCategory ?? '',
+      _selectedTags.join('|'),
+      _scoreRange.start.toStringAsFixed(1),
+      _scoreRange.end.toStringAsFixed(1),
+      _sortBy,
+      _sortOrder,
+      _filterLimit.toString(),
+      _filterTime ?? '',
+      _filterDate ?? '',
+      _nearbyEnabled ? _radius.round().toString() : '',
+    ].join('::');
+  }
+
+  Map<String, List<String>> _buildLocationQueryParams({
+    String? query,
+    String? city,
+    int? limit,
+  }) {
+    final params = <String, List<String>>{};
+
+    void add(String key, String? value) {
+      final clean = value?.trim();
+      if (clean != null && clean.isNotEmpty) {
+        params[key] = [clean];
       }
-    } catch (e) {
-      debugPrint('Error parsing locations: $e');
     }
 
-    // 2. Restaurants
-    try {
-      final res = responses[1];
-      final data = tryDecodeJsonObject(res.body);
-      if (res.statusCode == 200 && data?['success'] == true && data?['data'] is List) {
-        for (var item in data!['data']) {
-          final map = Map<String, dynamic>.from(item);
-          map['type'] = 'Nhà hàng';
-          rests.add(Destination.fromJson(map));
-        }
-      }
-    } catch (e) {
-      debugPrint('Error parsing restaurants: $e');
+    add('query', query);
+    add('city', city);
+    add('limit', (limit ?? _filterLimit).toString());
+    add('page', '1');
+    add('category', _selectedCategory);
+    if (_selectedTags.isNotEmpty) {
+      params['tag'] = _selectedTags.toList();
+    }
+    if (_scoreRange.start > 0) {
+      add('minScore', _scoreRange.start.toStringAsFixed(1));
+    }
+    if (_scoreRange.end < 5) {
+      add('maxScore', _scoreRange.end.toStringAsFixed(1));
+    }
+    add('sortBy', _sortBy);
+    add('order', _sortOrder);
+    add('time', _filterTime);
+    add('date', _filterDate);
+
+    if (_nearbyEnabled) {
+      params['gps'] = ['108.26409,16.002966'];
+      params['radius'] = [_radius.round().toString()];
     }
 
-    // 3. Hotels
-    try {
-      final res = responses[2];
-      final data = tryDecodeJsonObject(res.body);
-      if (res.statusCode == 200 && data?['success'] == true && data?['data'] is List) {
-        for (var item in data!['data']) {
-          final map = Map<String, dynamic>.from(item);
-          map['type'] = 'Khách sạn';
-          hots.add(Destination.fromJson(map));
-        }
-      }
-    } catch (e) {
-      debugPrint('Error parsing hotels: $e');
+    return params;
+  }
+
+  Future<List<Destination>> _fetchFilteredDestinationsForCity(
+    String? city, {
+    String? query,
+    int? limit,
+  }) async {
+    final params = _buildLocationQueryParams(
+      query: query,
+      city: city,
+      limit: limit,
+    );
+    final queryString = Uri(queryParameters: params).query;
+    final path = queryString.isNotEmpty
+        ? '$_selectedLocationEndpoint?$queryString'
+        : _selectedLocationEndpoint;
+    final response = await apiGet(path);
+    final data = tryDecodeJsonObject(response.body);
+    if (response.statusCode != 200 || data?['success'] != true) {
+      return const [];
     }
 
-    // Round-robin mix
+    final rawList = data!['data'];
+    if (rawList is! List) return const [];
+
     final List<Destination> loaded = [];
-    while (locs.isNotEmpty || rests.isNotEmpty || hots.isNotEmpty) {
-      if (locs.isNotEmpty) loaded.add(locs.removeAt(0));
-      if (rests.isNotEmpty) loaded.add(rests.removeAt(0));
-      if (hots.isNotEmpty) loaded.add(hots.removeAt(0));
+    for (final item in rawList) {
+      try {
+        final map = Map<String, dynamic>.from(item);
+        map['type'] = _selectedLocationLabel;
+        loaded.add(Destination.fromJson(map));
+      } catch (e) {
+        debugPrint('Error parsing filtered destination item: $e');
+      }
     }
     return loaded;
   }
@@ -379,12 +843,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       setState(() => _isLoadingDestinations = true);
     }
     try {
-      // 1. Fetch top mixed destinations for the selected city
-      final city = _selectedCity ?? vietnameseProvinces[0];
-      final List<Destination> loaded = await _fetchMixedDestinationsForCity(city);
+      // 1. Fetch top destinations for the selected city and location type
+        final city = _selectedCity;
+      final List<Destination> loaded =
+          await _fetchFilteredDestinationsForCity(city);
 
       if (mounted) {
-        _cityCache[city] = loaded;
+        _cityCache[_destinationCacheKey(city)] = loaded;
         setState(() {
           _realDestinations = loaded;
           final list = _homeDestinations;
@@ -431,10 +896,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Future<void> _selectCity(String city) async {
+    final cacheKey = _destinationCacheKey(city);
     if (_selectedCity == city && _realDestinations.isNotEmpty && _searchQuery.isEmpty) return;
 
-    if (_cityCache.containsKey(city)) {
-      final cachedList = _cityCache[city]!;
+    if (_cityCache.containsKey(cacheKey)) {
+      final cachedList = _cityCache[cacheKey]!;
       setState(() {
         _selectedCity = city;
         _isLoadingDestinations = false;
@@ -468,10 +934,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     });
 
     try {
-      final List<Destination> loaded = await _fetchMixedDestinationsForCity(city);
+      final List<Destination> loaded =
+          await _fetchFilteredDestinationsForCity(city);
 
       if (mounted && _selectedCity == city) {
-        _cityCache[city] = loaded;
+        _cityCache[cacheKey] = loaded;
         setState(() {
           _realDestinations = loaded;
           final list = _homeDestinations;
@@ -649,7 +1116,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Future<bool> _requestPhotoPermission() async {
-    if (!Platform.isAndroid) return true;
+    if (kIsWeb || defaultTargetPlatform != TargetPlatform.android) return true;
 
     PermissionStatus status = PermissionStatus.denied;
 
@@ -741,7 +1208,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Future<void> _pickAndUploadImage(bool isAvatar) async {
-    if (Platform.isAndroid) {
+    if (!kIsWeb && defaultTargetPlatform == TargetPlatform.android) {
       final hasPermission = await _requestPhotoPermission();
       if (!hasPermission) {
         _showMessage('Ứng dụng chưa được cấp quyền truy cập thư viện ảnh');
@@ -761,13 +1228,17 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
       setState(() => _isLoadingProfile = true);
 
-      final file = File(image.path);
+      final imageBytes = await image.readAsBytes();
+      final filename = image.name.isNotEmpty
+          ? image.name
+          : image.path.split('/').last;
 
       if (isAvatar) {
-        final response = await apiPutMultipart(
+        final response = await apiPutMultipartBytes(
           '/auth/profile/avatar',
           'avatar',
-          file,
+          imageBytes,
+          filename: filename,
           token: widget.authToken,
         );
 
@@ -781,10 +1252,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           _showMessage(data?['message'] ?? 'Cập nhật avatar thất bại');
         }
       } else {
-        final response = await apiPostMultipart(
+        final response = await apiPostMultipartBytes(
           '/auth/upload',
           'image',
-          file,
+          imageBytes,
+          filename: filename,
           token: widget.authToken,
         );
 
@@ -2438,21 +2910,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       return list;
     }
     
-    final activeCity = _selectedCity ?? (vietnameseProvinces.isNotEmpty ? vietnameseProvinces[0] : 'Đà Nẵng');
-    
     // 1. Use ALL real database destinations directly (the API already filtered by city)
     final List<Destination> list = List<Destination>.from(_realDestinations);
-    
-    // 2. Only pad with fallbacks if we have fewer than 5 database results
-    if (list.length < 5) {
-      final fallbacks = getFallbackDestinationsForProvince(activeCity);
-      for (var f in fallbacks) {
-        if (list.length >= 5) break;
-        if (!list.any((d) => d.name.toLowerCase().trim() == f.name.toLowerCase().trim())) {
-          list.add(f);
-        }
-      }
-    }
     
     var filteredList = list;
     if (_showLikedOnly) {
@@ -2492,55 +2951,61 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   Future<void> _performBackendSearch(String query) async {
     try {
-      final queryParams = <String, String>{};
-      if (query.trim().isNotEmpty) {
-        queryParams['query'] = query;
-      }
-      if (_selectedCity != null) {
-        queryParams['city'] = _selectedCity!;
-      }
-      queryParams['sortBy'] = _sortBy;
-      queryParams['order'] = _sortOrder;
+      final loaded = await _fetchFilteredDestinationsForCity(
+        _selectedCity,
+        query: query,
+        limit: _filterLimit,
+      );
+      if (mounted && _searchQuery == query) {
+        setState(() {
+          _searchResults = loaded;
+          _searchSuggestions = loaded.take(5).toList();
 
-      if (_nearbyEnabled) {
-        // Đà Nẵng coordinates
-        queryParams['gps'] = '108.26409,16.002966';
-        queryParams['radius'] = _radius.round().toString();
-      }
-
-      final queryString = Uri(queryParameters: queryParams).query;
-      final path =
-          queryString.isNotEmpty ? '/locations?$queryString' : '/locations';
-
-      final response = await apiGet(path);
-      final data = tryDecodeJsonObject(response.body);
-      if (response.statusCode == 200 && data?['success'] == true) {
-        final rawList = data!['data'];
-        if (rawList is List) {
-          final List<Destination> loaded = [];
-          for (var item in rawList) {
-            try {
-              loaded.add(Destination.fromJson(Map<String, dynamic>.from(item)));
-            } catch (e) {
-              debugPrint('Error parsing search item: $e');
-            }
+          if (_searchResults.isNotEmpty) {
+            _currentBgPath = _searchResults[0].bgBlurPath;
+            _previousBgPath = _searchResults[0].bgBlurPath;
           }
-          if (mounted && _searchQuery == query) {
-            setState(() {
-              _searchResults = loaded;
-              _searchSuggestions = loaded.take(5).toList();
-
-              if (_searchResults.isNotEmpty) {
-                _currentBgPath = _searchResults[0].bgBlurPath;
-                _previousBgPath = _searchResults[0].bgBlurPath;
-              }
-            });
-            _resetCarouselPosition();
-          }
-        }
+        });
+        _resetCarouselPosition();
       }
     } catch (e) {
       debugPrint('Error performing backend search: $e');
+    }
+  }
+
+  Future<void> _applyCurrentFilters() async {
+    if (_searchQuery.trim().isNotEmpty || _nearbyEnabled) {
+      await _performBackendSearch(_searchQuery);
+      return;
+    }
+
+    final city = _selectedCity;
+    setState(() {
+      _isLoadingDestinations = true;
+      _currentIndex = 0;
+      _searchResults = [];
+      _searchSuggestions = [];
+    });
+
+    try {
+      final loaded = await _fetchFilteredDestinationsForCity(city);
+      if (!mounted) return;
+      _cityCache[_destinationCacheKey(city)] = loaded;
+      setState(() {
+        _realDestinations = loaded;
+        final list = _homeDestinations;
+        if (list.isNotEmpty) {
+          _currentBgPath = list[0].bgBlurPath;
+          _previousBgPath = list[0].bgBlurPath;
+        }
+      });
+      _resetCarouselPosition();
+    } catch (e) {
+      debugPrint('Error applying filters: $e');
+    } finally {
+      if (mounted) {
+        setState(() => _isLoadingDestinations = false);
+      }
     }
   }
 
@@ -2555,53 +3020,17 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     }
   }
 
-  void _toggleLikedOnlyView() {
-    setState(() => _showLikedOnly = !_showLikedOnly);
-
-    final destinations = _homeDestinations;
-    if (destinations.isEmpty) {
-      _showMessage('Chưa có địa điểm nào được thả tim');
-      return;
-    }
-
-    setState(() {
-      _previousIndex = _currentIndex;
-      _currentIndex = 0;
-      _currentBgPath = destinations[0].bgBlurPath;
-      _previousBgPath = destinations[0].bgBlurPath;
-    });
-
-    _resetCarouselPosition();
-  }
-
-  void _jumpToRandomDestination() {
-    final destinations = _homeDestinations;
-    if (destinations.isEmpty) {
-      _showMessage('Không có địa điểm để chọn ngẫu nhiên');
-      return;
-    }
-    final seed = DateTime.now().microsecondsSinceEpoch.abs();
-    final idx = seed % destinations.length;
-
-    if (_pageController.hasClients) {
-      final currentPage = _pageController.page?.round() ?? 1000;
-      final currentListIndex = currentPage % destinations.length;
-      final offset = idx - currentListIndex;
-      _pageController.animateToPage(
-        currentPage + offset,
-        duration: const Duration(milliseconds: 420),
-        curve: Curves.easeInOutCubic,
-      );
-    }
-  }
-
   Future<void> _openSearchToolsSheet() async {
     final cities = vietnameseProvinces;
     final sortOptions = [
       {'label': 'Lượt review', 'field': 'reviewsCount', 'order': 'desc'},
       {'label': 'Điểm số', 'field': 'totalScore', 'order': 'desc'},
       {'label': 'Tên A-Z', 'field': 'title', 'order': 'asc'},
+      {'label': 'Thành phố', 'field': 'city', 'order': 'asc'},
+      {'label': 'Mới nhất', 'field': 'createdAt', 'order': 'desc'},
+      {'label': 'Vừa cập nhật', 'field': 'updatedAt', 'order': 'desc'},
     ];
+    final limitOptions = [10, 20, 50];
 
     await showModalBottomSheet<void>(
       context: context,
@@ -2644,7 +3073,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         const Text(
-                          'Bộ lọc & Công cụ',
+                          'Bộ lọc',
                           style: TextStyle(
                             fontFamily: 'Montserrat',
                             fontSize: 20,
@@ -2655,23 +3084,32 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         ),
                         if (_selectedCity != vietnameseProvinces[0] ||
                             _nearbyEnabled ||
-                            _showLikedOnly ||
-                            _sortBy != 'reviewsCount')
+                            _sortBy != 'reviewsCount' ||
+                            _selectedLocationKind != 'places' ||
+                            _selectedCategory != null ||
+                            _selectedTags.isNotEmpty ||
+                            _scoreRange.start > 0 ||
+                            _scoreRange.end < 5 ||
+                            _filterTime != null ||
+                            _filterDate != null ||
+                            _filterLimit != 10)
                           GestureDetector(
                             onTap: () {
                               setSheetState(() {
                                 _selectedCity = vietnameseProvinces[0];
+                                _selectedLocationKind = 'places';
+                                _selectedCategory = null;
+                                _selectedTags.clear();
+                                _scoreRange = const RangeValues(0, 5);
+                                _filterTime = null;
+                                _filterDate = null;
+                                _filterLimit = 10;
                                 _nearbyEnabled = false;
                                 _sortBy = 'reviewsCount';
                                 _sortOrder = 'desc';
-                                _showLikedOnly = false;
                               });
                               setState(() {});
-                              if (_searchQuery.trim().isNotEmpty) {
-                                _performBackendSearch(_searchQuery);
-                              } else {
-                                _selectCity(vietnameseProvinces[0]);
-                              }
+                              _applyCurrentFilters();
                             },
                             child: const Text(
                               'Đặt lại',
@@ -2687,9 +3125,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     ),
                     const SizedBox(height: 20),
 
-                    // SECTION 1: QUICK TOOLS
+                    // SECTION 1: LOCATION TYPE
                     Text(
-                      'Công cụ nhanh',
+                      'Loại địa điểm',
                       style: TextStyle(
                         fontFamily: 'Montserrat',
                         fontSize: 12,
@@ -2699,36 +3137,29 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       ),
                     ),
                     const SizedBox(height: 10),
-                    Row(
-                      children: [
-                        Expanded(
-                          child: _toolFilterChip(
-                            icon: _showLikedOnly
-                                ? Icons.favorite_rounded
-                                : Icons.favorite_border_rounded,
-                            label: 'Đã thích',
-                            isActive: _showLikedOnly,
-                            onTap: () {
-                              setSheetState(() {
-                                _showLikedOnly = !_showLikedOnly;
-                              });
-                              _toggleLikedOnlyView();
-                            },
-                          ),
-                        ),
-                        const SizedBox(width: 10),
-                        Expanded(
-                          child: _toolFilterChip(
-                            icon: Icons.casino_rounded,
-                            label: 'Ngẫu nhiên',
-                            isActive: false,
-                            onTap: () {
-                              Navigator.pop(context);
-                              _jumpToRandomDestination();
-                            },
-                          ),
-                        ),
-                      ],
+                    _popupSelectionField(
+                      title: 'Loại địa điểm',
+                      value: _selectedLocationKindLabel(_selectedLocationKind),
+                      hint: 'Chạm để chọn loại địa điểm',
+                      onTap: () async {
+                        final selected = await _showSingleSelectPopup(
+                          title: 'Loại địa điểm',
+                          options: _locationKindOptions
+                              .map((option) => option['label']!)
+                              .toList(),
+                          selectedValue:
+                              _selectedLocationKindLabel(_selectedLocationKind),
+                        );
+                        if (selected == null) return;
+                        final selectedValue = _locationKindOptions.firstWhere(
+                          (option) => option['label'] == selected,
+                        )['value']!;
+                        setSheetState(() {
+                          _selectedLocationKind = selectedValue;
+                          _selectedCategory = null;
+                          _selectedTags.clear();
+                        });
+                      },
                     ),
                     const SizedBox(height: 24),
 
@@ -2744,37 +3175,106 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       ),
                     ),
                     const SizedBox(height: 10),
-                    SingleChildScrollView(
-                      scrollDirection: Axis.horizontal,
-                      child: Row(
-                        children: [
-                          ...cities.map((city) {
-                            final isFirst = city == cities.first;
-                            return Padding(
-                              padding: EdgeInsets.only(left: isFirst ? 0.0 : 8.0),
-                              child: _choiceChip(
-                                label: city,
-                                isSelected: _selectedCity == city,
-                                onTap: () {
-                                  setSheetState(() {
-                                    _selectedCity = city;
-                                  });
-                                  setState(() {});
-                                  if (_searchQuery.trim().isNotEmpty) {
-                                    _performBackendSearch(_searchQuery);
-                                  } else {
-                                    _selectCity(city);
-                                  }
-                                },
-                              ),
-                            );
-                          }).toList(),
-                        ],
-                      ),
+                    _popupSelectionField(
+                      title: 'Thành phố',
+                      value: _selectedCity ?? 'Tất cả thành phố',
+                      hint: 'Chạm để chọn thành phố',
+                      onTap: () async {
+                        final selected = await _showSingleSelectPopup(
+                          title: 'Lọc theo Thành phố',
+                          options: cities,
+                          selectedValue: _selectedCity,
+                          clearLabel: 'Tất cả thành phố',
+                        );
+                        setSheetState(() {
+                          _selectedCity = selected;
+                        });
+                      },
                     ),
                     const SizedBox(height: 24),
 
-                    // SECTION 3: SORT BY
+                    if (_selectedLocationKind != 'all') ...[
+                      // SECTION 3: CATEGORY
+                      Text(
+                        'Danh mục',
+                        style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white.withOpacity(0.4),
+                          letterSpacing: 1,
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          children: [
+                            _choiceChip(
+                              label: 'Tất cả',
+                              isSelected: _selectedCategory == null,
+                              onTap: () {
+                                setSheetState(() {
+                                  _selectedCategory = null;
+                                });
+                              },
+                            ),
+                            const SizedBox(width: 8),
+                            ..._activeTagOptions.map((category) {
+                              return Padding(
+                                padding: const EdgeInsets.only(right: 8),
+                                child: _choiceChip(
+                                  label: category,
+                                  isSelected: _selectedCategory == category,
+                                  onTap: () {
+                                    setSheetState(() {
+                                      _selectedCategory = category;
+                                    });
+                                  },
+                                ),
+                              );
+                            }),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(height: 24),
+                    ],
+
+                    if (_selectedLocationKind != 'all') ...[
+                      // SECTION 4: TAGS
+                      Text(
+                        'Tags',
+                        style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white.withOpacity(0.4),
+                          letterSpacing: 1,
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      _popupSelectionField(
+                        title: 'Tags',
+                        value: _tagsSummary(_selectedTags),
+                        hint: 'Chạm để chọn tags',
+                        onTap: () async {
+                          final selected = await _showMultiSelectPopup(
+                            title: 'Tags',
+                            options: _activeTagOptions,
+                            selectedValues: _selectedTags,
+                          );
+                          if (selected == null) return;
+                          setSheetState(() {
+                            _selectedTags
+                              ..clear()
+                              ..addAll(selected);
+                          });
+                        },
+                      ),
+                      const SizedBox(height: 24),
+                    ],
+
+                    // SECTION 5: SORT BY
                     Text(
                       'Sắp xếp theo',
                       style: TextStyle(
@@ -2786,24 +3286,94 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       ),
                     ),
                     const SizedBox(height: 10),
-                    Row(
+                    Wrap(
+                      spacing: 8,
+                      runSpacing: 8,
                       children: sortOptions.map((opt) {
                         final isSelected = _sortBy == opt['field'];
+                        return _choiceChip(
+                          label: opt['label']!,
+                          isSelected: isSelected,
+                          centerText: true,
+                          onTap: () {
+                            setSheetState(() {
+                              _sortBy = opt['field']!;
+                              _sortOrder = opt['order']!;
+                            });
+                          },
+                        );
+                      }).toList(),
+                    ),
+                    const SizedBox(height: 24),
+
+                    // SECTION 6: ORDER
+                    Text(
+                      'Thứ tự',
+                      style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white.withOpacity(0.4),
+                        letterSpacing: 1,
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: _choiceChip(
+                            label: 'Giảm dần',
+                            isSelected: _sortOrder == 'desc',
+                            centerText: true,
+                            onTap: () {
+                              setSheetState(() {
+                                _sortOrder = 'desc';
+                              });
+                            },
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        Expanded(
+                          child: _choiceChip(
+                            label: 'Tăng dần',
+                            isSelected: _sortOrder == 'asc',
+                            centerText: true,
+                            onTap: () {
+                              setSheetState(() {
+                                _sortOrder = 'asc';
+                              });
+                            },
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 24),
+
+                    // SECTION 7: LIMIT
+                    Text(
+                      'Số lượng',
+                      style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white.withOpacity(0.4),
+                        letterSpacing: 1,
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    Row(
+                      children: limitOptions.map((limit) {
                         return Expanded(
                           child: Padding(
-                            padding:
-                                const EdgeInsets.symmetric(horizontal: 4.0),
+                            padding: const EdgeInsets.symmetric(horizontal: 4),
                             child: _choiceChip(
-                              label: opt['label']!,
-                              isSelected: isSelected,
+                              label: '$limit',
+                              isSelected: _filterLimit == limit,
                               centerText: true,
                               onTap: () {
                                 setSheetState(() {
-                                  _sortBy = opt['field']!;
-                                  _sortOrder = opt['order']!;
+                                  _filterLimit = limit;
                                 });
-                                setState(() {});
-                                _performBackendSearch(_searchQuery);
                               },
                             ),
                           ),
@@ -2812,7 +3382,120 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     ),
                     const SizedBox(height: 24),
 
-                    // SECTION 4: NEARBY / GPS
+                    // SECTION 8: SCORE
+                    Text(
+                      'Điểm đánh giá',
+                      style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white.withOpacity(0.4),
+                        letterSpacing: 1,
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      '${_scoreRange.start.toStringAsFixed(1)} - ${_scoreRange.end.toStringAsFixed(1)} sao',
+                      style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 12,
+                        color: Colors.white.withOpacity(0.72),
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    RangeSlider(
+                      activeColor: const Color(0xFFD4AF7A),
+                      inactiveColor: Colors.white.withOpacity(0.12),
+                      min: 0,
+                      max: 5,
+                      divisions: 10,
+                      values: _scoreRange,
+                      onChanged: (value) {
+                        setSheetState(() {
+                          _scoreRange = value;
+                        });
+                      },
+                    ),
+                    const SizedBox(height: 16),
+
+                    // SECTION 9: OPENING TIME
+                    Text(
+                      'Thời gian mở cửa',
+                      style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white.withOpacity(0.4),
+                        letterSpacing: 1,
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: _filterValueButton(
+                            icon: Icons.access_time_rounded,
+                            label: _filterTime ?? 'Giờ bất kỳ',
+                            onTap: () async {
+                              final initial = _filterTime?.split(':');
+                              final picked = await showTimePicker(
+                                context: context,
+                                initialTime: initial != null &&
+                                        initial.length == 2
+                                    ? TimeOfDay(
+                                        hour: int.tryParse(initial[0]) ?? 8,
+                                        minute: int.tryParse(initial[1]) ?? 0,
+                                      )
+                                    : const TimeOfDay(hour: 8, minute: 0),
+                              );
+                              if (picked == null) return;
+                              setSheetState(() {
+                                _filterTime =
+                                    '${picked.hour.toString().padLeft(2, '0')}:${picked.minute.toString().padLeft(2, '0')}';
+                              });
+                            },
+                            onClear: _filterTime == null
+                                ? null
+                                : () {
+                                    setSheetState(() {
+                                      _filterTime = null;
+                                    });
+                                  },
+                          ),
+                        ),
+                        const SizedBox(width: 10),
+                        Expanded(
+                          child: _filterValueButton(
+                            icon: Icons.calendar_today_rounded,
+                            label: _filterDate ?? 'Ngày bất kỳ',
+                            onTap: () async {
+                              final now = DateTime.now();
+                              final picked = await showDatePicker(
+                                context: context,
+                                initialDate: now,
+                                firstDate: DateTime(now.year - 1),
+                                lastDate: DateTime(now.year + 1),
+                              );
+                              if (picked == null) return;
+                              setSheetState(() {
+                                _filterDate =
+                                    '${picked.year.toString().padLeft(4, '0')}-${picked.month.toString().padLeft(2, '0')}-${picked.day.toString().padLeft(2, '0')}';
+                              });
+                            },
+                            onClear: _filterDate == null
+                                ? null
+                                : () {
+                                    setSheetState(() {
+                                      _filterDate = null;
+                                    });
+                                  },
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 24),
+
+                    // SECTION 10: NEARBY / GPS
                     Container(
                       padding: const EdgeInsets.all(16),
                       decoration: BoxDecoration(
@@ -2857,8 +3540,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                   setSheetState(() {
                                     _nearbyEnabled = val;
                                   });
-                                  setState(() {});
-                                  _performBackendSearch(_searchQuery);
                                 },
                               ),
                             ],
@@ -2892,12 +3573,40 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                 });
                               },
                               onChangeEnd: (val) {
-                                setState(() {});
-                                _performBackendSearch(_searchQuery);
+                                setSheetState(() {
+                                  _radius = val;
+                                });
                               },
                             ),
                           ],
                         ],
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    SizedBox(
+                      width: double.infinity,
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color(0xFFD4AF7A),
+                          foregroundColor: Colors.black,
+                          padding: const EdgeInsets.symmetric(vertical: 14),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                        ),
+                        onPressed: () {
+                          setState(() {});
+                          Navigator.pop(context);
+                          _applyCurrentFilters();
+                        },
+                        child: const Text(
+                          'Áp dụng',
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 14,
+                            fontWeight: FontWeight.w800,
+                          ),
+                        ),
                       ),
                     ),
                   ],
@@ -2910,44 +3619,49 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     );
   }
 
-  Widget _toolFilterChip({
+  Widget _filterValueButton({
     required IconData icon,
     required String label,
-    required bool isActive,
     required VoidCallback onTap,
+    VoidCallback? onClear,
   }) {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 12),
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
         decoration: BoxDecoration(
-          color: isActive
-              ? const Color(0xFFD4AF7A).withOpacity(0.15)
-              : Colors.white.withOpacity(0.05),
+          color: Colors.white.withOpacity(0.06),
           borderRadius: BorderRadius.circular(14),
-          border: Border.all(
-            color: isActive
-                ? const Color(0xFFD4AF7A)
-                : Colors.white.withOpacity(0.08),
-            width: 1.2,
-          ),
+          border: Border.all(color: Colors.white.withOpacity(0.08)),
         ),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(icon,
-                color: isActive ? const Color(0xFFD4AF7A) : Colors.white70,
-                size: 18),
+            Icon(icon, color: const Color(0xFFD4AF7A), size: 17),
             const SizedBox(width: 8),
-            Text(
-              label,
-              style: TextStyle(
-                fontFamily: 'Montserrat',
-                fontSize: 13,
-                fontWeight: FontWeight.bold,
-                color: isActive ? const Color(0xFFD4AF7A) : Colors.white70,
+            Expanded(
+              child: Text(
+                label,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(
+                  fontFamily: 'Montserrat',
+                  fontSize: 12,
+                  fontWeight: FontWeight.w700,
+                  color: Colors.white,
+                ),
               ),
             ),
+            if (onClear != null) ...[
+              const SizedBox(width: 6),
+              GestureDetector(
+                onTap: onClear,
+                child: Icon(
+                  Icons.close_rounded,
+                  color: Colors.white.withOpacity(0.65),
+                  size: 16,
+                ),
+              ),
+            ],
           ],
         ),
       ),
@@ -3003,6 +3717,86 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   color: isSelected ? Colors.black : Colors.white70,
                 ),
               ),
+      ),
+    );
+  }
+
+  Widget _popupSelectionField({
+    required String title,
+    required String value,
+    required String hint,
+    required VoidCallback onTap,
+  }) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        width: double.infinity,
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+        decoration: BoxDecoration(
+          color: Colors.white.withOpacity(0.05),
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all(color: Colors.white.withOpacity(0.08)),
+        ),
+        child: Row(
+          children: [
+            Container(
+              width: 38,
+              height: 38,
+              decoration: BoxDecoration(
+                color: const Color(0xFFD4AF7A).withOpacity(0.12),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: const Icon(
+                Icons.keyboard_arrow_down_rounded,
+                color: Color(0xFFD4AF7A),
+              ),
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    title,
+                    style: TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontSize: 12,
+                      fontWeight: FontWeight.w700,
+                      color: Colors.white.withOpacity(0.45),
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    value,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontSize: 14,
+                      fontWeight: FontWeight.w700,
+                      color: Colors.white,
+                    ),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    hint,
+                    style: TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontSize: 11,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.white.withOpacity(0.4),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(width: 10),
+            Icon(
+              Icons.expand_more_rounded,
+              color: Colors.white.withOpacity(0.7),
+            ),
+          ],
+        ),
       ),
     );
   }

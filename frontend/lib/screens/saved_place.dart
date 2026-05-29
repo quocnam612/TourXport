@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../models/destination.dart';
 import '../models/saved_tour.dart';
 import '../api/api.dart';
+import 'saved_tour_detail.dart';
 
 class SavedPlacesSection extends StatefulWidget {
   final Animation<double> entranceAnimation;
@@ -559,9 +560,33 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
       separatorBuilder: (_, __) => const SizedBox(height: 16),
       itemBuilder: (context, index) {
         final tour = _savedTours[index];
-
         return GestureDetector(
-          onTap: () {
+          onTap: () async {
+            // Fetch full tour detail and open detail screen
+            if (widget.authToken == null) return;
+              try {
+              // saved tours are private; fetch via authenticated user's my-tours endpoint
+              final resp = await apiGet('/tours/my-tours/${tour.id}', token: widget.authToken);
+              if (resp.statusCode == 200) {
+                final decoded = tryDecodeJsonObject(resp.body);
+                if (decoded != null) {
+                  final data = decoded['data'] ?? decoded;
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => SavedTourDetailScreen(
+                        tourTitle: tour.title,
+                        tourJson: data is Map<String, dynamic> ? data : {},
+                      ),
+                    ),
+                  );
+                  return;
+                }
+              }
+              // fallback: open activation dialog if detail not available
+            } catch (e) {
+              // ignore and fallback
+            }
+
             if (widget.onSelectTour != null) {
               widget.onSelectTour!(tour);
               showDialog(

@@ -1,32 +1,47 @@
 const escapeRegex = (value) => String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
-const makeVietnameseRegex = (text) => {
-    let pattern = '';
-    const normalized = text.toLowerCase();
+const toVietnameseStorageVariant = (value) => {
+    const shapeMap = {
+        'a\u0306': 'ă',
+        'A\u0306': 'Ă',
+        'a\u0302': 'â',
+        'A\u0302': 'Â',
+        'e\u0302': 'ê',
+        'E\u0302': 'Ê',
+        'o\u0302': 'ô',
+        'O\u0302': 'Ô',
+        'o\u031b': 'ơ',
+        'O\u031b': 'Ơ',
+        'u\u031b': 'ư',
+        'U\u031b': 'Ư'
+    };
+    const shapeMarks = new Set(['\u0306', '\u0302', '\u031b']);
+    const normalized = String(value).normalize('NFD');
+    let result = '';
+
     for (let i = 0; i < normalized.length; i++) {
         const char = normalized[i];
         if (char.codePointAt(0) >= 0x0300 && char.codePointAt(0) <= 0x036f) {
-            continue; // Skip combining marks
+            result += char;
+            continue;
         }
-        if ('aàáảãạăắằẳẵặâấầẩẫậ'.includes(char)) {
-            pattern += '[aàáảãạăắằẳẵặâấầẩẫậàáảãạắằẳẵặấầẩẫậa\\\\u0300\\\\u0301\\\\u0303\\\\u0309\\\\u0323\\\\u0306\\\\u0302\\\\u0103\\\\u00e2]*';
-        } else if ('eèéẻẽẹêếềểễệ'.includes(char)) {
-            pattern += '[eèéẻẽẹêếềểễệèéẻẽẹếềểễệe\\\\u0300\\\\u0301\\\\u0303\\\\u0309\\\\u0323\\\\u0302]*';
-        } else if ('iìíỉĩị'.includes(char)) {
-            pattern += '[iìíỉĩịìíỉĩịi\\\\u0300\\\\u0301\\\\u0303\\\\u0309\\\\u0323]*';
-        } else if ('oòóỏõọôốồổỗộơớờởỡợ'.includes(char)) {
-            pattern += '[oòóỏõọôốồổỗộơớờởỡợòóỏõọốồổỗộớờởỡợo\\\\u0300\\\\u0301\\\\u0303\\\\u0309\\\\u0323\\\\u0302\\\\u031b]*';
-        } else if ('uùúủũụưứừửữự'.includes(char)) {
-            pattern += '[uùúủũụưứừửữựùúủũụứừửữựu\\\\u0300\\\\u0301\\\\u0303\\\\u0309\\\\u0323\\\\u031b]*';
-        } else if ('yỳýỷỹỵ'.includes(char)) {
-            pattern += '[yỳýỷỹỵỳýỷỹỵy\\\\u0300\\\\u0301\\\\u0303\\\\u0309\\\\u0323]*';
-        } else if ('dđ'.includes(char)) {
-            pattern += '[dđ]*';
-        } else {
-            pattern += escapeRegex(char);
+
+        const marks = [];
+        while (
+            i + 1 < normalized.length
+            && normalized[i + 1].codePointAt(0) >= 0x0300
+            && normalized[i + 1].codePointAt(0) <= 0x036f
+        ) {
+            marks.push(normalized[++i]);
         }
+
+        const shapeMark = marks.find((mark) => shapeMarks.has(mark));
+        const composed = shapeMark ? shapeMap[`${char}${shapeMark}`] : undefined;
+        result += composed || char;
+        result += marks.filter((mark) => mark !== shapeMark).join('');
     }
-    return new RegExp(pattern, 'i');
+
+    return result;
 };
 
 const regexVariants = (value) => {
@@ -34,15 +49,11 @@ const regexVariants = (value) => {
     const variants = new Set([
         text,
         text.normalize('NFC'),
-        text.normalize('NFD')
+        text.normalize('NFD'),
+        toVietnameseStorageVariant(text)
     ]);
 
-    const list = [...variants].map((variant) => new RegExp(escapeRegex(variant), 'i'));
-    try {
-        list.push(makeVietnameseRegex(text));
-    } catch (e) {}
-
-    return list;
+    return [...variants].map((variant) => new RegExp(escapeRegex(variant), 'i'));
 };
 
 const provinceToCities = {
@@ -279,13 +290,7 @@ export const buildTextFilter = (query) => {
 
     const variants = regexVariants(query);
     return {
-        $or: variants.flatMap((regex) => [
-            { title: regex },
-            { city: regex },
-            { category: regex },
-            { searchText: regex },
-            { tags: regex }
-        ])
+        title: variants.length === 1 ? variants[0] : { $in: variants }
     };
 };
 

@@ -5,10 +5,18 @@ class SurveyAnswer {
   DateTime? startDate;
   /// Ngày về
   DateTime? endDate;
-  /// Mục tiêu chính của chuyến đi: 'Nghỉ dưỡng', 'Du lịch, khám phá', 'Công tác'
-  String? mainGoal;
-  /// Điểm đến muốn du lịch (tỉnh/thành phố)
-  String? selectedDestination;
+  /// (Mới) Danh sách tỉnh/thành muốn đến (có thể chọn nhiều)
+  List<String> selectedDestinations;
+  /// Số ngày dự định đi
+  int? days;
+  /// Số đêm dự định
+  int? nights;
+  /// Số người lớn
+  int adults;
+  /// Số trẻ em
+  int children;
+  /// Nhịp độ chuyến đi: 'fast', 'balanced', 'relaxed'
+  String? pace;
 
   // ── PHẦN 2: Ngân sách & chi tiêu ──
   /// Mức ngân sách mong muốn (VNĐ/người)
@@ -43,8 +51,12 @@ class SurveyAnswer {
   SurveyAnswer({
     this.startDate,
     this.endDate,
-    this.mainGoal,
-    this.selectedDestination,
+    List<String>? selectedDestinations,
+    this.days,
+    this.nights,
+    this.adults = 1,
+    this.children = 0,
+    this.pace,
     this.budgetPerPerson,
     this.spendPriority,
     List<String>? activities,
@@ -55,11 +67,13 @@ class SurveyAnswer {
     this.accommodationPriority,
     List<String>? dietaryRequirements,
     this.diningStyle,
-  })  : activities = activities ?? [],
+  })  : selectedDestinations = selectedDestinations ?? [],
+        activities = activities ?? [],
         dietaryRequirements = dietaryRequirements ?? [];
 
   /// Tính tổng số ngày dựa trên ngày đi và ngày về
   int get totalDays {
+    if (days != null) return days!;
     if (startDate == null || endDate == null) return 3;
     final diff = endDate!.difference(startDate!).inDays;
     return diff + 1;
@@ -70,8 +84,12 @@ class SurveyAnswer {
     return {
       'start_date': startDate?.toIso8601String(),
       'end_date': endDate?.toIso8601String(),
-      'main_goal': mainGoal,
-      'selected_destination': selectedDestination,
+      'selected_destinations': selectedDestinations,
+      'days': days,
+      'nights': nights,
+      'adults': adults,
+      'children': children,
+      'pace': pace,
       'budget_per_person': budgetPerPerson,
       'spend_priority': spendPriority,
       'activities': activities,

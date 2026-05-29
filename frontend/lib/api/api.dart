@@ -1,7 +1,6 @@
 import 'dart:convert';
-import 'dart:io' show Platform, File;
 
-import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:flutter/foundation.dart' show TargetPlatform, defaultTargetPlatform, kIsWeb;
 import 'package:http/http.dart' as http;
 import 'package:http_parser/http_parser.dart';
 
@@ -19,7 +18,7 @@ String get apiBaseUrl {
     if (kIsWeb) {
         return 'http://localhost:3000';
     }
-    if (Platform.isAndroid) {
+    if (defaultTargetPlatform == TargetPlatform.android) {
         // Android emulator dùng 10.0.2.2 để trỏ về localhost của máy host.
         // Thiết bị thật cần truyền API_BASE_URL bằng IP LAN của máy chạy backend.
         return 'http://10.0.2.2:3000';
@@ -36,7 +35,7 @@ String get aiBaseUrl {
   if (kIsWeb) {
     return 'http://localhost:8000';
   }
-  if (Platform.isAndroid) {
+  if (defaultTargetPlatform == TargetPlatform.android) {
     return 'http://10.0.2.2:8000';
   }
   return 'http://localhost:8000';
@@ -72,7 +71,6 @@ Future<http.Response> apiPostJson(
     body: jsonEncode(body),
   );
 }
-
 /// Gọi API tới AI Backend (timeout dài hơn vì OpenAI cần xử lý 15-60s)
 Future<http.Response> apiAiPostJson(
   String path,
@@ -126,10 +124,11 @@ MediaType _getMediaTypeForFile(String filePath) {
   return MediaType('application', 'octet-stream');
 }
 
-Future<http.StreamedResponse> apiPostMultipart(
+Future<http.StreamedResponse> apiPostMultipartBytes(
   String path,
   String fieldName,
-  File file, {
+  List<int> bytes, {
+  required String filename,
   String? token,
 }) async {
   final uri = Uri.parse('$apiBaseUrl$path');
@@ -139,19 +138,21 @@ Future<http.StreamedResponse> apiPostMultipart(
     request.headers['Authorization'] = 'Bearer ${token.trim()}';
   }
   
-  final mediaType = _getMediaTypeForFile(file.path);
-  request.files.add(await http.MultipartFile.fromPath(
+  final mediaType = _getMediaTypeForFile(filename);
+  request.files.add(http.MultipartFile.fromBytes(
     fieldName,
-    file.path,
+    bytes,
+    filename: filename,
     contentType: mediaType,
   ));
   return request.send();
 }
 
-Future<http.StreamedResponse> apiPutMultipart(
+Future<http.StreamedResponse> apiPutMultipartBytes(
   String path,
   String fieldName,
-  File file, {
+  List<int> bytes, {
+  required String filename,
   String? token,
 }) async {
   final uri = Uri.parse('$apiBaseUrl$path');
@@ -161,14 +162,19 @@ Future<http.StreamedResponse> apiPutMultipart(
     request.headers['Authorization'] = 'Bearer ${token.trim()}';
   }
   
-  final mediaType = _getMediaTypeForFile(file.path);
-  request.files.add(await http.MultipartFile.fromPath(
+  final mediaType = _getMediaTypeForFile(filename);
+  request.files.add(http.MultipartFile.fromBytes(
     fieldName,
-    file.path,
+    bytes,
+    filename: filename,
     contentType: mediaType,
   ));
   return request.send();
 }
+
+/// Fetch a location document by its sourceLocationId (external provider id).
+/// Returns the first matching document as a Map<String, dynamic> or null.
+
 
 /// Parses JSON object from response body; returns null if body is empty or invalid.
 Map<String, dynamic>? tryDecodeJsonObject(String body) {
@@ -243,4 +249,37 @@ Future<String?> resolveLocationIdByName(String name, String type, {String? token
 /// Resolves a place ID by searching the backend using `/locations`.
 Future<String?> resolvePlaceIdByName(String name, {String? token}) {
   return resolveLocationIdByName(name, 'Địa điểm', token: token);
+}
+
+/// Fetch a location document from the backend by the original source ID
+/// Returns the first matching document as a Map or null when not found.
+Future<Map<String, dynamic>?> fetchLocationBySourceId(String sourceId, {String? sourceCollection, String? token}) async {
+  if (sourceId.isEmpty) return null;
+  // Only call the specific endpoint indicated by sourceCollection.
+  if (sourceCollection == null || sourceCollection.trim().isEmpty) return null;
+  try {
+    final sc = sourceCollection.trim().toLowerCase();
+    String coll;
+    if (sc.contains('restaurant')) coll = 'restaurants';
+    else if (sc.contains('hotel')) coll = 'hotels';
+    else coll = 'locations';
+
+    final uri = Uri.parse('$apiBaseUrl/$coll/search?id=${Uri.encodeComponent(sourceId)}');
+    final resp = await _client.get(uri, headers: _buildHeaders(token: token));
+    final data = tryDecodeJsonObject(resp.body);
+    if (resp.statusCode == 200 && data != null && data['success'] == true) {
+      final payload = data['data'];
+      if (payload is List && payload.isNotEmpty) {
+        final item = payload.first;
+        if (item is Map) return Map<String, dynamic>.from(item);
+      } else if (payload is Map) {
+        return Map<String, dynamic>.from(payload);
+      }
+      // Some endpoints may return the object directly without 'data'
+      if (data is Map && data.containsKey('_id') && data.containsKey('title')) {
+        return Map<String, dynamic>.from(data);
+      }
+    }
+  } catch (_) {}
+  return null;
 }

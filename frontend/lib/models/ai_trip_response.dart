@@ -92,6 +92,7 @@ class AiActivity {
   final double estimatedCost;
   final String? placeId;
   final String? placeName;
+  final String? sourceCollection;
 
   AiActivity({
     required this.timeSlot,
@@ -99,6 +100,7 @@ class AiActivity {
     required this.estimatedCost,
     this.placeId,
     this.placeName,
+    this.sourceCollection,
   });
 
   factory AiActivity.fromJson(Map<String, dynamic> json) {
@@ -123,6 +125,8 @@ class AiActivity {
       estimatedCost: cost,
       placeId: json['placeId'] ?? json['source']?['id'],
       placeName: json['placeName'] ?? json['title'] ?? 'Địa điểm',
+      // support several possible field names in the AI/backend JSON: 'collection' or 'sourceCollection'
+      sourceCollection: json['source']?['collection'] ?? json['source']?['sourceCollection'] ?? json['sourceCollection'] ?? json['collection'],
     );
   }
 }

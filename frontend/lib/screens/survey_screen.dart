@@ -14,7 +14,7 @@ class SurveyScreen extends StatefulWidget {
 
 class _SurveyScreenState extends State<SurveyScreen>
     with TickerProviderStateMixin {
-  static const _totalPages = 6;
+  static const _totalPages = 3;
   int _currentPage = 0;
   final _answer = SurveyAnswer();
   late final PageController _pageCtrl;
@@ -26,7 +26,11 @@ class _SurveyScreenState extends State<SurveyScreen>
 
   // Các tập hợp lựa chọn câu hỏi (Single & Multi-select)
   final _qDestination = <String>{};
-  final _qMainGoal = <String>{};
+  // số ngày, số đêm, người lớn, trẻ em
+  int _days = 3;
+  int _nights = 2;
+  int _adults = 1;
+  int _children = 0;
 
   static const _destinationOptions = [
     'Tuyên Quang',
@@ -70,6 +74,7 @@ class _SurveyScreenState extends State<SurveyScreen>
   final _qAccommodationPriority = <String>{};
   final _qDietaryRequirements = <String>{};
   final _qDiningStyle = <String>{};
+  String? _tripPace; // 'fast','balanced','relaxed'
 
   @override
   void initState() {
@@ -91,38 +96,7 @@ class _SurveyScreenState extends State<SurveyScreen>
   }
 
   void _nextPage() {
-    // Validate Page 1: Bắt buộc chọn tỉnh/thành phố và ngày đi ngày về
-    if (_currentPage == 0) {
-      if (_qDestination.isEmpty) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: const Text(
-              'Vui lòng chọn tỉnh/thành phố bạn muốn đi.',
-              style: TextStyle(fontFamily: 'Montserrat', fontWeight: FontWeight.w600),
-            ),
-            backgroundColor: Colors.redAccent.withValues(alpha: 0.9),
-            behavior: SnackBarBehavior.floating,
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-          ),
-        );
-        return;
-      }
-      if (_answer.startDate == null || _answer.endDate == null) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: const Text(
-              'Vui lòng chọn ngày đi và ngày về để tiếp tục.',
-              style: TextStyle(fontFamily: 'Montserrat', fontWeight: FontWeight.w600),
-            ),
-            backgroundColor: Colors.redAccent.withValues(alpha: 0.9),
-            behavior: SnackBarBehavior.floating,
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-          ),
-        );
-        return;
-      }
-    }
-
+    // No strict requirement on Page1: destinations can be empty (means all)
     if (_currentPage < _totalPages - 1) {
       _pageCtrl.nextPage(
           duration: const Duration(milliseconds: 400),
@@ -173,8 +147,23 @@ class _SurveyScreenState extends State<SurveyScreen>
   }
 
   void _syncAnswers() {
-    _answer.selectedDestination = _qDestination.isEmpty ? null : _qDestination.first;
-    _answer.mainGoal = _qMainGoal.isEmpty ? null : _qMainGoal.first;
+    _answer.selectedDestinations = _qDestination.toList();
+    _answer.days = _days;
+    _answer.nights = _nights;
+    _answer.adults = _adults;
+    _answer.children = _children;
+    // Map localized labels to normalized pace keys
+    if (_tripPace == null) {
+      _answer.pace = null;
+    } else if (_tripPace == 'Nhanh') {
+      _answer.pace = 'fast';
+    } else if (_tripPace == 'Cân bằng') {
+      _answer.pace = 'balanced';
+    } else if (_tripPace == 'Thư giãn') {
+      _answer.pace = 'relaxed';
+    } else {
+      _answer.pace = _tripPace;
+    }
 
     final customBudgetStr = _budgetController.text.trim();
     if (customBudgetStr.isNotEmpty) {
@@ -228,11 +217,8 @@ class _SurveyScreenState extends State<SurveyScreen>
 
   static const _sectionLabels = [
     'PHẦN 1 — THÔNG TIN CHUYẾN ĐI',
-    'PHẦN 2 — NGÂN SÁCH & CHI TIÊU',
+    'PHẦN 2 — NGÂN SÁCH & NHỊP ĐỘ',
     'PHẦN 3 — SỞ THÍCH & TRẢI NGHIỆM',
-    'PHẦN 4 — PHƯƠNG TIỆN & DI CHUYỂN',
-    'PHẦN 5 — LƯU TRÚ',
-    'PHẦN 6 — ĂN UỐNG',
   ];
 
   @override
@@ -265,9 +251,6 @@ class _SurveyScreenState extends State<SurveyScreen>
                         _pageTripInfo(),
                         _pageBudgetAndSpending(),
                         _pageInterestsAndExperience(),
-                        _pageTransportAndRoute(),
-                        _pageAccommodation(),
-                        _pageDining(),
                       ],
                     ),
                   ),
@@ -546,6 +529,71 @@ class _SurveyScreenState extends State<SurveyScreen>
     );
   }
 
+  Widget _numberPickerCard(String title, int value, ValueChanged<int> onChanged) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+      decoration: BoxDecoration(
+        color: Colors.white.withOpacity(0.06),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: Colors.white.withOpacity(0.08)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title,
+              style: TextStyle(
+                fontFamily: 'Montserrat',
+                fontSize: 12,
+                fontWeight: FontWeight.w600,
+                color: Colors.white.withOpacity(0.6),
+              )),
+          const SizedBox(height: 8),
+          Row(
+            children: [
+              GestureDetector(
+                onTap: () => onChanged((value - 1).clamp(0, 999)),
+                child: Container(
+                  width: 36,
+                  height: 36,
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.04),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: const Icon(Icons.remove, color: Colors.white),
+                ),
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Center(
+                  child: Text('$value',
+                      style: const TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 18,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white,
+                      )),
+                ),
+              ),
+              const SizedBox(width: 12),
+              GestureDetector(
+                onTap: () => onChanged((value + 1).clamp(0, 999)),
+                child: Container(
+                  width: 36,
+                  height: 36,
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.04),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: const Icon(Icons.add, color: Colors.white),
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
   // ═══════════════════════════════════════════════
   //  PAGES DEFINITIONS (12 QUESTIONS IN 6 SECTIONS)
   // ═══════════════════════════════════════════════
@@ -555,11 +603,11 @@ class _SurveyScreenState extends State<SurveyScreen>
         section: _sectionLabels[0],
         children: [
           _questionTitle('1. Bạn muốn đi du lịch ở tỉnh/thành phố nào?'),
-          _subLabel('Chọn một điểm đến bạn mong muốn khám phá nhất'),
+          _subLabel('Chọn một hoặc nhiều tỉnh/thành (bỏ trống để tìm tất cả)'),
           SurveyChipGroup(
             options: _destinationOptions,
             selected: _qDestination,
-            maxSelections: 1,
+            maxSelections: 5,
             onChanged: (v) => setState(() {
               _qDestination
                 ..clear()
@@ -567,30 +615,40 @@ class _SurveyScreenState extends State<SurveyScreen>
             }),
           ),
           _divider(),
-          _questionTitle('2. Bạn dự định đi du lịch trong khoảng thời gian nào?'),
-          _subLabel('Nhấp để chọn ngày bắt đầu và kết thúc chuyến đi'),
-          _buildDateRangePicker(),
-          _divider(),
-          _questionTitle('3. Mục tiêu chính của chuyến đi là gì?'),
-          _subLabel('Chọn một lựa chọn phù hợp nhất'),
-          SurveyChipGroup(
-            options: const [
-              'Nghỉ dưỡng',
-              'Du lịch, khám phá',
-              'Công tác',
+          _questionTitle('2. Bạn dự định đi trong bao nhiêu ngày, bao nhiêu đêm?'),
+          _subLabel('Nhập số ngày và số đêm dự định'),
+          Row(
+            children: [
+              Expanded(
+                child: _numberPickerCard('Số ngày', _days, (v) => setState(() {
+                  _days = v;
+                  final minNights = (_days - 1).clamp(0, 365);
+                  final maxNights = _days + 1;
+                  if (_nights < minNights) _nights = minNights;
+                  if (_nights > maxNights) _nights = maxNights;
+                })),
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: _numberPickerCard('Số đêm', _nights, (v) => setState(() {
+                  _nights = v;
+                  final minDays = (_nights - 1).clamp(1, 365);
+                  final maxDays = _nights + 1;
+                  if (_days < minDays) _days = minDays;
+                  if (_days > maxDays) _days = maxDays;
+                })),
+              ),
             ],
-            selected: _qMainGoal,
-            maxSelections: 1,
-            icons: const {
-              'Nghỉ dưỡng': Icons.spa_rounded,
-              'Du lịch, khám phá': Icons.explore_rounded,
-              'Công tác': Icons.business_center_rounded,
-            },
-            onChanged: (v) => setState(() {
-              _qMainGoal
-                ..clear()
-                ..addAll(v);
-            }),
+          ),
+          _divider(),
+          _questionTitle('3. Số người tham gia chuyến đi'),
+          _subLabel('Chọn số người lớn và số trẻ em'),
+          Row(
+            children: [
+              Expanded(child: _numberPickerCard('Người lớn', _adults, (v) => setState(() { _adults = v; }))),
+              const SizedBox(width: 12),
+              Expanded(child: _numberPickerCard('Trẻ em', _children, (v) => setState(() { _children = v; }))),
+            ],
           ),
         ],
       );
@@ -657,7 +715,55 @@ class _SurveyScreenState extends State<SurveyScreen>
             ],
           ),
           _divider(),
-          _questionTitle('5. Bạn ưu tiên chi tiêu nhiều hơn cho điều gì?'),
+          _questionTitle('5. Nhịp độ chuyến đi'),
+          _subLabel('Chọn nhịp độ mong muốn'),
+          SurveyChipGroup(
+            options: const ['Nhanh', 'Cân bằng', 'Thư giãn'],
+            selected: _tripPace == null ? <String>{} : <String>{_tripPace!},
+            maxSelections: 1,
+            icons: const {
+              'Nhanh': Icons.speed_rounded,
+              'Cân bằng': Icons.timeline_rounded,
+              'Thư giãn': Icons.self_improvement_rounded,
+            },
+            onChanged: (v) => setState(() {
+              _tripPace = v.isEmpty ? null : v.first;
+            }),
+          ),
+          _divider(),
+          _questionTitle('6. Bạn dự định đi phương tiện nào?'),
+          _subLabel('Chọn phương tiện di chuyển chính'),
+          SurveyChipGroup(
+            options: const [
+              'Xe máy',
+              'Ô tô',
+              'Xe khách',
+              'Máy bay',
+              'Tự động',
+            ],
+            selected: _qTransport,
+            maxSelections: 1,
+            icons: const {
+              'Xe máy': Icons.two_wheeler_rounded,
+              'Ô tô': Icons.airport_shuttle_rounded,
+              'Xe khách': Icons.directions_bus_rounded,
+              'Máy bay': Icons.flight_rounded,
+              'Tự động': Icons.autorenew_rounded,
+            },
+            onChanged: (v) => setState(() {
+              _qTransport
+                ..clear()
+                ..addAll(v);
+            }),
+          ),
+        ],
+      );
+
+  // Page 3: Sở thích & trải nghiệm
+  Widget _pageInterestsAndExperience() => _pageWrap(
+        section: _sectionLabels[2],
+        children: [
+          _questionTitle('7. Bạn ưu tiên chi tiêu nhiều hơn cho điều gì?'),
           _subLabel('Chọn phần hoạt động bạn muốn đầu tư tài chính nhiều nhất'),
           SurveyChipGroup(
             options: const [
@@ -680,14 +786,32 @@ class _SurveyScreenState extends State<SurveyScreen>
                 ..addAll(v);
             }),
           ),
-        ],
-      );
-
-  // Page 3: Sở thích & trải nghiệm
-  Widget _pageInterestsAndExperience() => _pageWrap(
-        section: _sectionLabels[2],
-        children: [
-          _questionTitle('6. Bạn thích hoạt động nào trong chuyến đi?'),
+          _divider(),
+          _questionTitle('8. Bạn thích địa điểm mang phong cách nào?'),
+          _subLabel('Chọn kiểu không khí mong muốn'),
+          SurveyChipGroup(
+            options: const [
+              'Đông vui',
+              'Yên tĩnh',
+              'Thiên nhiên',
+              'Mang tính văn hóa/tâm linh',
+            ],
+            selected: _qPlaceVibe,
+            maxSelections: 1,
+            icons: const {
+              'Đông vui': Icons.people_rounded,
+              'Yên tĩnh': Icons.nights_stay_rounded,
+              'Thiên nhiên': Icons.park_rounded,
+              'Mang tính văn hóa/tâm linh': Icons.temple_buddhist_rounded,
+            },
+            onChanged: (v) => setState(() {
+              _qPlaceVibe
+                ..clear()
+                ..addAll(v);
+            }),
+          ),
+          _divider(),
+          _questionTitle('9. Bạn thích hoạt động nào trong chuyến đi?'),
           _subLabel('Có thể chọn nhiều hoạt động yêu thích'),
           SurveyChipGroup(
             options: const [
@@ -711,30 +835,6 @@ class _SurveyScreenState extends State<SurveyScreen>
             },
             onChanged: (v) => setState(() {
               _qActivities
-                ..clear()
-                ..addAll(v);
-            }),
-          ),
-          _divider(),
-          _questionTitle('7. Bạn thích địa điểm mang phong cách nào?'),
-          _subLabel('Chọn kiểu không khí mong muốn'),
-          SurveyChipGroup(
-            options: const [
-              'Đông vui',
-              'Yên tĩnh',
-              'Thiên nhiên',
-              'Mang tính văn hóa/tâm linh',
-            ],
-            selected: _qPlaceVibe,
-            maxSelections: 1,
-            icons: const {
-              'Đông vui': Icons.people_rounded,
-              'Yên tĩnh': Icons.nights_stay_rounded,
-              'Thiên nhiên': Icons.park_rounded,
-              'Mang tính văn hóa/tâm linh': Icons.temple_buddhist_rounded,
-            },
-            onChanged: (v) => setState(() {
-              _qPlaceVibe
                 ..clear()
                 ..addAll(v);
             }),

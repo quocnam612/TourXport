@@ -6,6 +6,9 @@ import '../api/api.dart';
 import '../models/ai_trip_request.dart';
 import '../models/ai_trip_response.dart';
 import '../models/survey_answer.dart';
+import '../models/destination.dart';
+import 'place_detail.dart';
+import 'map_screen.dart';
 
 /// Kết quả khảo sát — hiển thị lịch trình AI gợi ý.
 class SurveyResultScreen extends StatefulWidget {
@@ -25,6 +28,7 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
   bool _isLoading = true;
   String? _errorMessage;
   AiTripResponse? _aiResponse;
+  String? _createdTourId;
 
   @override
   void initState() {
@@ -44,148 +48,68 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
   // ── AI Fetching logic ──
   Future<void> _fetchAiTrip() async {
     try {
+      setState(() {
+        _isLoading = true;
+        _errorMessage = null;
+      });
+
       final answer = widget.answer;
 
-      // 1. Lấy ngân sách dưới dạng số nguyên VND làm budgetLevel
-      int budgetLevel = 2000000;
-      if (answer.budgetPerPerson != null) {
-        budgetLevel = answer.budgetPerPerson!.toInt();
+      final int budgetLevel = answer.budgetPerPerson?.toInt() ?? 2000000;
+
+      final int totalDays = answer.totalDays;
+
+      int totalNights;
+      if (answer.nights != null) {
+        totalNights = answer.nights!;
+      } else if (answer.days != null) {
+        totalNights = (answer.days! - 1) >= 0 ? (answer.days! - 1) : 0;
+      } else {
+        totalNights = (totalDays - 1) >= 0 ? (totalDays - 1) : 0;
       }
 
-      // 2. Map transportMode sang chuẩn API
-      String transportMode = 'auto';
-      switch (answer.transportMode) {
-        case 'Xe máy':
-          transportMode = 'motorbike';
-          break;
-        case 'Ô tô':
-          transportMode = 'car';
-          break;
-        case 'Xe khách':
-          transportMode = 'public';
-          break;
-        case 'Máy bay':
-          transportMode = 'public';
-          break;
-        default:
-          transportMode = 'auto';
-      }
-
-      // 3. Map mainGoal sang pace
-      String pace = 'moderate';
-      switch (answer.mainGoal) {
-        case 'Nghỉ dưỡng':
-          pace = 'relaxed';
-          break;
-        case 'Du lịch, khám phá':
-          pace = 'moderate';
-          break;
-        case 'Công tác':
-          pace = 'packed';
-          break;
-        default:
-          pace = 'moderate';
-      }
-
-      // 4. Gom tất cả sở thích, đặc điểm để truyền vào Vector Search & prompt
-      final List<String> interests = [];
-      if (answer.activities.isNotEmpty) {
-        interests.addAll(answer.activities);
-      }
-      if (answer.mainGoal != null) {
-        interests.add("mục tiêu ${answer.mainGoal}");
-      }
-      if (answer.spendPriority != null) {
-        interests.add("ưu tiên chi tiêu cho ${answer.spendPriority}");
-      }
-      if (answer.placeVibe != null) {
-        interests.add("không gian địa điểm ${answer.placeVibe}");
-      }
-      if (answer.routePriority != null) {
-        interests.add("ưu tiên di chuyển ${answer.routePriority}");
-      }
-      if (answer.accommodationType != null) {
-        interests.add("loại hình lưu trú ${answer.accommodationType}");
-      }
-      if (answer.accommodationPriority != null) {
-        interests.add("ưu tiên lưu trú ${answer.accommodationPriority}");
-      }
-      if (answer.dietaryRequirements.isNotEmpty) {
-        interests.addAll(
-            answer.dietaryRequirements.map((d) => "yêu cầu ăn uống $d"));
-      }
-      if (answer.diningStyle != null) {
-        interests.add("phong cách quán ăn ${answer.diningStyle}");
-      }
-
-      if (interests.isEmpty) {
-        interests.addAll(['văn hóa', 'cảnh đẹp']);
-      }
-
-      final request = AiTripRequest(
-        destinations: answer.selectedDestination ?? 'auto',
-        totalDays: answer.totalDays,
-        adults: 1,
-        children: 0,
+      final req = AiTripRequest(
+        destinations: answer.selectedDestinations,
+        totalDays: totalDays,
+        totalNights: totalNights,
+        adults: answer.adults,
+        children: answer.children,
         budgetLevel: budgetLevel,
-        interests: interests,
-        transportMode: transportMode,
-        pace: pace,
+        interests: answer.activities,
+        transportMode: answer.transportMode ?? 'auto',
+        pace: answer.pace ?? 'balanced',
       );
 
-      final isGuest =
-          widget.authToken == null || widget.authToken!.trim().isEmpty;
+      // Use backend `/tours` endpoint (not AI backend) to create/generate tour
+      final resp = await apiPostJson('/tours', req.toJson(), token: widget.authToken);
+      final data = tryDecodeJsonObject(resp.body) ?? {};
 
-      final response = await (isGuest
-          ? apiAiPostJson(
-              '/api/trip/generate',
-              request.toJson(),
-            )
-          : apiPostJson(
-              '/tours',
-              request.toJson(),
-              token: widget.authToken,
-            ));
-
-      if (response.statusCode == 200 || response.statusCode == 201) {
-        final decoded = tryDecodeJsonObject(response.body);
-        if (decoded != null) {
-          final tripJson = isGuest ? decoded : decoded['data'];
-          if (tripJson != null) {
-            setState(() {
-              _aiResponse = AiTripResponse.fromJson(tripJson);
-              _isLoading = false;
-            });
-            _entranceCtrl.forward();
-          } else {
-            throw Exception('Dữ liệu phản hồi rỗng');
-          }
-        } else {
-          throw Exception('Dữ liệu không hợp lệ');
-        }
-      } else {
-        final errorData = tryDecodeJsonObject(response.body);
-        String errMsg = 'Lỗi kết nối máy chủ';
-        if (errorData != null) {
-          final detail = errorData['detail'];
-          if (detail is String) {
-            errMsg = detail;
-          } else if (detail is List) {
-            errMsg = detail.map((e) {
-              if (e is Map) {
-                final loc =
-                    e['loc'] is List ? (e['loc'] as List).join('.') : e['loc'];
-                final msg = e['msg'];
-                return "$loc: $msg";
-              }
-              return e.toString();
-            }).join('\n');
-          } else {
-            errMsg = errorData['message'] ?? 'Lỗi kết nối máy chủ';
-          }
-        }
-        throw Exception(errMsg);
+      if (resp.statusCode != 200 && resp.statusCode != 201) {
+        final msg = (data['detail'] ?? data['message'] ?? 'Server error');
+        throw Exception(msg);
       }
+
+      // Backend may wrap the tour/ai response under `data`.
+      final payload = (data['data'] is Map<String, dynamic>) ? data['data'] as Map<String, dynamic> : data;
+
+      setState(() {
+        try {
+          _aiResponse = AiTripResponse.fromJson(payload);
+        } catch (_) {
+          _aiResponse = null;
+        }
+        _isLoading = false;
+        // extract created tour id if present
+        String? created;
+        if (data['data'] is Map<String, dynamic>) {
+          final m = data['data'] as Map<String, dynamic>;
+          created = m['_id'] ?? m['id'] ?? m['_uid'];
+        }
+        created ??= data['_id'] ?? data['id'];
+        _createdTourId = created?.toString();
+      });
+      // Start entrance animation so FadeTransition becomes visible
+      if (mounted) _entranceCtrl.forward();
     } catch (e) {
       setState(() {
         _errorMessage = e.toString().replaceFirst('Exception: ', '');
@@ -370,24 +294,61 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
             onTap: () {
               final isGuest =
                   widget.authToken == null || widget.authToken!.trim().isEmpty;
-              if (isGuest) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                    content: Text(
-                        'Vui lòng đăng nhập để sử dụng tính năng lưu lịch trình'),
-                    backgroundColor: Colors.redAccent,
-                  ),
-                );
-              } else {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                    content: Text(
-                        'Lịch trình đã được lưu thành công vào tài khoản của bạn!'),
-                    backgroundColor: Color(0xFF2D6A4F),
-                  ),
-                );
-                Navigator.pop(context, 'go_to_saved_tours');
-              }
+                    if (isGuest) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(
+                          content: Text(
+                              'Vui lòng đăng nhập để sử dụng tính năng lưu lịch trình'),
+                          backgroundColor: Colors.redAccent,
+                        ),
+                      );
+                    } else {
+                      // Try to add the created tour to user's saved tours
+                      if (_createdTourId == null) {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(
+                            content: Text('Không có ID lịch trình để lưu'),
+                            backgroundColor: Colors.redAccent,
+                          ),
+                        );
+                      } else {
+                        () async {
+                          try {
+                            final resp = await apiPostJson(
+                              '/auth/profile/saved-tours',
+                              {'tourId': _createdTourId},
+                              token: widget.authToken,
+                            );
+                            if (resp.statusCode == 200) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                const SnackBar(
+                                  content: Text(
+                                      'Lịch trình đã được lưu thành công vào tài khoản của bạn!'),
+                                  backgroundColor: Color(0xFF2D6A4F),
+                                ),
+                              );
+                              Navigator.pop(context, 'go_to_saved_tours');
+                            } else {
+                              final err = tryDecodeJsonObject(resp.body);
+                              final msg = err?['message'] ?? 'Lưu lịch trình thất bại';
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text(msg),
+                                  backgroundColor: Colors.redAccent,
+                                ),
+                              );
+                            }
+                          } catch (e) {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              const SnackBar(
+                                content: Text('Lỗi kết nối máy chủ'),
+                                backgroundColor: Colors.redAccent,
+                              ),
+                            );
+                          }
+                        }();
+                      }
+                    }
             },
             child: Container(
               height: 50,
@@ -508,67 +469,100 @@ class _ItineraryDayCardState extends State<_ItineraryDayCard>
   }
 
   Widget _buildActivityItem(AiActivity act) {
-    return Container(
-      margin: const EdgeInsets.only(bottom: 12, left: 8),
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.05),
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
-      ),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          // Time Slot Icon
-          Container(
-            padding: const EdgeInsets.all(8),
-            decoration: BoxDecoration(
-              color: const Color(0xFFD4AF7A).withOpacity(0.1),
-              shape: BoxShape.circle,
+    return GestureDetector(
+      onTap: () async {
+            if (act.placeId != null && act.placeId!.isNotEmpty) {
+              final doc = await fetchLocationBySourceId(act.placeId!, sourceCollection: act.sourceCollection);
+          if (!mounted) return;
+          Destination dest = doc != null ? Destination.fromJson(doc) : Destination(
+            id: act.placeId,
+            name: act.placeName ?? 'Địa điểm',
+            province: '',
+            price: '0',
+            imagePath: '',
+            bgBlurPath: '',
+          );
+          Navigator.of(context).push(PageRouteBuilder(
+            pageBuilder: (_, __, ___) => PlaceDetailScreen(destination: dest, useSimpleTransition: true),
+            transitionsBuilder: (_, a, __, c) => FadeTransition(opacity: a, child: c),
+          ));
+          return;
+        }
+        final dest = Destination(
+          id: null,
+          name: act.placeName ?? 'Địa điểm',
+          province: '',
+          price: '0',
+          imagePath: '',
+          bgBlurPath: '',
+        );
+        Navigator.of(context).push(PageRouteBuilder(
+          pageBuilder: (_, __, ___) => MapScreen(destination: dest),
+          transitionsBuilder: (_, a, __, c) => FadeTransition(opacity: a, child: c),
+        ));
+      },
+      child: Container(
+        margin: const EdgeInsets.only(bottom: 12, left: 8),
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          color: Colors.white.withOpacity(0.05),
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all(color: Colors.white.withOpacity(0.1)),
+        ),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Time Slot Icon
+            Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: const Color(0xFFD4AF7A).withOpacity(0.1),
+                shape: BoxShape.circle,
+              ),
+              child: Icon(
+                _getTimeSlotIcon(act.timeSlot),
+                color: const Color(0xFFD4AF7A),
+                size: 20,
+              ),
             ),
-            child: Icon(
-              _getTimeSlotIcon(act.timeSlot),
-              color: const Color(0xFFD4AF7A),
-              size: 20,
-            ),
-          ),
-          const SizedBox(width: 16),
-          // Details
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(act.timeSlot,
-                        style: TextStyle(
-                            color: const Color(0xFFD4AF7A).withOpacity(0.8),
-                            fontSize: 12,
-                            fontWeight: FontWeight.bold)),
-                    if (act.estimatedCost > 0)
-                      Text('${act.estimatedCost.toInt()} đ',
+            const SizedBox(width: 16),
+            // Details
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(act.timeSlot,
                           style: TextStyle(
-                              color: Colors.white.withOpacity(0.5),
-                              fontSize: 12)),
-                  ],
-                ),
-                const SizedBox(height: 4),
-                Text(act.placeName ?? 'Địa điểm',
-                    style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold)),
-                const SizedBox(height: 8),
-                Text(act.rationale,
-                    style: TextStyle(
-                        color: Colors.white.withOpacity(0.7),
-                        fontSize: 14,
-                        height: 1.4)),
-              ],
+                              color: const Color(0xFFD4AF7A).withOpacity(0.8),
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold)),
+                      if (act.estimatedCost > 0)
+                        Text('${act.estimatedCost.toInt()} đ',
+                            style: TextStyle(
+                                color: Colors.white.withOpacity(0.5),
+                                fontSize: 12)),
+                    ],
+                  ),
+                  const SizedBox(height: 4),
+                  Text(act.placeName ?? 'Địa điểm',
+                      style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold)),
+                  const SizedBox(height: 8),
+                  Text(act.rationale,
+                      style: TextStyle(
+                          color: Colors.white.withOpacity(0.7),
+                          fontSize: 14,
+                          height: 1.4)),
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
