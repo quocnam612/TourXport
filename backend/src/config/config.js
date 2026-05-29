@@ -1,5 +1,10 @@
 import 'dotenv/config';
 
+const isProduction = process.env.NODE_ENV === 'production';
+const defaultAiBackendUrl = isProduction
+    ? 'https://tourxport-ai-backend.onrender.com'
+    : `http://localhost:${process.env.PORT_AI || 8000}`;
+
 const config = {
     env: process.env.NODE_ENV || 'development',
     port: Number(process.env.PORT || process.env.PORT_BACKEND || 3000),
@@ -25,7 +30,7 @@ const config = {
     },
 
     aiBackend: {
-        url: process.env.AI_BACKEND_URL || `http://localhost:${process.env.PORT_AI || 8000}`,
+        url: process.env.AI_BACKEND_URL || process.env.AI_BASE_URL || defaultAiBackendUrl,
     },
 
     travelAdvisor: {
