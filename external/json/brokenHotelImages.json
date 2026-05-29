@@ -1,0 +1,8 @@
+{
+  "input": "crawler/data/hotels/VIETNAM-622.json",
+  "checkedAt": "2026-05-29T12:41:44+0700",
+  "totalLocations": 622,
+  "totalImageUrls": 558,
+  "brokenCount": 0,
+  "broken": []
+}

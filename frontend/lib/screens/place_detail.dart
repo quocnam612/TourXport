@@ -881,10 +881,10 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
   Widget _buildGallery(Destination dest) {
     final images = [
       dest.imagePath,
-      'assets/images/halong.jpg',
-      'assets/images/hoi_an.jpg',
-      'assets/images/da_nang.jpg',
-      'assets/images/phongnhakebang.jpg',
+      destinationPlaceholderPath,
+      destinationPlaceholderPath,
+      destinationPlaceholderPath,
+      destinationPlaceholderPath,
     ];
     return SizedBox(
       height: 100,

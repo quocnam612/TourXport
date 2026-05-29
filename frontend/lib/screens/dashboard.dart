@@ -570,6 +570,63 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     }
   }
 
+  String get _currentAvatarUrl {
+    final rawAvatar = _userData?['avatarUrl'] ?? _userData?['avatar'];
+
+    if (rawAvatar is String) {
+      return rawAvatar.trim();
+    }
+
+    if (rawAvatar is Map && rawAvatar['url'] is String) {
+      return (rawAvatar['url'] as String).trim();
+    }
+
+    return '';
+  }
+
+  Widget _buildAvatarPlaceholder(double iconSize) {
+    return ColoredBox(
+      color: Colors.white.withValues(alpha: 0.2),
+      child: Center(
+        child: Icon(
+          Icons.person_rounded,
+          color: Colors.white.withValues(alpha: 0.9),
+          size: iconSize,
+        ),
+      ),
+    );
+  }
+
+  Widget _buildHomeAvatar({
+    required double size,
+    required double iconSize,
+    double borderWidth = 1.5,
+  }) {
+    final avatarUrl = _currentAvatarUrl;
+
+    return Container(
+      width: size,
+      height: size,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: Colors.white.withValues(alpha: 0.2),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: 0.4),
+          width: borderWidth,
+        ),
+      ),
+      child: ClipOval(
+        child: avatarUrl.isNotEmpty
+            ? Image.network(
+                avatarUrl,
+                fit: BoxFit.cover,
+                errorBuilder: (_, __, ___) => _buildAvatarPlaceholder(iconSize),
+              )
+            : _buildAvatarPlaceholder(iconSize),
+      ),
+    );
+  }
+
   Future<bool> _requestPhotoPermission() async {
     if (!Platform.isAndroid) return true;
 
@@ -3172,16 +3229,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               ),
               child: Row(
                 children: [
-                  Container(
-                    width: 38,
-                    height: 38,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: Colors.white.withOpacity(0.3),
-                    ),
-                    child:
-                        const Icon(Icons.person, color: Colors.white, size: 20),
-                  ),
+                  _buildHomeAvatar(size: 38, iconSize: 20),
                   const SizedBox(width: 10),
                   Expanded(
                     child: Column(
@@ -4388,25 +4436,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
         child: Row(
           children: [
-            Container(
-              width: 44,
-              height: 44,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.white.withValues(alpha: 0.2),
-                border: Border.all(
-                  color: Colors.white.withValues(alpha: 0.4),
-                  width: 1.5,
-                ),
-              ),
-              child: const Icon(Icons.person, color: Colors.white, size: 24),
-            ),
+            _buildHomeAvatar(size: 44, iconSize: 24),
             const SizedBox(width: 10),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Xin chào,\n${widget.userName}!',
+                  'Xin chào,\n$_currentUserName!',
                   style: const TextStyle(
                     fontFamily: 'Montserrat',
                     fontSize: 16,

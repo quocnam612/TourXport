@@ -1,0 +1,29 @@
+{
+  "input": "crawler/data/places/VIETNAM-2932.json",
+  "checkedAt": "2026-05-29T12:13:30+0700",
+  "totalLocations": 2932,
+  "totalImageUrls": 2295,
+  "brokenCount": 2,
+  "broken": [
+    {
+      "index": 776,
+      "sourceLocationId": "34295470",
+      "title": "Hanoi Centre Shopping Mall",
+      "city": "Hà Nội",
+      "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/ee/a8/e1/caption.jpg",
+      "status": 404,
+      "reason": "Not Found",
+      "ok": false
+    },
+    {
+      "index": 501,
+      "sourceLocationId": "28666215",
+      "title": "Son Tra Beach",
+      "city": "Đà Nẵng",
+      "url": "https://media-cdn.tripadvisor.com/media/photo-o/33/4e/54/03/caption.jpg",
+      "status": 404,
+      "reason": "Not Found",
+      "ok": false
+    }
+  ]
+}

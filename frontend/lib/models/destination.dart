@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+const String destinationPlaceholderPath = 'assets/images/placeholder.png';
+
 class Destination {
   final String? id;
   final String name;
@@ -37,7 +39,7 @@ class Destination {
       imgUrl = (json['image']['url'] ?? '').toString();
     }
     if (imgUrl.isEmpty) {
-      imgUrl = (json['imageUrl'] ?? json['imagePath'] ?? sample?.imagePath ?? 'assets/images/halong.jpg').toString();
+      imgUrl = (json['imageUrl'] ?? json['imagePath'] ?? destinationPlaceholderPath).toString();
     }
 
     // Coordinates extraction: GeoJSON is [lng, lat]
@@ -58,7 +60,7 @@ class Destination {
     final String parsedProvince = _translateProvince(provinceVal.isNotEmpty ? provinceVal : (sample?.province ?? ''));
 
 
-    // Only fall back to local assets if the image URL is empty or the default placeholder.
+    // Only fall back to the app placeholder if the image URL is empty or the legacy default image.
     if (imgUrl.isEmpty || imgUrl == 'assets/images/halong.jpg') {
       imgUrl = getLocalFallbackAsset(parsedName.isNotEmpty ? parsedName : parsedProvince);
     }
@@ -98,7 +100,7 @@ class Destination {
   }) {
     if (path.isEmpty) {
       return Image.asset(
-        'assets/images/halong.jpg',
+        destinationPlaceholderPath,
         fit: fit,
         width: width,
         height: height,
@@ -154,15 +156,13 @@ class Destination {
           );
         },
         errorBuilder: (context, error, stackTrace) {
-          // If the network image fails, fall back to our beautiful curated LOCAL asset image from their own directory!
-          final localFallback = getLocalFallbackAsset(path);
           return Image.asset(
-            localFallback,
+            destinationPlaceholderPath,
             fit: fit,
             width: width,
             height: height,
             errorBuilder: (_, __, ___) => Image.asset(
-              'assets/images/halong.jpg',
+              destinationPlaceholderPath,
               fit: fit,
               width: width,
               height: height,
@@ -178,7 +178,7 @@ class Destination {
       width: width,
       height: height,
       errorBuilder: (_, __, ___) => Image.asset(
-        'assets/images/halong.jpg',
+        destinationPlaceholderPath,
         fit: fit,
         width: width,
         height: height,
@@ -936,11 +936,11 @@ List<Destination> getFallbackDestinationsForProvince(String province) {
     'Nét Đẹp Truyền Thống'
   ];
   final List<String> images = [
-    'assets/images/halong.jpg',
-    'assets/images/da_nang.jpg',
-    'assets/images/nha_trang.jpg',
-    'assets/images/hue.jpg',
-    'assets/images/hoi_an.jpg'
+    destinationPlaceholderPath,
+    destinationPlaceholderPath,
+    destinationPlaceholderPath,
+    destinationPlaceholderPath,
+    destinationPlaceholderPath
   ];
 
   final List<Destination> result = [];
@@ -1015,43 +1015,5 @@ const List<Destination> sampleDestinations = [
 ];
 
 String getLocalFallbackAsset(String query) {
-  final String lower = query.toLowerCase();
-
-  if (lower.contains('hà long') || lower.contains('ha long') || lower.contains('quảng ninh') || lower.contains('halong')) {
-    return 'assets/images/halong.jpg';
-  }
-  if (lower.contains('hội an') || lower.contains('hoi an') || lower.contains('quảng nam')) {
-    return 'assets/images/hoi_an.jpg';
-  }
-  if (lower.contains('đà nẵng') || lower.contains('da nang')) {
-    return 'assets/images/da_nang.jpg';
-  }
-  if (lower.contains('fansipan') || lower.contains('lào cai') || lower.contains('sapa')) {
-    return 'assets/images/fansipan.jpg';
-  }
-  if (lower.contains('huế') || lower.contains('hue') || lower.contains('thừa thiên')) {
-    return 'assets/images/hue.jpg';
-  }
-  if (lower.contains('nha trang') || lower.contains('khánh hòa') || lower.contains('nhatrang')) {
-    return 'assets/images/nha_trang.jpg';
-  }
-  if (lower.contains('phan thiết') || lower.contains('phan thiet') || lower.contains('bình thuận') || lower.contains('mũi né')) {
-    return 'assets/images/phan_thiet.jpg';
-  }
-  if (lower.contains('phong nha') || lower.contains('quảng bình') || lower.contains('hang động') || lower.contains('kẻ bàng')) {
-    return 'assets/images/phongnhakebang.jpg';
-  }
-
-  // Consistent hashing fallback to distribute default images across the assets
-  final list = [
-    'assets/images/halong.jpg',
-    'assets/images/da_nang.jpg',
-    'assets/images/nha_trang.jpg',
-    'assets/images/hue.jpg',
-    'assets/images/hoi_an.jpg',
-    'assets/images/fansipan.jpg',
-    'assets/images/phan_thiet.jpg',
-    'assets/images/phongnhakebang.jpg',
-  ];
-  return list[query.hashCode.abs() % list.length];
+  return destinationPlaceholderPath;
 }

@@ -1,0 +1,82 @@
+{
+  "input": "crawler/data/foods/VIETNAM-19035.json",
+  "checkedAt": "2026-05-29T12:48:36+0700",
+  "totalLocations": 19035,
+  "totalImageUrls": 14760,
+  "brokenCount": 7,
+  "broken": [
+    {
+      "index": 15069,
+      "sourceLocationId": "26694562",
+      "title": "Atlantis Restaurant",
+      "city": "Ganh Dau",
+      "url": "https://media-cdn.tripadvisor.com/media/photo-o/32/a2/71/5e/caption.jpg",
+      "status": 404,
+      "reason": "Not Found",
+      "ok": false
+    },
+    {
+      "index": 7658,
+      "sourceLocationId": "33256348",
+      "title": "Hanam Bbq",
+      "city": "Thành phố Hồ Chí Minh",
+      "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/33/4f/45/6a/caption.jpg",
+      "status": 404,
+      "reason": "Not Found",
+      "ok": false
+    },
+    {
+      "index": 13282,
+      "sourceLocationId": "34350250",
+      "title": "Lala Seafood",
+      "city": "Nha Trang",
+      "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/33/4e/8e/7d/caption.jpg",
+      "status": 404,
+      "reason": "Not Found",
+      "ok": false
+    },
+    {
+      "index": 6451,
+      "sourceLocationId": "32865408",
+      "title": "Local Craft Beer - Tony Vu's Brewing",
+      "city": "Hà Nội",
+      "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/33/4f/2b/8c/caption.jpg",
+      "status": 404,
+      "reason": "Not Found",
+      "ok": false
+    },
+    {
+      "index": 3017,
+      "sourceLocationId": "34315513",
+      "title": "Moulin De Danang",
+      "city": "Đà Nẵng",
+      "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/33/4e/84/f5/caption.jpg",
+      "status": 404,
+      "reason": "Not Found",
+      "ok": false
+    },
+    {
+      "index": 11216,
+      "sourceLocationId": "4124426",
+      "title": "Saigon Saigon Rooftop Bar",
+      "city": "Thành phố Hồ Chí Minh",
+      "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/74/b6/8b/saigon-saigon-rooftop.jpg",
+      "status": 404,
+      "reason": "Not Found",
+      "ok": false
+    },
+    {
+      "index": 6482,
+      "sourceLocationId": "34256780",
+      "title": "Wildrice Restaurant",
+      "city": "Hà Nội",
+      "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/33/4c/4b/85/caption.jpg",
+      "status": 404,
+      "reason": "Not Found",
+      "ok": false
+    }
+  ],
+  "retryCheckedAt": "2026-05-29T13:04:35+0700",
+  "verifiedOkAfterRetryCount": 0,
+  "verifiedOkAfterRetry": []
+}
