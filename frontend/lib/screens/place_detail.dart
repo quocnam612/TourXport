@@ -104,7 +104,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     try {
       String? placeId = dest.id;
       if (placeId == null || placeId.isEmpty) {
-        placeId = await resolvePlaceIdByName(dest.name, token: token);
+        placeId = await resolveLocationIdByName(dest.name, dest.type, token: token);
       }
 
       if (placeId == null || placeId.isEmpty) {
@@ -112,15 +112,17 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
         return;
       }
 
+      final savedEndpoint = savedLocationEndpointForType(dest.type);
+      final savedBodyKey = savedLocationBodyKeyForType(dest.type);
       final response = _isSaved
           ? await apiDeleteJson(
-              '/auth/profile/saved-places/$placeId',
+              '$savedEndpoint/$placeId',
               {},
               token: token,
             )
           : await apiPostJson(
-              '/auth/profile/saved-places',
-              {'placeId': placeId},
+              savedEndpoint,
+              {savedBodyKey: placeId},
               token: token,
             );
 

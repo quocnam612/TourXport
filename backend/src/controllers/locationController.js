@@ -4,6 +4,8 @@ import parser from '../utils/parser.js';
 import respond from '../utils/respond.js';
 import validator from '../utils/validators.js';
 
+const locationPublicProjection = '-embedding -searchText';
+
 export const getLocations = async (req, res, next) => {
     try {
         const queryError = validator.validateLocationListQuery(req.query);
@@ -19,7 +21,7 @@ export const getLocations = async (req, res, next) => {
 
         const poolLimit = Math.min(limit * 3, 150);
         let [locations, total] = await Promise.all([
-            PlaceDB.find(filter).sort(sort).skip(skip).limit(poolLimit),
+            PlaceDB.find(filter).select(locationPublicProjection).sort(sort).skip(skip).limit(poolLimit),
             PlaceDB.countDocuments(filter)
         ]);
 
@@ -79,7 +81,7 @@ export const getLocation = async (req, res, next) => {
             return next(respond.httpError(lookupError, 400));
         }
 
-        const location = await PlaceDB.findOne(parser.buildLocationLookupFilter(req.query));
+        const location = await PlaceDB.findOne(parser.buildLocationLookupFilter(req.query)).select(locationPublicProjection);
 
         if (!location) {
             return next(respond.httpError('Location not found', 404));
@@ -104,11 +106,14 @@ export const createLocation = async (req, res, next) => {
         }
 
         const location = await PlaceDB.create(payload);
+        const publicLocation = location.toObject();
+        delete publicLocation.embedding;
+        delete publicLocation.searchText;
 
         res.status(201).json({
             success: true,
             message: 'Location created successfully!',
-            data: location
+            data: publicLocation
         });
     } catch (error) {
         next(error);
@@ -137,7 +142,7 @@ export const updateLocation = async (req, res, next) => {
             parser.buildLocationLookupFilter(req.query),
             { $set: payload },
             { new: true, runValidators: true }
-        );
+        ).select(locationPublicProjection);
 
         if (!location) {
             return next(respond.httpError('Location not found', 404));

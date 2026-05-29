@@ -45,6 +45,20 @@ const userSchema = new mongoose.Schema({
         }],
         default: []
     },
+    savedRestaurants: {
+        type: [{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'RestaurantDB'
+        }],
+        default: []
+    },
+    savedHotels: {
+        type: [{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'HotelDB'
+        }],
+        default: []
+    },
     savedTours: {
         type: [{
             type: mongoose.Schema.Types.ObjectId,

@@ -4,6 +4,8 @@ import parser from '../utils/parser.js';
 import respond from '../utils/respond.js';
 import validator from '../utils/validators.js';
 
+const locationPublicProjection = '-embedding -searchText';
+
 export const getRestaurants = async (req, res, next) => {
     try {
         const queryError = validator.validateLocationListQuery(req.query);
@@ -19,7 +21,7 @@ export const getRestaurants = async (req, res, next) => {
 
         const poolLimit = Math.min(limit * 3, 150);
         let [restaurants, total] = await Promise.all([
-            RestaurantDB.find(filter).skip(skip).limit(poolLimit),
+            RestaurantDB.find(filter).select(locationPublicProjection).skip(skip).limit(poolLimit),
             RestaurantDB.countDocuments(filter)
         ]);
 
@@ -65,7 +67,7 @@ export const getRestaurant = async (req, res, next) => {
             return next(respond.httpError(lookupError, 400));
         }
 
-        const restaurant = await RestaurantDB.findOne(parser.buildLocationLookupFilter(req.query));
+        const restaurant = await RestaurantDB.findOne(parser.buildLocationLookupFilter(req.query)).select(locationPublicProjection);
 
         if (!restaurant) {
             return next(respond.httpError('Restaurant not found', 404));
@@ -90,11 +92,14 @@ export const createRestaurant = async (req, res, next) => {
         }
 
         const restaurant = await RestaurantDB.create(payload);
+        const publicRestaurant = restaurant.toObject();
+        delete publicRestaurant.embedding;
+        delete publicRestaurant.searchText;
 
         res.status(201).json({
             success: true,
             message: 'Restaurant created successfully!',
-            data: restaurant
+            data: publicRestaurant
         });
     } catch (error) {
         next(error);
@@ -123,7 +128,7 @@ export const updateRestaurant = async (req, res, next) => {
             parser.buildLocationLookupFilter(req.query),
             { $set: payload },
             { new: true, runValidators: true }
-        );
+        ).select(locationPublicProjection);
 
         if (!restaurant) {
             return next(respond.httpError('Restaurant not found', 404));

@@ -182,13 +182,51 @@ Map<String, dynamic>? tryDecodeJsonObject(String body) {
   return null;
 }
 
-/// Resolves a place ID by searching the backend using `/locations/search`
-Future<String?> resolvePlaceIdByName(String name, {String? token}) async {
+String savedLocationEndpointForType(String type) {
+  final normalized = type.trim().toLowerCase();
+  if (normalized.contains('nhà hàng') ||
+      normalized.contains('nha hang') ||
+      normalized.contains('restaurant')) {
+    return '/auth/profile/saved-restaurants';
+  }
+  if (normalized.contains('khách sạn') ||
+      normalized.contains('khach san') ||
+      normalized.contains('hotel')) {
+    return '/auth/profile/saved-hotels';
+  }
+  return '/auth/profile/saved-places';
+}
+
+String savedLocationBodyKeyForType(String type) {
+  final endpoint = savedLocationEndpointForType(type);
+  if (endpoint.endsWith('saved-restaurants')) return 'restaurantId';
+  if (endpoint.endsWith('saved-hotels')) return 'hotelId';
+  return 'placeId';
+}
+
+String searchEndpointForType(String type) {
+  final normalized = type.trim().toLowerCase();
+  if (normalized.contains('nhà hàng') ||
+      normalized.contains('nha hang') ||
+      normalized.contains('restaurant')) {
+    return '/restaurants';
+  }
+  if (normalized.contains('khách sạn') ||
+      normalized.contains('khach san') ||
+      normalized.contains('hotel')) {
+    return '/hotels';
+  }
+  return '/locations';
+}
+
+/// Resolves a saved location ID by searching the matching backend collection.
+Future<String?> resolveLocationIdByName(String name, String type, {String? token}) async {
   if (name.isEmpty) return null;
   try {
     final encodedName = Uri.encodeComponent(name);
+    final endpoint = searchEndpointForType(type);
     final response = await apiGet(
-      '/locations?query=$encodedName&limit=1',
+      '$endpoint?query=$encodedName&limit=1',
       token: token,
     );
     final data = tryDecodeJsonObject(response.body);
@@ -200,4 +238,9 @@ Future<String?> resolvePlaceIdByName(String name, {String? token}) async {
     }
   } catch (_) {}
   return null;
+}
+
+/// Resolves a place ID by searching the backend using `/locations`.
+Future<String?> resolvePlaceIdByName(String name, {String? token}) {
+  return resolveLocationIdByName(name, 'Địa điểm', token: token);
 }

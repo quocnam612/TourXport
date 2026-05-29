@@ -4,6 +4,8 @@ import parser from '../utils/parser.js';
 import respond from '../utils/respond.js';
 import validator from '../utils/validators.js';
 
+const locationPublicProjection = '-embedding -searchText';
+
 export const getHotels = async (req, res, next) => {
     try {
         const queryError = validator.validateLocationListQuery(req.query);
@@ -19,7 +21,7 @@ export const getHotels = async (req, res, next) => {
 
         const poolLimit = Math.min(limit * 3, 150);
         let [hotels, total] = await Promise.all([
-            HotelDB.find(filter).skip(skip).limit(poolLimit),
+            HotelDB.find(filter).select(locationPublicProjection).skip(skip).limit(poolLimit),
             HotelDB.countDocuments(filter)
         ]);
 
@@ -65,7 +67,7 @@ export const getHotel = async (req, res, next) => {
             return next(respond.httpError(lookupError, 400));
         }
 
-        const hotel = await HotelDB.findOne(parser.buildLocationLookupFilter(req.query));
+        const hotel = await HotelDB.findOne(parser.buildLocationLookupFilter(req.query)).select(locationPublicProjection);
 
         if (!hotel) {
             return next(respond.httpError('Hotel not found', 404));
@@ -90,11 +92,14 @@ export const createHotel = async (req, res, next) => {
         }
 
         const hotel = await HotelDB.create(payload);
+        const publicHotel = hotel.toObject();
+        delete publicHotel.embedding;
+        delete publicHotel.searchText;
 
         res.status(201).json({
             success: true,
             message: 'Hotel created successfully!',
-            data: hotel
+            data: publicHotel
         });
     } catch (error) {
         next(error);
@@ -123,7 +128,7 @@ export const updateHotel = async (req, res, next) => {
             parser.buildLocationLookupFilter(req.query),
             { $set: payload },
             { new: true, runValidators: true }
-        );
+        ).select(locationPublicProjection);
 
         if (!hotel) {
             return next(respond.httpError('Hotel not found', 404));

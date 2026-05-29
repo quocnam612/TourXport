@@ -275,16 +275,25 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     setState(() => _isLoadingSavedPlaces = true);
 
     try {
-      final response = await apiGet('/auth/profile/saved-places', token: token);
-      final data = tryDecodeJsonObject(response.body);
+      final responses = await Future.wait([
+        apiGet('/auth/profile/saved-places', token: token),
+        apiGet('/auth/profile/saved-restaurants', token: token),
+        apiGet('/auth/profile/saved-hotels', token: token),
+      ]);
 
       if (!mounted) return;
 
-      if (response.statusCode == 200 && data?['success'] == true) {
-        _applySavedPlacesPayload(data!);
+      final allSucceeded = responses.every((response) => response.statusCode == 200);
+      if (allSucceeded) {
+        final payload = <String, dynamic>{
+          'savedPlaces': tryDecodeJsonObject(responses[0].body)?['savedPlaces'] ?? [],
+          'savedRestaurants': tryDecodeJsonObject(responses[1].body)?['savedRestaurants'] ?? [],
+          'savedHotels': tryDecodeJsonObject(responses[2].body)?['savedHotels'] ?? [],
+        };
+        _applySavedPlacesPayload(payload);
       } else if (showError) {
         _showMessage(
-            data?['message'] as String? ?? 'Không tải được danh sách đã lưu');
+            'Không tải được danh sách đã lưu');
       }
     } catch (_) {
       if (mounted && showError) {
@@ -518,12 +527,24 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   void _applySavedPlacesPayload(Map<String, dynamic> data) {
-    final rawPlaces = data['savedPlaces'];
-    if (rawPlaces is! List) return;
+    List<Destination> parseItems(dynamic rawItems, String type) {
+      if (rawItems is! List) return const [];
+      return rawItems
+          .whereType<Map>()
+          .map((item) {
+            final map = Map<String, dynamic>.from(item);
+            map['type'] = type;
+            return Destination.fromJson(map);
+          })
+          .where((item) => item.name.isNotEmpty)
+          .toList();
+    }
 
-    final places = rawPlaces
-        .whereType<Map>()
-        .map((item) => Destination.fromJson(Map<String, dynamic>.from(item)))
+    final places = [
+      ...parseItems(data['savedPlaces'], 'Địa điểm'),
+      ...parseItems(data['savedRestaurants'], 'Nhà hàng'),
+      ...parseItems(data['savedHotels'], 'Khách sạn'),
+    ]
         .where((item) => item.name.isNotEmpty)
         .toList();
 
@@ -2202,7 +2223,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       }
 
       if ((placeId == null || placeId.isEmpty) && !currentlySaved) {
-        placeId = await resolvePlaceIdByName(dest.name, token: token);
+        placeId = await resolveLocationIdByName(dest.name, dest.type, token: token);
       }
 
       if (placeId == null || placeId.isEmpty) {
@@ -2210,15 +2231,17 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         return currentlySaved;
       }
 
+      final savedEndpoint = savedLocationEndpointForType(dest.type);
+      final savedBodyKey = savedLocationBodyKeyForType(dest.type);
       final response = currentlySaved
           ? await apiDeleteJson(
-              '/auth/profile/saved-places/$placeId',
+              '$savedEndpoint/$placeId',
               {},
               token: token,
             )
           : await apiPostJson(
-              '/auth/profile/saved-places',
-              {'placeId': placeId},
+              savedEndpoint,
+              {savedBodyKey: placeId},
               token: token,
             );
 
