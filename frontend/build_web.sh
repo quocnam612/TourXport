@@ -15,7 +15,7 @@ API_BASE_URL="${API_BASE_URL:-https://tourxport.onrender.com}"
 AI_BASE_URL="${AI_BASE_URL:-https://tourxport-ai-backend.onrender.com}"
 FACEBOOK_GRAPH_VERSION="${FACEBOOK_GRAPH_VERSION:-v20.0}"
 
-if [[ -n "${NETLIFY:-}" && ! -d "$HOME/flutter" ]]; then
+if [[ ( -n "${NETLIFY:-}" || -n "${VERCEL:-}" ) && ! -d "$HOME/flutter" ]]; then
   git clone https://github.com/flutter/flutter.git -b stable --depth 1 "$HOME/flutter"
 fi
 
