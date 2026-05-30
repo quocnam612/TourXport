@@ -8,7 +8,7 @@
         "children": 0
     }, // Optional, nếu không có sẽ mặc định là 1 người lớn
     "preferences": {
-        "budgetLevel": "medium",
+        "budgetLevel": 2000000,
         "interests": ["temple", "culture", "local food", "scenic view"],
         "transportMode": "auto",
         "pace": "relaxed"

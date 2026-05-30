@@ -48,14 +48,7 @@ COLLECTION_HOTELS = "hotels"
 DEFAULT_TOP_K = 10  # Số kết quả vector search mỗi collection
 NUM_CANDIDATES_MULTIPLIER = 10  # numCandidates = topK * multiplier (ảnh hưởng chất lượng)
 
-# Mapping budgetLevel → khoảng priceRange hợp lý (VND, 1 người)
-# None = không filter (dùng khi priceRange trong DB hầu hết null)
-BUDGET_FILTERS: Dict[str, Optional[Dict[str, int]]] = {
-    "low":     {"max_price": 200_000},
-    "medium":  {"max_price": 500_000},
-    "high":    {"max_price": 2_000_000},
-    "luxury":  None,  # Luxury = không giới hạn
-}
+
 
 
 class DBService:
