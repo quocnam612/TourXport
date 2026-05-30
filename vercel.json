@@ -1,0 +1,11 @@
+{
+  "buildCommand": "cd frontend && bash ./build_web.sh",
+  "outputDirectory": "frontend/build/web",
+  "installCommand": "echo \"Skipping package install; Flutter setup runs in build_web.sh\"",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
