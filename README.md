@@ -35,6 +35,8 @@
   <strong>Nền Tảng Hỗ Trợ</strong><br>
   <a href="#"><img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android"></a>
   <!-- <a href="#"><img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" alt="iOS"></a> -->
+  <a href="#"><img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux"></a>
   <a href="#"><img src="https://img.shields.io/badge/Web-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Web"></a>
 </p>
 
@@ -94,7 +96,7 @@ Thay vì chỉ cung cấp một thanh tìm kiếm, ứng dụng hoạt động t
 
 Giao diện được thiết kế trực quan, các đường nét hiện đại và được tối ưu hóa cho từng nền tảng thiết bị.
 
-### Phiên Bản Web
+### Phiên Bản Web / Windows / Linux
 Trải nghiệm màn hình lớn với đầy đủ thông tin, thao tác dễ dàng bằng chuột và bàn phím.
 
 <table>
@@ -148,9 +150,21 @@ TourXport hỗ trợ truy cập linh hoạt thông qua đa nền tảng. Dưới
 
 ### 📲 Cài Đặt Trên Điện Thoại (Android)
 - **Bước 1:** Truy cập vào mục [Releases](https://github.com/quocnam612/TourXport/releases) của Repository này.
-- **Bước 2:** Tìm phiên bản phát hành mới nhất (Latest) và tải xuống file `.apk` (ví dụ: `app-release.apk`) nằm trong phần **Assets**.
+- **Bước 2:** Tìm phiên bản phát hành mới nhất (Latest) và tải xuống file `.apk` (ví dụ: `TourXport-2.0.0.apk`) nằm trong phần **Assets**.
 - **Bước 3:** Mở file `.apk` vừa tải về trên thiết bị Android của bạn. *(Lưu ý: Nếu hệ thống yêu cầu cấp quyền cài đặt ứng dụng từ nguồn không xác định, hãy nhấn **Cho phép**)*.
 - **Bước 4:** Chờ quá trình cài đặt hoàn tất, mở ứng dụng **TourXport** và tận hưởng!
+
+### 💻 Cài Đặt Trên Máy Tính (Windows)
+- **Bước 1:** Truy cập vào mục [Releases](https://github.com/quocnam612/TourXport/releases) của Repository này.
+- **Bước 2:** Tìm và tải xuống file nén dành cho Windows (ví dụ: `TourXport-Windows.zip`) nằm trong phần **Assets**.
+- **Bước 3:** Giải nén toàn bộ nội dung file `.zip` vừa tải về vào một thư mục.
+- **Bước 4:** Mở thư mục vừa giải nén, tìm và chạy file `frontend.exe` để khởi động ứng dụng.
+
+### 🐧 Cài Đặt Trên Máy Tính (Linux)
+- **Bước 1:** Truy cập vào mục [Releases](https://github.com/quocnam612/TourXport/releases) của Repository này.
+- **Bước 2:** Tải xuống file nén dành cho Linux (ví dụ: `TourXport-x64Linux-2.0.0.zip`).
+- **Bước 3:** Giải nén file `.zip` vừa tải về.
+- **Bước 4:** Mở terminal tại thư mục vừa giải nén, cấp quyền thực thi cho file nếu cần (vd: `chmod +x TourXport-x64Linux-2.0.0`) và chạy file thực thi `./TourXport-x64Linux-2.0.0` để bắt đầu trải nghiệm.
 
 
 ## Kiến Trúc Hệ Thống 🧭
