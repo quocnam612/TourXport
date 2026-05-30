@@ -2,8 +2,11 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
+import 'package:flutter_web_plugins/url_strategy.dart';
 import 'screens/landing_page.dart';
 import 'screens/dashboard.dart';
+import 'screens/legal/data_deletion_screen.dart';
+import 'screens/legal/privacy_policy_screen.dart';
 
 const String _facebookAppId = String.fromEnvironment('FACEBOOK_APP_ID');
 const String _facebookGraphVersion = String.fromEnvironment(
@@ -13,6 +16,10 @@ const String _facebookGraphVersion = String.fromEnvironment(
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  if (kIsWeb) {
+    usePathUrlStrategy();
+  }
 
   if (kIsWeb && _facebookAppId.isNotEmpty) {
     await FacebookAuth.i.webAndDesktopInitialize(
@@ -51,6 +58,25 @@ class TourXportApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const LandingPage(),
+      onGenerateRoute: (settings) {
+        final routeName = Uri.parse(settings.name ?? '/').path;
+
+        if (routeName == '/privacy') {
+          return MaterialPageRoute(
+            settings: settings,
+            builder: (_) => const PrivacyPolicyScreen(),
+          );
+        }
+
+        if (routeName == '/data-deletion') {
+          return MaterialPageRoute(
+            settings: settings,
+            builder: (_) => const DataDeletionScreen(),
+          );
+        }
+
+        return null;
+      },
       // home: const HomeScreen(userName: 'User', authToken: '123'),
     );
   }
