@@ -72,7 +72,9 @@ const routeContext = (fromItem, toItem) => {
 };
 
 const shouldSkipRouteError = (message) => {
-    return /approximated route distance must not be greater than/i.test(message);
+    return /approximated route distance must not be greater than/i.test(message)
+        || /could not find routable point/i.test(message)
+        || /within a radius of/i.test(message);
 };
 
 export const getDirections = async (fromItem, toItem, { transportMode = 'auto' } = {}) => {

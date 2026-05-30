@@ -24,7 +24,7 @@
         "children": 0
     },
     "preferences": {
-        "budgetLevel": "medium",
+        "budgetLevel": 2000000,
         "interests": [
             "temple",
             "culture",
