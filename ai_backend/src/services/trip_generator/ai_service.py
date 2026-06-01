@@ -74,7 +74,7 @@ class AIService:
                 lines.append(
                     f"  {i}. [{doc_id}] {title}\n"
                     f"     Thành phố: {city} | Loại: {category} | Tags: {tags}\n"
-                    f"     Score: {score:.4f} | Tọa độ: {coords}"
+                    f"     Score: {score:.4f} | Tọa độ GeoJSON [longitude, latitude]: {coords}"
                 )
 
         return "\n".join(lines) if lines else "(Không có dữ liệu từ Database)"
@@ -109,7 +109,7 @@ class AIService:
             "- Nếu cần thêm địa điểm ngoài danh sách DB (bổ sung cho đủ lịch trình): "
             "source.provider = 'ai_generated', source.collection = null, source.id = null.\n"
             "- Sử dụng title gốc từ DB, không đổi tên.\n"
-            "- Lấy tọa độ location từ DB nếu có.\n"
+            "- Lấy tọa độ location từ DB nếu có. Tọa độ DB đã là GeoJSON [longitude, latitude], hãy copy đúng thứ tự và không đảo lat/lng.\n"
             "- Mỗi ngày phải có trường 'dayNumber', 'title', 'summary', và danh sách 'items'.\n"
             "- Mỗi item cần có order, type, title, category, startTime, endTime.\n"
             "- type của item: 'place' cho places, 'restaurant' cho restaurants, 'hotel' cho hotels.\n"
@@ -180,7 +180,7 @@ class AIService:
             "- Mỗi ngày phải có trường 'dayNumber', 'title', 'summary', và danh sách 'items'.\n"
             "- Mỗi item cần có order, type, title, category, startTime, endTime.\n"
             "- Trường 'date' trong mỗi day có thể để null.\n"
-            "- Tọa độ trong location phải là [longitude, latitude] (GeoJSON).\n"
+            "- Tọa độ trong location phải là [longitude, latitude] (GeoJSON). Nếu biết tọa độ theo dạng phổ biến latitude,longitude thì phải đảo lại trước khi trả về.\n"
             "- estimatedCost (cấp top-level) phải ước tính tổng chi phí cho toàn bộ chuyến đi. Hãy thiết kế lịch trình sao cho tổng chi phí tối đa ước tính (estimatedCost.max) phù hợp và nằm trong tầm ngân sách mong muốn của người dùng.\n"
             "- Trường 'ai.model' phải là '" + self.model + "'.\n"
             "- Trường 'ai.generatedBy' phải là 'ai_backend'.\n"

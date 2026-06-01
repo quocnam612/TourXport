@@ -574,6 +574,8 @@ class _ActivityCardTileState extends State<_ActivityCardTile> {
                       price: '0',
                       imagePath: '',
                       bgBlurPath: '',
+                      latitude: act.latitude ?? 0.0,
+                      longitude: act.longitude ?? 0.0,
                     );
                   }
                   if (!mounted) return;
@@ -589,6 +591,8 @@ class _ActivityCardTileState extends State<_ActivityCardTile> {
                     price: '0',
                     imagePath: '',
                     bgBlurPath: '',
+                    latitude: act.latitude ?? 0.0,
+                    longitude: act.longitude ?? 0.0,
                   );
                   if (!mounted) return;
                   Navigator.of(context).push(PageRouteBuilder(

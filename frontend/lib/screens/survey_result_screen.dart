@@ -481,6 +481,8 @@ class _ItineraryDayCardState extends State<_ItineraryDayCard>
             price: '0',
             imagePath: '',
             bgBlurPath: '',
+            latitude: act.latitude ?? 0.0,
+            longitude: act.longitude ?? 0.0,
           );
           Navigator.of(context).push(PageRouteBuilder(
             pageBuilder: (_, __, ___) => PlaceDetailScreen(destination: dest, useSimpleTransition: true),
@@ -495,6 +497,8 @@ class _ItineraryDayCardState extends State<_ItineraryDayCard>
           price: '0',
           imagePath: '',
           bgBlurPath: '',
+          latitude: act.latitude ?? 0.0,
+          longitude: act.longitude ?? 0.0,
         );
         Navigator.of(context).push(PageRouteBuilder(
           pageBuilder: (_, __, ___) => MapScreen(destination: dest),

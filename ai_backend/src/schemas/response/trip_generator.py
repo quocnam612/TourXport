@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field, ConfigDict
+from pydantic import BaseModel, Field, ConfigDict, field_validator
 from pydantic.alias_generators import to_camel
 from typing import List, Optional
 
@@ -41,6 +41,21 @@ class GeoLocation(CamelModel):
         max_length=2,
         description="[longitude, latitude]"
     )
+
+    @field_validator("coordinates")
+    @classmethod
+    def normalize_coordinates(cls, coordinates: List[float]) -> List[float]:
+        if len(coordinates) != 2:
+            return coordinates
+
+        first = float(coordinates[0])
+        second = float(coordinates[1])
+
+        # LLMs often output [latitude, longitude]. GeoJSON needs [longitude, latitude].
+        if -90 <= first <= 90 and -180 <= second <= 180 and not (-90 <= second <= 90):
+            return [second, first]
+
+        return [first, second]
 
 
 # --- Data Source (truy xuất nguồn gốc địa điểm) ---
