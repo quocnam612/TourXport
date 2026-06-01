@@ -1,5 +1,11 @@
 /// Model chứa toàn bộ câu trả lời của 12 câu hỏi khảo sát sở thích du lịch mới.
 class SurveyAnswer {
+  static const int maxTripDays = 7;
+  static const int maxTripNights = 7;
+  static const int maxTravelers = 5;
+  static const int minBudgetPerTravelerDay = 200000;
+  static const int maxBudgetPerTravelerDay = 200000000;
+
   // ── PHẦN 1: Thông tin chuyến đi ──
   /// Ngày đi
   DateTime? startDate;
@@ -73,24 +79,34 @@ class SurveyAnswer {
 
   /// Tính tổng số ngày dựa trên ngày đi và ngày về
   int get totalDays {
-    if (days != null) return days!;
+    if (days != null) return days!.clamp(1, maxTripDays).toInt();
     if (startDate == null || endDate == null) return 3;
     final diff = endDate!.difference(startDate!).inDays;
-    return diff + 1;
+    return (diff + 1).clamp(1, maxTripDays).toInt();
   }
 
   /// Chuyển đổi dữ liệu sang định dạng JSON
   Map<String, dynamic> toJson() {
+    final safeDays = days?.clamp(1, maxTripDays).toInt();
+    final safeAdults = adults.clamp(1, maxTravelers).toInt();
+    final safeChildren = children.clamp(0, maxTravelers - safeAdults).toInt();
+    final budgetMin = safeAdults + safeChildren > 0
+        ? (safeAdults + safeChildren) * (safeDays ?? totalDays) * minBudgetPerTravelerDay
+        : minBudgetPerTravelerDay;
+    final budgetMax = safeAdults + safeChildren > 0
+        ? (safeAdults + safeChildren) * (safeDays ?? totalDays) * maxBudgetPerTravelerDay
+        : maxBudgetPerTravelerDay;
+
     return {
       'start_date': startDate?.toIso8601String(),
       'end_date': endDate?.toIso8601String(),
       'selected_destinations': selectedDestinations,
-      'days': days,
-      'nights': nights,
-      'adults': adults,
-      'children': children,
+      'days': safeDays,
+      'nights': nights?.clamp(0, maxTripNights).toInt(),
+      'adults': safeAdults,
+      'children': safeChildren,
       'pace': pace,
-      'budget_per_person': budgetPerPerson,
+      'budget_per_person': budgetPerPerson?.clamp(budgetMin, budgetMax).toDouble(),
       'spend_priority': spendPriority,
       'activities': activities,
       'place_vibe': placeVibe,

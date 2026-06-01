@@ -56,16 +56,85 @@ const regexVariants = (value) => {
     return [...variants].map((variant) => new RegExp(escapeRegex(variant), 'i'));
 };
 
-const provinceToCities = {
-    'quảng nam': ['Hội An', 'Quảng Nam'],
-    'khánh hòa': ['Nha Trang', 'Khánh Hòa'],
-    'lâm đồng': ['Đà Lạt', 'Đà Lạt', 'Lâm Đồng'],
-    'lào cai': ['Sa Pa', 'Sapa', 'Lào Cai'],
-    'thừa thiên huế': ['Huế', 'Huế', 'Thừa Thiên Huế'],
-    'bà rịa - vũng tàu': ['Vũng Tàu', 'Bà Rịa', 'Hồ Tràm', 'Bà Rịa - Vũng Tàu'],
-    'bình thuận': ['Mũi Né', 'Mui Ne', 'Phan Thiết', 'Bình Thuận'],
-    'kiên giang': ['Phú Quốc', 'Phu Quoc', 'Kiên Giang']
-};
+const stripVietnameseMarks = (value) => String(value)
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/đ/g, 'd')
+    .replace(/Đ/g, 'D');
+
+const provinceCityAliasGroups = [
+    { keys: ['An Giang'], cities: [ 'An Giang', 'Châu Đốc', 'Long Xuyên', 'Nui To', 'Tỉnh An Giang', 'Tinh Bien'] },
+    { keys: ['Bà Rịa - Vũng Tàu'], cities: [ 'Bà Rịa', 'Bà Rịa - Vũng Tàu', 'Binh Chau', 'Bung Rieng', 'Hồ Tràm', 'Long Hải', 'Phú Mỹ', 'Phuoc Thuan', 'Phước Hải', 'Tam Phuoc', 'Tỉnh Bà Rịa - Vũng Tàu', 'Tỉnh Bà Rịa-Vũng Tàu', 'Vũng Tàu', 'Xuyen Moc'] },
+    { keys: ['Bắc Giang'], cities: [ 'Bac Giang', 'Bắc Giang', 'Thạch Son', 'Thi tran Nenh', 'Thuong Lat', 'Tỉnh Bắc Giang'] },
+    { keys: ['Bắc Kạn'], cities: [ 'Ba Be', 'Bắc Kạn', 'Nam Mau', 'Tỉnh Bắc Kạn'] },
+    { keys: ['Bạc Liêu'], cities: [ 'Bac Lieu', 'Bạc Liêu', 'Tỉnh Bạc Liêu'] },
+    { keys: ['Bắc Ninh'], cities: [ 'Bắc Ninh', 'Đình Bảng', 'Tỉnh Bắc Ninh'] },
+    { keys: ['Bến Tre'], cities: [ 'An Khánh', 'Ba Tri', 'Bến Tre', 'Bến Tre', 'Châu Hưng', 'Tỉnh Bến Tre'] },
+    { keys: ['Bình Định'], cities: [ 'Bình Định', 'Cát Tiến', 'Hoi Van', 'My Tho', 'Phuoc Hiep', 'Phuoc Thuan', 'Quy Nhơn', 'Tay Son', 'Tỉnh Bình Định'] },
+    { keys: ['Bình Dương'], cities: [ 'Bình Dương', 'Di An', 'Tan Uyen', 'Thủ Dầu Một', 'Thuan An', 'Tỉnh Bình Dương'] },
+    { keys: ['Bình Phước'], cities: [ 'Bình Phước', 'Phu Rieng', 'Phuoc Long', 'Tỉnh Bình Phước'] },
+    { keys: ['Bình Thuận'], cities: [ 'Bình Thuận', 'Ham Tien', 'Hoa Thang', 'Kê Gà', 'Khánh Hải', 'Lagi', 'Mũi Né', 'Phan Thiết', 'Phu Hai', 'Tan Thanh', 'Thi Tran Thuan Nam', 'Tien Thanh', 'Tỉnh Bình Thuận', 'Vĩnh Hảo'] },
+    { keys: ['Cà Mau'], cities: [ 'Cà Mau', 'Cà Mau', 'Tỉnh Cà Mau'] },
+    { keys: ['Can Tho', 'Cần Thơ', 'Thành phố Cần Thơ', 'TP. Cần Thơ'], cities: [ 'Can Tho', 'Cần Thơ', 'Cần Thơ', 'Thành phố Cần Thơ', 'Tỉnh Cần Thơ', 'TP. Cần Thơ'] },
+    { keys: ['Cao Bằng'], cities: [ 'Bao Lac', 'Cao Bằng', 'Cao Bằng', 'Dam Thuy', 'Phuc Sen', 'Tỉnh Cao Bằng', 'Trung Khanh', 'Truong Ha'] },
+    { keys: ['Da Nang', 'Đà Nẵng', 'Thành phố Đà Nẵng', 'TP. Đà Nẵng'], cities: [ 'Da Nang', 'Đà Nẵng', 'Đà Nẵng', 'Điện Bàn', 'Hai Chau', 'Hoa Hai', 'Hòa Phú', 'My An', 'Phuoc My', 'Son Tra Peninsula', 'Thành phố Đà Nẵng', 'Tho Quang', 'Tỉnh Đà Nẵng', 'TP. Đà Nẵng'] },
+    { keys: ['Đắk Lắk'], cities: [ 'An Chan', 'An Ninh Dong', 'Buôn Ma Thuột', 'Đắk Lắk', 'Ea Huar', 'Hoa Tam', 'Krong Bong', 'Phu My', 'Thị trấn Sông Cầu', 'Tỉnh Đắk Lắk', 'Tỉnh Đắk Lắk', 'Tuy Hòa', 'Xuan Thinh'] },
+    { keys: ['Đắk Nông'], cities: [ 'Cu Jut District', 'Dak Mil', 'Dak Som', 'Đắk Nông', 'Gia Nghĩa', 'Nam N\'Jang', 'Quang Khe', 'Tỉnh Đắk Nông', 'Tuy Duc'] },
+    { keys: ['Điện Biên'], cities: [ 'Điện Biên', 'Điện Biên Phủ', 'Muong Phan', 'Tỉnh Điện Biên'] },
+    { keys: ['Đồng Nai'], cities: [ 'Biên Hòa', 'Doc Mo', 'Đồng Nai', 'Gia Tan 1', 'Nam Cát Tiên', 'Nhon Trach', 'Tan Phu', 'Thái Thiên', 'Tỉnh Đồng Nai', 'Trảng Bom'] },
+    { keys: ['Đồng Tháp'], cities: [ 'Cao Lãnh', 'Đồng Tháp', 'Hong Ngu', 'Sa Đéc', 'Tỉnh Đồng Tháp', 'Tram Chim'] },
+    { keys: ['Gia Lai'], cities: [ 'Gia Lai', 'Pleiku', 'Tỉnh Gia Lai'] },
+    { keys: ['Hà Giang'], cities: [ 'Đồng Văn', 'Hà Giang', 'Hà Giang', 'Mèo Vạc', 'Quan Ba', 'Tỉnh Hà Giang', 'Xin Man'] },
+    { keys: ['Hà Nam'], cities: [ 'Ba Sao', 'Duy Hai', 'Hà Nam', 'Kim Bang', 'Liem Son', 'Phu Ly', 'Tỉnh Hà Nam'] },
+    { keys: ['Ha Noi', 'Hà Nội', 'Thành phố Hà Nội', 'TP. Hà Nội'], cities: [ 'Ba Dinh', 'Bắc Từ Liêm', 'Cau Giay', 'Gia Lam', 'Ha Dong', 'Ha Noi', 'Hà Nội', 'Hoai Duc', 'Hoan Kiem', 'Mai Dinh', 'Me Tri', 'Nam Từ Liêm', 'Tay Ho', 'Thành phố Hà Nội', 'Thanh Xuan', 'Tỉnh Hà Nội', 'TP. Hà Nội'] },
+    { keys: ['Hà Tĩnh'], cities: [ 'Hà Tĩnh', 'Thiên Cầm', 'Tỉnh Hà Tĩnh'] },
+    { keys: ['Hải Dương'], cities: [ 'An Nhân', 'Hải Dương', 'Hải Dương', 'Tỉnh Hải Dương'] },
+    { keys: ['Hai Phong', 'Hải Phòng', 'Thành phố Hải Phòng', 'TP. Hải Phòng'], cities: [ 'Cat Ba Town', 'Cat Hai', 'Do Son', 'Gia Luan', 'Hai Phong', 'Hải Phòng', 'Thành phố Hải Phòng', 'Thành phố Hải Phòng', 'Tỉnh Hải Phòng', 'TP. Hải Phòng'] },
+    { keys: ['Hậu Giang'], cities: [ 'Hậu Giang', 'Tỉnh Hậu Giang', 'Vi Thanh'] },
+    { keys: ['Hồ Chí Minh', 'Sai Gon', 'Sài Gòn', 'Thành phố Hồ Chí Minh', 'TP Hồ Chí Minh', 'TP. Hồ Chí Minh'], cities: [ 'Hồ Chí Minh', 'Sai Gon', 'Sài Gòn', 'Thành phố Hồ Chí Minh', 'Tỉnh TP. Hồ Chí Minh', 'TP Hồ Chí Minh', 'TP. Hồ Chí Minh'] },
+    { keys: ['Hòa Bình'], cities: [ 'Cao Phong', 'Hang Kia', 'Hòa Bình', 'Hòa Bình', 'Mai Châu', 'Pà Cò', 'Tỉnh Hòa Bình'] },
+    { keys: ['Huế', 'Thành phố Huế', 'Thừa Thiên Huế', 'TP. Huế'], cities: [ 'Huế', 'Huế', 'Huong Thuy', 'Lăng Cô', 'Lộc Tiễn', 'Phong Son', 'Phú Lộc', 'Quảng Lợi', 'Thành phố Huế', 'Thừa Thiên Huế', 'Tỉnh Thừa Thiên - Huế', 'Tỉnh Thừa Thiên Huế', 'TP. Huế', 'Vinh An'] },
+    { keys: ['Hưng Yên'], cities: [ 'Hưng Yên', 'Tỉnh Hưng Yên'] },
+    { keys: ['Khánh Hòa'], cities: [ 'Cam Đức', 'Cam Hải Đông', 'Cam Ranh', 'Dien Thọ', 'Khánh Hòa', 'Khánh Hòa', 'Khanh Phu', 'Khanh Vinh', 'Nha Trang', 'Ninh Hiep', 'Ninh Hoa', 'Tỉnh Khánh Hòa', 'Van Ninh'] },
+    { keys: ['Kiên Giang'], cities: [ 'An Thoi', 'Cua Can', 'Dương Đông', 'Dương Tơ', 'Ganh Dau', 'Hà Tiên', 'Hàm Ninh', 'Kiên Giang', 'Ong Lang', 'Rạch Giá', 'Suoi May', 'Tỉnh Kiên Giang', 'Vi Thanh'] },
+    { keys: ['Kon Tum'], cities: [ 'Dak Long', 'Kon Tum', 'Kontum', 'Măng Đen', 'Tỉnh Kon Tum'] },
+    { keys: ['Lai Châu'], cities: [ 'Lai Châu', 'Phong Tho', 'Tam Đường', 'Tỉnh Lai Châu'] },
+    { keys: ['Lâm Đồng'], cities: [ 'Bảo Lộc', 'Dalat', 'Di Linh', 'Đà Lạt', 'Gia Lam', 'Lac Duong', 'Lat', 'Lâm Đồng', 'Lâm Đồng', 'Madagui Town', 'Me Linh', 'Phi To', 'Phuong 8', 'Thị Tran Nam Ban', 'Tỉnh Lâm Đồng', 'Tu Tra'] },
+    { keys: ['Lạng Sơn'], cities: [ 'Bac Son', 'Lạng Sơn', 'Tỉnh Lạng Sơn'] },
+    { keys: ['Lào Cai'], cities: [ 'Bắc Hà', 'Hau Thao', 'Lào Cai', 'Lào Cai', 'Lao Chai', 'Mu Cang Chai', 'Sapa', 'Ta Phin', 'Tỉnh Lào Cai'] },
+    { keys: ['Long An'], cities: [ 'Ben Luc', 'Can Duoc', 'Long An', 'Moc Hoa', 'Tan My', 'Tân An', 'Tỉnh Long An'] },
+    { keys: ['Nam Định'], cities: [ 'Nam Dinh', 'Nam Định', 'Tỉnh Nam Định'] },
+    { keys: ['Nghệ An'], cities: [ 'Con Cuong', 'Cửa Lò', 'Hung Thịnh', 'Nghệ An', 'Nghia Thuan', 'Que Phong', 'Quy Hop', 'Quynh Nghia', 'Thanh An', 'Tỉnh Nghệ An', 'Vinh'] },
+    { keys: ['Ninh Bình'], cities: [ 'Gia Sinh', 'Gia Vien', 'Ninh Bình', 'Ninh Bình', 'Ninh Hai', 'Ninh Xuân', 'Tỉnh Ninh Bình', 'Truong Yen'] },
+    { keys: ['Ninh Thuận'], cities: [ 'Cong Hai', 'Khanh Hai', 'Ninh Thuan Province', 'Ninh Thuận', 'Phan Rang-Tháp Chàm', 'Tỉnh Ninh Thuận', 'Vinh Hai'] },
+    { keys: ['Phú Thọ'], cities: [ 'Hien Luong', 'Phú Thọ', 'Thanh Thuy', 'Tỉnh Phú Thọ', 'Viet Tri', 'Xuan Dai'] },
+    { keys: ['Phú Yên'], cities: [ 'Phú Yên', 'Tỉnh Phú Yên', 'Tuy Hòa'] },
+    { keys: ['Quảng Bình'], cities: [ 'Canh Duong', 'Đồng Hới', 'Hung Trach', 'Minh Hoa', 'Phong Nha', 'Phúc Trạch', 'Quảng Bình', 'Quang Đong', 'Quang Ninh', 'Son Trach', 'Tỉnh Quảng Bình'] },
+    { keys: ['Quảng Nam'], cities: [ 'An Hoi', 'Binh Minh', 'Cam Ha', 'Cam Pho', 'Duy Hai', 'Duy Phú', 'Điện Dương', 'Điện Tiến', 'Hội An', 'Minh An', 'Prao', 'Quảng Nam', 'Tam Kỳ', 'Tan An', 'Tỉnh Quảng Nam'] },
+    { keys: ['Quảng Ngãi'], cities: [ 'Quảng Ngãi', 'Quảng Ngãi', 'Tỉnh Quảng Ngãi'] },
+    { keys: ['Quảng Ninh'], cities: [ 'Bai Chay', 'Cam Pha', 'Dong Trieu', 'Ha Long City', 'Móng Cái', 'Quan Lạn', 'Quảng Ninh', 'Thị Tran Co To', 'Tỉnh Quảng Ninh', 'Uong Bi', 'Van Don', 'Vịnh Hạ Long'] },
+    { keys: ['Quảng Trị'], cities: [ 'Đông Hà', 'Hai Phu', 'Khe Sanh', 'Quang Tri', 'Quảng Trị', 'Tỉnh Quảng Trị', 'Vinh Linh', 'Vinh Truong'] },
+    { keys: ['Sóc Trăng'], cities: [ 'Nga Nam', 'Phu Loc', 'Sóc Trăng', 'Sóc Trăng', 'Tỉnh Sóc Trăng'] },
+    { keys: ['Sơn La'], cities: [ 'Chieng On', 'Mộc Châu', 'Muong Sang', 'Ngoc Chien', 'Sơn La', 'Tỉnh Sơn La', 'Van Ho'] },
+    { keys: ['Tây Ninh'], cities: [ 'Tây Ninh', 'Tỉnh Tây Ninh'] },
+    { keys: ['Thái Bình'], cities: [ 'Dong Hung District', 'Duy Nhat', 'Thái Bình', 'Tỉnh Thái Bình'] },
+    { keys: ['Thái Nguyên'], cities: [ 'Thái Nguyên', 'Thái Nguyên', 'Tỉnh Thái Nguyên'] },
+    { keys: ['Thanh Hóa'], cities: [ 'Ba Thuoc', 'Cam Luong', 'Co Lung', 'Nga Thien', 'Sầm Sơn', 'Thanh Hóa', 'Thanh Hóa', 'Thanh Yen', 'Tỉnh Thanh Hóa', 'Tri Nang', 'Trieu Loc', 'Vinh Long', 'Vinh Tien'] },
+    { keys: ['Tiền Giang'], cities: [ 'Mỹ Tho', 'Phu Tan', 'Thạnh Tan', 'Tiền Giang', 'Tỉnh Tiền Giang'] },
+    { keys: ['Trà Vinh'], cities: [ 'Duyên Hải', 'Phu Can', 'Tan Binh', 'Thị Tran Chau Thanh', 'Tỉnh Trà Vinh', 'Trà Vinh', 'Trà Vinh', 'Trường Long Hòa'] },
+    { keys: ['Tuyên Quang'], cities: [ 'Tỉnh Tuyên Quang', 'Tuyên Quang'] },
+    { keys: ['Vĩnh Long'], cities: [ 'Bình Minh', 'Tỉnh Vĩnh Long', 'Vĩnh Long', 'Vĩnh Long'] },
+    { keys: ['Vĩnh Phúc'], cities: [ 'Ngoc Thanh', 'Phúc Yên', 'Tam Đảo', 'Tỉnh Vĩnh Phúc', 'Trung My', 'Vĩnh Phúc', 'Vinh Tuong', 'Vĩnh Yên'] },
+    { keys: ['Yên Bái'], cities: [ 'Pung Luong', 'Tỉnh Yên Bái', 'Van Chan District', 'Yên Bái', 'Yên Bái'] },
+];
+
+const provinceToCities = provinceCityAliasGroups.reduce((acc, group) => {
+    for (const key of group.keys) {
+        acc[key.toLowerCase()] = group.cities;
+        acc[stripVietnameseMarks(key).toLowerCase()] = group.cities;
+    }
+    return acc;
+}, {});
 
 const textFilterForField = (field, value) => {
     if (field === 'city' && typeof value === 'string') {
@@ -486,7 +555,21 @@ const coordinatesFromTourItems = (items) => {
 };
 
 const coordinatesFromTourRoutes = (routes) => {
+    if (!Array.isArray(routes)) {
+        return [];
+    }
+
     return routes.flatMap((route) => route.geometry?.coordinates || []);
+};
+
+const buildDayRoutesSafely = async (items, routeService, options) => {
+    try {
+        const routes = await routeService.buildDayRoutes(items, options);
+        return Array.isArray(routes) ? routes : null;
+    } catch (error) {
+        console.warn(`Skipping tour route generation: ${error.message}`);
+        return null;
+    }
 };
 
 export const normalizeTourPayloadFromAI = async (aiTour, userId, routeService) => {
@@ -496,8 +579,10 @@ export const normalizeTourPayloadFromAI = async (aiTour, userId, routeService) =
         const items = (day.items || [])
             .map(normalizeTourItem)
             .sort((a, b) => a.order - b.order);
-        const routes = await routeService.buildDayRoutes(items, { transportMode });
-        const distanceMeters = routes.reduce((sum, route) => sum + (route.distanceMeters || 0), 0);
+        const routes = await buildDayRoutesSafely(items, routeService, { transportMode });
+        const distanceMeters = Array.isArray(routes)
+            ? routes.reduce((sum, route) => sum + (route.distanceMeters || 0), 0)
+            : 0;
         const bbox = routeService.calculateBbox([
             ...coordinatesFromTourItems(items),
             ...coordinatesFromTourRoutes(routes)

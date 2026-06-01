@@ -17,6 +17,8 @@ class SavedPlacesSection extends StatefulWidget {
   final Future<bool> Function(Destination dest) onToggleSaved;
   final bool isGuest;
   final String? authToken;
+  final String userName;
+  final String? avatarUrl;
   final int initialTabIndex;
 
   const SavedPlacesSection({
@@ -30,11 +32,15 @@ class SavedPlacesSection extends StatefulWidget {
     required this.onToggleSaved,
     this.isGuest = false,
     this.authToken,
+    this.userName = 'Username',
+    this.avatarUrl,
     this.initialTabIndex = 0,
     this.onSelectTour,
+    this.onNavigateMain,
   });
 
   final Function(SavedTour tour)? onSelectTour;
+  final ValueChanged<String>? onNavigateMain;
 
   @override
   State<SavedPlacesSection> createState() => _SavedPlacesSectionState();
@@ -564,21 +570,27 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
           onTap: () async {
             // Fetch full tour detail and open detail screen
             if (widget.authToken == null) return;
-              try {
+            try {
               // saved tours are private; fetch via authenticated user's my-tours endpoint
               final resp = await apiGet('/tours/my-tours/${tour.id}', token: widget.authToken);
               if (resp.statusCode == 200) {
                 final decoded = tryDecodeJsonObject(resp.body);
                 if (decoded != null) {
                   final data = decoded['data'] ?? decoded;
-                  Navigator.of(context).push(
+                  final result = await Navigator.of(context).push<String>(
                     MaterialPageRoute(
                       builder: (_) => SavedTourDetailScreen(
                         tourTitle: tour.title,
                         tourJson: data is Map<String, dynamic> ? data : {},
+                        authToken: widget.authToken,
+                        userName: widget.userName,
+                        avatarUrl: widget.avatarUrl,
                       ),
                     ),
                   );
+                  if (result != null) {
+                    widget.onNavigateMain?.call(result);
+                  }
                   return;
                 }
               }

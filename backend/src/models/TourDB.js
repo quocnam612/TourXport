@@ -273,7 +273,7 @@ const daySchema = new mongoose.Schema({
 
     routes: {
         type: [routeSchema],
-        default: []
+        default: null
     }
 }, { _id: false });
 

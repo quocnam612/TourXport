@@ -11,8 +11,15 @@ import { generateToken } from '../utils/jwt.js';
 import GoogleAuth from '../services/GoogleAuth.js';
 import FacebookAuth from '../services/FacebookAuth.js';
 import { deleteImage, uploadImageBuffer } from '../services/Cloudinary.js';
+import AIBackend from '../services/AIBackend.js';
 
 const locationPublicProjection = '-embedding -searchText';
+
+const warmUpAIBackend = () => {
+    AIBackend.warmUp().catch((error) => {
+        console.warn(`AI backend warm-up failed: ${error.message || error}`);
+    });
+};
 
 export const login = async (req, res, next) => {
     try {
@@ -41,6 +48,7 @@ export const login = async (req, res, next) => {
         }
 
         const token = generateToken(user);
+        warmUpAIBackend();
 
         res.status(200).json({
             success: true,
@@ -88,6 +96,7 @@ export const register = async (req, res, next) => {
         await user.save();
 
         const token = generateToken(user);
+        warmUpAIBackend();
 
         res.status(existingUser ? 200 : 201).json({
             success: true,
@@ -145,6 +154,7 @@ export const googleLogin = async (req, res, next) => {
         }
 
         const token = generateToken(user);
+        warmUpAIBackend();
 
         res.status(200).json({
             success: true,
@@ -204,6 +214,7 @@ export const facebookLogin = async (req, res, next) => {
         }
 
         const token = generateToken(user);
+        warmUpAIBackend();
 
         res.status(200).json({
             success: true,

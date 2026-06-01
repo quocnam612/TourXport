@@ -31,7 +31,7 @@ const config = {
 
     aiBackend: {
         url: process.env.AI_BACKEND_URL || process.env.AI_BASE_URL || defaultAiBackendUrl,
-        pingAttempts: Number(process.env.AI_BACKEND_PING_ATTEMPTS || 5),
+        pingAttempts: Number(process.env.AI_BACKEND_PING_ATTEMPTS || 2),
         pingDelayMs: Number(process.env.AI_BACKEND_PING_DELAY_MS || 60000),
         pingTimeoutMs: Number(process.env.AI_BACKEND_PING_TIMEOUT_MS || 15000),
         requestTimeoutMs: Number(process.env.AI_BACKEND_REQUEST_TIMEOUT_MS || 120000),

@@ -10,8 +10,18 @@ import '../api/api.dart';
 class SavedTourDetailScreen extends StatelessWidget {
   final String tourTitle;
   final Map<String, dynamic> tourJson;
+  final String userName;
+  final String? avatarUrl;
+  final String? authToken;
 
-  const SavedTourDetailScreen({super.key, required this.tourTitle, required this.tourJson});
+  const SavedTourDetailScreen({
+    super.key,
+    required this.tourTitle,
+    required this.tourJson,
+    this.userName = 'Username',
+    this.avatarUrl,
+    this.authToken,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -24,6 +34,15 @@ class SavedTourDetailScreen extends StatelessWidget {
 
     final itinerary = response?.data.itinerary ?? [];
     final meta = _TourMeta.fromJson(tourJson);
+    final width = MediaQuery.of(context).size.width;
+    final isDesktop = width >= 800;
+    final isCompact = width < 600;
+    final detailContent = response == null || itinerary.isEmpty
+        ? Padding(
+            padding: const EdgeInsets.all(24.0),
+            child: _buildSummary(context),
+          )
+        : _buildDetailContent(context, itinerary, meta, isCompact);
 
     return Scaffold(
       body: Stack(fit: StackFit.expand, children: [
@@ -31,123 +50,173 @@ class SavedTourDetailScreen extends StatelessWidget {
         Image.asset('assets/images/login_bg.jpg', fit: BoxFit.cover),
         BackdropFilter(filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12), child: Container(color: Colors.black.withOpacity(0.6))),
         SafeArea(
-          child: response == null || itinerary.isEmpty
-              ? Padding(
-                  padding: const EdgeInsets.all(24.0),
-                  child: _buildSummary(context),
-                )
-              : Column(
+          child: isDesktop
+              ? Row(
                   children: [
-                    // Header
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(24, 16, 24, 8),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
-                            children: [
-                              _VisibilityBadge(icon: meta.visibilityIcon),
-                              const SizedBox(width: 10),
-                              Expanded(
-                                child: Text(
-                                  tourTitle,
-                                  style: const TextStyle(
-                                    fontFamily: 'Montserrat',
-                                    fontSize: 26,
-                                    fontWeight: FontWeight.w700,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ),
-                              IconButton(
-                                icon: const Icon(Icons.share_rounded),
-                                color: Colors.white,
-                                onPressed: () {},
-                              ),
-                            ],
-                          ),
-                          const SizedBox(height: 8),
-                          Text(
-                            'Chi tiết lịch trình đã lưu',
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 14,
-                                fontWeight: FontWeight.w400,
-                                color: Colors.white.withOpacity(0.7),
-                                height: 1.4),
-                          ),
-                          const SizedBox(height: 16),
-                          _TripMetaGrid(meta: meta),
-                        ],
+                    ClipRect(
+                      child: BackdropFilter(
+                        filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
+                        child: _SavedTourMainSidebar(
+                          userName: userName,
+                          avatarUrl: avatarUrl,
+                          isGuest: authToken == null || authToken!.isEmpty,
+                        ),
                       ),
                     ),
-                    Expanded(
-                      child: ListView.builder(
-                        padding: const EdgeInsets.fromLTRB(20, 12, 20, 12),
-                        itemCount: itinerary.length,
-                        itemBuilder: (context, i) {
-                          return _ItineraryDayCard(day: itinerary[i]);
-                        },
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(24, 8, 24, 20),
-                      child: Row(children: [
-                        Expanded(
-                          child: GestureDetector(
-                            onTap: () => Navigator.popUntil(context, (route) => route.isFirst),
-                            child: Container(
-                              height: 50,
-                              decoration: BoxDecoration(
-                                  color: Colors.white.withOpacity(0.1),
-                                  borderRadius: BorderRadius.circular(28),
-                                  border: Border.all(color: Colors.white.withOpacity(0.2))),
-                              child: const Center(
-                                  child: Text('Trang chủ',
-                                      style: TextStyle(
-                                          fontFamily: 'Montserrat',
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.w500,
-                                          color: Colors.white))),
-                            ),
-                          ),
-                        ),
-                        const SizedBox(width: 12),
-                        Expanded(
-                          flex: 2,
-                          child: GestureDetector(
-                            onTap: () => Navigator.pop(context),
-                            child: Container(
-                              height: 50,
-                              decoration: BoxDecoration(
-                                  gradient: const LinearGradient(
-                                      colors: [Color(0xFFD4AF7A), Color(0xFFB5956A)]),
-                                  borderRadius: BorderRadius.circular(28),
-                                  boxShadow: [
-                                    BoxShadow(
-                                        color: const Color(0xFFD4AF7A).withOpacity(0.3),
-                                        blurRadius: 12,
-                                        offset: const Offset(0, 4)),
-                                  ]),
-                              child: const Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text('Đóng',
-                                        style: TextStyle(
-                                            fontFamily: 'Montserrat',
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.w600,
-                                            color: Colors.white)),
-                                  ]),
-                            ),
-                          ),
-                        ),
-                      ]),
-                    ),
+                    Expanded(child: detailContent),
                   ],
-                ),
+                )
+              : detailContent,
         ),
       ]),
+    );
+  }
+
+  Widget _buildDetailContent(
+    BuildContext context,
+    List<AiDailyItinerary> itinerary,
+    _TourMeta meta,
+    bool isCompact,
+  ) {
+    return Column(
+      children: [
+        // Header
+        Padding(
+          padding: EdgeInsets.fromLTRB(
+            isCompact ? 20 : 24,
+            isCompact ? 10 : 16,
+            isCompact ? 20 : 24,
+            isCompact ? 4 : 8,
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  _VisibilityBadge(
+                    icon: meta.visibilityIcon,
+                    compact: isCompact,
+                  ),
+                  SizedBox(width: isCompact ? 8 : 10),
+                  Expanded(
+                    child: Text(
+                      tourTitle,
+                      maxLines: isCompact ? 2 : null,
+                      overflow: isCompact
+                          ? TextOverflow.ellipsis
+                          : TextOverflow.visible,
+                      style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: isCompact ? 20 : 26,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white,
+                        height: isCompact ? 1.25 : 1.2,
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: isCompact ? 36 : 48,
+                    height: isCompact ? 36 : 48,
+                    child: IconButton(
+                      icon: const Icon(Icons.share_rounded),
+                      iconSize: isCompact ? 20 : 24,
+                      color: Colors.white,
+                      padding: EdgeInsets.zero,
+                      onPressed: () {},
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(height: isCompact ? 4 : 8),
+              Text(
+                'Chi tiết lịch trình đã lưu',
+                style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontSize: isCompact ? 12 : 14,
+                    fontWeight: FontWeight.w400,
+                    color: Colors.white.withOpacity(0.7),
+                    height: 1.3),
+              ),
+              SizedBox(height: isCompact ? 10 : 16),
+              _TripMetaGrid(meta: meta, compact: isCompact),
+            ],
+          ),
+        ),
+        Expanded(
+          child: ListView.builder(
+            padding: EdgeInsets.fromLTRB(
+              isCompact ? 16 : 20,
+              isCompact ? 8 : 12,
+              isCompact ? 16 : 20,
+              12,
+            ),
+            itemCount: itinerary.length,
+            itemBuilder: (context, i) {
+              return _ItineraryDayCard(day: itinerary[i]);
+            },
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.fromLTRB(
+            isCompact ? 20 : 24,
+            8,
+            isCompact ? 20 : 24,
+            isCompact ? 14 : 20,
+          ),
+          child: Row(children: [
+            Expanded(
+              child: GestureDetector(
+                onTap: () => Navigator.pop(context, 'go_to_explore'),
+                child: Container(
+                  height: isCompact ? 48 : 50,
+                  decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.1),
+                      borderRadius: BorderRadius.circular(28),
+                      border: Border.all(color: Colors.white.withOpacity(0.2))),
+                  child: const Center(
+                      child: Text('Trang chủ',
+                          style: TextStyle(
+                              fontFamily: 'Montserrat',
+                              fontSize: 14,
+                              fontWeight: FontWeight.w500,
+                              color: Colors.white))),
+                ),
+              ),
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              flex: 2,
+              child: GestureDetector(
+                onTap: () => Navigator.pop(context),
+                child: Container(
+                  height: isCompact ? 48 : 50,
+                  decoration: BoxDecoration(
+                      gradient: const LinearGradient(
+                          colors: [Color(0xFFD4AF7A), Color(0xFFB5956A)]),
+                      borderRadius: BorderRadius.circular(28),
+                      boxShadow: [
+                        BoxShadow(
+                            color: const Color(0xFFD4AF7A).withOpacity(0.3),
+                            blurRadius: 12,
+                            offset: const Offset(0, 4)),
+                      ]),
+                  child: const Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text('Đóng',
+                            style: TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 15,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white)),
+                      ]),
+                ),
+              ),
+            ),
+          ]),
+        ),
+      ],
     );
   }
 
@@ -176,6 +245,281 @@ class SavedTourDetailScreen extends StatelessWidget {
             child: const Text('Đóng'),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _SavedTourMainSidebar extends StatelessWidget {
+  final String userName;
+  final String? avatarUrl;
+  final bool isGuest;
+
+  const _SavedTourMainSidebar({
+    required this.userName,
+    required this.avatarUrl,
+    required this.isGuest,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final menuItems = [
+      (Icons.home_rounded, 'Khám phá', 'go_to_explore'),
+      (Icons.search_rounded, 'Tìm kiếm', 'go_to_search'),
+      (Icons.bookmark_rounded, 'Đã lưu', 'go_to_saved'),
+      (Icons.explore_rounded, 'Khảo sát', 'go_to_survey'),
+      (Icons.person_rounded, 'Tài khoản', 'go_to_account'),
+    ];
+
+    return Container(
+      width: 260,
+      decoration: BoxDecoration(
+        color: const Color(0xFF070E0D).withOpacity(0.45),
+        border: const Border(
+          right: BorderSide(color: Colors.white12, width: 1),
+        ),
+      ),
+      child: Column(
+        children: [
+          const SizedBox(height: 36),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  boxShadow: [
+                    BoxShadow(
+                      color: const Color(0xFFD4AF7A).withOpacity(0.15),
+                      blurRadius: 20,
+                      spreadRadius: 1,
+                    ),
+                  ],
+                ),
+                child: Image.asset(
+                  'assets/images/logo.png',
+                  width: 64,
+                  height: 64,
+                  fit: BoxFit.contain,
+                ),
+              ),
+              const SizedBox(width: 14),
+              const Text(
+                'TourXport',
+                style: TextStyle(
+                  fontFamily: 'Montserrat',
+                  fontSize: 26,
+                  fontWeight: FontWeight.w900,
+                  color: Color(0xFFD4AF7A),
+                  letterSpacing: 1.2,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 28),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: Colors.white.withOpacity(0.1),
+                borderRadius: BorderRadius.circular(16),
+                border: Border.all(color: Colors.white.withOpacity(0.15)),
+              ),
+              child: Row(
+                children: [
+                  _SidebarAvatar(avatarUrl: avatarUrl),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          userName,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                        Text(
+                          'Thành viên',
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 11,
+                            color: Colors.white.withOpacity(0.9),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          const SizedBox(height: 32),
+          Expanded(
+            child: ListView.separated(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              itemCount: menuItems.length,
+              separatorBuilder: (_, __) => const SizedBox(height: 8),
+              itemBuilder: (context, index) {
+                final item = menuItems[index];
+                final isActive = item.$3 == 'go_to_saved';
+                return _SidebarNavItem(
+                  icon: item.$1,
+                  label: item.$2,
+                  isActive: isActive,
+                  onTap: () => Navigator.pop(context, item.$3),
+                );
+              },
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(20),
+            child: _SidebarNavItem(
+              icon: isGuest ? Icons.login_rounded : Icons.logout_rounded,
+              label: isGuest ? 'Tài khoản' : 'Đăng xuất',
+              isDanger: !isGuest,
+              isGold: isGuest,
+              onTap: () => Navigator.pop(
+                context,
+                isGuest ? 'go_to_account' : 'logout',
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _SidebarNavItem extends StatelessWidget {
+  final IconData icon;
+  final String label;
+  final bool isActive;
+  final bool isDanger;
+  final bool isGold;
+  final VoidCallback onTap;
+
+  const _SidebarNavItem({
+    required this.icon,
+    required this.label,
+    required this.onTap,
+    this.isActive = false,
+    this.isDanger = false,
+    this.isGold = false,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final iconColor = isDanger
+        ? const Color(0xFFE74C3C)
+        : isActive || isGold
+            ? const Color(0xFFD4AF7A)
+            : Colors.white.withOpacity(0.65);
+    final textColor = isDanger
+        ? const Color(0xFFE74C3C)
+        : isActive
+            ? Colors.white
+            : isGold
+                ? const Color(0xFFD4AF7A)
+                : Colors.white.withOpacity(0.65);
+
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(16),
+        hoverColor: (isDanger ? const Color(0xFFE74C3C) : Colors.white)
+            .withOpacity(0.06),
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 200),
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+          decoration: BoxDecoration(
+            color: isActive
+                ? const Color(0xFF2D6A4F).withOpacity(0.25)
+                : Colors.transparent,
+            borderRadius: BorderRadius.circular(16),
+            border: Border.all(
+              color: isActive
+                  ? const Color(0xFFD4AF7A).withOpacity(0.65)
+                  : Colors.transparent,
+              width: 1.2,
+            ),
+          ),
+          child: Row(
+            children: [
+              Icon(icon, color: iconColor, size: 22),
+              const SizedBox(width: 14),
+              Text(
+                label,
+                style: TextStyle(
+                  fontFamily: 'Montserrat',
+                  fontSize: 14,
+                  fontWeight: isActive || isDanger || isGold
+                      ? FontWeight.bold
+                      : FontWeight.w600,
+                  color: textColor,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _SidebarAvatar extends StatelessWidget {
+  final String? avatarUrl;
+
+  const _SidebarAvatar({required this.avatarUrl});
+
+  @override
+  Widget build(BuildContext context) {
+    final cleanUrl = avatarUrl?.trim() ?? '';
+
+    return Container(
+      width: 38,
+      height: 38,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: Colors.white.withOpacity(0.2),
+        border: Border.all(
+          color: Colors.white.withOpacity(0.4),
+          width: 1.5,
+        ),
+      ),
+      child: ClipOval(
+        child: cleanUrl.isNotEmpty
+            ? Image.network(
+                cleanUrl,
+                fit: BoxFit.cover,
+                errorBuilder: (_, __, ___) => const _SidebarAvatarPlaceholder(),
+              )
+            : const _SidebarAvatarPlaceholder(),
+      ),
+    );
+  }
+}
+
+class _SidebarAvatarPlaceholder extends StatelessWidget {
+  const _SidebarAvatarPlaceholder();
+
+  @override
+  Widget build(BuildContext context) {
+    return ColoredBox(
+      color: Colors.white.withOpacity(0.2),
+      child: Center(
+        child: Icon(
+          Icons.person_rounded,
+          color: Colors.white.withOpacity(0.9),
+          size: 20,
+        ),
       ),
     );
   }
@@ -264,55 +608,77 @@ class _TourMeta {
 
 class _TripMetaGrid extends StatelessWidget {
   final _TourMeta meta;
+  final bool compact;
 
-  const _TripMetaGrid({required this.meta});
+  const _TripMetaGrid({required this.meta, this.compact = false});
 
   @override
   Widget build(BuildContext context) {
+    final pills = [
+      _MetaPill(
+        icon: meta.visibilityIcon,
+        label: meta.visibilityLabel,
+        value: 'Hiển thị',
+        compact: compact,
+      ),
+      _MetaPill(
+        icon: Icons.straighten_rounded,
+        label: meta.totalDistanceMeters != null
+            ? _formatDistance(meta.totalDistanceMeters!)
+            : 'Chưa có',
+        value: 'Quãng đường',
+        compact: compact,
+      ),
+      _MetaPill(
+        icon: Icons.payments_rounded,
+        label: meta.estimatedCostDisplay != null
+            ? meta.estimatedCostDisplay!
+            : 'Chưa có',
+        value: 'Số tiền dự tính',
+        compact: compact,
+      ),
+      _MetaPill(
+        icon: _paceIcon(meta.pace),
+        label: _paceLabel(meta.pace),
+        value: 'Nhịp độ',
+        compact: compact,
+      ),
+      _MetaPill(
+        icon: _transportIcon(meta.transportMode),
+        label: _transportLabel(meta.transportMode),
+        value: 'Phương tiện',
+        compact: compact,
+      ),
+      _MetaPill(
+        icon: Icons.people_alt_rounded,
+        label: '${meta.adults} lớn, ${meta.children} trẻ',
+        value: 'Người đi',
+        compact: compact,
+      ),
+      _MetaPill(
+        icon: Icons.event_available_rounded,
+        label: '${meta.totalDays} ngày ${meta.totalNights} đêm',
+        value: 'Thời lượng',
+        compact: compact,
+      ),
+    ];
+
+    if (compact) {
+      return SizedBox(
+        height: 54,
+        child: ListView.separated(
+          scrollDirection: Axis.horizontal,
+          itemCount: pills.length,
+          separatorBuilder: (_, __) => const SizedBox(width: 8),
+          itemBuilder: (_, index) => pills[index],
+        ),
+      );
+    }
+
     return Wrap(
       spacing: 10,
       runSpacing: 10,
-      children: [
-        _MetaPill(
-          icon: meta.visibilityIcon,
-          label: meta.visibilityLabel,
-          value: 'Hiển thị',
-        ),
-        _MetaPill(
-          icon: Icons.straighten_rounded,
-          label: meta.totalDistanceMeters != null
-              ? _formatDistance(meta.totalDistanceMeters!)
-              : 'Chưa có',
-          value: 'Quãng đường',
-        ),
-        _MetaPill(
-          icon: Icons.payments_rounded,
-          label: meta.estimatedCostDisplay != null
-              ? meta.estimatedCostDisplay!
-              : 'Chưa có',
-          value: 'Số tiền dự tính',
-        ),
-        _MetaPill(
-          icon: _paceIcon(meta.pace),
-          label: _paceLabel(meta.pace),
-          value: 'Nhịp độ',
-        ),
-        _MetaPill(
-          icon: _transportIcon(meta.transportMode),
-          label: _transportLabel(meta.transportMode),
-          value: 'Phương tiện',
-        ),
-        _MetaPill(
-          icon: Icons.people_alt_rounded,
-          label: '${meta.adults} lớn, ${meta.children} trẻ',
-          value: 'Người đi',
-        ),
-        _MetaPill(
-          icon: Icons.event_available_rounded,
-          label: '${meta.totalDays} ngày ${meta.totalNights} đêm',
-          value: 'Thời lượng',
-        ),
-      ],
+      children: pills,
     );
   }
 }
@@ -321,23 +687,32 @@ class _MetaPill extends StatelessWidget {
   final IconData icon;
   final String value;
   final String label;
+  final bool compact;
 
-  const _MetaPill({required this.icon, required this.value, required this.label});
+  const _MetaPill({
+    required this.icon,
+    required this.value,
+    required this.label,
+    this.compact = false,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+      padding: EdgeInsets.symmetric(
+        horizontal: compact ? 10 : 14,
+        vertical: compact ? 8 : 12,
+      ),
       decoration: BoxDecoration(
         color: Colors.white.withOpacity(0.05),
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(compact ? 14 : 16),
         border: Border.all(color: Colors.white.withOpacity(0.08)),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(icon, color: const Color(0xFFD4AF7A), size: 18),
-          const SizedBox(width: 10),
+          Icon(icon, color: const Color(0xFFD4AF7A), size: compact ? 15 : 18),
+          SizedBox(width: compact ? 8 : 10),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
@@ -346,17 +721,18 @@ class _MetaPill extends StatelessWidget {
                 value,
                 style: const TextStyle(
                   fontFamily: 'Montserrat',
-                  fontSize: 12,
                   fontWeight: FontWeight.w800,
                   color: Colors.white,
-                ),
+                ).copyWith(fontSize: compact ? 11 : 12),
               ),
-              const SizedBox(height: 2),
+              SizedBox(height: compact ? 1 : 2),
               Text(
                 label,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
                 style: TextStyle(
                   fontFamily: 'Montserrat',
-                  fontSize: 11,
+                  fontSize: compact ? 10 : 11,
                   fontWeight: FontWeight.w500,
                   color: Colors.white.withOpacity(0.55),
                 ),
@@ -371,19 +747,20 @@ class _MetaPill extends StatelessWidget {
 
 class _VisibilityBadge extends StatelessWidget {
   final IconData icon;
+  final bool compact;
 
-  const _VisibilityBadge({required this.icon});
+  const _VisibilityBadge({required this.icon, this.compact = false});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(10),
+      padding: EdgeInsets.all(compact ? 8 : 10),
       decoration: BoxDecoration(
         color: const Color(0xFFD4AF7A).withOpacity(0.12),
         shape: BoxShape.circle,
         border: Border.all(color: const Color(0xFFD4AF7A).withOpacity(0.2)),
       ),
-      child: Icon(icon, color: const Color(0xFFD4AF7A), size: 20),
+      child: Icon(icon, color: const Color(0xFFD4AF7A), size: compact ? 17 : 20),
     );
   }
 }
@@ -555,52 +932,24 @@ class _ActivityCardTileState extends State<_ActivityCardTile> {
   @override
   Widget build(BuildContext context) {
     final act = widget.act;
+    final canOpenLocation = _hasValidLocation(act);
+
     return MouseRegion(
-      onEnter: (_) => setState(() => _hover = true),
-      onExit: (_) => setState(() => _hover = false),
+      cursor: canOpenLocation
+          ? SystemMouseCursors.click
+          : SystemMouseCursors.basic,
+      onEnter: (_) {
+        if (canOpenLocation) {
+          setState(() => _hover = true);
+        }
+      },
+      onExit: (_) {
+        if (canOpenLocation) {
+          setState(() => _hover = false);
+        }
+      },
       child: GestureDetector(
-              onTap: () async {
-                if (act.placeId != null && act.placeId!.isNotEmpty) {
-                  // Try resolving to a real location document via sourceLocationId
-                  final doc = await fetchLocationBySourceId(act.placeId!, sourceCollection: act.sourceCollection);
-                  Destination dest;
-                  if (doc != null) {
-                    dest = Destination.fromJson(doc);
-                  } else {
-                    dest = Destination(
-                      id: act.placeId,
-                      name: act.placeName ?? 'Địa điểm',
-                      province: '',
-                      price: '0',
-                      imagePath: '',
-                      bgBlurPath: '',
-                      latitude: act.latitude ?? 0.0,
-                      longitude: act.longitude ?? 0.0,
-                    );
-                  }
-                  if (!mounted) return;
-                  Navigator.of(context).push(PageRouteBuilder(
-                    pageBuilder: (_, __, ___) => PlaceDetailScreen(destination: dest, useSimpleTransition: true),
-                    transitionsBuilder: (_, a, __, c) => FadeTransition(opacity: a, child: c),
-                  ));
-                } else {
-                  final dest = Destination(
-                    id: null,
-                    name: act.placeName ?? 'Địa điểm',
-                    province: '',
-                    price: '0',
-                    imagePath: '',
-                    bgBlurPath: '',
-                    latitude: act.latitude ?? 0.0,
-                    longitude: act.longitude ?? 0.0,
-                  );
-                  if (!mounted) return;
-                  Navigator.of(context).push(PageRouteBuilder(
-                    pageBuilder: (_, __, ___) => MapScreen(destination: dest),
-                    transitionsBuilder: (_, a, __, c) => FadeTransition(opacity: a, child: c),
-                  ));
-                }
-        },
+        onTap: canOpenLocation ? () => _openActivity(act) : null,
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 120),
           margin: const EdgeInsets.only(bottom: 12),
@@ -608,7 +957,7 @@ class _ActivityCardTileState extends State<_ActivityCardTile> {
           decoration: BoxDecoration(
             color: Colors.white.withOpacity(0.03),
             borderRadius: BorderRadius.circular(12),
-            border: Border.all(color: _hover ? const Color(0xFFD4AF7A) : Colors.white.withOpacity(0.04), width: _hover ? 1.6 : 1),
+            border: Border.all(color: canOpenLocation && _hover ? const Color(0xFFD4AF7A) : Colors.white.withOpacity(0.04), width: canOpenLocation && _hover ? 1.6 : 1),
           ),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -648,5 +997,67 @@ class _ActivityCardTileState extends State<_ActivityCardTile> {
     if (slot.contains('Sáng')) return Icons.wb_sunny_rounded;
     if (slot.contains('Chiều')) return Icons.wb_cloudy_rounded;
     return Icons.nightlight_round;
+  }
+
+  Future<void> _openActivity(AiActivity act) async {
+    if (act.placeId != null && act.placeId!.isNotEmpty) {
+      // Try resolving to a real location document via sourceLocationId
+      final doc = await fetchLocationBySourceId(
+        act.placeId!,
+        sourceCollection: act.sourceCollection,
+      );
+      final dest = doc != null
+          ? Destination.fromJson(doc)
+          : Destination(
+              id: act.placeId,
+              name: act.placeName ?? 'Địa điểm',
+              province: '',
+              price: '0',
+              imagePath: '',
+              bgBlurPath: '',
+              latitude: act.latitude ?? 0.0,
+              longitude: act.longitude ?? 0.0,
+            );
+
+      if (!mounted) return;
+      Navigator.of(context).push(PageRouteBuilder(
+        pageBuilder: (_, __, ___) => PlaceDetailScreen(
+          destination: dest,
+          useSimpleTransition: true,
+        ),
+        transitionsBuilder: (_, a, __, c) => FadeTransition(opacity: a, child: c),
+      ));
+      return;
+    }
+
+    final dest = Destination(
+      id: null,
+      name: act.placeName ?? 'Địa điểm',
+      province: '',
+      price: '0',
+      imagePath: '',
+      bgBlurPath: '',
+      latitude: act.latitude ?? 0.0,
+      longitude: act.longitude ?? 0.0,
+    );
+
+    if (!mounted) return;
+    Navigator.of(context).push(PageRouteBuilder(
+      pageBuilder: (_, __, ___) => MapScreen(destination: dest),
+      transitionsBuilder: (_, a, __, c) => FadeTransition(opacity: a, child: c),
+    ));
+  }
+
+  bool _hasValidLocation(AiActivity act) {
+    final lat = act.latitude;
+    final lng = act.longitude;
+
+    return lat != null &&
+        lng != null &&
+        lat >= -90 &&
+        lat <= 90 &&
+        lng >= -180 &&
+        lng <= 180 &&
+        !(lat == 0.0 && lng == 0.0);
   }
 }

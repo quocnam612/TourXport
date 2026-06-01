@@ -55,9 +55,13 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
 
       final answer = widget.answer;
 
-      final int budgetLevel = answer.budgetPerPerson?.toInt() ?? 2000000;
-
       final int totalDays = answer.totalDays;
+      final int totalTravelers = answer.adults + answer.children;
+      final int minBudget = totalTravelers * totalDays * 200000;
+      final int maxBudget = totalTravelers * totalDays * 200000000;
+      final int budgetLevel = (answer.budgetPerPerson?.toInt() ?? minBudget)
+          .clamp(minBudget, maxBudget)
+          .toInt();
 
       int totalNights;
       if (answer.nights != null) {

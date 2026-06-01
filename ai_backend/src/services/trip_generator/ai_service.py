@@ -45,6 +45,46 @@ class AIService:
             f"Nhịp độ: {user_input.preferences.pace}"
         )
 
+    @staticmethod
+    def _validate_trip_day_count(
+        result: TripGeneratorResponse,
+        user_input: TripGenerateRequest,
+    ) -> None:
+        requested_days = user_input.total_days
+        actual_days = len(result.days or [])
+
+        if result.total_days != requested_days:
+            raise ValueError(
+                f"AI response totalDays={result.total_days}, expected {requested_days}"
+            )
+
+        if result.total_nights != user_input.total_nights:
+            raise ValueError(
+                f"AI response totalNights={result.total_nights}, expected {user_input.total_nights}"
+            )
+
+        if actual_days != requested_days:
+            raise ValueError(
+                f"AI response has {actual_days} day(s), expected {requested_days}"
+            )
+
+        expected_day_numbers = list(range(1, requested_days + 1))
+        actual_day_numbers = [day.day_number for day in result.days]
+        if actual_day_numbers != expected_day_numbers:
+            raise ValueError(
+                f"AI response dayNumber sequence={actual_day_numbers}, expected {expected_day_numbers}"
+            )
+
+    @staticmethod
+    def _build_day_count_retry_message(user_input: TripGenerateRequest) -> str:
+        return (
+            "Response trước đó chưa đúng số ngày yêu cầu. Hãy tạo lại toàn bộ JSON.\n"
+            f"BẮT BUỘC totalDays = {user_input.total_days}.\n"
+            f"BẮT BUỘC days có đúng {user_input.total_days} phần tử.\n"
+            f"BẮT BUỘC dayNumber lần lượt là 1 đến {user_input.total_days}.\n"
+            "Không được gộp nhiều ngày vào một phần tử day. Không được trả thiếu ngày."
+        )
+
     # ──────────────────────────────────────────
     # Helper: format DB documents thành context text
     # ──────────────────────────────────────────
@@ -111,6 +151,9 @@ class AIService:
             "- Sử dụng title gốc từ DB, không đổi tên.\n"
             "- Lấy tọa độ location từ DB nếu có. Tọa độ DB đã là GeoJSON [longitude, latitude], hãy copy đúng thứ tự và không đảo lat/lng.\n"
             "- Mỗi ngày phải có trường 'dayNumber', 'title', 'summary', và danh sách 'items'.\n"
+            f"- BẮT BUỘC trường 'days' phải có đúng {user_input.total_days} phần tử, tương ứng đúng {user_input.total_days} ngày.\n"
+            f"- BẮT BUỘC dayNumber phải lần lượt từ 1 đến {user_input.total_days}; không được gộp nhiều ngày vào một object.\n"
+            f"- BẮT BUỘC top-level totalDays phải bằng {user_input.total_days} và totalNights phải bằng {user_input.total_nights}.\n"
             "- Mỗi item cần có order, type, title, category, startTime, endTime.\n"
             "- type của item: 'place' cho places, 'restaurant' cho restaurants, 'hotel' cho hotels.\n"
             "- Trường 'date' trong mỗi day có thể để null.\n"
@@ -129,30 +172,52 @@ class AIService:
         )
 
         try:
-            response = await self.client.beta.chat.completions.parse(
-                model=self.model,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_prompt},
-                ],
-                response_format=TripGeneratorResponse,
-                max_tokens=8000,
-                temperature=0.7
-            )
+            messages = [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ]
 
-            result = response.choices[0].message.parsed
+            last_error: Exception | None = None
+            for attempt in range(2):
+                response = await self.client.beta.chat.completions.parse(
+                    model=self.model,
+                    messages=messages,
+                    response_format=TripGeneratorResponse,
+                    max_tokens=10000,
+                    temperature=0.7
+                )
 
-            # Ép metadata AI đúng cho luồng RAG
-            result.ai.generated_by = "ai_backend"
-            result.ai.model = self.model
-            result.ai.embedding_model = EMBEDDING_MODEL
-            result.ai.retrieval = RetrievalInfo(
-                strategy="vector_search",
-                index=VECTOR_INDEX_NAME,
-                top_k=top_k,
-            )
+                result = response.choices[0].message.parsed
 
-            return result
+                # Ép metadata AI đúng cho luồng RAG
+                result.ai.generated_by = "ai_backend"
+                result.ai.model = self.model
+                result.ai.embedding_model = EMBEDDING_MODEL
+                result.ai.retrieval = RetrievalInfo(
+                    strategy="vector_search",
+                    index=VECTOR_INDEX_NAME,
+                    top_k=top_k,
+                )
+
+                try:
+                    self._validate_trip_day_count(result, user_input)
+                    return result
+                except ValueError as validation_error:
+                    last_error = validation_error
+                    print(
+                        f"[AIService] RAG response sai số ngày "
+                        f"(attempt {attempt + 1}/2): {validation_error}"
+                    )
+                    messages.append({
+                        "role": "assistant",
+                        "content": result.model_dump_json(by_alias=True),
+                    })
+                    messages.append({
+                        "role": "user",
+                        "content": self._build_day_count_retry_message(user_input),
+                    })
+
+            raise last_error or ValueError("AI response sai số ngày")
 
         except Exception as e:
             print(f"[AIService] Lỗi gọi OpenAI (RAG): {str(e)}")
@@ -178,6 +243,9 @@ class AIService:
             "- Vì đây là luồng AI tự sinh (không truy vấn DB), trong trường 'source' của mỗi item: "
             "  provider phải là 'ai_generated', collection và id phải là null.\n"
             "- Mỗi ngày phải có trường 'dayNumber', 'title', 'summary', và danh sách 'items'.\n"
+            f"- BẮT BUỘC trường 'days' phải có đúng {user_input.total_days} phần tử, tương ứng đúng {user_input.total_days} ngày.\n"
+            f"- BẮT BUỘC dayNumber phải lần lượt từ 1 đến {user_input.total_days}; không được gộp nhiều ngày vào một object.\n"
+            f"- BẮT BUỘC top-level totalDays phải bằng {user_input.total_days} và totalNights phải bằng {user_input.total_nights}.\n"
             "- Mỗi item cần có order, type, title, category, startTime, endTime.\n"
             "- Trường 'date' trong mỗi day có thể để null.\n"
             "- Tọa độ trong location phải là [longitude, latitude] (GeoJSON). Nếu biết tọa độ theo dạng phổ biến latitude,longitude thì phải đảo lại trước khi trả về.\n"
@@ -191,26 +259,48 @@ class AIService:
         user_prompt = self._build_user_prompt(user_input)
 
         try:
-            response = await self.client.beta.chat.completions.parse(
-                model=self.model,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_prompt},
-                ],
-                response_format=TripGeneratorResponse,
-                max_tokens=4000,
-                temperature=0.7
-            )
+            messages = [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ]
 
-            result = response.choices[0].message.parsed
+            last_error: Exception | None = None
+            for attempt in range(2):
+                response = await self.client.beta.chat.completions.parse(
+                    model=self.model,
+                    messages=messages,
+                    response_format=TripGeneratorResponse,
+                    max_tokens=10000,
+                    temperature=0.7
+                )
 
-            # Ép metadata AI cho đúng (phòng trường hợp LLM trả sai)
-            result.ai.generated_by = "ai_backend"
-            result.ai.model = self.model
-            result.ai.embedding_model = None
-            result.ai.retrieval = None
+                result = response.choices[0].message.parsed
 
-            return result
+                # Ép metadata AI cho đúng (phòng trường hợp LLM trả sai)
+                result.ai.generated_by = "ai_backend"
+                result.ai.model = self.model
+                result.ai.embedding_model = None
+                result.ai.retrieval = None
+
+                try:
+                    self._validate_trip_day_count(result, user_input)
+                    return result
+                except ValueError as validation_error:
+                    last_error = validation_error
+                    print(
+                        f"[AIService] Pure LLM response sai số ngày "
+                        f"(attempt {attempt + 1}/2): {validation_error}"
+                    )
+                    messages.append({
+                        "role": "assistant",
+                        "content": result.model_dump_json(by_alias=True),
+                    })
+                    messages.append({
+                        "role": "user",
+                        "content": self._build_day_count_retry_message(user_input),
+                    })
+
+            raise last_error or ValueError("AI response sai số ngày")
 
         except Exception as e:
             print(f"[AIService] Lỗi gọi OpenAI (Pure LLM): {str(e)}")

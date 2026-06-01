@@ -25,6 +25,27 @@ import 'survey_screen.dart';
 import 'sign_in.dart';
 import '../models/travel_notification.dart';
 
+class _DestinationPageResult {
+  final List<Destination> items;
+  final int total;
+  final int page;
+  final int totalPages;
+
+  const _DestinationPageResult({
+    required this.items,
+    required this.total,
+    required this.page,
+    required this.totalPages,
+  });
+
+  static const empty = _DestinationPageResult(
+    items: [],
+    total: 0,
+    page: 1,
+    totalPages: 1,
+  );
+}
+
 class HomeScreen extends StatefulWidget {
   final String userName;
   final String? authToken;
@@ -40,9 +61,16 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
+  static const int _tabExplore = 0;
+  static const int _tabSearch = 1;
+  static const int _tabSaved = 2;
+  static const int _tabSurvey = 3;
+  static const int _tabProfile = 4;
+
   int _currentIndex = 0;
   int _previousIndex = 0;
-  int _navIndex = 0;
+  int _searchCurrentIndex = 0;
+  int _navIndex = _tabExplore;
   int _savedPlacesInitialTab = 0;
   bool _showLikedOnly = false;
   String _searchQuery = '';
@@ -88,11 +116,19 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   late final AnimationController _entranceController;
   late final Animation<double> _cardEntrance;
   late final PageController _pageController;
+  late final PageController _searchPageController;
   Timer? _autoPlayTimer;
   Timer? _searchDebounceTimer;
   List<Destination> _searchResults = [];
   List<Destination> _searchSuggestions = [];
-  final Map<String, List<Destination>> _cityCache = {};
+  int _exploreBackendPage = 1;
+  int _exploreTotalItems = 0;
+  int _exploreTotalPages = 1;
+  int _searchBackendPage = 1;
+  int _searchTotalItems = 0;
+  int _searchTotalPages = 1;
+  bool _isChangingCarouselPage = false;
+  final Map<String, _DestinationPageResult> _cityCache = {};
 
   static const List<String> vietnameseProvinces = [
     'Đà Nẵng',
@@ -237,6 +273,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     _selectedCity = vietnameseProvinces[0];
     _initMockNotifications();
     _pageController = PageController(viewportFraction: 0.82, initialPage: 1000);
+    _searchPageController =
+        PageController(viewportFraction: 0.82, initialPage: 0);
     _searchController = TextEditingController();
     _searchFocusNode = FocusNode();
     _searchFocusNode.addListener(() {
@@ -287,21 +325,22 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     _bgFadeController.dispose();
     _entranceController.dispose();
     _pageController.dispose();
+    _searchPageController.dispose();
     super.dispose();
   }
 
   void _startAutoPlay() {
     _stopAutoPlay();
-    if (_navIndex != 0) return;
+    if (_navIndex != _tabExplore) return;
 
     _autoPlayTimer = Timer.periodic(const Duration(seconds: 4), (timer) {
       if (!mounted) return;
-      if (_navIndex != 0) {
+      if (_navIndex != _tabExplore) {
         _stopAutoPlay();
         return;
       }
 
-      final destinations = _homeDestinations;
+      final destinations = _exploreDestinations;
       if (destinations.isEmpty) return;
 
       if (_pageController.hasClients) {
@@ -320,8 +359,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     _autoPlayTimer = null;
   }
 
-  void _onPageChanged(int index) {
-    final activeList = _homeDestinations;
+  void _onPageChanged(int index, {bool useSearchResults = false}) {
+    final activeList =
+        useSearchResults ? _searchDestinations : _exploreDestinations;
     if (index >= 0 && index < activeList.length) {
       final nextPath = activeList[index].bgBlurPath;
       if (nextPath != _currentBgPath) {
@@ -329,9 +369,21 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           _previousBgPath = _currentBgPath;
           _currentBgPath = nextPath;
           _previousIndex = _currentIndex;
-          _currentIndex = index;
+          if (useSearchResults) {
+            _searchCurrentIndex = index;
+          } else {
+            _currentIndex = index;
+          }
         });
         _bgFadeController.forward(from: 0);
+      } else {
+        setState(() {
+          if (useSearchResults) {
+            _searchCurrentIndex = index;
+          } else {
+            _currentIndex = index;
+          }
+        });
       }
     }
   }
@@ -765,6 +817,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     String? query,
     String? city,
     int? limit,
+    int page = 1,
   }) {
     final params = <String, List<String>>{};
 
@@ -778,7 +831,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     add('query', query);
     add('city', city);
     add('limit', (limit ?? _filterLimit).toString());
-    add('page', '1');
+    add('page', page.toString());
     add('category', _selectedCategory);
     if (_selectedTags.isNotEmpty) {
       params['tag'] = _selectedTags.toList();
@@ -802,15 +855,17 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     return params;
   }
 
-  Future<List<Destination>> _fetchFilteredDestinationsForCity(
+  Future<_DestinationPageResult> _fetchFilteredDestinationPage(
     String? city, {
     String? query,
     int? limit,
+    int page = 1,
   }) async {
     final params = _buildLocationQueryParams(
       query: query,
       city: city,
       limit: limit,
+      page: page,
     );
     final queryString = Uri(queryParameters: params).query;
     final path = queryString.isNotEmpty
@@ -819,11 +874,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     final response = await apiGet(path);
     final data = tryDecodeJsonObject(response.body);
     if (response.statusCode != 200 || data?['success'] != true) {
-      return const [];
+      return _DestinationPageResult.empty;
     }
 
     final rawList = data!['data'];
-    if (rawList is! List) return const [];
+    if (rawList is! List) return _DestinationPageResult.empty;
 
     final List<Destination> loaded = [];
     for (final item in rawList) {
@@ -835,7 +890,34 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         debugPrint('Error parsing filtered destination item: $e');
       }
     }
-    return loaded;
+    final total =
+        data['total'] is num ? (data['total'] as num).toInt() : loaded.length;
+    final responsePage =
+        data['page'] is num ? (data['page'] as num).toInt() : page;
+    final totalPages = data['totalPages'] is num
+        ? (data['totalPages'] as num).toInt()
+        : (total / (limit ?? _filterLimit)).ceil();
+    return _DestinationPageResult(
+      items: loaded,
+      total: total,
+      page: responsePage < 1 ? 1 : responsePage,
+      totalPages: totalPages < 1 ? 1 : totalPages,
+    );
+  }
+
+  Future<List<Destination>> _fetchFilteredDestinationsForCity(
+    String? city, {
+    String? query,
+    int? limit,
+    int page = 1,
+  }) async {
+    final result = await _fetchFilteredDestinationPage(
+      city,
+      query: query,
+      limit: limit,
+      page: page,
+    );
+    return result.items;
   }
 
   Future<void> _fetchDestinations() async {
@@ -844,15 +926,21 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     }
     try {
       // 1. Fetch top destinations for the selected city and location type
-        final city = _selectedCity;
-      final List<Destination> loaded =
-          await _fetchFilteredDestinationsForCity(city);
+      final city = _selectedCity;
+      final pageResult = await _fetchFilteredDestinationPage(city);
+      final loaded = pageResult.items;
 
       if (mounted) {
-        _cityCache[_destinationCacheKey(city)] = loaded;
+        _cityCache[_destinationCacheKey(city)] = pageResult;
         setState(() {
           _realDestinations = loaded;
-          final list = _homeDestinations;
+          _exploreBackendPage = pageResult.page;
+          _exploreTotalItems = pageResult.total;
+          _exploreTotalPages = pageResult.totalPages;
+          _searchBackendPage = pageResult.page;
+          _searchTotalItems = pageResult.total;
+          _searchTotalPages = pageResult.totalPages;
+          final list = _exploreDestinations;
           if (list.isNotEmpty) {
             _currentBgPath = list[0].bgBlurPath;
             _previousBgPath = list[0].bgBlurPath;
@@ -897,19 +985,30 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   Future<void> _selectCity(String city) async {
     final cacheKey = _destinationCacheKey(city);
-    if (_selectedCity == city && _realDestinations.isNotEmpty && _searchQuery.isEmpty) return;
+    if (_selectedCity == city &&
+        _realDestinations.isNotEmpty &&
+        _searchQuery.isEmpty) {
+      return;
+    }
 
     if (_cityCache.containsKey(cacheKey)) {
-      final cachedList = _cityCache[cacheKey]!;
+      final cachedPage = _cityCache[cacheKey]!;
       setState(() {
         _selectedCity = city;
         _isLoadingDestinations = false;
         _currentIndex = 0;
+        _searchCurrentIndex = 0;
         _searchResults = [];
         _searchController.clear();
         _searchQuery = '';
-        _realDestinations = cachedList;
-        final list = _homeDestinations;
+        _realDestinations = cachedPage.items;
+        _exploreBackendPage = cachedPage.page;
+        _exploreTotalItems = cachedPage.total;
+        _exploreTotalPages = cachedPage.totalPages;
+        _searchBackendPage = cachedPage.page;
+        _searchTotalItems = cachedPage.total;
+        _searchTotalPages = cachedPage.totalPages;
+        final list = _exploreDestinations;
         if (list.isNotEmpty) {
           _currentBgPath = list[0].bgBlurPath;
           _previousBgPath = list[0].bgBlurPath;
@@ -919,6 +1018,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         }
       });
       _resetCarouselPosition();
+      _resetCarouselPosition(useSearchResults: true);
       _startAutoPlay();
       return;
     }
@@ -927,6 +1027,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       _selectedCity = city;
       _isLoadingDestinations = true;
       _currentIndex = 0;
+      _searchCurrentIndex = 0;
       _searchResults = [];
       _searchController.clear();
       _searchQuery = '';
@@ -934,14 +1035,20 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     });
 
     try {
-      final List<Destination> loaded =
-          await _fetchFilteredDestinationsForCity(city);
+      final pageResult = await _fetchFilteredDestinationPage(city);
+      final loaded = pageResult.items;
 
       if (mounted && _selectedCity == city) {
-        _cityCache[cacheKey] = loaded;
+        _cityCache[cacheKey] = pageResult;
         setState(() {
           _realDestinations = loaded;
-          final list = _homeDestinations;
+          _exploreBackendPage = pageResult.page;
+          _exploreTotalItems = pageResult.total;
+          _exploreTotalPages = pageResult.totalPages;
+          _searchBackendPage = pageResult.page;
+          _searchTotalItems = pageResult.total;
+          _searchTotalPages = pageResult.totalPages;
+          final list = _exploreDestinations;
           if (list.isNotEmpty) {
             _currentBgPath = list[0].bgBlurPath;
             _previousBgPath = list[0].bgBlurPath;
@@ -951,6 +1058,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           }
         });
         _resetCarouselPosition();
+        _resetCarouselPosition(useSearchResults: true);
         _startAutoPlay();
       }
     } catch (e) {
@@ -1533,6 +1641,117 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             ),
           ],
         ),
+      ),
+    );
+  }
+
+  void _handleSurveyResult(Object? result) {
+    if (!mounted) return;
+
+    switch (result) {
+      case 'go_to_saved_tours':
+        setState(() {
+          _savedPlacesInitialTab = 1;
+          _navIndex = _tabSaved;
+        });
+        _stopAutoPlay();
+        break;
+      case 'go_to_saved':
+        setState(() {
+          _savedPlacesInitialTab = 0;
+          _navIndex = _tabSaved;
+        });
+        _stopAutoPlay();
+        break;
+      case 'go_to_explore':
+        setState(() {
+          _savedPlacesInitialTab = 0;
+          _navIndex = _tabExplore;
+        });
+        _startAutoPlay();
+        break;
+      case 'go_to_search':
+        setState(() {
+          _savedPlacesInitialTab = 0;
+          _navIndex = _tabSearch;
+        });
+        _stopAutoPlay();
+        break;
+      case 'go_to_account':
+        setState(() {
+          _savedPlacesInitialTab = 0;
+          _navIndex = _tabProfile;
+        });
+        _stopAutoPlay();
+        break;
+      case 'go_to_survey':
+        _showSurveyTab();
+        break;
+      case 'logout':
+        _logout();
+        break;
+    }
+  }
+
+  Future<void> _handleMainNavigationResult(String result) async {
+    if (result == 'go_to_survey') {
+      await _openSurveyForCurrentLayout();
+      return;
+    }
+
+    _handleSurveyResult(result);
+  }
+
+  void _showSurveyTab() {
+    setState(() {
+      _savedPlacesInitialTab = 0;
+      _navIndex = _tabSurvey;
+    });
+    _stopAutoPlay();
+  }
+
+  Future<Object?> _openSurveyForCurrentLayout() async {
+    if (MediaQuery.of(context).size.width >= 800) {
+      _showSurveyTab();
+      return null;
+    }
+
+    _stopAutoPlay();
+    final result = await _openSurveyScreen();
+    _startAutoPlay();
+    _handleSurveyResult(result);
+    return result;
+  }
+
+  Future<Object?> _openSurveyScreen() {
+    return Navigator.push(
+      context,
+      PageRouteBuilder(
+        pageBuilder: (_, __, ___) => SurveyScreen(
+          authToken: widget.authToken,
+          userName: _currentUserName,
+          avatarUrl: _currentAvatarUrl,
+        ),
+        transitionDuration: const Duration(milliseconds: 500),
+        reverseTransitionDuration: const Duration(milliseconds: 400),
+        transitionsBuilder: (_, animation, __, child) {
+          return FadeTransition(
+            opacity: CurvedAnimation(
+              parent: animation,
+              curve: Curves.easeInOut,
+            ),
+            child: SlideTransition(
+              position: Tween<Offset>(
+                begin: const Offset(0, 0.05),
+                end: Offset.zero,
+              ).animate(CurvedAnimation(
+                parent: animation,
+                curve: Curves.easeOutCubic,
+              )),
+              child: child,
+            ),
+          );
+        },
       ),
     );
   }
@@ -2775,7 +2994,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   Future<void> _openPlaceDetail(
       Destination dest, BuildContext cardContext) async {
-    final useSimpleTransition = _navIndex == 1;
+    final useSimpleTransition = _navIndex == _tabSaved;
     Rect? cardRect;
 
     if (!useSimpleTransition) {
@@ -2856,7 +3075,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   void _jumpToRegion(String region) {
-    final destinations = _homeDestinations;
+    final destinations = _exploreDestinations;
     final idx = destinations.indexWhere((d) => _citiesMatch(d.province, region));
     if (idx >= 0 && idx != _currentIndex) {
       if (_pageController.hasClients) {
@@ -2901,7 +3120,15 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     return a == b || a.contains(b) || b.contains(a);
   }
 
-  List<Destination> get _homeDestinations {
+  List<Destination> get _exploreDestinations {
+    final list = List<Destination>.from(_realDestinations);
+    if (_showLikedOnly) {
+      return list.where((d) => _likedNames.contains(d.name)).toList();
+    }
+    return list;
+  }
+
+  List<Destination> get _searchDestinations {
     if (_searchQuery.isNotEmpty || _nearbyEnabled) {
       var list = _searchResults;
       if (_showLikedOnly) {
@@ -2909,10 +3136,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       }
       return list;
     }
-    
+
     // 1. Use ALL real database destinations directly (the API already filtered by city)
     final List<Destination> list = List<Destination>.from(_realDestinations);
-    
+
     var filteredList = list;
     if (_showLikedOnly) {
       filteredList = list.where((d) => _likedNames.contains(d.name)).toList();
@@ -2923,7 +3150,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   void _onSearchChanged(String value) {
     setState(() {
       _searchQuery = value;
-      _currentIndex = 0;
+      _searchCurrentIndex = 0;
       _searchSuggestions = [];
     });
 
@@ -2932,9 +3159,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       setState(() {
         _searchResults = [];
         _searchSuggestions = [];
+        _searchBackendPage = _exploreBackendPage;
+        _searchTotalItems = _exploreTotalItems;
+        _searchTotalPages = _exploreTotalPages;
       });
-      _resetCarouselPosition();
-      final list = _homeDestinations;
+      _resetCarouselPosition(useSearchResults: true);
+      final list = _searchDestinations;
       if (list.isNotEmpty) {
         setState(() {
           _currentBgPath = list[0].bgBlurPath;
@@ -2951,22 +3181,27 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   Future<void> _performBackendSearch(String query) async {
     try {
-      final loaded = await _fetchFilteredDestinationsForCity(
+      final pageResult = await _fetchFilteredDestinationPage(
         _selectedCity,
         query: query,
         limit: _filterLimit,
       );
+      final loaded = pageResult.items;
       if (mounted && _searchQuery == query) {
         setState(() {
           _searchResults = loaded;
           _searchSuggestions = loaded.take(5).toList();
+          _searchCurrentIndex = 0;
+          _searchBackendPage = pageResult.page;
+          _searchTotalItems = pageResult.total;
+          _searchTotalPages = pageResult.totalPages;
 
           if (_searchResults.isNotEmpty) {
             _currentBgPath = _searchResults[0].bgBlurPath;
             _previousBgPath = _searchResults[0].bgBlurPath;
           }
         });
-        _resetCarouselPosition();
+        _resetCarouselPosition(useSearchResults: true);
       }
     } catch (e) {
       debugPrint('Error performing backend search: $e');
@@ -2983,23 +3218,32 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     setState(() {
       _isLoadingDestinations = true;
       _currentIndex = 0;
+      _searchCurrentIndex = 0;
       _searchResults = [];
       _searchSuggestions = [];
     });
 
     try {
-      final loaded = await _fetchFilteredDestinationsForCity(city);
+      final pageResult = await _fetchFilteredDestinationPage(city);
+      final loaded = pageResult.items;
       if (!mounted) return;
-      _cityCache[_destinationCacheKey(city)] = loaded;
+      _cityCache[_destinationCacheKey(city)] = pageResult;
       setState(() {
         _realDestinations = loaded;
-        final list = _homeDestinations;
+        _exploreBackendPage = pageResult.page;
+        _exploreTotalItems = pageResult.total;
+        _exploreTotalPages = pageResult.totalPages;
+        _searchBackendPage = pageResult.page;
+        _searchTotalItems = pageResult.total;
+        _searchTotalPages = pageResult.totalPages;
+        final list = _exploreDestinations;
         if (list.isNotEmpty) {
           _currentBgPath = list[0].bgBlurPath;
           _previousBgPath = list[0].bgBlurPath;
         }
       });
       _resetCarouselPosition();
+      _resetCarouselPosition(useSearchResults: true);
     } catch (e) {
       debugPrint('Error applying filters: $e');
     } finally {
@@ -3009,14 +3253,169 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     }
   }
 
-  void _resetCarouselPosition() {
-    if (_pageController.hasClients) {
-      final list = _homeDestinations;
+  void _resetCarouselPosition({bool useSearchResults = false}) {
+    final controller =
+        useSearchResults ? _searchPageController : _pageController;
+    if (controller.hasClients) {
+      final list = useSearchResults ? _searchDestinations : _exploreDestinations;
       if (list.length > 3) {
-        _pageController.jumpToPage(1000 - (1000 % list.length));
+        controller.jumpToPage(1000 - (1000 % list.length));
       } else {
-        _pageController.jumpToPage(0);
+        controller.jumpToPage(0);
       }
+    }
+  }
+
+  int _carouselGlobalIndex({required bool useSearchResults}) {
+    final list = useSearchResults ? _searchDestinations : _exploreDestinations;
+    if (list.isEmpty) return 0;
+
+    final page = useSearchResults ? _searchBackendPage : _exploreBackendPage;
+    final localIndex =
+        useSearchResults ? _searchCurrentIndex : _currentIndex;
+    final total = useSearchResults ? _searchTotalItems : _exploreTotalItems;
+    final value = ((page - 1) * _filterLimit) + localIndex + 1;
+    return total <= 0 ? value : value.clamp(1, total).toInt();
+  }
+
+  int _carouselTotalCount({required bool useSearchResults}) {
+    final total = useSearchResults ? _searchTotalItems : _exploreTotalItems;
+    final list = useSearchResults ? _searchDestinations : _exploreDestinations;
+    return total > 0 ? total : list.length;
+  }
+
+  Future<void> _animateCarouselToIndex(
+    int targetIndex, {
+    required bool useSearchResults,
+  }) async {
+    final list = useSearchResults ? _searchDestinations : _exploreDestinations;
+    if (targetIndex < 0 || targetIndex >= list.length) return;
+
+    final controller =
+        useSearchResults ? _searchPageController : _pageController;
+    if (!controller.hasClients) {
+      _onPageChanged(targetIndex, useSearchResults: useSearchResults);
+      return;
+    }
+
+    final page = controller.page?.round() ?? 0;
+    final targetPage = list.length > 3
+        ? page + (targetIndex - (page % list.length))
+        : targetIndex;
+    await controller.animateToPage(
+      targetPage,
+      duration: const Duration(milliseconds: 320),
+      curve: Curves.easeOutCubic,
+    );
+  }
+
+  void _jumpCarouselToIndex(
+    int targetIndex, {
+    required bool useSearchResults,
+  }) {
+    final list = useSearchResults ? _searchDestinations : _exploreDestinations;
+    if (targetIndex < 0 || targetIndex >= list.length) return;
+
+    final controller =
+        useSearchResults ? _searchPageController : _pageController;
+    _onPageChanged(targetIndex, useSearchResults: useSearchResults);
+    if (!controller.hasClients) return;
+
+    final targetPage = list.length > 3
+        ? (1000 - (1000 % list.length)) + targetIndex
+        : targetIndex;
+    controller.jumpToPage(targetPage);
+  }
+
+  Future<void> _loadCarouselBackendPage(
+    int page, {
+    required bool useSearchResults,
+    bool jumpToLast = false,
+  }) async {
+    final query = useSearchResults ? _searchQuery : null;
+    final pageResult = await _fetchFilteredDestinationPage(
+      _selectedCity,
+      query: query,
+      limit: _filterLimit,
+      page: page,
+    );
+    if (!mounted || pageResult.items.isEmpty) return;
+
+    setState(() {
+      if (useSearchResults) {
+        final hasSearchFilter =
+            _searchQuery.trim().isNotEmpty || _nearbyEnabled;
+        if (hasSearchFilter) {
+          _searchResults = pageResult.items;
+          _searchSuggestions = pageResult.items.take(5).toList();
+        } else {
+          _realDestinations = pageResult.items;
+          _exploreBackendPage = pageResult.page;
+          _exploreTotalItems = pageResult.total;
+          _exploreTotalPages = pageResult.totalPages;
+          if (pageResult.page == 1) {
+            _cityCache[_destinationCacheKey(_selectedCity)] = pageResult;
+          }
+        }
+        _searchBackendPage = pageResult.page;
+        _searchTotalItems = pageResult.total;
+        _searchTotalPages = pageResult.totalPages;
+        _searchCurrentIndex = jumpToLast ? pageResult.items.length - 1 : 0;
+      } else {
+        _realDestinations = pageResult.items;
+        _exploreBackendPage = pageResult.page;
+        _exploreTotalItems = pageResult.total;
+        _exploreTotalPages = pageResult.totalPages;
+        _currentIndex = jumpToLast ? pageResult.items.length - 1 : 0;
+        if (pageResult.page == 1) {
+          _cityCache[_destinationCacheKey(_selectedCity)] = pageResult;
+        }
+      }
+    });
+    _jumpCarouselToIndex(
+      jumpToLast ? pageResult.items.length - 1 : 0,
+      useSearchResults: useSearchResults,
+    );
+  }
+
+  Future<void> _goToCarouselPage(
+    int direction, {
+    required bool useSearchResults,
+  }) async {
+    if (_isChangingCarouselPage || direction == 0) return;
+
+    final list = useSearchResults ? _searchDestinations : _exploreDestinations;
+    if (list.isEmpty) return;
+
+    final currentIndex =
+        useSearchResults ? _searchCurrentIndex : _currentIndex;
+    final nextIndex = currentIndex + direction;
+    final backendPage =
+        useSearchResults ? _searchBackendPage : _exploreBackendPage;
+    final totalPages =
+        useSearchResults ? _searchTotalPages : _exploreTotalPages;
+
+    _isChangingCarouselPage = true;
+    try {
+      if (nextIndex >= 0 && nextIndex < list.length) {
+        await _animateCarouselToIndex(
+          nextIndex,
+          useSearchResults: useSearchResults,
+        );
+      } else if (direction > 0 && backendPage < totalPages) {
+        await _loadCarouselBackendPage(
+          backendPage + 1,
+          useSearchResults: useSearchResults,
+        );
+      } else if (direction < 0 && backendPage > 1) {
+        await _loadCarouselBackendPage(
+          backendPage - 1,
+          useSearchResults: useSearchResults,
+          jumpToLast: true,
+        );
+      }
+    } finally {
+      _isChangingCarouselPage = false;
     }
   }
 
@@ -3968,7 +4367,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             curve: Curves.easeInOut,
             left: 24,
             right: 24,
-            bottom: _navIndex == 3
+            bottom: _navIndex == _tabProfile
                 ? -100
                 : MediaQuery.paddingOf(context).bottom + 20,
             child: _buildBottomNav(),
@@ -3982,6 +4381,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     final isGuest = widget.authToken == null || widget.authToken!.isEmpty;
     final menuItems = [
       (Icons.home_rounded, 'Khám phá'),
+      (Icons.search_rounded, 'Tìm kiếm'),
       (Icons.bookmark_rounded, 'Đã lưu'),
       (Icons.explore_rounded, 'Khảo sát'),
       (Icons.person_rounded, 'Tài khoản'),
@@ -4093,29 +4493,14 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   color: Colors.transparent,
                   child: InkWell(
                     onTap: () async {
-                      if (i == 2) {
-                        _stopAutoPlay();
-                        final result = await Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => SurveyScreen(
-                              authToken: widget.authToken,
-                            ),
-                          ),
-                        );
-                        _startAutoPlay();
-                        if (result == 'go_to_saved_tours') {
-                          setState(() {
-                            _savedPlacesInitialTab = 1;
-                            _navIndex = 1;
-                          });
-                        }
+                      if (i == _tabSurvey) {
+                        await _openSurveyForCurrentLayout();
                       } else {
                         setState(() {
                           _navIndex = i;
                           _savedPlacesInitialTab = 0;
                         });
-                        if (i == 0) {
+                        if (i == _tabExplore) {
                           _startAutoPlay();
                         } else {
                           _stopAutoPlay();
@@ -4219,7 +4604,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   Widget _buildPreviousBackground() {
     final isDesktop = MediaQuery.of(context).size.width >= 800;
-    final isSurveyStyle = _navIndex == 1 || _navIndex == 3;
+    final isSurveyStyle = _navIndex == _tabSearch ||
+        _navIndex == _tabSaved ||
+        _navIndex == _tabSurvey ||
+        _navIndex == _tabProfile;
     final blurVal = isSurveyStyle ? 10.0 : (isDesktop ? 0.8 : 5.0);
     final bgPath = isSurveyStyle ? 'assets/images/login_bg.jpg' : _previousBgPath;
 
@@ -4239,7 +4627,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   Widget _buildCurrentBackground() {
     final isDesktop = MediaQuery.of(context).size.width >= 800;
-    final isSurveyStyle = _navIndex == 1 || _navIndex == 3;
+    final isSurveyStyle = _navIndex == _tabSearch ||
+        _navIndex == _tabSaved ||
+        _navIndex == _tabSurvey ||
+        _navIndex == _tabProfile;
     final blurVal = isSurveyStyle ? 10.0 : (isDesktop ? 0.8 : 5.0);
     final bgPath = isSurveyStyle ? 'assets/images/login_bg.jpg' : _currentBgPath;
 
@@ -4266,7 +4657,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   Widget _buildDarkOverlay() {
     final isDesktop = MediaQuery.of(context).size.width >= 800;
-    final isSurveyStyle = _navIndex == 1 || _navIndex == 3;
+    final isSurveyStyle = _navIndex == _tabSearch ||
+        _navIndex == _tabSaved ||
+        _navIndex == _tabSurvey ||
+        _navIndex == _tabProfile;
 
     if (isSurveyStyle) {
       return Positioned.fill(
@@ -4301,8 +4695,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       index: _navIndex,
       children: [
         _buildHomeTabBody(size),
+        _buildSearchTabBody(size),
         SavedPlacesSection(
           authToken: widget.authToken,
+          userName: _currentUserName,
+          avatarUrl: _currentAvatarUrl,
           initialTabIndex: _savedPlacesInitialTab,
           entranceAnimation: _cardEntrance,
           savedDestinations: _savedDestinations,
@@ -4310,7 +4707,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           isLoading: _isLoadingSavedPlaces,
           onBack: () {
             setState(() {
-              _navIndex = 0;
+              _navIndex = _tabExplore;
               _savedPlacesInitialTab = 0;
             });
             _startAutoPlay();
@@ -4318,14 +4715,23 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           onOpenDetail: _openPlaceDetail,
           onToggleSaved: _toggleSaved,
           isGuest: widget.authToken == null || widget.authToken!.isEmpty,
+          onNavigateMain: _handleMainNavigationResult,
         ),
-        const SizedBox.shrink(),
+        isDesktop
+            ? SurveyScreen(
+                authToken: widget.authToken,
+                userName: _currentUserName,
+                avatarUrl: _currentAvatarUrl,
+                embedded: true,
+                onNavigate: _handleSurveyResult,
+              )
+            : const SizedBox.shrink(),
         ProfileSection(
           entranceAnimation: _cardEntrance,
           userData: _userData,
           isLoading: _isLoadingProfile,
           onBack: () {
-            setState(() => _navIndex = 0);
+            setState(() => _navIndex = _tabExplore);
             _startAutoPlay();
           },
           onLogout: _logout,
@@ -4355,7 +4761,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   // === WEB/DESKTOP CUSTOM UTILITIES ===
 
   int _findFirstIndexForCategory(String category) {
-    final list = _homeDestinations;
+    final list = _exploreDestinations;
     for (int i = 0; i < list.length; i++) {
       final d = list[i];
       final prov = d.province.toLowerCase();
@@ -4440,7 +4846,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   void _selectDestination(int index) {
     _onPageChanged(index);
     if (_pageController.hasClients) {
-      final list = _homeDestinations;
+      final list = _exploreDestinations;
       if (list.isNotEmpty) {
         final currentPage = _pageController.page?.round() ?? 1000;
         final currentListIndex = currentPage % list.length;
@@ -4456,7 +4862,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     final isDesktop = MediaQuery.of(context).size.width >= 800;
 
     if (isDesktop) {
-      final destinations = _homeDestinations;
+      final destinations = _exploreDestinations;
       if (destinations.isEmpty) {
         return Center(
           child: Text(
@@ -4933,12 +5339,25 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             Container(
               color: const Color(0xFF0C1412),
               width: double.infinity,
-              padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 50),
+              padding: const EdgeInsets.fromLTRB(50, 58, 50, 80),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                  Text(
+                    'Khám phá Việt Nam qua dữ liệu thực tế',
+                    style: TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontSize: 12,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.white.withOpacity(0.58),
+                      letterSpacing: 1.6,
+                    ),
+                  ),
+                  const SizedBox(height: 30),
+                  _buildExploreStats(),
+                  const SizedBox(height: 90),
                   const Text(
-                    'confusion? These recommendation',
+                    'confusion? these recommendations',
                     style: TextStyle(
                       fontFamily: 'Montserrat',
                       fontSize: 13,
@@ -4947,7 +5366,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       letterSpacing: 1.0,
                     ),
                   ),
-                  const SizedBox(height: 10),
+                  const SizedBox(height: 16),
                   const Text(
                     'destination recommendations',
                     style: TextStyle(
@@ -5083,22 +5502,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         const SizedBox(height: 36),
                         WebHoverable(
                           onTap: () async {
-                            _stopAutoPlay();
-                            final result = await Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => SurveyScreen(
-                                  authToken: widget.authToken,
-                                ),
-                              ),
-                            );
-                            _startAutoPlay();
-                            if (result == 'go_to_saved_tours') {
-                              setState(() {
-                                _savedPlacesInitialTab = 1;
-                                _navIndex = 1;
-                              });
-                            }
+                            await _openSurveyForCurrentLayout();
                           },
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
@@ -5219,8 +5623,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             children: [
               Column(
                 children: [
-                  _buildSearchBar(),
-                  const SizedBox(height: 12),
                   _buildRegionTabs(),
                   const SizedBox(height: 12),
                   Expanded(
@@ -5229,11 +5631,120 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   const SizedBox(height: 16),
                 ],
               ),
+            ],
+          ),
+        ),
+      ],
+    );
+
+    return content;
+  }
+
+  Widget _buildSearchTabBody(Size size) {
+    final isDesktop = MediaQuery.of(context).size.width >= 800;
+
+    final content = Column(
+      key: const ValueKey<String>('search_tab'),
+      children: [
+        if (!isDesktop) _buildTopBar(),
+        SizedBox(height: isDesktop ? 42 : 8),
+        if (isDesktop)
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 50),
+            child: Row(
+              children: [
+                const Expanded(
+                  child: Text(
+                    'Tìm kiếm địa điểm',
+                    style: TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontSize: 42,
+                      fontWeight: FontWeight.w900,
+                      color: Colors.white,
+                      letterSpacing: -0.5,
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: _showNotificationCenter,
+                  child: Container(
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.1),
+                      shape: BoxShape.circle,
+                      border: Border.all(color: Colors.white12, width: 1),
+                    ),
+                    child: Stack(
+                      clipBehavior: Clip.none,
+                      children: [
+                        const Icon(Icons.notifications_none_rounded,
+                            color: Colors.white, size: 22),
+                        if (_notifications.any((n) => !n.isRead))
+                          Positioned(
+                            top: -1,
+                            right: -1,
+                            child: Container(
+                              width: 7,
+                              height: 7,
+                              decoration: const BoxDecoration(
+                                color: Color(0xFFE74C3C),
+                                shape: BoxShape.circle,
+                              ),
+                            ),
+                          ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          )
+        else
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24),
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                'Tìm kiếm địa điểm',
+                style: TextStyle(
+                  fontFamily: 'Montserrat',
+                  fontSize: 30,
+                  fontWeight: FontWeight.w700,
+                  color: Colors.white,
+                  height: 1.2,
+                  shadows: const [
+                    Shadow(
+                      color: Color(0x88000000),
+                      blurRadius: 12,
+                      offset: Offset(0, 4),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        SizedBox(height: isDesktop ? 22 : 12),
+        Expanded(
+          child: Stack(
+            clipBehavior: Clip.none,
+            children: [
+              Column(
+                children: [
+                  _buildSearchBar(),
+                  const SizedBox(height: 12),
+                  _buildRegionTabs(),
+                  const SizedBox(height: 12),
+                  Expanded(
+                    child: _buildSearchResultsGrid(),
+                  ),
+                  SizedBox(height: isDesktop ? 24 : 16),
+                ],
+              ),
               if (_searchFocusNode.hasFocus)
                 Positioned(
                   top: 60,
-                  left: 0,
-                  right: 0,
+                  left: isDesktop ? 26 : 0,
+                  right: isDesktop ? 26 : 0,
                   child: _buildSuggestionsDropdown(),
                 ),
             ],
@@ -5242,7 +5753,43 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       ],
     );
 
+    if (isDesktop) {
+      return SafeArea(
+        bottom: false,
+        child: content,
+      );
+    }
+
     return content;
+  }
+
+  Widget _buildExploreStats() {
+    return ConstrainedBox(
+      constraints: const BoxConstraints(maxWidth: 780),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: const [
+          Expanded(
+            child: _ExploreStatItem(
+              value: '18.627',
+              label: 'ĐIỂM ĂN UỐNG',
+            ),
+          ),
+          Expanded(
+            child: _ExploreStatItem(
+              value: '2.932',
+              label: 'ĐỊA ĐIỂM DU LỊCH',
+            ),
+          ),
+          Expanded(
+            child: _ExploreStatItem(
+              value: '612',
+              label: 'CHỖ Ở',
+            ),
+          ),
+        ],
+      ),
+    );
   }
 
   Widget _buildTopBar() {
@@ -5414,7 +5961,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     _previousBgPath = dest.bgBlurPath;
                   });
                   _searchFocusNode.unfocus();
-                  _resetCarouselPosition();
+                  _resetCarouselPosition(useSearchResults: true);
                 },
                 hoverColor: Colors.white.withOpacity(0.05),
                 splashColor: const Color(0xFFB5956A).withOpacity(0.2),
@@ -5476,6 +6023,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Widget _buildSearchBar() {
+    final isDesktop = MediaQuery.of(context).size.width >= 800;
+
     return FadeTransition(
       opacity: _cardEntrance,
       child: SlideTransition(
@@ -5484,7 +6033,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           end: Offset.zero,
         ).animate(_cardEntrance),
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+          padding: EdgeInsets.symmetric(
+            horizontal: isDesktop ? 50 : 24,
+            vertical: 8,
+          ),
           child: Container(
             height: 52,
             decoration: BoxDecoration(
@@ -5632,8 +6184,343 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     );
   }
 
-  Widget _buildCardCarousel(Size size) {
-    final destinations = _homeDestinations;
+  Widget _buildSearchResultsGrid() {
+    final destinations = _searchDestinations;
+    final isDesktop = MediaQuery.of(context).size.width >= 800;
+
+    if (destinations.isEmpty) {
+      return Center(
+        child: Text(
+          'Chưa có địa điểm phù hợp.',
+          style: TextStyle(
+            fontFamily: 'Montserrat',
+            fontSize: 15,
+            color: Colors.white.withOpacity(0.8),
+          ),
+        ),
+      );
+    }
+
+    return FadeTransition(
+      opacity: _cardEntrance,
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          final minCardWidth = isDesktop ? 220.0 : 165.0;
+          final maxColumns = isDesktop ? 5 : 2;
+          final columns = (constraints.maxWidth / minCardWidth)
+              .floor()
+              .clamp(1, maxColumns)
+              .toInt();
+          final horizontalPadding = isDesktop ? 50.0 : 24.0;
+          final cardHeight = isDesktop ? 226.0 : 214.0;
+          final footerBottomPadding = isDesktop ? 6.0 : 88.0;
+
+          return Column(
+            children: [
+              Expanded(
+                child: GridView.builder(
+                  padding: EdgeInsets.fromLTRB(
+                    horizontalPadding,
+                    2,
+                    horizontalPadding,
+                    18,
+                  ),
+                  physics: const BouncingScrollPhysics(),
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: columns,
+                    crossAxisSpacing: isDesktop ? 16 : 12,
+                    mainAxisSpacing: isDesktop ? 16 : 12,
+                    mainAxisExtent: cardHeight,
+                  ),
+                  itemCount: destinations.length,
+                  itemBuilder: (context, index) {
+                    final dest = destinations[index];
+                    return _buildCompactSearchCard(dest);
+                  },
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.fromLTRB(
+                  horizontalPadding,
+                  0,
+                  horizontalPadding,
+                  footerBottomPadding,
+                ),
+                child: _buildSearchGridPageControls(),
+              ),
+            ],
+          );
+        },
+      ),
+    );
+  }
+
+  Widget _buildCompactSearchCard(Destination dest) {
+    final isSaved = _savedNames.contains(dest.name);
+    final isBusy = _updatingSavedNames.contains(dest.name);
+
+    return Builder(
+      builder: (cardContext) {
+        return Material(
+          color: Colors.transparent,
+          borderRadius: BorderRadius.circular(18),
+          clipBehavior: Clip.antiAlias,
+          child: InkWell(
+            onTap: () => _openPlaceDetail(dest, cardContext),
+            borderRadius: BorderRadius.circular(18),
+            hoverColor: Colors.white.withOpacity(0.05),
+            splashColor: const Color(0xFFD4AF7A).withOpacity(0.12),
+            highlightColor: Colors.white.withOpacity(0.04),
+            child: Ink(
+              decoration: BoxDecoration(
+                color: Colors.black.withOpacity(0.32),
+                borderRadius: BorderRadius.circular(18),
+                border: Border.all(color: Colors.white.withOpacity(0.12)),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.24),
+                    blurRadius: 18,
+                    offset: const Offset(0, 10),
+                  ),
+                ],
+              ),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(18),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Expanded(
+                      child: Stack(
+                        fit: StackFit.expand,
+                        children: [
+                          Destination.buildImage(
+                            dest.imagePath,
+                            fit: BoxFit.cover,
+                          ),
+                          DecoratedBox(
+                            decoration: BoxDecoration(
+                              gradient: LinearGradient(
+                                begin: Alignment.topCenter,
+                                end: Alignment.bottomCenter,
+                                colors: [
+                                  Colors.black.withOpacity(0.08),
+                                  Colors.black.withOpacity(0.58),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            left: 10,
+                            top: 10,
+                            child: _buildCompactTypeBadge(dest.type),
+                          ),
+                          Positioned(
+                            right: 8,
+                            top: 8,
+                            child: GestureDetector(
+                              onTap: isBusy ? null : () => _toggleSaved(dest),
+                              child: Container(
+                                width: 32,
+                                height: 32,
+                                decoration: BoxDecoration(
+                                  color: Colors.black.withOpacity(0.38),
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                    color: Colors.white.withOpacity(0.16),
+                                  ),
+                                ),
+                                child: isBusy
+                                    ? const Padding(
+                                        padding: EdgeInsets.all(8),
+                                        child: CircularProgressIndicator(
+                                          strokeWidth: 2,
+                                          valueColor:
+                                              AlwaysStoppedAnimation<Color>(
+                                            Colors.white,
+                                          ),
+                                        ),
+                                      )
+                                    : Icon(
+                                        isSaved
+                                            ? Icons.bookmark_rounded
+                                            : Icons.bookmark_border_rounded,
+                                        color: isSaved
+                                            ? const Color(0xFFD4AF7A)
+                                            : Colors.white,
+                                        size: 18,
+                                      ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(12, 10, 12, 12),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            dest.name,
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: const TextStyle(
+                              fontFamily: 'Montserrat',
+                              fontSize: 13,
+                              fontWeight: FontWeight.w800,
+                              color: Colors.white,
+                              height: 1.1,
+                            ),
+                          ),
+                          const SizedBox(height: 7),
+                          Row(
+                            children: [
+                              const Icon(
+                                Icons.place_rounded,
+                                color: Color(0xFFD4AF7A),
+                                size: 15,
+                              ),
+                              const SizedBox(width: 5),
+                              Expanded(
+                                child: Text(
+                                  dest.province,
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.white.withOpacity(0.68),
+                                  ),
+                                ),
+                              ),
+                              const Icon(
+                                Icons.arrow_forward_rounded,
+                                color: Colors.white70,
+                                size: 16,
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _buildCompactTypeBadge(String type) {
+    final color = type == 'Nhà hàng'
+        ? const Color(0xFFE67E22)
+        : type == 'Khách sạn'
+            ? const Color(0xFF3498DB)
+            : const Color(0xFFB5956A);
+
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+      decoration: BoxDecoration(
+        color: color.withOpacity(0.9),
+        borderRadius: BorderRadius.circular(999),
+      ),
+      child: Text(
+        type,
+        maxLines: 1,
+        overflow: TextOverflow.ellipsis,
+        style: const TextStyle(
+          fontFamily: 'Montserrat',
+          fontSize: 9,
+          fontWeight: FontWeight.w800,
+          color: Colors.white,
+          height: 1.0,
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSearchGridPageControls() {
+    final totalPages = _searchTotalPages <= 0 ? 1 : _searchTotalPages;
+    final currentPage = _searchBackendPage.clamp(1, totalPages).toInt();
+    if (totalPages <= 1) return const SizedBox.shrink();
+
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        _buildSearchGridPageButton(
+          icon: Icons.chevron_left_rounded,
+          enabled: currentPage > 1,
+          onTap: () {
+            _loadCarouselBackendPage(
+              currentPage - 1,
+              useSearchResults: true,
+            );
+          },
+        ),
+        Container(
+          margin: const EdgeInsets.symmetric(horizontal: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+          decoration: BoxDecoration(
+            color: Colors.black.withOpacity(0.34),
+            borderRadius: BorderRadius.circular(999),
+            border: Border.all(color: Colors.white.withOpacity(0.16)),
+          ),
+          child: Text(
+            '$currentPage/$totalPages',
+            style: const TextStyle(
+              fontFamily: 'Montserrat',
+              fontSize: 12,
+              fontWeight: FontWeight.w800,
+              color: Colors.white,
+            ),
+          ),
+        ),
+        _buildSearchGridPageButton(
+          icon: Icons.chevron_right_rounded,
+          enabled: currentPage < totalPages,
+          onTap: () {
+            _loadCarouselBackendPage(
+              currentPage + 1,
+              useSearchResults: true,
+            );
+          },
+        ),
+      ],
+    );
+  }
+
+  Widget _buildSearchGridPageButton({
+    required IconData icon,
+    required bool enabled,
+    required VoidCallback onTap,
+  }) {
+    return GestureDetector(
+      onTap: enabled ? onTap : null,
+      child: Container(
+        width: 36,
+        height: 36,
+        decoration: BoxDecoration(
+          color: Colors.black.withOpacity(enabled ? 0.34 : 0.16),
+          shape: BoxShape.circle,
+          border: Border.all(color: Colors.white.withOpacity(0.14)),
+        ),
+        child: Icon(
+          icon,
+          color: enabled ? Colors.white : Colors.white.withOpacity(0.32),
+          size: 22,
+        ),
+      ),
+    );
+  }
+
+  Widget _buildCardCarousel(Size size, {bool useSearchResults = false}) {
+    final destinations =
+        useSearchResults ? _searchDestinations : _exploreDestinations;
+    final controller =
+        useSearchResults ? _searchPageController : _pageController;
     if (destinations.isEmpty) {
       return Center(
         child: Text(
@@ -5656,52 +6543,152 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           begin: const Offset(0, 0.15),
           end: Offset.zero,
         ).animate(_cardEntrance),
-        child: PageView.builder(
-          controller: _pageController,
-          itemCount: showInfinite ? 100000 : destinations.length,
-          onPageChanged: (index) {
-            final listIndex = destinations.isEmpty
-                ? 0
-                : (showInfinite ? (index % destinations.length) : index);
-            _onPageChanged(listIndex);
-            _startAutoPlay();
-          },
-          itemBuilder: (context, index) {
-            if (destinations.isEmpty) return const SizedBox.shrink();
-            final listIndex =
-                showInfinite ? (index % destinations.length) : index;
-            return AnimBuilder(
-              animation: _pageController,
-              builder: (context, child) {
-                double page =
-                    _pageController.hasClients && _pageController.page != null
-                        ? _pageController.page!
-                        : index.toDouble();
-                final diff = (page - index).abs();
-                final scale = (1 - diff * 0.08).clamp(0.0, 1.0);
-                final verticalOffset = diff * 20.0;
-                final opacity = (1 - diff * 0.6).clamp(0.4, 1.0);
+        child: Stack(
+          children: [
+            PageView.builder(
+              controller: controller,
+              itemCount: showInfinite ? 100000 : destinations.length,
+              onPageChanged: (index) {
+                final listIndex = destinations.isEmpty
+                    ? 0
+                    : (showInfinite ? (index % destinations.length) : index);
+                _onPageChanged(listIndex, useSearchResults: useSearchResults);
+                if (!useSearchResults) {
+                  _startAutoPlay();
+                }
+              },
+              itemBuilder: (context, index) {
+                if (destinations.isEmpty) return const SizedBox.shrink();
+                final listIndex =
+                    showInfinite ? (index % destinations.length) : index;
+                return AnimBuilder(
+                  animation: controller,
+                  builder: (context, child) {
+                    double page =
+                        controller.hasClients && controller.page != null
+                            ? controller.page!
+                            : index.toDouble();
+                    final diff = (page - index).abs();
+                    final scale = (1 - diff * 0.08).clamp(0.0, 1.0);
+                    final verticalOffset = diff * 20.0;
+                    final opacity = (1 - diff * 0.6).clamp(0.4, 1.0);
 
-                return Transform.translate(
-                  offset: Offset(0, verticalOffset),
-                  child: Transform.scale(
-                    scale: scale,
-                    child: Opacity(
-                      opacity: opacity,
-                      child: child,
-                    ),
+                    return Transform.translate(
+                      offset: Offset(0, verticalOffset),
+                      child: Transform.scale(
+                        scale: scale,
+                        child: Opacity(
+                          opacity: opacity,
+                          child: child,
+                        ),
+                      ),
+                    );
+                  },
+                  child: _buildDestinationCard(
+                    destinations[listIndex],
+                    heroPrefix:
+                        useSearchResults ? 'search_card_hero' : 'card_hero',
                   ),
                 );
               },
-              child: _buildDestinationCard(destinations[listIndex]),
-            );
-          },
+            ),
+            Positioned(
+              left: 0,
+              right: 0,
+              bottom: 18,
+              child: Center(
+                child: _buildCarouselPageIndicator(
+                  useSearchResults: useSearchResults,
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
   }
 
-  Widget _buildDestinationCard(Destination dest) {
+  Widget _buildCarouselPageIndicator({required bool useSearchResults}) {
+    final total = _carouselTotalCount(useSearchResults: useSearchResults);
+    if (total <= 1) return const SizedBox.shrink();
+
+    final current = _carouselGlobalIndex(useSearchResults: useSearchResults);
+    final canGoBack = current > 1;
+    final canGoForward = current < total;
+
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(999),
+      child: BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 14, sigmaY: 14),
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
+          decoration: BoxDecoration(
+            color: Colors.black.withOpacity(0.34),
+            borderRadius: BorderRadius.circular(999),
+            border: Border.all(color: Colors.white.withOpacity(0.18)),
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              _buildCarouselPageButton(
+                icon: Icons.chevron_left_rounded,
+                enabled: canGoBack,
+                onTap: () {
+                  _goToCarouselPage(
+                    -1,
+                    useSearchResults: useSearchResults,
+                  );
+                },
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 8),
+                child: Text(
+                  '$current/$total',
+                  style: const TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontSize: 12,
+                    fontWeight: FontWeight.w800,
+                    color: Colors.white,
+                    height: 1.0,
+                  ),
+                ),
+              ),
+              _buildCarouselPageButton(
+                icon: Icons.chevron_right_rounded,
+                enabled: canGoForward,
+                onTap: () {
+                  _goToCarouselPage(
+                    1,
+                    useSearchResults: useSearchResults,
+                  );
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildCarouselPageButton({
+    required IconData icon,
+    required bool enabled,
+    required VoidCallback onTap,
+  }) {
+    return GestureDetector(
+      onTap: enabled ? onTap : null,
+      child: Icon(
+        icon,
+        color: enabled ? Colors.white : Colors.white.withOpacity(0.32),
+        size: 20,
+      ),
+    );
+  }
+
+  Widget _buildDestinationCard(
+    Destination dest, {
+    String heroPrefix = 'card_hero',
+  }) {
     final isSaved = _savedNames.contains(dest.name);
     final isLiked = _likedNames.contains(dest.name);
     final likeCount = _fakeLikeCountFor(dest, isLiked: isLiked);
@@ -5712,7 +6699,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       child: Builder(
         builder: (cardContext) {
           return Hero(
-            tag: 'card_hero_${dest.name}',
+            tag: '${heroPrefix}_${dest.name}',
             flightShuttleBuilder: (_, __, ___, ____, _____) =>
                 const SizedBox.shrink(),
             placeholderBuilder: (context, size, child) =>
@@ -5976,6 +6963,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   Widget _buildBottomNav() {
     final items = [
       Icons.home_rounded,
+      Icons.search_rounded,
       Icons.bookmark_rounded,
       Icons.explore_rounded,
       Icons.person_rounded,
@@ -6003,51 +6991,14 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 final isActive = _navIndex == i;
                 return GestureDetector(
                   onTap: () async {
-                    if (i == 2) {
-                      // Mở khảo sát khi nhấn vào nút Explore (Safari-like)
-                      _stopAutoPlay();
-                      final result = await Navigator.push(
-                        context,
-                        PageRouteBuilder(
-                          pageBuilder: (_, __, ___) => SurveyScreen(
-                            authToken: widget.authToken,
-                          ),
-                          transitionDuration: const Duration(milliseconds: 500),
-                          reverseTransitionDuration:
-                              const Duration(milliseconds: 400),
-                          transitionsBuilder: (_, animation, __, child) {
-                            return FadeTransition(
-                              opacity: CurvedAnimation(
-                                parent: animation,
-                                curve: Curves.easeInOut,
-                              ),
-                              child: SlideTransition(
-                                position: Tween<Offset>(
-                                  begin: const Offset(0, 0.05),
-                                  end: Offset.zero,
-                                ).animate(CurvedAnimation(
-                                  parent: animation,
-                                  curve: Curves.easeOutCubic,
-                                )),
-                                child: child,
-                              ),
-                            );
-                          },
-                        ),
-                      );
-                      _startAutoPlay();
-                      if (result == 'go_to_saved_tours') {
-                        setState(() {
-                          _savedPlacesInitialTab = 1;
-                          _navIndex = 1;
-                        });
-                      }
+                    if (i == _tabSurvey) {
+                      await _openSurveyForCurrentLayout();
                     } else {
                       setState(() {
                         _navIndex = i;
                         _savedPlacesInitialTab = 0;
                       });
-                      if (i == 0) {
+                      if (i == _tabExplore) {
                         _startAutoPlay();
                       } else {
                         _stopAutoPlay();
@@ -6075,6 +7026,59 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           ),
         ),
       ),
+    );
+  }
+}
+
+class _ExploreStatItem extends StatelessWidget {
+  final String value;
+  final String label;
+
+  const _ExploreStatItem({
+    required this.value,
+    required this.label,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(
+          value,
+          textAlign: TextAlign.center,
+          style: const TextStyle(
+            fontFamily: 'Montserrat',
+            fontSize: 25,
+            fontWeight: FontWeight.w800,
+            color: Color(0xFFD4AF7A),
+            height: 1.0,
+            letterSpacing: 0.6,
+            fontFeatures: [FontFeature.tabularFigures()],
+            shadows: [
+              Shadow(
+                color: Color(0x552D2110),
+                blurRadius: 10,
+                offset: Offset(0, 3),
+              ),
+            ],
+          ),
+        ),
+        const SizedBox(height: 11),
+        Text(
+          label,
+          textAlign: TextAlign.center,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: TextStyle(
+            fontFamily: 'Montserrat',
+            fontSize: 11,
+            fontWeight: FontWeight.w900,
+            color: Colors.white.withOpacity(0.86),
+            letterSpacing: 1.4,
+          ),
+        ),
+      ],
     );
   }
 }
