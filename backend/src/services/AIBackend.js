@@ -80,11 +80,14 @@ const requestJson = async (path, payload, { timeoutMs = config.aiBackend.request
     return data;
 };
 
+export const warmUp = () => waitUntilReady();
+
 export const generateTrip = async (payload) => {
     await waitUntilReady();
     return requestJson('/api/trip/generate', payload);
 };
 
 export default {
+    warmUp,
     generateTrip
 };

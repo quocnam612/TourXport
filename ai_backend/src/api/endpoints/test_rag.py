@@ -7,11 +7,14 @@ URL: POST /api/trip/test-rag
 """
 
 from fastapi import APIRouter, Depends
-from pydantic import BaseModel, Field, ConfigDict
+from pydantic import BaseModel, Field, ConfigDict, model_validator
 from pydantic.alias_generators import to_camel
 from typing import List, Dict, Any, Optional
 
 from src.services.trip_generator.db_service import DBService, get_db_service
+
+MIN_BUDGET_PER_TRAVELER_DAY = 200_000
+MAX_BUDGET_PER_TRAVELER_DAY = 200_000_000
 
 
 router = APIRouter()
@@ -45,6 +48,7 @@ class TestRAGRequest(CamelModel):
     total_days: int = Field(
         default=2,
         ge=1,
+        le=7,
         description="Tổng số ngày đi để tính toán ngân sách"
     )
     adults: int = Field(
@@ -57,6 +61,21 @@ class TestRAGRequest(CamelModel):
         ge=0,
         description="Số trẻ em"
     )
+
+    @model_validator(mode='after')
+    def validate_total_travelers(self) -> 'TestRAGRequest':
+        if self.adults + self.children > 5:
+            raise ValueError("Tổng số người tham gia chuyến đi tối đa là 5")
+        if self.budget_level is not None:
+            total_travelers = self.adults + self.children
+            min_budget = total_travelers * self.total_days * MIN_BUDGET_PER_TRAVELER_DAY
+            max_budget = total_travelers * self.total_days * MAX_BUDGET_PER_TRAVELER_DAY
+            if not min_budget <= self.budget_level <= max_budget:
+                raise ValueError(
+                    f"Ngân sách phải nằm trong khoảng {min_budget:,} - {max_budget:,} VND"
+                )
+        return self
+
     top_k: int = Field(
         default=5,
         ge=1,

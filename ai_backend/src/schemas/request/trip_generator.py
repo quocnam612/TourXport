@@ -3,6 +3,9 @@ from pydantic import ConfigDict
 from pydantic.alias_generators import to_camel
 from typing import List, Optional, Union, Literal
 
+MIN_BUDGET_PER_TRAVELER_DAY = 200_000
+MAX_BUDGET_PER_TRAVELER_DAY = 200_000_000
+
 
 # Base model chung: tự chuyển snake_case (Python) sang camelCase (JSON)
 class CamelModel(BaseModel):
@@ -12,6 +15,12 @@ class CamelModel(BaseModel):
 class Travelers(CamelModel):
     adults: int = Field(default=1, ge=1, description="Số người lớn")
     children: int = Field(default=0, ge=0, description="Số trẻ em")
+
+    @model_validator(mode='after')
+    def validate_total_travelers(self) -> 'Travelers':
+        if self.adults + self.children > 5:
+            raise ValueError("Tổng số người tham gia chuyến đi tối đa là 5")
+        return self
 
 
 class Preferences(CamelModel):
@@ -41,12 +50,13 @@ class TripGenerateRequest(CamelModel):
     total_days: int = Field(
         ...,
         ge=1,
-        le=30,
-        description="Tổng số ngày (1-30)"
+        le=7,
+        description="Tổng số ngày (1-7)"
     )
     total_nights: Optional[int] = Field(
         default=None,
         ge=0,
+        le=7,
         description="Tổng số đêm. Nếu không truyền sẽ = totalDays - 1"
     )
     travelers: Travelers = Field(
@@ -59,9 +69,18 @@ class TripGenerateRequest(CamelModel):
     )
 
     @model_validator(mode='after')
-    def set_default_nights(self) -> 'TripGenerateRequest':
+    def validate_trip_limits(self) -> 'TripGenerateRequest':
         if self.total_nights is None:
             self.total_nights = max(self.total_days - 1, 0)
+
+        total_travelers = self.travelers.adults + self.travelers.children
+        min_budget = total_travelers * self.total_days * MIN_BUDGET_PER_TRAVELER_DAY
+        max_budget = total_travelers * self.total_days * MAX_BUDGET_PER_TRAVELER_DAY
+        if not min_budget <= self.preferences.budget_level <= max_budget:
+            raise ValueError(
+                f"Ngân sách phải nằm trong khoảng {min_budget:,} - {max_budget:,} VND"
+            )
+
         return self
 
     class Config:

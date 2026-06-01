@@ -6,7 +6,19 @@ import 'survey_result_screen.dart';
 
 class SurveyScreen extends StatefulWidget {
   final String? authToken;
-  const SurveyScreen({super.key, this.authToken});
+  final String userName;
+  final String? avatarUrl;
+  final bool embedded;
+  final ValueChanged<Object?>? onNavigate;
+
+  const SurveyScreen({
+    super.key,
+    this.authToken,
+    this.userName = 'Username',
+    this.avatarUrl,
+    this.embedded = false,
+    this.onNavigate,
+  });
 
   @override
   State<SurveyScreen> createState() => _SurveyScreenState();
@@ -15,6 +27,11 @@ class SurveyScreen extends StatefulWidget {
 class _SurveyScreenState extends State<SurveyScreen>
     with TickerProviderStateMixin {
   static const _totalPages = 3;
+  static const _maxTripDays = 7;
+  static const _maxTripNights = 7;
+  static const _maxTravelers = 5;
+  static const _minBudgetPerTravelerDay = 200000;
+  static const _maxBudgetPerTravelerDay = 200000000;
   int _currentPage = 0;
   final _answer = SurveyAnswer();
   late final PageController _pageCtrl;
@@ -31,6 +48,14 @@ class _SurveyScreenState extends State<SurveyScreen>
   int _nights = 2;
   int _adults = 1;
   int _children = 0;
+
+  int get _totalTravelers => _adults + _children;
+  int get _minBudget => _totalTravelers * _days * _minBudgetPerTravelerDay;
+  int get _maxBudget => _totalTravelers * _days * _maxBudgetPerTravelerDay;
+
+  double _normalizeBudget(double value) {
+    return value.clamp(_minBudget, _maxBudget).toDouble();
+  }
 
   static const _destinationOptions = [
     'Tuyên Quang',
@@ -132,7 +157,11 @@ class _SurveyScreenState extends State<SurveyScreen>
         ),
       ).then((result) {
         if (mounted && result == 'go_to_saved_tours') {
-          Navigator.pop(context, 'go_to_saved_tours');
+          if (widget.embedded) {
+            widget.onNavigate?.call(result);
+          } else {
+            Navigator.pop(context, 'go_to_saved_tours');
+          }
         }
       });
     }
@@ -144,6 +173,8 @@ class _SurveyScreenState extends State<SurveyScreen>
           duration: const Duration(milliseconds: 400),
           curve: Curves.easeInOutCubic);
       setState(() => _currentPage--);
+    } else if (widget.embedded) {
+      widget.onNavigate?.call('go_to_explore');
     } else {
       Navigator.pop(context);
     }
@@ -170,7 +201,9 @@ class _SurveyScreenState extends State<SurveyScreen>
 
     final customBudgetStr = _budgetController.text.trim();
     if (customBudgetStr.isNotEmpty) {
-      _answer.budgetPerPerson = double.tryParse(customBudgetStr);
+      final parsedBudget = double.tryParse(customBudgetStr);
+      _answer.budgetPerPerson =
+          parsedBudget == null ? null : _normalizeBudget(parsedBudget);
     } else {
       _answer.budgetPerPerson = null;
     }
@@ -226,6 +259,19 @@ class _SurveyScreenState extends State<SurveyScreen>
 
   @override
   Widget build(BuildContext context) {
+    final isDesktop = MediaQuery.of(context).size.width >= 800;
+
+    if (widget.embedded) {
+      return SafeArea(
+        child: Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 820),
+            child: _buildSurveyContent(),
+          ),
+        ),
+      );
+    }
+
     return Scaffold(
       body: Stack(
         fit: StackFit.expand,
@@ -242,27 +288,326 @@ class _SurveyScreenState extends State<SurveyScreen>
           SafeArea(
             child: FadeTransition(
               opacity: _entranceFade,
-              child: Column(
-                children: [
-                  _buildTopBar(),
-                  _buildProgressBar(),
-                  Expanded(
-                    child: PageView(
-                      controller: _pageCtrl,
-                      physics: const NeverScrollableScrollPhysics(),
+              child: isDesktop
+                  ? Row(
                       children: [
-                        _pageTripInfo(),
-                        _pageBudgetAndSpending(),
-                        _pageInterestsAndExperience(),
+                        ClipRect(
+                          child: BackdropFilter(
+                            filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
+                            child: _buildAppSidebar(),
+                          ),
+                        ),
+                        Expanded(
+                          child: Center(
+                            child: ConstrainedBox(
+                              constraints: const BoxConstraints(maxWidth: 820),
+                              child: _buildSurveyContent(),
+                            ),
+                          ),
+                        ),
+                      ],
+                    )
+                  : _buildSurveyContent(),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildSurveyContent() {
+    return Column(
+      children: [
+        _buildTopBar(),
+        _buildProgressBar(),
+        Expanded(
+          child: PageView(
+            controller: _pageCtrl,
+            physics: const NeverScrollableScrollPhysics(),
+            children: [
+              _pageTripInfo(),
+              _pageBudgetAndSpending(),
+              _pageInterestsAndExperience(),
+            ],
+          ),
+        ),
+        _buildBottomButton(),
+      ],
+    );
+  }
+
+  Widget _buildAppSidebar() {
+    final isGuest = widget.authToken == null || widget.authToken!.isEmpty;
+
+    return Container(
+      width: 260,
+      decoration: BoxDecoration(
+        color: const Color(0xFF070E0D).withOpacity(0.45),
+        border: const Border(
+          right: BorderSide(color: Colors.white12, width: 1),
+        ),
+      ),
+      child: Column(
+        children: [
+          const SizedBox(height: 36),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  boxShadow: [
+                    BoxShadow(
+                      color: const Color(0xFFD4AF7A).withOpacity(0.15),
+                      blurRadius: 20,
+                      spreadRadius: 1,
+                    ),
+                  ],
+                ),
+                child: Image.asset(
+                  'assets/images/logo.png',
+                  width: 64,
+                  height: 64,
+                  fit: BoxFit.contain,
+                ),
+              ),
+              const SizedBox(width: 14),
+              const Text(
+                'TourXport',
+                style: TextStyle(
+                  fontFamily: 'Montserrat',
+                  fontSize: 26,
+                  fontWeight: FontWeight.w900,
+                  color: Color(0xFFD4AF7A),
+                  letterSpacing: 1.2,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 28),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: Colors.white.withOpacity(0.1),
+                borderRadius: BorderRadius.circular(16),
+                border: Border.all(color: Colors.white.withOpacity(0.15)),
+              ),
+              child: Row(
+                children: [
+                  _buildSidebarAvatar(size: 38, iconSize: 20),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          widget.userName,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                        Text(
+                          'Thành viên',
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 11,
+                            color: Colors.white.withOpacity(0.9),
+                          ),
+                        ),
                       ],
                     ),
                   ),
-                  _buildBottomButton(),
                 ],
               ),
             ),
           ),
+          const SizedBox(height: 32),
+          Expanded(
+            child: ListView(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              children: [
+                _buildAppSidebarItem(
+                  icon: Icons.home_rounded,
+                  label: 'Khám phá',
+                  onTap: () => Navigator.pop(context, 'go_to_explore'),
+                ),
+                const SizedBox(height: 8),
+                _buildAppSidebarItem(
+                  icon: Icons.search_rounded,
+                  label: 'Tìm kiếm',
+                  onTap: () => Navigator.pop(context, 'go_to_search'),
+                ),
+                const SizedBox(height: 8),
+                _buildAppSidebarItem(
+                  icon: Icons.bookmark_rounded,
+                  label: 'Đã lưu',
+                  onTap: () => Navigator.pop(context, 'go_to_saved'),
+                ),
+                const SizedBox(height: 8),
+                _buildAppSidebarItem(
+                  icon: Icons.explore_rounded,
+                  label: 'Khảo sát',
+                  isActive: true,
+                  onTap: () {},
+                ),
+                const SizedBox(height: 8),
+                _buildAppSidebarItem(
+                  icon: Icons.person_rounded,
+                  label: 'Tài khoản',
+                  onTap: () => Navigator.pop(context, 'go_to_account'),
+                ),
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(20),
+            child: Material(
+              color: Colors.transparent,
+              child: InkWell(
+                onTap: () => Navigator.pop(
+                  context,
+                  isGuest ? 'go_to_account' : 'logout',
+                ),
+                borderRadius: BorderRadius.circular(16),
+                hoverColor: isGuest
+                    ? const Color(0xFFD4AF7A).withOpacity(0.1)
+                    : const Color(0xFFE74C3C).withOpacity(0.1),
+                child: Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+                  child: Row(
+                    children: [
+                      Icon(
+                        isGuest ? Icons.login_rounded : Icons.logout_rounded,
+                        color: isGuest
+                            ? const Color(0xFFD4AF7A)
+                            : const Color(0xFFE74C3C),
+                        size: 22,
+                      ),
+                      const SizedBox(width: 14),
+                      Text(
+                        isGuest ? 'Tài khoản' : 'Đăng xuất',
+                        style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                          color: isGuest
+                              ? const Color(0xFFD4AF7A)
+                              : const Color(0xFFE74C3C),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
         ],
+      ),
+    );
+  }
+
+  Widget _buildAppSidebarItem({
+    required IconData icon,
+    required String label,
+    required VoidCallback onTap,
+    bool isActive = false,
+  }) {
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(16),
+        hoverColor: Colors.white.withOpacity(0.05),
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 200),
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+          decoration: BoxDecoration(
+            color: isActive
+                ? const Color(0xFF2D6A4F).withOpacity(0.25)
+                : Colors.transparent,
+            borderRadius: BorderRadius.circular(16),
+            border: Border.all(
+              color: isActive
+                  ? const Color(0xFFD4AF7A).withOpacity(0.65)
+                  : Colors.transparent,
+              width: 1.2,
+            ),
+          ),
+          child: Row(
+            children: [
+              Icon(
+                icon,
+                color: isActive
+                    ? const Color(0xFFD4AF7A)
+                    : Colors.white.withOpacity(0.65),
+                size: 22,
+              ),
+              const SizedBox(width: 14),
+              Text(
+                label,
+                style: TextStyle(
+                  fontFamily: 'Montserrat',
+                  fontSize: 14,
+                  fontWeight: isActive ? FontWeight.bold : FontWeight.w600,
+                  color: isActive
+                      ? Colors.white
+                      : Colors.white.withOpacity(0.65),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSidebarAvatar({
+    required double size,
+    required double iconSize,
+  }) {
+    final avatarUrl = widget.avatarUrl?.trim() ?? '';
+
+    return Container(
+      width: size,
+      height: size,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: Colors.white.withOpacity(0.2),
+        border: Border.all(
+          color: Colors.white.withOpacity(0.4),
+          width: 1.5,
+        ),
+      ),
+      child: ClipOval(
+        child: avatarUrl.isNotEmpty
+            ? Image.network(
+                avatarUrl,
+                fit: BoxFit.cover,
+                errorBuilder: (_, __, ___) =>
+                    _buildSidebarAvatarPlaceholder(iconSize),
+              )
+            : _buildSidebarAvatarPlaceholder(iconSize),
+      ),
+    );
+  }
+
+  Widget _buildSidebarAvatarPlaceholder(double iconSize) {
+    return ColoredBox(
+      color: Colors.white.withOpacity(0.2),
+      child: Center(
+        child: Icon(
+          Icons.person_rounded,
+          color: Colors.white.withOpacity(0.9),
+          size: iconSize,
+        ),
       ),
     );
   }
@@ -508,8 +853,11 @@ class _SurveyScreenState extends State<SurveyScreen>
   Widget _buildBudgetSuggestion(String amount) {
     return GestureDetector(
       onTap: () {
+        final parsedAmount = double.tryParse(amount.replaceAll('.', ''));
         setState(() {
-          _budgetController.text = amount.replaceAll('.', '');
+          _budgetController.text = parsedAmount == null
+              ? amount.replaceAll('.', '')
+              : _normalizeBudget(parsedAmount).round().toString();
         });
       },
       child: Container(
@@ -532,7 +880,13 @@ class _SurveyScreenState extends State<SurveyScreen>
     );
   }
 
-  Widget _numberPickerCard(String title, int value, ValueChanged<int> onChanged) {
+  Widget _numberPickerCard(
+    String title,
+    int value,
+    ValueChanged<int> onChanged, {
+    int minValue = 0,
+    int maxValue = 999,
+  }) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
       decoration: BoxDecoration(
@@ -554,7 +908,7 @@ class _SurveyScreenState extends State<SurveyScreen>
           Row(
             children: [
               GestureDetector(
-                onTap: () => onChanged((value - 1).clamp(0, 999)),
+                onTap: () => onChanged((value - 1).clamp(minValue, maxValue).toInt()),
                 child: Container(
                   width: 36,
                   height: 36,
@@ -579,7 +933,7 @@ class _SurveyScreenState extends State<SurveyScreen>
               ),
               const SizedBox(width: 12),
               GestureDetector(
-                onTap: () => onChanged((value + 1).clamp(0, 999)),
+                onTap: () => onChanged((value + 1).clamp(minValue, maxValue).toInt()),
                 child: Container(
                   width: 36,
                   height: 36,
@@ -619,38 +973,45 @@ class _SurveyScreenState extends State<SurveyScreen>
           ),
           _divider(),
           _questionTitle('2. Bạn dự định đi trong bao nhiêu ngày, bao nhiêu đêm?'),
-          _subLabel('Nhập số ngày và số đêm dự định'),
+          _subLabel('Tối đa 7 ngày và 7 đêm'),
           Row(
             children: [
               Expanded(
                 child: _numberPickerCard('Số ngày', _days, (v) => setState(() {
                   _days = v;
-                  final minNights = (_days - 1).clamp(0, 365);
-                  final maxNights = _days + 1;
+                  final minNights = (_days - 1).clamp(0, _maxTripNights).toInt();
+                  final maxNights = (_days + 1).clamp(0, _maxTripNights).toInt();
                   if (_nights < minNights) _nights = minNights;
                   if (_nights > maxNights) _nights = maxNights;
-                })),
+                }), minValue: 1, maxValue: _maxTripDays),
               ),
               const SizedBox(width: 12),
               Expanded(
                 child: _numberPickerCard('Số đêm', _nights, (v) => setState(() {
                   _nights = v;
-                  final minDays = (_nights - 1).clamp(1, 365);
-                  final maxDays = _nights + 1;
+                  final minDays = (_nights - 1).clamp(1, _maxTripDays).toInt();
+                  final maxDays = (_nights + 1).clamp(1, _maxTripDays).toInt();
                   if (_days < minDays) _days = minDays;
                   if (_days > maxDays) _days = maxDays;
-                })),
+                }), minValue: 0, maxValue: _maxTripNights),
               ),
             ],
           ),
           _divider(),
           _questionTitle('3. Số người tham gia chuyến đi'),
-          _subLabel('Chọn số người lớn và số trẻ em'),
+          _subLabel('Tổng số người lớn và trẻ em tối đa 5 người'),
           Row(
             children: [
-              Expanded(child: _numberPickerCard('Người lớn', _adults, (v) => setState(() { _adults = v; }))),
+              Expanded(child: _numberPickerCard('Người lớn', _adults, (v) => setState(() {
+                _adults = v;
+                if (_adults + _children > _maxTravelers) {
+                  _children = _maxTravelers - _adults;
+                }
+              }), minValue: 1, maxValue: _maxTravelers - _children)),
               const SizedBox(width: 12),
-              Expanded(child: _numberPickerCard('Trẻ em', _children, (v) => setState(() { _children = v; }))),
+              Expanded(child: _numberPickerCard('Trẻ em', _children, (v) => setState(() {
+                _children = v;
+              }), minValue: 0, maxValue: _maxTravelers - _adults)),
             ],
           ),
         ],
@@ -660,8 +1021,8 @@ class _SurveyScreenState extends State<SurveyScreen>
   Widget _pageBudgetAndSpending() => _pageWrap(
         section: _sectionLabels[1],
         children: [
-          _questionTitle('4. Mức ngân sách mong muốn cho chuyến đi là bao nhiêu/người?'),
-          _subLabel('Nhập số tiền ước tính của bạn'),
+          _questionTitle('4. Mức ngân sách mong muốn cho cả chuyến đi là bao nhiêu?'),
+          _subLabel('Giới hạn theo số người và số ngày: từ $_minBudget đến $_maxBudget VNĐ'),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 6),
             decoration: BoxDecoration(

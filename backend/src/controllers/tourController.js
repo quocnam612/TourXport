@@ -53,6 +53,11 @@ export const getTours = (req, res, next) => {
 
 export const createTour = async (req, res, next) => {
     try {
+        const validationError = validator.validateTourCreatePayload(req.body);
+        if (validationError) {
+            return next(respond.httpError(validationError, 400));
+        }
+
         const aiTour = await AIBackend.generateTrip(req.body);
         const tourPayload = await parser.normalizeTourPayloadFromAI(aiTour, req.user.id, OpenRouteService);
         const tour = await TourDB.create(tourPayload);
