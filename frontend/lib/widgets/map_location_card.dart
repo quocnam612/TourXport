@@ -7,6 +7,8 @@ class MapLocationCard extends StatelessWidget {
   final bool showLocationCard;
   final String titleText;
   final String subtitleText;
+  final String startPointText;
+  final String destPointText;
   final int activeMobileTab;
   final LatLng destLocation;
   final LatLng? userLocation;
@@ -21,6 +23,8 @@ class MapLocationCard extends StatelessWidget {
     required this.showLocationCard,
     required this.titleText,
     required this.subtitleText,
+    required this.startPointText,
+    required this.destPointText,
     required this.activeMobileTab,
     required this.destLocation,
     required this.userLocation,
@@ -92,25 +96,14 @@ class MapLocationCard extends StatelessWidget {
                   children: [
                     // Thanh kéo và nút đóng ở trên cùng
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const SizedBox(width: 28), // Cân bằng với nút đóng
-                        Center(
-                          child: Container(
-                            width: 36,
-                            height: 4,
-                            decoration: BoxDecoration(
-                              color: Colors.white.withValues(alpha: 0.25),
-                              borderRadius: BorderRadius.circular(2),
-                            ),
-                          ),
-                        ),
                         GestureDetector(
                           onTap: () => onCardToggle(false),
                           child: Padding(
-                            padding: const EdgeInsets.all(4),
+                            padding: const EdgeInsets.only(top: 4),
                             child: Icon(
-                              Icons.close_rounded,
+                              Icons.keyboard_arrow_down_rounded,
                               color: Colors.white.withValues(alpha: 0.4),
                               size: 18,
                             ),
@@ -118,7 +111,6 @@ class MapLocationCard extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const SizedBox(height: 12),
                     // Nội dung chính
                     Row(
                       children: [
@@ -218,32 +210,67 @@ class MapLocationCard extends StatelessWidget {
               ),
               child: Row(
                 children: [
-                  Icon(
-                    activeMobileTab == 0
-                        ? Icons.location_searching_rounded
-                        : Icons.my_location_rounded,
-                    color: const Color(0xFFD4AF7A),
-                    size: 16,
-                  ),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    child: Text(
-                      titleText,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: const TextStyle(
-                        fontFamily: 'Montserrat',
-                        fontSize: 13,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.white,
+                  // Cột icon bên trái giống Google Maps
+                  Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(Icons.my_location_rounded, color: Colors.lightBlueAccent, size: 14),
+                      Container(
+                        height: 10,
+                        width: 2,
+                        margin: const EdgeInsets.symmetric(vertical: 4),
+                        decoration: BoxDecoration(
+                          color: Colors.white.withValues(alpha: 0.3),
+                          borderRadius: BorderRadius.circular(1),
+                        ),
                       ),
+                      const Icon(Icons.location_on_rounded, color: Colors.redAccent, size: 16),
+                    ],
+                  ),
+                  const SizedBox(width: 12),
+                  // Cột chữ hiển thị điểm đi và điểm đến
+                  Expanded(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          startPointText,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 14,
+                            fontWeight: FontWeight.w600,
+                            color: Color(0xFFD4AF7A),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 6),
+                          child: Container(
+                            height: 1,
+                            color: Colors.white.withValues(alpha: 0.1),
+                          ),
+                        ),
+                        Text(
+                          destPointText,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 14,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                   const SizedBox(width: 8),
                   Icon(
-                    Icons.expand_less_rounded,
+                    Icons.keyboard_arrow_up_rounded,
                     color: Colors.white.withValues(alpha: 0.45),
-                    size: 18,
+                    size: 20,
                   ),
                 ],
               ),

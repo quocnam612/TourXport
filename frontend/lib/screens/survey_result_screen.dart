@@ -9,6 +9,7 @@ import '../models/survey_answer.dart';
 import '../models/destination.dart';
 import 'place_detail.dart';
 import 'map_screen.dart';
+import 'tour_route_map_screen.dart';
 
 /// Kết quả khảo sát — hiển thị lịch trình AI gợi ý.
 class SurveyResultScreen extends StatefulWidget {
@@ -262,10 +263,11 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
 
   Widget _buildButtons() {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(24, 8, 24, 20),
+      padding: const EdgeInsets.fromLTRB(20, 8, 20, 20),
       child: Row(children: [
-        // Trang chủ
+        // Trang chủ (Rút gọn thành Icon)
         Expanded(
+          flex: 1,
           child: GestureDetector(
             onTap: () {
               Navigator.popUntil(context, (route) => route.isFirst);
@@ -274,19 +276,55 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
               height: 50,
               decoration: BoxDecoration(
                   color: Colors.white.withOpacity(0.1),
-                  borderRadius: BorderRadius.circular(28),
+                  borderRadius: BorderRadius.circular(25),
                   border: Border.all(color: Colors.white.withOpacity(0.2))),
               child: const Center(
-                  child: Text('Trang chủ',
-                      style: TextStyle(
-                          fontFamily: 'Montserrat',
-                          fontSize: 14,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.white))),
+                  child: Icon(Icons.home_rounded, color: Colors.white, size: 22)),
             ),
           ),
         ),
-        const SizedBox(width: 12),
+        const SizedBox(width: 8),
+        // Xem bản đồ
+        Expanded(
+          flex: 2,
+          child: GestureDetector(
+            onTap: () {
+              if (_aiResponse != null) {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => TourRouteMapScreen(tourData: _aiResponse!),
+                  ),
+                );
+              }
+            },
+            child: Container(
+              height: 50,
+              decoration: BoxDecoration(
+                  color: const Color(0xFF2D6A4F), // Màu xanh map-like
+                  borderRadius: BorderRadius.circular(25),
+                  boxShadow: [
+                    BoxShadow(
+                        color: const Color(0xFF2D6A4F).withOpacity(0.3),
+                        blurRadius: 12,
+                        offset: const Offset(0, 4)),
+                  ]),
+              child: const Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text('Bản đồ',
+                        style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 14,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.white)),
+                    SizedBox(width: 6),
+                    Icon(Icons.map_rounded, color: Colors.white, size: 18),
+                  ]),
+            ),
+          ),
+        ),
+        const SizedBox(width: 8),
         // Lưu lịch trình
         Expanded(
           flex: 2,
@@ -355,7 +393,7 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
               decoration: BoxDecoration(
                   gradient: const LinearGradient(
                       colors: [Color(0xFFD4AF7A), Color(0xFFB5956A)]),
-                  borderRadius: BorderRadius.circular(28),
+                  borderRadius: BorderRadius.circular(25),
                   boxShadow: [
                     BoxShadow(
                         color: const Color(0xFFD4AF7A).withOpacity(0.3),
@@ -365,10 +403,10 @@ class _SurveyResultScreenState extends State<SurveyResultScreen>
               child: const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text('Lưu lịch trình',
+                    Text('Lưu lại',
                         style: TextStyle(
                             fontFamily: 'Montserrat',
-                            fontSize: 15,
+                            fontSize: 14,
                             fontWeight: FontWeight.w600,
                             color: Colors.white)),
                     SizedBox(width: 6),

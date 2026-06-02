@@ -41,12 +41,21 @@ class MapMobileView extends StatelessWidget {
   Widget build(BuildContext context) {
     String titleText = '';
     String subtitleText = '';
+    String startPointText = '';
+    String destPointText = destination.name;
+
+    final String? fullAddress = manualStartLocationName ?? gpsAddress;
+    if (fullAddress != null) {
+      final split = NavigationHelper.splitAddress(fullAddress);
+      startPointText = split['title']!;
+    } else {
+      startPointText = userLocation != null ? 'Vị trí của tôi' : 'Hà Nội (Mặc định)';
+    }
 
     if (activeMobileTab == 0) {
       titleText = destination.name;
       subtitleText = 'Tỉnh/Thành: ${destination.province}';
     } else {
-      final String? fullAddress = manualStartLocationName ?? gpsAddress;
       if (fullAddress != null) {
         final split = NavigationHelper.splitAddress(fullAddress);
         titleText = split['title']!;
@@ -69,6 +78,8 @@ class MapMobileView extends StatelessWidget {
             showLocationCard: showLocationCard,
             titleText: titleText,
             subtitleText: subtitleText,
+            startPointText: startPointText,
+            destPointText: destPointText,
             activeMobileTab: activeMobileTab,
             destLocation: destLocation,
             userLocation: userLocation,

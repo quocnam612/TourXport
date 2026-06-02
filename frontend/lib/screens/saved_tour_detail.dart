@@ -5,6 +5,7 @@ import '../models/ai_trip_response.dart';
 import '../models/destination.dart';
 import 'place_detail.dart';
 import 'map_screen.dart';
+import 'tour_route_map_screen.dart';
 import '../api/api.dart';
 
 class SavedTourDetailScreen extends StatelessWidget {
@@ -36,118 +37,200 @@ class SavedTourDetailScreen extends StatelessWidget {
                   padding: const EdgeInsets.all(24.0),
                   child: _buildSummary(context),
                 )
-              : Column(
-                  children: [
-                    // Header
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(24, 16, 24, 8),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
-                            children: [
-                              _VisibilityBadge(icon: meta.visibilityIcon),
-                              const SizedBox(width: 10),
-                              Expanded(
-                                child: Text(
-                                  tourTitle,
-                                  style: const TextStyle(
-                                    fontFamily: 'Montserrat',
-                                    fontSize: 26,
-                                    fontWeight: FontWeight.w700,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ),
-                              IconButton(
-                                icon: const Icon(Icons.share_rounded),
-                                color: Colors.white,
-                                onPressed: () {},
-                              ),
-                            ],
-                          ),
-                          const SizedBox(height: 8),
-                          Text(
-                            'Chi tiết lịch trình đã lưu',
+              : detailContent,
+        ),
+      ]),
+    );
+  }
+
+  Widget _buildDetailContent(
+    BuildContext context,
+    List<AiDailyItinerary> itinerary,
+    _TourMeta meta,
+    bool isCompact,
+  ) {
+    return Column(
+      children: [
+        // Header
+        Padding(
+          padding: EdgeInsets.fromLTRB(
+            isCompact ? 20 : 24,
+            isCompact ? 10 : 16,
+            isCompact ? 20 : 24,
+            isCompact ? 4 : 8,
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  _VisibilityBadge(
+                    icon: meta.visibilityIcon,
+                    compact: isCompact,
+                  ),
+                  SizedBox(width: isCompact ? 8 : 10),
+                  Expanded(
+                    child: Text(
+                      tourTitle,
+                      maxLines: isCompact ? 2 : null,
+                      overflow: isCompact
+                          ? TextOverflow.ellipsis
+                          : TextOverflow.visible,
+                      style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: isCompact ? 20 : 26,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white,
+                        height: isCompact ? 1.25 : 1.2,
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: isCompact ? 36 : 48,
+                    height: isCompact ? 36 : 48,
+                    child: IconButton(
+                      icon: const Icon(Icons.share_rounded),
+                      iconSize: isCompact ? 20 : 24,
+                      color: Colors.white,
+                      padding: EdgeInsets.zero,
+                      onPressed: () {},
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(height: isCompact ? 4 : 8),
+              Text(
+                'Chi tiết lịch trình đã lưu',
+                style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontSize: isCompact ? 12 : 14,
+                    fontWeight: FontWeight.w400,
+                    color: Colors.white.withOpacity(0.7),
+                    height: 1.3),
+              ),
+              SizedBox(height: isCompact ? 10 : 16),
+              _TripMetaGrid(meta: meta, compact: isCompact),
+            ],
+          ),
+        ),
+        Expanded(
+          child: ListView.builder(
+            padding: EdgeInsets.fromLTRB(
+              isCompact ? 16 : 20,
+              isCompact ? 8 : 12,
+              isCompact ? 16 : 20,
+              12,
+            ),
+            itemCount: itinerary.length,
+            itemBuilder: (context, i) {
+              return _ItineraryDayCard(day: itinerary[i]);
+            },
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.fromLTRB(
+            isCompact ? 20 : 24,
+            8,
+            isCompact ? 20 : 24,
+            isCompact ? 14 : 20,
+          ),
+          child: Row(children: [
+            // Trang chủ
+            Expanded(
+              flex: 1,
+              child: GestureDetector(
+                onTap: () => Navigator.pop(context, 'go_to_explore'),
+                child: Container(
+                  height: isCompact ? 48 : 50,
+                  decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.1),
+                      borderRadius: BorderRadius.circular(25),
+                      border: Border.all(color: Colors.white.withOpacity(0.2))),
+                  child: const Center(
+                      child: Icon(Icons.home_rounded, color: Colors.white, size: 22)),
+                ),
+              ),
+            ),
+            const SizedBox(width: 8),
+            // Bản đồ
+            Expanded(
+              flex: 2,
+              child: GestureDetector(
+                onTap: () {
+                  AiTripResponse? response;
+                  try {
+                    response = AiTripResponse.fromJson(tourJson);
+                  } catch (_) {}
+                  if (response != null) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => TourRouteMapScreen(tourData: response!),
+                      ),
+                    );
+                  }
+                },
+                child: Container(
+                  height: isCompact ? 48 : 50,
+                  decoration: BoxDecoration(
+                      color: const Color(0xFF2D6A4F),
+                      borderRadius: BorderRadius.circular(25),
+                      boxShadow: [
+                        BoxShadow(
+                            color: const Color(0xFF2D6A4F).withOpacity(0.3),
+                            blurRadius: 12,
+                            offset: const Offset(0, 4)),
+                      ]),
+                  child: const Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text('Bản đồ',
                             style: TextStyle(
                                 fontFamily: 'Montserrat',
                                 fontSize: 14,
-                                fontWeight: FontWeight.w400,
-                                color: Colors.white.withOpacity(0.7),
-                                height: 1.4),
-                          ),
-                          const SizedBox(height: 16),
-                          _TripMetaGrid(meta: meta),
-                        ],
-                      ),
-                    ),
-                    Expanded(
-                      child: ListView.builder(
-                        padding: const EdgeInsets.fromLTRB(20, 12, 20, 12),
-                        itemCount: itinerary.length,
-                        itemBuilder: (context, i) {
-                          return _ItineraryDayCard(day: itinerary[i]);
-                        },
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(24, 8, 24, 20),
-                      child: Row(children: [
-                        Expanded(
-                          child: GestureDetector(
-                            onTap: () => Navigator.popUntil(context, (route) => route.isFirst),
-                            child: Container(
-                              height: 50,
-                              decoration: BoxDecoration(
-                                  color: Colors.white.withOpacity(0.1),
-                                  borderRadius: BorderRadius.circular(28),
-                                  border: Border.all(color: Colors.white.withOpacity(0.2))),
-                              child: const Center(
-                                  child: Text('Trang chủ',
-                                      style: TextStyle(
-                                          fontFamily: 'Montserrat',
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.w500,
-                                          color: Colors.white))),
-                            ),
-                          ),
-                        ),
-                        const SizedBox(width: 12),
-                        Expanded(
-                          flex: 2,
-                          child: GestureDetector(
-                            onTap: () => Navigator.pop(context),
-                            child: Container(
-                              height: 50,
-                              decoration: BoxDecoration(
-                                  gradient: const LinearGradient(
-                                      colors: [Color(0xFFD4AF7A), Color(0xFFB5956A)]),
-                                  borderRadius: BorderRadius.circular(28),
-                                  boxShadow: [
-                                    BoxShadow(
-                                        color: const Color(0xFFD4AF7A).withOpacity(0.3),
-                                        blurRadius: 12,
-                                        offset: const Offset(0, 4)),
-                                  ]),
-                              child: const Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text('Đóng',
-                                        style: TextStyle(
-                                            fontFamily: 'Montserrat',
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.w600,
-                                            color: Colors.white)),
-                                  ]),
-                            ),
-                          ),
-                        ),
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white)),
+                        SizedBox(width: 6),
+                        Icon(Icons.map_rounded, color: Colors.white, size: 18),
                       ]),
-                    ),
-                  ],
                 ),
+              ),
+            ),
+            const SizedBox(width: 8),
+            // Đóng
+            Expanded(
+              flex: 2,
+              child: GestureDetector(
+                onTap: () => Navigator.pop(context),
+                child: Container(
+                  height: isCompact ? 48 : 50,
+                  decoration: BoxDecoration(
+                      gradient: const LinearGradient(
+                          colors: [Color(0xFFD4AF7A), Color(0xFFB5956A)]),
+                      borderRadius: BorderRadius.circular(25),
+                      boxShadow: [
+                        BoxShadow(
+                            color: const Color(0xFFD4AF7A).withOpacity(0.3),
+                            blurRadius: 12,
+                            offset: const Offset(0, 4)),
+                      ]),
+                  child: const Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text('Đóng',
+                            style: TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 14,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white)),
+                      ]),
+                ),
+              ),
+            ),
+          ]),
         ),
-      ]),
+      ],
     );
   }
 
