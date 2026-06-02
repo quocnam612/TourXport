@@ -72,7 +72,9 @@ const routeContext = (fromItem, toItem) => {
 };
 
 const shouldSkipRouteError = (message) => {
-    return /approximated route distance must not be greater than/i.test(message);
+    return /approximated route distance must not be greater than/i.test(message)
+        || /could not find routable point/i.test(message)
+        || /within a radius of/i.test(message);
 };
 
 export const getDirections = async (fromItem, toItem, { transportMode = 'auto' } = {}) => {
@@ -155,11 +157,17 @@ export const buildDayRoutes = async (items, options = {}) => {
     const routes = [];
     const routableItems = items.filter((item) => isCoordinate(item?.location?.coordinates));
 
+    if (routableItems.length < 2) {
+        return null;
+    }
+
     for (let index = 0; index < routableItems.length - 1; index += 1) {
         const route = await getDirections(routableItems[index], routableItems[index + 1], options);
-        if (route) {
-            routes.push(route);
+        if (!route) {
+            return null;
         }
+
+        routes.push(route);
     }
 
     return routes;

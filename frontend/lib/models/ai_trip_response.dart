@@ -93,6 +93,8 @@ class AiActivity {
   final String? placeId;
   final String? placeName;
   final String? sourceCollection;
+  final double? latitude;
+  final double? longitude;
 
   AiActivity({
     required this.timeSlot,
@@ -101,6 +103,8 @@ class AiActivity {
     this.placeId,
     this.placeName,
     this.sourceCollection,
+    this.latitude,
+    this.longitude,
   });
 
   factory AiActivity.fromJson(Map<String, dynamic> json) {
@@ -119,6 +123,28 @@ class AiActivity {
       }
     }
 
+    double? lat;
+    double? lng;
+    final location = json['location'];
+    if (location is Map &&
+        location['coordinates'] is List &&
+        location['coordinates'].length >= 2) {
+      final coordinates = location['coordinates'] as List;
+      final first = coordinates[0];
+      final second = coordinates[1];
+      if (first is num && second is num) {
+        lng = first.toDouble();
+        lat = second.toDouble();
+      }
+    } else {
+      final latValue = json['latitude'];
+      final lngValue = json['longitude'];
+      if (latValue is num && lngValue is num) {
+        lat = latValue.toDouble();
+        lng = lngValue.toDouble();
+      }
+    }
+
     return AiActivity(
       timeSlot: slot,
       rationale: json['rationale'] ?? json['notes'] ?? '',
@@ -126,7 +152,12 @@ class AiActivity {
       placeId: json['placeId'] ?? json['source']?['id'],
       placeName: json['placeName'] ?? json['title'] ?? 'Địa điểm',
       // support several possible field names in the AI/backend JSON: 'collection' or 'sourceCollection'
-      sourceCollection: json['source']?['collection'] ?? json['source']?['sourceCollection'] ?? json['sourceCollection'] ?? json['collection'],
+      sourceCollection: json['source']?['collection'] ??
+          json['source']?['sourceCollection'] ??
+          json['sourceCollection'] ??
+          json['collection'],
+      latitude: lat,
+      longitude: lng,
     );
   }
 }

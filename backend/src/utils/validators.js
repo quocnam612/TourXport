@@ -1,5 +1,11 @@
 import { parseBoolean, parseDateToWeekday, parseGps, parseNumber, parsePositiveInt, parseTimeToMinutes } from './parser.js';
 
+const MAX_TOUR_DAYS = 7;
+const MAX_TOUR_NIGHTS = 7;
+const MAX_TOUR_TRAVELERS = 5;
+const MIN_BUDGET_PER_TRAVELER_DAY = 200000;
+const MAX_BUDGET_PER_TRAVELER_DAY = 200000000;
+
 export const isValidEmail = (email) => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
@@ -126,6 +132,54 @@ export const validateTourListQuery = (query) => {
     return null;
 };
 
+export const validateTourCreatePayload = (payload) => {
+    const totalDays = parsePositiveInt(payload?.totalDays);
+    if (totalDays === undefined) {
+        return 'totalDays must be a positive integer';
+    }
+    if (totalDays > MAX_TOUR_DAYS) {
+        return `totalDays must be less than or equal to ${MAX_TOUR_DAYS}`;
+    }
+
+    const totalNights = parseNumber(payload?.totalNights);
+    if (totalNights === undefined || totalNights < 0 || !Number.isInteger(totalNights)) {
+        return 'totalNights must be an integer greater than or equal to 0';
+    }
+    if (totalNights > MAX_TOUR_NIGHTS) {
+        return `totalNights must be less than or equal to ${MAX_TOUR_NIGHTS}`;
+    }
+
+    const adults = parsePositiveInt(payload?.travelers?.adults);
+    if (adults === undefined) {
+        return 'travelers.adults must be a positive integer';
+    }
+
+    const children = payload?.travelers?.children === undefined || payload?.travelers?.children === null
+        ? 0
+        : parseNumber(payload.travelers.children);
+    if (children === undefined || children < 0 || !Number.isInteger(children)) {
+        return 'travelers.children must be an integer greater than or equal to 0';
+    }
+
+    if (adults + children > MAX_TOUR_TRAVELERS) {
+        return `total travelers must be less than or equal to ${MAX_TOUR_TRAVELERS}`;
+    }
+
+    const budgetLevel = parseNumber(payload?.preferences?.budgetLevel);
+    if (budgetLevel === undefined || budgetLevel < 0 || !Number.isInteger(budgetLevel)) {
+        return 'preferences.budgetLevel must be an integer greater than or equal to 0';
+    }
+
+    const totalTravelers = adults + children;
+    const minBudget = totalTravelers * totalDays * MIN_BUDGET_PER_TRAVELER_DAY;
+    const maxBudget = totalTravelers * totalDays * MAX_BUDGET_PER_TRAVELER_DAY;
+    if (budgetLevel < minBudget || budgetLevel > maxBudget) {
+        return `preferences.budgetLevel must be between ${minBudget} and ${maxBudget}`;
+    }
+
+    return null;
+};
+
 export const validateTourUpdatePayload = (payload) => {
     if (!payload || Object.keys(payload).length === 0) {
         return 'No fields provided for update';
@@ -147,5 +201,6 @@ export default {
     validateLocationLookupQuery,
     validateLocationListQuery,
     validateTourListQuery,
+    validateTourCreatePayload,
     validateTourUpdatePayload
 };
