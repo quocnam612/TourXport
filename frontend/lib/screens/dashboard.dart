@@ -4,8 +4,11 @@ import 'dart:ui';
 import 'package:flutter/foundation.dart'
     show TargetPlatform, defaultTargetPlatform, kIsWeb;
 import 'package:flutter/material.dart';
+import '../l10n/app_localizations.dart';
+import 'package:geolocator/geolocator.dart';
 
 import '../api/api.dart';
+import '../widgets/weather_widget.dart';
 import '../widgets/responsive_builder.dart';
 import '../models/destination.dart';
 import '../widgets/anim_builder.dart';
@@ -66,6 +69,180 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   static const int _tabSaved = 2;
   static const int _tabSurvey = 3;
   static const int _tabProfile = 4;
+
+  bool get _isVi => Localizations.localeOf(context).languageCode == 'vi';
+
+  String _translateProvince(String prov) {
+    if (_isVi) return prov;
+    final maps = {
+      'Đà Nẵng': 'Da Nang',
+      'Hà Nội': 'Hanoi',
+      'TP. Hồ Chí Minh': 'Ho Chi Minh City',
+      'Quảng Nam': 'Quang Nam',
+      'Quảng Ninh': 'Quang Ninh',
+      'Thừa Thiên Huế': 'Thua Thien Hue',
+      'Khánh Hòa': 'Khanh Hoa',
+      'Lào Cai': 'Lao Cai',
+      'Ninh Bình': 'Ninh Binh',
+      'Bình Thuận': 'Binh Thuan',
+      'Kiên Giang': 'Kien Giang',
+      'Bà Rịa - Vũng Tàu': 'Ba Ria - Vung Tau',
+      'Quảng Bình': 'Quang Binh',
+      'An Giang': 'An Giang',
+      'Bạc Liêu': 'Bac Lieu',
+      'Bắc Giang': 'Bac Giang',
+      'Bắc Kạn': 'Bac Kan',
+      'Bắc Ninh': 'Bac Ninh',
+      'Bến Tre': 'Ben Tre',
+      'Bình Dương': 'Binh Duong',
+      'Bình Định': 'Binh Dinh',
+      'Bình Phước': 'Binh Phước',
+      'Cà Mau': 'Ca Mau',
+      'Cao Bằng': 'Cao Bang',
+      'Cần Thơ': 'Can Tho',
+      'Đắk Lắk': 'Dak Lak',
+      'Đắk Nông': 'Dak Nong',
+      'Điện Biên': 'Dien Bien',
+      'Đồng Nai': 'Dong Nai',
+      'Đồng Tháp': 'Dong Thap',
+      'Gia Lai': 'Gia Lai',
+      'Hà Giang': 'Ha Giang',
+      'Hà Nam': 'Ha Nam',
+      'Hà Tĩnh': 'Ha Tinh',
+      'Hải Dương': 'Hai Duong',
+      'Hải Phòng': 'Hai Phong',
+      'Hậu Giang': 'Hau Giang',
+      'Hòa Bình': 'Hoa Binh',
+      'Hưng Yên': 'Hung Yen',
+      'Kon Tum': 'Kon Tum',
+      'Lai Châu': 'Lai Chau',
+      'Lạng Sơn': 'Lang Son',
+      'Lâm Đồng': 'Lam Dong',
+      'Long An': 'Long An',
+      'Nam Định': 'Nam Dinh',
+      'Nghệ An': 'Nghe An',
+      'Ninh Thuận': 'Ninh Thuan',
+      'Phú Thọ': 'Phu Tho',
+      'Phú Yên': 'Phu Yen',
+      'Quảng Ngãi': 'Quang Ngai',
+      'Quảng Trị': 'Quang Tri',
+      'Sóc Trăng': 'Soc Trang',
+      'Sơn La': 'Son La',
+      'Tây Ninh': 'Tay Ninh',
+      'Thái Bình': 'Thai Binh',
+      'Thái Nguyên': 'Thai Nguyen',
+      'Thanh Hóa': 'Thanh Hoa',
+      'Tiền Giang': 'Tien Giang',
+      'Trà Vinh': 'Tra Vinh',
+      'Tuyên Quang': 'Tuyen Quang',
+      'Vĩnh Long': 'Vinh Long',
+      'Vĩnh Phúc': 'Vinh Phuc',
+      'Yên Bái': 'Yen Bai',
+    };
+    return maps[prov] ?? prov;
+  }
+
+  String _translateType(String type) {
+    if (_isVi) return type;
+    final maps = {
+      'Địa điểm': 'Places',
+      'Khách sạn': 'Hotels',
+      'Nhà hàng': 'Restaurants',
+      'Tất cả': 'All',
+      'Du lịch': 'Explore',
+      'Chỗ ở': 'Stay',
+      'Ăn uống': 'Dining',
+    };
+    return maps[type] ?? type;
+  }
+
+  String _translateTypeLabel(String value) {
+    switch (value) {
+      case 'all': return 'All';
+      case 'hotels': return 'Stay';
+      case 'restaurants': return 'Dining';
+      case 'places':
+      default: return 'Explore';
+    }
+  }
+
+  String _translateTag(String tag) {
+    if (_isVi) return tag;
+    final maps = {
+      // Place Tags
+      'Điểm du lịch': 'Tourist Attraction',
+      'Danh lam & Thắng cảnh': 'Sights & Landmarks',
+      'Thiên nhiên & Công viên': 'Nature & Parks',
+      'Nơi mua sắm': 'Shopping',
+      'Hoạt động ngoài trời': 'Outdoor Activities',
+      'Bảo tàng': 'Museums',
+      'Thông tin cho khách du lịch': 'Traveler Resources',
+      'Vui chơi & Giải trí': 'Fun & Games',
+      'Chuyến tham quan': 'Tours',
+      'Phương tiện giao thông': 'Transportation',
+      'Công viên nước & giải trí': 'Water & Amusement Parks',
+      'Sự kiện': 'Events',
+      'Đồ ăn & Đồ uống': 'Food & Drink',
+      'Lớp học & hội thảo': 'Classes & Workshops',
+      'Hòa nhạc & chương trình biểu diễn': 'Concerts & Shows',
+      'Sòng bạc & Đánh bạc': 'Casinos & Gambling',
+      'Sở thú & Thủy cung': 'Zoos & Aquariums',
+      'Chuyến tham quan bằng thuyền & thể thao dưới nước': 'Boat Tours & Water Sports',
+      'Spa & Sức khỏe': 'Spas & Wellness',
+      'Giải trí về đêm': 'Nightlife',
+      'Khác': 'Other',
+      // Hotel Tags
+      'Khách sạn': 'Hotels',
+      'Khách sạn / Nhà nghỉ': 'Hotel / Motel',
+      'Khu nghỉ dưỡng': 'Resorts',
+      'Khách sạn nhỏ': 'Small Hotels',
+      'Nhà nghỉ': 'Motels',
+      'Nhà trọ': 'Inns',
+      'Cơ sở lưu trú đặc biệt': 'Specialty Lodging',
+      'Khách sạn đặc biệt': 'Specialty Hotels',
+      'Nhà khách': 'Guesthouses',
+      'B&B': 'B&Bs',
+      'Cơ sở kinh doanh có dịch vụ giới hạn': 'Limited Service Properties',
+      'Nhà trọ đặc biệt': 'Specialty Inns',
+      'Nhà ngoại ô': 'Suburban Lodging',
+      'Biệt thự': 'Villas',
+      'Khách sạn nhỏ sang trọng': 'Luxury Small Hotels',
+      'B&B đặc biệt': 'Specialty B&Bs',
+      'Nhà gỗ nhỏ/Khu cắm trại': 'Cabins / Campsites',
+      'Khách sạn có căn hộ': 'Apartment Hotels',
+      'Khu nghỉ dưỡng (Trọn gói)': 'All-Inclusive Resorts',
+      'Nhà trại': 'Farm Lodging',
+      // Restaurant Tags
+      'Nhà hàng': 'Restaurants',
+      'Ngồi xuống': 'Table Service',
+      'Quán cafe': 'Cafes',
+      'Đồ ăn nhanh': 'Quick Bites',
+    };
+    return maps[tag] ?? tag;
+  }
+
+  String _getLocalizedDisplay(String val) {
+    if (_isVi) return val;
+    final prov = _translateProvince(val);
+    if (prov != val) return prov;
+    final type = _translateType(val);
+    if (type != val) return type;
+    final tag = _translateTag(val);
+    if (tag != val) return tag;
+    return val;
+  }
+
+  String _translateCategoryHeader(String cat) {
+    if (_isVi) return cat.toLowerCase();
+    final maps = {
+      'VỊNH BIỂN': 'bays & beaches',
+      'NÚI RỪNG': 'mountains & forests',
+      'DI SẢN': 'heritage sites',
+      'ĐÔ THỊ': 'urban centers',
+    };
+    return maps[cat] ?? cat.toLowerCase();
+  }
+
 
   int _currentIndex = 0;
   int _previousIndex = 0;
@@ -129,6 +306,41 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   int _searchTotalPages = 1;
   bool _isChangingCarouselPage = false;
   final Map<String, _DestinationPageResult> _cityCache = {};
+  double _gpsLat = 21.0285; // Fallback to Hanoi
+  double _gpsLon = 105.8542;
+  bool _hasGps = false;
+
+  Future<void> _initGps() async {
+    try {
+      final permission = await Permission.locationWhenInUse.status;
+      if (permission == PermissionStatus.granted) {
+        final position = await Geolocator.getCurrentPosition(
+          desiredAccuracy: LocationAccuracy.low,
+          timeLimit: const Duration(seconds: 3),
+        );
+        if (!mounted) return;
+        setState(() {
+          _gpsLat = position.latitude;
+          _gpsLon = position.longitude;
+          _hasGps = true;
+        });
+      } else {
+        final status = await Permission.locationWhenInUse.request();
+        if (status == PermissionStatus.granted) {
+          final position = await Geolocator.getCurrentPosition(
+            desiredAccuracy: LocationAccuracy.low,
+            timeLimit: const Duration(seconds: 3),
+          );
+          if (!mounted) return;
+          setState(() {
+            _gpsLat = position.latitude;
+            _gpsLon = position.longitude;
+            _hasGps = true;
+          });
+        }
+      }
+    } catch (_) {}
+  }
 
   static const List<String> vietnameseProvinces = [
     'Đà Nẵng',
@@ -314,6 +526,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     _loadProfile();
     _fetchDestinations();
     _startAutoPlay();
+    _initGps();
   }
 
   @override
@@ -445,14 +658,14 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   String get _selectedLocationLabel {
     switch (_selectedLocationKind) {
       case 'all':
-        return 'Tất cả';
+        return _isVi ? 'Tất cả' : 'All';
       case 'hotels':
-        return 'Khách sạn';
+        return _isVi ? 'Khách sạn' : 'Hotel';
       case 'restaurants':
-        return 'Nhà hàng';
+        return _isVi ? 'Nhà hàng' : 'Restaurant';
       case 'places':
       default:
-        return 'Địa điểm';
+        return _isVi ? 'Địa điểm' : 'Place';
     }
   }
 
@@ -471,25 +684,26 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   String _selectedLocationKindLabel(String value) {
     switch (value) {
       case 'all':
-        return 'Tất cả';
+        return _isVi ? 'Tất cả' : 'All';
       case 'hotels':
-        return 'Chỗ ở';
+        return _isVi ? 'Chỗ ở' : 'Stay';
       case 'restaurants':
-        return 'Ăn uống';
+        return _isVi ? 'Ăn uống' : 'Dining';
       case 'places':
       default:
-        return 'Du lịch';
+        return _isVi ? 'Du lịch' : 'Explore';
     }
   }
 
   String _tagsSummary(Set<String> tags) {
     if (tags.isEmpty) {
-      return 'Chọn tags';
+      return _isVi ? 'Chọn tags' : 'Select tags';
     }
+    final displayTags = tags.map((t) => _getLocalizedDisplay(t));
     if (tags.length <= 2) {
-      return tags.join(', ');
+      return displayTags.join(', ');
     }
-    return '${tags.length} tags đã chọn';
+    return _isVi ? '${tags.length} tags đã chọn' : '${tags.length} tags selected';
   }
 
   Future<String?> _showSingleSelectPopup({
@@ -587,11 +801,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
                         final optionIndex = clearLabel == null ? index : index - 1;
                         final option = options[optionIndex];
-                        final isSelected = option == selectedValue;
+                        final isSelected = selectedValue != null && _getLocalizedDisplay(option) == _getLocalizedDisplay(selectedValue);
                         return ListTile(
                           contentPadding: const EdgeInsets.symmetric(horizontal: 8),
                           title: Text(
-                            option,
+                            _getLocalizedDisplay(option),
                             style: TextStyle(
                               fontFamily: 'Montserrat',
                               fontSize: 14,
@@ -687,7 +901,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         child: Align(
                           alignment: Alignment.centerLeft,
                           child: Text(
-                            'Chọn một hoặc nhiều mục',
+                            _isVi ? 'Chọn một hoặc nhiều mục' : 'Select one or more items',
                             style: TextStyle(
                               fontFamily: 'Montserrat',
                               fontSize: 12,
@@ -742,7 +956,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                         const SizedBox(width: 4),
                                       ],
                                       Text(
-                                        option,
+                                        _getLocalizedDisplay(option),
                                         style: TextStyle(
                                           fontFamily: 'Montserrat',
                                           fontSize: 12,
@@ -774,9 +988,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                               ),
                             ),
                             onPressed: () => Navigator.pop(context, tempSelection),
-                            child: const Text(
-                              'Chọn xong',
-                              style: TextStyle(
+                            child: Text(
+                              _isVi ? 'Chọn xong' : 'Done',
+                              style: const TextStyle(
                                 fontFamily: 'Montserrat',
                                 fontSize: 14,
                                 fontWeight: FontWeight.w800,
@@ -1935,19 +2149,19 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     String periodLabel = '';
 
     if (_selectedTrendFilter == 'day') {
-      periodTag = 'HOT HÔM NAY';
+      periodTag = _isVi ? 'HOT HÔM NAY' : 'HOT TODAY';
       periodLabel = 'day';
       for (int i = 0; i < pool.length; i++) {
         if (i % 3 == 0) periodDestinations.add(pool[i]);
       }
     } else if (_selectedTrendFilter == 'week') {
-      periodTag = 'XU HƯỚNG TUẦN';
+      periodTag = _isVi ? 'XU HƯỚNG TUẦN' : 'WEEK TRENDING';
       periodLabel = 'week';
       for (int i = 0; i < pool.length; i++) {
         if (i % 3 == 1) periodDestinations.add(pool[i]);
       }
     } else {
-      periodTag = 'ĐỀ XUẤT THÁNG';
+      periodTag = _isVi ? 'ĐỀ XUẤT THÁNG' : 'MONTH SUGGESTED';
       periodLabel = 'month';
       for (int i = 0; i < pool.length; i++) {
         if (i % 3 == 2) periodDestinations.add(pool[i]);
@@ -1961,7 +2175,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     return periodDestinations.take(10).map((dest) {
       final name = dest.name;
       final prov = dest.province;
-      final price = dest.price.isNotEmpty ? dest.price : 'Chỉ từ 1.500.000 đ';
+      final price = dest.price.isNotEmpty ? dest.price : (_isVi ? 'Chỉ từ 1.5 triệu đồng' : 'From 1.5 million VND');
       
       String reason = '';
       String tag = periodTag;
@@ -1969,35 +2183,54 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       int reviews = 800 + (dest.name.length * 77) % 2500;
 
       if (name.toLowerCase().contains('hạ long') || name.toLowerCase().contains('ha long')) {
-        reason = 'Thời tiết tại Vịnh ${prov} tuần này vô cùng dịu mát, nước biển trong xanh lý tưởng để trải nghiệm du thuyền 5 sao đẳng cấp.';
-        tag = 'DU THUYỀN 5 SAO';
+        reason = _isVi 
+            ? 'Thời tiết tại Vịnh ${prov} tuần này vô cùng dịu mát, nước biển trong xanh lý tưởng để trải nghiệm du thuyền 5 sao đẳng cấp.'
+            : 'The weather in ${_translateProvince(prov)} Bay this week is exceptionally cool, with clear blue waters perfect for a luxury 5-star cruise experience.';
+        tag = _isVi ? 'DU THUYỀN 5 SAO' : '5-STAR CRUISE';
       } else if (name.toLowerCase().contains('đà nẵng') || name.toLowerCase().contains('da nang')) {
-        reason = 'Nhiệt độ hoàn hảo 26°C. Lễ hội pháo hoa quốc tế vừa diễn ra thu hút đông đảo du khách ghé thăm các cây cầu huyền thoại.';
-        tag = 'PHÁO HOA QUỐC TẾ';
+        reason = _isVi 
+            ? 'Nhiệt độ hoàn hảo 26°C. Lễ hội pháo hoa quốc tế vừa diễn ra thu hút đông đảo du khách ghé thăm các cây cầu huyền thoại.'
+            : 'Perfect temperature of 26°C. The international fireworks festival recently held is drawing crowds to visit the legendary bridges.';
+        tag = _isVi ? 'PHÁO HOA QUỐC TẾ' : 'FIREWORKS FESTIVAL';
       } else if (name.toLowerCase().contains('hội an') || name.toLowerCase().contains('hoi an')) {
-        reason = 'Khí hậu bắt đầu vào mùa khô ráo tuyệt đẹp. Phố đèn lồng lung linh lộng lẫy và lễ hội hoa đăng bên sông Hoài đang diễn ra rất náo nhiệt.';
-        tag = 'PHỐ CỔ HOÀI CỔ';
+        reason = _isVi 
+            ? 'Khí hậu bắt đầu vào mùa khô ráo tuyệt đẹp. Phố đèn lồng lung linh lộng lẫy và lễ hội hoa đăng bên sông Hoài đang diễn ra rất náo nhiệt.'
+            : 'The dry season starts with beautiful weather. The lanternlit streets are gorgeous and the flower lantern festival by Hoai River is bustling.';
+        tag = _isVi ? 'PHỐ CỔ HOÀI CỔ' : 'ANCIENT TOWN';
       } else if (name.toLowerCase().contains('phong nha') || name.toLowerCase().contains('quảng bình') || name.toLowerCase().contains('quang binh')) {
-        reason = 'Thời tiết khô ráo rất thích hợp để thám hiểm hệ thống hang động thạch nhũ tráng lệ bậc nhất thế giới.';
-        tag = 'KHÁM PHÁ HANG ĐỘNG';
+        reason = _isVi 
+            ? 'Thời tiết khô ráo rất thích hợp để thám hiểm hệ thống hang động thạch nhũ tráng lệ bậc nhất thế giới.'
+            : 'Dry weather is highly suitable for exploring the world\'s most magnificent stalactite cave systems.';
+        tag = _isVi ? 'KHÁM PHÁ HANG ĐỘNG' : 'CAVE EXPLORATION';
       } else if (name.toLowerCase().contains('phú quốc') || name.toLowerCase().contains('phu quoc')) {
-        reason = 'Biển cực kỳ êm, nắng vàng rực rỡ và nước biển trong vắt như pha lê, hoàn hảo cho tour lặn biển ngắm san hô.';
-        tag = 'THIÊN ĐƯỜNG BIỂN';
+        reason = _isVi 
+            ? 'Biển cực kỳ êm, nắng vàng rực rỡ và nước biển trong vắt như pha lê, hoàn hảo cho tour lặn biển ngắm san hô.'
+            : 'The sea is extremely calm, with golden sunshine and crystal-clear water, perfect for coral reef diving tours.';
+        tag = _isVi ? 'THIÊN ĐƯỜNG BIỂN' : 'BEACH PARADISE';
       } else if (name.toLowerCase().contains('sapa')) {
-        reason = 'Đỉnh Fansipan xuất hiện biển mây cực đẹp vào sáng sớm, nhiệt độ se lạnh lý tưởng để thưởng thức ẩm thực Tây Bắc.';
-        tag = 'SĂN MÂY TÂY BẮC';
+        reason = _isVi 
+            ? 'Đỉnh Fansipan xuất hiện biển mây cực đẹp vào sáng sớm, nhiệt độ se lạnh lý tưởng để thưởng thức ẩm thực Tây Bắc.'
+            : 'Fansipan peak features a beautiful sea of clouds in the early morning, with cool temperatures ideal for Northwest cuisine.';
+        tag = _isVi ? 'SĂN MÂY TÂY BẮC' : 'CLOUD HUNTING';
       } else if (name.toLowerCase().contains('đà lạt') || name.toLowerCase().contains('da lat')) {
-        reason = 'Mùa hoa dã quỳ vàng rực rỡ khắp các triền đồi, không khí mát mẻ dễ chịu vô cùng thích hợp cho cắm trại đêm.';
-        tag = 'THÀNH PHỐ NGÀN HOA';
+        reason = _isVi 
+            ? 'Mùa hoa dã quỳ vàng rực rỡ khắp các triền đồi, không khí mát mẻ dễ chịu vô cùng thích hợp cho cắm trại đêm.'
+            : 'Wild sunflowers bloom in brilliant yellow across the hills, with cool pleasant air perfect for night camping.';
       } else {
-        reason = 'Điểm đến đang nhận được sự quan tâm đột biến từ cộng đồng du lịch nhờ khí hậu thuận lợi và nhiều ưu đãi dịch vụ hấp dẫn trong thời gian này.';
-        tag = 'ĐIỂM ĐẾN VÀNG';
+        reason = _isVi 
+            ? 'Điểm đến đang nhận được sự quan tâm đột biến từ cộng đồng du lịch nhờ khí hậu thuận lợi và nhiều ưu đãi dịch vụ hấp dẫn trong thời gian này.'
+            : 'This destination is receiving surging interest from the travel community due to favorable climate and attractive deals.';
+        tag = _isVi ? 'ĐIỂM ĐẾN VÀNG' : 'GOLDEN DESTINATION';
       }
 
+      final translatedPrice = _isVi 
+          ? price 
+          : price.replaceAll('Chỉ từ', 'From').replaceAll('triệu đồng', 'm VND').replaceAll('triệu', 'm');
+
       return AppTrendRecommendation(
-        title: '$name - Khám phá vẻ đẹp kỳ diệu',
-        province: prov,
-        price: price,
+        title: _isVi ? '$name - Khám phá vẻ đẹp kỳ diệu' : '$name - Discover Magical Beauty',
+        province: _translateProvince(prov),
+        price: translatedPrice,
         imagePath: dest.imagePath,
         rating: rating,
         reviewsCount: reviews,
@@ -2218,7 +2451,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             const Icon(Icons.notifications_none_rounded, color: Colors.white24, size: 64),
             const SizedBox(height: 16),
             Text(
-              'Chưa có thông báo nào dành cho bạn',
+              _isVi ? 'Chưa có thông báo nào dành cho bạn' : 'No notifications for you yet',
               style: TextStyle(
                 fontFamily: 'Montserrat',
                 fontSize: 15,
@@ -2358,11 +2591,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
           child: Row(
             children: [
-              _buildTrendFilterButton('day', 'Hôm nay', setSheetState),
+              _buildTrendFilterButton('day', _isVi ? 'Hôm nay' : 'Today', setSheetState),
               const SizedBox(width: 8),
-              _buildTrendFilterButton('week', 'Tuần này', setSheetState),
+              _buildTrendFilterButton('week', _isVi ? 'Tuần này' : 'This Week', setSheetState),
               const SizedBox(width: 8),
-              _buildTrendFilterButton('month', 'Tháng này', setSheetState),
+              _buildTrendFilterButton('month', _isVi ? 'Tháng này' : 'This Month', setSheetState),
             ],
           ),
         ),
@@ -2373,7 +2606,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           child: trends.isEmpty
               ? Center(
                   child: Text(
-                    'Không có đề xuất nào cho khoảng thời gian này.',
+                    _isVi ? 'Không có đề xuất nào cho khoảng thời gian này.' : 'No recommendations for this period.',
                     style: TextStyle(
                       fontFamily: 'Montserrat',
                       fontSize: 14,
@@ -3471,9 +3704,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        const Text(
-                          'Bộ lọc',
-                          style: TextStyle(
+                        Text(
+                          _isVi ? 'Bộ lọc' : 'Filters',
+                          style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontSize: 20,
                             fontWeight: FontWeight.w800,
@@ -3510,9 +3743,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                               setState(() {});
                               _applyCurrentFilters();
                             },
-                            child: const Text(
-                              'Đặt lại',
-                              style: TextStyle(
+                            child: Text(
+                              _isVi ? 'Đặt lại' : 'Reset',
+                              style: const TextStyle(
                                 fontFamily: 'Montserrat',
                                 fontSize: 13,
                                 fontWeight: FontWeight.bold,
@@ -3526,7 +3759,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
                     // SECTION 1: LOCATION TYPE
                     Text(
-                      'Loại địa điểm',
+                      _isVi ? 'Loại địa điểm' : 'Location Type',
                       style: TextStyle(
                         fontFamily: 'Montserrat',
                         fontSize: 12,
@@ -3537,12 +3770,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     ),
                     const SizedBox(height: 10),
                     _popupSelectionField(
-                      title: 'Loại địa điểm',
+                      title: _isVi ? 'Loại địa điểm' : 'Location Type',
                       value: _selectedLocationKindLabel(_selectedLocationKind),
-                      hint: 'Chạm để chọn loại địa điểm',
+                      hint: _isVi ? 'Chạm để chọn loại địa điểm' : 'Tap to select location type',
                       onTap: () async {
                         final selected = await _showSingleSelectPopup(
-                          title: 'Loại địa điểm',
+                          title: _isVi ? 'Loại địa điểm' : 'Location Type',
                           options: _locationKindOptions
                               .map((option) => option['label']!)
                               .toList(),
@@ -3564,7 +3797,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
                     // SECTION 2: CHOOSE CITY
                     Text(
-                      'Lọc theo Thành phố',
+                      _isVi ? 'Lọc theo Thành phố' : 'Filter by City',
                       style: TextStyle(
                         fontFamily: 'Montserrat',
                         fontSize: 12,
@@ -3575,15 +3808,15 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     ),
                     const SizedBox(height: 10),
                     _popupSelectionField(
-                      title: 'Thành phố',
-                      value: _selectedCity ?? 'Tất cả thành phố',
-                      hint: 'Chạm để chọn thành phố',
+                      title: _isVi ? 'Thành phố' : 'City',
+                      value: _selectedCity != null ? _translateProvince(_selectedCity!) : (_isVi ? 'Tất cả thành phố' : 'All Cities'),
+                      hint: _isVi ? 'Chạm để chọn thành phố' : 'Tap to select city',
                       onTap: () async {
                         final selected = await _showSingleSelectPopup(
-                          title: 'Lọc theo Thành phố',
+                          title: _isVi ? 'Lọc theo Thành phố' : 'Filter by City',
                           options: cities,
                           selectedValue: _selectedCity,
-                          clearLabel: 'Tất cả thành phố',
+                          clearLabel: _isVi ? 'Tất cả thành phố' : 'All Cities',
                         );
                         setSheetState(() {
                           _selectedCity = selected;
@@ -3595,7 +3828,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     if (_selectedLocationKind != 'all') ...[
                       // SECTION 3: CATEGORY
                       Text(
-                        'Danh mục',
+                        _isVi ? 'Danh mục' : 'Category',
                         style: TextStyle(
                           fontFamily: 'Montserrat',
                           fontSize: 12,
@@ -3610,7 +3843,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         child: Row(
                           children: [
                             _choiceChip(
-                              label: 'Tất cả',
+                              label: _isVi ? 'Tất cả' : 'All',
                               isSelected: _selectedCategory == null,
                               onTap: () {
                                 setSheetState(() {
@@ -3623,7 +3856,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                               return Padding(
                                 padding: const EdgeInsets.only(right: 8),
                                 child: _choiceChip(
-                                  label: category,
+                                  label: _getLocalizedDisplay(category),
                                   isSelected: _selectedCategory == category,
                                   onTap: () {
                                     setSheetState(() {
@@ -3642,7 +3875,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     if (_selectedLocationKind != 'all') ...[
                       // SECTION 4: TAGS
                       Text(
-                        'Tags',
+                        _isVi ? 'Tags' : 'Tags',
                         style: TextStyle(
                           fontFamily: 'Montserrat',
                           fontSize: 12,
@@ -3653,12 +3886,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       ),
                       const SizedBox(height: 10),
                       _popupSelectionField(
-                        title: 'Tags',
+                        title: _isVi ? 'Tags' : 'Tags',
                         value: _tagsSummary(_selectedTags),
-                        hint: 'Chạm để chọn tags',
+                        hint: _isVi ? 'Chạm để chọn tags' : 'Tap to select tags',
                         onTap: () async {
                           final selected = await _showMultiSelectPopup(
-                            title: 'Tags',
+                            title: _isVi ? 'Tags' : 'Tags',
                             options: _activeTagOptions,
                             selectedValues: _selectedTags,
                           );
@@ -3675,7 +3908,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
                     // SECTION 5: SORT BY
                     Text(
-                      'Sắp xếp theo',
+                      _isVi ? 'Sắp xếp theo' : 'Sort by',
                       style: TextStyle(
                         fontFamily: 'Montserrat',
                         fontSize: 12,
@@ -3691,7 +3924,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       children: sortOptions.map((opt) {
                         final isSelected = _sortBy == opt['field'];
                         return _choiceChip(
-                          label: opt['label']!,
+                          label: _isVi ? opt['label']! : (opt['field'] == 'rating' ? 'Rating' : (opt['field'] == 'reviewsCount' ? 'Reviews' : 'Name')),
                           isSelected: isSelected,
                           centerText: true,
                           onTap: () {
@@ -3707,7 +3940,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
                     // SECTION 6: ORDER
                     Text(
-                      'Thứ tự',
+                      _isVi ? 'Thứ tự' : 'Order',
                       style: TextStyle(
                         fontFamily: 'Montserrat',
                         fontSize: 12,
@@ -3721,7 +3954,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       children: [
                         Expanded(
                           child: _choiceChip(
-                            label: 'Giảm dần',
+                            label: _isVi ? 'Giảm dần' : 'Descending',
                             isSelected: _sortOrder == 'desc',
                             centerText: true,
                             onTap: () {
@@ -3734,7 +3967,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         const SizedBox(width: 8),
                         Expanded(
                           child: _choiceChip(
-                            label: 'Tăng dần',
+                            label: _isVi ? 'Tăng dần' : 'Ascending',
                             isSelected: _sortOrder == 'asc',
                             centerText: true,
                             onTap: () {
@@ -3750,7 +3983,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
                     // SECTION 7: LIMIT
                     Text(
-                      'Số lượng',
+                      _isVi ? 'Số lượng' : 'Limit',
                       style: TextStyle(
                         fontFamily: 'Montserrat',
                         fontSize: 12,
@@ -3783,7 +4016,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
                     // SECTION 8: SCORE
                     Text(
-                      'Điểm đánh giá',
+                      _isVi ? 'Điểm đánh giá' : 'Rating Score',
                       style: TextStyle(
                         fontFamily: 'Montserrat',
                         fontSize: 12,
@@ -3794,7 +4027,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      '${_scoreRange.start.toStringAsFixed(1)} - ${_scoreRange.end.toStringAsFixed(1)} sao',
+                      '${_scoreRange.start.toStringAsFixed(1)} - ${_scoreRange.end.toStringAsFixed(1)} ${_isVi ? 'sao' : 'stars'}',
                       style: TextStyle(
                         fontFamily: 'Montserrat',
                         fontSize: 12,
@@ -3819,7 +4052,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
                     // SECTION 9: OPENING TIME
                     Text(
-                      'Thời gian mở cửa',
+                      _isVi ? 'Thời gian mở cửa' : 'Opening Hours',
                       style: TextStyle(
                         fontFamily: 'Montserrat',
                         fontSize: 12,
@@ -3834,7 +4067,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         Expanded(
                           child: _filterValueButton(
                             icon: Icons.access_time_rounded,
-                            label: _filterTime ?? 'Giờ bất kỳ',
+                            label: _filterTime ?? (_isVi ? 'Giờ bất kỳ' : 'Anytime'),
                             onTap: () async {
                               final initial = _filterTime?.split(':');
                               final picked = await showTimePicker(
@@ -3866,7 +4099,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         Expanded(
                           child: _filterValueButton(
                             icon: Icons.calendar_today_rounded,
-                            label: _filterDate ?? 'Ngày bất kỳ',
+                            label: _filterDate ?? (_isVi ? 'Ngày bất kỳ' : 'Anyday'),
                             onTap: () async {
                               final now = DateTime.now();
                               final picked = await showDatePicker(
@@ -3919,9 +4152,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                     size: 20,
                                   ),
                                   const SizedBox(width: 10),
-                                  const Text(
-                                    'Tìm kiếm xung quanh (GPS)',
-                                    style: TextStyle(
+                                  Text(
+                                    _isVi ? 'Tìm kiếm xung quanh (GPS)' : 'Nearby Search (GPS)',
+                                    style: const TextStyle(
                                       fontFamily: 'Montserrat',
                                       fontSize: 14,
                                       fontWeight: FontWeight.w600,
@@ -3949,7 +4182,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
-                                  'Bán kính: ${_radius >= 1000 ? "${(_radius / 1000).toStringAsFixed(1)} km" : "${_radius.round()} m"}',
+                                  (_isVi ? 'Bán kính: ' : 'Radius: ') + '${_radius >= 1000 ? "${(_radius / 1000).toStringAsFixed(1)} km" : "${_radius.round()} m"}',
                                   style: TextStyle(
                                     fontFamily: 'Montserrat',
                                     fontSize: 12,
@@ -3998,9 +4231,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                           Navigator.pop(context);
                           _applyCurrentFilters();
                         },
-                        child: const Text(
-                          'Áp dụng',
-                          style: TextStyle(
+                        child: Text(
+                          _isVi ? 'Áp dụng' : 'Apply',
+                          style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontSize: 14,
                             fontWeight: FontWeight.w800,
@@ -4380,11 +4613,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   Widget _buildSidebar() {
     final isGuest = widget.authToken == null || widget.authToken!.isEmpty;
     final menuItems = [
-      (Icons.home_rounded, 'Khám phá'),
-      (Icons.search_rounded, 'Tìm kiếm'),
-      (Icons.bookmark_rounded, 'Đã lưu'),
-      (Icons.explore_rounded, 'Khảo sát'),
-      (Icons.person_rounded, 'Tài khoản'),
+      (Icons.home_rounded, AppLocalizations.of(context)!.explore),
+      (Icons.search_rounded, AppLocalizations.of(context)!.search),
+      (Icons.bookmark_rounded, AppLocalizations.of(context)!.saved),
+      (Icons.explore_rounded, AppLocalizations.of(context)!.survey),
+      (Icons.person_rounded, AppLocalizations.of(context)!.account),
     ];
 
     return Container(
@@ -4464,7 +4697,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                           ),
                         ),
                         Text(
-                          'Thành viên',
+                          _isVi ? 'Thành viên' : 'Member',
                           style: TextStyle(
                             fontFamily: 'Montserrat',
                             fontSize: 11,
@@ -4581,7 +4814,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       ),
                       const SizedBox(width: 14),
                       Text(
-                        isGuest ? 'Tài khoản' : 'Đăng xuất',
+                        isGuest ? (_isVi ? 'Tài khoản' : 'Account') : (_isVi ? 'Đăng xuất' : 'Log Out'),
                         style: TextStyle(
                           fontFamily: 'Montserrat',
                           fontSize: 14,
@@ -4815,6 +5048,35 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   String _getBriefDescription(Destination dest) {
     final name = dest.name.toLowerCase();
+    if (!_isVi) {
+      if (name.contains('hạ long')) {
+        return 'Ha Long Bay is a UNESCO World Heritage site, famous for its thousands of spectacular limestone karsts and serene emerald waters.';
+      } else if (name.contains('hội an')) {
+        return 'Hoi An Ancient Town is an exceptionally well-preserved trading port, glowing with colorful lanterns and nostalgic mossy roofs by the Thu Bon River.';
+      } else if (name.contains('đà nẵng') ||
+          name.contains('mỹ khê') ||
+          name.contains('bà nà')) {
+        return 'Da Nang is Vietnam\'s most liveable coastal city, blending iconic bridges, fine white sands, and the mist-shrouded Ba Na Hills year-round.';
+      } else if (name.contains('phong nha') || name.contains('kẻ bàng')) {
+        return 'Phong Nha - Ke Bang is known as the cave kingdom of the world, housing millions-of-years-old stalactites beneath lush primary rainforests.';
+      } else if (name.contains('hồ chí minh') ||
+          name.contains('sài gòn') ||
+          name.contains('củ chi')) {
+        return 'Ho Chi Minh City is a dynamic metropolis where rich history converges with modern life, soaring skyscrapers, and unique cultural heritage.';
+      } else if (name.contains('hà nội') ||
+          name.contains('hoàn kiếm') ||
+          name.contains('lăng chủ tịch')) {
+        return 'The capital Hanoi boasts a thousand years of history, peaceful with Sword Lake, quiet old quarters, elegant cuisine, and timeless historical sites.';
+      } else if (name.contains('huế') || name.contains('thiên mụ')) {
+        return 'Hue is dreamlike and tranquil, with its ancient Imperial City and majestic royal tombs reflecting upon the poetic Perfume River.';
+      } else if (name.contains('phú quốc') || name.contains('kiên giang')) {
+        return 'Phú Quốc Pearl Island boasts some of the most pristine beaches on earth, vibrant coral reefs, and world-class resorts bathed in spectacular sunsets.';
+      } else if (name.contains('cát bà') || name.contains('bạch long vĩ')) {
+        return 'Cat Ba is the pearl island of the North, famous for its peaceful bays interspersed with majestic limestone mountains and rich tropical rainforests.';
+      }
+      return '${dest.name} is located in ${_translateProvince(dest.province)}, an ideal destination with beautiful scenery and an attractive price of ${dest.price} for your journey.';
+    }
+
     if (name.contains('hạ long')) {
       return 'Vịnh Hạ Long là di sản thiên nhiên thế giới được UNESCO công nhận, nổi tiếng với hàng nghìn hòn đảo đá vôi kỳ vĩ và làn nước xanh lục bảo thanh bình.';
     } else if (name.contains('hội an')) {
@@ -4866,7 +5128,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       if (destinations.isEmpty) {
         return Center(
           child: Text(
-            'Chưa có địa điểm nào phù hợp.',
+            _isVi ? 'Chưa có địa điểm nào phù hợp.' : 'No matching locations found.',
             style: TextStyle(
               fontFamily: 'Montserrat',
               fontSize: 16,
@@ -4985,7 +5247,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
                                   Text(
-                                    cat.toLowerCase(),
+                                    _translateCategoryHeader(cat),
                                     style: TextStyle(
                                       fontFamily: 'Montserrat',
                                       fontSize: 13,
@@ -5806,7 +6068,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Xin chào,\n$_currentUserName!',
+                  '${AppLocalizations.of(context)!.welcome_back}\n$_currentUserName!',
                   style: const TextStyle(
                     fontFamily: 'Montserrat',
                     fontSize: 16,
@@ -5816,6 +6078,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   ),
                 ),
               ],
+            ),
+            const SizedBox(width: 12),
+            WeatherWidget(
+              lat: _gpsLat,
+              lon: _gpsLon,
+              label: _hasGps ? null : 'Hà Nội',
+              compact: true,
             ),
             const Spacer(),
             GestureDetector(
@@ -6071,7 +6340,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       color: Colors.white,
                     ),
                     decoration: InputDecoration(
-                      hintText: 'Tìm kiếm trên TourXport...',
+                      hintText: AppLocalizations.of(context)!.search_hint,
                       hintStyle: TextStyle(
                         fontFamily: 'Montserrat',
                         fontSize: 14,
@@ -6168,7 +6437,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   borderRadius: BorderRadius.circular(24),
                 ),
                 child: Text(
-                  regions[i],
+                  _translateProvince(regions[i]),
                   style: TextStyle(
                     fontFamily: 'Montserrat',
                     fontSize: 13,
@@ -6191,7 +6460,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     if (destinations.isEmpty) {
       return Center(
         child: Text(
-          'Chưa có địa điểm phù hợp.',
+          _isVi ? 'Chưa có địa điểm phù hợp.' : 'No matching locations found.',
           style: TextStyle(
             fontFamily: 'Montserrat',
             fontSize: 15,
@@ -6524,7 +6793,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     if (destinations.isEmpty) {
       return Center(
         child: Text(
-          'Chưa có địa điểm nào được thả tim.',
+          _isVi ? 'Chưa có địa điểm nào được thả tim.' : 'No locations favorited yet.',
           style: TextStyle(
             fontFamily: 'Montserrat',
             fontSize: 15,
