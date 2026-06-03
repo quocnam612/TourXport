@@ -75,7 +75,7 @@ class _TourActivityCardState extends State<TourActivityCard> {
                               children: [
                                 Expanded(child: Text(widget.act.timeSlot, style: TextStyle(color: Colors.white.withOpacity(0.9), fontWeight: FontWeight.bold, fontFamily: 'Montserrat'))),
                                 if (widget.isDesktop && widget.act.estimatedCost > 0)
-                                  Text('${widget.act.estimatedCost.toInt()} đ', style: TextStyle(color: Colors.white.withOpacity(0.6), fontFamily: 'Montserrat')),
+                                  Text(TourMapUtils.formatCurrency(widget.act.estimatedCost), style: TextStyle(color: Colors.white.withOpacity(0.6), fontFamily: 'Montserrat')),
                               ],
                             ),
                             const SizedBox(height: 6),

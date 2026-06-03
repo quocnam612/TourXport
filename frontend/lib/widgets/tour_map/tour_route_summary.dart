@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../utils/tour_map_utils.dart';
 
 class TourRouteSummary extends StatelessWidget {
   final double routeDistanceKm;
@@ -30,7 +31,7 @@ class TourRouteSummary extends StatelessWidget {
             ),
             const SizedBox(height: 4),
             Text(
-              '${routeDistanceKm.toStringAsFixed(1).replaceAll('.', ',')} km',
+              TourMapUtils.formatDistance(routeDistanceKm),
               style: const TextStyle(
                 color: Color(0xFFD4AF7A),
                 fontSize: 16,
@@ -58,7 +59,7 @@ class TourRouteSummary extends StatelessWidget {
             ),
             const SizedBox(height: 4),
             Text(
-              '${routeDurationMin.toStringAsFixed(0)} phút',
+              TourMapUtils.formatDuration(routeDurationMin),
               style: const TextStyle(
                 color: Color(0xFFD4AF7A),
                 fontSize: 16,

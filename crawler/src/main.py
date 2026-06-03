@@ -13,7 +13,7 @@ from src.services.hotels import hotels_list_id, hotels_get_details
 from src.services.google_maps_service import scrape_gmaps_restaurants
 from src.services.restaurants import restaurants_list, restaurants_get_details
 from src.services.attractions import attractions_list, attractions_get_details
-from src.services.shared import reviews_list, photos_list, questions_list, answers_list
+from src.services.shared import reviews_list, photos_list, questions_list, answers_list, get_high_quality_photos
 from src.utils.place_transformer import save_places_output, save_merged_output_places
 
 
@@ -178,6 +178,7 @@ attractions_list:    --query, --currency, --lang, --lunit, --min_rating, --limit
 attractions_details: --query, --currency, --lang
 reviews_list:        --query, --keyword, --limit, --currency, --offset, --lang
 photos_list:         --query, --currency, --limit, --offset, --lang
+high_quality_photos: --query, --currency, --limit, --offset, --lang
 questions_list:      --query, --offset, --limit
 answers_list:        --query, --offset, --limit
 
@@ -200,6 +201,7 @@ Example: python src/main.py --task restaurants_list --query 293919 --limit 10 --
                             "attractions_details",
                             "reviews_list",
                             "photos_list",
+                            "high_quality_photos",
                             "questions_list",
                             "answers_list",
                             "google-maps"
@@ -398,6 +400,13 @@ Example: python src/main.py --task restaurants_list --query 293919 --limit 10 --
         elif args.task == "photos_list":
             print(f"Fetching photos for location_id: {target_id} with {kwargs}")
             photos_list(location_id=target_id, **kwargs)
+            
+        elif args.task == "high_quality_photos":
+            print(f"Fetching high quality photos for location_id: {target_id} with {kwargs}")
+            urls = get_high_quality_photos(location_id=target_id, **kwargs)
+            print(f"Found {len(urls)} high quality photos:")
+            for url in urls:
+                print(url)
             
         elif args.task == "questions_list":
             print(f"Fetching questions for location_id: {target_id} with {kwargs}")

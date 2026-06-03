@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:geolocator/geolocator.dart';
@@ -7,14 +6,17 @@ import 'package:latlong2/latlong.dart';
 import '../models/ai_trip_response.dart';
 import '../utils/routing_service.dart';
 import '../widgets/location_explanation_dialog.dart';
-import '../widgets/route_metrics_card.dart';
 import '../models/tour_map_models.dart';
 import '../utils/tour_map_utils.dart';
+import '../services/map_location_service.dart';
 
-import '../widgets/tour_map/tour_activity_card.dart';
-import '../widgets/tour_map/tour_custom_marker.dart';
 import '../widgets/tour_map/tour_day_selector.dart';
 import '../widgets/tour_map/tour_route_summary.dart';
+import '../widgets/tour_map/states/map_loading_state.dart';
+import '../widgets/tour_map/states/map_error_state.dart';
+import '../widgets/tour_map/lists/map_timeline_list.dart';
+import '../widgets/tour_map/lists/map_location_list.dart';
+import '../widgets/tour_map/map_layer_view.dart';
 
 class TourRouteMapScreen extends StatefulWidget {
   final AiTripResponse tourData;
@@ -36,6 +38,7 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
   List<WaypointItem> _waypointItems = [];
   LatLng? _userLocation;
   bool _isLoading = true;
+  bool _hasError = false;
   double _routeDistanceKm = 0.0;
   double _routeDurationMin = 0.0;
 
@@ -44,11 +47,10 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
   AnimationController? _cameraAnimationController;
 
   AiActivity? _focusedActivity;
-  bool _isBottomSheetMinimized = false;
 
-  Map<int, List<RouteSegment>> _routeSegmentsCache = {};
-  Map<int, double> _routeDistanceCache = {};
-  Map<int, double> _routeDurationCache = {};
+  final Map<int, List<RouteSegment>> _routeSegmentsCache = {};
+  final Map<int, double> _routeDistanceCache = {};
+  final Map<int, double> _routeDurationCache = {};
 
   @override
   void initState() {
@@ -64,47 +66,20 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
   }
 
   Future<void> _initMapData() async {
-    bool serviceEnabled = await Geolocator.isLocationServiceEnabled();
-    if (!serviceEnabled) {
-      if (mounted) {
-        final bool userAgreed = await showDialog<bool>(
-          context: context,
-          barrierDismissible: false,
-          builder: (context) => const LocationExplanationDialog(),
-        ) ?? false;
-        if (userAgreed) {
-          await Geolocator.openLocationSettings();
-          serviceEnabled = await Geolocator.isLocationServiceEnabled();
-        }
-      }
-    }
+    bool hasPermission = await MapLocationService.handleLocationPermission(() async {
+      if (!mounted) return false;
+      return await showDialog<bool>(
+        context: context,
+        barrierDismissible: false,
+        builder: (context) => const LocationExplanationDialog(),
+      ) ?? false;
+    });
 
-    if (serviceEnabled) {
-      LocationPermission permission = await Geolocator.checkPermission();
-      if (permission == LocationPermission.denied) {
-        if (mounted) {
-          final bool userAgreed = await showDialog<bool>(
-            context: context,
-            barrierDismissible: false,
-            builder: (context) => const LocationExplanationDialog(),
-          ) ?? false;
-          if (userAgreed) {
-            permission = await Geolocator.requestPermission();
-          }
-        }
-      }
-
-      if (permission == LocationPermission.always || permission == LocationPermission.whileInUse) {
-        try {
-          Position position = await Geolocator.getCurrentPosition(
-            desiredAccuracy: LocationAccuracy.high,
-            timeLimit: const Duration(seconds: 5),
-          );
-          _userLocation = LatLng(position.latitude, position.longitude);
-          _startTracking();
-        } catch (e) {
-          debugPrint("Không lấy được vị trí GPS: $e");
-        }
+    if (hasPermission) {
+      final pos = await MapLocationService.getCurrentPosition();
+      if (pos != null) {
+        _userLocation = LatLng(pos.latitude, pos.longitude);
+        _startTracking();
       }
     }
 
@@ -113,28 +88,47 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
 
   void _startTracking() {
     _positionStreamSubscription?.cancel();
-    _positionStreamSubscription = Geolocator.getPositionStream(
-      locationSettings: const LocationSettings(
-        accuracy: LocationAccuracy.high,
-        distanceFilter: 10,
-      ),
-    ).listen((Position position) {
+    _positionStreamSubscription = MapLocationService.getPositionStream().listen((Position position) {
       if (!mounted) return;
-      setState(() {
-        _userLocation = LatLng(position.latitude, position.longitude);
-      });
-    }, onError: (error) {
-      debugPrint("Lỗi luồng định vị GPS: $error");
-    });
+      setState(() => _userLocation = LatLng(position.latitude, position.longitude));
+    }, onError: (error) => debugPrint("Lỗi luồng định vị GPS: $error"));
   }
 
   Future<void> _calculateRoute() async {
     if (!mounted) return;
     setState(() {
       _isLoading = true;
+      _hasError = false;
       _focusedSegmentIndex = null;
     });
 
+    _prepareWaypointsForSelectedDay();
+
+    if (_routeSegmentsCache.containsKey(_selectedDayIndex)) {
+      final cachedRoute = _routeSegmentsCache[_selectedDayIndex]!;
+      if (cachedRoute.isNotEmpty && _currentWaypoints.isNotEmpty) {
+        final cachedStartPoint = cachedRoute.first.points.first;
+        final currentStartPoint = _currentWaypoints.first;
+        
+        final distance = Geolocator.distanceBetween(
+          cachedStartPoint.latitude, cachedStartPoint.longitude,
+          currentStartPoint.latitude, currentStartPoint.longitude,
+        );
+        
+        if (distance < 50.0) { 
+          _applyCachedRoute();
+          return;
+        }
+      } else {
+        _applyCachedRoute();
+        return;
+      }
+    }
+
+    await _fetchRoutesForWaypoints();
+  }
+
+  void _prepareWaypointsForSelectedDay() {
     _currentStops.clear();
     _locationNames.clear();
     _currentWaypoints.clear();
@@ -143,29 +137,17 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
     
     if (_selectedDayIndex == -1) {
       if (_userLocation != null) {
-        _currentWaypoints.add(_userLocation!);
-        _locationNames.add("Vị trí của bạn");
+        _addWaypoint(_userLocation!, "Vị trí của bạn", null, _currentWaypoints.length);
       }
-      int currentWpIndex = _currentWaypoints.length;
       for (var day in itinerary) {
         for (var act in day.activities) {
-          if (act.latitude != null && act.longitude != null) {
-            final loc = LatLng(act.latitude!, act.longitude!);
-            _currentWaypoints.add(loc);
-            _locationNames.add(act.placeName ?? 'Địa điểm');
-            _currentStops.add(act);
-            _waypointItems.add(WaypointItem(location: loc, title: act.placeName ?? 'Địa điểm', activity: act, waypointIndex: currentWpIndex));
-            currentWpIndex++;
-          } else {
-            _waypointItems.add(WaypointItem(location: null, title: act.placeName ?? 'Địa điểm', activity: act, waypointIndex: null));
-          }
+          _processActivityWaypoint(act);
         }
       }
     } else if (_selectedDayIndex >= 0 && _selectedDayIndex < itinerary.length) {
       if (_selectedDayIndex == 0) {
         if (_userLocation != null) {
-          _currentWaypoints.add(_userLocation!);
-          _locationNames.add("Vị trí của bạn");
+          _addWaypoint(_userLocation!, "Vị trí của bạn", null, _currentWaypoints.length);
         }
       } else {
         AiActivity? lastActPrevDay;
@@ -178,88 +160,106 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
         }
         
         if (lastActPrevDay != null) {
-          final loc = LatLng(lastActPrevDay.latitude!, lastActPrevDay.longitude!);
-          _currentWaypoints.add(loc);
-          _locationNames.add(lastActPrevDay.placeName ?? 'Điểm kết thúc ngày trước');
+          _addWaypoint(LatLng(lastActPrevDay.latitude!, lastActPrevDay.longitude!), 
+                       lastActPrevDay.placeName ?? 'Điểm kết thúc ngày trước', null, _currentWaypoints.length);
         } else if (_userLocation != null) {
-          _currentWaypoints.add(_userLocation!);
-          _locationNames.add("Vị trí của bạn");
+          _addWaypoint(_userLocation!, "Vị trí của bạn", null, _currentWaypoints.length);
         }
       }
 
-      int currentWpIndex = _currentWaypoints.length;
       for (var act in itinerary[_selectedDayIndex].activities) {
-        if (act.latitude != null && act.longitude != null) {
-          final loc = LatLng(act.latitude!, act.longitude!);
-          _currentWaypoints.add(loc);
-          _locationNames.add(act.placeName ?? 'Địa điểm');
-          _currentStops.add(act);
-          _waypointItems.add(WaypointItem(location: loc, title: act.placeName ?? 'Địa điểm', activity: act, waypointIndex: currentWpIndex));
-          currentWpIndex++;
-        } else {
-          _waypointItems.add(WaypointItem(location: null, title: act.placeName ?? 'Địa điểm', activity: act, waypointIndex: null));
-        }
+        _processActivityWaypoint(act);
       }
     }
+  }
 
-    if (_routeSegmentsCache.containsKey(_selectedDayIndex)) {
-      setState(() {
-        _routeSegments = _routeSegmentsCache[_selectedDayIndex]!;
-        _routeDistanceKm = _routeDistanceCache[_selectedDayIndex]!;
-        _routeDurationMin = _routeDurationCache[_selectedDayIndex]!;
-        _isLoading = false;
-      });
-      WidgetsBinding.instance.addPostFrameCallback((_) => _fitMapBounds());
-      return;
+  void _addWaypoint(LatLng loc, String name, AiActivity? act, int index) {
+    _currentWaypoints.add(loc);
+    _locationNames.add(name);
+    if (act != null) _currentStops.add(act);
+    _waypointItems.add(WaypointItem(location: loc, title: name, activity: act, waypointIndex: index));
+  }
+
+  void _processActivityWaypoint(AiActivity act) {
+    if (act.latitude != null && act.longitude != null) {
+      _addWaypoint(LatLng(act.latitude!, act.longitude!), act.placeName ?? 'Địa điểm', act, _currentWaypoints.length);
+    } else {
+      _waypointItems.add(WaypointItem(location: null, title: act.placeName ?? 'Địa điểm', activity: act, waypointIndex: null));
     }
+  }
 
+  void _applyCachedRoute() {
+    setState(() {
+      _routeSegments = _routeSegmentsCache[_selectedDayIndex]!;
+      _routeDistanceKm = _routeDistanceCache[_selectedDayIndex]!;
+      _routeDurationMin = _routeDurationCache[_selectedDayIndex]!;
+      _isLoading = false;
+    });
+    WidgetsBinding.instance.addPostFrameCallback((_) => _fitMapBounds());
+  }
+
+  Future<void> _fetchRoutesForWaypoints() async {
+    final int fetchingDayIndex = _selectedDayIndex;
     if (_currentWaypoints.length >= 2) {
       List<RouteSegment> segments = [];
       double totalDist = 0;
       double totalDur = 0;
 
-      if (_selectedDayIndex == -1) {
-        final routeResult = await RoutingService.getMultiStopRoute(_currentWaypoints);
-        totalDist = routeResult.distanceKm;
-        totalDur = routeResult.durationMinutes;
-        segments.add(RouteSegment(
-          points: routeResult.points,
-          distanceKm: routeResult.distanceKm,
-          durationMin: routeResult.durationMinutes,
-          color: const Color(0xFFB5956A),
-        ));
-      } else {
-        List<Future<RouteResult>> futures = [];
-        for (int i = 0; i < _currentWaypoints.length - 1; i++) {
-          futures.add(RoutingService.getRoute(_currentWaypoints[i], _currentWaypoints[i+1]));
-        }
-        
-        final results = await Future.wait(futures);
-        
-        for (int i = 0; i < results.length; i++) {
-          totalDist += results[i].distanceKm;
-          totalDur += results[i].durationMinutes;
+      try {
+        if (_selectedDayIndex == -1) {
+          final routeResult = await RoutingService.getMultiStopRoute(_currentWaypoints);
+          totalDist = routeResult.distanceKm;
+          totalDur = routeResult.durationMinutes;
           segments.add(RouteSegment(
-            points: results[i].points,
-            distanceKm: results[i].distanceKm,
-            durationMin: results[i].durationMinutes,
-            color: TourMapUtils.getColorForIndex(i + 1),
+            points: routeResult.points,
+            distanceKm: routeResult.distanceKm,
+            durationMin: routeResult.durationMinutes,
+            color: const Color(0xFFB5956A),
           ));
+        } else {
+          final List<RouteResult> results = [];
+          for (int i = 0; i < _currentWaypoints.length - 1; i++) {
+            try {
+              final res = await RoutingService.getRoute(_currentWaypoints[i], _currentWaypoints[i+1]);
+              results.add(res);
+            } catch (routeError) {
+              debugPrint("Chặng $i bị lỗi, bỏ qua: $routeError");
+            }
+          }
+          
+          for (int i = 0; i < results.length; i++) {
+            totalDist += results[i].distanceKm;
+            totalDur += results[i].durationMinutes;
+            segments.add(RouteSegment(
+              points: results[i].points,
+              distanceKm: results[i].distanceKm,
+              durationMin: results[i].durationMinutes,
+              color: TourMapUtils.getColorForIndex(i + 1),
+            ));
+          }
         }
-      }
 
-      if (mounted) {
-        _routeSegmentsCache[_selectedDayIndex] = List.from(segments);
-        _routeDistanceCache[_selectedDayIndex] = totalDist;
-        _routeDurationCache[_selectedDayIndex] = totalDur;
+        if (mounted && _selectedDayIndex == fetchingDayIndex) {
+          _routeSegmentsCache[fetchingDayIndex] = List.from(segments);
+          _routeDistanceCache[fetchingDayIndex] = totalDist;
+          _routeDurationCache[fetchingDayIndex] = totalDur;
 
-        setState(() {
-          _routeSegments = segments;
-          _routeDistanceKm = totalDist;
-          _routeDurationMin = totalDur;
-          _isLoading = false;
-        });
-        WidgetsBinding.instance.addPostFrameCallback((_) => _fitMapBounds());
+          setState(() {
+            _routeSegments = segments;
+            _routeDistanceKm = totalDist;
+            _routeDurationMin = totalDur;
+            _isLoading = false;
+          });
+          WidgetsBinding.instance.addPostFrameCallback((_) => _fitMapBounds());
+        }
+      } catch (e) {
+        debugPrint("Error fetching route: $e");
+        if (mounted && _selectedDayIndex == fetchingDayIndex) {
+          setState(() {
+            _isLoading = false;
+            _hasError = true;
+          });
+        }
       }
     } else {
       if (mounted) {
@@ -270,13 +270,9 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
           _isLoading = false;
         });
         if (_currentWaypoints.isNotEmpty) {
-          WidgetsBinding.instance.addPostFrameCallback((_) {
-             _animatedMapMove(_currentWaypoints.first, 14.0);
-          });
+          WidgetsBinding.instance.addPostFrameCallback((_) => _animatedMapMove(_currentWaypoints.first, 14.0));
         } else if (_userLocation != null) {
-           WidgetsBinding.instance.addPostFrameCallback((_) {
-             _animatedMapMove(_userLocation!, 14.0);
-          });
+           WidgetsBinding.instance.addPostFrameCallback((_) => _animatedMapMove(_userLocation!, 14.0));
         }
       }
     }
@@ -286,22 +282,30 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
     final pointsToFit = specificPoints ?? _currentWaypoints;
     if (pointsToFit.isEmpty) return;
     
-    List<LatLng> allPoints = List.from(pointsToFit);
+    if (pointsToFit.length == 1 && (specificPoints != null || _routeSegments.isEmpty)) {
+      _animatedMapMove(pointsToFit.first, 15.0);
+      return;
+    }
+    
+    LatLngBounds bounds = LatLngBounds.fromPoints(pointsToFit);
+    
     if (specificPoints == null) {
       for (var seg in _routeSegments) {
-        allPoints.addAll(seg.points);
+        for (var point in seg.points) {
+          bounds.extend(point);
+        }
       }
     } else {
       if (_focusedSegmentIndex != null && _focusedSegmentIndex! < _routeSegments.length) {
-        allPoints.addAll(_routeSegments[_focusedSegmentIndex!].points);
+        for (var point in _routeSegments[_focusedSegmentIndex!].points) {
+          bounds.extend(point);
+        }
       }
     }
     
-    if (allPoints.isEmpty) return;
-
     final cameraFit = CameraFit.bounds(
-      bounds: LatLngBounds.fromPoints(allPoints),
-      padding: const EdgeInsets.all(80.0),
+      bounds: bounds,
+      padding: const EdgeInsets.only(left: 40, right: 40, top: 80, bottom: 350),
     );
     final fitted = cameraFit.fit(_mapController.camera);
     _animatedMapMove(fitted.center, fitted.zoom);
@@ -316,15 +320,8 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
     final lngTween = Tween<double>(begin: camera.center.longitude, end: destLocation.longitude);
     final zoomTween = Tween<double>(begin: camera.zoom, end: destZoom);
 
-    _cameraAnimationController = AnimationController(
-      duration: const Duration(milliseconds: 500),
-      vsync: this,
-    );
-
-    final animation = CurvedAnimation(
-      parent: _cameraAnimationController!,
-      curve: Curves.fastOutSlowIn,
-    );
+    _cameraAnimationController = AnimationController(duration: const Duration(milliseconds: 500), vsync: this);
+    final animation = CurvedAnimation(parent: _cameraAnimationController!, curve: Curves.fastOutSlowIn);
 
     _cameraAnimationController!.addListener(() {
       if (!mounted) return;
@@ -337,398 +334,191 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
     _cameraAnimationController!.forward();
   }
 
-
-
-
-
-  Widget _buildDesktopStatCard(String title, String value, IconData icon) {
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.05),
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: Colors.white.withValues(alpha: 0.08)),
-      ),
-      child: Row(
-        children: [
-          Container(
-            padding: const EdgeInsets.all(10),
-            decoration: BoxDecoration(
-              color: const Color(0xFFD4AF7A).withValues(alpha: 0.2),
-              shape: BoxShape.circle,
-            ),
-            child: Icon(icon, color: const Color(0xFFD4AF7A), size: 24),
-          ),
-          const SizedBox(width: 16),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  title,
-                  style: const TextStyle(
-                    fontFamily: 'Montserrat',
-                    fontSize: 12,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.white70,
-                  ),
-                ),
-                const SizedBox(height: 4),
-                Text(
-                  value,
-                  style: const TextStyle(
-                    fontFamily: 'Montserrat',
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildTimelineList(bool isDesktop) {
-    final itinerary = widget.tourData.data.itinerary;
-    final List<Widget> items = [];
-    
-    for (var day in itinerary) {
-      items.add(
-        Container(
-          margin: const EdgeInsets.only(bottom: 12, top: 8),
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
-          decoration: BoxDecoration(
-            color: const Color(0xFFD4AF7A).withOpacity(0.9),
-            borderRadius: BorderRadius.circular(12),
-          ),
-          child: Text(
-            'Ngày ${day.day}',
-            style: const TextStyle(
-              fontFamily: 'Montserrat',
-              fontSize: 14,
-              fontWeight: FontWeight.bold,
-              color: Colors.black87,
-            ),
-          ),
-        ),
-      );
-      
-      for (var act in day.activities) {
-        items.add(TourActivityCard(
-          act: act,
-          isSelected: _focusedActivity == act,
-          onTap: () {
-            setState(() {
-              if (_focusedActivity == act) {
-                _focusedActivity = null;
-                _fitMapBounds();
-              } else {
-                _focusedActivity = act;
-                if (act.latitude != null && act.longitude != null) {
-                  _animatedMapMove(LatLng(act.latitude!, act.longitude!), 15.0);
-                }
-              }
-            });
-          },
-          isDesktop: isDesktop,
-        ));
-      }
-    }
-
-    return ListView.builder(
-      padding: EdgeInsets.zero,
-      itemCount: items.length,
-      itemBuilder: (context, index) => items[index],
-    );
-  }
-
-
-
-  DateTime? _parseEndTime(String timeSlot) {
-    try {
-      if (!timeSlot.contains('-')) return null;
-      final parts = timeSlot.split('-');
-      if (parts.length < 2) return null;
-      final endPart = parts[1].trim(); 
-      final timeParts = endPart.split(':');
-      if (timeParts.length >= 2) {
-        final hour = int.tryParse(timeParts[0].trim());
-        final min = int.tryParse(timeParts[1].trim());
-        if (hour != null && min != null) {
-          final now = DateTime.now();
-          return DateTime(now.year, now.month, now.day, hour, min);
-        }
-      }
-    } catch (_) {}
-    return null;
-  }
-
-  Widget _buildLocationList({bool isDesktop = false}) {
-    DateTime? segmentStartTime;
-    if (_focusedSegmentIndex != null) {
-      try {
-        final startItem = _waypointItems.firstWhere(
-          (w) => w.waypointIndex == _focusedSegmentIndex,
-        );
-        if (startItem.activity != null && startItem.activity!.timeSlot.isNotEmpty) {
-          segmentStartTime = _parseEndTime(startItem.activity!.timeSlot);
-        }
-      } catch (_) {}
-    }
-
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        if (_focusedSegmentIndex != null && _focusedSegmentIndex! < _routeSegments.length)
-          Padding(
-            padding: const EdgeInsets.only(bottom: 12.0),
-            child: RouteMetricsCard(
-              routeDurationMin: _routeSegments[_focusedSegmentIndex!].durationMin,
-              routeDistanceKm: _routeSegments[_focusedSegmentIndex!].distanceKm,
-              startTime: segmentStartTime,
-              onClose: () {
-                setState(() {
-                  _focusedSegmentIndex = null;
-                });
-                _fitMapBounds();
-              },
-            ),
-          ),
-        Flexible(
-          child: ListView.builder(
-            shrinkWrap: true,
-            padding: EdgeInsets.zero,
-            itemCount: _waypointItems.length,
-            itemBuilder: (context, i) {
-              final item = _waypointItems[i];
-              final wpIndex = item.waypointIndex;
-              
-              bool isHighlighted = true;
-              bool isSelected = false;
-              if (_focusedSegmentIndex != null && wpIndex != null) {
-                isSelected = (wpIndex == _focusedSegmentIndex) || (wpIndex == _focusedSegmentIndex! + 1);
-                isHighlighted = isSelected;
-              } else if (_focusedSegmentIndex != null && wpIndex == null) {
-                isHighlighted = false;
-              }
-              
-              final markerColor = wpIndex != null ? TourMapUtils.getColorForIndex(wpIndex) : null;
-              
-              VoidCallback? onTap;
-              if (wpIndex != null) {
-                onTap = () {
-                  setState(() {
-                    int targetSegment = wpIndex == 0 ? 0 : wpIndex - 1;
-                    if (_focusedSegmentIndex == targetSegment) {
-                      _focusedSegmentIndex = null; 
-                      WidgetsBinding.instance.addPostFrameCallback((_) => _fitMapBounds());
-                    } else {
-                      _focusedSegmentIndex = targetSegment; 
-                      if (_focusedSegmentIndex! < _currentWaypoints.length - 1) {
-                         WidgetsBinding.instance.addPostFrameCallback((_) {
-                           _fitMapBounds([_currentWaypoints[_focusedSegmentIndex!], _currentWaypoints[_focusedSegmentIndex! + 1]]);
-                         });
-                      }
-                    }
-                  });
-                };
-              }
-              
-              return TourActivityCard(
-                act: item.activity!, 
-                onTap: onTap, 
-                isHighlighted: isHighlighted, 
-                isSelected: isSelected, 
-                markerColor: markerColor, 
-                isDesktop: isDesktop
-              );
-            }
-          ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildMapLayer(bool isAllDaysMode, bool hasUserLoc) {
-    return RepaintBoundary(
-      child: FlutterMap(
-        mapController: _mapController,
-        options: MapOptions(
-          initialCenter: _userLocation ?? TourMapUtils.fallbackStart,
-          initialZoom: 12.0,
-        ),
-        children: [
-          TileLayer(
-            urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
-            userAgentPackageName: 'com.example.tourxport',
-          ),
-        if (_routeSegments.isNotEmpty)
-          PolylineLayer(
-            polylines: _routeSegments.asMap().entries.where((entry) {
-              if (_focusedSegmentIndex == null) return true;
-              return entry.key == _focusedSegmentIndex;
-            }).map((entry) {
-              final seg = entry.value;
-              return Polyline(
-                points: seg.points,
-                strokeWidth: 6.0,
-                color: seg.color.withOpacity(0.9),
-                borderColor: Colors.black.withOpacity(0.8),
-                borderStrokeWidth: 2.0,
-              );
-            }).toList(),
-          ),
-        MarkerLayer(
-          markers: [
-            for (int i = 0; i < _currentWaypoints.length; i++)
-              if (_focusedSegmentIndex == null || _focusedSegmentIndex == i || _focusedSegmentIndex == i - 1)
-                Marker(
-                  point: _currentWaypoints[i],
-                  width: (i == 0 && hasUserLoc) ? 50 : 40,
-                  height: (i == 0 && hasUserLoc) ? 50 : 40,
-                  alignment: Alignment.center,
-                  child: (i == 0 && hasUserLoc)
-                    ? Stack(
-                        alignment: Alignment.center,
-                        children: [
-                          Container(
-                            width: 24,
-                            height: 24,
-                            decoration: BoxDecoration(
-                              color: isAllDaysMode ? const Color(0xFFB5956A).withOpacity(0.2) : TourMapUtils.getColorForIndex(0).withOpacity(0.2),
-                              shape: BoxShape.circle,
-                            ),
-                          ),
-                          Container(
-                            width: 14,
-                            height: 14,
-                            decoration: BoxDecoration(
-                              color: isAllDaysMode ? const Color(0xFFB5956A) : TourMapUtils.getColorForIndex(0),
-                              shape: BoxShape.circle,
-                              boxShadow: [
-                                BoxShadow(
-                                  color: isAllDaysMode ? const Color(0xFFB5956A).withOpacity(0.6) : TourMapUtils.getColorForIndex(0).withOpacity(0.6),
-                                  blurRadius: 6,
-                                  spreadRadius: 2,
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      )
-                    : TourCustomMarker(
-                        text: hasUserLoc ? '$i' : '${i + 1}',
-                        color: isAllDaysMode ? const Color(0xFFE74C3C) : TourMapUtils.getColorForIndex(i),
-                      ),
-                ),
-          ],
-        ),
-      ],
-    ));
-  }
   @override
   Widget build(BuildContext context) {
     final isDesktop = MediaQuery.of(context).size.width >= 800;
     final isAllDaysMode = _selectedDayIndex == -1;
     final hasUserLoc = _userLocation != null && (isAllDaysMode || _selectedDayIndex == 0);
 
-    // Xây dựng widget Bản đồ chính
     final mapWidget = Stack(
       children: [
-        _buildMapLayer(isAllDaysMode, hasUserLoc),
-        
-        // Trên mobile, day selector nằm trên map
+        MapLayerView(
+          mapController: _mapController,
+          userLocation: _userLocation,
+          routeSegments: _routeSegments,
+          currentWaypoints: _currentWaypoints,
+          focusedSegmentIndex: _focusedSegmentIndex,
+          isAllDaysMode: isAllDaysMode,
+          hasUserLoc: hasUserLoc,
+        ),
+        if (_isLoading)
+          Container(color: Colors.black.withOpacity(0.2)),
+        if (_isLoading)
+          const Positioned(
+            top: 0, left: 0, right: 0,
+            child: LinearProgressIndicator(
+              backgroundColor: Colors.transparent,
+              valueColor: AlwaysStoppedAnimation<Color>(Color(0xFFD4AF7A)),
+            ),
+          ),
         if (!isDesktop)
           Positioned(
-            top: 0,
-            left: 0,
-            right: 0,
+            top: 0, left: 0, right: 0,
             child: TourDaySelector(
               itinerary: widget.tourData.data.itinerary,
               selectedDayIndex: _selectedDayIndex,
               onDaySelected: (index) {
-                setState(() {
-                  _selectedDayIndex = index;
-                });
+                setState(() => _selectedDayIndex = index);
                 _calculateRoute();
               },
             ),
           ),
-          
-        if (_isLoading)
-          const Center(
-            child: CircularProgressIndicator(color: Color(0xFFD4AF7A)),
+        Positioned(
+          right: 16,
+          bottom: MediaQuery.of(context).size.height * 0.38, 
+          child: Column(
+            children: [
+              if (_userLocation != null || _focusedSegmentIndex != null)
+                FloatingActionButton.small(
+                  heroTag: 'zoom_origin',
+                  backgroundColor: const Color(0xFF1E1E1E),
+                  tooltip: _focusedSegmentIndex != null ? 'Xem điểm đi' : 'Vị trí của bạn',
+                  child: Icon(
+                    _focusedSegmentIndex != null ? Icons.trip_origin : Icons.my_location, 
+                    color: Colors.blueAccent,
+                  ),
+                  onPressed: () {
+                    if (_focusedSegmentIndex != null && _focusedSegmentIndex! < _currentWaypoints.length) {
+                      _animatedMapMove(_currentWaypoints[_focusedSegmentIndex!], 16.0);
+                    } else if (_userLocation != null) {
+                      _animatedMapMove(_userLocation!, 15.0);
+                    }
+                  },
+                ),
+              if (_focusedSegmentIndex != null && _focusedSegmentIndex! + 1 < _currentWaypoints.length)
+                Padding(
+                  padding: const EdgeInsets.only(top: 8.0),
+                  child: FloatingActionButton.small(
+                    heroTag: 'zoom_dest',
+                    backgroundColor: const Color(0xFF1E1E1E),
+                    tooltip: 'Xem điểm đến',
+                    child: const Icon(Icons.place, color: Color(0xFFE74C3C)),
+                    onPressed: () {
+                      final dest = _currentWaypoints[_focusedSegmentIndex! + 1];
+                      _animatedMapMove(dest, 16.0);
+                    },
+                  ),
+                ),
+            ],
           ),
-          
-        // Thẻ hiển thị dưới cùng trên Mobile
-        if (!isDesktop && !_isLoading && _locationNames.isNotEmpty)
-          Positioned(
-            bottom: 24,
-            left: 20,
-            right: 20,
-            child: RepaintBoundary(
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(20),
+        ),
+        if (!isDesktop && (_isLoading || _hasError || _locationNames.isNotEmpty))
+          DraggableScrollableSheet(
+            initialChildSize: 0.35,
+            minChildSize: 0.18,
+            maxChildSize: 0.85,
+            snap: false,
+            builder: (context, scrollController) {
+              return RepaintBoundary(
                 child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+                  padding: const EdgeInsets.only(left: 20, right: 20, top: 16),
                   decoration: BoxDecoration(
                     color: const Color(0xFF1E1E1E).withOpacity(0.95),
-                    borderRadius: BorderRadius.circular(20),
-                    border: Border.all(
-                      color: Colors.white.withOpacity(0.15),
-                      width: 1,
-                    ),
-                  ),
-                  constraints: BoxConstraints(
-                    maxHeight: _isBottomSheetMinimized ? 210 : MediaQuery.of(context).size.height * 0.35,
+                    borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
+                    border: Border.all(color: Colors.white.withOpacity(0.15), width: 1),
                   ),
                   child: Column(
-                    mainAxisSize: MainAxisSize.min,
                     children: [
-                      GestureDetector(
-                        onTap: () {
-                          setState(() {
-                            _isBottomSheetMinimized = !_isBottomSheetMinimized;
-                          });
-                        },
-                        behavior: HitTestBehavior.opaque,
-                        child: Container(
-                          width: double.infinity,
-                          alignment: Alignment.center,
-                          padding: const EdgeInsets.only(bottom: 12),
+                      SingleChildScrollView(
+                        controller: scrollController,
+                        physics: const ClampingScrollPhysics(),
+                        child: GestureDetector(
+                          behavior: HitTestBehavior.opaque,
                           child: Container(
-                            width: 40,
-                            height: 4,
-                            decoration: BoxDecoration(
-                              color: Colors.white.withOpacity(0.3),
-                              borderRadius: BorderRadius.circular(2),
+                            width: double.infinity,
+                            padding: const EdgeInsets.only(bottom: 16, top: 8),
+                            child: Center(
+                              child: Column(
+                                children: [
+                                  Container(
+                                    width: 40, height: 4, 
+                                    decoration: BoxDecoration(color: Colors.white.withOpacity(0.3), borderRadius: BorderRadius.circular(2))
+                                  ),
+                                  if (_routeDistanceKm > 0)
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 12.0),
+                                      child: Text(
+                                        "🚗 Tổng di chuyển: ${TourMapUtils.formatDistance(_routeDistanceKm)}",
+                                        style: const TextStyle(color: Color(0xFFD4AF7A), fontWeight: FontWeight.bold, fontSize: 13),
+                                      ),
+                                    ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
                       ),
-                      Flexible(
-                        child: isAllDaysMode ? _buildTimelineList(isDesktop) : _buildLocationList(isDesktop: isDesktop),
+                      Expanded(
+                        child: _isLoading 
+                          ? const MapLoadingState() 
+                          : _hasError 
+                            ? MapErrorState(onRetry: _calculateRoute) 
+                            : (isAllDaysMode 
+                                ? MapTimelineList(
+                                    itinerary: widget.tourData.data.itinerary,
+                                    focusedActivity: _focusedActivity,
+                                    onActivityTapped: (item) {
+                                      setState(() {
+                                        if (_focusedActivity == item) {
+                                          _focusedActivity = null;
+                                          _fitMapBounds();
+                                        } else {
+                                          _focusedActivity = item;
+                                          if (item.latitude != null && item.longitude != null) {
+                                            _animatedMapMove(LatLng(item.latitude!, item.longitude!), 15.0);
+                                          } else {
+                                            ScaffoldMessenger.of(context).showSnackBar(
+                                              const SnackBar(content: Text('Chưa có dữ liệu tọa độ cho địa điểm này.', style: TextStyle(fontFamily: 'Montserrat'))),
+                                            );
+                                          }
+                                        }
+                                      });
+                                    },
+                                    isDesktop: isDesktop,
+                                  ) 
+                                : MapLocationList(
+                                    waypointItems: _waypointItems,
+                                    routeSegments: _routeSegments,
+                                    currentWaypoints: _currentWaypoints,
+                                    focusedSegmentIndex: _focusedSegmentIndex,
+                                    selectedDayIndex: _selectedDayIndex,
+                                    currentDayItinerary: (_selectedDayIndex >= 0 && _selectedDayIndex < widget.tourData.data.itinerary.length) ? widget.tourData.data.itinerary[_selectedDayIndex] : null,
+                                    hasNextDay: _selectedDayIndex != -1 && _selectedDayIndex < widget.tourData.data.itinerary.length - 1,
+                                    isDesktop: isDesktop,
+                                    onNextDay: () {
+                                      setState(() => _selectedDayIndex++);
+                                      _calculateRoute();
+                                    },
+                                    onSegmentFocused: (index) => setState(() => _focusedSegmentIndex = index),
+                                    onFitBounds: (pts) {
+                                      WidgetsBinding.instance.addPostFrameCallback((_) => _fitMapBounds(pts));
+                                    },
+                                  ))
                       ),
                     ],
                   ),
                 ),
-              ),
-            ),
+              );
+            },
           ),
       ],
     );
 
     if (isDesktop) {
-      // GIAO DIỆN DESKTOP / WEB
       return Scaffold(
         backgroundColor: const Color(0xFF121212),
         body: Row(
           children: [
-            // Side Panel (Cột điều khiển bên trái)
             RepaintBoundary(
               child: Container(
                 width: 380,
@@ -737,52 +527,31 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Nút quay lại & Tiêu đề
                   Row(
                     children: [
-                      IconButton(
-                        icon: const Icon(Icons.arrow_back_ios_new, color: Colors.white, size: 20),
-                        onPressed: () => Navigator.pop(context),
-                      ),
+                      IconButton(icon: const Icon(Icons.arrow_back_ios_new, color: Colors.white, size: 20), onPressed: () => Navigator.pop(context)),
                       const SizedBox(width: 8),
-                      const Expanded(
-                        child: Text(
-                          'Bản đồ Lộ trình',
-                          style: TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
-                        ),
-                      ),
+                      const Expanded(child: Text('Bản đồ Lộ trình', style: TextStyle(fontFamily: 'Montserrat', fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white))),
                       if (!_isLoading && _currentWaypoints.isNotEmpty)
                         IconButton(
                           icon: const Icon(Icons.zoom_out_map_rounded, color: Color(0xFFD4AF7A)),
                           tooltip: 'Xem toàn bộ đường đi',
                           onPressed: () {
-                            setState(() {
-                              _focusedSegmentIndex = null;
-                            });
+                            setState(() => _focusedSegmentIndex = null);
                             _fitMapBounds();
                           },
                         ),
                     ],
                   ),
                   const SizedBox(height: 24),
-                  
-                  // Component điều khiển ngày
                   TourDaySelector(
                     itinerary: widget.tourData.data.itinerary,
                     selectedDayIndex: _selectedDayIndex,
                     onDaySelected: (index) {
-                      setState(() {
-                        _selectedDayIndex = index;
-                      });
+                      setState(() => _selectedDayIndex = index);
                       _calculateRoute();
                     },
                   ),
-                  
                   if (isAllDaysMode) ...[
                     const SizedBox(height: 16),
                     Divider(color: Colors.white.withOpacity(0.1), thickness: 1),
@@ -790,27 +559,50 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
                   ] else ...[
                     const SizedBox(height: 24),
                   ],
-
-                  // Component thông tin/danh sách
                   if (_isLoading)
-                    const Expanded(
-                      child: Center(child: CircularProgressIndicator(color: Color(0xFFD4AF7A))),
-                    )
+                    const Expanded(child: MapLoadingState())
+                  else if (_hasError)
+                    Expanded(child: MapErrorState(onRetry: _calculateRoute))
                   else if (_locationNames.isNotEmpty)
-                    Expanded(
-                      child: isAllDaysMode 
-                          ? _buildTimelineList(isDesktop)
-                          : _buildLocationList(isDesktop: isDesktop),
-                    ),
-                    
-                  TourRouteSummary(
-                    routeDistanceKm: _routeDistanceKm,
-                    routeDurationMin: _routeDurationMin,
-                    stopsCount: _currentStops.length,
-                  ),
+                    Expanded(child: isAllDaysMode 
+                      ? MapTimelineList(
+                          itinerary: widget.tourData.data.itinerary,
+                          focusedActivity: _focusedActivity,
+                          onActivityTapped: (item) {
+                            setState(() {
+                              if (_focusedActivity == item) {
+                                _focusedActivity = null;
+                                _fitMapBounds();
+                              } else {
+                                _focusedActivity = item;
+                                if (item.latitude != null && item.longitude != null) {
+                                  _animatedMapMove(LatLng(item.latitude!, item.longitude!), 15.0);
+                                }
+                              }
+                            });
+                          },
+                          isDesktop: isDesktop,
+                        ) 
+                      : MapLocationList(
+                          waypointItems: _waypointItems,
+                          routeSegments: _routeSegments,
+                          currentWaypoints: _currentWaypoints,
+                          focusedSegmentIndex: _focusedSegmentIndex,
+                          selectedDayIndex: _selectedDayIndex,
+                          currentDayItinerary: (_selectedDayIndex >= 0 && _selectedDayIndex < widget.tourData.data.itinerary.length) ? widget.tourData.data.itinerary[_selectedDayIndex] : null,
+                          hasNextDay: _selectedDayIndex != -1 && _selectedDayIndex < widget.tourData.data.itinerary.length - 1,
+                          isDesktop: isDesktop,
+                          onNextDay: () {
+                            setState(() => _selectedDayIndex++);
+                            _calculateRoute();
+                          },
+                          onSegmentFocused: (index) => setState(() => _focusedSegmentIndex = index),
+                          onFitBounds: (pts) {
+                            WidgetsBinding.instance.addPostFrameCallback((_) => _fitMapBounds(pts));
+                          },
+                        )),
+                  TourRouteSummary(routeDistanceKm: _routeDistanceKm, routeDurationMin: _routeDurationMin, stopsCount: _currentStops.length),
                   const SizedBox(height: 16),
-                    
-                  // Thông báo trạng thái tuyến đường từ OSRM
                   if (!_isLoading && _routeSegments.isNotEmpty)
                     Container(
                       padding: const EdgeInsets.all(16),
@@ -827,12 +619,7 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
                           Expanded(
                             child: Text(
                               'Tuyến đường tối ưu đã được tính toán từ OSRM.',
-                              style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 12,
-                                color: Colors.white.withValues(alpha: 0.8),
-                                height: 1.4,
-                              ),
+                              style: TextStyle(fontFamily: 'Montserrat', fontSize: 12, color: Colors.white.withValues(alpha: 0.8), height: 1.4),
                             ),
                           ),
                         ],
@@ -842,28 +629,16 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
               ),
             ),
             ),
-            // Bản đồ bên phải
-            Expanded(
-              child: mapWidget,
-            ),
+            Expanded(child: mapWidget),
           ],
         ),
       );
     } else {
-      // GIAO DIỆN MOBILE
       return Scaffold(
         backgroundColor: const Color(0xFF121212),
         appBar: AppBar(
           iconTheme: const IconThemeData(color: Colors.white),
-          title: const Text(
-            'Bản đồ Lộ trình',
-            style: TextStyle(
-              fontFamily: 'Montserrat',
-              fontWeight: FontWeight.w700,
-              fontSize: 18,
-              color: Colors.white,
-            ),
-          ),
+          title: const Text('Bản đồ Lộ trình', style: TextStyle(fontFamily: 'Montserrat', fontWeight: FontWeight.w700, fontSize: 18, color: Colors.white)),
           elevation: 0,
           backgroundColor: const Color(0xFF1E1E1E),
           centerTitle: true,
@@ -873,9 +648,7 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
                 icon: const Icon(Icons.zoom_out_map_rounded, color: Color(0xFFD4AF7A)),
                 tooltip: 'Xem toàn bộ đường đi',
                 onPressed: () {
-                  setState(() {
-                    _focusedSegmentIndex = null;
-                  });
+                  setState(() => _focusedSegmentIndex = null);
                   _fitMapBounds();
                 },
               ),
@@ -886,5 +659,3 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
     }
   }
 }
-
-
