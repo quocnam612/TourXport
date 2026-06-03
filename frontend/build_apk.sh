@@ -26,12 +26,8 @@ if [[ -n "${GOOGLE_CLIENT_ID:-}" ]]; then
   args+=(--dart-define "GOOGLE_CLIENT_ID=$GOOGLE_CLIENT_ID")
 fi
 
-if [[ -n "${FACEBOOK_APP_ID:-}" ]]; then
-  args+=(--dart-define "FACEBOOK_APP_ID=$FACEBOOK_APP_ID")
-fi
-
-if [[ -n "${FACEBOOK_GRAPH_VERSION:-}" ]]; then
-  args+=(--dart-define "FACEBOOK_GRAPH_VERSION=$FACEBOOK_GRAPH_VERSION")
+if [[ -n "${DISCORD_CLIENT_ID:-}" ]]; then
+  args+=(--dart-define "DISCORD_CLIENT_ID=$DISCORD_CLIENT_ID")
 fi
 
 flutter "${args[@]}"

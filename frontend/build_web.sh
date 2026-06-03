@@ -13,7 +13,6 @@ fi
 
 API_BASE_URL="${API_BASE_URL:-https://tourxport.onrender.com}"
 AI_BASE_URL="${AI_BASE_URL:-https://tourxport-ai-backend.onrender.com}"
-FACEBOOK_GRAPH_VERSION="${FACEBOOK_GRAPH_VERSION:-v20.0}"
 
 if [[ ( -n "${NETLIFY:-}" || -n "${VERCEL:-}" ) && ! -d "$HOME/flutter" ]]; then
   git clone https://github.com/flutter/flutter.git -b stable --depth 1 "$HOME/flutter"
@@ -35,11 +34,9 @@ if [[ -n "${GOOGLE_CLIENT_ID:-}" ]]; then
   args+=(--dart-define "GOOGLE_CLIENT_ID=$GOOGLE_CLIENT_ID")
 fi
 
-if [[ -n "${FACEBOOK_APP_ID:-}" ]]; then
-  args+=(--dart-define "FACEBOOK_APP_ID=$FACEBOOK_APP_ID")
+if [[ -n "${DISCORD_CLIENT_ID:-}" ]]; then
+  args+=(--dart-define "DISCORD_CLIENT_ID=$DISCORD_CLIENT_ID")
 fi
-
-args+=(--dart-define "FACEBOOK_GRAPH_VERSION=$FACEBOOK_GRAPH_VERSION")
 
 flutter config --enable-web
 flutter pub get
