@@ -8,14 +8,13 @@ import '../l10n/app_localizations.dart';
 import 'package:geolocator/geolocator.dart';
 
 import '../api/api.dart';
+import '../utils/auth_storage.dart';
 import '../widgets/weather_widget.dart';
 import '../widgets/responsive_builder.dart';
 import '../models/destination.dart';
 import '../widgets/anim_builder.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'edit_profile_screen.dart';
-import 'email_settings_screen.dart';
 import 'help_support_screen.dart';
 import 'language_settings_screen.dart';
 import 'notification_settings_screen.dart';
@@ -249,6 +248,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   int _searchCurrentIndex = 0;
   int _navIndex = _tabExplore;
   int _savedPlacesInitialTab = 0;
+  int _surveyAiWarmupToken = 0;
+  bool _isSurveyAiReady = false;
   bool _showLikedOnly = false;
   String _searchQuery = '';
   String? _selectedCity;
@@ -1813,8 +1814,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               ),
             ),
             TextButton(
-              onPressed: () {
+              onPressed: () async {
                 Navigator.pop(context); // Close dialog
+                await AuthStorage.clearSession();
+                if (!mounted) return;
                 Navigator.pushAndRemoveUntil(
                   context,
                   PageRouteBuilder(
@@ -1922,6 +1925,38 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       _navIndex = _tabSurvey;
     });
     _stopAutoPlay();
+    _startSurveyAiWarmup();
+  }
+
+  Future<bool> _pingAiBackend() async {
+    try {
+      final response = await apiAiGet('/', timeout: const Duration(seconds: 8));
+      return response.statusCode >= 200 && response.statusCode < 300;
+    } catch (_) {
+      return false;
+    }
+  }
+
+  void _startSurveyAiWarmup() {
+    final token = ++_surveyAiWarmupToken;
+    setState(() {
+      _isSurveyAiReady = false;
+    });
+    unawaited(_waitForSurveyAiBackend(token));
+  }
+
+  Future<void> _waitForSurveyAiBackend(int token) async {
+    while (mounted && token == _surveyAiWarmupToken && _navIndex == _tabSurvey) {
+      if (await _pingAiBackend()) {
+        if (!mounted || token != _surveyAiWarmupToken || _navIndex != _tabSurvey) return;
+        setState(() {
+          _isSurveyAiReady = true;
+        });
+        return;
+      }
+
+      await Future<void>.delayed(const Duration(seconds: 3));
+    }
   }
 
   Future<Object?> _openSurveyForCurrentLayout() async {
@@ -1941,7 +1976,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     return Navigator.push(
       context,
       PageRouteBuilder(
-        pageBuilder: (_, __, ___) => SurveyScreen(
+        pageBuilder: (_, __, ___) => _SurveyAiWarmupGate(
           authToken: widget.authToken,
           userName: _currentUserName,
           avatarUrl: _currentAvatarUrl,
@@ -1969,32 +2004,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       ),
     );
   }
-
-  Future<void> _openEditProfile() async {
-    if (_userData == null) return;
-
-    final result = await Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => EditProfileScreen(
-          userData: _userData!,
-          authToken: widget.authToken!,
-        ),
-      ),
-    );
-
-    if (result == true) {
-      _loadProfile();
-    }
-  }
-
-  Future<void> _editName() => _showEditFieldDialog(
-        'Tên',
-        'name',
-        _userData?['name'] ?? '',
-        const Color(0xFFD4AF7A),
-        Icons.person_rounded,
-      );
 
   Future<void> _editHelpSupport() async {
     if (_userData == null) return;
@@ -2042,24 +2051,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         },
       ),
     );
-  }
-
-  Future<void> _editEmail() async {
-    if (_userData == null) return;
-
-    final result = await Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => EmailSettingsScreen(
-          userData: _userData!,
-          authToken: widget.authToken!,
-        ),
-      ),
-    );
-
-    if (result == true) {
-      _loadProfile();
-    }
   }
 
   Future<void> _editPhone() async {
@@ -2898,225 +2889,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         ),
       ),
     );
-  }
-
-  Future<void> _showEditFieldDialog(String label, String fieldKey,
-      String initialValue, Color accentColor, IconData icon) async {
-    final controller = TextEditingController(text: initialValue);
-
-    final result = await showModalBottomSheet<bool>(
-      context: context,
-      isScrollControlled: true,
-      backgroundColor: Colors.transparent,
-      builder: (context) => Container(
-        height: MediaQuery.of(context).size.height * 0.7,
-        decoration: BoxDecoration(
-          color: const Color(0xFF1B2321).withOpacity(0.95),
-          borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
-          border: Border.all(color: Colors.white.withOpacity(0.12), width: 1.5),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withOpacity(0.5),
-              blurRadius: 40,
-              spreadRadius: 10,
-            ),
-          ],
-        ),
-        child: ClipRRect(
-          borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
-          child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
-            child: Stack(
-              children: [
-                // Large Background Decorative Icon
-                Positioned(
-                  top: -20,
-                  right: -30,
-                  child: Icon(
-                    icon,
-                    size: 200,
-                    color: accentColor.withOpacity(0.05),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(
-                    left: 24,
-                    right: 24,
-                    top: 12,
-                    bottom: MediaQuery.of(context).viewInsets.bottom + 24,
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      // Handle
-                      Center(
-                        child: Container(
-                          width: 40,
-                          height: 4,
-                          decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(0.2),
-                            borderRadius: BorderRadius.circular(2),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 32),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            children: [
-                              Container(
-                                padding: const EdgeInsets.all(10),
-                                decoration: BoxDecoration(
-                                  color: accentColor.withOpacity(0.15),
-                                  borderRadius: BorderRadius.circular(14),
-                                ),
-                                child: Icon(icon, color: accentColor, size: 24),
-                              ),
-                              const SizedBox(width: 16),
-                              Text(
-                                'Chỉnh sửa $label',
-                                style: const TextStyle(
-                                  fontFamily: 'Montserrat',
-                                  fontSize: 22,
-                                  fontWeight: FontWeight.w800,
-                                  color: Colors.white,
-                                  letterSpacing: -0.5,
-                                ),
-                              ),
-                            ],
-                          ),
-                          GestureDetector(
-                            onTap: () => Navigator.pop(context),
-                            child: Container(
-                              padding: const EdgeInsets.all(8),
-                              decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.05),
-                                shape: BoxShape.circle,
-                              ),
-                              child: const Icon(Icons.close_rounded,
-                                  color: Colors.white70, size: 20),
-                            ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 16),
-                      Text(
-                        'Cập nhật $label của bạn để mọi người có thể kết nối với bạn dễ dàng hơn.',
-                        style: TextStyle(
-                          fontFamily: 'Montserrat',
-                          fontSize: 14,
-                          color: Colors.white.withOpacity(0.5),
-                          height: 1.5,
-                        ),
-                      ),
-                      const SizedBox(height: 40),
-
-                      // Themed Input
-                      Container(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 20, vertical: 10),
-                        decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(0.2),
-                          borderRadius: BorderRadius.circular(20),
-                          border: Border.all(
-                            color: accentColor.withOpacity(0.4),
-                            width: 1.5,
-                          ),
-                          boxShadow: [
-                            BoxShadow(
-                              color: accentColor.withOpacity(0.1),
-                              blurRadius: 20,
-                              spreadRadius: 2,
-                            ),
-                          ],
-                        ),
-                        child: TextField(
-                          controller: controller,
-                          autofocus: true,
-                          keyboardType: fieldKey == 'phone'
-                              ? TextInputType.phone
-                              : (fieldKey == 'email'
-                                  ? TextInputType.emailAddress
-                                  : TextInputType.text),
-                          style: const TextStyle(
-                            fontFamily: 'Montserrat',
-                            color: Colors.white,
-                            fontSize: 18,
-                            fontWeight: FontWeight.w600,
-                          ),
-                          decoration: InputDecoration(
-                            hintText: 'Nhập $label mới...',
-                            hintStyle:
-                                TextStyle(color: Colors.white.withOpacity(0.2)),
-                            border: InputBorder.none,
-                          ),
-                        ),
-                      ),
-
-                      const Spacer(),
-
-                      // Save Button
-                      SizedBox(
-                        width: double.infinity,
-                        height: 64,
-                        child: ElevatedButton(
-                          onPressed: () async {
-                            final newValue = controller.text.trim();
-                            if (newValue == initialValue) {
-                              Navigator.pop(context);
-                              return;
-                            }
-
-                            final token = widget.authToken?.trim();
-                            if (token == null) return;
-
-                            final response = await apiPutJson(
-                              '/auth/profile',
-                              {fieldKey: newValue},
-                              token: token,
-                            );
-
-                            if (response.statusCode == 200) {
-                              Navigator.pop(context, true);
-                            } else {
-                              _showMessage('Cập nhật thất bại');
-                            }
-                          },
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: accentColor,
-                            foregroundColor: Colors.black,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            elevation: 12,
-                            shadowColor: accentColor.withOpacity(0.4),
-                          ),
-                          child: const Text(
-                            'Lưu thay đổi',
-                            style: TextStyle(
-                              fontFamily: 'Montserrat',
-                              fontSize: 16,
-                              fontWeight: FontWeight.w800,
-                              letterSpacing: 1,
-                            ),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 12),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
-      ),
-    );
-
-    if (result == true) {
-      _loadProfile();
-    }
   }
 
   Future<bool> _toggleSaved(Destination dest) async {
@@ -4951,13 +4723,15 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           onNavigateMain: _handleMainNavigationResult,
         ),
         isDesktop
-            ? SurveyScreen(
-                authToken: widget.authToken,
-                userName: _currentUserName,
-                avatarUrl: _currentAvatarUrl,
-                embedded: true,
-                onNavigate: _handleSurveyResult,
-              )
+            ? (_isSurveyAiReady
+                ? SurveyScreen(
+                    authToken: widget.authToken,
+                    userName: _currentUserName,
+                    avatarUrl: _currentAvatarUrl,
+                    embedded: true,
+                    onNavigate: _handleSurveyResult,
+                  )
+                : _SurveyAiWarmupView(isVi: _isVi, embedded: true))
             : const SizedBox.shrink(),
         ProfileSection(
           entranceAnimation: _cardEntrance,
@@ -4970,8 +4744,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           onLogout: _logout,
           onUpdateAvatar: () => _showEditImageDialog(true),
           onUpdateCover: () => _showEditImageDialog(false),
-          onEditName: _openEditProfile,
-          onEditEmail: _editEmail,
           onEditPhone: _editPhone,
           onEditSecurity: () => _editSecurity(),
           onEditNotifications: _showNotificationCenter,
@@ -7348,6 +7120,156 @@ class _ExploreStatItem extends StatelessWidget {
           ),
         ),
       ],
+    );
+  }
+}
+
+class _SurveyAiWarmupGate extends StatefulWidget {
+  final String? authToken;
+  final String userName;
+  final String? avatarUrl;
+
+  const _SurveyAiWarmupGate({
+    required this.authToken,
+    required this.userName,
+    required this.avatarUrl,
+  });
+
+  @override
+  State<_SurveyAiWarmupGate> createState() => _SurveyAiWarmupGateState();
+}
+
+class _SurveyAiWarmupGateState extends State<_SurveyAiWarmupGate> {
+  bool _isReady = false;
+
+  bool get _isVi => Localizations.localeOf(context).languageCode == 'vi';
+
+  @override
+  void initState() {
+    super.initState();
+    unawaited(_waitForAiBackend());
+  }
+
+  Future<bool> _pingAiBackend() async {
+    try {
+      final response = await apiAiGet('/', timeout: const Duration(seconds: 8));
+      return response.statusCode >= 200 && response.statusCode < 300;
+    } catch (_) {
+      return false;
+    }
+  }
+
+  Future<void> _waitForAiBackend() async {
+    while (mounted && !_isReady) {
+      if (await _pingAiBackend()) {
+        if (!mounted) return;
+        setState(() => _isReady = true);
+        return;
+      }
+
+      await Future<void>.delayed(const Duration(seconds: 3));
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (_isReady) {
+      return SurveyScreen(
+        authToken: widget.authToken,
+        userName: widget.userName,
+        avatarUrl: widget.avatarUrl,
+      );
+    }
+
+    return _SurveyAiWarmupView(isVi: _isVi);
+  }
+}
+
+class _SurveyAiWarmupView extends StatelessWidget {
+  final bool isVi;
+  final bool embedded;
+
+  const _SurveyAiWarmupView({
+    required this.isVi,
+    this.embedded = false,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final card = Center(
+      child: Padding(
+        padding: const EdgeInsets.all(24),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(28),
+          child: BackdropFilter(
+            filter: ImageFilter.blur(sigmaX: 16, sigmaY: 16),
+            child: Container(
+              width: 420,
+              constraints: const BoxConstraints(maxWidth: 420),
+              padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 30),
+              decoration: BoxDecoration(
+                color: Colors.black.withOpacity(0.34),
+                borderRadius: BorderRadius.circular(28),
+                border: Border.all(color: Colors.white.withOpacity(0.14), width: 1.2),
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const SizedBox(
+                    width: 42,
+                    height: 42,
+                    child: CircularProgressIndicator(
+                      strokeWidth: 3,
+                      color: Color(0xFFD4AF7A),
+                    ),
+                  ),
+                  const SizedBox(height: 22),
+                  Text(
+                    isVi ? 'Chờ một xíu' : 'Please wait a moment',
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                      fontFamily: 'Montserrat',
+                      color: Colors.white,
+                      fontSize: 22,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                  const SizedBox(height: 10),
+                  Text(
+                    isVi
+                        ? 'AI Backend đang khởi động. TourXport sẽ mở khảo sát ngay khi kết nối thành công.'
+                        : 'The AI Backend is starting. TourXport will open the survey as soon as the connection is ready.',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontFamily: 'Montserrat',
+                      color: Colors.white.withOpacity(0.68),
+                      fontSize: 13,
+                      height: 1.55,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+
+    if (embedded) {
+      return card;
+    }
+
+    return Scaffold(
+      backgroundColor: const Color(0xFF0F1412),
+      body: Stack(
+        fit: StackFit.expand,
+        children: [
+          Image.asset('assets/images/halong.jpg', fit: BoxFit.cover),
+          Container(color: const Color(0xFF1B2321).withOpacity(0.78)),
+          card,
+        ],
+      ),
     );
   }
 }

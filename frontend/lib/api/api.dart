@@ -51,6 +51,13 @@ Map<String, String> _buildHeaders({String? token}) {
   };
 }
 
+Map<String, String> _buildGetHeaders({String? token}) {
+  return {
+    if (token != null && token.trim().isNotEmpty)
+      'Authorization': 'Bearer ${token.trim()}',
+  };
+}
+
 Future<http.Response> apiGet(String path, {String? token}) {
   final uri = Uri.parse('$apiBaseUrl$path');
   return _client.get(
@@ -71,6 +78,19 @@ Future<http.Response> apiPostJson(
     body: jsonEncode(body),
   );
 }
+
+Future<http.Response> apiAiGet(
+  String path, {
+  String? token,
+  Duration timeout = const Duration(seconds: 8),
+}) {
+  final uri = Uri.parse('$aiBaseUrl$path');
+  return _client.get(
+    uri,
+    headers: _buildGetHeaders(token: token),
+  ).timeout(timeout);
+}
+
 /// Gọi API tới AI Backend (timeout dài hơn vì OpenAI cần xử lý 15-60s)
 Future<http.Response> apiAiPostJson(
   String path,

@@ -10,14 +10,14 @@ class DataDeletionScreen extends StatelessWidget {
     return const LegalScaffold(
       title: 'Data Deletion Instructions',
       subtitle:
-          'Use these instructions to request deletion of TourXport account data, including data connected through Facebook login.',
+          'Use these instructions to request deletion of TourXport account data, including data connected through Discord login.',
       activeRoute: '/data-deletion',
       children: [
         LegalNotice(
           icon: Icons.delete_forever_outlined,
           title: 'Public data deletion instructions',
           body:
-              'This page is accessible without login and can be used as the User Data Deletion Instructions URL for Facebook Developer Console.',
+              'This page is accessible without login and can be used as the User Data Deletion Instructions URL for Discord Developer Portal.',
         ),
         LegalSection(
           title: '1. What can be deleted',
@@ -28,7 +28,7 @@ class DataDeletionScreen extends StatelessWidget {
             'Name, email address, phone number if provided, avatar, and social login identifiers.',
             'Saved places, saved tours, saved hotels, saved restaurants, and travel preferences.',
             'Survey answers, generated itinerary records, reviews, and other account-linked content where deletion is technically and legally possible.',
-            'Facebook login information stored by TourXport, such as Facebook user ID, public profile fields, email, and profile picture URL if available.',
+            'Discord login information stored by TourXport, such as Discord user ID, public profile fields, email, and profile picture URL if available.',
           ],
         ),
         LegalSection(
@@ -43,12 +43,12 @@ class DataDeletionScreen extends StatelessWidget {
         LegalSection(
           title: '3. Request deletion if you cannot sign in',
           paragraphs: [
-            'If you cannot access your account, send a deletion request through the support contact listed for TourXport in the app, app store listing, or Facebook app listing.',
+            'If you cannot access your account, send a deletion request through the support contact listed for TourXport in the app, app store listing, or Discord app listing.',
           ],
           bullets: [
             'Use the subject "TourXport data deletion request".',
-            'Provide the email address used for TourXport or Facebook login.',
-            'Provide your Facebook profile name if the account was created with Facebook login.',
+            'Provide the email address used for TourXport or Discord login.',
+            'Provide your Discord profile name if the account was created with Discord login.',
             'Do not send passwords or one-time verification codes.',
           ],
         ),
@@ -65,13 +65,13 @@ class DataDeletionScreen extends StatelessWidget {
           ],
         ),
         LegalSection(
-          title: '6. Revoke Facebook access',
+          title: '6. Revoke Discord access',
           paragraphs: [
-            'You can also disconnect TourXport from your Facebook account through Facebook settings. This stops future Facebook data sharing with TourXport but does not automatically delete data already stored in TourXport systems.',
+            'You can also disconnect TourXport from your Discord account through Discord authorized apps settings. This stops future Discord data sharing with TourXport but does not automatically delete data already stored in TourXport systems.',
           ],
           bullets: [
-            'Open Facebook Settings.',
-            'Go to Apps and Websites.',
+            'Open Discord Authorized Apps.',
+            'Go to Authorized Apps.',
             'Find TourXport.',
             'Remove access for TourXport.',
             'Submit a deletion request using the instructions above if you also want stored TourXport account data deleted.',

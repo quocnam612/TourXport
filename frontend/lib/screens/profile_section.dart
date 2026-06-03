@@ -1,6 +1,5 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import '../l10n/app_localizations.dart';
 
 class ProfileSection extends StatelessWidget {
   final Animation<double> entranceAnimation;
@@ -10,8 +9,6 @@ class ProfileSection extends StatelessWidget {
   final VoidCallback onLogout;
   final VoidCallback onUpdateAvatar;
   final VoidCallback onUpdateCover;
-  final VoidCallback onEditName;
-  final VoidCallback onEditEmail;
   final VoidCallback onEditPhone;
   final VoidCallback onEditSecurity;
   final VoidCallback onEditNotifications;
@@ -27,8 +24,6 @@ class ProfileSection extends StatelessWidget {
     required this.onLogout,
     required this.onUpdateAvatar,
     required this.onUpdateCover,
-    required this.onEditName,
-    required this.onEditEmail,
     required this.onEditPhone,
     required this.onEditSecurity,
     required this.onEditNotifications,
@@ -207,13 +202,11 @@ class ProfileSection extends StatelessWidget {
                                 icon: Icons.person_outline_rounded,
                                 title: isVi ? 'Thông tin cá nhân' : 'Personal Information',
                                 subtitle: name,
-                                onTap: onEditName,
                               ),
                               _MenuDataItem(
                                 icon: Icons.email_outlined,
                                 title: 'Email',
                                 subtitle: email,
-                                onTap: onEditEmail,
                               ),
                               _MenuDataItem(
                                 icon: Icons.phone_android_rounded,
@@ -544,17 +537,8 @@ class ProfileSection extends StatelessWidget {
   }
 
   Widget _buildMenuItem(BuildContext context, _MenuDataItem item) {
-    final isVi = Localizations.localeOf(context).languageCode == 'vi';
     return InkWell(
-      onTap: () {
-        if (item.onTap != null) {
-          item.onTap!();
-        } else {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text(isVi ? 'Chưa gán hành động cho mục này' : 'No action assigned for this item')),
-          );
-        }
-      },
+      onTap: item.onTap,
       highlightColor: Colors.white.withOpacity(0.05),
       splashColor: const Color(0xFFD4AF7A).withOpacity(0.1),
       child: Padding(
@@ -608,11 +592,12 @@ class ProfileSection extends StatelessWidget {
                 ],
               ),
             ),
-            Icon(
-              Icons.chevron_right_rounded,
-              color: Colors.white.withOpacity(0.25),
-              size: 24,
-            ),
+            if (item.onTap != null)
+              Icon(
+                Icons.chevron_right_rounded,
+                color: Colors.white.withOpacity(0.25),
+                size: 24,
+              ),
           ],
         ),
       ),

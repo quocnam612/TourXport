@@ -31,17 +31,15 @@ class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> with Ti
   final List<Map<String, String>> _languages = [
     {'code': 'vi', 'name': 'Tiếng Việt', 'native': 'Tiếng Việt', 'flag': '🇻🇳', 'region': 'Việt Nam'},
     {'code': 'en', 'name': 'Tiếng Anh', 'native': 'English', 'flag': '🇺🇸', 'region': 'United States'},
-    {'code': 'fr', 'name': 'Tiếng Pháp', 'native': 'Français', 'flag': '🇫🇷', 'region': 'France'},
-    {'code': 'de', 'name': 'Tiếng Đức', 'native': 'Deutsch', 'flag': '🇩🇪', 'region': 'Germany'},
-    {'code': 'ja', 'name': 'Tiếng Nhật', 'native': '日本語', 'flag': '🇯🇵', 'region': 'Japan'},
-    {'code': 'ko', 'name': 'Tiếng Hàn', 'native': '한국어', 'flag': '🇰🇷', 'region': 'Korea'},
-    {'code': 'zh', 'name': 'Tiếng Trung', 'native': '中文', 'flag': '🇨🇳', 'region': 'China'},
   ];
 
   @override
   void initState() {
     super.initState();
-    _selectedLanguage = LocaleManager.localeNotifier.value.languageCode;
+    final currentLanguage = LocaleManager.normalizeLanguageCode(
+      LocaleManager.localeNotifier.value.languageCode,
+    );
+    _selectedLanguage = currentLanguage;
     _tempSelectedLanguage = _selectedLanguage;
     _fadeController = AnimationController(
       vsync: this,
@@ -263,7 +261,10 @@ class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> with Ti
   }
 
   Widget _buildCurrentLanguageCard() {
-    final current = _languages.firstWhere((l) => l['code'] == _selectedLanguage);
+    final current = _languages.firstWhere(
+      (l) => l['code'] == _selectedLanguage,
+      orElse: () => _languages.first,
+    );
 
     return _buildGlassCard(
       child: Row(
@@ -420,7 +421,10 @@ class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> with Ti
   }
 
   Widget _buildPreviewCard() {
-    final lang = _languages.firstWhere((l) => l['code'] == _tempSelectedLanguage);
+    final lang = _languages.firstWhere(
+      (l) => l['code'] == _tempSelectedLanguage,
+      orElse: () => _languages.first,
+    );
     
     return _buildGlassCard(
       child: Column(
@@ -742,9 +746,9 @@ class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> with Ti
     if (_tempSelectedLanguage == 'vi') return text;
     // Simple mock translation for preview
     final maps = {
-      'Khám phá': {'en': 'Explore', 'ja': '探索', 'ko': '탐험', 'fr': 'Explorer', 'de': 'Erkunden', 'zh': '探索'},
-      'Đã lưu': {'en': 'Saved', 'ja': '保存済み', 'ko': '저장됨', 'fr': 'Enregistré', 'de': 'Gespeichert', 'zh': '已保存'},
-      'Đặt ngay': {'en': 'Book Now', 'ja': '今すぐ予約', 'ko': '지금 예약', 'fr': 'Réserver', 'de': 'Buchen', 'zh': '立即预订'},
+      'Khám phá': {'en': 'Explore'},
+      'Đã lưu': {'en': 'Saved'},
+      'Đặt ngay': {'en': 'Book Now'},
     };
     return maps[text]?[_tempSelectedLanguage] ?? text;
   }

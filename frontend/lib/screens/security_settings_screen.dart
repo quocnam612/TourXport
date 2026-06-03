@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import '../api/api.dart';
 
 class SecuritySettingsScreen extends StatefulWidget {
   final Map<String, dynamic> userData;
@@ -19,7 +20,6 @@ class SecuritySettingsScreen extends StatefulWidget {
 class _SecuritySettingsScreenState extends State<SecuritySettingsScreen> with TickerProviderStateMixin {
   late AnimationController _fadeController;
   late AnimationController _pulseController;
-  late AnimationController _progressController;
   
   final TextEditingController _currentPassController = TextEditingController();
   final TextEditingController _newPassController = TextEditingController();
@@ -28,24 +28,51 @@ class _SecuritySettingsScreenState extends State<SecuritySettingsScreen> with Ti
   bool _obscureCurrent = true;
   bool _obscureNew = true;
   bool _obscureConfirm = true;
-  
-  bool _twoFactorEnabled = true;
-  bool _faceIdEnabled = false;
-  bool _fingerprintEnabled = true;
+  bool _isSavingPassword = false;
   
   double _passStrength = 0.0;
-  String _passStrengthLabel = 'Yếu';
   Color _passStrengthColor = Colors.redAccent;
+
+  bool get _isVi => Localizations.localeOf(context).languageCode == 'vi';
+
+  bool get _hasLocalLogin => _loginProviders.contains('local');
+
+  List<String> get _loginProviders {
+    final rawProviders = widget.userData['authProvider'];
+    final Set<String> providers;
+
+    if (rawProviders is List) {
+      providers = rawProviders
+          .map((provider) => provider.toString().trim().toLowerCase())
+          .where((provider) => provider.isNotEmpty)
+          .toSet();
+    } else if (rawProviders is String) {
+      providers = rawProviders
+          .split(',')
+          .map((provider) => provider.trim().toLowerCase())
+          .where((provider) => provider.isNotEmpty)
+          .toSet();
+    } else {
+      providers = <String>{};
+    }
+
+    return ['local', 'google', 'discord'].where(providers.contains).toList();
+  }
+
+  String get _passStrengthLabel {
+    if (_passStrength <= 0.25) return _isVi ? 'Yếu' : 'Weak';
+    if (_passStrength <= 0.5) return _isVi ? 'Trung bình' : 'Medium';
+    if (_passStrength <= 0.75) return _isVi ? 'Mạnh' : 'Strong';
+    return _isVi ? 'Rất mạnh' : 'Very strong';
+  }
 
   @override
   void initState() {
     super.initState();
     _fadeController = AnimationController(vsync: this, duration: const Duration(milliseconds: 1000));
     _pulseController = AnimationController(vsync: this, duration: const Duration(seconds: 2))..repeat(reverse: true);
-    _progressController = AnimationController(vsync: this, duration: const Duration(milliseconds: 1500));
     
     _fadeController.forward();
-    _progressController.forward();
     
     _newPassController.addListener(_updatePassStrength);
   }
@@ -54,7 +81,6 @@ class _SecuritySettingsScreenState extends State<SecuritySettingsScreen> with Ti
   void dispose() {
     _fadeController.dispose();
     _pulseController.dispose();
-    _progressController.dispose();
     _currentPassController.dispose();
     _newPassController.dispose();
     _confirmPassController.dispose();
@@ -71,10 +97,10 @@ class _SecuritySettingsScreenState extends State<SecuritySettingsScreen> with Ti
 
     setState(() {
       _passStrength = strength;
-      if (strength <= 0.25) { _passStrengthLabel = 'Yếu'; _passStrengthColor = Colors.redAccent; }
-      else if (strength <= 0.5) { _passStrengthLabel = 'Trung bình'; _passStrengthColor = Colors.orangeAccent; }
-      else if (strength <= 0.75) { _passStrengthLabel = 'Mạnh'; _passStrengthColor = Colors.lightGreenAccent; }
-      else { _passStrengthLabel = 'Rất mạnh'; _passStrengthColor = const Color(0xFF2ECC71); }
+      if (strength <= 0.25) { _passStrengthColor = Colors.redAccent; }
+      else if (strength <= 0.5) { _passStrengthColor = Colors.orangeAccent; }
+      else if (strength <= 0.75) { _passStrengthColor = Colors.lightGreenAccent; }
+      else { _passStrengthColor = const Color(0xFF2ECC71); }
     });
   }
 
@@ -87,6 +113,65 @@ class _SecuritySettingsScreenState extends State<SecuritySettingsScreen> with Ti
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       ),
     );
+  }
+
+  Future<void> _changePassword() async {
+    final oldPassword = _currentPassController.text.trim();
+    final newPassword = _newPassController.text.trim();
+    final confirmPassword = _confirmPassController.text.trim();
+
+    if (_isSavingPassword) return;
+
+    if ((_hasLocalLogin && oldPassword.isEmpty) || newPassword.isEmpty || confirmPassword.isEmpty) {
+      _showToast(_isVi ? 'Vui lòng nhập đầy đủ thông tin mật khẩu.' : 'Please fill in all password fields.', isError: true);
+      return;
+    }
+
+    if (newPassword.length < 8) {
+      _showToast(_isVi ? 'Mật khẩu mới phải có ít nhất 8 ký tự.' : 'New password must be at least 8 characters.', isError: true);
+      return;
+    }
+
+    if (newPassword != confirmPassword) {
+      _showToast(_isVi ? 'Xác nhận mật khẩu mới không khớp.' : 'Password confirmation does not match.', isError: true);
+      return;
+    }
+
+    setState(() => _isSavingPassword = true);
+
+    try {
+      final response = await apiPutJson(
+        '/auth/profile/change-password',
+        {
+          'oldPassword': oldPassword,
+          'newPassword': newPassword,
+        },
+        token: widget.authToken,
+      );
+
+      if (!mounted) return;
+
+      final data = tryDecodeJsonObject(response.body);
+      final message = data?['message'] as String?;
+
+      if (response.statusCode == 200 && data?['success'] == true) {
+        _currentPassController.clear();
+        _newPassController.clear();
+        _confirmPassController.clear();
+        _showToast(message ?? (_isVi ? 'Đổi mật khẩu thành công!' : 'Password changed successfully!'));
+        Navigator.pop(context);
+        return;
+      }
+
+      _showToast(message ?? (_isVi ? 'Đổi mật khẩu thất bại.' : 'Failed to change password.'), isError: true);
+    } catch (error) {
+      if (!mounted) return;
+      _showToast(_isVi ? 'Không kết nối được server. ($error)' : 'Could not connect to the server. ($error)', isError: true);
+    } finally {
+      if (mounted) {
+        setState(() => _isSavingPassword = false);
+      }
+    }
   }
 
   @override
@@ -112,23 +197,15 @@ class _SecuritySettingsScreenState extends State<SecuritySettingsScreen> with Ti
                       children: [
                         _buildHeroHeaderContent(),
                         const SizedBox(height: 32),
-                        _buildSecurityStatusSection(),
-                        const SizedBox(height: 32),
-                        _buildSectionLabel('Thay đổi mật khẩu'),
+                        _buildSectionLabel(_isVi ? 'Thay đổi mật khẩu' : 'Change password'),
                         const SizedBox(height: 12),
                         _buildChangePasswordCard(),
                         const SizedBox(height: 32),
-                        _buildSectionLabel('Xác thực nâng cao'),
+                        _buildSectionLabel(_isVi ? 'Phương thức đăng nhập' : 'Login methods'),
                         const SizedBox(height: 12),
-                        _buildTwoFactorCard(),
-                        const SizedBox(height: 16),
-                        _buildBiometricCard(),
+                        _buildLoginMethodsCard(),
                         const SizedBox(height: 32),
-                        _buildSectionLabel('Thiết bị đang đăng nhập'),
-                        const SizedBox(height: 12),
-                        _buildDeviceList(),
-                        const SizedBox(height: 32),
-                        _buildSectionLabel('Lịch sử bảo mật'),
+                        _buildSectionLabel(_isVi ? 'Lịch sử bảo mật' : 'Security history'),
                         const SizedBox(height: 12),
                         _buildActivityTimeline(),
                         const SizedBox(height: 48),
@@ -182,9 +259,12 @@ class _SecuritySettingsScreenState extends State<SecuritySettingsScreen> with Ti
           ),
         ),
         const SizedBox(height: 20),
-        const Text('Bảo Mật', style: TextStyle(fontFamily: 'Montserrat', fontSize: 32, fontWeight: FontWeight.w900, color: Colors.white, letterSpacing: -1)),
+        Text(_isVi ? 'Bảo Mật' : 'Security', style: const TextStyle(fontFamily: 'Montserrat', fontSize: 32, fontWeight: FontWeight.w900, color: Colors.white, letterSpacing: -1)),
         const SizedBox(height: 8),
-        Text('Quản lý quyền riêng tư và bảo vệ tài khoản của bạn', style: TextStyle(fontFamily: 'Montserrat', fontSize: 14, color: Colors.white.withOpacity(0.6), height: 1.5)),
+        Text(
+          _isVi ? 'Quản lý quyền riêng tư và bảo vệ tài khoản của bạn' : 'Manage your privacy and protect your account',
+          style: TextStyle(fontFamily: 'Montserrat', fontSize: 14, color: Colors.white.withOpacity(0.6), height: 1.5),
+        ),
       ],
     );
   }
@@ -193,52 +273,20 @@ class _SecuritySettingsScreenState extends State<SecuritySettingsScreen> with Ti
     return Text(label.toUpperCase(), style: const TextStyle(fontFamily: 'Montserrat', fontSize: 12, fontWeight: FontWeight.w800, color: Color(0xFFD4AF7A), letterSpacing: 1.5));
   }
 
-  Widget _buildSecurityStatusSection() {
-    return _buildGlassCard(
-      child: Row(
-        children: [
-          SizedBox(
-            width: 80, height: 80,
-            child: AnimatedBuilder(
-              animation: _progressController,
-              builder: (context, child) => Stack(
-                alignment: Alignment.center,
-                children: [
-                  CircularProgressIndicator(value: _progressController.value * 0.95, strokeWidth: 8, backgroundColor: Colors.white10, valueColor: const AlwaysStoppedAnimation(Color(0xFF2ECC71))),
-                  Text('${(_progressController.value * 95).toInt()}%', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18)),
-                ],
-              ),
-            ),
-          ),
-          const SizedBox(width: 24),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const Text('Bảo mật rất mạnh', style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold)),
-                const SizedBox(height: 4),
-                Text('Tài khoản của bạn đang được bảo vệ tối ưu.', style: TextStyle(color: Colors.white.withOpacity(0.5), fontSize: 12)),
-                const SizedBox(height: 12),
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                  decoration: BoxDecoration(color: const Color(0xFF2ECC71).withOpacity(0.1), borderRadius: BorderRadius.circular(12), border: Border.all(color: const Color(0xFF2ECC71).withOpacity(0.3))),
-                  child: const Text('ĐÃ XÁC MINH', style: TextStyle(color: Color(0xFF2ECC71), fontSize: 10, fontWeight: FontWeight.bold)),
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
   Widget _buildChangePasswordCard() {
     return _buildGlassCard(
       child: Column(
         children: [
-          _buildSecureInput(controller: _currentPassController, label: 'Mật khẩu hiện tại', obscure: _obscureCurrent, onToggle: () => setState(() => _obscureCurrent = !_obscureCurrent)),
+          _buildSecureInput(
+            controller: _currentPassController,
+            label: _hasLocalLogin
+                ? (_isVi ? 'Mật khẩu hiện tại' : 'Current password')
+                : (_isVi ? 'Mật khẩu hiện tại (có thể bỏ trống)' : 'Current password (optional)'),
+            obscure: _obscureCurrent,
+            onToggle: () => setState(() => _obscureCurrent = !_obscureCurrent),
+          ),
           const SizedBox(height: 20),
-          _buildSecureInput(controller: _newPassController, label: 'Mật khẩu mới', obscure: _obscureNew, onToggle: () => setState(() => _obscureNew = !_obscureNew)),
+          _buildSecureInput(controller: _newPassController, label: _isVi ? 'Mật khẩu mới' : 'New password', obscure: _obscureNew, onToggle: () => setState(() => _obscureNew = !_obscureNew)),
           const SizedBox(height: 12),
           // Strength Bar
           Row(
@@ -249,87 +297,144 @@ class _SecuritySettingsScreenState extends State<SecuritySettingsScreen> with Ti
             ],
           ),
           const SizedBox(height: 20),
-          _buildSecureInput(controller: _confirmPassController, label: 'Xác nhận mật khẩu mới', obscure: _obscureConfirm, onToggle: () => setState(() => _obscureConfirm = !_obscureConfirm)),
+          _buildSecureInput(controller: _confirmPassController, label: _isVi ? 'Xác nhận mật khẩu mới' : 'Confirm new password', obscure: _obscureConfirm, onToggle: () => setState(() => _obscureConfirm = !_obscureConfirm)),
         ],
       ),
     );
   }
 
-  Widget _buildTwoFactorCard() {
-    return _buildGlassCard(
-      child: Row(
-        children: [
-          const Icon(Icons.phonelink_lock_rounded, color: Color(0xFFD4AF7A), size: 28),
-          const SizedBox(width: 16),
-          const Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Text('Xác thực 2 bước (2FA)', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-            SizedBox(height: 4),
-            Text('Thêm lớp bảo mật khi đăng nhập.', style: TextStyle(color: Colors.white54, fontSize: 12)),
-          ])),
-          Switch(value: _twoFactorEnabled, onChanged: (v) => setState(() => _twoFactorEnabled = v), activeColor: const Color(0xFFD4AF7A)),
-        ],
-      ),
-    );
-  }
+  Widget _buildLoginMethodsCard() {
+    final providers = _loginProviders;
 
-  Widget _buildBiometricCard() {
+    if (providers.isEmpty) {
+      return _buildGlassCard(
+        child: Text(
+          _isVi ? 'Chưa có phương thức đăng nhập nào được ghi nhận.' : 'No login methods have been recorded.',
+          style: TextStyle(fontFamily: 'Montserrat', color: Colors.white.withOpacity(0.65), fontSize: 13, height: 1.5),
+        ),
+      );
+    }
+
     return _buildGlassCard(
       child: Column(
         children: [
-          _buildSwitchTile(Icons.face_unlock_rounded, 'Face ID', _faceIdEnabled, (v) => setState(() => _faceIdEnabled = v)),
-          const Divider(color: Colors.white10, height: 24),
-          _buildSwitchTile(Icons.fingerprint_rounded, 'Vân tay', _fingerprintEnabled, (v) => setState(() => _fingerprintEnabled = v)),
+          for (int i = 0; i < providers.length; i++) ...[
+            _buildLoginMethodItem(providers[i]),
+            if (i < providers.length - 1) Divider(height: 24, color: Colors.white.withOpacity(0.08)),
+          ],
         ],
       ),
     );
   }
 
-  Widget _buildSwitchTile(IconData icon, String label, bool value, Function(bool) onChanged) {
+  Widget _buildLoginMethodItem(String provider) {
+    final Color color = _loginMethodColor(provider);
+
     return Row(
       children: [
-        Icon(icon, color: Colors.white70, size: 24),
-        const SizedBox(width: 16),
-        Text(label, style: const TextStyle(color: Colors.white)),
-        const Spacer(),
-        Switch(value: value, onChanged: onChanged, activeColor: const Color(0xFFD4AF7A)),
+        Container(
+          width: 42,
+          height: 42,
+          decoration: BoxDecoration(color: color.withOpacity(0.14), borderRadius: BorderRadius.circular(14), border: Border.all(color: color.withOpacity(0.24))),
+          child: Center(child: _buildLoginMethodIcon(provider, color)),
+        ),
+        const SizedBox(width: 14),
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(_loginMethodLabel(provider), style: const TextStyle(fontFamily: 'Montserrat', color: Colors.white, fontSize: 14, fontWeight: FontWeight.w800)),
+              const SizedBox(height: 4),
+              Text(_loginMethodDescription(provider), style: TextStyle(fontFamily: 'Montserrat', color: Colors.white.withOpacity(0.45), fontSize: 12, fontWeight: FontWeight.w600)),
+            ],
+          ),
+        ),
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+          decoration: BoxDecoration(color: const Color(0xFF2ECC71).withOpacity(0.12), borderRadius: BorderRadius.circular(999), border: Border.all(color: const Color(0xFF2ECC71).withOpacity(0.32))),
+          child: Text(
+            _isVi ? 'Đã liên kết' : 'Linked',
+            style: const TextStyle(fontFamily: 'Montserrat', color: Color(0xFF2ECC71), fontSize: 10, fontWeight: FontWeight.w900),
+          ),
+        ),
       ],
     );
   }
 
-  Widget _buildDeviceList() {
-    return Column(
-      children: [
-        _buildDeviceTile('iPhone 15 Pro Max', 'Hà Nội, Việt Nam', 'Đang hoạt động', true),
-        const SizedBox(height: 12),
-        _buildDeviceTile('MacBook Pro M3', 'Hồ Chí Minh, Việt Nam', '2 giờ trước', false),
-      ],
-    );
+  String _loginMethodLabel(String provider) {
+    switch (provider) {
+      case 'local':
+        return _isVi ? 'Email / Số điện thoại' : 'Email / Phone';
+      case 'google':
+        return 'Google';
+      case 'discord':
+        return 'Discord';
+      default:
+        return provider;
+    }
   }
 
-  Widget _buildDeviceTile(String name, String loc, String time, bool isCurrent) {
-    return _buildGlassCard(
-      child: Row(
-        children: [
-          Icon(isCurrent ? Icons.smartphone_rounded : Icons.laptop_mac_rounded, color: isCurrent ? const Color(0xFF2ECC71) : Colors.white30, size: 32),
-          const SizedBox(width: 16),
-          Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Text(name, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-            const SizedBox(height: 4),
-            Text('$loc • $time', style: TextStyle(color: Colors.white.withOpacity(0.4), fontSize: 12)),
-          ])),
-          if (!isCurrent) TextButton(onPressed: () {}, child: const Text('Đăng xuất', style: TextStyle(color: Colors.redAccent, fontSize: 12))),
-        ],
-      ),
-    );
+  String _loginMethodDescription(String provider) {
+    switch (provider) {
+      case 'local':
+        return _isVi ? 'Đăng nhập bằng email và mật khẩu' : 'Sign in with email and password';
+      case 'google':
+        return _isVi ? 'Đăng nhập bằng tài khoản Google' : 'Sign in with your Google account';
+      case 'discord':
+        return _isVi ? 'Đăng nhập bằng tài khoản Discord' : 'Sign in with your Discord account';
+      default:
+        return _isVi ? 'Phương thức đăng nhập đã liên kết' : 'Linked login method';
+    }
+  }
+
+  Widget _buildLoginMethodIcon(String provider, Color color) {
+    final assetPath = _loginMethodIconAsset(provider);
+
+    if (assetPath != null) {
+      return Image.asset(assetPath, width: 22, height: 22, fit: BoxFit.contain);
+    }
+
+    return Icon(_loginMethodFallbackIcon(provider), color: color, size: 20);
+  }
+
+  String? _loginMethodIconAsset(String provider) {
+    switch (provider) {
+      case 'google':
+        return 'assets/icons/gg_logo.png';
+      case 'discord':
+        return 'assets/icons/dc_logo.png';
+      default:
+        return null;
+    }
+  }
+
+  IconData _loginMethodFallbackIcon(String provider) {
+    switch (provider) {
+      case 'local':
+        return Icons.email_rounded;
+      default:
+        return Icons.login_rounded;
+    }
+  }
+
+  Color _loginMethodColor(String provider) {
+    switch (provider) {
+      case 'local':
+        return const Color(0xFFD4AF7A);
+      case 'google':
+        return const Color(0xFF4285F4);
+      case 'discord':
+        return const Color(0xFF5865F2);
+      default:
+        return Colors.white70;
+    }
   }
 
   Widget _buildActivityTimeline() {
     return _buildGlassCard(
       child: Column(
         children: [
-          _buildActivityItem('Đổi mật khẩu', 'Hôm nay, 10:30', Icons.key_rounded, const Color(0xFFD4AF7A)),
-          const SizedBox(height: 16),
-          _buildActivityItem('Đăng nhập từ thiết bị mới', 'Hôm qua, 21:15', Icons.login_rounded, Colors.orangeAccent),
+          _buildActivityItem(_isVi ? 'Đổi mật khẩu' : 'Password changed', _isVi ? 'Hôm nay, 10:30' : 'Today, 10:30', Icons.key_rounded, const Color(0xFFD4AF7A)),
         ],
       ),
     );
@@ -355,16 +460,15 @@ class _SecuritySettingsScreenState extends State<SecuritySettingsScreen> with Ti
           width: double.infinity, height: 60,
           decoration: BoxDecoration(borderRadius: BorderRadius.circular(18), gradient: const LinearGradient(colors: [Color(0xFFD4AF7A), Color(0xFFB5956A)]), boxShadow: [BoxShadow(color: const Color(0xFFD4AF7A).withOpacity(0.3), blurRadius: 20, offset: const Offset(0, 8))]),
           child: ElevatedButton(
-            onPressed: () {
-              // _showToast('Đang cập nhật bảo mật...');
-              Future.delayed(const Duration(milliseconds: 1500), () { _showToast('Cài đặt bảo mật đã được lưu!'); Navigator.pop(context); });
-            },
+            onPressed: _isSavingPassword ? null : _changePassword,
             style: ElevatedButton.styleFrom(backgroundColor: Colors.transparent, shadowColor: Colors.transparent, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18))),
-            child: const Text('Lưu thay đổi', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w900, color: Color(0xFF1B2321))),
+            child: _isSavingPassword
+                ? const SizedBox(width: 22, height: 22, child: CircularProgressIndicator(strokeWidth: 2.5, color: Color(0xFF1B2321)))
+                : Text(_isVi ? 'Lưu thay đổi' : 'Save changes', style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w900, color: Color(0xFF1B2321))),
           ),
         ),
         const SizedBox(height: 16),
-        TextButton(onPressed: () => Navigator.pop(context), child: Text('Đặt lại mặc định', style: TextStyle(color: Colors.white.withOpacity(0.4), fontWeight: FontWeight.bold))),
+        TextButton(onPressed: () => Navigator.pop(context), child: Text(_isVi ? 'Đặt lại mặc định' : 'Reset defaults', style: TextStyle(color: Colors.white.withOpacity(0.4), fontWeight: FontWeight.bold))),
       ],
     );
   }

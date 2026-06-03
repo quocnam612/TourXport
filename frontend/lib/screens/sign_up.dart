@@ -4,9 +4,10 @@ import 'package:flutter/foundation.dart'
     show TargetPlatform, defaultTargetPlatform, kIsWeb;
 import 'package:flutter/material.dart';
 import '../api/api.dart';
-import '../services/facebook_auth_service.dart';
+import '../services/discord_auth_service.dart';
 import '../services/google_auth_service.dart';
 import '../utils/auth_feedback.dart';
+import '../utils/auth_storage.dart';
 import '../widgets/anim_builder.dart';
 import 'sign_in.dart';
 import 'dashboard.dart';
@@ -119,6 +120,15 @@ class _SignUpScreenState extends State<SignUpScreen>
           data?['success'] == true;
 
       if (ok) {
+        final authToken = data?['token'] as String?;
+        if (authToken != null && authToken.trim().isNotEmpty) {
+          await AuthStorage.saveSession(
+            token: authToken,
+            userName: name,
+          );
+          if (!mounted) return;
+        }
+
         showAuthSuccessToast(
           context,
           msg ?? 'Đăng ký thành công! Chào mừng bạn!',
@@ -129,7 +139,7 @@ class _SignUpScreenState extends State<SignUpScreen>
             PageRouteBuilder(
               pageBuilder: (_, __, ___) => HomeScreen(
                 userName: name,
-                authToken: data?['token'] as String?,
+                authToken: authToken,
               ),
               transitionDuration: const Duration(milliseconds: 600),
               reverseTransitionDuration: const Duration(milliseconds: 400),
@@ -196,6 +206,14 @@ class _SignUpScreenState extends State<SignUpScreen>
       if (response.statusCode == 200 && data?['success'] == true) {
         final user = data?['user'];
         final userName = user is Map ? user['name'] as String? : null;
+        final authToken = data?['token'] as String?;
+        if (authToken != null && authToken.trim().isNotEmpty) {
+          await AuthStorage.saveSession(
+            token: authToken,
+            userName: userName ?? 'bạn',
+          );
+          if (!mounted) return;
+        }
 
         showAuthSuccessToast(
           context,
@@ -207,7 +225,7 @@ class _SignUpScreenState extends State<SignUpScreen>
           PageRouteBuilder(
             pageBuilder: (_, __, ___) => HomeScreen(
               userName: userName ?? 'bạn',
-              authToken: data?['token'] as String?,
+              authToken: authToken,
             ),
             transitionDuration: const Duration(milliseconds: 600),
             reverseTransitionDuration: const Duration(milliseconds: 400),
@@ -270,9 +288,9 @@ class _SignUpScreenState extends State<SignUpScreen>
     }
   }
 
-  void _handleFacebookLogin() async {
-    if (!_supportsNativeSocialAuth) {
-      _showUnsupportedSocialLogin('Facebook login');
+  void _handleDiscordLogin() async {
+    if (!kIsWeb) {
+      _showUnsupportedSocialLogin('Discord login');
       return;
     }
 
@@ -281,16 +299,17 @@ class _SignUpScreenState extends State<SignUpScreen>
     setState(() => _isLoading = true);
 
     try {
-      final accessToken = await FacebookAuthService.signInAndGetAccessToken();
+      final oauthResult = await DiscordAuthService.signInAndGetAuthorizationCode();
       if (!mounted) return;
 
-      if (accessToken == null) {
+      if (oauthResult == null) {
         setState(() => _isLoading = false);
         return;
       }
 
-      final response = await apiPostJson('/auth/facebook', {
-        'accessToken': accessToken,
+      final response = await apiPostJson('/auth/discord', {
+        'code': oauthResult['code'],
+        'redirectUri': oauthResult['redirectUri'],
       });
 
       if (!mounted) return;
@@ -302,10 +321,18 @@ class _SignUpScreenState extends State<SignUpScreen>
       if (response.statusCode == 200 && data?['success'] == true) {
         final user = data?['user'];
         final userName = user is Map ? user['name'] as String? : null;
+        final authToken = data?['token'] as String?;
+        if (authToken != null && authToken.trim().isNotEmpty) {
+          await AuthStorage.saveSession(
+            token: authToken,
+            userName: userName ?? 'bạn',
+          );
+          if (!mounted) return;
+        }
 
         showAuthSuccessToast(
           context,
-          msg ?? 'Đăng nhập Facebook thành công!',
+          msg ?? 'Đăng nhập Discord thành công!',
         );
 
         Navigator.pushAndRemoveUntil(
@@ -313,7 +340,7 @@ class _SignUpScreenState extends State<SignUpScreen>
           PageRouteBuilder(
             pageBuilder: (_, __, ___) => HomeScreen(
               userName: userName ?? 'bạn',
-              authToken: data?['token'] as String?,
+              authToken: authToken,
             ),
             transitionDuration: const Duration(milliseconds: 600),
             reverseTransitionDuration: const Duration(milliseconds: 400),
@@ -341,11 +368,11 @@ class _SignUpScreenState extends State<SignUpScreen>
         return;
       }
 
-      showAuthErrorToast(context, msg ?? 'Đăng nhập Facebook thất bại');
+      showAuthErrorToast(context, msg ?? 'Đăng nhập Discord thất bại');
     } catch (e) {
       if (!mounted) return;
       setState(() => _isLoading = false);
-      showAuthErrorToast(context, 'Đăng nhập Facebook thất bại ($e)');
+      showAuthErrorToast(context, 'Đăng nhập Discord thất bại ($e)');
     }
   }
 
@@ -582,10 +609,10 @@ class _SignUpScreenState extends State<SignUpScreen>
                                 ),
                                 const SizedBox(width: 10),
                                 _buildSocialBtn(
-                                  label: 'Đăng kí với Facebook',
-                                  iconAsset: 'assets/icons/fb_logo.png',
+                                  label: 'Đăng kí với Discord',
+                                  iconAsset: 'assets/icons/dc_logo.png',
                                   s: 1.0,
-                                  onTap: _handleFacebookLogin,
+                                  onTap: _handleDiscordLogin,
                                 ),
                               ],
                             ),
@@ -936,10 +963,10 @@ class _SignUpScreenState extends State<SignUpScreen>
                             ),
                             SizedBox(width: 10 * s),
                             _buildSocialBtn(
-                              label: 'Đăng kí với Facebook',
-                              iconAsset: 'assets/icons/fb_logo.png',
+                              label: 'Đăng kí với Discord',
+                              iconAsset: 'assets/icons/dc_logo.png',
                               s: s,
-                              onTap: _handleFacebookLogin,
+                              onTap: _handleDiscordLogin,
                             ),
                           ],
                         ),
@@ -1076,8 +1103,9 @@ class _SignUpScreenState extends State<SignUpScreen>
   // ── Social button widget ──
   Widget _buildSocialBtn({
     required String label,
-    required String iconAsset,
     required double s,
+    String? iconAsset,
+    IconData? icon,
     VoidCallback? onTap,
   }) {
     return Expanded(
@@ -1100,7 +1128,10 @@ class _SignUpScreenState extends State<SignUpScreen>
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset(iconAsset, width: 26 * s, height: 26 * s),
+                if (iconAsset != null)
+                  Image.asset(iconAsset, width: 26 * s, height: 26 * s)
+                else
+                  Icon(icon ?? Icons.login_rounded, size: 26 * s, color: Colors.white),
                 SizedBox(height: 4 * s),
                 Text(
                   label,
