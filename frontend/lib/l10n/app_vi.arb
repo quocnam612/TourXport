@@ -1,0 +1,111 @@
+{
+  "@@locale": "vi",
+  "app_title": "TourXport",
+  "@app_title": {
+    "description": "Tên ứng dụng"
+  },
+  "welcome_back": "Chào mừng quay trở lại,",
+  "@welcome_back": {
+    "description": "Lời chào mừng"
+  },
+  "explore": "Khám phá",
+  "@explore": {
+    "description": "Thanh điều hướng Khám phá"
+  },
+  "search": "Tìm kiếm",
+  "@search": {
+    "description": "Thanh điều hướng Tìm kiếm"
+  },
+  "survey": "Khảo sát",
+  "@survey": {
+    "description": "Thanh điều hướng Khảo sát"
+  },
+  "account": "Tài khoản",
+  "@account": {
+    "description": "Thanh điều hướng Tài khoản"
+  },
+  "saved": "Đã lưu",
+  "@saved": {
+    "description": "Thanh điều hướng Đã lưu"
+  },
+  "profile": "Cá nhân",
+  "@profile": {
+    "description": "Thanh điều hướng Cá nhân"
+  },
+  "settings": "Cài đặt",
+  "@settings": {
+    "description": "Tiêu đề cài đặt"
+  },
+  "language": "Ngôn ngữ",
+  "@language": {
+    "description": "Cấu hình ngôn ngữ"
+  },
+  "search_hint": "Tìm kiếm địa danh, món ăn...",
+  "@search_hint": {
+    "description": "Gợi ý ô tìm kiếm"
+  },
+  "book_now": "Đặt ngay",
+  "@book_now": {
+    "description": "Nút Đặt ngay"
+  },
+  "cancel": "Hủy bỏ",
+  "@cancel": {
+    "description": "Nút Hủy bỏ"
+  },
+  "apply_changes": "Áp dụng thay đổi",
+  "@apply_changes": {
+    "description": "Nút áp dụng thay đổi ngôn ngữ"
+  },
+  "current_language": "Ngôn ngữ hiện tại",
+  "@current_language": {
+    "description": "Nhãn ngôn ngữ hiện tại"
+  },
+  "select_language": "Chọn ngôn ngữ",
+  "@select_language": {
+    "description": "Nhãn chọn ngôn ngữ"
+  },
+  "preview_interface": "Xem trước giao diện",
+  "@preview_interface": {
+    "description": "Xem trước giao diện sau khi thay đổi"
+  },
+  "region_format": "Vùng & Định dạng",
+  "@region_format": {
+    "description": "Cấu hình vùng và định dạng"
+  },
+  "auto_detect": "Tự động nhận diện",
+  "@auto_detect": {
+    "description": "Cấu hình tự động nhận diện"
+  },
+  "based_on_system": "Dựa trên vị trí và hệ thống",
+  "@based_on_system": {
+    "description": "Gợi ý tự động nhận diện"
+  },
+  "language_updated_success": "Cập nhật ngôn ngữ thành công!",
+  "@language_updated_success": {
+    "description": "Thông báo cập nhật thành công"
+  },
+  "region": "Vùng",
+  "@region": {
+    "description": "Nhãn vùng"
+  },
+  "date_format": "Định dạng ngày",
+  "@date_format": {
+    "description": "Nhãn định dạng ngày"
+  },
+  "time_format": "Định dạng giờ",
+  "@time_format": {
+    "description": "Nhãn định dạng giờ"
+  },
+  "map": "Bản đồ",
+  "@map": {
+    "description": "Nhãn bản đồ"
+  },
+  "close": "Đóng",
+  "@close": {
+    "description": "Nút đóng"
+  },
+  "tour_itinerary": "Chi tiết lịch trình",
+  "@tour_itinerary": {
+    "description": "Tiêu đề lịch trình"
+  }
+}

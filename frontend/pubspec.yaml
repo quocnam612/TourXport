@@ -10,6 +10,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
+  shared_preferences: ^2.2.3
   flutter_web_plugins:
     sdk: flutter
   google_fonts: ^8.0.2
@@ -19,7 +23,6 @@ dependencies:
   latlong2: ^0.9.1
   geolocator: ^11.0.0
   google_sign_in: ^7.2.0
-  flutter_facebook_auth: ^7.1.6
   permission_handler: ^12.0.3
   flutter_map_cancellable_tile_provider: ^2.0.0
   intl: ^0.20.2
@@ -33,6 +36,7 @@ dev_dependencies:
     
 flutter:
   uses-material-design: true
+  generate: true
 
   assets:
     - assets/icons/

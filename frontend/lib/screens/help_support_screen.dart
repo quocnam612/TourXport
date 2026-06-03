@@ -1,6 +1,5 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import '../theme/app_colors.dart';
 
 class HelpSupportScreen extends StatefulWidget {
   final Map<String, dynamic> userData;
@@ -20,7 +19,8 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
   late AnimationController _floatingController;
   
   final TextEditingController _searchController = TextEditingController();
-  final List<bool> _faqExpanded = List.generate(4, (_) => false);
+
+  bool get _isVi => Localizations.localeOf(context).languageCode == 'vi';
 
   @override
   void initState() {
@@ -87,26 +87,10 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
                         const SizedBox(height: 40),
 
                         // 3. QUICK SUPPORT ACTIONS SECTION
-                        _buildSectionLabel('Dịch vụ hỗ trợ'),
+                        _buildSectionLabel(_isVi ? 'Dịch vụ hỗ trợ' : 'Support services'),
                         const SizedBox(height: 16),
                         _buildQuickActionsGrid(),
                         const SizedBox(height: 40),
-
-                        // 5. FAQ SECTION
-                        _buildSectionLabel('Câu hỏi thường gặp'),
-                        const SizedBox(height: 16),
-                        _buildFaqSection(),
-                        const SizedBox(height: 40),
-
-                        // 8. SUPPORT STATUS & HISTORY SECTION
-                        _buildSectionLabel('Hoạt động gần đây'),
-                        const SizedBox(height: 16),
-                        _buildStatusHistoryCard(),
-                        const SizedBox(height: 40),
-
-                        // 6. REPORT ISSUE & 7. FEEDBACK SECTION
-                        _buildFeedbackSection(),
-                        const SizedBox(height: 48),
 
                         // 9. ACTION & EMOTIONAL FOOTER
                         _buildFooter(),
@@ -151,19 +135,6 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
     );
   }
 
-  Widget _buildAmbientGlow(double size, Color color) {
-    return Container(
-      width: size,
-      height: size,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        gradient: RadialGradient(
-          colors: [color, Colors.transparent],
-        ),
-      ),
-    );
-  }
-
   Widget _buildHeroHeaderContent() {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -193,9 +164,9 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
           },
         ),
         const SizedBox(height: 28),
-        const Text(
-          'Trợ Giúp & Hỗ Trợ',
-          style: TextStyle(
+        Text(
+          _isVi ? 'Trợ Giúp & Hỗ Trợ' : 'Help & Support',
+          style: const TextStyle(
             fontFamily: 'Montserrat',
             fontSize: 38,
             fontWeight: FontWeight.w900,
@@ -205,7 +176,9 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
         ),
         const SizedBox(height: 12),
         Text(
-          'Chúng tôi luôn ở đây để lắng nghe, thấu hiểu và đồng hành cùng bạn trong mọi khoảnh khắc của chuyến hành trình.',
+          _isVi
+              ? 'Chúng tôi luôn ở đây để lắng nghe, thấu hiểu và đồng hành cùng bạn trong mọi khoảnh khắc của chuyến hành trình.'
+              : 'We are here to listen, understand, and support you throughout every step of your travel journey.',
           style: TextStyle(
             fontFamily: 'Montserrat',
             fontSize: 15,
@@ -239,7 +212,7 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
         controller: _searchController,
         style: const TextStyle(color: Colors.white, fontSize: 16),
         decoration: InputDecoration(
-          hintText: 'Bạn cần chúng tôi giúp gì hôm nay?',
+          hintText: _isVi ? 'Bạn cần chúng tôi giúp gì hôm nay?' : 'How can we help you today?',
           hintStyle: TextStyle(color: Colors.white.withOpacity(0.3), fontWeight: FontWeight.w500),
           prefixIcon: const Icon(Icons.search_rounded, color: Color(0xFFD4AF7A), size: 24),
           border: InputBorder.none,
@@ -302,13 +275,13 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text(
-                        'Quản gia Cao cấp',
-                        style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w800, fontFamily: 'Montserrat'),
+                      Text(
+                        _isVi ? 'Quản gia Cao cấp' : 'Premium Concierge',
+                        style: const TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w800, fontFamily: 'Montserrat'),
                       ),
                       const SizedBox(height: 4),
                       Text(
-                        'Sẵn sàng hỗ trợ ngay lập tức',
+                        _isVi ? 'Sẵn sàng hỗ trợ ngay lập tức' : 'Ready to support you right away',
                         style: TextStyle(color: Colors.white.withOpacity(0.5), fontSize: 13, fontWeight: FontWeight.w500),
                       ),
                     ],
@@ -328,7 +301,7 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
                   const Icon(Icons.timer_outlined, color: Color(0xFFD4AF7A), size: 18),
                   const SizedBox(width: 10),
                   Text(
-                    'Thời gian phản hồi dự kiến: ~2 phút',
+                    _isVi ? 'Thời gian phản hồi dự kiến: ~2 phút' : 'Estimated response time: ~2 minutes',
                     style: TextStyle(color: Colors.white.withOpacity(0.7), fontSize: 13, fontWeight: FontWeight.w600),
                   ),
                 ],
@@ -336,8 +309,8 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
             ),
             const SizedBox(height: 24),
             _buildGoldButton(
-              onPressed: () {},
-              text: 'Bắt đầu trò chuyện',
+              onPressed: () => Navigator.pushNamed(context, '/contact'),
+              text: _isVi ? 'Bắt đầu trò chuyện' : 'Start chat',
               icon: Icons.chat_bubble_outline_rounded,
             ),
           ],
@@ -348,12 +321,10 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
 
   Widget _buildQuickActionsGrid() {
     final actions = [
-      {'title': 'Liên hệ hỗ trợ', 'icon': Icons.headset_mic_rounded},
-      {'title': 'Báo cáo lỗi', 'icon': Icons.bug_report_rounded},
-      {'title': 'Trung tâm trợ giúp', 'icon': Icons.auto_stories_rounded},
-      {'title': 'Hướng dẫn sử dụng', 'icon': Icons.menu_book_rounded},
-      {'title': 'Gửi phản hồi', 'icon': Icons.rate_review_rounded},
-      {'title': 'Câu hỏi thường gặp', 'icon': Icons.quiz_rounded},
+      {'title': _isVi ? 'Liên hệ hỗ trợ' : 'Contact support', 'icon': Icons.headset_mic_rounded, 'route': '/contact'},
+      {'title': _isVi ? 'Báo cáo' : 'Report', 'icon': Icons.rate_review_rounded, 'route': null},
+      {'title': _isVi ? 'Chính sách bảo mật' : 'Privacy policy', 'icon': Icons.privacy_tip_outlined, 'route': '/privacy'},
+      {'title': _isVi ? 'Hướng dẫn sử dụng' : 'User guide', 'icon': Icons.menu_book_rounded, 'route': '/intruction'},
     ];
 
     return GridView.builder(
@@ -367,10 +338,11 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
         childAspectRatio: 1.3,
       ),
       itemBuilder: (context, index) {
+        final route = actions[index]['route'] as String?;
         return _buildGlassCard(
           padding: EdgeInsets.zero,
           child: InkWell(
-            onTap: () {},
+            onTap: route == null ? null : () => Navigator.pushNamed(context, route),
             borderRadius: BorderRadius.circular(28),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -390,147 +362,20 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
     );
   }
 
-  Widget _buildFaqSection() {
-    final faqs = [
-      {'q': 'Làm sao để đổi email?', 'a': 'Bạn có thể thay đổi email trong phần Cài đặt Tài khoản > Email. Chúng tôi sẽ gửi mã xác thực đến email mới của bạn.'},
-      {'q': 'Cách bảo mật tài khoản?', 'a': 'Hãy kích hoạt xác thực 2 bước (2FA) và sử dụng mật khẩu mạnh kết hợp với FaceID hoặc vân tay để bảo vệ tối ưu.'},
-      {'q': 'Tôi quên mật khẩu thì sao?', 'a': 'Tại màn hình đăng nhập, hãy chọn "Quên mật khẩu", chúng tôi sẽ gửi liên kết khôi phục qua email đã đăng ký.'},
-      {'q': 'Làm sao để liên hệ hỗ trợ?', 'a': 'Bạn có thể chat trực tiếp với Quản gia cao cấp hoặc gửi email cho đội ngũ hỗ trợ 24/7 của chúng tôi.'},
-    ];
-
-    return Column(
-      children: List.generate(faqs.length, (index) {
-        return Padding(
-          padding: const EdgeInsets.only(bottom: 12),
-          child: _buildGlassCard(
-            padding: EdgeInsets.zero,
-            child: Theme(
-              data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
-              child: ExpansionTile(
-                onExpansionChanged: (val) => setState(() => _faqExpanded[index] = val),
-                title: Text(
-                  faqs[index]['q']!,
-                  style: TextStyle(
-                    color: _faqExpanded[index] ? const Color(0xFFD4AF7A) : Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 14,
-                    fontFamily: 'Montserrat',
-                  ),
-                ),
-                trailing: Icon(
-                  _faqExpanded[index] ? Icons.remove_circle_outline_rounded : Icons.add_circle_outline_rounded,
-                  color: _faqExpanded[index] ? const Color(0xFFD4AF7A) : Colors.white30,
-                ),
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(16, 0, 16, 20),
-                    child: Text(
-                      faqs[index]['a']!,
-                      style: TextStyle(color: Colors.white.withOpacity(0.6), fontSize: 13, height: 1.6),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-        );
-      }),
-    );
-  }
-
-  Widget _buildStatusHistoryCard() {
-    return _buildGlassCard(
-      child: Column(
-        children: [
-          _buildStatusItem('Yêu cầu hỗ trợ vé bay', 'Đang xử lý', const Color(0xFFF1C40F)),
-          const Divider(color: Colors.white10, height: 24),
-          _buildStatusItem('Báo cáo lỗi bản đồ', 'Đã giải quyết', const Color(0xFF2ECC71)),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildStatusItem(String title, String status, Color statusColor) {
-    return Row(
-      children: [
-        Container(
-          padding: const EdgeInsets.all(10),
-          decoration: BoxDecoration(color: statusColor.withOpacity(0.1), borderRadius: BorderRadius.circular(12)),
-          child: Icon(Icons.assignment_outlined, color: statusColor, size: 18),
-        ),
-        const SizedBox(width: 16),
-        Expanded(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(title, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 14)),
-              const SizedBox(height: 2),
-              Text('Cập nhật: 2 giờ trước', style: TextStyle(color: Colors.white30, fontSize: 11)),
-            ],
-          ),
-        ),
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-          decoration: BoxDecoration(color: statusColor.withOpacity(0.1), borderRadius: BorderRadius.circular(8)),
-          child: Text(status, style: TextStyle(color: statusColor, fontSize: 10, fontWeight: FontWeight.bold)),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildFeedbackSection() {
-    return _buildGlassCard(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const Text('Trải nghiệm của bạn?', style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w800, fontFamily: 'Montserrat')),
-          const SizedBox(height: 20),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              _buildEmojiBtn('😢'),
-              _buildEmojiBtn('😐'),
-              _buildEmojiBtn('😊'),
-              _buildEmojiBtn('😍'),
-            ],
-          ),
-          const SizedBox(height: 24),
-          Container(
-            padding: const EdgeInsets.all(16),
-            decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.04),
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(color: Colors.white.withOpacity(0.1)),
-            ),
-            child: TextField(
-              maxLines: 3,
-              style: const TextStyle(color: Colors.white, fontSize: 14),
-              decoration: InputDecoration(
-                hintText: 'Chia sẻ cảm nhận hoặc ý tưởng của bạn...',
-                hintStyle: TextStyle(color: Colors.white.withOpacity(0.2)),
-                border: InputBorder.none,
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
   Widget _buildFooter() {
     return Column(
       children: [
-        const Center(
+        Center(
           child: Text(
-            'Hành trình của bạn là niềm cảm hứng của chúng tôi.',
+            _isVi ? 'Hành trình của bạn là niềm cảm hứng của chúng tôi.' : 'Your journey is our inspiration.',
             textAlign: TextAlign.center,
-            style: TextStyle(color: Colors.white38, fontSize: 13, fontStyle: FontStyle.italic),
+            style: const TextStyle(color: Colors.white38, fontSize: 13, fontStyle: FontStyle.italic),
           ),
         ),
         const SizedBox(height: 24),
         _buildGoldButton(
-          onPressed: () {},
-          text: 'Liên hệ ngay',
+          onPressed: () => Navigator.pushNamed(context, '/contact'),
+          text: _isVi ? 'Liên hệ ngay' : 'Contact now',
           icon: Icons.phone_in_talk_rounded,
         ),
       ],
@@ -589,23 +434,6 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
             ),
           ],
         ),
-      ),
-    );
-  }
-
-  Widget _buildEmojiBtn(String emoji) {
-    return GestureDetector(
-      onTap: () {},
-      child: Container(
-        width: 60,
-        height: 60,
-        decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.06),
-          shape: BoxShape.circle,
-          border: Border.all(color: Colors.white.withOpacity(0.1)),
-        ),
-        alignment: Alignment.center,
-        child: Text(emoji, style: const TextStyle(fontSize: 26)),
       ),
     );
   }

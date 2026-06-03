@@ -4,9 +4,10 @@ import 'package:flutter/foundation.dart'
     show TargetPlatform, defaultTargetPlatform, kIsWeb;
 import 'package:flutter/material.dart';
 import '../api/api.dart';
-import '../services/facebook_auth_service.dart';
+import '../services/discord_auth_service.dart';
 import '../services/google_auth_service.dart';
 import '../utils/auth_feedback.dart';
+import '../utils/auth_storage.dart';
 import '../widgets/anim_builder.dart';
 import 'sign_up.dart';
 import 'dashboard.dart';
@@ -69,6 +70,13 @@ class _SignInScreenState extends State<SignInScreen>
         final user = data?['user'];
         final userName = user is Map ? user['name'] as String? : null;
         final authToken = data?['token'] as String?;
+        if (authToken != null && authToken.trim().isNotEmpty) {
+          await AuthStorage.saveSession(
+            token: authToken,
+            userName: userName ?? 'bạn',
+          );
+          if (!mounted) return;
+        }
         showAuthSuccessToast(
           context,
           'Đăng nhập thành công — chào ${userName ?? 'bạn'}!',
@@ -145,6 +153,13 @@ class _SignInScreenState extends State<SignInScreen>
         final user = data?['user'];
         final userName = user is Map ? user['name'] as String? : null;
         final authToken = data?['token'] as String?;
+        if (authToken != null && authToken.trim().isNotEmpty) {
+          await AuthStorage.saveSession(
+            token: authToken,
+            userName: userName ?? 'bạn',
+          );
+          if (!mounted) return;
+        }
 
         showAuthSuccessToast(
           context,
@@ -219,9 +234,9 @@ class _SignInScreenState extends State<SignInScreen>
     }
   }
 
-  void _handleFacebookLogin() async {
-    if (!_supportsNativeSocialAuth) {
-      _showUnsupportedSocialLogin('Facebook login');
+  void _handleDiscordLogin() async {
+    if (!kIsWeb) {
+      _showUnsupportedSocialLogin('Discord login');
       return;
     }
 
@@ -230,16 +245,17 @@ class _SignInScreenState extends State<SignInScreen>
     setState(() => _isLoading = true);
 
     try {
-      final accessToken = await FacebookAuthService.signInAndGetAccessToken();
+      final oauthResult = await DiscordAuthService.signInAndGetAuthorizationCode();
       if (!mounted) return;
 
-      if (accessToken == null) {
+      if (oauthResult == null) {
         setState(() => _isLoading = false);
         return;
       }
 
-      final response = await apiPostJson('/auth/facebook', {
-        'accessToken': accessToken,
+      final response = await apiPostJson('/auth/discord', {
+        'code': oauthResult['code'],
+        'redirectUri': oauthResult['redirectUri'],
       });
 
       if (!mounted) return;
@@ -252,10 +268,17 @@ class _SignInScreenState extends State<SignInScreen>
         final user = data?['user'];
         final userName = user is Map ? user['name'] as String? : null;
         final authToken = data?['token'] as String?;
+        if (authToken != null && authToken.trim().isNotEmpty) {
+          await AuthStorage.saveSession(
+            token: authToken,
+            userName: userName ?? 'bạn',
+          );
+          if (!mounted) return;
+        }
 
         showAuthSuccessToast(
           context,
-          'Đăng nhập Facebook thành công — chào ${userName ?? 'bạn'}!',
+          'Đăng nhập Discord thành công — chào ${userName ?? 'bạn'}!',
         );
 
         Navigator.pushAndRemoveUntil(
@@ -291,11 +314,11 @@ class _SignInScreenState extends State<SignInScreen>
         return;
       }
 
-      showAuthErrorToast(context, msg ?? 'Đăng nhập Facebook thất bại');
+      showAuthErrorToast(context, msg ?? 'Đăng nhập Discord thất bại');
     } catch (e) {
       if (!mounted) return;
       setState(() => _isLoading = false);
-      showAuthErrorToast(context, 'Đăng nhập Facebook thất bại ($e)');
+      showAuthErrorToast(context, 'Đăng nhập Discord thất bại ($e)');
     }
   }
 
@@ -494,10 +517,10 @@ class _SignInScreenState extends State<SignInScreen>
                                 ),
                                 const SizedBox(width: 10),
                                 _buildSocialBtn(
-                                  label: 'Tiếp tục với Facebook',
-                                  iconAsset: 'assets/icons/fb_logo.png',
+                                  label: 'Tiếp tục với Discord',
+                                  iconAsset: 'assets/icons/dc_logo.png',
                                   s: 1.0,
-                                  onTap: _handleFacebookLogin,
+                                  onTap: _handleDiscordLogin,
                                 ),
                               ],
                             ),
@@ -843,10 +866,10 @@ class _SignInScreenState extends State<SignInScreen>
                             ),
                             SizedBox(width: 10 * s),
                             _buildSocialBtn(
-                              label: 'Tiếp tục với Facebook',
-                              iconAsset: 'assets/icons/fb_logo.png',
+                              label: 'Tiếp tục với Discord',
+                              iconAsset: 'assets/icons/dc_logo.png',
                               s: s,
-                              onTap: _handleFacebookLogin,
+                              onTap: _handleDiscordLogin,
                             ),
                           ],
                         ),
@@ -1174,8 +1197,9 @@ class _SignInScreenState extends State<SignInScreen>
   // ── Social button widget ──
   Widget _buildSocialBtn({
     required String label,
-    required String iconAsset,
     required double s,
+    String? iconAsset,
+    IconData? icon,
     VoidCallback? onTap,
   }) {
     return Expanded(
@@ -1198,7 +1222,10 @@ class _SignInScreenState extends State<SignInScreen>
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset(iconAsset, width: 26 * s, height: 26 * s),
+                if (iconAsset != null)
+                  Image.asset(iconAsset, width: 26 * s, height: 26 * s)
+                else
+                  Icon(icon ?? Icons.login_rounded, size: 26 * s, color: Colors.white),
                 SizedBox(height: 4 * s),
                 Text(
                   label,

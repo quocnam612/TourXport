@@ -4,7 +4,7 @@ const userSchema = new mongoose.Schema({
     authProvider: {
         type: [{
             type: String,
-            enum: ['local', 'google', 'facebook']
+            enum: ['local', 'google', 'discord']
         }],
         default: ['local']
     },
@@ -13,7 +13,7 @@ const userSchema = new mongoose.Schema({
         unique: true, 
         sparse: true 
     },
-    facebookId: {
+    discordId: {
         type: String,
         unique: true,
         sparse: true
@@ -27,6 +27,10 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         select: false
+    },
+    lastPasswordChange: {
+        type: Date,
+        default: null
     },
     name: {
         type: String,

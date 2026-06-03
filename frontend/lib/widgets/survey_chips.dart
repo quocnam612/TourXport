@@ -136,14 +136,118 @@ class SurveyChipGroup extends StatelessWidget {
     onChanged(next);
   }
 
+  String _translateOption(String label) {
+    final translations = {
+      // Nhịp độ (Pace)
+      'Nhanh': 'Fast',
+      'Cân bằng': 'Balanced',
+      'Thư giãn': 'Relaxed',
+
+      // Phương tiện (Transport)
+      'Xe máy': 'Motorbike',
+      'Ô tô': 'Car',
+      'Xe khách': 'Coach Bus',
+      'Máy bay': 'Airplane',
+      'Tự động': 'Auto',
+
+      // Ưu tiên chi tiêu
+      'Khách sạn': 'Hotel',
+      'Ăn uống': 'Dining',
+      'Trải nghiệm': 'Experience',
+      'Di chuyển': 'Transportation',
+
+      // Phong cách địa điểm
+      'Đông vui': 'Lively/Crowded',
+      'Yên tĩnh': 'Quiet/Peaceful',
+      'Thiên nhiên': 'Nature/Scenic',
+      'Mang tính văn hóa/tâm linh': 'Cultural/Spiritual',
+
+      // Hoạt động
+      'Ngắm cảnh': 'Sightseeing',
+      'Chụp ảnh': 'Photography',
+      'Khám phá văn hóa': 'Cultural Discovery',
+      'Ăn uống địa phương': 'Local Food Tasting',
+      'Cà phê chill': 'Cafe Chill',
+      'Chợ đêm': 'Night Market',
+      'Thiên nhiên/sông nước': 'Nature/Waterways',
+
+      // Ưu tiên tuyến đường
+      'Tuyến đường đẹp': 'Scenic Route',
+      'Di chuyển nhanh': 'Fast Route',
+      'Ít đổi phương tiện': 'Direct/Fewest Transfers',
+
+      // Loại hình lưu trú
+      'Homestay': 'Homestay',
+      'Resort': 'Resort',
+      'Nhà nghỉ': 'Motel/Inn',
+
+      // Ưu tiên chỗ ở
+      'Gần trung tâm': 'Near City Center',
+      'View đẹp': 'Beautiful View',
+      'Giá rẻ': 'Budget-friendly',
+
+      // Ăn uống đặc biệt
+      'Ăn chay': 'Vegetarian',
+      'Không ăn hải sản': 'No Seafood',
+      'Không ăn cay': 'Not Spicy',
+      'Dị ứng thực phẩm': 'Food Allergies',
+
+      // Phong cách quán ăn
+      'Quán local': 'Local Eatery',
+      'Nhà hàng nổi tiếng': 'Famous Restaurant',
+      'Quán view đẹp': 'Scenic Restaurant',
+      'Quán bình dân': 'Budget Diner',
+
+      // Các tỉnh thành
+      'Tuyên Quang': 'Tuyen Quang',
+      'Cao Bằng': 'Cao Bang',
+      'Lai Châu': 'Lai Chau',
+      'Lào Cai': 'Lao Cai',
+      'Thái Nguyên': 'Thai Nguyen',
+      'Điện Biên': 'Dien Bien',
+      'Lạng Sơn': 'Lang Son',
+      'Sơn La': 'Son La',
+      'Phú Thọ': 'Phu Tho',
+      'TP. Hà Nội': 'Hanoi City',
+      'TP. Hải Phòng': 'Haiphong City',
+      'Bắc Ninh': 'Bac Ninh',
+      'Quảng Ninh': 'Quang Ninh',
+      'Hưng Yên': 'Hung Yen',
+      'Ninh Bình': 'Ninh Binh',
+      'Thanh Hóa': 'Thanh Hoa',
+      'Nghệ An': 'Nghe An',
+      'Hà Tĩnh': 'Ha Tinh',
+      'Quảng Trị': 'Quang Tri',
+      'TP. Huế': 'Hue City',
+      'TP. Đà Nẵng': 'Danang City',
+      'Quảng Ngãi': 'Quang Ngai',
+      'Gia Lai': 'Gia Lai',
+      'Đắk Lắk': 'Dak Lak',
+      'Khánh Hòa': 'Khanh Hoa',
+      'Lâm Đồng': 'Lam Dong',
+      'Đồng Nai': 'Dong Nai',
+      'Tây Ninh': 'Tay Ninh',
+      'TP. Hồ Chí Minh': 'Ho Chi Minh City',
+      'Đồng Tháp': 'Dong Thap',
+      'An Giang': 'An Giang',
+      'Vĩnh Long': 'Vinh Long',
+      'TP. Cần Thơ': 'Can Tho City',
+      'Cà Mau': 'Ca Mau',
+    };
+
+    return translations[label] ?? label;
+  }
+
   @override
   Widget build(BuildContext context) {
+    final isVi = Localizations.localeOf(context).languageCode == 'vi';
     return Wrap(
       spacing: 10,
       runSpacing: 10,
       children: options.map((label) {
+        final displayLabel = isVi ? label : _translateOption(label);
         return SurveyChip(
-          label: label,
+          label: displayLabel,
           isSelected: selected.contains(label),
           onTap: () => _handleTap(label),
           icon: icons?[label],

@@ -9,8 +9,6 @@ class ProfileSection extends StatelessWidget {
   final VoidCallback onLogout;
   final VoidCallback onUpdateAvatar;
   final VoidCallback onUpdateCover;
-  final VoidCallback onEditName;
-  final VoidCallback onEditEmail;
   final VoidCallback onEditPhone;
   final VoidCallback onEditSecurity;
   final VoidCallback onEditNotifications;
@@ -26,8 +24,6 @@ class ProfileSection extends StatelessWidget {
     required this.onLogout,
     required this.onUpdateAvatar,
     required this.onUpdateCover,
-    required this.onEditName,
-    required this.onEditEmail,
     required this.onEditPhone,
     required this.onEditSecurity,
     required this.onEditNotifications,
@@ -45,13 +41,14 @@ class ProfileSection extends StatelessWidget {
       );
     }
 
+    final isVi = Localizations.localeOf(context).languageCode == 'vi';
     final isGuest = userData == null;
-    final name = isGuest ? 'Khách du lịch' : (userData?['name'] ?? 'Người dùng');
-    final email = isGuest ? 'Đăng nhập để xem email' : (userData?['email'] ?? 'Chưa cập nhật email');
-    final phone = isGuest ? 'Đăng nhập để xem số điện thoại' : (userData?['phone'] ?? 'Chưa cập nhật số điện thoại');
+    final name = isGuest ? (isVi ? 'Khách du lịch' : 'Guest Traveler') : (userData?['name'] ?? (isVi ? 'Người dùng' : 'User'));
+    final email = isGuest ? (isVi ? 'Đăng nhập để xem email' : 'Sign in to view email') : (userData?['email'] ?? (isVi ? 'Chưa cập nhật email' : 'Email not updated'));
+    final phone = isGuest ? (isVi ? 'Đăng nhập để xem số điện thoại' : 'Sign in to view phone number') : (userData?['phone'] ?? (isVi ? 'Chưa cập nhật số điện thoại' : 'Phone not updated'));
     final bio = isGuest 
-        ? 'Hãy đăng nhập để mọi người biết thêm về bạn!.'
-        : (userData?['bio'] ?? 'Chưa có tiểu sử. Hãy cập nhật để mọi người biết thêm về bạn!');
+        ? (isVi ? 'Hãy đăng nhập để mọi người biết thêm về bạn!.' : 'Please sign in to let others know more about you!')
+        : (userData?['bio'] ?? (isVi ? 'Chưa có tiểu sử. Hãy cập nhật để mọi người biết thêm về bạn!' : 'No bio yet. Update to let others know more about you!'));
     final avatarUrl = userData?['avatarUrl'] ?? userData?['avatar'] ?? '';
     final coverUrl = userData?['coverUrl'] ?? userData?['cover'] ?? '';
 
@@ -128,9 +125,9 @@ class ProfileSection extends StatelessWidget {
                                   ),
                                 ),
                                 const SizedBox(height: 16),
-                                const Text(
-                                  'Khám phá nhiều hơn!',
-                                  style: TextStyle(
+                                Text(
+                                  isVi ? 'Khám phá nhiều hơn!' : 'Discover more!',
+                                  style: const TextStyle(
                                     fontFamily: 'Montserrat',
                                     fontSize: 18,
                                     fontWeight: FontWeight.bold,
@@ -139,7 +136,9 @@ class ProfileSection extends StatelessWidget {
                                 ),
                                 const SizedBox(height: 8),
                                 Text(
-                                  'Hãy đăng nhập tài khoản của bạn để lưu lại các điểm đến yêu thích và lên lịch trình du lịch cá nhân hóa với trí tuệ nhân tạo.',
+                                  isVi 
+                                      ? 'Hãy đăng nhập tài khoản của bạn để lưu lại các điểm đến yêu thích và lên lịch trình du lịch cá nhân hóa với trí tuệ nhân tạo.'
+                                      : 'Please sign in to your account to save your favorite destinations and plan personalized itineraries with AI.',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                     fontFamily: 'Montserrat',
@@ -160,9 +159,9 @@ class ProfileSection extends StatelessWidget {
                                     ),
                                     elevation: 4,
                                   ),
-                                  child: const Text(
-                                    'ĐĂNG NHẬP / ĐĂNG KÝ',
-                                    style: TextStyle(
+                                  child: Text(
+                                    isVi ? 'ĐĂNG NHẬP / ĐĂNG KÝ' : 'SIGN IN / SIGN UP',
+                                    style: const TextStyle(
                                       fontFamily: 'Montserrat',
                                       fontWeight: FontWeight.bold,
                                       letterSpacing: 1,
@@ -176,11 +175,20 @@ class ProfileSection extends StatelessWidget {
                           _buildMenuGroup(
                             context,
                             items: [
-                              _MenuDataItem(icon: Icons.language_rounded, title: 'Ngôn ngữ', subtitle: 'Tiếng Việt', onTap: onEditLanguage),
-                              _MenuDataItem(icon: Icons.help_outline_rounded, title: 'Trợ giúp & Hỗ trợ', onTap: onEditHelpSupport),
+                              _MenuDataItem(
+                                icon: Icons.language_rounded, 
+                                title: isVi ? 'Ngôn ngữ' : 'Language', 
+                                subtitle: isVi ? 'Tiếng Việt' : 'English', 
+                                onTap: onEditLanguage
+                              ),
+                              _MenuDataItem(
+                                icon: Icons.help_outline_rounded, 
+                                title: isVi ? 'Trợ giúp & Hỗ trợ' : 'Help & Support', 
+                                onTap: onEditHelpSupport
+                              ),
                               _MenuDataItem(
                                 icon: Icons.login_rounded,
-                                title: 'Đăng nhập / Đăng ký',
+                                title: isVi ? 'Đăng nhập / Đăng ký' : 'Sign In / Sign Up',
                                 titleColor: const Color(0xFFD4AF7A),
                                 onTap: onLogout,
                               ),
@@ -192,19 +200,17 @@ class ProfileSection extends StatelessWidget {
                             items: [
                               _MenuDataItem(
                                 icon: Icons.person_outline_rounded,
-                                title: 'Thông tin cá nhân',
+                                title: isVi ? 'Thông tin cá nhân' : 'Personal Information',
                                 subtitle: name,
-                                onTap: onEditName,
                               ),
                               _MenuDataItem(
                                 icon: Icons.email_outlined,
                                 title: 'Email',
                                 subtitle: email,
-                                onTap: onEditEmail,
                               ),
                               _MenuDataItem(
                                 icon: Icons.phone_android_rounded,
-                                title: 'Số điện thoại',
+                                title: isVi ? 'Số điện thoại' : 'Phone Number',
                                 subtitle: phone,
                                 onTap: onEditPhone,
                               ),
@@ -213,18 +219,35 @@ class ProfileSection extends StatelessWidget {
                           _buildMenuGroup(
                             context,
                             items: [
-                              _MenuDataItem(icon: Icons.notifications_none_rounded, title: 'Thông báo', onTap: onEditNotifications),
-                              _MenuDataItem(icon: Icons.language_rounded, title: 'Ngôn ngữ', subtitle: 'Tiếng Việt', onTap: onEditLanguage),
-                              _MenuDataItem(icon: Icons.security_rounded, title: 'Bảo mật', onTap: onEditSecurity),
+                              _MenuDataItem(
+                                icon: Icons.notifications_none_rounded, 
+                                title: isVi ? 'Thông báo' : 'Notifications', 
+                                onTap: onEditNotifications
+                              ),
+                              _MenuDataItem(
+                                icon: Icons.language_rounded, 
+                                title: isVi ? 'Ngôn ngữ' : 'Language', 
+                                subtitle: isVi ? 'Tiếng Việt' : 'English', 
+                                onTap: onEditLanguage
+                              ),
+                              _MenuDataItem(
+                                icon: Icons.security_rounded, 
+                                title: isVi ? 'Bảo mật' : 'Security', 
+                                onTap: onEditSecurity
+                              ),
                             ],
                           ),
                           _buildMenuGroup(
                             context,
                             items: [
-                              _MenuDataItem(icon: Icons.help_outline_rounded, title: 'Trợ giúp & Hỗ trợ', onTap: onEditHelpSupport),
+                              _MenuDataItem(
+                                icon: Icons.help_outline_rounded, 
+                                title: isVi ? 'Trợ giúp & Hỗ trợ' : 'Help & Support', 
+                                onTap: onEditHelpSupport
+                              ),
                               _MenuDataItem(
                                 icon: Icons.logout_rounded,
-                                title: 'Đăng xuất',
+                                title: isVi ? 'Đăng xuất' : 'Log Out',
                                 titleColor: const Color(0xFFE74C3C),
                                 onTap: onLogout,
                               ),
@@ -515,15 +538,7 @@ class ProfileSection extends StatelessWidget {
 
   Widget _buildMenuItem(BuildContext context, _MenuDataItem item) {
     return InkWell(
-      onTap: () {
-        if (item.onTap != null) {
-          item.onTap!();
-        } else {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Chưa gán hành động cho mục này')),
-          );
-        }
-      },
+      onTap: item.onTap,
       highlightColor: Colors.white.withOpacity(0.05),
       splashColor: const Color(0xFFD4AF7A).withOpacity(0.1),
       child: Padding(
@@ -577,11 +592,12 @@ class ProfileSection extends StatelessWidget {
                 ],
               ),
             ),
-            Icon(
-              Icons.chevron_right_rounded,
-              color: Colors.white.withOpacity(0.25),
-              size: 24,
-            ),
+            if (item.onTap != null)
+              Icon(
+                Icons.chevron_right_rounded,
+                color: Colors.white.withOpacity(0.25),
+                size: 24,
+              ),
           ],
         ),
       ),

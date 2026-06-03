@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
 
-import config from './config/config.js'; 
+import config from './config/config.js';
 import errorMiddleware from './middlewares/errorMiddleware.js';
 
 import authRoutes from './routes/authRoutes.js';
@@ -11,6 +11,7 @@ import locationsRoutes from './routes/locationRoutes.js';
 import restaurantRoutes from './routes/restaurantRoutes.js';
 import reviewRoutes from './routes/reviewRoutes.js';
 import tourRoutes from './routes/tourRoutes.js';
+import weatherRoutes from './routes/weatherRoutes.js';
 
 const app = express();
 
@@ -24,6 +25,7 @@ app.use('/hotels', hotelRoutes);
 app.use('/restaurants', restaurantRoutes);
 app.use('/tours', tourRoutes);
 app.use('/reviews', reviewRoutes);
+app.use('/weather', weatherRoutes);
 
 // Default route
 app.get('/', (req, res, next) => {
@@ -43,13 +45,13 @@ app.use((req, res, next) => {
 app.use(errorMiddleware);
 
 mongoose.connect(config.database.uri)
-.then(() => {
-    console.log('✅ Connected to MongoDB Atlas');
-    app.listen(config.port, () => {
-        console.log(`🚀 Server running on http://localhost:${config.port}`);
-        console.log(`🌍 Environment: ${config.env}`);
+    .then(() => {
+        console.log('✅ Connected to MongoDB Atlas');
+        app.listen(config.port, () => {
+            console.log(`🚀 Server running on http://localhost:${config.port}`);
+            console.log(`🌍 Environment: ${config.env}`);
+        });
+    })
+    .catch((err) => {
+        console.error('❌ Database connection error:', err.message);
     });
-})
-.catch((err) => {
-    console.error('❌ Database connection error:', err.message);
-});

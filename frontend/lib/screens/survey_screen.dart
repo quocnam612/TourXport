@@ -251,11 +251,31 @@ class _SurveyScreenState extends State<SurveyScreen>
     }
   }
 
-  static const _sectionLabels = [
-    'PHẦN 1 — THÔNG TIN CHUYẾN ĐI',
-    'PHẦN 2 — NGÂN SÁCH & NHỊP ĐỘ',
-    'PHẦN 3 — SỞ THÍCH & TRẢI NGHIỆM',
-  ];
+  bool get _isVi => Localizations.localeOf(context).languageCode == 'vi';
+
+  String _getSectionLabel(int index) {
+    if (_isVi) {
+      final list = [
+        'PHẦN 1 — THÔNG TIN CHUYẾN ĐI',
+        'PHẦN 2 — NGÂN SÁCH & NHỊP ĐỘ',
+        'PHẦN 3 — SỞ THÍCH & TRẢI NGHIỆM',
+        'PHẦN 4 — PHƯƠNG TIỆN & DI CHUYỂN',
+        'PHẦN 5 — LƯU TRÚ',
+        'PHẦN 6 — ĂN UỐNG',
+      ];
+      return list[index];
+    } else {
+      final list = [
+        'PART 1 — TRIP INFORMATION',
+        'PART 2 — BUDGET & PACE',
+        'PART 3 — PREFERENCES & EXPERIENCES',
+        'PART 4 — TRANSPORTATION',
+        'PART 5 — ACCOMMODATION',
+        'PART 6 — DINING',
+      ];
+      return list[index];
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -338,6 +358,7 @@ class _SurveyScreenState extends State<SurveyScreen>
 
   Widget _buildAppSidebar() {
     final isGuest = widget.authToken == null || widget.authToken!.isEmpty;
+    final isVi = _isVi;
 
     return Container(
       width: 260,
@@ -414,7 +435,7 @@ class _SurveyScreenState extends State<SurveyScreen>
                           ),
                         ),
                         Text(
-                          'Thành viên',
+                          isVi ? 'Thành viên' : 'Member',
                           style: TextStyle(
                             fontFamily: 'Montserrat',
                             fontSize: 11,
@@ -435,32 +456,32 @@ class _SurveyScreenState extends State<SurveyScreen>
               children: [
                 _buildAppSidebarItem(
                   icon: Icons.home_rounded,
-                  label: 'Khám phá',
+                  label: isVi ? 'Khám phá' : 'Explore',
                   onTap: () => Navigator.pop(context, 'go_to_explore'),
                 ),
                 const SizedBox(height: 8),
                 _buildAppSidebarItem(
                   icon: Icons.search_rounded,
-                  label: 'Tìm kiếm',
+                  label: isVi ? 'Tìm kiếm' : 'Search',
                   onTap: () => Navigator.pop(context, 'go_to_search'),
                 ),
                 const SizedBox(height: 8),
                 _buildAppSidebarItem(
                   icon: Icons.bookmark_rounded,
-                  label: 'Đã lưu',
+                  label: isVi ? 'Đã lưu' : 'Saved',
                   onTap: () => Navigator.pop(context, 'go_to_saved'),
                 ),
                 const SizedBox(height: 8),
                 _buildAppSidebarItem(
                   icon: Icons.explore_rounded,
-                  label: 'Khảo sát',
+                  label: isVi ? 'Khảo sát' : 'Survey',
                   isActive: true,
                   onTap: () {},
                 ),
                 const SizedBox(height: 8),
                 _buildAppSidebarItem(
                   icon: Icons.person_rounded,
-                  label: 'Tài khoản',
+                  label: isVi ? 'Tài khoản' : 'Account',
                   onTap: () => Navigator.pop(context, 'go_to_account'),
                 ),
               ],
@@ -493,7 +514,9 @@ class _SurveyScreenState extends State<SurveyScreen>
                       ),
                       const SizedBox(width: 14),
                       Text(
-                        isGuest ? 'Tài khoản' : 'Đăng xuất',
+                        isGuest
+                            ? (isVi ? 'Tài khoản' : 'Account')
+                            : (isVi ? 'Đăng xuất' : 'Log Out'),
                         style: TextStyle(
                           fontFamily: 'Montserrat',
                           fontSize: 14,
@@ -709,7 +732,9 @@ class _SurveyScreenState extends State<SurveyScreen>
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                isLast ? 'Xem kết quả' : 'Tiếp tục',
+                isLast
+                    ? (_isVi ? 'Xem kết quả' : 'View Results')
+                    : (_isVi ? 'Tiếp tục' : 'Continue'),
                 style: const TextStyle(
                   fontFamily: 'Montserrat',
                   fontSize: 16,
@@ -800,11 +825,11 @@ class _SurveyScreenState extends State<SurveyScreen>
   // ── Premium Date Range Selector Card ──
   Widget _buildDateRangePicker() {
     final hasDates = _answer.startDate != null && _answer.endDate != null;
-    String label = "Chọn ngày đi, ngày về";
+    String label = _isVi ? "Chọn ngày đi, ngày về" : "Select travel dates";
     if (hasDates) {
       final start = "${_answer.startDate!.day}/${_answer.startDate!.month}/${_answer.startDate!.year}";
       final end = "${_answer.endDate!.day}/${_answer.endDate!.month}/${_answer.endDate!.year}";
-      label = "$start  ➡  $end (${_answer.totalDays} ngày)";
+      label = _isVi ? "$start  ➡  $end (${_answer.totalDays} ngày)" : "$start  ➡  $end (${_answer.totalDays} days)";
     }
 
     return GestureDetector(
@@ -957,10 +982,10 @@ class _SurveyScreenState extends State<SurveyScreen>
 
   // Page 1: Thông tin chuyến đi
   Widget _pageTripInfo() => _pageWrap(
-        section: _sectionLabels[0],
+        section: _getSectionLabel(0),
         children: [
-          _questionTitle('1. Bạn muốn đi du lịch ở tỉnh/thành phố nào?'),
-          _subLabel('Chọn một hoặc nhiều tỉnh/thành (bỏ trống để tìm tất cả)'),
+          _questionTitle(_isVi ? '1. Bạn muốn đi du lịch ở tỉnh/thành phố nào?' : '1. Which province/city do you want to travel to?'),
+          _subLabel(_isVi ? 'Chọn một hoặc nhiều tỉnh/thành (bỏ trống để tìm tất cả)' : 'Select one or more provinces/cities (leave empty to search all)'),
           SurveyChipGroup(
             options: _destinationOptions,
             selected: _qDestination,
@@ -972,12 +997,12 @@ class _SurveyScreenState extends State<SurveyScreen>
             }),
           ),
           _divider(),
-          _questionTitle('2. Bạn dự định đi trong bao nhiêu ngày, bao nhiêu đêm?'),
-          _subLabel('Tối đa 7 ngày và 7 đêm'),
+          _questionTitle(_isVi ? '2. Bạn dự định đi trong bao nhiêu ngày, bao nhiêu đêm?' : '2. How many days and nights do you plan to travel?'),
+          _subLabel(_isVi ? 'Tối đa 7 ngày và 7 đêm' : 'Maximum of 7 days and 7 nights'),
           Row(
             children: [
               Expanded(
-                child: _numberPickerCard('Số ngày', _days, (v) => setState(() {
+                child: _numberPickerCard(_isVi ? 'Số ngày' : 'Days', _days, (v) => setState(() {
                   _days = v;
                   final minNights = (_days - 1).clamp(0, _maxTripNights).toInt();
                   final maxNights = (_days + 1).clamp(0, _maxTripNights).toInt();
@@ -987,7 +1012,7 @@ class _SurveyScreenState extends State<SurveyScreen>
               ),
               const SizedBox(width: 12),
               Expanded(
-                child: _numberPickerCard('Số đêm', _nights, (v) => setState(() {
+                child: _numberPickerCard(_isVi ? 'Số đêm' : 'Nights', _nights, (v) => setState(() {
                   _nights = v;
                   final minDays = (_nights - 1).clamp(1, _maxTripDays).toInt();
                   final maxDays = (_nights + 1).clamp(1, _maxTripDays).toInt();
@@ -998,18 +1023,18 @@ class _SurveyScreenState extends State<SurveyScreen>
             ],
           ),
           _divider(),
-          _questionTitle('3. Số người tham gia chuyến đi'),
-          _subLabel('Tổng số người lớn và trẻ em tối đa 5 người'),
+          _questionTitle(_isVi ? '3. Số người tham gia chuyến đi' : '3. Number of travelers'),
+          _subLabel(_isVi ? 'Tổng số người lớn và trẻ em tối đa 5 người' : 'Total adults and children up to 5 people'),
           Row(
             children: [
-              Expanded(child: _numberPickerCard('Người lớn', _adults, (v) => setState(() {
+              Expanded(child: _numberPickerCard(_isVi ? 'Người lớn' : 'Adults', _adults, (v) => setState(() {
                 _adults = v;
                 if (_adults + _children > _maxTravelers) {
                   _children = _maxTravelers - _adults;
                 }
               }), minValue: 1, maxValue: _maxTravelers - _children)),
               const SizedBox(width: 12),
-              Expanded(child: _numberPickerCard('Trẻ em', _children, (v) => setState(() {
+              Expanded(child: _numberPickerCard(_isVi ? 'Trẻ em' : 'Children', _children, (v) => setState(() {
                 _children = v;
               }), minValue: 0, maxValue: _maxTravelers - _adults)),
             ],
@@ -1019,10 +1044,10 @@ class _SurveyScreenState extends State<SurveyScreen>
 
   // Page 2: Ngân sách & chi tiêu
   Widget _pageBudgetAndSpending() => _pageWrap(
-        section: _sectionLabels[1],
+        section: _getSectionLabel(1),
         children: [
-          _questionTitle('4. Mức ngân sách mong muốn cho cả chuyến đi là bao nhiêu?'),
-          _subLabel('Giới hạn theo số người và số ngày: từ $_minBudget đến $_maxBudget VNĐ'),
+          _questionTitle(_isVi ? '4. Mức ngân sách mong muốn cho cả chuyến đi là bao nhiêu?' : '4. What is your desired budget for the entire trip?'),
+          _subLabel(_isVi ? 'Giới hạn theo số người và số ngày: từ $_minBudget đến $_maxBudget VNĐ' : 'Limits based on travelers and days: from $_minBudget to $_maxBudget VND'),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 6),
             decoration: BoxDecoration(
@@ -1045,7 +1070,7 @@ class _SurveyScreenState extends State<SurveyScreen>
                       color: Colors.white,
                     ),
                     decoration: InputDecoration(
-                      hintText: 'Nhập số tiền (VD: 5000000)',
+                      hintText: _isVi ? 'Nhập số tiền (VD: 5000000)' : 'Enter amount (e.g., 5000000)',
                       hintStyle: TextStyle(
                         fontFamily: 'Montserrat',
                         fontSize: 14,
@@ -1056,9 +1081,9 @@ class _SurveyScreenState extends State<SurveyScreen>
                     ),
                   ),
                 ),
-                const Text(
-                  'VNĐ',
-                  style: TextStyle(
+                Text(
+                  _isVi ? 'VNĐ' : 'VND',
+                  style: const TextStyle(
                     fontFamily: 'Montserrat',
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
@@ -1079,8 +1104,8 @@ class _SurveyScreenState extends State<SurveyScreen>
             ],
           ),
           _divider(),
-          _questionTitle('5. Nhịp độ chuyến đi'),
-          _subLabel('Chọn nhịp độ mong muốn'),
+          _questionTitle(_isVi ? '5. Nhịp độ chuyến đi' : '5. Trip pace'),
+          _subLabel(_isVi ? 'Chọn nhịp độ mong muốn' : 'Choose your preferred pace'),
           SurveyChipGroup(
             options: const ['Nhanh', 'Cân bằng', 'Thư giãn'],
             selected: _tripPace == null ? <String>{} : <String>{_tripPace!},
@@ -1095,8 +1120,8 @@ class _SurveyScreenState extends State<SurveyScreen>
             }),
           ),
           _divider(),
-          _questionTitle('6. Bạn dự định đi phương tiện nào?'),
-          _subLabel('Chọn phương tiện di chuyển chính'),
+          _questionTitle(_isVi ? '6. Bạn dự định đi phương tiện nào?' : '6. Which transportation mode do you plan to use?'),
+          _subLabel(_isVi ? 'Chọn phương tiện di chuyển chính' : 'Choose primary mode of transport'),
           SurveyChipGroup(
             options: const [
               'Xe máy',
@@ -1125,10 +1150,10 @@ class _SurveyScreenState extends State<SurveyScreen>
 
   // Page 3: Sở thích & trải nghiệm
   Widget _pageInterestsAndExperience() => _pageWrap(
-        section: _sectionLabels[2],
+        section: _getSectionLabel(2),
         children: [
-          _questionTitle('7. Bạn ưu tiên chi tiêu nhiều hơn cho điều gì?'),
-          _subLabel('Chọn phần hoạt động bạn muốn đầu tư tài chính nhiều nhất'),
+          _questionTitle(_isVi ? '7. Bạn ưu tiên chi tiêu nhiều hơn cho điều gì?' : '7. What do you prioritize spending more on?'),
+          _subLabel(_isVi ? 'Chọn phần hoạt động bạn muốn đầu tư tài chính nhiều nhất' : 'Choose the category you want to invest in the most'),
           SurveyChipGroup(
             options: const [
               'Khách sạn',
@@ -1151,8 +1176,8 @@ class _SurveyScreenState extends State<SurveyScreen>
             }),
           ),
           _divider(),
-          _questionTitle('8. Bạn thích địa điểm mang phong cách nào?'),
-          _subLabel('Chọn kiểu không khí mong muốn'),
+          _questionTitle(_isVi ? '8. Bạn thích địa điểm mang phong cách nào?' : '8. What vibe do you prefer for your destinations?'),
+          _subLabel(_isVi ? 'Chọn kiểu không khí mong muốn' : 'Choose preferred atmosphere'),
           SurveyChipGroup(
             options: const [
               'Đông vui',
@@ -1175,8 +1200,8 @@ class _SurveyScreenState extends State<SurveyScreen>
             }),
           ),
           _divider(),
-          _questionTitle('9. Bạn thích hoạt động nào trong chuyến đi?'),
-          _subLabel('Có thể chọn nhiều hoạt động yêu thích'),
+          _questionTitle(_isVi ? '9. Bạn thích hoạt động nào trong chuyến đi?' : '9. What activities do you enjoy during the trip?'),
+          _subLabel(_isVi ? 'Có thể chọn nhiều hoạt động yêu thích' : 'You can select multiple favorite activities'),
           SurveyChipGroup(
             options: const [
               'Ngắm cảnh',
@@ -1208,10 +1233,10 @@ class _SurveyScreenState extends State<SurveyScreen>
 
   // Page 4: Phương tiện & di chuyển
   Widget _pageTransportAndRoute() => _pageWrap(
-        section: _sectionLabels[3],
+        section: _getSectionLabel(3),
         children: [
-          _questionTitle('8. Bạn dự định đi phương tiện nào?'),
-          _subLabel('Chọn phương tiện di chuyển chính'),
+          _questionTitle(_isVi ? '8. Bạn dự định đi phương tiện nào?' : '8. Which transportation mode do you plan to use?'),
+          _subLabel(_isVi ? 'Chọn phương tiện di chuyển chính' : 'Choose primary mode of transport'),
           SurveyChipGroup(
             options: const [
               'Xe máy',
@@ -1234,8 +1259,8 @@ class _SurveyScreenState extends State<SurveyScreen>
             }),
           ),
           _divider(),
-          _questionTitle('9. Bạn muốn ưu tiên tiêu chí nào hơn?'),
-          _subLabel('Tùy chọn phong cách tuyến đường'),
+          _questionTitle(_isVi ? '9. Bạn muốn ưu tiên tiêu chí nào hơn?' : '9. Which criterion do you prioritize?'),
+          _subLabel(_isVi ? 'Tùy chọn phong cách tuyến đường' : 'Route style options'),
           SurveyChipGroup(
             options: const [
               'Tuyến đường đẹp',
@@ -1260,10 +1285,10 @@ class _SurveyScreenState extends State<SurveyScreen>
 
   // Page 5: Lưu trú
   Widget _pageAccommodation() => _pageWrap(
-        section: _sectionLabels[4],
+        section: _getSectionLabel(4),
         children: [
-          _questionTitle('10. Bạn muốn ở loại hình nào?'),
-          _subLabel('Chọn kiểu lưu trú ưa thích'),
+          _questionTitle(_isVi ? '10. Bạn muốn ở loại hình nào?' : '10. What type of accommodation do you prefer?'),
+          _subLabel(_isVi ? 'Chọn kiểu lưu trú ưa thích' : 'Select preferred accommodation type'),
           SurveyChipGroup(
             options: const [
               'Khách sạn',
@@ -1286,8 +1311,8 @@ class _SurveyScreenState extends State<SurveyScreen>
             }),
           ),
           _divider(),
-          _questionTitle('11. Bạn ưu tiên nơi lưu trú thế nào?'),
-          _subLabel('Chọn tiêu chí quan trọng khi chọn chỗ ở'),
+          _questionTitle(_isVi ? '11. Bạn ưu tiên nơi lưu trú thế nào?' : '11. How do you prioritize accommodation?'),
+          _subLabel(_isVi ? 'Chọn tiêu chí quan trọng khi chọn chỗ ở' : 'Choose key criteria for selecting accommodation'),
           SurveyChipGroup(
             options: const [
               'Gần trung tâm',
@@ -1314,10 +1339,10 @@ class _SurveyScreenState extends State<SurveyScreen>
 
   // Page 6: Ăn uống
   Widget _pageDining() => _pageWrap(
-        section: _sectionLabels[5],
+        section: _getSectionLabel(5),
         children: [
-          _questionTitle('12. Bạn có yêu cầu ăn uống đặc biệt không?'),
-          _subLabel('Có thể chọn nhiều mục nếu có ràng buộc'),
+          _questionTitle(_isVi ? '12. Bạn có yêu cầu ăn uống đặc biệt không?' : '12. Do you have any dietary requirements?'),
+          _subLabel(_isVi ? 'Có thể chọn nhiều mục nếu có ràng buộc' : 'Select multiple if applicable'),
           SurveyChipGroup(
             options: const [
               'Ăn chay',
@@ -1339,8 +1364,8 @@ class _SurveyScreenState extends State<SurveyScreen>
             }),
           ),
           _divider(),
-          _questionTitle('13. Bạn thích các quán ăn kiểu nào?'),
-          _subLabel('Chọn phong cách ẩm thực ưa thích'),
+          _questionTitle(_isVi ? '13. Bạn thích các quán ăn kiểu nào?' : '13. What dining style do you prefer?'),
+          _subLabel(_isVi ? 'Chọn phong cách ẩm thực ưa thích' : 'Select preferred dining style'),
           SurveyChipGroup(
             options: const [
               'Quán local',

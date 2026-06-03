@@ -46,10 +46,9 @@ const config = {
         clientId: process.env.GOOGLE_CLIENT_ID,
     },
 
-    facebook: {
-        appId: process.env.FACEBOOK_APP_ID,
-        appSecret: process.env.FACEBOOK_APP_SECRET,
-        graphVersion: process.env.FACEBOOK_GRAPH_VERSION || 'v20.0',
+    discord: {
+        clientId: process.env.DISCORD_CLIENT_ID,
+        clientSecret: process.env.DISCORD_CLIENT_SECRET,
     },
 
     openRouteService: {
@@ -91,8 +90,8 @@ if (!config.google.clientId) {
     console.warn('WARNING: GOOGLE_CLIENT_ID is not defined in .env file!');
 }
 
-if (!config.facebook.appId || !config.facebook.appSecret) {
-    console.warn('WARNING: FACEBOOK_APP_ID or FACEBOOK_APP_SECRET is not defined in .env file!');
+if (!config.discord.clientId || !config.discord.clientSecret) {
+    console.warn('WARNING: DISCORD_CLIENT_ID or DISCORD_CLIENT_SECRET is not defined in .env file!');
 }
 
 export default config;
