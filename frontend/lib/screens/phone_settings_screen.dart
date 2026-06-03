@@ -1,6 +1,7 @@
-import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/material.dart';
+
+import '../api/api.dart';
 
 class PhoneSettingsScreen extends StatefulWidget {
   final Map<String, dynamic> userData;
@@ -18,78 +19,24 @@ class PhoneSettingsScreen extends StatefulWidget {
 
 class _PhoneSettingsScreenState extends State<PhoneSettingsScreen> with TickerProviderStateMixin {
   late AnimationController _fadeController;
-  late AnimationController _pulseController;
-  
-  final TextEditingController _phoneController = TextEditingController();
-  String _selectedCountryCode = '+84';
-  String _selectedCountryName = 'Việt Nam';
-  
-  bool _isVerifying = false;
-  bool _showOtpSection = false;
-  int _resendTimer = 0;
-  Timer? _timer;
-  
-  final List<TextEditingController> _otpControllers = List.generate(6, (_) => TextEditingController());
-  final List<FocusNode> _otpFocusNodes = List.generate(6, (_) => FocusNode());
+  late TextEditingController _phoneController;
+  bool _isSaving = false;
+
+  bool get _isVi => Localizations.localeOf(context).languageCode == 'vi';
 
   @override
   void initState() {
     super.initState();
-    _fadeController = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 1000),
-    );
-    _pulseController = AnimationController(
-      vsync: this,
-      duration: const Duration(seconds: 2),
-    )..repeat(reverse: true);
-    
-    _fadeController.forward();
+    _fadeController = AnimationController(vsync: this, duration: const Duration(milliseconds: 700))..forward();
+    final currentPhone = widget.userData['phone'];
+    _phoneController = TextEditingController(text: currentPhone is String ? currentPhone : '');
   }
 
   @override
   void dispose() {
     _fadeController.dispose();
-    _pulseController.dispose();
     _phoneController.dispose();
-    for (var controller in _otpControllers) {
-      controller.dispose();
-    }
-    for (var node in _otpFocusNodes) {
-      node.dispose();
-    }
-    _timer?.cancel();
     super.dispose();
-  }
-
-  void _startResendTimer() {
-    setState(() => _resendTimer = 60);
-    _timer?.cancel();
-    _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
-      if (_resendTimer == 0) {
-        timer.cancel();
-      } else {
-        setState(() => _resendTimer--);
-      }
-    });
-  }
-
-  void _handleSendCode() {
-    if (_phoneController.text.isEmpty || _phoneController.text.length < 9) {
-      _showToast('Vui lòng nhập số điện thoại hợp lệ', isError: true);
-      return;
-    }
-    setState(() => _isVerifying = true);
-    
-    // Simulate API call
-    Future.delayed(const Duration(seconds: 2), () {
-      setState(() {
-        _isVerifying = false;
-        _showOtpSection = true;
-      });
-      _startResendTimer();
-      _showToast('Mã OTP đã được gửi đến số điện thoại của bạn');
-    });
   }
 
   void _showToast(String message, {bool isError = false}) {
@@ -103,64 +50,50 @@ class _PhoneSettingsScreenState extends State<PhoneSettingsScreen> with TickerPr
     );
   }
 
-  void _showCountryPicker() {
-    showModalBottomSheet(
-      context: context,
-      backgroundColor: Colors.transparent,
-      builder: (context) => Container(
-        decoration: BoxDecoration(
-          color: const Color(0xFF1B2321),
-          borderRadius: const BorderRadius.vertical(top: Radius.circular(30)),
-          border: Border.all(color: Colors.white.withOpacity(0.1)),
-        ),
-        child: Column(
-          children: [
-            const SizedBox(height: 12),
-            Container(width: 40, height: 4, decoration: BoxDecoration(color: Colors.white24, borderRadius: BorderRadius.circular(2))),
-            const Padding(
-              padding: EdgeInsets.all(24),
-              child: Text(
-                'Chọn mã vùng quốc gia',
-                style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold, fontFamily: 'Montserrat'),
-              ),
-            ),
-            Expanded(
-              child: ListView(
-                children: [
-                  _buildCountryTile('🇻🇳', 'Việt Nam', '+84'),
-                  _buildCountryTile('🇺🇸', 'Hoa Kỳ', '+1'),
-                  _buildCountryTile('🇸🇬', 'Singapore', '+65'),
-                  _buildCountryTile('🇯🇵', 'Nhật Bản', '+81'),
-                  _buildCountryTile('🇰🇷', 'Hàn Quốc', '+82'),
-                  _buildCountryTile('🇹🇭', 'Thái Lan', '+66'),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
+  Future<void> _savePhone() async {
+    final phone = _phoneController.text.trim();
 
-  Widget _buildCountryTile(String flag, String name, String code) {
-    return ListTile(
-      leading: Text(flag, style: const TextStyle(fontSize: 24)),
-      title: Text(name, style: const TextStyle(color: Colors.white)),
-      trailing: Text(code, style: const TextStyle(color: Color(0xFFD4AF7A), fontWeight: FontWeight.bold)),
-      onTap: () {
-        setState(() {
-          _selectedCountryCode = code;
-          _selectedCountryName = name;
-        });
-        Navigator.pop(context);
-      },
-    );
+    if (_isSaving) return;
+
+    if (phone.isEmpty) {
+      _showToast(_isVi ? 'Vui lòng nhập số điện thoại.' : 'Please enter your phone number.', isError: true);
+      return;
+    }
+
+    setState(() => _isSaving = true);
+
+    try {
+      final response = await apiPutJson(
+        '/auth/profile',
+        {'phone': phone},
+        token: widget.authToken,
+      );
+
+      if (!mounted) return;
+
+      if (response.statusCode == 200) {
+        _showToast(_isVi ? 'Cập nhật số điện thoại thành công!' : 'Phone number updated successfully!');
+        Navigator.pop(context, true);
+        return;
+      }
+
+      final data = tryDecodeJsonObject(response.body);
+      final message = data?['message'] as String?;
+      _showToast(message ?? (_isVi ? 'Cập nhật số điện thoại thất bại.' : 'Failed to update phone number.'), isError: true);
+    } catch (error) {
+      if (!mounted) return;
+      _showToast(_isVi ? 'Không kết nối được server. ($error)' : 'Could not connect to the server. ($error)', isError: true);
+    } finally {
+      if (mounted) {
+        setState(() => _isSaving = false);
+      }
+    }
   }
 
   @override
   Widget build(BuildContext context) {
     final double topPadding = MediaQuery.of(context).padding.top;
-    
+
     return Scaffold(
       backgroundColor: const Color(0xFF0F1412),
       body: Stack(
@@ -180,21 +113,9 @@ class _PhoneSettingsScreenState extends State<PhoneSettingsScreen> with TickerPr
                       children: [
                         _buildHeroHeaderContent(),
                         const SizedBox(height: 32),
-                        _buildSectionLabel('Số điện thoại hiện tại'),
+                        _buildSectionLabel(_isVi ? 'Số điện thoại' : 'Phone number'),
                         const SizedBox(height: 12),
-                        _buildCurrentPhoneCard(),
-                        const SizedBox(height: 32),
-                        _buildSectionLabel('Thay đổi Số điện thoại'),
-                        const SizedBox(height: 12),
-                        _buildChangePhoneCard(),
-                        if (_showOtpSection) ...[
-                          const SizedBox(height: 32),
-                          _buildSectionLabel('Xác thực OTP'),
-                          const SizedBox(height: 12),
-                          _buildOtpSection(),
-                        ],
-                        const SizedBox(height: 32),
-                        _buildSecurityNoticeCard(),
+                        _buildPhoneInputCard(),
                         const SizedBox(height: 48),
                         _buildActionButtons(),
                       ],
@@ -219,15 +140,8 @@ class _PhoneSettingsScreenState extends State<PhoneSettingsScreen> with TickerPr
       child: Stack(
         fit: StackFit.expand,
         children: [
-          Image.asset(
-            'assets/images/halong.jpg',
-            fit: BoxFit.cover,
-          ),
-          Container(
-            decoration: BoxDecoration(
-              color: const Color(0xFF1B2321).withOpacity(0.78),
-            ),
-          ),
+          Image.asset('assets/images/halong.jpg', fit: BoxFit.cover),
+          Container(decoration: BoxDecoration(color: const Color(0xFF1B2321).withOpacity(0.78))),
           Positioned(
             top: 0,
             left: 0,
@@ -268,13 +182,13 @@ class _PhoneSettingsScreenState extends State<PhoneSettingsScreen> with TickerPr
           ),
         ),
         const SizedBox(height: 20),
-        const Text(
-          'Số Điện Thoại',
-          style: TextStyle(fontFamily: 'Montserrat', fontSize: 32, fontWeight: FontWeight.w900, color: Colors.white, letterSpacing: -1),
+        Text(
+          _isVi ? 'Số Điện Thoại' : 'Phone Number',
+          style: const TextStyle(fontFamily: 'Montserrat', fontSize: 32, fontWeight: FontWeight.w900, color: Colors.white, letterSpacing: -1),
         ),
         const SizedBox(height: 8),
         Text(
-          'Bảo mật tài khoản và xác thực danh tính qua số điện thoại',
+          _isVi ? 'Cập nhật số điện thoại cho tài khoản của bạn' : 'Update the phone number for your account',
           style: TextStyle(fontFamily: 'Montserrat', fontSize: 14, color: Colors.white.withOpacity(0.6), height: 1.5),
         ),
       ],
@@ -288,172 +202,20 @@ class _PhoneSettingsScreenState extends State<PhoneSettingsScreen> with TickerPr
     );
   }
 
-  Widget _buildCurrentPhoneCard() {
-    final String currentPhone = widget.userData['phone'] ?? '';
-    final bool hasPhone = currentPhone.isNotEmpty;
-
+  Widget _buildPhoneInputCard() {
     return _buildGlassCard(
-      child: hasPhone 
-          ? Row(
-              children: [
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(currentPhone, style: const TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold, fontFamily: 'Montserrat')),
-                      const SizedBox(height: 4),
-                      const Text('Đã xác thực bảo mật', style: TextStyle(color: Color(0xFF2ECC71), fontSize: 12, fontFamily: 'Montserrat')),
-                    ],
-                  ),
-                ),
-                FadeTransition(
-                  opacity: _pulseController,
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-                    decoration: BoxDecoration(
-                      color: const Color(0xFF2ECC71).withOpacity(0.15),
-                      borderRadius: BorderRadius.circular(20),
-                      border: Border.all(color: const Color(0xFF2ECC71).withOpacity(0.3)),
-                    ),
-                    child: const Icon(Icons.verified_user_rounded, color: Color(0xFF2ECC71), size: 16),
-                  ),
-                ),
-              ],
-            )
-          : Column(
-              children: [
-                Icon(Icons.phone_disabled_rounded, color: Colors.white.withOpacity(0.2), size: 48),
-                const SizedBox(height: 16),
-                const Text('Chưa có số điện thoại', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-                const SizedBox(height: 8),
-                Text('Thêm số điện thoại để tăng cường bảo mật tài khoản', textAlign: TextAlign.center, style: TextStyle(color: Colors.white.withOpacity(0.4), fontSize: 12)),
-              ],
-            ),
-    );
-  }
-
-  Widget _buildChangePhoneCard() {
-    return _buildGlassCard(
-      child: Column(
-        children: [
-          Row(
-            children: [
-              GestureDetector(
-                onTap: _showCountryPicker,
-                child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-                  decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.05),
-                    borderRadius: BorderRadius.circular(14),
-                    border: Border.all(color: Colors.white.withOpacity(0.08)),
-                  ),
-                  child: Row(
-                    children: [
-                      Text(_selectedCountryCode, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-                      const Icon(Icons.arrow_drop_down_rounded, color: Color(0xFFD4AF7A)),
-                    ],
-                  ),
-                ),
-              ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.05),
-                    borderRadius: BorderRadius.circular(14),
-                    border: Border.all(color: Colors.white.withOpacity(0.08)),
-                  ),
-                  child: TextField(
-                    controller: _phoneController,
-                    keyboardType: TextInputType.phone,
-                    style: const TextStyle(color: Colors.white, fontSize: 15),
-                    decoration: InputDecoration(
-                      hintText: 'Nhập số điện thoại mới',
-                      hintStyle: TextStyle(color: Colors.white.withOpacity(0.2)),
-                      border: InputBorder.none,
-                      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 24),
-          SizedBox(
-            width: double.infinity,
-            child: ElevatedButton(
-              onPressed: _isVerifying ? null : _handleSendCode,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.white.withOpacity(0.08),
-                foregroundColor: Colors.white,
-                padding: const EdgeInsets.symmetric(vertical: 16),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16), side: BorderSide(color: Colors.white.withOpacity(0.1))),
-                elevation: 0,
-              ),
-              child: _isVerifying
-                  ? const SizedBox(height: 20, width: 20, child: CircularProgressIndicator(strokeWidth: 2, valueColor: AlwaysStoppedAnimation(Colors.white)))
-                  : const Text('Gửi mã xác thực', style: TextStyle(fontWeight: FontWeight.bold)),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildOtpSection() {
-    return _buildGlassCard(
-      child: Column(
-        children: [
-          const Text('Nhập mã 6 chữ số đã được gửi tới số điện thoại của bạn', textAlign: TextAlign.center, style: TextStyle(color: Colors.white70, fontSize: 13, height: 1.5)),
-          const SizedBox(height: 24),
-          Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: List.generate(6, (index) => _buildOtpBox(index))),
-          const SizedBox(height: 24),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(_resendTimer > 0 ? 'Gửi lại mã sau ${_resendTimer}s' : 'Không nhận được mã? ', style: TextStyle(color: Colors.white.withOpacity(0.5), fontSize: 13)),
-              if (_resendTimer == 0)
-                GestureDetector(onTap: _startResendTimer, child: const Text('Gửi lại ngay', style: TextStyle(color: Color(0xFFD4AF7A), fontWeight: FontWeight.bold, fontSize: 13))),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildOtpBox(int index) {
-    return Container(
-      width: 45, height: 55,
-      decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.05), borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: _otpControllers[index].text.isNotEmpty ? const Color(0xFFD4AF7A) : Colors.white.withOpacity(0.1), width: 1),
-      ),
       child: TextField(
-        controller: _otpControllers[index], focusNode: _otpFocusNodes[index],
-        textAlign: TextAlign.center, keyboardType: TextInputType.number, maxLength: 1,
-        style: const TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
-        decoration: const InputDecoration(counterText: '', border: InputBorder.none),
-        onChanged: (value) {
-          if (value.isNotEmpty && index < 5) _otpFocusNodes[index + 1].requestFocus();
-          else if (value.isEmpty && index > 0) _otpFocusNodes[index - 1].requestFocus();
-          setState(() {});
-        },
-      ),
-    );
-  }
-
-  Widget _buildSecurityNoticeCard() {
-    return _buildGlassCard(
-      child: Row(
-        children: [
-          Container(padding: const EdgeInsets.all(10), decoration: BoxDecoration(color: const Color(0xFFD4AF7A).withOpacity(0.1), borderRadius: BorderRadius.circular(12)), child: const Icon(Icons.shield_outlined, color: Color(0xFFD4AF7A), size: 24)),
-          const SizedBox(width: 16),
-          Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            const Text('Lưu ý bảo mật', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 14)),
-            const SizedBox(height: 4),
-            Text('Số điện thoại giúp khôi phục tài khoản và xác minh các giao dịch quan trọng của bạn.', style: TextStyle(color: Colors.white.withOpacity(0.5), fontSize: 12, height: 1.4)),
-          ])),
-        ],
+        controller: _phoneController,
+        autofocus: true,
+        keyboardType: TextInputType.phone,
+        style: const TextStyle(color: Colors.white, fontSize: 16, fontFamily: 'Montserrat', fontWeight: FontWeight.w600),
+        decoration: InputDecoration(
+          hintText: _isVi ? 'Nhập số điện thoại' : 'Enter phone number',
+          hintStyle: TextStyle(color: Colors.white.withOpacity(0.25), fontFamily: 'Montserrat'),
+          prefixIcon: const Icon(Icons.phone_android_rounded, color: Color(0xFFD4AF7A), size: 22),
+          border: InputBorder.none,
+          contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 14),
+        ),
       ),
     );
   }
@@ -462,26 +224,26 @@ class _PhoneSettingsScreenState extends State<PhoneSettingsScreen> with TickerPr
     return Column(
       children: [
         Container(
-          width: double.infinity, height: 60,
+          width: double.infinity,
+          height: 60,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(18),
             gradient: const LinearGradient(colors: [Color(0xFFD4AF7A), Color(0xFFB5956A)]),
             boxShadow: [BoxShadow(color: const Color(0xFFD4AF7A).withOpacity(0.3), blurRadius: 20, offset: const Offset(0, 8))],
           ),
           child: ElevatedButton(
-            onPressed: () {
-              _showToast('Đang cập nhật thay đổi...');
-              Future.delayed(const Duration(milliseconds: 1500), () {
-                _showToast('Cập nhật Số điện thoại thành công!');
-                Navigator.pop(context, true);
-              });
-            },
+            onPressed: _isSaving ? null : _savePhone,
             style: ElevatedButton.styleFrom(backgroundColor: Colors.transparent, shadowColor: Colors.transparent, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18))),
-            child: const Text('Lưu thay đổi', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w900, color: Color(0xFF1B2321))),
+            child: _isSaving
+                ? const SizedBox(width: 22, height: 22, child: CircularProgressIndicator(strokeWidth: 2.5, color: Color(0xFF1B2321)))
+                : Text(_isVi ? 'Lưu thay đổi' : 'Save changes', style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w900, color: Color(0xFF1B2321))),
           ),
         ),
         const SizedBox(height: 16),
-        TextButton(onPressed: () => Navigator.pop(context), child: Text('Hủy bỏ', style: TextStyle(color: Colors.white.withOpacity(0.5), fontWeight: FontWeight.bold))),
+        TextButton(
+          onPressed: () => Navigator.pop(context),
+          child: Text(_isVi ? 'Hủy bỏ' : 'Cancel', style: TextStyle(color: Colors.white.withOpacity(0.5), fontWeight: FontWeight.bold)),
+        ),
       ],
     );
   }
@@ -492,7 +254,7 @@ class _PhoneSettingsScreenState extends State<PhoneSettingsScreen> with TickerPr
       child: BackdropFilter(
         filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
         child: Container(
-          padding: const EdgeInsets.all(24),
+          padding: const EdgeInsets.all(20),
           decoration: BoxDecoration(
             color: Colors.black.withOpacity(0.32),
             borderRadius: BorderRadius.circular(28),
@@ -512,8 +274,13 @@ class _PhoneSettingsScreenState extends State<PhoneSettingsScreen> with TickerPr
         child: BackdropFilter(
           filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
           child: Container(
-            width: 48, height: 48,
-            decoration: BoxDecoration(color: Colors.white.withOpacity(0.08), borderRadius: BorderRadius.circular(18), border: Border.all(color: Colors.white.withOpacity(0.25))),
+            width: 48,
+            height: 48,
+            decoration: BoxDecoration(
+              color: Colors.white.withOpacity(0.08),
+              borderRadius: BorderRadius.circular(18),
+              border: Border.all(color: Colors.white.withOpacity(0.25)),
+            ),
             child: Icon(icon, color: Colors.white, size: 20),
           ),
         ),

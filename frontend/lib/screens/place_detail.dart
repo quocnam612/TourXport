@@ -34,6 +34,131 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
   late bool _isLiked;
   bool _showFullDesc = false;
   int _selectedTab = 0; // 0 = Tổng quan, 1 = Nhận xét
+
+  bool get _isVi => Localizations.localeOf(context).languageCode == 'vi';
+
+  String _translateProvince(String prov) {
+    if (_isVi) return prov;
+    final maps = {
+      'Đà Nẵng': 'Da Nang',
+      'Hà Nội': 'Hanoi',
+      'TP. Hồ Chí Minh': 'Ho Chi Minh City',
+      'Quảng Nam': 'Quang Nam',
+      'Quảng Ninh': 'Quang Ninh',
+      'Thừa Thiên Huế': 'Thua Thien Hue',
+      'Khánh Hòa': 'Khanh Hoa',
+      'Lào Cai': 'Lao Cai',
+      'Ninh Bình': 'Ninh Binh',
+      'Bình Thuận': 'Binh Thuan',
+      'Kiên Giang': 'Kien Giang',
+      'Bà Rịa - Vũng Tàu': 'Ba Ria - Vung Tau',
+      'Quảng Bình': 'Quang Binh',
+      'An Giang': 'An Giang',
+      'Bạc Liêu': 'Bac Lieu',
+      'Bắc Giang': 'Bac Giang',
+      'Bắc Kạn': 'Bac Kan',
+      'Bắc Ninh': 'Bac Ninh',
+      'Bến Tre': 'Ben Tre',
+      'Bình Dương': 'Binh Duong',
+      'Bình Định': 'Binh Dinh',
+      'Bình Phước': 'Binh Phước',
+      'Cà Mau': 'Ca Mau',
+      'Cao Bằng': 'Cao Bang',
+      'Cần Thơ': 'Can Tho',
+      'Đắk Lắk': 'Dak Lak',
+      'Đắk Nông': 'Dak Nong',
+      'Điện Biên': 'Dien Bien',
+      'Đồng Nai': 'Dong Nai',
+      'Đồng Tháp': 'Dong Thap',
+      'Gia Lai': 'Gia Lai',
+      'Hà Giang': 'Ha Giang',
+      'Hà Nam': 'Ha Nam',
+      'Hà Tĩnh': 'Ha Tinh',
+      'Hải Dương': 'Hai Duong',
+      'Hải Phòng': 'Hai Phong',
+      'Hậu Giang': 'Hau Giang',
+      'Hòa Bình': 'Hoa Binh',
+      'Hưng Yên': 'Hung Yen',
+      'Kon Tum': 'Kon Tum',
+      'Lai Châu': 'Lai Chau',
+      'Lạng Sơn': 'Lang Son',
+      'Lâm Đồng': 'Lam Dong',
+      'Long An': 'Long An',
+      'Nam Định': 'Nam Dinh',
+      'Nghệ An': 'Nghe An',
+      'Ninh Thuận': 'Ninh Thuan',
+      'Phú Thọ': 'Phu Tho',
+      'Phú Yên': 'Phu Yen',
+      'Quảng Ngãi': 'Quang Ngai',
+      'Quảng Trị': 'Quang Tri',
+      'Sóc Trăng': 'Soc Trang',
+      'Sơn La': 'Son La',
+      'Tây Ninh': 'Tay Ninh',
+      'Thái Bình': 'Thai Binh',
+      'Thái Nguyên': 'Thai Nguyen',
+      'Thanh Hóa': 'Thanh Hoa',
+      'Tiền Giang': 'Tien Giang',
+      'Trà Vinh': 'Tra Vinh',
+      'Tuyên Quang': 'Tuyen Quang',
+      'Vĩnh Long': 'Vinh Long',
+      'Vĩnh Phúc': 'Vinh Phuc',
+      'Yên Bái': 'Yen Bai',
+    };
+    return maps[prov] ?? prov;
+  }
+
+  String _translateTag(String tag) {
+    if (_isVi) return tag;
+    final maps = {
+      'Điểm du lịch': 'Tourist Attraction',
+      'Danh lam & Thắng cảnh': 'Sights & Landmarks',
+      'Thiên nhiên & Công viên': 'Nature & Parks',
+      'Nơi mua sắm': 'Shopping',
+      'Hoạt động ngoài trời': 'Outdoor Activities',
+      'Bảo tàng': 'Museums',
+      'Thông tin cho khách du lịch': 'Traveler Resources',
+      'Vui chơi & Giải trí': 'Fun & Games',
+      'Chuyến tham quan': 'Tours',
+      'Phương tiện giao thông': 'Transportation',
+      'Công viên nước & giải trí': 'Water & Amusement Parks',
+      'Sự kiện': 'Events',
+      'Đồ ăn & Đồ uống': 'Food & Drink',
+      'Lớp học & hội thảo': 'Classes & Workshops',
+      'Hòa nhạc & chương trình biểu diễn': 'Concerts & Shows',
+      'Sòng bạc & Đánh bạc': 'Casinos & Gambling',
+      'Sở thú & Thủy cung': 'Zoos & Aquariums',
+      'Chuyến tham quan bằng thuyền & thể thao dưới nước': 'Boat Tours & Water Sports',
+      'Spa & Sức khỏe': 'Spas & Wellness',
+      'Giải trí về đêm': 'Nightlife',
+      'Khác': 'Other',
+      'Khách sạn': 'Hotels',
+      'Khách sạn / Nhà nghỉ': 'Hotel / Motel',
+      'Khu nghỉ dưỡng': 'Resorts',
+      'Khách sạn nhỏ': 'Small Hotels',
+      'Nhà nghỉ': 'Motels',
+      'Nhà trọ': 'Inns',
+      'Cơ sở lưu trú đặc biệt': 'Specialty Lodging',
+      'Khách sạn đặc biệt': 'Specialty Hotels',
+      'Nhà khách': 'Guesthouses',
+      'B&B': 'B&Bs',
+      'Cơ sở kinh doanh có dịch vụ giới hạn': 'Limited Service Properties',
+      'Nhà trọ đặc biệt': 'Specialty Inns',
+      'Nhà ngoại ô': 'Suburban Lodging',
+      'Biệt thự': 'Villas',
+      'Khách sạn nhỏ sang trọng': 'Luxury Small Hotels',
+      'B&B đặc biệt': 'Specialty B&Bs',
+      'Nhà gỗ nhỏ/Khu cắm trại': 'Cabins / Campsites',
+      'Khách sạn có căn hộ': 'Apartment Hotels',
+      'Khu nghỉ dưỡng (Trọn gói)': 'All-Inclusive Resorts',
+      'Nhà trại': 'Farm Lodging',
+      'Nhà hàng': 'Restaurants',
+      'Ngồi xuống': 'Table Service',
+      'Quán cafe': 'Cafes',
+      'Đồ ăn nhanh': 'Quick Bites',
+    };
+    return maps[tag] ?? tag;
+  }
+
   bool _isLoadingReviews = false;
   bool _reviewsLoaded = false;
   String? _reviewsError;
@@ -446,7 +571,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                   const SizedBox(height: 20),
 
                   // Gallery title
-                  _sectionTitle('Bộ sưu tập'),
+                  _sectionTitle(_isVi ? 'Bộ sưu tập' : 'Gallery'),
                   const SizedBox(height: 12),
 
                   // Gallery
@@ -480,7 +605,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                               const Icon(Icons.location_on, color: Color(0xFFD4AF7A), size: 20),
                               const SizedBox(width: 6),
                               Text(
-                                dest.province,
+                                _translateProvince(dest.province),
                                 style: const TextStyle(
                                   fontFamily: 'Montserrat',
                                   fontSize: 16,
@@ -544,14 +669,14 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                                   ),
                                 ],
                               ),
-                              child: const Row(
+                              child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Icon(Icons.directions_rounded, color: Colors.white, size: 24),
-                                  SizedBox(width: 10),
+                                  const Icon(Icons.directions_rounded, color: Colors.white, size: 24),
+                                  const SizedBox(width: 10),
                                   Text(
-                                    'Đường đi',
-                                    style: TextStyle(
+                                    _isVi ? 'Đường đi' : 'Directions',
+                                    style: const TextStyle(
                                       fontFamily: 'Montserrat',
                                       fontWeight: FontWeight.w700,
                                       fontSize: 16,
@@ -580,11 +705,11 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        _sectionTitle('Mô tả'),
+        _sectionTitle(_isVi ? 'Mô tả' : 'Description'),
         const SizedBox(height: 8),
         _buildAboutSection(dest),
         const SizedBox(height: 24),
-        _sectionTitle('Điểm nổi bật'),
+        _sectionTitle(_isVi ? 'Điểm nổi bật' : 'Highlights'),
         const SizedBox(height: 12),
         _buildHighlightChips(dest),
       ],
@@ -858,7 +983,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                         children: [
                           const Icon(Icons.location_on, color: Color(0xFFD4AF7A), size: 16),
                           const SizedBox(width: 4),
-                          Text(dest.province, style: const TextStyle(
+                           Text(_translateProvince(dest.province), style: const TextStyle(
                             fontFamily: 'Montserrat', fontSize: 14,
                             color: Colors.white70,
                           )),
@@ -894,9 +1019,9 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
   Widget _buildTabBar() {
     return Row(
       children: [
-        _tabItem('Tổng quan', 0),
+        _tabItem(_isVi ? 'Tổng quan' : 'Overview', 0),
         const SizedBox(width: 24),
-        _tabItem('Nhận xét', 1),
+        _tabItem(_isVi ? 'Nhận xét' : 'Reviews', 1),
       ],
     );
   }
@@ -930,15 +1055,15 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        _sectionTitle('Mô tả'),
+        _sectionTitle(_isVi ? 'Mô tả' : 'Description'),
         const SizedBox(height: 8),
         _buildAboutSection(dest),
         const SizedBox(height: 24),
-        _sectionTitle('Điểm nổi bật'),
+        _sectionTitle(_isVi ? 'Điểm nổi bật' : 'Highlights'),
         const SizedBox(height: 12),
         _buildHighlightChips(dest),
         const SizedBox(height: 24),
-        _sectionTitle('Bộ sưu tập'),
+        _sectionTitle(_isVi ? 'Bộ sưu tập' : 'Gallery'),
         const SizedBox(height: 12),
         _buildGallery(dest),
       ],
@@ -963,7 +1088,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
         GestureDetector(
           onTap: () => setState(() => _showFullDesc = !_showFullDesc),
           child: Text(
-            _showFullDesc ? 'Thu gọn' : 'Xem thêm',
+            _showFullDesc ? (_isVi ? 'Thu gọn' : 'Show less') : (_isVi ? 'Xem thêm' : 'Read more'),
             style: const TextStyle(
               fontFamily: 'Montserrat', fontSize: 13,
               fontWeight: FontWeight.w600, color: Color(0xFFD4AF7A),
@@ -1005,8 +1130,8 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
         padding: const EdgeInsets.symmetric(vertical: 16),
         child: Text(
           _reviewsLoaded
-              ? 'Chưa có nhận xét cho địa điểm này.'
-              : 'Bấm vào thẻ Nhận xét để tải đánh giá.',
+              ? (_isVi ? 'Chưa có nhận xét cho địa điểm này.' : 'No reviews for this location yet.')
+              : (_isVi ? 'Bấm vào thẻ Nhận xét để tải đánh giá.' : 'Tap on Reviews tab to load ratings.'),
           style: TextStyle(
             fontFamily: 'Montserrat',
             fontSize: 13,
@@ -1056,14 +1181,14 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
             ),
           ],
         ),
-        child: const Row(
+        child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(Icons.rate_review_rounded, color: Colors.white, size: 20),
             SizedBox(width: 8),
             Text(
-              'Viết nhận xét',
-              style: TextStyle(
+              _isVi ? 'Viết nhận xét' : 'Write a review',
+              style: const TextStyle(
                 fontFamily: 'Montserrat',
                 fontSize: 14,
                 fontWeight: FontWeight.w800,
@@ -1082,13 +1207,23 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
       return backendDescription;
     }
 
-    final descriptions = {
-      'Hạ Long Bay': 'Hạ Long Bay là kỳ quan thiên nhiên thế giới với hơn 1.600 hòn đảo đá vôi nhô lên từ mặt biển xanh ngọc bích. Nơi đây mang vẻ đẹp huyền bí, lung linh qua từng buổi sớm mai và hoàng hôn.',
-      'Hội An': 'Hội An là phố cổ mang đậm dấu ấn lịch sử và văn hóa, nổi tiếng với những ngôi nhà cổ, đèn lồng rực rỡ và ẩm thực đường phố phong phú.',
-      'Đà Nẵng': 'Đà Nẵng là thành phố biển năng động với bãi biển Mỹ Khê tuyệt đẹp, cầu Rồng ấn tượng và Bà Nà Hills lãng mạn.',
-      'Phong Nha': 'Phong Nha-Kẻ Bàng là vườn quốc gia sở hữu hệ thống hang động kỳ vĩ nhất thế giới, bao gồm Sơn Đoòng — hang động lớn nhất hành tinh.',
-    };
-    return descriptions[dest.name] ?? 'Một điểm đến tuyệt vời tại Việt Nam với cảnh quan thiên nhiên hùng vĩ và văn hóa đặc sắc.';
+    if (_isVi) {
+      final descriptions = {
+        'Hạ Long Bay': 'Hạ Long Bay là kỳ quan thiên nhiên thế giới với hơn 1.600 hòn đảo đá vôi nhô lên từ mặt biển xanh ngọc bích. Nơi đây mang vẻ đẹp huyền bí, lung linh qua từng buổi sớm mai và hoàng hôn.',
+        'Hội An': 'Hội An là phố cổ mang đậm dấu ấn lịch sử và văn hóa, nổi tiếng với những ngôi nhà cổ, đèn lồng rực rỡ và ẩm thực đường phố phong phú.',
+        'Đà Nẵng': 'Đà Nẵng là thành phố biển năng động với bãi biển Mỹ Khê tuyệt đẹp, cầu Rồng ấn tượng và Bà Nà Hills lãng mạn.',
+        'Phong Nha': 'Phong Nha-Kẻ Bàng là vườn quốc gia sở hữu hệ thống hang động kỳ vĩ nhất thế giới, bao gồm Sơn Đoòng — hang động lớn nhất hành tinh.',
+      };
+      return descriptions[dest.name] ?? 'Một điểm đến tuyệt vời tại Việt Nam với cảnh quan thiên nhiên hùng vĩ và văn hóa đặc sắc.';
+    } else {
+      final descriptions = {
+        'Hạ Long Bay': 'Ha Long Bay is a natural wonder of the world with over 1,600 limestone islands rising from the emerald green waters. It carries a mystical, sparkling beauty through every early morning and sunset.',
+        'Hội An': 'Hoi An is an ancient town deeply marked by history and culture, famous for its old houses, brilliant lanterns and rich street food.',
+        'Đà Nẵng': 'Da Nang is a dynamic coastal city with beautiful My Khe beach, impressive Dragon Bridge and romantic Ba Na Hills.',
+        'Phong Nha': 'Phong Nha-Ke Bang is a national park possessing the most majestic cave systems in the world, including Son Doong — the largest cave on the planet.',
+      };
+      return descriptions[dest.name] ?? 'A wonderful destination in Vietnam with majestic natural landscapes and unique culture.';
+    }
   }
 
   Widget _buildGallery(Destination dest) {
@@ -1158,14 +1293,14 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                           ),
                         ],
                       ),
-                      child: const Row(
+                      child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(Icons.directions_rounded, color: Colors.white, size: 24),
-                          SizedBox(width: 10),
+                          const Icon(Icons.directions_rounded, color: Colors.white, size: 24),
+                          const SizedBox(width: 10),
                           Text(
-                            'Đường đi',
-                            style: TextStyle(
+                            _isVi ? 'Đường đi' : 'Directions',
+                            style: const TextStyle(
                               fontFamily: 'Montserrat',
                               fontWeight: FontWeight.w700,
                               fontSize: 16,
@@ -1252,12 +1387,12 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
   Widget _buildHighlightChips(Destination dest) {
     final backendTags = dest.tags.where((tag) => tag.trim().isNotEmpty).toList();
     final highlights = backendTags.isNotEmpty
-        ? backendTags.map((tag) => (_iconForTag(tag), tag)).toList()
+        ? backendTags.map((tag) => (_iconForTag(tag), _translateTag(tag))).toList()
         : [
-            (Icons.landscape_rounded, 'Thiên nhiên'),
-            (Icons.camera_alt_rounded, 'Chụp ảnh'),
-            (Icons.restaurant_rounded, 'Ẩm thực'),
-            (Icons.kayaking_rounded, 'Phiêu lưu'),
+            (Icons.landscape_rounded, _isVi ? 'Thiên nhiên' : 'Nature'),
+            (Icons.camera_alt_rounded, _isVi ? 'Chụp ảnh' : 'Photography'),
+            (Icons.restaurant_rounded, _isVi ? 'Ẩm thực' : 'Cuisine'),
+            (Icons.kayaking_rounded, _isVi ? 'Phiêu lưu' : 'Adventure'),
           ];
     return Wrap(
       spacing: 8, runSpacing: 8,
@@ -1363,7 +1498,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
   String _ratingSummary(Destination dest) {
     final score = dest.totalScore;
     final scoreText = score == null ? '--' : score.toStringAsFixed(1);
-    return '$scoreText (${_compactReviewCount(dest.reviewsCount)} nhận xét)';
+    return '$scoreText (${_compactReviewCount(dest.reviewsCount)} ${_isVi ? "nhận xét" : "reviews"})';
   }
 
   String _compactReviewCount(int? count) {

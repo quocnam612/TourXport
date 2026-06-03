@@ -52,6 +52,79 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
   bool _isLoadingTours = false;
   String? _toursError;
 
+  bool get _isVi => Localizations.localeOf(context).languageCode == 'vi';
+
+  String _translateProvince(String prov) {
+    if (_isVi) return prov;
+    final maps = {
+      'Đà Nẵng': 'Da Nang',
+      'Hà Nội': 'Hanoi',
+      'TP. Hồ Chí Minh': 'Ho Chi Minh City',
+      'Quảng Nam': 'Quang Nam',
+      'Quảng Ninh': 'Quang Ninh',
+      'Thừa Thiên Huế': 'Thua Thien Hue',
+      'Khánh Hòa': 'Khanh Hoa',
+      'Lào Cai': 'Lao Cai',
+      'Ninh Bình': 'Ninh Binh',
+      'Bình Thuận': 'Binh Thuan',
+      'Kiên Giang': 'Kien Giang',
+      'Bà Rịa - Vũng Tàu': 'Ba Ria - Vung Tau',
+      'Quảng Bình': 'Quang Binh',
+      'An Giang': 'An Giang',
+      'Bạc Liêu': 'Bac Lieu',
+      'Bắc Giang': 'Bac Giang',
+      'Bắc Kạn': 'Bac Kan',
+      'Bắc Ninh': 'Bac Ninh',
+      'Bến Tre': 'Ben Tre',
+      'Bình Dương': 'Binh Duong',
+      'Bình Định': 'Binh Dinh',
+      'Bình Phước': 'Binh Phước',
+      'Cà Mau': 'Ca Mau',
+      'Cao Bằng': 'Cao Bang',
+      'Cần Thơ': 'Can Tho',
+      'Đắk Lắk': 'Dak Lak',
+      'Đắk Nông': 'Dak Nong',
+      'Điện Biên': 'Dien Bien',
+      'Đồng Nai': 'Dong Nai',
+      'Đồng Tháp': 'Dong Thap',
+      'Gia Lai': 'Gia Lai',
+      'Hà Giang': 'Ha Giang',
+      'Hà Nam': 'Ha Nam',
+      'Hà Tĩnh': 'Ha Tinh',
+      'Hải Dương': 'Hai Duong',
+      'Hải Phòng': 'Hai Phong',
+      'Hậu Giang': 'Hau Giang',
+      'Hòa Bình': 'Hoa Binh',
+      'Hưng Yên': 'Hung Yen',
+      'Kon Tum': 'Kon Tum',
+      'Lai Châu': 'Lai Chau',
+      'Lạng Sơn': 'Lang Son',
+      'Lâm Đồng': 'Lam Dong',
+      'Long An': 'Long An',
+      'Nam Định': 'Nam Dinh',
+      'Nghệ An': 'Nghe An',
+      'Ninh Thuận': 'Ninh Thuan',
+      'Phú Thọ': 'Phu Tho',
+      'Phú Yên': 'Phu Yen',
+      'Quảng Ngãi': 'Quang Ngai',
+      'Quảng Trị': 'Quang Tri',
+      'Sóc Trăng': 'Soc Trang',
+      'Sơn La': 'Son La',
+      'Tây Ninh': 'Tay Ninh',
+      'Thái Bình': 'Thai Binh',
+      'Thái Nguyên': 'Thai Nguyen',
+      'Thanh Hóa': 'Thanh Hoa',
+      'Tiền Giang': 'Tien Giang',
+      'Trà Vinh': 'Tra Vinh',
+      'Tuyên Quang': 'Tuyen Quang',
+      'Vĩnh Long': 'Vinh Long',
+      'Vĩnh Phúc': 'Vinh Phuc',
+      'Yên Bái': 'Yen Bai',
+    };
+    return maps[prov] ?? prov;
+  }
+
+
   @override
   void initState() {
     super.initState();
@@ -95,12 +168,12 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
         }
       }
       setState(() {
-        _toursError = 'Không thể tải lịch trình du lịch';
+        _toursError = 'error_loading';
         _isLoadingTours = false;
       });
     } catch (e) {
       setState(() {
-        _toursError = 'Lỗi kết nối đến máy chủ';
+        _toursError = 'error_connection';
         _isLoadingTours = false;
       });
     }
@@ -114,16 +187,16 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
       builder: (context) => AlertDialog(
         backgroundColor: const Color(0xFF1B2321),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-        title: const Text('Xóa lịch trình', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-        content: const Text('Bạn có chắc chắn muốn xóa lịch trình này khỏi danh sách đã lưu?', style: TextStyle(color: Colors.white70)),
+        title: Text(_isVi ? 'Xóa lịch trình' : 'Delete Itinerary', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+        content: Text(_isVi ? 'Bạn có chắc chắn muốn xóa lịch trình này khỏi danh sách đã lưu?' : 'Are you sure you want to delete this itinerary from your saved list?', style: const TextStyle(color: Colors.white70)),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context, false),
-            child: const Text('Hủy', style: TextStyle(color: Colors.white38)),
+            child: Text(_isVi ? 'Hủy' : 'Cancel', style: const TextStyle(color: Colors.white38)),
           ),
           TextButton(
             onPressed: () => Navigator.pop(context, true),
-            child: const Text('Xóa', style: TextStyle(color: Color(0xFFE74C3C), fontWeight: FontWeight.bold)),
+            child: Text(_isVi ? 'Xóa' : 'Delete', style: const TextStyle(color: Color(0xFFE74C3C), fontWeight: FontWeight.bold)),
           ),
         ],
       ),
@@ -139,20 +212,20 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
         });
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Đã xóa lịch trình thành công')),
+            SnackBar(content: Text(_isVi ? 'Đã xóa lịch trình thành công' : 'Itinerary deleted successfully')),
           );
         }
       } else {
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Xóa lịch trình thất bại')),
+            SnackBar(content: Text(_isVi ? 'Xóa lịch trình thất bại' : 'Failed to delete itinerary')),
           );
         }
       }
     } catch (_) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Lỗi kết nối máy chủ')),
+          SnackBar(content: Text(_isVi ? 'Lỗi kết nối máy chủ' : 'Server connection error')),
         );
       }
     }
@@ -222,7 +295,7 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
                     ),
                     alignment: Alignment.center,
                     child: Text(
-                      'Địa điểm',
+                      _isVi ? 'Địa điểm' : 'Places',
                       style: TextStyle(
                         fontFamily: 'Montserrat',
                         fontSize: 14,
@@ -250,7 +323,7 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
                     ),
                     alignment: Alignment.center,
                     child: Text(
-                      'Lịch trình',
+                      _isVi ? 'Lịch trình' : 'Itineraries',
                       style: TextStyle(
                         fontFamily: 'Montserrat',
                         fontSize: 14,
@@ -318,9 +391,9 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
-                    'Danh sách đã lưu',
-                    style: TextStyle(
+                  Text(
+                    _isVi ? 'Danh sách đã lưu' : 'Saved List',
+                    style: const TextStyle(
                       fontFamily: 'Montserrat',
                       fontSize: 18,
                       fontWeight: FontWeight.w700,
@@ -330,8 +403,8 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
                   const SizedBox(height: 2),
                   Text(
                     _activeTab == 0
-                        ? '${widget.savedDestinations.length} địa điểm'
-                        : '${_savedTours.length} lịch trình',
+                        ? (_isVi ? '${widget.savedDestinations.length} địa điểm' : '${widget.savedDestinations.length} places')
+                        : (_isVi ? '${_savedTours.length} lịch trình' : '${_savedTours.length} itineraries'),
                     style: TextStyle(
                       fontFamily: 'Montserrat',
                       fontSize: 13,
@@ -360,7 +433,9 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
           child: Align(
             alignment: Alignment.centerLeft,
             child: Text(
-              _activeTab == 0 ? 'Những nơi bạn muốn đến' : 'Hành trình của riêng bạn',
+              _activeTab == 0 
+                  ? (_isVi ? 'Những nơi bạn muốn đến' : 'Places you want to visit') 
+                  : (_isVi ? 'Hành trình của riêng bạn' : 'Your own itineraries'),
               style: const TextStyle(
                 fontFamily: 'Montserrat',
                 fontSize: 24,
@@ -386,8 +461,10 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
     if (widget.savedDestinations.isEmpty) {
       return _buildEmptyStateView(
         icon: Icons.bookmark_border_rounded,
-        title: widget.isGuest ? 'Đăng nhập để sử dụng tính năng này' : 'Chưa có địa điểm nào được lưu',
-        subtitle: 'Hãy thêm địa điểm bạn muốn đến vào lần tới',
+        title: widget.isGuest 
+            ? (_isVi ? 'Đăng nhập để sử dụng tính năng này' : 'Sign in to use this feature') 
+            : (_isVi ? 'Chưa có địa điểm nào được lưu' : 'No saved places yet'),
+        subtitle: _isVi ? 'Hãy thêm địa điểm bạn muốn đến vào lần tới' : 'Add places you want to visit next time',
       );
     }
 
@@ -498,7 +575,7 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
                             ),
                             const SizedBox(height: 6),
                             Text(
-                              dest.province,
+                              _translateProvince(dest.province),
                               style: TextStyle(
                                 fontFamily: 'Montserrat',
                                 fontSize: 13,
@@ -523,18 +600,23 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
     if (widget.isGuest) {
       return _buildEmptyStateView(
         icon: Icons.explore_off_rounded,
-        title: 'Đăng nhập để xem lịch trình',
-        subtitle: 'Hãy đăng nhập tài khoản của bạn để lưu và quản lý các lịch trình du lịch cá nhân hóa.',
+        title: _isVi ? 'Đăng nhập để xem lịch trình' : 'Sign in to view itineraries',
+        subtitle: _isVi 
+            ? 'Hãy đăng nhập tài khoản của bạn để lưu và quản lý các lịch trình du lịch cá nhân hóa.'
+            : 'Please sign in to your account to save and manage personalized travel itineraries.',
       );
     }
 
     if (_toursError != null) {
+      final errorText = _toursError == 'error_connection'
+          ? (_isVi ? 'Lỗi kết nối đến máy chủ' : 'Server connection error')
+          : (_isVi ? 'Không thể tải lịch trình du lịch' : 'Cannot load travel itineraries');
       return Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              _toursError!,
+              errorText,
               style: const TextStyle(color: Colors.white70, fontFamily: 'Montserrat', fontSize: 16),
             ),
             const SizedBox(height: 12),
@@ -545,7 +627,7 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
                 foregroundColor: const Color(0xFF0C1412),
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
               ),
-              child: const Text('Thử lại', style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text(_isVi ? 'Thử lại' : 'Retry', style: const TextStyle(fontWeight: FontWeight.bold)),
             ),
           ],
         ),
@@ -555,8 +637,10 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
     if (_savedTours.isEmpty) {
       return _buildEmptyStateView(
         icon: Icons.explore_outlined,
-        title: 'Chưa có lịch trình nào',
-        subtitle: 'Hãy thực hiện khảo sát thông minh để AI tạo riêng cho bạn một lịch trình du lịch tuyệt vời.',
+        title: _isVi ? 'Chưa có lịch trình nào' : 'No itineraries yet',
+        subtitle: _isVi 
+            ? 'Hãy thực hiện khảo sát thông minh để AI tạo riêng cho bạn một lịch trình du lịch tuyệt vời.'
+            : 'Take the smart survey to let AI generate an amazing travel itinerary just for you.',
       );
     }
 
@@ -606,13 +690,13 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
                 builder: (context) => AlertDialog(
                   backgroundColor: const Color(0xFF12201C),
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
-                  title: const Row(
+                  title: Row(
                     children: [
-                      Icon(Icons.check_circle_rounded, color: Color(0xFFD4AF7A), size: 28),
-                      SizedBox(width: 12),
+                      const Icon(Icons.check_circle_rounded, color: Color(0xFFD4AF7A), size: 28),
+                      const SizedBox(width: 12),
                       Text(
-                        'Kích hoạt lịch trình',
-                        style: TextStyle(
+                        _isVi ? 'Kích hoạt lịch trình' : 'Activate Itinerary',
+                        style: const TextStyle(
                           fontFamily: 'Montserrat',
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
@@ -621,7 +705,9 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
                     ],
                   ),
                   content: Text(
-                    'Đã chọn "${tour.title}" làm lịch trình hoạt động chính. Bạn sẽ nhận được các thông báo cập nhật thời gian thực ngay tại Trang chủ!',
+                    _isVi 
+                        ? 'Đã chọn "${tour.title}" làm lịch trình hoạt động chính. Bạn sẽ nhận được các thông báo cập nhật thời gian thực ngay tại Trang chủ!'
+                        : 'Selected "${tour.title}" as your primary itinerary. You will receive real-time updates directly on the Home Screen!',
                     style: const TextStyle(
                       fontFamily: 'Montserrat',
                       color: Colors.white70,
@@ -637,9 +723,9 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
                       style: TextButton.styleFrom(
                         foregroundColor: const Color(0xFFD4AF7A),
                       ),
-                      child: const Text(
-                        'Xem ngay',
-                        style: TextStyle(
+                      child: Text(
+                        _isVi ? 'Xem ngay' : 'View Now',
+                        style: const TextStyle(
                           fontFamily: 'Montserrat',
                           fontWeight: FontWeight.bold,
                         ),
@@ -707,7 +793,9 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
                             ),
                             const SizedBox(height: 6),
                             Text(
-                              'Thời gian: ${tour.totalDays} ngày ${tour.totalNights} đêm',
+                              _isVi 
+                                  ? 'Thời gian: ${tour.totalDays} ngày ${tour.totalNights} đêm'
+                                  : 'Duration: ${tour.totalDays} days ${tour.totalNights} nights',
                               style: TextStyle(
                                 fontFamily: 'Montserrat',
                                 fontSize: 13,
@@ -717,7 +805,7 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
                             if (tour.destinations.isNotEmpty) ...[
                               const SizedBox(height: 4),
                               Text(
-                                'Điểm đến: ${tour.destinations.join(", ")}',
+                                (_isVi ? 'Điểm đến: ' : 'Destinations: ') + tour.destinations.map((d) => _translateProvince(d)).join(", "),
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                                 style: TextStyle(
@@ -730,7 +818,7 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
                             if (tour.estimatedCost != null && tour.estimatedCost! > 0) ...[
                               const SizedBox(height: 8),
                               Text(
-                                'Chi phí dự tính: ${tour.estimatedCost!.toInt().toString().replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (Match m) => '${m[1]}.')} đ',
+                                (_isVi ? 'Chi phí dự tính: ' : 'Estimated Cost: ') + '${tour.estimatedCost!.toInt().toString().replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (Match m) => '${m[1]}.')} ' + (_isVi ? 'đ' : 'VND'),
                                 style: const TextStyle(
                                   fontFamily: 'Montserrat',
                                   fontSize: 14,

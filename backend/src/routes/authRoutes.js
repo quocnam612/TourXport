@@ -9,7 +9,7 @@ const router = express.Router();
 router.post('/register', userController.register);
 router.post('/login', userController.login);
 router.post('/google', userController.googleLogin);
-router.post('/facebook', userController.facebookLogin);
+router.post('/discord', userController.discordLogin);
 
 router.route('/profile')
     .get(authenticate, userController.getProfile)

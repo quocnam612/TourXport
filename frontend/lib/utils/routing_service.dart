@@ -103,4 +103,70 @@ class RoutingService {
     }
     return RouteResult.empty();
   }
+
+  /// Lấy thông tin tuyến đường đi qua nhiều điểm (waypoints)
+  static Future<RouteResult> getMultiStopRoute(List<LatLng> waypoints, {String profile = 'driving'}) async {
+    final validWaypoints = waypoints.where(_isValidCoordinate).toList();
+    if (validWaypoints.length < 2) {
+      return RouteResult.empty();
+    }
+
+    final validProfile = (profile == 'bicycle' || profile == 'foot') ? profile : 'driving';
+    RouteResult result = await _fetchMultiStopRouteFromOSRM(validWaypoints, validProfile);
+
+    // Fallback về driving nếu profile khác thất bại
+    if (result.points.isEmpty && validProfile != 'driving') {
+      print("OSRM multi-stop routing failed for profile $profile, falling back to driving profile.");
+      result = await _fetchMultiStopRouteFromOSRM(validWaypoints, 'driving');
+    }
+
+    return result;
+  }
+
+  static Future<RouteResult> _fetchMultiStopRouteFromOSRM(List<LatLng> waypoints, String profile) async {
+    final coordinates = waypoints.map((p) => '${p.longitude},${p.latitude}').join(';');
+    final url = Uri.https(
+      'router.project-osrm.org',
+      '/route/v1/$profile/$coordinates',
+      {
+        'overview': 'full',
+        'geometries': 'geojson',
+      },
+    );
+
+    try {
+      final response = await http.get(
+        url,
+        headers: {
+          'User-Agent': 'TourXport/1.0 (com.example.tourxport; Flutter)',
+          'Accept': 'application/json',
+        },
+      ).timeout(const Duration(seconds: 15));
+
+      if (response.statusCode == 200) {
+        final data = json.decode(response.body);
+        if (data['routes'] != null && data['routes'].isNotEmpty) {
+          final List coords = data['routes'][0]['geometry']['coordinates'];
+          final double distance = (data['routes'][0]['distance'] as num).toDouble() / 1000.0;
+          final double duration = (data['routes'][0]['duration'] as num).toDouble() / 60.0;
+
+          final List<LatLng> points = coords
+              .map((point) => LatLng(
+                    (point[1] as num).toDouble(),
+                    (point[0] as num).toDouble(),
+                  ))
+              .toList();
+
+          return RouteResult(
+            points: points,
+            distanceKm: distance,
+            durationMinutes: duration,
+          );
+        }
+      }
+    } catch (e) {
+      print("Error calling OSRM Routing API ($profile) multi-stop: $e");
+    }
+    return RouteResult.empty();
+  }
 }

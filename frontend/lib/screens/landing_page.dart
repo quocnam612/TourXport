@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import '../theme/app_colors.dart';
+import '../utils/auth_storage.dart';
 import '../widgets/anim_builder.dart';
 import '../widgets/responsive_builder.dart';
 import '../models/destination.dart';
@@ -45,6 +46,15 @@ class _LandingPageState extends State<LandingPage>
   late final Animation<Offset> _subtitleSlide;
   late final Animation<double> _buttonFade;
   late final Animation<Offset> _buttonSlide;
+  String? _storedAuthToken;
+  String? _storedUserName;
+  bool _isRestoringSession = true;
+
+  bool get hasSession {
+    return !_isRestoringSession &&
+        _storedAuthToken != null &&
+        _storedAuthToken!.isNotEmpty;
+  }
 
   @override
   void initState() {
@@ -136,6 +146,56 @@ class _LandingPageState extends State<LandingPage>
 
     // Fire entrance
     _fadeController.forward();
+    _restoreSession();
+  }
+
+  Future<void> _restoreSession() async {
+    final token = widget.authToken?.trim().isNotEmpty == true
+        ? widget.authToken!.trim()
+        : await AuthStorage.getToken();
+    final userName = widget.userName?.trim().isNotEmpty == true
+        ? widget.userName!.trim()
+        : await AuthStorage.getUserName();
+
+    if (!mounted) return;
+    setState(() {
+      _storedAuthToken = token;
+      _storedUserName = userName;
+      _isRestoringSession = false;
+    });
+
+    if (token != null && token.isNotEmpty) {
+      Navigator.pushAndRemoveUntil(
+        context,
+        PageRouteBuilder(
+          pageBuilder: (_, __, ___) => HomeScreen(
+            userName: userName ?? 'bạn',
+            authToken: token,
+          ),
+          transitionDuration: const Duration(milliseconds: 600),
+          reverseTransitionDuration: const Duration(milliseconds: 400),
+          transitionsBuilder: (_, animation, __, child) {
+            return FadeTransition(
+              opacity: CurvedAnimation(
+                parent: animation,
+                curve: Curves.easeInOut,
+              ),
+              child: SlideTransition(
+                position: Tween<Offset>(
+                  begin: const Offset(0, 0.05),
+                  end: Offset.zero,
+                ).animate(CurvedAnimation(
+                  parent: animation,
+                  curve: Curves.easeOutCubic,
+                )),
+                child: child,
+              ),
+            );
+          },
+        ),
+        (route) => false,
+      );
+    }
   }
 
   @override
@@ -210,13 +270,14 @@ class _LandingPageState extends State<LandingPage>
   }
 
   void _navigateToSignIn(BuildContext context, bool goToSignUp) {
-    if (widget.authToken != null && widget.authToken!.isNotEmpty) {
+    final token = _storedAuthToken?.trim();
+    if (token != null && token.isNotEmpty) {
       Navigator.pushAndRemoveUntil(
         context,
         PageRouteBuilder(
           pageBuilder: (_, __, ___) => HomeScreen(
-            userName: widget.userName ?? 'bạn',
-            authToken: widget.authToken,
+            userName: _storedUserName ?? 'bạn',
+            authToken: token,
           ),
           transitionDuration: const Duration(milliseconds: 600),
           reverseTransitionDuration: const Duration(milliseconds: 400),
@@ -454,10 +515,21 @@ class _LandingPageState extends State<LandingPage>
 
               // Auth Buttons (right)
               Row(
-                children: widget.authToken != null && widget.authToken!.isNotEmpty
+                children: _isRestoringSession
+                    ? [
+                        const SizedBox(
+                          width: 22,
+                          height: 22,
+                          child: CircularProgressIndicator(
+                            strokeWidth: 2,
+                            color: Color(0xFFD4AF7A),
+                          ),
+                        ),
+                      ]
+                    : hasSession
                     ? [
                         Text(
-                          'XIN CHÀO, ${widget.userName?.toUpperCase() ?? 'BẠN'}!',
+                          'XIN CHÀO, ${(_storedUserName ?? 'BẠN').toUpperCase()}!',
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontSize: 13,

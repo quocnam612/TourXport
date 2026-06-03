@@ -1,5 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import '../l10n/app_localizations.dart';
+import '../utils/locale_manager.dart';
 import '../theme/app_colors.dart';
 
 class LanguageSettingsScreen extends StatefulWidget {
@@ -29,16 +31,16 @@ class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> with Ti
   final List<Map<String, String>> _languages = [
     {'code': 'vi', 'name': 'Tiếng Việt', 'native': 'Tiếng Việt', 'flag': '🇻🇳', 'region': 'Việt Nam'},
     {'code': 'en', 'name': 'Tiếng Anh', 'native': 'English', 'flag': '🇺🇸', 'region': 'United States'},
-    {'code': 'fr', 'name': 'Tiếng Pháp', 'native': 'Français', 'flag': '🇫🇷', 'region': 'France'},
-    {'code': 'de', 'name': 'Tiếng Đức', 'native': 'Deutsch', 'flag': '🇩🇪', 'region': 'Germany'},
-    {'code': 'ja', 'name': 'Tiếng Nhật', 'native': '日本語', 'flag': '🇯🇵', 'region': 'Japan'},
-    {'code': 'ko', 'name': 'Tiếng Hàn', 'native': '한국어', 'flag': '🇰🇷', 'region': 'Korea'},
-    {'code': 'zh', 'name': 'Tiếng Trung', 'native': '中文', 'flag': '🇨🇳', 'region': 'China'},
   ];
 
   @override
   void initState() {
     super.initState();
+    final currentLanguage = LocaleManager.normalizeLanguageCode(
+      LocaleManager.localeNotifier.value.languageCode,
+    );
+    _selectedLanguage = currentLanguage;
+    _tempSelectedLanguage = _selectedLanguage;
     _fadeController = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 1200),
@@ -64,11 +66,11 @@ class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> with Ti
     super.dispose();
   }
 
-  void _applyLanguage() {
+  void _applyLanguage() async {
     setState(() {
       _selectedLanguage = _tempSelectedLanguage;
     });
-    
+    await LocaleManager.setLocale(_tempSelectedLanguage);
     _showSuccessToast();
   }
 
@@ -121,25 +123,25 @@ class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> with Ti
                         const SizedBox(height: 32),
                         
                         // 2. CURRENT LANGUAGE SECTION
-                        _buildSectionLabel('Ngôn ngữ hiện tại'),
+                        _buildSectionLabel(AppLocalizations.of(context)!.current_language),
                         const SizedBox(height: 12),
                         _buildCurrentLanguageCard(),
                         const SizedBox(height: 32),
                         
                         // 3. LANGUAGE SELECTION SECTION
-                        _buildSectionLabel('Chọn ngôn ngữ'),
+                        _buildSectionLabel(AppLocalizations.of(context)!.select_language),
                         const SizedBox(height: 12),
                         _buildLanguageSelectionCard(),
                         const SizedBox(height: 32),
 
                         // 4. LANGUAGE PREVIEW SECTION
-                        _buildSectionLabel('Xem trước giao diện'),
+                        _buildSectionLabel(AppLocalizations.of(context)!.preview_interface),
                         const SizedBox(height: 12),
                         _buildPreviewCard(),
                         const SizedBox(height: 32),
 
                         // 5. REGION & FORMAT SECTION
-                        _buildSectionLabel('Vùng & Định dạng'),
+                        _buildSectionLabel(AppLocalizations.of(context)!.region_format),
                         const SizedBox(height: 12),
                         _buildRegionFormatCard(),
                         const SizedBox(height: 32),
@@ -218,9 +220,9 @@ class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> with Ti
           child: const Icon(Icons.language_rounded, color: Color(0xFFD4AF7A), size: 36),
         ),
         const SizedBox(height: 24),
-        const Text(
-          'Ngôn Ngữ',
-          style: TextStyle(
+        Text(
+          AppLocalizations.of(context)!.language,
+          style: const TextStyle(
             fontFamily: 'Montserrat',
             fontSize: 40,
             fontWeight: FontWeight.w900,
@@ -230,7 +232,9 @@ class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> with Ti
         ),
         const SizedBox(height: 10),
         Text(
-          'Cá nhân hóa trải nghiệm đa ngôn ngữ của bạn trên hành trình khám phá vẻ đẹp Việt Nam.',
+          LocaleManager.localeNotifier.value.languageCode == 'vi'
+              ? 'Cá nhân hóa trải nghiệm đa ngôn ngữ của bạn trên hành trình khám phá vẻ đẹp Việt Nam.'
+              : 'Personalize your multilingual experience on your journey to discover the beauty of Vietnam.',
           style: TextStyle(
             fontFamily: 'Montserrat',
             fontSize: 15,
@@ -257,7 +261,10 @@ class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> with Ti
   }
 
   Widget _buildCurrentLanguageCard() {
-    final current = _languages.firstWhere((l) => l['code'] == _selectedLanguage);
+    final current = _languages.firstWhere(
+      (l) => l['code'] == _selectedLanguage,
+      orElse: () => _languages.first,
+    );
 
     return _buildGlassCard(
       child: Row(
@@ -355,7 +362,15 @@ class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> with Ti
                   scale: isSelected ? 1.02 : 1.0,
                   duration: const Duration(milliseconds: 200),
                   child: InkWell(
-                    onTap: () => setState(() => _tempSelectedLanguage = lang['code']!),
+                    onTap: () async {
+                      final code = lang['code']!;
+                      setState(() {
+                        _tempSelectedLanguage = code;
+                        _selectedLanguage = code;
+                      });
+                      await LocaleManager.setLocale(code);
+                      _showSuccessToast();
+                    },
                     borderRadius: BorderRadius.circular(16),
                     splashColor: const Color(0xFFD4AF7A).withOpacity(0.1),
                     child: Padding(
@@ -406,7 +421,10 @@ class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> with Ti
   }
 
   Widget _buildPreviewCard() {
-    final lang = _languages.firstWhere((l) => l['code'] == _tempSelectedLanguage);
+    final lang = _languages.firstWhere(
+      (l) => l['code'] == _tempSelectedLanguage,
+      orElse: () => _languages.first,
+    );
     
     return _buildGlassCard(
       child: Column(
@@ -425,7 +443,7 @@ class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> with Ti
               ),
               const SizedBox(width: 12),
               Text(
-                'Giao diện (${lang['native']})',
+                '${AppLocalizations.of(context)!.preview_interface} (${lang['native']})',
                 style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15),
               ),
             ],
@@ -475,17 +493,17 @@ class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> with Ti
     return _buildGlassCard(
       child: Column(
         children: [
-          _buildFormatRow('Vùng', _region, Icons.public_rounded),
+          _buildFormatRow(AppLocalizations.of(context)!.region, _region, Icons.public_rounded),
           const Padding(
             padding: EdgeInsets.symmetric(vertical: 16),
             child: Divider(color: Colors.white10, height: 1),
           ),
-          _buildFormatRow('Định dạng ngày', _dateFormat, Icons.calendar_today_rounded),
+          _buildFormatRow(AppLocalizations.of(context)!.date_format, _dateFormat, Icons.calendar_today_rounded),
           const Padding(
             padding: EdgeInsets.symmetric(vertical: 16),
             child: Divider(color: Colors.white10, height: 1),
           ),
-          _buildFormatRow('Định dạng giờ', _timeFormat, Icons.access_time_rounded),
+          _buildFormatRow(AppLocalizations.of(context)!.time_format, _timeFormat, Icons.access_time_rounded),
         ],
       ),
     );
@@ -504,18 +522,18 @@ class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> with Ti
             child: const Icon(Icons.auto_awesome_rounded, color: Color(0xFF2D6A4F), size: 22),
           ),
           const SizedBox(width: 16),
-          const Expanded(
+          Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Tự động nhận diện',
-                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15),
+                  AppLocalizations.of(context)!.auto_detect,
+                  style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15),
                 ),
-                SizedBox(height: 2),
+                const SizedBox(height: 2),
                 Text(
-                  'Dựa trên vị trí và hệ thống',
-                  style: TextStyle(color: Colors.white54, fontSize: 12),
+                  AppLocalizations.of(context)!.based_on_system,
+                  style: const TextStyle(color: Colors.white54, fontSize: 12),
                 ),
               ],
             ),
@@ -553,24 +571,16 @@ class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> with Ti
             ],
           ),
           child: ElevatedButton(
-            onPressed: _applyLanguage,
+            onPressed: () => Navigator.pop(context),
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.transparent,
               shadowColor: Colors.transparent,
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
             ),
-            child: const Text(
-              'Áp dụng thay đổi',
-              style: TextStyle(fontSize: 17, fontWeight: FontWeight.w900, color: Color(0xFF1B2321), letterSpacing: 0.5),
+            child: Text(
+              AppLocalizations.of(context)!.close,
+              style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w900, color: Color(0xFF1B2321), letterSpacing: 0.5),
             ),
-          ),
-        ),
-        const SizedBox(height: 20),
-        TextButton(
-          onPressed: () => Navigator.pop(context),
-          child: Text(
-            'Hủy bỏ',
-            style: TextStyle(color: Colors.white.withOpacity(0.5), fontWeight: FontWeight.bold, letterSpacing: 1.0, fontSize: 14),
           ),
         ),
       ],
@@ -627,7 +637,21 @@ class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> with Ti
             border: Border.all(color: Colors.white.withOpacity(0.2)),
           ),
           alignment: Alignment.center,
-          child: Text(emoji, style: const TextStyle(fontSize: 28)),
+          child: Center(
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(
+                emoji,
+                style: const TextStyle(
+                  fontSize: 22,
+                  height: 1.0,
+                  fontFamily: 'Montserrat',
+                  fontWeight: FontWeight.bold,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
         ),
       ),
     );
@@ -677,14 +701,14 @@ class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> with Ti
               )
             ],
           ),
-          child: const Row(
+          child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Icon(Icons.check_circle_outline, color: Colors.white, size: 24),
-              SizedBox(width: 12),
+              const Icon(Icons.check_circle_outline, color: Colors.white, size: 24),
+              const SizedBox(width: 12),
               Text(
-                'Cập nhật ngôn ngữ thành công!',
-                style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontFamily: 'Montserrat'),
+                AppLocalizations.of(context)!.language_updated_success,
+                style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontFamily: 'Montserrat'),
               ),
             ],
           ),
@@ -722,9 +746,9 @@ class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> with Ti
     if (_tempSelectedLanguage == 'vi') return text;
     // Simple mock translation for preview
     final maps = {
-      'Khám phá': {'en': 'Explore', 'ja': '探索', 'ko': '탐험', 'fr': 'Explorer', 'de': 'Erkunden', 'zh': '探索'},
-      'Đã lưu': {'en': 'Saved', 'ja': '保存済み', 'ko': '저장됨', 'fr': 'Enregistré', 'de': 'Gespeichert', 'zh': '已保存'},
-      'Đặt ngay': {'en': 'Book Now', 'ja': '今すぐ予約', 'ko': '지금 예약', 'fr': 'Réserver', 'de': 'Buchen', 'zh': '立即预订'},
+      'Khám phá': {'en': 'Explore'},
+      'Đã lưu': {'en': 'Saved'},
+      'Đặt ngay': {'en': 'Book Now'},
     };
     return maps[text]?[_tempSelectedLanguage] ?? text;
   }

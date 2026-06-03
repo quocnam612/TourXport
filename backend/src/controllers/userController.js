@@ -9,11 +9,20 @@ import TourDB from '../models/TourDB.js';
 import respond from '../utils/respond.js';
 import { generateToken } from '../utils/jwt.js';
 import GoogleAuth from '../services/GoogleAuth.js';
-import FacebookAuth from '../services/FacebookAuth.js';
+import DiscordAuth from '../services/DiscordAuth.js';
 import { deleteImage, uploadImageBuffer } from '../services/Cloudinary.js';
 import AIBackend from '../services/AIBackend.js';
 
 const locationPublicProjection = '-embedding -searchText';
+const allowedAuthProviders = new Set(['local', 'google', 'discord']);
+
+const normalizeAuthProviders = (providers = []) => {
+    return [...new Set((providers || []).filter((provider) => allowedAuthProviders.has(provider)))];
+};
+
+const withAuthProvider = (providers, provider) => {
+    return [...new Set([...normalizeAuthProviders(providers), provider])];
+};
 
 const warmUpAIBackend = () => {
     AIBackend.warmUp().catch((error) => {
@@ -39,7 +48,7 @@ export const login = async (req, res, next) => {
         }
 
         if (!user.password) {
-            return next(respond.httpError('This account uses social login. Please continue with Google or Facebook.', 401));
+            return next(respond.httpError('This account uses social login. Please continue with Google or Discord.', 401));
         }
 
         const isMatch = await bcrypt.compare(password, user.password);
@@ -92,7 +101,7 @@ export const register = async (req, res, next) => {
         user.name = user.name || name;
         user.phone = user.phone || phone || undefined;
         user.password = hashedPassword;
-        user.authProvider = [...new Set([...(user.authProvider || []), 'local'])];
+        user.authProvider = withAuthProvider(user.authProvider, 'local');
         await user.save();
 
         const token = generateToken(user);
@@ -108,7 +117,7 @@ export const register = async (req, res, next) => {
                 id: user._id,
                 name: user.name,
                 email: user.email,
-                authProvider: user.authProvider || []
+                authProvider: normalizeAuthProviders(user.authProvider)
             }
         });
 
@@ -131,7 +140,7 @@ export const googleLogin = async (req, res, next) => {
 
         if (user) {
             user.googleId = user.googleId || googleProfile.googleId;
-            user.authProvider = [...new Set([...(user.authProvider || []), 'google'])];
+            user.authProvider = withAuthProvider(user.authProvider, 'google');
 
             if (!user.avatar?.url && googleProfile.avatarUrl) {
                 user.avatar = {
@@ -165,7 +174,7 @@ export const googleLogin = async (req, res, next) => {
                 name: user.name,
                 email: user.email,
                 avatar: user.avatar?.url || '',
-                authProvider: user.authProvider || []
+                authProvider: normalizeAuthProviders(user.authProvider)
             }
         });
     } catch (error) {
@@ -173,42 +182,42 @@ export const googleLogin = async (req, res, next) => {
     }
 };
 
-export const facebookLogin = async (req, res, next) => {
+export const discordLogin = async (req, res, next) => {
     try {
-        const { accessToken } = req.body;
-        const facebookProfile = await FacebookAuth.verifyFacebookAccessToken(accessToken);
+        const { code, redirectUri } = req.body;
+        const discordProfile = await DiscordAuth.verifyDiscordAuthorizationCode({ code, redirectUri });
 
         let user = await UserDB.findOne({
             $or: [
-                { facebookId: facebookProfile.facebookId },
-                ...(facebookProfile.email ? [{ email: facebookProfile.email }] : [])
+                { discordId: discordProfile.discordId },
+                ...(discordProfile.email ? [{ email: discordProfile.email }] : [])
             ]
         });
 
         if (user) {
-            user.facebookId = user.facebookId || facebookProfile.facebookId;
-            user.authProvider = [...new Set([...(user.authProvider || []), 'facebook'])];
+            user.discordId = user.discordId || discordProfile.discordId;
+            user.authProvider = withAuthProvider(user.authProvider, 'discord');
 
-            if (!user.avatar?.url && facebookProfile.avatarUrl) {
+            if (!user.avatar?.url && discordProfile.avatarUrl) {
                 user.avatar = {
-                    url: facebookProfile.avatarUrl,
+                    url: discordProfile.avatarUrl,
                     public_id: ''
                 };
             }
 
             await user.save();
         } else {
-            if (!facebookProfile.email) {
-                return next(respond.httpError('Facebook email permission is required to create an account', 400));
+            if (!discordProfile.email) {
+                return next(respond.httpError('Discord email permission is required to create an account', 400));
             }
 
             user = await UserDB.create({
-                name: facebookProfile.name,
-                email: facebookProfile.email,
-                facebookId: facebookProfile.facebookId,
-                authProvider: ['facebook'],
-                avatar: facebookProfile.avatarUrl
-                    ? { url: facebookProfile.avatarUrl, public_id: '' }
+                name: discordProfile.name,
+                email: discordProfile.email,
+                discordId: discordProfile.discordId,
+                authProvider: ['discord'],
+                avatar: discordProfile.avatarUrl
+                    ? { url: discordProfile.avatarUrl, public_id: '' }
                     : undefined
             });
         }
@@ -218,18 +227,18 @@ export const facebookLogin = async (req, res, next) => {
 
         res.status(200).json({
             success: true,
-            message: 'Facebook login successful!',
+            message: 'Discord login successful!',
             token,
             user: {
                 id: user._id,
                 name: user.name,
                 email: user.email,
                 avatar: user.avatar?.url || '',
-                authProvider: user.authProvider || []
+                authProvider: normalizeAuthProviders(user.authProvider)
             }
         });
     } catch (error) {
-        next(respond.httpError(error.message || 'Facebook login failed', error.statusCode || 401));
+        next(respond.httpError(error.message || 'Discord login failed', error.statusCode || 401));
     }
 };
 
@@ -250,7 +259,7 @@ export const getProfile = async (req, res, next) => {
                 phone: user.phone || '',
                 avatar: user.avatar?.url || '',
                 avatarPublicId: user.avatar?.public_id || '',
-                authProvider: user.authProvider || [],
+                authProvider: normalizeAuthProviders(user.authProvider),
                 createdAt: user.createdAt
             }
         });
@@ -362,19 +371,35 @@ export const changePassword = async (req, res, next) => {
             return next(respond.httpError('User not found!', 404));
         }
 
-        if (!user.password) {
-            return next(respond.httpError('Please add local login before changing password', 400));
+        if (!newPassword || typeof newPassword !== 'string' || newPassword.length < 8) {
+            return next(respond.httpError('New password must be at least 8 characters', 400));
         }
 
-        const isMatch = await bcrypt.compare(oldPassword, user.password);
-        if (!isMatch) {
-            return next(respond.httpError('Old password is incorrect!', 401));
+        const hadLocalPassword = Boolean(user.password);
+
+        if (hadLocalPassword) {
+            if (!oldPassword || typeof oldPassword !== 'string') {
+                return next(respond.httpError('Old password is required', 400));
+            }
+
+            const isMatch = await bcrypt.compare(oldPassword, user.password);
+            if (!isMatch) {
+                return next(respond.httpError('Old password is incorrect!', 401));
+            }
         }
 
+        const changedAt = new Date();
         user.password = await bcrypt.hash(newPassword, 10);
+        user.authProvider = withAuthProvider(user.authProvider, 'local');
+        user.lastPasswordChange = changedAt;
         await user.save();
 
-        res.status(200).json({ success: true, message: 'Password changed successfully!' });
+        res.status(200).json({
+            success: true,
+            message: hadLocalPassword ? 'Password changed successfully!' : 'Local login added successfully!',
+            lastPasswordChange: changedAt,
+            authProvider: normalizeAuthProviders(user.authProvider)
+        });
     } catch (error) {
         next(error);
     }
@@ -382,10 +407,10 @@ export const changePassword = async (req, res, next) => {
 
 export const addLoginMethod = async (req, res, next) => {
     try {
-        const { provider, password, idToken, accessToken } = req.body;
+        const { provider, password, idToken, code, redirectUri } = req.body;
 
-        if (!['local', 'google', 'facebook'].includes(provider)) {
-            return next(respond.httpError('provider must be local, google, or facebook', 400));
+        if (!['local', 'google', 'discord'].includes(provider)) {
+            return next(respond.httpError('provider must be local, google, or discord', 400));
         }
 
         const user = await UserDB.findById(req.user.id).select('+password');
@@ -393,7 +418,7 @@ export const addLoginMethod = async (req, res, next) => {
             return next(respond.httpError('User not found!', 404));
         }
 
-        if ((user.authProvider || []).includes(provider)) {
+        if (normalizeAuthProviders(user.authProvider).includes(provider)) {
             return next(respond.httpError(`${provider} login is already linked`, 409));
         }
 
@@ -430,32 +455,32 @@ export const addLoginMethod = async (req, res, next) => {
             }
         }
 
-        if (provider === 'facebook') {
-            const facebookProfile = await FacebookAuth.verifyFacebookAccessToken(accessToken);
+        if (provider === 'discord') {
+            const discordProfile = await DiscordAuth.verifyDiscordAuthorizationCode({ code, redirectUri });
 
-            if (facebookProfile.email && facebookProfile.email !== user.email) {
-                return next(respond.httpError('Facebook account email must match your current account email', 409));
+            if (discordProfile.email && discordProfile.email !== user.email) {
+                return next(respond.httpError('Discord account email must match your current account email', 409));
             }
 
-            const existingFacebookUser = await UserDB.findOne({
-                facebookId: facebookProfile.facebookId,
+            const existingDiscordUser = await UserDB.findOne({
+                discordId: discordProfile.discordId,
                 _id: { $ne: user._id }
             });
-            if (existingFacebookUser) {
-                return next(respond.httpError('This Facebook account is already linked to another user', 409));
+            if (existingDiscordUser) {
+                return next(respond.httpError('This Discord account is already linked to another user', 409));
             }
 
-            user.facebookId = facebookProfile.facebookId;
+            user.discordId = discordProfile.discordId;
 
-            if (!user.avatar?.url && facebookProfile.avatarUrl) {
+            if (!user.avatar?.url && discordProfile.avatarUrl) {
                 user.avatar = {
-                    url: facebookProfile.avatarUrl,
+                    url: discordProfile.avatarUrl,
                     public_id: ''
                 };
             }
         }
 
-        user.authProvider = [...new Set([...(user.authProvider || []), provider])];
+        user.authProvider = withAuthProvider(user.authProvider, provider);
         await user.save();
 
         res.status(200).json({
@@ -466,7 +491,7 @@ export const addLoginMethod = async (req, res, next) => {
                 name: user.name,
                 email: user.email,
                 avatar: user.avatar?.url || '',
-                authProvider: user.authProvider || []
+                authProvider: normalizeAuthProviders(user.authProvider)
             }
         });
     } catch (error) {

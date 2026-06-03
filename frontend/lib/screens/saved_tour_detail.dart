@@ -1,10 +1,13 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import '../l10n/app_localizations.dart';
 
 import '../models/ai_trip_response.dart';
 import '../models/destination.dart';
+import '../widgets/weather_widget.dart';
 import 'place_detail.dart';
 import 'map_screen.dart';
+import 'tour_route_map_screen.dart';
 import '../api/api.dart';
 
 class SavedTourDetailScreen extends StatelessWidget {
@@ -50,21 +53,10 @@ class SavedTourDetailScreen extends StatelessWidget {
         Image.asset('assets/images/login_bg.jpg', fit: BoxFit.cover),
         BackdropFilter(filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12), child: Container(color: Colors.black.withOpacity(0.6))),
         SafeArea(
-          child: isDesktop
-              ? Row(
-                  children: [
-                    ClipRect(
-                      child: BackdropFilter(
-                        filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
-                        child: _SavedTourMainSidebar(
-                          userName: userName,
-                          avatarUrl: avatarUrl,
-                          isGuest: authToken == null || authToken!.isEmpty,
-                        ),
-                      ),
-                    ),
-                    Expanded(child: detailContent),
-                  ],
+          child: response == null || itinerary.isEmpty
+              ? Padding(
+                  padding: const EdgeInsets.all(24.0),
+                  child: _buildSummary(context),
                 )
               : detailContent,
         ),
@@ -96,7 +88,6 @@ class SavedTourDetailScreen extends StatelessWidget {
                 children: [
                   _VisibilityBadge(
                     icon: meta.visibilityIcon,
-                    compact: isCompact,
                   ),
                   SizedBox(width: isCompact ? 8 : 10),
                   Expanded(
@@ -130,7 +121,7 @@ class SavedTourDetailScreen extends StatelessWidget {
               ),
               SizedBox(height: isCompact ? 4 : 8),
               Text(
-                'Chi tiết lịch trình đã lưu',
+                '${AppLocalizations.of(context)!.tour_itinerary} đã lưu',
                 style: TextStyle(
                     fontFamily: 'Montserrat',
                     fontSize: isCompact ? 12 : 14,
@@ -139,7 +130,7 @@ class SavedTourDetailScreen extends StatelessWidget {
                     height: 1.3),
               ),
               SizedBox(height: isCompact ? 10 : 16),
-              _TripMetaGrid(meta: meta, compact: isCompact),
+              _TripMetaGrid(meta: meta),
             ],
           ),
         ),
@@ -165,26 +156,69 @@ class SavedTourDetailScreen extends StatelessWidget {
             isCompact ? 14 : 20,
           ),
           child: Row(children: [
+            // Trang chủ
             Expanded(
+              flex: 1,
               child: GestureDetector(
                 onTap: () => Navigator.pop(context, 'go_to_explore'),
                 child: Container(
                   height: isCompact ? 48 : 50,
                   decoration: BoxDecoration(
                       color: Colors.white.withOpacity(0.1),
-                      borderRadius: BorderRadius.circular(28),
+                      borderRadius: BorderRadius.circular(25),
                       border: Border.all(color: Colors.white.withOpacity(0.2))),
                   child: const Center(
-                      child: Text('Trang chủ',
-                          style: TextStyle(
-                              fontFamily: 'Montserrat',
-                              fontSize: 14,
-                              fontWeight: FontWeight.w500,
-                              color: Colors.white))),
+                      child: Icon(Icons.home_rounded, color: Colors.white, size: 22)),
                 ),
               ),
             ),
-            const SizedBox(width: 12),
+            const SizedBox(width: 8),
+            // Bản đồ
+            Expanded(
+              flex: 2,
+              child: GestureDetector(
+                onTap: () {
+                  AiTripResponse? response;
+                  try {
+                    response = AiTripResponse.fromJson(tourJson);
+                  } catch (_) {}
+                  if (response != null) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => TourRouteMapScreen(tourData: response!),
+                      ),
+                    );
+                  }
+                },
+                child: Container(
+                  height: isCompact ? 48 : 50,
+                  decoration: BoxDecoration(
+                      color: const Color(0xFF2D6A4F),
+                      borderRadius: BorderRadius.circular(25),
+                      boxShadow: [
+                        BoxShadow(
+                            color: const Color(0xFF2D6A4F).withOpacity(0.3),
+                            blurRadius: 12,
+                            offset: const Offset(0, 4)),
+                      ]),
+                  child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(AppLocalizations.of(context)!.map,
+                            style: const TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 14,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white)),
+                        const SizedBox(width: 6),
+                        const Icon(Icons.map_rounded, color: Colors.white, size: 18),
+                      ]),
+                ),
+              ),
+            ),
+            const SizedBox(width: 8),
+            // Đóng
             Expanded(
               flex: 2,
               child: GestureDetector(
@@ -194,20 +228,20 @@ class SavedTourDetailScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                       gradient: const LinearGradient(
                           colors: [Color(0xFFD4AF7A), Color(0xFFB5956A)]),
-                      borderRadius: BorderRadius.circular(28),
+                      borderRadius: BorderRadius.circular(25),
                       boxShadow: [
                         BoxShadow(
                             color: const Color(0xFFD4AF7A).withOpacity(0.3),
                             blurRadius: 12,
                             offset: const Offset(0, 4)),
                       ]),
-                  child: const Row(
+                  child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text('Đóng',
-                            style: TextStyle(
+                        Text(AppLocalizations.of(context)!.close,
+                            style: const TextStyle(
                                 fontFamily: 'Montserrat',
-                                fontSize: 15,
+                                fontSize: 14,
                                 fontWeight: FontWeight.w600,
                                 color: Colors.white)),
                       ]),
@@ -224,8 +258,11 @@ class SavedTourDetailScreen extends StatelessWidget {
     final title = tourJson['title'] ?? tourTitle;
     final totalDays = tourJson['totalDays'] ?? tourJson['days']?.length ?? 0;
     final totalNights = tourJson['totalNights'] ?? 0;
-    final destinations = tourJson['destinations'] is List ? (tourJson['destinations'] as List).join(', ') : '';
-    final cost = _formatMoneyRange(tourJson['estimatedCost'] ?? tourJson['totalEstimatedCost']);
+    final isVi = AppLocalizations.of(context)!.localeName == 'vi';
+    final destinations = tourJson['destinations'] is List
+        ? (tourJson['destinations'] as List).map((d) => _translateProvince(d.toString(), context)).join(', ')
+        : '';
+    final cost = _formatMoneyRange(tourJson['estimatedCost'] ?? tourJson['totalEstimatedCost'], context);
 
     return Center(
       child: Column(
@@ -233,16 +270,29 @@ class SavedTourDetailScreen extends StatelessWidget {
         children: [
           Text(title, style: const TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold)),
           const SizedBox(height: 8),
-          Text('Thời gian: $totalDays ngày $totalNights đêm', style: TextStyle(color: Colors.white.withOpacity(0.8))),
+          Text(
+            isVi
+                ? 'Thời gian: $totalDays ngày $totalNights đêm'
+                : 'Duration: $totalDays days $totalNights nights',
+            style: TextStyle(color: Colors.white.withOpacity(0.8)),
+          ),
           const SizedBox(height: 8),
-          if (destinations.isNotEmpty) Text('Điểm đến: $destinations', style: TextStyle(color: Colors.white.withOpacity(0.7))),
+          if (destinations.isNotEmpty)
+            Text(
+              (isVi ? 'Điểm đến: ' : 'Destinations: ') + destinations,
+              style: TextStyle(color: Colors.white.withOpacity(0.7)),
+            ),
           const SizedBox(height: 12),
-          if (cost != null) Text('Chi phí dự tính: $cost', style: const TextStyle(color: Color(0xFFD4AF7A), fontWeight: FontWeight.w700)),
+          if (cost != null)
+            Text(
+              (isVi ? 'Chi phí dự tính: ' : 'Estimated Cost: ') + cost,
+              style: const TextStyle(color: Color(0xFFD4AF7A), fontWeight: FontWeight.w700),
+            ),
           const SizedBox(height: 20),
           ElevatedButton(
             onPressed: () => Navigator.pop(context),
             style: ElevatedButton.styleFrom(backgroundColor: const Color(0xFFD4AF7A), foregroundColor: Colors.black),
-            child: const Text('Đóng'),
+            child: Text(AppLocalizations.of(context)!.close),
           ),
         ],
       ),
@@ -264,11 +314,11 @@ class _SavedTourMainSidebar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final menuItems = [
-      (Icons.home_rounded, 'Khám phá', 'go_to_explore'),
-      (Icons.search_rounded, 'Tìm kiếm', 'go_to_search'),
-      (Icons.bookmark_rounded, 'Đã lưu', 'go_to_saved'),
-      (Icons.explore_rounded, 'Khảo sát', 'go_to_survey'),
-      (Icons.person_rounded, 'Tài khoản', 'go_to_account'),
+      (Icons.home_rounded, AppLocalizations.of(context)!.explore, 'go_to_explore'),
+      (Icons.search_rounded, AppLocalizations.of(context)!.search, 'go_to_search'),
+      (Icons.bookmark_rounded, AppLocalizations.of(context)!.saved, 'go_to_saved'),
+      (Icons.explore_rounded, AppLocalizations.of(context)!.survey, 'go_to_survey'),
+      (Icons.person_rounded, AppLocalizations.of(context)!.account, 'go_to_account'),
     ];
 
     return Container(
@@ -346,7 +396,7 @@ class _SavedTourMainSidebar extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          'Thành viên',
+                          AppLocalizations.of(context)!.localeName == 'vi' ? 'Thành viên' : 'Member',
                           style: TextStyle(
                             fontFamily: 'Montserrat',
                             fontSize: 11,
@@ -382,7 +432,7 @@ class _SavedTourMainSidebar extends StatelessWidget {
             padding: const EdgeInsets.all(20),
             child: _SidebarNavItem(
               icon: isGuest ? Icons.login_rounded : Icons.logout_rounded,
-              label: isGuest ? 'Tài khoản' : 'Đăng xuất',
+              label: isGuest ? AppLocalizations.of(context)!.account : (AppLocalizations.of(context)!.localeName == 'vi' ? 'Đăng xuất' : 'Log out'),
               isDanger: !isGuest,
               isGold: isGuest,
               onTap: () => Navigator.pop(
@@ -531,7 +581,6 @@ class _TourMeta {
   final String visibilityLabel;
   final double? totalDistanceMeters;
   final double? estimatedCost;
-  final String? estimatedCostDisplay;
   final String pace;
   final String transportMode;
   final int adults;
@@ -545,7 +594,6 @@ class _TourMeta {
     required this.visibilityLabel,
     required this.totalDistanceMeters,
     required this.estimatedCost,
-    required this.estimatedCostDisplay,
     required this.pace,
     required this.transportMode,
     required this.adults,
@@ -558,7 +606,6 @@ class _TourMeta {
     final visibility = (json['visibility'] ?? json['privacy'] ?? 'public').toString();
     final travelers = json['travelers'] is Map ? Map<String, dynamic>.from(json['travelers']) : const <String, dynamic>{};
     final estimatedCost = _readDouble(json['estimatedCost']) ?? _readDouble(json['totalEstimatedCost']);
-    final estimatedCostDisplay = _formatMoneyRange(json['estimatedCost'] ?? json['totalEstimatedCost']);
     final distanceMeters = _readDouble(json['totalDistanceMeters']) ?? _readDouble(json['distanceMeters']) ?? _readDouble(json['totalDistance']);
     final totalDays = _readInt(json['totalDays']) ?? _readInt(json['days']) ?? (json['itinerary'] is List ? (json['itinerary'] as List).length : 0);
     final totalNights = _readInt(json['totalNights']) ?? (totalDays > 0 ? (totalDays - 1).clamp(0, 999) : 0);
@@ -569,7 +616,6 @@ class _TourMeta {
       visibilityLabel: _labelForVisibility(visibility),
       totalDistanceMeters: distanceMeters,
       estimatedCost: estimatedCost,
-      estimatedCostDisplay: estimatedCostDisplay,
       pace: (json['pace'] ?? json['preferences']?['pace'] ?? 'balanced').toString(),
       transportMode: (json['transportMode'] ?? json['preferences']?['transportMode'] ?? 'auto').toString(),
       adults: _readInt(travelers['adults']) ?? 0,
@@ -614,51 +660,56 @@ class _TripMetaGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isVi = AppLocalizations.of(context)!.localeName == 'vi';
     final pills = [
       _MetaPill(
         icon: meta.visibilityIcon,
-        label: meta.visibilityLabel,
-        value: 'Hiển thị',
+        label: _translateVisibility(meta.visibility, context),
+        value: isVi ? 'Hiển thị' : 'Visibility',
         compact: compact,
       ),
       _MetaPill(
         icon: Icons.straighten_rounded,
         label: meta.totalDistanceMeters != null
             ? _formatDistance(meta.totalDistanceMeters!)
-            : 'Chưa có',
-        value: 'Quãng đường',
+            : (isVi ? 'Chưa có' : 'N/A'),
+        value: isVi ? 'Quãng đường' : 'Distance',
         compact: compact,
       ),
       _MetaPill(
         icon: Icons.payments_rounded,
-        label: meta.estimatedCostDisplay != null
-            ? meta.estimatedCostDisplay!
-            : 'Chưa có',
-        value: 'Số tiền dự tính',
+        label: meta.estimatedCost != null
+            ? (_formatMoneyRange(meta.estimatedCost, context) ?? (isVi ? 'Chưa có' : 'N/A'))
+            : (isVi ? 'Chưa có' : 'N/A'),
+        value: isVi ? 'Số tiền dự tính' : 'Estimated Cost',
         compact: compact,
       ),
       _MetaPill(
         icon: _paceIcon(meta.pace),
-        label: _paceLabel(meta.pace),
-        value: 'Nhịp độ',
+        label: _paceLabel(meta.pace, context),
+        value: isVi ? 'Nhịp độ' : 'Pace',
         compact: compact,
       ),
       _MetaPill(
         icon: _transportIcon(meta.transportMode),
-        label: _transportLabel(meta.transportMode),
-        value: 'Phương tiện',
+        label: _transportLabel(meta.transportMode, context),
+        value: isVi ? 'Phương tiện' : 'Transport',
         compact: compact,
       ),
       _MetaPill(
         icon: Icons.people_alt_rounded,
-        label: '${meta.adults} lớn, ${meta.children} trẻ',
-        value: 'Người đi',
+        label: isVi
+            ? '${meta.adults} lớn, ${meta.children} trẻ'
+            : '${meta.adults} adults, ${meta.children} kids',
+        value: isVi ? 'Người đi' : 'Travelers',
         compact: compact,
       ),
       _MetaPill(
         icon: Icons.event_available_rounded,
-        label: '${meta.totalDays} ngày ${meta.totalNights} đêm',
-        value: 'Thời lượng',
+        label: isVi
+            ? '${meta.totalDays} ngày ${meta.totalNights} đêm'
+            : '${meta.totalDays} days ${meta.totalNights} nights',
+        value: isVi ? 'Thời lượng' : 'Duration',
         compact: compact,
       ),
     ];
@@ -791,12 +842,14 @@ String _formatDistance(double meters) {
   return '${meters.toStringAsFixed(0)} m';
 }
 
-String _formatMoney(double amount) {
+String _formatMoney(double amount, BuildContext context) {
+  final isVi = AppLocalizations.of(context)!.localeName == 'vi';
   final raw = amount.toInt().toString();
-  return '${raw.replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (match) => '${match[1]}.')} đ';
+  final formatted = raw.replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (match) => '${match[1]}.');
+  return isVi ? '$formatted đ' : '$formatted VND';
 }
 
-String? _formatMoneyRange(dynamic value) {
+String? _formatMoneyRange(dynamic value, BuildContext context) {
   if (value == null) return null;
 
   if (value is Map) {
@@ -805,30 +858,31 @@ String? _formatMoneyRange(dynamic value) {
     final max = _readDouble(map['max'] ?? map['to'] ?? map['high']);
 
     if (min != null && max != null) {
-      return '${_formatMoney(min)}-${_formatMoney(max)}';
+      return '${_formatMoney(min, context)}-${_formatMoney(max, context)}';
     }
     if (min != null) {
-      return _formatMoney(min);
+      return _formatMoney(min, context);
     }
     if (max != null) {
-      return _formatMoney(max);
+      return _formatMoney(max, context);
     }
     return null;
   }
 
   final amount = _readDouble(value);
   if (amount == null) return null;
-  return _formatMoney(amount);
+  return _formatMoney(amount, context);
 }
 
-String _paceLabel(String pace) {
+String _paceLabel(String pace, BuildContext context) {
+  final isVi = AppLocalizations.of(context)!.localeName == 'vi';
   switch (pace.toLowerCase()) {
     case 'fast':
-      return 'Nhanh';
+      return isVi ? 'Nhanh' : 'Fast';
     case 'balanced':
-      return 'Cân bằng';
+      return isVi ? 'Cân bằng' : 'Balanced';
     case 'relaxed':
-      return 'Thư giãn';
+      return isVi ? 'Thư giãn' : 'Relaxed';
     default:
       return pace;
   }
@@ -847,16 +901,17 @@ IconData _paceIcon(String pace) {
   }
 }
 
-String _transportLabel(String transportMode) {
+String _transportLabel(String transportMode, BuildContext context) {
+  final isVi = AppLocalizations.of(context)!.localeName == 'vi';
   switch (transportMode.toLowerCase()) {
     case 'car':
-      return 'Ô tô';
+      return isVi ? 'Ô tô' : 'Car';
     case 'motorbike':
-      return 'Xe máy';
+      return isVi ? 'Xe máy' : 'Motorbike';
     case 'public':
-      return 'Công cộng';
+      return isVi ? 'Công cộng' : 'Public';
     case 'auto':
-      return 'Tự động';
+      return isVi ? 'Tự động' : 'Auto';
     default:
       return transportMode;
   }
@@ -883,6 +938,20 @@ class _ItineraryDayCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isVi = AppLocalizations.of(context)!.localeName == 'vi';
+    // Find coordinates for the day's weather forecast
+    double? lat;
+    double? lon;
+    String? placeName;
+    for (var act in day.activities) {
+      if (act.latitude != null && act.longitude != null) {
+        lat = act.latitude;
+        lon = act.longitude;
+        placeName = act.placeName;
+        break;
+      }
+    }
+
     return Container(
       margin: const EdgeInsets.only(bottom: 20),
       decoration: BoxDecoration(
@@ -899,8 +968,20 @@ class _ItineraryDayCard extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                 decoration: BoxDecoration(color: const Color(0xFFD4AF7A), borderRadius: BorderRadius.circular(12)),
-                child: Text('Ngày ${day.day}', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+                child: Text(
+                  isVi ? 'Ngày ${day.day}' : 'Day ${day.day}',
+                  style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                ),
               ),
+              if (lat != null && lon != null) ...[
+                const SizedBox(width: 8),
+                WeatherWidget(
+                  lat: lat,
+                  lon: lon,
+                  label: placeName,
+                  compact: true,
+                ),
+              ],
               const SizedBox(width: 12),
               Expanded(child: Divider(color: Colors.white.withOpacity(0.06))),
             ],
@@ -975,12 +1056,18 @@ class _ActivityCardTileState extends State<_ActivityCardTile> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(act.timeSlot, style: TextStyle(color: Colors.white.withOpacity(0.9), fontWeight: FontWeight.bold)),
+                        Text(
+                          _translateTimeSlot(act.timeSlot, context),
+                          style: TextStyle(color: Colors.white.withOpacity(0.9), fontWeight: FontWeight.bold),
+                        ),
                         if (act.estimatedCost > 0) Text('${act.estimatedCost.toInt()} đ', style: TextStyle(color: Colors.white.withOpacity(0.6))),
                       ],
                     ),
                     const SizedBox(height: 6),
-                    Text(act.placeName ?? 'Địa điểm', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16)),
+                    Text(
+                      act.placeName ?? (AppLocalizations.of(context)!.localeName == 'vi' ? 'Địa điểm' : 'Location'),
+                      style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16),
+                    ),
                     const SizedBox(height: 6),
                     Text(act.rationale, style: TextStyle(color: Colors.white.withOpacity(0.7))),
                   ],
@@ -997,6 +1084,15 @@ class _ActivityCardTileState extends State<_ActivityCardTile> {
     if (slot.contains('Sáng')) return Icons.wb_sunny_rounded;
     if (slot.contains('Chiều')) return Icons.wb_cloudy_rounded;
     return Icons.nightlight_round;
+  }
+
+  String _translateTimeSlot(String slot, BuildContext context) {
+    final isVi = AppLocalizations.of(context)!.localeName == 'vi';
+    if (isVi) return slot;
+    if (slot.contains('Sáng')) return 'Morning';
+    if (slot.contains('Chiều')) return 'Afternoon';
+    if (slot.contains('Tối')) return 'Evening';
+    return slot;
   }
 
   Future<void> _openActivity(AiActivity act) async {
@@ -1061,3 +1157,102 @@ class _ActivityCardTileState extends State<_ActivityCardTile> {
         !(lat == 0.0 && lng == 0.0);
   }
 }
+
+String _translateVisibility(String val, BuildContext context) {
+  final isVi = AppLocalizations.of(context)!.localeName == 'vi';
+  if (isVi) {
+    switch (val.toLowerCase()) {
+      case 'private':
+      case 'hidden':
+        return 'Riêng tư';
+      case 'protected':
+      case 'shared':
+        return 'Chia sẻ';
+      default:
+        return 'Công khai';
+    }
+  } else {
+    switch (val.toLowerCase()) {
+      case 'private':
+      case 'hidden':
+        return 'Private';
+      case 'protected':
+      case 'shared':
+        return 'Shared';
+      default:
+        return 'Public';
+    }
+  }
+}
+
+String _translateProvince(String prov, BuildContext context) {
+  final isVi = AppLocalizations.of(context)!.localeName == 'vi';
+  if (isVi) return prov;
+  final maps = {
+    'Đà Nẵng': 'Da Nang',
+    'Hà Nội': 'Hanoi',
+    'TP. Hồ Chí Minh': 'Ho Chi Minh City',
+    'Quảng Nam': 'Quang Nam',
+    'Quảng Ninh': 'Quang Ninh',
+    'Thừa Thiên Huế': 'Thua Thien Hue',
+    'Khánh Hòa': 'Khanh Hoa',
+    'Lào Cai': 'Lao Cai',
+    'Ninh Bình': 'Ninh Binh',
+    'Bình Thuận': 'Binh Thuan',
+    'Kiên Giang': 'Kien Giang',
+    'Bà Rịa - Vũng Tàu': 'Ba Ria - Vung Tau',
+    'Quảng Bình': 'Quang Binh',
+    'An Giang': 'An Giang',
+    'Bạc Liêu': 'Bac Lieu',
+    'Bắc Giang': 'Bac Giang',
+    'Bắc Kạn': 'Bac Kan',
+    'Bắc Ninh': 'Bac Ninh',
+    'Bến Tre': 'Ben Tre',
+    'Bình Dương': 'Binh Duong',
+    'Bình Định': 'Binh Dinh',
+    'Bình Phước': 'Binh Phước',
+    'Cà Mau': 'Ca Mau',
+    'Cao Bằng': 'Cao Bang',
+    'Cần Thơ': 'Can Tho',
+    'Đắk Lắk': 'Dak Lak',
+    'Đắk Nông': 'Dak Nong',
+    'Điện Biên': 'Dien Bien',
+    'Đồng Nai': 'Dong Nai',
+    'Đồng Tháp': 'Dong Thap',
+    'Gia Lai': 'Gia Lai',
+    'Hà Giang': 'Ha Giang',
+    'Hà Nam': 'Ha Nam',
+    'Hà Tĩnh': 'Ha Tinh',
+    'Hải Dương': 'Hai Duong',
+    'Hải Phòng': 'Hai Phong',
+    'Hậu Giang': 'Hau Giang',
+    'Hòa Bình': 'Hoa Binh',
+    'Hưng Yên': 'Hung Yen',
+    'Kon Tum': 'Kon Tum',
+    'Lai Châu': 'Lai Chau',
+    'Lạng Sơn': 'Lang Son',
+    'Lâm Đồng': 'Lam Dong',
+    'Long An': 'Long An',
+    'Nam Định': 'Nam Dinh',
+    'Nghệ An': 'Nghe An',
+    'Ninh Thuận': 'Ninh Thuan',
+    'Phú Thọ': 'Phu Tho',
+    'Phú Yên': 'Phu Yen',
+    'Quảng Ngãi': 'Quang Ngai',
+    'Quảng Trị': 'Quang Tri',
+    'Sóc Trăng': 'Soc Trang',
+    'Sơn La': 'Son La',
+    'Tây Ninh': 'Tay Ninh',
+    'Thái Bình': 'Thai Binh',
+    'Thái Nguyên': 'Thai Nguyen',
+    'Thanh Hóa': 'Thanh Hoa',
+    'Tiền Giang': 'Tien Giang',
+    'Trà Vinh': 'Tra Vinh',
+    'Tuyên Quang': 'Tuyen Quang',
+    'Vĩnh Long': 'Vinh Long',
+    'Vĩnh Phúc': 'Vinh Phuc',
+    'Yên Bái': 'Yen Bai',
+  };
+  return maps[prov] ?? prov;
+}
+

@@ -83,9 +83,9 @@ class NavigationHelper {
   }
 
   /// Tính chuỗi thời gian dự kiến đến nơi (ETA) định dạng "HH:MM"
-  static String getETAString(double durationMinutes) {
-    final now = DateTime.now();
-    final eta = now.add(Duration(minutes: durationMinutes.round()));
+  static String getETAString(double durationMinutes, {DateTime? startTime}) {
+    final start = startTime ?? DateTime.now();
+    final eta = start.add(Duration(minutes: durationMinutes.round()));
     final hour = eta.hour.toString().padLeft(2, '0');
     final minute = eta.minute.toString().padLeft(2, '0');
     return '$hour:$minute';

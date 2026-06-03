@@ -16,6 +16,8 @@ class LegalScaffold extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isVi = Localizations.localeOf(context).languageCode == 'vi';
+
     return Scaffold(
       backgroundColor: const Color(0xFF08110F),
       body: SelectionArea(
@@ -79,7 +81,7 @@ class LegalScaffold extends StatelessWidget {
                             ),
                             const SizedBox(height: 18),
                             Text(
-                              'Last updated: May 30, 2026',
+                              isVi ? 'Cập nhật lần cuối: 30/05/2026' : 'Last updated: May 30, 2026',
                               style: TextStyle(
                                 color: Colors.white.withOpacity(0.54),
                                 fontSize: 13,
@@ -264,13 +266,15 @@ class _TopNav extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isVi = Localizations.localeOf(context).languageCode == 'vi';
+
     return Wrap(
       spacing: 10,
       runSpacing: 10,
       crossAxisAlignment: WrapCrossAlignment.center,
       children: [
         _NavButton(
-          label: 'Home',
+          label: isVi ? 'Trang chủ' : 'Home',
           icon: Icons.explore_rounded,
           selected: false,
           onPressed: () => Navigator.pushNamedAndRemoveUntil(
@@ -280,7 +284,7 @@ class _TopNav extends StatelessWidget {
           ),
         ),
         _NavButton(
-          label: 'Privacy',
+          label: isVi ? 'Bảo mật' : 'Privacy',
           icon: Icons.privacy_tip_outlined,
           selected: activeRoute == '/privacy',
           onPressed: activeRoute == '/privacy'
@@ -288,12 +292,28 @@ class _TopNav extends StatelessWidget {
               : () => Navigator.pushReplacementNamed(context, '/privacy'),
         ),
         _NavButton(
-          label: 'Data deletion',
+          label: isVi ? 'Xóa dữ liệu' : 'Data deletion',
           icon: Icons.delete_outline_rounded,
           selected: activeRoute == '/data-deletion',
           onPressed: activeRoute == '/data-deletion'
               ? null
               : () => Navigator.pushReplacementNamed(context, '/data-deletion'),
+        ),
+        _NavButton(
+          label: isVi ? 'Hướng dẫn' : 'Instruction',
+          icon: Icons.menu_book_rounded,
+          selected: activeRoute == '/intruction',
+          onPressed: activeRoute == '/intruction'
+              ? null
+              : () => Navigator.pushReplacementNamed(context, '/intruction'),
+        ),
+        _NavButton(
+          label: isVi ? 'Liên hệ' : 'Contact',
+          icon: Icons.contact_support_rounded,
+          selected: activeRoute == '/contact',
+          onPressed: activeRoute == '/contact'
+              ? null
+              : () => Navigator.pushReplacementNamed(context, '/contact'),
         ),
       ],
     );
