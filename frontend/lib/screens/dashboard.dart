@@ -15,6 +15,7 @@ import '../models/destination.dart';
 import '../widgets/anim_builder.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:permission_handler/permission_handler.dart';
+import 'package:speech_to_text/speech_to_text.dart' as stt;
 import 'help_support_screen.dart';
 import 'language_settings_screen.dart';
 import 'notification_settings_screen.dart';
@@ -74,6 +75,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   String _translateProvince(String prov) {
     if (_isVi) return prov;
     final maps = {
+      'Toàn quốc': 'All',
       'Đà Nẵng': 'Da Nang',
       'Hà Nội': 'Hanoi',
       'TP. Hồ Chí Minh': 'Ho Chi Minh City',
@@ -293,12 +295,17 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   late final Animation<double> _bgFade;
   late final AnimationController _entranceController;
   late final Animation<double> _cardEntrance;
+  late final Animation<Offset> _searchBarSlide;
   late final PageController _pageController;
   late final PageController _searchPageController;
   Timer? _autoPlayTimer;
   Timer? _searchDebounceTimer;
   List<Destination> _searchResults = [];
   List<Destination> _searchSuggestions = [];
+  
+  final stt.SpeechToText _speech = stt.SpeechToText();
+  bool _speechEnabled = false;
+
   int _exploreBackendPage = 1;
   int _exploreTotalItems = 0;
   int _exploreTotalPages = 1;
@@ -343,7 +350,249 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     } catch (_) {}
   }
 
+  Future<void> _initSpeech() async {
+    try {
+      _speechEnabled = await _speech.initialize(
+        onError: (val) => debugPrint('Speech onError: $val'),
+        onStatus: (val) => debugPrint('Speech onStatus: $val'),
+      );
+    } catch (e) {
+      _speechEnabled = false;
+      debugPrint('Speech initialization failed: $e');
+    }
+  }
+
+  void _showVoiceSearchDialog() async {
+    final micStatus = await Permission.microphone.request();
+    if (!micStatus.isGranted) {
+      _showMessage(_isVi ? 'Ứng dụng chưa được cấp quyền truy cập microphone' : 'Microphone permission not granted');
+      return;
+    }
+
+    if (!_speechEnabled) {
+      await _initSpeech();
+    }
+
+    if (!_speechEnabled) {
+      _showMessage(_isVi ? 'Nhận diện giọng nói không hỗ trợ trên thiết bị này' : 'Speech recognition is not supported on this device');
+      return;
+    }
+
+    String words = '';
+    bool listening = true;
+
+    if (!mounted) return;
+
+    showGeneralDialog(
+      context: context,
+      barrierDismissible: true,
+      barrierLabel: 'VoiceSearch',
+      barrierColor: Colors.black.withOpacity(0.75),
+      transitionDuration: const Duration(milliseconds: 300),
+      pageBuilder: (context, anim1, anim2) {
+        return StatefulBuilder(
+          builder: (context, setDialogState) {
+            if (listening && !_speech.isListening) {
+              _speech.listen(
+                onResult: (val) {
+                  setDialogState(() {
+                    words = val.recognizedWords;
+                    if (val.finalResult) {
+                      listening = false;
+                      Future.delayed(const Duration(milliseconds: 800), () {
+                        if (mounted) {
+                          setState(() {
+                            _searchController.text = words;
+                            _onSearchChanged(words);
+                          });
+                        }
+                        if (Navigator.canPop(context)) {
+                          Navigator.pop(context);
+                        }
+                      });
+                    }
+                  });
+                },
+                localeId: _isVi ? 'vi_VN' : 'en_US',
+              );
+            }
+
+            return BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
+              child: Scaffold(
+                backgroundColor: Colors.transparent,
+                body: Center(
+                  child: Container(
+                    margin: const EdgeInsets.symmetric(horizontal: 32),
+                    padding: const EdgeInsets.all(28),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF162521).withOpacity(0.9),
+                      borderRadius: BorderRadius.circular(28),
+                      border: Border.all(color: Colors.white.withOpacity(0.12)),
+                      boxShadow: [
+                        BoxShadow(
+                          color: const Color(0xFFD4AF7A).withOpacity(0.1),
+                          blurRadius: 24,
+                          spreadRadius: 2,
+                        ),
+                      ],
+                    ),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          _isVi ? 'Tìm kiếm bằng giọng nói' : 'Voice Search',
+                          style: const TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                        const SizedBox(height: 32),
+                        TweenAnimationBuilder<double>(
+                          tween: Tween(begin: 1.0, end: listening ? 1.15 : 1.0),
+                          duration: const Duration(milliseconds: 800),
+                          curve: Curves.easeInOut,
+                          onEnd: () {
+                            if (listening) {
+                              setDialogState(() {});
+                            }
+                          },
+                          builder: (context, value, child) {
+                            return Transform.scale(
+                              scale: value,
+                              child: Container(
+                                width: 80,
+                                height: 80,
+                                decoration: BoxDecoration(
+                                  color: listening
+                                      ? const Color(0xFFD4AF7A).withOpacity(0.2)
+                                      : Colors.white.withOpacity(0.06),
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                    color: listening ? const Color(0xFFD4AF7A) : Colors.white24,
+                                    width: 2,
+                                  ),
+                                ),
+                                child: Icon(
+                                  listening ? Icons.mic_rounded : Icons.mic_off_rounded,
+                                  color: listening ? const Color(0xFFD4AF7A) : Colors.white54,
+                                  size: 36,
+                                ),
+                              ),
+                            );
+                          },
+                        ),
+                        const SizedBox(height: 32),
+                        Text(
+                          listening
+                              ? (_isVi ? 'Đang lắng nghe...' : 'Listening...')
+                              : (_isVi ? 'Đang xử lý...' : 'Processing...'),
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 14,
+                            color: Colors.white.withOpacity(0.6),
+                          ),
+                        ),
+                        const SizedBox(height: 16),
+                        Container(
+                          width: double.infinity,
+                          constraints: const BoxConstraints(minHeight: 60),
+                          padding: const EdgeInsets.all(12),
+                          decoration: BoxDecoration(
+                            color: Colors.black26,
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: Text(
+                            words.isEmpty
+                                ? (_isVi ? 'Hãy nói gì đó...' : 'Say something...')
+                                : words,
+                            textAlign: TextAlign.center,
+                            style: const TextStyle(
+                              fontFamily: 'Montserrat',
+                              fontSize: 15,
+                              fontWeight: FontWeight.w500,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 32),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            TextButton(
+                              onPressed: () {
+                                _speech.stop();
+                                Navigator.pop(context);
+                              },
+                              child: Text(
+                                _isVi ? 'Hủy' : 'Cancel',
+                                style: TextStyle(
+                                  fontFamily: 'Montserrat',
+                                  color: Colors.white.withOpacity(0.5),
+                                ),
+                              ),
+                            ),
+                            if (listening)
+                              ElevatedButton(
+                                onPressed: () {
+                                  _speech.stop();
+                                  setDialogState(() {
+                                    listening = false;
+                                  });
+                                },
+                                style: ElevatedButton.styleFrom(
+                                  backgroundColor: const Color(0xFFE74C3C).withOpacity(0.2),
+                                  foregroundColor: const Color(0xFFE74C3C),
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(16),
+                                  ),
+                                ),
+                                child: Text(_isVi ? 'Dừng' : 'Stop'),
+                              ),
+                            if (!listening && words.isNotEmpty)
+                              ElevatedButton(
+                                onPressed: () {
+                                  if (mounted) {
+                                    setState(() {
+                                      _searchController.text = words;
+                                      _onSearchChanged(words);
+                                    });
+                                  }
+                                  Navigator.pop(context);
+                                },
+                                style: ElevatedButton.styleFrom(
+                                  backgroundColor: const Color(0xFFD4AF7A),
+                                  foregroundColor: Colors.black,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(16),
+                                  ),
+                                ),
+                                child: Text(_isVi ? 'Tìm kiếm' : 'Search'),
+                              ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            );
+          },
+        );
+      },
+      transitionBuilder: (context, anim1, anim2, child) {
+        return FadeTransition(
+          opacity: anim1,
+          child: child,
+        );
+      },
+    );
+  }
+
   static const List<String> vietnameseProvinces = [
+    'Toàn quốc',
     'Đà Nẵng',
     'Hà Nội',
     'TP. Hồ Chí Minh',
@@ -485,6 +734,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     _currentUserName = widget.userName;
     _selectedCity = vietnameseProvinces[0];
     _initMockNotifications();
+    _initSpeech();
     _pageController = PageController(viewportFraction: 0.82, initialPage: 1000);
     _searchPageController =
         PageController(viewportFraction: 0.82, initialPage: 0);
@@ -521,6 +771,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       parent: _entranceController,
       curve: Curves.easeOutCubic,
     );
+    _searchBarSlide = Tween<Offset>(
+      begin: const Offset(0, 0.2),
+      end: Offset.zero,
+    ).animate(_cardEntrance);
     _entranceController.forward();
 
     _loadSavedPlaces();
@@ -1044,7 +1298,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     }
 
     add('query', query);
-    add('city', city);
+    if (city != 'Toàn quốc' && city != 'All') {
+      add('city', city);
+    }
     add('limit', (limit ?? _filterLimit).toString());
     add('page', page.toString());
     add('category', _selectedCategory);
@@ -1198,11 +1454,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     }
   }
 
-  Future<void> _selectCity(String city) async {
+  Future<void> _selectCity(String city, {bool clearSearch = true}) async {
     final cacheKey = _destinationCacheKey(city);
     if (_selectedCity == city &&
         _realDestinations.isNotEmpty &&
-        _searchQuery.isEmpty) {
+        (!clearSearch || _searchQuery.isEmpty)) {
       return;
     }
 
@@ -1214,8 +1470,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         _currentIndex = 0;
         _searchCurrentIndex = 0;
         _searchResults = [];
-        _searchController.clear();
-        _searchQuery = '';
+        if (clearSearch) {
+          _searchController.clear();
+          _searchQuery = '';
+        } else {
+          _searchQuery = _searchController.text;
+        }
         _realDestinations = cachedPage.items;
         _exploreBackendPage = cachedPage.page;
         _exploreTotalItems = cachedPage.total;
@@ -1244,8 +1504,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       _currentIndex = 0;
       _searchCurrentIndex = 0;
       _searchResults = [];
-      _searchController.clear();
-      _searchQuery = '';
+      if (clearSearch) {
+        _searchController.clear();
+        _searchQuery = '';
+      } else {
+        _searchQuery = _searchController.text;
+      }
       // Keep _realDestinations as-is so the UI stays stable while loading
     });
 
@@ -3152,7 +3416,48 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     return filteredList;
   }
 
+  String _normalizeString(String str) {
+    const withSign =
+        'aáàảãạâấầẩẫậăắằẳẵặeéèẻẽẹêếềểễệiíìỉĩịoóòỏõọôốồổỗộơớờởỡợuúùủũụưứừửữựyýỳỷỹỵđĐ';
+    const noSign =
+        'aaaaaaaaaaaaaaaaaaeeeeeeeeeeeeiiiiiioooooooooooooooooouuuuuuuuuuuuyyyyyydd';
+    var result = str.toLowerCase().trim();
+    for (var i = 0; i < withSign.length; i++) {
+      result = result.replaceAll(withSign[i], noSign[i]);
+    }
+    return result;
+  }
+
   void _onSearchChanged(String value) {
+    final cleanVal = _normalizeString(value);
+    if (cleanVal.isNotEmpty) {
+      String? matchedProv;
+      for (final prov in vietnameseProvinces) {
+        if (prov == 'Toàn quốc' || prov == 'All') continue;
+        final cleanProv = _normalizeString(prov);
+        final cleanTranslated = _normalizeString(_translateProvince(prov));
+        final isExact = (cleanVal == cleanProv || cleanVal == cleanTranslated);
+        final isPartial = (cleanVal.length >= 5 && (cleanProv.contains(cleanVal) || cleanTranslated.contains(cleanVal) || cleanVal.contains(cleanProv) || cleanVal.contains(cleanTranslated)));
+        if (isExact || isPartial) {
+          matchedProv = prov;
+          break;
+        }
+      }
+
+      if (matchedProv != null) {
+        _selectCity(matchedProv, clearSearch: false);
+        setState(() {
+          _searchQuery = value;
+          _searchResults = [];
+        });
+        _searchDebounceTimer?.cancel();
+        _searchDebounceTimer = Timer(const Duration(milliseconds: 300), () async {
+          await _performBackendSearch(value);
+        });
+        return;
+      }
+    }
+
     setState(() {
       _searchQuery = value;
       _searchCurrentIndex = 0;
@@ -6069,10 +6374,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     return FadeTransition(
       opacity: _cardEntrance,
       child: SlideTransition(
-        position: Tween<Offset>(
-          begin: const Offset(0, 0.2),
-          end: Offset.zero,
-        ).animate(_cardEntrance),
+        position: _searchBarSlide,
         child: Padding(
           padding: EdgeInsets.symmetric(
             horizontal: isDesktop ? 50 : 24,
@@ -6103,6 +6405,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 const SizedBox(width: 12),
                 Expanded(
                   child: TextField(
+                    key: const ValueKey<String>('search_text_field'),
                     controller: _searchController,
                     focusNode: _searchFocusNode,
                     onChanged: _onSearchChanged,
@@ -6147,10 +6450,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     color: Colors.white.withOpacity(0.7),
                     size: 22,
                   ),
-                  onPressed: () {
-                    _showMessage(
-                        'Tính năng tìm kiếm bằng giọng nói đang được phát triển');
-                  },
+                  onPressed: _showVoiceSearchDialog,
                   tooltip: 'Tìm kiếm bằng giọng nói',
                   splashRadius: 20,
                   constraints: const BoxConstraints(),
