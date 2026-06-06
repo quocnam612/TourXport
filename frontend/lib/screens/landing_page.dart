@@ -163,40 +163,8 @@ class _LandingPageState extends State<LandingPage>
       _storedUserName = userName;
       _isRestoringSession = false;
     });
-
-    if (token != null && token.isNotEmpty) {
-      Navigator.pushAndRemoveUntil(
-        context,
-        PageRouteBuilder(
-          pageBuilder: (_, __, ___) => HomeScreen(
-            userName: userName ?? 'bạn',
-            authToken: token,
-          ),
-          transitionDuration: const Duration(milliseconds: 600),
-          reverseTransitionDuration: const Duration(milliseconds: 400),
-          transitionsBuilder: (_, animation, __, child) {
-            return FadeTransition(
-              opacity: CurvedAnimation(
-                parent: animation,
-                curve: Curves.easeInOut,
-              ),
-              child: SlideTransition(
-                position: Tween<Offset>(
-                  begin: const Offset(0, 0.05),
-                  end: Offset.zero,
-                ).animate(CurvedAnimation(
-                  parent: animation,
-                  curve: Curves.easeOutCubic,
-                )),
-                child: child,
-              ),
-            );
-          },
-        ),
-        (route) => false,
-      );
-    }
   }
+
 
   @override
   void dispose() {

@@ -2,6 +2,8 @@ import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import '../api/api.dart';
+import '../utils/auth_storage.dart';
+import 'pin_lock_screen.dart';
 
 class SecuritySettingsScreen extends StatefulWidget {
   final Map<String, dynamic> userData;
@@ -32,6 +34,8 @@ class _SecuritySettingsScreenState extends State<SecuritySettingsScreen> with Ti
   
   double _passStrength = 0.0;
   Color _passStrengthColor = Colors.redAccent;
+
+  bool _isPinSet = false;
 
   bool get _isVi => Localizations.localeOf(context).languageCode == 'vi';
 
@@ -75,6 +79,14 @@ class _SecuritySettingsScreenState extends State<SecuritySettingsScreen> with Ti
     _fadeController.forward();
     
     _newPassController.addListener(_updatePassStrength);
+    _checkPinStatus();
+  }
+
+  Future<void> _checkPinStatus() async {
+    final pin = await AuthStorage.getAppPin();
+    if (mounted) {
+      setState(() => _isPinSet = pin != null && pin.isNotEmpty);
+    }
   }
 
   @override
@@ -204,6 +216,10 @@ class _SecuritySettingsScreenState extends State<SecuritySettingsScreen> with Ti
                         _buildSectionLabel(_isVi ? 'Phương thức đăng nhập' : 'Login methods'),
                         const SizedBox(height: 12),
                         _buildLoginMethodsCard(),
+                        const SizedBox(height: 32),
+                        _buildSectionLabel(_isVi ? 'Khóa ứng dụng' : 'App Lock'),
+                        const SizedBox(height: 12),
+                        _buildAppLockCard(),
                         const SizedBox(height: 32),
                         _buildSectionLabel(_isVi ? 'Lịch sử bảo mật' : 'Security history'),
                         const SizedBox(height: 12),
@@ -428,6 +444,55 @@ class _SecuritySettingsScreenState extends State<SecuritySettingsScreen> with Ti
       default:
         return Colors.white70;
     }
+  }
+
+  Widget _buildAppLockCard() {
+    return _buildGlassCard(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                _isVi ? 'Khóa ứng dụng (Mã PIN)' : 'App Lock (PIN)', 
+                style: const TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold)),
+              const SizedBox(height: 4),
+              Text(
+                _isVi ? 'Đặt mã PIN 4 số để tăng cường bảo mật' : 'Set a 4-digit PIN to enhance security',
+                style: TextStyle(color: Colors.white.withOpacity(0.5), fontSize: 13)),
+            ],
+          ),
+          Switch(
+            value: _isPinSet,
+            activeColor: const Color(0xFFD4AF7A),
+            onChanged: (val) async {
+              if (val) {
+                // Setup PIN
+                final result = await Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const PinLockScreen(mode: PinMode.setup)),
+                );
+                if (result == true) {
+                  _checkPinStatus();
+                }
+              } else {
+                // Verify before removing
+                final result = await Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const PinLockScreen(mode: PinMode.verify)),
+                );
+                if (result == true) {
+                  await AuthStorage.removeAppPin();
+                  _checkPinStatus();
+                  _showToast(_isVi ? 'Đã tắt mã PIN khóa ứng dụng' : 'App PIN lock disabled');
+                }
+              }
+            },
+          ),
+        ],
+      ),
+    );
   }
 
   Widget _buildActivityTimeline() {

@@ -1,4 +1,18 @@
+<!-- markdownlint-disable MD024 -->
 # Changelog
+
+## [1.0.2] - 2026-06-06
+
+### Added
+
+- **Frontend (Bảo mật)**: Thêm tính năng "Khóa ứng dụng" (App Lock) cho phép người dùng thiết lập mã PIN 4 số trong phần Cài đặt bảo mật để tăng cường quyền riêng tư.
+- **Frontend (Đăng nhập)**: Bổ sung tính năng "Ghi nhớ đăng nhập của tôi" và hỗ trợ thả xuống danh sách các tài khoản đã lưu, giúp người dùng đăng nhập nhanh hơn trong những lần tiếp theo mà không cần gõ lại.
+- **Frontend (Trải nghiệm người dùng)**: Thêm hiệu ứng rung lắc (shake animation) trực quan khi người dùng nhập thiếu hoặc sai thông tin đăng nhập, đồng thời tự động nhận diện và phản hồi trạng thái phím Caps Lock.
+
+### Changed
+
+- **Frontend (Kiến trúc Đăng nhập)**: Tái cấu trúc mạnh mẽ mã nguồn màn hình Đăng nhập (Sign In). Tách các thành phần giao diện thành các module nhỏ, độc lập (`AuthTextField`, `AuthContinueButton`, `SocialLoginButton`, `SavedAccountsDropdown`) giúp hệ thống dễ bảo trì và mở rộng.
+- **Frontend (Điều hướng)**: Thay đổi luồng chuyển hướng phiên làm việc bằng cách tích hợp `AppLockWrapper` ở tầng cao nhất của ứng dụng (`main.dart`), thay thế cho logic chuyển trang tự động cũ ở màn hình Landing Page để tương thích với tính năng khóa mã PIN.
 
 ## [1.0.1] - 2026-06-04
 

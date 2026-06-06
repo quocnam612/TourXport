@@ -1,18 +1,25 @@
+import 'dart:math';
 import 'dart:ui';
 
 import 'package:flutter/foundation.dart'
     show TargetPlatform, defaultTargetPlatform, kIsWeb;
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '../api/api.dart';
 import '../services/discord_auth_service.dart';
 import '../services/google_auth_service.dart';
 import '../utils/auth_feedback.dart';
 import '../utils/auth_storage.dart';
 import '../widgets/anim_builder.dart';
+import '../widgets/auth/auth_text_field.dart';
+import '../widgets/auth/auth_continue_button.dart';
+import '../widgets/auth/social_login_button.dart';
+import '../widgets/auth/saved_accounts_dropdown.dart';
+
 import 'sign_up.dart';
 import 'dashboard.dart';
 import 'landing_page.dart';
-
+import '../utils/formatters.dart';
 class SignInScreen extends StatefulWidget {
   const SignInScreen({super.key});
 
@@ -25,8 +32,27 @@ class _SignInScreenState extends State<SignInScreen>
   bool _useEmail = true;
   bool _obscurePassword = true;
   bool _isLoading = false;
+  bool _isSuccess = false;
+  bool _isError = false;
+  bool _rememberMe = true;
+  bool _capsLockOn = false;
   final _inputController = TextEditingController();
+  final _inputFocusNode = FocusNode();
   final _passwordController = TextEditingController();
+  final _passwordFocusNode = FocusNode();
+  List<Map<String, String>> _savedAccounts = [];
+  bool _showSavedAccounts = false;
+
+
+
+  Future<void> _loadSavedAccounts() async {
+    final accounts = await AuthStorage.getSavedAccounts();
+    if (mounted) {
+      setState(() {
+        _savedAccounts = accounts;
+      });
+    }
+  }
 
   bool get _supportsNativeSocialAuth {
     if (kIsWeb) return true;
@@ -42,11 +68,20 @@ class _SignInScreenState extends State<SignInScreen>
     );
   }
 
+  void _shakeFields() {
+    _shakeController.forward(from: 0.0);
+    setState(() => _isError = true);
+    Future.delayed(const Duration(milliseconds: 1500), () {
+      if (mounted) setState(() => _isError = false);
+    });
+  }
+
   void _handleLogin() async {
     final input = _inputController.text.trim();
     final password = _passwordController.text.trim();
 
     if (input.isEmpty || password.isEmpty) {
+      _shakeFields();
       showAuthErrorToast(context, 'Vui lòng điền đủ thông tin đăng nhập');
       return;
     }
@@ -71,16 +106,32 @@ class _SignInScreenState extends State<SignInScreen>
         final userName = user is Map ? user['name'] as String? : null;
         final authToken = data?['token'] as String?;
         if (authToken != null && authToken.trim().isNotEmpty) {
-          await AuthStorage.saveSession(
-            token: authToken,
-            userName: userName ?? 'bạn',
-          );
+          if (_rememberMe) {
+            await AuthStorage.saveSession(
+              token: authToken,
+              userName: userName ?? 'bạn',
+            );
+            await AuthStorage.saveAccountToHistory(
+              emailOrPhone: user is Map ? (user['email'] ?? input) : input,
+              name: userName ?? 'bạn',
+              avatar: user is Map ? user['avatar'] as String? : null,
+            );
+          }
           if (!mounted) return;
         }
         showAuthSuccessToast(
           context,
           'Đăng nhập thành công — chào ${userName ?? 'bạn'}!',
         );
+
+        if (mounted) {
+          setState(() {
+            _isLoading = false;
+            _isSuccess = true;
+          });
+          await Future.delayed(const Duration(milliseconds: 600));
+        }
+
         // Điều hướng tới Dashboard sau khi đăng nhập thành công
         if (mounted) {
           Navigator.pushAndRemoveUntil(
@@ -117,6 +168,7 @@ class _SignInScreenState extends State<SignInScreen>
         return;
       }
 
+      _shakeFields();
       showAuthErrorToast(
         context,
         msg ?? 'Sai thông tin đăng nhập',
@@ -124,6 +176,7 @@ class _SignInScreenState extends State<SignInScreen>
     } catch (e) {
       if (!mounted) return;
       setState(() => _isLoading = false);
+      _shakeFields();
       showAuthErrorToast(context, 'Không kết nối được server. Đã bật backend chưa? ($e)');
     }
   }
@@ -154,10 +207,17 @@ class _SignInScreenState extends State<SignInScreen>
         final userName = user is Map ? user['name'] as String? : null;
         final authToken = data?['token'] as String?;
         if (authToken != null && authToken.trim().isNotEmpty) {
-          await AuthStorage.saveSession(
-            token: authToken,
-            userName: userName ?? 'bạn',
-          );
+          if (_rememberMe) {
+            await AuthStorage.saveSession(
+              token: authToken,
+              userName: userName ?? 'bạn',
+            );
+            await AuthStorage.saveAccountToHistory(
+              emailOrPhone: user is Map ? (user['email'] ?? 'Google Account') : 'Google Account',
+              name: userName ?? 'bạn',
+              avatar: user is Map ? user['avatar'] as String? : null,
+            );
+          }
           if (!mounted) return;
         }
 
@@ -269,10 +329,17 @@ class _SignInScreenState extends State<SignInScreen>
         final userName = user is Map ? user['name'] as String? : null;
         final authToken = data?['token'] as String?;
         if (authToken != null && authToken.trim().isNotEmpty) {
-          await AuthStorage.saveSession(
-            token: authToken,
-            userName: userName ?? 'bạn',
-          );
+          if (_rememberMe) {
+            await AuthStorage.saveSession(
+              token: authToken,
+              userName: userName ?? 'bạn',
+            );
+            await AuthStorage.saveAccountToHistory(
+              emailOrPhone: user is Map ? (user['email'] ?? 'Discord Account') : 'Discord Account',
+              name: userName ?? 'bạn',
+              avatar: user is Map ? user['avatar'] as String? : null,
+            );
+          }
           if (!mounted) return;
         }
 
@@ -327,6 +394,7 @@ class _SignInScreenState extends State<SignInScreen>
   late final Animation<double> _headerFade;
   late final Animation<double> _panelSlide;
   late final Animation<double> _contentFade;
+  late final AnimationController _shakeController;
 
   // Sheet controller for parallax
   final DraggableScrollableController _sheetCtrl = DraggableScrollableController();
@@ -335,6 +403,28 @@ class _SignInScreenState extends State<SignInScreen>
   @override
   void initState() {
     super.initState();
+    HardwareKeyboard.instance.addHandler(_handleKeyEvent);
+    _checkCapsLock();
+    _loadSavedAccounts();
+
+    _inputFocusNode.addListener(() {
+      if (_inputFocusNode.hasFocus) {
+        setState(() => _showSavedAccounts = true);
+      } else {
+        Future.delayed(const Duration(milliseconds: 150), () {
+          if (mounted) setState(() => _showSavedAccounts = false);
+        });
+      }
+    });
+
+    _inputController.addListener(() {
+      setState(() {});
+    });
+
+    _shakeController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 500),
+    );
 
     _entranceController = AnimationController(
       vsync: this,
@@ -360,15 +450,31 @@ class _SignInScreenState extends State<SignInScreen>
     _entranceController.forward();
   }
 
+  void _checkCapsLock() {
+    final capsOn = HardwareKeyboard.instance.lockModesEnabled.contains(KeyboardLockMode.capsLock);
+    if (_capsLockOn != capsOn && mounted) {
+      setState(() => _capsLockOn = capsOn);
+    }
+  }
+
+  bool _handleKeyEvent(KeyEvent event) {
+    _checkCapsLock();
+    return false;
+  }
+
   void _onSheetChanged() {
     setState(() => _sheetFraction = _sheetCtrl.size);
   }
 
   @override
   void dispose() {
+    HardwareKeyboard.instance.removeHandler(_handleKeyEvent);
+    _inputFocusNode.dispose();
+    _passwordFocusNode.dispose();
     _inputController.dispose();
     _passwordController.dispose();
     _entranceController.dispose();
+    _shakeController.dispose();
     _sheetCtrl.removeListener(_onSheetChanged);
     _sheetCtrl.dispose();
     super.dispose();
@@ -447,30 +553,91 @@ class _SignInScreenState extends State<SignInScreen>
                             transitionBuilder: (child, animation) {
                               return FadeTransition(opacity: animation, child: child);
                             },
-                            child: _buildField(
+                            child: AuthTextField(shakeAnimation: _shakeController, capsLockOn: _capsLockOn, obscurePassword: _obscurePassword, onToggleObscure: () => setState(() => _obscurePassword = !_obscurePassword),
                               key: ValueKey<bool>(_useEmail),
                               label: _useEmail ? 'Địa chỉ Email' : 'Số điện thoại',
                               hint: _useEmail ? 'abc@gmail.com' : '0123456789',
                               controller: _inputController,
+                              focusNode: _inputFocusNode,
+                              textInputAction: TextInputAction.next,
+                              onEditingComplete: () => _passwordFocusNode.requestFocus(),
                               keyboardType: _useEmail
                                   ? TextInputType.emailAddress
                                   : TextInputType.phone,
+                              inputFormatters: !_useEmail ? [PhoneNumberFormatter()] : null,
                               s: 1.0,
                             ),
                           ),
+                          AnimatedSize(
+                            duration: const Duration(milliseconds: 300),
+                            curve: Curves.easeInOut,
+                            child: (_savedAccounts.isNotEmpty && _showSavedAccounts)
+                                ? SavedAccountsDropdown(
+      savedAccounts: _savedAccounts,
+      s: 1.0,
+      onSelectAccount: (acc) {
+        setState(() {
+          _useEmail = acc['email']!.contains('@');
+          _inputController.text = acc['email']!;
+          _showSavedAccounts = false;
+        });
+        _passwordFocusNode.requestFocus();
+      },
+      onRemoveAccount: (email) async {
+        await AuthStorage.removeSavedAccount(email);
+        _loadSavedAccounts();
+      },
+    )
+                                : const SizedBox.shrink(),
+                          ),
                           const SizedBox(height: 16),
 
-                          _buildField(
+                          AuthTextField(shakeAnimation: _shakeController, capsLockOn: _capsLockOn, obscurePassword: _obscurePassword, onToggleObscure: () => setState(() => _obscurePassword = !_obscurePassword),
+                            key: const ValueKey('password_field_desktop'),
                             label: 'Mật khẩu',
                             hint: '123abc',
                             controller: _passwordController,
+                            focusNode: _passwordFocusNode,
                             isPassword: true,
+                            textInputAction: TextInputAction.done,
+                            onEditingComplete: () => _handleLogin(),
                             s: 1.0,
                           ),
-                          const SizedBox(height: 28),
+                          const SizedBox(height: 8),
+                          GestureDetector(
+                            onTap: () => setState(() => _rememberMe = !_rememberMe),
+                            child: Row(
+                              children: [
+                                Theme(
+                                  data: Theme.of(context).copyWith(
+                                    unselectedWidgetColor: Colors.white54,
+                                  ),
+                                  child: Checkbox(
+                                    value: _rememberMe,
+                                    onChanged: (val) {
+                                      setState(() {
+                                        _rememberMe = val ?? true;
+                                      });
+                                    },
+                                    activeColor: const Color(0xFFD4AF7A),
+                                    checkColor: Colors.black,
+                                  ),
+                                ),
+                                Text(
+                                  'Ghi nhớ đăng nhập của tôi',
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontSize: 14,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          const SizedBox(height: 24),
 
                           // Continue button
-                          _buildContinueButton(1.0),
+                          AuthContinueButton(isLoading: _isLoading, isSuccess: _isSuccess, isError: _isError, onLogin: _handleLogin, s: 1.0),
                           const SizedBox(height: 24),
 
                           // Divider
@@ -509,14 +676,14 @@ class _SignInScreenState extends State<SignInScreen>
                             height: 60,
                             child: Row(
                               children: [
-                                _buildSocialBtn(
+                                SocialLoginButton(isLoading: _isLoading,
                                   label: 'Tiếp tục với Google',
                                   iconAsset: 'assets/icons/gg_logo.png',
                                   s: 1.0,
                                   onTap: _handleGoogleLogin,
                                 ),
                                 const SizedBox(width: 10),
-                                _buildSocialBtn(
+                                SocialLoginButton(isLoading: _isLoading,
                                   label: 'Tiếp tục với Discord',
                                   iconAsset: 'assets/icons/dc_logo.png',
                                   s: 1.0,
@@ -795,31 +962,92 @@ class _SignInScreenState extends State<SignInScreen>
                         transitionBuilder: (child, animation) {
                           return FadeTransition(opacity: animation, child: child);
                         },
-                        child: _buildField(
+                        child: AuthTextField(shakeAnimation: _shakeController, capsLockOn: _capsLockOn, obscurePassword: _obscurePassword, onToggleObscure: () => setState(() => _obscurePassword = !_obscurePassword),
                           key: ValueKey<bool>(_useEmail),
                           label: _useEmail ? 'Địa chỉ Email' : 'Số điện thoại',
                           hint: _useEmail ? 'abc@gmail.com' : '0123456789',
                           controller: _inputController,
+                          focusNode: _inputFocusNode,
+                          textInputAction: TextInputAction.next,
+                          onEditingComplete: () => _passwordFocusNode.requestFocus(),
                           keyboardType: _useEmail
                               ? TextInputType.emailAddress
                               : TextInputType.phone,
+                          inputFormatters: !_useEmail ? [PhoneNumberFormatter()] : null,
                           s: s,
                         ),
+                      ),
+                      AnimatedSize(
+                        duration: const Duration(milliseconds: 300),
+                        curve: Curves.easeInOut,
+                        child: (_savedAccounts.isNotEmpty && _showSavedAccounts)
+                            ? SavedAccountsDropdown(
+      savedAccounts: _savedAccounts,
+      s: s,
+      onSelectAccount: (acc) {
+        setState(() {
+          _useEmail = acc['email']!.contains('@');
+          _inputController.text = acc['email']!;
+          _showSavedAccounts = false;
+        });
+        _passwordFocusNode.requestFocus();
+      },
+      onRemoveAccount: (email) async {
+        await AuthStorage.removeSavedAccount(email);
+        _loadSavedAccounts();
+      },
+    )
+                            : const SizedBox.shrink(),
                       ),
                       SizedBox(height: 16 * s),
 
                       // ── Password field
-                      _buildField(
+                      AuthTextField(shakeAnimation: _shakeController, capsLockOn: _capsLockOn, obscurePassword: _obscurePassword, onToggleObscure: () => setState(() => _obscurePassword = !_obscurePassword),
+                        key: const ValueKey('password_field_mobile'),
                         label: 'Mật khẩu',
                         hint: '123abc',
                         controller: _passwordController,
+                        focusNode: _passwordFocusNode,
                         isPassword: true,
+                        textInputAction: TextInputAction.done,
+                        onEditingComplete: () => _handleLogin(),
                         s: s,
                       ),
-                      SizedBox(height: 28 * s),
+                      SizedBox(height: 8 * s),
+                      GestureDetector(
+                        onTap: () => setState(() => _rememberMe = !_rememberMe),
+                        child: Row(
+                          children: [
+                            Theme(
+                              data: Theme.of(context).copyWith(
+                                unselectedWidgetColor: Colors.white54,
+                              ),
+                              child: Checkbox(
+                                value: _rememberMe,
+                                onChanged: (val) {
+                                  setState(() {
+                                    _rememberMe = val ?? true;
+                                  });
+                                },
+                                activeColor: const Color(0xFFD4AF7A),
+                                checkColor: Colors.black,
+                              ),
+                            ),
+                            Text(
+                              'Ghi nhớ đăng nhập của tôi',
+                              style: TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 14 * s,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(height: 16 * s),
 
                       // ── Tiếp tục button
-                      _buildContinueButton(s),
+                      AuthContinueButton(isLoading: _isLoading, isSuccess: _isSuccess, isError: _isError, onLogin: _handleLogin, s: s),
                       SizedBox(height: 24 * s),
 
                       // ── Divider "Đăng nhập bằng"
@@ -858,14 +1086,14 @@ class _SignInScreenState extends State<SignInScreen>
                         height: 70 * s,
                         child: Row(
                           children: [
-                            _buildSocialBtn(
+                            SocialLoginButton(isLoading: _isLoading,
                               label: 'Tiếp tục với Google',
                               iconAsset: 'assets/icons/gg_logo.png',
                               s: s,
                               onTap: _handleGoogleLogin,
                             ),
                             SizedBox(width: 10 * s),
-                            _buildSocialBtn(
+                            SocialLoginButton(isLoading: _isLoading,
                               label: 'Tiếp tục với Discord',
                               iconAsset: 'assets/icons/dc_logo.png',
                               s: s,
@@ -1061,186 +1289,4 @@ class _SignInScreenState extends State<SignInScreen>
     );
   }
 
-  // ── Continue button with hover-like press effect ──
-  Widget _buildContinueButton(double s) {
-    return GestureDetector(
-      onTap: _isLoading ? null : _handleLogin,
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 200),
-        height: 50 * s,
-        decoration: BoxDecoration(
-          color: Colors.black.withOpacity(0.5),
-          borderRadius: BorderRadius.circular(40),
-          border: Border.all(
-            color: Colors.white.withOpacity(0.15),
-            width: 1,
-          ),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withOpacity(0.3),
-              blurRadius: 12,
-              offset: const Offset(0, 4),
-            ),
-          ],
-        ),
-        alignment: Alignment.center,
-        child: _isLoading
-          ? const SizedBox(width: 24, height: 24, child: CircularProgressIndicator(color: Colors.white, strokeWidth: 2))
-          : Text(
-          'Tiếp tục',
-          style: TextStyle(
-            fontFamily: 'Montserrat',
-            fontWeight: FontWeight.w500,
-            fontSize: 24 * s,
-            color: Colors.white.withOpacity(0.9),
-            letterSpacing: 0.5,
-          ),
-        ),
-      ),
-    );
-  }
-
-  // ── Input field widget ──
-  Widget _buildField({
-    Key? key,
-    required String label,
-    required String hint,
-    required TextEditingController controller,
-    bool isPassword = false,
-    TextInputType keyboardType = TextInputType.text,
-    required double s,
-  }) {
-    return Column(
-      key: key,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        // Label
-        Text(
-          label,
-          style: TextStyle(
-            fontFamily: 'Montserrat',
-            fontWeight: FontWeight.w400,
-            fontSize: 16 * s,
-            color: Colors.white,
-          ),
-        ),
-        SizedBox(height: 6 * s),
-        // Input box
-        Container(
-          height: 50 * s,
-          decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.18),
-            borderRadius: BorderRadius.circular(40),
-            border: Border.all(
-              color: Colors.white.withOpacity(0.25),
-              width: 1,
-            ),
-          ),
-          child: TextField(
-            controller: controller,
-            obscureText: isPassword && _obscurePassword,
-            keyboardType: keyboardType,
-            textAlignVertical: TextAlignVertical.center,
-            style: TextStyle(
-              fontFamily: 'Montserrat',
-              fontSize: 18 * s,
-              color: Colors.white,
-            ),
-            decoration: InputDecoration(
-              hintText: hint,
-              hintStyle: TextStyle(
-                fontFamily: 'Montserrat',
-                fontSize: 18 * s,
-                color: Colors.white.withOpacity(0.5),
-              ),
-              contentPadding: EdgeInsets.only(
-                left: 20 * s,
-                right: 20 * s,
-                top: 12 * s,
-                bottom: 16 * s,
-              ),
-              border: InputBorder.none,
-              suffixIcon: isPassword
-                  ? Padding(
-                      padding: EdgeInsets.only(right: 8 * s),
-                      child: IconButton(
-                        icon: AnimatedSwitcher(
-                          duration: const Duration(milliseconds: 200),
-                          transitionBuilder: (child, animation) {
-                            return ScaleTransition(
-                              scale: animation,
-                              child: child,
-                            );
-                          },
-                          child: Icon(
-                            _obscurePassword
-                                ? Icons.visibility_off
-                                : Icons.visibility,
-                            key: ValueKey<bool>(_obscurePassword),
-                            color: Colors.white.withOpacity(0.6),
-                            size: 22 * s,
-                          ),
-                        ),
-                        onPressed: () => setState(
-                          () => _obscurePassword = !_obscurePassword,
-                        ),
-                      ),
-                    )
-                  : null,
-            ),
-          ),
-        ),
-      ],
-    );
-  }
-
-  // ── Social button widget ──
-  Widget _buildSocialBtn({
-    required String label,
-    required double s,
-    String? iconAsset,
-    IconData? icon,
-    VoidCallback? onTap,
-  }) {
-    return Expanded(
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
-          onTap: _isLoading ? null : onTap,
-          borderRadius: BorderRadius.circular(20),
-          splashColor: Colors.white.withOpacity(0.1),
-          highlightColor: Colors.white.withOpacity(0.05),
-          child: Container(
-            decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.15),
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(
-                color: Colors.white.withOpacity(0.2),
-                width: 1,
-              ),
-            ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                if (iconAsset != null)
-                  Image.asset(iconAsset, width: 26 * s, height: 26 * s)
-                else
-                  Icon(icon ?? Icons.login_rounded, size: 26 * s, color: Colors.white),
-                SizedBox(height: 4 * s),
-                Text(
-                  label,
-                  style: TextStyle(
-                    fontFamily: 'Montserrat',
-                    fontWeight: FontWeight.w300,
-                    fontSize: 13 * s,
-                    color: Colors.white,
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
-      ),
-    );
-  }
 }
