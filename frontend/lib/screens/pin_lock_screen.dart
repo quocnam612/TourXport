@@ -1,7 +1,12 @@
 import 'dart:ui';
+import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:local_auth/local_auth.dart';
 import '../utils/auth_storage.dart';
 import '../utils/auth_feedback.dart';
+import '../widgets/pin_numpad.dart';
+import 'landing_page.dart';
 
 enum PinMode { setup, verify }
 
@@ -14,23 +19,89 @@ class PinLockScreen extends StatefulWidget {
   State<PinLockScreen> createState() => _PinLockScreenState();
 }
 
-class _PinLockScreenState extends State<PinLockScreen> {
+class _PinLockScreenState extends State<PinLockScreen> with SingleTickerProviderStateMixin {
   String _enteredPin = '';
   String? _setupFirstPin;
   String? _expectedPin;
   bool _isLoading = true;
+  String? _userName;
+  
+  // Biometrics
+  final LocalAuthentication auth = LocalAuthentication();
+  bool _canCheckBiometrics = false;
+
+  // Shake animation
+  late AnimationController _shakeController;
+  late Animation<double> _shakeAnimation;
 
   @override
   void initState() {
     super.initState();
+    _shakeController = AnimationController(vsync: this, duration: const Duration(milliseconds: 400));
+    _shakeAnimation = Tween<double>(begin: 0, end: 24)
+        .chain(CurveTween(curve: Curves.elasticIn))
+        .animate(_shakeController)
+      ..addStatusListener((status) {
+        if (status == AnimationStatus.completed) {
+          _shakeController.reset();
+        }
+      });
+      
+    _checkBiometrics();
     _loadExpectedPin();
+    _loadUserName();
+  }
+
+  Future<void> _loadUserName() async {
+    final name = await AuthStorage.getUserName();
+    if (mounted) {
+      setState(() {
+        _userName = name;
+      });
+    }
+  }
+
+  @override
+  void dispose() {
+    _shakeController.dispose();
+    super.dispose();
+  }
+
+  Future<void> _checkBiometrics() async {
+    if (widget.mode == PinMode.verify) {
+      bool canCheck = await auth.canCheckBiometrics;
+      bool isSupported = await auth.isDeviceSupported();
+      if (mounted) {
+        setState(() {
+          _canCheckBiometrics = canCheck || isSupported;
+        });
+      }
+      
+      if (_canCheckBiometrics) {
+        _authenticateBiometrics();
+      }
+    }
+  }
+
+  Future<void> _authenticateBiometrics() async {
+    try {
+      bool authenticated = await auth.authenticate(
+        localizedReason: 'Xác thực để truy cập ứng dụng',
+        persistAcrossBackgrounding: true,
+        biometricOnly: false,
+      );
+      if (authenticated && mounted) {
+        Navigator.pop(context, true); // Success
+      }
+    } catch (e) {
+      debugPrint('Lỗi xác thực sinh trắc học: $e');
+    }
   }
 
   Future<void> _loadExpectedPin() async {
     if (widget.mode == PinMode.verify) {
       final pin = await AuthStorage.getAppPin();
       if (pin == null || pin.isEmpty) {
-        // Should not happen, but if it does, just dismiss
         if (mounted) Navigator.pop(context, true);
         return;
       }
@@ -61,14 +132,20 @@ class _PinLockScreenState extends State<PinLockScreen> {
     }
   }
 
+  void _triggerError() {
+    HapticFeedback.vibrate();
+    _shakeController.forward();
+    setState(() {
+      _enteredPin = '';
+    });
+  }
+
   void _processPin() async {
     if (widget.mode == PinMode.verify) {
       if (_enteredPin == _expectedPin) {
         Navigator.pop(context, true); // Success
       } else {
-        setState(() {
-          _enteredPin = '';
-        });
+        _triggerError();
         showAuthErrorToast(context, 'Mã PIN không đúng, vui lòng thử lại.');
       }
     } else if (widget.mode == PinMode.setup) {
@@ -79,21 +156,55 @@ class _PinLockScreenState extends State<PinLockScreen> {
         });
       } else {
         if (_enteredPin == _setupFirstPin) {
-          // Save and pop
           await AuthStorage.setAppPin(_enteredPin);
           if (mounted) {
             showAuthSuccessToast(context, 'Thiết lập mã PIN thành công');
             Navigator.pop(context, true);
           }
         } else {
+          _triggerError();
           setState(() {
             _setupFirstPin = null;
-            _enteredPin = '';
           });
           showAuthErrorToast(context, 'Mã PIN xác nhận không khớp. Vui lòng nhập lại từ đầu.');
         }
       }
     }
+  }
+
+  void _showForgotPinDialog() {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: const Color(0xFF1E1E1E),
+        title: const Text('Quên mã PIN?', style: TextStyle(color: Colors.white, fontFamily: 'Montserrat')),
+        content: const Text(
+          'Để thiết lập lại mã PIN, bạn cần đăng xuất và đăng nhập lại. Ứng dụng sẽ xóa mã PIN cũ.',
+          style: TextStyle(color: Colors.white70, fontFamily: 'Montserrat'),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Hủy', style: TextStyle(color: Colors.white54)),
+          ),
+          TextButton(
+            onPressed: () async {
+              Navigator.pop(context);
+              await AuthStorage.removeAppPin(); // Xóa mã PIN hiện tại
+              await AuthStorage.clearSession(); // Đăng xuất
+              if (mounted) {
+                Navigator.pushAndRemoveUntil(
+                  context,
+                  MaterialPageRoute(builder: (_) => const LandingPage()),
+                  (route) => false,
+                );
+              }
+            },
+            child: const Text('Đồng ý', style: TextStyle(color: Color(0xFFD4AF7A))),
+          ),
+        ],
+      ),
+    );
   }
 
   @override
@@ -116,18 +227,17 @@ class _PinLockScreenState extends State<PinLockScreen> {
         backgroundColor: Colors.black,
         body: Stack(
           children: [
-            // Background
             Positioned.fill(
               child: Image.asset(
-                'assets/images/background_image.png', // Replace with your standard background
+                'assets/images/background_image.png',
                 fit: BoxFit.cover,
                 errorBuilder: (_, __, ___) => Container(color: const Color(0xFF1A1A2E)),
               ),
             ),
             Positioned.fill(
               child: BackdropFilter(
-                filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-                child: Container(color: Colors.black.withOpacity(0.5)),
+                filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
+                child: Container(color: Colors.black.withOpacity(0.6)),
               ),
             ),
             SafeArea(
@@ -143,8 +253,27 @@ class _PinLockScreenState extends State<PinLockScreen> {
                       ),
                     ),
                   const Spacer(),
-                  Icon(Icons.lock_outline, size: 48, color: Colors.white.withOpacity(0.9)),
-                  const SizedBox(height: 24),
+                  if (_userName != null) ...[
+                    const CircleAvatar(
+                      radius: 32,
+                      backgroundColor: Color(0xFFD4AF7A),
+                      child: Icon(Icons.person, size: 36, color: Color(0xFF1B2321)),
+                    ),
+                    const SizedBox(height: 16),
+                    Text(
+                      'Xin chào, $_userName',
+                      style: const TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 18,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.white70,
+                      ),
+                    ),
+                    const SizedBox(height: 24),
+                  ] else ...[
+                    Icon(Icons.lock_outline, size: 48, color: Colors.white.withOpacity(0.9)),
+                    const SizedBox(height: 24),
+                  ],
                   Text(
                     title,
                     style: const TextStyle(
@@ -155,88 +284,66 @@ class _PinLockScreenState extends State<PinLockScreen> {
                     ),
                   ),
                   const SizedBox(height: 32),
-                  // Dots
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: List.generate(4, (index) {
-                      bool isFilled = index < _enteredPin.length;
-                      return Container(
-                        margin: const EdgeInsets.symmetric(horizontal: 12),
-                        width: 16,
-                        height: 16,
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: isFilled ? Colors.white : Colors.transparent,
-                          border: Border.all(color: Colors.white, width: 2),
-                        ),
+                  // Dots with Shake Animation
+                  AnimatedBuilder(
+                    animation: _shakeAnimation,
+                    builder: (context, child) {
+                      final offset = sin(_shakeAnimation.value * pi) * 10;
+                      return Transform.translate(
+                        offset: Offset(offset, 0),
+                        child: child,
                       );
-                    }),
-                  ),
-                  const Spacer(),
-                  // Numpad
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 40),
-                    child: Column(
-                      children: [
-                        _buildNumRow(['1', '2', '3']),
-                        const SizedBox(height: 24),
-                        _buildNumRow(['4', '5', '6']),
-                        const SizedBox(height: 24),
-                        _buildNumRow(['7', '8', '9']),
-                        const SizedBox(height: 24),
-                        _buildNumRow(['', '0', 'delete']),
-                      ],
+                    },
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: List.generate(4, (index) {
+                        bool isFilled = index < _enteredPin.length;
+                        bool isError = _shakeController.isAnimating;
+                        Color dotColor = isError ? Colors.redAccent : Colors.white;
+                        
+                        return Container(
+                          margin: const EdgeInsets.symmetric(horizontal: 12),
+                          width: 16,
+                          height: 16,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: isFilled ? dotColor : Colors.transparent,
+                            border: Border.all(color: dotColor, width: 2),
+                          ),
+                        );
+                      }),
                     ),
                   ),
                   const Spacer(),
+                  // Numpad Widget
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 40),
+                    child: PinNumpad(
+                      onDigitPressed: _onDigitPressed,
+                      onDeletePressed: _onDeletePressed,
+                      onBiometricsPressed: _authenticateBiometrics,
+                      showBiometrics: _canCheckBiometrics,
+                    ),
+                  ),
+                  const Spacer(),
+                  if (widget.mode == PinMode.verify)
+                    TextButton(
+                      onPressed: _showForgotPinDialog,
+                      child: const Text(
+                        'Quên mã PIN?',
+                        style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          color: Colors.white70,
+                          decoration: TextDecoration.underline,
+                        ),
+                      ),
+                    ),
+                  if (widget.mode == PinMode.setup) const SizedBox(height: 48),
                 ],
               ),
             ),
           ],
         ),
-      ),
-    );
-  }
-
-  Widget _buildNumRow(List<String> items) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: items.map((item) {
-        if (item.isEmpty) return const SizedBox(width: 70, height: 70);
-        if (item == 'delete') {
-          return _buildButton(
-            child: const Icon(Icons.backspace_outlined, color: Colors.white, size: 28),
-            onTap: _onDeletePressed,
-          );
-        }
-        return _buildButton(
-          child: Text(
-            item,
-            style: const TextStyle(
-              fontFamily: 'Montserrat',
-              fontSize: 28,
-              fontWeight: FontWeight.w400,
-              color: Colors.white,
-            ),
-          ),
-          onTap: () => _onDigitPressed(item),
-        );
-      }).toList(),
-    );
-  }
-
-  Widget _buildButton({required Widget child, required VoidCallback onTap}) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        width: 70,
-        height: 70,
-        decoration: BoxDecoration(
-          shape: BoxShape.circle,
-          color: Colors.white.withOpacity(0.1),
-        ),
-        alignment: Alignment.center,
-        child: child,
       ),
     );
   }

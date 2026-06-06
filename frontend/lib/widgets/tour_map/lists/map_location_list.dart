@@ -20,6 +20,7 @@ class MapLocationList extends StatelessWidget {
   final VoidCallback onNextDay;
   final Function(int?) onSegmentFocused;
   final Function(List<LatLng>) onFitBounds;
+  final List<GlobalKey> waypointKeys;
 
   const MapLocationList({
     super.key,
@@ -33,6 +34,7 @@ class MapLocationList extends StatelessWidget {
     required this.onNextDay,
     required this.onSegmentFocused,
     required this.onFitBounds,
+    required this.waypointKeys,
     this.isDesktop = false,
   });
 
@@ -85,10 +87,9 @@ class MapLocationList extends StatelessWidget {
             ),
           ),
         Expanded(
-          child: ListView.builder(
+          child: ListView(
             padding: EdgeInsets.zero,
-            itemCount: waypointItems.length + 1,
-            itemBuilder: (context, i) {
+            children: List.generate(waypointItems.length + 1, (i) {
               if (i == waypointItems.length) {
                 if (!hasNextDay) return const SizedBox();
                 return Padding(
@@ -109,6 +110,7 @@ class MapLocationList extends StatelessWidget {
 
               final item = waypointItems[i];
               final wpIndex = item.waypointIndex;
+              final itemKey = i < waypointKeys.length ? waypointKeys[i] : null;
               
               bool isHighlighted = true;
               bool isSelected = false;
@@ -135,6 +137,7 @@ class MapLocationList extends StatelessWidget {
               
               if (item.activity == null) {
                 return GestureDetector(
+                  key: itemKey,
                   onTap: onTap,
                   child: Opacity(
                     opacity: isHighlighted ? 1.0 : 0.4,
@@ -185,8 +188,11 @@ class MapLocationList extends StatelessWidget {
                 );
               }
               
-              return TourActivityCard(act: item.activity!, onTap: onTap, isHighlighted: isHighlighted, isSelected: isSelected, markerColor: markerColor, isDesktop: isDesktop);
-            }
+              return Container(
+                key: itemKey,
+                child: TourActivityCard(act: item.activity!, onTap: onTap, isHighlighted: isHighlighted, isSelected: isSelected, markerColor: markerColor, isDesktop: isDesktop),
+              );
+            }),
           ),
         ),
       ],

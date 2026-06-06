@@ -332,21 +332,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           _gpsLon = position.longitude;
           _hasGps = true;
         });
-      } else {
-        final status = await Permission.locationWhenInUse.request();
-        if (status == PermissionStatus.granted) {
-          final position = await Geolocator.getCurrentPosition(
-            desiredAccuracy: LocationAccuracy.low,
-            timeLimit: const Duration(seconds: 3),
-          );
-          if (!mounted) return;
-          setState(() {
-            _gpsLat = position.latitude;
-            _gpsLon = position.longitude;
-            _hasGps = true;
-          });
-        }
       }
+      // Không tự động request quyền lúc khởi động nữa
     } catch (_) {}
   }
 

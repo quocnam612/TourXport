@@ -75,16 +75,22 @@ class AuthStorage {
 
   static Future<void> setAppPin(String pin) async {
     final prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_pinKey, pin);
+    final userName = await getUserName();
+    if (userName == null) return;
+    await prefs.setString('${_pinKey}_$userName', pin);
   }
 
   static Future<String?> getAppPin() async {
     final prefs = await SharedPreferences.getInstance();
-    return prefs.getString(_pinKey);
+    final userName = await getUserName();
+    if (userName == null) return null;
+    return prefs.getString('${_pinKey}_$userName');
   }
 
   static Future<void> removeAppPin() async {
     final prefs = await SharedPreferences.getInstance();
-    await prefs.remove(_pinKey);
+    final userName = await getUserName();
+    if (userName == null) return;
+    await prefs.remove('${_pinKey}_$userName');
   }
 }

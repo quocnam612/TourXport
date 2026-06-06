@@ -9,12 +9,14 @@ import '../models/destination.dart';
 import '../utils/routing_service.dart';
 import '../utils/navigation_helper.dart';
 import '../widgets/map_warning_banner.dart';
+import '../services/map_location_service.dart';
 import '../widgets/route_metrics_card.dart';
 import '../widgets/location_explanation_dialog.dart';
 import '../widgets/manual_location_dialog.dart';
 import '../widgets/tour_map_widget.dart';
 import '../widgets/map_desktop_view.dart';
 import '../widgets/map_mobile_view.dart';
+import '../widgets/tour_map/states/map_loading_state.dart';
 
 /// Dịch vụ xử lý Geocoding (Tách riêng để đảm bảo SOLID - Single Responsibility Principle)
 class GeocodingService {
@@ -105,7 +107,7 @@ class MapScreen extends StatefulWidget {
   State<MapScreen> createState() => _MapScreenState();
 }
 
-class _MapScreenState extends State<MapScreen> with TickerProviderStateMixin {
+class _MapScreenState extends State<MapScreen> with TickerProviderStateMixin, WidgetsBindingObserver {
   static const LatLng _fallbackStart = LatLng(21.0285, 105.8542);
   static const Duration _throttleDuration = Duration(seconds: 5);
 
@@ -139,15 +141,24 @@ class _MapScreenState extends State<MapScreen> with TickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    _fetchLocationAndRoute();
+    WidgetsBinding.instance.addObserver(this);
+    _checkLocationSilentlyAndRoute();
   }
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
     _positionStreamSubscription?.cancel();
     _movementSimulationTimer?.cancel();
     _cameraAnimationController?.dispose();
     super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed && _userLocation == null && _manualStartLocationName == null) {
+      _checkLocationSilentlyAndRoute();
+    }
   }
 
   void _startTracking() {
@@ -360,55 +371,85 @@ class _MapScreenState extends State<MapScreen> with TickerProviderStateMixin {
     }
   }
 
-  Future<bool> _showLocationExplanationDialog() async {
-    if (!mounted) return false;
-    return await showDialog<bool>(
-      context: context,
-      barrierDismissible: false,
-      builder: (context) => const LocationExplanationDialog(),
-    ) ?? false;
-  }
-
-  Future<void> _fetchLocationAndRoute() async {
+  Future<void> _checkLocationSilentlyAndRoute() async {
     LatLng startLocation = _fallbackStart;
     bool hasGPS = false;
 
     try {
       bool serviceEnabled = await Geolocator.isLocationServiceEnabled();
-
-      if (!serviceEnabled) {
-        final bool userAgreed = await _showLocationExplanationDialog();
-        if (userAgreed) {
-          await Geolocator.openLocationSettings();
-          serviceEnabled = await Geolocator.isLocationServiceEnabled();
-        }
-      }
-
       if (serviceEnabled) {
         LocationPermission permission = await Geolocator.checkPermission();
-        if (permission == LocationPermission.denied) {
-          final bool userAgreed = await _showLocationExplanationDialog();
-          if (userAgreed) {
-            permission = await Geolocator.requestPermission();
-          }
-        } else if (permission == LocationPermission.deniedForever) {
-          _showWarning("Quyền định vị bị chặn. Hãy bật lại trong Cài đặt ứng dụng.");
-          await Geolocator.openAppSettings();
-        }
-
         if (permission == LocationPermission.always || permission == LocationPermission.whileInUse) {
-          Position position = await Geolocator.getCurrentPosition(
-            desiredAccuracy: LocationAccuracy.high,
-            timeLimit: const Duration(seconds: 5),
-          );
-          startLocation = LatLng(position.latitude, position.longitude);
+          final pos = await MapLocationService.getCurrentPosition();
+          if (pos != null) {
+            startLocation = LatLng(pos.latitude, pos.longitude);
+            hasGPS = true;
+          }
+        }
+      }
+    } catch (e) {
+      debugPrint("Lỗi kiểm tra GPS: $e");
+    }
+
+    _calculateAndSetRoute(startLocation, hasGPS);
+  }
+
+  Future<void> _requestLocationAndRoute() async {
+    LatLng startLocation = _fallbackStart;
+    bool hasGPS = false;
+
+    try {
+      bool hasPermission = await MapLocationService.handleLocationPermission(
+        onEnableService: () async {
+          if (!mounted) return false;
+          return await showDialog<bool>(
+            context: context,
+            builder: (context) => const LocationExplanationDialog(
+              title: 'Bật GPS',
+              content: 'Vui lòng bật dịch vụ định vị (GPS) để dẫn đường từ vị trí của bạn.',
+              confirmText: 'Mở Cài đặt',
+            ),
+          ) ?? false;
+        },
+        onPermissionDenied: () async {
+          if (!mounted) return false;
+          return await showDialog<bool>(
+            context: context,
+            builder: (context) => const LocationExplanationDialog(
+              title: 'Cấp quyền vị trí',
+              content: 'Ứng dụng cần quyền truy cập vị trí để dẫn đường.',
+              confirmText: 'Cho phép',
+            ),
+          ) ?? false;
+        },
+        onPermissionPermanentlyDenied: () async {
+          if (!mounted) return false;
+          return await showDialog<bool>(
+            context: context,
+            builder: (context) => const LocationExplanationDialog(
+              title: 'Quyền bị từ chối',
+              content: 'Vui lòng mở Cài đặt ứng dụng và cấp quyền để sử dụng bản đồ.',
+              confirmText: 'Mở Cài đặt App',
+            ),
+          ) ?? false;
+        },
+      );
+
+      if (hasPermission) {
+        final pos = await MapLocationService.getCurrentPosition();
+        if (pos != null) {
+          startLocation = LatLng(pos.latitude, pos.longitude);
           hasGPS = true;
         }
       }
     } catch (e) {
-      debugPrint("Không lấy được vị trí GPS: $e");
+      debugPrint("Lỗi GPS: $e");
     }
 
+    _calculateAndSetRoute(startLocation, hasGPS);
+  }
+
+  Future<void> _calculateAndSetRoute(LatLng startLocation, bool hasGPS) async {
     if (!mounted) return;
     
     final endLocation = LatLng(widget.destination.latitude, widget.destination.longitude);
@@ -549,7 +590,7 @@ class _MapScreenState extends State<MapScreen> with TickerProviderStateMixin {
             _isLoading = true;
             _showLocationWarningBanner = false;
           });
-          _fetchLocationAndRoute();
+          _requestLocationAndRoute();
         },
       ),
       routeMetricsFloatingCard: RouteMetricsCard(
@@ -566,7 +607,7 @@ class _MapScreenState extends State<MapScreen> with TickerProviderStateMixin {
       backgroundColor: const Color(0xFF121212),
       appBar: isDesktop ? null : _buildAppBar(),
       body: _isLoading 
-          ? const Center(child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(Color(0xFFD4AF7A))))
+          ? const MapLoadingState()
           : _buildBody(isDesktop, destLocation, startTitle, startSubtitle, mapWidget),
     );
   }

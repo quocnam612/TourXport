@@ -27,7 +27,7 @@ class TourRouteMapScreen extends StatefulWidget {
   State<TourRouteMapScreen> createState() => _TourRouteMapScreenState();
 }
 
-class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProviderStateMixin {
+class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProviderStateMixin, WidgetsBindingObserver {
   int _selectedDayIndex = -1; // -1: Tất cả các ngày, 0: Ngày 1, 1: Ngày 2...
   int? _focusedSegmentIndex;
 
@@ -36,11 +36,13 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
   List<String> _locationNames = [];
   List<LatLng> _currentWaypoints = [];
   List<WaypointItem> _waypointItems = [];
+  List<GlobalKey> _waypointKeys = [];
   LatLng? _userLocation;
   bool _isLoading = true;
   bool _hasError = false;
   double _routeDistanceKm = 0.0;
   double _routeDurationMin = 0.0;
+  double _sheetExtent = 0.35;
 
   final MapController _mapController = MapController();
   StreamSubscription<Position>? _positionStreamSubscription;
@@ -55,34 +57,86 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addObserver(this);
     _initMapData();
   }
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
     _positionStreamSubscription?.cancel();
     _cameraAnimationController?.dispose();
     super.dispose();
   }
 
-  Future<void> _initMapData() async {
-    bool hasPermission = await MapLocationService.handleLocationPermission(() async {
-      if (!mounted) return false;
-      return await showDialog<bool>(
-        context: context,
-        barrierDismissible: false,
-        builder: (context) => const LocationExplanationDialog(),
-      ) ?? false;
-    });
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed && _userLocation == null) {
+      _checkLocationSilently();
+    }
+  }
 
-    if (hasPermission) {
+  Future<void> _checkLocationSilently() async {
+    bool serviceEnabled = await Geolocator.isLocationServiceEnabled();
+    if (!serviceEnabled) return;
+    LocationPermission permission = await Geolocator.checkPermission();
+    if (permission == LocationPermission.always || permission == LocationPermission.whileInUse) {
       final pos = await MapLocationService.getCurrentPosition();
-      if (pos != null) {
-        _userLocation = LatLng(pos.latitude, pos.longitude);
+      if (pos != null && mounted) {
+        setState(() => _userLocation = LatLng(pos.latitude, pos.longitude));
         _startTracking();
       }
     }
+  }
 
+  Future<void> _requestLocationAndTracking() async {
+    bool hasPermission = await MapLocationService.handleLocationPermission(
+      onEnableService: () async {
+        if (!mounted) return false;
+        return await showDialog<bool>(
+          context: context,
+          builder: (context) => const LocationExplanationDialog(
+            title: 'Bật GPS',
+            content: 'TourXport cần bạn bật dịch vụ định vị (GPS) trên thiết bị để xác định vị trí hiện tại.',
+            confirmText: 'Mở Cài đặt',
+          ),
+        ) ?? false;
+      },
+      onPermissionDenied: () async {
+        if (!mounted) return false;
+        return await showDialog<bool>(
+          context: context,
+          builder: (context) => const LocationExplanationDialog(
+            title: 'Cấp quyền vị trí',
+            content: 'TourXport cần quyền truy cập vị trí của bạn để tính toán tuyến đường đi và điều hướng trên bản đồ.',
+            confirmText: 'Cho phép',
+          ),
+        ) ?? false;
+      },
+      onPermissionPermanentlyDenied: () async {
+        if (!mounted) return false;
+        return await showDialog<bool>(
+          context: context,
+          builder: (context) => const LocationExplanationDialog(
+            title: 'Quyền bị từ chối',
+            content: 'Bạn đã từ chối quyền vị trí. Vui lòng mở Cài đặt ứng dụng và cấp lại quyền để sử dụng tính năng bản đồ.',
+            confirmText: 'Mở Cài đặt App',
+          ),
+        ) ?? false;
+      },
+    );
+
+    if (hasPermission) {
+      final pos = await MapLocationService.getCurrentPosition();
+      if (pos != null && mounted) {
+        setState(() => _userLocation = LatLng(pos.latitude, pos.longitude));
+        _startTracking();
+      }
+    }
+  }
+
+  Future<void> _initMapData() async {
+    await _checkLocationSilently();
     _calculateRoute();
   }
 
@@ -133,6 +187,7 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
     _locationNames.clear();
     _currentWaypoints.clear();
     _waypointItems.clear();
+    _waypointKeys.clear();
     final itinerary = widget.tourData.data.itinerary;
     
     if (_selectedDayIndex == -1) {
@@ -178,6 +233,7 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
     _locationNames.add(name);
     if (act != null) _currentStops.add(act);
     _waypointItems.add(WaypointItem(location: loc, title: name, activity: act, waypointIndex: index));
+    _waypointKeys.add(GlobalKey());
   }
 
   void _processActivityWaypoint(AiActivity act) {
@@ -185,6 +241,7 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
       _addWaypoint(LatLng(act.latitude!, act.longitude!), act.placeName ?? 'Địa điểm', act, _currentWaypoints.length);
     } else {
       _waypointItems.add(WaypointItem(location: null, title: act.placeName ?? 'Địa điểm', activity: act, waypointIndex: null));
+      _waypointKeys.add(GlobalKey());
     }
   }
 
@@ -340,16 +397,37 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
     final isAllDaysMode = _selectedDayIndex == -1;
     final hasUserLoc = _userLocation != null && (isAllDaysMode || _selectedDayIndex == 0);
 
+    final double maxFabBottom = MediaQuery.of(context).size.height - MediaQuery.of(context).padding.top - 150;
+    final double currentFabBottom = (MediaQuery.of(context).size.height * _sheetExtent) + 16;
+    final double fabBottom = isDesktop 
+        ? 24.0 
+        : (!isDesktop && (_isLoading || _hasError || _locationNames.isNotEmpty) 
+            ? (currentFabBottom > maxFabBottom ? maxFabBottom : currentFabBottom) 
+            : 24.0);
+
     final mapWidget = Stack(
-      children: [
-        MapLayerView(
-          mapController: _mapController,
+        children: [
+          MapLayerView(
+            mapController: _mapController,
           userLocation: _userLocation,
           routeSegments: _routeSegments,
           currentWaypoints: _currentWaypoints,
           focusedSegmentIndex: _focusedSegmentIndex,
           isAllDaysMode: isAllDaysMode,
           hasUserLoc: hasUserLoc,
+          onMarkerTap: (index) {
+            setState(() => _focusedSegmentIndex = index);
+            if (index < _waypointKeys.length) {
+              final key = _waypointKeys[index];
+              if (key.currentContext != null) {
+                Scrollable.ensureVisible(
+                  key.currentContext!,
+                  duration: const Duration(milliseconds: 300),
+                  curve: Curves.easeInOut,
+                );
+              }
+            }
+          },
         ),
         if (_isLoading)
           Container(color: Colors.black.withOpacity(0.2)),
@@ -375,26 +453,27 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
           ),
         Positioned(
           right: 16,
-          bottom: MediaQuery.of(context).size.height * 0.38, 
+          bottom: fabBottom,
           child: Column(
             children: [
-              if (_userLocation != null || _focusedSegmentIndex != null)
-                FloatingActionButton.small(
-                  heroTag: 'zoom_origin',
-                  backgroundColor: const Color(0xFF1E1E1E),
-                  tooltip: _focusedSegmentIndex != null ? 'Xem điểm đi' : 'Vị trí của bạn',
-                  child: Icon(
-                    _focusedSegmentIndex != null ? Icons.trip_origin : Icons.my_location, 
-                    color: Colors.blueAccent,
-                  ),
-                  onPressed: () {
-                    if (_focusedSegmentIndex != null && _focusedSegmentIndex! < _currentWaypoints.length) {
-                      _animatedMapMove(_currentWaypoints[_focusedSegmentIndex!], 16.0);
-                    } else if (_userLocation != null) {
-                      _animatedMapMove(_userLocation!, 15.0);
-                    }
-                  },
+              FloatingActionButton.small(
+                heroTag: 'zoom_origin',
+                backgroundColor: const Color(0xFF1E1E1E),
+                tooltip: _focusedSegmentIndex != null ? 'Xem điểm đi' : 'Vị trí của bạn',
+                child: Icon(
+                  _focusedSegmentIndex != null ? Icons.trip_origin : Icons.my_location, 
+                  color: (_focusedSegmentIndex != null || _userLocation != null) ? Colors.blueAccent : Colors.grey,
                 ),
+                onPressed: () {
+                  if (_focusedSegmentIndex != null && _focusedSegmentIndex! < _currentWaypoints.length) {
+                    _animatedMapMove(_currentWaypoints[_focusedSegmentIndex!], 16.0);
+                  } else if (_userLocation != null) {
+                    _animatedMapMove(_userLocation!, 15.0);
+                  } else {
+                    _requestLocationAndTracking();
+                  }
+                },
+              ),
               if (_focusedSegmentIndex != null && _focusedSegmentIndex! + 1 < _currentWaypoints.length)
                 Padding(
                   padding: const EdgeInsets.only(top: 8.0),
@@ -413,10 +492,17 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
           ),
         ),
         if (!isDesktop && (_isLoading || _hasError || _locationNames.isNotEmpty))
-          DraggableScrollableSheet(
-            initialChildSize: 0.35,
-            minChildSize: 0.18,
-            maxChildSize: 0.85,
+          NotificationListener<DraggableScrollableNotification>(
+            onNotification: (notification) {
+              if (notification.extent != _sheetExtent) {
+                setState(() => _sheetExtent = notification.extent);
+              }
+              return false;
+            },
+            child: DraggableScrollableSheet(
+              initialChildSize: 0.35,
+              minChildSize: 0.18,
+              maxChildSize: 0.85,
             snap: false,
             builder: (context, scrollController) {
               return RepaintBoundary(
@@ -495,6 +581,7 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
                                     currentDayItinerary: (_selectedDayIndex >= 0 && _selectedDayIndex < widget.tourData.data.itinerary.length) ? widget.tourData.data.itinerary[_selectedDayIndex] : null,
                                     hasNextDay: _selectedDayIndex != -1 && _selectedDayIndex < widget.tourData.data.itinerary.length - 1,
                                     isDesktop: isDesktop,
+                                    waypointKeys: _waypointKeys,
                                     onNextDay: () {
                                       setState(() => _selectedDayIndex++);
                                       _calculateRoute();
@@ -511,6 +598,7 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
               );
             },
           ),
+        ),
       ],
     );
 
@@ -592,6 +680,7 @@ class _TourRouteMapScreenState extends State<TourRouteMapScreen> with TickerProv
                           currentDayItinerary: (_selectedDayIndex >= 0 && _selectedDayIndex < widget.tourData.data.itinerary.length) ? widget.tourData.data.itinerary[_selectedDayIndex] : null,
                           hasNextDay: _selectedDayIndex != -1 && _selectedDayIndex < widget.tourData.data.itinerary.length - 1,
                           isDesktop: isDesktop,
+                          waypointKeys: _waypointKeys,
                           onNextDay: () {
                             setState(() => _selectedDayIndex++);
                             _calculateRoute();

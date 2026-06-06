@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import '../theme/app_colors.dart';
@@ -49,6 +50,8 @@ class _LandingPageState extends State<LandingPage>
   String? _storedAuthToken;
   String? _storedUserName;
   bool _isRestoringSession = true;
+
+  Timer? _carouselTimer;
 
   bool get hasSession {
     return !_isRestoringSession &&
@@ -147,6 +150,19 @@ class _LandingPageState extends State<LandingPage>
     // Fire entrance
     _fadeController.forward();
     _restoreSession();
+    _startCarouselTimer();
+  }
+
+  void _startCarouselTimer() {
+    _carouselTimer?.cancel();
+    _carouselTimer = Timer.periodic(const Duration(seconds: 5), (timer) {
+      if (!mounted) {
+        timer.cancel();
+        return;
+      }
+      final nextIdx = (_currentIndex + 1) % sampleDestinations.length;
+      _selectDestination(nextIdx, userInitiated: false);
+    });
   }
 
   Future<void> _restoreSession() async {
@@ -168,6 +184,7 @@ class _LandingPageState extends State<LandingPage>
 
   @override
   void dispose() {
+    _carouselTimer?.cancel();
     _bgFadeController.dispose();
     _fadeController.dispose();
     _shimmerController.dispose();
@@ -175,8 +192,13 @@ class _LandingPageState extends State<LandingPage>
     super.dispose();
   }
 
-  void _selectDestination(int index) {
+  void _selectDestination(int index, {bool userInitiated = true}) {
     if (index == _currentIndex) return;
+    
+    if (userInitiated) {
+      _startCarouselTimer(); // Reset timer if user interacts
+    }
+    
     final nextPath = sampleDestinations[index].imagePath;
     setState(() {
       _previousBgPath = _currentBgPath;
@@ -428,57 +450,65 @@ class _LandingPageState extends State<LandingPage>
               ),
               
               // Navigation links (middle)
-              Row(
-                children: List.generate(categoryList.length, (idx) {
-                  final cat = categoryList[idx];
-                  
-                  bool isThisCatActive = false;
-                  final prov = activeDest.province.toLowerCase();
-                  final name = activeDest.name.toLowerCase();
-                  if (cat == 'VỊNH BIỂN') {
-                    isThisCatActive = prov.contains('quảng ninh') || prov.contains('khánh hòa') || prov.contains('vũng tàu') || prov.contains('kiên giang') || name.contains('vịnh') || name.contains('biển') || name.contains('đảo');
-                  } else if (cat == 'NÚI RỪNG') {
-                    isThisCatActive = prov.contains('lào cai') || prov.contains('quảng bình') || prov.contains('sơn la') || prov.contains('hà giang') || name.contains('núi') || name.contains('động') || name.contains('hang') || name.contains('phong nha');
-                  } else if (cat == 'DI SẢN') {
-                    isThisCatActive = prov.contains('quảng nam') || prov.contains('huế') || prov.contains('hà nội') || prov.contains('ninh bình') || name.contains('cổ') || name.contains('di tích') || name.contains('tự') || name.contains('lăng') || name.contains('chùa');
-                  } else if (cat == 'ĐÔ THỊ') {
-                    isThisCatActive = prov.contains('chí minh') || prov.contains('đà nẵng') || prov.contains('hà nội') || name.contains('tháp') || name.contains('cầu') || name.contains('nhà hát');
-                  }
+              Expanded(
+                child: Center(
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: List.generate(categoryList.length, (idx) {
+                        final cat = categoryList[idx];
+                        
+                        bool isThisCatActive = false;
+                        final prov = activeDest.province.toLowerCase();
+                        final name = activeDest.name.toLowerCase();
+                        if (cat == 'VỊNH BIỂN') {
+                          isThisCatActive = prov.contains('quảng ninh') || prov.contains('khánh hòa') || prov.contains('vũng tàu') || prov.contains('kiên giang') || name.contains('vịnh') || name.contains('biển') || name.contains('đảo');
+                        } else if (cat == 'NÚI RỪNG') {
+                          isThisCatActive = prov.contains('lào cai') || prov.contains('quảng bình') || prov.contains('sơn la') || prov.contains('hà giang') || name.contains('núi') || name.contains('động') || name.contains('hang') || name.contains('phong nha');
+                        } else if (cat == 'DI SẢN') {
+                          isThisCatActive = prov.contains('quảng nam') || prov.contains('huế') || prov.contains('hà nội') || prov.contains('ninh bình') || name.contains('cổ') || name.contains('di tích') || name.contains('tự') || name.contains('lăng') || name.contains('chùa');
+                        } else if (cat == 'ĐÔ THỊ') {
+                          isThisCatActive = prov.contains('chí minh') || prov.contains('đà nẵng') || prov.contains('hà nội') || name.contains('tháp') || name.contains('cầu') || name.contains('nhà hát');
+                        }
 
-                  return WebHoverable(
-                    onTap: () {
-                      final firstIdx = _findFirstIndexForCategory(cat.toLowerCase());
-                      if (firstIdx != -1) {
-                        _selectDestination(firstIdx);
-                      }
-                    },
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Text(
-                            cat,
-                            style: TextStyle(
-                              fontFamily: 'Montserrat',
-                              fontSize: 13,
-                              fontWeight: isThisCatActive ? FontWeight.bold : FontWeight.w500,
-                              color: isThisCatActive ? Colors.white : Colors.white60,
-                              letterSpacing: 1.0,
+                        return WebHoverable(
+                          onTap: () {
+                            final firstIdx = _findFirstIndexForCategory(cat.toLowerCase());
+                            if (firstIdx != -1) {
+                              _selectDestination(firstIdx);
+                            }
+                          },
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Text(
+                                  cat,
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontSize: 13,
+                                    fontWeight: isThisCatActive ? FontWeight.bold : FontWeight.w500,
+                                    color: isThisCatActive ? Colors.white : Colors.white60,
+                                    letterSpacing: 1.0,
+                                  ),
+                                ),
+                                const SizedBox(height: 4),
+                                AnimatedContainer(
+                                  duration: const Duration(milliseconds: 300),
+                                  height: 2.0,
+                                  width: isThisCatActive ? 30 : 0,
+                                  color: const Color(0xFFD4AF7A),
+                                ),
+                              ],
                             ),
                           ),
-                          const SizedBox(height: 4),
-                          AnimatedContainer(
-                            duration: const Duration(milliseconds: 300),
-                            height: 2.0,
-                            width: isThisCatActive ? 30 : 0,
-                            color: const Color(0xFFD4AF7A),
-                          ),
-                        ],
-                      ),
+                        );
+                      }),
                     ),
-                  );
-                }),
+                  ),
+                ),
               ),
 
               // Auth Buttons (right)
