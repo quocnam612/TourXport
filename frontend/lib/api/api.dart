@@ -192,6 +192,25 @@ Future<http.StreamedResponse> apiPutMultipartBytes(
   return request.send();
 }
 
+Future<http.StreamedResponse> apiPostMultipart(
+  String path, {
+  required Map<String, String> fields,
+  required List<http.MultipartFile> files,
+  String? token,
+}) async {
+  final uri = Uri.parse('$apiBaseUrl$path');
+  final request = http.MultipartRequest('POST', uri);
+  
+  if (token != null && token.trim().isNotEmpty) {
+    request.headers['Authorization'] = 'Bearer ${token.trim()}';
+  }
+  
+  request.fields.addAll(fields);
+  request.files.addAll(files);
+  
+  return request.send();
+}
+
 /// Fetch a location document by its sourceLocationId (external provider id).
 /// Returns the first matching document as a Map<String, dynamic> or null.
 

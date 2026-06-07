@@ -1434,11 +1434,25 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
       if (body.isNotEmpty) body,
     ].join('\n\n');
 
+    final images = review['images'];
+    final imageList = <String>[];
+    if (images is List) {
+      for (final img in images) {
+        if (img is Map) {
+          final url = (img['url'] ?? '').toString();
+          if (url.isNotEmpty) {
+            imageList.add(url);
+          }
+        }
+      }
+    }
+
     return _buildReviewCard(
       name: name.isNotEmpty ? name : 'Người dùng',
       rating: rating,
       text: text.isNotEmpty ? text : 'Người dùng chưa để lại nội dung.',
       avatarUrl: avatarUrl,
+      images: imageList,
     );
   }
 
@@ -1447,6 +1461,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     required int rating,
     required String text,
     String avatarUrl = '',
+    List<String> images = const [],
   }) {
     return Container(
       padding: const EdgeInsets.all(16),
@@ -1490,6 +1505,83 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
             fontFamily: 'Montserrat', fontSize: 13,
             color: Colors.white.withOpacity(0.82), height: 1.5,
           )),
+          if (images.isNotEmpty) ...[
+            const SizedBox(height: 12),
+            SizedBox(
+              height: 70,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: images.length,
+                itemBuilder: (context, index) {
+                  final imgUrl = images[index];
+                  return GestureDetector(
+                    onTap: () => _showFullScreenImage(context, imgUrl),
+                    child: Container(
+                      width: 70,
+                      margin: const EdgeInsets.only(right: 8),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12),
+                        border: Border.all(color: Colors.white.withOpacity(0.12)),
+                      ),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(12),
+                        child: Image.network(imgUrl, fit: BoxFit.cover),
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+
+  void _showFullScreenImage(BuildContext context, String imageUrl) {
+    showDialog(
+      context: context,
+      barrierColor: Colors.black.withOpacity(0.9),
+      builder: (context) => Stack(
+        children: [
+          Positioned.fill(
+            child: InteractiveViewer(
+              minScale: 0.5,
+              maxScale: 4.0,
+              child: Center(
+                child: Image.network(
+                  imageUrl,
+                  loadingBuilder: (context, child, loadingProgress) {
+                    if (loadingProgress == null) return child;
+                    return const Center(
+                      child: CircularProgressIndicator(
+                        valueColor: AlwaysStoppedAnimation<Color>(Color(0xFFB5956A)),
+                      ),
+                    );
+                  },
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: MediaQuery.of(context).padding.top + 16,
+            right: 16,
+            child: GestureDetector(
+              onTap: () => Navigator.of(context).pop(),
+              child: Container(
+                padding: const EdgeInsets.all(8),
+                decoration: const BoxDecoration(
+                  color: Colors.black45,
+                  shape: BoxShape.circle,
+                ),
+                child: const Icon(
+                  Icons.close_rounded,
+                  color: Colors.white,
+                  size: 24,
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
