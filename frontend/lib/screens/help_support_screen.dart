@@ -3,21 +3,24 @@ import 'package:flutter/material.dart';
 
 class HelpSupportScreen extends StatefulWidget {
   final Map<String, dynamic> userData;
+  final String? authToken;
 
   const HelpSupportScreen({
     super.key,
     required this.userData,
+    this.authToken,
   });
 
   @override
   State<HelpSupportScreen> createState() => _HelpSupportScreenState();
 }
 
-class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProviderStateMixin {
+class _HelpSupportScreenState extends State<HelpSupportScreen>
+    with TickerProviderStateMixin {
   late AnimationController _fadeController;
   late AnimationController _pulseController;
   late AnimationController _floatingController;
-  
+
   final TextEditingController _searchController = TextEditingController();
 
   bool get _isVi => Localizations.localeOf(context).languageCode == 'vi';
@@ -33,12 +36,12 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
       vsync: this,
       duration: const Duration(seconds: 4),
     )..repeat(reverse: true);
-    
+
     _floatingController = AnimationController(
       vsync: this,
       duration: const Duration(seconds: 3),
     )..repeat(reverse: true);
-    
+
     _fadeController.forward();
   }
 
@@ -54,14 +57,14 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
   @override
   Widget build(BuildContext context) {
     final double topPadding = MediaQuery.of(context).padding.top;
-    
+
     return Scaffold(
       backgroundColor: const Color(0xFF0F1412),
       body: Stack(
         children: [
           // 1. CINEMATIC SUPPORT HERO BACKGROUND
           _buildHeroBackground(),
-          
+
           // Main Scrollable Content
           CustomScrollView(
             physics: const BouncingScrollPhysics(),
@@ -77,17 +80,18 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
                       children: [
                         _buildHeroHeaderContent(),
                         const SizedBox(height: 32),
-                        
+
                         // 2. SMART HELP SEARCH SECTION
                         _buildSearchSection(),
                         const SizedBox(height: 40),
-                        
+
                         // 4. LIVE SUPPORT / CONCIERGE SECTION (Featured)
                         _buildConciergeCard(),
                         const SizedBox(height: 40),
 
                         // 3. QUICK SUPPORT ACTIONS SECTION
-                        _buildSectionLabel(_isVi ? 'Dịch vụ hỗ trợ' : 'Support services'),
+                        _buildSectionLabel(
+                            _isVi ? 'Dịch vụ hỗ trợ' : 'Support services'),
                         const SizedBox(height: 16),
                         _buildQuickActionsGrid(),
                         const SizedBox(height: 40),
@@ -107,7 +111,8 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
           Positioned(
             top: topPadding + 12,
             left: 20,
-            child: _glassIconButton(Icons.arrow_back_ios_new_rounded, () => Navigator.pop(context)),
+            child: _glassIconButton(
+                Icons.arrow_back_ios_new_rounded, () => Navigator.pop(context)),
           ),
         ],
       ),
@@ -122,12 +127,23 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
         fit: StackFit.expand,
         children: [
           Image.asset('assets/images/halong.jpg', fit: BoxFit.cover),
-          Container(decoration: BoxDecoration(color: const Color(0xFF1B2321).withOpacity(0.78))),
+          Container(
+              decoration: BoxDecoration(
+                  color: const Color(0xFF1B2321).withOpacity(0.78))),
           Positioned(
-            top: 0, left: 0, right: 0,
+            top: 0,
+            left: 0,
+            right: 0,
             child: Container(
               height: 150,
-              decoration: BoxDecoration(gradient: RadialGradient(center: Alignment.topCenter, radius: 1.2, colors: [const Color(0xFFD4AF7A).withOpacity(0.10), Colors.transparent])),
+              decoration: BoxDecoration(
+                  gradient: RadialGradient(
+                      center: Alignment.topCenter,
+                      radius: 1.2,
+                      colors: [
+                    const Color(0xFFD4AF7A).withOpacity(0.10),
+                    Colors.transparent
+                  ])),
             ),
           ),
         ],
@@ -149,7 +165,8 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
                 decoration: BoxDecoration(
                   color: const Color(0xFFD4AF7A).withOpacity(0.12),
                   shape: BoxShape.circle,
-                  border: Border.all(color: const Color(0xFFD4AF7A).withOpacity(0.25)),
+                  border: Border.all(
+                      color: const Color(0xFFD4AF7A).withOpacity(0.25)),
                   boxShadow: [
                     BoxShadow(
                       color: const Color(0xFFD4AF7A).withOpacity(0.1),
@@ -158,7 +175,8 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
                     )
                   ],
                 ),
-                child: const Icon(Icons.support_agent_rounded, color: Color(0xFFD4AF7A), size: 40),
+                child: const Icon(Icons.support_agent_rounded,
+                    color: Color(0xFFD4AF7A), size: 40),
               ),
             );
           },
@@ -212,9 +230,14 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
         controller: _searchController,
         style: const TextStyle(color: Colors.white, fontSize: 16),
         decoration: InputDecoration(
-          hintText: _isVi ? 'Bạn cần chúng tôi giúp gì hôm nay?' : 'How can we help you today?',
-          hintStyle: TextStyle(color: Colors.white.withOpacity(0.3), fontWeight: FontWeight.w500),
-          prefixIcon: const Icon(Icons.search_rounded, color: Color(0xFFD4AF7A), size: 24),
+          hintText: _isVi
+              ? 'Bạn cần chúng tôi giúp gì hôm nay?'
+              : 'How can we help you today?',
+          hintStyle: TextStyle(
+              color: Colors.white.withOpacity(0.3),
+              fontWeight: FontWeight.w500),
+          prefixIcon: const Icon(Icons.search_rounded,
+              color: Color(0xFFD4AF7A), size: 24),
           border: InputBorder.none,
           contentPadding: const EdgeInsets.symmetric(vertical: 18),
         ),
@@ -248,9 +271,12 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
                       height: 70,
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        border: Border.all(color: const Color(0xFFD4AF7A).withOpacity(0.4), width: 2),
+                        border: Border.all(
+                            color: const Color(0xFFD4AF7A).withOpacity(0.4),
+                            width: 2),
                         image: const DecorationImage(
-                          image: AssetImage('assets/images/logo.png'), // Placeholder for concierge avatar
+                          image: AssetImage(
+                              'assets/images/logo.png'), // Placeholder for concierge avatar
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -264,7 +290,8 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
                         decoration: BoxDecoration(
                           color: const Color(0xFF2ECC71),
                           shape: BoxShape.circle,
-                          border: Border.all(color: const Color(0xFF1B2321), width: 2.5),
+                          border: Border.all(
+                              color: const Color(0xFF1B2321), width: 2.5),
                         ),
                       ),
                     ),
@@ -277,12 +304,21 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
                     children: [
                       Text(
                         _isVi ? 'Quản gia Cao cấp' : 'Premium Concierge',
-                        style: const TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w800, fontFamily: 'Montserrat'),
+                        style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.w800,
+                            fontFamily: 'Montserrat'),
                       ),
                       const SizedBox(height: 4),
                       Text(
-                        _isVi ? 'Sẵn sàng hỗ trợ ngay lập tức' : 'Ready to support you right away',
-                        style: TextStyle(color: Colors.white.withOpacity(0.5), fontSize: 13, fontWeight: FontWeight.w500),
+                        _isVi
+                            ? 'Sẵn sàng hỗ trợ ngay lập tức'
+                            : 'Ready to support you right away',
+                        style: TextStyle(
+                            color: Colors.white.withOpacity(0.5),
+                            fontSize: 13,
+                            fontWeight: FontWeight.w500),
                       ),
                     ],
                   ),
@@ -298,11 +334,17 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
               ),
               child: Row(
                 children: [
-                  const Icon(Icons.timer_outlined, color: Color(0xFFD4AF7A), size: 18),
+                  const Icon(Icons.timer_outlined,
+                      color: Color(0xFFD4AF7A), size: 18),
                   const SizedBox(width: 10),
                   Text(
-                    _isVi ? 'Thời gian phản hồi dự kiến: ~2 phút' : 'Estimated response time: ~2 minutes',
-                    style: TextStyle(color: Colors.white.withOpacity(0.7), fontSize: 13, fontWeight: FontWeight.w600),
+                    _isVi
+                        ? 'Thời gian phản hồi dự kiến: ~2 phút'
+                        : 'Estimated response time: ~2 minutes',
+                    style: TextStyle(
+                        color: Colors.white.withOpacity(0.7),
+                        fontSize: 13,
+                        fontWeight: FontWeight.w600),
                   ),
                 ],
               ),
@@ -321,10 +363,26 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
 
   Widget _buildQuickActionsGrid() {
     final actions = [
-      {'title': _isVi ? 'Liên hệ hỗ trợ' : 'Contact support', 'icon': Icons.headset_mic_rounded, 'route': '/contact'},
-      {'title': _isVi ? 'Báo cáo' : 'Report', 'icon': Icons.rate_review_rounded, 'route': null},
-      {'title': _isVi ? 'Chính sách bảo mật' : 'Privacy policy', 'icon': Icons.privacy_tip_outlined, 'route': '/privacy'},
-      {'title': _isVi ? 'Hướng dẫn sử dụng' : 'User guide', 'icon': Icons.menu_book_rounded, 'route': '/intruction'},
+      {
+        'title': _isVi ? 'Liên hệ hỗ trợ' : 'Contact support',
+        'icon': Icons.headset_mic_rounded,
+        'route': '/contact'
+      },
+      {
+        'title': _isVi ? 'Đánh giá ứng dụng' : 'Rate app',
+        'icon': Icons.rate_review_rounded,
+        'route': '/app-reviews'
+      },
+      {
+        'title': _isVi ? 'Chính sách bảo mật' : 'Privacy policy',
+        'icon': Icons.privacy_tip_outlined,
+        'route': '/privacy'
+      },
+      {
+        'title': _isVi ? 'Hướng dẫn sử dụng' : 'User guide',
+        'icon': Icons.menu_book_rounded,
+        'route': '/intruction'
+      },
     ];
 
     return GridView.builder(
@@ -342,17 +400,31 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
         return _buildGlassCard(
           padding: EdgeInsets.zero,
           child: InkWell(
-            onTap: route == null ? null : () => Navigator.pushNamed(context, route),
+            onTap: route == null
+                ? null
+                : () {
+                    if (route == '/app-reviews') {
+                      Navigator.pushNamed(context, route,
+                          arguments: widget.authToken);
+                    } else {
+                      Navigator.pushNamed(context, route);
+                    }
+                  },
             borderRadius: BorderRadius.circular(28),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(actions[index]['icon'] as IconData, color: const Color(0xFFD4AF7A), size: 28),
+                Icon(actions[index]['icon'] as IconData,
+                    color: const Color(0xFFD4AF7A), size: 28),
                 const SizedBox(height: 12),
                 Text(
                   actions[index]['title'] as String,
                   textAlign: TextAlign.center,
-                  style: const TextStyle(color: Colors.white, fontSize: 13, fontWeight: FontWeight.w700, fontFamily: 'Montserrat'),
+                  style: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 13,
+                      fontWeight: FontWeight.w700,
+                      fontFamily: 'Montserrat'),
                 ),
               ],
             ),
@@ -367,9 +439,14 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
       children: [
         Center(
           child: Text(
-            _isVi ? 'Hành trình của bạn là niềm cảm hứng của chúng tôi.' : 'Your journey is our inspiration.',
+            _isVi
+                ? 'Hành trình của bạn là niềm cảm hứng của chúng tôi.'
+                : 'Your journey is our inspiration.',
             textAlign: TextAlign.center,
-            style: const TextStyle(color: Colors.white38, fontSize: 13, fontStyle: FontStyle.italic),
+            style: const TextStyle(
+                color: Colors.white38,
+                fontSize: 13,
+                fontStyle: FontStyle.italic),
           ),
         ),
         const SizedBox(height: 24),
@@ -384,7 +461,10 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
 
   // --- Helper Methods ---
 
-  Widget _buildGlassCard({required Widget child, EdgeInsetsGeometry? padding, double borderOpacity = 0.12}) {
+  Widget _buildGlassCard(
+      {required Widget child,
+      EdgeInsetsGeometry? padding,
+      double borderOpacity = 0.12}) {
     return ClipRRect(
       borderRadius: BorderRadius.circular(28),
       child: BackdropFilter(
@@ -394,7 +474,8 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
           decoration: BoxDecoration(
             color: Colors.black.withOpacity(0.32),
             borderRadius: BorderRadius.circular(28),
-            border: Border.all(color: Colors.white.withOpacity(borderOpacity), width: 1.2),
+            border: Border.all(
+                color: Colors.white.withOpacity(borderOpacity), width: 1.2),
           ),
           child: child,
         ),
@@ -402,13 +483,15 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
     );
   }
 
-  Widget _buildGoldButton({required VoidCallback onPressed, required String text, IconData? icon}) {
+  Widget _buildGoldButton(
+      {required VoidCallback onPressed, required String text, IconData? icon}) {
     return Container(
       width: double.infinity,
       height: 60,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        gradient: const LinearGradient(colors: [Color(0xFFD4AF7A), Color(0xFFB5956A)]),
+        gradient: const LinearGradient(
+            colors: [Color(0xFFD4AF7A), Color(0xFFB5956A)]),
         boxShadow: [
           BoxShadow(
             color: const Color(0xFFD4AF7A).withOpacity(0.3),
@@ -422,15 +505,23 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
         style: ElevatedButton.styleFrom(
           backgroundColor: Colors.transparent,
           shadowColor: Colors.transparent,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            if (icon != null) ...[Icon(icon, color: const Color(0xFF1B2321), size: 20), const SizedBox(width: 10)],
+            if (icon != null) ...[
+              Icon(icon, color: const Color(0xFF1B2321), size: 20),
+              const SizedBox(width: 10)
+            ],
             Text(
               text,
-              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w900, color: Color(0xFF1B2321), letterSpacing: 0.5),
+              style: const TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w900,
+                  color: Color(0xFF1B2321),
+                  letterSpacing: 0.5),
             ),
           ],
         ),
@@ -451,7 +542,8 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> with TickerProvid
             decoration: BoxDecoration(
               color: Colors.white.withOpacity(0.08),
               borderRadius: BorderRadius.circular(18),
-              border: Border.all(color: Colors.white.withOpacity(0.25), width: 1),
+              border:
+                  Border.all(color: Colors.white.withOpacity(0.25), width: 1),
             ),
             child: Icon(icon, color: Colors.white, size: 20),
           ),

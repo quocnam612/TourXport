@@ -12,6 +12,7 @@ import 'screens/legal/contact_support_screen.dart';
 import 'screens/legal/data_deletion_screen.dart';
 import 'screens/legal/instruction_screen.dart';
 import 'screens/legal/privacy_policy_screen.dart';
+import 'screens/app_reviews_screen.dart';
 import 'screens/pin_lock_screen.dart';
 import 'widgets/app_lock_wrapper.dart';
 
@@ -113,6 +114,14 @@ class _TourXportAppState extends State<TourXportApp> {
                 return MaterialPageRoute(
                   settings: settings,
                   builder: (_) => const ContactSupportScreen(),
+                );
+              }
+
+              if (routeName == '/app-reviews') {
+                final authToken = settings.arguments as String?;
+                return MaterialPageRoute(
+                  settings: settings,
+                  builder: (_) => AppReviewsScreen(authToken: authToken),
                 );
               }
 

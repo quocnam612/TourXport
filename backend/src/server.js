@@ -10,6 +10,7 @@ import hotelRoutes from './routes/hotelRoutes.js';
 import locationsRoutes from './routes/locationRoutes.js';
 import restaurantRoutes from './routes/restaurantRoutes.js';
 import reviewRoutes from './routes/reviewRoutes.js';
+import appReviewRoutes from './routes/appReviewRoutes.js';
 import tourRoutes from './routes/tourRoutes.js';
 import weatherRoutes from './routes/weatherRoutes.js';
 import reportRoutes from './routes/reportRoutes.js';
@@ -26,6 +27,7 @@ app.use('/hotels', hotelRoutes);
 app.use('/restaurants', restaurantRoutes);
 app.use('/tours', tourRoutes);
 app.use('/reviews', reviewRoutes);
+app.use('/app-reviews', appReviewRoutes);
 app.use('/weather', weatherRoutes);
 app.use('/reports', reportRoutes);
 

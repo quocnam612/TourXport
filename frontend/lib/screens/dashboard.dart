@@ -26,6 +26,7 @@ import 'profile_section.dart';
 import 'saved_place.dart';
 import 'survey_screen.dart';
 import 'sign_in.dart';
+import 'app_reviews_screen.dart';
 import '../models/travel_notification.dart';
 
 class _DestinationPageResult {
@@ -159,11 +160,15 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   String _translateTypeLabel(String value) {
     switch (value) {
-      case 'all': return 'All';
-      case 'hotels': return 'Stay';
-      case 'restaurants': return 'Dining';
+      case 'all':
+        return 'All';
+      case 'hotels':
+        return 'Stay';
+      case 'restaurants':
+        return 'Dining';
       case 'places':
-      default: return 'Explore';
+      default:
+        return 'Explore';
     }
   }
 
@@ -188,7 +193,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       'Hòa nhạc & chương trình biểu diễn': 'Concerts & Shows',
       'Sòng bạc & Đánh bạc': 'Casinos & Gambling',
       'Sở thú & Thủy cung': 'Zoos & Aquariums',
-      'Chuyến tham quan bằng thuyền & thể thao dưới nước': 'Boat Tours & Water Sports',
+      'Chuyến tham quan bằng thuyền & thể thao dưới nước':
+          'Boat Tours & Water Sports',
       'Spa & Sức khỏe': 'Spas & Wellness',
       'Giải trí về đêm': 'Nightlife',
       'Khác': 'Other',
@@ -243,7 +249,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     };
     return maps[cat] ?? cat.toLowerCase();
   }
-
 
   int _currentIndex = 0;
   int _previousIndex = 0;
@@ -302,7 +307,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   Timer? _searchDebounceTimer;
   List<Destination> _searchResults = [];
   List<Destination> _searchSuggestions = [];
-  
+
   final stt.SpeechToText _speech = stt.SpeechToText();
   bool _speechEnabled = false;
 
@@ -352,7 +357,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   void _showVoiceSearchDialog() async {
     final micStatus = await Permission.microphone.request();
     if (!micStatus.isGranted) {
-      _showMessage(_isVi ? 'Ứng dụng chưa được cấp quyền truy cập microphone' : 'Microphone permission not granted');
+      _showMessage(_isVi
+          ? 'Ứng dụng chưa được cấp quyền truy cập microphone'
+          : 'Microphone permission not granted');
       return;
     }
 
@@ -361,7 +368,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     }
 
     if (!_speechEnabled) {
-      _showMessage(_isVi ? 'Nhận diện giọng nói không hỗ trợ trên thiết bị này' : 'Speech recognition is not supported on this device');
+      _showMessage(_isVi
+          ? 'Nhận diện giọng nói không hỗ trợ trên thiết bị này'
+          : 'Speech recognition is not supported on this device');
       return;
     }
 
@@ -458,13 +467,19 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                       : Colors.white.withOpacity(0.06),
                                   shape: BoxShape.circle,
                                   border: Border.all(
-                                    color: listening ? const Color(0xFFD4AF7A) : Colors.white24,
+                                    color: listening
+                                        ? const Color(0xFFD4AF7A)
+                                        : Colors.white24,
                                     width: 2,
                                   ),
                                 ),
                                 child: Icon(
-                                  listening ? Icons.mic_rounded : Icons.mic_off_rounded,
-                                  color: listening ? const Color(0xFFD4AF7A) : Colors.white54,
+                                  listening
+                                      ? Icons.mic_rounded
+                                      : Icons.mic_off_rounded,
+                                  color: listening
+                                      ? const Color(0xFFD4AF7A)
+                                      : Colors.white54,
                                   size: 36,
                                 ),
                               ),
@@ -493,7 +508,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                           ),
                           child: Text(
                             words.isEmpty
-                                ? (_isVi ? 'Hãy nói gì đó...' : 'Say something...')
+                                ? (_isVi
+                                    ? 'Hãy nói gì đó...'
+                                    : 'Say something...')
                                 : words,
                             textAlign: TextAlign.center,
                             style: const TextStyle(
@@ -530,7 +547,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                   });
                                 },
                                 style: ElevatedButton.styleFrom(
-                                  backgroundColor: const Color(0xFFE74C3C).withOpacity(0.2),
+                                  backgroundColor:
+                                      const Color(0xFFE74C3C).withOpacity(0.2),
                                   foregroundColor: const Color(0xFFE74C3C),
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(16),
@@ -860,17 +878,20 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
       if (!mounted) return;
 
-      final allSucceeded = responses.every((response) => response.statusCode == 200);
+      final allSucceeded =
+          responses.every((response) => response.statusCode == 200);
       if (allSucceeded) {
         final payload = <String, dynamic>{
-          'savedPlaces': tryDecodeJsonObject(responses[0].body)?['savedPlaces'] ?? [],
-          'savedRestaurants': tryDecodeJsonObject(responses[1].body)?['savedRestaurants'] ?? [],
-          'savedHotels': tryDecodeJsonObject(responses[2].body)?['savedHotels'] ?? [],
+          'savedPlaces':
+              tryDecodeJsonObject(responses[0].body)?['savedPlaces'] ?? [],
+          'savedRestaurants':
+              tryDecodeJsonObject(responses[1].body)?['savedRestaurants'] ?? [],
+          'savedHotels':
+              tryDecodeJsonObject(responses[2].body)?['savedHotels'] ?? [],
         };
         _applySavedPlacesPayload(payload);
       } else if (showError) {
-        _showMessage(
-            'Không tải được danh sách đã lưu');
+        _showMessage('Không tải được danh sách đã lưu');
       }
     } catch (_) {
       if (mounted && showError) {
@@ -945,7 +966,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     if (tags.length <= 2) {
       return displayTags.join(', ');
     }
-    return _isVi ? '${tags.length} tags đã chọn' : '${tags.length} tags selected';
+    return _isVi
+        ? '${tags.length} tags đã chọn'
+        : '${tags.length} tags selected';
   }
 
   Future<String?> _showSingleSelectPopup({
@@ -968,7 +991,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             ),
             decoration: BoxDecoration(
               color: const Color(0xFF070E0D).withOpacity(0.95),
-              borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
+              borderRadius:
+                  const BorderRadius.vertical(top: Radius.circular(28)),
               border: Border.all(color: Colors.white.withOpacity(0.08)),
             ),
             child: SafeArea(
@@ -1014,20 +1038,22 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       shrinkWrap: true,
                       padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
                       itemCount: options.length + (clearLabel == null ? 0 : 1),
-                      separatorBuilder: (_, __) =>
-                          Divider(color: Colors.white.withOpacity(0.06), height: 1),
+                      separatorBuilder: (_, __) => Divider(
+                          color: Colors.white.withOpacity(0.06), height: 1),
                       itemBuilder: (context, index) {
                         if (clearLabel != null && index == 0) {
                           final isSelected = selectedValue == null;
                           return ListTile(
-                            contentPadding: const EdgeInsets.symmetric(horizontal: 8),
+                            contentPadding:
+                                const EdgeInsets.symmetric(horizontal: 8),
                             title: Text(
                               clearLabel,
                               style: TextStyle(
                                 fontFamily: 'Montserrat',
                                 fontSize: 14,
-                                fontWeight:
-                                    isSelected ? FontWeight.w800 : FontWeight.w600,
+                                fontWeight: isSelected
+                                    ? FontWeight.w800
+                                    : FontWeight.w600,
                                 color: isSelected
                                     ? const Color(0xFFD4AF7A)
                                     : Colors.white,
@@ -1041,19 +1067,26 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                           );
                         }
 
-                        final optionIndex = clearLabel == null ? index : index - 1;
+                        final optionIndex =
+                            clearLabel == null ? index : index - 1;
                         final option = options[optionIndex];
-                        final isSelected = selectedValue != null && _getLocalizedDisplay(option) == _getLocalizedDisplay(selectedValue);
+                        final isSelected = selectedValue != null &&
+                            _getLocalizedDisplay(option) ==
+                                _getLocalizedDisplay(selectedValue);
                         return ListTile(
-                          contentPadding: const EdgeInsets.symmetric(horizontal: 8),
+                          contentPadding:
+                              const EdgeInsets.symmetric(horizontal: 8),
                           title: Text(
                             _getLocalizedDisplay(option),
                             style: TextStyle(
                               fontFamily: 'Montserrat',
                               fontSize: 14,
-                              fontWeight:
-                                  isSelected ? FontWeight.w800 : FontWeight.w600,
-                              color: isSelected ? const Color(0xFFD4AF7A) : Colors.white,
+                              fontWeight: isSelected
+                                  ? FontWeight.w800
+                                  : FontWeight.w600,
+                              color: isSelected
+                                  ? const Color(0xFFD4AF7A)
+                                  : Colors.white,
                             ),
                           ),
                           trailing: isSelected
@@ -1143,7 +1176,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         child: Align(
                           alignment: Alignment.centerLeft,
                           child: Text(
-                            _isVi ? 'Chọn một hoặc nhiều mục' : 'Select one or more items',
+                            _isVi
+                                ? 'Chọn một hoặc nhiều mục'
+                                : 'Select one or more items',
                             style: TextStyle(
                               fontFamily: 'Montserrat',
                               fontSize: 12,
@@ -1229,7 +1264,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                 borderRadius: BorderRadius.circular(16),
                               ),
                             ),
-                            onPressed: () => Navigator.pop(context, tempSelection),
+                            onPressed: () =>
+                                Navigator.pop(context, tempSelection),
                             child: Text(
                               _isVi ? 'Chọn xong' : 'Done',
                               style: const TextStyle(
@@ -1585,9 +1621,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       ...parseItems(data['savedPlaces'], 'Địa điểm'),
       ...parseItems(data['savedRestaurants'], 'Nhà hàng'),
       ...parseItems(data['savedHotels'], 'Khách sạn'),
-    ]
-        .where((item) => item.name.isNotEmpty)
-        .toList();
+    ].where((item) => item.name.isNotEmpty).toList();
 
     setState(() {
       _savedDestinations = places;
@@ -1803,9 +1837,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       setState(() => _isLoadingProfile = true);
 
       final imageBytes = await image.readAsBytes();
-      final filename = image.name.isNotEmpty
-          ? image.name
-          : image.path.split('/').last;
+      final filename =
+          image.name.isNotEmpty ? image.name : image.path.split('/').last;
 
       if (isAvatar) {
         final response = await apiPutMultipartBytes(
@@ -1819,7 +1852,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         final responseStr = await response.stream.bytesToString();
         final data = tryDecodeJsonObject(responseStr);
 
-        if (response.statusCode == 200 && data != null && data['success'] == true) {
+        if (response.statusCode == 200 &&
+            data != null &&
+            data['success'] == true) {
           _loadProfile();
           _showMessage('Đã cập nhật ảnh đại diện thành công');
         } else {
@@ -2197,9 +2232,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Future<void> _waitForSurveyAiBackend(int token) async {
-    while (mounted && token == _surveyAiWarmupToken && _navIndex == _tabSurvey) {
+    while (
+        mounted && token == _surveyAiWarmupToken && _navIndex == _tabSurvey) {
       if (await _pingAiBackend()) {
-        if (!mounted || token != _surveyAiWarmupToken || _navIndex != _tabSurvey) return;
+        if (!mounted ||
+            token != _surveyAiWarmupToken ||
+            _navIndex != _tabSurvey) return;
         setState(() {
           _isSurveyAiReady = true;
         });
@@ -2257,12 +2295,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Future<void> _editHelpSupport() async {
-    if (_userData == null) return;
+    final userData = _userData ?? {};
     await Navigator.push(
       context,
       PageRouteBuilder(
         pageBuilder: (context, animation, secondaryAnimation) =>
-            HelpSupportScreen(userData: _userData!),
+            HelpSupportScreen(userData: userData, authToken: widget.authToken),
         transitionsBuilder: (context, animation, secondaryAnimation, child) {
           return FadeTransition(
             opacity: animation,
@@ -2345,7 +2383,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       TravelNotification(
         id: 'notif_1',
         title: 'Kế hoạch du lịch Đà Nẵng',
-        description: 'Lịch trình tham quan Đà Nẵng 3 ngày 2 đêm của bạn đã sẵn sàng! Chạm để xem ngay các địa điểm tối ưu.',
+        description:
+            'Lịch trình tham quan Đà Nẵng 3 ngày 2 đêm của bạn đã sẵn sàng! Chạm để xem ngay các địa điểm tối ưu.',
         icon: Icons.map_rounded,
         timestamp: DateTime.now().subtract(const Duration(hours: 1)),
         type: 'itinerary',
@@ -2353,7 +2392,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       TravelNotification(
         id: 'notif_2',
         title: 'Cảnh báo thời tiết',
-        description: 'Dự báo thời tiết Đà Nẵng hôm nay: 26°C, trời nắng đẹp, gió mát mẻ, rất lý tưởng để đi biển hoặc ghé Bà Nà Hills.',
+        description:
+            'Dự báo thời tiết Đà Nẵng hôm nay: 26°C, trời nắng đẹp, gió mát mẻ, rất lý tưởng để đi biển hoặc ghé Bà Nà Hills.',
         icon: Icons.wb_sunny_rounded,
         timestamp: DateTime.now().subtract(const Duration(hours: 3)),
         type: 'weather',
@@ -2361,7 +2401,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       TravelNotification(
         id: 'notif_3',
         title: 'Cập nhật ngân sách chuyến đi',
-        description: 'Tổng chi tiêu dự kiến hiện tại là 1.250.000đ. Bạn đang kiểm soát ngân sách rất tốt (đạt 62% hạn mức tự đặt).',
+        description:
+            'Tổng chi tiêu dự kiến hiện tại là 1.250.000đ. Bạn đang kiểm soát ngân sách rất tốt (đạt 62% hạn mức tự đặt).',
         icon: Icons.account_balance_wallet_rounded,
         timestamp: DateTime.now().subtract(const Duration(hours: 5)),
         type: 'expense',
@@ -2369,7 +2410,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       TravelNotification(
         id: 'notif_4',
         title: 'Mẹo du lịch hữu ích',
-        description: 'Kinh nghiệm đắt giá: Nên di chuyển lên Cầu Vàng lúc 8h sáng để chụp hình không vướng người và ngắm trọn mây ngàn.',
+        description:
+            'Kinh nghiệm đắt giá: Nên di chuyển lên Cầu Vàng lúc 8h sáng để chụp hình không vướng người và ngắm trọn mây ngàn.',
         icon: Icons.lightbulb_rounded,
         timestamp: DateTime.now().subtract(const Duration(days: 1)),
         type: 'tip',
@@ -2417,60 +2459,74 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     return periodDestinations.take(10).map((dest) {
       final name = dest.name;
       final prov = dest.province;
-      final price = dest.price.isNotEmpty ? dest.price : (_isVi ? 'Chỉ từ 1.5 triệu đồng' : 'From 1.5 million VND');
-      
+      final price = dest.price.isNotEmpty
+          ? dest.price
+          : (_isVi ? 'Chỉ từ 1.5 triệu đồng' : 'From 1.5 million VND');
+
       String reason = '';
       String tag = periodTag;
       double rating = 4.7 + ((dest.name.length % 3) * 0.1);
       int reviews = 800 + (dest.name.length * 77) % 2500;
 
-      if (name.toLowerCase().contains('hạ long') || name.toLowerCase().contains('ha long')) {
-        reason = _isVi 
+      if (name.toLowerCase().contains('hạ long') ||
+          name.toLowerCase().contains('ha long')) {
+        reason = _isVi
             ? 'Thời tiết tại Vịnh ${prov} tuần này vô cùng dịu mát, nước biển trong xanh lý tưởng để trải nghiệm du thuyền 5 sao đẳng cấp.'
             : 'The weather in ${_translateProvince(prov)} Bay this week is exceptionally cool, with clear blue waters perfect for a luxury 5-star cruise experience.';
         tag = _isVi ? 'DU THUYỀN 5 SAO' : '5-STAR CRUISE';
-      } else if (name.toLowerCase().contains('đà nẵng') || name.toLowerCase().contains('da nang')) {
-        reason = _isVi 
+      } else if (name.toLowerCase().contains('đà nẵng') ||
+          name.toLowerCase().contains('da nang')) {
+        reason = _isVi
             ? 'Nhiệt độ hoàn hảo 26°C. Lễ hội pháo hoa quốc tế vừa diễn ra thu hút đông đảo du khách ghé thăm các cây cầu huyền thoại.'
             : 'Perfect temperature of 26°C. The international fireworks festival recently held is drawing crowds to visit the legendary bridges.';
         tag = _isVi ? 'PHÁO HOA QUỐC TẾ' : 'FIREWORKS FESTIVAL';
-      } else if (name.toLowerCase().contains('hội an') || name.toLowerCase().contains('hoi an')) {
-        reason = _isVi 
+      } else if (name.toLowerCase().contains('hội an') ||
+          name.toLowerCase().contains('hoi an')) {
+        reason = _isVi
             ? 'Khí hậu bắt đầu vào mùa khô ráo tuyệt đẹp. Phố đèn lồng lung linh lộng lẫy và lễ hội hoa đăng bên sông Hoài đang diễn ra rất náo nhiệt.'
             : 'The dry season starts with beautiful weather. The lanternlit streets are gorgeous and the flower lantern festival by Hoai River is bustling.';
         tag = _isVi ? 'PHỐ CỔ HOÀI CỔ' : 'ANCIENT TOWN';
-      } else if (name.toLowerCase().contains('phong nha') || name.toLowerCase().contains('quảng bình') || name.toLowerCase().contains('quang binh')) {
-        reason = _isVi 
+      } else if (name.toLowerCase().contains('phong nha') ||
+          name.toLowerCase().contains('quảng bình') ||
+          name.toLowerCase().contains('quang binh')) {
+        reason = _isVi
             ? 'Thời tiết khô ráo rất thích hợp để thám hiểm hệ thống hang động thạch nhũ tráng lệ bậc nhất thế giới.'
             : 'Dry weather is highly suitable for exploring the world\'s most magnificent stalactite cave systems.';
         tag = _isVi ? 'KHÁM PHÁ HANG ĐỘNG' : 'CAVE EXPLORATION';
-      } else if (name.toLowerCase().contains('phú quốc') || name.toLowerCase().contains('phu quoc')) {
-        reason = _isVi 
+      } else if (name.toLowerCase().contains('phú quốc') ||
+          name.toLowerCase().contains('phu quoc')) {
+        reason = _isVi
             ? 'Biển cực kỳ êm, nắng vàng rực rỡ và nước biển trong vắt như pha lê, hoàn hảo cho tour lặn biển ngắm san hô.'
             : 'The sea is extremely calm, with golden sunshine and crystal-clear water, perfect for coral reef diving tours.';
         tag = _isVi ? 'THIÊN ĐƯỜNG BIỂN' : 'BEACH PARADISE';
       } else if (name.toLowerCase().contains('sapa')) {
-        reason = _isVi 
+        reason = _isVi
             ? 'Đỉnh Fansipan xuất hiện biển mây cực đẹp vào sáng sớm, nhiệt độ se lạnh lý tưởng để thưởng thức ẩm thực Tây Bắc.'
             : 'Fansipan peak features a beautiful sea of clouds in the early morning, with cool temperatures ideal for Northwest cuisine.';
         tag = _isVi ? 'SĂN MÂY TÂY BẮC' : 'CLOUD HUNTING';
-      } else if (name.toLowerCase().contains('đà lạt') || name.toLowerCase().contains('da lat')) {
-        reason = _isVi 
+      } else if (name.toLowerCase().contains('đà lạt') ||
+          name.toLowerCase().contains('da lat')) {
+        reason = _isVi
             ? 'Mùa hoa dã quỳ vàng rực rỡ khắp các triền đồi, không khí mát mẻ dễ chịu vô cùng thích hợp cho cắm trại đêm.'
             : 'Wild sunflowers bloom in brilliant yellow across the hills, with cool pleasant air perfect for night camping.';
       } else {
-        reason = _isVi 
+        reason = _isVi
             ? 'Điểm đến đang nhận được sự quan tâm đột biến từ cộng đồng du lịch nhờ khí hậu thuận lợi và nhiều ưu đãi dịch vụ hấp dẫn trong thời gian này.'
             : 'This destination is receiving surging interest from the travel community due to favorable climate and attractive deals.';
         tag = _isVi ? 'ĐIỂM ĐẾN VÀNG' : 'GOLDEN DESTINATION';
       }
 
-      final translatedPrice = _isVi 
-          ? price 
-          : price.replaceAll('Chỉ từ', 'From').replaceAll('triệu đồng', 'm VND').replaceAll('triệu', 'm');
+      final translatedPrice = _isVi
+          ? price
+          : price
+              .replaceAll('Chỉ từ', 'From')
+              .replaceAll('triệu đồng', 'm VND')
+              .replaceAll('triệu', 'm');
 
       return AppTrendRecommendation(
-        title: _isVi ? '$name - Khám phá vẻ đẹp kỳ diệu' : '$name - Discover Magical Beauty',
+        title: _isVi
+            ? '$name - Khám phá vẻ đẹp kỳ diệu'
+            : '$name - Discover Magical Beauty',
         province: _translateProvince(prov),
         price: translatedPrice,
         imagePath: dest.imagePath,
@@ -2501,7 +2557,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 height: MediaQuery.of(context).size.height * 0.85,
                 decoration: BoxDecoration(
                   color: const Color(0xFF070E0D).withOpacity(0.85),
-                  borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
+                  borderRadius:
+                      const BorderRadius.vertical(top: Radius.circular(32)),
                   border: Border.all(
                     color: Colors.white.withOpacity(0.08),
                     width: 1,
@@ -2690,10 +2747,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(Icons.notifications_none_rounded, color: Colors.white24, size: 64),
+            const Icon(Icons.notifications_none_rounded,
+                color: Colors.white24, size: 64),
             const SizedBox(height: 16),
             Text(
-              _isVi ? 'Chưa có thông báo nào dành cho bạn' : 'No notifications for you yet',
+              _isVi
+                  ? 'Chưa có thông báo nào dành cho bạn'
+                  : 'No notifications for you yet',
               style: TextStyle(
                 fontFamily: 'Montserrat',
                 fontSize: 15,
@@ -2774,7 +2834,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                       fontFamily: 'Montserrat',
                                       fontSize: 15,
                                       fontWeight: FontWeight.bold,
-                                      color: item.isRead ? Colors.white : const Color(0xFFD4AF7A),
+                                      color: item.isRead
+                                          ? Colors.white
+                                          : const Color(0xFFD4AF7A),
                                     ),
                                   ),
                                 ),
@@ -2798,7 +2860,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                           fontFamily: 'Montserrat',
                           fontSize: 13,
                           height: 1.4,
-                          color: Colors.white.withOpacity(item.isRead ? 0.6 : 0.85),
+                          color: Colors.white
+                              .withOpacity(item.isRead ? 0.6 : 0.85),
                         ),
                       ),
                     ],
@@ -2833,11 +2896,14 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
           child: Row(
             children: [
-              _buildTrendFilterButton('day', _isVi ? 'Hôm nay' : 'Today', setSheetState),
+              _buildTrendFilterButton(
+                  'day', _isVi ? 'Hôm nay' : 'Today', setSheetState),
               const SizedBox(width: 8),
-              _buildTrendFilterButton('week', _isVi ? 'Tuần này' : 'This Week', setSheetState),
+              _buildTrendFilterButton(
+                  'week', _isVi ? 'Tuần này' : 'This Week', setSheetState),
               const SizedBox(width: 8),
-              _buildTrendFilterButton('month', _isVi ? 'Tháng này' : 'This Month', setSheetState),
+              _buildTrendFilterButton(
+                  'month', _isVi ? 'Tháng này' : 'This Month', setSheetState),
             ],
           ),
         ),
@@ -2848,7 +2914,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           child: trends.isEmpty
               ? Center(
                   child: Text(
-                    _isVi ? 'Không có đề xuất nào cho khoảng thời gian này.' : 'No recommendations for this period.',
+                    _isVi
+                        ? 'Không có đề xuất nào cho khoảng thời gian này.'
+                        : 'No recommendations for this period.',
                     style: TextStyle(
                       fontFamily: 'Montserrat',
                       fontSize: 14,
@@ -2913,22 +2981,30 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                 padding: const EdgeInsets.all(20),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   children: [
                                     // Top row
                                     Row(
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
                                       children: [
                                         Container(
-                                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                                          padding: const EdgeInsets.symmetric(
+                                              horizontal: 12, vertical: 6),
                                           decoration: BoxDecoration(
                                             gradient: const LinearGradient(
-                                              colors: [Color(0xFFD4AF7A), Color(0xFFB5956A)],
+                                              colors: [
+                                                Color(0xFFD4AF7A),
+                                                Color(0xFFB5956A)
+                                              ],
                                             ),
-                                            borderRadius: BorderRadius.circular(12),
+                                            borderRadius:
+                                                BorderRadius.circular(12),
                                             boxShadow: [
                                               BoxShadow(
-                                                color: const Color(0xFFD4AF7A).withOpacity(0.3),
+                                                color: const Color(0xFFD4AF7A)
+                                                    .withOpacity(0.3),
                                                 blurRadius: 8,
                                                 offset: const Offset(0, 2),
                                               ),
@@ -2946,15 +3022,22 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                           ),
                                         ),
                                         Container(
-                                          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                                          padding: const EdgeInsets.symmetric(
+                                              horizontal: 10, vertical: 4),
                                           decoration: BoxDecoration(
-                                            color: Colors.black.withOpacity(0.6),
-                                            borderRadius: BorderRadius.circular(20),
-                                            border: Border.all(color: Colors.white24, width: 0.8),
+                                            color:
+                                                Colors.black.withOpacity(0.6),
+                                            borderRadius:
+                                                BorderRadius.circular(20),
+                                            border: Border.all(
+                                                color: Colors.white24,
+                                                width: 0.8),
                                           ),
                                           child: Row(
                                             children: [
-                                              const Icon(Icons.star_rounded, color: Color(0xFFF1C40F), size: 14),
+                                              const Icon(Icons.star_rounded,
+                                                  color: Color(0xFFF1C40F),
+                                                  size: 14),
                                               const SizedBox(width: 4),
                                               Text(
                                                 '${rec.rating}',
@@ -2973,22 +3056,27 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
                                     // Bottom section
                                     Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Row(
-                                          crossAxisAlignment: CrossAxisAlignment.end,
-                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.end,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
                                           children: [
                                             Expanded(
                                               child: Column(
-                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
                                                 children: [
                                                   Text(
                                                     rec.province.toUpperCase(),
                                                     style: const TextStyle(
                                                       fontFamily: 'Montserrat',
                                                       fontSize: 11,
-                                                      fontWeight: FontWeight.bold,
+                                                      fontWeight:
+                                                          FontWeight.bold,
                                                       color: Color(0xFFD4AF7A),
                                                       letterSpacing: 1.0,
                                                     ),
@@ -2997,11 +3085,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                                   Text(
                                                     rec.title,
                                                     maxLines: 2,
-                                                    overflow: TextOverflow.ellipsis,
+                                                    overflow:
+                                                        TextOverflow.ellipsis,
                                                     style: const TextStyle(
                                                       fontFamily: 'Montserrat',
                                                       fontSize: 18,
-                                                      fontWeight: FontWeight.bold,
+                                                      fontWeight:
+                                                          FontWeight.bold,
                                                       color: Colors.white,
                                                       letterSpacing: -0.2,
                                                     ),
@@ -3030,46 +3120,65 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                             fontFamily: 'Montserrat',
                                             fontSize: 12.5,
                                             height: 1.4,
-                                            color: Colors.white.withOpacity(0.8),
+                                            color:
+                                                Colors.white.withOpacity(0.8),
                                           ),
                                         ),
                                         const SizedBox(height: 12),
                                         Row(
-                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
                                           children: [
                                             Text(
                                               '⭐ ${rec.rating} · ${rec.reviewsCount} lượt quan tâm',
                                               style: TextStyle(
                                                 fontFamily: 'Montserrat',
                                                 fontSize: 12,
-                                                color: Colors.white.withOpacity(0.5),
+                                                color: Colors.white
+                                                    .withOpacity(0.5),
                                               ),
                                             ),
                                             GestureDetector(
                                               onTap: () {
                                                 Navigator.pop(context);
-                                                _openPlaceDetail(rec.destination, context);
+                                                _openPlaceDetail(
+                                                    rec.destination, context);
                                               },
                                               child: Container(
-                                                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                                padding:
+                                                    const EdgeInsets.symmetric(
+                                                        horizontal: 16,
+                                                        vertical: 8),
                                                 decoration: BoxDecoration(
                                                   color: Colors.transparent,
-                                                  borderRadius: BorderRadius.circular(16),
-                                                  border: Border.all(color: const Color(0xFFD4AF7A), width: 1.5),
+                                                  borderRadius:
+                                                      BorderRadius.circular(16),
+                                                  border: Border.all(
+                                                      color: const Color(
+                                                          0xFFD4AF7A),
+                                                      width: 1.5),
                                                 ),
                                                 child: const Row(
                                                   children: [
                                                     Text(
                                                       'Lên lịch ngay',
                                                       style: TextStyle(
-                                                        fontFamily: 'Montserrat',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         fontSize: 12.5,
-                                                        fontWeight: FontWeight.bold,
-                                                        color: Color(0xFFD4AF7A),
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                        color:
+                                                            Color(0xFFD4AF7A),
                                                       ),
                                                     ),
                                                     SizedBox(width: 4),
-                                                    Icon(Icons.arrow_forward_rounded, color: Color(0xFFD4AF7A), size: 14),
+                                                    Icon(
+                                                        Icons
+                                                            .arrow_forward_rounded,
+                                                        color:
+                                                            Color(0xFFD4AF7A),
+                                                        size: 14),
                                                   ],
                                                 ),
                                               ),
@@ -3093,7 +3202,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     );
   }
 
-  Widget _buildTrendFilterButton(String key, String title, StateSetter setSheetState) {
+  Widget _buildTrendFilterButton(
+      String key, String title, StateSetter setSheetState) {
     final isActive = _selectedTrendFilter == key;
     return Expanded(
       child: GestureDetector(
@@ -3106,7 +3216,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         child: Container(
           height: 38,
           decoration: BoxDecoration(
-            color: isActive ? const Color(0xFFD4AF7A).withOpacity(0.15) : Colors.transparent,
+            color: isActive
+                ? const Color(0xFFD4AF7A).withOpacity(0.15)
+                : Colors.transparent,
             borderRadius: BorderRadius.circular(14),
             border: Border.all(
               color: isActive ? const Color(0xFFD4AF7A) : Colors.white12,
@@ -3170,7 +3282,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       }
 
       if ((placeId == null || placeId.isEmpty) && !currentlySaved) {
-        placeId = await resolveLocationIdByName(dest.name, dest.type, token: token);
+        placeId =
+            await resolveLocationIdByName(dest.name, dest.type, token: token);
       }
 
       if (placeId == null || placeId.isEmpty) {
@@ -3332,7 +3445,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   void _jumpToRegion(String region) {
     final destinations = _exploreDestinations;
-    final idx = destinations.indexWhere((d) => _citiesMatch(d.province, region));
+    final idx =
+        destinations.indexWhere((d) => _citiesMatch(d.province, region));
     if (idx >= 0 && idx != _currentIndex) {
       if (_pageController.hasClients) {
         final currentPage = _pageController.page?.round() ?? 1000;
@@ -3350,8 +3464,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   String _stripDiacritics(String str) {
-    var withDiacritics = 'àáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđĐ';
-    var withoutDiacritics = 'aaaaaaaaaaaaaaaaaeeeeeeeeeeeiiiiiooooooooooooooooouuuuuuuuuuuyyyyydd';
+    var withDiacritics =
+        'àáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđĐ';
+    var withoutDiacritics =
+        'aaaaaaaaaaaaaaaaaeeeeeeeeeeeiiiiiooooooooooooooooouuuuuuuuuuuyyyyydd';
     var result = str.toLowerCase();
     result = result.replaceAll(RegExp(r'[\u0300-\u036f]'), '');
     for (int i = 0; i < withDiacritics.length; i++) {
@@ -3424,7 +3540,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         final cleanProv = _normalizeString(prov);
         final cleanTranslated = _normalizeString(_translateProvince(prov));
         final isExact = (cleanVal == cleanProv || cleanVal == cleanTranslated);
-        final isPartial = (cleanVal.length >= 5 && (cleanProv.contains(cleanVal) || cleanTranslated.contains(cleanVal) || cleanVal.contains(cleanProv) || cleanVal.contains(cleanTranslated)));
+        final isPartial = (cleanVal.length >= 5 &&
+            (cleanProv.contains(cleanVal) ||
+                cleanTranslated.contains(cleanVal) ||
+                cleanVal.contains(cleanProv) ||
+                cleanVal.contains(cleanTranslated)));
         if (isExact || isPartial) {
           matchedProv = prov;
           break;
@@ -3438,7 +3558,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           _searchResults = [];
         });
         _searchDebounceTimer?.cancel();
-        _searchDebounceTimer = Timer(const Duration(milliseconds: 300), () async {
+        _searchDebounceTimer =
+            Timer(const Duration(milliseconds: 300), () async {
           await _performBackendSearch(value);
         });
         return;
@@ -3554,7 +3675,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     final controller =
         useSearchResults ? _searchPageController : _pageController;
     if (controller.hasClients) {
-      final list = useSearchResults ? _searchDestinations : _exploreDestinations;
+      final list =
+          useSearchResults ? _searchDestinations : _exploreDestinations;
       if (list.length > 3) {
         controller.jumpToPage(1000 - (1000 % list.length));
       } else {
@@ -3568,8 +3690,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     if (list.isEmpty) return 0;
 
     final page = useSearchResults ? _searchBackendPage : _exploreBackendPage;
-    final localIndex =
-        useSearchResults ? _searchCurrentIndex : _currentIndex;
+    final localIndex = useSearchResults ? _searchCurrentIndex : _currentIndex;
     final total = useSearchResults ? _searchTotalItems : _exploreTotalItems;
     final value = ((page - 1) * _filterLimit) + localIndex + 1;
     return total <= 0 ? value : value.clamp(1, total).toInt();
@@ -3684,8 +3805,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     final list = useSearchResults ? _searchDestinations : _exploreDestinations;
     if (list.isEmpty) return;
 
-    final currentIndex =
-        useSearchResults ? _searchCurrentIndex : _currentIndex;
+    final currentIndex = useSearchResults ? _searchCurrentIndex : _currentIndex;
     final nextIndex = currentIndex + direction;
     final backendPage =
         useSearchResults ? _searchBackendPage : _exploreBackendPage;
@@ -3836,7 +3956,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     _popupSelectionField(
                       title: _isVi ? 'Loại địa điểm' : 'Location Type',
                       value: _selectedLocationKindLabel(_selectedLocationKind),
-                      hint: _isVi ? 'Chạm để chọn loại địa điểm' : 'Tap to select location type',
+                      hint: _isVi
+                          ? 'Chạm để chọn loại địa điểm'
+                          : 'Tap to select location type',
                       onTap: () async {
                         final selected = await _showSingleSelectPopup(
                           title: _isVi ? 'Loại địa điểm' : 'Location Type',
@@ -3873,11 +3995,16 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     const SizedBox(height: 10),
                     _popupSelectionField(
                       title: _isVi ? 'Thành phố' : 'City',
-                      value: _selectedCity != null ? _translateProvince(_selectedCity!) : (_isVi ? 'Tất cả thành phố' : 'All Cities'),
-                      hint: _isVi ? 'Chạm để chọn thành phố' : 'Tap to select city',
+                      value: _selectedCity != null
+                          ? _translateProvince(_selectedCity!)
+                          : (_isVi ? 'Tất cả thành phố' : 'All Cities'),
+                      hint: _isVi
+                          ? 'Chạm để chọn thành phố'
+                          : 'Tap to select city',
                       onTap: () async {
                         final selected = await _showSingleSelectPopup(
-                          title: _isVi ? 'Lọc theo Thành phố' : 'Filter by City',
+                          title:
+                              _isVi ? 'Lọc theo Thành phố' : 'Filter by City',
                           options: cities,
                           selectedValue: _selectedCity,
                           clearLabel: _isVi ? 'Tất cả thành phố' : 'All Cities',
@@ -3952,7 +4079,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       _popupSelectionField(
                         title: _isVi ? 'Tags' : 'Tags',
                         value: _tagsSummary(_selectedTags),
-                        hint: _isVi ? 'Chạm để chọn tags' : 'Tap to select tags',
+                        hint:
+                            _isVi ? 'Chạm để chọn tags' : 'Tap to select tags',
                         onTap: () async {
                           final selected = await _showMultiSelectPopup(
                             title: _isVi ? 'Tags' : 'Tags',
@@ -3988,7 +4116,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       children: sortOptions.map((opt) {
                         final isSelected = _sortBy == opt['field'];
                         return _choiceChip(
-                          label: _isVi ? opt['label']! : (opt['field'] == 'rating' ? 'Rating' : (opt['field'] == 'reviewsCount' ? 'Reviews' : 'Name')),
+                          label: _isVi
+                              ? opt['label']!
+                              : (opt['field'] == 'rating'
+                                  ? 'Rating'
+                                  : (opt['field'] == 'reviewsCount'
+                                      ? 'Reviews'
+                                      : 'Name')),
                           isSelected: isSelected,
                           centerText: true,
                           onTap: () {
@@ -4131,7 +4265,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         Expanded(
                           child: _filterValueButton(
                             icon: Icons.access_time_rounded,
-                            label: _filterTime ?? (_isVi ? 'Giờ bất kỳ' : 'Anytime'),
+                            label: _filterTime ??
+                                (_isVi ? 'Giờ bất kỳ' : 'Anytime'),
                             onTap: () async {
                               final initial = _filterTime?.split(':');
                               final picked = await showTimePicker(
@@ -4163,7 +4298,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         Expanded(
                           child: _filterValueButton(
                             icon: Icons.calendar_today_rounded,
-                            label: _filterDate ?? (_isVi ? 'Ngày bất kỳ' : 'Anyday'),
+                            label: _filterDate ??
+                                (_isVi ? 'Ngày bất kỳ' : 'Anyday'),
                             onTap: () async {
                               final now = DateTime.now();
                               final picked = await showDatePicker(
@@ -4217,7 +4353,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                   ),
                                   const SizedBox(width: 10),
                                   Text(
-                                    _isVi ? 'Tìm kiếm xung quanh (GPS)' : 'Nearby Search (GPS)',
+                                    _isVi
+                                        ? 'Tìm kiếm xung quanh (GPS)'
+                                        : 'Nearby Search (GPS)',
                                     style: const TextStyle(
                                       fontFamily: 'Montserrat',
                                       fontSize: 14,
@@ -4246,7 +4384,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
-                                  (_isVi ? 'Bán kính: ' : 'Radius: ') + '${_radius >= 1000 ? "${(_radius / 1000).toStringAsFixed(1)} km" : "${_radius.round()} m"}',
+                                  (_isVi ? 'Bán kính: ' : 'Radius: ') +
+                                      '${_radius >= 1000 ? "${(_radius / 1000).toStringAsFixed(1)} km" : "${_radius.round()} m"}',
                                   style: TextStyle(
                                     fontFamily: 'Montserrat',
                                     fontSize: 12,
@@ -4687,7 +4826,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     return Container(
       width: 260,
       decoration: BoxDecoration(
-        color: const Color(0xFF070E0D).withOpacity(0.45), // Semi-transparent dark green/black background for glass effect
+        color: const Color(0xFF070E0D).withOpacity(
+            0.45), // Semi-transparent dark green/black background for glass effect
         border:
             const Border(right: BorderSide(color: Colors.white12, width: 1)),
       ),
@@ -4817,7 +4957,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         borderRadius: BorderRadius.circular(16),
                         border: Border.all(
                           color: isActive
-                              ? const Color(0xFFD4AF7A).withOpacity(0.65) // Subtle glowing gold border for active item
+                              ? const Color(0xFFD4AF7A).withOpacity(
+                                  0.65) // Subtle glowing gold border for active item
                               : Colors.transparent,
                           width: 1.2,
                         ),
@@ -4828,7 +4969,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                             item.$1,
                             color: isActive
                                 ? const Color(0xFFD4AF7A)
-                                : Colors.white.withOpacity(0.65), // Crisp contrast for inactive icons
+                                : Colors.white.withOpacity(
+                                    0.65), // Crisp contrast for inactive icons
                             size: 22,
                           ),
                           const SizedBox(width: 14),
@@ -4841,7 +4983,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                   isActive ? FontWeight.bold : FontWeight.w600,
                               color: isActive
                                   ? Colors.white
-                                  : Colors.white.withOpacity(0.65), // Highly legible inactive text
+                                  : Colors.white.withOpacity(
+                                      0.65), // Highly legible inactive text
                             ),
                           ),
                         ],
@@ -4878,7 +5021,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       ),
                       const SizedBox(width: 14),
                       Text(
-                        isGuest ? (_isVi ? 'Tài khoản' : 'Account') : (_isVi ? 'Đăng xuất' : 'Log Out'),
+                        isGuest
+                            ? (_isVi ? 'Tài khoản' : 'Account')
+                            : (_isVi ? 'Đăng xuất' : 'Log Out'),
                         style: TextStyle(
                           fontFamily: 'Montserrat',
                           fontSize: 14,
@@ -4906,7 +5051,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         _navIndex == _tabSurvey ||
         _navIndex == _tabProfile;
     final blurVal = isSurveyStyle ? 10.0 : (isDesktop ? 0.8 : 5.0);
-    final bgPath = isSurveyStyle ? 'assets/images/login_bg.jpg' : _previousBgPath;
+    final bgPath =
+        isSurveyStyle ? 'assets/images/login_bg.jpg' : _previousBgPath;
 
     return Positioned.fill(
       child: Stack(
@@ -4929,7 +5075,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         _navIndex == _tabSurvey ||
         _navIndex == _tabProfile;
     final blurVal = isSurveyStyle ? 10.0 : (isDesktop ? 0.8 : 5.0);
-    final bgPath = isSurveyStyle ? 'assets/images/login_bg.jpg' : _currentBgPath;
+    final bgPath =
+        isSurveyStyle ? 'assets/images/login_bg.jpg' : _currentBgPath;
 
     return Positioned.fill(
       child: AnimBuilder(
@@ -5192,7 +5339,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       if (destinations.isEmpty) {
         return Center(
           child: Text(
-            _isVi ? 'Chưa có địa điểm nào phù hợp.' : 'No matching locations found.',
+            _isVi
+                ? 'Chưa có địa điểm nào phù hợp.'
+                : 'No matching locations found.',
             style: TextStyle(
               fontFamily: 'Montserrat',
               fontSize: 16,
@@ -5349,7 +5498,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                           child: Stack(
                             clipBehavior: Clip.none,
                             children: [
-                              const Icon(Icons.notifications_none_rounded, color: Colors.white, size: 20),
+                              const Icon(Icons.notifications_none_rounded,
+                                  color: Colors.white, size: 20),
                               if (_notifications.any((n) => !n.isRead))
                                 Positioned(
                                   top: -1,
@@ -5413,7 +5563,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                           // Left Arrow Button
                           WebHoverable(
                             onTap: () {
-                              final prevIdx = (_currentIndex - 1 + destinations.length) % destinations.length;
+                              final prevIdx =
+                                  (_currentIndex - 1 + destinations.length) %
+                                      destinations.length;
                               _selectDestination(prevIdx);
                             },
                             child: Container(
@@ -5421,10 +5573,14 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                               height: 52,
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
-                                border: Border.all(color: Colors.white30, width: 1.5),
+                                border: Border.all(
+                                    color: Colors.white30, width: 1.5),
                                 color: Colors.white.withOpacity(0.05),
                               ),
-                              child: const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white, size: 18),
+                              child: const Icon(
+                                  Icons.arrow_back_ios_new_rounded,
+                                  color: Colors.white,
+                                  size: 18),
                             ),
                           ),
                           const SizedBox(width: 16),
@@ -5462,7 +5618,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                           // Right Arrow Button
                           WebHoverable(
                             onTap: () {
-                              final nextIdx = (_currentIndex + 1) % destinations.length;
+                              final nextIdx =
+                                  (_currentIndex + 1) % destinations.length;
                               _selectDestination(nextIdx);
                             },
                             child: Container(
@@ -5470,10 +5627,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                               height: 52,
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
-                                border: Border.all(color: Colors.white30, width: 1.5),
+                                border: Border.all(
+                                    color: Colors.white30, width: 1.5),
                                 color: Colors.white.withOpacity(0.05),
                               ),
-                              child: const Icon(Icons.arrow_forward_ios_rounded, color: Colors.white, size: 18),
+                              child: const Icon(Icons.arrow_forward_ios_rounded,
+                                  color: Colors.white, size: 18),
                             ),
                           ),
                         ],
@@ -5516,7 +5675,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                 Row(
                                   children: [
                                     WebHoverable(
-                                      onTap: () => _openPlaceDetail(activeDest, ctx),
+                                      onTap: () =>
+                                          _openPlaceDetail(activeDest, ctx),
                                       child: const Text(
                                         'XEM CHI TIẾT >>',
                                         style: TextStyle(
@@ -5529,40 +5689,51 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                       ),
                                     ),
                                     const SizedBox(width: 24),
-                                    Builder(
-                                      builder: (buttonCtx) {
-                                        final isSaved = _savedNames.contains(activeDest.name);
-                                        final isBusy = _updatingSavedNames.contains(activeDest.name);
-                                        
-                                        return WebHoverable(
-                                          onTap: isBusy ? null : () async {
-                                            await _toggleSaved(activeDest);
-                                            setState(() {});
-                                          },
-                                          child: Row(
-                                            mainAxisSize: MainAxisSize.min,
-                                            children: [
-                                              Icon(
-                                                isSaved ? Icons.bookmark_rounded : Icons.bookmark_border_rounded,
-                                                color: isSaved ? const Color(0xFFD4AF7A) : Colors.white70,
-                                                size: 16,
+                                    Builder(builder: (buttonCtx) {
+                                      final isSaved =
+                                          _savedNames.contains(activeDest.name);
+                                      final isBusy = _updatingSavedNames
+                                          .contains(activeDest.name);
+
+                                      return WebHoverable(
+                                        onTap: isBusy
+                                            ? null
+                                            : () async {
+                                                await _toggleSaved(activeDest);
+                                                setState(() {});
+                                              },
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.min,
+                                          children: [
+                                            Icon(
+                                              isSaved
+                                                  ? Icons.bookmark_rounded
+                                                  : Icons
+                                                      .bookmark_border_rounded,
+                                              color: isSaved
+                                                  ? const Color(0xFFD4AF7A)
+                                                  : Colors.white70,
+                                              size: 16,
+                                            ),
+                                            const SizedBox(width: 6),
+                                            Text(
+                                              isSaved
+                                                  ? 'ĐÃ LƯU'
+                                                  : 'LƯU ĐỊA ĐIỂM',
+                                              style: TextStyle(
+                                                fontFamily: 'Montserrat',
+                                                fontSize: 12,
+                                                fontWeight: FontWeight.w800,
+                                                color: isSaved
+                                                    ? const Color(0xFFD4AF7A)
+                                                    : Colors.white70,
+                                                letterSpacing: 1.0,
                                               ),
-                                              const SizedBox(width: 6),
-                                              Text(
-                                                isSaved ? 'ĐÃ LƯU' : 'LƯU ĐỊA ĐIỂM',
-                                                style: TextStyle(
-                                                  fontFamily: 'Montserrat',
-                                                  fontSize: 12,
-                                                  fontWeight: FontWeight.w800,
-                                                  color: isSaved ? const Color(0xFFD4AF7A) : Colors.white70,
-                                                  letterSpacing: 1.0,
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        );
-                                      }
-                                    ),
+                                            ),
+                                          ],
+                                        ),
+                                      );
+                                    }),
                                   ],
                                 ),
                               ],
@@ -5753,13 +5924,17 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                   left: 20,
                                   bottom: 44,
                                   child: Container(
-                                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 8, vertical: 4),
                                     decoration: BoxDecoration(
                                       color: dest.type == 'Nhà hàng'
-                                          ? const Color(0xFFE67E22).withValues(alpha: 0.85)
+                                          ? const Color(0xFFE67E22)
+                                              .withValues(alpha: 0.85)
                                           : dest.type == 'Khách sạn'
-                                              ? const Color(0xFF3498DB).withValues(alpha: 0.85)
-                                              : const Color(0xFFB5956A).withValues(alpha: 0.85),
+                                              ? const Color(0xFF3498DB)
+                                                  .withValues(alpha: 0.85)
+                                              : const Color(0xFFB5956A)
+                                                  .withValues(alpha: 0.85),
                                       borderRadius: BorderRadius.circular(6),
                                     ),
                                     child: Text(
@@ -6162,7 +6337,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 child: Stack(
                   clipBehavior: Clip.none,
                   children: [
-                    const Icon(Icons.notifications_none_rounded, color: Colors.white, size: 24),
+                    const Icon(Icons.notifications_none_rounded,
+                        color: Colors.white, size: 24),
                     if (_notifications.any((n) => !n.isRead))
                       Positioned(
                         top: -2,
@@ -6852,7 +7028,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     if (destinations.isEmpty) {
       return Center(
         child: Text(
-          _isVi ? 'Chưa có địa điểm nào được thả tim.' : 'No locations favorited yet.',
+          _isVi
+              ? 'Chưa có địa điểm nào được thả tim.'
+              : 'No locations favorited yet.',
           style: TextStyle(
             fontFamily: 'Montserrat',
             fontSize: 15,
@@ -7186,13 +7364,17 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                               mainAxisSize: MainAxisSize.min,
                               children: [
                                 Container(
-                                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 8, vertical: 4),
                                   decoration: BoxDecoration(
                                     color: dest.type == 'Nhà hàng'
-                                        ? const Color(0xFFE67E22).withValues(alpha: 0.85)
+                                        ? const Color(0xFFE67E22)
+                                            .withValues(alpha: 0.85)
                                         : dest.type == 'Khách sạn'
-                                            ? const Color(0xFF3498DB).withValues(alpha: 0.85)
-                                            : const Color(0xFFB5956A).withValues(alpha: 0.85),
+                                            ? const Color(0xFF3498DB)
+                                                .withValues(alpha: 0.85)
+                                            : const Color(0xFFB5956A)
+                                                .withValues(alpha: 0.85),
                                     borderRadius: BorderRadius.circular(6),
                                   ),
                                   child: Text(
@@ -7497,7 +7679,8 @@ class _SurveyAiWarmupView extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.black.withOpacity(0.34),
                 borderRadius: BorderRadius.circular(28),
-                border: Border.all(color: Colors.white.withOpacity(0.14), width: 1.2),
+                border: Border.all(
+                    color: Colors.white.withOpacity(0.14), width: 1.2),
               ),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
