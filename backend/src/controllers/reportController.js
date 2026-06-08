@@ -6,6 +6,7 @@ import RestaurantDB from '../models/RestaurantDB.js';
 import TourDB from '../models/TourDB.js';
 import UserDB from '../models/UserDB.js';
 import ReportDB from '../models/ReportDB.js';
+import AppReviewDB from '../models/AppReviewDB.js';
 
 import respond from '../utils/respond.js';
 
@@ -366,6 +367,174 @@ export const deleteReport = async (
             message:
                 'Report deleted successfully!',
             deletedId: report._id
+        });
+    } catch (error) {
+        next(error);
+    }
+};
+
+// ═══════════════════════════════════════════════════════════════════════════
+// PHẢN ÁNH ỨNG DỤNG (App Feedback) – tái dùng AppReviewDB / app_reviews
+// ═══════════════════════════════════════════════════════════════════════════
+
+const toFeedbackResponse = (doc) => ({
+    id: doc._id,
+    userId: doc.userId,
+    rating: doc.rating,
+    title: doc.title,
+    text: doc.text,
+    user: doc.user,
+    helpful_votes: doc.helpful_votes,
+    createdAt: doc.createdAt,
+    updatedAt: doc.updatedAt
+});
+
+// GET /reports/app-feedback  (public)
+export const getAllAppFeedback = async (req, res, next) => {
+    try {
+        const page  = parsePositiveInt(req.query.page, 1);
+        const limit = Math.min(parsePositiveInt(req.query.limit, 20), 100);
+        const skip  = (page - 1) * limit;
+
+        const [docs, total] = await Promise.all([
+            AppReviewDB.find().sort({ createdAt: -1 }).skip(skip).limit(limit),
+            AppReviewDB.countDocuments()
+        ]);
+
+        res.status(200).json({
+            success: true,
+            count: docs.length,
+            total,
+            page,
+            totalPages: Math.ceil(total / limit),
+            data: docs.map(toFeedbackResponse)
+        });
+    } catch (error) {
+        next(error);
+    }
+};
+
+// GET /reports/app-feedback/my  (authenticated)
+export const getMyAppFeedback = async (req, res, next) => {
+    try {
+        const page  = parsePositiveInt(req.query.page, 1);
+        const limit = Math.min(parsePositiveInt(req.query.limit, 20), 100);
+        const skip  = (page - 1) * limit;
+
+        const [docs, total] = await Promise.all([
+            AppReviewDB.find({ userId: req.user.id }).sort({ createdAt: -1 }).skip(skip).limit(limit),
+            AppReviewDB.countDocuments({ userId: req.user.id })
+        ]);
+
+        res.status(200).json({
+            success: true,
+            count: docs.length,
+            total,
+            page,
+            totalPages: Math.ceil(total / limit),
+            data: docs.map(toFeedbackResponse)
+        });
+    } catch (error) {
+        next(error);
+    }
+};
+
+// POST /reports/app-feedback  (authenticated)
+export const createAppFeedback = async (req, res, next) => {
+    try {
+        const { rating, title, text } = req.body;
+
+        if (!rating || !title || !text) {
+            return next(respond.httpError('Rating, title và nội dung là bắt buộc', 400));
+        }
+
+        if (rating < 1 || rating > 5) {
+            return next(respond.httpError('Rating phải từ 1 đến 5', 400));
+        }
+
+        if (title.trim().length === 0 || title.trim().length > 100) {
+            return next(respond.httpError('Tiêu đề phải từ 1 đến 100 ký tự', 400));
+        }
+
+        if (text.trim().length === 0 || text.trim().length > 1000) {
+            return next(respond.httpError('Nội dung phải từ 1 đến 1000 ký tự', 400));
+        }
+
+        const user = await UserDB.findById(req.user.id);
+        if (!user) {
+            return next(respond.httpError('Không tìm thấy người dùng', 404));
+        }
+
+        const doc = new AppReviewDB({
+            userId: req.user.id,
+            rating: Math.round(rating),
+            title: title.trim(),
+            text: text.trim(),
+            user: {
+                username: user.name || user.email,
+                avatar: user.avatar || { url: '', public_id: '' }
+            }
+        });
+
+        await doc.save();
+
+        res.status(201).json({
+            success: true,
+            message: 'Phản ánh đã được gửi thành công!',
+            data: toFeedbackResponse(doc)
+        });
+    } catch (error) {
+        next(error);
+    }
+};
+
+// PUT /reports/app-feedback/:feedbackId  (authenticated)
+export const updateAppFeedback = async (req, res, next) => {
+    try {
+        const { feedbackId } = req.params;
+        const { rating, title, text } = req.body;
+
+        const doc = await AppReviewDB.findOne({ _id: feedbackId, userId: req.user.id });
+        if (!doc) {
+            return next(respond.httpError('Không tìm thấy phản ánh', 404));
+        }
+
+        if (rating && (rating < 1 || rating > 5)) {
+            return next(respond.httpError('Rating phải từ 1 đến 5', 400));
+        }
+
+        if (rating) doc.rating = Math.round(rating);
+        if (title)  doc.title  = title.trim();
+        if (text)   doc.text   = text.trim();
+
+        await doc.save();
+
+        res.status(200).json({
+            success: true,
+            message: 'Phản ánh đã được cập nhật!',
+            data: toFeedbackResponse(doc)
+        });
+    } catch (error) {
+        next(error);
+    }
+};
+
+// DELETE /reports/app-feedback/:feedbackId  (authenticated)
+export const deleteAppFeedback = async (req, res, next) => {
+    try {
+        const { feedbackId } = req.params;
+
+        const doc = await AppReviewDB.findOne({ _id: feedbackId, userId: req.user.id });
+        if (!doc) {
+            return next(respond.httpError('Không tìm thấy phản ánh', 404));
+        }
+
+        await doc.deleteOne();
+
+        res.status(200).json({
+            success: true,
+            message: 'Phản ánh đã được xoá!',
+            deletedId: doc._id
         });
     } catch (error) {
         next(error);

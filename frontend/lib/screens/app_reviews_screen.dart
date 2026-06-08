@@ -4,7 +4,7 @@ import '../api/api.dart';
 
 // ─── Models ──────────────────────────────────────────────────────────────────
 
-class AppReview {
+class AppFeedback {
   final String id;
   final String username;
   final String? avatarUrl;
@@ -13,7 +13,7 @@ class AppReview {
   final String content;
   final DateTime? createdAt;
 
-  AppReview({
+  AppFeedback({
     required this.id,
     required this.username,
     this.avatarUrl,
@@ -23,10 +23,10 @@ class AppReview {
     this.createdAt,
   });
 
-  factory AppReview.fromJson(Map<String, dynamic> json) {
+  factory AppFeedback.fromJson(Map<String, dynamic> json) {
     final userMap = json['user'] as Map<String, dynamic>?;
     final avatarMap = userMap?['avatar'] as Map<String, dynamic>?;
-    return AppReview(
+    return AppFeedback(
       id: json['id']?.toString() ?? json['_id']?.toString() ?? '',
       username: userMap?['username'] ?? json['username'] ?? 'Ẩn danh',
       avatarUrl: avatarMap?['url'] as String?,
@@ -59,8 +59,8 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
   late AnimationController _fadeController;
   late AnimationController _floatingController;
 
-  List<AppReview> _allReviews = [];
-  AppReview? _myReview;
+  List<AppFeedback> _allReviews = [];
+  AppFeedback? _myReview;
   bool _isLoadingAll = true;
   bool _isLoadingMine = false;
   bool _isSubmitting = false;
@@ -115,7 +115,7 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
       _loadError = null;
     });
     try {
-      final response = await apiGet('/app-reviews?limit=50').timeout(
+      final response = await apiGet('/reports/app-feedback?limit=50').timeout(
         const Duration(seconds: 12),
         onTimeout: () => throw Exception('Timeout'),
       );
@@ -126,7 +126,7 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
           if (data is List) {
             setState(() {
               _allReviews =
-                  data.map((j) => AppReview.fromJson(j as Map<String, dynamic>)).toList();
+                  data.map((j) => AppFeedback.fromJson(j as Map<String, dynamic>)).toList();
             });
           }
         }
@@ -145,7 +145,7 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
     setState(() => _isLoadingMine = true);
     try {
       final response = await apiGet(
-        '/app-reviews/my-reviews',
+        '/reports/app-feedback/my',
         token: widget.authToken,
       ).timeout(const Duration(seconds: 10));
 
@@ -154,7 +154,7 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
         if (body != null && body['success'] == true) {
           final data = body['data'];
           if (data is List && data.isNotEmpty) {
-            setState(() => _myReview = AppReview.fromJson(data.first as Map<String, dynamic>));
+            setState(() => _myReview = AppFeedback.fromJson(data.first as Map<String, dynamic>));
           } else {
             setState(() => _myReview = null);
           }
@@ -188,7 +188,7 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
     setState(() => _isSubmitting = true);
     try {
       final response = await apiPostJson(
-        '/app-reviews',
+        '/reports/app-feedback',
         {
           'rating': _selectedRating,
           'title': _titleCtrl.text.trim(),
@@ -201,7 +201,7 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
         _titleCtrl.clear();
         _contentCtrl.clear();
         setState(() => _selectedRating = 0);
-        _showSnack(_isVi ? 'Đánh giá đã được gửi! 🎉' : 'Review submitted! 🎉');
+        _showSnack(_isVi ? 'Phản ánh đã được gửi! 🎉' : 'Report submitted! 🎉');
         _fetchAllReviews();
         _fetchMyReview();
       } else {
@@ -264,14 +264,14 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
 
                         // My review / form
                         _buildSectionLabel(
-                            _isVi ? 'Đánh giá của bạn' : 'Your Review'),
+                            _isVi ? 'Phản ánh của bạn' : 'Your Feedback'),
                         const SizedBox(height: 16),
                         _buildMyReviewSection(),
                         const SizedBox(height: 40),
 
-                        // All reviews
+                        // All feedback
                         _buildSectionLabel(
-                            _isVi ? 'Cộng đồng đánh giá' : 'Community Reviews'),
+                            _isVi ? 'Phản ánh cộng đồng' : 'Community Feedback'),
                         const SizedBox(height: 16),
                         _buildAllReviewsSection(),
 
@@ -360,7 +360,7 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
         ),
         const SizedBox(height: 24),
         Text(
-          _isVi ? 'Đánh Giá Ứng Dụng' : 'Rate Our App',
+          _isVi ? 'Phản Ánh Ứng Dụng' : 'App Feedback',
           style: const TextStyle(
             fontFamily: 'Montserrat',
             fontSize: 34,
@@ -372,8 +372,8 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
         const SizedBox(height: 10),
         Text(
           _isVi
-              ? 'Hãy chia sẻ trải nghiệm của bạn và đọc đánh giá từ cộng đồng du lịch.'
-              : 'Share your experience and read reviews from our travel community.',
+              ? 'Hãy chia sẻ phản ánh của bạn để giúp chúng tôi cải thiện ứng dụng tốt hơn.'
+              : 'Share your feedback to help us improve the app for everyone.',
           style: TextStyle(
             fontFamily: 'Montserrat',
             fontSize: 14,
@@ -521,8 +521,8 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
               Expanded(
                 child: Text(
                   _isVi
-                      ? 'Vui lòng đăng nhập để gửi đánh giá'
-                      : 'Please log in to submit a review',
+                      ? 'Vui lòng đăng nhập để gửi phản ánh'
+                      : 'Please log in to submit feedback',
                   style: TextStyle(
                     fontFamily: 'Montserrat',
                     color: Colors.white.withOpacity(0.7),
@@ -553,13 +553,13 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
     }
 
     if (_myReview != null) {
-      return _buildExistingReviewCard(_myReview!);
+      return _buildExistingFeedbackCard(_myReview!);
     }
 
     return _buildReviewForm();
   }
 
-  Widget _buildExistingReviewCard(AppReview review) {
+  Widget _buildExistingFeedbackCard(AppFeedback feedback) {
     return _buildGlassCard(
       padding: const EdgeInsets.all(24),
       borderColor: const Color(0xFF2ECC71),
@@ -579,7 +579,7 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
               ),
               const SizedBox(width: 12),
               Text(
-                _isVi ? 'Bạn đã đánh giá' : 'Your Review',
+                _isVi ? 'Bạn đã phản ánh' : 'Your Feedback',
                 style: const TextStyle(
                   fontFamily: 'Montserrat',
                   fontSize: 14,
@@ -588,12 +588,12 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
                 ),
               ),
               const Spacer(),
-              _buildStarRow(review.rating, size: 16),
+              _buildStarRow(feedback.rating, size: 16),
             ],
           ),
           const SizedBox(height: 16),
           Text(
-            review.title,
+            feedback.title,
             style: const TextStyle(
               fontFamily: 'Montserrat',
               fontSize: 16,
@@ -603,7 +603,7 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
           ),
           const SizedBox(height: 8),
           Text(
-            review.content,
+            feedback.content,
             style: TextStyle(
               fontFamily: 'Montserrat',
               fontSize: 13,
@@ -625,7 +625,7 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
           child: Column(
             children: [
               Text(
-                _isVi ? 'Xếp hạng của bạn' : 'Your Rating',
+                _isVi ? 'Mức độ hài lòng' : 'Satisfaction Level',
                 style: const TextStyle(
                   fontFamily: 'Montserrat',
                   fontSize: 15,
@@ -727,7 +727,7 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
         // Submit button
         _buildGoldButton(
           onPressed: _isSubmitting ? null : _submitReview,
-          text: _isVi ? 'Gửi đánh giá' : 'Submit Review',
+          text: _isVi ? 'Gửi phản ánh' : 'Submit Feedback',
           icon: _isSubmitting ? null : Icons.send_rounded,
           isLoading: _isSubmitting,
         ),
@@ -796,8 +796,8 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
                 const SizedBox(height: 16),
                 Text(
                   _isVi
-                      ? 'Chưa có đánh giá nào.\nHãy là người đầu tiên!'
-                      : 'No reviews yet.\nBe the first to review!',
+                      ? 'Chưa có phản ánh nào.\nHãy là người đầu tiên!'
+                      : 'No feedback yet.\nBe the first to share!',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontFamily: 'Montserrat',
@@ -817,13 +817,13 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
       children: _allReviews
           .map((r) => Padding(
                 padding: const EdgeInsets.only(bottom: 14),
-                child: _buildReviewCard(r),
+                child: _buildFeedbackCard(r),
               ))
           .toList(),
     );
   }
 
-  Widget _buildReviewCard(AppReview review) {
+  Widget _buildFeedbackCard(AppFeedback review) {
     final initials = review.username.isNotEmpty
         ? review.username[0].toUpperCase()
         : '?';

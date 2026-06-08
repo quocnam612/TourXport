@@ -136,7 +136,7 @@ class _TourXportAppState extends State<TourXportApp> {
                 );
               }
 
-              if (routeName == '/app-reviews') {
+              if (routeName == '/reports') {
                 final authToken = settings.arguments as String?;
                 return MaterialPageRoute(
                   settings: settings,

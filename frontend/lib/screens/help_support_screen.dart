@@ -369,9 +369,9 @@ class _HelpSupportScreenState extends State<HelpSupportScreen>
         'route': '/contact'
       },
       {
-        'title': _isVi ? 'Đánh giá ứng dụng' : 'Rate app',
-        'icon': Icons.rate_review_rounded,
-        'route': '/app-reviews'
+        'title': _isVi ? 'Phản ánh' : 'Feedback',
+        'icon': Icons.campaign_rounded,
+        'route': '/reports'
       },
       {
         'title': _isVi ? 'Chính sách bảo mật' : 'Privacy policy',
@@ -403,7 +403,7 @@ class _HelpSupportScreenState extends State<HelpSupportScreen>
             onTap: route == null
                 ? null
                 : () {
-                    if (route == '/app-reviews') {
+                    if (route == '/reports') {
                       Navigator.pushNamed(context, route,
                           arguments: widget.authToken);
                     } else {
