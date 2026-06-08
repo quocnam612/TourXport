@@ -1,6 +1,8 @@
 import 'dart:ui';
 
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../api/api.dart';
 import '../models/destination.dart';
@@ -398,6 +400,110 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
       ..showSnackBar(SnackBar(content: Text(message)));
   }
 
+  void _sharePlace() {
+    final String domain = kIsWeb ? Uri.base.origin : 'https://tourxport.vercel.app';
+    final String targetId = widget.destination.id ?? widget.destination.sourceLocationId ?? '';
+    if (targetId.isEmpty) {
+      _showMessage(_isVi ? 'Không tìm thấy ID địa điểm để chia sẻ' : 'Location ID not found for sharing');
+      return;
+    }
+    final String shareUrl = '$domain/place?id=$targetId&type=${Uri.encodeComponent(widget.destination.type)}';
+    
+    _showShareDialog(context, shareUrl, _isVi ? 'địa điểm' : 'place');
+  }
+
+  void _showShareDialog(BuildContext context, String shareUrl, String title) {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
+          child: AlertDialog(
+            backgroundColor: const Color(0xFF0F1E1B).withOpacity(0.92),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(24),
+              side: BorderSide(color: Colors.white.withOpacity(0.12), width: 1.2),
+            ),
+            title: Text(
+              _isVi ? 'Chia sẻ $title' : 'Share $title',
+              style: const TextStyle(
+                fontFamily: 'Montserrat',
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 18,
+              ),
+            ),
+            content: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  _isVi
+                      ? 'Sao chép liên kết bên dưới để chia sẻ với người khác:'
+                      : 'Copy the link below to share with others:',
+                  style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    color: Colors.white.withOpacity(0.7),
+                    fontSize: 13,
+                  ),
+                ),
+                const SizedBox(height: 16),
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.06),
+                    borderRadius: BorderRadius.circular(16),
+                    border: Border.all(color: Colors.white.withOpacity(0.10)),
+                  ),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          shareUrl,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            color: Colors.white.withOpacity(0.95),
+                            fontSize: 13,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: 8),
+                      IconButton(
+                        icon: const Icon(Icons.copy_rounded, color: Color(0xFFD4AF7A), size: 20),
+                        tooltip: _isVi ? 'Sao chép' : 'Copy',
+                        onPressed: () {
+                          Clipboard.setData(ClipboardData(text: shareUrl));
+                          _showMessage(_isVi
+                              ? 'Đã sao chép liên kết chia sẻ vào khay nhớ tạm'
+                              : 'Copied share link to clipboard');
+                        },
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(context),
+                child: Text(
+                  _isVi ? 'Đóng' : 'Close',
+                  style: const TextStyle(
+                    fontFamily: 'Montserrat',
+                    color: Color(0xFFD4AF7A),
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
   @override
   void dispose() {
     _sheetCtrl.removeListener(_onSheetChanged);
@@ -545,6 +651,8 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                               right: 20,
                               child: Row(
                                 children: [
+                                  _glassCircle(Icons.share_outlined, _sharePlace),
+                                  const SizedBox(width: 12),
                                   _glassCircleAnimatedIcon(
                                     isActive: _isLiked,
                                     activeIcon: Icons.favorite,
@@ -899,7 +1007,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
             })),
             Row(
               children: [
-                _glassCircle(Icons.share_outlined, () {}),
+                _glassCircle(Icons.share_outlined, _sharePlace),
                 const SizedBox(width: 10),
                 _glassCircleAnimatedIcon(
                   isActive: _isLiked,

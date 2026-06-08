@@ -12,6 +12,7 @@ import 'screens/legal/contact_support_screen.dart';
 import 'screens/legal/data_deletion_screen.dart';
 import 'screens/legal/instruction_screen.dart';
 import 'screens/legal/privacy_policy_screen.dart';
+import 'screens/legal/shared_handler_screen.dart';
 import 'screens/app_reviews_screen.dart';
 import 'screens/pin_lock_screen.dart';
 import 'widgets/app_lock_wrapper.dart';
@@ -87,7 +88,25 @@ class _TourXportAppState extends State<TourXportApp> {
             ),
             home: const LandingPage(),
             onGenerateRoute: (settings) {
-              final routeName = Uri.parse(settings.name ?? '/').path;
+              final uri = Uri.parse(settings.name ?? '/');
+              final routeName = uri.path;
+
+              if (routeName == '/place') {
+                final id = uri.queryParameters['id'] ?? '';
+                final type = uri.queryParameters['type'] ?? 'Địa điểm';
+                return MaterialPageRoute(
+                  settings: settings,
+                  builder: (_) => SharedHandlerScreen(id: id, type: type),
+                );
+              }
+
+              if (routeName == '/tour') {
+                final id = uri.queryParameters['id'] ?? '';
+                return MaterialPageRoute(
+                  settings: settings,
+                  builder: (_) => SharedHandlerScreen(id: id, type: 'tour'),
+                );
+              }
 
               if (routeName == '/privacy') {
                 return MaterialPageRoute(

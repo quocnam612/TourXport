@@ -16,14 +16,14 @@ String get apiBaseUrl {
         return override.endsWith('/') ? override.substring(0, override.length - 1) : override;
     }
     if (kIsWeb) {
-        return 'http://localhost:3000';
+        return 'http://127.0.0.1:3000';
     }
     if (defaultTargetPlatform == TargetPlatform.android) {
         // Android emulator dùng 10.0.2.2 để trỏ về localhost của máy host.
         // Thiết bị thật cần truyền API_BASE_URL bằng IP LAN của máy chạy backend.
         return 'http://10.0.2.2:3000';
     }
-    return 'http://localhost:3000';
+    return 'http://127.0.0.1:3000';
 }
 
 /// Base URL cho AI Backend (Python - FastAPI)
@@ -33,12 +33,12 @@ String get aiBaseUrl {
     return override.endsWith('/') ? override.substring(0, override.length - 1) : override;
   }
   if (kIsWeb) {
-    return 'http://localhost:8000';
+    return 'http://127.0.0.1:8000';
   }
   if (defaultTargetPlatform == TargetPlatform.android) {
     return 'http://10.0.2.2:8000';
   }
-  return 'http://localhost:8000';
+  return 'http://127.0.0.1:8000';
 }
 
 final http.Client _client = http.Client();

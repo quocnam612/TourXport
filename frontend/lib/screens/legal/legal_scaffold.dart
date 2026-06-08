@@ -274,14 +274,20 @@ class _TopNav extends StatelessWidget {
       crossAxisAlignment: WrapCrossAlignment.center,
       children: [
         _NavButton(
-          label: isVi ? 'Trang chủ' : 'Home',
-          icon: Icons.explore_rounded,
+          label: isVi ? 'Quay lại' : 'Back',
+          icon: Icons.arrow_back_rounded,
           selected: false,
-          onPressed: () => Navigator.pushNamedAndRemoveUntil(
-            context,
-            '/',
-            (route) => false,
-          ),
+          onPressed: () {
+            if (Navigator.of(context).canPop()) {
+              Navigator.of(context).pop();
+            } else {
+              Navigator.pushNamedAndRemoveUntil(
+                context,
+                '/',
+                (route) => false,
+              );
+            }
+          },
         ),
         _NavButton(
           label: isVi ? 'Bảo mật' : 'Privacy',
