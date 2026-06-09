@@ -1,5 +1,7 @@
 import 'dart:ui';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../models/destination.dart';
 import '../models/saved_tour.dart';
@@ -124,6 +126,47 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
     return maps[prov] ?? prov;
   }
 
+  IconData _visibilityIcon(String visibility) {
+    switch (visibility.toLowerCase()) {
+      case 'private':
+      case 'hidden':
+        return Icons.lock_rounded;
+      case 'protected':
+      case 'shared':
+        return Icons.groups_rounded;
+      default:
+        return Icons.public_rounded;
+    }
+  }
+
+  String _visibilityLabel(String visibility) {
+    switch (visibility.toLowerCase()) {
+      case 'private':
+      case 'hidden':
+        return _isVi ? 'Riêng tư' : 'Private';
+      case 'protected':
+      case 'shared':
+        return _isVi ? 'Chia sẻ' : 'Shared';
+      default:
+        return _isVi ? 'Công khai' : 'Public';
+    }
+  }
+
+  void _updateTourDetailRoute(String tourId) {
+    if (!kIsWeb || tourId.isEmpty) return;
+    SystemNavigator.routeInformationUpdated(
+      location: Uri(path: '/tour', queryParameters: {'id': tourId}).toString(),
+      replace: false,
+    );
+  }
+
+  void _restoreSavedRoute() {
+    if (!kIsWeb) return;
+    SystemNavigator.routeInformationUpdated(
+      location: '/saved',
+      replace: true,
+    );
+  }
 
   @override
   void initState() {
@@ -661,6 +704,7 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
                 final decoded = tryDecodeJsonObject(resp.body);
                 if (decoded != null) {
                   final data = decoded['data'] ?? decoded;
+                  _updateTourDetailRoute(tour.id);
                   final result = await Navigator.of(context).push<String>(
                     MaterialPageRoute(
                       builder: (_) => SavedTourDetailScreen(
@@ -672,6 +716,7 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
                       ),
                     ),
                   );
+                  _restoreSavedRoute();
                   if (result != null) {
                     widget.onNavigateMain?.call(result);
                   }
@@ -789,6 +834,37 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
+                              ),
+                            ),
+                            const SizedBox(height: 8),
+                            Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 5),
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFD4AF7A).withOpacity(0.12),
+                                borderRadius: BorderRadius.circular(999),
+                                border: Border.all(
+                                  color: const Color(0xFFD4AF7A).withOpacity(0.28),
+                                ),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Icon(
+                                    _visibilityIcon(tour.visibility),
+                                    color: const Color(0xFFD4AF7A),
+                                    size: 13,
+                                  ),
+                                  const SizedBox(width: 5),
+                                  Text(
+                                    _visibilityLabel(tour.visibility),
+                                    style: const TextStyle(
+                                      fontFamily: 'Montserrat',
+                                      fontSize: 11,
+                                      fontWeight: FontWeight.w700,
+                                      color: Color(0xFFD4AF7A),
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                             const SizedBox(height: 6),

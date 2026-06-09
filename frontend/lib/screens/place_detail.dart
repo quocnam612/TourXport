@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:share_plus/share_plus.dart';
 
 import '../api/api.dart';
 import '../models/destination.dart';
@@ -408,18 +409,42 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
       return;
     }
     final String sharePath = Uri(
-      path: '/place',
+      path: '/location',
       queryParameters: {
         'id': targetId,
-        'type': widget.destination.type,
+        'type': _placeTypeSlug(widget.destination.type),
       },
     ).toString();
     final String shareUrl = '$domain$sharePath';
+    final String intro = _isVi
+        ? 'Khám phá ${widget.destination.name} trên TourXport:'
+        : 'Explore ${widget.destination.name} on TourXport:';
+    final String shareText = '$intro\n$shareUrl';
     
-    _showShareDialog(context, shareUrl, _isVi ? 'địa điểm' : 'place');
+    _showShareDialog(context, shareUrl, shareText, _isVi ? 'địa điểm' : 'place');
   }
 
-  void _showShareDialog(BuildContext context, String shareUrl, String title) {
+  String _placeTypeSlug(String type) {
+    final normalized = type.trim().toLowerCase();
+    if (normalized.contains('restaurant') ||
+        normalized.contains('nhà hàng') ||
+        normalized.contains('nha hang')) {
+      return 'restaurant';
+    }
+    if (normalized.contains('hotel') ||
+        normalized.contains('khách sạn') ||
+        normalized.contains('khach san')) {
+      return 'hotel';
+    }
+    return 'place';
+  }
+
+  void _showShareDialog(
+    BuildContext context,
+    String shareUrl,
+    String shareText,
+    String title,
+  ) {
     showDialog(
       context: context,
       builder: (context) {
@@ -446,8 +471,8 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
               children: [
                 Text(
                   _isVi
-                      ? 'Sao chép liên kết bên dưới để chia sẻ với người khác:'
-                      : 'Copy the link below to share with others:',
+                      ? 'Chia sẻ qua ứng dụng khác hoặc sao chép liên kết bên dưới:'
+                      : 'Share through another app or copy the link below:',
                   style: TextStyle(
                     fontFamily: 'Montserrat',
                     color: Colors.white.withOpacity(0.7),
@@ -493,6 +518,26 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
               ],
             ),
             actions: [
+              TextButton.icon(
+                onPressed: () async {
+                  final box = context.findRenderObject() as RenderBox?;
+                  await Share.share(
+                    shareText,
+                    subject: _isVi ? 'Chia sẻ $title TourXport' : 'Share TourXport $title',
+                    sharePositionOrigin:
+                        box == null ? null : box.localToGlobal(Offset.zero) & box.size,
+                  );
+                },
+                icon: const Icon(Icons.ios_share_rounded, color: Color(0xFFD4AF7A), size: 18),
+                label: Text(
+                  _isVi ? 'Chia sẻ' : 'Share',
+                  style: const TextStyle(
+                    fontFamily: 'Montserrat',
+                    color: Color(0xFFD4AF7A),
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
               TextButton(
                 onPressed: () => Navigator.pop(context),
                 child: Text(

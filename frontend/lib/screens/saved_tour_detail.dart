@@ -1,7 +1,7 @@
 import 'dart:ui';
-import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:share_plus/share_plus.dart';
 import '../l10n/app_localizations.dart';
 
 import '../models/ai_trip_response.dart';
@@ -12,7 +12,7 @@ import 'map_screen.dart';
 import 'tour_route_map_screen.dart';
 import '../api/api.dart';
 
-class SavedTourDetailScreen extends StatelessWidget {
+class SavedTourDetailScreen extends StatefulWidget {
   final String tourTitle;
   final Map<String, dynamic> tourJson;
   final String userName;
@@ -29,16 +29,30 @@ class SavedTourDetailScreen extends StatelessWidget {
   });
 
   @override
+  State<SavedTourDetailScreen> createState() => _SavedTourDetailScreenState();
+}
+
+class _SavedTourDetailScreenState extends State<SavedTourDetailScreen> {
+  late Map<String, dynamic> _tourJson;
+  bool _isUpdatingVisibility = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _tourJson = Map<String, dynamic>.from(widget.tourJson);
+  }
+
+  @override
   Widget build(BuildContext context) {
     AiTripResponse? response;
     try {
-      response = AiTripResponse.fromJson(tourJson);
+      response = AiTripResponse.fromJson(_tourJson);
     } catch (_) {
       response = null;
     }
 
     final itinerary = response?.data.itinerary ?? [];
-    final meta = _TourMeta.fromJson(tourJson);
+    final meta = _TourMeta.fromJson(_tourJson);
     final width = MediaQuery.of(context).size.width;
     final isDesktop = width >= 800;
     final isCompact = width < 600;
@@ -67,8 +81,7 @@ class SavedTourDetailScreen extends StatelessWidget {
   }
 
   void _shareTour(BuildContext context) {
-    final String domain = kIsWeb ? Uri.base.origin : 'https://tourxport.vercel.app';
-    final String? tourId = tourJson['_id']?.toString() ?? tourJson['id']?.toString();
+    final String? tourId = _tourId;
     if (tourId == null || tourId.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
         content: Text(
@@ -79,12 +92,88 @@ class SavedTourDetailScreen extends StatelessWidget {
       ));
       return;
     }
-    
-    final String shareUrl = '$domain/tour?id=$tourId';
-    _showShareDialog(context, shareUrl, AppLocalizations.of(context)!.localeName == 'vi' ? 'lịch trình' : 'tour');
+
+    const String domain = 'https://tourxport.netlify.app';
+    final String shareUrl = '$domain/tours/$tourId';
+    final isVi = AppLocalizations.of(context)!.localeName == 'vi';
+    final String shareText = isVi
+        ? 'Xem lịch trình ${widget.tourTitle} trên TourXport\n$shareUrl'
+        : 'View the ${widget.tourTitle} itinerary on TourXport\n$shareUrl';
+    _showShareDialog(
+      context,
+      shareUrl,
+      shareText,
+      isVi ? 'lịch trình' : 'tour',
+    );
   }
 
-  void _showShareDialog(BuildContext context, String shareUrl, String title) {
+  String? get _tourId => _tourJson['_id']?.toString() ?? _tourJson['id']?.toString();
+
+  bool _isPrivateVisibility(String visibility) {
+    final normalized = visibility.toLowerCase();
+    return normalized == 'private' || normalized == 'hidden';
+  }
+
+  Future<void> _publishTour(BuildContext context, _TourMeta meta) async {
+    if (!_isPrivateVisibility(meta.visibility) || _isUpdatingVisibility) return;
+
+    final isVi = AppLocalizations.of(context)!.localeName == 'vi';
+    final tourId = _tourId;
+    if (tourId == null || tourId.isEmpty || widget.authToken == null || widget.authToken!.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text(isVi
+            ? 'Không thể cập nhật hiển thị lịch trình'
+            : 'Cannot update itinerary visibility'),
+      ));
+      return;
+    }
+
+    setState(() => _isUpdatingVisibility = true);
+    try {
+      final response = await apiPutJson(
+        '/tours/my-tours/$tourId',
+        {'visibility': 'public'},
+        token: widget.authToken,
+      );
+      final body = tryDecodeJsonObject(response.body);
+      if (!mounted) return;
+      if (response.statusCode == 200 && body?['success'] == true) {
+        final data = body?['data'];
+        setState(() {
+          if (data is Map) {
+            _tourJson = Map<String, dynamic>.from(data);
+          } else {
+            _tourJson = Map<String, dynamic>.from(_tourJson)..['visibility'] = 'public';
+          }
+        });
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+          content: Text(isVi
+              ? 'Lịch trình đã được đặt thành công khai'
+              : 'Itinerary is now public'),
+        ));
+      } else {
+        throw Exception(body?['message'] ?? response.reasonPhrase);
+      }
+    } catch (_) {
+      if (!context.mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text(isVi
+            ? 'Cập nhật hiển thị thất bại'
+            : 'Failed to update visibility'),
+      ));
+    } finally {
+      if (mounted) {
+        setState(() => _isUpdatingVisibility = false);
+      }
+    }
+  }
+
+  void _showShareDialog(
+    BuildContext context,
+    String shareUrl,
+    String shareText,
+    String title,
+  ) {
     final isVi = AppLocalizations.of(context)!.localeName == 'vi';
     showDialog(
       context: context,
@@ -112,8 +201,8 @@ class SavedTourDetailScreen extends StatelessWidget {
               children: [
                 Text(
                   isVi
-                      ? 'Sao chép liên kết bên dưới để chia sẻ với người khác:'
-                      : 'Copy the link below to share with others:',
+                      ? 'Chia sẻ qua ứng dụng khác hoặc sao chép liên kết bên dưới:'
+                      : 'Share through another app or copy the link below:',
                   style: TextStyle(
                     fontFamily: 'Montserrat',
                     color: Colors.white.withOpacity(0.7),
@@ -163,6 +252,26 @@ class SavedTourDetailScreen extends StatelessWidget {
               ],
             ),
             actions: [
+              TextButton.icon(
+                onPressed: () async {
+                  final box = context.findRenderObject() as RenderBox?;
+                  await Share.share(
+                    shareText,
+                    subject: isVi ? 'Chia sẻ lịch trình TourXport' : 'Share TourXport itinerary',
+                    sharePositionOrigin:
+                        box == null ? null : box.localToGlobal(Offset.zero) & box.size,
+                  );
+                },
+                icon: const Icon(Icons.ios_share_rounded, color: Color(0xFFD4AF7A), size: 18),
+                label: Text(
+                  isVi ? 'Chia sẻ' : 'Share',
+                  style: const TextStyle(
+                    fontFamily: 'Montserrat',
+                    color: Color(0xFFD4AF7A),
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
               TextButton(
                 onPressed: () => Navigator.pop(context),
                 child: Text(
@@ -205,11 +314,15 @@ class SavedTourDetailScreen extends StatelessWidget {
                 children: [
                   _VisibilityBadge(
                     icon: meta.visibilityIcon,
+                    isLoading: _isUpdatingVisibility,
+                    onTap: _isPrivateVisibility(meta.visibility)
+                        ? () => _publishTour(context, meta)
+                        : null,
                   ),
                   SizedBox(width: isCompact ? 8 : 10),
                   Expanded(
                     child: Text(
-                      tourTitle,
+                      widget.tourTitle,
                       maxLines: isCompact ? 2 : null,
                       overflow: isCompact
                           ? TextOverflow.ellipsis
@@ -297,7 +410,7 @@ class SavedTourDetailScreen extends StatelessWidget {
                 onTap: () {
                   AiTripResponse? response;
                   try {
-                    response = AiTripResponse.fromJson(tourJson);
+                    response = AiTripResponse.fromJson(_tourJson);
                   } catch (_) {}
                   if (response != null) {
                     Navigator.push(
@@ -372,14 +485,14 @@ class SavedTourDetailScreen extends StatelessWidget {
   }
 
   Widget _buildSummary(BuildContext context) {
-    final title = tourJson['title'] ?? tourTitle;
-    final totalDays = tourJson['totalDays'] ?? tourJson['days']?.length ?? 0;
-    final totalNights = tourJson['totalNights'] ?? 0;
+    final title = _tourJson['title'] ?? widget.tourTitle;
+    final totalDays = _tourJson['totalDays'] ?? _tourJson['days']?.length ?? 0;
+    final totalNights = _tourJson['totalNights'] ?? 0;
     final isVi = AppLocalizations.of(context)!.localeName == 'vi';
-    final destinations = tourJson['destinations'] is List
-        ? (tourJson['destinations'] as List).map((d) => _translateProvince(d.toString(), context)).join(', ')
+    final destinations = _tourJson['destinations'] is List
+        ? (_tourJson['destinations'] as List).map((d) => _translateProvince(d.toString(), context)).join(', ')
         : '';
-    final cost = _formatMoneyRange(tourJson['estimatedCost'] ?? tourJson['totalEstimatedCost'], context);
+    final cost = _formatMoneyRange(_tourJson['estimatedCost'] ?? _tourJson['totalEstimatedCost'], context);
 
     return Center(
       child: Column(
@@ -916,19 +1029,47 @@ class _MetaPill extends StatelessWidget {
 class _VisibilityBadge extends StatelessWidget {
   final IconData icon;
   final bool compact;
+  final bool isLoading;
+  final VoidCallback? onTap;
 
-  const _VisibilityBadge({required this.icon, this.compact = false});
+  const _VisibilityBadge({
+    required this.icon,
+    this.compact = false,
+    this.isLoading = false,
+    this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    final size = compact ? 17.0 : 20.0;
+    final badge = Container(
       padding: EdgeInsets.all(compact ? 8 : 10),
       decoration: BoxDecoration(
-        color: const Color(0xFFD4AF7A).withOpacity(0.12),
+        color: const Color(0xFFD4AF7A).withOpacity(onTap == null ? 0.12 : 0.18),
         shape: BoxShape.circle,
-        border: Border.all(color: const Color(0xFFD4AF7A).withOpacity(0.2)),
+        border: Border.all(color: const Color(0xFFD4AF7A).withOpacity(onTap == null ? 0.2 : 0.42)),
       ),
-      child: Icon(icon, color: const Color(0xFFD4AF7A), size: compact ? 17 : 20),
+      child: isLoading
+          ? SizedBox(
+              width: size,
+              height: size,
+              child: const CircularProgressIndicator(
+                strokeWidth: 2,
+                color: Color(0xFFD4AF7A),
+              ),
+            )
+          : Icon(icon, color: const Color(0xFFD4AF7A), size: size),
+    );
+    if (onTap == null || isLoading) return badge;
+    return Tooltip(
+      message: AppLocalizations.of(context)!.localeName == 'vi'
+          ? 'Đặt lịch trình thành công khai'
+          : 'Make itinerary public',
+      child: InkWell(
+        onTap: onTap,
+        customBorder: const CircleBorder(),
+        child: badge,
+      ),
     );
   }
 }
@@ -1372,4 +1513,3 @@ String _translateProvince(String prov, BuildContext context) {
   };
   return maps[prov] ?? prov;
 }
-

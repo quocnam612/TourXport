@@ -143,9 +143,9 @@ class _TourXportAppState extends State<TourXportApp> {
                 return _homeRoute(settings, 4);
               }
 
-              if (routeName == '/place') {
+              if (routeName == '/location' || routeName == '/place') {
                 final id = uri.queryParameters['id'] ?? '';
-                final type = uri.queryParameters['type'] ?? 'Địa điểm';
+                final type = uri.queryParameters['type'] ?? 'place';
                 return MaterialPageRoute(
                   settings: settings,
                   builder: (_) => SharedHandlerScreen(id: id, type: type),
@@ -154,6 +154,14 @@ class _TourXportAppState extends State<TourXportApp> {
 
               if (routeName == '/tour') {
                 final id = uri.queryParameters['id'] ?? '';
+                return MaterialPageRoute(
+                  settings: settings,
+                  builder: (_) => SharedHandlerScreen(id: id, type: 'tour'),
+                );
+              }
+
+              if (routeName.startsWith('/tours/')) {
+                final id = uri.pathSegments.length >= 2 ? uri.pathSegments[1] : '';
                 return MaterialPageRoute(
                   settings: settings,
                   builder: (_) => SharedHandlerScreen(id: id, type: 'tour'),

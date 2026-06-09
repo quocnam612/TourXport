@@ -139,12 +139,27 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     if (targetId.isEmpty) return null;
 
     return Uri(
-      path: '/place',
+      path: '/location',
       queryParameters: {
         'id': targetId,
-        'type': dest.type,
+        'type': _placeTypeSlug(dest.type),
       },
     ).toString();
+  }
+
+  String _placeTypeSlug(String type) {
+    final normalized = type.trim().toLowerCase();
+    if (normalized.contains('restaurant') ||
+        normalized.contains('nhà hàng') ||
+        normalized.contains('nha hang')) {
+      return 'restaurant';
+    }
+    if (normalized.contains('hotel') ||
+        normalized.contains('khách sạn') ||
+        normalized.contains('khach san')) {
+      return 'hotel';
+    }
+    return 'place';
   }
 
   void _updatePlaceDetailRoute(Destination dest) {

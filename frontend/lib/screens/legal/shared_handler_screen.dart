@@ -9,7 +9,7 @@ import '../saved_tour_detail.dart';
 
 class SharedHandlerScreen extends StatefulWidget {
   final String id;
-  final String type; // 'tour' or place type (e.g. 'Địa điểm', 'Nhà hàng', 'Khách sạn')
+  final String type; // 'tour', 'place', 'restaurant', or 'hotel'
 
   const SharedHandlerScreen({
     super.key,
@@ -81,9 +81,13 @@ class _SharedHandlerScreenState extends State<SharedHandlerScreen> {
         // 3. Fetch location details based on type
         String endpoint;
         final normalizedType = widget.type.trim().toLowerCase();
-        if (normalizedType.contains('khách sạn') || normalizedType.contains('khach san') || normalizedType.contains('hotel')) {
+        if (normalizedType == 'hotel' ||
+            normalizedType.contains('khách sạn') ||
+            normalizedType.contains('khach san')) {
           endpoint = '/hotels/search?id=${widget.id}';
-        } else if (normalizedType.contains('nhà hàng') || normalizedType.contains('nha hang') || normalizedType.contains('restaurant')) {
+        } else if (normalizedType == 'restaurant' ||
+            normalizedType.contains('nhà hàng') ||
+            normalizedType.contains('nha hang')) {
           endpoint = '/restaurants/search?id=${widget.id}';
         } else {
           endpoint = '/locations/search?id=${widget.id}';
