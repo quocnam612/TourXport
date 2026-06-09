@@ -12,3 +12,4 @@ windows/
 .postman/
 postman/
 diff_changes.txt
+node_modules/

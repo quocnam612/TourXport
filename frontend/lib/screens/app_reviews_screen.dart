@@ -1,6 +1,13 @@
 import 'dart:ui';
+import 'dart:convert';
+import 'dart:io' show File;
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+import 'package:http_parser/http_parser.dart';
+import 'package:image_picker/image_picker.dart';
 import '../api/api.dart';
+import '../widgets/app_feedback_logo.dart';
 
 // ─── Models ──────────────────────────────────────────────────────────────────
 
@@ -8,34 +15,91 @@ class AppFeedback {
   final String id;
   final String username;
   final String? avatarUrl;
-  final int rating;
+  final String reportType;
   final String title;
   final String content;
+  final int helpfulVotes;
+  final List<String> upvotedBy;
+  final bool isUpvoted;
+  final String adminReply;
+  final List<String> imageUrls;
   final DateTime? createdAt;
 
   AppFeedback({
     required this.id,
     required this.username,
     this.avatarUrl,
-    required this.rating,
+    required this.reportType,
     required this.title,
     required this.content,
+    required this.helpfulVotes,
+    required this.upvotedBy,
+    required this.isUpvoted,
+    required this.adminReply,
+    required this.imageUrls,
     this.createdAt,
   });
 
   factory AppFeedback.fromJson(Map<String, dynamic> json) {
     final userMap = json['user'] as Map<String, dynamic>?;
     final avatarMap = userMap?['avatar'] as Map<String, dynamic>?;
+    final images = <String>[];
+    final upvotedBy = <String>[];
+    final rawImages = json['images'];
+    if (rawImages is List) {
+      for (final item in rawImages) {
+        if (item is Map && item['url'] is String && (item['url'] as String).isNotEmpty) {
+          images.add(item['url'] as String);
+        }
+      }
+    }
+    final rawUpvotedBy = json['upvotedBy'];
+    if (rawUpvotedBy is List) {
+      for (final item in rawUpvotedBy) {
+        final id = item.toString();
+        if (id.isNotEmpty) upvotedBy.add(id);
+      }
+    }
+
     return AppFeedback(
       id: json['id']?.toString() ?? json['_id']?.toString() ?? '',
       username: userMap?['username'] ?? json['username'] ?? 'Ẩn danh',
       avatarUrl: avatarMap?['url'] as String?,
-      rating: (json['rating'] as num?)?.toInt() ?? 0,
+      reportType: json['reportType']?.toString() ?? 'other',
       title: json['title'] ?? '',
       content: json['text'] ?? json['content'] ?? '',
+      helpfulVotes: (json['helpful_votes'] as num?)?.toInt() ?? 0,
+      upvotedBy: upvotedBy,
+      isUpvoted: json['isUpvoted'] == true,
+      adminReply: json['adminReply']?.toString() ?? '',
+      imageUrls: images,
       createdAt: json['createdAt'] != null
           ? DateTime.tryParse(json['createdAt'].toString())
           : null,
+    );
+  }
+
+  bool isUpvotedBy(String? userId) =>
+      isUpvoted || (userId != null && upvotedBy.contains(userId));
+
+  AppFeedback copyWith({
+    int? helpfulVotes,
+    List<String>? upvotedBy,
+    bool? isUpvoted,
+  }) {
+    return AppFeedback(
+      id: id,
+      username: username,
+      avatarUrl: avatarUrl,
+      reportType: reportType,
+      title: title,
+      content: content,
+      helpfulVotes: helpfulVotes ?? this.helpfulVotes,
+      upvotedBy: upvotedBy ?? this.upvotedBy,
+      isUpvoted: isUpvoted ?? this.isUpvoted,
+      adminReply: adminReply,
+      imageUrls: imageUrls,
+      createdAt: createdAt,
     );
   }
 }
@@ -67,13 +131,71 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
   String? _loadError;
 
   // Form state
-  int _selectedRating = 0;
+  String _selectedReportType = 'bug';
   final TextEditingController _titleCtrl = TextEditingController();
   final TextEditingController _contentCtrl = TextEditingController();
+  final ImagePicker _imagePicker = ImagePicker();
+  final List<XFile> _pickedImages = [];
 
   bool get _isVi => Localizations.localeOf(context).languageCode == 'vi';
   bool get _isLoggedIn =>
       widget.authToken != null && widget.authToken!.trim().isNotEmpty;
+  String? get _currentUserId => _userIdFromToken(widget.authToken);
+  List<String> get _reportTypeOptions =>
+      const ['bug', 'suggestion', 'inaccuracy', 'review', 'other'];
+
+  String? _userIdFromToken(String? token) {
+    final parts = token?.split('.');
+    if (parts == null || parts.length < 2) return null;
+
+    try {
+      final payload = utf8.decode(base64Url.decode(base64Url.normalize(parts[1])));
+      final decoded = jsonDecode(payload);
+      if (decoded is Map && decoded['id'] != null) {
+        return decoded['id'].toString();
+      }
+    } catch (_) {}
+
+    return null;
+  }
+
+  AppFeedback _withCurrentVoteState(AppFeedback feedback) {
+    final userId = _currentUserId;
+    if (userId == null) return feedback;
+
+    return feedback.copyWith(
+      isUpvoted: feedback.isUpvotedBy(userId),
+    );
+  }
+
+  void _replaceFeedback(AppFeedback feedback) {
+    _allReviews = _allReviews
+        .map((item) => item.id == feedback.id ? feedback : item)
+        .toList();
+    if (_myReview?.id == feedback.id) _myReview = feedback;
+  }
+
+  AppFeedback _toggledFeedback(AppFeedback feedback) {
+    final userId = _currentUserId;
+    final wasUpvoted = feedback.isUpvotedBy(userId);
+    final nextUpvotedBy = List<String>.from(feedback.upvotedBy);
+
+    if (userId != null) {
+      if (wasUpvoted) {
+        nextUpvotedBy.removeWhere((id) => id == userId);
+      } else if (!nextUpvotedBy.contains(userId)) {
+        nextUpvotedBy.add(userId);
+      }
+    }
+
+    return feedback.copyWith(
+      helpfulVotes: wasUpvoted
+          ? (feedback.helpfulVotes > 0 ? feedback.helpfulVotes - 1 : 0)
+          : feedback.helpfulVotes + 1,
+      upvotedBy: nextUpvotedBy,
+      isUpvoted: !wasUpvoted,
+    );
+  }
 
   @override
   void initState() {
@@ -115,7 +237,7 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
       _loadError = null;
     });
     try {
-      final response = await apiGet('/reports/app-feedback?limit=50').timeout(
+      final response = await apiGet('/reports?limit=50').timeout(
         const Duration(seconds: 12),
         onTimeout: () => throw Exception('Timeout'),
       );
@@ -125,8 +247,10 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
           final data = body['data'];
           if (data is List) {
             setState(() {
-              _allReviews =
-                  data.map((j) => AppFeedback.fromJson(j as Map<String, dynamic>)).toList();
+              _allReviews = data
+                  .map((j) => _withCurrentVoteState(
+                      AppFeedback.fromJson(j as Map<String, dynamic>)))
+                  .toList();
             });
           }
         }
@@ -145,7 +269,7 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
     setState(() => _isLoadingMine = true);
     try {
       final response = await apiGet(
-        '/reports/app-feedback/my',
+        '/reports/my-reports',
         token: widget.authToken,
       ).timeout(const Duration(seconds: 10));
 
@@ -154,7 +278,8 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
         if (body != null && body['success'] == true) {
           final data = body['data'];
           if (data is List && data.isNotEmpty) {
-            setState(() => _myReview = AppFeedback.fromJson(data.first as Map<String, dynamic>));
+            setState(() => _myReview = _withCurrentVoteState(
+                AppFeedback.fromJson(data.first as Map<String, dynamic>)));
           } else {
             setState(() => _myReview = null);
           }
@@ -168,11 +293,6 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
   }
 
   Future<void> _submitReview() async {
-    if (_selectedRating == 0) {
-      _showSnack(_isVi ? 'Vui lòng chọn số sao' : 'Please select a rating',
-          isError: true);
-      return;
-    }
     if (_titleCtrl.text.trim().isEmpty) {
       _showSnack(_isVi ? 'Vui lòng nhập tiêu đề' : 'Please enter a title',
           isError: true);
@@ -187,20 +307,46 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
 
     setState(() => _isSubmitting = true);
     try {
-      final response = await apiPostJson(
-        '/reports/app-feedback',
-        {
-          'rating': _selectedRating,
-          'title': _titleCtrl.text.trim(),
-          'text': _contentCtrl.text.trim(),
-        },
-        token: widget.authToken,
-      ).timeout(const Duration(seconds: 12));
+      http.Response response;
+      final fields = {
+        'reportType': _selectedReportType,
+        'title': _titleCtrl.text.trim(),
+        'text': _contentCtrl.text.trim(),
+      };
+
+      if (_pickedImages.isEmpty) {
+        response = await apiPostJson(
+          '/reports/my-reports',
+          fields,
+          token: widget.authToken,
+        ).timeout(const Duration(seconds: 12));
+      } else {
+        final files = <http.MultipartFile>[];
+        for (final image in _pickedImages) {
+          final bytes = await image.readAsBytes();
+          files.add(http.MultipartFile.fromBytes(
+            'images',
+            bytes,
+            filename: image.name,
+            contentType: _mediaTypeForFileName(image.name),
+          ));
+        }
+        final streamedResponse = await apiPostMultipart(
+          '/reports/my-reports',
+          fields: fields,
+          files: files,
+          token: widget.authToken,
+        ).timeout(const Duration(seconds: 20));
+        response = await http.Response.fromStream(streamedResponse);
+      }
 
       if (response.statusCode == 201 || response.statusCode == 200) {
         _titleCtrl.clear();
         _contentCtrl.clear();
-        setState(() => _selectedRating = 0);
+        setState(() {
+          _selectedReportType = 'bug';
+          _pickedImages.clear();
+        });
         _showSnack(_isVi ? 'Phản ánh đã được gửi! 🎉' : 'Report submitted! 🎉');
         _fetchAllReviews();
         _fetchMyReview();
@@ -213,6 +359,70 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
       _showSnack(_isVi ? 'Lỗi kết nối' : 'Connection error', isError: true);
     } finally {
       setState(() => _isSubmitting = false);
+    }
+  }
+
+  MediaType _mediaTypeForFileName(String fileName) {
+    final ext = fileName.split('.').last.toLowerCase();
+    if (ext == 'jpg' || ext == 'jpeg') return MediaType('image', 'jpeg');
+    if (ext == 'png') return MediaType('image', 'png');
+    if (ext == 'webp') return MediaType('image', 'webp');
+    return MediaType('application', 'octet-stream');
+  }
+
+  Future<void> _pickImage() async {
+    if (_pickedImages.length >= 5) {
+      _showSnack(_isVi ? 'Chỉ được tải lên tối đa 5 ảnh' : 'Maximum 5 images',
+          isError: true);
+      return;
+    }
+
+    final image = await _imagePicker.pickImage(
+      source: ImageSource.gallery,
+      imageQuality: 85,
+    );
+    if (image == null) return;
+
+    setState(() => _pickedImages.add(image));
+  }
+
+  void _removePickedImage(int index) {
+    setState(() => _pickedImages.removeAt(index));
+  }
+
+  Future<void> _upvoteFeedback(AppFeedback feedback) async {
+    if (!_isLoggedIn) {
+      _showSnack(_isVi ? 'Vui lòng đăng nhập để upvote' : 'Please log in to upvote',
+          isError: true);
+      return;
+    }
+
+    final previous = feedback;
+    final optimistic = _toggledFeedback(feedback);
+    setState(() => _replaceFeedback(optimistic));
+
+    try {
+      final response = await apiGet(
+        '/reports/upvote?reportId=${Uri.encodeComponent(feedback.id)}',
+        token: widget.authToken,
+      ).timeout(const Duration(seconds: 10));
+
+      final body = tryDecodeJsonObject(response.body);
+      if (response.statusCode == 200 && body?['success'] == true) {
+        final updated = _withCurrentVoteState(
+          AppFeedback.fromJson(body!['data'] as Map<String, dynamic>),
+        );
+        setState(() => _replaceFeedback(updated));
+      } else {
+        setState(() => _replaceFeedback(previous));
+        _showSnack(
+          (body?['message'] ?? (_isVi ? 'Không thể upvote' : 'Unable to upvote')).toString(),
+          isError: true,
+        );
+      }
+    } catch (_) {
+      setState(() => _replaceFeedback(previous));
+      _showSnack(_isVi ? 'Lỗi kết nối' : 'Connection error', isError: true);
     }
   }
 
@@ -256,18 +466,20 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
                         _buildHeader(),
                         const SizedBox(height: 32),
 
-                        // Average rating summary
-                        if (_allReviews.isNotEmpty) ...[
-                          _buildRatingSummary(),
-                          const SizedBox(height: 32),
-                        ],
-
-                        // My review / form
+                        // Submit feedback
                         _buildSectionLabel(
-                            _isVi ? 'Phản ánh của bạn' : 'Your Feedback'),
+                            _isVi ? 'Gửi phản ánh' : 'Submit Feedback'),
                         const SizedBox(height: 16),
-                        _buildMyReviewSection(),
+                        _buildSubmitSection(),
                         const SizedBox(height: 40),
+
+                        if (_isLoggedIn || _isLoadingMine || _myReview != null) ...[
+                          _buildSectionLabel(
+                              _isVi ? 'Phản ánh của bạn' : 'Your Feedback'),
+                          const SizedBox(height: 16),
+                          _buildMyReviewSection(),
+                          const SizedBox(height: 40),
+                        ],
 
                         // All feedback
                         _buildSectionLabel(
@@ -353,8 +565,7 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
                   )
                 ],
               ),
-              child: const Icon(Icons.rate_review_rounded,
-                  color: Color(0xFFD4AF7A), size: 38),
+              child: const AppFeedbackLogo(size: 38),
             ),
           ),
         ),
@@ -386,122 +597,7 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
     );
   }
 
-  Widget _buildRatingSummary() {
-    final avg = _allReviews.isEmpty
-        ? 0.0
-        : _allReviews.map((r) => r.rating).reduce((a, b) => a + b) /
-            _allReviews.length;
-    final avgStr = avg.toStringAsFixed(1);
-
-    // Distribution per star
-    final dist = List<int>.filled(6, 0);
-    for (final r in _allReviews) {
-      if (r.rating >= 1 && r.rating <= 5) dist[r.rating]++;
-    }
-
-    return _buildGlassCard(
-      padding: const EdgeInsets.all(24),
-      child: Row(
-        children: [
-          // Big score
-          Column(
-            children: [
-              Text(
-                avgStr,
-                style: const TextStyle(
-                  fontFamily: 'Montserrat',
-                  fontSize: 52,
-                  fontWeight: FontWeight.w900,
-                  color: Color(0xFFD4AF7A),
-                  height: 1,
-                ),
-              ),
-              const SizedBox(height: 6),
-              Row(
-                children: List.generate(
-                  5,
-                  (i) => Icon(
-                    i < avg.round() ? Icons.star_rounded : Icons.star_border_rounded,
-                    color: const Color(0xFFD4AF7A),
-                    size: 16,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 6),
-              Text(
-                '${_allReviews.length} ${_isVi ? 'đánh giá' : 'reviews'}',
-                style: TextStyle(
-                  fontFamily: 'Montserrat',
-                  fontSize: 12,
-                  color: Colors.white.withOpacity(0.45),
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(width: 24),
-          // Bar chart
-          Expanded(
-            child: Column(
-              children: List.generate(5, (i) {
-                final star = 5 - i;
-                final count = dist[star];
-                final fraction =
-                    _allReviews.isEmpty ? 0.0 : count / _allReviews.length;
-                return Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 3),
-                  child: Row(
-                    children: [
-                      Text(
-                        '$star',
-                        style: const TextStyle(
-                          fontFamily: 'Montserrat',
-                          fontSize: 12,
-                          color: Colors.white54,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                      const SizedBox(width: 4),
-                      const Icon(Icons.star_rounded,
-                          color: Color(0xFFD4AF7A), size: 12),
-                      const SizedBox(width: 8),
-                      Expanded(
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(10),
-                          child: LinearProgressIndicator(
-                            value: fraction,
-                            backgroundColor: Colors.white.withOpacity(0.08),
-                            valueColor: const AlwaysStoppedAnimation<Color>(
-                                Color(0xFFD4AF7A)),
-                            minHeight: 6,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(width: 8),
-                      SizedBox(
-                        width: 20,
-                        child: Text(
-                          '$count',
-                          style: TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 11,
-                            color: Colors.white.withOpacity(0.4),
-                          ),
-                          textAlign: TextAlign.right,
-                        ),
-                      ),
-                    ],
-                  ),
-                );
-              }),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildMyReviewSection() {
+  Widget _buildSubmitSection() {
     if (!_isLoggedIn) {
       return _buildGlassCard(
         child: Padding(
@@ -537,6 +633,10 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
       );
     }
 
+    return _buildReviewForm();
+  }
+
+  Widget _buildMyReviewSection() {
     if (_isLoadingMine) {
       return _buildGlassCard(
         child: const Padding(
@@ -556,7 +656,26 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
       return _buildExistingFeedbackCard(_myReview!);
     }
 
-    return _buildReviewForm();
+    return _buildGlassCard(
+      child: Padding(
+        padding: const EdgeInsets.all(28),
+        child: Center(
+          child: Text(
+            _isVi
+                ? 'Bạn chưa gửi phản ánh nào.'
+                : 'You have not submitted feedback yet.',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontFamily: 'Montserrat',
+              color: Colors.white.withOpacity(0.45),
+              fontSize: 13,
+              height: 1.5,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+        ),
+      ),
+    );
   }
 
   Widget _buildExistingFeedbackCard(AppFeedback feedback) {
@@ -588,7 +707,7 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
                 ),
               ),
               const Spacer(),
-              _buildStarRow(feedback.rating, size: 16),
+              _buildTypeChip(feedback.reportType),
             ],
           ),
           const SizedBox(height: 16),
@@ -611,6 +730,19 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
               height: 1.6,
             ),
           ),
+          if (feedback.imageUrls.isNotEmpty) ...[
+            const SizedBox(height: 14),
+            _buildImageStrip(feedback.imageUrls),
+          ],
+          if (feedback.adminReply.trim().isNotEmpty) ...[
+            const SizedBox(height: 14),
+            _buildAdminReply(feedback.adminReply),
+          ],
+          const SizedBox(height: 14),
+          Align(
+            alignment: Alignment.centerRight,
+            child: _buildUpvoteButton(feedback),
+          ),
         ],
       ),
     );
@@ -619,13 +751,13 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
   Widget _buildReviewForm() {
     return Column(
       children: [
-        // Star rating picker
         _buildGlassCard(
           padding: const EdgeInsets.all(24),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                _isVi ? 'Mức độ hài lòng' : 'Satisfaction Level',
+                _isVi ? 'Loại phản ánh' : 'Report Type',
                 style: const TextStyle(
                   fontFamily: 'Montserrat',
                   fontSize: 15,
@@ -633,39 +765,47 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
                   color: Colors.white,
                 ),
               ),
-              const SizedBox(height: 20),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: List.generate(5, (i) {
-                  final filled = i < _selectedRating;
-                  return GestureDetector(
-                    onTap: () => setState(() => _selectedRating = i + 1),
-                    child: AnimatedContainer(
-                      duration: const Duration(milliseconds: 200),
-                      margin: const EdgeInsets.symmetric(horizontal: 6),
-                      child: Icon(
-                        filled ? Icons.star_rounded : Icons.star_border_rounded,
-                        color: filled
-                            ? const Color(0xFFD4AF7A)
-                            : Colors.white.withOpacity(0.25),
-                        size: filled ? 44 : 38,
-                      ),
+              const SizedBox(height: 14),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 2),
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.06),
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(color: Colors.white.withOpacity(0.12)),
+                ),
+                child: DropdownButtonHideUnderline(
+                  child: DropdownButton<String>(
+                    value: _selectedReportType,
+                    isExpanded: true,
+                    dropdownColor: const Color(0xFF1A211E),
+                    borderRadius: BorderRadius.circular(16),
+                    icon: const Icon(
+                      Icons.keyboard_arrow_down_rounded,
+                      color: Color(0xFFD4AF7A),
                     ),
-                  );
-                }),
-              ),
-              if (_selectedRating > 0) ...[
-                const SizedBox(height: 12),
-                Text(
-                  _ratingLabel(_selectedRating),
-                  style: const TextStyle(
-                    fontFamily: 'Montserrat',
-                    fontSize: 13,
-                    color: Color(0xFFD4AF7A),
-                    fontWeight: FontWeight.w600,
+                    style: const TextStyle(
+                      fontFamily: 'Montserrat',
+                      color: Colors.white,
+                      fontSize: 13,
+                      fontWeight: FontWeight.w700,
+                    ),
+                    onChanged: (value) {
+                      if (value != null) {
+                        setState(() => _selectedReportType = value);
+                      }
+                    },
+                    items: _reportTypeOptions.map((type) {
+                      return DropdownMenuItem<String>(
+                        value: type,
+                        child: Text(
+                          _reportTypeLabel(type),
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      );
+                    }).toList(),
                   ),
                 ),
-              ]
+              ),
             ],
           ),
         ),
@@ -682,7 +822,7 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
                 fontFamily: 'Montserrat',
                 fontSize: 15),
             decoration: InputDecoration(
-              hintText: _isVi ? 'Tiêu đề đánh giá...' : 'Review title...',
+              hintText: _isVi ? 'Tiêu đề phản ánh...' : 'Report title...',
               hintStyle: TextStyle(
                   color: Colors.white.withOpacity(0.3),
                   fontFamily: 'Montserrat'),
@@ -709,8 +849,8 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
                 fontSize: 14),
             decoration: InputDecoration(
               hintText: _isVi
-                  ? 'Chia sẻ trải nghiệm của bạn...'
-                  : 'Share your experience...',
+                  ? 'Mô tả lỗi, góp ý hoặc nội dung bạn muốn phản ánh...'
+                  : 'Describe the issue, suggestion, or feedback...',
               hintStyle: TextStyle(
                   color: Colors.white.withOpacity(0.3),
                   fontFamily: 'Montserrat'),
@@ -722,6 +862,24 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
             ),
           ),
         ),
+        const SizedBox(height: 16),
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Text(
+            _isVi
+                ? 'Hình ảnh đính kèm (Tối đa 5 ảnh)'
+                : 'Attachments (Maximum 5 photos)',
+            style: TextStyle(
+              fontFamily: 'Montserrat',
+              fontSize: 12,
+              fontWeight: FontWeight.w800,
+              color: Colors.white.withOpacity(0.46),
+              letterSpacing: 0.6,
+            ),
+          ),
+        ),
+        const SizedBox(height: 10),
+        _buildImagePickerSection(),
         const SizedBox(height: 24),
 
         // Submit button
@@ -731,6 +889,114 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
           icon: _isSubmitting ? null : Icons.send_rounded,
           isLoading: _isSubmitting,
         ),
+      ],
+    );
+  }
+
+  Widget _buildImagePickerSection() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        SizedBox(
+          height: 90,
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            itemCount: _pickedImages.length + 1,
+            itemBuilder: (context, index) {
+              if (index == _pickedImages.length) {
+                if (_pickedImages.length >= 5) {
+                  return const SizedBox.shrink();
+                }
+                return GestureDetector(
+                  onTap: _pickImage,
+                  child: Container(
+                    width: 90,
+                    margin: const EdgeInsets.only(right: 10),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.08),
+                      borderRadius: BorderRadius.circular(16),
+                      border: Border.all(
+                        color: const Color(0xFFD4AF7A).withOpacity(0.4),
+                        width: 1.5,
+                      ),
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Icon(
+                          Icons.add_photo_alternate_rounded,
+                          color: Color(0xFFD4AF7A),
+                          size: 28,
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          _isVi ? 'Thêm ảnh' : 'Add photo',
+                          style: const TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 10,
+                            fontWeight: FontWeight.w700,
+                            color: Color(0xFFD4AF7A),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                );
+              }
+
+              final img = _pickedImages[index];
+              return Container(
+                width: 90,
+                margin: const EdgeInsets.only(right: 10),
+                child: Stack(
+                  children: [
+                    Positioned.fill(
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(16),
+                        child: kIsWeb
+                            ? Image.network(img.path, fit: BoxFit.cover)
+                            : Image.file(File(img.path), fit: BoxFit.cover),
+                      ),
+                    ),
+                    Positioned(
+                      top: 4,
+                      right: 4,
+                      child: GestureDetector(
+                        onTap: () => _removePickedImage(index),
+                        child: Container(
+                          padding: const EdgeInsets.all(4),
+                          decoration: const BoxDecoration(
+                            color: Colors.black54,
+                            shape: BoxShape.circle,
+                          ),
+                          child: const Icon(
+                            Icons.close_rounded,
+                            color: Colors.white,
+                            size: 14,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              );
+            },
+          ),
+        ),
+        if (_pickedImages.isNotEmpty) ...[
+          const SizedBox(height: 8),
+          Text(
+            _isVi
+                ? '${_pickedImages.length}/5 ảnh đã chọn'
+                : '${_pickedImages.length}/5 photos selected',
+            style: TextStyle(
+              fontFamily: 'Montserrat',
+              color: Colors.white.withOpacity(0.45),
+              fontSize: 11,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        ],
       ],
     );
   }
@@ -879,7 +1145,7 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
                     const SizedBox(height: 3),
                     Row(
                       children: [
-                        _buildStarRow(review.rating, size: 13),
+                        _buildTypeChip(review.reportType),
                         const SizedBox(width: 8),
                         if (timeAgo.isNotEmpty)
                           Text(
@@ -895,6 +1161,7 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
                   ],
                 ),
               ),
+              _buildUpvoteButton(review),
             ],
           ),
           const SizedBox(height: 14),
@@ -919,33 +1186,20 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
             maxLines: 5,
             overflow: TextOverflow.ellipsis,
           ),
+          if (review.imageUrls.isNotEmpty) ...[
+            const SizedBox(height: 14),
+            _buildImageStrip(review.imageUrls),
+          ],
+          if (review.adminReply.trim().isNotEmpty) ...[
+            const SizedBox(height: 14),
+            _buildAdminReply(review.adminReply),
+          ],
         ],
       ),
     );
   }
 
   // ─── Helpers ─────────────────────────────────────────────────────────────
-
-  String _ratingLabel(int rating) {
-    if (_isVi) {
-      switch (rating) {
-        case 1: return 'Rất tệ 😞';
-        case 2: return 'Không hài lòng 😐';
-        case 3: return 'Bình thường 😊';
-        case 4: return 'Hài lòng 😄';
-        case 5: return 'Tuyệt vời! 🌟';
-      }
-    } else {
-      switch (rating) {
-        case 1: return 'Terrible 😞';
-        case 2: return 'Not satisfied 😐';
-        case 3: return 'Okay 😊';
-        case 4: return 'Good 😄';
-        case 5: return 'Amazing! 🌟';
-      }
-    }
-    return '';
-  }
 
   String _formatTime(DateTime? dt) {
     if (dt == null) return '';
@@ -961,16 +1215,165 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
     }
   }
 
-  Widget _buildStarRow(int rating, {double size = 14}) {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      children: List.generate(
-        5,
-        (i) => Icon(
-          i < rating ? Icons.star_rounded : Icons.star_border_rounded,
-          color: const Color(0xFFD4AF7A),
-          size: size,
+  String _reportTypeLabel(String type) {
+    switch (type) {
+      case 'bug':
+        return _isVi ? 'Báo lỗi hệ thống' : 'System bug';
+      case 'suggestion':
+        return _isVi ? 'Góp ý & Đề xuất tính năng' : 'Suggestion & feature request';
+      case 'inaccuracy':
+        return _isVi ? 'Sai lệch thông tin' : 'Information inaccuracy';
+      case 'review':
+        return _isVi ? 'Đánh giá trải nghiệm' : 'Experience review';
+      default:
+        return _isVi ? 'Khác' : 'Other';
+    }
+  }
+
+  Widget _buildTypeChip(String type) {
+    return Container(
+      constraints: const BoxConstraints(maxWidth: 190),
+      padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 5),
+      decoration: BoxDecoration(
+        color: const Color(0xFFD4AF7A).withOpacity(0.12),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: const Color(0xFFD4AF7A).withOpacity(0.25)),
+      ),
+      child: Text(
+        _reportTypeLabel(type),
+        overflow: TextOverflow.ellipsis,
+        style: const TextStyle(
+          fontFamily: 'Montserrat',
+          fontSize: 10,
+          color: Color(0xFFD4AF7A),
+          fontWeight: FontWeight.w800,
         ),
+      ),
+    );
+  }
+
+  Widget _buildUpvoteButton(AppFeedback feedback) {
+    final isUpvoted = feedback.isUpvotedBy(_currentUserId);
+
+    return GestureDetector(
+      onTap: () => _upvoteFeedback(feedback),
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
+        decoration: BoxDecoration(
+          color: isUpvoted
+              ? const Color(0xFFD4AF7A).withOpacity(0.16)
+              : Colors.white.withOpacity(0.06),
+          borderRadius: BorderRadius.circular(14),
+          border: Border.all(
+            color: isUpvoted
+                ? const Color(0xFFD4AF7A).withOpacity(0.55)
+                : Colors.white.withOpacity(0.12),
+          ),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(
+              isUpvoted
+                  ? Icons.thumb_up_alt_rounded
+                  : Icons.thumb_up_alt_outlined,
+              color: isUpvoted
+                  ? const Color(0xFFD4AF7A)
+                  : Colors.white.withOpacity(0.52),
+              size: 15,
+            ),
+            const SizedBox(width: 5),
+            Text(
+              '${feedback.helpfulVotes}',
+              style: TextStyle(
+                fontFamily: 'Montserrat',
+                color: isUpvoted ? const Color(0xFFD4AF7A) : Colors.white70,
+                fontSize: 12,
+                fontWeight: FontWeight.w800,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildImageStrip(List<String> images) {
+    return SizedBox(
+      height: 86,
+      child: ListView.separated(
+        scrollDirection: Axis.horizontal,
+        itemCount: images.length,
+        separatorBuilder: (_, __) => const SizedBox(width: 8),
+        itemBuilder: (context, index) {
+          return ClipRRect(
+            borderRadius: BorderRadius.circular(12),
+            child: Image.network(
+              images[index],
+              width: 86,
+              height: 86,
+              fit: BoxFit.cover,
+              errorBuilder: (_, __, ___) => Container(
+                width: 86,
+                height: 86,
+                color: Colors.white.withOpacity(0.08),
+                child: const Icon(Icons.broken_image_outlined,
+                    color: Colors.white38),
+              ),
+            ),
+          );
+        },
+      ),
+    );
+  }
+
+  Widget _buildAdminReply(String text) {
+    return Container(
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: const Color(0xFFD4AF7A).withOpacity(0.08),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: const Color(0xFFD4AF7A).withOpacity(0.18)),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          ClipOval(
+            child: Image.asset(
+              'assets/images/logo.png',
+              width: 34,
+              height: 34,
+              fit: BoxFit.cover,
+            ),
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'TourXport',
+                  style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    color: Color(0xFFD4AF7A),
+                    fontSize: 12,
+                    fontWeight: FontWeight.w900,
+                  ),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  text,
+                  style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    color: Colors.white.withOpacity(0.7),
+                    fontSize: 12,
+                    height: 1.5,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }

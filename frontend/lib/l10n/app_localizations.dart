@@ -122,10 +122,10 @@ abstract class AppLocalizations {
   /// **'Tìm kiếm'**
   String get search;
 
-  /// Thanh điều hướng Khảo sát
+  /// Thanh điều hướng Lên lịch
   ///
   /// In vi, this message translates to:
-  /// **'Khảo sát'**
+  /// **'Lên lịch'**
   String get survey;
 
   /// Thanh điều hướng Tài khoản

@@ -24,12 +24,16 @@ class SharedHandlerScreen extends StatefulWidget {
 class _SharedHandlerScreenState extends State<SharedHandlerScreen> {
   bool _isLoading = true;
   String? _errorMessage;
+  bool _hasStartedLoading = false;
 
   @override
-  void initState() {
-    super.initState();
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (_hasStartedLoading) return;
+    _hasStartedLoading = true;
     _loadSharedResource();
   }
+
   Future<void> _loadSharedResource() async {
     try {
       final isVi = Localizations.localeOf(context).languageCode == 'vi';

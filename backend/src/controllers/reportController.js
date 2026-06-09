@@ -1,33 +1,21 @@
 import mongoose from 'mongoose';
 
-import HotelDB from '../models/HotelDB.js';
-import PlaceDB from '../models/PlaceDB.js';
-import RestaurantDB from '../models/RestaurantDB.js';
-import TourDB from '../models/TourDB.js';
-import UserDB from '../models/UserDB.js';
 import ReportDB from '../models/ReportDB.js';
-import AppReviewDB from '../models/AppReviewDB.js';
-
+import UserDB from '../models/UserDB.js';
+import { deleteImage, uploadImageBuffer } from '../services/Cloudinary.js';
 import respond from '../utils/respond.js';
 
-const targetModelByType = {
-    RestaurantDB,
-    HotelDB,
-    PlaceDB,
-    Tour: TourDB
-};
+const reportTypeOptions = new Set([
+    'bug',
+    'suggestion',
+    'inaccuracy',
+    'review',
+    'other'
+]);
 
-const typeAliases = {
-    restaurant: 'RestaurantDB',
-    restaurants: 'RestaurantDB',
-
-    hotel: 'HotelDB',
-    hotels: 'HotelDB',
-
-    place: 'PlaceDB',
-    places: 'PlaceDB',
-
-    tour: 'Tour'
+const reportFilter = {
+    targetId: { $exists: false },
+    reportType: { $in: Array.from(reportTypeOptions) }
 };
 
 const isObjectId = (value) =>
@@ -41,364 +29,86 @@ const parsePositiveInt = (value, fallback) => {
         : fallback;
 };
 
-const normalizeType = (type) => {
-    const value = String(type || '').trim();
-
-    return typeAliases[value.toLowerCase()]
-        || value;
-};
-
-const getTargetModel = (type) =>
-    targetModelByType[normalizeType(type)];
-
-const buildReportPayload = (body) => {
-    const payload = {};
-
-    if (body.category !== undefined)
-        payload.category = body.category;
-
-    if (body.title !== undefined)
-        payload.title = body.title;
-
-    if (body.text !== undefined)
-        payload.text = body.text;
-
-    if (body.attachments !== undefined)
-        payload.attachments = body.attachments;
-
-    return payload;
-};
-
-const toReportResponse = (report) => ({
-    id: report._id,
-    userId: report.userId,
-    targetId: report.targetId,
-    targetType: report.targetType,
-    category: report.category,
-    title: report.title,
-    text: report.text,
-    attachments: report.attachments,
-    status: report.status,
-    adminNote: report.adminNote,
-    user: report.user,
-    createdAt: report.createdAt,
-    updatedAt: report.updatedAt
-});
-
-export const getMyReports = async (req, res, next) => {
-    try {
-        const page = parsePositiveInt(
-            req.query.page,
-            1
-        );
-
-        const limit = Math.min(
-            parsePositiveInt(req.query.limit, 20),
-            100
-        );
-
-        const skip = (page - 1) * limit;
-
-        const [reports, total] =
-            await Promise.all([
-                ReportDB.find({
-                    userId: req.user.id
-                })
-                    .sort({ createdAt: -1 })
-                    .skip(skip)
-                    .limit(limit),
-
-                ReportDB.countDocuments({
-                    userId: req.user.id
-                })
-            ]);
-
-        res.status(200).json({
-            success: true,
-            count: reports.length,
-            total,
-            page,
-            totalPages: Math.ceil(total / limit),
-            data: reports.map(toReportResponse)
-        });
-    } catch (error) {
-        next(error);
-    }
-};
-
-export const createReport = async (req, res, next) => {
-    try {
-        const {
-            targetId,
-            targetType
-        } = req.body;
-
-        const normalizedType =
-            normalizeType(targetType);
-
-        const TargetModel =
-            getTargetModel(normalizedType);
-
-        if (!TargetModel) {
-            return next(
-                respond.httpError(
-                    'Invalid targetType',
-                    400
-                )
-            );
-        }
-
-        if (!isObjectId(targetId)) {
-            return next(
-                respond.httpError(
-                    'Invalid targetId',
-                    400
-                )
-            );
-        }
-
-        const [
-            target,
-            currentUser,
-            existingReport
-        ] = await Promise.all([
-            TargetModel.findById(targetId),
-
-            UserDB.findById(req.user.id),
-
-            ReportDB.findOne({
-                userId: req.user.id,
-                targetId,
-                targetType: normalizedType,
-                status: {
-                    $in: [
-                        'pending',
-                        'reviewing'
-                    ]
-                }
-            })
-        ]);
-
-        if (!target) {
-            return next(
-                respond.httpError(
-                    'Target not found',
-                    404
-                )
-            );
-        }
-
-        if (!currentUser) {
-            return next(
-                respond.httpError(
-                    'User not found',
-                    404
-                )
-            );
-        }
-
-        if (existingReport) {
-            return next(
-                respond.httpError(
-                    'You already submitted a report for this target',
-                    409
-                )
-            );
-        }
-
-        const report =
-            await ReportDB.create({
-                ...buildReportPayload(req.body),
-
-                userId: req.user.id,
-                targetId,
-                targetType: normalizedType,
-
-                user: {
-                    username:
-                        currentUser.name,
-
-                    avatar: {
-                        url:
-                            currentUser.avatar?.url || '',
-
-                        public_id:
-                            currentUser.avatar?.public_id || ''
-                    }
-                }
-            });
-
-        res.status(201).json({
-            success: true,
-            message:
-                'Report submitted successfully!',
-            data: toReportResponse(report)
-        });
-    } catch (error) {
-        next(error);
-    }
-};
-
-export const getReportsByTarget = async (
-    req,
-    res,
-    next
-) => {
-    try {
-        const {
-            targetType,
-            targetId
-        } = req.params;
-
-        const reports =
-            await ReportDB.find({
-                targetType:
-                    normalizeType(targetType),
-                targetId
-            }).sort({
-                createdAt: -1
-            });
-
-        res.status(200).json({
-            success: true,
-            count: reports.length,
-            data: reports.map(
-                toReportResponse
-            )
-        });
-    } catch (error) {
-        next(error);
-    }
-};
-
-export const updateReport = async (
-    req,
-    res,
-    next
-) => {
-    try {
-        const { reportId } = req.params;
-
-        const payload =
-            buildReportPayload(req.body);
-
-        const report =
-            await ReportDB.findOne({
-                _id: reportId,
-                userId: req.user.id
-            });
-
-        if (!report) {
-            return next(
-                respond.httpError(
-                    'Report not found',
-                    404
-                )
-            );
-        }
-
-        if (
-            report.status !== 'pending'
-        ) {
-            return next(
-                respond.httpError(
-                    'Report is already being processed',
-                    400
-                )
-            );
-        }
-
-        Object.assign(
-            report,
-            payload
-        );
-
-        await report.save();
-
-        res.status(200).json({
-            success: true,
-            message:
-                'Report updated successfully!',
-            data: toReportResponse(report)
-        });
-    } catch (error) {
-        next(error);
-    }
-};
-
-export const deleteReport = async (
-    req,
-    res,
-    next
-) => {
-    try {
-        const { reportId } = req.params;
-
-        const report =
-            await ReportDB.findOne({
-                _id: reportId,
-                userId: req.user.id
-            });
-
-        if (!report) {
-            return next(
-                respond.httpError(
-                    'Report not found',
-                    404
-                )
-            );
-        }
-
-        if (
-            report.status !== 'pending'
-        ) {
-            return next(
-                respond.httpError(
-                    'Processed reports cannot be deleted',
-                    400
-                )
-            );
-        }
-
-        await report.deleteOne();
-
-        res.status(200).json({
-            success: true,
-            message:
-                'Report deleted successfully!',
-            deletedId: report._id
-        });
-    } catch (error) {
-        next(error);
-    }
-};
-
-// ═══════════════════════════════════════════════════════════════════════════
-// PHẢN ÁNH ỨNG DỤNG (App Feedback) – tái dùng AppReviewDB / app_reviews
-// ═══════════════════════════════════════════════════════════════════════════
-
-const toFeedbackResponse = (doc) => ({
+const toReportResponse = (doc, currentUserId = null) => ({
     id: doc._id,
+    reportType: doc.reportType,
     userId: doc.userId,
-    rating: doc.rating,
     title: doc.title,
     text: doc.text,
     user: doc.user,
-    helpful_votes: doc.helpful_votes,
+    helpful_votes: doc.helpful_votes || 0,
+    upvotedBy: (doc.upvotedBy || []).map((userId) => userId.toString()),
+    isUpvoted: currentUserId
+        ? (doc.upvotedBy || []).some((userId) => userId.toString() === currentUserId)
+        : false,
+    adminReply: doc.adminReply || '',
+    images: doc.images || [],
     createdAt: doc.createdAt,
     updatedAt: doc.updatedAt
 });
 
-// GET /reports/app-feedback  (public)
-export const getAllAppFeedback = async (req, res, next) => {
+const uploadReportImageFiles = async (files = []) => {
+    if (!files.length) return [];
+
+    const uploadResults = await Promise.all(
+        files.map((file) =>
+            uploadImageBuffer(file.buffer, { folder: 'tourxport/reports' })
+        )
+    );
+
+    return uploadResults.map((result) => ({
+        url: result.secure_url,
+        public_id: result.public_id
+    }));
+};
+
+const deleteReportImages = (images = []) => {
+    const deletePromises = images
+        .filter((img) => img.public_id)
+        .map((img) => deleteImage(img.public_id));
+
+    if (deletePromises.length > 0) {
+        Promise.all(deletePromises).catch((error) => {
+            console.error('Failed to delete report images:', error.message || error);
+        });
+    }
+};
+
+const validateReportInput = ({ reportType, title, text }, { partial = false } = {}) => {
+    if (!partial || reportType !== undefined) {
+        if (!reportTypeOptions.has(reportType)) {
+            return 'Loại phản ánh không hợp lệ';
+        }
+    }
+
+    if (!partial || title !== undefined) {
+        if (!title || title.trim().length === 0 || title.trim().length > 100) {
+            return 'Tiêu đề phải từ 1 đến 100 ký tự';
+        }
+    }
+
+    if (!partial || text !== undefined) {
+        if (!text || text.trim().length === 0 || text.trim().length > 1000) {
+            return 'Nội dung phải từ 1 đến 1000 ký tự';
+        }
+    }
+
+    return null;
+};
+
+// GET /reports
+export const getReports = async (req, res, next) => {
     try {
-        const page  = parsePositiveInt(req.query.page, 1);
+        const page = parsePositiveInt(req.query.page, 1);
         const limit = Math.min(parsePositiveInt(req.query.limit, 20), 100);
-        const skip  = (page - 1) * limit;
+        const skip = (page - 1) * limit;
 
         const [docs, total] = await Promise.all([
-            AppReviewDB.find().sort({ createdAt: -1 }).skip(skip).limit(limit),
-            AppReviewDB.countDocuments()
+            ReportDB.find(reportFilter)
+                .sort({ createdAt: -1 })
+                .skip(skip)
+                .limit(limit),
+            ReportDB.countDocuments(reportFilter)
         ]);
 
         res.status(200).json({
@@ -407,23 +117,31 @@ export const getAllAppFeedback = async (req, res, next) => {
             total,
             page,
             totalPages: Math.ceil(total / limit),
-            data: docs.map(toFeedbackResponse)
+            data: docs.map((doc) => toReportResponse(doc))
         });
     } catch (error) {
         next(error);
     }
 };
 
-// GET /reports/app-feedback/my  (authenticated)
-export const getMyAppFeedback = async (req, res, next) => {
+// GET /reports/my-reports
+export const getMyReports = async (req, res, next) => {
     try {
-        const page  = parsePositiveInt(req.query.page, 1);
+        const page = parsePositiveInt(req.query.page, 1);
         const limit = Math.min(parsePositiveInt(req.query.limit, 20), 100);
-        const skip  = (page - 1) * limit;
+        const skip = (page - 1) * limit;
+
+        const query = {
+            ...reportFilter,
+            userId: req.user.id
+        };
 
         const [docs, total] = await Promise.all([
-            AppReviewDB.find({ userId: req.user.id }).sort({ createdAt: -1 }).skip(skip).limit(limit),
-            AppReviewDB.countDocuments({ userId: req.user.id })
+            ReportDB.find(query)
+                .sort({ createdAt: -1 })
+                .skip(skip)
+                .limit(limit),
+            ReportDB.countDocuments(query)
         ]);
 
         res.status(200).json({
@@ -432,32 +150,21 @@ export const getMyAppFeedback = async (req, res, next) => {
             total,
             page,
             totalPages: Math.ceil(total / limit),
-            data: docs.map(toFeedbackResponse)
+            data: docs.map((doc) => toReportResponse(doc, req.user.id))
         });
     } catch (error) {
         next(error);
     }
 };
 
-// POST /reports/app-feedback  (authenticated)
-export const createAppFeedback = async (req, res, next) => {
+// POST /reports/my-reports
+export const createReport = async (req, res, next) => {
     try {
-        const { rating, title, text } = req.body;
+        const { reportType = 'other', title, text } = req.body;
+        const validationError = validateReportInput({ reportType, title, text });
 
-        if (!rating || !title || !text) {
-            return next(respond.httpError('Rating, title và nội dung là bắt buộc', 400));
-        }
-
-        if (rating < 1 || rating > 5) {
-            return next(respond.httpError('Rating phải từ 1 đến 5', 400));
-        }
-
-        if (title.trim().length === 0 || title.trim().length > 100) {
-            return next(respond.httpError('Tiêu đề phải từ 1 đến 100 ký tự', 400));
-        }
-
-        if (text.trim().length === 0 || text.trim().length > 1000) {
-            return next(respond.httpError('Nội dung phải từ 1 đến 1000 ký tự', 400));
+        if (validationError) {
+            return next(respond.httpError(validationError, 400));
         }
 
         const user = await UserDB.findById(req.user.id);
@@ -465,71 +172,151 @@ export const createAppFeedback = async (req, res, next) => {
             return next(respond.httpError('Không tìm thấy người dùng', 404));
         }
 
-        const doc = new AppReviewDB({
+        const images = await uploadReportImageFiles(req.files || []);
+
+        const doc = await ReportDB.create({
+            reportType,
             userId: req.user.id,
-            rating: Math.round(rating),
             title: title.trim(),
             text: text.trim(),
+            helpful_votes: 0,
+            adminReply: '',
+            images,
             user: {
                 username: user.name || user.email,
                 avatar: user.avatar || { url: '', public_id: '' }
             }
         });
 
-        await doc.save();
-
         res.status(201).json({
             success: true,
             message: 'Phản ánh đã được gửi thành công!',
-            data: toFeedbackResponse(doc)
+            data: toReportResponse(doc, req.user.id)
         });
     } catch (error) {
         next(error);
     }
 };
 
-// PUT /reports/app-feedback/:feedbackId  (authenticated)
-export const updateAppFeedback = async (req, res, next) => {
+// PUT /reports/my-reports/:reportId
+export const updateReport = async (req, res, next) => {
     try {
-        const { feedbackId } = req.params;
-        const { rating, title, text } = req.body;
+        const { reportId } = req.params;
+        const { reportType, title, text } = req.body;
 
-        const doc = await AppReviewDB.findOne({ _id: feedbackId, userId: req.user.id });
+        if (!isObjectId(reportId)) {
+            return next(respond.httpError('reportId không hợp lệ', 400));
+        }
+
+        const validationError = validateReportInput(
+            { reportType, title, text },
+            { partial: true }
+        );
+
+        if (validationError) {
+            return next(respond.httpError(validationError, 400));
+        }
+
+        const doc = await ReportDB.findOne({
+            _id: reportId,
+            userId: req.user.id,
+            ...reportFilter
+        });
+
         if (!doc) {
             return next(respond.httpError('Không tìm thấy phản ánh', 404));
         }
 
-        if (rating && (rating < 1 || rating > 5)) {
-            return next(respond.httpError('Rating phải từ 1 đến 5', 400));
-        }
+        if (reportType) doc.reportType = reportType;
+        if (title) doc.title = title.trim();
+        if (text) doc.text = text.trim();
 
-        if (rating) doc.rating = Math.round(rating);
-        if (title)  doc.title  = title.trim();
-        if (text)   doc.text   = text.trim();
+        if (req.files && req.files.length > 0) {
+            const oldImages = doc.images || [];
+            doc.images = await uploadReportImageFiles(req.files);
+            deleteReportImages(oldImages);
+        }
 
         await doc.save();
 
         res.status(200).json({
             success: true,
             message: 'Phản ánh đã được cập nhật!',
-            data: toFeedbackResponse(doc)
+            data: toReportResponse(doc, req.user.id)
         });
     } catch (error) {
         next(error);
     }
 };
 
-// DELETE /reports/app-feedback/:feedbackId  (authenticated)
-export const deleteAppFeedback = async (req, res, next) => {
+// GET /reports/upvote?reportId=...
+export const upvoteReport = async (req, res, next) => {
     try {
-        const { feedbackId } = req.params;
+        const reportId = req.query.reportId || req.query.id;
 
-        const doc = await AppReviewDB.findOne({ _id: feedbackId, userId: req.user.id });
+        if (!isObjectId(reportId)) {
+            return next(respond.httpError('reportId không hợp lệ', 400));
+        }
+
+        const doc = await ReportDB.findOne({
+            _id: reportId,
+            ...reportFilter
+        });
+
+        if (!doc) {
+            return next(respond.httpError('Không tìm thấy phản ánh', 404));
+        }
+
+        const upvotedBy = doc.upvotedBy || [];
+        const hasUpvoted = upvotedBy.some(
+            (userId) => userId.toString() === req.user.id
+        );
+
+        if (hasUpvoted) {
+            doc.upvotedBy = upvotedBy.filter(
+                (userId) => userId.toString() !== req.user.id
+            );
+            doc.helpful_votes = Math.max((doc.helpful_votes || 0) - 1, 0);
+        } else {
+            doc.upvotedBy.push(req.user.id);
+            doc.helpful_votes = (doc.helpful_votes || 0) + 1;
+        }
+
+        await doc.save();
+
+        res.status(200).json({
+            success: true,
+            message: hasUpvoted
+                ? 'Đã bỏ upvote phản ánh!'
+                : 'Đã upvote phản ánh!',
+            data: toReportResponse(doc, req.user.id)
+        });
+    } catch (error) {
+        next(error);
+    }
+};
+
+// DELETE /reports/my-reports/:reportId
+export const deleteReport = async (req, res, next) => {
+    try {
+        const { reportId } = req.params;
+
+        if (!isObjectId(reportId)) {
+            return next(respond.httpError('reportId không hợp lệ', 400));
+        }
+
+        const doc = await ReportDB.findOne({
+            _id: reportId,
+            userId: req.user.id,
+            ...reportFilter
+        });
+
         if (!doc) {
             return next(respond.httpError('Không tìm thấy phản ánh', 404));
         }
 
         await doc.deleteOne();
+        deleteReportImages(doc.images || []);
 
         res.status(200).json({
             success: true,

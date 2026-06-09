@@ -407,7 +407,14 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
       _showMessage(_isVi ? 'Không tìm thấy ID địa điểm để chia sẻ' : 'Location ID not found for sharing');
       return;
     }
-    final String shareUrl = '$domain/place?id=$targetId&type=${Uri.encodeComponent(widget.destination.type)}';
+    final String sharePath = Uri(
+      path: '/place',
+      queryParameters: {
+        'id': targetId,
+        'type': widget.destination.type,
+      },
+    ).toString();
+    final String shareUrl = '$domain$sharePath';
     
     _showShareDialog(context, shareUrl, _isVi ? 'địa điểm' : 'place');
   }

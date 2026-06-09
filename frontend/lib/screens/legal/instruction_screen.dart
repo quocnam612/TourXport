@@ -52,15 +52,15 @@ class InstructionScreen extends StatelessWidget {
                 ],
         ),
         LegalSection(
-          title: isVi ? '3. Tạo tour bằng khảo sát' : '3. Create a tour from the survey',
+          title: isVi ? '3. Tạo tour bằng Lên lịch' : '3. Create a tour from Generate',
           bullets: isVi
               ? [
-                  'Mở tab Khảo sát và nhập điểm đến, số ngày, số người, ngân sách và phong cách chuyến đi.',
+                  'Mở tab Lên lịch và nhập điểm đến, số ngày, số người, ngân sách và phong cách chuyến đi.',
                   'Kiểm tra lại các lựa chọn trước khi gửi yêu cầu tạo tour.',
                   'Sau khi tạo xong, bạn có thể xem chi tiết lịch trình và lưu tour vào tài khoản.',
                 ]
               : [
-                  'Open the Survey tab and enter destination, number of days, travelers, budget, and trip style.',
+                  'Open the Generate tab and enter destination, number of days, travelers, budget, and trip style.',
                   'Review your selections before submitting the tour generation request.',
                   'After the tour is created, you can view the detailed itinerary and save it to your account.',
                 ],

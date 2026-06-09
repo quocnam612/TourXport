@@ -101,19 +101,19 @@ Trải nghiệm màn hình lớn với đầy đủ thông tin, thao tác dễ d
 
 <table>
   <tr>
-    <td align="center"><img src="assets/web/landing_page.png" alt="Landing Page" width="100%"></td>
+    <td align="center"><img src="external/assets/web/landing_page.png" alt="Landing Page" width="100%"></td>
   </tr>
   <tr>
-    <td align="center"><img src="assets/web/dashboard.png" alt="Dashboard" width="100%"></td>
+    <td align="center"><img src="external/assets/web/dashboard.png" alt="Dashboard" width="100%"></td>
   </tr>
   <tr>
-    <td align="center"><img src="assets/web/place_detail.png" alt="Place Detail" width="100%"></td>
+    <td align="center"><img src="external/assets/web/place_detail.png" alt="Place Detail" width="100%"></td>
   </tr>
   <tr>
-    <td align="center"><img src="assets/web/survey_result.png" alt="Survey Result" width="100%"></td>
+    <td align="center"><img src="external/assets/web/survey_result.png" alt="Survey Result" width="100%"></td>
   </tr>
   <tr>
-    <td align="center"><img src="assets/web/map_screen.png" alt="Map Screen" width="100%"></td>
+    <td align="center"><img src="external/assets/web/map_screen.png" alt="Map Screen" width="100%"></td>
   </tr>
 </table>
 
@@ -122,14 +122,14 @@ Tối ưu hóa thao tác cảm ứng, mang lại trải nghiệm mượt mà, ti
 
 <table>
   <tr>
-    <td width="33%" align="center"><img src="assets/mobile/landing_page.jpg" alt="Landing Page" width="100%"></td>
-    <td width="34%" align="center"><img src="assets/mobile/dashboard.jpg" alt="Dashboard" width="100%"></td>
-    <td width="33%" align="center"><img src="assets/mobile/place_detail.jpg" alt="Place Detail" width="100%"></td>
+    <td width="33%" align="center"><img src="external/assets/mobile/landing_page.jpg" alt="Landing Page" width="100%"></td>
+    <td width="34%" align="center"><img src="external/assets/mobile/dashboard.jpg" alt="Dashboard" width="100%"></td>
+    <td width="33%" align="center"><img src="external/assets/mobile/place_detail.jpg" alt="Place Detail" width="100%"></td>
   </tr>
   <tr>
-    <td width="33%" align="center"><img src="assets/mobile/survey_result.jpg" alt="Survey Result" width="100%"></td>
-    <td width="34%" align="center"><img src="assets/mobile/map_screen.jpg" alt="Map Screen" width="100%"></td>
-    <td width="33%" align="center"><img src="assets/mobile/user.jpg" alt="User" width="100%"></td>
+    <td width="33%" align="center"><img src="external/assets/mobile/survey_result.jpg" alt="Survey Result" width="100%"></td>
+    <td width="34%" align="center"><img src="external/assets/mobile/map_screen.jpg" alt="Map Screen" width="100%"></td>
+    <td width="33%" align="center"><img src="external/assets/mobile/user.jpg" alt="User" width="100%"></td>
   </tr>
 </table>
 

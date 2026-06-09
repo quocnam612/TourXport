@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import '../api/api.dart';
 import '../theme/app_colors.dart';
 import '../utils/auth_storage.dart';
 import '../widgets/anim_builder.dart';
@@ -166,12 +167,39 @@ class _LandingPageState extends State<LandingPage>
   }
 
   Future<void> _restoreSession() async {
-    final token = widget.authToken?.trim().isNotEmpty == true
+    String? token = widget.authToken?.trim().isNotEmpty == true
         ? widget.authToken!.trim()
         : await AuthStorage.getToken();
-    final userName = widget.userName?.trim().isNotEmpty == true
+    String? userName = widget.userName?.trim().isNotEmpty == true
         ? widget.userName!.trim()
         : await AuthStorage.getUserName();
+
+    if (token != null && token.isNotEmpty) {
+      try {
+        final response = await apiGet(
+          '/auth/profile',
+          token: token,
+          handleUnauthorized: false,
+        ).timeout(const Duration(seconds: 8));
+        final body = tryDecodeJsonObject(response.body);
+        if (response.statusCode == 200 && body?['success'] == true) {
+          final user = body?['user'];
+          if (user is Map && user['name'] is String) {
+            userName = (user['name'] as String).trim();
+          }
+        } else if (response.statusCode == 401 || response.statusCode == 403) {
+          await AuthStorage.clearSession();
+          token = null;
+          userName = null;
+        } else {
+          token = null;
+          userName = null;
+        }
+      } catch (_) {
+        token = null;
+        userName = null;
+      }
+    }
 
     if (!mounted) return;
     setState(() {

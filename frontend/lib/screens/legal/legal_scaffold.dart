@@ -298,14 +298,6 @@ class _TopNav extends StatelessWidget {
               : () => Navigator.pushReplacementNamed(context, '/privacy'),
         ),
         _NavButton(
-          label: isVi ? 'Xóa dữ liệu' : 'Data deletion',
-          icon: Icons.delete_outline_rounded,
-          selected: activeRoute == '/data-deletion',
-          onPressed: activeRoute == '/data-deletion'
-              ? null
-              : () => Navigator.pushReplacementNamed(context, '/data-deletion'),
-        ),
-        _NavButton(
           label: isVi ? 'Hướng dẫn' : 'Instruction',
           icon: Icons.menu_book_rounded,
           selected: activeRoute == '/intruction',

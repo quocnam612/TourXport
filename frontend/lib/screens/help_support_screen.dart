@@ -1,5 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import '../widgets/app_feedback_logo.dart';
 
 class HelpSupportScreen extends StatefulWidget {
   final Map<String, dynamic> userData;
@@ -371,7 +372,7 @@ class _HelpSupportScreenState extends State<HelpSupportScreen>
       {
         'title': _isVi ? 'Phản ánh' : 'Feedback',
         'icon': Icons.campaign_rounded,
-        'route': '/reports'
+        'route': '/report'
       },
       {
         'title': _isVi ? 'Chính sách bảo mật' : 'Privacy policy',
@@ -403,7 +404,7 @@ class _HelpSupportScreenState extends State<HelpSupportScreen>
             onTap: route == null
                 ? null
                 : () {
-                    if (route == '/reports') {
+                    if (route == '/report') {
                       Navigator.pushNamed(context, route,
                           arguments: widget.authToken);
                     } else {
@@ -414,8 +415,13 @@ class _HelpSupportScreenState extends State<HelpSupportScreen>
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(actions[index]['icon'] as IconData,
-                    color: const Color(0xFFD4AF7A), size: 28),
+                route == '/report'
+                    ? const AppFeedbackLogo(size: 28)
+                    : Icon(
+                        actions[index]['icon'] as IconData,
+                        color: const Color(0xFFD4AF7A),
+                        size: 28,
+                      ),
                 const SizedBox(height: 12),
                 Text(
                   actions[index]['title'] as String,

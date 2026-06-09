@@ -474,7 +474,7 @@ class _SurveyScreenState extends State<SurveyScreen>
                 const SizedBox(height: 8),
                 _buildAppSidebarItem(
                   icon: Icons.explore_rounded,
-                  label: isVi ? 'Khảo sát' : 'Survey',
+                  label: isVi ? 'Lên lịch' : 'Generate',
                   isActive: true,
                   onTap: () {},
                 ),

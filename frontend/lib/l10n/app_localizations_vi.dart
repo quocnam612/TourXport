@@ -21,7 +21,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get search => 'Tìm kiếm';
 
   @override
-  String get survey => 'Khảo sát';
+  String get survey => 'Lên lịch';
 
   @override
   String get account => 'Tài khoản';

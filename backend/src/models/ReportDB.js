@@ -21,6 +21,19 @@ const reportUserSchema = new mongoose.Schema({
 }, { _id: false });
 
 const reportSchema = new mongoose.Schema({
+    reportType: {
+        type: String,
+        enum: [
+            'bug',
+            'suggestion',
+            'inaccuracy',
+            'review',
+            'other'
+        ],
+        default: 'other',
+        index: true
+    },
+
     userId: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'UserDB',
@@ -30,13 +43,11 @@ const reportSchema = new mongoose.Schema({
 
     targetId: {
         type: mongoose.Schema.Types.ObjectId,
-        required: true,
         index: true
     },
 
     targetType: {
         type: String,
-        required: true,
         enum: [
             'PlaceDB',
             'RestaurantDB',
@@ -47,7 +58,6 @@ const reportSchema = new mongoose.Schema({
 
     category: {
         type: String,
-        required: true,
         enum: [
             'wrong_information',
             'wrong_address',
@@ -79,6 +89,29 @@ const reportSchema = new mongoose.Schema({
         public_id: String
     }],
 
+    helpful_votes: {
+        type: Number,
+        min: 0,
+        default: 0
+    },
+
+    upvotedBy: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'UserDB'
+    }],
+
+    adminReply: {
+        type: String,
+        default: '',
+        trim: true,
+        maxlength: 1000
+    },
+
+    images: [{
+        url: String,
+        public_id: String
+    }],
+
     status: {
         type: String,
         enum: [
@@ -88,11 +121,6 @@ const reportSchema = new mongoose.Schema({
             'rejected'
         ],
         default: 'pending'
-    },
-
-    adminNote: {
-        type: String,
-        default: ''
     },
 
     user: {

@@ -21,7 +21,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get search => 'Search';
 
   @override
-  String get survey => 'Survey';
+  String get survey => 'Generate';
 
   @override
   String get account => 'Account';

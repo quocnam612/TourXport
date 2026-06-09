@@ -16,9 +16,9 @@
   "@search": {
     "description": "Thanh điều hướng Tìm kiếm"
   },
-  "survey": "Khảo sát",
+  "survey": "Lên lịch",
   "@survey": {
-    "description": "Thanh điều hướng Khảo sát"
+    "description": "Thanh điều hướng Lên lịch"
   },
   "account": "Tài khoản",
   "@account": {

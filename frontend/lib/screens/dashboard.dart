@@ -4,6 +4,7 @@ import 'dart:ui';
 import 'package:flutter/foundation.dart'
     show TargetPlatform, defaultTargetPlatform, kIsWeb;
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '../l10n/app_localizations.dart';
 import 'package:geolocator/geolocator.dart';
 
@@ -53,11 +54,13 @@ class _DestinationPageResult {
 class HomeScreen extends StatefulWidget {
   final String userName;
   final String? authToken;
+  final int initialTabIndex;
 
   const HomeScreen({
     super.key,
     this.userName = 'Username',
     this.authToken,
+    this.initialTabIndex = 0,
   });
 
   @override
@@ -70,8 +73,90 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   static const int _tabSaved = 2;
   static const int _tabSurvey = 3;
   static const int _tabProfile = 4;
+  static const Map<int, String> _tabRoutes = {
+    _tabExplore: '/home',
+    _tabSearch: '/search',
+    _tabSaved: '/saved',
+    _tabSurvey: '/generate',
+    _tabProfile: '/account',
+  };
+  static const List<Shadow> _heroTextShadows = [
+    Shadow(
+      color: Color(0x99000000),
+      offset: Offset(0, 1.5),
+      blurRadius: 4,
+    ),
+    Shadow(
+      color: Color(0x66000000),
+      offset: Offset(0, 0),
+      blurRadius: 10,
+    ),
+  ];
+  static const List<Shadow> _heroTitleShadows = [
+    Shadow(
+      color: Color(0xB0000000),
+      offset: Offset(0, 3),
+      blurRadius: 8,
+    ),
+    Shadow(
+      color: Color(0x80000000),
+      offset: Offset(0, 0),
+      blurRadius: 18,
+    ),
+  ];
 
   bool get _isVi => Localizations.localeOf(context).languageCode == 'vi';
+
+  int _normalizedTabIndex(int index) =>
+      index >= _tabExplore && index <= _tabProfile ? index : _tabExplore;
+
+  void _updateTabRoute(int tabIndex) {
+    if (!kIsWeb) return;
+    final route = _tabRoutes[_normalizedTabIndex(tabIndex)];
+    if (route == null) return;
+    SystemNavigator.routeInformationUpdated(
+      location: route,
+      replace: true,
+    );
+  }
+
+  void _showMainTab(int tabIndex) {
+    final normalizedIndex = _normalizedTabIndex(tabIndex);
+    setState(() {
+      _navIndex = normalizedIndex;
+      _savedPlacesInitialTab = 0;
+    });
+    _updateTabRoute(normalizedIndex);
+    if (normalizedIndex == _tabExplore) {
+      _startAutoPlay();
+    } else {
+      _stopAutoPlay();
+    }
+  }
+
+  String? _placeDetailRoute(Destination dest) {
+    final targetId = dest.id ?? dest.sourceLocationId ?? '';
+    if (targetId.isEmpty) return null;
+
+    return Uri(
+      path: '/place',
+      queryParameters: {
+        'id': targetId,
+        'type': dest.type,
+      },
+    ).toString();
+  }
+
+  void _updatePlaceDetailRoute(Destination dest) {
+    if (!kIsWeb) return;
+    final route = _placeDetailRoute(dest);
+    if (route == null) return;
+
+    SystemNavigator.routeInformationUpdated(
+      location: route,
+      replace: false,
+    );
+  }
 
   String _translateProvince(String prov) {
     if (_isVi) return prov;
@@ -736,6 +821,16 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   void initState() {
     super.initState();
 
+    _navIndex = _normalizedTabIndex(widget.initialTabIndex);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      if (_navIndex == _tabSurvey &&
+          MediaQuery.of(context).size.width < 800) {
+        _openSurveyForCurrentLayout();
+      } else {
+        _updateTabRoute(_navIndex);
+      }
+    });
     _currentUserName = widget.userName;
     _selectedCity = vietnameseProvinces[0];
     _initMockNotifications();
@@ -786,6 +881,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     _loadProfile();
     _fetchDestinations();
     _startAutoPlay();
+    if (_navIndex == _tabSurvey) {
+      _stopAutoPlay();
+      _startSurveyAiWarmup();
+    }
     _initGps();
   }
 
@@ -2157,35 +2256,20 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           _savedPlacesInitialTab = 1;
           _navIndex = _tabSaved;
         });
+        _updateTabRoute(_tabSaved);
         _stopAutoPlay();
         break;
       case 'go_to_saved':
-        setState(() {
-          _savedPlacesInitialTab = 0;
-          _navIndex = _tabSaved;
-        });
-        _stopAutoPlay();
+        _showMainTab(_tabSaved);
         break;
       case 'go_to_explore':
-        setState(() {
-          _savedPlacesInitialTab = 0;
-          _navIndex = _tabExplore;
-        });
-        _startAutoPlay();
+        _showMainTab(_tabExplore);
         break;
       case 'go_to_search':
-        setState(() {
-          _savedPlacesInitialTab = 0;
-          _navIndex = _tabSearch;
-        });
-        _stopAutoPlay();
+        _showMainTab(_tabSearch);
         break;
       case 'go_to_account':
-        setState(() {
-          _savedPlacesInitialTab = 0;
-          _navIndex = _tabProfile;
-        });
-        _stopAutoPlay();
+        _showMainTab(_tabProfile);
         break;
       case 'go_to_survey':
         _showSurveyTab();
@@ -2210,6 +2294,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       _savedPlacesInitialTab = 0;
       _navIndex = _tabSurvey;
     });
+    _updateTabRoute(_tabSurvey);
     _stopAutoPlay();
     _startSurveyAiWarmup();
   }
@@ -2249,6 +2334,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Future<Object?> _openSurveyForCurrentLayout() async {
+    _updateTabRoute(_tabSurvey);
     if (MediaQuery.of(context).size.width >= 800) {
       _showSurveyTab();
       return null;
@@ -3375,6 +3461,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     }
 
     _stopAutoPlay();
+    _updatePlaceDetailRoute(dest);
 
     final result = await Navigator.push<Map<String, bool>>(
       context,
@@ -3416,6 +3503,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         },
       ),
     );
+
+    if (mounted && kIsWeb) {
+      _updateTabRoute(_navIndex);
+    }
 
     _startAutoPlay();
 
@@ -4933,15 +5024,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       if (i == _tabSurvey) {
                         await _openSurveyForCurrentLayout();
                       } else {
-                        setState(() {
-                          _navIndex = i;
-                          _savedPlacesInitialTab = 0;
-                        });
-                        if (i == _tabExplore) {
-                          _startAutoPlay();
-                        } else {
-                          _stopAutoPlay();
-                        }
+                        _showMainTab(i);
                       }
                     },
                     borderRadius: BorderRadius.circular(16),
@@ -5150,11 +5233,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           updatingSavedNames: _updatingSavedNames,
           isLoading: _isLoadingSavedPlaces,
           onBack: () {
-            setState(() {
-              _navIndex = _tabExplore;
-              _savedPlacesInitialTab = 0;
-            });
-            _startAutoPlay();
+            _showMainTab(_tabExplore);
           },
           onOpenDetail: _openPlaceDetail,
           onToggleSaved: _toggleSaved,
@@ -5177,8 +5256,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           userData: _userData,
           isLoading: _isLoadingProfile,
           onBack: () {
-            setState(() => _navIndex = _tabExplore);
-            _startAutoPlay();
+            _showMainTab(_tabExplore);
           },
           onLogout: _logout,
           onUpdateAvatar: () => _showEditImageDialog(true),
@@ -5392,6 +5470,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                               fontWeight: FontWeight.w900,
                               color: Colors.white,
                               letterSpacing: 3.0,
+                              shadows: _heroTextShadows,
                             ),
                           ),
                         ],
@@ -5470,6 +5549,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                       color: isThisCatActive
                                           ? Colors.white
                                           : Colors.white60,
+                                      shadows: _heroTextShadows,
                                     ),
                                   ),
                                   const SizedBox(height: 4),
@@ -5537,6 +5617,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                 fontWeight: FontWeight.w400,
                                 color: Colors.white70,
                                 letterSpacing: 6.0,
+                                shadows: _heroTextShadows,
                               ),
                             ),
                             Text(
@@ -5550,6 +5631,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                 color: Colors.white,
                                 height: 1.0,
                                 letterSpacing: -1.0,
+                                shadows: _heroTitleShadows,
                               ),
                             ),
                           ],
@@ -5595,6 +5677,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                   fontSize: 24,
                                   fontWeight: FontWeight.w900,
                                   color: Colors.white,
+                                  shadows: _heroTextShadows,
                                 ),
                               ),
                               Container(
@@ -5610,6 +5693,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                   fontSize: 14,
                                   fontWeight: FontWeight.w600,
                                   color: Colors.white.withOpacity(0.4),
+                                  shadows: _heroTextShadows,
                                 ),
                               ),
                             ],
@@ -5669,6 +5753,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                     fontSize: 12,
                                     color: Colors.white.withOpacity(0.7),
                                     height: 1.6,
+                                    shadows: _heroTextShadows,
                                   ),
                                 ),
                                 const SizedBox(height: 16),
@@ -5685,6 +5770,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                           fontWeight: FontWeight.w800,
                                           color: Color(0xFFD4AF7A),
                                           letterSpacing: 1.0,
+                                          shadows: _heroTextShadows,
                                         ),
                                       ),
                                     ),
@@ -5728,6 +5814,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                                     ? const Color(0xFFD4AF7A)
                                                     : Colors.white70,
                                                 letterSpacing: 1.0,
+                                                shadows: _heroTextShadows,
                                               ),
                                             ),
                                           ],
@@ -5753,6 +5840,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                     fontSize: 13,
                                     fontWeight: FontWeight.bold,
                                     color: Colors.white,
+                                    shadows: _heroTextShadows,
                                   ),
                                 ),
                                 const SizedBox(height: 4),
@@ -5765,6 +5853,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                     fontSize: 11,
                                     color: Colors.white.withOpacity(0.45),
                                     height: 1.5,
+                                    shadows: _heroTextShadows,
                                   ),
                                 ),
                                 const SizedBox(height: 10),
@@ -5777,6 +5866,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                       fontSize: 11,
                                       fontWeight: FontWeight.bold,
                                       color: Colors.white54,
+                                      shadows: _heroTextShadows,
                                     ),
                                   ),
                                 ),
@@ -5795,6 +5885,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                   fontSize: 13,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white,
+                                  shadows: _heroTextShadows,
                                 ),
                               ),
                               const SizedBox(height: 4),
@@ -5807,6 +5898,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                   fontSize: 11,
                                   color: Colors.white.withOpacity(0.45),
                                   height: 1.5,
+                                  shadows: _heroTextShadows,
                                 ),
                               ),
                               const SizedBox(height: 10),
@@ -5819,6 +5911,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                     fontSize: 11,
                                     fontWeight: FontWeight.bold,
                                     color: Colors.white54,
+                                    shadows: _heroTextShadows,
                                   ),
                                 ),
                               ),
@@ -5944,6 +6037,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                         fontSize: 10,
                                         fontWeight: FontWeight.bold,
                                         color: Colors.white,
+                                        shadows: _heroTextShadows,
                                       ),
                                     ),
                                   ),
@@ -5961,6 +6055,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                       fontSize: 13,
                                       fontWeight: FontWeight.bold,
                                       color: Colors.white,
+                                      shadows: _heroTextShadows,
                                     ),
                                   ),
                                 ),
@@ -7504,15 +7599,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     if (i == _tabSurvey) {
                       await _openSurveyForCurrentLayout();
                     } else {
-                      setState(() {
-                        _navIndex = i;
-                        _savedPlacesInitialTab = 0;
-                      });
-                      if (i == _tabExplore) {
-                        _startAutoPlay();
-                      } else {
-                        _stopAutoPlay();
-                      }
+                      _showMainTab(i);
                     }
                   },
                   child: AnimatedContainer(

@@ -4,12 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'l10n/app_localizations.dart';
+import 'api/api.dart';
 import 'utils/locale_manager.dart';
 import 'utils/auth_storage.dart';
 import 'screens/landing_page.dart';
+import 'screens/sign_in.dart';
 import 'screens/dashboard.dart';
 import 'screens/legal/contact_support_screen.dart';
-import 'screens/legal/data_deletion_screen.dart';
 import 'screens/legal/instruction_screen.dart';
 import 'screens/legal/privacy_policy_screen.dart';
 import 'screens/legal/shared_handler_screen.dart';
@@ -29,6 +30,15 @@ Future<void> main() async {
 
   final token = await AuthStorage.getToken();
   final userName = await AuthStorage.getUserName();
+
+  setUnauthorizedHandler((_) async {
+    final navigator = navigatorKey.currentState;
+    if (navigator == null) return;
+    navigator.pushAndRemoveUntil(
+      MaterialPageRoute(builder: (_) => const SignInScreen()),
+      (route) => false,
+    );
+  });
 
   runApp(TourXportApp(
     initialToken: token,
@@ -51,6 +61,28 @@ class TourXportApp extends StatefulWidget {
 }
 
 class _TourXportAppState extends State<TourXportApp> {
+  MaterialPageRoute _homeRoute(RouteSettings settings, int initialTabIndex) {
+    final args = settings.arguments;
+    String? authToken = widget.initialToken;
+    String? userName = widget.initialUserName;
+
+    if (args is Map) {
+      authToken = args['authToken'] as String? ?? authToken;
+      userName = args['userName'] as String? ?? userName;
+    } else if (args is String) {
+      authToken = args;
+    }
+
+    return MaterialPageRoute(
+      settings: settings,
+      builder: (_) => HomeScreen(
+        userName: userName ?? 'bạn',
+        authToken: authToken,
+        initialTabIndex: initialTabIndex,
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder<Locale>(
@@ -91,6 +123,26 @@ class _TourXportAppState extends State<TourXportApp> {
               final uri = Uri.parse(settings.name ?? '/');
               final routeName = uri.path;
 
+              if (routeName == '/home') {
+                return _homeRoute(settings, 0);
+              }
+
+              if (routeName == '/search') {
+                return _homeRoute(settings, 1);
+              }
+
+              if (routeName == '/saved') {
+                return _homeRoute(settings, 2);
+              }
+
+              if (routeName == '/generate') {
+                return _homeRoute(settings, 3);
+              }
+
+              if (routeName == '/account') {
+                return _homeRoute(settings, 4);
+              }
+
               if (routeName == '/place') {
                 final id = uri.queryParameters['id'] ?? '';
                 final type = uri.queryParameters['type'] ?? 'Địa điểm';
@@ -115,13 +167,6 @@ class _TourXportAppState extends State<TourXportApp> {
                 );
               }
 
-              if (routeName == '/data-deletion') {
-                return MaterialPageRoute(
-                  settings: settings,
-                  builder: (_) => const DataDeletionScreen(),
-                );
-              }
-
               if (routeName == '/intruction') {
                 return MaterialPageRoute(
                   settings: settings,
@@ -136,7 +181,7 @@ class _TourXportAppState extends State<TourXportApp> {
                 );
               }
 
-              if (routeName == '/reports') {
+              if (routeName == '/report') {
                 final authToken = settings.arguments as String?;
                 return MaterialPageRoute(
                   settings: settings,
