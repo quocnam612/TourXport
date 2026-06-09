@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:share_plus/share_plus.dart';
@@ -93,8 +94,7 @@ class _SavedTourDetailScreenState extends State<SavedTourDetailScreen> {
       return;
     }
 
-    const String domain = 'https://tourxport.netlify.app';
-    final String shareUrl = '$domain/tours/$tourId';
+    final String shareUrl = _tourShareUrl(tourId);
     final isVi = AppLocalizations.of(context)!.localeName == 'vi';
     final String shareText = isVi
         ? 'Xem lịch trình ${widget.tourTitle} trên TourXport\n$shareUrl'
@@ -109,13 +109,20 @@ class _SavedTourDetailScreenState extends State<SavedTourDetailScreen> {
 
   String? get _tourId => _tourJson['_id']?.toString() ?? _tourJson['id']?.toString();
 
+  String _tourShareUrl(String tourId) {
+    final origin = kIsWeb ? Uri.base.origin : 'https://tourxport.netlify.app';
+    return Uri.parse(origin)
+        .replace(path: '/tour', queryParameters: {'id': tourId})
+        .toString();
+  }
+
   bool _isPrivateVisibility(String visibility) {
     final normalized = visibility.toLowerCase();
     return normalized == 'private' || normalized == 'hidden';
   }
 
-  Future<void> _publishTour(BuildContext context, _TourMeta meta) async {
-    if (!_isPrivateVisibility(meta.visibility) || _isUpdatingVisibility) return;
+  Future<void> _toggleTourVisibility(BuildContext context, _TourMeta meta) async {
+    if (_isUpdatingVisibility) return;
 
     final isVi = AppLocalizations.of(context)!.localeName == 'vi';
     final tourId = _tourId;
@@ -128,11 +135,12 @@ class _SavedTourDetailScreenState extends State<SavedTourDetailScreen> {
       return;
     }
 
+    final nextVisibility = _isPrivateVisibility(meta.visibility) ? 'public' : 'private';
     setState(() => _isUpdatingVisibility = true);
     try {
       final response = await apiPutJson(
         '/tours/my-tours/$tourId',
-        {'visibility': 'public'},
+        {'visibility': nextVisibility},
         token: widget.authToken,
       );
       final body = tryDecodeJsonObject(response.body);
@@ -143,13 +151,13 @@ class _SavedTourDetailScreenState extends State<SavedTourDetailScreen> {
           if (data is Map) {
             _tourJson = Map<String, dynamic>.from(data);
           } else {
-            _tourJson = Map<String, dynamic>.from(_tourJson)..['visibility'] = 'public';
+            _tourJson = Map<String, dynamic>.from(_tourJson)..['visibility'] = nextVisibility;
           }
         });
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-          content: Text(isVi
-              ? 'Lịch trình đã được đặt thành công khai'
-              : 'Itinerary is now public'),
+          content: Text(nextVisibility == 'public'
+              ? (isVi ? 'Lịch trình đã được đặt thành công khai' : 'Itinerary is now public')
+              : (isVi ? 'Lịch trình đã được đặt thành riêng tư' : 'Itinerary is now private')),
         ));
       } else {
         throw Exception(body?['message'] ?? response.reasonPhrase);
@@ -315,9 +323,7 @@ class _SavedTourDetailScreenState extends State<SavedTourDetailScreen> {
                   _VisibilityBadge(
                     icon: meta.visibilityIcon,
                     isLoading: _isUpdatingVisibility,
-                    onTap: _isPrivateVisibility(meta.visibility)
-                        ? () => _publishTour(context, meta)
-                        : null,
+                    onTap: () => _toggleTourVisibility(context, meta),
                   ),
                   SizedBox(width: isCompact ? 8 : 10),
                   Expanded(
@@ -1063,8 +1069,8 @@ class _VisibilityBadge extends StatelessWidget {
     if (onTap == null || isLoading) return badge;
     return Tooltip(
       message: AppLocalizations.of(context)!.localeName == 'vi'
-          ? 'Đặt lịch trình thành công khai'
-          : 'Make itinerary public',
+          ? 'Đổi trạng thái hiển thị'
+          : 'Toggle itinerary visibility',
       child: InkWell(
         onTap: onTap,
         customBorder: const CircleBorder(),

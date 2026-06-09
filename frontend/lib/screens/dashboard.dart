@@ -825,13 +825,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     'Đồ ăn nhanh',
   ];
 
-  static const Map<String, int> _fakeLikeSeeds = {
-    'Hạ Long Bay': 1243,
-    'Hội An': 987,
-    'Đà Nẵng': 1765,
-    'Phong Nha': 842,
-  };
-
   @override
   void initState() {
     super.initState();
@@ -3445,21 +3438,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             _savedDestinations.where((item) => item.name != dest.name).toList();
       }
     });
-  }
-
-  void _toggleLike(Destination dest) {
-    setState(() {
-      if (_likedNames.contains(dest.name)) {
-        _likedNames.remove(dest.name);
-      } else {
-        _likedNames.add(dest.name);
-      }
-    });
-  }
-
-  int _fakeLikeCountFor(Destination dest, {required bool isLiked}) {
-    final seeded = _fakeLikeSeeds[dest.name] ?? (700 + (dest.name.length * 37));
-    return isLiked ? seeded + 1 : seeded;
   }
 
   Future<void> _openPlaceDetail(
@@ -7306,8 +7284,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     String heroPrefix = 'card_hero',
   }) {
     final isSaved = _savedNames.contains(dest.name);
-    final isLiked = _likedNames.contains(dest.name);
-    final likeCount = _fakeLikeCountFor(dest, isLiked: isLiked);
     final isBusy = _updatingSavedNames.contains(dest.name);
 
     return Padding(
@@ -7342,37 +7318,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     ),
                     Positioned(
                       top: 14,
-                      left: 14,
-                      child: GestureDetector(
-                        onTap: () => _toggleLike(dest),
-                        child: Container(
-                          width: 42,
-                          height: 42,
-                          decoration: BoxDecoration(
-                            color: Colors.black.withValues(alpha: 0.3),
-                            shape: BoxShape.circle,
-                            border: Border.all(
-                              color: Colors.white.withValues(alpha: 0.2),
-                            ),
-                          ),
-                          child: AnimatedSwitcher(
-                            duration: const Duration(milliseconds: 250),
-                            transitionBuilder: (child, animation) =>
-                                ScaleTransition(scale: animation, child: child),
-                            child: Icon(
-                              isLiked ? Icons.favorite : Icons.favorite_border,
-                              key: ValueKey<bool>(isLiked),
-                              color: isLiked
-                                  ? const Color(0xFFE74C3C)
-                                  : Colors.white,
-                              size: 22,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    Positioned(
-                      top: 62,
                       left: 12,
                       child: Container(
                         padding: const EdgeInsets.symmetric(
@@ -7387,14 +7332,14 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                           ),
                         ),
                         child: Text(
-                          '$likeCount',
+                          dest.category?.trim().isNotEmpty == true
+                              ? dest.category!.trim()
+                              : dest.type,
                           style: TextStyle(
                             fontFamily: 'Montserrat',
                             fontSize: 11,
                             fontWeight: FontWeight.w600,
-                            color: isLiked
-                                ? const Color(0xFFE74C3C)
-                                : Colors.white,
+                            color: Colors.white,
                           ),
                         ),
                       ),

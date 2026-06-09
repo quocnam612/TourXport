@@ -17,6 +17,11 @@ class Destination {
   final double? totalScore;
   final int? reviewsCount;
   final List<String> tags;
+  final String? category;
+  final String? ranking;
+  final String? priceRange;
+  final Map<String, dynamic>? openingHours;
+  final bool? hasImage;
 
   const Destination({
     this.id,
@@ -33,6 +38,11 @@ class Destination {
     this.totalScore,
     this.reviewsCount,
     this.tags = const [],
+    this.category,
+    this.ranking,
+    this.priceRange,
+    this.openingHours,
+    this.hasImage = true,
   });
 
   factory Destination.fromJson(Map<String, dynamic> json) {
@@ -45,6 +55,10 @@ class Destination {
     final totalScoreVal = json['totalScore'];
     final reviewsCountVal = json['reviewsCount'];
     final tagsVal = json['tags'];
+    final String categoryVal = (json['category'] ?? '').toString().trim();
+    final String rankingVal = (json['ranking'] ?? '').toString().trim();
+    final String priceRangeVal = (json['priceRange'] ?? '').toString().trim();
+    final openingHoursVal = json['openingHours'];
 
     final sample = findSampleDestination(nameVal);
 
@@ -56,6 +70,9 @@ class Destination {
     if (imgUrl.isEmpty) {
       imgUrl = (json['imageUrl'] ?? json['imagePath'] ?? destinationPlaceholderPath).toString();
     }
+    final bool hasRealImage = imgUrl.trim().isNotEmpty &&
+        imgUrl != destinationPlaceholderPath &&
+        imgUrl != 'assets/images/halong.jpg';
 
     // Coordinates extraction: GeoJSON is [lng, lat]
     double latVal = 0.0;
@@ -97,6 +114,17 @@ class Destination {
       tags: tagsVal is List
           ? tagsVal.map((tag) => tag.toString()).where((tag) => tag.trim().isNotEmpty).toList()
           : const [],
+      category: categoryVal.isNotEmpty ? categoryVal : null,
+      ranking: rankingVal.isNotEmpty ? rankingVal : null,
+      priceRange: priceRangeVal.isNotEmpty ? priceRangeVal : null,
+      openingHours: openingHoursVal is Map
+          ? Map<String, dynamic>.from(openingHoursVal)
+          : openingHoursVal is String && openingHoursVal.trim().isNotEmpty
+              ? {'display': openingHoursVal.trim()}
+              : openingHoursVal is List && openingHoursVal.isNotEmpty
+                  ? {'display': openingHoursVal}
+                  : null,
+      hasImage: hasRealImage,
     );
   }
 
@@ -116,6 +144,11 @@ class Destination {
       if (totalScore != null) 'totalScore': totalScore,
       if (reviewsCount != null) 'reviewsCount': reviewsCount,
       'tags': tags,
+      if (category != null) 'category': category,
+      if (ranking != null) 'ranking': ranking,
+      if (priceRange != null) 'priceRange': priceRange,
+      if (openingHours != null) 'openingHours': openingHours,
+      'hasImage': hasImage == true,
     };
   }
 
