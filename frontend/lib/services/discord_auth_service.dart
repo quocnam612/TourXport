@@ -1,5 +1,6 @@
 import 'discord_oauth_stub.dart'
-    if (dart.library.html) 'discord_oauth_web.dart';
+    if (dart.library.html) 'discord_oauth_web.dart'
+    if (dart.library.io) 'discord_oauth_io.dart';
 
 const String _discordClientId = String.fromEnvironment('DISCORD_CLIENT_ID');
 

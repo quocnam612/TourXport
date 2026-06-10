@@ -659,6 +659,8 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                 Expanded(
                   child: Text(
                     dest.name,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
                     style: const TextStyle(
                       fontFamily: 'Montserrat',
                       fontSize: 34,
@@ -668,6 +670,8 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                     ),
                   ),
                 ),
+                const SizedBox(width: 16),
+                _buildHeaderActions(),
               ],
             ),
             const SizedBox(height: 24),
@@ -695,28 +699,9 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                             ),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(28),
-                              child: Stack(
-                                fit: StackFit.expand,
-                                children: [
-                                  Destination.buildImage(dest.imagePath, fit: BoxFit.cover),
-                                  Positioned(
-                                    top: 20,
-                                    right: 20,
-                                    child: Row(
-                                      children: [
-                                        _glassCircle(Icons.share_outlined, _sharePlace),
-                                        const SizedBox(width: 12),
-                                        _glassCircleAnimatedIcon(
-                                          isActive: _isSaved,
-                                          activeIcon: Icons.bookmark,
-                                          inactiveIcon: Icons.bookmark_border,
-                                          onTap: _toggleSaved,
-                                          activeColor: const Color(0xFFD4AF7A),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ],
+                              child: Destination.buildImage(
+                                dest.imagePath,
+                                fit: BoxFit.cover,
                               ),
                             ),
                           ),
@@ -1254,27 +1239,12 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
       left: 20, right: 20,
       child: FadeTransition(
         opacity: _headerFade,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            _glassCircle(Icons.arrow_back_ios_new, () => Navigator.pop(context, {
-              'isSaved': _isSaved,
-              'isLiked': _isLiked,
-            })),
-            Row(
-              children: [
-                _glassCircle(Icons.share_outlined, _sharePlace),
-                const SizedBox(width: 10),
-                _glassCircleAnimatedIcon(
-                  isActive: _isSaved,
-                  activeIcon: Icons.bookmark,
-                  inactiveIcon: Icons.bookmark_border,
-                  onTap: _toggleSaved,
-                  activeColor: const Color(0xFFD4AF7A),
-                ),
-              ],
-            ),
-          ],
+        child: Align(
+          alignment: Alignment.centerLeft,
+          child: _glassCircle(Icons.arrow_back_ios_new, () => Navigator.pop(context, {
+            'isSaved': _isSaved,
+            'isLiked': _isLiked,
+          })),
         ),
       ),
     );
@@ -1330,10 +1300,24 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                         ),
                       ),
                       const SizedBox(height: 18),
-                      Text(dest.name, style: const TextStyle(
-                        fontFamily: 'Montserrat', fontSize: 28,
-                            fontWeight: FontWeight.w900, color: Colors.white,
-                      )),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Expanded(
+                            child: Text(
+                              dest.name,
+                              style: const TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 28,
+                                fontWeight: FontWeight.w900,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(width: 12),
+                          _buildHeaderActions(spacing: 8),
+                        ],
+                      ),
                       const SizedBox(height: 6),
                       Row(
                         children: [
@@ -1737,6 +1721,23 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
           ),
         ),
       ),
+    );
+  }
+
+  Widget _buildHeaderActions({double spacing = 12}) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        _glassCircle(Icons.share_outlined, _sharePlace),
+        SizedBox(width: spacing),
+        _glassCircleAnimatedIcon(
+          isActive: _isSaved,
+          activeIcon: Icons.bookmark,
+          inactiveIcon: Icons.bookmark_border,
+          onTap: _toggleSaved,
+          activeColor: const Color(0xFFD4AF7A),
+        ),
+      ],
     );
   }
 

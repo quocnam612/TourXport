@@ -26,7 +26,6 @@ import 'place_detail.dart';
 import 'profile_section.dart';
 import 'saved_place.dart';
 import 'survey_screen.dart';
-import 'sign_in.dart';
 import 'app_reviews_screen.dart';
 import '../models/travel_notification.dart';
 
@@ -446,7 +445,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     try {
       _speechEnabled = await _speech.initialize(
         onError: (val) => debugPrint('Speech onError: $val'),
-        onStatus: (val) => debugPrint('Speech onStatus: $val'),
+        onStatus: (_) {},
       );
     } catch (e) {
       _speechEnabled = false;
@@ -474,216 +473,24 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       return;
     }
 
-    String words = '';
-    bool listening = true;
-
     if (!mounted) return;
 
-    showGeneralDialog(
+    showGeneralDialog<void>(
       context: context,
       barrierDismissible: true,
       barrierLabel: 'VoiceSearch',
       barrierColor: Colors.black.withOpacity(0.75),
       transitionDuration: const Duration(milliseconds: 300),
       pageBuilder: (context, anim1, anim2) {
-        return StatefulBuilder(
-          builder: (context, setDialogState) {
-            if (listening && !_speech.isListening) {
-              _speech.listen(
-                onResult: (val) {
-                  setDialogState(() {
-                    words = val.recognizedWords;
-                    if (val.finalResult) {
-                      listening = false;
-                      Future.delayed(const Duration(milliseconds: 800), () {
-                        if (mounted) {
-                          setState(() {
-                            _searchController.text = words;
-                            _onSearchChanged(words);
-                          });
-                        }
-                        if (Navigator.canPop(context)) {
-                          Navigator.pop(context);
-                        }
-                      });
-                    }
-                  });
-                },
-                localeId: _isVi ? 'vi_VN' : 'en_US',
-              );
-            }
-
-            return BackdropFilter(
-              filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
-              child: Scaffold(
-                backgroundColor: Colors.transparent,
-                body: Center(
-                  child: Container(
-                    margin: const EdgeInsets.symmetric(horizontal: 32),
-                    padding: const EdgeInsets.all(28),
-                    decoration: BoxDecoration(
-                      color: const Color(0xFF162521).withOpacity(0.9),
-                      borderRadius: BorderRadius.circular(28),
-                      border: Border.all(color: Colors.white.withOpacity(0.12)),
-                      boxShadow: [
-                        BoxShadow(
-                          color: const Color(0xFFD4AF7A).withOpacity(0.1),
-                          blurRadius: 24,
-                          spreadRadius: 2,
-                        ),
-                      ],
-                    ),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Text(
-                          _isVi ? 'Tìm kiếm bằng giọng nói' : 'Voice Search',
-                          style: const TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
-                        ),
-                        const SizedBox(height: 32),
-                        TweenAnimationBuilder<double>(
-                          tween: Tween(begin: 1.0, end: listening ? 1.15 : 1.0),
-                          duration: const Duration(milliseconds: 800),
-                          curve: Curves.easeInOut,
-                          onEnd: () {
-                            if (listening) {
-                              setDialogState(() {});
-                            }
-                          },
-                          builder: (context, value, child) {
-                            return Transform.scale(
-                              scale: value,
-                              child: Container(
-                                width: 80,
-                                height: 80,
-                                decoration: BoxDecoration(
-                                  color: listening
-                                      ? const Color(0xFFD4AF7A).withOpacity(0.2)
-                                      : Colors.white.withOpacity(0.06),
-                                  shape: BoxShape.circle,
-                                  border: Border.all(
-                                    color: listening
-                                        ? const Color(0xFFD4AF7A)
-                                        : Colors.white24,
-                                    width: 2,
-                                  ),
-                                ),
-                                child: Icon(
-                                  listening
-                                      ? Icons.mic_rounded
-                                      : Icons.mic_off_rounded,
-                                  color: listening
-                                      ? const Color(0xFFD4AF7A)
-                                      : Colors.white54,
-                                  size: 36,
-                                ),
-                              ),
-                            );
-                          },
-                        ),
-                        const SizedBox(height: 32),
-                        Text(
-                          listening
-                              ? (_isVi ? 'Đang lắng nghe...' : 'Listening...')
-                              : (_isVi ? 'Đang xử lý...' : 'Processing...'),
-                          style: TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 14,
-                            color: Colors.white.withOpacity(0.6),
-                          ),
-                        ),
-                        const SizedBox(height: 16),
-                        Container(
-                          width: double.infinity,
-                          constraints: const BoxConstraints(minHeight: 60),
-                          padding: const EdgeInsets.all(12),
-                          decoration: BoxDecoration(
-                            color: Colors.black26,
-                            borderRadius: BorderRadius.circular(16),
-                          ),
-                          child: Text(
-                            words.isEmpty
-                                ? (_isVi
-                                    ? 'Hãy nói gì đó...'
-                                    : 'Say something...')
-                                : words,
-                            textAlign: TextAlign.center,
-                            style: const TextStyle(
-                              fontFamily: 'Montserrat',
-                              fontSize: 15,
-                              fontWeight: FontWeight.w500,
-                              color: Colors.white,
-                            ),
-                          ),
-                        ),
-                        const SizedBox(height: 32),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            TextButton(
-                              onPressed: () {
-                                _speech.stop();
-                                Navigator.pop(context);
-                              },
-                              child: Text(
-                                _isVi ? 'Hủy' : 'Cancel',
-                                style: TextStyle(
-                                  fontFamily: 'Montserrat',
-                                  color: Colors.white.withOpacity(0.5),
-                                ),
-                              ),
-                            ),
-                            if (listening)
-                              ElevatedButton(
-                                onPressed: () {
-                                  _speech.stop();
-                                  setDialogState(() {
-                                    listening = false;
-                                  });
-                                },
-                                style: ElevatedButton.styleFrom(
-                                  backgroundColor:
-                                      const Color(0xFFE74C3C).withOpacity(0.2),
-                                  foregroundColor: const Color(0xFFE74C3C),
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(16),
-                                  ),
-                                ),
-                                child: Text(_isVi ? 'Dừng' : 'Stop'),
-                              ),
-                            if (!listening && words.isNotEmpty)
-                              ElevatedButton(
-                                onPressed: () {
-                                  if (mounted) {
-                                    setState(() {
-                                      _searchController.text = words;
-                                      _onSearchChanged(words);
-                                    });
-                                  }
-                                  Navigator.pop(context);
-                                },
-                                style: ElevatedButton.styleFrom(
-                                  backgroundColor: const Color(0xFFD4AF7A),
-                                  foregroundColor: Colors.black,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(16),
-                                  ),
-                                ),
-                                child: Text(_isVi ? 'Tìm kiếm' : 'Search'),
-                              ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-            );
+        return _VoiceSearchDialog(
+          speech: _speech,
+          isVi: _isVi,
+          onSubmitted: (words) {
+            if (!mounted) return;
+            setState(() {
+              _searchController.text = words;
+              _onSearchChanged(words);
+            });
           },
         );
       },
@@ -693,7 +500,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           child: child,
         );
       },
-    );
+    ).whenComplete(() {
+      if (_speech.isListening) {
+        _speech.cancel();
+      }
+    });
   }
 
   static const List<String> vietnameseProvinces = [
@@ -900,6 +711,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   void dispose() {
     _stopAutoPlay();
     _searchDebounceTimer?.cancel();
+    _speech.cancel();
     _searchController.dispose();
     _searchFocusNode.dispose();
     _bgFadeController.dispose();
@@ -2145,32 +1957,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   void _logout() {
     final token = widget.authToken?.trim();
     if (token == null || token.isEmpty) {
-      Navigator.push(
-        context,
-        PageRouteBuilder(
-          pageBuilder: (_, __, ___) => const SignInScreen(),
-          transitionDuration: const Duration(milliseconds: 600),
-          reverseTransitionDuration: const Duration(milliseconds: 400),
-          transitionsBuilder: (_, animation, __, child) {
-            return FadeTransition(
-              opacity: CurvedAnimation(
-                parent: animation,
-                curve: Curves.easeInOut,
-              ),
-              child: SlideTransition(
-                position: Tween<Offset>(
-                  begin: const Offset(0, 0.05),
-                  end: Offset.zero,
-                ).animate(CurvedAnimation(
-                  parent: animation,
-                  curve: Curves.easeOutCubic,
-                )),
-                child: child,
-              ),
-            );
-          },
-        ),
-      );
+      Navigator.pushNamedAndRemoveUntil(context, '/login', (route) => false);
       return;
     }
 
@@ -2211,34 +1998,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 Navigator.pop(context); // Close dialog
                 await AuthStorage.clearSession();
                 if (!mounted) return;
-                Navigator.pushAndRemoveUntil(
-                  context,
-                  PageRouteBuilder(
-                    pageBuilder: (_, __, ___) => const SignInScreen(),
-                    transitionDuration: const Duration(milliseconds: 600),
-                    reverseTransitionDuration:
-                        const Duration(milliseconds: 400),
-                    transitionsBuilder: (_, animation, __, child) {
-                      return FadeTransition(
-                        opacity: CurvedAnimation(
-                          parent: animation,
-                          curve: Curves.easeInOut,
-                        ),
-                        child: SlideTransition(
-                          position: Tween<Offset>(
-                            begin: const Offset(0, 0.05),
-                            end: Offset.zero,
-                          ).animate(CurvedAnimation(
-                            parent: animation,
-                            curve: Curves.easeOutCubic,
-                          )),
-                          child: child,
-                        ),
-                      );
-                    },
-                  ),
-                  (route) => false,
-                );
+                Navigator.pushNamedAndRemoveUntil(context, '/login', (route) => false);
               },
               child: const Text(
                 'Đăng xuất',
@@ -7189,7 +6949,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             Positioned(
               left: 0,
               right: 0,
-              bottom: 18,
+              bottom: MediaQuery.paddingOf(context).bottom + 118,
               child: Center(
                 child: _buildCarouselPageIndicator(
                   useSearchResults: useSearchResults,
@@ -7786,6 +7546,245 @@ class _SurveyAiWarmupView extends StatelessWidget {
           Container(color: const Color(0xFF1B2321).withOpacity(0.78)),
           card,
         ],
+      ),
+    );
+  }
+}
+
+class _VoiceSearchDialog extends StatefulWidget {
+  final stt.SpeechToText speech;
+  final bool isVi;
+  final ValueChanged<String> onSubmitted;
+
+  const _VoiceSearchDialog({
+    required this.speech,
+    required this.isVi,
+    required this.onSubmitted,
+  });
+
+  @override
+  State<_VoiceSearchDialog> createState() => _VoiceSearchDialogState();
+}
+
+class _VoiceSearchDialogState extends State<_VoiceSearchDialog> {
+  String _words = '';
+  bool _listening = true;
+  bool _started = false;
+  Timer? _closeTimer;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) {
+        _startListening();
+      }
+    });
+  }
+
+  void _startListening() {
+    if (_started || widget.speech.isListening) return;
+    _started = true;
+    widget.speech.listen(
+      localeId: widget.isVi ? 'vi_VN' : 'en_US',
+      onResult: (val) {
+        if (!mounted) return;
+        setState(() {
+          _words = val.recognizedWords;
+          if (val.finalResult) {
+            _listening = false;
+          }
+        });
+        if (val.finalResult) {
+          _scheduleSubmitAndClose();
+        }
+      },
+    );
+  }
+
+  void _scheduleSubmitAndClose() {
+    _closeTimer?.cancel();
+    _closeTimer = Timer(const Duration(milliseconds: 800), () {
+      if (!mounted) return;
+      _submitAndClose();
+    });
+  }
+
+  Future<void> _stopListening() async {
+    if (widget.speech.isListening) {
+      await widget.speech.stop();
+    }
+    if (!mounted) return;
+    setState(() {
+      _listening = false;
+    });
+  }
+
+  void _submitAndClose() {
+    final words = _words.trim();
+    if (words.isNotEmpty) {
+      widget.onSubmitted(words);
+    }
+    Navigator.of(context, rootNavigator: true).maybePop();
+  }
+
+  void _cancelAndClose() {
+    _closeTimer?.cancel();
+    if (widget.speech.isListening) {
+      widget.speech.cancel();
+    }
+    Navigator.of(context, rootNavigator: true).maybePop();
+  }
+
+  @override
+  void dispose() {
+    _closeTimer?.cancel();
+    if (widget.speech.isListening) {
+      widget.speech.cancel();
+    }
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return BackdropFilter(
+      filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
+        body: Center(
+          child: Container(
+            margin: const EdgeInsets.symmetric(horizontal: 32),
+            padding: const EdgeInsets.all(28),
+            decoration: BoxDecoration(
+              color: const Color(0xFF162521).withOpacity(0.9),
+              borderRadius: BorderRadius.circular(28),
+              border: Border.all(color: Colors.white.withOpacity(0.12)),
+              boxShadow: [
+                BoxShadow(
+                  color: const Color(0xFFD4AF7A).withOpacity(0.1),
+                  blurRadius: 24,
+                  spreadRadius: 2,
+                ),
+              ],
+            ),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  widget.isVi ? 'Tìm kiếm bằng giọng nói' : 'Voice Search',
+                  style: const TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+                const SizedBox(height: 32),
+                AnimatedScale(
+                  scale: _listening ? 1.08 : 1,
+                  duration: const Duration(milliseconds: 250),
+                  curve: Curves.easeOutCubic,
+                  child: Container(
+                    width: 80,
+                    height: 80,
+                    decoration: BoxDecoration(
+                      color: _listening
+                          ? const Color(0xFFD4AF7A).withOpacity(0.2)
+                          : Colors.white.withOpacity(0.06),
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color: _listening
+                            ? const Color(0xFFD4AF7A)
+                            : Colors.white24,
+                        width: 2,
+                      ),
+                    ),
+                    child: Icon(
+                      _listening ? Icons.mic_rounded : Icons.mic_off_rounded,
+                      color:
+                          _listening ? const Color(0xFFD4AF7A) : Colors.white54,
+                      size: 36,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 32),
+                Text(
+                  _listening
+                      ? (widget.isVi ? 'Đang lắng nghe...' : 'Listening...')
+                      : (widget.isVi ? 'Đang xử lý...' : 'Processing...'),
+                  style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontSize: 14,
+                    color: Colors.white.withOpacity(0.6),
+                  ),
+                ),
+                const SizedBox(height: 16),
+                Container(
+                  width: double.infinity,
+                  constraints: const BoxConstraints(minHeight: 60),
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: Colors.black26,
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                  child: Text(
+                    _words.isEmpty
+                        ? (widget.isVi ? 'Hãy nói gì đó...' : 'Say something...')
+                        : _words,
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontSize: 15,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 32),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    TextButton(
+                      onPressed: _cancelAndClose,
+                      child: Text(
+                        widget.isVi ? 'Hủy' : 'Cancel',
+                        style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          color: Colors.white.withOpacity(0.5),
+                        ),
+                      ),
+                    ),
+                    if (_listening)
+                      ElevatedButton(
+                        onPressed: _stopListening,
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor:
+                              const Color(0xFFE74C3C).withOpacity(0.2),
+                          foregroundColor: const Color(0xFFE74C3C),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                        ),
+                        child: Text(widget.isVi ? 'Dừng' : 'Stop'),
+                      ),
+                    if (!_listening && _words.trim().isNotEmpty)
+                      ElevatedButton(
+                        onPressed: _submitAndClose,
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color(0xFFD4AF7A),
+                          foregroundColor: Colors.black,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                        ),
+                        child: Text(widget.isVi ? 'Tìm kiếm' : 'Search'),
+                      ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }

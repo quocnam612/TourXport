@@ -366,7 +366,7 @@ class _SavedTourDetailScreenState extends State<SavedTourDetailScreen> {
                     height: 1.3),
               ),
               SizedBox(height: isCompact ? 10 : 16),
-              _TripMetaGrid(meta: meta),
+              _TripMetaGrid(meta: meta, compact: isCompact),
             ],
           ),
         ),
@@ -952,7 +952,7 @@ class _TripMetaGrid extends StatelessWidget {
 
     if (compact) {
       return SizedBox(
-        height: 54,
+        height: 46,
         child: ListView.separated(
           scrollDirection: Axis.horizontal,
           itemCount: pills.length,
@@ -987,8 +987,8 @@ class _MetaPill extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(
-        horizontal: compact ? 10 : 14,
-        vertical: compact ? 8 : 12,
+        horizontal: compact ? 9 : 14,
+        vertical: compact ? 6 : 12,
       ),
       decoration: BoxDecoration(
         color: Colors.white.withOpacity(0.05),
@@ -998,8 +998,8 @@ class _MetaPill extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(icon, color: const Color(0xFFD4AF7A), size: compact ? 15 : 18),
-          SizedBox(width: compact ? 8 : 10),
+          Icon(icon, color: const Color(0xFFD4AF7A), size: compact ? 14 : 18),
+          SizedBox(width: compact ? 7 : 10),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
@@ -1012,14 +1012,14 @@ class _MetaPill extends StatelessWidget {
                   color: Colors.white,
                 ).copyWith(fontSize: compact ? 11 : 12),
               ),
-              SizedBox(height: compact ? 1 : 2),
+              SizedBox(height: compact ? 0 : 2),
               Text(
                 label,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(
                   fontFamily: 'Montserrat',
-                  fontSize: compact ? 10 : 11,
+                  fontSize: compact ? 9 : 11,
                   fontWeight: FontWeight.w500,
                   color: Colors.white.withOpacity(0.55),
                 ),

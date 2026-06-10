@@ -7,8 +7,6 @@ import '../utils/auth_storage.dart';
 import '../widgets/anim_builder.dart';
 import '../widgets/responsive_builder.dart';
 import '../models/destination.dart';
-import 'sign_in.dart';
-import 'sign_up.dart';
 import 'dashboard.dart';
 
 class LandingPage extends StatefulWidget {
@@ -323,32 +321,7 @@ class _LandingPageState extends State<LandingPage>
       return;
     }
 
-    Navigator.push(
-      context,
-      PageRouteBuilder(
-        pageBuilder: (_, __, ___) => goToSignUp ? const SignUpScreen() : const SignInScreen(),
-        transitionDuration: const Duration(milliseconds: 500),
-        reverseTransitionDuration: const Duration(milliseconds: 400),
-        transitionsBuilder: (_, animation, __, child) {
-          return FadeTransition(
-            opacity: CurvedAnimation(
-              parent: animation,
-              curve: Curves.easeInOut,
-            ),
-            child: SlideTransition(
-              position: Tween<Offset>(
-                begin: const Offset(0, 0.08),
-                end: Offset.zero,
-              ).animate(CurvedAnimation(
-                parent: animation,
-                curve: Curves.easeOutCubic,
-              )),
-              child: child,
-            ),
-          );
-        },
-      ),
-    );
+    Navigator.pushNamed(context, goToSignUp ? '/signup' : '/login');
   }
 
   @override

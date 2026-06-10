@@ -290,12 +290,20 @@ class _TopNav extends StatelessWidget {
           },
         ),
         _NavButton(
-          label: isVi ? 'Bảo mật' : 'Privacy',
+          label: isVi ? 'Quyền riêng tư' : 'Privacy',
           icon: Icons.privacy_tip_outlined,
           selected: activeRoute == '/privacy',
           onPressed: activeRoute == '/privacy'
               ? null
               : () => Navigator.pushReplacementNamed(context, '/privacy'),
+        ),
+        _NavButton(
+          label: isVi ? 'Điều khoản' : 'Terms',
+          icon: Icons.article_outlined,
+          selected: activeRoute == '/terms',
+          onPressed: activeRoute == '/terms'
+              ? null
+              : () => Navigator.pushReplacementNamed(context, '/terms'),
         ),
         _NavButton(
           label: isVi ? 'Hướng dẫn' : 'Instruction',

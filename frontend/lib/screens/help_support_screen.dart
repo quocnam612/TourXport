@@ -375,9 +375,14 @@ class _HelpSupportScreenState extends State<HelpSupportScreen>
         'route': '/report'
       },
       {
-        'title': _isVi ? 'Chính sách bảo mật' : 'Privacy policy',
+        'title': _isVi ? 'Chính sách quyền riêng tư' : 'Privacy policy',
         'icon': Icons.privacy_tip_outlined,
         'route': '/privacy'
+      },
+      {
+        'title': _isVi ? 'Điều khoản dịch vụ' : 'Terms of service',
+        'icon': Icons.article_outlined,
+        'route': '/terms'
       },
       {
         'title': _isVi ? 'Hướng dẫn sử dụng' : 'User guide',

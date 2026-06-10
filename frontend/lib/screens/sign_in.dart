@@ -16,7 +16,6 @@ import '../widgets/auth/auth_continue_button.dart';
 import '../widgets/auth/social_login_button.dart';
 import '../widgets/auth/saved_accounts_dropdown.dart';
 
-import 'sign_up.dart';
 import 'dashboard.dart';
 import 'landing_page.dart';
 import '../utils/formatters.dart';
@@ -295,11 +294,6 @@ class _SignInScreenState extends State<SignInScreen>
   }
 
   void _handleDiscordLogin() async {
-    if (!kIsWeb) {
-      _showUnsupportedSocialLogin('Discord login');
-      return;
-    }
-
     if (_isLoading) return;
 
     setState(() => _isLoading = true);
@@ -708,32 +702,7 @@ class _SignInScreenState extends State<SignInScreen>
                                 ),
                               ),
                               GestureDetector(
-                                onTap: () => Navigator.push(
-                                  context,
-                                  PageRouteBuilder(
-                                    pageBuilder: (_, __, ___) => const SignUpScreen(),
-                                    transitionDuration: const Duration(milliseconds: 400),
-                                    reverseTransitionDuration: const Duration(milliseconds: 350),
-                                    transitionsBuilder: (_, animation, __, child) {
-                                      return FadeTransition(
-                                        opacity: CurvedAnimation(
-                                          parent: animation,
-                                          curve: Curves.easeInOut,
-                                        ),
-                                        child: SlideTransition(
-                                          position: Tween<Offset>(
-                                            begin: const Offset(0.05, 0),
-                                            end: Offset.zero,
-                                          ).animate(CurvedAnimation(
-                                            parent: animation,
-                                            curve: Curves.easeOutCubic,
-                                          )),
-                                          child: child,
-                                        ),
-                                      );
-                                    },
-                                  ),
-                                ),
+                                onTap: () => Navigator.pushReplacementNamed(context, '/signup'),
                                 child: const Text(
                                   'Đăng ký',
                                   style: TextStyle(
@@ -1118,36 +1087,7 @@ class _SignInScreenState extends State<SignInScreen>
                             ),
                           ),
                           GestureDetector(
-                            onTap: () => Navigator.push(
-                              context,
-                              PageRouteBuilder(
-                                pageBuilder: (_, __, ___) =>
-                                    const SignUpScreen(),
-                                transitionDuration:
-                                    const Duration(milliseconds: 400),
-                                reverseTransitionDuration:
-                                    const Duration(milliseconds: 350),
-                                transitionsBuilder:
-                                    (_, animation, __, child) {
-                                  return FadeTransition(
-                                    opacity: CurvedAnimation(
-                                      parent: animation,
-                                      curve: Curves.easeInOut,
-                                    ),
-                                    child: SlideTransition(
-                                      position: Tween<Offset>(
-                                        begin: const Offset(0.05, 0),
-                                        end: Offset.zero,
-                                      ).animate(CurvedAnimation(
-                                        parent: animation,
-                                        curve: Curves.easeOutCubic,
-                                      )),
-                                      child: child,
-                                    ),
-                                  );
-                                },
-                              ),
-                            ),
+                            onTap: () => Navigator.pushReplacementNamed(context, '/signup'),
                             child: Text(
                               'Đăng ký',
                               style: TextStyle(
