@@ -48,6 +48,7 @@ class _SharedHandlerScreenState extends State<SharedHandlerScreen> {
         var response = await apiGet('/tours/${widget.id}', token: token).timeout(const Duration(seconds: 10));
         print('SharedHandlerScreen: Public tour response status: ${response.statusCode}');
         var data = tryDecodeJsonObject(response.body);
+        var canEditTour = false;
 
         // 2. Fallback to private tour endpoint if unauthorized/not found and we have a session
         if ((response.statusCode != 200 || data?['success'] != true) && token != null) {
@@ -55,6 +56,7 @@ class _SharedHandlerScreenState extends State<SharedHandlerScreen> {
           response = await apiGet('/tours/my-tours/${widget.id}', token: token).timeout(const Duration(seconds: 10));
           print('SharedHandlerScreen: Private tour response status: ${response.statusCode}');
           data = tryDecodeJsonObject(response.body);
+          canEditTour = response.statusCode == 200 && data?['success'] == true;
         }
 
         if (response.statusCode == 200 && data?['success'] == true && data?['data'] != null) {
@@ -70,6 +72,7 @@ class _SharedHandlerScreenState extends State<SharedHandlerScreen> {
                 tourJson: tourData,
                 userName: userName,
                 authToken: token,
+                canEditTitle: canEditTour,
               ),
             ),
           );

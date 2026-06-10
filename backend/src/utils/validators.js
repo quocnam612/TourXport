@@ -185,6 +185,16 @@ export const validateTourUpdatePayload = (payload) => {
         return 'No fields provided for update';
     }
 
+    if (payload.title !== undefined) {
+        if (typeof payload.title !== 'string' || payload.title.trim().length === 0) {
+            return 'title must be a non-empty string';
+        }
+
+        if (payload.title.trim().length > 160) {
+            return 'title must be less than or equal to 160 characters';
+        }
+    }
+
     if (payload.visibility && !['private', 'public'].includes(payload.visibility)) {
         return 'visibility must be private or public';
     }

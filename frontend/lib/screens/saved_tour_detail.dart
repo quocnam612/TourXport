@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:share_plus/share_plus.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../l10n/app_localizations.dart';
 
 import '../models/ai_trip_response.dart';
@@ -19,6 +20,7 @@ class SavedTourDetailScreen extends StatefulWidget {
   final String userName;
   final String? avatarUrl;
   final String? authToken;
+  final bool canEditTitle;
 
   const SavedTourDetailScreen({
     super.key,
@@ -27,6 +29,7 @@ class SavedTourDetailScreen extends StatefulWidget {
     this.userName = 'Username',
     this.avatarUrl,
     this.authToken,
+    this.canEditTitle = false,
   });
 
   @override
@@ -36,6 +39,19 @@ class SavedTourDetailScreen extends StatefulWidget {
 class _SavedTourDetailScreenState extends State<SavedTourDetailScreen> {
   late Map<String, dynamic> _tourJson;
   bool _isUpdatingVisibility = false;
+  bool _isUpdatingTitle = false;
+
+  String get _displayTourTitle {
+    final title = (_tourJson['title'] ?? widget.tourTitle).toString().trim();
+    return title.isEmpty ? widget.tourTitle : title;
+  }
+
+  bool get _canEditTitle =>
+      widget.canEditTitle &&
+      widget.authToken != null &&
+      widget.authToken!.trim().isNotEmpty;
+
+  bool get _canUpdateVisibility => _canEditTitle;
 
   @override
   void initState() {
@@ -97,8 +113,8 @@ class _SavedTourDetailScreenState extends State<SavedTourDetailScreen> {
     final String shareUrl = _tourShareUrl(tourId);
     final isVi = AppLocalizations.of(context)!.localeName == 'vi';
     final String shareText = isVi
-        ? 'Xem lịch trình ${widget.tourTitle} trên TourXport\n$shareUrl'
-        : 'View the ${widget.tourTitle} itinerary on TourXport\n$shareUrl';
+        ? 'Xem lịch trình $_displayTourTitle trên TourXport\n$shareUrl'
+        : 'View the $_displayTourTitle itinerary on TourXport\n$shareUrl';
     _showShareDialog(
       context,
       shareUrl,
@@ -121,10 +137,233 @@ class _SavedTourDetailScreenState extends State<SavedTourDetailScreen> {
     return normalized == 'private' || normalized == 'hidden';
   }
 
+  Future<void> _openGoogleTourDirections(BuildContext context) async {
+    final isVi = AppLocalizations.of(context)!.localeName == 'vi';
+    AiTripResponse? response;
+    try {
+      response = AiTripResponse.fromJson(_tourJson);
+    } catch (_) {
+      response = null;
+    }
+
+    final stops = <String>[];
+    if (response != null) {
+      for (final day in response.data.itinerary) {
+        for (final activity in day.activities) {
+          final lat = activity.latitude;
+          final lng = activity.longitude;
+          final stop = lat != null && lng != null
+              ? '${lat.toStringAsFixed(6)},${lng.toStringAsFixed(6)}'
+              : activity.placeName?.trim();
+          if (stop != null && stop.isNotEmpty && !stops.contains(stop)) {
+            stops.add(stop);
+          }
+        }
+      }
+    }
+
+    if (stops.length < 2) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text(isVi
+            ? 'Lịch trình cần ít nhất 2 điểm để mở đường đi trên Google Maps'
+            : 'The itinerary needs at least 2 stops to open Google Maps directions'),
+      ));
+      return;
+    }
+
+    final params = <String, String>{
+      'api': '1',
+      'origin': stops.first,
+      'destination': stops.last,
+      'travelmode': 'driving',
+    };
+    final waypoints = stops.skip(1).take(stops.length - 2).take(8).join('|');
+    if (waypoints.isNotEmpty) {
+      params['waypoints'] = waypoints;
+    }
+
+    final uri = Uri.https('www.google.com', '/maps/dir/', params);
+    final opened = await launchUrl(uri, mode: LaunchMode.externalApplication);
+    if (!opened && context.mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text(isVi
+            ? 'Không mở được Google Maps'
+            : 'Could not open Google Maps'),
+      ));
+    }
+  }
+
+  Future<void> _renameTour(String nextTitle) async {
+    final isVi = AppLocalizations.of(context)!.localeName == 'vi';
+    final tourId = _tourId;
+    final title = nextTitle.trim();
+
+    if (title.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text(isVi ? 'Tên lịch trình không được để trống' : 'Itinerary title cannot be empty'),
+      ));
+      return;
+    }
+
+    if (tourId == null || tourId.isEmpty || widget.authToken == null || widget.authToken!.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text(isVi
+            ? 'Bạn cần đăng nhập để đổi tên lịch trình'
+            : 'You need to sign in to rename this itinerary'),
+      ));
+      return;
+    }
+
+    setState(() => _isUpdatingTitle = true);
+    try {
+      final response = await apiPutJson(
+        '/tours/my-tours/$tourId',
+        {'title': title},
+        token: widget.authToken,
+      );
+      final body = tryDecodeJsonObject(response.body);
+      if (!mounted) return;
+      if (response.statusCode == 200 && body?['success'] == true) {
+        final data = body?['data'];
+        setState(() {
+          if (data is Map) {
+            _tourJson = Map<String, dynamic>.from(data);
+          } else {
+            _tourJson = Map<String, dynamic>.from(_tourJson)..['title'] = title;
+          }
+        });
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+          content: Text(isVi ? 'Đã đổi tên lịch trình' : 'Itinerary renamed'),
+        ));
+      } else {
+        throw Exception(body?['message'] ?? response.reasonPhrase);
+      }
+    } catch (_) {
+      if (!context.mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text(isVi
+            ? 'Không thể đổi tên lịch trình này'
+            : 'Could not rename this itinerary'),
+      ));
+    } finally {
+      if (mounted) {
+        setState(() => _isUpdatingTitle = false);
+      }
+    }
+  }
+
+  Future<void> _showRenameTourDialog(BuildContext context) async {
+    final isVi = AppLocalizations.of(context)!.localeName == 'vi';
+    final controller = TextEditingController(text: _displayTourTitle);
+    final focusNode = FocusNode();
+
+    final nextTitle = await showDialog<String>(
+      context: context,
+      builder: (dialogContext) {
+        Future<void> closeDialog([String? value]) async {
+          controller.selection = TextSelection.collapsed(
+            offset: controller.text.length,
+          );
+          focusNode.unfocus();
+          FocusManager.instance.primaryFocus?.unfocus();
+          await Future<void>.delayed(Duration.zero);
+          if (dialogContext.mounted) {
+            Navigator.pop(dialogContext, value);
+          }
+        }
+
+        return BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
+          child: AlertDialog(
+            backgroundColor: const Color(0xFF0F1E1B).withOpacity(0.94),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(24),
+              side: BorderSide(color: Colors.white.withOpacity(0.12), width: 1.2),
+            ),
+            title: Text(
+              isVi ? 'Đổi tên lịch trình' : 'Rename itinerary',
+              style: const TextStyle(
+                fontFamily: 'Montserrat',
+                color: Colors.white,
+                fontWeight: FontWeight.w800,
+                fontSize: 18,
+              ),
+            ),
+            content: TextField(
+              controller: controller,
+              focusNode: focusNode,
+              autofocus: true,
+              maxLength: 160,
+              style: const TextStyle(
+                fontFamily: 'Montserrat',
+                color: Colors.white,
+                fontWeight: FontWeight.w600,
+              ),
+              decoration: InputDecoration(
+                counterStyle: TextStyle(color: Colors.white.withOpacity(0.45)),
+                hintText: isVi ? 'Nhập tên lịch trình' : 'Enter itinerary title',
+                hintStyle: TextStyle(color: Colors.white.withOpacity(0.45)),
+                filled: true,
+                fillColor: Colors.white.withOpacity(0.07),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(16),
+                  borderSide: BorderSide(color: Colors.white.withOpacity(0.12)),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(16),
+                  borderSide: const BorderSide(color: Color(0xFFD4AF7A)),
+                ),
+              ),
+              onSubmitted: (value) => closeDialog(value),
+            ),
+            actions: [
+              TextButton(
+                onPressed: () => closeDialog(),
+                child: Text(
+                  isVi ? 'Hủy' : 'Cancel',
+                  style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    color: Colors.white.withOpacity(0.62),
+                  ),
+                ),
+              ),
+              TextButton(
+                onPressed: () => closeDialog(controller.text),
+                child: Text(
+                  isVi ? 'Lưu' : 'Save',
+                  style: const TextStyle(
+                    fontFamily: 'Montserrat',
+                    color: Color(0xFFD4AF7A),
+                    fontWeight: FontWeight.w800,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+
+    await Future<void>.delayed(Duration.zero);
+    focusNode.dispose();
+    controller.dispose();
+    if (nextTitle == null) return;
+    await _renameTour(nextTitle);
+  }
+
   Future<void> _toggleTourVisibility(BuildContext context, _TourMeta meta) async {
     if (_isUpdatingVisibility) return;
 
     final isVi = AppLocalizations.of(context)!.localeName == 'vi';
+    if (!_canUpdateVisibility) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text(isVi
+            ? 'Chỉ chủ sở hữu mới có thể đổi trạng thái hiển thị'
+            : 'Only the owner can change itinerary visibility'),
+      ));
+      return;
+    }
+
     final tourId = _tourId;
     if (tourId == null || tourId.isEmpty || widget.authToken == null || widget.authToken!.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
@@ -323,23 +562,60 @@ class _SavedTourDetailScreenState extends State<SavedTourDetailScreen> {
                   _VisibilityBadge(
                     icon: meta.visibilityIcon,
                     isLoading: _isUpdatingVisibility,
-                    onTap: () => _toggleTourVisibility(context, meta),
+                    onTap: _canUpdateVisibility
+                        ? () => _toggleTourVisibility(context, meta)
+                        : null,
                   ),
                   SizedBox(width: isCompact ? 8 : 10),
                   Expanded(
-                    child: Text(
-                      widget.tourTitle,
-                      maxLines: isCompact ? 2 : null,
-                      overflow: isCompact
-                          ? TextOverflow.ellipsis
-                          : TextOverflow.visible,
-                      style: TextStyle(
-                        fontFamily: 'Montserrat',
-                        fontSize: isCompact ? 20 : 26,
-                        fontWeight: FontWeight.w700,
-                        color: Colors.white,
-                        height: isCompact ? 1.25 : 1.2,
-                      ),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Expanded(
+                          child: Text(
+                            _displayTourTitle,
+                            maxLines: isCompact ? 2 : null,
+                            overflow: isCompact
+                                ? TextOverflow.ellipsis
+                                : TextOverflow.visible,
+                            style: TextStyle(
+                              fontFamily: 'Montserrat',
+                              fontSize: isCompact ? 20 : 26,
+                              fontWeight: FontWeight.w700,
+                              color: Colors.white,
+                              height: isCompact ? 1.25 : 1.2,
+                            ),
+                          ),
+                        ),
+                        if (_canEditTitle) ...[
+                          const SizedBox(width: 6),
+                          SizedBox(
+                            width: isCompact ? 30 : 36,
+                            height: isCompact ? 30 : 36,
+                            child: IconButton(
+                              tooltip: AppLocalizations.of(context)!.localeName == 'vi'
+                                  ? 'Đổi tên lịch trình'
+                                  : 'Rename itinerary',
+                              icon: _isUpdatingTitle
+                                  ? SizedBox(
+                                      width: isCompact ? 15 : 17,
+                                      height: isCompact ? 15 : 17,
+                                      child: const CircularProgressIndicator(
+                                        strokeWidth: 2,
+                                        color: Color(0xFFD4AF7A),
+                                      ),
+                                    )
+                                  : const Icon(Icons.edit_rounded),
+                              iconSize: isCompact ? 16 : 18,
+                              color: const Color(0xFFD4AF7A),
+                              padding: EdgeInsets.zero,
+                              onPressed: _isUpdatingTitle
+                                  ? null
+                                  : () => _showRenameTourDialog(context),
+                            ),
+                          ),
+                        ],
+                      ],
                     ),
                   ),
                   SizedBox(
@@ -454,6 +730,33 @@ class _SavedTourDetailScreenState extends State<SavedTourDetailScreen> {
               ),
             ),
             const SizedBox(width: 8),
+            // Google Maps
+            Expanded(
+              flex: 2,
+              child: GestureDetector(
+                onTap: () => _openGoogleTourDirections(context),
+                child: Container(
+                  height: isCompact ? 48 : 50,
+                  decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.10),
+                      borderRadius: BorderRadius.circular(25),
+                      border: Border.all(color: Colors.white.withOpacity(0.18))),
+                  child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text('Google',
+                            style: const TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 14,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white)),
+                        const SizedBox(width: 6),
+                        const Icon(Icons.open_in_new_rounded, color: Colors.white, size: 18),
+                      ]),
+                ),
+              ),
+            ),
+            const SizedBox(width: 8),
             // Đóng
             Expanded(
               flex: 2,
@@ -491,7 +794,7 @@ class _SavedTourDetailScreenState extends State<SavedTourDetailScreen> {
   }
 
   Widget _buildSummary(BuildContext context) {
-    final title = _tourJson['title'] ?? widget.tourTitle;
+    final title = _displayTourTitle;
     final totalDays = _tourJson['totalDays'] ?? _tourJson['days']?.length ?? 0;
     final totalNights = _tourJson['totalNights'] ?? 0;
     final isVi = AppLocalizations.of(context)!.localeName == 'vi';
@@ -504,7 +807,42 @@ class _SavedTourDetailScreenState extends State<SavedTourDetailScreen> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(title, style: const TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold)),
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Flexible(
+                child: Text(
+                  title,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              if (_canEditTitle) ...[
+                const SizedBox(width: 8),
+                IconButton(
+                  tooltip: isVi ? 'Đổi tên lịch trình' : 'Rename itinerary',
+                  onPressed: _isUpdatingTitle
+                      ? null
+                      : () => _showRenameTourDialog(context),
+                  icon: _isUpdatingTitle
+                      ? const SizedBox(
+                          width: 16,
+                          height: 16,
+                          child: CircularProgressIndicator(
+                            strokeWidth: 2,
+                            color: Color(0xFFD4AF7A),
+                          ),
+                        )
+                      : const Icon(Icons.edit_rounded),
+                  color: const Color(0xFFD4AF7A),
+                ),
+              ],
+            ],
+          ),
           const SizedBox(height: 8),
           Text(
             isVi
@@ -1324,7 +1662,11 @@ class _ActivityCardTileState extends State<_ActivityCardTile> {
                           _translateTimeSlot(act.timeSlot, context),
                           style: TextStyle(color: Colors.white.withOpacity(0.9), fontWeight: FontWeight.bold),
                         ),
-                        if (act.estimatedCost > 0) Text('${act.estimatedCost.toInt()} đ', style: TextStyle(color: Colors.white.withOpacity(0.6))),
+                        if (act.estimatedCost > 0)
+                          Text(
+                            _formatMoney(act.estimatedCost, context),
+                            style: TextStyle(color: Colors.white.withOpacity(0.6)),
+                          ),
                       ],
                     ),
                     const SizedBox(height: 6),

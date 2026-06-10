@@ -60,7 +60,11 @@ class TourXportApp extends StatefulWidget {
 }
 
 class _TourXportAppState extends State<TourXportApp> {
-  MaterialPageRoute _homeRoute(RouteSettings settings, int initialTabIndex) {
+  MaterialPageRoute _homeRoute(
+    RouteSettings settings,
+    int initialTabIndex, {
+    String? initialScheduleMode,
+  }) {
     final args = settings.arguments;
     String? authToken = widget.initialToken;
     String? userName = widget.initialUserName;
@@ -78,6 +82,7 @@ class _TourXportAppState extends State<TourXportApp> {
         userName: userName ?? 'bạn',
         authToken: authToken,
         initialTabIndex: initialTabIndex,
+        initialScheduleMode: initialScheduleMode,
       ),
     );
   }
@@ -148,8 +153,32 @@ class _TourXportAppState extends State<TourXportApp> {
                 return _homeRoute(settings, 2);
               }
 
-              if (routeName == '/generate') {
+              if (routeName == '/tours' || routeName == '/generate') {
                 return _homeRoute(settings, 3);
+              }
+
+              if (routeName == '/tours/generate') {
+                return _homeRoute(
+                  settings,
+                  3,
+                  initialScheduleMode: 'ai',
+                );
+              }
+
+              if (routeName == '/tours/manual') {
+                return _homeRoute(
+                  settings,
+                  3,
+                  initialScheduleMode: 'manual',
+                );
+              }
+
+              if (routeName == '/tours/history') {
+                return _homeRoute(
+                  settings,
+                  3,
+                  initialScheduleMode: 'history',
+                );
               }
 
               if (routeName == '/account') {

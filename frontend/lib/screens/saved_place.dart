@@ -37,12 +37,14 @@ class SavedPlacesSection extends StatefulWidget {
     this.userName = 'Username',
     this.avatarUrl,
     this.initialTabIndex = 0,
+    this.showCreatedToursOnly = false,
     this.onSelectTour,
     this.onNavigateMain,
   });
 
   final Function(SavedTour tour)? onSelectTour;
   final ValueChanged<String>? onNavigateMain;
+  final bool showCreatedToursOnly;
 
   @override
   State<SavedPlacesSection> createState() => _SavedPlacesSectionState();
@@ -51,6 +53,7 @@ class SavedPlacesSection extends StatefulWidget {
 class _SavedPlacesSectionState extends State<SavedPlacesSection> {
   int _activeTab = 0; // 0: Places (Địa điểm), 1: Itineraries (Lịch trình)
   List<SavedTour> _savedTours = [];
+  final Set<String> _profileSavedTourIds = {};
   bool _isLoadingTours = false;
   String? _toursError;
 
@@ -187,6 +190,11 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
       if (_activeTab == 1 && !widget.isGuest && widget.authToken != null) {
         _fetchSavedTours();
       }
+    } else if (widget.showCreatedToursOnly != oldWidget.showCreatedToursOnly &&
+        _activeTab == 1 &&
+        !widget.isGuest &&
+        widget.authToken != null) {
+      _fetchSavedTours();
     }
   }
 
@@ -198,18 +206,79 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
     });
 
     try {
-      final response = await apiGet('/tours/my-tours', token: widget.authToken);
-      if (response.statusCode == 200) {
-        final decoded = tryDecodeJsonObject(response.body);
-        if (decoded != null && decoded['success'] == true) {
+      if (widget.showCreatedToursOnly) {
+        final tours = <SavedTour>[];
+        var page = 1;
+        var totalPages = 1;
+        do {
+          final path = Uri(
+            path: '/tours/my-tours',
+            queryParameters: {
+              'page': page.toString(),
+              'limit': '100',
+            },
+          ).toString();
+          final response = await apiGet(path, token: widget.authToken);
+          final decoded = tryDecodeJsonObject(response.body);
+          if (response.statusCode != 200 ||
+              decoded == null ||
+              decoded['success'] != true) {
+            if (page == 1) {
+              throw Exception(decoded?['message'] ?? response.reasonPhrase);
+            }
+            break;
+          }
+
           final list = decoded['data'] as List? ?? [];
+          tours.addAll(
+            list
+                .whereType<Map>()
+                .map((item) => SavedTour.fromJson(Map<String, dynamic>.from(item)))
+                .where((tour) => tour.id.isNotEmpty),
+          );
+          totalPages = decoded['totalPages'] is num
+              ? (decoded['totalPages'] as num).toInt().clamp(1, 999999).toInt()
+              : page;
+          page += 1;
+        } while (page <= totalPages);
+
+        setState(() {
+          _savedTours = tours;
+          _profileSavedTourIds.clear();
+          _isLoadingTours = false;
+        });
+        return;
+      } else {
+        final response = await apiGet(
+          '/auth/profile/saved-tours',
+          token: widget.authToken,
+        );
+        final decoded = tryDecodeJsonObject(response.body);
+        if (response.statusCode == 200 &&
+            decoded != null &&
+            decoded['success'] == true) {
+          final list = decoded['savedTours'] as List? ?? [];
+          final tours = <SavedTour>[];
+          final savedProfileIds = <String>{};
+          for (final item in list) {
+            if (item is Map) {
+              final tour = SavedTour.fromJson(Map<String, dynamic>.from(item));
+              if (tour.id.isEmpty) continue;
+              tours.add(tour);
+              savedProfileIds.add(tour.id);
+            }
+          }
           setState(() {
-            _savedTours = list.map((item) => SavedTour.fromJson(item)).toList();
+            _savedTours = tours;
+            _profileSavedTourIds
+              ..clear()
+              ..addAll(savedProfileIds);
             _isLoadingTours = false;
           });
           return;
         }
       }
+
       setState(() {
         _toursError = 'error_loading';
         _isLoadingTours = false;
@@ -231,7 +300,16 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
         backgroundColor: const Color(0xFF1B2321),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         title: Text(_isVi ? 'Xóa lịch trình' : 'Delete Itinerary', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-        content: Text(_isVi ? 'Bạn có chắc chắn muốn xóa lịch trình này khỏi danh sách đã lưu?' : 'Are you sure you want to delete this itinerary from your saved list?', style: const TextStyle(color: Colors.white70)),
+        content: Text(
+          widget.showCreatedToursOnly
+              ? (_isVi
+                  ? 'Bạn có chắc chắn muốn xóa lịch trình đã tạo này?'
+                  : 'Are you sure you want to delete this created itinerary?')
+              : (_isVi
+                  ? 'Bạn có chắc chắn muốn bỏ lưu lịch trình này?'
+                  : 'Are you sure you want to remove this itinerary from saved?'),
+          style: const TextStyle(color: Colors.white70),
+        ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context, false),
@@ -248,14 +326,28 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
     if (confirm != true) return;
 
     try {
-      final response = await apiDeleteJson('/tours/my-tours/$id', {}, token: widget.authToken);
+      final isCommunitySavedTour = _profileSavedTourIds.contains(id);
+      final response = isCommunitySavedTour
+          ? await apiDeleteJson('/auth/profile/saved-tours/$id', {}, token: widget.authToken)
+          : await apiDeleteJson('/tours/my-tours/$id', {}, token: widget.authToken);
       if (response.statusCode == 200) {
         setState(() {
           _savedTours.removeWhere((t) => t.id == id);
+          _profileSavedTourIds.remove(id);
         });
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text(_isVi ? 'Đã xóa lịch trình thành công' : 'Itinerary deleted successfully')),
+            SnackBar(
+              content: Text(
+                widget.showCreatedToursOnly
+                    ? (_isVi
+                        ? 'Đã xóa lịch trình'
+                        : 'Itinerary deleted')
+                    : (_isVi
+                        ? 'Đã bỏ lưu lịch trình'
+                        : 'Itinerary removed from saved list'),
+              ),
+            ),
           );
         }
       } else {
@@ -281,8 +373,6 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
         key: const ValueKey<String>('saved_tab'),
         children: [
           _buildTopBar(),
-          const SizedBox(height: 8),
-          _buildTitle(),
           const SizedBox(height: 16),
           _buildCustomTabBar(),
           const SizedBox(height: 16),
@@ -393,43 +483,6 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
         padding: const EdgeInsets.fromLTRB(24, 18, 24, 6),
         child: Row(
           children: [
-            GestureDetector(
-              onTap: widget.onBack,
-              child: Container(
-                width: 46,
-                height: 46,
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.12),
-                  borderRadius: BorderRadius.circular(16),
-                  border: Border.all(
-                    color: Colors.white.withOpacity(0.14),
-                  ),
-                ),
-                child: const Icon(
-                  Icons.arrow_back_ios_new_rounded,
-                  color: Colors.white,
-                  size: 20,
-                ),
-              ),
-            ),
-            const SizedBox(width: 10),
-            Container(
-              width: 46,
-              height: 46,
-              decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.12),
-                borderRadius: BorderRadius.circular(16),
-                border: Border.all(
-                  color: Colors.white.withOpacity(0.14),
-                ),
-              ),
-              child: const Icon(
-                Icons.bookmark_rounded,
-                color: Color(0xFFD4AF7A),
-                size: 24,
-              ),
-            ),
-            const SizedBox(width: 12),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -458,43 +511,6 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
               ),
             ),
           ],
-        ),
-      ),
-    );
-  }
-
-  Widget _buildTitle() {
-    return FadeTransition(
-      opacity: widget.entranceAnimation,
-      child: SlideTransition(
-        position: Tween<Offset>(
-          begin: const Offset(0, 0.3),
-          end: Offset.zero,
-        ).animate(widget.entranceAnimation),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24),
-          child: Align(
-            alignment: Alignment.centerLeft,
-            child: Text(
-              _activeTab == 0 
-                  ? (_isVi ? 'Những nơi bạn muốn đến' : 'Places you want to visit') 
-                  : (_isVi ? 'Hành trình của riêng bạn' : 'Your own itineraries'),
-              style: const TextStyle(
-                fontFamily: 'Montserrat',
-                fontSize: 24,
-                fontWeight: FontWeight.w600,
-                color: Colors.white,
-                height: 1.2,
-                shadows: [
-                  Shadow(
-                    color: Color(0x88000000),
-                    blurRadius: 12,
-                    offset: Offset(0, 4),
-                  ),
-                ],
-              ),
-            ),
-          ),
         ),
       ),
     );
@@ -681,9 +697,13 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
       return _buildEmptyStateView(
         icon: Icons.explore_outlined,
         title: _isVi ? 'Chưa có lịch trình nào' : 'No itineraries yet',
-        subtitle: _isVi 
-            ? 'Hãy thực hiện khảo sát thông minh để AI tạo riêng cho bạn một lịch trình du lịch tuyệt vời.'
-            : 'Take the smart survey to let AI generate an amazing travel itinerary just for you.',
+        subtitle: widget.showCreatedToursOnly
+            ? (_isVi
+                ? 'Các lịch trình bạn tạo bằng AI hoặc thủ công sẽ xuất hiện ở đây.'
+                : 'Itineraries you create with AI or manually will appear here.')
+            : (_isVi
+                ? 'Hãy lưu lịch trình cộng đồng hoặc tạo lịch trình mới cho chuyến đi tiếp theo.'
+                : 'Save a community itinerary or create a new one for your next trip.'),
       );
     }
 
@@ -695,35 +715,62 @@ class _SavedPlacesSectionState extends State<SavedPlacesSection> {
         final tour = _savedTours[index];
         return GestureDetector(
           onTap: () async {
-            // Fetch full tour detail and open detail screen
             if (widget.authToken == null) return;
             try {
-              // saved tours are private; fetch via authenticated user's my-tours endpoint
-              final resp = await apiGet('/tours/my-tours/${tour.id}', token: widget.authToken);
-              if (resp.statusCode == 200) {
-                final decoded = tryDecodeJsonObject(resp.body);
-                if (decoded != null) {
-                  final data = decoded['data'] ?? decoded;
-                  _updateTourDetailRoute(tour.id);
-                  final result = await Navigator.of(context).push<String>(
-                    MaterialPageRoute(
-                      builder: (_) => SavedTourDetailScreen(
-                        tourTitle: tour.title,
-                        tourJson: data is Map<String, dynamic> ? data : {},
-                        authToken: widget.authToken,
-                        userName: widget.userName,
-                        avatarUrl: widget.avatarUrl,
-                      ),
-                    ),
-                  );
-                  _restoreSavedRoute();
-                  if (result != null) {
-                    widget.onNavigateMain?.call(result);
-                  }
-                  return;
+              Map<String, dynamic>? data;
+              var canEditTour = false;
+
+              final myTourResponse = await apiGet(
+                '/tours/my-tours/${tour.id}',
+                token: widget.authToken,
+              );
+              if (myTourResponse.statusCode == 200) {
+                final decoded = tryDecodeJsonObject(myTourResponse.body);
+                final rawData = decoded?['data'] ?? decoded;
+                if (rawData is Map<String, dynamic>) {
+                  data = rawData;
+                  canEditTour = true;
                 }
               }
-              // fallback: open activation dialog if detail not available
+
+              if (data == null) {
+                final publicTourResponse = await apiGet(
+                  '/tours/${tour.id}',
+                  token: widget.authToken,
+                );
+                if (publicTourResponse.statusCode == 200) {
+                  final decoded = tryDecodeJsonObject(publicTourResponse.body);
+                  final rawData = decoded?['data'] ?? decoded;
+                  if (rawData is Map<String, dynamic>) {
+                    data = rawData;
+                  }
+                }
+              }
+
+              if (data != null) {
+                final detailData = data;
+                _updateTourDetailRoute(tour.id);
+                final result = await Navigator.of(context).push<String>(
+                  MaterialPageRoute(
+                    builder: (_) => SavedTourDetailScreen(
+                      tourTitle: tour.title,
+                      tourJson: detailData,
+                      authToken: widget.authToken,
+                      userName: widget.userName,
+                      avatarUrl: widget.avatarUrl,
+                      canEditTitle: canEditTour,
+                    ),
+                  ),
+                );
+                _restoreSavedRoute();
+                if (mounted) {
+                  await _fetchSavedTours();
+                }
+                if (result != null) {
+                  widget.onNavigateMain?.call(result);
+                }
+                return;
+              }
             } catch (e) {
               // ignore and fallback
             }
