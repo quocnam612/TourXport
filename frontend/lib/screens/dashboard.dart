@@ -380,6 +380,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   bool _showScheduleAiSurvey = false;
   bool _showScheduleHistory = false;
   bool _showLikedOnly = false;
+  bool _isSidebarCollapsed = false;
   String _searchQuery = '';
   String _tourSearchQuery = '';
   String? _selectedCity;
@@ -5305,212 +5306,305 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       (Icons.person_rounded, AppLocalizations.of(context)!.account),
     ];
 
-    return Container(
-      width: 260,
-      decoration: BoxDecoration(
-        color: const Color(0xFF070E0D).withOpacity(
-            0.45), // Semi-transparent dark green/black background for glass effect
-        border:
-            const Border(right: BorderSide(color: Colors.white12, width: 1)),
-      ),
-      child: Column(
-        children: [
-          const SizedBox(height: 36),
-          // Logo header (horizontal Row for large compact logo)
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  boxShadow: [
-                    BoxShadow(
-                      color: const Color(0xFFD4AF7A).withOpacity(0.15),
-                      blurRadius: 20,
-                      spreadRadius: 1,
-                    ),
-                  ],
-                ),
-                child: Image.asset(
-                  'assets/images/logo.png',
-                  width: 64,
-                  height: 64,
-                  fit: BoxFit.contain,
-                ),
-              ),
-              const SizedBox(width: 14),
-              const Text(
-                'TourXport',
-                style: TextStyle(
-                  fontFamily: 'Montserrat',
-                  fontSize: 26,
-                  fontWeight: FontWeight.w900,
-                  color: Color(0xFFD4AF7A),
-                  letterSpacing: 1.2,
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 28),
+    final double sidebarW = _isSidebarCollapsed ? 80 : 260;
 
-          // User Profile Card
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Container(
-              padding: const EdgeInsets.all(12),
-              decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.1),
-                borderRadius: BorderRadius.circular(16),
-                border: Border.all(color: Colors.white.withOpacity(0.15)),
+    return SizedBox(
+      width: sidebarW,
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          color: const Color(0xFF070E0D).withOpacity(0.45),
+          border: const Border(right: BorderSide(color: Colors.white12, width: 1)),
+        ),
+        child: Column(
+          children: [
+            // ── Toggle button – fixed left edge ──────────────────────────
+            Padding(
+              padding: const EdgeInsets.only(top: 12, left: 4),
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: IconButton(
+                  icon: Icon(
+                    _isSidebarCollapsed
+                        ? Icons.menu_rounded
+                        : Icons.menu_open_rounded,
+                    color: const Color(0xFFD4AF7A),
+                    size: 24,
+                  ),
+                  tooltip: _isSidebarCollapsed
+                      ? (_isVi ? 'Mở rộng sidebar' : 'Expand Sidebar')
+                      : (_isVi ? 'Thu gọn sidebar' : 'Collapse Sidebar'),
+                  onPressed: () =>
+                      setState(() => _isSidebarCollapsed = !_isSidebarCollapsed),
+                ),
               ),
-              child: Row(
-                children: [
-                  _buildHomeAvatar(size: 38, iconSize: 20),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          _currentUserName,
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: const TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 14,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
-                        ),
-                        Text(
-                          _isVi ? 'Thành viên' : 'Member',
-                          style: TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 11,
-                            color: Colors.white.withOpacity(0.9),
-                          ),
+            ),
+            const SizedBox(height: 12),
+
+            // ── Logo ─────────────────────────────────────────────────────
+            if (_isSidebarCollapsed)
+              // Collapsed: logo centred in the 80 px rail
+              SizedBox(
+                width: 80,
+                child: Center(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      boxShadow: [
+                        BoxShadow(
+                          color: const Color(0xFFD4AF7A).withOpacity(0.15),
+                          blurRadius: 20,
+                          spreadRadius: 1,
                         ),
                       ],
                     ),
+                    child: Image.asset(
+                      'assets/images/logo.png',
+                      width: 40,
+                      height: 40,
+                      fit: BoxFit.contain,
+                    ),
                   ),
-                ],
-              ),
-            ),
-          ),
-          const SizedBox(height: 32),
-
-          // Navigation Links
-          Expanded(
-            child: ListView.separated(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              itemCount: menuItems.length,
-              separatorBuilder: (_, __) => const SizedBox(height: 8),
-              itemBuilder: (context, i) {
-                final item = menuItems[i];
-                final isActive = _navIndex == i;
-                return Material(
-                  color: Colors.transparent,
-                  child: InkWell(
-                    onTap: () => _showMainTab(i),
-                    borderRadius: BorderRadius.circular(16),
-                    hoverColor: Colors.white.withOpacity(0.05),
-                    child: AnimatedContainer(
-                      duration: const Duration(milliseconds: 200),
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 16, vertical: 14),
+                ),
+              )
+            else
+              // Expanded: logo + text in a row
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Row(
+                  children: [
+                    Container(
                       decoration: BoxDecoration(
-                        color: isActive
-                            ? const Color(0xFF2D6A4F).withOpacity(0.25)
-                            : Colors.transparent,
-                        borderRadius: BorderRadius.circular(16),
-                        border: Border.all(
-                          color: isActive
-                              ? const Color(0xFFD4AF7A).withOpacity(
-                                  0.65) // Subtle glowing gold border for active item
-                              : Colors.transparent,
-                          width: 1.2,
-                        ),
-                      ),
-                      child: Row(
-                        children: [
-                          Icon(
-                            item.$1,
-                            color: isActive
-                                ? const Color(0xFFD4AF7A)
-                                : Colors.white.withOpacity(
-                                    0.65), // Crisp contrast for inactive icons
-                            size: 22,
-                          ),
-                          const SizedBox(width: 14),
-                          Text(
-                            item.$2,
-                            style: TextStyle(
-                              fontFamily: 'Montserrat',
-                              fontSize: 14,
-                              fontWeight:
-                                  isActive ? FontWeight.bold : FontWeight.w600,
-                              color: isActive
-                                  ? Colors.white
-                                  : Colors.white.withOpacity(
-                                      0.65), // Highly legible inactive text
-                            ),
+                        shape: BoxShape.circle,
+                        boxShadow: [
+                          BoxShadow(
+                            color: const Color(0xFFD4AF7A).withOpacity(0.15),
+                            blurRadius: 20,
+                            spreadRadius: 1,
                           ),
                         ],
                       ),
-                    ),
-                  ),
-                );
-              },
-            ),
-          ),
-
-          // Logout button at bottom
-          Padding(
-            padding: const EdgeInsets.all(20),
-            child: Material(
-              color: Colors.transparent,
-              child: InkWell(
-                onTap: _logout,
-                borderRadius: BorderRadius.circular(16),
-                hoverColor: isGuest
-                    ? const Color(0xFFD4AF7A).withOpacity(0.1)
-                    : const Color(0xFFE74C3C).withOpacity(0.1),
-                child: Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-                  child: Row(
-                    children: [
-                      Icon(
-                        isGuest ? Icons.login_rounded : Icons.logout_rounded,
-                        color: isGuest
-                            ? const Color(0xFFD4AF7A)
-                            : const Color(0xFFE74C3C),
-                        size: 22,
+                      child: Image.asset(
+                        'assets/images/logo.png',
+                        width: 48,
+                        height: 48,
+                        fit: BoxFit.contain,
                       ),
-                      const SizedBox(width: 14),
-                      Text(
-                        isGuest
-                            ? (_isVi ? 'Tài khoản' : 'Account')
-                            : (_isVi ? 'Đăng xuất' : 'Log Out'),
+                    ),
+                    const SizedBox(width: 10),
+                    const Expanded(
+                      child: Text(
+                        'TourXport',
+                        maxLines: 1,
+                        overflow: TextOverflow.clip,
+                        softWrap: false,
                         style: TextStyle(
                           fontFamily: 'Montserrat',
-                          fontSize: 14,
-                          fontWeight: FontWeight.bold,
-                          color: isGuest
-                              ? const Color(0xFFD4AF7A)
-                              : const Color(0xFFE74C3C),
+                          fontSize: 22,
+                          fontWeight: FontWeight.w900,
+                          color: Color(0xFFD4AF7A),
+                          letterSpacing: 1.2,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            const SizedBox(height: 28),
+
+            // ── Profile card ─────────────────────────────────────────────
+            Padding(
+              padding: EdgeInsets.symmetric(
+                horizontal: _isSidebarCollapsed ? 8 : 12,
+              ),
+              child: Container(
+                padding: EdgeInsets.all(_isSidebarCollapsed ? 8 : 12),
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.1),
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(color: Colors.white.withOpacity(0.15)),
+                ),
+                child: Row(
+                  mainAxisAlignment: _isSidebarCollapsed
+                      ? MainAxisAlignment.center
+                      : MainAxisAlignment.start,
+                  children: [
+                    _buildHomeAvatar(
+                      size: _isSidebarCollapsed ? 34 : 38,
+                      iconSize: _isSidebarCollapsed ? 18 : 20,
+                    ),
+                    if (!_isSidebarCollapsed) ...[
+                      const SizedBox(width: 10),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              _currentUserName,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: const TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 14,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            Text(
+                              _isVi ? 'Thành viên' : 'Member',
+                              style: TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 11,
+                                color: Colors.white.withOpacity(0.9),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ],
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 32),
+
+            // ── Navigation links ─────────────────────────────────────────
+            Expanded(
+              child: ListView.separated(
+                padding: EdgeInsets.symmetric(
+                  horizontal: _isSidebarCollapsed ? 8 : 16,
+                ),
+                itemCount: menuItems.length,
+                separatorBuilder: (_, __) => const SizedBox(height: 8),
+                itemBuilder: (context, i) {
+                  final item = menuItems[i];
+                  final isActive = _navIndex == i;
+                  return Material(
+                    color: Colors.transparent,
+                    child: InkWell(
+                      onTap: () => _showMainTab(i),
+                      borderRadius: BorderRadius.circular(16),
+                      hoverColor: Colors.white.withOpacity(0.05),
+                      child: Container(
+                        padding: EdgeInsets.symmetric(
+                          horizontal: _isSidebarCollapsed ? 0 : 16,
+                          vertical: 14,
+                        ),
+                        decoration: BoxDecoration(
+                          color: isActive
+                              ? const Color(0xFF2D6A4F).withOpacity(0.25)
+                              : Colors.transparent,
+                          borderRadius: BorderRadius.circular(16),
+                          border: Border.all(
+                            color: isActive
+                                ? const Color(0xFFD4AF7A).withOpacity(0.65)
+                                : Colors.transparent,
+                            width: 1.2,
+                          ),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: _isSidebarCollapsed
+                              ? MainAxisAlignment.center
+                              : MainAxisAlignment.start,
+                          children: [
+                            Icon(
+                              item.$1,
+                              color: isActive
+                                  ? const Color(0xFFD4AF7A)
+                                  : Colors.white.withOpacity(0.65),
+                              size: 22,
+                            ),
+                            if (!_isSidebarCollapsed) ...[
+                              const SizedBox(width: 14),
+                              Expanded(
+                                child: Text(
+                                  item.$2,
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontSize: 14,
+                                    fontWeight: isActive
+                                        ? FontWeight.bold
+                                        : FontWeight.w600,
+                                    color: isActive
+                                        ? Colors.white
+                                        : Colors.white.withOpacity(0.65),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ],
+                        ),
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
+
+            // ── Logout / Login button ─────────────────────────────────────
+            Padding(
+              padding: EdgeInsets.all(_isSidebarCollapsed ? 8 : 20),
+              child: Material(
+                color: Colors.transparent,
+                child: InkWell(
+                  onTap: _logout,
+                  borderRadius: BorderRadius.circular(16),
+                  hoverColor: isGuest
+                      ? const Color(0xFFD4AF7A).withOpacity(0.1)
+                      : const Color(0xFFE74C3C).withOpacity(0.1),
+                  child: Container(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: _isSidebarCollapsed ? 0 : 16,
+                      vertical: 14,
+                    ),
+                    child: Row(
+                      mainAxisAlignment: _isSidebarCollapsed
+                          ? MainAxisAlignment.center
+                          : MainAxisAlignment.start,
+                      children: [
+                        Icon(
+                          isGuest
+                              ? Icons.login_rounded
+                              : Icons.logout_rounded,
+                          color: isGuest
+                              ? const Color(0xFFD4AF7A)
+                              : const Color(0xFFE74C3C),
+                          size: 22,
+                        ),
+                        if (!_isSidebarCollapsed) ...[
+                          const SizedBox(width: 14),
+                          Expanded(
+                            child: Text(
+                              isGuest
+                                  ? (_isVi ? 'Tài khoản' : 'Account')
+                                  : (_isVi ? 'Đăng xuất' : 'Log Out'),
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 14,
+                                fontWeight: FontWeight.bold,
+                                color: isGuest
+                                    ? const Color(0xFFD4AF7A)
+                                    : const Color(0xFFE74C3C),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ],
+                    ),
                   ),
                 ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
+
 
   Widget _buildPreviousBackground() {
     final isDesktop = MediaQuery.of(context).size.width >= 800;

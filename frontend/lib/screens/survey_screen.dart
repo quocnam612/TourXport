@@ -33,6 +33,7 @@ class _SurveyScreenState extends State<SurveyScreen>
   static const _minBudgetPerTravelerDay = 200000;
   static const _maxBudgetPerTravelerDay = 200000000;
   int _currentPage = 0;
+  bool _isSidebarCollapsed = false;
   final _answer = SurveyAnswer();
   late final PageController _pageCtrl;
   late final AnimationController _entranceCtrl;
@@ -360,179 +361,266 @@ class _SurveyScreenState extends State<SurveyScreen>
     final isGuest = widget.authToken == null || widget.authToken!.isEmpty;
     final isVi = _isVi;
 
-    return Container(
-      width: 260,
-      decoration: BoxDecoration(
-        color: const Color(0xFF070E0D).withOpacity(0.45),
-        border: const Border(
-          right: BorderSide(color: Colors.white12, width: 1),
-        ),
-      ),
-      child: Column(
-        children: [
-          const SizedBox(height: 36),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  boxShadow: [
-                    BoxShadow(
-                      color: const Color(0xFFD4AF7A).withOpacity(0.15),
-                      blurRadius: 20,
-                      spreadRadius: 1,
-                    ),
-                  ],
-                ),
-                child: Image.asset(
-                  'assets/images/logo.png',
-                  width: 64,
-                  height: 64,
-                  fit: BoxFit.contain,
-                ),
-              ),
-              const SizedBox(width: 14),
-              const Text(
-                'TourXport',
-                style: TextStyle(
-                  fontFamily: 'Montserrat',
-                  fontSize: 26,
-                  fontWeight: FontWeight.w900,
-                  color: Color(0xFFD4AF7A),
-                  letterSpacing: 1.2,
-                ),
-              ),
-            ],
+    return SizedBox(
+      width: _isSidebarCollapsed ? 80 : 260,
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          color: const Color(0xFF070E0D).withOpacity(0.45),
+          border: const Border(
+            right: BorderSide(color: Colors.white12, width: 1),
           ),
-          const SizedBox(height: 28),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Container(
-              padding: const EdgeInsets.all(12),
-              decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.1),
-                borderRadius: BorderRadius.circular(16),
-                border: Border.all(color: Colors.white.withOpacity(0.15)),
+        ),
+        child: Column(
+          children: [
+            // Toggle button – fixed left edge
+            Padding(
+              padding: const EdgeInsets.only(top: 12, left: 4),
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: IconButton(
+                  icon: Icon(
+                    _isSidebarCollapsed
+                        ? Icons.menu_rounded
+                        : Icons.menu_open_rounded,
+                    color: const Color(0xFFD4AF7A),
+                    size: 24,
+                  ),
+                  tooltip: _isSidebarCollapsed
+                      ? (isVi ? 'Mở rộng sidebar' : 'Expand Sidebar')
+                      : (isVi ? 'Thu gọn sidebar' : 'Collapse Sidebar'),
+                  onPressed: () =>
+                      setState(() => _isSidebarCollapsed = !_isSidebarCollapsed),
+                ),
               ),
-              child: Row(
-                children: [
-                  _buildSidebarAvatar(size: 38, iconSize: 20),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          widget.userName,
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: const TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 14,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
-                        ),
-                        Text(
-                          isVi ? 'Thành viên' : 'Member',
-                          style: TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 11,
-                            color: Colors.white.withOpacity(0.9),
-                          ),
+            ),
+            const SizedBox(height: 12),
+
+            // Logo
+            if (_isSidebarCollapsed)
+              SizedBox(
+                width: 80,
+                child: Center(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      boxShadow: [
+                        BoxShadow(
+                          color: const Color(0xFFD4AF7A).withOpacity(0.15),
+                          blurRadius: 20,
+                          spreadRadius: 1,
                         ),
                       ],
                     ),
+                    child: Image.asset(
+                      'assets/images/logo.png',
+                      width: 40,
+                      height: 40,
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                ),
+              )
+            else
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Row(
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        boxShadow: [
+                          BoxShadow(
+                            color: const Color(0xFFD4AF7A).withOpacity(0.15),
+                            blurRadius: 20,
+                            spreadRadius: 1,
+                          ),
+                        ],
+                      ),
+                      child: Image.asset(
+                        'assets/images/logo.png',
+                        width: 48,
+                        height: 48,
+                        fit: BoxFit.contain,
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    const Expanded(
+                      child: Text(
+                        'TourXport',
+                        maxLines: 1,
+                        overflow: TextOverflow.clip,
+                        softWrap: false,
+                        style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          fontSize: 22,
+                          fontWeight: FontWeight.w900,
+                          color: Color(0xFFD4AF7A),
+                          letterSpacing: 1.2,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            const SizedBox(height: 28),
+
+            // User Profile Card
+            Padding(
+              padding: EdgeInsets.symmetric(
+                horizontal: _isSidebarCollapsed ? 8 : 12,
+              ),
+              child: Container(
+                padding: EdgeInsets.all(_isSidebarCollapsed ? 8 : 12),
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.1),
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(color: Colors.white.withOpacity(0.15)),
+                ),
+                child: Row(
+                  mainAxisAlignment: _isSidebarCollapsed
+                      ? MainAxisAlignment.center
+                      : MainAxisAlignment.start,
+                  children: [
+                    _buildSidebarAvatar(
+                      size: _isSidebarCollapsed ? 34 : 38,
+                      iconSize: _isSidebarCollapsed ? 18 : 20,
+                    ),
+                    if (!_isSidebarCollapsed) ...[
+                      const SizedBox(width: 10),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              widget.userName,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: const TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 14,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            Text(
+                              isVi ? 'Thành viên' : 'Member',
+                              style: TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 11,
+                                color: Colors.white.withOpacity(0.9),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 32),
+
+            // Navigation Links
+            Expanded(
+              child: ListView(
+                padding: EdgeInsets.symmetric(
+                  horizontal: _isSidebarCollapsed ? 8 : 16,
+                ),
+                children: [
+                  _buildAppSidebarItem(
+                    icon: Icons.home_rounded,
+                    label: isVi ? 'Khám phá' : 'Explore',
+                    onTap: () => Navigator.pop(context, 'go_to_explore'),
+                  ),
+                  const SizedBox(height: 8),
+                  _buildAppSidebarItem(
+                    icon: Icons.search_rounded,
+                    label: isVi ? 'Tìm kiếm' : 'Search',
+                    onTap: () => Navigator.pop(context, 'go_to_search'),
+                  ),
+                  const SizedBox(height: 8),
+                  _buildAppSidebarItem(
+                    icon: Icons.bookmark_rounded,
+                    label: isVi ? 'Đã lưu' : 'Saved',
+                    onTap: () => Navigator.pop(context, 'go_to_saved'),
+                  ),
+                  const SizedBox(height: 8),
+                  _buildAppSidebarItem(
+                    icon: Icons.explore_rounded,
+                    label: isVi ? 'Lên lịch' : 'Generate',
+                    isActive: true,
+                    onTap: () {},
+                  ),
+                  const SizedBox(height: 8),
+                  _buildAppSidebarItem(
+                    icon: Icons.person_rounded,
+                    label: isVi ? 'Tài khoản' : 'Account',
+                    onTap: () => Navigator.pop(context, 'go_to_account'),
                   ),
                 ],
               ),
             ),
-          ),
-          const SizedBox(height: 32),
-          Expanded(
-            child: ListView(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              children: [
-                _buildAppSidebarItem(
-                  icon: Icons.home_rounded,
-                  label: isVi ? 'Khám phá' : 'Explore',
-                  onTap: () => Navigator.pop(context, 'go_to_explore'),
-                ),
-                const SizedBox(height: 8),
-                _buildAppSidebarItem(
-                  icon: Icons.search_rounded,
-                  label: isVi ? 'Tìm kiếm' : 'Search',
-                  onTap: () => Navigator.pop(context, 'go_to_search'),
-                ),
-                const SizedBox(height: 8),
-                _buildAppSidebarItem(
-                  icon: Icons.bookmark_rounded,
-                  label: isVi ? 'Đã lưu' : 'Saved',
-                  onTap: () => Navigator.pop(context, 'go_to_saved'),
-                ),
-                const SizedBox(height: 8),
-                _buildAppSidebarItem(
-                  icon: Icons.explore_rounded,
-                  label: isVi ? 'Lên lịch' : 'Generate',
-                  isActive: true,
-                  onTap: () {},
-                ),
-                const SizedBox(height: 8),
-                _buildAppSidebarItem(
-                  icon: Icons.person_rounded,
-                  label: isVi ? 'Tài khoản' : 'Account',
-                  onTap: () => Navigator.pop(context, 'go_to_account'),
-                ),
-              ],
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(20),
-            child: Material(
-              color: Colors.transparent,
-              child: InkWell(
-                onTap: () => Navigator.pop(
-                  context,
-                  isGuest ? 'go_to_account' : 'logout',
-                ),
-                borderRadius: BorderRadius.circular(16),
-                hoverColor: isGuest
-                    ? const Color(0xFFD4AF7A).withOpacity(0.1)
-                    : const Color(0xFFE74C3C).withOpacity(0.1),
-                child: Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-                  child: Row(
-                    children: [
-                      Icon(
-                        isGuest ? Icons.login_rounded : Icons.logout_rounded,
-                        color: isGuest
-                            ? const Color(0xFFD4AF7A)
-                            : const Color(0xFFE74C3C),
-                        size: 22,
-                      ),
-                      const SizedBox(width: 14),
-                      Text(
-                        isGuest
-                            ? (isVi ? 'Tài khoản' : 'Account')
-                            : (isVi ? 'Đăng xuất' : 'Log Out'),
-                        style: TextStyle(
-                          fontFamily: 'Montserrat',
-                          fontSize: 14,
-                          fontWeight: FontWeight.bold,
+
+            // Logout / Login button
+            Padding(
+              padding: EdgeInsets.all(_isSidebarCollapsed ? 8 : 20),
+              child: Material(
+                color: Colors.transparent,
+                child: InkWell(
+                  onTap: () => Navigator.pop(
+                    context,
+                    isGuest ? 'go_to_account' : 'logout',
+                  ),
+                  borderRadius: BorderRadius.circular(16),
+                  hoverColor: isGuest
+                      ? const Color(0xFFD4AF7A).withOpacity(0.1)
+                      : const Color(0xFFE74C3C).withOpacity(0.1),
+                  child: Container(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: _isSidebarCollapsed ? 0 : 16,
+                      vertical: 14,
+                    ),
+                    child: Row(
+                      mainAxisAlignment: _isSidebarCollapsed
+                          ? MainAxisAlignment.center
+                          : MainAxisAlignment.start,
+                      children: [
+                        Icon(
+                          isGuest ? Icons.login_rounded : Icons.logout_rounded,
                           color: isGuest
                               ? const Color(0xFFD4AF7A)
                               : const Color(0xFFE74C3C),
+                          size: 22,
                         ),
-                      ),
-                    ],
+                        if (!_isSidebarCollapsed) ...[
+                          const SizedBox(width: 14),
+                          Expanded(
+                            child: Text(
+                              isGuest
+                                  ? (isVi ? 'Tài khoản' : 'Account')
+                                  : (isVi ? 'Đăng xuất' : 'Log Out'),
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 14,
+                                fontWeight: FontWeight.bold,
+                                color: isGuest
+                                    ? const Color(0xFFD4AF7A)
+                                    : const Color(0xFFE74C3C),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ],
+                    ),
                   ),
                 ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
@@ -549,9 +637,11 @@ class _SurveyScreenState extends State<SurveyScreen>
         onTap: onTap,
         borderRadius: BorderRadius.circular(16),
         hoverColor: Colors.white.withOpacity(0.05),
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 200),
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+        child: Container(
+          padding: EdgeInsets.symmetric(
+            horizontal: _isSidebarCollapsed ? 0 : 16,
+            vertical: 14,
+          ),
           decoration: BoxDecoration(
             color: isActive
                 ? const Color(0xFF2D6A4F).withOpacity(0.25)
@@ -565,6 +655,9 @@ class _SurveyScreenState extends State<SurveyScreen>
             ),
           ),
           child: Row(
+            mainAxisAlignment: _isSidebarCollapsed
+                ? MainAxisAlignment.center
+                : MainAxisAlignment.start,
             children: [
               Icon(
                 icon,
@@ -573,18 +666,24 @@ class _SurveyScreenState extends State<SurveyScreen>
                     : Colors.white.withOpacity(0.65),
                 size: 22,
               ),
-              const SizedBox(width: 14),
-              Text(
-                label,
-                style: TextStyle(
-                  fontFamily: 'Montserrat',
-                  fontSize: 14,
-                  fontWeight: isActive ? FontWeight.bold : FontWeight.w600,
-                  color: isActive
-                      ? Colors.white
-                      : Colors.white.withOpacity(0.65),
+              if (!_isSidebarCollapsed) ...[
+                const SizedBox(width: 14),
+                Expanded(
+                  child: Text(
+                    label,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontSize: 14,
+                      fontWeight: isActive ? FontWeight.bold : FontWeight.w600,
+                      color: isActive
+                          ? Colors.white
+                          : Colors.white.withOpacity(0.65),
+                    ),
+                  ),
                 ),
-              ),
+              ],
             ],
           ),
         ),
