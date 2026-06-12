@@ -11,7 +11,6 @@ import 'package:geolocator/geolocator.dart';
 import '../api/api.dart';
 import '../utils/auth_storage.dart';
 import '../widgets/weather_widget.dart';
-import '../widgets/responsive_builder.dart';
 import '../models/destination.dart';
 import '../models/saved_tour.dart';
 import '../widgets/anim_builder.dart';
@@ -28,8 +27,8 @@ import 'profile_section.dart';
 import 'saved_place.dart';
 import 'saved_tour_detail.dart';
 import 'survey_screen.dart';
-import 'app_reviews_screen.dart';
 import '../models/travel_notification.dart';
+import 'collection_screen.dart';
 
 class _DestinationPageResult {
   final List<Destination> items;
@@ -72,13 +71,13 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   static const int _tabExplore = 0;
-  static const int _tabSearch = 1;
+  static const int _tabPassport = 1;
   static const int _tabSaved = 2;
   static const int _tabSurvey = 3;
   static const int _tabProfile = 4;
   static const Map<int, String> _tabRoutes = {
     _tabExplore: '/home',
-    _tabSearch: '/search',
+    _tabPassport: '/passport',
     _tabSaved: '/saved',
     _tabSurvey: '/tours',
     _tabProfile: '/account',
@@ -424,6 +423,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   List<Destination> _realDestinations = [];
   List<Destination> _allDatabaseDestinations = [];
   bool _isLoadingDestinations = false;
+
+
 
   Map<String, dynamic>? _userData;
   bool _isLoadingProfile = false;
@@ -2096,7 +2097,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         _showMainTab(_tabExplore);
         break;
       case 'go_to_search':
-        _showMainTab(_tabSearch);
+        _showMainTab(_tabExplore);
+        break;
+      case 'go_to_passport':
+        _showMainTab(_tabPassport);
         break;
       case 'go_to_account':
         _showMainTab(_tabProfile);
@@ -5300,7 +5304,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     final isGuest = widget.authToken == null || widget.authToken!.isEmpty;
     final menuItems = [
       (Icons.home_rounded, AppLocalizations.of(context)!.explore),
-      (Icons.search_rounded, AppLocalizations.of(context)!.search),
+      (Icons.collections_rounded, _isVi ? 'Bộ sưu tập' : 'Collection'),
       (Icons.bookmark_rounded, AppLocalizations.of(context)!.saved),
       (Icons.explore_rounded, AppLocalizations.of(context)!.survey),
       (Icons.person_rounded, AppLocalizations.of(context)!.account),
@@ -5607,14 +5611,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
 
   Widget _buildPreviousBackground() {
-    final isDesktop = MediaQuery.of(context).size.width >= 800;
-    final isSurveyStyle = _navIndex == _tabSearch ||
-        _navIndex == _tabSaved ||
-        _navIndex == _tabSurvey ||
-        _navIndex == _tabProfile;
-    final blurVal = isSurveyStyle ? 10.0 : (isDesktop ? 0.8 : 5.0);
-    final bgPath =
-        isSurveyStyle ? 'assets/images/login_bg.jpg' : _previousBgPath;
+    const isSurveyStyle = true;
+    const blurVal = 10.0;
+    const bgPath = 'assets/images/login_bg.jpg';
 
     return Positioned.fill(
       child: Stack(
@@ -5631,14 +5630,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Widget _buildCurrentBackground() {
-    final isDesktop = MediaQuery.of(context).size.width >= 800;
-    final isSurveyStyle = _navIndex == _tabSearch ||
-        _navIndex == _tabSaved ||
-        _navIndex == _tabSurvey ||
-        _navIndex == _tabProfile;
-    final blurVal = isSurveyStyle ? 10.0 : (isDesktop ? 0.8 : 5.0);
-    final bgPath =
-        isSurveyStyle ? 'assets/images/login_bg.jpg' : _currentBgPath;
+    const isSurveyStyle = true;
+    const blurVal = 10.0;
+    const bgPath = 'assets/images/login_bg.jpg';
 
     return Positioned.fill(
       child: AnimBuilder(
@@ -5662,11 +5656,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Widget _buildDarkOverlay() {
-    final isDesktop = MediaQuery.of(context).size.width >= 800;
-    final isSurveyStyle = _navIndex == _tabSearch ||
-        _navIndex == _tabSaved ||
-        _navIndex == _tabSurvey ||
-        _navIndex == _tabProfile;
+    const isSurveyStyle = true;
 
     if (isSurveyStyle) {
       return Positioned.fill(
@@ -5676,23 +5666,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       );
     }
 
-    return Positioned.fill(
-      child: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            stops: const [0.0, 0.3, 0.7, 1.0],
-            colors: [
-              Colors.black.withOpacity(isDesktop ? 0.15 : 0.33),
-              Colors.black.withOpacity(isDesktop ? 0.05 : 0.06),
-              Colors.black.withOpacity(isDesktop ? 0.20 : 0.18),
-              isDesktop ? const Color(0xFF0C1412) : const Color(0xBB000000),
-            ],
-          ),
-        ),
-      ),
-    );
+    return const SizedBox.shrink();
   }
 
   Widget _buildUIContent(Size size) {
@@ -5701,7 +5675,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       index: _navIndex,
       children: [
         _buildHomeTabBody(size),
-        _buildSearchTabBody(size),
+        CollectionScreen(
+          userName: _currentUserName,
+          avatarUrl: _currentAvatarUrl,
+          authToken: widget.authToken,
+          allDestinations: _allDatabaseDestinations,
+        ),
         SavedPlacesSection(
           authToken: widget.authToken,
           userName: _currentUserName,
@@ -5889,917 +5868,102 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   // === END WEB/DESKTOP CUSTOM UTILITIES ===
 
-  Widget _buildHomeTabBody(Size size) {
-    final isDesktop = MediaQuery.of(context).size.width >= 800;
-
-    if (isDesktop) {
-      final destinations = _exploreDestinations;
-      if (destinations.isEmpty) {
-        return Center(
-          child: Text(
-            _isVi
-                ? 'Chưa có địa điểm nào phù hợp.'
-                : 'No matching locations found.',
-            style: TextStyle(
-              fontFamily: 'Montserrat',
-              fontSize: 16,
-              color: Colors.white.withOpacity(0.7),
-            ),
-          ),
-        );
-      }
-
-      if (_currentIndex >= destinations.length) {
-        _currentIndex = 0;
-      }
-      final activeDest = destinations[_currentIndex];
-      final categoryList = ['VỊNH BIỂN', 'NÚI RỪNG', 'DI SẢN', 'ĐÔ THỊ'];
-
-      return SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+  Widget _buildDashboardHeaderDesktop() {
+    return FadeTransition(
+      opacity: _cardEntrance,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+        child: Row(
           children: [
-            // HERO SECTION
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 30),
-              constraints: const BoxConstraints(minHeight: 680),
+            _buildHomeAvatar(size: 54, iconSize: 28),
+            const SizedBox(width: 16),
+            Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  // 1. Header Navigation Row
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Row(
-                        children: [
-                          Container(
-                            width: 8,
-                            height: 8,
-                            decoration: const BoxDecoration(
-                              shape: BoxShape.circle,
-                              color: Color(0xFFE74C3C),
-                            ),
-                          ),
-                          const SizedBox(width: 10),
-                          const Text(
-                            'TRAVEL',
-                            style: TextStyle(
-                              fontFamily: 'Montserrat',
-                              fontSize: 14,
-                              fontWeight: FontWeight.w900,
-                              color: Colors.white,
-                              letterSpacing: 3.0,
-                              shadows: _heroTextShadows,
-                            ),
-                          ),
-                        ],
-                      ),
-                      Row(
-                        children: List.generate(categoryList.length, (idx) {
-                          final cat = categoryList[idx];
-
-                          bool isThisCatActive = false;
-                          final prov = destinations[_currentIndex]
-                              .province
-                              .toLowerCase();
-                          final name =
-                              destinations[_currentIndex].name.toLowerCase();
-                          if (cat == 'VỊNH BIỂN') {
-                            isThisCatActive = prov.contains('quảng ninh') ||
-                                prov.contains('khánh hòa') ||
-                                prov.contains('vũng tàu') ||
-                                prov.contains('kiên giang') ||
-                                name.contains('vịnh') ||
-                                name.contains('biển') ||
-                                name.contains('đảo');
-                          } else if (cat == 'NÚI RỪNG') {
-                            isThisCatActive = prov.contains('lào cai') ||
-                                prov.contains('quảng bình') ||
-                                prov.contains('sơn la') ||
-                                prov.contains('hà giang') ||
-                                name.contains('núi') ||
-                                name.contains('động') ||
-                                name.contains('hang') ||
-                                name.contains('phong nha');
-                          } else if (cat == 'DI SẢN') {
-                            isThisCatActive = prov.contains('quảng nam') ||
-                                prov.contains('huế') ||
-                                prov.contains('hà nội') ||
-                                prov.contains('ninh bình') ||
-                                name.contains('cổ') ||
-                                name.contains('di tích') ||
-                                name.contains('tự') ||
-                                name.contains('lăng') ||
-                                name.contains('chùa');
-                          } else if (cat == 'ĐÔ THỊ') {
-                            isThisCatActive = prov.contains('chí minh') ||
-                                prov.contains('đà nẵng') ||
-                                prov.contains('hà nội') ||
-                                name.contains('tháp') ||
-                                name.contains('cầu') ||
-                                name.contains('nhà hát');
-                          }
-
-                          return WebHoverable(
-                            onTap: () {
-                              final firstIdx =
-                                  _findFirstIndexForCategory(cat.toLowerCase());
-                              if (firstIdx != -1) {
-                                _selectDestination(firstIdx);
-                              } else {
-                                _showMessage(
-                                    'Không có địa điểm thuộc danh mục này hiện tại');
-                              }
-                            },
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 16),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  Text(
-                                    _translateCategoryHeader(cat),
-                                    style: TextStyle(
-                                      fontFamily: 'Montserrat',
-                                      fontSize: 13,
-                                      fontWeight: isThisCatActive
-                                          ? FontWeight.bold
-                                          : FontWeight.w500,
-                                      color: isThisCatActive
-                                          ? Colors.white
-                                          : Colors.white60,
-                                      shadows: _heroTextShadows,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 4),
-                                  AnimatedContainer(
-                                    duration: const Duration(milliseconds: 300),
-                                    height: 1.5,
-                                    width: isThisCatActive ? 30 : 0,
-                                    color: const Color(0xFFD4AF7A),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          );
-                        }),
-                      ),
-                      const SizedBox(width: 24),
-                      GestureDetector(
-                        onTap: _showNotificationCenter,
-                        child: Container(
-                          padding: const EdgeInsets.all(8),
-                          decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(0.1),
-                            shape: BoxShape.circle,
-                            border: Border.all(color: Colors.white12, width: 1),
-                          ),
-                          child: Stack(
-                            clipBehavior: Clip.none,
-                            children: [
-                              const Icon(Icons.notifications_none_rounded,
-                                  color: Colors.white, size: 20),
-                              if (_notifications.any((n) => !n.isRead))
-                                Positioned(
-                                  top: -1,
-                                  right: -1,
-                                  child: Container(
-                                    width: 7,
-                                    height: 7,
-                                    decoration: const BoxDecoration(
-                                      color: Color(0xFFE74C3C),
-                                      shape: BoxShape.circle,
-                                    ),
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 60),
-
-                  // 2. Central Cinematic Title Row
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const Text(
-                              'VISIT',
-                              style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 44,
-                                fontWeight: FontWeight.w400,
-                                color: Colors.white70,
-                                letterSpacing: 6.0,
-                                shadows: _heroTextShadows,
-                              ),
-                            ),
-                            Text(
-                              activeDest.name.toUpperCase(),
-                              maxLines: 2,
-                              overflow: TextOverflow.ellipsis,
-                              style: const TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 68,
-                                fontWeight: FontWeight.w900,
-                                color: Colors.white,
-                                height: 1.0,
-                                letterSpacing: -1.0,
-                                shadows: _heroTitleShadows,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      const SizedBox(width: 40),
-                      // Left/Right Navigation controls for desktop view (unlimited browsing)
-                      Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          // Left Arrow Button
-                          WebHoverable(
-                            onTap: () {
-                              final prevIdx =
-                                  (_currentIndex - 1 + destinations.length) %
-                                      destinations.length;
-                              _selectDestination(prevIdx);
-                            },
-                            child: Container(
-                              width: 52,
-                              height: 52,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                border: Border.all(
-                                    color: Colors.white30, width: 1.5),
-                                color: Colors.white.withOpacity(0.05),
-                              ),
-                              child: const Icon(
-                                  Icons.arrow_back_ios_new_rounded,
-                                  color: Colors.white,
-                                  size: 18),
-                            ),
-                          ),
-                          const SizedBox(width: 16),
-                          // Dynamic Page Indicator showing current out of total destinations
-                          Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Text(
-                                (_currentIndex + 1).toString().padLeft(2, '0'),
-                                style: const TextStyle(
-                                  fontFamily: 'Montserrat',
-                                  fontSize: 24,
-                                  fontWeight: FontWeight.w900,
-                                  color: Colors.white,
-                                  shadows: _heroTextShadows,
-                                ),
-                              ),
-                              Container(
-                                width: 20,
-                                height: 1.5,
-                                margin: const EdgeInsets.symmetric(vertical: 4),
-                                color: const Color(0xFFD4AF7A),
-                              ),
-                              Text(
-                                destinations.length.toString().padLeft(2, '0'),
-                                style: TextStyle(
-                                  fontFamily: 'Montserrat',
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.white.withOpacity(0.4),
-                                  shadows: _heroTextShadows,
-                                ),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(width: 16),
-                          // Right Arrow Button
-                          WebHoverable(
-                            onTap: () {
-                              final nextIdx =
-                                  (_currentIndex + 1) % destinations.length;
-                              _selectDestination(nextIdx);
-                            },
-                            child: Container(
-                              width: 52,
-                              height: 52,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                border: Border.all(
-                                    color: Colors.white30, width: 1.5),
-                                color: Colors.white.withOpacity(0.05),
-                              ),
-                              child: const Icon(Icons.arrow_forward_ios_rounded,
-                                  color: Colors.white, size: 18),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 60),
-
-                  // 3. Bottom 3-column description row
-                  Builder(builder: (ctx) {
-                    final prevIdx = (_currentIndex - 1 + destinations.length) %
-                        destinations.length;
-                    final nextIdx = (_currentIndex + 1) % destinations.length;
-                    final nextNextIdx =
-                        (_currentIndex + 2) % destinations.length;
-
-                    final prevDest = destinations[prevIdx];
-                    final nextDest = destinations[nextIdx];
-                    final nextNextDest = destinations[nextNextIdx];
-
-                    return Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Expanded(
-                          child: Padding(
-                            padding: const EdgeInsets.only(right: 24),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  _getBriefDescription(activeDest),
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat',
-                                    fontSize: 12,
-                                    color: Colors.white.withOpacity(0.7),
-                                    height: 1.6,
-                                    shadows: _heroTextShadows,
-                                  ),
-                                ),
-                                const SizedBox(height: 16),
-                                Row(
-                                  children: [
-                                    WebHoverable(
-                                      onTap: () =>
-                                          _openPlaceDetail(activeDest, ctx),
-                                      child: const Text(
-                                        'XEM CHI TIẾT >>',
-                                        style: TextStyle(
-                                          fontFamily: 'Montserrat',
-                                          fontSize: 12,
-                                          fontWeight: FontWeight.w800,
-                                          color: Color(0xFFD4AF7A),
-                                          letterSpacing: 1.0,
-                                          shadows: _heroTextShadows,
-                                        ),
-                                      ),
-                                    ),
-                                    const SizedBox(width: 24),
-                                    Builder(builder: (buttonCtx) {
-                                      final isSaved =
-                                          _savedNames.contains(activeDest.name);
-                                      final isBusy = _updatingSavedNames
-                                          .contains(activeDest.name);
-
-                                      return WebHoverable(
-                                        onTap: isBusy
-                                            ? null
-                                            : () async {
-                                                await _toggleSaved(activeDest);
-                                                setState(() {});
-                                              },
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: [
-                                            Icon(
-                                              isSaved
-                                                  ? Icons.bookmark_rounded
-                                                  : Icons
-                                                      .bookmark_border_rounded,
-                                              color: isSaved
-                                                  ? const Color(0xFFD4AF7A)
-                                                  : Colors.white70,
-                                              size: 16,
-                                            ),
-                                            const SizedBox(width: 6),
-                                            Text(
-                                              isSaved
-                                                  ? 'ĐÃ LƯU'
-                                                  : 'LƯU ĐỊA ĐIỂM',
-                                              style: TextStyle(
-                                                fontFamily: 'Montserrat',
-                                                fontSize: 12,
-                                                fontWeight: FontWeight.w800,
-                                                color: isSaved
-                                                    ? const Color(0xFFD4AF7A)
-                                                    : Colors.white70,
-                                                letterSpacing: 1.0,
-                                                shadows: _heroTextShadows,
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      );
-                                    }),
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Expanded(
-                          child: Padding(
-                            padding: const EdgeInsets.only(right: 24),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  nextDest.name,
-                                  style: const TextStyle(
-                                    fontFamily: 'Montserrat',
-                                    fontSize: 13,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                    shadows: _heroTextShadows,
-                                  ),
-                                ),
-                                const SizedBox(height: 4),
-                                Text(
-                                  _getBriefDescription(nextDest),
-                                  maxLines: 3,
-                                  overflow: TextOverflow.ellipsis,
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat',
-                                    fontSize: 11,
-                                    color: Colors.white.withOpacity(0.45),
-                                    height: 1.5,
-                                    shadows: _heroTextShadows,
-                                  ),
-                                ),
-                                const SizedBox(height: 10),
-                                WebHoverable(
-                                  onTap: () => _selectDestination(nextIdx),
-                                  child: const Text(
-                                    'XEM ĐIỂM ĐẾN >>',
-                                    style: TextStyle(
-                                      fontFamily: 'Montserrat',
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white54,
-                                      shadows: _heroTextShadows,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                nextNextDest.name,
-                                style: const TextStyle(
-                                  fontFamily: 'Montserrat',
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  shadows: _heroTextShadows,
-                                ),
-                              ),
-                              const SizedBox(height: 4),
-                              Text(
-                                _getBriefDescription(nextNextDest),
-                                maxLines: 3,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(
-                                  fontFamily: 'Montserrat',
-                                  fontSize: 11,
-                                  color: Colors.white.withOpacity(0.45),
-                                  height: 1.5,
-                                  shadows: _heroTextShadows,
-                                ),
-                              ),
-                              const SizedBox(height: 10),
-                              WebHoverable(
-                                onTap: () => _selectDestination(nextNextIdx),
-                                child: const Text(
-                                  'XEM ĐIỂM ĐẾN >>',
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat',
-                                    fontSize: 11,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white54,
-                                    shadows: _heroTextShadows,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    );
-                  }),
-                ],
-              ),
-            ),
-
-            // TRANSITION & SOLID BACKGROUND RECOMMENDATIONS SECTION
-            Container(
-              color: const Color(0xFF0C1412),
-              width: double.infinity,
-              padding: const EdgeInsets.fromLTRB(50, 58, 50, 80),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
-                    'Khám phá Việt Nam qua dữ liệu thực tế',
-                    style: TextStyle(
+                    '${AppLocalizations.of(context)!.welcome_back} $_currentUserName!',
+                    style: const TextStyle(
                       fontFamily: 'Montserrat',
-                      fontSize: 12,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.white.withOpacity(0.58),
-                      letterSpacing: 1.6,
-                    ),
-                  ),
-                  const SizedBox(height: 30),
-                  _buildExploreStats(),
-                  const SizedBox(height: 90),
-                  const Text(
-                    'confusion? these recommendations',
-                    style: TextStyle(
-                      fontFamily: 'Montserrat',
-                      fontSize: 13,
-                      fontStyle: FontStyle.italic,
-                      color: Color(0xFFD4AF7A),
-                      letterSpacing: 1.0,
-                    ),
-                  ),
-                  const SizedBox(height: 16),
-                  const Text(
-                    'destination recommendations',
-                    style: TextStyle(
-                      fontFamily: 'Montserrat',
-                      fontSize: 32,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.white,
-                      letterSpacing: -0.5,
-                    ),
-                  ),
-                  const SizedBox(height: 48),
-                  Wrap(
-                    alignment: WrapAlignment.center,
-                    spacing: 24,
-                    runSpacing: 24,
-                    children:
-                        List.generate(destinations.length.clamp(0, 4), (i) {
-                      final dest = destinations[i];
-                      final rankName =
-                          '${i + 1}${i == 0 ? "st" : i == 1 ? "nd" : i == 2 ? "rd" : "th"} place';
-
-                      return WebHoverable(
-                        onTap: () => _openPlaceDetail(dest, context),
-                        child: Container(
-                          width: 220,
-                          height: 380,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(24),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.black.withOpacity(0.5),
-                                blurRadius: 18,
-                                offset: const Offset(0, 10),
-                              ),
-                            ],
-                          ),
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(24),
-                            child: Stack(
-                              fit: StackFit.expand,
-                              children: [
-                                Destination.buildImage(dest.imagePath,
-                                    fit: BoxFit.cover),
-                                Container(
-                                  decoration: BoxDecoration(
-                                    gradient: LinearGradient(
-                                      begin: Alignment.topCenter,
-                                      end: Alignment.bottomCenter,
-                                      stops: const [0.4, 1.0],
-                                      colors: [
-                                        Colors.transparent,
-                                        Colors.black.withOpacity(0.9),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Positioned(
-                                  left: 20,
-                                  bottom: 44,
-                                  child: Container(
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 8, vertical: 4),
-                                    decoration: BoxDecoration(
-                                      color: dest.type == 'Nhà hàng'
-                                          ? const Color(0xFFE67E22)
-                                              .withValues(alpha: 0.85)
-                                          : dest.type == 'Khách sạn'
-                                              ? const Color(0xFF3498DB)
-                                                  .withValues(alpha: 0.85)
-                                              : const Color(0xFFB5956A)
-                                                  .withValues(alpha: 0.85),
-                                      borderRadius: BorderRadius.circular(6),
-                                    ),
-                                    child: Text(
-                                      dest.type,
-                                      style: const TextStyle(
-                                        fontFamily: 'Montserrat',
-                                        fontSize: 10,
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.white,
-                                        shadows: _heroTextShadows,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Positioned(
-                                  left: 20,
-                                  bottom: 20,
-                                  right: 20,
-                                  child: Text(
-                                    dest.name,
-                                    maxLines: 1,
-                                    overflow: TextOverflow.ellipsis,
-                                    style: const TextStyle(
-                                      fontFamily: 'Montserrat',
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white,
-                                      shadows: _heroTextShadows,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      );
-                    }),
-                  ),
-                ],
-              ),
-            ),
-
-            // FOOTER / BRANDING BANNER SECTION
-            Container(
-              color: const Color(0xFF0C1412),
-              width: double.infinity,
-              padding: const EdgeInsets.only(
-                  left: 50, right: 50, bottom: 80, top: 20),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Expanded(
-                    flex: 3,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text(
-                          'TRAVEL AND ENJOY\nYOUR HOLIDAY',
-                          style: TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 36,
-                            fontWeight: FontWeight.w900,
-                            color: Colors.white,
-                            height: 1.15,
-                            letterSpacing: -0.5,
-                          ),
-                        ),
-                        const SizedBox(height: 36),
-                        WebHoverable(
-                          onTap: () async {
-                            await _openSurveyForCurrentLayout();
-                          },
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Container(
-                                width: 50,
-                                height: 50,
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  border: Border.all(
-                                      color: Colors.white, width: 1.5),
-                                ),
-                                child: const Icon(
-                                  Icons.play_arrow_rounded,
-                                  color: Colors.white,
-                                  size: 30,
-                                ),
-                              ),
-                              const SizedBox(width: 16),
-                              const Text(
-                                'choose your fun holiday',
-                                style: TextStyle(
-                                  fontFamily: 'Montserrat',
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w700,
-                                  color: Colors.white,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        const SizedBox(height: 32),
-                        Text(
-                          'TourXport mang đến giải pháp lập kế hoạch du lịch thông minh và tự động hóa toàn diện, giúp bạn dễ dàng cá nhân hóa hành trình khám phá dải đất hình chữ S. Hãy bắt đầu kỳ nghỉ trong mơ cùng chúng tôi ngay hôm nay.',
-                          style: TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 13,
-                            color: Colors.white.withOpacity(0.55),
-                            height: 1.6,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(width: 60),
-                  Expanded(
-                    flex: 2,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(16),
-                              child: SizedBox(
-                                width: 150,
-                                height: 100,
-                                child: Destination.buildImage(
-                                  destinations[0].imagePath,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                            ),
-                            const SizedBox(width: 16),
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(16),
-                              child: SizedBox(
-                                width: 150,
-                                height: 100,
-                                child: Destination.buildImage(
-                                  destinations[destinations.length > 1 ? 1 : 0]
-                                      .imagePath,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: 56),
-                        WebHoverable(
-                          onTap: () {
-                            _showMessage(
-                                'Chào mừng bạn đến với kênh Instagram TourXport!');
-                          },
-                          child: Text(
-                            'http://instagram.com/tourxport_',
-                            style: TextStyle(
-                              fontFamily: 'Montserrat',
-                              fontSize: 12,
-                              fontWeight: FontWeight.w600,
-                              color: Colors.white.withOpacity(0.35),
-                              letterSpacing: 0.5,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
-      );
-    }
-
-    Widget content = Column(
-      key: const ValueKey<String>('home_tab'),
-      children: [
-        if (!isDesktop) _buildTopBar(),
-        const SizedBox(height: 8),
-        _buildTitle(),
-        const SizedBox(height: 12),
-        Expanded(
-          child: Stack(
-            clipBehavior: Clip.none,
-            children: [
-              Column(
-                children: [
-                  _buildRegionTabs(),
-                  const SizedBox(height: 12),
-                  Expanded(
-                    child: _buildCardCarousel(size),
-                  ),
-                  const SizedBox(height: 16),
-                ],
-              ),
-            ],
-          ),
-        ),
-      ],
-    );
-
-    return content;
-  }
-
-  Widget _buildSearchTabBody(Size size) {
-    final isDesktop = MediaQuery.of(context).size.width >= 800;
-
-    final content = Column(
-      key: const ValueKey<String>('search_tab'),
-      children: [
-        if (!isDesktop) _buildTopBar(),
-        SizedBox(height: isDesktop ? 42 : 8),
-        if (isDesktop)
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 50),
-            child: Row(
-              children: [
-                const Expanded(
-                  child: Text(
-                    'Tìm kiếm địa điểm',
-                    style: TextStyle(
-                      fontFamily: 'Montserrat',
-                      fontSize: 42,
+                      fontSize: 26,
                       fontWeight: FontWeight.w900,
                       color: Colors.white,
                       letterSpacing: -0.5,
                     ),
                   ),
-                ),
-                GestureDetector(
-                  onTap: _showNotificationCenter,
-                  child: Container(
-                    padding: const EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.1),
-                      shape: BoxShape.circle,
-                      border: Border.all(color: Colors.white12, width: 1),
-                    ),
-                    child: Stack(
-                      clipBehavior: Clip.none,
-                      children: [
-                        const Icon(Icons.notifications_none_rounded,
-                            color: Colors.white, size: 22),
-                        if (_notifications.any((n) => !n.isRead))
-                          Positioned(
-                            top: -1,
-                            right: -1,
-                            child: Container(
-                              width: 7,
-                              height: 7,
-                              decoration: const BoxDecoration(
-                                color: Color(0xFFE74C3C),
-                                shape: BoxShape.circle,
-                              ),
-                            ),
-                          ),
-                      ],
+                  const SizedBox(height: 4),
+                  Text(
+                    _isVi
+                        ? 'Hôm nay bạn muốn khám phá nơi nào?'
+                        : 'Where do you want to explore today?',
+                    style: TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontSize: 14,
+                      color: Colors.white.withOpacity(0.6),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          )
-        else
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24),
-            child: Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                'Tìm kiếm địa điểm',
-                style: TextStyle(
-                  fontFamily: 'Montserrat',
-                  fontSize: 30,
-                  fontWeight: FontWeight.w700,
-                  color: Colors.white,
-                  height: 1.2,
-                  shadows: const [
-                    Shadow(
-                      color: Color(0x88000000),
-                      blurRadius: 12,
-                      offset: Offset(0, 4),
-                    ),
+            const SizedBox(width: 16),
+            WeatherWidget(
+              lat: _gpsLat,
+              lon: _gpsLon,
+              label: _hasGps ? null : 'Hà Nội',
+              compact: false,
+            ),
+            const SizedBox(width: 20),
+            GestureDetector(
+              onTap: _showNotificationCenter,
+              child: Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.1),
+                  shape: BoxShape.circle,
+                  border: Border.all(color: Colors.white12, width: 1.5),
+                ),
+                child: Stack(
+                  clipBehavior: Clip.none,
+                  children: [
+                    const Icon(Icons.notifications_none_rounded,
+                        color: Colors.white, size: 24),
+                    if (_notifications.any((n) => !n.isRead))
+                      Positioned(
+                        top: -2,
+                        right: -2,
+                        child: Container(
+                          width: 8,
+                          height: 8,
+                          decoration: const BoxDecoration(
+                            color: Color(0xFFE74C3C),
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                      ),
                   ],
                 ),
               ),
             ),
-          ),
-        SizedBox(height: isDesktop ? 22 : 12),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildHomeTabBody(Size size) {
+    final isDesktop = MediaQuery.of(context).size.width >= 800;
+
+    return Column(
+      key: const ValueKey<String>('home_tab'),
+      children: [
+        if (isDesktop)
+          _buildDashboardHeaderDesktop()
+        else ...[
+          _buildTopBar(),
+          const SizedBox(height: 8),
+          _buildTitle(),
+        ],
+        const SizedBox(height: 8),
         Expanded(
           child: Stack(
             clipBehavior: Clip.none,
@@ -6813,14 +5977,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   Expanded(
                     child: _buildSearchResultsGrid(),
                   ),
-                  SizedBox(height: isDesktop ? 24 : 16),
                 ],
               ),
               if (_searchFocusNode.hasFocus)
                 Positioned(
                   top: 60,
-                  left: isDesktop ? 26 : 0,
-                  right: isDesktop ? 26 : 0,
+                  left: isDesktop ? 50 : 24,
+                  right: isDesktop ? 50 : 24,
                   child: _buildSuggestionsDropdown(),
                 ),
             ],
@@ -6828,15 +5991,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         ),
       ],
     );
-
-    if (isDesktop) {
-      return SafeArea(
-        bottom: false,
-        child: content,
-      );
-    }
-
-    return content;
   }
 
   Widget _buildScheduleTabBody(Size size) {
@@ -9010,7 +8164,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   Widget _buildBottomNav() {
     final items = [
       Icons.home_rounded,
-      Icons.search_rounded,
+      Icons.collections_rounded,
       Icons.bookmark_rounded,
       Icons.explore_rounded,
       Icons.person_rounded,
