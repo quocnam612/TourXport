@@ -17,7 +17,6 @@ import 'screens/legal/privacy_policy_screen.dart';
 import 'screens/legal/shared_handler_screen.dart';
 import 'screens/legal/terms_of_service_screen.dart';
 import 'screens/app_reviews_screen.dart';
-import 'screens/pin_lock_screen.dart';
 import 'widgets/app_lock_wrapper.dart';
 
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
