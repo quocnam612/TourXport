@@ -613,7 +613,7 @@ class _ProvinceProgressCardState extends State<_ProvinceProgressCard> {
   @override
   Widget build(BuildContext context) {
     final pc = widget.collection;
-    final imageUrl = provinceDefaultImages[pc.name] ?? pc.imageUrl ?? '';
+    final imageUrl = (pc.imageUrl != null && pc.imageUrl!.isNotEmpty) ? pc.imageUrl! : (provinceDefaultImages[pc.name] ?? '');
     final percent = pc.totalPlaces > 0 ? (pc.visitedPlaces / pc.totalPlaces) : 0.0;
 
     return MouseRegion(

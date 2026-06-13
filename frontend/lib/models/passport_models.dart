@@ -4,6 +4,8 @@ class TravelMemory {
   final String date;
   final String tourTitle;
   final double durationHours;
+  final int durationDays;
+  final int durationNights;
   final int photoCount;
   final String note;
   final double rating;
@@ -15,6 +17,8 @@ class TravelMemory {
     required this.date,
     required this.tourTitle,
     required this.durationHours,
+    this.durationDays = 3,
+    this.durationNights = 2,
     required this.photoCount,
     required this.note,
     required this.rating,
@@ -28,6 +32,8 @@ class TravelMemory {
       'date': date,
       'tourTitle': tourTitle,
       'durationHours': durationHours,
+      'durationDays': durationDays,
+      'durationNights': durationNights,
       'photoCount': photoCount,
       'note': note,
       'rating': rating,
@@ -42,6 +48,8 @@ class TravelMemory {
       date: json['date'] ?? '',
       tourTitle: json['tourTitle'] ?? '',
       durationHours: (json['durationHours'] as num?)?.toDouble() ?? 1.0,
+      durationDays: json['durationDays'] as int? ?? 3,
+      durationNights: json['durationNights'] as int? ?? 2,
       photoCount: json['photoCount'] as int? ?? 0,
       note: json['note'] ?? '',
       rating: (json['rating'] as num?)?.toDouble() ?? 5.0,

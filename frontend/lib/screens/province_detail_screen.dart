@@ -337,7 +337,7 @@ class _ProvinceDetailScreenState extends State<ProvinceDetailScreen> with Ticker
     });
 
     // Background Image fallback
-    final provinceImgUrl = provinceDefaultImages[pc.name] ?? pc.imageUrl ?? '';
+    final provinceImgUrl = (pc.imageUrl != null && pc.imageUrl!.isNotEmpty) ? pc.imageUrl! : (provinceDefaultImages[pc.name] ?? '');
 
     // Calculate percentage if in Passport mode
     int unlockedCount = 0;
@@ -565,7 +565,7 @@ class _SimpleGridCardState extends State<_SimpleGridCard> {
 
   @override
   Widget build(BuildContext context) {
-    final displayName = widget.isUnlocked ? widget.name : '??? (Bị khóa)';
+    final displayName = widget.name;
 
     return MouseRegion(
       onEnter: (_) => setState(() => _isHovered = true),

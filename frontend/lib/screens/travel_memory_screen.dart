@@ -28,6 +28,8 @@ class _TravelMemoryScreenState extends State<TravelMemoryScreen> {
   late double _rating;
   late int _photoCount;
   late double _durationHours;
+  late int _durationDays;
+  late int _durationNights;
 
   @override
   void initState() {
@@ -42,6 +44,8 @@ class _TravelMemoryScreenState extends State<TravelMemoryScreen> {
         date: _formattedToday(),
         tourTitle: 'Tự do khám phá',
         durationHours: 2.0,
+        durationDays: 3,
+        durationNights: 2,
         photoCount: 0,
         note: 'Hãy viết cảm nghĩ của bạn về chuyến đi này...',
         rating: 5.0,
@@ -55,6 +59,8 @@ class _TravelMemoryScreenState extends State<TravelMemoryScreen> {
     _rating = _memory.rating;
     _photoCount = _memory.photoCount;
     _durationHours = _memory.durationHours;
+    _durationDays = _memory.durationDays;
+    _durationNights = _memory.durationNights;
   }
 
   String _formattedToday() {
@@ -77,6 +83,8 @@ class _TravelMemoryScreenState extends State<TravelMemoryScreen> {
       date: _dateController.text.trim(),
       tourTitle: _tourController.text.trim(),
       durationHours: _durationHours,
+      durationDays: _durationDays,
+      durationNights: _durationNights,
       photoCount: _photoCount,
       note: _noteController.text.trim(),
       rating: _rating,
@@ -327,25 +335,59 @@ class _TravelMemoryScreenState extends State<TravelMemoryScreen> {
                                           mainAxisSize: MainAxisSize.min,
                                           children: [
                                             IconButton(
-                                              icon: const Icon(Icons.remove, color: Colors.white54, size: 16),
+                                              icon: const Icon(Icons.remove, color: Colors.white54, size: 14),
                                               onPressed: () {
-                                                if (_durationHours > 0.5) setState(() => _durationHours -= 0.5);
+                                                if (_durationDays > 1) {
+                                                  setState(() {
+                                                    _durationDays--;
+                                                    if (_durationNights >= _durationDays) {
+                                                      _durationNights = (_durationDays - 1).clamp(0, 99);
+                                                    }
+                                                  });
+                                                }
                                               },
                                               constraints: const BoxConstraints(),
                                               padding: EdgeInsets.zero,
                                             ),
-                                            Text('${_durationHours}h', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+                                            Text('${_durationDays}N', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 12)),
                                             IconButton(
-                                              icon: const Icon(Icons.add, color: Colors.white54, size: 16),
-                                              onPressed: () => setState(() => _durationHours += 0.5),
+                                              icon: const Icon(Icons.add, color: Colors.white54, size: 14),
+                                              onPressed: () {
+                                                setState(() {
+                                                  _durationDays++;
+                                                  _durationNights = _durationDays - 1;
+                                                });
+                                              },
+                                              constraints: const BoxConstraints(),
+                                              padding: EdgeInsets.zero,
+                                            ),
+                                            const SizedBox(width: 4),
+                                            IconButton(
+                                              icon: const Icon(Icons.remove, color: Colors.white54, size: 14),
+                                              onPressed: () {
+                                                if (_durationNights > 0) {
+                                                  setState(() => _durationNights--);
+                                                }
+                                              },
+                                              constraints: const BoxConstraints(),
+                                              padding: EdgeInsets.zero,
+                                            ),
+                                            Text('${_durationNights}Đ', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 12)),
+                                            IconButton(
+                                              icon: const Icon(Icons.add, color: Colors.white54, size: 14),
+                                              onPressed: () {
+                                                if (_durationNights < _durationDays) {
+                                                  setState(() => _durationNights++);
+                                                }
+                                              },
                                               constraints: const BoxConstraints(),
                                               padding: EdgeInsets.zero,
                                             ),
                                           ],
                                         )
                                       : Text(
-                                          '${_memory.durationHours} giờ',
-                                          style: const TextStyle(fontFamily: 'Montserrat', fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),
+                                          '${_memory.durationDays} ngày ${_memory.durationNights} đêm',
+                                          style: const TextStyle(fontFamily: 'Montserrat', fontSize: 11, fontWeight: FontWeight.bold, color: Colors.white),
                                         ),
                                 ),
                               ],
