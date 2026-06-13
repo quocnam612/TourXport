@@ -9,6 +9,7 @@ class Destination {
   final String price;
   final String imagePath;
   final String bgBlurPath;
+  final List<String> galleryImagePaths;
   final double latitude;
   final double longitude;
   final String type; // e.g. 'Địa điểm', 'Nhà hàng', 'Khách sạn'
@@ -30,6 +31,7 @@ class Destination {
     required this.price,
     required this.imagePath,
     required this.bgBlurPath,
+    this.galleryImagePaths = const [],
     this.latitude = 0.0,
     this.longitude = 0.0,
     this.type = 'Địa điểm',
@@ -59,6 +61,21 @@ class Destination {
     final String rankingVal = (json['ranking'] ?? '').toString().trim();
     final String priceRangeVal = (json['priceRange'] ?? '').toString().trim();
     final openingHoursVal = json['openingHours'];
+    final galleryImagePaths = <String>[];
+    final rawImages = json['images'];
+    if (rawImages is List) {
+      for (final item in rawImages) {
+        String url = '';
+        if (item is String) {
+          url = item.trim();
+        } else if (item is Map) {
+          url = (item['url'] ?? '').toString().trim();
+        }
+        if (url.isNotEmpty && !galleryImagePaths.contains(url)) {
+          galleryImagePaths.add(url);
+        }
+      }
+    }
 
     final sample = findSampleDestination(nameVal);
 
@@ -104,6 +121,7 @@ class Destination {
       price: (json['price'] ?? json['priceRange'] ?? sample?.price ?? 'Chỉ từ 1.5 triệu đồng').toString(),
       imagePath: imgUrl,
       bgBlurPath: imgUrl,
+      galleryImagePaths: galleryImagePaths.where((url) => url != imgUrl).toList(),
       latitude: latVal,
       longitude: lngVal,
       type: typeVal,
@@ -136,6 +154,7 @@ class Destination {
       'price': price,
       'imagePath': imagePath,
       'bgBlurPath': bgBlurPath,
+      'images': galleryImagePaths,
       'latitude': latitude,
       'longitude': longitude,
       'type': type,

@@ -33,8 +33,10 @@ class PlaceDetailScreen extends StatefulWidget {
 }
 
 class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
+  late Destination _destination;
   late bool _isSaved;
   late bool _isLiked;
+  String? _selectedImagePath;
   bool _showFullDesc = false;
   int _selectedTab = 0; // 0 = Tổng quan, 1 = Nhận xét
 
@@ -179,9 +181,11 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
   @override
   void initState() {
     super.initState();
+    _destination = widget.destination;
     _isSaved = widget.isSaved;
     _isLiked = widget.isLiked;
     _sheetCtrl.addListener(_onSheetChanged);
+    _loadDestinationDetail();
   }
 
   @override
@@ -225,6 +229,52 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     setState(() => _sheetFraction = _sheetCtrl.size);
   }
 
+  String _activeImagePath(Destination dest) {
+    final selected = _selectedImagePath?.trim();
+    if (selected != null && selected.isNotEmpty) {
+      return selected;
+    }
+    return dest.imagePath;
+  }
+
+  Future<void> _loadDestinationDetail() async {
+    final current = _destination;
+    final queryId = current.id?.trim();
+    final sourceLocationId = current.sourceLocationId?.trim();
+
+    if ((queryId == null || queryId.isEmpty) &&
+        (sourceLocationId == null || sourceLocationId.isEmpty)) {
+      return;
+    }
+
+    try {
+      final endpoint = searchEndpointForType(current.type);
+      final query = queryId != null && queryId.isNotEmpty
+          ? 'id=${Uri.encodeComponent(queryId)}'
+          : 'sourceLocationId=${Uri.encodeComponent(sourceLocationId!)}';
+      final response = await apiGet('$endpoint/search?$query', token: widget.authToken);
+      final data = tryDecodeJsonObject(response.body);
+
+      if (response.statusCode != 200 || data?['success'] != true) {
+        return;
+      }
+
+      final payload = data?['data'];
+      if (payload is! Map) {
+        return;
+      }
+
+      final detailJson = Map<String, dynamic>.from(payload);
+      detailJson['type'] ??= current.type;
+      final detailedDestination = Destination.fromJson(detailJson);
+
+      if (!mounted) return;
+      setState(() => _destination = detailedDestination);
+    } catch (_) {
+      // Keep the originally supplied destination if the detail refresh fails.
+    }
+  }
+
   Future<void> _toggleSaved() async {
     final token = widget.authToken?.trim();
     if (token == null || token.isEmpty) {
@@ -232,7 +282,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
       return;
     }
 
-    final dest = widget.destination;
+    final dest = _destination;
 
     try {
       String? placeId = dest.id;
@@ -292,7 +342,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
       _reviewsError = null;
     });
 
-    final dest = widget.destination;
+    final dest = _destination;
 
     try {
       String? locationId = dest.id;
@@ -347,7 +397,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
       return;
     }
 
-    final dest = widget.destination;
+    final dest = _destination;
 
     try {
       String? locationId = dest.id;
@@ -399,7 +449,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
 
   void _sharePlace() {
     final String domain = kIsWeb ? Uri.base.origin : 'https://tourxport.vercel.app';
-    final String targetId = widget.destination.id ?? widget.destination.sourceLocationId ?? '';
+    final String targetId = _destination.id ?? _destination.sourceLocationId ?? '';
     if (targetId.isEmpty) {
       _showMessage(_isVi ? 'Không tìm thấy ID địa điểm để chia sẻ' : 'Location ID not found for sharing');
       return;
@@ -408,13 +458,13 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
       path: '/location',
       queryParameters: {
         'id': targetId,
-        'type': _placeTypeSlug(widget.destination.type),
+        'type': _placeTypeSlug(_destination.type),
       },
     ).toString();
     final String shareUrl = '$domain$sharePath';
     final String intro = _isVi
-        ? 'Khám phá ${widget.destination.name} trên TourXport:'
-        : 'Explore ${widget.destination.name} on TourXport:';
+        ? 'Khám phá ${_destination.name} trên TourXport:'
+        : 'Explore ${_destination.name} on TourXport:';
     final String shareText = '$intro\n$shareUrl';
     
     _showShareDialog(context, shareUrl, shareText, _isVi ? 'địa điểm' : 'place');
@@ -561,7 +611,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final dest = widget.destination;
+    final dest = _destination;
     final screenH = MediaQuery.of(context).size.height;
     final screenW = MediaQuery.of(context).size.width;
     final parentAnim = _routeAnimation ?? const AlwaysStoppedAnimation(1.0);
@@ -700,7 +750,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(28),
                               child: Destination.buildImage(
-                                dest.imagePath,
+                                _activeImagePath(dest),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -750,7 +800,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                        builder: (context) => MapScreen(destination: widget.destination),
+                                        builder: (context) => MapScreen(destination: _destination),
                                       ),
                                     );
                                   },
@@ -832,8 +882,9 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
   }
 
   Widget _buildDetailBackground(Destination dest) {
+    final activeImagePath = _activeImagePath(dest);
     final backgroundPath = dest.hasImage == true
-        ? (dest.bgBlurPath.isNotEmpty ? dest.bgBlurPath : dest.imagePath)
+        ? activeImagePath
         : 'assets/images/login_bg.jpg';
     return Stack(
       fit: StackFit.expand,
@@ -1073,7 +1124,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
   ) {
     if (widget.cardRect == null) {
       return Positioned.fill(
-        child: Destination.buildImage(dest.imagePath, fit: BoxFit.cover),
+        child: Destination.buildImage(_activeImagePath(dest), fit: BoxFit.cover),
       );
     }
 
@@ -1090,7 +1141,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
           return Positioned.fill(
             child: Transform.translate(
               offset: Offset(0, offsetY),
-              child: Destination.buildImage(dest.imagePath, fit: BoxFit.cover),
+              child: Destination.buildImage(_activeImagePath(dest), fit: BoxFit.cover),
             ),
           );
         }
@@ -1142,7 +1193,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
               child: Stack(
                 fit: StackFit.expand,
                 children: [
-                  Destination.buildImage(dest.imagePath, fit: BoxFit.cover),
+                  Destination.buildImage(_activeImagePath(dest), fit: BoxFit.cover),
                   
                   if (cardInfoOpacity > 0)
                     Opacity(
@@ -1228,7 +1279,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
           parent: parentAnim,
           curve: Curves.easeOut,
         ),
-        child: Destination.buildImage(dest.imagePath, fit: BoxFit.cover),
+        child: Destination.buildImage(_activeImagePath(dest), fit: BoxFit.cover),
       ),
     );
   }
@@ -1616,45 +1667,73 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
   }
 
   Widget _buildGallery(Destination dest) {
-    final images = [
-      dest.imagePath,
-      destinationPlaceholderPath,
-      destinationPlaceholderPath,
-      destinationPlaceholderPath,
-      destinationPlaceholderPath,
-    ];
+    final seenImages = <String>{};
+    final images = <String>[];
+    for (final image in [dest.imagePath, ...dest.galleryImagePaths]) {
+      final trimmed = image.trim();
+      if (trimmed.isEmpty || !seenImages.add(trimmed)) continue;
+      images.add(trimmed);
+    }
+
+    if (images.isEmpty) {
+      images.add(destinationPlaceholderPath);
+    }
+    final activeImagePath = _activeImagePath(dest);
+
     return SizedBox(
       height: 100,
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
         itemCount: images.length,
         separatorBuilder: (_, __) => const SizedBox(width: 10),
-        itemBuilder: (context, i) => Container(
-          width: 130,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(16),
-            border: Border.all(
-              color: i == 0
-                  ? const Color(0xFFD4AF7A).withOpacity(0.65)
-                  : Colors.white.withOpacity(0.10),
-              width: i == 0 ? 1.3 : 1,
-            ),
-          ),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(15),
-            child: Stack(
-              fit: StackFit.expand,
-              children: [
-                Destination.buildImage(
-                  images[i],
-                  fit: BoxFit.cover,
+        itemBuilder: (context, i) {
+          final image = images[i];
+          final isActive = image == activeImagePath;
+          return MouseRegion(
+            cursor: SystemMouseCursors.click,
+            child: GestureDetector(
+              behavior: HitTestBehavior.opaque,
+              onTap: () => setState(() => _selectedImagePath = image),
+              child: AnimatedContainer(
+                duration: const Duration(milliseconds: 180),
+                curve: Curves.easeOut,
+                width: 130,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(
+                    color: isActive
+                        ? const Color(0xFFD4AF7A).withOpacity(0.85)
+                        : Colors.white.withOpacity(0.10),
+                    width: isActive ? 1.8 : 1,
+                  ),
+                  boxShadow: isActive
+                      ? [
+                          BoxShadow(
+                            color: const Color(0xFFD4AF7A).withOpacity(0.22),
+                            blurRadius: 14,
+                            offset: const Offset(0, 6),
+                          ),
+                        ]
+                      : null,
                 ),
-                if (i != 0)
-                  Container(color: const Color(0xFF0D1B18).withOpacity(0.16)),
-              ],
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(15),
+                  child: Stack(
+                    fit: StackFit.expand,
+                    children: [
+                      Destination.buildImage(
+                        image,
+                        fit: BoxFit.cover,
+                      ),
+                      if (!isActive)
+                        Container(color: const Color(0xFF0D1B18).withOpacity(0.16)),
+                    ],
+                  ),
+                ),
+              ),
             ),
-          ),
-        ),
+          );
+        },
       ),
     );
   }
@@ -1679,7 +1758,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => MapScreen(destination: widget.destination),
+                          builder: (context) => MapScreen(destination: _destination),
                         ),
                       );
                     },

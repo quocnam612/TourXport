@@ -87,6 +87,23 @@ const hotelSchema = new mongoose.Schema({
         }
     },
 
+    images: [{
+        url: {
+            type: String,
+            required: true
+        },
+
+        publicId: {
+            type: String,
+            default: null
+        },
+
+        source: {
+            type: String,
+            default: 'tripadvisor'
+        }
+    }],
+
     location: {
         type: {
             type: String,

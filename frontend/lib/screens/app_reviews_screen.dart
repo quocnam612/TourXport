@@ -1341,8 +1341,8 @@ class _AppReviewsScreenState extends State<AppReviewsScreen>
           ClipOval(
             child: Image.asset(
               'assets/images/logo.png',
-              width: 34,
-              height: 34,
+              width: 30,
+              height: 30,
               fit: BoxFit.cover,
             ),
           ),

@@ -921,9 +921,9 @@ class _SavedTourMainSidebar extends StatelessWidget {
                   ],
                 ),
                 child: Image.asset(
-                  'assets/images/logo.png',
-                  width: 64,
-                  height: 64,
+                  'assets/images/logo-compact.png',
+                  width: 48,
+                  height: 48,
                   fit: BoxFit.contain,
                 ),
               ),

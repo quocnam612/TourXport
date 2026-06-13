@@ -638,6 +638,28 @@ export const buildLocationLookupFilter = (query) => {
 export const normalizeLocationPayload = (payload, { partial = false } = {}) => {
     const location = payload.location || {};
     const normalized = {};
+    const normalizeImageItem = (item) => {
+        if (typeof item === 'string') {
+            return item.trim()
+                ? { url: item.trim(), publicId: null, source: 'tripadvisor' }
+                : null;
+        }
+
+        if (!item || typeof item !== 'object') {
+            return null;
+        }
+
+        const url = String(item.url || '').trim();
+        if (!url) {
+            return null;
+        }
+
+        return {
+            url,
+            publicId: item.publicId ?? null,
+            source: item.source ?? 'tripadvisor'
+        };
+    };
 
     const assign = (key, value) => {
         if (!partial || hasOwn(payload, key)) {
@@ -658,6 +680,12 @@ export const normalizeLocationPayload = (payload, { partial = false } = {}) => {
     assign('searchText', payload.searchText ?? null);
     assign('tags', Array.isArray(payload.tags) ? payload.tags : []);
     assign('openingHours', payload.openingHours ?? null);
+    assign(
+        'images',
+        Array.isArray(payload.images)
+            ? payload.images.map(normalizeImageItem).filter(Boolean)
+            : []
+    );
 
     if (!partial || hasOwn(payload, 'image')) {
         normalized.image = {

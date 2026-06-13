@@ -268,8 +268,8 @@ class _HelpSupportScreenState extends State<HelpSupportScreen>
                 Stack(
                   children: [
                     Container(
-                      width: 70,
-                      height: 70,
+                      width: 40,
+                      height: 40,
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         border: Border.all(

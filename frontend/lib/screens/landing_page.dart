@@ -431,12 +431,12 @@ class _LandingPageState extends State<LandingPage>
               Row(
                 children: [
                   Image.asset(
-                    'assets/images/logo.png',
-                    width: 96, // 3x of original 32!
-                    height: 96,
+                    'assets/images/logo-compact.png',
+                    width: 35,
+                    height: 35,
                     fit: BoxFit.contain,
                   ),
-                  const SizedBox(width: 16),
+                  const SizedBox(width: 12),
                   const Text(
                     'TourXport',
                     style: TextStyle(
@@ -926,9 +926,9 @@ class _LandingPageState extends State<LandingPage>
             ],
           ),
           child: Image.asset(
-            'assets/images/logo.png',
-            width: 160,
-            height: 160,
+            'assets/images/logo-compact.png',
+            width: 128,
+            height: 128,
           ),
         ),
       ),

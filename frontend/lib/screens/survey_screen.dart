@@ -372,11 +372,17 @@ class _SurveyScreenState extends State<SurveyScreen>
         ),
         child: Column(
           children: [
-            // Toggle button – fixed left edge
+            // Toggle button
             Padding(
-              padding: const EdgeInsets.only(top: 12, left: 4),
+              padding: EdgeInsets.only(
+                top: 20,
+                left: _isSidebarCollapsed ? 8 : 16,
+                right: _isSidebarCollapsed ? 8 : 16,
+              ),
               child: Align(
-                alignment: Alignment.centerLeft,
+                alignment: _isSidebarCollapsed
+                    ? Alignment.center
+                    : Alignment.centerRight,
                 child: IconButton(
                   icon: Icon(
                     _isSidebarCollapsed
@@ -412,9 +418,9 @@ class _SurveyScreenState extends State<SurveyScreen>
                       ],
                     ),
                     child: Image.asset(
-                      'assets/images/logo.png',
-                      width: 40,
-                      height: 40,
+                      'assets/images/logo-compact.png',
+                      width: 32,
+                      height: 32,
                       fit: BoxFit.contain,
                     ),
                   ),
@@ -437,13 +443,13 @@ class _SurveyScreenState extends State<SurveyScreen>
                         ],
                       ),
                       child: Image.asset(
-                        'assets/images/logo.png',
-                        width: 48,
-                        height: 48,
+                        'assets/images/logo-compact.png',
+                        width: 36,
+                        height: 36,
                         fit: BoxFit.contain,
                       ),
                     ),
-                    const SizedBox(width: 10),
+                    const SizedBox(width: 8),
                     const Expanded(
                       child: Text(
                         'TourXport',
