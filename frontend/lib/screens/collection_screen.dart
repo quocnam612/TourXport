@@ -9,40 +9,40 @@ import 'province_detail_screen.dart';
 
 /// Mapping of Vietnamese provinces to beautiful travel imagery from Unsplash.
 const Map<String, String> provinceDefaultImages = {
-  'Tuyên Quang': 'https://images.unsplash.com/photo-1621252179027-94459d278660?w=600&auto=format&fit=crop&q=60',
-  'Cao Bằng': 'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=600&auto=format&fit=crop&q=60',
-  'Lai Châu': 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&auto=format&fit=crop&q=60',
-  'Lào Cai': 'https://images.unsplash.com/photo-1508873699372-7aeab60b44ab?w=600&auto=format&fit=crop&q=60',
-  'Thái Nguyên': 'https://images.unsplash.com/photo-1518173946687-a4c8a3833927?w=600&auto=format&fit=crop&q=60',
-  'Điện Biên': 'https://images.unsplash.com/photo-1599940824399-b87987ceb72a?w=600&auto=format&fit=crop&q=60',
-  'Lạng Sơn': 'https://images.unsplash.com/photo-1528164344705-47542687000d?w=600&auto=format&fit=crop&q=60',
-  'Sơn La': 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&auto=format&fit=crop&q=60',
-  'Phú Thọ': 'https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=600&auto=format&fit=crop&q=60',
-  'TP. Hà Nội': 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&auto=format&fit=crop&q=60',
-  'TP. Hải Phòng': 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600&auto=format&fit=crop&q=60',
-  'Bắc Ninh': 'https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=600&auto=format&fit=crop&q=60',
-  'Quảng Ninh': 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=600&auto=format&fit=crop&q=60',
-  'Hưng Yên': 'https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=600&auto=format&fit=crop&q=60',
-  'Ninh Bình': 'https://images.unsplash.com/photo-1536431311719-398b6704d4cc?w=600&auto=format&fit=crop&q=60',
-  'Thanh Hóa': 'https://images.unsplash.com/photo-1472214222541-d510753a8707?w=600&auto=format&fit=crop&q=60',
-  'Nghệ An': 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&auto=format&fit=crop&q=60',
-  'Hà Tĩnh': 'https://images.unsplash.com/photo-1434064511983-18c6dae20ed5?w=600&auto=format&fit=crop&q=60',
-  'Quảng Trị': 'https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&auto=format&fit=crop&q=60',
-  'TP. Huế': 'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=600&auto=format&fit=crop&q=60',
-  'TP. Đà Nẵng': 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&auto=format&fit=crop&q=60',
-  'Quảng Ngãi': 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&auto=format&fit=crop&q=60',
-  'Gia Lai': 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&auto=format&fit=crop&q=60',
-  'Đắk Lắk': 'https://images.unsplash.com/photo-1527489377706-5bf97e608852?w=600&auto=format&fit=crop&q=60',
-  'Khánh Hòa': 'https://images.unsplash.com/photo-1540206351-d6465b3ac5c1?w=600&auto=format&fit=crop&q=60',
-  'Lâm Đồng': 'https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=600&auto=format&fit=crop&q=60',
-  'Đồng Nai': 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&auto=format&fit=crop&q=60',
-  'Tây Ninh': 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&auto=format&fit=crop&q=60',
-  'TP. Hồ Chí Minh': 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&auto=format&fit=crop&q=60',
-  'Đồng Tháp': 'https://images.unsplash.com/photo-1500627869374-13cd993b1115?w=600&auto=format&fit=crop&q=60',
-  'An Giang': 'https://images.unsplash.com/photo-1511497584788-876760111969?w=600&auto=format&fit=crop&q=60',
-  'Vĩnh Long': 'https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=60',
-  'TP. Cần Thơ': 'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=600&auto=format&fit=crop&q=60',
-  'Cà Mau': 'https://images.unsplash.com/photo-1470240731273-7821a6eeb6bd?w=600&auto=format&fit=crop&q=60',
+  'Tuyên Quang': 'assets/images/TuyenQuang.jpg',
+  'Cao Bằng': 'assets/images/CaoBang.jpg',
+  'Lai Châu': 'assets/images/LaiChau.jpg',
+  'Lào Cai': 'assets/images/LaoCai.jpg',
+  'Thái Nguyên': 'assets/images/ThaiNguyen.jpg',
+  'Điện Biên': 'assets/images/DienBien.jpg',
+  'Lạng Sơn': 'assets/images/LangSon.jpg',
+  'Sơn La': 'assets/images/SonLa.jpg',
+  'Phú Thọ': 'assets/images/PhuTho.jpg',
+  'TP. Hà Nội': 'assets/images/HaNoi.jpg',
+  'TP. Hải Phòng': 'assets/images/HaiPhong.jpg',
+  'Bắc Ninh': 'assets/images/BacNinh.jpg',
+  'Quảng Ninh': 'assets/images/QuangNinh.jpg',
+  'Hưng Yên': 'assets/images/HungYen.jpg',
+  'Ninh Bình': 'assets/images/NinhBinh.jpg',
+  'Thanh Hóa': 'assets/images/ThanhHoa.jpg',
+  'Nghệ An': 'assets/images/NgheAn.jpg',
+  'Hà Tĩnh': 'assets/images/HaTinh.jpg',
+  'Quảng Trị': 'assets/images/QuangTri.jpg',
+  'TP. Huế': 'assets/images/Hue.jpg',
+  'TP. Đà Nẵng': 'assets/images/DaNang.jpg',
+  'Quảng Ngãi': 'assets/images/QuangNgai.jpg',
+  'Gia Lai': 'assets/images/GiaLai.jpg',
+  'Đắk Lắk': 'assets/images/DakLak.jpg',
+  'Khánh Hòa': 'assets/images/KhanhHoa.jpg',
+  'Lâm Đồng': 'assets/images/LamDong.jpg',
+  'Đồng Nai': 'assets/images/DongNai.jpg',
+  'Tây Ninh': 'assets/images/TayNinh.jpg',
+  'TP. Hồ Chí Minh': 'assets/images/TPHoChiMinh.jpg',
+  'Đồng Tháp': 'assets/images/DongThap.jpg',
+  'An Giang': 'assets/images/AnGiang.jpg',
+  'Vĩnh Long': 'assets/images/VinhLong.jpg',
+  'TP. Cần Thơ': 'assets/images/CanTho.jpg',
+  'Cà Mau': 'assets/images/CaMau.jpg',
 };
 
 class CollectionScreen extends StatefulWidget {
@@ -440,7 +440,7 @@ class _CollectionScreenState extends State<CollectionScreen> {
             right: -20,
             bottom: -20,
             child: Icon(
-              Icons.collections_rounded,
+              Icons.map_rounded,
               size: 150,
               color: Colors.white.withOpacity(0.02),
             ),
@@ -613,7 +613,9 @@ class _ProvinceProgressCardState extends State<_ProvinceProgressCard> {
   @override
   Widget build(BuildContext context) {
     final pc = widget.collection;
-    final imageUrl = (pc.imageUrl != null && pc.imageUrl!.isNotEmpty) ? pc.imageUrl! : (provinceDefaultImages[pc.name] ?? '');
+    final imageUrl = (provinceDefaultImages[pc.name] != null && provinceDefaultImages[pc.name]!.isNotEmpty)
+        ? provinceDefaultImages[pc.name]!
+        : (pc.imageUrl ?? '');
     final percent = pc.totalPlaces > 0 ? (pc.visitedPlaces / pc.totalPlaces) : 0.0;
 
     return MouseRegion(

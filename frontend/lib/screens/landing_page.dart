@@ -159,6 +159,10 @@ class _LandingPageState extends State<LandingPage>
         timer.cancel();
         return;
       }
+      final isDesktop = MediaQuery.of(context).size.width >= 800;
+      if (!isDesktop) {
+        return;
+      }
       final nextIdx = (_currentIndex + 1) % sampleDestinations.length;
       _selectDestination(nextIdx, userInitiated: false);
     });
@@ -347,8 +351,18 @@ class _LandingPageState extends State<LandingPage>
       body: Stack(
         fit: StackFit.expand,
         children: [
-          _buildPreviousBackground(),
-          _buildCurrentBackground(),
+          Positioned.fill(
+            child: Image.asset(
+              'assets/images/login_bg.jpg',
+              fit: BoxFit.cover,
+            ),
+          ),
+          ClipRect(
+            child: BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 0.8, sigmaY: 0.8),
+              child: Container(color: Colors.transparent),
+            ),
+          ),
           _buildGradientOverlay(),
           _buildContent(context),
         ],
@@ -914,22 +928,38 @@ class _LandingPageState extends State<LandingPage>
       position: _logoSlide,
       child: FadeTransition(
         opacity: _logoFade,
-        child: Container(
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            boxShadow: [
-              BoxShadow(
-                color: const Color(0xFFD4AF7A).withOpacity(0.3),
-                blurRadius: 50,
-                spreadRadius: 10,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color(0xFFD4AF7A).withOpacity(0.3),
+                    blurRadius: 20,
+                    spreadRadius: 4,
+                  ),
+                ],
               ),
-            ],
-          ),
-          child: Image.asset(
-            'assets/images/logo-compact.png',
-            width: 128,
-            height: 128,
-          ),
+              child: Image.asset(
+                'assets/images/logo-compact.png',
+                width: 42,
+                height: 42,
+              ),
+            ),
+            const SizedBox(height: 10),
+            const Text(
+              'tourxport',
+              style: TextStyle(
+                fontFamily: 'Montserrat',
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+                letterSpacing: 1.0,
+              ),
+            ),
+          ],
         ),
       ),
     );

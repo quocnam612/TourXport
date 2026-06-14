@@ -459,7 +459,7 @@ class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> with Ti
             ),
             child: Column(
               children: [
-                _buildMockMenuItem(Icons.map_rounded, _getTranslation('Khám phá')),
+                _buildMockMenuItem(Icons.map_rounded, _getTranslation('Trang chủ')),
                 const SizedBox(height: 12),
                 _buildMockMenuItem(Icons.bookmark_rounded, _getTranslation('Đã lưu')),
                 const SizedBox(height: 20),
@@ -746,7 +746,7 @@ class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> with Ti
     if (_tempSelectedLanguage == 'vi') return text;
     // Simple mock translation for preview
     final maps = {
-      'Khám phá': {'en': 'Explore'},
+      'Trang chủ': {'en': 'Home'},
       'Đã lưu': {'en': 'Saved'},
       'Đặt ngay': {'en': 'Book Now'},
     };

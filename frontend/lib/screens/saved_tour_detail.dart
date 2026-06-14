@@ -927,14 +927,14 @@ class _SavedTourMainSidebar extends StatelessWidget {
                   fit: BoxFit.contain,
                 ),
               ),
-              const SizedBox(width: 14),
+              const SizedBox(width: 18),
               const Text(
                 'TourXport',
                 style: TextStyle(
                   fontFamily: 'Montserrat',
                   fontSize: 26,
                   fontWeight: FontWeight.w900,
-                  color: Color(0xFFD4AF7A),
+                  color: Colors.white,
                   letterSpacing: 1.2,
                 ),
               ),

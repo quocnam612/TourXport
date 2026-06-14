@@ -110,10 +110,10 @@ abstract class AppLocalizations {
   /// **'Chào mừng quay trở lại,'**
   String get welcome_back;
 
-  /// Thanh điều hướng Khám phá
+  /// Thanh điều hướng Trang chủ
   ///
   /// In vi, this message translates to:
-  /// **'Khám phá'**
+  /// **'Trang chủ'**
   String get explore;
 
   /// Thanh điều hướng Tìm kiếm

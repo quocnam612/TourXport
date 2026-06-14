@@ -8,9 +8,9 @@
   "@welcome_back": {
     "description": "Lời chào mừng"
   },
-  "explore": "Khám phá",
+  "explore": "Trang chủ",
   "@explore": {
-    "description": "Thanh điều hướng Khám phá"
+    "description": "Thanh điều hướng Trang chủ"
   },
   "search": "Tìm kiếm",
   "@search": {

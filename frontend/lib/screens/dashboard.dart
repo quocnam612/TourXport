@@ -5304,7 +5304,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     final isGuest = widget.authToken == null || widget.authToken!.isEmpty;
     final menuItems = [
       (Icons.home_rounded, AppLocalizations.of(context)!.explore),
-      (Icons.collections_rounded, _isVi ? 'Bộ sưu tập' : 'Collection'),
+      (Icons.map_rounded, _isVi ? 'Khám phá' : 'Explore'),
       (Icons.bookmark_rounded, AppLocalizations.of(context)!.saved),
       (Icons.explore_rounded, AppLocalizations.of(context)!.survey),
       (Icons.person_rounded, AppLocalizations.of(context)!.account),
@@ -5331,7 +5331,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               child: Align(
                 alignment: _isSidebarCollapsed
                     ? Alignment.center
-                    : Alignment.centerRight,
+                    : Alignment.centerLeft,
                 child: IconButton(
                   icon: Icon(
                     _isSidebarCollapsed
@@ -5400,7 +5400,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         fit: BoxFit.contain,
                       ),
                     ),
-                    const SizedBox(width: 8),
+                    const SizedBox(width: 12),
                     const Expanded(
                       child: Text(
                         'TourXport',
@@ -5411,7 +5411,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                           fontFamily: 'Montserrat',
                           fontSize: 22,
                           fontWeight: FontWeight.w900,
-                          color: Color(0xFFD4AF7A),
+                          color: Colors.white,
                           letterSpacing: 1.2,
                         ),
                       ),
@@ -5981,7 +5981,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   _buildRegionTabs(),
                   const SizedBox(height: 12),
                   Expanded(
-                    child: _buildSearchResultsGrid(),
+                    child: isDesktop
+                        ? _buildSearchResultsGrid()
+                        : _buildCardCarousel(size, useSearchResults: true),
                   ),
                 ],
               ),
@@ -7751,6 +7753,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Widget _buildCardCarousel(Size size, {bool useSearchResults = false}) {
+    final isDesktop = MediaQuery.of(context).size.width >= 800;
     final destinations =
         useSearchResults ? _searchDestinations : _exploreDestinations;
     final controller =
@@ -7828,16 +7831,17 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 );
               },
             ),
-            Positioned(
-              left: 0,
-              right: 0,
-              bottom: MediaQuery.paddingOf(context).bottom + 118,
-              child: Center(
-                child: _buildCarouselPageIndicator(
-                  useSearchResults: useSearchResults,
+            if (isDesktop)
+              Positioned(
+                left: 0,
+                right: 0,
+                bottom: MediaQuery.paddingOf(context).bottom + 118,
+                child: Center(
+                  child: _buildCarouselPageIndicator(
+                    useSearchResults: useSearchResults,
+                  ),
                 ),
               ),
-            ),
           ],
         ),
       ),
@@ -8170,7 +8174,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   Widget _buildBottomNav() {
     final items = [
       Icons.home_rounded,
-      Icons.collections_rounded,
+      Icons.map_rounded,
       Icons.bookmark_rounded,
       Icons.explore_rounded,
       Icons.person_rounded,

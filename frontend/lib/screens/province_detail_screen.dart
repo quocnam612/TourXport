@@ -337,7 +337,9 @@ class _ProvinceDetailScreenState extends State<ProvinceDetailScreen> with Ticker
     });
 
     // Background Image fallback
-    final provinceImgUrl = (pc.imageUrl != null && pc.imageUrl!.isNotEmpty) ? pc.imageUrl! : (provinceDefaultImages[pc.name] ?? '');
+    final provinceImgUrl = (provinceDefaultImages[pc.name] != null && provinceDefaultImages[pc.name]!.isNotEmpty)
+        ? provinceDefaultImages[pc.name]!
+        : (pc.imageUrl ?? '');
 
     // Calculate percentage if in Passport mode
     int unlockedCount = 0;

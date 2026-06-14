@@ -382,7 +382,7 @@ class _SurveyScreenState extends State<SurveyScreen>
               child: Align(
                 alignment: _isSidebarCollapsed
                     ? Alignment.center
-                    : Alignment.centerRight,
+                    : Alignment.centerLeft,
                 child: IconButton(
                   icon: Icon(
                     _isSidebarCollapsed
@@ -449,7 +449,7 @@ class _SurveyScreenState extends State<SurveyScreen>
                         fit: BoxFit.contain,
                       ),
                     ),
-                    const SizedBox(width: 8),
+                    const SizedBox(width: 12),
                     const Expanded(
                       child: Text(
                         'TourXport',
@@ -460,7 +460,7 @@ class _SurveyScreenState extends State<SurveyScreen>
                           fontFamily: 'Montserrat',
                           fontSize: 22,
                           fontWeight: FontWeight.w900,
-                          color: Color(0xFFD4AF7A),
+                          color: Colors.white,
                           letterSpacing: 1.2,
                         ),
                       ),
@@ -536,7 +536,7 @@ class _SurveyScreenState extends State<SurveyScreen>
                 children: [
                   _buildAppSidebarItem(
                     icon: Icons.home_rounded,
-                    label: isVi ? 'Khám phá' : 'Explore',
+                    label: isVi ? 'Trang chủ' : 'Home',
                     onTap: () => Navigator.pop(context, 'go_to_explore'),
                   ),
                   const SizedBox(height: 8),
