@@ -48,7 +48,7 @@ export const getHotels = async (req, res, next) => {
 
         const poolLimit = Math.min(limit * 3, 150);
         let [hotels, total] = await Promise.all([
-            HotelDB.find(filter).select(locationPublicProjection).skip(skip).limit(poolLimit),
+            HotelDB.find(filter).select(locationPublicProjection).sort(sort).skip(skip).limit(poolLimit),
             HotelDB.countDocuments(filter)
         ]);
 

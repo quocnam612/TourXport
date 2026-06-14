@@ -5,7 +5,6 @@ import '../models/passport_models.dart';
 import '../models/destination.dart';
 import '../services/passport_service.dart';
 import '../services/province_data_service.dart';
-import 'province_detail_screen.dart';
 
 /// Mapping of Vietnamese provinces to beautiful travel imagery from Unsplash.
 const Map<String, String> provinceDefaultImages = {
@@ -79,7 +78,7 @@ class _CollectionScreenState extends State<CollectionScreen> {
     _loadCollectionData();
   }
 
-  Future<void> _loadCollectionData() async {
+  Future<void> _loadCollectionData({bool forceRefresh = false}) async {
     if (mounted) {
       setState(() => _isLoading = true);
     }
@@ -90,7 +89,7 @@ class _CollectionScreenState extends State<CollectionScreen> {
 
     final cols = await ProvinceDataService.instance.getCollections(
       savedNames: unlockedNames,
-      forceRefresh: true,
+      forceRefresh: forceRefresh,
     );
 
     _totalProvincesVisited = cols.where((c) => c.visitedPlaces > 0).length;
@@ -234,7 +233,7 @@ class _CollectionScreenState extends State<CollectionScreen> {
     return RefreshIndicator(
       color: const Color(0xFFD4AF7A),
       backgroundColor: const Color(0xFF0D1B18),
-      onRefresh: _loadCollectionData,
+      onRefresh: () => _loadCollectionData(forceRefresh: true),
       child: CustomScrollView(
         physics: const BouncingScrollPhysics(),
         slivers: [
@@ -609,6 +608,7 @@ class _ProvinceProgressCard extends StatefulWidget {
 
 class _ProvinceProgressCardState extends State<_ProvinceProgressCard> {
   bool _isHovered = false;
+  bool _isLoadingDetails = false;
 
   @override
   Widget build(BuildContext context) {
@@ -623,32 +623,20 @@ class _ProvinceProgressCardState extends State<_ProvinceProgressCard> {
       onExit: (_) => setState(() => _isHovered = false),
       child: GestureDetector(
         onTap: () async {
-          await Navigator.push(
-            context,
-            PageRouteBuilder(
-              pageBuilder: (_, __, ___) => ProvinceDetailScreen(
-                collection: pc,
-                savedNames: PassportService.instance.getUnlockedNames(),
-                authToken: widget.authToken,
-                isPassportMode: true,
-              ),
-              transitionDuration: const Duration(milliseconds: 400),
-              reverseTransitionDuration: const Duration(milliseconds: 300),
-              transitionsBuilder: (_, anim, __, child) {
-                return FadeTransition(
-                  opacity: CurvedAnimation(parent: anim, curve: Curves.easeOut),
-                  child: SlideTransition(
-                    position: Tween<Offset>(
-                      begin: const Offset(0, 0.06),
-                      end: Offset.zero,
-                    ).animate(CurvedAnimation(parent: anim, curve: Curves.easeOutCubic)),
-                    child: child,
-                  ),
-                );
-              },
-            ),
-          );
-          widget.onBackFromDetail();
+          if (_isLoadingDetails) return;
+          setState(() => _isLoadingDetails = true);
+          try {
+            await Navigator.pushNamed(
+              context,
+              provinceExplorePath(pc.name),
+              arguments: {'authToken': widget.authToken},
+            );
+          } finally {
+            if (mounted) {
+              setState(() => _isLoadingDetails = false);
+              widget.onBackFromDetail();
+            }
+          }
         },
         child: Container(
           decoration: BoxDecoration(
@@ -682,23 +670,24 @@ class _ProvinceProgressCardState extends State<_ProvinceProgressCard> {
                   color: Colors.black.withOpacity(_isHovered ? 0.35 : 0.55),
                 ),
 
-                // Text and Progress bars
                 Padding(
                   padding: const EdgeInsets.all(12),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      // Lock/Unlock indicator
                       Align(
                         alignment: Alignment.topRight,
                         child: Icon(
-                          pc.visitedPlaces > 0 ? Icons.vpn_key_rounded : Icons.lock_outline_rounded,
-                          color: pc.visitedPlaces > 0 ? const Color(0xFFD4AF7A) : Colors.white24,
+                          pc.visitedPlaces > 0
+                              ? Icons.vpn_key_rounded
+                              : Icons.lock_outline_rounded,
+                          color: pc.visitedPlaces > 0
+                              ? const Color(0xFFD4AF7A)
+                              : Colors.white24,
                           size: 14,
                         ),
                       ),
-                      
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -711,7 +700,9 @@ class _ProvinceProgressCardState extends State<_ProvinceProgressCard> {
                               fontSize: 14,
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
-                              shadows: [Shadow(color: Colors.black, blurRadius: 4)],
+                              shadows: [
+                                Shadow(color: Colors.black, blurRadius: 4),
+                              ],
                             ),
                           ),
                           const SizedBox(height: 6),
@@ -739,14 +730,15 @@ class _ProvinceProgressCardState extends State<_ProvinceProgressCard> {
                             ],
                           ),
                           const SizedBox(height: 4),
-                          // Mini Progress Bar
                           ClipRRect(
                             borderRadius: BorderRadius.circular(2),
                             child: LinearProgressIndicator(
                               value: percent,
                               backgroundColor: Colors.white24,
                               valueColor: AlwaysStoppedAnimation<Color>(
-                                pc.visitedPlaces > 0 ? const Color(0xFFD4AF7A) : Colors.white54,
+                                pc.visitedPlaces > 0
+                                    ? const Color(0xFFD4AF7A)
+                                    : Colors.white54,
                               ),
                               minHeight: 4,
                             ),
@@ -756,6 +748,20 @@ class _ProvinceProgressCardState extends State<_ProvinceProgressCard> {
                     ],
                   ),
                 ),
+                if (_isLoadingDetails)
+                  Container(
+                    color: Colors.black.withOpacity(0.45),
+                    child: const Center(
+                      child: SizedBox(
+                        width: 24,
+                        height: 24,
+                        child: CircularProgressIndicator(
+                          strokeWidth: 2,
+                          color: Color(0xFFD4AF7A),
+                        ),
+                      ),
+                    ),
+                  ),
               ],
             ),
           ),

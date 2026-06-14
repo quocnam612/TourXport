@@ -48,7 +48,7 @@ export const getRestaurants = async (req, res, next) => {
 
         const poolLimit = Math.min(limit * 3, 150);
         let [restaurants, total] = await Promise.all([
-            RestaurantDB.find(filter).select(locationPublicProjection).skip(skip).limit(poolLimit),
+            RestaurantDB.find(filter).select(locationPublicProjection).sort(sort).skip(skip).limit(poolLimit),
             RestaurantDB.countDocuments(filter)
         ]);
 

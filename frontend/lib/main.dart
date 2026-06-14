@@ -7,10 +7,14 @@ import 'l10n/app_localizations.dart';
 import 'api/api.dart';
 import 'utils/locale_manager.dart';
 import 'utils/auth_storage.dart';
+import 'models/province_collection.dart';
+import 'services/passport_service.dart';
+import 'services/province_data_service.dart';
 import 'screens/landing_page.dart';
 import 'screens/sign_in.dart';
 import 'screens/sign_up.dart';
 import 'screens/dashboard.dart';
+import 'screens/province_detail_screen.dart';
 import 'screens/legal/contact_support_screen.dart';
 import 'screens/legal/instruction_screen.dart';
 import 'screens/legal/privacy_policy_screen.dart';
@@ -86,6 +90,74 @@ class _TourXportAppState extends State<TourXportApp> {
     );
   }
 
+  Future<ProvinceCollection> _loadProvinceDetail(String provinceName) async {
+    await PassportService.instance.init();
+    final savedNames = PassportService.instance.getUnlockedNames();
+    return ProvinceDataService.instance.getCollectionDetails(
+      provinceName,
+      savedNames: savedNames,
+    );
+  }
+
+  MaterialPageRoute _provinceDetailRoute(
+    RouteSettings settings,
+    String provinceName,
+  ) {
+    final args = settings.arguments;
+    String? authToken = widget.initialToken;
+
+    if (args is Map) {
+      authToken = args['authToken'] as String? ?? authToken;
+    } else if (args is String) {
+      authToken = args;
+    }
+
+    final detailFuture = _loadProvinceDetail(provinceName);
+
+    return MaterialPageRoute(
+      settings: settings,
+      builder: (_) => FutureBuilder<ProvinceCollection>(
+        future: detailFuture,
+        builder: (context, snapshot) {
+          if (snapshot.hasData) {
+            return ProvinceDetailScreen(
+              collection: snapshot.data!,
+              savedNames: PassportService.instance.getUnlockedNames(),
+              authToken: authToken,
+              isPassportMode: true,
+            );
+          }
+
+          if (snapshot.hasError) {
+            return Scaffold(
+              backgroundColor: const Color(0xFF0C1412),
+              appBar: AppBar(
+                backgroundColor: const Color(0xFF0C1412),
+                foregroundColor: Colors.white,
+              ),
+              body: const Center(
+                child: Text(
+                  'Không tải được dữ liệu tỉnh.',
+                  style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    color: Colors.white70,
+                  ),
+                ),
+              ),
+            );
+          }
+
+          return const Scaffold(
+            backgroundColor: Color(0xFF0C1412),
+            body: Center(
+              child: CircularProgressIndicator(color: Color(0xFFD4AF7A)),
+            ),
+          );
+        },
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder<Locale>(
@@ -146,6 +218,19 @@ class _TourXportAppState extends State<TourXportApp> {
 
               if (routeName == '/search') {
                 return _homeRoute(settings, 1);
+              }
+
+              if (routeName == '/explore') {
+                return _homeRoute(settings, 1);
+              }
+
+              if (routeName.startsWith('/explore/')) {
+                final provinceSlug =
+                    uri.pathSegments.length >= 2 ? uri.pathSegments[1] : '';
+                final provinceName = provinceNameFromExploreSlug(provinceSlug);
+                if (provinceName != null) {
+                  return _provinceDetailRoute(settings, provinceName);
+                }
               }
 
               if (routeName == '/saved') {

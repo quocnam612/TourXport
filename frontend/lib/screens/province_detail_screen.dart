@@ -27,7 +27,10 @@ class ProvinceDetailScreen extends StatefulWidget {
 }
 
 class _ProvinceDetailScreenState extends State<ProvinceDetailScreen> with TickerProviderStateMixin {
+  static const int _itemsPerPage = 25;
+
   late Set<String> _localSavedNames;
+  int _currentPage = 0;
   double _gpsLat = 21.0285; // Fallback to Hanoi
   double _gpsLon = 105.8542;
   bool _hasGps = false;
@@ -320,6 +323,76 @@ class _ProvinceDetailScreenState extends State<ProvinceDetailScreen> with Ticker
     );
   }
 
+  Widget _paginationArrow({
+    required IconData icon,
+    required bool enabled,
+    required VoidCallback onTap,
+  }) {
+    return GestureDetector(
+      onTap: enabled ? onTap : null,
+      child: Container(
+        width: 36,
+        height: 36,
+        decoration: BoxDecoration(
+          color: Colors.black.withOpacity(enabled ? 0.34 : 0.16),
+          shape: BoxShape.circle,
+          border: Border.all(color: Colors.white.withOpacity(0.14)),
+        ),
+        child: Icon(
+          icon,
+          color: enabled ? Colors.white : Colors.white.withOpacity(0.32),
+          size: 22,
+        ),
+      ),
+    );
+  }
+
+  Widget _buildPaginationControls({
+    required int currentPage,
+    required int totalPages,
+  }) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        _paginationArrow(
+          icon: Icons.chevron_left_rounded,
+          enabled: currentPage > 0,
+          onTap: () => setState(() => _currentPage = currentPage - 1),
+        ),
+        ClipRRect(
+          borderRadius: BorderRadius.circular(999),
+          child: BackdropFilter(
+            filter: ImageFilter.blur(sigmaX: 14, sigmaY: 14),
+            child: Container(
+              margin: const EdgeInsets.symmetric(horizontal: 10),
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+              decoration: BoxDecoration(
+                color: Colors.black.withOpacity(0.34),
+                borderRadius: BorderRadius.circular(999),
+                border: Border.all(color: Colors.white.withOpacity(0.16)),
+              ),
+              child: Text(
+                '${currentPage + 1}/$totalPages',
+                style: const TextStyle(
+                  fontFamily: 'Montserrat',
+                  fontSize: 12,
+                  fontWeight: FontWeight.w800,
+                  color: Colors.white,
+                  height: 1.0,
+                ),
+              ),
+            ),
+          ),
+        ),
+        _paginationArrow(
+          icon: Icons.chevron_right_rounded,
+          enabled: currentPage < totalPages - 1,
+          onTap: () => setState(() => _currentPage = currentPage + 1),
+        ),
+      ],
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final pc = widget.collection;
@@ -347,6 +420,15 @@ class _ProvinceDetailScreenState extends State<ProvinceDetailScreen> with Ticker
       unlockedCount = places.where((d) => PassportService.instance.isUnlocked(d.name)).length;
     }
     final percent = places.isNotEmpty ? (unlockedCount / places.length) : 0.0;
+    final totalPages = places.isEmpty ? 1 : ((places.length + _itemsPerPage - 1) ~/ _itemsPerPage);
+    final currentPage = _currentPage < 0
+        ? 0
+        : (_currentPage >= totalPages ? totalPages - 1 : _currentPage);
+    final startIndex = places.isEmpty ? 0 : currentPage * _itemsPerPage;
+    final endIndex = places.isEmpty
+        ? 0
+        : (startIndex + _itemsPerPage > places.length ? places.length : startIndex + _itemsPerPage);
+    final pagePlaces = places.isEmpty ? <Destination>[] : places.sublist(startIndex, endIndex);
 
     return Scaffold(
       backgroundColor: const Color(0xFF0C1412),
@@ -497,7 +579,7 @@ class _ProvinceDetailScreenState extends State<ProvinceDetailScreen> with Ticker
             )
           else
             SliverPadding(
-              padding: const EdgeInsets.fromLTRB(24, 0, 24, 100),
+              padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
               sliver: SliverLayoutBuilder(
                 builder: (context, constraints) {
                   final minCardWidth = isDesktop ? 200.0 : 150.0;
@@ -519,7 +601,7 @@ class _ProvinceDetailScreenState extends State<ProvinceDetailScreen> with Ticker
                     ),
                     delegate: SliverChildBuilderDelegate(
                       (context, index) {
-                        final place = places[index];
+                        final place = pagePlaces[index];
                         final bool isUnlocked = !widget.isPassportMode || 
                             PassportService.instance.isUnlocked(place.name);
 
@@ -531,10 +613,20 @@ class _ProvinceDetailScreenState extends State<ProvinceDetailScreen> with Ticker
                           onTap: () => _handlePlaceCardTap(place),
                         );
                       },
-                      childCount: places.length,
+                      childCount: pagePlaces.length,
                     ),
                   );
                 },
+              ),
+            ),
+          if (places.isNotEmpty && totalPages > 1)
+            SliverToBoxAdapter(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(24, 0, 24, 100),
+                child: _buildPaginationControls(
+                  currentPage: currentPage,
+                  totalPages: totalPages,
+                ),
               ),
             ),
         ],

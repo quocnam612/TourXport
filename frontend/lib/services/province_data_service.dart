@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../api/api.dart';
 import '../models/destination.dart';
 import '../models/province_collection.dart';
@@ -42,114 +43,391 @@ const List<String> collectionProvinces = [
   'Cà Mau',
 ];
 
-/// Maps province display names to the backend `city` query values.
-/// The backend stores provinces with their Vietnamese diacritics as the `city`
-/// field, and also recognises some English variants.  This map covers the 34
-/// collection provinces so we can build accurate API queries.
-const Map<String, List<String>> _provinceQueryAliases = {
-  'Tuyên Quang': ['Tuyên Quang', 'Tuyen Quang'],
-  'Cao Bằng': ['Cao Bằng', 'Cao Bang', 'Bao Lac', 'Dam Thuy', 'Pac Bo', 'Phuc Sen', 'Tỉnh Cao Bằng', 'Trung Khanh', 'Truong Ha'],
-  'Lai Châu': ['Lai Châu', 'Lai Chau', 'Lai Châu, Tỉnh Lai Châu', 'Phong Tho', 'Phong Tho, Tỉnh Lai Châu', 'Sin Sui Ho, Tỉnh Lai Châu', 'Tam Đường', 'Tam Đường, Tỉnh Lai Châu'],
-  'Lào Cai': ['Lào Cai', 'Lao Cai', 'Sapa', 'Bắc Hà', 'Hau Thao', 'La Pan Tan', 'La Pan Tan, Tỉnh Lào Cai', 'Lào Cai', 'Lào Cai, Tỉnh Lào Cai', 'Lao Chai', 'Mu Cang Chai', 'San Sa Ho', 'Sapa, Tỉnh Lào Cai', 'Su Pan', 'Ta Phin', 'Ta Van', 'Tỉnh Lào Cai'],
-  'Thái Nguyên': ['Thái Nguyên', 'Thai Nguyen', 'Đồng Tiến', 'Thái Nguyên'],
-  'Điện Biên': ['Điện Biên', 'Dien Bien', 'Điện Biên Phủ', 'Muong Lay', 'Muong Phan', 'Tuần Giáo'],
-  'Lạng Sơn': ['Lạng Sơn', 'Lang Son', 'Bac Son', 'Huu Lien'],
-  'Sơn La': ['Sơn La', 'Son La', 'Bac Yen', 'Bac Yen, Tỉnh Sơn La', 'Chieng On', 'Mộc Châu', 'Mộc Châu, Tỉnh Sơn La', 'Muong Sang', 'Muong Sang, Tỉnh Sơn La', 'Ngoc Chien', 'Phieng Luong, Tỉnh Sơn La', 'Sơn La, Tỉnh Sơn La', 'Ta Xua', 'Ta Xua, Bac Yen, Tỉnh Sơn La', 'Van Ho', 'Van Ho, Tỉnh Sơn La'],
-  'Phú Thọ': ['Phú Thọ', 'Phu Tho', 'Ba Vi', 'Hien Luong', 'Thanh Thuy', 'Viet Tri', 'Xuan Dai'],
-  'TP. Hà Nội': ['Hà Nội', 'Hanoi', 'Ha Noi', 'Ba Dinh', 'Ba Vi', 'Bắc Từ Liêm', 'Cau Giay', 'Dong Da', 'Gia Lam', 'Ha Dong', 'Hai Ba Trung', 'Hoai Duc', 'Hoan Kiem', 'Hoang Mai', 'Long Bien', 'Mai Dinh', 'Me Tri', 'Nam Từ Liêm', 'Son Tay', 'Tay Ho', 'Thành phố Hà Nội', 'Thanh Xuan', 'TP. Hà Nội', 'Tu Liem'],
-  'TP. Hải Phòng': ['Hải Phòng', 'Hai Phong', 'Cat Ba Town', 'Cat Hai', 'Do Son', 'Gia Luan', 'Hong Bang', 'Hung Thang', 'Le Chan', 'Thành phố Hải Phòng', 'Thành phố Hải Phòng', 'TP. Hải Phòng', 'Tran Chau'],
-  'Bắc Ninh': ['Bắc Ninh', 'Bac Ninh', 'Đình Bảng', 'Tỉnh Bắc Ninh', 'Tu Son'],
-  'Quảng Ninh': ['Quảng Ninh', 'Quang Ninh', 'Bai Chay', 'Cai Rong', 'Cam Pha', 'Dong Trieu', 'Ha Long City', 'Hong Hai', 'Hung Thang', 'Móng Cái', 'Quan Lạn', 'Quang Châu', 'Tỉnh Quảng Ninh', 'Uong Bi', 'Van Don', 'Vịnh Hạ Long'],
-  'Hưng Yên': ['Hưng Yên', 'Hung Yen', 'Dong Da', 'Hai Ba Trung', 'Hoang Mai', 'Long Bien', 'Phung Cong', 'Tam Tien', 'Van Giang'],
-  'Ninh Bình': ['Ninh Bình', 'Ninh Binh', 'Gia Sinh', 'Gia Sinh, Tỉnh Ninh Bình', 'Gia Van', 'Gia Vien', 'Hoa Lu', 'Khe Ha', 'Kỳ Phú', 'Ninh An', 'Ninh Bình', 'Ninh Bình, Tỉnh Ninh Bình', 'Ninh Hai', 'Ninh Hai, Huyện Hoa Lư, Tỉnh Ninh Bình', 'Ninh Hoa, Huyện Hoa Lư, Tỉnh Ninh Bình', 'Ninh Thang', 'Ninh Xuân', 'Ninh Xuân, Huyện Hoa Lư, Tỉnh Ninh Bình', 'Tam Diep', 'Thien Ton', 'Tỉnh Ninh Bình', 'Truong Yen', 'Truong Yen, Huyện Hoa Lư, Tỉnh Ninh Bình', 'Van Phuong'],
-  'Thanh Hóa': ['Thanh Hóa', 'Thanh Hoa', 'Ba Thuoc', 'Cam Luong', 'Co Lung', 'Hải Hòa', 'Hoang Hoa', 'Hoang Tien', 'Nga Thien', 'Nghi Son', 'Sầm Sơn', 'Thanh Hóa', 'Thanh Lam', 'Thanh Son', 'Thanh Yen', 'Tinh Gia District', 'Tỉnh Thanh Hóa', 'Tri Nang', 'Trieu Loc', 'Vinh Long', 'Vinh Tien'],
-  'Nghệ An': ['Nghệ An', 'Nghe An', 'Con Cuong', 'Cửa Lò', 'Diễn Châu', 'Diễn Thành', 'Hoang Mai', 'Hung Thịnh', 'Kim Lien', 'Mon Son', 'Nghi Yen', 'Nghia Thuan', 'Que Phong', 'Quy Hop', 'Quynh Nghia', 'Thai Hoa', 'Thanh An', 'Tỉnh Nghệ An', 'Tràng Sơn', 'Vinh'],
-  'Hà Tĩnh': ['Hà Tĩnh', 'Ha Tinh', 'Duc Tho', 'Kỳ Anh', 'Phuong Dien', 'Thiên Cầm'],
-  'Quảng Trị': ['Quảng Trị', 'Quang Tri', 'Đông Hà', 'Hai Phu', 'Khe Sanh', 'Lao Bảo', 'Tan Hop', 'Vinh Linh', 'Vinh Truong'],
-  'TP. Huế': ['Huế', 'Hue', 'Thừa Thiên Huế', 'Thua Thien Hue', 'Cu Du', 'Cu Du, Loc Vinh, Phu Loc District, Tỉnh Thừa Thiên - Huế', 'Huế', 'Huế, Tỉnh Thừa Thiên - Huế', 'Huong Thuy', 'Khe Tre', 'Lăng Cô', 'Loc Vinh, Phu Loc District, Tỉnh Thừa Thiên - Huế', 'Lộc Tiễn', 'Phong Son', 'Phú Bài', 'Phú Dương', 'Phú Dương, Tỉnh Thừa Thiên - Huế', 'Phú Lộc', 'Phú Lộc, Phu Loc District, Tỉnh Thừa Thiên - Huế', 'Quảng Lợi', 'Thành phố Huế', 'Thi Tran A Luoi', 'Tỉnh Thừa Thiên - Huế', 'TP. Huế', 'Vinh An'],
-  'TP. Đà Nẵng': ['Đà Nẵng', 'Da Nang', 'An Hai', 'An Hai Bac', 'An Hai Bac, Son Tra Peninsula, Đà Nẵng', 'An Hai Dong', 'An Hai Tay', 'An Hai, Son Tra Peninsula, Đà Nẵng', 'Đà Nẵng', 'Điện Bàn', 'Điện Bàn, Đà Nẵng', 'Hai Chau', 'Hai Chau, Đà Nẵng', 'Hoa Hai', 'Hoa Hai, Đà Nẵng', 'Hoa Hiep Bac', 'Hoà Khánh Bắc', 'Hòa Phú', 'Lien Chieu', 'Man Thai, Son Tra Peninsula, Đà Nẵng', 'My An', 'My An, Đà Nẵng', 'Nai Hien Dong', 'Ngu Hanh Son', 'Ngu Hanh Son, Đà Nẵng', 'Phuoc My', 'Phuoc My, Son Tra Peninsula, Đà Nẵng', 'Son Tra Peninsula', 'Son Tra Peninsula, Đà Nẵng', 'Thanh Khe', 'Thành phố Đà Nẵng', 'Tho Quang', 'Tho Quang, Son Tra Peninsula, Đà Nẵng', 'TP. Đà Nẵng'],
-  'Quảng Ngãi': ['Quảng Ngãi', 'Quang Ngai', 'Quảng Ngãi', 'Tỉnh Quảng Ngãi'],
-  'Gia Lai': ['Gia Lai', 'Chu Jor', 'Pleiku', 'Thi Xa An Khe'],
-  'Đắk Lắk': ['Đắk Lắk', 'Dak Lak', 'An Chan', 'An Mỹ', 'An Ninh Dong', 'Buôn Ma Thuột', 'Ea Huar', 'Hoa Tam', 'Krong Bong', 'Liên Sơn', 'Phu My', 'Quang Tien', 'Thị trấn Sông Cầu', 'Tỉnh Đắk Lắk', 'Tuy Hòa', 'Xuan Thinh'],
-  'Khánh Hòa': ['Khánh Hòa', 'Khanh Hoa', 'Nha Trang', 'Cam Đức', 'Cam Hải Đông', 'Cam Hải Đông, Cam Lâm District, Khánh Hòa', 'Cam Hai Tay', 'Cam Ranh', 'Dien Dien', 'Dien Hoa', 'Dien Thọ', 'Dốc Lết', 'Khánh Hòa', 'Khanh Phu', 'Khanh Vinh', 'Nha Trang, Khánh Hòa', 'Ninh Hai, Ninh Hoa, Khánh Hòa', 'Ninh Hiep', 'Ninh Hoa', 'Ninh Phước', 'Ninh Vân, Ninh Hoa, Khánh Hòa', 'Van Ninh'],
-  'Lâm Đồng': ['Lâm Đồng', 'Lam Dong', 'Đà Lạt', 'Da Lat', 'Bảo Lộc', 'Dalat', 'Di Linh', 'Đà Lạt', 'Gia Lam', 'Lac Duong', 'Lat', 'Lâm Đồng', 'Lien Nghia', 'Madagui Town', 'Me Linh', 'Nam Ban', 'Phi To', 'Phuong 8', 'Ta Nung', 'Thị Tran Nam Ban', 'Tỉnh Lâm Đồng', 'Tu Tra'],
-  'Đồng Nai': ['Đồng Nai', 'Dong Nai', 'Biên Hòa', 'Doc Mo', 'Gia Tan 1', 'Gia Tan 2', 'Long Giao', 'Long Khánh', 'Long Thanh', 'Nam Cát Tiên', 'Nhon Trach', 'Phú Hữu', 'Quan Tom', 'Quang Trung', 'Tan Phu', 'Thái Thiên', 'Tỉnh Đồng Nai', 'Trảng Bom', 'Vinh Thanh', 'Xa Bang', 'Xuân Phú'],
-  'Tây Ninh': ['Tây Ninh', 'Tay Ninh', 'Go Dau Ha', 'Trang Bang'],
-  'TP. Hồ Chí Minh': ['TP. Hồ Chí Minh', 'Ho Chi Minh City', 'Hồ Chí Minh', 'Sai Gon', 'Sài Gòn', 'Thành phố Hồ Chí Minh', 'TP Hồ Chí Minh'],
-  'Đồng Tháp': ['Đồng Tháp', 'Dong Thap', 'Cao Lãnh', 'Hong Ngu', 'Sa Đéc', 'Tram Chim'],
-  'An Giang': ['An Giang', 'An Phu', 'Châu Đốc', 'Châu Đốc, Tỉnh An Giang', 'Long Xuyên', 'Long Xuyên, Tỉnh An Giang', 'Nui To', 'Tỉnh An Giang', 'Tinh Bien', 'Tinh Bien, Tỉnh An Giang'],
-  'Vĩnh Long': ['Vĩnh Long', 'Vinh Long', 'Bình Hòa Phước', 'Bình Minh', 'Cái Bè', 'Ninh Kieu', 'Tỉnh Vĩnh Long', 'Vĩnh Long'],
-  'TP. Cần Thơ': ['TP. Cần Thơ', 'Cần Thơ', 'Can Tho', 'Cần Thơ', 'Ninh Kieu', 'Thành phố Cần Thơ'],
-  'Cà Mau': ['Cà Mau', 'Ca Mau', 'Ap Da Bac, Tỉnh Cà Mau, Đồng bằng Mekong', 'Cà Mau', 'Cà Mau, Tỉnh Cà Mau, Đồng bằng Mekong', 'Năm Căn', 'Năm Căn, Tỉnh Cà Mau, Đồng bằng Mekong', 'Tỉnh Cà Mau, Đồng bằng Mekong'],
+const Map<String, String> collectionProvinceSlugs = {
+  'Tuyên Quang': 'tuyen-quang',
+  'Cao Bằng': 'cao-bang',
+  'Lai Châu': 'lai-chau',
+  'Lào Cai': 'lao-cai',
+  'Thái Nguyên': 'thai-nguyen',
+  'Điện Biên': 'dien-bien',
+  'Lạng Sơn': 'lang-son',
+  'Sơn La': 'son-la',
+  'Phú Thọ': 'phu-tho',
+  'TP. Hà Nội': 'ha-noi',
+  'TP. Hải Phòng': 'hai-phong',
+  'Bắc Ninh': 'bac-ninh',
+  'Quảng Ninh': 'quang-ninh',
+  'Hưng Yên': 'hung-yen',
+  'Ninh Bình': 'ninh-binh',
+  'Thanh Hóa': 'thanh-hoa',
+  'Nghệ An': 'nghe-an',
+  'Hà Tĩnh': 'ha-tinh',
+  'Quảng Trị': 'quang-tri',
+  'TP. Huế': 'hue',
+  'TP. Đà Nẵng': 'da-nang',
+  'Quảng Ngãi': 'quang-ngai',
+  'Gia Lai': 'gia-lai',
+  'Đắk Lắk': 'dak-lak',
+  'Khánh Hòa': 'khanh-hoa',
+  'Lâm Đồng': 'lam-dong',
+  'Đồng Nai': 'dong-nai',
+  'Tây Ninh': 'tay-ninh',
+  'TP. Hồ Chí Minh': 'ho-chi-minh',
+  'Đồng Tháp': 'dong-thap',
+  'An Giang': 'an-giang',
+  'Vĩnh Long': 'vinh-long',
+  'TP. Cần Thơ': 'can-tho',
+  'Cà Mau': 'ca-mau',
 };
+
+String provinceExplorePath(String provinceName) =>
+    '/explore/${collectionProvinceSlugs[provinceName] ?? provinceName}';
+
+String? provinceNameFromExploreSlug(String slug) {
+  final normalized = slug.trim().toLowerCase();
+  for (final entry in collectionProvinceSlugs.entries) {
+    if (entry.value == normalized) {
+      return entry.key;
+    }
+  }
+  return null;
+}
+
+/// Maps the 34 collection provinces to backend `city` queries. The backend then
+/// expands each query with its own city/district aliases from parser.js.
+const Map<String, List<String>> _provinceCityQueries = {
+  'Tuyên Quang': ['Tuyên Quang', 'Hà Giang'],
+  'Cao Bằng': ['Cao Bằng'],
+  'Lai Châu': ['Lai Châu'],
+  'Lào Cai': ['Lào Cai', 'Yên Bái'],
+  'Thái Nguyên': ['Thái Nguyên', 'Bắc Kạn'],
+  'Điện Biên': ['Điện Biên'],
+  'Lạng Sơn': ['Lạng Sơn'],
+  'Sơn La': ['Sơn La'],
+  'Phú Thọ': ['Phú Thọ', 'Vĩnh Phúc', 'Hòa Bình'],
+  'TP. Hà Nội': ['TP. Hà Nội'],
+  'TP. Hải Phòng': ['TP. Hải Phòng', 'Hải Dương'],
+  'Bắc Ninh': ['Bắc Ninh', 'Bắc Giang'],
+  'Quảng Ninh': ['Quảng Ninh'],
+  'Hưng Yên': ['Hưng Yên', 'Thái Bình'],
+  'Ninh Bình': ['Ninh Bình', 'Hà Nam', 'Nam Định'],
+  'Thanh Hóa': ['Thanh Hóa'],
+  'Nghệ An': ['Nghệ An'],
+  'Hà Tĩnh': ['Hà Tĩnh'],
+  'Quảng Trị': ['Quảng Trị', 'Quảng Bình'],
+  'TP. Huế': ['TP. Huế', 'Thừa Thiên Huế'],
+  'TP. Đà Nẵng': ['TP. Đà Nẵng', 'Quảng Nam'],
+  'Quảng Ngãi': ['Quảng Ngãi', 'Kon Tum'],
+  'Gia Lai': ['Gia Lai', 'Bình Định'],
+  'Đắk Lắk': ['Đắk Lắk', 'Phú Yên'],
+  'Khánh Hòa': ['Khánh Hòa', 'Ninh Thuận'],
+  'Lâm Đồng': ['Lâm Đồng', 'Bình Thuận', 'Đắk Nông'],
+  'Đồng Nai': ['Đồng Nai', 'Bình Phước'],
+  'Tây Ninh': ['Tây Ninh', 'Long An'],
+  'TP. Hồ Chí Minh': [
+    'TP. Hồ Chí Minh',
+    'Bình Dương',
+    'Bà Rịa - Vũng Tàu',
+  ],
+  'Đồng Tháp': ['Đồng Tháp', 'Tiền Giang'],
+  'An Giang': ['An Giang', 'Kiên Giang'],
+  'Vĩnh Long': ['Vĩnh Long', 'Bến Tre', 'Trà Vinh'],
+  'TP. Cần Thơ': ['TP. Cần Thơ', 'Hậu Giang', 'Sóc Trăng'],
+  'Cà Mau': ['Cà Mau', 'Bạc Liêu'],
+};
+
+const Map<String, int> _provincePlaceLimits = {
+  'Tuyên Quang': 40,
+  'Cao Bằng': 20,
+  'Lai Châu': 10,
+  'Lào Cai': 60,
+  'Thái Nguyên': 10,
+  'Điện Biên': 10,
+  'Lạng Sơn': 10,
+  'Sơn La': 15,
+  'Phú Thọ': 30,
+  'TP. Hà Nội': 300,
+  'TP. Hải Phòng': 60,
+  'Bắc Ninh': 15,
+  'Quảng Ninh': 50,
+  'Hưng Yên': 20,
+  'Ninh Bình': 80,
+  'Thanh Hóa': 36,
+  'Nghệ An': 30,
+  'Hà Tĩnh': 10,
+  'Quảng Trị': 50,
+  'TP. Huế': 90,
+  'TP. Đà Nẵng': 200,
+  'Quảng Ngãi': 30,
+  'Gia Lai': 45,
+  'Đắk Lắk': 40,
+  'Khánh Hòa': 120,
+  'Lâm Đồng': 100,
+  'Đồng Nai': 15,
+  'Tây Ninh': 10,
+  'TP. Hồ Chí Minh': 400,
+  'Đồng Tháp': 10,
+  'An Giang': 90,
+  'Vĩnh Long': 15,
+  'TP. Cần Thơ': 25,
+  'Cà Mau': 10,
+};
+
+const List<String> _collectionEndpoints = [
+  '/locations',
+  '/restaurants',
+  '/hotels',
+];
+
+String _typeForEndpoint(String endpoint) {
+  switch (endpoint) {
+    case '/restaurants':
+      return 'Nhà hàng';
+    case '/hotels':
+      return 'Khách sạn';
+    default:
+      return 'Địa điểm';
+  }
+}
+
+class _ProvinceEndpointResult {
+  final List<Destination> items;
+  final int totalPages;
+
+  const _ProvinceEndpointResult({
+    this.items = const [],
+    this.totalPages = 1,
+  });
+}
 
 class ProvinceDataService {
   // Singleton
   ProvinceDataService._();
   static final ProvinceDataService instance = ProvinceDataService._();
 
-  List<ProvinceCollection>? _cache;
-  bool _isLoading = false;
+  static const String _detailCachePrefix = 'province_collection_detail_v2_';
+  static const String _detailCacheTimePrefix = 'province_collection_detail_time_v2_';
+  static const Duration _cacheTtl = Duration(hours: 24);
 
-  /// Returns cached collection data or fetches it fresh.
+  final Map<String, ProvinceCollection> _detailCache = {};
+  final Set<String> _loadingProvinces = {};
+
+  /// Returns hard-coded province cards without calling the API.
   Future<List<ProvinceCollection>> getCollections({
     Set<String> savedNames = const {},
     bool forceRefresh = false,
   }) async {
-    if (!forceRefresh && _cache != null) {
-      // Re-compute visited counts with latest savedNames
-      return _rebuildVisited(_cache!, savedNames);
+    if (forceRefresh) {
+      invalidateCache();
     }
-    if (_isLoading) {
-      // Wait for in-flight request
-      while (_isLoading) {
+    return _buildStaticCollections(savedNames);
+  }
+
+  Future<ProvinceCollection> getCollectionDetails(
+    String provinceName, {
+    Set<String> savedNames = const {},
+    bool forceRefresh = false,
+  }) async {
+    if (!forceRefresh && _detailCache[provinceName] != null) {
+      return _withHardcodedTotal(
+        _rebuildVisited([_detailCache[provinceName]!], savedNames).first,
+      );
+    }
+
+    if (!forceRefresh) {
+      final persisted = await _readPersistedDetail(provinceName);
+      if (persisted != null) {
+        _detailCache[provinceName] = persisted;
+        return _withHardcodedTotal(
+          _rebuildVisited([persisted], savedNames).first,
+        );
+      }
+    }
+
+    if (_loadingProvinces.contains(provinceName)) {
+      while (_loadingProvinces.contains(provinceName)) {
         await Future.delayed(const Duration(milliseconds: 100));
       }
-      if (_cache != null) return _rebuildVisited(_cache!, savedNames);
+      if (_detailCache[provinceName] != null) {
+        return _withHardcodedTotal(
+          _rebuildVisited([_detailCache[provinceName]!], savedNames).first,
+        );
+      }
     }
-    _isLoading = true;
+
+    _loadingProvinces.add(provinceName);
     try {
-      _cache = await _fetchAllProvinceCollections(savedNames);
-      return _cache!;
+      final collection = await _fetchProvinceCollection(provinceName, savedNames);
+      _detailCache[provinceName] = collection;
+      await _writePersistedDetail(collection);
+      return collection;
     } finally {
-      _isLoading = false;
+      _loadingProvinces.remove(provinceName);
     }
   }
 
-  void invalidateCache() => _cache = null;
+  void invalidateCache() {
+    _detailCache.clear();
+    SharedPreferences.getInstance().then((prefs) {
+      for (final provinceName in collectionProvinces) {
+        prefs.remove(_detailCacheKey(provinceName));
+        prefs.remove(_detailCacheTimeKey(provinceName));
+      }
+    });
+  }
+
+  List<ProvinceCollection> _buildStaticCollections(Set<String> savedNames) {
+    return collectionProvinces.map((provinceName) {
+      final cached = _detailCache[provinceName];
+      if (cached != null) {
+        return _withHardcodedTotal(
+          _rebuildVisited([cached], savedNames).first,
+        );
+      }
+
+      return ProvinceCollection(
+        name: provinceName,
+        totalPlaces: _provincePlaceLimits[provinceName] ?? 0,
+        visitedPlaces: 0,
+      );
+    }).toList();
+  }
+
+  ProvinceCollection _withHardcodedTotal(ProvinceCollection collection) {
+    return ProvinceCollection(
+      name: collection.name,
+      imageUrl: collection.imageUrl,
+      totalPlaces: _provincePlaceLimits[collection.name] ?? collection.totalPlaces,
+      visitedPlaces: collection.visitedPlaces,
+      districts: collection.districts,
+    );
+  }
+
+  String _detailCacheKey(String provinceName) =>
+      '$_detailCachePrefix${Uri.encodeComponent(provinceName)}';
+
+  String _detailCacheTimeKey(String provinceName) =>
+      '$_detailCacheTimePrefix${Uri.encodeComponent(provinceName)}';
+
+  Future<ProvinceCollection?> _readPersistedDetail(String provinceName) async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final cachedAt = prefs.getInt(_detailCacheTimeKey(provinceName));
+      final payload = prefs.getString(_detailCacheKey(provinceName));
+      if (cachedAt == null || payload == null || payload.isEmpty) {
+        return null;
+      }
+
+      final age = DateTime.now().millisecondsSinceEpoch - cachedAt;
+      if (age > _cacheTtl.inMilliseconds) {
+        return null;
+      }
+
+      final decoded = jsonDecode(payload);
+      if (decoded is! Map) return null;
+      final collection = _provinceCollectionFromJson(
+        Map<String, dynamic>.from(decoded),
+      );
+      return collection.name == provinceName ? collection : null;
+    } catch (e) {
+      debugPrint('Error reading province detail cache: $e');
+      return null;
+    }
+  }
+
+  Future<void> _writePersistedDetail(ProvinceCollection collection) async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final payload = jsonEncode(_provinceCollectionToJson(collection));
+      await prefs.setString(_detailCacheKey(collection.name), payload);
+      await prefs.setInt(
+        _detailCacheTimeKey(collection.name),
+        DateTime.now().millisecondsSinceEpoch,
+      );
+    } catch (e) {
+      debugPrint('Error writing province detail cache: $e');
+    }
+  }
+
+  Map<String, dynamic> _provinceCollectionToJson(ProvinceCollection pc) {
+    return {
+      'name': pc.name,
+      'imageUrl': pc.imageUrl,
+      'totalPlaces': pc.totalPlaces,
+      'districts': pc.districts
+          .map((district) => {
+                'name': district.name,
+                'places': district.places.map((place) => place.toJson()).toList(),
+              })
+          .toList(),
+    };
+  }
+
+  ProvinceCollection _provinceCollectionFromJson(Map<String, dynamic> json) {
+    final rawDistricts = json['districts'];
+    final districts = rawDistricts is List
+        ? rawDistricts
+            .map((item) {
+              final map = Map<String, dynamic>.from(item as Map);
+              final rawPlaces = map['places'];
+              final places = rawPlaces is List
+                  ? rawPlaces
+                      .map((place) => Destination.fromJson(
+                            Map<String, dynamic>.from(place as Map),
+                          ))
+                      .toList()
+                  : <Destination>[];
+              return DistrictGroup(
+                name: (map['name'] ?? '').toString(),
+                places: places,
+              );
+            })
+            .toList()
+        : <DistrictGroup>[];
+
+    return ProvinceCollection(
+      name: (json['name'] ?? '').toString(),
+      imageUrl: json['imageUrl']?.toString(),
+      totalPlaces: json['totalPlaces'] is num
+          ? (json['totalPlaces'] as num).toInt()
+          : districts.fold<int>(0, (sum, district) => sum + district.places.length),
+      districts: districts,
+    );
+  }
 
   // ────────────────────────────────────────────────────
 
-  Future<List<ProvinceCollection>> _fetchAllProvinceCollections(
-    Set<String> savedNames,
-  ) async {
-    // Fetch a large batch of destinations from all 3 collections
-    final futures = [
-      _fetchBatch('/locations?limit=3500&sortBy=reviewsCount&order=desc&isCollection=true'),
-      _fetchBatch('/restaurants?limit=1000&sortBy=reviewsCount&order=desc&isCollection=true'),
-      _fetchBatch('/hotels?limit=1000&sortBy=reviewsCount&order=desc&isCollection=true'),
-    ];
-    final results = await Future.wait(futures);
-    final allDestinations = <Destination>[
-      ...results[0],
-      ...results[1],
-      ...results[2],
-    ];
-
-    return _groupByProvince(allDestinations, savedNames);
-  }
-
-  Future<List<Destination>> _fetchBatch(String path) async {
+  Future<_ProvinceEndpointResult> _fetchEndpointPage({
+    required String endpoint,
+    required String city,
+    required int limit,
+    required int page,
+  }) async {
     try {
+      final query = Uri(queryParameters: {
+        'city': city,
+        'limit': limit.toString(),
+        'page': page.toString(),
+        'sortBy': 'reviewsCount',
+        'order': 'desc',
+        'isCollection': 'true',
+      }).query;
+      final path = '$endpoint?$query';
       final response = await apiGet(path);
       final data = tryDecodeJsonObject(response.body);
       if (response.statusCode == 200 && data?['success'] == true) {
         final raw = data!['data'];
+        final totalPages = data['totalPages'] is num
+            ? (data['totalPages'] as num).toInt()
+            : 1;
+
         if (raw is List) {
-          return raw
+          final items = raw
               .map((item) {
                 try {
-                  return Destination.fromJson(Map<String, dynamic>.from(item));
+                  final map = Map<String, dynamic>.from(item);
+                  map['type'] = _typeForEndpoint(endpoint);
+                  return Destination.fromJson(map);
                 } catch (e) {
                   debugPrint('Error parsing destination: $e');
                   return null;
@@ -157,89 +435,136 @@ class ProvinceDataService {
               })
               .whereType<Destination>()
               .toList();
+          return _ProvinceEndpointResult(
+            items: items,
+            totalPages: totalPages < 1 ? 1 : totalPages,
+          );
         }
       }
     } catch (e) {
-      debugPrint('Error fetching batch $path: $e');
+      debugPrint('Error fetching $endpoint for $city page $page: $e');
     }
-    return [];
+    return const _ProvinceEndpointResult();
   }
 
-  List<ProvinceCollection> _groupByProvince(
-    List<Destination> allDestinations,
-    Set<String> savedNames,
-  ) {
-    final collections = <ProvinceCollection>[];
-
-    for (final provinceName in collectionProvinces) {
-      final aliases = _provinceQueryAliases[provinceName] ?? [provinceName];
-      final aliasSet = aliases.map((a) => a.toLowerCase()).toSet();
-
-      // Find all destinations belonging to this province
-      final provinceDestinations = allDestinations.where((d) {
-        final prov = d.province.toLowerCase().trim();
-        return aliasSet.any((alias) =>
-            prov == alias ||
-            prov.contains(alias) ||
-            alias.contains(prov));
-      }).toList();
-
-      // Group by district (the `province` field after translation often
-      // contains the city-level name; for sub-grouping we use the original
-      // `province` value which may be a district/city name).
-      final districtMap = <String, List<Destination>>{};
-      for (final dest in provinceDestinations) {
-        final districtName = dest.province.trim().isNotEmpty
-            ? dest.province.trim()
-            : provinceName;
-        districtMap.putIfAbsent(districtName, () => []).add(dest);
-      }
-
-      final districts = districtMap.entries.map((entry) {
-        final visitedCount = entry.value
-            .where((d) => savedNames.contains(d.name))
-            .length;
-        return DistrictGroup(
-          name: entry.key,
-          places: entry.value,
-          visitedCount: visitedCount,
-        );
-      }).toList();
-
-      // Sort districts: unlocked first, then by place count descending
-      districts.sort((a, b) {
-        if (a.isUnlocked != b.isUnlocked) {
-          return a.isUnlocked ? -1 : 1;
-        }
-        return b.places.length.compareTo(a.places.length);
-      });
-
-      // Find hero image for the province
-      String? heroImageUrl;
-      final allWithImage = provinceDestinations
-          .where((d) => d.hasImage == true)
-          .toList();
-      if (allWithImage.isNotEmpty) {
-        allWithImage.sort((a, b) =>
-            (b.totalScore ?? 0).compareTo(a.totalScore ?? 0));
-        final hero = allWithImage.first;
-        heroImageUrl = hero.imagePath.isNotEmpty ? hero.imagePath : null;
-      }
-
-      final visitedTotal = provinceDestinations
-          .where((d) => savedNames.contains(d.name))
-          .length;
-
-      collections.add(ProvinceCollection(
-        name: provinceName,
-        imageUrl: heroImageUrl,
-        totalPlaces: provinceDestinations.length,
-        visitedPlaces: visitedTotal,
-        districts: districts,
-      ));
+  Future<List<Destination>> _fetchEndpointAllPages({
+    required String endpoint,
+    required String city,
+    required int targetCount,
+  }) async {
+    final pageSize = targetCount < 100 ? targetCount : 100;
+    final requestedPages = (targetCount / pageSize).ceil();
+    final firstPage = await _fetchEndpointPage(
+      endpoint: endpoint,
+      city: city,
+      limit: pageSize,
+      page: 1,
+    );
+    final totalPages = firstPage.totalPages < requestedPages
+        ? firstPage.totalPages
+        : requestedPages;
+    if (totalPages <= 1) {
+      return firstPage.items;
     }
 
-    return collections;
+    final rest = await Future.wait(
+      [
+        for (var page = 2; page <= totalPages; page++)
+          _fetchEndpointPage(
+            endpoint: endpoint,
+            city: city,
+            limit: pageSize,
+            page: page,
+          ),
+      ],
+    );
+    return [
+      ...firstPage.items,
+      for (final result in rest) ...result.items,
+    ];
+  }
+
+  Future<ProvinceCollection> _fetchProvinceCollection(
+    String provinceName,
+    Set<String> savedNames,
+  ) async {
+    final cityQueries = _provinceCityQueries[provinceName] ?? [provinceName];
+    final targetCount = _provincePlaceLimits[provinceName] ?? 20;
+    final futures = <Future<List<Destination>>>[
+      for (final city in cityQueries)
+        for (final endpoint in _collectionEndpoints)
+          _fetchEndpointAllPages(
+            endpoint: endpoint,
+            city: city,
+            targetCount: targetCount,
+          ),
+    ];
+    final results = await Future.wait(futures);
+
+    final uniqueDestinations = <String, Destination>{};
+    for (final result in results) {
+      for (final dest in result) {
+        final key = dest.id ??
+            dest.sourceLocationId ??
+            '${dest.type}:${dest.name}:${dest.province}';
+        uniqueDestinations.putIfAbsent(key, () => dest);
+      }
+    }
+
+    final provinceDestinations = uniqueDestinations.values.toList()
+      ..sort((a, b) {
+        final reviewsCompare =
+            (b.reviewsCount ?? 0).compareTo(a.reviewsCount ?? 0);
+        if (reviewsCompare != 0) return reviewsCompare;
+        return (b.totalScore ?? 0).compareTo(a.totalScore ?? 0);
+      });
+    final limitedDestinations = provinceDestinations.length > targetCount
+        ? provinceDestinations.take(targetCount).toList()
+        : provinceDestinations;
+    final districtMap = <String, List<Destination>>{};
+    for (final dest in limitedDestinations) {
+      final districtName =
+          dest.province.trim().isNotEmpty ? dest.province.trim() : provinceName;
+      districtMap.putIfAbsent(districtName, () => []).add(dest);
+    }
+
+    final districts = districtMap.entries.map((entry) {
+      final visitedCount =
+          entry.value.where((d) => savedNames.contains(d.name)).length;
+      return DistrictGroup(
+        name: entry.key,
+        places: entry.value,
+        visitedCount: visitedCount,
+      );
+    }).toList();
+
+    districts.sort((a, b) {
+      if (a.isUnlocked != b.isUnlocked) {
+        return a.isUnlocked ? -1 : 1;
+      }
+      return b.places.length.compareTo(a.places.length);
+    });
+
+    String? heroImageUrl;
+    final allWithImage =
+        limitedDestinations.where((d) => d.hasImage == true).toList();
+    if (allWithImage.isNotEmpty) {
+      allWithImage.sort(
+          (a, b) => (b.totalScore ?? 0).compareTo(a.totalScore ?? 0));
+      final hero = allWithImage.first;
+      heroImageUrl = hero.imagePath.isNotEmpty ? hero.imagePath : null;
+    }
+
+    final visitedTotal =
+        limitedDestinations.where((d) => savedNames.contains(d.name)).length;
+
+    return ProvinceCollection(
+      name: provinceName,
+      imageUrl: heroImageUrl,
+      totalPlaces: targetCount,
+      visitedPlaces: visitedTotal,
+      districts: districts,
+    );
   }
 
   List<ProvinceCollection> _rebuildVisited(

@@ -77,7 +77,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   static const int _tabProfile = 4;
   static const Map<int, String> _tabRoutes = {
     _tabExplore: '/home',
-    _tabPassport: '/passport',
+    _tabPassport: '/explore',
     _tabSaved: '/saved',
     _tabSurvey: '/tours',
     _tabProfile: '/account',
