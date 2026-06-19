@@ -1,9 +1,12 @@
 import 'dart:ui';
+import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
+import 'package:image_picker/image_picker.dart';
 import '../models/province_collection.dart';
 import '../models/destination.dart';
 import '../services/passport_service.dart';
+import '../utils/exif_helper.dart';
 import 'place_detail.dart';
 import 'collection_screen.dart'; // To reuse provinceDefaultImages
 import 'travel_memory_screen.dart';
@@ -115,165 +118,391 @@ class _ProvinceDetailScreenState extends State<ProvinceDetailScreen> with Ticker
   }
 
   void _showCheckInDialog(Destination place) {
-    double distanceMeters = -1.0;
-    if (_hasGps && place.latitude != 0.0 && place.longitude != 0.0) {
-      distanceMeters = Geolocator.distanceBetween(
-        _gpsLat,
-        _gpsLon,
-        place.latitude,
-        place.longitude,
-      );
-    }
-
-    final isWithinRange = distanceMeters >= 0 && distanceMeters <= 500;
-    final displayDistanceKm = distanceMeters >= 0 ? (distanceMeters / 1000).toStringAsFixed(2) : '---';
+    XFile? selectedImage;
+    List<int>? imageBytes;
+    String? errorMessage;
+    bool isPickingImage = false;
+    bool isVerifying = false;
 
     showDialog(
       context: context,
       builder: (context) {
-        return BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 16, sigmaY: 16),
-          child: Dialog(
-            backgroundColor: Colors.transparent,
-            child: Container(
-              padding: const EdgeInsets.all(24),
-              decoration: BoxDecoration(
-                color: const Color(0xFF070E0D).withOpacity(0.95),
-                borderRadius: BorderRadius.circular(28),
-                border: Border.all(color: Colors.white.withOpacity(0.12), width: 1),
-              ),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Container(
-                    padding: const EdgeInsets.all(16),
-                    decoration: BoxDecoration(
-                      color: const Color(0xFFD4AF7A).withOpacity(0.08),
-                      shape: BoxShape.circle,
-                    ),
-                    child: const Icon(
-                      Icons.location_on_rounded,
-                      color: Color(0xFFD4AF7A),
-                      size: 32,
-                    ),
+        return StatefulBuilder(
+          builder: (context, setDialogState) {
+            Future<void> pickImage() async {
+              if (isPickingImage || isVerifying) return;
+              setDialogState(() {
+                isPickingImage = true;
+                errorMessage = null;
+              });
+              try {
+                final picker = ImagePicker();
+                final XFile? image = await picker.pickImage(
+                  source: ImageSource.gallery,
+                  imageQuality: 90,
+                );
+                if (image != null) {
+                  final bytes = await image.readAsBytes();
+                  setDialogState(() {
+                    selectedImage = image;
+                    imageBytes = bytes;
+                  });
+                }
+              } catch (e) {
+                setDialogState(() {
+                  errorMessage = 'Không thể chọn ảnh: $e';
+                });
+              } finally {
+                setDialogState(() {
+                  isPickingImage = false;
+                });
+              }
+            }
+
+            Future<void> verifyImageGps() async {
+              if (selectedImage == null || imageBytes == null || isVerifying) return;
+              setDialogState(() {
+                isVerifying = true;
+                errorMessage = null;
+              });
+
+              try {
+                final coordinates = await ExifHelper.getLatLngFromImageBytes(imageBytes!);
+                if (coordinates == null) {
+                  setDialogState(() {
+                    errorMessage = 'Không tìm thấy thông tin vị trí GPS trong ảnh này. Vui lòng bật định vị camera trên điện thoại khi chụp.';
+                  });
+                  return;
+                }
+
+                final double imgLat = coordinates['latitude']!;
+                final double imgLng = coordinates['longitude']!;
+
+                if (place.latitude == 0.0 || place.longitude == 0.0) {
+                  setDialogState(() {
+                    errorMessage = 'Không thể xác thực vì địa danh chưa được cấu hình tọa độ trên hệ thống.';
+                  });
+                  return;
+                }
+
+                final distanceMeters = Geolocator.distanceBetween(
+                  imgLat,
+                  imgLng,
+                  place.latitude,
+                  place.longitude,
+                );
+
+                // Threshold: 1.5 km (1500 meters)
+                if (distanceMeters <= 1500) {
+                  Navigator.pop(context); // Close check-in dialog
+                  _unlockPlace(place, isMock: false);
+                } else {
+                  final distanceKm = (distanceMeters / 1000).toStringAsFixed(2);
+                  setDialogState(() {
+                    errorMessage = 'Vị trí chụp ảnh quá xa ($distanceKm km) so với địa danh này (Giới hạn: 1.5 km).';
+                  });
+                }
+              } catch (e) {
+                setDialogState(() {
+                  errorMessage = 'Lỗi khi phân tích ảnh: $e';
+                });
+              } finally {
+                setDialogState(() {
+                  isVerifying = false;
+                });
+              }
+            }
+
+            return BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 16, sigmaY: 16),
+              child: Dialog(
+                backgroundColor: Colors.transparent,
+                child: Container(
+                  padding: const EdgeInsets.all(24),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFF070E0D).withOpacity(0.95),
+                    borderRadius: BorderRadius.circular(28),
+                    border: Border.all(color: Colors.white.withOpacity(0.12), width: 1),
                   ),
-                  const SizedBox(height: 16),
-                  Text(
-                    place.name,
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(
-                      fontFamily: 'Montserrat',
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                    ),
-                  ),
-                  const SizedBox(height: 6),
-                  Text(
-                    place.province,
-                    style: TextStyle(
-                      fontFamily: 'Montserrat',
-                      fontSize: 13,
-                      color: Colors.white.withOpacity(0.5),
-                    ),
-                  ),
-                  const SizedBox(height: 20),
-                  
-                  // Location Status & GPS distance info
-                  Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                    decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.03),
-                      borderRadius: BorderRadius.circular(16),
-                      border: Border.all(color: Colors.white.withOpacity(0.06)),
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  child: SingleChildScrollView(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
                       children: [
-                        const Text(
-                          'Khoảng cách GPS:',
-                          style: TextStyle(fontFamily: 'Montserrat', fontSize: 13, color: Colors.white70),
+                        Container(
+                          padding: const EdgeInsets.all(16),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFFD4AF7A).withOpacity(0.08),
+                            shape: BoxShape.circle,
+                          ),
+                          child: const Icon(
+                            Icons.location_on_rounded,
+                            color: Color(0xFFD4AF7A),
+                            size: 32,
+                          ),
                         ),
+                        const SizedBox(height: 16),
                         Text(
-                          '$displayDistanceKm km',
+                          place.name,
+                          textAlign: TextAlign.center,
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
-                            fontSize: 14,
+                            fontSize: 20,
                             fontWeight: FontWeight.bold,
-                            color: Color(0xFFD4AF7A),
+                            color: Colors.white,
                           ),
                         ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-                  if (distanceMeters > 500)
-                    Row(
-                      children: [
-                        const Icon(Icons.info_outline_rounded, color: Colors.white38, size: 14),
-                        const SizedBox(width: 6),
-                        Expanded(
-                          child: Text(
-                            'Vị trí của bạn đang ở xa (> 500m). Vui lòng thử nút giả lập để test ứng dụng.',
-                            style: TextStyle(fontFamily: 'Montserrat', fontSize: 11, color: Colors.white.withOpacity(0.4)),
+                        const SizedBox(height: 6),
+                        Text(
+                          place.province,
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 13,
+                            color: Colors.white.withOpacity(0.5),
                           ),
                         ),
-                      ],
-                    ),
-                  const SizedBox(height: 28),
+                        const SizedBox(height: 20),
 
-                  // Actions
-                  Column(
-                    children: [
-                      // Simulated Check-in button (Demo Mode)
-                      ElevatedButton(
-                        onPressed: () {
-                          Navigator.pop(context); // Close dialog
-                          _unlockPlace(place, isMock: true);
-                        },
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color(0xFF2D6A4F).withOpacity(0.2),
-                          foregroundColor: const Color(0xFF2D6A4F),
-                          side: const BorderSide(color: Color(0xFF2D6A4F), width: 1.5),
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-                          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
-                          minimumSize: const Size(double.infinity, 50),
+                        // Guidelines or explanation text
+                        if (selectedImage == null)
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 16.0),
+                            child: Text(
+                              'Để mở khóa địa danh này, vui lòng chọn một ảnh đã chụp tại đây từ thư viện của bạn. Hệ thống sẽ xác thực vị trí chụp ảnh.',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 12,
+                                color: Colors.white.withOpacity(0.6),
+                                height: 1.4,
+                              ),
+                            ),
+                          ),
+
+                        // Image Selection Area
+                        if (selectedImage == null)
+                          InkWell(
+                            onTap: pickImage,
+                            borderRadius: BorderRadius.circular(16),
+                            child: Container(
+                              height: 140,
+                              width: double.infinity,
+                              decoration: BoxDecoration(
+                                color: Colors.white.withOpacity(0.02),
+                                borderRadius: BorderRadius.circular(16),
+                                border: Border.all(
+                                  color: Colors.white.withOpacity(0.12),
+                                  width: 1,
+                                ),
+                              ),
+                              child: isPickingImage
+                                  ? const Center(
+                                      child: CircularProgressIndicator(
+                                        strokeWidth: 2,
+                                        valueColor: AlwaysStoppedAnimation<Color>(Color(0xFFD4AF7A)),
+                                      ),
+                                    )
+                                  : Column(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Icon(
+                                          Icons.cloud_upload_outlined,
+                                          size: 40,
+                                          color: Colors.white.withOpacity(0.4),
+                                        ),
+                                        const SizedBox(height: 8),
+                                        Text(
+                                          'Tải ảnh lên',
+                                          style: TextStyle(
+                                            fontFamily: 'Montserrat',
+                                            fontSize: 14,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.white.withOpacity(0.8),
+                                          ),
+                                        ),
+                                        const SizedBox(height: 4),
+                                        Text(
+                                          'Chọn ảnh check-in từ thư viện',
+                                          style: TextStyle(
+                                            fontFamily: 'Montserrat',
+                                            fontSize: 11,
+                                            color: Colors.white.withOpacity(0.4),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                            ),
+                          )
+                        else
+                          // Preview container
+                          Stack(
+                            children: [
+                              Container(
+                                height: 160,
+                                width: double.infinity,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(16),
+                                  border: Border.all(
+                                    color: const Color(0xFFD4AF7A).withOpacity(0.3),
+                                    width: 1.5,
+                                  ),
+                                ),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(14.5),
+                                  child: Image.memory(
+                                    Uint8List.fromList(imageBytes!),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+                              Positioned(
+                                top: 8,
+                                right: 8,
+                                child: GestureDetector(
+                                  onTap: () {
+                                    setDialogState(() {
+                                      selectedImage = null;
+                                      imageBytes = null;
+                                      errorMessage = null;
+                                    });
+                                  },
+                                  child: Container(
+                                    padding: const EdgeInsets.all(6),
+                                    decoration: BoxDecoration(
+                                      color: Colors.black.withOpacity(0.6),
+                                      shape: BoxShape.circle,
+                                    ),
+                                    child: const Icon(
+                                      Icons.close_rounded,
+                                      color: Colors.white,
+                                      size: 16,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+
+                        // Error Message Display inside Dialog
+                        if (errorMessage != null) ...[
+                          const SizedBox(height: 16),
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                            decoration: BoxDecoration(
+                              color: Colors.redAccent.withOpacity(0.12),
+                              borderRadius: BorderRadius.circular(16),
+                              border: Border.all(color: Colors.redAccent.withOpacity(0.3), width: 1),
+                            ),
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                const Icon(
+                                  Icons.warning_amber_rounded,
+                                  color: Colors.redAccent,
+                                  size: 20,
+                                ),
+                                const SizedBox(width: 10),
+                                Expanded(
+                                  child: Text(
+                                    errorMessage!,
+                                    style: const TextStyle(
+                                      fontFamily: 'Montserrat',
+                                      fontSize: 12,
+                                      color: Colors.white,
+                                      height: 1.4,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+
+                        const SizedBox(height: 24),
+
+                        // Action buttons
+                        if (selectedImage == null)
+                          ElevatedButton(
+                            onPressed: pickImage,
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: const Color(0xFFD4AF7A),
+                              foregroundColor: Colors.black,
+                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
+                              minimumSize: const Size(double.infinity, 50),
+                            ),
+                            child: const Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Icon(Icons.photo_library_rounded, size: 18),
+                                SizedBox(width: 8),
+                                Text(
+                                  'Tải ảnh lên',
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          )
+                        else
+                          ElevatedButton(
+                            onPressed: isVerifying ? null : verifyImageGps,
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: const Color(0xFF2D6A4F),
+                              foregroundColor: Colors.white,
+                              disabledBackgroundColor: const Color(0xFF2D6A4F).withOpacity(0.3),
+                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
+                              minimumSize: const Size(double.infinity, 50),
+                            ),
+                            child: isVerifying
+                                ? const SizedBox(
+                                    width: 20,
+                                    height: 20,
+                                    child: CircularProgressIndicator(
+                                      strokeWidth: 2,
+                                      valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                                    ),
+                                  )
+                                : const Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Icon(Icons.check_circle_outline_rounded, size: 18, color: Colors.white),
+                                      SizedBox(width: 8),
+                                      Text(
+                                        'Duyệt ảnh',
+                                        style: TextStyle(
+                                          fontFamily: 'Montserrat',
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                          ),
+                        const SizedBox(height: 12),
+                        // Cancel/Close button
+                        TextButton(
+                          onPressed: () => Navigator.pop(context),
+                          style: TextButton.styleFrom(
+                            minimumSize: const Size(double.infinity, 44),
+                          ),
+                          child: Text(
+                            'Đóng',
+                            style: TextStyle(
+                              fontFamily: 'Montserrat',
+                              color: Colors.white.withOpacity(0.6),
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
                         ),
-                        child: const Text(
-                          'Mở khóa thử nghiệm (Demo Check-in)',
-                          style: TextStyle(fontFamily: 'Montserrat', fontWeight: FontWeight.bold, color: Colors.white),
-                        ),
-                      ),
-                      const SizedBox(height: 12),
-                      
-                      // GPS Check-in (Real Mode)
-                      ElevatedButton(
-                        onPressed: isWithinRange
-                            ? () {
-                                Navigator.pop(context);
-                                _unlockPlace(place, isMock: false);
-                              }
-                            : null,
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color(0xFFD4AF7A),
-                          foregroundColor: Colors.black,
-                          disabledBackgroundColor: Colors.white.withOpacity(0.05),
-                          disabledForegroundColor: Colors.white24,
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-                          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
-                          minimumSize: const Size(double.infinity, 50),
-                        ),
-                        child: const Text(
-                          'Xác nhận Check-in (GPS)',
-                          style: TextStyle(fontFamily: 'Montserrat', fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
-                ],
+                ),
               ),
-            ),
-          ),
+            );
+          },
         );
       },
     );
