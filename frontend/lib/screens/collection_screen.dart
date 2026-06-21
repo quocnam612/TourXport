@@ -411,13 +411,13 @@ class _CollectionScreenState extends State<CollectionScreen> {
     return Container(
       width: double.infinity,
       decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [
-            Color(0xFF0F2B23),
-            Color(0xFF071511),
-          ],
+        image: const DecorationImage(
+          image: AssetImage('assets/images/bg_banner.png'),
+          fit: BoxFit.cover,
+          colorFilter: ColorFilter.mode(
+            Colors.black54,
+            BlendMode.darken,
+          ),
         ),
         borderRadius: BorderRadius.circular(28),
         border: Border.all(
