@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart' show TargetPlatform, defaultTargetPlatform, kIsWeb;
 import 'package:http/http.dart' as http;
 import 'package:http_parser/http_parser.dart';
+import '../utils/auth_storage.dart';
 
 /// Override từ build/run, không cần sửa backend.
 /// Ví dụ thiết bị thật: `flutter run --dart-define=API_BASE_URL=http://192.168.1.5:3000`
@@ -16,14 +17,14 @@ String get apiBaseUrl {
         return override.endsWith('/') ? override.substring(0, override.length - 1) : override;
     }
     if (kIsWeb) {
-        return 'http://localhost:3000';
+        return 'http://127.0.0.1:3000';
     }
     if (defaultTargetPlatform == TargetPlatform.android) {
         // Android emulator dùng 10.0.2.2 để trỏ về localhost của máy host.
         // Thiết bị thật cần truyền API_BASE_URL bằng IP LAN của máy chạy backend.
         return 'http://10.0.2.2:3000';
     }
-    return 'http://localhost:3000';
+    return 'http://127.0.0.1:3000';
 }
 
 /// Base URL cho AI Backend (Python - FastAPI)
@@ -33,15 +34,25 @@ String get aiBaseUrl {
     return override.endsWith('/') ? override.substring(0, override.length - 1) : override;
   }
   if (kIsWeb) {
-    return 'http://localhost:8000';
+    return 'http://127.0.0.1:8000';
   }
   if (defaultTargetPlatform == TargetPlatform.android) {
     return 'http://10.0.2.2:8000';
   }
-  return 'http://localhost:8000';
+  return 'http://127.0.0.1:8000';
 }
 
 final http.Client _client = http.Client();
+
+typedef UnauthorizedHandler = Future<void> Function(String? reason);
+
+UnauthorizedHandler? _unauthorizedHandler;
+bool _isHandlingUnauthorized = false;
+String? _handledUnauthorizedToken;
+
+void setUnauthorizedHandler(UnauthorizedHandler? handler) {
+  _unauthorizedHandler = handler;
+}
 
 Map<String, String> _buildHeaders({String? token}) {
   return {
@@ -58,37 +69,104 @@ Map<String, String> _buildGetHeaders({String? token}) {
   };
 }
 
-Future<http.Response> apiGet(String path, {String? token}) {
+bool _hasToken(String? token) => token != null && token.trim().isNotEmpty;
+
+bool _isUnauthorizedResponse(http.Response response, String? token) {
+  if (!_hasToken(token)) return false;
+  if (response.statusCode != 401 && response.statusCode != 403) return false;
+
+  final body = tryDecodeJsonObject(response.body);
+  final message = body?['message']?.toString().toLowerCase() ?? '';
+  return message.contains('unauthorized') ||
+      message.contains('unauth') ||
+      message.contains('not authenticated') ||
+      message.contains('authentication credentials') ||
+      message.contains('token expired') ||
+      message.contains('jwt expired') ||
+      message.contains('invalid token') ||
+      message.contains('no token');
+}
+
+Future<void> _handleUnauthorized(String? token, String? reason) async {
+  final normalizedToken = token?.trim();
+  if (normalizedToken != null &&
+      normalizedToken.isNotEmpty &&
+      normalizedToken == _handledUnauthorizedToken) {
+    return;
+  }
+  if (_isHandlingUnauthorized) return;
+  _isHandlingUnauthorized = true;
+  _handledUnauthorizedToken = normalizedToken;
+  try {
+    await AuthStorage.clearSession();
+    await _unauthorizedHandler?.call(reason);
+  } finally {
+    _isHandlingUnauthorized = false;
+  }
+}
+
+Future<http.Response> _checkResponseAuth(
+  http.Response response,
+  String? token,
+) async {
+  if (_isUnauthorizedResponse(response, token)) {
+    final body = tryDecodeJsonObject(response.body);
+    await _handleUnauthorized(token, body?['message']?.toString());
+  }
+  return response;
+}
+
+Future<http.StreamedResponse> _checkStreamedResponseAuth(
+  http.StreamedResponse response,
+  String? token,
+) async {
+  if (_hasToken(token) && response.statusCode == 401) {
+    await _handleUnauthorized(token, response.reasonPhrase);
+  }
+  return response;
+}
+
+Future<http.Response> apiGet(
+  String path, {
+  String? token,
+  bool handleUnauthorized = true,
+}) async {
   final uri = Uri.parse('$apiBaseUrl$path');
-  return _client.get(
+  final response = await _client.get(
     uri,
     headers: _buildHeaders(token: token),
   );
+  if (handleUnauthorized) {
+    return _checkResponseAuth(response, token);
+  }
+  return response;
 }
 
 Future<http.Response> apiPostJson(
   String path,
   Map<String, dynamic> body, {
   String? token,
-}) {
+}) async {
   final uri = Uri.parse('$apiBaseUrl$path');
-  return _client.post(
+  final response = await _client.post(
     uri,
     headers: _buildHeaders(token: token),
     body: jsonEncode(body),
   );
+  return _checkResponseAuth(response, token);
 }
 
 Future<http.Response> apiAiGet(
   String path, {
   String? token,
   Duration timeout = const Duration(seconds: 8),
-}) {
+}) async {
   final uri = Uri.parse('$aiBaseUrl$path');
-  return _client.get(
+  final response = await _client.get(
     uri,
     headers: _buildGetHeaders(token: token),
   ).timeout(timeout);
+  return _checkResponseAuth(response, token);
 }
 
 /// Gọi API tới AI Backend (timeout dài hơn vì OpenAI cần xử lý 15-60s)
@@ -97,39 +175,42 @@ Future<http.Response> apiAiPostJson(
   Map<String, dynamic> body, {
   String? token,
   Duration timeout = const Duration(seconds: 120),
-}) {
+}) async {
   final uri = Uri.parse('$aiBaseUrl$path');
-  return _client.post(
+  final response = await _client.post(
     uri,
     headers: _buildHeaders(token: token),
     body: jsonEncode(body),
   ).timeout(timeout);
+  return _checkResponseAuth(response, token);
 }
 
 Future<http.Response> apiDeleteJson(
   String path,
   Map<String, dynamic> body, {
   String? token,
-}) {
+}) async {
   final uri = Uri.parse('$apiBaseUrl$path');
-  return _client.delete(
+  final response = await _client.delete(
     uri,
     headers: _buildHeaders(token: token),
     body: jsonEncode(body),
   );
+  return _checkResponseAuth(response, token);
 }
 
 Future<http.Response> apiPutJson(
   String path,
   Map<String, dynamic> body, {
   String? token,
-}) {
+}) async {
   final uri = Uri.parse('$apiBaseUrl$path');
-  return _client.put(
+  final response = await _client.put(
     uri,
     headers: _buildHeaders(token: token),
     body: jsonEncode(body),
   );
+  return _checkResponseAuth(response, token);
 }
 
 MediaType _getMediaTypeForFile(String filePath) {
@@ -165,7 +246,8 @@ Future<http.StreamedResponse> apiPostMultipartBytes(
     filename: filename,
     contentType: mediaType,
   ));
-  return request.send();
+  final response = await request.send();
+  return _checkStreamedResponseAuth(response, token);
 }
 
 Future<http.StreamedResponse> apiPutMultipartBytes(
@@ -189,7 +271,28 @@ Future<http.StreamedResponse> apiPutMultipartBytes(
     filename: filename,
     contentType: mediaType,
   ));
-  return request.send();
+  final response = await request.send();
+  return _checkStreamedResponseAuth(response, token);
+}
+
+Future<http.StreamedResponse> apiPostMultipart(
+  String path, {
+  required Map<String, String> fields,
+  required List<http.MultipartFile> files,
+  String? token,
+}) async {
+  final uri = Uri.parse('$apiBaseUrl$path');
+  final request = http.MultipartRequest('POST', uri);
+  
+  if (token != null && token.trim().isNotEmpty) {
+    request.headers['Authorization'] = 'Bearer ${token.trim()}';
+  }
+  
+  request.fields.addAll(fields);
+  request.files.addAll(files);
+  
+  final response = await request.send();
+  return _checkStreamedResponseAuth(response, token);
 }
 
 /// Fetch a location document by its sourceLocationId (external provider id).
@@ -285,7 +388,10 @@ Future<Map<String, dynamic>?> fetchLocationBySourceId(String sourceId, {String? 
     else coll = 'locations';
 
     final uri = Uri.parse('$apiBaseUrl/$coll/search?id=${Uri.encodeComponent(sourceId)}');
-    final resp = await _client.get(uri, headers: _buildHeaders(token: token));
+    final resp = await _checkResponseAuth(
+      await _client.get(uri, headers: _buildHeaders(token: token)),
+      token,
+    );
     final data = tryDecodeJsonObject(resp.body);
     if (resp.statusCode == 200 && data != null && data['success'] == true) {
       final payload = data['data'];

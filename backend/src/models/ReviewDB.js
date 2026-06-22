@@ -77,6 +77,20 @@ const reviewSchema = new mongoose.Schema({
     user: {
         type: reviewUserSchema,
         required: true
+    },
+
+    images: {
+        type: [{
+            url: {
+                type: String,
+                required: true
+            },
+            public_id: {
+                type: String,
+                default: ''
+            }
+        }],
+        default: []
     }
 }, {
     timestamps: true

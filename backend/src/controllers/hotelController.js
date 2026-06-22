@@ -3,8 +3,35 @@ import config from '../config/config.js';
 import parser from '../utils/parser.js';
 import respond from '../utils/respond.js';
 import validator from '../utils/validators.js';
+import TravelAdvisor from '../services/TravelAdvisor.js';
 
 const locationPublicProjection = '-embedding -searchText';
+
+const hydrateHotelImages = async (hotel) => {
+    if (!hotel || !hotel.sourceLocationId || (Array.isArray(hotel.images) && hotel.images.length > 0)) {
+        return hotel;
+    }
+
+    try {
+        const images = await TravelAdvisor.getHighQualityPhotosBySourceLocationId(hotel.sourceLocationId, {
+            excludeUrls: [hotel.image?.url],
+            limit: 10
+        });
+
+        if (!images.length) {
+            return hotel;
+        }
+
+        return await HotelDB.findByIdAndUpdate(
+            hotel._id,
+            { $set: { images } },
+            { new: true, runValidators: true }
+        ).select(locationPublicProjection);
+    } catch (error) {
+        console.warn(`Failed to hydrate images for hotel ${hotel.sourceLocationId}:`, error.message || error);
+        return hotel;
+    }
+};
 
 export const getHotels = async (req, res, next) => {
     try {
@@ -21,7 +48,7 @@ export const getHotels = async (req, res, next) => {
 
         const poolLimit = Math.min(limit * 3, 150);
         let [hotels, total] = await Promise.all([
-            HotelDB.find(filter).select(locationPublicProjection).skip(skip).limit(poolLimit),
+            HotelDB.find(filter).select(locationPublicProjection).sort(sort).skip(skip).limit(poolLimit),
             HotelDB.countDocuments(filter)
         ]);
 
@@ -67,11 +94,13 @@ export const getHotel = async (req, res, next) => {
             return next(respond.httpError(lookupError, 400));
         }
 
-        const hotel = await HotelDB.findOne(parser.buildLocationLookupFilter(req.query)).select(locationPublicProjection);
+        let hotel = await HotelDB.findOne(parser.buildLocationLookupFilter(req.query)).select(locationPublicProjection);
 
         if (!hotel) {
             return next(respond.httpError('Hotel not found', 404));
         }
+
+        hotel = await hydrateHotelImages(hotel);
 
         res.status(200).json({
             success: true,

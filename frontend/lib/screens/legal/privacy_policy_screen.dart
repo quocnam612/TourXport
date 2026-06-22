@@ -10,15 +10,15 @@ class PrivacyPolicyScreen extends StatelessWidget {
     final isVi = Localizations.localeOf(context).languageCode == 'vi';
 
     return LegalScaffold(
-      title: isVi ? 'Chính Sách Bảo Mật' : 'Privacy Policy',
+      title: isVi ? 'Chính Sách Quyền Riêng Tư' : 'Privacy Policy',
       subtitle: isVi
-          ? 'Trang này giải thích cách TourXport thu thập, sử dụng, lưu trữ và bảo vệ thông tin khi người dùng sử dụng ứng dụng, bao gồm đăng nhập bằng Discord hoặc Google.'
+          ? 'Trang này giải thích cách TourXport thu thập, sử dụng, lưu trữ và bảo vệ thông tin khi bạn dùng ứng dụng để khám phá địa điểm, tạo lịch trình, lưu nội dung và đăng nhập bằng Discord hoặc Google.'
           : 'This page explains how TourXport collects, uses, stores, and protects information when people use the app, including sign-in with Discord or Google.',
       activeRoute: '/privacy',
       children: [
         LegalNotice(
           icon: Icons.public_rounded,
-          title: isVi ? 'Trang công khai cho việc xét duyệt nền tảng' : 'Public page for platform review',
+          title: isVi ? 'Chính sách công khai cho người dùng và nền tảng' : 'Public policy for users and platform review',
           body: isVi
               ? 'Chính sách này có thể truy cập mà không cần đăng nhập và có thể dùng làm Privacy Policy URL cho Discord Developer Portal.'
               : 'This policy is accessible without login and can be used as the Privacy Policy URL for Discord Developer Portal.',

@@ -15,13 +15,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get welcome_back => 'Welcome back,';
 
   @override
-  String get explore => 'Explore';
+  String get explore => 'Home';
 
   @override
   String get search => 'Search';
 
   @override
-  String get survey => 'Survey';
+  String get survey => 'Generate';
 
   @override
   String get account => 'Account';

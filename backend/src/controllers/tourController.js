@@ -72,6 +72,26 @@ export const createTour = async (req, res, next) => {
     }
 };
 
+export const createManualTour = async (req, res, next) => {
+    try {
+        const validationError = validator.validateManualTourCreatePayload(req.body);
+        if (validationError) {
+            return next(respond.httpError(validationError, 400));
+        }
+
+        const tourPayload = await parser.normalizeTourPayloadFromManual(req.body, req.user.id, OpenRouteService);
+        const tour = await TourDB.create(tourPayload);
+
+        res.status(201).json({
+            success: true,
+            message: 'Manual tour created successfully!',
+            data: tour
+        });
+    } catch (error) {
+        next(error);
+    }
+};
+
 export const getTourById = async (req, res, next) => {
     try {
         if (!isTourId(req.params.id)) {

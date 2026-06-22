@@ -8,6 +8,7 @@ import UserDB from '../models/UserDB.js';
 
 import respond from '../utils/respond.js';
 import TravelAdvisor from '../services/TravelAdvisor.js';
+import { deleteImage, uploadImageBuffer } from '../services/Cloudinary.js';
 
 const locationModelByType = {
     RestaurantDB,
@@ -48,8 +49,8 @@ const getLocationModel = (type) => {
 const buildReviewPayload = (body) => {
     const payload = {};
 
-    if (body.rating !== undefined) payload.rating = body.rating;
-    if (body.helpful_votes !== undefined) payload.helpful_votes = body.helpful_votes;
+    if (body.rating !== undefined) payload.rating = Number(body.rating);
+    if (body.helpful_votes !== undefined) payload.helpful_votes = Number(body.helpful_votes);
     if (body.travel_date !== undefined) payload.travel_date = body.travel_date || null;
     if (body.title !== undefined) payload.title = body.title;
     if (body.text !== undefined) payload.text = body.text;
@@ -68,6 +69,7 @@ const toReviewResponse = (review) => ({
     title: review.title,
     text: review.text,
     user: review.user,
+    images: review.images || [],
     createdAt: review.createdAt,
     updatedAt: review.updatedAt
 });
@@ -128,11 +130,25 @@ export const createReview = async (req, res, next) => {
             return next(respond.httpError('You already reviewed this location', 409));
         }
 
+        // Upload images to Cloudinary if provided
+        let images = [];
+        if (req.files && req.files.length > 0) {
+            const uploadPromises = req.files.map(file => 
+                uploadImageBuffer(file.buffer, { folder: 'tourxport/reviews' })
+            );
+            const uploadResults = await Promise.all(uploadPromises);
+            images = uploadResults.map(result => ({
+                url: result.secure_url,
+                public_id: result.public_id
+            }));
+        }
+
         const review = await ReviewDB.create({
             ...buildReviewPayload(req.body),
             userId: req.user.id,
             locationId,
             type: normalizedType,
+            images,
             user: {
                 username: currentUser.name,
                 avatar: {
@@ -224,8 +240,26 @@ export const updateReview = async (req, res, next) => {
         }
 
         const payload = buildReviewPayload(req.body);
-        if (Object.keys(payload).length === 0) {
+        if (Object.keys(payload).length === 0 && (!req.files || req.files.length === 0)) {
             return next(respond.httpError('No fields provided for update', 400));
+        }
+
+        const oldReview = await ReviewDB.findOne({ _id: reviewId, userId: req.user.id });
+        if (!oldReview) {
+            return next(respond.httpError('Review not found', 404));
+        }
+
+        let newImages = undefined;
+        if (req.files && req.files.length > 0) {
+            const uploadPromises = req.files.map(file => 
+                uploadImageBuffer(file.buffer, { folder: 'tourxport/reviews' })
+            );
+            const uploadResults = await Promise.all(uploadPromises);
+            newImages = uploadResults.map(result => ({
+                url: result.secure_url,
+                public_id: result.public_id
+            }));
+            payload.images = newImages;
         }
 
         const review = await ReviewDB.findOneAndUpdate(
@@ -234,8 +268,13 @@ export const updateReview = async (req, res, next) => {
             { new: true, runValidators: true }
         );
 
-        if (!review) {
-            return next(respond.httpError('Review not found', 404));
+        if (newImages && oldReview.images && oldReview.images.length > 0) {
+            const deletePromises = oldReview.images
+                .filter(img => img.public_id)
+                .map(img => deleteImage(img.public_id));
+            Promise.all(deletePromises).catch((error) => {
+                console.error('Failed to delete old review images on update:', error.message || error);
+            });
         }
 
         res.status(200).json({
@@ -263,6 +302,15 @@ export const deleteReview = async (req, res, next) => {
 
         if (!review) {
             return next(respond.httpError('Review not found', 404));
+        }
+
+        if (review.images && review.images.length > 0) {
+            const deletePromises = review.images
+                .filter(img => img.public_id)
+                .map(img => deleteImage(img.public_id));
+            Promise.all(deletePromises).catch((error) => {
+                console.error('Failed to delete review images:', error.message || error);
+            });
         }
 
         const LocationModel = getLocationModel(review.type);

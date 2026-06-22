@@ -1,7 +1,10 @@
 import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:local_auth/local_auth.dart';
 import '../api/api.dart';
+import '../utils/auth_storage.dart';
+import 'pin_lock_screen.dart';
 
 class SecuritySettingsScreen extends StatefulWidget {
   final Map<String, dynamic> userData;
@@ -32,6 +35,9 @@ class _SecuritySettingsScreenState extends State<SecuritySettingsScreen> with Ti
   
   double _passStrength = 0.0;
   Color _passStrengthColor = Colors.redAccent;
+
+  bool _isPinSet = false;
+  List<BiometricType> _availableBiometrics = [];
 
   bool get _isVi => Localizations.localeOf(context).languageCode == 'vi';
 
@@ -75,6 +81,28 @@ class _SecuritySettingsScreenState extends State<SecuritySettingsScreen> with Ti
     _fadeController.forward();
     
     _newPassController.addListener(_updatePassStrength);
+    _checkPinStatus();
+    _checkBiometricType();
+  }
+
+  Future<void> _checkBiometricType() async {
+    final LocalAuthentication auth = LocalAuthentication();
+    final bool canCheck = await auth.canCheckBiometrics;
+    if (canCheck) {
+      final List<BiometricType> availableBiometrics = await auth.getAvailableBiometrics();
+      if (mounted) {
+        setState(() {
+          _availableBiometrics = availableBiometrics;
+        });
+      }
+    }
+  }
+
+  Future<void> _checkPinStatus() async {
+    final pin = await AuthStorage.getAppPin();
+    if (mounted) {
+      setState(() => _isPinSet = pin != null && pin.isNotEmpty);
+    }
   }
 
   @override
@@ -204,6 +232,10 @@ class _SecuritySettingsScreenState extends State<SecuritySettingsScreen> with Ti
                         _buildSectionLabel(_isVi ? 'Phương thức đăng nhập' : 'Login methods'),
                         const SizedBox(height: 12),
                         _buildLoginMethodsCard(),
+                        const SizedBox(height: 32),
+                        _buildSectionLabel(_isVi ? 'Khóa ứng dụng' : 'App Lock'),
+                        const SizedBox(height: 12),
+                        _buildAppLockCard(),
                         const SizedBox(height: 32),
                         _buildSectionLabel(_isVi ? 'Lịch sử bảo mật' : 'Security history'),
                         const SizedBox(height: 12),
@@ -428,6 +460,92 @@ class _SecuritySettingsScreenState extends State<SecuritySettingsScreen> with Ti
       default:
         return Colors.white70;
     }
+  }
+
+  String get _biometricName {
+    if (_availableBiometrics.contains(BiometricType.face)) return 'Face ID';
+    if (_availableBiometrics.contains(BiometricType.fingerprint) || _availableBiometrics.contains(BiometricType.strong)) return _isVi ? 'Vân tay' : 'Fingerprint';
+    return _isVi ? 'Tích hợp Sinh trắc học' : 'Biometric Integration';
+  }
+
+  IconData get _biometricIcon {
+    if (_availableBiometrics.contains(BiometricType.face)) return Icons.face;
+    return Icons.fingerprint;
+  }
+
+  Widget _buildAppLockCard() {
+    return _buildGlassCard(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: const Color(0xFFD4AF7A).withOpacity(0.15),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Icon(_biometricIcon, color: const Color(0xFFD4AF7A), size: 24),
+              ),
+              const SizedBox(width: 16),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    _biometricName, 
+                    style: const TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold)),
+                  const SizedBox(height: 4),
+                  Text(
+                    _isVi ? 'Tăng cường bảo mật đăng nhập' : 'Enhance login security',
+                    style: TextStyle(color: Colors.white.withOpacity(0.5), fontSize: 13)),
+                ],
+              ),
+            ],
+          ),
+          Switch(
+            value: _isPinSet,
+            activeColor: const Color(0xFFD4AF7A),
+            onChanged: (val) async {
+              if (val) {
+                // Setup PIN
+                final result = await Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const PinLockScreen(mode: PinMode.setup)),
+                );
+                if (result == true) {
+                  _checkPinStatus();
+                }
+              } else {
+                // Verify before removing
+                final LocalAuthentication auth = LocalAuthentication();
+                bool authenticated = false;
+                try {
+                  authenticated = await auth.authenticate(
+                    localizedReason: _isVi ? 'Xác thực để tắt Khóa ứng dụng' : 'Authenticate to disable App Lock',
+                    persistAcrossBackgrounding: true,
+                    biometricOnly: false,
+                  );
+                } catch (e) {
+                  // Fallback if biometrics fail or are unavailable
+                  final result = await Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => const PinLockScreen(mode: PinMode.verify)),
+                  );
+                  authenticated = result == true;
+                }
+
+                if (authenticated && mounted) {
+                  await AuthStorage.removeAppPin();
+                  _checkPinStatus();
+                  _showToast(_isVi ? 'Đã tắt mã PIN khóa ứng dụng' : 'App PIN lock disabled');
+                }
+              }
+            },
+          ),
+        ],
+      ),
+    );
   }
 
   Widget _buildActivityTimeline() {

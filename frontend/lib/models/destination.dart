@@ -9,6 +9,7 @@ class Destination {
   final String price;
   final String imagePath;
   final String bgBlurPath;
+  final List<String> galleryImagePaths;
   final double latitude;
   final double longitude;
   final String type; // e.g. 'Địa điểm', 'Nhà hàng', 'Khách sạn'
@@ -17,6 +18,11 @@ class Destination {
   final double? totalScore;
   final int? reviewsCount;
   final List<String> tags;
+  final String? category;
+  final String? ranking;
+  final String? priceRange;
+  final Map<String, dynamic>? openingHours;
+  final bool? hasImage;
 
   const Destination({
     this.id,
@@ -25,6 +31,7 @@ class Destination {
     required this.price,
     required this.imagePath,
     required this.bgBlurPath,
+    this.galleryImagePaths = const [],
     this.latitude = 0.0,
     this.longitude = 0.0,
     this.type = 'Địa điểm',
@@ -33,6 +40,11 @@ class Destination {
     this.totalScore,
     this.reviewsCount,
     this.tags = const [],
+    this.category,
+    this.ranking,
+    this.priceRange,
+    this.openingHours,
+    this.hasImage = true,
   });
 
   factory Destination.fromJson(Map<String, dynamic> json) {
@@ -45,6 +57,25 @@ class Destination {
     final totalScoreVal = json['totalScore'];
     final reviewsCountVal = json['reviewsCount'];
     final tagsVal = json['tags'];
+    final String categoryVal = (json['category'] ?? '').toString().trim();
+    final String rankingVal = (json['ranking'] ?? '').toString().trim();
+    final String priceRangeVal = (json['priceRange'] ?? '').toString().trim();
+    final openingHoursVal = json['openingHours'];
+    final galleryImagePaths = <String>[];
+    final rawImages = json['images'];
+    if (rawImages is List) {
+      for (final item in rawImages) {
+        String url = '';
+        if (item is String) {
+          url = item.trim();
+        } else if (item is Map) {
+          url = (item['url'] ?? '').toString().trim();
+        }
+        if (url.isNotEmpty && !galleryImagePaths.contains(url)) {
+          galleryImagePaths.add(url);
+        }
+      }
+    }
 
     final sample = findSampleDestination(nameVal);
 
@@ -56,6 +87,9 @@ class Destination {
     if (imgUrl.isEmpty) {
       imgUrl = (json['imageUrl'] ?? json['imagePath'] ?? destinationPlaceholderPath).toString();
     }
+    final bool hasRealImage = imgUrl.trim().isNotEmpty &&
+        imgUrl != destinationPlaceholderPath &&
+        imgUrl != 'assets/images/halong.jpg';
 
     // Coordinates extraction: GeoJSON is [lng, lat]
     double latVal = 0.0;
@@ -87,6 +121,7 @@ class Destination {
       price: (json['price'] ?? json['priceRange'] ?? sample?.price ?? 'Chỉ từ 1.5 triệu đồng').toString(),
       imagePath: imgUrl,
       bgBlurPath: imgUrl,
+      galleryImagePaths: galleryImagePaths.where((url) => url != imgUrl).toList(),
       latitude: latVal,
       longitude: lngVal,
       type: typeVal,
@@ -97,6 +132,17 @@ class Destination {
       tags: tagsVal is List
           ? tagsVal.map((tag) => tag.toString()).where((tag) => tag.trim().isNotEmpty).toList()
           : const [],
+      category: categoryVal.isNotEmpty ? categoryVal : null,
+      ranking: rankingVal.isNotEmpty ? rankingVal : null,
+      priceRange: priceRangeVal.isNotEmpty ? priceRangeVal : null,
+      openingHours: openingHoursVal is Map
+          ? Map<String, dynamic>.from(openingHoursVal)
+          : openingHoursVal is String && openingHoursVal.trim().isNotEmpty
+              ? {'display': openingHoursVal.trim()}
+              : openingHoursVal is List && openingHoursVal.isNotEmpty
+                  ? {'display': openingHoursVal}
+                  : null,
+      hasImage: hasRealImage,
     );
   }
 
@@ -108,6 +154,7 @@ class Destination {
       'price': price,
       'imagePath': imagePath,
       'bgBlurPath': bgBlurPath,
+      'images': galleryImagePaths,
       'latitude': latitude,
       'longitude': longitude,
       'type': type,
@@ -116,6 +163,11 @@ class Destination {
       if (totalScore != null) 'totalScore': totalScore,
       if (reviewsCount != null) 'reviewsCount': reviewsCount,
       'tags': tags,
+      if (category != null) 'category': category,
+      if (ranking != null) 'ranking': ranking,
+      if (priceRange != null) 'priceRange': priceRange,
+      if (openingHours != null) 'openingHours': openingHours,
+      'hasImage': hasImage == true,
     };
   }
 

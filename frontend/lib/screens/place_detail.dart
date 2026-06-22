@@ -1,6 +1,9 @@
 import 'dart:ui';
 
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:share_plus/share_plus.dart';
 
 import '../api/api.dart';
 import '../models/destination.dart';
@@ -30,8 +33,10 @@ class PlaceDetailScreen extends StatefulWidget {
 }
 
 class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
+  late Destination _destination;
   late bool _isSaved;
   late bool _isLiked;
+  String? _selectedImagePath;
   bool _showFullDesc = false;
   int _selectedTab = 0; // 0 = Tổng quan, 1 = Nhận xét
 
@@ -176,9 +181,11 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
   @override
   void initState() {
     super.initState();
+    _destination = widget.destination;
     _isSaved = widget.isSaved;
     _isLiked = widget.isLiked;
     _sheetCtrl.addListener(_onSheetChanged);
+    _loadDestinationDetail();
   }
 
   @override
@@ -222,6 +229,52 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     setState(() => _sheetFraction = _sheetCtrl.size);
   }
 
+  String _activeImagePath(Destination dest) {
+    final selected = _selectedImagePath?.trim();
+    if (selected != null && selected.isNotEmpty) {
+      return selected;
+    }
+    return dest.imagePath;
+  }
+
+  Future<void> _loadDestinationDetail() async {
+    final current = _destination;
+    final queryId = current.id?.trim();
+    final sourceLocationId = current.sourceLocationId?.trim();
+
+    if ((queryId == null || queryId.isEmpty) &&
+        (sourceLocationId == null || sourceLocationId.isEmpty)) {
+      return;
+    }
+
+    try {
+      final endpoint = searchEndpointForType(current.type);
+      final query = queryId != null && queryId.isNotEmpty
+          ? 'id=${Uri.encodeComponent(queryId)}'
+          : 'sourceLocationId=${Uri.encodeComponent(sourceLocationId!)}';
+      final response = await apiGet('$endpoint/search?$query', token: widget.authToken);
+      final data = tryDecodeJsonObject(response.body);
+
+      if (response.statusCode != 200 || data?['success'] != true) {
+        return;
+      }
+
+      final payload = data?['data'];
+      if (payload is! Map) {
+        return;
+      }
+
+      final detailJson = Map<String, dynamic>.from(payload);
+      detailJson['type'] ??= current.type;
+      final detailedDestination = Destination.fromJson(detailJson);
+
+      if (!mounted) return;
+      setState(() => _destination = detailedDestination);
+    } catch (_) {
+      // Keep the originally supplied destination if the detail refresh fails.
+    }
+  }
+
   Future<void> _toggleSaved() async {
     final token = widget.authToken?.trim();
     if (token == null || token.isEmpty) {
@@ -229,7 +282,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
       return;
     }
 
-    final dest = widget.destination;
+    final dest = _destination;
 
     try {
       String? placeId = dest.id;
@@ -274,10 +327,6 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     }
   }
 
-  void _toggleLike() {
-    setState(() => _isLiked = !_isLiked);
-  }
-
   void _selectTab(int index) {
     setState(() => _selectedTab = index);
     if (index == 1) {
@@ -293,7 +342,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
       _reviewsError = null;
     });
 
-    final dest = widget.destination;
+    final dest = _destination;
 
     try {
       String? locationId = dest.id;
@@ -348,7 +397,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
       return;
     }
 
-    final dest = widget.destination;
+    final dest = _destination;
 
     try {
       String? locationId = dest.id;
@@ -398,6 +447,161 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
       ..showSnackBar(SnackBar(content: Text(message)));
   }
 
+  void _sharePlace() {
+    final String domain = kIsWeb ? Uri.base.origin : 'https://tourxport.vercel.app';
+    final String targetId = _destination.id ?? _destination.sourceLocationId ?? '';
+    if (targetId.isEmpty) {
+      _showMessage(_isVi ? 'Không tìm thấy ID địa điểm để chia sẻ' : 'Location ID not found for sharing');
+      return;
+    }
+    final String sharePath = Uri(
+      path: '/location',
+      queryParameters: {
+        'id': targetId,
+        'type': _placeTypeSlug(_destination.type),
+      },
+    ).toString();
+    final String shareUrl = '$domain$sharePath';
+    final String intro = _isVi
+        ? 'Khám phá ${_destination.name} trên TourXport:'
+        : 'Explore ${_destination.name} on TourXport:';
+    final String shareText = '$intro\n$shareUrl';
+    
+    _showShareDialog(context, shareUrl, shareText, _isVi ? 'địa điểm' : 'place');
+  }
+
+  String _placeTypeSlug(String type) {
+    final normalized = type.trim().toLowerCase();
+    if (normalized.contains('restaurant') ||
+        normalized.contains('nhà hàng') ||
+        normalized.contains('nha hang')) {
+      return 'restaurant';
+    }
+    if (normalized.contains('hotel') ||
+        normalized.contains('khách sạn') ||
+        normalized.contains('khach san')) {
+      return 'hotel';
+    }
+    return 'place';
+  }
+
+  void _showShareDialog(
+    BuildContext context,
+    String shareUrl,
+    String shareText,
+    String title,
+  ) {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
+          child: AlertDialog(
+            backgroundColor: const Color(0xFF0F1E1B).withOpacity(0.92),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(24),
+              side: BorderSide(color: Colors.white.withOpacity(0.12), width: 1.2),
+            ),
+            title: Text(
+              _isVi ? 'Chia sẻ $title' : 'Share $title',
+              style: const TextStyle(
+                fontFamily: 'Montserrat',
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 18,
+              ),
+            ),
+            content: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  _isVi
+                      ? 'Chia sẻ qua ứng dụng khác hoặc sao chép liên kết bên dưới:'
+                      : 'Share through another app or copy the link below:',
+                  style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    color: Colors.white.withOpacity(0.7),
+                    fontSize: 13,
+                  ),
+                ),
+                const SizedBox(height: 16),
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.06),
+                    borderRadius: BorderRadius.circular(16),
+                    border: Border.all(color: Colors.white.withOpacity(0.10)),
+                  ),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          shareUrl,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            color: Colors.white.withOpacity(0.95),
+                            fontSize: 13,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: 8),
+                      IconButton(
+                        icon: const Icon(Icons.copy_rounded, color: Color(0xFFD4AF7A), size: 20),
+                        tooltip: _isVi ? 'Sao chép' : 'Copy',
+                        onPressed: () {
+                          Clipboard.setData(ClipboardData(text: shareUrl));
+                          _showMessage(_isVi
+                              ? 'Đã sao chép liên kết chia sẻ vào khay nhớ tạm'
+                              : 'Copied share link to clipboard');
+                        },
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            actions: [
+              TextButton.icon(
+                onPressed: () async {
+                  final box = context.findRenderObject() as RenderBox?;
+                  await Share.share(
+                    shareText,
+                    subject: _isVi ? 'Chia sẻ $title TourXport' : 'Share TourXport $title',
+                    sharePositionOrigin:
+                        box == null ? null : box.localToGlobal(Offset.zero) & box.size,
+                  );
+                },
+                icon: const Icon(Icons.ios_share_rounded, color: Color(0xFFD4AF7A), size: 18),
+                label: Text(
+                  _isVi ? 'Chia sẻ' : 'Share',
+                  style: const TextStyle(
+                    fontFamily: 'Montserrat',
+                    color: Color(0xFFD4AF7A),
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              TextButton(
+                onPressed: () => Navigator.pop(context),
+                child: Text(
+                  _isVi ? 'Đóng' : 'Close',
+                  style: const TextStyle(
+                    fontFamily: 'Montserrat',
+                    color: Color(0xFFD4AF7A),
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
   @override
   void dispose() {
     _sheetCtrl.removeListener(_onSheetChanged);
@@ -407,7 +611,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final dest = widget.destination;
+    final dest = _destination;
     final screenH = MediaQuery.of(context).size.height;
     final screenW = MediaQuery.of(context).size.width;
     final parentAnim = _routeAnimation ?? const AlwaysStoppedAnimation(1.0);
@@ -416,7 +620,13 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     if (isDesktop) {
       return Scaffold(
         backgroundColor: const Color(0xFF0F1E1B),
-        body: _buildDesktopLayout(dest, screenH, screenW),
+        body: Stack(
+          fit: StackFit.expand,
+          children: [
+            _buildDetailBackground(dest),
+            SafeArea(child: _buildDesktopLayout(dest)),
+          ],
+        ),
       );
     }
 
@@ -481,218 +691,161 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     );
   }
 
-  Widget _buildDesktopLayout(Destination dest, double screenH, double screenW) {
+  Widget _buildDesktopLayout(Destination dest) {
     return Center(
       child: Container(
-        constraints: const BoxConstraints(maxWidth: 1200),
+        constraints: const BoxConstraints(maxWidth: 1240),
         padding: const EdgeInsets.all(32),
-        child: Row(
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Left Half: Image & Gallery
+            Row(
+              children: [
+                _glassCircle(Icons.arrow_back_ios_new, () => Navigator.pop(context, {
+                  'isSaved': _isSaved,
+                  'isLiked': _isLiked,
+                })),
+                const SizedBox(width: 16),
+                Expanded(
+                  child: Text(
+                    dest.name,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontSize: 34,
+                      fontWeight: FontWeight.w900,
+                      color: Colors.white,
+                      height: 1.12,
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 16),
+                _buildHeaderActions(),
+              ],
+            ),
+            const SizedBox(height: 24),
             Expanded(
-              flex: 4,
-              child: Column(
+              child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Beautiful back button and title
-                  Row(
-                    children: [
-                      _glassCircle(Icons.arrow_back_ios_new, () => Navigator.pop(context, {
-                        'isSaved': _isSaved,
-                        'isLiked': _isLiked,
-                      })),
-                      const SizedBox(width: 16),
-                      Expanded(
-                        child: Text(
-                          dest.name,
-                          style: const TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 32,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
+                  Expanded(
+                    flex: 4,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(28),
+                              border: Border.all(color: Colors.white.withOpacity(0.1), width: 1),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black.withOpacity(0.3),
+                                  blurRadius: 20,
+                                  offset: const Offset(0, 10),
+                                ),
+                              ],
+                            ),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(28),
+                              child: Destination.buildImage(
+                                _activeImagePath(dest),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                        const SizedBox(height: 20),
+                        _sectionTitle(_isVi ? 'Bộ sưu tập' : 'Gallery'),
+                        const SizedBox(height: 12),
+                        _buildGallery(dest),
+                      ],
+                    ),
                   ),
-                  const SizedBox(height: 24),
-
-                  // Image Container
+                  const SizedBox(width: 48),
                   Expanded(
-                    child: Container(
-                      decoration: BoxDecoration(
+                    flex: 5,
+                    child: Card(
+                      elevation: 0,
+                      color: const Color(0xFF0D1B18).withOpacity(0.68),
+                      shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(28),
-                        border: Border.all(color: Colors.white.withOpacity(0.1), width: 1),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black.withOpacity(0.3),
-                            blurRadius: 20,
-                            offset: const Offset(0, 10),
-                          ),
-                        ],
+                        side: BorderSide(color: Colors.white.withOpacity(0.10)),
                       ),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(28),
-                        child: Stack(
-                          fit: StackFit.expand,
-                          children: [
-                            Destination.buildImage(dest.imagePath, fit: BoxFit.cover),
-                            
-                            // Top overlay with actions
-                            Positioned(
-                              top: 20,
-                              right: 20,
-                              child: Row(
-                                children: [
-                                  _glassCircleAnimatedIcon(
-                                    isActive: _isLiked,
-                                    activeIcon: Icons.favorite,
-                                    inactiveIcon: Icons.favorite_border,
-                                    onTap: _toggleLike,
-                                    activeColor: const Color(0xFFE74C3C),
+                        child: BackdropFilter(
+                          filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+                          child: Padding(
+                            padding: const EdgeInsets.all(32),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                _buildTabHeader(dest),
+                                const SizedBox(height: 20),
+                                Expanded(
+                                  child: SingleChildScrollView(
+                                    child: AnimatedSwitcher(
+                                      duration: const Duration(milliseconds: 300),
+                                      child: _selectedTab == 0
+                                          ? _buildOverviewTabForDesktop(dest)
+                                          : _buildReviewsTab(dest),
+                                    ),
                                   ),
-                                  const SizedBox(width: 12),
-                                  _glassCircleAnimatedIcon(
-                                    isActive: _isSaved,
-                                    activeIcon: Icons.bookmark,
-                                    inactiveIcon: Icons.bookmark_border,
-                                    onTap: _toggleSaved,
-                                    activeColor: const Color(0xFFD4AF7A),
+                                ),
+                                const SizedBox(height: 28),
+                                GestureDetector(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => MapScreen(destination: _destination),
+                                      ),
+                                    );
+                                  },
+                                  child: Container(
+                                    height: 56,
+                                    decoration: BoxDecoration(
+                                      gradient: const LinearGradient(
+                                        colors: [Color(0xFFB5956A), Color(0xFFD4AF7A)],
+                                      ),
+                                      borderRadius: BorderRadius.circular(20),
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: const Color(0xFFB5956A).withOpacity(0.4),
+                                          blurRadius: 20,
+                                          offset: const Offset(0, 8),
+                                        ),
+                                      ],
+                                    ),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        const Icon(Icons.assistant_direction_rounded, color: Colors.white, size: 24),
+                                        const SizedBox(width: 10),
+                                        Text(
+                                          _isVi ? 'Đường đi' : 'Directions',
+                                          style: const TextStyle(
+                                            fontFamily: 'Montserrat',
+                                            fontWeight: FontWeight.w700,
+                                            fontSize: 16,
+                                            color: Colors.white,
+                                            letterSpacing: 1,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
-                          ],
+                          ),
                         ),
                       ),
                     ),
                   ),
-                  const SizedBox(height: 20),
-
-                  // Gallery title
-                  _sectionTitle(_isVi ? 'Bộ sưu tập' : 'Gallery'),
-                  const SizedBox(height: 12),
-
-                  // Gallery
-                  _buildGallery(dest),
                 ],
-              ),
-            ),
-            const SizedBox(width: 48),
-
-            // Right Half: Details, Description, Reviews, CTA
-            Expanded(
-              flex: 5,
-              child: Card(
-                color: const Color(0xFF15221F).withOpacity(0.6),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(28),
-                  side: BorderSide(color: Colors.white.withOpacity(0.08)),
-                ),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(28),
-                  child: BackdropFilter(
-                    filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-                    child: Padding(
-                      padding: const EdgeInsets.all(32),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          // Details
-                          Row(
-                            children: [
-                              const Icon(Icons.location_on, color: Color(0xFFD4AF7A), size: 20),
-                              const SizedBox(width: 6),
-                              Text(
-                                _translateProvince(dest.province),
-                                style: const TextStyle(
-                                  fontFamily: 'Montserrat',
-                                  fontSize: 16,
-                                  color: Colors.white70,
-                                ),
-                              ),
-                              const Spacer(),
-                              const Icon(Icons.star_rounded, color: Color(0xFFFFB74D), size: 22),
-                              const SizedBox(width: 6),
-                              Text(
-                                _ratingSummary(dest),
-                                style: const TextStyle(
-                                  fontFamily: 'Montserrat',
-                                  fontSize: 15,
-                                  color: Colors.white70,
-                                ),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(height: 28),
-
-                          // Tab bar
-                          _buildTabBar(),
-                          const SizedBox(height: 20),
-
-                          // Tab content
-                          Expanded(
-                            child: SingleChildScrollView(
-                              child: AnimatedSwitcher(
-                                duration: const Duration(milliseconds: 300),
-                                child: _selectedTab == 0
-                                    ? _buildOverviewTabForDesktop(dest)
-                                    : _buildReviewsTab(dest),
-                              ),
-                            ),
-                          ),
-                          const SizedBox(height: 28),
-
-                          // CTA Button
-                          GestureDetector(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => MapScreen(destination: widget.destination),
-                                ),
-                              );
-                            },
-                            child: Container(
-                              height: 56,
-                              decoration: BoxDecoration(
-                                gradient: const LinearGradient(
-                                  colors: [Color(0xFFB5956A), Color(0xFFD4AF7A)],
-                                ),
-                                borderRadius: BorderRadius.circular(20),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: const Color(0xFFB5956A).withOpacity(0.4),
-                                    blurRadius: 20,
-                                    offset: const Offset(0, 8),
-                                  ),
-                                ],
-                              ),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  const Icon(Icons.directions_rounded, color: Colors.white, size: 24),
-                                  const SizedBox(width: 10),
-                                  Text(
-                                    _isVi ? 'Đường đi' : 'Directions',
-                                    style: const TextStyle(
-                                      fontFamily: 'Montserrat',
-                                      fontWeight: FontWeight.w700,
-                                      fontSize: 16,
-                                      color: Colors.white,
-                                      letterSpacing: 1,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
               ),
             ),
           ],
@@ -708,11 +861,258 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
         _sectionTitle(_isVi ? 'Mô tả' : 'Description'),
         const SizedBox(height: 8),
         _buildAboutSection(dest),
+        if (_quickInfoItems(dest).isNotEmpty) ...[
+          const SizedBox(height: 24),
+          _sectionTitle(_isVi ? 'Thông tin nhanh' : 'Quick info'),
+          const SizedBox(height: 12),
+          _buildQuickInfoGrid(dest),
+        ],
+        if (_openingHoursLines(dest).isNotEmpty) ...[
+          const SizedBox(height: 24),
+          _sectionTitle(_isVi ? 'Giờ mở cửa' : 'Opening hours'),
+          const SizedBox(height: 12),
+          _buildOpeningHoursSection(dest),
+        ],
         const SizedBox(height: 24),
         _sectionTitle(_isVi ? 'Điểm nổi bật' : 'Highlights'),
         const SizedBox(height: 12),
         _buildHighlightChips(dest),
       ],
+    );
+  }
+
+  Widget _buildDetailBackground(Destination dest) {
+    final activeImagePath = _activeImagePath(dest);
+    final backgroundPath = dest.hasImage == true
+        ? activeImagePath
+        : 'assets/images/login_bg.jpg';
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        ImageFiltered(
+          imageFilter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
+          child: Transform.scale(
+            scale: 1.04,
+            child: Destination.buildImage(backgroundPath, fit: BoxFit.cover),
+          ),
+        ),
+        Container(
+          color: Colors.black.withOpacity(0.28),
+        ),
+        Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                const Color(0xFF0A1714).withOpacity(0.50),
+                const Color(0xFF10241E).withOpacity(0.30),
+                Colors.black.withOpacity(0.52),
+              ],
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildQuickInfoGrid(Destination dest) {
+    final items = _quickInfoItems(dest);
+    if (items.isEmpty) return const SizedBox.shrink();
+
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final columns = constraints.maxWidth >= 520 ? 2 : 1;
+        final width = (constraints.maxWidth - (columns - 1) * 10) / columns;
+        return Wrap(
+          spacing: 10,
+          runSpacing: 10,
+          children: items
+              .map((item) => SizedBox(
+                    width: width,
+                    child: _quickInfoTile(
+                      icon: item.$1,
+                      label: item.$2,
+                      value: item.$3,
+                    ),
+                  ))
+              .toList(),
+        );
+      },
+    );
+  }
+
+  List<(IconData, String, String)> _quickInfoItems(Destination dest) {
+    final items = <(IconData, String, String)>[];
+    if (dest.type.trim().isNotEmpty) {
+      items.add((Icons.place_rounded, _isVi ? 'Loại hình' : 'Type', _translatePlaceType(dest.type)));
+    }
+    if (dest.category?.trim().isNotEmpty == true) {
+      items.add((Icons.category_rounded, _isVi ? 'Danh mục' : 'Category', _translateCategory(dest.category!)));
+    }
+    if (dest.province.trim().isNotEmpty) {
+      items.add((Icons.location_city_rounded, _isVi ? 'Khu vực' : 'Area', _translateProvince(dest.province)));
+    }
+    if (dest.ranking?.trim().isNotEmpty == true) {
+      items.add((Icons.leaderboard_rounded, _isVi ? 'Xếp hạng' : 'Ranking', dest.ranking!.trim()));
+    }
+    if (dest.priceRange?.trim().isNotEmpty == true) {
+      items.add((Icons.payments_rounded, _isVi ? 'Chi phí' : 'Price', dest.priceRange!.trim()));
+    }
+    return items;
+  }
+
+  Widget _buildOpeningHoursSection(Destination dest) {
+    final dayEntries = _openingHourDayEntries(dest);
+    final displayLines = dayEntries.isEmpty ? _openingHoursDisplayLines(dest) : const <String>[];
+
+    if (dayEntries.isNotEmpty) {
+      return Wrap(
+        spacing: 10,
+        runSpacing: 10,
+        children: dayEntries
+            .map((entry) => _openingHourTile(day: entry.$1, hours: entry.$2))
+            .toList(),
+      );
+    }
+
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: Colors.white.withOpacity(0.055),
+        borderRadius: BorderRadius.circular(18),
+        border: Border.all(color: Colors.white.withOpacity(0.09)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: displayLines
+            .map((line) => Padding(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Icon(Icons.schedule_rounded, color: Color(0xFFD4AF7A), size: 16),
+                      const SizedBox(width: 10),
+                      Expanded(
+                        child: Text(
+                          line,
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 13,
+                            height: 1.45,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.white.withOpacity(0.82),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ))
+            .toList(),
+      ),
+    );
+  }
+
+  Widget _openingHourTile({
+    required String day,
+    required String hours,
+  }) {
+    return Container(
+      width: 170,
+      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+      decoration: BoxDecoration(
+        color: Colors.white.withOpacity(0.055),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: Colors.white.withOpacity(0.09)),
+      ),
+      child: Row(
+        children: [
+          const Icon(Icons.schedule_rounded, color: Color(0xFFD4AF7A), size: 16),
+          const SizedBox(width: 9),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  day,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontSize: 11,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.white.withOpacity(0.58),
+                  ),
+                ),
+                const SizedBox(height: 3),
+                Text(
+                  hours,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontSize: 13,
+                    fontWeight: FontWeight.w800,
+                    color: Colors.white,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _quickInfoTile({
+    required IconData icon,
+    required String label,
+    required String value,
+  }) {
+    return Container(
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: Colors.white.withOpacity(0.055),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: Colors.white.withOpacity(0.09)),
+      ),
+      child: Row(
+        children: [
+          Icon(icon, color: const Color(0xFFD4AF7A), size: 18),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  label,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontSize: 11,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.white.withOpacity(0.56),
+                  ),
+                ),
+                const SizedBox(height: 3),
+                Text(
+                  value,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontSize: 13,
+                    fontWeight: FontWeight.w800,
+                    color: Colors.white,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 
@@ -724,7 +1124,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
   ) {
     if (widget.cardRect == null) {
       return Positioned.fill(
-        child: Destination.buildImage(dest.imagePath, fit: BoxFit.cover),
+        child: Destination.buildImage(_activeImagePath(dest), fit: BoxFit.cover),
       );
     }
 
@@ -741,7 +1141,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
           return Positioned.fill(
             child: Transform.translate(
               offset: Offset(0, offsetY),
-              child: Destination.buildImage(dest.imagePath, fit: BoxFit.cover),
+              child: Destination.buildImage(_activeImagePath(dest), fit: BoxFit.cover),
             ),
           );
         }
@@ -793,7 +1193,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
               child: Stack(
                 fit: StackFit.expand,
                 children: [
-                  Destination.buildImage(dest.imagePath, fit: BoxFit.cover),
+                  Destination.buildImage(_activeImagePath(dest), fit: BoxFit.cover),
                   
                   if (cardInfoOpacity > 0)
                     Opacity(
@@ -879,7 +1279,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
           parent: parentAnim,
           curve: Curves.easeOut,
         ),
-        child: Destination.buildImage(dest.imagePath, fit: BoxFit.cover),
+        child: Destination.buildImage(_activeImagePath(dest), fit: BoxFit.cover),
       ),
     );
   }
@@ -890,35 +1290,12 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
       left: 20, right: 20,
       child: FadeTransition(
         opacity: _headerFade,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            _glassCircle(Icons.arrow_back_ios_new, () => Navigator.pop(context, {
-              'isSaved': _isSaved,
-              'isLiked': _isLiked,
-            })),
-            Row(
-              children: [
-                _glassCircle(Icons.share_outlined, () {}),
-                const SizedBox(width: 10),
-                _glassCircleAnimatedIcon(
-                  isActive: _isLiked,
-                  activeIcon: Icons.favorite,
-                  inactiveIcon: Icons.favorite_border,
-                  onTap: _toggleLike,
-                  activeColor: const Color(0xFFE74C3C),
-                ),
-                const SizedBox(width: 10),
-                _glassCircleAnimatedIcon(
-                  isActive: _isSaved,
-                  activeIcon: Icons.bookmark,
-                  inactiveIcon: Icons.bookmark_border,
-                  onTap: _toggleSaved,
-                  activeColor: const Color(0xFFD4AF7A),
-                ),
-              ],
-            ),
-          ],
+        child: Align(
+          alignment: Alignment.centerLeft,
+          child: _glassCircle(Icons.arrow_back_ios_new, () => Navigator.pop(context, {
+            'isSaved': _isSaved,
+            'isLiked': _isLiked,
+          })),
         ),
       ),
     );
@@ -951,8 +1328,8 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Colors.black.withOpacity(0.50),
-                      Colors.black.withOpacity(0.55),
+                      const Color(0xFF0D1B18).withOpacity(0.84),
+                      const Color(0xFF08110F).withOpacity(0.92),
                     ],
                   ),
                   borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
@@ -974,10 +1351,24 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                         ),
                       ),
                       const SizedBox(height: 18),
-                      Text(dest.name, style: const TextStyle(
-                        fontFamily: 'Montserrat', fontSize: 28,
-                        fontWeight: FontWeight.w700, color: Colors.white,
-                      )),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Expanded(
+                            child: Text(
+                              dest.name,
+                              style: const TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 28,
+                                fontWeight: FontWeight.w900,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(width: 12),
+                          _buildHeaderActions(spacing: 8),
+                        ],
+                      ),
                       const SizedBox(height: 6),
                       Row(
                         children: [
@@ -987,17 +1378,10 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                             fontFamily: 'Montserrat', fontSize: 14,
                             color: Colors.white70,
                           )),
-                          const Spacer(),
-                          const Icon(Icons.star_rounded, color: Color(0xFFFFB74D), size: 18),
-                          const SizedBox(width: 4),
-                          Text(_ratingSummary(dest), style: const TextStyle(
-                            fontFamily: 'Montserrat', fontSize: 13,
-                            color: Colors.white70,
-                          )),
                         ],
                       ),
                       const SizedBox(height: 24),
-                      _buildTabBar(),
+                      _buildTabHeader(dest),
                       const SizedBox(height: 20),
                       AnimatedSwitcher(
                         duration: const Duration(milliseconds: 300),
@@ -1016,6 +1400,17 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     );
   }
 
+  Widget _buildTabHeader(Destination dest) {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Expanded(child: _buildTabBar()),
+        const SizedBox(width: 12),
+        _buildRatingInline(dest),
+      ],
+    );
+  }
+
   Widget _buildTabBar() {
     return Row(
       children: [
@@ -1023,6 +1418,39 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
         const SizedBox(width: 24),
         _tabItem(_isVi ? 'Nhận xét' : 'Reviews', 1),
       ],
+    );
+  }
+
+  Widget _buildRatingInline(Destination dest) {
+    if (MediaQuery.of(context).size.width < 600) {
+      return const SizedBox.shrink();
+    }
+    if (dest.totalScore == null && dest.reviewsCount == null) {
+      return const SizedBox.shrink();
+    }
+    return Padding(
+      padding: const EdgeInsets.only(top: 1),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          const Icon(Icons.star_rounded, color: Color(0xFFFFB74D), size: 19),
+          const SizedBox(width: 5),
+          ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 190),
+            child: Text(
+              _ratingSummary(dest),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(
+                fontFamily: 'Montserrat',
+                fontSize: 13,
+                fontWeight: FontWeight.w500,
+                color: Colors.white.withOpacity(0.82),
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 
@@ -1058,6 +1486,18 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
         _sectionTitle(_isVi ? 'Mô tả' : 'Description'),
         const SizedBox(height: 8),
         _buildAboutSection(dest),
+        if (_quickInfoItems(dest).isNotEmpty) ...[
+          const SizedBox(height: 24),
+          _sectionTitle(_isVi ? 'Thông tin nhanh' : 'Quick info'),
+          const SizedBox(height: 12),
+          _buildQuickInfoGrid(dest),
+        ],
+        if (_openingHoursLines(dest).isNotEmpty) ...[
+          const SizedBox(height: 24),
+          _sectionTitle(_isVi ? 'Giờ mở cửa' : 'Opening hours'),
+          const SizedBox(height: 12),
+          _buildOpeningHoursSection(dest),
+        ],
         const SizedBox(height: 24),
         _sectionTitle(_isVi ? 'Điểm nổi bật' : 'Highlights'),
         const SizedBox(height: 12),
@@ -1227,29 +1667,73 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
   }
 
   Widget _buildGallery(Destination dest) {
-    final images = [
-      dest.imagePath,
-      destinationPlaceholderPath,
-      destinationPlaceholderPath,
-      destinationPlaceholderPath,
-      destinationPlaceholderPath,
-    ];
+    final seenImages = <String>{};
+    final images = <String>[];
+    for (final image in [dest.imagePath, ...dest.galleryImagePaths]) {
+      final trimmed = image.trim();
+      if (trimmed.isEmpty || !seenImages.add(trimmed)) continue;
+      images.add(trimmed);
+    }
+
+    if (images.isEmpty) {
+      images.add(destinationPlaceholderPath);
+    }
+    final activeImagePath = _activeImagePath(dest);
+
     return SizedBox(
       height: 100,
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
         itemCount: images.length,
         separatorBuilder: (_, __) => const SizedBox(width: 10),
-        itemBuilder: (context, i) => ClipRRect(
-          borderRadius: BorderRadius.circular(16),
-          child: SizedBox(
-            width: 130,
-            child: Destination.buildImage(
-              images[i],
-              fit: BoxFit.cover,
+        itemBuilder: (context, i) {
+          final image = images[i];
+          final isActive = image == activeImagePath;
+          return MouseRegion(
+            cursor: SystemMouseCursors.click,
+            child: GestureDetector(
+              behavior: HitTestBehavior.opaque,
+              onTap: () => setState(() => _selectedImagePath = image),
+              child: AnimatedContainer(
+                duration: const Duration(milliseconds: 180),
+                curve: Curves.easeOut,
+                width: 130,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(
+                    color: isActive
+                        ? const Color(0xFFD4AF7A).withOpacity(0.85)
+                        : Colors.white.withOpacity(0.10),
+                    width: isActive ? 1.8 : 1,
+                  ),
+                  boxShadow: isActive
+                      ? [
+                          BoxShadow(
+                            color: const Color(0xFFD4AF7A).withOpacity(0.22),
+                            blurRadius: 14,
+                            offset: const Offset(0, 6),
+                          ),
+                        ]
+                      : null,
+                ),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(15),
+                  child: Stack(
+                    fit: StackFit.expand,
+                    children: [
+                      Destination.buildImage(
+                        image,
+                        fit: BoxFit.cover,
+                      ),
+                      if (!isActive)
+                        Container(color: const Color(0xFF0D1B18).withOpacity(0.16)),
+                    ],
+                  ),
+                ),
+              ),
             ),
-          ),
-        ),
+          );
+        },
       ),
     );
   }
@@ -1263,7 +1747,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
           child: Container(
             padding: const EdgeInsets.fromLTRB(24, 20, 24, 34),
             decoration: BoxDecoration(
-              color: Colors.black.withOpacity(0.4),
+              color: const Color(0xFF08110F).withOpacity(0.84),
               border: Border(top: BorderSide(color: Colors.white.withOpacity(0.1))),
             ),
             child: Row(
@@ -1274,16 +1758,14 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => MapScreen(destination: widget.destination),
+                          builder: (context) => MapScreen(destination: _destination),
                         ),
                       );
                     },
                     child: Container(
                       height: 56,
                       decoration: BoxDecoration(
-                        gradient: const LinearGradient(
-                          colors: [Color(0xFFB5956A), Color(0xFFD4AF7A)],
-                        ),
+                        color: const Color(0xFFD4AF7A),
                         borderRadius: BorderRadius.circular(20),
                         boxShadow: [
                           BoxShadow(
@@ -1296,7 +1778,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          const Icon(Icons.directions_rounded, color: Colors.white, size: 24),
+                          const Icon(Icons.assistant_direction_rounded, color: Colors.white, size: 24),
                           const SizedBox(width: 10),
                           Text(
                             _isVi ? 'Đường đi' : 'Directions',
@@ -1321,6 +1803,23 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     );
   }
 
+  Widget _buildHeaderActions({double spacing = 12}) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        _glassCircle(Icons.share_outlined, _sharePlace),
+        SizedBox(width: spacing),
+        _glassCircleAnimatedIcon(
+          isActive: _isSaved,
+          activeIcon: Icons.bookmark,
+          inactiveIcon: Icons.bookmark_border,
+          onTap: _toggleSaved,
+          activeColor: const Color(0xFFD4AF7A),
+        ),
+      ],
+    );
+  }
+
   Widget _glassCircle(IconData icon, VoidCallback onTap) {
     return GestureDetector(
       onTap: onTap,
@@ -1331,8 +1830,8 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
             width: 44, height: 44,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: Colors.black.withOpacity(0.25),
-              border: Border.all(color: Colors.white.withOpacity(0.2)),
+              color: Colors.white.withOpacity(0.10),
+              border: Border.all(color: Colors.white.withOpacity(0.16)),
             ),
             child: Icon(icon, color: Colors.white, size: 20),
           ),
@@ -1357,8 +1856,8 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
             width: 44, height: 44,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: Colors.black.withOpacity(0.25),
-              border: Border.all(color: Colors.white.withOpacity(0.2)),
+              color: Colors.white.withOpacity(0.10),
+              border: Border.all(color: Colors.white.withOpacity(0.16)),
             ),
             child: AnimatedSwitcher(
               duration: const Duration(milliseconds: 220),
@@ -1399,17 +1898,18 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
       children: highlights.map((h) => Container(
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
         decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.13),
-          borderRadius: BorderRadius.circular(20),
-          border: Border.all(color: Colors.white.withOpacity(0.2)),
+          color: Colors.white.withOpacity(0.075),
+          borderRadius: BorderRadius.circular(999),
+          border: Border.all(color: Colors.white.withOpacity(0.12)),
         ),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(h.$1, size: 16, color: Colors.white.withOpacity(0.9)),
+            Icon(h.$1, size: 16, color: const Color(0xFFD4AF7A)),
             const SizedBox(width: 6),
             Text(h.$2, style: const TextStyle(
               fontFamily: 'Montserrat', fontSize: 13,
+              fontWeight: FontWeight.w700,
               color: Colors.white,
             )),
           ],
@@ -1434,11 +1934,25 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
       if (body.isNotEmpty) body,
     ].join('\n\n');
 
+    final images = review['images'];
+    final imageList = <String>[];
+    if (images is List) {
+      for (final img in images) {
+        if (img is Map) {
+          final url = (img['url'] ?? '').toString();
+          if (url.isNotEmpty) {
+            imageList.add(url);
+          }
+        }
+      }
+    }
+
     return _buildReviewCard(
       name: name.isNotEmpty ? name : 'Người dùng',
       rating: rating,
       text: text.isNotEmpty ? text : 'Người dùng chưa để lại nội dung.',
       avatarUrl: avatarUrl,
+      images: imageList,
     );
   }
 
@@ -1447,6 +1961,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
     required int rating,
     required String text,
     String avatarUrl = '',
+    List<String> images = const [],
   }) {
     return Container(
       padding: const EdgeInsets.all(16),
@@ -1490,6 +2005,83 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
             fontFamily: 'Montserrat', fontSize: 13,
             color: Colors.white.withOpacity(0.82), height: 1.5,
           )),
+          if (images.isNotEmpty) ...[
+            const SizedBox(height: 12),
+            SizedBox(
+              height: 70,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: images.length,
+                itemBuilder: (context, index) {
+                  final imgUrl = images[index];
+                  return GestureDetector(
+                    onTap: () => _showFullScreenImage(context, imgUrl),
+                    child: Container(
+                      width: 70,
+                      margin: const EdgeInsets.only(right: 8),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12),
+                        border: Border.all(color: Colors.white.withOpacity(0.12)),
+                      ),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(12),
+                        child: Image.network(imgUrl, fit: BoxFit.cover),
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+
+  void _showFullScreenImage(BuildContext context, String imageUrl) {
+    showDialog(
+      context: context,
+      barrierColor: Colors.black.withOpacity(0.9),
+      builder: (context) => Stack(
+        children: [
+          Positioned.fill(
+            child: InteractiveViewer(
+              minScale: 0.5,
+              maxScale: 4.0,
+              child: Center(
+                child: Image.network(
+                  imageUrl,
+                  loadingBuilder: (context, child, loadingProgress) {
+                    if (loadingProgress == null) return child;
+                    return const Center(
+                      child: CircularProgressIndicator(
+                        valueColor: AlwaysStoppedAnimation<Color>(Color(0xFFB5956A)),
+                      ),
+                    );
+                  },
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: MediaQuery.of(context).padding.top + 16,
+            right: 16,
+            child: GestureDetector(
+              onTap: () => Navigator.of(context).pop(),
+              child: Container(
+                padding: const EdgeInsets.all(8),
+                decoration: const BoxDecoration(
+                  color: Colors.black45,
+                  shape: BoxShape.circle,
+                ),
+                child: const Icon(
+                  Icons.close_rounded,
+                  color: Colors.white,
+                  size: 24,
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
@@ -1527,6 +2119,116 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
       return 'hotels';
     }
     return 'places';
+  }
+
+  String _translateCategory(String category) {
+    final trimmed = category.trim();
+    if (_isVi) return trimmed;
+    final normalized = trimmed.toLowerCase();
+    if (normalized.contains('điểm du lịch') || normalized.contains('diem du lich')) {
+      return 'Tourist attraction';
+    }
+    if (normalized.contains('nhà hàng') || normalized.contains('nha hang')) {
+      return 'Restaurant';
+    }
+    if (normalized.contains('khách sạn') || normalized.contains('khach san')) {
+      return 'Hotel';
+    }
+    return trimmed;
+  }
+
+  String _translatePlaceType(String type) {
+    final normalized = type.trim().toLowerCase();
+    if (normalized.contains('restaurant') ||
+        normalized.contains('nhà hàng') ||
+        normalized.contains('nha hang')) {
+      return _isVi ? 'Nhà hàng' : 'Restaurant';
+    }
+    if (normalized.contains('hotel') ||
+        normalized.contains('khách sạn') ||
+        normalized.contains('khach san')) {
+      return _isVi ? 'Khách sạn' : 'Hotel';
+    }
+    return _isVi ? 'Địa điểm' : 'Place';
+  }
+
+  List<String> _openingHoursLines(Destination dest) {
+    final dayEntries = _openingHourDayEntries(dest);
+    if (dayEntries.isNotEmpty) {
+      return dayEntries.map((entry) => '${entry.$1}: ${entry.$2}').toList();
+    }
+    return _openingHoursDisplayLines(dest);
+  }
+
+  List<String> _openingHoursDisplayLines(Destination dest) {
+    final hours = dest.openingHours;
+    if (hours == null || hours.isEmpty) return const [];
+
+    final simple = hours['display'] ?? hours['text'] ?? hours['summary'];
+    if (simple is String && simple.trim().isNotEmpty) {
+      return [simple.trim()];
+    }
+    if (simple is List) {
+      return simple
+          .map((item) => item.toString().trim())
+          .where((item) => item.isNotEmpty)
+          .toList();
+    }
+
+    return hours.entries
+        .where((entry) =>
+            entry.key != 'weekRanges' &&
+            entry.value != null &&
+            entry.value is! Map &&
+            entry.value is! List &&
+            entry.value.toString().trim().isNotEmpty)
+        .map((entry) => '${entry.key}: ${entry.value}')
+        .toList();
+  }
+
+  List<(String, String)> _openingHourDayEntries(Destination dest) {
+    final hours = dest.openingHours;
+    if (hours == null || hours.isEmpty) return const [];
+
+    final weekRanges = hours['weekRanges'];
+    if ((weekRanges is Map && weekRanges.isNotEmpty) ||
+        (weekRanges is List && weekRanges.isNotEmpty)) {
+      final labelsVi = ['Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7', 'Chủ nhật'];
+      final labelsEn = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+      final labels = _isVi ? labelsVi : labelsEn;
+      final entries = <(String, String)>[];
+      final rangeGroups = weekRanges is List
+          ? weekRanges.whereType<List>().where((ranges) => ranges.isNotEmpty).toList()
+          : List.generate(7, (index) => (weekRanges as Map)['$index'] ?? weekRanges[index])
+              .whereType<List>()
+              .where((ranges) => ranges.isNotEmpty)
+              .toList();
+
+      for (var dayIndex = 0; dayIndex < rangeGroups.length && dayIndex < labels.length; dayIndex++) {
+        final formattedRanges = rangeGroups[dayIndex].map((range) {
+          if (range is! Map) return '';
+          final open = _formatOpeningMinute(range['open_time'] ?? range['openTime']);
+          final close = _formatOpeningMinute(range['close_time'] ?? range['closeTime']);
+          if (open == null || close == null) return '';
+          return '$open - $close';
+        }).where((range) => range.isNotEmpty).join(', ');
+
+        if (formattedRanges.isNotEmpty) {
+          entries.add((labels[dayIndex], formattedRanges));
+        }
+      }
+      return entries;
+    }
+
+    return const [];
+  }
+
+  String? _formatOpeningMinute(dynamic value) {
+    final minutes = value is num ? value.toInt() : int.tryParse(value?.toString() ?? '');
+    if (minutes == null || minutes < 0) return null;
+    final hour = (minutes ~/ 60).clamp(0, 23);
+    final minute = minutes % 60;
+    return '${hour.toString().padLeft(2, '0')}:${minute.toString().padLeft(2, '0')}';
   }
 
   IconData _iconForTag(String tag) {

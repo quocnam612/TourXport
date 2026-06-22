@@ -11,3 +11,5 @@ windows/
 *.iml
 .postman/
 postman/
+diff_changes.txt
+node_modules/

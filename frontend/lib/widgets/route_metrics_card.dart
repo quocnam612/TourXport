@@ -1,11 +1,13 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import '../utils/navigation_helper.dart';
+import '../utils/tour_map_utils.dart';
 
 class RouteMetricsCard extends StatelessWidget {
   final double routeDurationMin;
   final double routeDistanceKm;
   final VoidCallback onClose;
+  final VoidCallback? onOpenMap;
   final DateTime? startTime;
 
   const RouteMetricsCard({
@@ -13,6 +15,7 @@ class RouteMetricsCard extends StatelessWidget {
     required this.routeDurationMin,
     required this.routeDistanceKm,
     required this.onClose,
+    this.onOpenMap,
     this.startTime,
   });
 
@@ -76,11 +79,11 @@ class RouteMetricsCard extends StatelessWidget {
                             ),
                           ),
                           TextSpan(
-                            text: '${routeDurationMin.toStringAsFixed(0)} phút ',
+                            text: '${TourMapUtils.formatDuration(routeDurationMin)} ',
                             style: const TextStyle(color: Color(0xFFD4AF7A)),
                           ),
                           TextSpan(
-                            text: '(${routeDistanceKm.toStringAsFixed(1).replaceAll('.', ',')} km)',
+                            text: '(${TourMapUtils.formatDistance(routeDistanceKm)})',
                             style: const TextStyle(color: Colors.white),
                           ),
                         ],
@@ -98,17 +101,31 @@ class RouteMetricsCard extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(width: 4),
-              // Nút đóng
-              GestureDetector(
-                onTap: onClose,
-                child: Padding(
-                  padding: const EdgeInsets.all(6),
-                  child: Icon(
-                    Icons.keyboard_arrow_up_rounded,
-                    color: Colors.white.withValues(alpha: 0.4),
-                    size: 18,
+              const SizedBox(width: 8),
+              if (onOpenMap != null)
+                Container(
+                  margin: const EdgeInsets.only(right: 8),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFD4AF7A).withOpacity(0.15),
+                    shape: BoxShape.circle,
                   ),
+                  child: IconButton(
+                    icon: const Icon(Icons.navigation_rounded, color: Color(0xFFD4AF7A), size: 20),
+                    onPressed: onOpenMap,
+                    padding: const EdgeInsets.all(8),
+                    constraints: const BoxConstraints(),
+                  ),
+                ),
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.white.withValues(alpha: 0.1),
+                  shape: BoxShape.circle,
+                ),
+                child: IconButton(
+                  icon: const Icon(Icons.close_rounded, color: Colors.white, size: 20),
+                  onPressed: onClose,
+                  padding: const EdgeInsets.all(8),
+                  constraints: const BoxConstraints(),
                 ),
               ),
             ],

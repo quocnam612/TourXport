@@ -274,17 +274,23 @@ class _TopNav extends StatelessWidget {
       crossAxisAlignment: WrapCrossAlignment.center,
       children: [
         _NavButton(
-          label: isVi ? 'Trang chủ' : 'Home',
-          icon: Icons.explore_rounded,
+          label: isVi ? 'Quay lại' : 'Back',
+          icon: Icons.arrow_back_rounded,
           selected: false,
-          onPressed: () => Navigator.pushNamedAndRemoveUntil(
-            context,
-            '/',
-            (route) => false,
-          ),
+          onPressed: () {
+            if (Navigator.of(context).canPop()) {
+              Navigator.of(context).pop();
+            } else {
+              Navigator.pushNamedAndRemoveUntil(
+                context,
+                '/',
+                (route) => false,
+              );
+            }
+          },
         ),
         _NavButton(
-          label: isVi ? 'Bảo mật' : 'Privacy',
+          label: isVi ? 'Quyền riêng tư' : 'Privacy',
           icon: Icons.privacy_tip_outlined,
           selected: activeRoute == '/privacy',
           onPressed: activeRoute == '/privacy'
@@ -292,12 +298,12 @@ class _TopNav extends StatelessWidget {
               : () => Navigator.pushReplacementNamed(context, '/privacy'),
         ),
         _NavButton(
-          label: isVi ? 'Xóa dữ liệu' : 'Data deletion',
-          icon: Icons.delete_outline_rounded,
-          selected: activeRoute == '/data-deletion',
-          onPressed: activeRoute == '/data-deletion'
+          label: isVi ? 'Điều khoản' : 'Terms',
+          icon: Icons.article_outlined,
+          selected: activeRoute == '/terms',
+          onPressed: activeRoute == '/terms'
               ? null
-              : () => Navigator.pushReplacementNamed(context, '/data-deletion'),
+              : () => Navigator.pushReplacementNamed(context, '/terms'),
         ),
         _NavButton(
           label: isVi ? 'Hướng dẫn' : 'Instruction',

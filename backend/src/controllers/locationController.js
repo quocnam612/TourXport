@@ -3,8 +3,35 @@ import config from '../config/config.js';
 import parser from '../utils/parser.js';
 import respond from '../utils/respond.js';
 import validator from '../utils/validators.js';
+import TravelAdvisor from '../services/TravelAdvisor.js';
 
 const locationPublicProjection = '-embedding -searchText';
+
+const hydrateLocationImages = async (location) => {
+    if (!location || !location.sourceLocationId || (Array.isArray(location.images) && location.images.length > 0)) {
+        return location;
+    }
+
+    try {
+        const images = await TravelAdvisor.getHighQualityPhotosBySourceLocationId(location.sourceLocationId, {
+            excludeUrls: [location.image?.url],
+            limit: 10
+        });
+
+        if (!images.length) {
+            return location;
+        }
+
+        return await PlaceDB.findByIdAndUpdate(
+            location._id,
+            { $set: { images } },
+            { new: true, runValidators: true }
+        ).select(locationPublicProjection);
+    } catch (error) {
+        console.warn(`Failed to hydrate images for place ${location.sourceLocationId}:`, error.message || error);
+        return location;
+    }
+};
 
 export const getLocations = async (req, res, next) => {
     try {
@@ -81,11 +108,13 @@ export const getLocation = async (req, res, next) => {
             return next(respond.httpError(lookupError, 400));
         }
 
-        const location = await PlaceDB.findOne(parser.buildLocationLookupFilter(req.query)).select(locationPublicProjection);
+        let location = await PlaceDB.findOne(parser.buildLocationLookupFilter(req.query)).select(locationPublicProjection);
 
         if (!location) {
             return next(respond.httpError('Location not found', 404));
         }
+
+        location = await hydrateLocationImages(location);
 
         res.status(200).json({
             success: true,

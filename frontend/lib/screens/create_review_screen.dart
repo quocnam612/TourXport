@@ -1,6 +1,11 @@
 import 'dart:ui';
+import 'dart:io' show File;
 
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:http/http.dart' as http;
+import 'package:http_parser/http_parser.dart';
 
 import '../api/api.dart';
 
@@ -29,6 +34,35 @@ class _CreateReviewScreenState extends State<CreateReviewScreen> {
   int _rating = 4;
   DateTime? _travelDate;
   bool _isSubmitting = false;
+  final List<XFile> _pickedImages = [];
+  final ImagePicker _picker = ImagePicker();
+
+  Future<void> _pickImage() async {
+    if (_pickedImages.length >= 5) {
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+        content: Text('Chỉ được tải lên tối đa 5 ảnh'),
+        backgroundColor: Colors.redAccent,
+      ));
+      return;
+    }
+    
+    final pickedFile = await _picker.pickImage(
+      source: ImageSource.gallery,
+      imageQuality: 85,
+    );
+    
+    if (pickedFile != null) {
+      setState(() {
+        _pickedImages.add(pickedFile);
+      });
+    }
+  }
+
+  void _removeImage(int index) {
+    setState(() {
+      _pickedImages.removeAt(index);
+    });
+  }
 
   @override
   void dispose() {
@@ -80,17 +114,62 @@ class _CreateReviewScreenState extends State<CreateReviewScreen> {
 
     setState(() => _isSubmitting = true);
 
-    final body = {
-      'locationId': widget.locationId,
-      'type': widget.type,
-      'rating': _rating,
-      'travel_date': _travelDate != null ? _formatTravelMonth(_travelDate!) : null,
-      'title': _titleCtrl.text.trim(),
-      'text': _textCtrl.text.trim(),
-    }..removeWhere((key, value) => value == null);
-
     try {
-      final resp = await apiPostJson('/reviews/my-reviews', body, token: widget.authToken);
+      http.Response resp;
+      if (_pickedImages.isEmpty) {
+        final body = {
+          'locationId': widget.locationId,
+          'type': widget.type,
+          'rating': _rating,
+          'travel_date': _travelDate != null ? _formatTravelMonth(_travelDate!) : null,
+          'title': _titleCtrl.text.trim(),
+          'text': _textCtrl.text.trim(),
+        }..removeWhere((key, value) => value == null);
+
+        resp = await apiPostJson('/reviews/my-reviews', body, token: widget.authToken);
+      } else {
+        final fields = {
+          'locationId': widget.locationId,
+          'type': widget.type,
+          'rating': _rating.toString(),
+          if (_travelDate != null) 'travel_date': _formatTravelMonth(_travelDate!),
+          'title': _titleCtrl.text.trim(),
+          'text': _textCtrl.text.trim(),
+        };
+
+        final List<http.MultipartFile> files = [];
+        for (final img in _pickedImages) {
+          final bytes = await img.readAsBytes();
+          final filename = img.name;
+          final ext = filename.split('.').last.toLowerCase();
+          MediaType mediaType;
+          if (ext == 'jpg' || ext == 'jpeg') {
+            mediaType = MediaType('image', 'jpeg');
+          } else if (ext == 'png') {
+            mediaType = MediaType('image', 'png');
+          } else if (ext == 'webp') {
+            mediaType = MediaType('image', 'webp');
+          } else {
+            mediaType = MediaType('application', 'octet-stream');
+          }
+
+          files.add(http.MultipartFile.fromBytes(
+            'images',
+            bytes,
+            filename: filename,
+            contentType: mediaType,
+          ));
+        }
+
+        final streamedResp = await apiPostMultipart(
+          '/reviews/my-reviews',
+          fields: fields,
+          files: files,
+          token: widget.authToken,
+        );
+        resp = await http.Response.fromStream(streamedResp);
+      }
+
       if (!mounted) return;
       if (resp.statusCode == 200 || resp.statusCode == 201) {
         ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
@@ -180,6 +259,10 @@ class _CreateReviewScreenState extends State<CreateReviewScreen> {
                                           ? 'Vui lòng nhập nội dung'
                                           : null,
                                 ),
+                                const SizedBox(height: 22),
+                                _sectionLabel('Hình ảnh đính kèm (Tối đa 5 ảnh)'),
+                                const SizedBox(height: 10),
+                                _buildImagePickerSection(),
                               ],
                             ),
                           ),
@@ -490,6 +573,101 @@ class _CreateReviewScreenState extends State<CreateReviewScreen> {
           ),
         ),
       ),
+    );
+  }
+
+  Widget _buildImagePickerSection() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        SizedBox(
+          height: 90,
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            itemCount: _pickedImages.length + 1,
+            itemBuilder: (context, index) {
+              if (index == _pickedImages.length) {
+                if (_pickedImages.length >= 5) {
+                  return const SizedBox.shrink();
+                }
+                return GestureDetector(
+                  onTap: _pickImage,
+                  child: Container(
+                    width: 90,
+                    margin: const EdgeInsets.only(right: 10),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.08),
+                      borderRadius: BorderRadius.circular(16),
+                      border: Border.all(
+                        color: const Color(0xFFD4AF7A).withOpacity(0.4),
+                        width: 1.5,
+                        style: BorderStyle.solid,
+                      ),
+                    ),
+                    child: const Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.add_photo_alternate_rounded,
+                          color: Color(0xFFD4AF7A),
+                          size: 28,
+                        ),
+                        SizedBox(height: 4),
+                        Text(
+                          'Thêm ảnh',
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 10,
+                            fontWeight: FontWeight.w700,
+                            color: Color(0xFFD4AF7A),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                );
+              }
+
+              final img = _pickedImages[index];
+              return Container(
+                width: 90,
+                margin: const EdgeInsets.only(right: 10),
+                child: Stack(
+                  children: [
+                    Positioned.fill(
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(16),
+                        child: kIsWeb
+                            ? Image.network(img.path, fit: BoxFit.cover)
+                            : Image.file(File(img.path), fit: BoxFit.cover),
+                      ),
+                    ),
+                    Positioned(
+                      top: 4,
+                      right: 4,
+                      child: GestureDetector(
+                        onTap: () => _removeImage(index),
+                        child: Container(
+                          padding: const EdgeInsets.all(4),
+                          decoration: const BoxDecoration(
+                            color: Colors.black54,
+                            shape: BoxShape.circle,
+                          ),
+                          child: const Icon(
+                            Icons.close_rounded,
+                            color: Colors.white,
+                            size: 14,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              );
+            },
+          ),
+        ),
+      ],
     );
   }
 }

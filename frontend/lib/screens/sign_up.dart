@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:flutter/gestures.dart';
 import 'package:flutter/foundation.dart'
     show TargetPlatform, defaultTargetPlatform, kIsWeb;
 import 'package:flutter/material.dart';
@@ -9,7 +10,6 @@ import '../services/google_auth_service.dart';
 import '../utils/auth_feedback.dart';
 import '../utils/auth_storage.dart';
 import '../widgets/anim_builder.dart';
-import 'sign_in.dart';
 import 'dashboard.dart';
 import 'landing_page.dart';
 
@@ -289,11 +289,6 @@ class _SignUpScreenState extends State<SignUpScreen>
   }
 
   void _handleDiscordLogin() async {
-    if (!kIsWeb) {
-      _showUnsupportedSocialLogin('Discord login');
-      return;
-    }
-
     if (_isLoading) return;
 
     setState(() => _isLoading = true);
@@ -547,18 +542,7 @@ class _SignUpScreenState extends State<SignUpScreen>
                           ),
                           const SizedBox(height: 16),
 
-                          // Terms text
-                          const Text(
-                            'Bằng việc tiếp tục, bạn đồng ý với Điều khoản dịch vụ của TourXport và Chính sách quyền riêng tư.',
-                            style: TextStyle(
-                              fontFamily: 'Montserrat',
-                              fontWeight: FontWeight.w300,
-                              fontSize: 12,
-                              letterSpacing: 0.12,
-                              color: Colors.white,
-                              height: 1.4,
-                            ),
-                          ),
+                          _buildTermsText(1.0),
                           const SizedBox(height: 24),
 
                           // Register button
@@ -633,7 +617,7 @@ class _SignUpScreenState extends State<SignUpScreen>
                                 ),
                               ),
                               GestureDetector(
-                                onTap: () => Navigator.pop(context),
+                                onTap: () => Navigator.pushReplacementNamed(context, '/login'),
                                 child: const Text(
                                   'Đăng nhập',
                                   style: TextStyle(
@@ -901,18 +885,7 @@ class _SignUpScreenState extends State<SignUpScreen>
                       ),
                       SizedBox(height: 12 * s),
 
-                      // ── Terms text
-                      Text(
-                        'Bằng việc tiếp tục, bạn đồng ý với Điều khoản dịch vụ của TourXport và Chính sách quyền riêng tư.',
-                        style: TextStyle(
-                          fontFamily: 'Montserrat',
-                          fontWeight: FontWeight.w300,
-                          fontSize: 12 * s,
-                          letterSpacing: 0.12,
-                          color: Colors.white,
-                          height: 1.4,
-                        ),
-                      ),
+                      _buildTermsText(s),
                       SizedBox(height: 16 * s),
 
                       // ── Đăng ký button
@@ -987,7 +960,7 @@ class _SignUpScreenState extends State<SignUpScreen>
                             ),
                           ),
                           GestureDetector(
-                            onTap: () => Navigator.pop(context),
+                            onTap: () => Navigator.pushReplacementNamed(context, '/login'),
                             child: Text(
                               'Đăng nhập',
                               style: TextStyle(
@@ -1146,6 +1119,47 @@ class _SignUpScreenState extends State<SignUpScreen>
             ),
           ),
         ),
+      ),
+    );
+  }
+
+  Widget _buildTermsText(double s) {
+    final baseStyle = TextStyle(
+      fontFamily: 'Montserrat',
+      fontWeight: FontWeight.w300,
+      fontSize: 12 * s,
+      letterSpacing: 0.12,
+      color: Colors.white,
+      height: 1.4,
+    );
+    final linkStyle = baseStyle.copyWith(
+      color: const Color(0xFFD4AF7A),
+      fontWeight: FontWeight.w600,
+    );
+
+    TextSpan link(String text, String route) {
+      return TextSpan(
+        text: text,
+        style: linkStyle,
+        recognizer: TapGestureRecognizer()
+          ..onTap = () => Navigator.pushNamed(context, route),
+      );
+    }
+
+    return SizedBox(
+      width: double.infinity,
+      child: Text.rich(
+        TextSpan(
+          children: [
+            TextSpan(text: 'Bằng việc tiếp tục, bạn đồng ý với ', style: baseStyle),
+            link('Điều khoản dịch vụ của TourXport', '/terms'),
+            TextSpan(text: ' và ', style: baseStyle),
+            link('Chính sách quyền riêng tư', '/privacy'),
+            TextSpan(text: '.', style: baseStyle),
+          ],
+        ),
+        textAlign: TextAlign.left,
+        style: baseStyle,
       ),
     );
   }

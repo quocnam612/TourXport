@@ -12,6 +12,7 @@ import restaurantRoutes from './routes/restaurantRoutes.js';
 import reviewRoutes from './routes/reviewRoutes.js';
 import tourRoutes from './routes/tourRoutes.js';
 import weatherRoutes from './routes/weatherRoutes.js';
+import reportRoutes from './routes/reportRoutes.js';
 
 const app = express();
 
@@ -26,6 +27,7 @@ app.use('/restaurants', restaurantRoutes);
 app.use('/tours', tourRoutes);
 app.use('/reviews', reviewRoutes);
 app.use('/weather', weatherRoutes);
+app.use('/reports', reportRoutes);
 
 // Default route
 app.get('/', (req, res, next) => {

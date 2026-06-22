@@ -3,8 +3,35 @@ import config from '../config/config.js';
 import parser from '../utils/parser.js';
 import respond from '../utils/respond.js';
 import validator from '../utils/validators.js';
+import TravelAdvisor from '../services/TravelAdvisor.js';
 
 const locationPublicProjection = '-embedding -searchText';
+
+const hydrateRestaurantImages = async (restaurant) => {
+    if (!restaurant || !restaurant.sourceLocationId || (Array.isArray(restaurant.images) && restaurant.images.length > 0)) {
+        return restaurant;
+    }
+
+    try {
+        const images = await TravelAdvisor.getHighQualityPhotosBySourceLocationId(restaurant.sourceLocationId, {
+            excludeUrls: [restaurant.image?.url],
+            limit: 10
+        });
+
+        if (!images.length) {
+            return restaurant;
+        }
+
+        return await RestaurantDB.findByIdAndUpdate(
+            restaurant._id,
+            { $set: { images } },
+            { new: true, runValidators: true }
+        ).select(locationPublicProjection);
+    } catch (error) {
+        console.warn(`Failed to hydrate images for restaurant ${restaurant.sourceLocationId}:`, error.message || error);
+        return restaurant;
+    }
+};
 
 export const getRestaurants = async (req, res, next) => {
     try {
@@ -21,7 +48,7 @@ export const getRestaurants = async (req, res, next) => {
 
         const poolLimit = Math.min(limit * 3, 150);
         let [restaurants, total] = await Promise.all([
-            RestaurantDB.find(filter).select(locationPublicProjection).skip(skip).limit(poolLimit),
+            RestaurantDB.find(filter).select(locationPublicProjection).sort(sort).skip(skip).limit(poolLimit),
             RestaurantDB.countDocuments(filter)
         ]);
 
@@ -67,11 +94,13 @@ export const getRestaurant = async (req, res, next) => {
             return next(respond.httpError(lookupError, 400));
         }
 
-        const restaurant = await RestaurantDB.findOne(parser.buildLocationLookupFilter(req.query)).select(locationPublicProjection);
+        let restaurant = await RestaurantDB.findOne(parser.buildLocationLookupFilter(req.query)).select(locationPublicProjection);
 
         if (!restaurant) {
             return next(respond.httpError('Restaurant not found', 404));
         }
+
+        restaurant = await hydrateRestaurantImages(restaurant);
 
         res.status(200).json({
             success: true,

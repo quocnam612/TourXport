@@ -1,5 +1,9 @@
 import 'dart:ui';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:share_plus/share_plus.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../l10n/app_localizations.dart';
 
 import '../models/ai_trip_response.dart';
@@ -10,12 +14,13 @@ import 'map_screen.dart';
 import 'tour_route_map_screen.dart';
 import '../api/api.dart';
 
-class SavedTourDetailScreen extends StatelessWidget {
+class SavedTourDetailScreen extends StatefulWidget {
   final String tourTitle;
   final Map<String, dynamic> tourJson;
   final String userName;
   final String? avatarUrl;
   final String? authToken;
+  final bool canEditTitle;
 
   const SavedTourDetailScreen({
     super.key,
@@ -24,19 +29,47 @@ class SavedTourDetailScreen extends StatelessWidget {
     this.userName = 'Username',
     this.avatarUrl,
     this.authToken,
+    this.canEditTitle = false,
   });
+
+  @override
+  State<SavedTourDetailScreen> createState() => _SavedTourDetailScreenState();
+}
+
+class _SavedTourDetailScreenState extends State<SavedTourDetailScreen> {
+  late Map<String, dynamic> _tourJson;
+  bool _isUpdatingVisibility = false;
+  bool _isUpdatingTitle = false;
+
+  String get _displayTourTitle {
+    final title = (_tourJson['title'] ?? widget.tourTitle).toString().trim();
+    return title.isEmpty ? widget.tourTitle : title;
+  }
+
+  bool get _canEditTitle =>
+      widget.canEditTitle &&
+      widget.authToken != null &&
+      widget.authToken!.trim().isNotEmpty;
+
+  bool get _canUpdateVisibility => _canEditTitle;
+
+  @override
+  void initState() {
+    super.initState();
+    _tourJson = Map<String, dynamic>.from(widget.tourJson);
+  }
 
   @override
   Widget build(BuildContext context) {
     AiTripResponse? response;
     try {
-      response = AiTripResponse.fromJson(tourJson);
+      response = AiTripResponse.fromJson(_tourJson);
     } catch (_) {
       response = null;
     }
 
     final itinerary = response?.data.itinerary ?? [];
-    final meta = _TourMeta.fromJson(tourJson);
+    final meta = _TourMeta.fromJson(_tourJson);
     final width = MediaQuery.of(context).size.width;
     final isDesktop = width >= 800;
     final isCompact = width < 600;
@@ -64,6 +97,446 @@ class SavedTourDetailScreen extends StatelessWidget {
     );
   }
 
+  void _shareTour(BuildContext context) {
+    final String? tourId = _tourId;
+    if (tourId == null || tourId.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text(
+          AppLocalizations.of(context)!.localeName == 'vi'
+              ? 'Không tìm thấy mã tour để chia sẻ'
+              : 'Tour ID not found for sharing',
+        ),
+      ));
+      return;
+    }
+
+    final String shareUrl = _tourShareUrl(tourId);
+    final isVi = AppLocalizations.of(context)!.localeName == 'vi';
+    final String shareText = isVi
+        ? 'Xem lịch trình $_displayTourTitle trên TourXport\n$shareUrl'
+        : 'View the $_displayTourTitle itinerary on TourXport\n$shareUrl';
+    _showShareDialog(
+      context,
+      shareUrl,
+      shareText,
+      isVi ? 'lịch trình' : 'tour',
+    );
+  }
+
+  String? get _tourId => _tourJson['_id']?.toString() ?? _tourJson['id']?.toString();
+
+  String _tourShareUrl(String tourId) {
+    final origin = kIsWeb ? Uri.base.origin : 'https://tourxport.netlify.app';
+    return Uri.parse(origin)
+        .replace(path: '/tour', queryParameters: {'id': tourId})
+        .toString();
+  }
+
+  bool _isPrivateVisibility(String visibility) {
+    final normalized = visibility.toLowerCase();
+    return normalized == 'private' || normalized == 'hidden';
+  }
+
+  Future<void> _openGoogleTourDirections(BuildContext context) async {
+    final isVi = AppLocalizations.of(context)!.localeName == 'vi';
+    AiTripResponse? response;
+    try {
+      response = AiTripResponse.fromJson(_tourJson);
+    } catch (_) {
+      response = null;
+    }
+
+    final stops = <String>[];
+    if (response != null) {
+      for (final day in response.data.itinerary) {
+        for (final activity in day.activities) {
+          final lat = activity.latitude;
+          final lng = activity.longitude;
+          final stop = lat != null && lng != null
+              ? '${lat.toStringAsFixed(6)},${lng.toStringAsFixed(6)}'
+              : activity.placeName?.trim();
+          if (stop != null && stop.isNotEmpty && !stops.contains(stop)) {
+            stops.add(stop);
+          }
+        }
+      }
+    }
+
+    if (stops.length < 2) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text(isVi
+            ? 'Lịch trình cần ít nhất 2 điểm để mở đường đi trên Google Maps'
+            : 'The itinerary needs at least 2 stops to open Google Maps directions'),
+      ));
+      return;
+    }
+
+    final params = <String, String>{
+      'api': '1',
+      'origin': stops.first,
+      'destination': stops.last,
+      'travelmode': 'driving',
+    };
+    final waypoints = stops.skip(1).take(stops.length - 2).take(8).join('|');
+    if (waypoints.isNotEmpty) {
+      params['waypoints'] = waypoints;
+    }
+
+    final uri = Uri.https('www.google.com', '/maps/dir/', params);
+    final opened = await launchUrl(uri, mode: LaunchMode.externalApplication);
+    if (!opened && context.mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text(isVi
+            ? 'Không mở được Google Maps'
+            : 'Could not open Google Maps'),
+      ));
+    }
+  }
+
+  Future<void> _renameTour(String nextTitle) async {
+    final isVi = AppLocalizations.of(context)!.localeName == 'vi';
+    final tourId = _tourId;
+    final title = nextTitle.trim();
+
+    if (title.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text(isVi ? 'Tên lịch trình không được để trống' : 'Itinerary title cannot be empty'),
+      ));
+      return;
+    }
+
+    if (tourId == null || tourId.isEmpty || widget.authToken == null || widget.authToken!.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text(isVi
+            ? 'Bạn cần đăng nhập để đổi tên lịch trình'
+            : 'You need to sign in to rename this itinerary'),
+      ));
+      return;
+    }
+
+    setState(() => _isUpdatingTitle = true);
+    try {
+      final response = await apiPutJson(
+        '/tours/my-tours/$tourId',
+        {'title': title},
+        token: widget.authToken,
+      );
+      final body = tryDecodeJsonObject(response.body);
+      if (!mounted) return;
+      if (response.statusCode == 200 && body?['success'] == true) {
+        final data = body?['data'];
+        setState(() {
+          if (data is Map) {
+            _tourJson = Map<String, dynamic>.from(data);
+          } else {
+            _tourJson = Map<String, dynamic>.from(_tourJson)..['title'] = title;
+          }
+        });
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+          content: Text(isVi ? 'Đã đổi tên lịch trình' : 'Itinerary renamed'),
+        ));
+      } else {
+        throw Exception(body?['message'] ?? response.reasonPhrase);
+      }
+    } catch (_) {
+      if (!context.mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text(isVi
+            ? 'Không thể đổi tên lịch trình này'
+            : 'Could not rename this itinerary'),
+      ));
+    } finally {
+      if (mounted) {
+        setState(() => _isUpdatingTitle = false);
+      }
+    }
+  }
+
+  Future<void> _showRenameTourDialog(BuildContext context) async {
+    final isVi = AppLocalizations.of(context)!.localeName == 'vi';
+    final controller = TextEditingController(text: _displayTourTitle);
+    final focusNode = FocusNode();
+
+    final nextTitle = await showDialog<String>(
+      context: context,
+      builder: (dialogContext) {
+        Future<void> closeDialog([String? value]) async {
+          controller.selection = TextSelection.collapsed(
+            offset: controller.text.length,
+          );
+          focusNode.unfocus();
+          FocusManager.instance.primaryFocus?.unfocus();
+          await Future<void>.delayed(Duration.zero);
+          if (dialogContext.mounted) {
+            Navigator.pop(dialogContext, value);
+          }
+        }
+
+        return BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
+          child: AlertDialog(
+            backgroundColor: const Color(0xFF0F1E1B).withOpacity(0.94),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(24),
+              side: BorderSide(color: Colors.white.withOpacity(0.12), width: 1.2),
+            ),
+            title: Text(
+              isVi ? 'Đổi tên lịch trình' : 'Rename itinerary',
+              style: const TextStyle(
+                fontFamily: 'Montserrat',
+                color: Colors.white,
+                fontWeight: FontWeight.w800,
+                fontSize: 18,
+              ),
+            ),
+            content: TextField(
+              controller: controller,
+              focusNode: focusNode,
+              autofocus: true,
+              maxLength: 160,
+              style: const TextStyle(
+                fontFamily: 'Montserrat',
+                color: Colors.white,
+                fontWeight: FontWeight.w600,
+              ),
+              decoration: InputDecoration(
+                counterStyle: TextStyle(color: Colors.white.withOpacity(0.45)),
+                hintText: isVi ? 'Nhập tên lịch trình' : 'Enter itinerary title',
+                hintStyle: TextStyle(color: Colors.white.withOpacity(0.45)),
+                filled: true,
+                fillColor: Colors.white.withOpacity(0.07),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(16),
+                  borderSide: BorderSide(color: Colors.white.withOpacity(0.12)),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(16),
+                  borderSide: const BorderSide(color: Color(0xFFD4AF7A)),
+                ),
+              ),
+              onSubmitted: (value) => closeDialog(value),
+            ),
+            actions: [
+              TextButton(
+                onPressed: () => closeDialog(),
+                child: Text(
+                  isVi ? 'Hủy' : 'Cancel',
+                  style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    color: Colors.white.withOpacity(0.62),
+                  ),
+                ),
+              ),
+              TextButton(
+                onPressed: () => closeDialog(controller.text),
+                child: Text(
+                  isVi ? 'Lưu' : 'Save',
+                  style: const TextStyle(
+                    fontFamily: 'Montserrat',
+                    color: Color(0xFFD4AF7A),
+                    fontWeight: FontWeight.w800,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+
+    await Future<void>.delayed(Duration.zero);
+    focusNode.dispose();
+    controller.dispose();
+    if (nextTitle == null) return;
+    await _renameTour(nextTitle);
+  }
+
+  Future<void> _toggleTourVisibility(BuildContext context, _TourMeta meta) async {
+    if (_isUpdatingVisibility) return;
+
+    final isVi = AppLocalizations.of(context)!.localeName == 'vi';
+    if (!_canUpdateVisibility) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text(isVi
+            ? 'Chỉ chủ sở hữu mới có thể đổi trạng thái hiển thị'
+            : 'Only the owner can change itinerary visibility'),
+      ));
+      return;
+    }
+
+    final tourId = _tourId;
+    if (tourId == null || tourId.isEmpty || widget.authToken == null || widget.authToken!.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text(isVi
+            ? 'Không thể cập nhật hiển thị lịch trình'
+            : 'Cannot update itinerary visibility'),
+      ));
+      return;
+    }
+
+    final nextVisibility = _isPrivateVisibility(meta.visibility) ? 'public' : 'private';
+    setState(() => _isUpdatingVisibility = true);
+    try {
+      final response = await apiPutJson(
+        '/tours/my-tours/$tourId',
+        {'visibility': nextVisibility},
+        token: widget.authToken,
+      );
+      final body = tryDecodeJsonObject(response.body);
+      if (!mounted) return;
+      if (response.statusCode == 200 && body?['success'] == true) {
+        final data = body?['data'];
+        setState(() {
+          if (data is Map) {
+            _tourJson = Map<String, dynamic>.from(data);
+          } else {
+            _tourJson = Map<String, dynamic>.from(_tourJson)..['visibility'] = nextVisibility;
+          }
+        });
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+          content: Text(nextVisibility == 'public'
+              ? (isVi ? 'Lịch trình đã được đặt thành công khai' : 'Itinerary is now public')
+              : (isVi ? 'Lịch trình đã được đặt thành riêng tư' : 'Itinerary is now private')),
+        ));
+      } else {
+        throw Exception(body?['message'] ?? response.reasonPhrase);
+      }
+    } catch (_) {
+      if (!context.mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text(isVi
+            ? 'Cập nhật hiển thị thất bại'
+            : 'Failed to update visibility'),
+      ));
+    } finally {
+      if (mounted) {
+        setState(() => _isUpdatingVisibility = false);
+      }
+    }
+  }
+
+  void _showShareDialog(
+    BuildContext context,
+    String shareUrl,
+    String shareText,
+    String title,
+  ) {
+    final isVi = AppLocalizations.of(context)!.localeName == 'vi';
+    showDialog(
+      context: context,
+      builder: (context) {
+        return BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
+          child: AlertDialog(
+            backgroundColor: const Color(0xFF0F1E1B).withOpacity(0.92),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(24),
+              side: BorderSide(color: Colors.white.withOpacity(0.12), width: 1.2),
+            ),
+            title: Text(
+              isVi ? 'Chia sẻ $title' : 'Share $title',
+              style: const TextStyle(
+                fontFamily: 'Montserrat',
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 18,
+              ),
+            ),
+            content: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  isVi
+                      ? 'Chia sẻ qua ứng dụng khác hoặc sao chép liên kết bên dưới:'
+                      : 'Share through another app or copy the link below:',
+                  style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    color: Colors.white.withOpacity(0.7),
+                    fontSize: 13,
+                  ),
+                ),
+                const SizedBox(height: 16),
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.06),
+                    borderRadius: BorderRadius.circular(16),
+                    border: Border.all(color: Colors.white.withOpacity(0.10)),
+                  ),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          shareUrl,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            color: Colors.white.withOpacity(0.95),
+                            fontSize: 13,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: 8),
+                      IconButton(
+                        icon: const Icon(Icons.copy_rounded, color: Color(0xFFD4AF7A), size: 20),
+                        tooltip: isVi ? 'Sao chép' : 'Copy',
+                        onPressed: () {
+                          Clipboard.setData(ClipboardData(text: shareUrl));
+                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                            content: Text(
+                              isVi
+                                  ? 'Đã sao chép liên kết chia sẻ vào khay nhớ tạm'
+                                  : 'Copied share link to clipboard',
+                            ),
+                          ));
+                        },
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            actions: [
+              TextButton.icon(
+                onPressed: () async {
+                  final box = context.findRenderObject() as RenderBox?;
+                  await Share.share(
+                    shareText,
+                    subject: isVi ? 'Chia sẻ lịch trình TourXport' : 'Share TourXport itinerary',
+                    sharePositionOrigin:
+                        box == null ? null : box.localToGlobal(Offset.zero) & box.size,
+                  );
+                },
+                icon: const Icon(Icons.ios_share_rounded, color: Color(0xFFD4AF7A), size: 18),
+                label: Text(
+                  isVi ? 'Chia sẻ' : 'Share',
+                  style: const TextStyle(
+                    fontFamily: 'Montserrat',
+                    color: Color(0xFFD4AF7A),
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              TextButton(
+                onPressed: () => Navigator.pop(context),
+                child: Text(
+                  isVi ? 'Đóng' : 'Close',
+                  style: const TextStyle(
+                    fontFamily: 'Montserrat',
+                    color: Color(0xFFD4AF7A),
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
   Widget _buildDetailContent(
     BuildContext context,
     List<AiDailyItinerary> itinerary,
@@ -88,22 +561,61 @@ class SavedTourDetailScreen extends StatelessWidget {
                 children: [
                   _VisibilityBadge(
                     icon: meta.visibilityIcon,
+                    isLoading: _isUpdatingVisibility,
+                    onTap: _canUpdateVisibility
+                        ? () => _toggleTourVisibility(context, meta)
+                        : null,
                   ),
                   SizedBox(width: isCompact ? 8 : 10),
                   Expanded(
-                    child: Text(
-                      tourTitle,
-                      maxLines: isCompact ? 2 : null,
-                      overflow: isCompact
-                          ? TextOverflow.ellipsis
-                          : TextOverflow.visible,
-                      style: TextStyle(
-                        fontFamily: 'Montserrat',
-                        fontSize: isCompact ? 20 : 26,
-                        fontWeight: FontWeight.w700,
-                        color: Colors.white,
-                        height: isCompact ? 1.25 : 1.2,
-                      ),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Expanded(
+                          child: Text(
+                            _displayTourTitle,
+                            maxLines: isCompact ? 2 : null,
+                            overflow: isCompact
+                                ? TextOverflow.ellipsis
+                                : TextOverflow.visible,
+                            style: TextStyle(
+                              fontFamily: 'Montserrat',
+                              fontSize: isCompact ? 20 : 26,
+                              fontWeight: FontWeight.w700,
+                              color: Colors.white,
+                              height: isCompact ? 1.25 : 1.2,
+                            ),
+                          ),
+                        ),
+                        if (_canEditTitle) ...[
+                          const SizedBox(width: 6),
+                          SizedBox(
+                            width: isCompact ? 30 : 36,
+                            height: isCompact ? 30 : 36,
+                            child: IconButton(
+                              tooltip: AppLocalizations.of(context)!.localeName == 'vi'
+                                  ? 'Đổi tên lịch trình'
+                                  : 'Rename itinerary',
+                              icon: _isUpdatingTitle
+                                  ? SizedBox(
+                                      width: isCompact ? 15 : 17,
+                                      height: isCompact ? 15 : 17,
+                                      child: const CircularProgressIndicator(
+                                        strokeWidth: 2,
+                                        color: Color(0xFFD4AF7A),
+                                      ),
+                                    )
+                                  : const Icon(Icons.edit_rounded),
+                              iconSize: isCompact ? 16 : 18,
+                              color: const Color(0xFFD4AF7A),
+                              padding: EdgeInsets.zero,
+                              onPressed: _isUpdatingTitle
+                                  ? null
+                                  : () => _showRenameTourDialog(context),
+                            ),
+                          ),
+                        ],
+                      ],
                     ),
                   ),
                   SizedBox(
@@ -114,7 +626,7 @@ class SavedTourDetailScreen extends StatelessWidget {
                       iconSize: isCompact ? 20 : 24,
                       color: Colors.white,
                       padding: EdgeInsets.zero,
-                      onPressed: () {},
+                      onPressed: () => _shareTour(context),
                     ),
                   ),
                 ],
@@ -130,7 +642,7 @@ class SavedTourDetailScreen extends StatelessWidget {
                     height: 1.3),
               ),
               SizedBox(height: isCompact ? 10 : 16),
-              _TripMetaGrid(meta: meta),
+              _TripMetaGrid(meta: meta, compact: isCompact),
             ],
           ),
         ),
@@ -180,7 +692,7 @@ class SavedTourDetailScreen extends StatelessWidget {
                 onTap: () {
                   AiTripResponse? response;
                   try {
-                    response = AiTripResponse.fromJson(tourJson);
+                    response = AiTripResponse.fromJson(_tourJson);
                   } catch (_) {}
                   if (response != null) {
                     Navigator.push(
@@ -213,6 +725,33 @@ class SavedTourDetailScreen extends StatelessWidget {
                                 color: Colors.white)),
                         const SizedBox(width: 6),
                         const Icon(Icons.map_rounded, color: Colors.white, size: 18),
+                      ]),
+                ),
+              ),
+            ),
+            const SizedBox(width: 8),
+            // Google Maps
+            Expanded(
+              flex: 2,
+              child: GestureDetector(
+                onTap: () => _openGoogleTourDirections(context),
+                child: Container(
+                  height: isCompact ? 48 : 50,
+                  decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.10),
+                      borderRadius: BorderRadius.circular(25),
+                      border: Border.all(color: Colors.white.withOpacity(0.18))),
+                  child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text('Google',
+                            style: const TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 14,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white)),
+                        const SizedBox(width: 6),
+                        const Icon(Icons.open_in_new_rounded, color: Colors.white, size: 18),
                       ]),
                 ),
               ),
@@ -255,20 +794,55 @@ class SavedTourDetailScreen extends StatelessWidget {
   }
 
   Widget _buildSummary(BuildContext context) {
-    final title = tourJson['title'] ?? tourTitle;
-    final totalDays = tourJson['totalDays'] ?? tourJson['days']?.length ?? 0;
-    final totalNights = tourJson['totalNights'] ?? 0;
+    final title = _displayTourTitle;
+    final totalDays = _tourJson['totalDays'] ?? _tourJson['days']?.length ?? 0;
+    final totalNights = _tourJson['totalNights'] ?? 0;
     final isVi = AppLocalizations.of(context)!.localeName == 'vi';
-    final destinations = tourJson['destinations'] is List
-        ? (tourJson['destinations'] as List).map((d) => _translateProvince(d.toString(), context)).join(', ')
+    final destinations = _tourJson['destinations'] is List
+        ? (_tourJson['destinations'] as List).map((d) => _translateProvince(d.toString(), context)).join(', ')
         : '';
-    final cost = _formatMoneyRange(tourJson['estimatedCost'] ?? tourJson['totalEstimatedCost'], context);
+    final cost = _formatMoneyRange(_tourJson['estimatedCost'] ?? _tourJson['totalEstimatedCost'], context);
 
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(title, style: const TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold)),
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Flexible(
+                child: Text(
+                  title,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              if (_canEditTitle) ...[
+                const SizedBox(width: 8),
+                IconButton(
+                  tooltip: isVi ? 'Đổi tên lịch trình' : 'Rename itinerary',
+                  onPressed: _isUpdatingTitle
+                      ? null
+                      : () => _showRenameTourDialog(context),
+                  icon: _isUpdatingTitle
+                      ? const SizedBox(
+                          width: 16,
+                          height: 16,
+                          child: CircularProgressIndicator(
+                            strokeWidth: 2,
+                            color: Color(0xFFD4AF7A),
+                          ),
+                        )
+                      : const Icon(Icons.edit_rounded),
+                  color: const Color(0xFFD4AF7A),
+                ),
+              ],
+            ],
+          ),
           const SizedBox(height: 8),
           Text(
             isVi
@@ -347,20 +921,20 @@ class _SavedTourMainSidebar extends StatelessWidget {
                   ],
                 ),
                 child: Image.asset(
-                  'assets/images/logo.png',
-                  width: 64,
-                  height: 64,
+                  'assets/images/logo-compact.png',
+                  width: 48,
+                  height: 48,
                   fit: BoxFit.contain,
                 ),
               ),
-              const SizedBox(width: 14),
+              const SizedBox(width: 18),
               const Text(
                 'TourXport',
                 style: TextStyle(
                   fontFamily: 'Montserrat',
                   fontSize: 26,
                   fontWeight: FontWeight.w900,
-                  color: Color(0xFFD4AF7A),
+                  color: Colors.white,
                   letterSpacing: 1.2,
                 ),
               ),
@@ -716,7 +1290,7 @@ class _TripMetaGrid extends StatelessWidget {
 
     if (compact) {
       return SizedBox(
-        height: 54,
+        height: 46,
         child: ListView.separated(
           scrollDirection: Axis.horizontal,
           itemCount: pills.length,
@@ -751,8 +1325,8 @@ class _MetaPill extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(
-        horizontal: compact ? 10 : 14,
-        vertical: compact ? 8 : 12,
+        horizontal: compact ? 9 : 14,
+        vertical: compact ? 6 : 12,
       ),
       decoration: BoxDecoration(
         color: Colors.white.withOpacity(0.05),
@@ -762,8 +1336,8 @@ class _MetaPill extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(icon, color: const Color(0xFFD4AF7A), size: compact ? 15 : 18),
-          SizedBox(width: compact ? 8 : 10),
+          Icon(icon, color: const Color(0xFFD4AF7A), size: compact ? 14 : 18),
+          SizedBox(width: compact ? 7 : 10),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
@@ -776,14 +1350,14 @@ class _MetaPill extends StatelessWidget {
                   color: Colors.white,
                 ).copyWith(fontSize: compact ? 11 : 12),
               ),
-              SizedBox(height: compact ? 1 : 2),
+              SizedBox(height: compact ? 0 : 2),
               Text(
                 label,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(
                   fontFamily: 'Montserrat',
-                  fontSize: compact ? 10 : 11,
+                  fontSize: compact ? 9 : 11,
                   fontWeight: FontWeight.w500,
                   color: Colors.white.withOpacity(0.55),
                 ),
@@ -799,19 +1373,47 @@ class _MetaPill extends StatelessWidget {
 class _VisibilityBadge extends StatelessWidget {
   final IconData icon;
   final bool compact;
+  final bool isLoading;
+  final VoidCallback? onTap;
 
-  const _VisibilityBadge({required this.icon, this.compact = false});
+  const _VisibilityBadge({
+    required this.icon,
+    this.compact = false,
+    this.isLoading = false,
+    this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    final size = compact ? 17.0 : 20.0;
+    final badge = Container(
       padding: EdgeInsets.all(compact ? 8 : 10),
       decoration: BoxDecoration(
-        color: const Color(0xFFD4AF7A).withOpacity(0.12),
+        color: const Color(0xFFD4AF7A).withOpacity(onTap == null ? 0.12 : 0.18),
         shape: BoxShape.circle,
-        border: Border.all(color: const Color(0xFFD4AF7A).withOpacity(0.2)),
+        border: Border.all(color: const Color(0xFFD4AF7A).withOpacity(onTap == null ? 0.2 : 0.42)),
       ),
-      child: Icon(icon, color: const Color(0xFFD4AF7A), size: compact ? 17 : 20),
+      child: isLoading
+          ? SizedBox(
+              width: size,
+              height: size,
+              child: const CircularProgressIndicator(
+                strokeWidth: 2,
+                color: Color(0xFFD4AF7A),
+              ),
+            )
+          : Icon(icon, color: const Color(0xFFD4AF7A), size: size),
+    );
+    if (onTap == null || isLoading) return badge;
+    return Tooltip(
+      message: AppLocalizations.of(context)!.localeName == 'vi'
+          ? 'Đổi trạng thái hiển thị'
+          : 'Toggle itinerary visibility',
+      child: InkWell(
+        onTap: onTap,
+        customBorder: const CircleBorder(),
+        child: badge,
+      ),
     );
   }
 }
@@ -1060,7 +1662,11 @@ class _ActivityCardTileState extends State<_ActivityCardTile> {
                           _translateTimeSlot(act.timeSlot, context),
                           style: TextStyle(color: Colors.white.withOpacity(0.9), fontWeight: FontWeight.bold),
                         ),
-                        if (act.estimatedCost > 0) Text('${act.estimatedCost.toInt()} đ', style: TextStyle(color: Colors.white.withOpacity(0.6))),
+                        if (act.estimatedCost > 0)
+                          Text(
+                            _formatMoney(act.estimatedCost, context),
+                            style: TextStyle(color: Colors.white.withOpacity(0.6)),
+                          ),
                       ],
                     ),
                     const SizedBox(height: 6),
@@ -1255,4 +1861,3 @@ String _translateProvince(String prov, BuildContext context) {
   };
   return maps[prov] ?? prov;
 }
-

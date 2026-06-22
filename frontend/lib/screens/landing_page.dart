@@ -1,12 +1,12 @@
+import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import '../api/api.dart';
 import '../theme/app_colors.dart';
 import '../utils/auth_storage.dart';
 import '../widgets/anim_builder.dart';
 import '../widgets/responsive_builder.dart';
 import '../models/destination.dart';
-import 'sign_in.dart';
-import 'sign_up.dart';
 import 'dashboard.dart';
 
 class LandingPage extends StatefulWidget {
@@ -49,6 +49,8 @@ class _LandingPageState extends State<LandingPage>
   String? _storedAuthToken;
   String? _storedUserName;
   bool _isRestoringSession = true;
+
+  Timer? _carouselTimer;
 
   bool get hasSession {
     return !_isRestoringSession &&
@@ -147,15 +149,59 @@ class _LandingPageState extends State<LandingPage>
     // Fire entrance
     _fadeController.forward();
     _restoreSession();
+    _startCarouselTimer();
+  }
+
+  void _startCarouselTimer() {
+    _carouselTimer?.cancel();
+    _carouselTimer = Timer.periodic(const Duration(seconds: 5), (timer) {
+      if (!mounted) {
+        timer.cancel();
+        return;
+      }
+      final isDesktop = MediaQuery.of(context).size.width >= 800;
+      if (!isDesktop) {
+        return;
+      }
+      final nextIdx = (_currentIndex + 1) % sampleDestinations.length;
+      _selectDestination(nextIdx, userInitiated: false);
+    });
   }
 
   Future<void> _restoreSession() async {
-    final token = widget.authToken?.trim().isNotEmpty == true
+    String? token = widget.authToken?.trim().isNotEmpty == true
         ? widget.authToken!.trim()
         : await AuthStorage.getToken();
-    final userName = widget.userName?.trim().isNotEmpty == true
+    String? userName = widget.userName?.trim().isNotEmpty == true
         ? widget.userName!.trim()
         : await AuthStorage.getUserName();
+
+    if (token != null && token.isNotEmpty) {
+      try {
+        final response = await apiGet(
+          '/auth/profile',
+          token: token,
+          handleUnauthorized: false,
+        ).timeout(const Duration(seconds: 8));
+        final body = tryDecodeJsonObject(response.body);
+        if (response.statusCode == 200 && body?['success'] == true) {
+          final user = body?['user'];
+          if (user is Map && user['name'] is String) {
+            userName = (user['name'] as String).trim();
+          }
+        } else if (response.statusCode == 401 || response.statusCode == 403) {
+          await AuthStorage.clearSession();
+          token = null;
+          userName = null;
+        } else {
+          token = null;
+          userName = null;
+        }
+      } catch (_) {
+        token = null;
+        userName = null;
+      }
+    }
 
     if (!mounted) return;
     setState(() {
@@ -163,43 +209,12 @@ class _LandingPageState extends State<LandingPage>
       _storedUserName = userName;
       _isRestoringSession = false;
     });
-
-    if (token != null && token.isNotEmpty) {
-      Navigator.pushAndRemoveUntil(
-        context,
-        PageRouteBuilder(
-          pageBuilder: (_, __, ___) => HomeScreen(
-            userName: userName ?? 'bạn',
-            authToken: token,
-          ),
-          transitionDuration: const Duration(milliseconds: 600),
-          reverseTransitionDuration: const Duration(milliseconds: 400),
-          transitionsBuilder: (_, animation, __, child) {
-            return FadeTransition(
-              opacity: CurvedAnimation(
-                parent: animation,
-                curve: Curves.easeInOut,
-              ),
-              child: SlideTransition(
-                position: Tween<Offset>(
-                  begin: const Offset(0, 0.05),
-                  end: Offset.zero,
-                ).animate(CurvedAnimation(
-                  parent: animation,
-                  curve: Curves.easeOutCubic,
-                )),
-                child: child,
-              ),
-            );
-          },
-        ),
-        (route) => false,
-      );
-    }
   }
+
 
   @override
   void dispose() {
+    _carouselTimer?.cancel();
     _bgFadeController.dispose();
     _fadeController.dispose();
     _shimmerController.dispose();
@@ -207,8 +222,13 @@ class _LandingPageState extends State<LandingPage>
     super.dispose();
   }
 
-  void _selectDestination(int index) {
+  void _selectDestination(int index, {bool userInitiated = true}) {
     if (index == _currentIndex) return;
+    
+    if (userInitiated) {
+      _startCarouselTimer(); // Reset timer if user interacts
+    }
+    
     final nextPath = sampleDestinations[index].imagePath;
     setState(() {
       _previousBgPath = _currentBgPath;
@@ -305,32 +325,7 @@ class _LandingPageState extends State<LandingPage>
       return;
     }
 
-    Navigator.push(
-      context,
-      PageRouteBuilder(
-        pageBuilder: (_, __, ___) => goToSignUp ? const SignUpScreen() : const SignInScreen(),
-        transitionDuration: const Duration(milliseconds: 500),
-        reverseTransitionDuration: const Duration(milliseconds: 400),
-        transitionsBuilder: (_, animation, __, child) {
-          return FadeTransition(
-            opacity: CurvedAnimation(
-              parent: animation,
-              curve: Curves.easeInOut,
-            ),
-            child: SlideTransition(
-              position: Tween<Offset>(
-                begin: const Offset(0, 0.08),
-                end: Offset.zero,
-              ).animate(CurvedAnimation(
-                parent: animation,
-                curve: Curves.easeOutCubic,
-              )),
-              child: child,
-            ),
-          );
-        },
-      ),
-    );
+    Navigator.pushNamed(context, goToSignUp ? '/signup' : '/login');
   }
 
   @override
@@ -356,8 +351,18 @@ class _LandingPageState extends State<LandingPage>
       body: Stack(
         fit: StackFit.expand,
         children: [
-          _buildPreviousBackground(),
-          _buildCurrentBackground(),
+          Positioned.fill(
+            child: Image.asset(
+              'assets/images/login_bg.jpg',
+              fit: BoxFit.cover,
+            ),
+          ),
+          ClipRect(
+            child: BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 0.8, sigmaY: 0.8),
+              child: Container(color: Colors.transparent),
+            ),
+          ),
           _buildGradientOverlay(),
           _buildContent(context),
         ],
@@ -440,12 +445,12 @@ class _LandingPageState extends State<LandingPage>
               Row(
                 children: [
                   Image.asset(
-                    'assets/images/logo.png',
-                    width: 96, // 3x of original 32!
-                    height: 96,
+                    'assets/images/logo-compact.png',
+                    width: 35,
+                    height: 35,
                     fit: BoxFit.contain,
                   ),
-                  const SizedBox(width: 16),
+                  const SizedBox(width: 12),
                   const Text(
                     'TourXport',
                     style: TextStyle(
@@ -460,57 +465,65 @@ class _LandingPageState extends State<LandingPage>
               ),
               
               // Navigation links (middle)
-              Row(
-                children: List.generate(categoryList.length, (idx) {
-                  final cat = categoryList[idx];
-                  
-                  bool isThisCatActive = false;
-                  final prov = activeDest.province.toLowerCase();
-                  final name = activeDest.name.toLowerCase();
-                  if (cat == 'VỊNH BIỂN') {
-                    isThisCatActive = prov.contains('quảng ninh') || prov.contains('khánh hòa') || prov.contains('vũng tàu') || prov.contains('kiên giang') || name.contains('vịnh') || name.contains('biển') || name.contains('đảo');
-                  } else if (cat == 'NÚI RỪNG') {
-                    isThisCatActive = prov.contains('lào cai') || prov.contains('quảng bình') || prov.contains('sơn la') || prov.contains('hà giang') || name.contains('núi') || name.contains('động') || name.contains('hang') || name.contains('phong nha');
-                  } else if (cat == 'DI SẢN') {
-                    isThisCatActive = prov.contains('quảng nam') || prov.contains('huế') || prov.contains('hà nội') || prov.contains('ninh bình') || name.contains('cổ') || name.contains('di tích') || name.contains('tự') || name.contains('lăng') || name.contains('chùa');
-                  } else if (cat == 'ĐÔ THỊ') {
-                    isThisCatActive = prov.contains('chí minh') || prov.contains('đà nẵng') || prov.contains('hà nội') || name.contains('tháp') || name.contains('cầu') || name.contains('nhà hát');
-                  }
+              Expanded(
+                child: Center(
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: List.generate(categoryList.length, (idx) {
+                        final cat = categoryList[idx];
+                        
+                        bool isThisCatActive = false;
+                        final prov = activeDest.province.toLowerCase();
+                        final name = activeDest.name.toLowerCase();
+                        if (cat == 'VỊNH BIỂN') {
+                          isThisCatActive = prov.contains('quảng ninh') || prov.contains('khánh hòa') || prov.contains('vũng tàu') || prov.contains('kiên giang') || name.contains('vịnh') || name.contains('biển') || name.contains('đảo');
+                        } else if (cat == 'NÚI RỪNG') {
+                          isThisCatActive = prov.contains('lào cai') || prov.contains('quảng bình') || prov.contains('sơn la') || prov.contains('hà giang') || name.contains('núi') || name.contains('động') || name.contains('hang') || name.contains('phong nha');
+                        } else if (cat == 'DI SẢN') {
+                          isThisCatActive = prov.contains('quảng nam') || prov.contains('huế') || prov.contains('hà nội') || prov.contains('ninh bình') || name.contains('cổ') || name.contains('di tích') || name.contains('tự') || name.contains('lăng') || name.contains('chùa');
+                        } else if (cat == 'ĐÔ THỊ') {
+                          isThisCatActive = prov.contains('chí minh') || prov.contains('đà nẵng') || prov.contains('hà nội') || name.contains('tháp') || name.contains('cầu') || name.contains('nhà hát');
+                        }
 
-                  return WebHoverable(
-                    onTap: () {
-                      final firstIdx = _findFirstIndexForCategory(cat.toLowerCase());
-                      if (firstIdx != -1) {
-                        _selectDestination(firstIdx);
-                      }
-                    },
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Text(
-                            cat,
-                            style: TextStyle(
-                              fontFamily: 'Montserrat',
-                              fontSize: 13,
-                              fontWeight: isThisCatActive ? FontWeight.bold : FontWeight.w500,
-                              color: isThisCatActive ? Colors.white : Colors.white60,
-                              letterSpacing: 1.0,
+                        return WebHoverable(
+                          onTap: () {
+                            final firstIdx = _findFirstIndexForCategory(cat.toLowerCase());
+                            if (firstIdx != -1) {
+                              _selectDestination(firstIdx);
+                            }
+                          },
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Text(
+                                  cat,
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontSize: 13,
+                                    fontWeight: isThisCatActive ? FontWeight.bold : FontWeight.w500,
+                                    color: isThisCatActive ? Colors.white : Colors.white60,
+                                    letterSpacing: 1.0,
+                                  ),
+                                ),
+                                const SizedBox(height: 4),
+                                AnimatedContainer(
+                                  duration: const Duration(milliseconds: 300),
+                                  height: 2.0,
+                                  width: isThisCatActive ? 30 : 0,
+                                  color: const Color(0xFFD4AF7A),
+                                ),
+                              ],
                             ),
                           ),
-                          const SizedBox(height: 4),
-                          AnimatedContainer(
-                            duration: const Duration(milliseconds: 300),
-                            height: 2.0,
-                            width: isThisCatActive ? 30 : 0,
-                            color: const Color(0xFFD4AF7A),
-                          ),
-                        ],
-                      ),
+                        );
+                      }),
                     ),
-                  );
-                }),
+                  ),
+                ),
               ),
 
               // Auth Buttons (right)
@@ -915,22 +928,38 @@ class _LandingPageState extends State<LandingPage>
       position: _logoSlide,
       child: FadeTransition(
         opacity: _logoFade,
-        child: Container(
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            boxShadow: [
-              BoxShadow(
-                color: const Color(0xFFD4AF7A).withOpacity(0.3),
-                blurRadius: 50,
-                spreadRadius: 10,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color(0xFFD4AF7A).withOpacity(0.3),
+                    blurRadius: 20,
+                    spreadRadius: 4,
+                  ),
+                ],
               ),
-            ],
-          ),
-          child: Image.asset(
-            'assets/images/logo.png',
-            width: 160,
-            height: 160,
-          ),
+              child: Image.asset(
+                'assets/images/logo-compact.png',
+                width: 42,
+                height: 42,
+              ),
+            ),
+            const SizedBox(height: 10),
+            const Text(
+              'tourxport',
+              style: TextStyle(
+                fontFamily: 'Montserrat',
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+                letterSpacing: 1.0,
+              ),
+            ),
+          ],
         ),
       ),
     );

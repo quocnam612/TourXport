@@ -2,7 +2,18 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class LocationExplanationDialog extends StatelessWidget {
-  const LocationExplanationDialog({super.key});
+  final String title;
+  final String content;
+  final String confirmText;
+  final String cancelText;
+
+  const LocationExplanationDialog({
+    super.key,
+    required this.title,
+    required this.content,
+    this.confirmText = 'Đồng ý',
+    this.cancelText = 'Bỏ qua',
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -17,23 +28,25 @@ class LocationExplanationDialog extends StatelessWidget {
             width: 1.5,
           ),
         ),
-        title: const Row(
+        title: Row(
           children: [
-            Icon(Icons.location_on_rounded, color: Color(0xFFD4AF7A), size: 28),
-            SizedBox(width: 12),
-            Text(
-              'Dịch vụ vị trí',
-              style: TextStyle(
-                fontFamily: 'Montserrat',
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
+            const Icon(Icons.location_on_rounded, color: Color(0xFFD4AF7A), size: 28),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Text(
+                title,
+                style: const TextStyle(
+                  fontFamily: 'Montserrat',
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
               ),
             ),
           ],
         ),
-        content: const Text(
-          'TourXport cần quyền vị trí của bạn để định vị và tính toán tuyến đường đi tối ưu nhất đến điểm du lịch.',
-          style: TextStyle(
+        content: Text(
+          content,
+          style: const TextStyle(
             fontFamily: 'Montserrat',
             color: Colors.white70,
             height: 1.5,
@@ -43,7 +56,7 @@ class LocationExplanationDialog extends StatelessWidget {
           TextButton(
             onPressed: () => Navigator.pop(context, false),
             child: Text(
-              'Bỏ qua',
+              cancelText,
               style: TextStyle(
                 fontFamily: 'Montserrat',
                 fontWeight: FontWeight.w600,
@@ -62,9 +75,9 @@ class LocationExplanationDialog extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
               elevation: 0,
             ),
-            child: const Text(
-              'Đồng ý',
-              style: TextStyle(
+            child: Text(
+              confirmText,
+              style: const TextStyle(
                 fontFamily: 'Montserrat',
                 fontWeight: FontWeight.bold,
               ),

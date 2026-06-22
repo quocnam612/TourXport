@@ -27,6 +27,18 @@ class TourActivityCard extends StatefulWidget {
 class _TourActivityCardState extends State<TourActivityCard> {
   bool _hover = false;
 
+  String _getMockWeather(double? lat) {
+    if (lat == null) return '⛅ 28°C';
+    final mod = (lat * 100).toInt().abs() % 4;
+    switch (mod) {
+      case 0: return '☀️ 32°C';
+      case 1: return '⛅ 28°C';
+      case 2: return '🌧️ 24°C';
+      case 3: return '☁️ 26°C';
+      default: return '⛅ 28°C';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return MouseRegion(
@@ -74,8 +86,18 @@ class _TourActivityCardState extends State<TourActivityCard> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Expanded(child: Text(widget.act.timeSlot, style: TextStyle(color: Colors.white.withOpacity(0.9), fontWeight: FontWeight.bold, fontFamily: 'Montserrat'))),
-                                if (widget.isDesktop && widget.act.estimatedCost > 0)
-                                  Text('${widget.act.estimatedCost.toInt()} đ', style: TextStyle(color: Colors.white.withOpacity(0.6), fontFamily: 'Montserrat')),
+                                Container(
+                                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white.withOpacity(0.05),
+                                    borderRadius: BorderRadius.circular(12),
+                                  ),
+                                  child: Text(_getMockWeather(widget.act.latitude), style: const TextStyle(color: Colors.white, fontSize: 12, fontFamily: 'Montserrat')),
+                                ),
+                                if (widget.isDesktop && widget.act.estimatedCost > 0) ...[
+                                  const SizedBox(width: 8),
+                                  Text(TourMapUtils.formatCurrency(widget.act.estimatedCost), style: TextStyle(color: Colors.white.withOpacity(0.6), fontFamily: 'Montserrat')),
+                                ]
                               ],
                             ),
                             const SizedBox(height: 6),

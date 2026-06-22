@@ -14,11 +14,16 @@
       error: params.get('error') || ''
     };
 
+    const appCallbackUrl = `tourxport://oauth/discord?${params.toString()}`;
+
     if (window.opener) {
       window.opener.postMessage(message, window.location.origin);
+      window.close();
+    } else {
+      window.setTimeout(() => {
+        window.location.replace(appCallbackUrl);
+      }, 250);
     }
-
-    window.close();
   </script>
 </body>
 </html>

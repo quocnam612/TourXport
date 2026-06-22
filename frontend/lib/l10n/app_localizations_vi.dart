@@ -15,13 +15,13 @@ class AppLocalizationsVi extends AppLocalizations {
   String get welcome_back => 'Chào mừng quay trở lại,';
 
   @override
-  String get explore => 'Khám phá';
+  String get explore => 'Trang chủ';
 
   @override
   String get search => 'Tìm kiếm';
 
   @override
-  String get survey => 'Khảo sát';
+  String get survey => 'Lên lịch';
 
   @override
   String get account => 'Tài khoản';

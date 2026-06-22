@@ -1,0 +1,163 @@
+[
+  {
+    "_id": {
+      "$oid": "6a27c2b881ddcf01f3284f12"
+    },
+    "reportType": "bug",
+    "userId": {
+      "$oid": "6a16819d52619c1de6f0dfab"
+    },
+    "title": "MID",
+    "text": "mid",
+    "helpful_votes": 0,
+    "upvotedBy": [],
+    "adminReply": "",
+    "user": {
+      "username": "Nam Sigma",
+      "avatar": {
+        "url": "https://res.cloudinary.com/db3dusn0u/image/upload/v1779901870/tourxport/users/avatars/hlxoarxryiavq7www2ty.jpg",
+        "public_id": "tourxport/users/avatars/hlxoarxryiavq7www2ty"
+      }
+    },
+    "images": [],
+    "createdAt": {
+      "$date": "2026-06-09T07:37:28.076Z"
+    },
+    "updatedAt": {
+      "$date": "2026-06-09T07:37:28.076Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6a27c2b881ddcf01f3284f13"
+    },
+    "reportType": "suggestion",
+    "userId": {
+      "$oid": "6a16819d52619c1de6f0dfac"
+    },
+    "title": "Thêm bộ lọc ngân sách",
+    "text": "Màn tạo lịch trình nên có bộ lọc ngân sách rõ hơn để người dùng dễ kiểm soát chi phí.",
+    "helpful_votes": 8,
+    "upvotedBy": [
+      {
+        "$oid": "6a16819d52619c1de6f0dfad"
+      },
+      {
+        "$oid": "6a16819d52619c1de6f0dfae"
+      }
+    ],
+    "adminReply": "Cảm ơn bạn đã góp ý. TourXport sẽ đưa bộ lọc ngân sách vào danh sách cải thiện cho phiên bản tiếp theo.",
+    "user": {
+      "username": "Linh Tran",
+      "avatar": {
+        "url": "",
+        "public_id": ""
+      }
+    },
+    "images": [],
+    "createdAt": {
+      "$date": "2026-06-08T10:12:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-06-09T01:20:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6a27c2b881ddcf01f3284f14"
+    },
+    "reportType": "inaccuracy",
+    "userId": {
+      "$oid": "6a16819d52619c1de6f0dfaf"
+    },
+    "title": "Thông tin địa điểm chưa chính xác",
+    "text": "Một số địa điểm ở Đà Nẵng đang hiển thị sai giờ mở cửa so với thực tế.",
+    "helpful_votes": 3,
+    "upvotedBy": [
+      {
+        "$oid": "6a16819d52619c1de6f0dfab"
+      }
+    ],
+    "adminReply": "",
+    "user": {
+      "username": "Bao Hoang",
+      "avatar": {
+        "url": "https://res.cloudinary.com/demo/image/upload/avatar/bao.jpg",
+        "public_id": "tourxport/users/avatars/bao"
+      }
+    },
+    "images": [
+      {
+        "url": "https://res.cloudinary.com/demo/image/upload/report/opening-hours.jpg",
+        "public_id": "tourxport/reports/opening-hours"
+      }
+    ],
+    "createdAt": {
+      "$date": "2026-06-07T16:25:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-06-07T16:25:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6a27c2b881ddcf01f3284f15"
+    },
+    "reportType": "review",
+    "userId": {
+      "$oid": "6a16819d52619c1de6f0dfb0"
+    },
+    "title": "Ứng dụng dễ dùng",
+    "text": "Giao diện đẹp, tính năng gợi ý lịch trình phù hợp với người mới đi du lịch.",
+    "helpful_votes": 12,
+    "upvotedBy": [],
+    "adminReply": "Cảm ơn bạn đã sử dụng TourXport.",
+    "user": {
+      "username": "Mai Chi",
+      "avatar": {
+        "url": "https://res.cloudinary.com/demo/image/upload/avatar/chi.jpg",
+        "public_id": "tourxport/users/avatars/chi"
+      }
+    },
+    "images": [],
+    "createdAt": {
+      "$date": "2026-06-06T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-06-06T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6a27c2b881ddcf01f3284f16"
+    },
+    "reportType": "other",
+    "userId": {
+      "$oid": "6a16819d52619c1de6f0dfb1"
+    },
+    "title": "Vấn đề khác",
+    "text": "Mình muốn có thêm chế độ lưu nháp lịch trình trước khi tạo tour hoàn chỉnh.",
+    "helpful_votes": 1,
+    "upvotedBy": [],
+    "adminReply": "",
+    "user": {
+      "username": "Phuc Le",
+      "avatar": {
+        "url": "",
+        "public_id": ""
+      }
+    },
+    "images": [],
+    "createdAt": {
+      "$date": "2026-06-05T14:45:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-06-05T14:45:00.000Z"
+    },
+    "__v": 0
+  }
+]

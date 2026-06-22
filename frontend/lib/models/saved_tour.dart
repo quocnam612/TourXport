@@ -6,6 +6,7 @@ class SavedTour {
   final int totalNights;
   final double? estimatedCost;
   final DateTime? createdAt;
+  final String visibility;
 
   SavedTour({
     required this.id,
@@ -15,6 +16,7 @@ class SavedTour {
     required this.totalNights,
     this.estimatedCost,
     this.createdAt,
+    this.visibility = 'private',
   });
 
   factory SavedTour.fromJson(Map<String, dynamic> json) {
@@ -34,6 +36,7 @@ class SavedTour {
       totalNights: json['totalNights'] ?? 0,
       estimatedCost: cost,
       createdAt: json['createdAt'] != null ? DateTime.tryParse(json['createdAt']) : null,
+      visibility: (json['visibility'] ?? json['privacy'] ?? 'private').toString(),
     );
   }
 }

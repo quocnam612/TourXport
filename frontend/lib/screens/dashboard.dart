@@ -4,28 +4,32 @@ import 'dart:ui';
 import 'package:flutter/foundation.dart'
     show TargetPlatform, defaultTargetPlatform, kIsWeb;
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '../l10n/app_localizations.dart';
 import 'package:geolocator/geolocator.dart';
 
 import '../api/api.dart';
 import '../utils/auth_storage.dart';
 import '../widgets/weather_widget.dart';
-import '../widgets/responsive_builder.dart';
 import '../models/destination.dart';
+import '../models/saved_tour.dart';
 import '../widgets/anim_builder.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:permission_handler/permission_handler.dart';
+import 'package:speech_to_text/speech_to_text.dart' as stt;
 import 'help_support_screen.dart';
 import 'language_settings_screen.dart';
+import 'manual_tour_creator_screen.dart';
 import 'notification_settings_screen.dart';
 import 'phone_settings_screen.dart';
 import 'security_settings_screen.dart';
 import 'place_detail.dart';
 import 'profile_section.dart';
 import 'saved_place.dart';
+import 'saved_tour_detail.dart';
 import 'survey_screen.dart';
-import 'sign_in.dart';
 import '../models/travel_notification.dart';
+import 'collection_screen.dart';
 
 class _DestinationPageResult {
   final List<Destination> items;
@@ -51,11 +55,15 @@ class _DestinationPageResult {
 class HomeScreen extends StatefulWidget {
   final String userName;
   final String? authToken;
+  final int initialTabIndex;
+  final String? initialScheduleMode;
 
   const HomeScreen({
     super.key,
     this.userName = 'Username',
     this.authToken,
+    this.initialTabIndex = 0,
+    this.initialScheduleMode,
   });
 
   @override
@@ -64,16 +72,130 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   static const int _tabExplore = 0;
-  static const int _tabSearch = 1;
+  static const int _tabPassport = 1;
   static const int _tabSaved = 2;
   static const int _tabSurvey = 3;
   static const int _tabProfile = 4;
+  static const Map<int, String> _tabRoutes = {
+    _tabExplore: '/home',
+    _tabPassport: '/explore',
+    _tabSaved: '/saved',
+    _tabSurvey: '/tours',
+    _tabProfile: '/account',
+  };
+  static const List<Shadow> _heroTextShadows = [
+    Shadow(
+      color: Color(0x99000000),
+      offset: Offset(0, 1.5),
+      blurRadius: 4,
+    ),
+    Shadow(
+      color: Color(0x66000000),
+      offset: Offset(0, 0),
+      blurRadius: 10,
+    ),
+  ];
+  static const List<Shadow> _heroTitleShadows = [
+    Shadow(
+      color: Color(0xB0000000),
+      offset: Offset(0, 3),
+      blurRadius: 8,
+    ),
+    Shadow(
+      color: Color(0x80000000),
+      offset: Offset(0, 0),
+      blurRadius: 18,
+    ),
+  ];
 
   bool get _isVi => Localizations.localeOf(context).languageCode == 'vi';
+
+  int _normalizedTabIndex(int index) =>
+      index >= _tabExplore && index <= _tabProfile ? index : _tabExplore;
+
+  void _updateTabRoute(int tabIndex) {
+    if (!kIsWeb) return;
+    final route = _tabRoutes[_normalizedTabIndex(tabIndex)];
+    if (route == null) return;
+    SystemNavigator.routeInformationUpdated(
+      location: route,
+      replace: true,
+    );
+  }
+
+  void _updateScheduleSubRoute(String route, {bool replace = true}) {
+    if (!kIsWeb) return;
+    SystemNavigator.routeInformationUpdated(
+      location: route,
+      replace: replace,
+    );
+  }
+
+  void _showMainTab(int tabIndex) {
+    final normalizedIndex = _normalizedTabIndex(tabIndex);
+    setState(() {
+      _navIndex = normalizedIndex;
+      _savedPlacesInitialTab = 0;
+      _showCreatedToursOnlyInSaved = false;
+      if (normalizedIndex == _tabSurvey) {
+        _showScheduleAiSurvey = false;
+        _showScheduleHistory = false;
+      }
+    });
+    _updateTabRoute(normalizedIndex);
+    if (normalizedIndex == _tabExplore) {
+      _startAutoPlay();
+    } else {
+      _stopAutoPlay();
+    }
+    if (normalizedIndex == _tabSurvey) {
+      _fetchCommunityTours();
+    }
+  }
+
+  String? _placeDetailRoute(Destination dest) {
+    final targetId = dest.id ?? dest.sourceLocationId ?? '';
+    if (targetId.isEmpty) return null;
+
+    return Uri(
+      path: '/location',
+      queryParameters: {
+        'id': targetId,
+        'type': _placeTypeSlug(dest.type),
+      },
+    ).toString();
+  }
+
+  String _placeTypeSlug(String type) {
+    final normalized = type.trim().toLowerCase();
+    if (normalized.contains('restaurant') ||
+        normalized.contains('nhà hàng') ||
+        normalized.contains('nha hang')) {
+      return 'restaurant';
+    }
+    if (normalized.contains('hotel') ||
+        normalized.contains('khách sạn') ||
+        normalized.contains('khach san')) {
+      return 'hotel';
+    }
+    return 'place';
+  }
+
+  void _updatePlaceDetailRoute(Destination dest) {
+    if (!kIsWeb) return;
+    final route = _placeDetailRoute(dest);
+    if (route == null) return;
+
+    SystemNavigator.routeInformationUpdated(
+      location: route,
+      replace: false,
+    );
+  }
 
   String _translateProvince(String prov) {
     if (_isVi) return prov;
     final maps = {
+      'Toàn quốc': 'All',
       'Đà Nẵng': 'Da Nang',
       'Hà Nội': 'Hanoi',
       'TP. Hồ Chí Minh': 'Ho Chi Minh City',
@@ -157,11 +279,15 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   String _translateTypeLabel(String value) {
     switch (value) {
-      case 'all': return 'All';
-      case 'hotels': return 'Stay';
-      case 'restaurants': return 'Dining';
+      case 'all':
+        return 'All';
+      case 'hotels':
+        return 'Stay';
+      case 'restaurants':
+        return 'Dining';
       case 'places':
-      default: return 'Explore';
+      default:
+        return 'Explore';
     }
   }
 
@@ -186,7 +312,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       'Hòa nhạc & chương trình biểu diễn': 'Concerts & Shows',
       'Sòng bạc & Đánh bạc': 'Casinos & Gambling',
       'Sở thú & Thủy cung': 'Zoos & Aquariums',
-      'Chuyến tham quan bằng thuyền & thể thao dưới nước': 'Boat Tours & Water Sports',
+      'Chuyến tham quan bằng thuyền & thể thao dưới nước':
+          'Boat Tours & Water Sports',
       'Spa & Sức khỏe': 'Spas & Wellness',
       'Giải trí về đêm': 'Nightlife',
       'Khác': 'Other',
@@ -242,19 +369,27 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     return maps[cat] ?? cat.toLowerCase();
   }
 
-
   int _currentIndex = 0;
   int _previousIndex = 0;
   int _searchCurrentIndex = 0;
   int _navIndex = _tabExplore;
   int _savedPlacesInitialTab = 0;
+  bool _showCreatedToursOnlyInSaved = false;
   int _surveyAiWarmupToken = 0;
   bool _isSurveyAiReady = false;
+  bool _showScheduleAiSurvey = false;
+  bool _showScheduleHistory = false;
   bool _showLikedOnly = false;
+  bool _isSidebarCollapsed = false;
   String _searchQuery = '';
+  String _tourSearchQuery = '';
   String? _selectedCity;
   String _sortBy = 'reviewsCount';
   String _sortOrder = 'desc';
+  String _tourSortBy = 'updatedAt';
+  String _tourSortOrder = 'desc';
+  String _tourDestinationFilter = 'all';
+  int _tourDaysFilter = 0;
   String _selectedLocationKind = 'places';
   String? _selectedCategory;
   final Set<String> _selectedTags = {};
@@ -265,6 +400,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   bool _nearbyEnabled = false;
   double _radius = 5000.0;
   late final TextEditingController _searchController;
+  late final TextEditingController _tourSearchController;
   late final FocusNode _searchFocusNode;
   String _currentBgPath = 'assets/images/halong.jpg';
   String _previousBgPath = 'assets/images/halong.jpg';
@@ -274,10 +410,22 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   final Set<String> _updatingSavedNames = {};
   List<Destination> _savedDestinations = const [];
   bool _isLoadingSavedPlaces = false;
+  List<SavedTour> _communityTours = const [];
+  int _communityToursPage = 1;
+  int _communityToursTotalPages = 1;
+  bool _isLoadingCommunityTours = false;
+  String? _communityToursError;
+  final Set<String> _savedCommunityTourIds = {};
+  final Set<String> _updatingCommunityTourIds = {};
+  List<SavedTour> _createdTourHistory = const [];
+  bool _isLoadingCreatedTourHistory = false;
+  String? _createdTourHistoryError;
 
   List<Destination> _realDestinations = [];
   List<Destination> _allDatabaseDestinations = [];
   bool _isLoadingDestinations = false;
+
+
 
   Map<String, dynamic>? _userData;
   bool _isLoadingProfile = false;
@@ -293,12 +441,18 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   late final Animation<double> _bgFade;
   late final AnimationController _entranceController;
   late final Animation<double> _cardEntrance;
+  late final Animation<Offset> _searchBarSlide;
   late final PageController _pageController;
   late final PageController _searchPageController;
   Timer? _autoPlayTimer;
   Timer? _searchDebounceTimer;
+  Timer? _tourSearchDebounceTimer;
   List<Destination> _searchResults = [];
   List<Destination> _searchSuggestions = [];
+
+  final stt.SpeechToText _speech = stt.SpeechToText();
+  bool _speechEnabled = false;
+
   int _exploreBackendPage = 1;
   int _exploreTotalItems = 0;
   int _exploreTotalPages = 1;
@@ -325,25 +479,79 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           _gpsLon = position.longitude;
           _hasGps = true;
         });
-      } else {
-        final status = await Permission.locationWhenInUse.request();
-        if (status == PermissionStatus.granted) {
-          final position = await Geolocator.getCurrentPosition(
-            desiredAccuracy: LocationAccuracy.low,
-            timeLimit: const Duration(seconds: 3),
-          );
-          if (!mounted) return;
-          setState(() {
-            _gpsLat = position.latitude;
-            _gpsLon = position.longitude;
-            _hasGps = true;
-          });
-        }
       }
+      // Không tự động request quyền lúc khởi động nữa
     } catch (_) {}
   }
 
+  Future<void> _initSpeech() async {
+    try {
+      _speechEnabled = await _speech.initialize(
+        onError: (val) => debugPrint('Speech onError: $val'),
+        onStatus: (_) {},
+      );
+    } catch (e) {
+      _speechEnabled = false;
+      debugPrint('Speech initialization failed: $e');
+    }
+  }
+
+  void _showVoiceSearchDialog() async {
+    final micStatus = await Permission.microphone.request();
+    if (!micStatus.isGranted) {
+      _showMessage(_isVi
+          ? 'Ứng dụng chưa được cấp quyền truy cập microphone'
+          : 'Microphone permission not granted');
+      return;
+    }
+
+    if (!_speechEnabled) {
+      await _initSpeech();
+    }
+
+    if (!_speechEnabled) {
+      _showMessage(_isVi
+          ? 'Nhận diện giọng nói không hỗ trợ trên thiết bị này'
+          : 'Speech recognition is not supported on this device');
+      return;
+    }
+
+    if (!mounted) return;
+
+    showGeneralDialog<void>(
+      context: context,
+      barrierDismissible: true,
+      barrierLabel: 'VoiceSearch',
+      barrierColor: Colors.black.withOpacity(0.75),
+      transitionDuration: const Duration(milliseconds: 300),
+      pageBuilder: (context, anim1, anim2) {
+        return _VoiceSearchDialog(
+          speech: _speech,
+          isVi: _isVi,
+          onSubmitted: (words) {
+            if (!mounted) return;
+            setState(() {
+              _searchController.text = words;
+              _onSearchChanged(words);
+            });
+          },
+        );
+      },
+      transitionBuilder: (context, anim1, anim2, child) {
+        return FadeTransition(
+          opacity: anim1,
+          child: child,
+        );
+      },
+    ).whenComplete(() {
+      if (_speech.isListening) {
+        _speech.cancel();
+      }
+    });
+  }
+
   static const List<String> vietnameseProvinces = [
+    'Toàn quốc',
     'Đà Nẵng',
     'Hà Nội',
     'TP. Hồ Chí Minh',
@@ -471,24 +679,44 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     'Đồ ăn nhanh',
   ];
 
-  static const Map<String, int> _fakeLikeSeeds = {
-    'Hạ Long Bay': 1243,
-    'Hội An': 987,
-    'Đà Nẵng': 1765,
-    'Phong Nha': 842,
-  };
-
   @override
   void initState() {
     super.initState();
 
+    _navIndex = _normalizedTabIndex(widget.initialTabIndex);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      if (_navIndex == _tabSurvey && widget.initialScheduleMode == 'ai') {
+        _openSurveyForCurrentLayout();
+        return;
+      }
+      if (_navIndex == _tabSurvey && widget.initialScheduleMode == 'manual') {
+        _openManualTourCreator();
+        return;
+      }
+      if (_navIndex == _tabSurvey && widget.initialScheduleMode == 'history') {
+        setState(() {
+          _showScheduleAiSurvey = false;
+          _showScheduleHistory = true;
+        });
+        _updateScheduleSubRoute('/tours/history');
+        _fetchCreatedTourHistory();
+        return;
+      }
+      _updateTabRoute(_navIndex);
+      if (_navIndex == _tabSurvey) {
+        _fetchCommunityTours();
+      }
+    });
     _currentUserName = widget.userName;
     _selectedCity = vietnameseProvinces[0];
     _initMockNotifications();
+    _initSpeech();
     _pageController = PageController(viewportFraction: 0.82, initialPage: 1000);
     _searchPageController =
         PageController(viewportFraction: 0.82, initialPage: 0);
     _searchController = TextEditingController();
+    _tourSearchController = TextEditingController();
     _searchFocusNode = FocusNode();
     _searchFocusNode.addListener(() {
       if (_searchFocusNode.hasFocus) {
@@ -521,12 +749,19 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       parent: _entranceController,
       curve: Curves.easeOutCubic,
     );
+    _searchBarSlide = Tween<Offset>(
+      begin: const Offset(0, 0.2),
+      end: Offset.zero,
+    ).animate(_cardEntrance);
     _entranceController.forward();
 
     _loadSavedPlaces();
     _loadProfile();
     _fetchDestinations();
     _startAutoPlay();
+    if (_navIndex == _tabSurvey) {
+      _stopAutoPlay();
+    }
     _initGps();
   }
 
@@ -534,7 +769,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   void dispose() {
     _stopAutoPlay();
     _searchDebounceTimer?.cancel();
+    _tourSearchDebounceTimer?.cancel();
+    _speech.cancel();
     _searchController.dispose();
+    _tourSearchController.dispose();
     _searchFocusNode.dispose();
     _bgFadeController.dispose();
     _entranceController.dispose();
@@ -619,17 +857,20 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
       if (!mounted) return;
 
-      final allSucceeded = responses.every((response) => response.statusCode == 200);
+      final allSucceeded =
+          responses.every((response) => response.statusCode == 200);
       if (allSucceeded) {
         final payload = <String, dynamic>{
-          'savedPlaces': tryDecodeJsonObject(responses[0].body)?['savedPlaces'] ?? [],
-          'savedRestaurants': tryDecodeJsonObject(responses[1].body)?['savedRestaurants'] ?? [],
-          'savedHotels': tryDecodeJsonObject(responses[2].body)?['savedHotels'] ?? [],
+          'savedPlaces':
+              tryDecodeJsonObject(responses[0].body)?['savedPlaces'] ?? [],
+          'savedRestaurants':
+              tryDecodeJsonObject(responses[1].body)?['savedRestaurants'] ?? [],
+          'savedHotels':
+              tryDecodeJsonObject(responses[2].body)?['savedHotels'] ?? [],
         };
         _applySavedPlacesPayload(payload);
       } else if (showError) {
-        _showMessage(
-            'Không tải được danh sách đã lưu');
+        _showMessage('Không tải được danh sách đã lưu');
       }
     } catch (_) {
       if (mounted && showError) {
@@ -704,7 +945,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     if (tags.length <= 2) {
       return displayTags.join(', ');
     }
-    return _isVi ? '${tags.length} tags đã chọn' : '${tags.length} tags selected';
+    return _isVi
+        ? '${tags.length} tags đã chọn'
+        : '${tags.length} tags selected';
   }
 
   Future<String?> _showSingleSelectPopup({
@@ -727,7 +970,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             ),
             decoration: BoxDecoration(
               color: const Color(0xFF070E0D).withOpacity(0.95),
-              borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
+              borderRadius:
+                  const BorderRadius.vertical(top: Radius.circular(28)),
               border: Border.all(color: Colors.white.withOpacity(0.08)),
             ),
             child: SafeArea(
@@ -773,20 +1017,22 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       shrinkWrap: true,
                       padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
                       itemCount: options.length + (clearLabel == null ? 0 : 1),
-                      separatorBuilder: (_, __) =>
-                          Divider(color: Colors.white.withOpacity(0.06), height: 1),
+                      separatorBuilder: (_, __) => Divider(
+                          color: Colors.white.withOpacity(0.06), height: 1),
                       itemBuilder: (context, index) {
                         if (clearLabel != null && index == 0) {
                           final isSelected = selectedValue == null;
                           return ListTile(
-                            contentPadding: const EdgeInsets.symmetric(horizontal: 8),
+                            contentPadding:
+                                const EdgeInsets.symmetric(horizontal: 8),
                             title: Text(
                               clearLabel,
                               style: TextStyle(
                                 fontFamily: 'Montserrat',
                                 fontSize: 14,
-                                fontWeight:
-                                    isSelected ? FontWeight.w800 : FontWeight.w600,
+                                fontWeight: isSelected
+                                    ? FontWeight.w800
+                                    : FontWeight.w600,
                                 color: isSelected
                                     ? const Color(0xFFD4AF7A)
                                     : Colors.white,
@@ -800,19 +1046,26 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                           );
                         }
 
-                        final optionIndex = clearLabel == null ? index : index - 1;
+                        final optionIndex =
+                            clearLabel == null ? index : index - 1;
                         final option = options[optionIndex];
-                        final isSelected = selectedValue != null && _getLocalizedDisplay(option) == _getLocalizedDisplay(selectedValue);
+                        final isSelected = selectedValue != null &&
+                            _getLocalizedDisplay(option) ==
+                                _getLocalizedDisplay(selectedValue);
                         return ListTile(
-                          contentPadding: const EdgeInsets.symmetric(horizontal: 8),
+                          contentPadding:
+                              const EdgeInsets.symmetric(horizontal: 8),
                           title: Text(
                             _getLocalizedDisplay(option),
                             style: TextStyle(
                               fontFamily: 'Montserrat',
                               fontSize: 14,
-                              fontWeight:
-                                  isSelected ? FontWeight.w800 : FontWeight.w600,
-                              color: isSelected ? const Color(0xFFD4AF7A) : Colors.white,
+                              fontWeight: isSelected
+                                  ? FontWeight.w800
+                                  : FontWeight.w600,
+                              color: isSelected
+                                  ? const Color(0xFFD4AF7A)
+                                  : Colors.white,
                             ),
                           ),
                           trailing: isSelected
@@ -902,7 +1155,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         child: Align(
                           alignment: Alignment.centerLeft,
                           child: Text(
-                            _isVi ? 'Chọn một hoặc nhiều mục' : 'Select one or more items',
+                            _isVi
+                                ? 'Chọn một hoặc nhiều mục'
+                                : 'Select one or more items',
                             style: TextStyle(
                               fontFamily: 'Montserrat',
                               fontSize: 12,
@@ -988,7 +1243,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                 borderRadius: BorderRadius.circular(16),
                               ),
                             ),
-                            onPressed: () => Navigator.pop(context, tempSelection),
+                            onPressed: () =>
+                                Navigator.pop(context, tempSelection),
                             child: Text(
                               _isVi ? 'Chọn xong' : 'Done',
                               style: const TextStyle(
@@ -1044,7 +1300,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     }
 
     add('query', query);
-    add('city', city);
+    if (city != 'Toàn quốc' && city != 'All') {
+      add('city', city);
+    }
     add('limit', (limit ?? _filterLimit).toString());
     add('page', page.toString());
     add('category', _selectedCategory);
@@ -1198,11 +1456,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     }
   }
 
-  Future<void> _selectCity(String city) async {
+  Future<void> _selectCity(String city, {bool clearSearch = true}) async {
     final cacheKey = _destinationCacheKey(city);
     if (_selectedCity == city &&
         _realDestinations.isNotEmpty &&
-        _searchQuery.isEmpty) {
+        (!clearSearch || _searchQuery.isEmpty)) {
       return;
     }
 
@@ -1214,8 +1472,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         _currentIndex = 0;
         _searchCurrentIndex = 0;
         _searchResults = [];
-        _searchController.clear();
-        _searchQuery = '';
+        if (clearSearch) {
+          _searchController.clear();
+          _searchQuery = '';
+        } else {
+          _searchQuery = _searchController.text;
+        }
         _realDestinations = cachedPage.items;
         _exploreBackendPage = cachedPage.page;
         _exploreTotalItems = cachedPage.total;
@@ -1244,8 +1506,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       _currentIndex = 0;
       _searchCurrentIndex = 0;
       _searchResults = [];
-      _searchController.clear();
-      _searchQuery = '';
+      if (clearSearch) {
+        _searchController.clear();
+        _searchQuery = '';
+      } else {
+        _searchQuery = _searchController.text;
+      }
       // Keep _realDestinations as-is so the UI stays stable while loading
     });
 
@@ -1334,9 +1600,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       ...parseItems(data['savedPlaces'], 'Địa điểm'),
       ...parseItems(data['savedRestaurants'], 'Nhà hàng'),
       ...parseItems(data['savedHotels'], 'Khách sạn'),
-    ]
-        .where((item) => item.name.isNotEmpty)
-        .toList();
+    ].where((item) => item.name.isNotEmpty).toList();
 
     setState(() {
       _savedDestinations = places;
@@ -1552,9 +1816,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       setState(() => _isLoadingProfile = true);
 
       final imageBytes = await image.readAsBytes();
-      final filename = image.name.isNotEmpty
-          ? image.name
-          : image.path.split('/').last;
+      final filename =
+          image.name.isNotEmpty ? image.name : image.path.split('/').last;
 
       if (isAvatar) {
         final response = await apiPutMultipartBytes(
@@ -1568,7 +1831,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         final responseStr = await response.stream.bytesToString();
         final data = tryDecodeJsonObject(responseStr);
 
-        if (response.statusCode == 200 && data != null && data['success'] == true) {
+        if (response.statusCode == 200 &&
+            data != null &&
+            data['success'] == true) {
           _loadProfile();
           _showMessage('Đã cập nhật ảnh đại diện thành công');
         } else {
@@ -1752,32 +2017,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   void _logout() {
     final token = widget.authToken?.trim();
     if (token == null || token.isEmpty) {
-      Navigator.push(
-        context,
-        PageRouteBuilder(
-          pageBuilder: (_, __, ___) => const SignInScreen(),
-          transitionDuration: const Duration(milliseconds: 600),
-          reverseTransitionDuration: const Duration(milliseconds: 400),
-          transitionsBuilder: (_, animation, __, child) {
-            return FadeTransition(
-              opacity: CurvedAnimation(
-                parent: animation,
-                curve: Curves.easeInOut,
-              ),
-              child: SlideTransition(
-                position: Tween<Offset>(
-                  begin: const Offset(0, 0.05),
-                  end: Offset.zero,
-                ).animate(CurvedAnimation(
-                  parent: animation,
-                  curve: Curves.easeOutCubic,
-                )),
-                child: child,
-              ),
-            );
-          },
-        ),
-      );
+      Navigator.pushNamedAndRemoveUntil(context, '/login', (route) => false);
       return;
     }
 
@@ -1818,34 +2058,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 Navigator.pop(context); // Close dialog
                 await AuthStorage.clearSession();
                 if (!mounted) return;
-                Navigator.pushAndRemoveUntil(
-                  context,
-                  PageRouteBuilder(
-                    pageBuilder: (_, __, ___) => const SignInScreen(),
-                    transitionDuration: const Duration(milliseconds: 600),
-                    reverseTransitionDuration:
-                        const Duration(milliseconds: 400),
-                    transitionsBuilder: (_, animation, __, child) {
-                      return FadeTransition(
-                        opacity: CurvedAnimation(
-                          parent: animation,
-                          curve: Curves.easeInOut,
-                        ),
-                        child: SlideTransition(
-                          position: Tween<Offset>(
-                            begin: const Offset(0, 0.05),
-                            end: Offset.zero,
-                          ).animate(CurvedAnimation(
-                            parent: animation,
-                            curve: Curves.easeOutCubic,
-                          )),
-                          child: child,
-                        ),
-                      );
-                    },
-                  ),
-                  (route) => false,
-                );
+                Navigator.pushNamedAndRemoveUntil(context, '/login', (route) => false);
               },
               child: const Text(
                 'Đăng xuất',
@@ -1868,38 +2081,28 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     switch (result) {
       case 'go_to_saved_tours':
         setState(() {
-          _savedPlacesInitialTab = 1;
-          _navIndex = _tabSaved;
+          _navIndex = _tabSurvey;
+          _showScheduleAiSurvey = false;
+          _showScheduleHistory = true;
         });
+        _updateScheduleSubRoute('/tours/history');
+        _fetchCreatedTourHistory();
         _stopAutoPlay();
         break;
       case 'go_to_saved':
-        setState(() {
-          _savedPlacesInitialTab = 0;
-          _navIndex = _tabSaved;
-        });
-        _stopAutoPlay();
+        _showMainTab(_tabSaved);
         break;
       case 'go_to_explore':
-        setState(() {
-          _savedPlacesInitialTab = 0;
-          _navIndex = _tabExplore;
-        });
-        _startAutoPlay();
+        _showMainTab(_tabExplore);
         break;
       case 'go_to_search':
-        setState(() {
-          _savedPlacesInitialTab = 0;
-          _navIndex = _tabSearch;
-        });
-        _stopAutoPlay();
+        _showMainTab(_tabExplore);
+        break;
+      case 'go_to_passport':
+        _showMainTab(_tabPassport);
         break;
       case 'go_to_account':
-        setState(() {
-          _savedPlacesInitialTab = 0;
-          _navIndex = _tabProfile;
-        });
-        _stopAutoPlay();
+        _showMainTab(_tabProfile);
         break;
       case 'go_to_survey':
         _showSurveyTab();
@@ -1912,20 +2115,31 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   Future<void> _handleMainNavigationResult(String result) async {
     if (result == 'go_to_survey') {
-      await _openSurveyForCurrentLayout();
+      _showMainTab(_tabSurvey);
       return;
     }
 
     _handleSurveyResult(result);
   }
 
-  void _showSurveyTab() {
+  void _showSurveyTab({bool aiMode = true}) {
     setState(() {
       _savedPlacesInitialTab = 0;
       _navIndex = _tabSurvey;
+      _showScheduleAiSurvey = aiMode;
+      _showScheduleHistory = false;
     });
+    if (aiMode) {
+      _updateScheduleSubRoute('/tours/generate');
+    } else {
+      _updateTabRoute(_tabSurvey);
+    }
     _stopAutoPlay();
-    _startSurveyAiWarmup();
+    if (aiMode) {
+      _startSurveyAiWarmup();
+    } else {
+      _fetchCommunityTours();
+    }
   }
 
   Future<bool> _pingAiBackend() async {
@@ -1946,9 +2160,16 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Future<void> _waitForSurveyAiBackend(int token) async {
-    while (mounted && token == _surveyAiWarmupToken && _navIndex == _tabSurvey) {
+    while (
+        mounted &&
+        token == _surveyAiWarmupToken &&
+        _navIndex == _tabSurvey &&
+        _showScheduleAiSurvey) {
       if (await _pingAiBackend()) {
-        if (!mounted || token != _surveyAiWarmupToken || _navIndex != _tabSurvey) return;
+        if (!mounted ||
+            token != _surveyAiWarmupToken ||
+            _navIndex != _tabSurvey ||
+            !_showScheduleAiSurvey) return;
         setState(() {
           _isSurveyAiReady = true;
         });
@@ -1960,8 +2181,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Future<Object?> _openSurveyForCurrentLayout() async {
+    _updateScheduleSubRoute('/tours/generate');
     if (MediaQuery.of(context).size.width >= 800) {
-      _showSurveyTab();
+      _showSurveyTab(aiMode: true);
       return null;
     }
 
@@ -1970,6 +2192,44 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     _startAutoPlay();
     _handleSurveyResult(result);
     return result;
+  }
+
+  Future<void> _openManualTourCreator() async {
+    _showMainTab(_tabSurvey);
+    _updateScheduleSubRoute('/tours/manual', replace: false);
+    if (widget.authToken == null || widget.authToken!.trim().isEmpty) {
+      _showMessage(_isVi
+          ? 'Bạn cần đăng nhập để tạo lịch trình thủ công'
+          : 'You need to sign in to create a manual itinerary');
+      _updateTabRoute(_tabSurvey);
+      return;
+    }
+
+    _stopAutoPlay();
+    final data = await Navigator.of(context).push<Map<String, dynamic>>(
+      MaterialPageRoute(
+        builder: (_) => ManualTourCreatorScreen(authToken: widget.authToken),
+      ),
+    );
+    _startAutoPlay();
+    _updateTabRoute(_tabSurvey);
+
+    if (!mounted || data == null || data.isEmpty) {
+      _fetchCommunityTours();
+      return;
+    }
+
+    _showMessage(_isVi ? 'Đã tạo lịch trình thủ công' : 'Manual itinerary created');
+    await _fetchCreatedTourHistory();
+
+    final tour = SavedTour.fromJson(data);
+    if (tour.id.isNotEmpty) {
+      setState(() {
+        _showScheduleAiSurvey = false;
+        _showScheduleHistory = true;
+      });
+      await _openCreatedTourHistoryDetail(tour);
+    }
   }
 
   Future<Object?> _openSurveyScreen() {
@@ -2005,13 +2265,564 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     );
   }
 
+  void _scheduleTourSearch(String value) {
+    setState(() {
+      _tourSearchQuery = value.trim();
+      _communityToursPage = 1;
+    });
+    _tourSearchDebounceTimer?.cancel();
+    _tourSearchDebounceTimer = Timer(
+      const Duration(milliseconds: 350),
+      _fetchCommunityTours,
+    );
+  }
+
+  void _openCreatedTourHistory() {
+    setState(() {
+      _navIndex = _tabSurvey;
+      _showScheduleAiSurvey = false;
+      _showScheduleHistory = true;
+    });
+    _updateScheduleSubRoute('/tours/history');
+    _stopAutoPlay();
+    _fetchCreatedTourHistory();
+  }
+
+  void _closeCreatedTourHistory() {
+    setState(() {
+      _showScheduleHistory = false;
+    });
+    _updateTabRoute(_tabSurvey);
+    _fetchCommunityTours();
+  }
+
+  Future<void> _fetchCreatedTourHistory() async {
+    final token = widget.authToken?.trim();
+    if (token == null || token.isEmpty) {
+      setState(() {
+        _createdTourHistory = const [];
+        _isLoadingCreatedTourHistory = false;
+        _createdTourHistoryError = _isVi
+            ? 'Bạn cần đăng nhập để xem lịch sử lịch trình'
+            : 'You need to sign in to view itinerary history';
+      });
+      return;
+    }
+
+    setState(() {
+      _isLoadingCreatedTourHistory = true;
+      _createdTourHistoryError = null;
+    });
+
+    try {
+      final tours = <SavedTour>[];
+      var page = 1;
+      var totalPages = 1;
+      do {
+        final path = Uri(
+          path: '/tours/my-tours',
+          queryParameters: {
+            'page': page.toString(),
+            'limit': '100',
+          },
+        ).toString();
+        final response = await apiGet(path, token: token);
+        final decoded = tryDecodeJsonObject(response.body);
+        if (response.statusCode != 200 ||
+            decoded == null ||
+            decoded['success'] != true) {
+          if (page == 1) {
+            throw Exception(decoded?['message'] ?? response.reasonPhrase);
+          }
+          break;
+        }
+
+        final list = decoded['data'] as List? ?? [];
+        tours.addAll(
+          list
+              .whereType<Map>()
+              .map((item) => SavedTour.fromJson(Map<String, dynamic>.from(item)))
+              .where((tour) => tour.id.isNotEmpty),
+        );
+        totalPages = decoded['totalPages'] is num
+            ? (decoded['totalPages'] as num).toInt().clamp(1, 999999).toInt()
+            : page;
+        page += 1;
+      } while (page <= totalPages);
+
+      if (!mounted) return;
+      setState(() {
+        _createdTourHistory = tours;
+        _isLoadingCreatedTourHistory = false;
+      });
+    } catch (_) {
+      if (!mounted) return;
+      setState(() {
+        _createdTourHistoryError = _isVi
+            ? 'Không thể tải lịch sử lịch trình'
+            : 'Could not load itinerary history';
+        _isLoadingCreatedTourHistory = false;
+      });
+    }
+  }
+
+  Future<void> _openCreatedTourHistoryDetail(SavedTour tour) async {
+    final token = widget.authToken?.trim();
+    if (token == null || token.isEmpty) return;
+
+    try {
+      final response = await apiGet('/tours/my-tours/${tour.id}', token: token);
+      final decoded = tryDecodeJsonObject(response.body);
+      if (response.statusCode != 200 || decoded?['success'] != true) {
+        throw Exception(decoded?['message'] ?? response.reasonPhrase);
+      }
+
+      final data = decoded?['data'];
+      if (!mounted) return;
+      if (kIsWeb) {
+        SystemNavigator.routeInformationUpdated(
+          location: Uri(path: '/tour', queryParameters: {'id': tour.id}).toString(),
+          replace: false,
+        );
+      }
+      final result = await Navigator.of(context).push<String>(
+        MaterialPageRoute(
+          builder: (_) => SavedTourDetailScreen(
+            tourTitle: tour.title,
+            tourJson: data is Map<String, dynamic> ? data : {},
+            authToken: widget.authToken,
+            userName: _currentUserName,
+            avatarUrl: _currentAvatarUrl,
+            canEditTitle: true,
+          ),
+        ),
+      );
+      _updateScheduleSubRoute('/tours/history');
+      await _fetchCreatedTourHistory();
+      if (result != null) {
+        _handleSurveyResult(result);
+      }
+    } catch (_) {
+      if (mounted) {
+        _showMessage(_isVi
+            ? 'Không thể mở lịch trình này'
+            : 'Could not open this itinerary');
+      }
+    }
+  }
+
+  Future<void> _deleteCreatedTourFromHistory(SavedTour tour) async {
+    final token = widget.authToken?.trim();
+    if (token == null || token.isEmpty) return;
+
+    final confirm = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: const Color(0xFF1B2321),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        title: Text(
+          _isVi ? 'Xóa lịch trình' : 'Delete Itinerary',
+          style: const TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        content: Text(
+          _isVi
+              ? 'Bạn có chắc chắn muốn xóa lịch trình đã tạo này?'
+              : 'Are you sure you want to delete this created itinerary?',
+          style: const TextStyle(color: Colors.white70),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: Text(
+              _isVi ? 'Hủy' : 'Cancel',
+              style: const TextStyle(color: Colors.white38),
+            ),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(context, true),
+            child: Text(
+              _isVi ? 'Xóa' : 'Delete',
+              style: const TextStyle(
+                color: Color(0xFFE74C3C),
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+    if (confirm != true) return;
+
+    try {
+      final response = await apiDeleteJson(
+        '/tours/my-tours/${tour.id}',
+        {},
+        token: token,
+      );
+      if (response.statusCode != 200) {
+        throw Exception(response.reasonPhrase);
+      }
+      if (!mounted) return;
+      setState(() {
+        _createdTourHistory = _createdTourHistory
+            .where((item) => item.id != tour.id)
+            .toList();
+      });
+      _showMessage(_isVi ? 'Đã xóa lịch trình' : 'Itinerary deleted');
+    } catch (_) {
+      if (mounted) {
+        _showMessage(_isVi
+            ? 'Xóa lịch trình thất bại'
+            : 'Failed to delete itinerary');
+      }
+    }
+  }
+
+  Future<void> _fetchCommunityTours({int? page}) async {
+    if (!mounted) return;
+    final requestedPage = (page ?? _communityToursPage).clamp(1, 999999).toInt();
+    setState(() {
+      _isLoadingCommunityTours = true;
+      _communityToursError = null;
+    });
+
+    final params = <String, String>{
+      'page': requestedPage.toString(),
+      'limit': '12',
+      'sortBy': _tourSortBy,
+      'order': _tourSortOrder,
+    };
+    if (_tourSearchQuery.isNotEmpty) {
+      params['query'] = _tourSearchQuery;
+    }
+    final destination = _tourDestinationFilter.trim();
+    if (destination.isNotEmpty && destination != 'all') {
+      params['destination'] = destination;
+    }
+    final days = _tourDaysFilter;
+    if (days > 0) {
+      params['totalDays'] = days.toString();
+    }
+
+    try {
+      final path = Uri(path: '/tours', queryParameters: params).toString();
+      final response = await apiGet(path, token: widget.authToken);
+      final decoded = tryDecodeJsonObject(response.body);
+
+      if (response.statusCode != 200 || decoded?['success'] != true) {
+        throw Exception(decoded?['message'] ?? 'Không tải được lịch trình');
+      }
+
+      final data = decoded?['data'];
+      if (!mounted) return;
+      var tours = data is List
+          ? data
+              .whereType<Map>()
+              .map((item) => SavedTour.fromJson(Map<String, dynamic>.from(item)))
+              .toList()
+          : <SavedTour>[];
+      final titleQuery = _normalizeTourSearchText(_tourSearchQuery);
+      if (titleQuery.isNotEmpty) {
+        tours = tours
+            .where((tour) =>
+                _normalizeTourSearchText(tour.title).contains(titleQuery))
+            .toList();
+      }
+      setState(() {
+        _communityTours = tours;
+        _communityToursPage =
+            data is List && decoded?['page'] is num
+                ? (decoded?['page'] as num).toInt().clamp(1, 999999).toInt()
+                : requestedPage;
+        _communityToursTotalPages = decoded?['totalPages'] is num
+            ? (decoded?['totalPages'] as num).toInt().clamp(1, 999999).toInt()
+            : 1;
+        _isLoadingCommunityTours = false;
+      });
+    } catch (_) {
+      if (!mounted) return;
+      setState(() {
+        _communityToursError = _isVi
+            ? 'Không kết nối được server để tải lịch trình'
+            : 'Could not connect to the server to load itineraries';
+        _isLoadingCommunityTours = false;
+      });
+    }
+    await _fetchSavedCommunityTourIds();
+  }
+
+  Future<void> _fetchSavedCommunityTourIds() async {
+    final token = widget.authToken?.trim();
+    if (token == null || token.isEmpty) return;
+
+    try {
+      final response = await apiGet('/auth/profile/saved-tours', token: token);
+      final decoded = tryDecodeJsonObject(response.body);
+      if (response.statusCode != 200 || decoded?['success'] != true) return;
+
+      final list = decoded?['savedTours'];
+      if (!mounted || list is! List) return;
+      setState(() {
+        _savedCommunityTourIds
+          ..clear()
+          ..addAll(
+            list
+                .whereType<Map>()
+                .map((item) => (item['_id'] ?? item['id'])?.toString() ?? '')
+                .where((id) => id.isNotEmpty),
+          );
+      });
+    } catch (_) {}
+  }
+
+  Future<void> _toggleCommunityTourSaved(SavedTour tour) async {
+    final token = widget.authToken?.trim();
+    if (token == null || token.isEmpty) {
+      _showMessage(_isVi
+          ? 'Bạn cần đăng nhập để lưu lịch trình'
+          : 'You need to sign in to save itineraries');
+      return;
+    }
+
+    if (_updatingCommunityTourIds.contains(tour.id)) return;
+    final isSaved = _savedCommunityTourIds.contains(tour.id);
+    setState(() => _updatingCommunityTourIds.add(tour.id));
+
+    try {
+      final response = isSaved
+          ? await apiDeleteJson(
+              '/auth/profile/saved-tours/${tour.id}',
+              {},
+              token: token,
+            )
+          : await apiPostJson(
+              '/auth/profile/saved-tours',
+              {'tourId': tour.id},
+              token: token,
+            );
+      final decoded = tryDecodeJsonObject(response.body);
+      if (!mounted) return;
+
+      if (response.statusCode == 200 && decoded?['success'] == true) {
+        setState(() {
+          if (isSaved) {
+            _savedCommunityTourIds.remove(tour.id);
+          } else {
+            _savedCommunityTourIds.add(tour.id);
+          }
+        });
+        _showMessage(isSaved
+            ? (_isVi ? 'Đã bỏ lưu lịch trình' : 'Itinerary removed from saved')
+            : (_isVi ? 'Đã lưu lịch trình' : 'Itinerary saved'));
+      } else {
+        throw Exception(decoded?['message'] ?? response.reasonPhrase);
+      }
+    } catch (_) {
+      if (mounted) {
+        _showMessage(_isVi
+            ? 'Không cập nhật được trạng thái lưu lịch trình'
+            : 'Could not update itinerary saved status');
+      }
+    } finally {
+      if (mounted) {
+        setState(() => _updatingCommunityTourIds.remove(tour.id));
+      }
+    }
+  }
+
+  String _normalizeTourSearchText(String value) {
+    return value
+        .toLowerCase()
+        .replaceAll('đ', 'd')
+        .replaceAll('Đ', 'd')
+        .trim();
+  }
+
+  Future<void> _openCommunityTour(SavedTour tour) async {
+    try {
+      final response = await apiGet('/tours/${tour.id}', token: widget.authToken);
+      final decoded = tryDecodeJsonObject(response.body);
+
+      if (response.statusCode != 200 || decoded?['success'] != true) {
+        throw Exception(decoded?['message'] ?? 'Không tải được chi tiết lịch trình');
+      }
+
+      final data = decoded?['data'];
+      if (!mounted) return;
+      if (kIsWeb) {
+        SystemNavigator.routeInformationUpdated(
+          location: Uri(path: '/tour', queryParameters: {'id': tour.id}).toString(),
+          replace: false,
+        );
+      }
+      final result = await Navigator.of(context).push<String>(
+        MaterialPageRoute(
+          builder: (_) => SavedTourDetailScreen(
+            tourTitle: tour.title,
+            tourJson: data is Map<String, dynamic> ? data : {},
+            authToken: widget.authToken,
+            userName: _currentUserName,
+            avatarUrl: _currentAvatarUrl,
+          ),
+        ),
+      );
+      _updateTabRoute(_tabSurvey);
+      if (result != null) {
+        _handleSurveyResult(result);
+      }
+    } catch (_) {
+      if (mounted) {
+        _showMessage(_isVi
+            ? 'Không thể mở chi tiết lịch trình này'
+            : 'Could not open this itinerary');
+      }
+    }
+  }
+
+  void _showCreateTourOptions() {
+    showModalBottomSheet<void>(
+      context: context,
+      backgroundColor: Colors.transparent,
+      builder: (context) {
+        return SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(28),
+              child: BackdropFilter(
+                filter: ImageFilter.blur(sigmaX: 16, sigmaY: 16),
+                child: Container(
+                  padding: const EdgeInsets.all(18),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFF0D1B18).withOpacity(0.92),
+                    border: Border.all(color: Colors.white.withOpacity(0.12)),
+                    borderRadius: BorderRadius.circular(28),
+                  ),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        _isVi ? 'Tạo lịch trình' : 'Create itinerary',
+                        style: const TextStyle(
+                          fontFamily: 'Montserrat',
+                          fontSize: 20,
+                          fontWeight: FontWeight.w900,
+                          color: Colors.white,
+                        ),
+                      ),
+                      const SizedBox(height: 14),
+                      _createTourOptionTile(
+                        icon: Icons.auto_awesome_rounded,
+                        title: _isVi ? 'Tạo bằng AI' : 'Create with AI',
+                        subtitle: _isVi
+                            ? 'Trả lời khảo sát để TourXport tạo lịch trình phù hợp.'
+                            : 'Answer the survey and let TourXport build a trip.',
+                        onTap: () {
+                          Navigator.pop(context);
+                          _openSurveyForCurrentLayout();
+                        },
+                      ),
+                      const SizedBox(height: 10),
+                      _createTourOptionTile(
+                        icon: Icons.edit_road_rounded,
+                        title: _isVi ? 'Tạo thủ công' : 'Create manually',
+                        subtitle: _isVi
+                            ? 'Tự thêm điểm đến và hoạt động cho lịch trình.'
+                            : 'Add destinations and activities yourself.',
+                        onTap: () {
+                          Navigator.pop(context);
+                          _openManualTourCreator();
+                        },
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _createTourOptionTile({
+    required IconData icon,
+    required String title,
+    required String subtitle,
+    required VoidCallback onTap,
+  }) {
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(20),
+        child: Ink(
+          padding: const EdgeInsets.all(16),
+          decoration: BoxDecoration(
+            color: Colors.white.withOpacity(0.07),
+            border: Border.all(color: Colors.white.withOpacity(0.10)),
+            borderRadius: BorderRadius.circular(20),
+          ),
+          child: Row(
+            children: [
+              Container(
+                width: 46,
+                height: 46,
+                decoration: BoxDecoration(
+                  color: const Color(0xFFD4AF7A).withOpacity(0.18),
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: Icon(icon, color: const Color(0xFFD4AF7A), size: 24),
+              ),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      title,
+                      style: const TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 15,
+                        fontWeight: FontWeight.w800,
+                        color: Colors.white,
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      subtitle,
+                      style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 12,
+                        color: Colors.white.withOpacity(0.62),
+                        height: 1.35,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const Icon(
+                Icons.chevron_right_rounded,
+                color: Color(0xFFD4AF7A),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
   Future<void> _editHelpSupport() async {
-    if (_userData == null) return;
+    final userData = _userData ?? {};
     await Navigator.push(
       context,
       PageRouteBuilder(
         pageBuilder: (context, animation, secondaryAnimation) =>
-            HelpSupportScreen(userData: _userData!),
+            HelpSupportScreen(userData: userData, authToken: widget.authToken),
         transitionsBuilder: (context, animation, secondaryAnimation, child) {
           return FadeTransition(
             opacity: animation,
@@ -2094,7 +2905,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       TravelNotification(
         id: 'notif_1',
         title: 'Kế hoạch du lịch Đà Nẵng',
-        description: 'Lịch trình tham quan Đà Nẵng 3 ngày 2 đêm của bạn đã sẵn sàng! Chạm để xem ngay các địa điểm tối ưu.',
+        description:
+            'Lịch trình tham quan Đà Nẵng 3 ngày 2 đêm của bạn đã sẵn sàng! Chạm để xem ngay các địa điểm tối ưu.',
         icon: Icons.map_rounded,
         timestamp: DateTime.now().subtract(const Duration(hours: 1)),
         type: 'itinerary',
@@ -2102,7 +2914,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       TravelNotification(
         id: 'notif_2',
         title: 'Cảnh báo thời tiết',
-        description: 'Dự báo thời tiết Đà Nẵng hôm nay: 26°C, trời nắng đẹp, gió mát mẻ, rất lý tưởng để đi biển hoặc ghé Bà Nà Hills.',
+        description:
+            'Dự báo thời tiết Đà Nẵng hôm nay: 26°C, trời nắng đẹp, gió mát mẻ, rất lý tưởng để đi biển hoặc ghé Bà Nà Hills.',
         icon: Icons.wb_sunny_rounded,
         timestamp: DateTime.now().subtract(const Duration(hours: 3)),
         type: 'weather',
@@ -2110,7 +2923,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       TravelNotification(
         id: 'notif_3',
         title: 'Cập nhật ngân sách chuyến đi',
-        description: 'Tổng chi tiêu dự kiến hiện tại là 1.250.000đ. Bạn đang kiểm soát ngân sách rất tốt (đạt 62% hạn mức tự đặt).',
+        description:
+            'Tổng chi tiêu dự kiến hiện tại là 1.250.000đ. Bạn đang kiểm soát ngân sách rất tốt (đạt 62% hạn mức tự đặt).',
         icon: Icons.account_balance_wallet_rounded,
         timestamp: DateTime.now().subtract(const Duration(hours: 5)),
         type: 'expense',
@@ -2118,7 +2932,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       TravelNotification(
         id: 'notif_4',
         title: 'Mẹo du lịch hữu ích',
-        description: 'Kinh nghiệm đắt giá: Nên di chuyển lên Cầu Vàng lúc 8h sáng để chụp hình không vướng người và ngắm trọn mây ngàn.',
+        description:
+            'Kinh nghiệm đắt giá: Nên di chuyển lên Cầu Vàng lúc 8h sáng để chụp hình không vướng người và ngắm trọn mây ngàn.',
         icon: Icons.lightbulb_rounded,
         timestamp: DateTime.now().subtract(const Duration(days: 1)),
         type: 'tip',
@@ -2166,60 +2981,74 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     return periodDestinations.take(10).map((dest) {
       final name = dest.name;
       final prov = dest.province;
-      final price = dest.price.isNotEmpty ? dest.price : (_isVi ? 'Chỉ từ 1.5 triệu đồng' : 'From 1.5 million VND');
-      
+      final price = dest.price.isNotEmpty
+          ? dest.price
+          : (_isVi ? 'Chỉ từ 1.5 triệu đồng' : 'From 1.5 million VND');
+
       String reason = '';
       String tag = periodTag;
       double rating = 4.7 + ((dest.name.length % 3) * 0.1);
       int reviews = 800 + (dest.name.length * 77) % 2500;
 
-      if (name.toLowerCase().contains('hạ long') || name.toLowerCase().contains('ha long')) {
-        reason = _isVi 
+      if (name.toLowerCase().contains('hạ long') ||
+          name.toLowerCase().contains('ha long')) {
+        reason = _isVi
             ? 'Thời tiết tại Vịnh ${prov} tuần này vô cùng dịu mát, nước biển trong xanh lý tưởng để trải nghiệm du thuyền 5 sao đẳng cấp.'
             : 'The weather in ${_translateProvince(prov)} Bay this week is exceptionally cool, with clear blue waters perfect for a luxury 5-star cruise experience.';
         tag = _isVi ? 'DU THUYỀN 5 SAO' : '5-STAR CRUISE';
-      } else if (name.toLowerCase().contains('đà nẵng') || name.toLowerCase().contains('da nang')) {
-        reason = _isVi 
+      } else if (name.toLowerCase().contains('đà nẵng') ||
+          name.toLowerCase().contains('da nang')) {
+        reason = _isVi
             ? 'Nhiệt độ hoàn hảo 26°C. Lễ hội pháo hoa quốc tế vừa diễn ra thu hút đông đảo du khách ghé thăm các cây cầu huyền thoại.'
             : 'Perfect temperature of 26°C. The international fireworks festival recently held is drawing crowds to visit the legendary bridges.';
         tag = _isVi ? 'PHÁO HOA QUỐC TẾ' : 'FIREWORKS FESTIVAL';
-      } else if (name.toLowerCase().contains('hội an') || name.toLowerCase().contains('hoi an')) {
-        reason = _isVi 
+      } else if (name.toLowerCase().contains('hội an') ||
+          name.toLowerCase().contains('hoi an')) {
+        reason = _isVi
             ? 'Khí hậu bắt đầu vào mùa khô ráo tuyệt đẹp. Phố đèn lồng lung linh lộng lẫy và lễ hội hoa đăng bên sông Hoài đang diễn ra rất náo nhiệt.'
             : 'The dry season starts with beautiful weather. The lanternlit streets are gorgeous and the flower lantern festival by Hoai River is bustling.';
         tag = _isVi ? 'PHỐ CỔ HOÀI CỔ' : 'ANCIENT TOWN';
-      } else if (name.toLowerCase().contains('phong nha') || name.toLowerCase().contains('quảng bình') || name.toLowerCase().contains('quang binh')) {
-        reason = _isVi 
+      } else if (name.toLowerCase().contains('phong nha') ||
+          name.toLowerCase().contains('quảng bình') ||
+          name.toLowerCase().contains('quang binh')) {
+        reason = _isVi
             ? 'Thời tiết khô ráo rất thích hợp để thám hiểm hệ thống hang động thạch nhũ tráng lệ bậc nhất thế giới.'
             : 'Dry weather is highly suitable for exploring the world\'s most magnificent stalactite cave systems.';
         tag = _isVi ? 'KHÁM PHÁ HANG ĐỘNG' : 'CAVE EXPLORATION';
-      } else if (name.toLowerCase().contains('phú quốc') || name.toLowerCase().contains('phu quoc')) {
-        reason = _isVi 
+      } else if (name.toLowerCase().contains('phú quốc') ||
+          name.toLowerCase().contains('phu quoc')) {
+        reason = _isVi
             ? 'Biển cực kỳ êm, nắng vàng rực rỡ và nước biển trong vắt như pha lê, hoàn hảo cho tour lặn biển ngắm san hô.'
             : 'The sea is extremely calm, with golden sunshine and crystal-clear water, perfect for coral reef diving tours.';
         tag = _isVi ? 'THIÊN ĐƯỜNG BIỂN' : 'BEACH PARADISE';
       } else if (name.toLowerCase().contains('sapa')) {
-        reason = _isVi 
+        reason = _isVi
             ? 'Đỉnh Fansipan xuất hiện biển mây cực đẹp vào sáng sớm, nhiệt độ se lạnh lý tưởng để thưởng thức ẩm thực Tây Bắc.'
             : 'Fansipan peak features a beautiful sea of clouds in the early morning, with cool temperatures ideal for Northwest cuisine.';
         tag = _isVi ? 'SĂN MÂY TÂY BẮC' : 'CLOUD HUNTING';
-      } else if (name.toLowerCase().contains('đà lạt') || name.toLowerCase().contains('da lat')) {
-        reason = _isVi 
+      } else if (name.toLowerCase().contains('đà lạt') ||
+          name.toLowerCase().contains('da lat')) {
+        reason = _isVi
             ? 'Mùa hoa dã quỳ vàng rực rỡ khắp các triền đồi, không khí mát mẻ dễ chịu vô cùng thích hợp cho cắm trại đêm.'
             : 'Wild sunflowers bloom in brilliant yellow across the hills, with cool pleasant air perfect for night camping.';
       } else {
-        reason = _isVi 
+        reason = _isVi
             ? 'Điểm đến đang nhận được sự quan tâm đột biến từ cộng đồng du lịch nhờ khí hậu thuận lợi và nhiều ưu đãi dịch vụ hấp dẫn trong thời gian này.'
             : 'This destination is receiving surging interest from the travel community due to favorable climate and attractive deals.';
         tag = _isVi ? 'ĐIỂM ĐẾN VÀNG' : 'GOLDEN DESTINATION';
       }
 
-      final translatedPrice = _isVi 
-          ? price 
-          : price.replaceAll('Chỉ từ', 'From').replaceAll('triệu đồng', 'm VND').replaceAll('triệu', 'm');
+      final translatedPrice = _isVi
+          ? price
+          : price
+              .replaceAll('Chỉ từ', 'From')
+              .replaceAll('triệu đồng', 'm VND')
+              .replaceAll('triệu', 'm');
 
       return AppTrendRecommendation(
-        title: _isVi ? '$name - Khám phá vẻ đẹp kỳ diệu' : '$name - Discover Magical Beauty',
+        title: _isVi
+            ? '$name - Khám phá vẻ đẹp kỳ diệu'
+            : '$name - Discover Magical Beauty',
         province: _translateProvince(prov),
         price: translatedPrice,
         imagePath: dest.imagePath,
@@ -2250,7 +3079,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 height: MediaQuery.of(context).size.height * 0.85,
                 decoration: BoxDecoration(
                   color: const Color(0xFF070E0D).withOpacity(0.85),
-                  borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
+                  borderRadius:
+                      const BorderRadius.vertical(top: Radius.circular(32)),
                   border: Border.all(
                     color: Colors.white.withOpacity(0.08),
                     width: 1,
@@ -2439,10 +3269,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(Icons.notifications_none_rounded, color: Colors.white24, size: 64),
+            const Icon(Icons.notifications_none_rounded,
+                color: Colors.white24, size: 64),
             const SizedBox(height: 16),
             Text(
-              _isVi ? 'Chưa có thông báo nào dành cho bạn' : 'No notifications for you yet',
+              _isVi
+                  ? 'Chưa có thông báo nào dành cho bạn'
+                  : 'No notifications for you yet',
               style: TextStyle(
                 fontFamily: 'Montserrat',
                 fontSize: 15,
@@ -2523,7 +3356,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                       fontFamily: 'Montserrat',
                                       fontSize: 15,
                                       fontWeight: FontWeight.bold,
-                                      color: item.isRead ? Colors.white : const Color(0xFFD4AF7A),
+                                      color: item.isRead
+                                          ? Colors.white
+                                          : const Color(0xFFD4AF7A),
                                     ),
                                   ),
                                 ),
@@ -2547,7 +3382,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                           fontFamily: 'Montserrat',
                           fontSize: 13,
                           height: 1.4,
-                          color: Colors.white.withOpacity(item.isRead ? 0.6 : 0.85),
+                          color: Colors.white
+                              .withOpacity(item.isRead ? 0.6 : 0.85),
                         ),
                       ),
                     ],
@@ -2582,11 +3418,14 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
           child: Row(
             children: [
-              _buildTrendFilterButton('day', _isVi ? 'Hôm nay' : 'Today', setSheetState),
+              _buildTrendFilterButton(
+                  'day', _isVi ? 'Hôm nay' : 'Today', setSheetState),
               const SizedBox(width: 8),
-              _buildTrendFilterButton('week', _isVi ? 'Tuần này' : 'This Week', setSheetState),
+              _buildTrendFilterButton(
+                  'week', _isVi ? 'Tuần này' : 'This Week', setSheetState),
               const SizedBox(width: 8),
-              _buildTrendFilterButton('month', _isVi ? 'Tháng này' : 'This Month', setSheetState),
+              _buildTrendFilterButton(
+                  'month', _isVi ? 'Tháng này' : 'This Month', setSheetState),
             ],
           ),
         ),
@@ -2597,7 +3436,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           child: trends.isEmpty
               ? Center(
                   child: Text(
-                    _isVi ? 'Không có đề xuất nào cho khoảng thời gian này.' : 'No recommendations for this period.',
+                    _isVi
+                        ? 'Không có đề xuất nào cho khoảng thời gian này.'
+                        : 'No recommendations for this period.',
                     style: TextStyle(
                       fontFamily: 'Montserrat',
                       fontSize: 14,
@@ -2662,22 +3503,30 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                 padding: const EdgeInsets.all(20),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   children: [
                                     // Top row
                                     Row(
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
                                       children: [
                                         Container(
-                                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                                          padding: const EdgeInsets.symmetric(
+                                              horizontal: 12, vertical: 6),
                                           decoration: BoxDecoration(
                                             gradient: const LinearGradient(
-                                              colors: [Color(0xFFD4AF7A), Color(0xFFB5956A)],
+                                              colors: [
+                                                Color(0xFFD4AF7A),
+                                                Color(0xFFB5956A)
+                                              ],
                                             ),
-                                            borderRadius: BorderRadius.circular(12),
+                                            borderRadius:
+                                                BorderRadius.circular(12),
                                             boxShadow: [
                                               BoxShadow(
-                                                color: const Color(0xFFD4AF7A).withOpacity(0.3),
+                                                color: const Color(0xFFD4AF7A)
+                                                    .withOpacity(0.3),
                                                 blurRadius: 8,
                                                 offset: const Offset(0, 2),
                                               ),
@@ -2695,15 +3544,22 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                           ),
                                         ),
                                         Container(
-                                          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                                          padding: const EdgeInsets.symmetric(
+                                              horizontal: 10, vertical: 4),
                                           decoration: BoxDecoration(
-                                            color: Colors.black.withOpacity(0.6),
-                                            borderRadius: BorderRadius.circular(20),
-                                            border: Border.all(color: Colors.white24, width: 0.8),
+                                            color:
+                                                Colors.black.withOpacity(0.6),
+                                            borderRadius:
+                                                BorderRadius.circular(20),
+                                            border: Border.all(
+                                                color: Colors.white24,
+                                                width: 0.8),
                                           ),
                                           child: Row(
                                             children: [
-                                              const Icon(Icons.star_rounded, color: Color(0xFFF1C40F), size: 14),
+                                              const Icon(Icons.star_rounded,
+                                                  color: Color(0xFFF1C40F),
+                                                  size: 14),
                                               const SizedBox(width: 4),
                                               Text(
                                                 '${rec.rating}',
@@ -2722,22 +3578,27 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
                                     // Bottom section
                                     Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Row(
-                                          crossAxisAlignment: CrossAxisAlignment.end,
-                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.end,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
                                           children: [
                                             Expanded(
                                               child: Column(
-                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
                                                 children: [
                                                   Text(
                                                     rec.province.toUpperCase(),
                                                     style: const TextStyle(
                                                       fontFamily: 'Montserrat',
                                                       fontSize: 11,
-                                                      fontWeight: FontWeight.bold,
+                                                      fontWeight:
+                                                          FontWeight.bold,
                                                       color: Color(0xFFD4AF7A),
                                                       letterSpacing: 1.0,
                                                     ),
@@ -2746,11 +3607,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                                   Text(
                                                     rec.title,
                                                     maxLines: 2,
-                                                    overflow: TextOverflow.ellipsis,
+                                                    overflow:
+                                                        TextOverflow.ellipsis,
                                                     style: const TextStyle(
                                                       fontFamily: 'Montserrat',
                                                       fontSize: 18,
-                                                      fontWeight: FontWeight.bold,
+                                                      fontWeight:
+                                                          FontWeight.bold,
                                                       color: Colors.white,
                                                       letterSpacing: -0.2,
                                                     ),
@@ -2779,46 +3642,65 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                             fontFamily: 'Montserrat',
                                             fontSize: 12.5,
                                             height: 1.4,
-                                            color: Colors.white.withOpacity(0.8),
+                                            color:
+                                                Colors.white.withOpacity(0.8),
                                           ),
                                         ),
                                         const SizedBox(height: 12),
                                         Row(
-                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
                                           children: [
                                             Text(
                                               '⭐ ${rec.rating} · ${rec.reviewsCount} lượt quan tâm',
                                               style: TextStyle(
                                                 fontFamily: 'Montserrat',
                                                 fontSize: 12,
-                                                color: Colors.white.withOpacity(0.5),
+                                                color: Colors.white
+                                                    .withOpacity(0.5),
                                               ),
                                             ),
                                             GestureDetector(
                                               onTap: () {
                                                 Navigator.pop(context);
-                                                _openPlaceDetail(rec.destination, context);
+                                                _openPlaceDetail(
+                                                    rec.destination, context);
                                               },
                                               child: Container(
-                                                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                                padding:
+                                                    const EdgeInsets.symmetric(
+                                                        horizontal: 16,
+                                                        vertical: 8),
                                                 decoration: BoxDecoration(
                                                   color: Colors.transparent,
-                                                  borderRadius: BorderRadius.circular(16),
-                                                  border: Border.all(color: const Color(0xFFD4AF7A), width: 1.5),
+                                                  borderRadius:
+                                                      BorderRadius.circular(16),
+                                                  border: Border.all(
+                                                      color: const Color(
+                                                          0xFFD4AF7A),
+                                                      width: 1.5),
                                                 ),
                                                 child: const Row(
                                                   children: [
                                                     Text(
                                                       'Lên lịch ngay',
                                                       style: TextStyle(
-                                                        fontFamily: 'Montserrat',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         fontSize: 12.5,
-                                                        fontWeight: FontWeight.bold,
-                                                        color: Color(0xFFD4AF7A),
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                        color:
+                                                            Color(0xFFD4AF7A),
                                                       ),
                                                     ),
                                                     SizedBox(width: 4),
-                                                    Icon(Icons.arrow_forward_rounded, color: Color(0xFFD4AF7A), size: 14),
+                                                    Icon(
+                                                        Icons
+                                                            .arrow_forward_rounded,
+                                                        color:
+                                                            Color(0xFFD4AF7A),
+                                                        size: 14),
                                                   ],
                                                 ),
                                               ),
@@ -2842,7 +3724,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     );
   }
 
-  Widget _buildTrendFilterButton(String key, String title, StateSetter setSheetState) {
+  Widget _buildTrendFilterButton(
+      String key, String title, StateSetter setSheetState) {
     final isActive = _selectedTrendFilter == key;
     return Expanded(
       child: GestureDetector(
@@ -2855,7 +3738,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         child: Container(
           height: 38,
           decoration: BoxDecoration(
-            color: isActive ? const Color(0xFFD4AF7A).withOpacity(0.15) : Colors.transparent,
+            color: isActive
+                ? const Color(0xFFD4AF7A).withOpacity(0.15)
+                : Colors.transparent,
             borderRadius: BorderRadius.circular(14),
             border: Border.all(
               color: isActive ? const Color(0xFFD4AF7A) : Colors.white12,
@@ -2919,7 +3804,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       }
 
       if ((placeId == null || placeId.isEmpty) && !currentlySaved) {
-        placeId = await resolveLocationIdByName(dest.name, dest.type, token: token);
+        placeId =
+            await resolveLocationIdByName(dest.name, dest.type, token: token);
       }
 
       if (placeId == null || placeId.isEmpty) {
@@ -2982,21 +3868,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     });
   }
 
-  void _toggleLike(Destination dest) {
-    setState(() {
-      if (_likedNames.contains(dest.name)) {
-        _likedNames.remove(dest.name);
-      } else {
-        _likedNames.add(dest.name);
-      }
-    });
-  }
-
-  int _fakeLikeCountFor(Destination dest, {required bool isLiked}) {
-    final seeded = _fakeLikeSeeds[dest.name] ?? (700 + (dest.name.length * 37));
-    return isLiked ? seeded + 1 : seeded;
-  }
-
   Future<void> _openPlaceDetail(
       Destination dest, BuildContext cardContext) async {
     final useSimpleTransition = _navIndex == _tabSaved;
@@ -3011,6 +3882,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     }
 
     _stopAutoPlay();
+    _updatePlaceDetailRoute(dest);
 
     final result = await Navigator.push<Map<String, bool>>(
       context,
@@ -3053,6 +3925,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       ),
     );
 
+    if (mounted && kIsWeb) {
+      _updateTabRoute(_navIndex);
+    }
+
     _startAutoPlay();
 
     if (!mounted || result == null) return;
@@ -3081,7 +3957,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   void _jumpToRegion(String region) {
     final destinations = _exploreDestinations;
-    final idx = destinations.indexWhere((d) => _citiesMatch(d.province, region));
+    final idx =
+        destinations.indexWhere((d) => _citiesMatch(d.province, region));
     if (idx >= 0 && idx != _currentIndex) {
       if (_pageController.hasClients) {
         final currentPage = _pageController.page?.round() ?? 1000;
@@ -3099,8 +3976,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   String _stripDiacritics(String str) {
-    var withDiacritics = 'àáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđĐ';
-    var withoutDiacritics = 'aaaaaaaaaaaaaaaaaeeeeeeeeeeeiiiiiooooooooooooooooouuuuuuuuuuuyyyyydd';
+    var withDiacritics =
+        'àáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđĐ';
+    var withoutDiacritics =
+        'aaaaaaaaaaaaaaaaaeeeeeeeeeeeiiiiiooooooooooooooooouuuuuuuuuuuyyyyydd';
     var result = str.toLowerCase();
     result = result.replaceAll(RegExp(r'[\u0300-\u036f]'), '');
     for (int i = 0; i < withDiacritics.length; i++) {
@@ -3152,7 +4031,53 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     return filteredList;
   }
 
+  String _normalizeString(String str) {
+    const withSign =
+        'aáàảãạâấầẩẫậăắằẳẵặeéèẻẽẹêếềểễệiíìỉĩịoóòỏõọôốồổỗộơớờởỡợuúùủũụưứừửữựyýỳỷỹỵđĐ';
+    const noSign =
+        'aaaaaaaaaaaaaaaaaaeeeeeeeeeeeeiiiiiioooooooooooooooooouuuuuuuuuuuuyyyyyydd';
+    var result = str.toLowerCase().trim();
+    for (var i = 0; i < withSign.length; i++) {
+      result = result.replaceAll(withSign[i], noSign[i]);
+    }
+    return result;
+  }
+
   void _onSearchChanged(String value) {
+    final cleanVal = _normalizeString(value);
+    if (cleanVal.isNotEmpty) {
+      String? matchedProv;
+      for (final prov in vietnameseProvinces) {
+        if (prov == 'Toàn quốc' || prov == 'All') continue;
+        final cleanProv = _normalizeString(prov);
+        final cleanTranslated = _normalizeString(_translateProvince(prov));
+        final isExact = (cleanVal == cleanProv || cleanVal == cleanTranslated);
+        final isPartial = (cleanVal.length >= 5 &&
+            (cleanProv.contains(cleanVal) ||
+                cleanTranslated.contains(cleanVal) ||
+                cleanVal.contains(cleanProv) ||
+                cleanVal.contains(cleanTranslated)));
+        if (isExact || isPartial) {
+          matchedProv = prov;
+          break;
+        }
+      }
+
+      if (matchedProv != null) {
+        _selectCity(matchedProv, clearSearch: false);
+        setState(() {
+          _searchQuery = value;
+          _searchResults = [];
+        });
+        _searchDebounceTimer?.cancel();
+        _searchDebounceTimer =
+            Timer(const Duration(milliseconds: 300), () async {
+          await _performBackendSearch(value);
+        });
+        return;
+      }
+    }
+
     setState(() {
       _searchQuery = value;
       _searchCurrentIndex = 0;
@@ -3262,7 +4187,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     final controller =
         useSearchResults ? _searchPageController : _pageController;
     if (controller.hasClients) {
-      final list = useSearchResults ? _searchDestinations : _exploreDestinations;
+      final list =
+          useSearchResults ? _searchDestinations : _exploreDestinations;
       if (list.length > 3) {
         controller.jumpToPage(1000 - (1000 % list.length));
       } else {
@@ -3276,8 +4202,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     if (list.isEmpty) return 0;
 
     final page = useSearchResults ? _searchBackendPage : _exploreBackendPage;
-    final localIndex =
-        useSearchResults ? _searchCurrentIndex : _currentIndex;
+    final localIndex = useSearchResults ? _searchCurrentIndex : _currentIndex;
     final total = useSearchResults ? _searchTotalItems : _exploreTotalItems;
     final value = ((page - 1) * _filterLimit) + localIndex + 1;
     return total <= 0 ? value : value.clamp(1, total).toInt();
@@ -3392,8 +4317,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     final list = useSearchResults ? _searchDestinations : _exploreDestinations;
     if (list.isEmpty) return;
 
-    final currentIndex =
-        useSearchResults ? _searchCurrentIndex : _currentIndex;
+    final currentIndex = useSearchResults ? _searchCurrentIndex : _currentIndex;
     final nextIndex = currentIndex + direction;
     final backendPage =
         useSearchResults ? _searchBackendPage : _exploreBackendPage;
@@ -3544,7 +4468,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     _popupSelectionField(
                       title: _isVi ? 'Loại địa điểm' : 'Location Type',
                       value: _selectedLocationKindLabel(_selectedLocationKind),
-                      hint: _isVi ? 'Chạm để chọn loại địa điểm' : 'Tap to select location type',
+                      hint: _isVi
+                          ? 'Chạm để chọn loại địa điểm'
+                          : 'Tap to select location type',
                       onTap: () async {
                         final selected = await _showSingleSelectPopup(
                           title: _isVi ? 'Loại địa điểm' : 'Location Type',
@@ -3581,11 +4507,16 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     const SizedBox(height: 10),
                     _popupSelectionField(
                       title: _isVi ? 'Thành phố' : 'City',
-                      value: _selectedCity != null ? _translateProvince(_selectedCity!) : (_isVi ? 'Tất cả thành phố' : 'All Cities'),
-                      hint: _isVi ? 'Chạm để chọn thành phố' : 'Tap to select city',
+                      value: _selectedCity != null
+                          ? _translateProvince(_selectedCity!)
+                          : (_isVi ? 'Tất cả thành phố' : 'All Cities'),
+                      hint: _isVi
+                          ? 'Chạm để chọn thành phố'
+                          : 'Tap to select city',
                       onTap: () async {
                         final selected = await _showSingleSelectPopup(
-                          title: _isVi ? 'Lọc theo Thành phố' : 'Filter by City',
+                          title:
+                              _isVi ? 'Lọc theo Thành phố' : 'Filter by City',
                           options: cities,
                           selectedValue: _selectedCity,
                           clearLabel: _isVi ? 'Tất cả thành phố' : 'All Cities',
@@ -3660,7 +4591,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       _popupSelectionField(
                         title: _isVi ? 'Tags' : 'Tags',
                         value: _tagsSummary(_selectedTags),
-                        hint: _isVi ? 'Chạm để chọn tags' : 'Tap to select tags',
+                        hint:
+                            _isVi ? 'Chạm để chọn tags' : 'Tap to select tags',
                         onTap: () async {
                           final selected = await _showMultiSelectPopup(
                             title: _isVi ? 'Tags' : 'Tags',
@@ -3696,7 +4628,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       children: sortOptions.map((opt) {
                         final isSelected = _sortBy == opt['field'];
                         return _choiceChip(
-                          label: _isVi ? opt['label']! : (opt['field'] == 'rating' ? 'Rating' : (opt['field'] == 'reviewsCount' ? 'Reviews' : 'Name')),
+                          label: _isVi
+                              ? opt['label']!
+                              : (opt['field'] == 'rating'
+                                  ? 'Rating'
+                                  : (opt['field'] == 'reviewsCount'
+                                      ? 'Reviews'
+                                      : 'Name')),
                           isSelected: isSelected,
                           centerText: true,
                           onTap: () {
@@ -3839,7 +4777,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         Expanded(
                           child: _filterValueButton(
                             icon: Icons.access_time_rounded,
-                            label: _filterTime ?? (_isVi ? 'Giờ bất kỳ' : 'Anytime'),
+                            label: _filterTime ??
+                                (_isVi ? 'Giờ bất kỳ' : 'Anytime'),
                             onTap: () async {
                               final initial = _filterTime?.split(':');
                               final picked = await showTimePicker(
@@ -3871,7 +4810,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         Expanded(
                           child: _filterValueButton(
                             icon: Icons.calendar_today_rounded,
-                            label: _filterDate ?? (_isVi ? 'Ngày bất kỳ' : 'Anyday'),
+                            label: _filterDate ??
+                                (_isVi ? 'Ngày bất kỳ' : 'Anyday'),
                             onTap: () async {
                               final now = DateTime.now();
                               final picked = await showDatePicker(
@@ -3925,7 +4865,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                   ),
                                   const SizedBox(width: 10),
                                   Text(
-                                    _isVi ? 'Tìm kiếm xung quanh (GPS)' : 'Nearby Search (GPS)',
+                                    _isVi
+                                        ? 'Tìm kiếm xung quanh (GPS)'
+                                        : 'Nearby Search (GPS)',
                                     style: const TextStyle(
                                       fontFamily: 'Montserrat',
                                       fontSize: 14,
@@ -3954,7 +4896,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
-                                  (_isVi ? 'Bán kính: ' : 'Radius: ') + '${_radius >= 1000 ? "${(_radius / 1000).toStringAsFixed(1)} km" : "${_radius.round()} m"}',
+                                  (_isVi ? 'Bán kính: ' : 'Radius: ') +
+                                      '${_radius >= 1000 ? "${(_radius / 1000).toStringAsFixed(1)} km" : "${_radius.round()} m"}',
                                   style: TextStyle(
                                     fontFamily: 'Montserrat',
                                     fontSize: 12,
@@ -4386,235 +5329,322 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     final isGuest = widget.authToken == null || widget.authToken!.isEmpty;
     final menuItems = [
       (Icons.home_rounded, AppLocalizations.of(context)!.explore),
-      (Icons.search_rounded, AppLocalizations.of(context)!.search),
+      (Icons.map_rounded, _isVi ? 'Khám phá' : 'Explore'),
       (Icons.bookmark_rounded, AppLocalizations.of(context)!.saved),
       (Icons.explore_rounded, AppLocalizations.of(context)!.survey),
       (Icons.person_rounded, AppLocalizations.of(context)!.account),
     ];
 
-    return Container(
-      width: 260,
-      decoration: BoxDecoration(
-        color: const Color(0xFF070E0D).withOpacity(0.45), // Semi-transparent dark green/black background for glass effect
-        border:
-            const Border(right: BorderSide(color: Colors.white12, width: 1)),
-      ),
-      child: Column(
-        children: [
-          const SizedBox(height: 36),
-          // Logo header (horizontal Row for large compact logo)
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  boxShadow: [
-                    BoxShadow(
-                      color: const Color(0xFFD4AF7A).withOpacity(0.15),
-                      blurRadius: 20,
-                      spreadRadius: 1,
-                    ),
-                  ],
-                ),
-                child: Image.asset(
-                  'assets/images/logo.png',
-                  width: 64,
-                  height: 64,
-                  fit: BoxFit.contain,
-                ),
-              ),
-              const SizedBox(width: 14),
-              const Text(
-                'TourXport',
-                style: TextStyle(
-                  fontFamily: 'Montserrat',
-                  fontSize: 26,
-                  fontWeight: FontWeight.w900,
-                  color: Color(0xFFD4AF7A),
-                  letterSpacing: 1.2,
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 28),
+    final double sidebarW = _isSidebarCollapsed ? 80 : 260;
 
-          // User Profile Card
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Container(
-              padding: const EdgeInsets.all(12),
-              decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.1),
-                borderRadius: BorderRadius.circular(16),
-                border: Border.all(color: Colors.white.withOpacity(0.15)),
+    return SizedBox(
+      width: sidebarW,
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          color: const Color(0xFF070E0D).withOpacity(0.45),
+          border: const Border(right: BorderSide(color: Colors.white12, width: 1)),
+        ),
+        child: Column(
+          children: [
+            // ── Toggle button ────────────────────────────────────────────
+            Padding(
+              padding: EdgeInsets.only(
+                top: 20,
+                left: _isSidebarCollapsed ? 8 : 16,
+                right: _isSidebarCollapsed ? 8 : 16,
               ),
-              child: Row(
-                children: [
-                  _buildHomeAvatar(size: 38, iconSize: 20),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          _currentUserName,
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: const TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 14,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
-                        ),
-                        Text(
-                          _isVi ? 'Thành viên' : 'Member',
-                          style: TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 11,
-                            color: Colors.white.withOpacity(0.9),
-                          ),
+              child: Align(
+                alignment: _isSidebarCollapsed
+                    ? Alignment.center
+                    : Alignment.centerLeft,
+                child: IconButton(
+                  icon: Icon(
+                    _isSidebarCollapsed
+                        ? Icons.menu_rounded
+                        : Icons.menu_open_rounded,
+                    color: const Color(0xFFD4AF7A),
+                    size: 24,
+                  ),
+                  tooltip: _isSidebarCollapsed
+                      ? (_isVi ? 'Mở rộng sidebar' : 'Expand Sidebar')
+                      : (_isVi ? 'Thu gọn sidebar' : 'Collapse Sidebar'),
+                  onPressed: () =>
+                      setState(() => _isSidebarCollapsed = !_isSidebarCollapsed),
+                ),
+              ),
+            ),
+            const SizedBox(height: 12),
+
+            // ── Logo ─────────────────────────────────────────────────────
+            if (_isSidebarCollapsed)
+              // Collapsed: logo centred in the 80 px rail
+              SizedBox(
+                width: 80,
+                child: Center(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      boxShadow: [
+                        BoxShadow(
+                          color: const Color(0xFFD4AF7A).withOpacity(0.15),
+                          blurRadius: 20,
+                          spreadRadius: 1,
                         ),
                       ],
                     ),
+                    child: Image.asset(
+                      'assets/images/logo-compact.png',
+                      width: 30,
+                      height: 30,
+                      fit: BoxFit.contain,
+                    ),
                   ),
-                ],
-              ),
-            ),
-          ),
-          const SizedBox(height: 32),
-
-          // Navigation Links
-          Expanded(
-            child: ListView.separated(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              itemCount: menuItems.length,
-              separatorBuilder: (_, __) => const SizedBox(height: 8),
-              itemBuilder: (context, i) {
-                final item = menuItems[i];
-                final isActive = _navIndex == i;
-                return Material(
-                  color: Colors.transparent,
-                  child: InkWell(
-                    onTap: () async {
-                      if (i == _tabSurvey) {
-                        await _openSurveyForCurrentLayout();
-                      } else {
-                        setState(() {
-                          _navIndex = i;
-                          _savedPlacesInitialTab = 0;
-                        });
-                        if (i == _tabExplore) {
-                          _startAutoPlay();
-                        } else {
-                          _stopAutoPlay();
-                        }
-                      }
-                    },
-                    borderRadius: BorderRadius.circular(16),
-                    hoverColor: Colors.white.withOpacity(0.05),
-                    child: AnimatedContainer(
-                      duration: const Duration(milliseconds: 200),
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 16, vertical: 14),
+                ),
+              )
+            else
+              // Expanded: logo + text in a row
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Row(
+                  children: [
+                    Container(
                       decoration: BoxDecoration(
-                        color: isActive
-                            ? const Color(0xFF2D6A4F).withOpacity(0.25)
-                            : Colors.transparent,
-                        borderRadius: BorderRadius.circular(16),
-                        border: Border.all(
-                          color: isActive
-                              ? const Color(0xFFD4AF7A).withOpacity(0.65) // Subtle glowing gold border for active item
-                              : Colors.transparent,
-                          width: 1.2,
-                        ),
-                      ),
-                      child: Row(
-                        children: [
-                          Icon(
-                            item.$1,
-                            color: isActive
-                                ? const Color(0xFFD4AF7A)
-                                : Colors.white.withOpacity(0.65), // Crisp contrast for inactive icons
-                            size: 22,
-                          ),
-                          const SizedBox(width: 14),
-                          Text(
-                            item.$2,
-                            style: TextStyle(
-                              fontFamily: 'Montserrat',
-                              fontSize: 14,
-                              fontWeight:
-                                  isActive ? FontWeight.bold : FontWeight.w600,
-                              color: isActive
-                                  ? Colors.white
-                                  : Colors.white.withOpacity(0.65), // Highly legible inactive text
-                            ),
+                        shape: BoxShape.circle,
+                        boxShadow: [
+                          BoxShadow(
+                            color: const Color(0xFFD4AF7A).withOpacity(0.15),
+                            blurRadius: 20,
+                            spreadRadius: 1,
                           ),
                         ],
                       ),
-                    ),
-                  ),
-                );
-              },
-            ),
-          ),
-
-          // Logout button at bottom
-          Padding(
-            padding: const EdgeInsets.all(20),
-            child: Material(
-              color: Colors.transparent,
-              child: InkWell(
-                onTap: _logout,
-                borderRadius: BorderRadius.circular(16),
-                hoverColor: isGuest
-                    ? const Color(0xFFD4AF7A).withOpacity(0.1)
-                    : const Color(0xFFE74C3C).withOpacity(0.1),
-                child: Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-                  child: Row(
-                    children: [
-                      Icon(
-                        isGuest ? Icons.login_rounded : Icons.logout_rounded,
-                        color: isGuest
-                            ? const Color(0xFFD4AF7A)
-                            : const Color(0xFFE74C3C),
-                        size: 22,
+                      child: Image.asset(
+                        'assets/images/logo-compact.png',
+                        width: 30,
+                        height: 30,
+                        fit: BoxFit.contain,
                       ),
-                      const SizedBox(width: 14),
-                      Text(
-                        isGuest ? (_isVi ? 'Tài khoản' : 'Account') : (_isVi ? 'Đăng xuất' : 'Log Out'),
+                    ),
+                    const SizedBox(width: 12),
+                    const Expanded(
+                      child: Text(
+                        'TourXport',
+                        maxLines: 1,
+                        overflow: TextOverflow.clip,
+                        softWrap: false,
                         style: TextStyle(
                           fontFamily: 'Montserrat',
-                          fontSize: 14,
-                          fontWeight: FontWeight.bold,
-                          color: isGuest
-                              ? const Color(0xFFD4AF7A)
-                              : const Color(0xFFE74C3C),
+                          fontSize: 22,
+                          fontWeight: FontWeight.w900,
+                          color: Colors.white,
+                          letterSpacing: 1.2,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            const SizedBox(height: 28),
+
+            // ── Profile card ─────────────────────────────────────────────
+            Padding(
+              padding: EdgeInsets.symmetric(
+                horizontal: _isSidebarCollapsed ? 8 : 12,
+              ),
+              child: Container(
+                padding: EdgeInsets.all(_isSidebarCollapsed ? 8 : 12),
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.1),
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(color: Colors.white.withOpacity(0.15)),
+                ),
+                child: Row(
+                  mainAxisAlignment: _isSidebarCollapsed
+                      ? MainAxisAlignment.center
+                      : MainAxisAlignment.start,
+                  children: [
+                    _buildHomeAvatar(
+                      size: _isSidebarCollapsed ? 34 : 38,
+                      iconSize: _isSidebarCollapsed ? 18 : 20,
+                    ),
+                    if (!_isSidebarCollapsed) ...[
+                      const SizedBox(width: 10),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              _currentUserName,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: const TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 14,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            Text(
+                              _isVi ? 'Thành viên' : 'Member',
+                              style: TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 11,
+                                color: Colors.white.withOpacity(0.9),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ],
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 32),
+
+            // ── Navigation links ─────────────────────────────────────────
+            Expanded(
+              child: ListView.separated(
+                padding: EdgeInsets.symmetric(
+                  horizontal: _isSidebarCollapsed ? 8 : 16,
+                ),
+                itemCount: menuItems.length,
+                separatorBuilder: (_, __) => const SizedBox(height: 8),
+                itemBuilder: (context, i) {
+                  final item = menuItems[i];
+                  final isActive = _navIndex == i;
+                  return Material(
+                    color: Colors.transparent,
+                    child: InkWell(
+                      onTap: () => _showMainTab(i),
+                      borderRadius: BorderRadius.circular(16),
+                      hoverColor: Colors.white.withOpacity(0.05),
+                      child: Container(
+                        padding: EdgeInsets.symmetric(
+                          horizontal: _isSidebarCollapsed ? 0 : 16,
+                          vertical: 14,
+                        ),
+                        decoration: BoxDecoration(
+                          color: isActive
+                              ? const Color(0xFF2D6A4F).withOpacity(0.25)
+                              : Colors.transparent,
+                          borderRadius: BorderRadius.circular(16),
+                          border: Border.all(
+                            color: isActive
+                                ? const Color(0xFFD4AF7A).withOpacity(0.65)
+                                : Colors.transparent,
+                            width: 1.2,
+                          ),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: _isSidebarCollapsed
+                              ? MainAxisAlignment.center
+                              : MainAxisAlignment.start,
+                          children: [
+                            Icon(
+                              item.$1,
+                              color: isActive
+                                  ? const Color(0xFFD4AF7A)
+                                  : Colors.white.withOpacity(0.65),
+                              size: 22,
+                            ),
+                            if (!_isSidebarCollapsed) ...[
+                              const SizedBox(width: 14),
+                              Expanded(
+                                child: Text(
+                                  item.$2,
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontSize: 14,
+                                    fontWeight: isActive
+                                        ? FontWeight.bold
+                                        : FontWeight.w600,
+                                    color: isActive
+                                        ? Colors.white
+                                        : Colors.white.withOpacity(0.65),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ],
+                        ),
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
+
+            // ── Logout / Login button ─────────────────────────────────────
+            Padding(
+              padding: EdgeInsets.all(_isSidebarCollapsed ? 8 : 20),
+              child: Material(
+                color: Colors.transparent,
+                child: InkWell(
+                  onTap: _logout,
+                  borderRadius: BorderRadius.circular(16),
+                  hoverColor: isGuest
+                      ? const Color(0xFFD4AF7A).withOpacity(0.1)
+                      : const Color(0xFFE74C3C).withOpacity(0.1),
+                  child: Container(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: _isSidebarCollapsed ? 0 : 16,
+                      vertical: 14,
+                    ),
+                    child: Row(
+                      mainAxisAlignment: _isSidebarCollapsed
+                          ? MainAxisAlignment.center
+                          : MainAxisAlignment.start,
+                      children: [
+                        Icon(
+                          isGuest
+                              ? Icons.login_rounded
+                              : Icons.logout_rounded,
+                          color: isGuest
+                              ? const Color(0xFFD4AF7A)
+                              : const Color(0xFFE74C3C),
+                          size: 22,
+                        ),
+                        if (!_isSidebarCollapsed) ...[
+                          const SizedBox(width: 14),
+                          Expanded(
+                            child: Text(
+                              isGuest
+                                  ? (_isVi ? 'Tài khoản' : 'Account')
+                                  : (_isVi ? 'Đăng xuất' : 'Log Out'),
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 14,
+                                fontWeight: FontWeight.bold,
+                                color: isGuest
+                                    ? const Color(0xFFD4AF7A)
+                                    : const Color(0xFFE74C3C),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ],
+                    ),
                   ),
                 ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
 
+
   Widget _buildPreviousBackground() {
-    final isDesktop = MediaQuery.of(context).size.width >= 800;
-    final isSurveyStyle = _navIndex == _tabSearch ||
-        _navIndex == _tabSaved ||
-        _navIndex == _tabSurvey ||
-        _navIndex == _tabProfile;
-    final blurVal = isSurveyStyle ? 10.0 : (isDesktop ? 0.8 : 5.0);
-    final bgPath = isSurveyStyle ? 'assets/images/login_bg.jpg' : _previousBgPath;
+    const isSurveyStyle = true;
+    const blurVal = 10.0;
+    const bgPath = 'assets/images/login_bg.jpg';
 
     return Positioned.fill(
       child: Stack(
@@ -4631,13 +5661,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Widget _buildCurrentBackground() {
-    final isDesktop = MediaQuery.of(context).size.width >= 800;
-    final isSurveyStyle = _navIndex == _tabSearch ||
-        _navIndex == _tabSaved ||
-        _navIndex == _tabSurvey ||
-        _navIndex == _tabProfile;
-    final blurVal = isSurveyStyle ? 10.0 : (isDesktop ? 0.8 : 5.0);
-    final bgPath = isSurveyStyle ? 'assets/images/login_bg.jpg' : _currentBgPath;
+    const isSurveyStyle = true;
+    const blurVal = 10.0;
+    const bgPath = 'assets/images/login_bg.jpg';
 
     return Positioned.fill(
       child: AnimBuilder(
@@ -4661,11 +5687,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Widget _buildDarkOverlay() {
-    final isDesktop = MediaQuery.of(context).size.width >= 800;
-    final isSurveyStyle = _navIndex == _tabSearch ||
-        _navIndex == _tabSaved ||
-        _navIndex == _tabSurvey ||
-        _navIndex == _tabProfile;
+    const isSurveyStyle = true;
 
     if (isSurveyStyle) {
       return Positioned.fill(
@@ -4675,23 +5697,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       );
     }
 
-    return Positioned.fill(
-      child: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            stops: const [0.0, 0.3, 0.7, 1.0],
-            colors: [
-              Colors.black.withOpacity(isDesktop ? 0.15 : 0.33),
-              Colors.black.withOpacity(isDesktop ? 0.05 : 0.06),
-              Colors.black.withOpacity(isDesktop ? 0.20 : 0.18),
-              isDesktop ? const Color(0xFF0C1412) : const Color(0xBB000000),
-            ],
-          ),
-        ),
-      ),
-    );
+    return const SizedBox.shrink();
   }
 
   Widget _buildUIContent(Size size) {
@@ -4700,29 +5706,31 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       index: _navIndex,
       children: [
         _buildHomeTabBody(size),
-        _buildSearchTabBody(size),
+        CollectionScreen(
+          userName: _currentUserName,
+          avatarUrl: _currentAvatarUrl,
+          authToken: widget.authToken,
+          allDestinations: _allDatabaseDestinations,
+        ),
         SavedPlacesSection(
           authToken: widget.authToken,
           userName: _currentUserName,
           avatarUrl: _currentAvatarUrl,
           initialTabIndex: _savedPlacesInitialTab,
+          showCreatedToursOnly: _showCreatedToursOnlyInSaved,
           entranceAnimation: _cardEntrance,
           savedDestinations: _savedDestinations,
           updatingSavedNames: _updatingSavedNames,
           isLoading: _isLoadingSavedPlaces,
           onBack: () {
-            setState(() {
-              _navIndex = _tabExplore;
-              _savedPlacesInitialTab = 0;
-            });
-            _startAutoPlay();
+            _showMainTab(_tabExplore);
           },
           onOpenDetail: _openPlaceDetail,
           onToggleSaved: _toggleSaved,
           isGuest: widget.authToken == null || widget.authToken!.isEmpty,
           onNavigateMain: _handleMainNavigationResult,
         ),
-        isDesktop
+        _showScheduleAiSurvey && isDesktop
             ? (_isSurveyAiReady
                 ? SurveyScreen(
                     authToken: widget.authToken,
@@ -4732,14 +5740,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     onNavigate: _handleSurveyResult,
                   )
                 : _SurveyAiWarmupView(isVi: _isVi, embedded: true))
-            : const SizedBox.shrink(),
+            : _buildScheduleTabBody(size),
         ProfileSection(
           entranceAnimation: _cardEntrance,
           userData: _userData,
           isLoading: _isLoadingProfile,
           onBack: () {
-            setState(() => _navIndex = _tabExplore);
-            _startAutoPlay();
+            _showMainTab(_tabExplore);
           },
           onLogout: _logout,
           onUpdateAvatar: () => _showEditImageDialog(true),
@@ -4892,872 +5899,102 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   // === END WEB/DESKTOP CUSTOM UTILITIES ===
 
-  Widget _buildHomeTabBody(Size size) {
-    final isDesktop = MediaQuery.of(context).size.width >= 800;
-
-    if (isDesktop) {
-      final destinations = _exploreDestinations;
-      if (destinations.isEmpty) {
-        return Center(
-          child: Text(
-            _isVi ? 'Chưa có địa điểm nào phù hợp.' : 'No matching locations found.',
-            style: TextStyle(
-              fontFamily: 'Montserrat',
-              fontSize: 16,
-              color: Colors.white.withOpacity(0.7),
-            ),
-          ),
-        );
-      }
-
-      if (_currentIndex >= destinations.length) {
-        _currentIndex = 0;
-      }
-      final activeDest = destinations[_currentIndex];
-      final categoryList = ['VỊNH BIỂN', 'NÚI RỪNG', 'DI SẢN', 'ĐÔ THỊ'];
-
-      return SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+  Widget _buildDashboardHeaderDesktop() {
+    return FadeTransition(
+      opacity: _cardEntrance,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+        child: Row(
           children: [
-            // HERO SECTION
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 30),
-              constraints: const BoxConstraints(minHeight: 680),
+            _buildHomeAvatar(size: 54, iconSize: 28),
+            const SizedBox(width: 16),
+            Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  // 1. Header Navigation Row
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Row(
-                        children: [
-                          Container(
-                            width: 8,
-                            height: 8,
-                            decoration: const BoxDecoration(
-                              shape: BoxShape.circle,
-                              color: Color(0xFFE74C3C),
-                            ),
-                          ),
-                          const SizedBox(width: 10),
-                          const Text(
-                            'TRAVEL',
-                            style: TextStyle(
-                              fontFamily: 'Montserrat',
-                              fontSize: 14,
-                              fontWeight: FontWeight.w900,
-                              color: Colors.white,
-                              letterSpacing: 3.0,
-                            ),
-                          ),
-                        ],
-                      ),
-                      Row(
-                        children: List.generate(categoryList.length, (idx) {
-                          final cat = categoryList[idx];
-
-                          bool isThisCatActive = false;
-                          final prov = destinations[_currentIndex]
-                              .province
-                              .toLowerCase();
-                          final name =
-                              destinations[_currentIndex].name.toLowerCase();
-                          if (cat == 'VỊNH BIỂN') {
-                            isThisCatActive = prov.contains('quảng ninh') ||
-                                prov.contains('khánh hòa') ||
-                                prov.contains('vũng tàu') ||
-                                prov.contains('kiên giang') ||
-                                name.contains('vịnh') ||
-                                name.contains('biển') ||
-                                name.contains('đảo');
-                          } else if (cat == 'NÚI RỪNG') {
-                            isThisCatActive = prov.contains('lào cai') ||
-                                prov.contains('quảng bình') ||
-                                prov.contains('sơn la') ||
-                                prov.contains('hà giang') ||
-                                name.contains('núi') ||
-                                name.contains('động') ||
-                                name.contains('hang') ||
-                                name.contains('phong nha');
-                          } else if (cat == 'DI SẢN') {
-                            isThisCatActive = prov.contains('quảng nam') ||
-                                prov.contains('huế') ||
-                                prov.contains('hà nội') ||
-                                prov.contains('ninh bình') ||
-                                name.contains('cổ') ||
-                                name.contains('di tích') ||
-                                name.contains('tự') ||
-                                name.contains('lăng') ||
-                                name.contains('chùa');
-                          } else if (cat == 'ĐÔ THỊ') {
-                            isThisCatActive = prov.contains('chí minh') ||
-                                prov.contains('đà nẵng') ||
-                                prov.contains('hà nội') ||
-                                name.contains('tháp') ||
-                                name.contains('cầu') ||
-                                name.contains('nhà hát');
-                          }
-
-                          return WebHoverable(
-                            onTap: () {
-                              final firstIdx =
-                                  _findFirstIndexForCategory(cat.toLowerCase());
-                              if (firstIdx != -1) {
-                                _selectDestination(firstIdx);
-                              } else {
-                                _showMessage(
-                                    'Không có địa điểm thuộc danh mục này hiện tại');
-                              }
-                            },
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 16),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  Text(
-                                    _translateCategoryHeader(cat),
-                                    style: TextStyle(
-                                      fontFamily: 'Montserrat',
-                                      fontSize: 13,
-                                      fontWeight: isThisCatActive
-                                          ? FontWeight.bold
-                                          : FontWeight.w500,
-                                      color: isThisCatActive
-                                          ? Colors.white
-                                          : Colors.white60,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 4),
-                                  AnimatedContainer(
-                                    duration: const Duration(milliseconds: 300),
-                                    height: 1.5,
-                                    width: isThisCatActive ? 30 : 0,
-                                    color: const Color(0xFFD4AF7A),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          );
-                        }),
-                      ),
-                      const SizedBox(width: 24),
-                      GestureDetector(
-                        onTap: _showNotificationCenter,
-                        child: Container(
-                          padding: const EdgeInsets.all(8),
-                          decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(0.1),
-                            shape: BoxShape.circle,
-                            border: Border.all(color: Colors.white12, width: 1),
-                          ),
-                          child: Stack(
-                            clipBehavior: Clip.none,
-                            children: [
-                              const Icon(Icons.notifications_none_rounded, color: Colors.white, size: 20),
-                              if (_notifications.any((n) => !n.isRead))
-                                Positioned(
-                                  top: -1,
-                                  right: -1,
-                                  child: Container(
-                                    width: 7,
-                                    height: 7,
-                                    decoration: const BoxDecoration(
-                                      color: Color(0xFFE74C3C),
-                                      shape: BoxShape.circle,
-                                    ),
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 60),
-
-                  // 2. Central Cinematic Title Row
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const Text(
-                              'VISIT',
-                              style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 44,
-                                fontWeight: FontWeight.w400,
-                                color: Colors.white70,
-                                letterSpacing: 6.0,
-                              ),
-                            ),
-                            Text(
-                              activeDest.name.toUpperCase(),
-                              maxLines: 2,
-                              overflow: TextOverflow.ellipsis,
-                              style: const TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 68,
-                                fontWeight: FontWeight.w900,
-                                color: Colors.white,
-                                height: 1.0,
-                                letterSpacing: -1.0,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      const SizedBox(width: 40),
-                      // Left/Right Navigation controls for desktop view (unlimited browsing)
-                      Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          // Left Arrow Button
-                          WebHoverable(
-                            onTap: () {
-                              final prevIdx = (_currentIndex - 1 + destinations.length) % destinations.length;
-                              _selectDestination(prevIdx);
-                            },
-                            child: Container(
-                              width: 52,
-                              height: 52,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                border: Border.all(color: Colors.white30, width: 1.5),
-                                color: Colors.white.withOpacity(0.05),
-                              ),
-                              child: const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white, size: 18),
-                            ),
-                          ),
-                          const SizedBox(width: 16),
-                          // Dynamic Page Indicator showing current out of total destinations
-                          Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Text(
-                                (_currentIndex + 1).toString().padLeft(2, '0'),
-                                style: const TextStyle(
-                                  fontFamily: 'Montserrat',
-                                  fontSize: 24,
-                                  fontWeight: FontWeight.w900,
-                                  color: Colors.white,
-                                ),
-                              ),
-                              Container(
-                                width: 20,
-                                height: 1.5,
-                                margin: const EdgeInsets.symmetric(vertical: 4),
-                                color: const Color(0xFFD4AF7A),
-                              ),
-                              Text(
-                                destinations.length.toString().padLeft(2, '0'),
-                                style: TextStyle(
-                                  fontFamily: 'Montserrat',
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.white.withOpacity(0.4),
-                                ),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(width: 16),
-                          // Right Arrow Button
-                          WebHoverable(
-                            onTap: () {
-                              final nextIdx = (_currentIndex + 1) % destinations.length;
-                              _selectDestination(nextIdx);
-                            },
-                            child: Container(
-                              width: 52,
-                              height: 52,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                border: Border.all(color: Colors.white30, width: 1.5),
-                                color: Colors.white.withOpacity(0.05),
-                              ),
-                              child: const Icon(Icons.arrow_forward_ios_rounded, color: Colors.white, size: 18),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 60),
-
-                  // 3. Bottom 3-column description row
-                  Builder(builder: (ctx) {
-                    final prevIdx = (_currentIndex - 1 + destinations.length) %
-                        destinations.length;
-                    final nextIdx = (_currentIndex + 1) % destinations.length;
-                    final nextNextIdx =
-                        (_currentIndex + 2) % destinations.length;
-
-                    final prevDest = destinations[prevIdx];
-                    final nextDest = destinations[nextIdx];
-                    final nextNextDest = destinations[nextNextIdx];
-
-                    return Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Expanded(
-                          child: Padding(
-                            padding: const EdgeInsets.only(right: 24),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  _getBriefDescription(activeDest),
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat',
-                                    fontSize: 12,
-                                    color: Colors.white.withOpacity(0.7),
-                                    height: 1.6,
-                                  ),
-                                ),
-                                const SizedBox(height: 16),
-                                Row(
-                                  children: [
-                                    WebHoverable(
-                                      onTap: () => _openPlaceDetail(activeDest, ctx),
-                                      child: const Text(
-                                        'XEM CHI TIẾT >>',
-                                        style: TextStyle(
-                                          fontFamily: 'Montserrat',
-                                          fontSize: 12,
-                                          fontWeight: FontWeight.w800,
-                                          color: Color(0xFFD4AF7A),
-                                          letterSpacing: 1.0,
-                                        ),
-                                      ),
-                                    ),
-                                    const SizedBox(width: 24),
-                                    Builder(
-                                      builder: (buttonCtx) {
-                                        final isSaved = _savedNames.contains(activeDest.name);
-                                        final isBusy = _updatingSavedNames.contains(activeDest.name);
-                                        
-                                        return WebHoverable(
-                                          onTap: isBusy ? null : () async {
-                                            await _toggleSaved(activeDest);
-                                            setState(() {});
-                                          },
-                                          child: Row(
-                                            mainAxisSize: MainAxisSize.min,
-                                            children: [
-                                              Icon(
-                                                isSaved ? Icons.bookmark_rounded : Icons.bookmark_border_rounded,
-                                                color: isSaved ? const Color(0xFFD4AF7A) : Colors.white70,
-                                                size: 16,
-                                              ),
-                                              const SizedBox(width: 6),
-                                              Text(
-                                                isSaved ? 'ĐÃ LƯU' : 'LƯU ĐỊA ĐIỂM',
-                                                style: TextStyle(
-                                                  fontFamily: 'Montserrat',
-                                                  fontSize: 12,
-                                                  fontWeight: FontWeight.w800,
-                                                  color: isSaved ? const Color(0xFFD4AF7A) : Colors.white70,
-                                                  letterSpacing: 1.0,
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        );
-                                      }
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Expanded(
-                          child: Padding(
-                            padding: const EdgeInsets.only(right: 24),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  nextDest.name,
-                                  style: const TextStyle(
-                                    fontFamily: 'Montserrat',
-                                    fontSize: 13,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                                const SizedBox(height: 4),
-                                Text(
-                                  _getBriefDescription(nextDest),
-                                  maxLines: 3,
-                                  overflow: TextOverflow.ellipsis,
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat',
-                                    fontSize: 11,
-                                    color: Colors.white.withOpacity(0.45),
-                                    height: 1.5,
-                                  ),
-                                ),
-                                const SizedBox(height: 10),
-                                WebHoverable(
-                                  onTap: () => _selectDestination(nextIdx),
-                                  child: const Text(
-                                    'XEM ĐIỂM ĐẾN >>',
-                                    style: TextStyle(
-                                      fontFamily: 'Montserrat',
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white54,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                nextNextDest.name,
-                                style: const TextStyle(
-                                  fontFamily: 'Montserrat',
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                ),
-                              ),
-                              const SizedBox(height: 4),
-                              Text(
-                                _getBriefDescription(nextNextDest),
-                                maxLines: 3,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(
-                                  fontFamily: 'Montserrat',
-                                  fontSize: 11,
-                                  color: Colors.white.withOpacity(0.45),
-                                  height: 1.5,
-                                ),
-                              ),
-                              const SizedBox(height: 10),
-                              WebHoverable(
-                                onTap: () => _selectDestination(nextNextIdx),
-                                child: const Text(
-                                  'XEM ĐIỂM ĐẾN >>',
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat',
-                                    fontSize: 11,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white54,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    );
-                  }),
-                ],
-              ),
-            ),
-
-            // TRANSITION & SOLID BACKGROUND RECOMMENDATIONS SECTION
-            Container(
-              color: const Color(0xFF0C1412),
-              width: double.infinity,
-              padding: const EdgeInsets.fromLTRB(50, 58, 50, 80),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
-                    'Khám phá Việt Nam qua dữ liệu thực tế',
-                    style: TextStyle(
+                    '${AppLocalizations.of(context)!.welcome_back} $_currentUserName!',
+                    style: const TextStyle(
                       fontFamily: 'Montserrat',
-                      fontSize: 12,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.white.withOpacity(0.58),
-                      letterSpacing: 1.6,
-                    ),
-                  ),
-                  const SizedBox(height: 30),
-                  _buildExploreStats(),
-                  const SizedBox(height: 90),
-                  const Text(
-                    'confusion? these recommendations',
-                    style: TextStyle(
-                      fontFamily: 'Montserrat',
-                      fontSize: 13,
-                      fontStyle: FontStyle.italic,
-                      color: Color(0xFFD4AF7A),
-                      letterSpacing: 1.0,
-                    ),
-                  ),
-                  const SizedBox(height: 16),
-                  const Text(
-                    'destination recommendations',
-                    style: TextStyle(
-                      fontFamily: 'Montserrat',
-                      fontSize: 32,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.white,
-                      letterSpacing: -0.5,
-                    ),
-                  ),
-                  const SizedBox(height: 48),
-                  Wrap(
-                    alignment: WrapAlignment.center,
-                    spacing: 24,
-                    runSpacing: 24,
-                    children:
-                        List.generate(destinations.length.clamp(0, 4), (i) {
-                      final dest = destinations[i];
-                      final rankName =
-                          '${i + 1}${i == 0 ? "st" : i == 1 ? "nd" : i == 2 ? "rd" : "th"} place';
-
-                      return WebHoverable(
-                        onTap: () => _openPlaceDetail(dest, context),
-                        child: Container(
-                          width: 220,
-                          height: 380,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(24),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.black.withOpacity(0.5),
-                                blurRadius: 18,
-                                offset: const Offset(0, 10),
-                              ),
-                            ],
-                          ),
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(24),
-                            child: Stack(
-                              fit: StackFit.expand,
-                              children: [
-                                Destination.buildImage(dest.imagePath,
-                                    fit: BoxFit.cover),
-                                Container(
-                                  decoration: BoxDecoration(
-                                    gradient: LinearGradient(
-                                      begin: Alignment.topCenter,
-                                      end: Alignment.bottomCenter,
-                                      stops: const [0.4, 1.0],
-                                      colors: [
-                                        Colors.transparent,
-                                        Colors.black.withOpacity(0.9),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Positioned(
-                                  left: 20,
-                                  bottom: 44,
-                                  child: Container(
-                                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                                    decoration: BoxDecoration(
-                                      color: dest.type == 'Nhà hàng'
-                                          ? const Color(0xFFE67E22).withValues(alpha: 0.85)
-                                          : dest.type == 'Khách sạn'
-                                              ? const Color(0xFF3498DB).withValues(alpha: 0.85)
-                                              : const Color(0xFFB5956A).withValues(alpha: 0.85),
-                                      borderRadius: BorderRadius.circular(6),
-                                    ),
-                                    child: Text(
-                                      dest.type,
-                                      style: const TextStyle(
-                                        fontFamily: 'Montserrat',
-                                        fontSize: 10,
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Positioned(
-                                  left: 20,
-                                  bottom: 20,
-                                  right: 20,
-                                  child: Text(
-                                    dest.name,
-                                    maxLines: 1,
-                                    overflow: TextOverflow.ellipsis,
-                                    style: const TextStyle(
-                                      fontFamily: 'Montserrat',
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      );
-                    }),
-                  ),
-                ],
-              ),
-            ),
-
-            // FOOTER / BRANDING BANNER SECTION
-            Container(
-              color: const Color(0xFF0C1412),
-              width: double.infinity,
-              padding: const EdgeInsets.only(
-                  left: 50, right: 50, bottom: 80, top: 20),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Expanded(
-                    flex: 3,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text(
-                          'TRAVEL AND ENJOY\nYOUR HOLIDAY',
-                          style: TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 36,
-                            fontWeight: FontWeight.w900,
-                            color: Colors.white,
-                            height: 1.15,
-                            letterSpacing: -0.5,
-                          ),
-                        ),
-                        const SizedBox(height: 36),
-                        WebHoverable(
-                          onTap: () async {
-                            await _openSurveyForCurrentLayout();
-                          },
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Container(
-                                width: 50,
-                                height: 50,
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  border: Border.all(
-                                      color: Colors.white, width: 1.5),
-                                ),
-                                child: const Icon(
-                                  Icons.play_arrow_rounded,
-                                  color: Colors.white,
-                                  size: 30,
-                                ),
-                              ),
-                              const SizedBox(width: 16),
-                              const Text(
-                                'choose your fun holiday',
-                                style: TextStyle(
-                                  fontFamily: 'Montserrat',
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w700,
-                                  color: Colors.white,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        const SizedBox(height: 32),
-                        Text(
-                          'TourXport mang đến giải pháp lập kế hoạch du lịch thông minh và tự động hóa toàn diện, giúp bạn dễ dàng cá nhân hóa hành trình khám phá dải đất hình chữ S. Hãy bắt đầu kỳ nghỉ trong mơ cùng chúng tôi ngay hôm nay.',
-                          style: TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 13,
-                            color: Colors.white.withOpacity(0.55),
-                            height: 1.6,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(width: 60),
-                  Expanded(
-                    flex: 2,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(16),
-                              child: SizedBox(
-                                width: 150,
-                                height: 100,
-                                child: Destination.buildImage(
-                                  destinations[0].imagePath,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                            ),
-                            const SizedBox(width: 16),
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(16),
-                              child: SizedBox(
-                                width: 150,
-                                height: 100,
-                                child: Destination.buildImage(
-                                  destinations[destinations.length > 1 ? 1 : 0]
-                                      .imagePath,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: 56),
-                        WebHoverable(
-                          onTap: () {
-                            _showMessage(
-                                'Chào mừng bạn đến với kênh Instagram TourXport!');
-                          },
-                          child: Text(
-                            'http://instagram.com/tourxport_',
-                            style: TextStyle(
-                              fontFamily: 'Montserrat',
-                              fontSize: 12,
-                              fontWeight: FontWeight.w600,
-                              color: Colors.white.withOpacity(0.35),
-                              letterSpacing: 0.5,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
-      );
-    }
-
-    Widget content = Column(
-      key: const ValueKey<String>('home_tab'),
-      children: [
-        if (!isDesktop) _buildTopBar(),
-        const SizedBox(height: 8),
-        _buildTitle(),
-        const SizedBox(height: 12),
-        Expanded(
-          child: Stack(
-            clipBehavior: Clip.none,
-            children: [
-              Column(
-                children: [
-                  _buildRegionTabs(),
-                  const SizedBox(height: 12),
-                  Expanded(
-                    child: _buildCardCarousel(size),
-                  ),
-                  const SizedBox(height: 16),
-                ],
-              ),
-            ],
-          ),
-        ),
-      ],
-    );
-
-    return content;
-  }
-
-  Widget _buildSearchTabBody(Size size) {
-    final isDesktop = MediaQuery.of(context).size.width >= 800;
-
-    final content = Column(
-      key: const ValueKey<String>('search_tab'),
-      children: [
-        if (!isDesktop) _buildTopBar(),
-        SizedBox(height: isDesktop ? 42 : 8),
-        if (isDesktop)
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 50),
-            child: Row(
-              children: [
-                const Expanded(
-                  child: Text(
-                    'Tìm kiếm địa điểm',
-                    style: TextStyle(
-                      fontFamily: 'Montserrat',
-                      fontSize: 42,
+                      fontSize: 26,
                       fontWeight: FontWeight.w900,
                       color: Colors.white,
                       letterSpacing: -0.5,
                     ),
                   ),
-                ),
-                GestureDetector(
-                  onTap: _showNotificationCenter,
-                  child: Container(
-                    padding: const EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.1),
-                      shape: BoxShape.circle,
-                      border: Border.all(color: Colors.white12, width: 1),
-                    ),
-                    child: Stack(
-                      clipBehavior: Clip.none,
-                      children: [
-                        const Icon(Icons.notifications_none_rounded,
-                            color: Colors.white, size: 22),
-                        if (_notifications.any((n) => !n.isRead))
-                          Positioned(
-                            top: -1,
-                            right: -1,
-                            child: Container(
-                              width: 7,
-                              height: 7,
-                              decoration: const BoxDecoration(
-                                color: Color(0xFFE74C3C),
-                                shape: BoxShape.circle,
-                              ),
-                            ),
-                          ),
-                      ],
+                  const SizedBox(height: 4),
+                  Text(
+                    _isVi
+                        ? 'Hôm nay bạn muốn khám phá nơi nào?'
+                        : 'Where do you want to explore today?',
+                    style: TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontSize: 14,
+                      color: Colors.white.withOpacity(0.6),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          )
-        else
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24),
-            child: Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                'Tìm kiếm địa điểm',
-                style: TextStyle(
-                  fontFamily: 'Montserrat',
-                  fontSize: 30,
-                  fontWeight: FontWeight.w700,
-                  color: Colors.white,
-                  height: 1.2,
-                  shadows: const [
-                    Shadow(
-                      color: Color(0x88000000),
-                      blurRadius: 12,
-                      offset: Offset(0, 4),
-                    ),
+            const SizedBox(width: 16),
+            WeatherWidget(
+              lat: _gpsLat,
+              lon: _gpsLon,
+              label: _hasGps ? null : 'Hà Nội',
+              compact: false,
+            ),
+            const SizedBox(width: 20),
+            GestureDetector(
+              onTap: _showNotificationCenter,
+              child: Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.1),
+                  shape: BoxShape.circle,
+                  border: Border.all(color: Colors.white12, width: 1.5),
+                ),
+                child: Stack(
+                  clipBehavior: Clip.none,
+                  children: [
+                    const Icon(Icons.notifications_none_rounded,
+                        color: Colors.white, size: 24),
+                    if (_notifications.any((n) => !n.isRead))
+                      Positioned(
+                        top: -2,
+                        right: -2,
+                        child: Container(
+                          width: 8,
+                          height: 8,
+                          decoration: const BoxDecoration(
+                            color: Color(0xFFE74C3C),
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                      ),
                   ],
                 ),
               ),
             ),
-          ),
-        SizedBox(height: isDesktop ? 22 : 12),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildHomeTabBody(Size size) {
+    final isDesktop = MediaQuery.of(context).size.width >= 800;
+
+    return Column(
+      key: const ValueKey<String>('home_tab'),
+      children: [
+        if (isDesktop)
+          _buildDashboardHeaderDesktop()
+        else ...[
+          _buildTopBar(),
+          const SizedBox(height: 8),
+          _buildTitle(),
+        ],
+        const SizedBox(height: 8),
         Expanded(
           child: Stack(
             clipBehavior: Clip.none,
@@ -5769,16 +6006,17 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   _buildRegionTabs(),
                   const SizedBox(height: 12),
                   Expanded(
-                    child: _buildSearchResultsGrid(),
+                    child: isDesktop
+                        ? _buildSearchResultsGrid()
+                        : _buildCardCarousel(size, useSearchResults: true),
                   ),
-                  SizedBox(height: isDesktop ? 24 : 16),
                 ],
               ),
               if (_searchFocusNode.hasFocus)
                 Positioned(
                   top: 60,
-                  left: isDesktop ? 26 : 0,
-                  right: isDesktop ? 26 : 0,
+                  left: isDesktop ? 50 : 24,
+                  right: isDesktop ? 50 : 24,
                   child: _buildSuggestionsDropdown(),
                 ),
             ],
@@ -5786,15 +6024,1001 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         ),
       ],
     );
+  }
+
+  Widget _buildScheduleTabBody(Size size) {
+    if (_showScheduleHistory) {
+      return _buildCreatedTourHistoryBody(size);
+    }
+
+    final isDesktop = MediaQuery.of(context).size.width >= 800;
+    final horizontalPadding = isDesktop ? 50.0 : 24.0;
+
+    final content = Stack(
+      children: [
+        Column(
+          key: const ValueKey<String>('schedule_tab'),
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            if (!isDesktop) _buildTopBar(),
+            SizedBox(height: isDesktop ? 42 : 8),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          _isVi
+                              ? 'Khám phá các lịch trình công khai từ cộng đồng'
+                              : 'Explore public community itineraries',
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: isDesktop ? 36 : 27,
+                            fontWeight: FontWeight.w900,
+                            color: Colors.white,
+                            height: 1.12,
+                            shadows: _heroTextShadows,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  _buildCreatedTourHistoryButton(isDesktop),
+                ],
+              ),
+            ),
+            const SizedBox(height: 18),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
+              child: _buildScheduleSearchAndFilters(isDesktop),
+            ),
+            const SizedBox(height: 16),
+            Expanded(
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
+                child: _buildCommunityTourGrid(isDesktop),
+              ),
+            ),
+          ],
+        ),
+        Positioned(
+          right: horizontalPadding,
+          bottom: isDesktop ? 28 : MediaQuery.paddingOf(context).bottom + 104,
+          child: _buildCreateTourButton(isDesktop),
+        ),
+      ],
+    );
 
     if (isDesktop) {
-      return SafeArea(
-        bottom: false,
-        child: content,
+      return SafeArea(bottom: false, child: content);
+    }
+    return content;
+  }
+
+  Widget _buildCreatedTourHistoryBody(Size size) {
+    final isDesktop = MediaQuery.of(context).size.width >= 800;
+    final horizontalPadding = isDesktop ? 50.0 : 24.0;
+
+    final content = Column(
+      key: const ValueKey<String>('created_tour_history'),
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        if (!isDesktop) _buildTopBar(),
+        SizedBox(height: isDesktop ? 42 : 8),
+        Padding(
+          padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
+          child: Row(
+            children: [
+              GestureDetector(
+                onTap: _closeCreatedTourHistory,
+                child: Container(
+                  width: 46,
+                  height: 46,
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.12),
+                    borderRadius: BorderRadius.circular(16),
+                    border: Border.all(color: Colors.white.withOpacity(0.14)),
+                  ),
+                  child: const Icon(
+                    Icons.arrow_back_ios_new_rounded,
+                    color: Colors.white,
+                    size: 20,
+                  ),
+                ),
+              ),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      _isVi ? 'Lịch sử lịch trình' : 'Itinerary History',
+                      style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: isDesktop ? 30 : 22,
+                        fontWeight: FontWeight.w900,
+                        color: Colors.white,
+                        height: 1.12,
+                        shadows: _heroTextShadows,
+                      ),
+                    ),
+                    const SizedBox(height: 3),
+                    Text(
+                      _isVi
+                          ? '${_createdTourHistory.length} lịch trình đã tạo'
+                          : '${_createdTourHistory.length} created itineraries',
+                      style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 13,
+                        color: Colors.white.withOpacity(0.72),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+        const SizedBox(height: 18),
+        Expanded(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
+            child: _buildCreatedTourHistoryList(isDesktop),
+          ),
+        ),
+      ],
+    );
+
+    if (isDesktop) {
+      return SafeArea(bottom: false, child: content);
+    }
+    return content;
+  }
+
+  Widget _buildCreatedTourHistoryList(bool isDesktop) {
+    if (_isLoadingCreatedTourHistory && _createdTourHistory.isEmpty) {
+      return const Center(
+        child: CircularProgressIndicator(color: Color(0xFFD4AF7A)),
       );
     }
 
-    return content;
+    if (_createdTourHistoryError != null) {
+      return _buildScheduleState(
+        icon: Icons.wifi_off_rounded,
+        title: _createdTourHistoryError!,
+        actionLabel: _isVi ? 'Thử lại' : 'Retry',
+        onAction: _fetchCreatedTourHistory,
+      );
+    }
+
+    if (_createdTourHistory.isEmpty) {
+      return _buildScheduleState(
+        icon: Icons.route_rounded,
+        title: _isVi ? 'Chưa có lịch trình nào' : 'No itineraries yet',
+        subtitle: _isVi
+            ? 'Các lịch trình bạn tạo bằng AI hoặc thủ công sẽ xuất hiện ở đây.'
+            : 'Itineraries you create with AI or manually will appear here.',
+      );
+    }
+
+    return RefreshIndicator(
+      color: const Color(0xFFD4AF7A),
+      backgroundColor: const Color(0xFF0D1B18),
+      onRefresh: _fetchCreatedTourHistory,
+      child: ListView.separated(
+        padding: EdgeInsets.fromLTRB(0, 6, 0, isDesktop ? 110 : 190),
+        itemCount: _createdTourHistory.length,
+        separatorBuilder: (_, __) => const SizedBox(height: 16),
+        itemBuilder: (context, index) {
+          return _buildCreatedTourHistoryCard(_createdTourHistory[index]);
+        },
+      ),
+    );
+  }
+
+  Widget _buildCreatedTourHistoryCard(SavedTour tour) {
+    return GestureDetector(
+      onTap: () => _openCreatedTourHistoryDetail(tour),
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.black.withOpacity(0.32),
+          borderRadius: BorderRadius.circular(24),
+          border: Border.all(
+            color: Colors.white.withOpacity(0.12),
+            width: 1.2,
+          ),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.25),
+              blurRadius: 20,
+              offset: const Offset(0, 10),
+            ),
+          ],
+        ),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(24),
+          child: BackdropFilter(
+            filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
+            child: Padding(
+              padding: const EdgeInsets.all(20),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFD4AF7A).withOpacity(0.1),
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(
+                        color: const Color(0xFFD4AF7A).withOpacity(0.2),
+                        width: 1,
+                      ),
+                    ),
+                    child: Icon(
+                      _tourVisibilityIcon(tour.visibility),
+                      color: const Color(0xFFD4AF7A),
+                      size: 32,
+                    ),
+                  ),
+                  const SizedBox(width: 16),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          tour.title,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                        const SizedBox(height: 8),
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 9,
+                            vertical: 5,
+                          ),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFFD4AF7A).withOpacity(0.12),
+                            borderRadius: BorderRadius.circular(999),
+                            border: Border.all(
+                              color: const Color(0xFFD4AF7A).withOpacity(0.28),
+                            ),
+                          ),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Icon(
+                                _tourVisibilityIcon(tour.visibility),
+                                color: const Color(0xFFD4AF7A),
+                                size: 13,
+                              ),
+                              const SizedBox(width: 5),
+                              Text(
+                                _tourVisibilityLabel(tour.visibility),
+                                style: const TextStyle(
+                                  fontFamily: 'Montserrat',
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.w700,
+                                  color: Color(0xFFD4AF7A),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(height: 6),
+                        Text(
+                          _isVi
+                              ? 'Thời gian: ${tour.totalDays} ngày ${tour.totalNights} đêm'
+                              : 'Duration: ${tour.totalDays} days ${tour.totalNights} nights',
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 13,
+                            color: Colors.white.withOpacity(0.7),
+                          ),
+                        ),
+                        if (tour.destinations.isNotEmpty) ...[
+                          const SizedBox(height: 4),
+                          Text(
+                            (_isVi ? 'Điểm đến: ' : 'Destinations: ') +
+                                tour.destinations
+                                    .map(_translateProvince)
+                                    .join(', '),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: TextStyle(
+                              fontFamily: 'Montserrat',
+                              fontSize: 13,
+                              color: Colors.white.withOpacity(0.5),
+                            ),
+                          ),
+                        ],
+                        if (tour.estimatedCost != null &&
+                            tour.estimatedCost! > 0) ...[
+                          const SizedBox(height: 8),
+                          Text(
+                            (_isVi ? 'Chi phí dự tính: ' : 'Estimated Cost: ') +
+                                _formatTourCost(tour.estimatedCost!),
+                            style: const TextStyle(
+                              fontFamily: 'Montserrat',
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                              color: Color(0xFFD4AF7A),
+                            ),
+                          ),
+                        ],
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  GestureDetector(
+                    onTap: () => _deleteCreatedTourFromHistory(tour),
+                    child: Container(
+                      padding: const EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(0.06),
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: Colors.white.withOpacity(0.12),
+                        ),
+                      ),
+                      child: const Icon(
+                        Icons.delete_outline_rounded,
+                        color: Color(0xFFE74C3C),
+                        size: 20,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildCreatedTourHistoryButton(bool isDesktop) {
+    return Tooltip(
+      message: _isVi ? 'Lịch sử lịch trình đã tạo' : 'Created itinerary history',
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: _openCreatedTourHistory,
+          borderRadius: BorderRadius.circular(18),
+          child: Ink(
+            height: isDesktop ? 46 : 42,
+            padding: EdgeInsets.symmetric(horizontal: isDesktop ? 16 : 12),
+            decoration: BoxDecoration(
+              color: Colors.black.withOpacity(0.30),
+              borderRadius: BorderRadius.circular(18),
+              border: Border.all(color: Colors.white.withOpacity(0.14)),
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Icon(
+                  Icons.history_rounded,
+                  color: Color(0xFFD4AF7A),
+                  size: 20,
+                ),
+                if (isDesktop) ...[
+                  const SizedBox(width: 8),
+                  Text(
+                    _isVi ? 'Lịch sử' : 'History',
+                    style: const TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontSize: 13,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildScheduleSearchAndFilters(bool isDesktop) {
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(24),
+      child: BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 14, sigmaY: 14),
+        child: Container(
+          padding: const EdgeInsets.all(14),
+          decoration: BoxDecoration(
+            color: const Color(0xFF101B18).withOpacity(0.68),
+            borderRadius: BorderRadius.circular(24),
+            border: Border.all(color: Colors.white.withOpacity(0.10)),
+          ),
+          child: Column(
+            children: [
+              TextField(
+                controller: _tourSearchController,
+                onChanged: _scheduleTourSearch,
+                style: const TextStyle(
+                  fontFamily: 'Montserrat',
+                  color: Colors.white,
+                  fontWeight: FontWeight.w600,
+                ),
+                decoration: InputDecoration(
+                  prefixIcon: const Icon(
+                    Icons.search_rounded,
+                    color: Color(0xFFD4AF7A),
+                  ),
+                  suffixIcon: _tourSearchQuery.isEmpty
+                      ? null
+                      : IconButton(
+                          onPressed: () {
+                            _tourSearchController.clear();
+                            _scheduleTourSearch('');
+                          },
+                          icon: Icon(
+                            Icons.close_rounded,
+                            color: Colors.white.withOpacity(0.65),
+                          ),
+                        ),
+                  hintText: _isVi
+                      ? 'Tìm theo tiêu đề lịch trình...'
+                      : 'Search by itinerary title...',
+                  hintStyle: TextStyle(
+                    fontFamily: 'Montserrat',
+                    color: Colors.white.withOpacity(0.46),
+                  ),
+                  filled: true,
+                  fillColor: Colors.white.withOpacity(0.06),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(18),
+                    borderSide: BorderSide.none,
+                  ),
+                  contentPadding: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 14,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 12),
+              LayoutBuilder(
+                builder: (context, constraints) {
+                  final compact = constraints.maxWidth < 720;
+                  final filters = [
+                    _scheduleDropdown<String>(
+                      value: _tourDestinationFilter,
+                      icon: Icons.place_rounded,
+                      items: [
+                        DropdownMenuItem<String>(
+                          value: 'all',
+                          child: Text(_isVi ? 'Tất cả điểm đến' : 'All destinations'),
+                        ),
+                        ...vietnameseProvinces.skip(1).map(
+                              (province) => DropdownMenuItem<String>(
+                                value: province,
+                                child: Text(_translateProvince(province)),
+                              ),
+                            ),
+                      ],
+                      onChanged: (value) {
+                        if (value == null) return;
+                        setState(() {
+                          _tourDestinationFilter = value;
+                          _communityToursPage = 1;
+                        });
+                        _fetchCommunityTours();
+                      },
+                    ),
+                    _scheduleDropdown<int>(
+                      value: _tourDaysFilter,
+                      icon: Icons.calendar_month_rounded,
+                      items: [
+                        DropdownMenuItem<int>(
+                          value: 0,
+                          child: Text(_isVi ? 'Mọi thời lượng' : 'Any duration'),
+                        ),
+                        for (final day in const [1, 2, 3, 4, 5, 6, 7])
+                          DropdownMenuItem<int>(
+                            value: day,
+                            child: Text(_isVi ? '$day ngày' : '$day days'),
+                          ),
+                      ],
+                      onChanged: (value) {
+                        if (value == null) return;
+                        setState(() {
+                          _tourDaysFilter = value;
+                          _communityToursPage = 1;
+                        });
+                        _fetchCommunityTours();
+                      },
+                    ),
+                    _scheduleDropdown<String>(
+                      value: _tourSortBy,
+                      icon: Icons.sort_rounded,
+                      items: [
+                        DropdownMenuItem<String>(
+                          value: 'updatedAt',
+                          child: Text(_isVi ? 'Mới cập nhật' : 'Recently updated'),
+                        ),
+                        DropdownMenuItem<String>(
+                          value: 'createdAt',
+                          child: Text(_isVi ? 'Mới tạo' : 'Newest'),
+                        ),
+                        DropdownMenuItem<String>(
+                          value: 'title',
+                          child: Text(_isVi ? 'Tên A-Z' : 'Title A-Z'),
+                        ),
+                        DropdownMenuItem<String>(
+                          value: 'totalDays',
+                          child: Text(_isVi ? 'Số ngày' : 'Duration'),
+                        ),
+                      ],
+                      onChanged: (value) {
+                        if (value == null) return;
+                        setState(() {
+                          _tourSortBy = value;
+                          _tourSortOrder = value == 'title' ? 'asc' : 'desc';
+                          _communityToursPage = 1;
+                        });
+                        _fetchCommunityTours();
+                      },
+                    ),
+                  ];
+
+                  if (compact) {
+                    return Column(
+                      children: filters
+                          .map(
+                            (filter) => Padding(
+                              padding: const EdgeInsets.only(bottom: 10),
+                              child: filter,
+                            ),
+                          )
+                          .toList(),
+                    );
+                  }
+
+                  return Row(
+                    children: filters
+                        .map(
+                          (filter) => Expanded(
+                            child: Padding(
+                              padding: const EdgeInsets.only(right: 10),
+                              child: filter,
+                            ),
+                          ),
+                        )
+                        .toList(),
+                  );
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _scheduleDropdown<T>({
+    required T value,
+    required IconData icon,
+    required List<DropdownMenuItem<T>> items,
+    required ValueChanged<T?> onChanged,
+  }) {
+    return Container(
+      height: 52,
+      padding: const EdgeInsets.symmetric(horizontal: 12),
+      decoration: BoxDecoration(
+        color: Colors.white.withOpacity(0.06),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: Colors.white.withOpacity(0.10)),
+      ),
+      child: Row(
+        children: [
+          Icon(icon, color: const Color(0xFFD4AF7A), size: 18),
+          const SizedBox(width: 8),
+          Expanded(
+            child: DropdownButtonHideUnderline(
+              child: DropdownButton<T>(
+                value: value,
+                isExpanded: true,
+                dropdownColor: const Color(0xFF14231F),
+                iconEnabledColor: const Color(0xFFD4AF7A),
+                style: const TextStyle(
+                  fontFamily: 'Montserrat',
+                  color: Colors.white,
+                  fontWeight: FontWeight.w700,
+                  fontSize: 13,
+                ),
+                items: items,
+                onChanged: onChanged,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildCommunityTourGrid(bool isDesktop) {
+    if (_isLoadingCommunityTours && _communityTours.isEmpty) {
+      return const Center(
+        child: CircularProgressIndicator(color: Color(0xFFD4AF7A)),
+      );
+    }
+
+    if (_communityToursError != null) {
+      return _buildScheduleState(
+        icon: Icons.wifi_off_rounded,
+        title: _communityToursError!,
+        actionLabel: _isVi ? 'Thử lại' : 'Retry',
+        onAction: _fetchCommunityTours,
+      );
+    }
+
+    if (_communityTours.isEmpty) {
+      return _buildScheduleState(
+        icon: Icons.route_rounded,
+        title: _isVi
+            ? 'Chưa có lịch trình công khai phù hợp'
+            : 'No matching public itineraries',
+        subtitle: _isVi
+            ? 'Hãy thử đổi bộ lọc hoặc tạo lịch trình mới.'
+            : 'Try another filter or create a new itinerary.',
+      );
+    }
+
+    return RefreshIndicator(
+      color: const Color(0xFFD4AF7A),
+      backgroundColor: const Color(0xFF0D1B18),
+      onRefresh: _fetchCommunityTours,
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          final columns = isDesktop
+              ? constraints.maxWidth >= 1120
+                  ? 3
+                  : 2
+              : 1;
+          return CustomScrollView(
+            slivers: [
+              SliverPadding(
+                padding: const EdgeInsets.only(top: 4),
+                sliver: SliverGrid(
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: columns,
+                    crossAxisSpacing: 16,
+                    mainAxisSpacing: 16,
+                    mainAxisExtent: isDesktop ? 214 : 188,
+                  ),
+                  delegate: SliverChildBuilderDelegate(
+                    (context, index) =>
+                        _buildCommunityTourCard(_communityTours[index]),
+                    childCount: _communityTours.length,
+                  ),
+                ),
+              ),
+              SliverToBoxAdapter(
+                child: Padding(
+                  padding: EdgeInsets.only(
+                    top: 22,
+                    bottom: isDesktop ? 110 : 190,
+                  ),
+                  child: _buildCommunityTourPageControls(),
+                ),
+              ),
+            ],
+          );
+        },
+      ),
+    );
+  }
+
+  Widget _buildCommunityTourPageControls() {
+    final totalPages =
+        _communityToursTotalPages <= 0 ? 1 : _communityToursTotalPages;
+    final currentPage = _communityToursPage.clamp(1, totalPages).toInt();
+    if (totalPages <= 1) return const SizedBox.shrink();
+
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        _buildSearchGridPageButton(
+          icon: Icons.chevron_left_rounded,
+          enabled: currentPage > 1 && !_isLoadingCommunityTours,
+          onTap: () => _fetchCommunityTours(page: currentPage - 1),
+        ),
+        Container(
+          margin: const EdgeInsets.symmetric(horizontal: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+          decoration: BoxDecoration(
+            color: Colors.black.withOpacity(0.34),
+            borderRadius: BorderRadius.circular(999),
+            border: Border.all(color: Colors.white.withOpacity(0.16)),
+          ),
+          child: Text(
+            '$currentPage/$totalPages',
+            style: const TextStyle(
+              fontFamily: 'Montserrat',
+              fontSize: 12,
+              fontWeight: FontWeight.w800,
+              color: Colors.white,
+            ),
+          ),
+        ),
+        _buildSearchGridPageButton(
+          icon: Icons.chevron_right_rounded,
+          enabled: currentPage < totalPages && !_isLoadingCommunityTours,
+          onTap: () => _fetchCommunityTours(page: currentPage + 1),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildScheduleState({
+    required IconData icon,
+    required String title,
+    String? subtitle,
+    String? actionLabel,
+    VoidCallback? onAction,
+  }) {
+    return Center(
+      child: Container(
+        constraints: const BoxConstraints(maxWidth: 520),
+        padding: const EdgeInsets.all(28),
+        decoration: BoxDecoration(
+          color: const Color(0xFF101B18).withOpacity(0.68),
+          borderRadius: BorderRadius.circular(28),
+          border: Border.all(color: Colors.white.withOpacity(0.10)),
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(icon, color: const Color(0xFFD4AF7A), size: 42),
+            const SizedBox(height: 14),
+            Text(
+              title,
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                fontFamily: 'Montserrat',
+                fontSize: 16,
+                fontWeight: FontWeight.w800,
+                color: Colors.white,
+              ),
+            ),
+            if (subtitle != null) ...[
+              const SizedBox(height: 8),
+              Text(
+                subtitle,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontFamily: 'Montserrat',
+                  fontSize: 13,
+                  color: Colors.white.withOpacity(0.62),
+                ),
+              ),
+            ],
+            if (actionLabel != null && onAction != null) ...[
+              const SizedBox(height: 18),
+              TextButton.icon(
+                onPressed: onAction,
+                icon: const Icon(Icons.refresh_rounded),
+                label: Text(actionLabel),
+                style: TextButton.styleFrom(
+                  foregroundColor: const Color(0xFFD4AF7A),
+                ),
+              ),
+            ],
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildCommunityTourCard(SavedTour tour) {
+    final isSaved = _savedCommunityTourIds.contains(tour.id);
+    final isUpdating = _updatingCommunityTourIds.contains(tour.id);
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: () => _openCommunityTour(tour),
+        borderRadius: BorderRadius.circular(24),
+        child: Ink(
+          padding: const EdgeInsets.all(18),
+          decoration: BoxDecoration(
+            color: const Color(0xFF0E1A17).withOpacity(0.72),
+            borderRadius: BorderRadius.circular(24),
+            border: Border.all(color: Colors.white.withOpacity(0.10)),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withOpacity(0.18),
+                blurRadius: 18,
+                offset: const Offset(0, 10),
+              ),
+            ],
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Container(
+                    width: 52,
+                    height: 52,
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFD4AF7A).withOpacity(0.16),
+                      borderRadius: BorderRadius.circular(18),
+                      border: Border.all(
+                        color: const Color(0xFFD4AF7A).withOpacity(0.22),
+                      ),
+                    ),
+                    child: const Icon(
+                      Icons.route_rounded,
+                      color: Color(0xFFD4AF7A),
+                      size: 28,
+                    ),
+                  ),
+                  const SizedBox(width: 14),
+                  Expanded(
+                    child: Text(
+                      tour.title,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: const TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 17,
+                        fontWeight: FontWeight.w900,
+                        color: Colors.white,
+                        height: 1.22,
+                      ),
+                    ),
+                  ),
+                  IconButton(
+                    tooltip: isSaved
+                        ? (_isVi ? 'Bỏ lưu' : 'Unsave')
+                        : (_isVi ? 'Lưu lịch trình' : 'Save itinerary'),
+                    onPressed: isUpdating
+                        ? null
+                        : () => _toggleCommunityTourSaved(tour),
+                    icon: isUpdating
+                        ? const SizedBox(
+                            width: 18,
+                            height: 18,
+                            child: CircularProgressIndicator(
+                              strokeWidth: 2,
+                              color: Color(0xFFD4AF7A),
+                            ),
+                          )
+                        : Icon(
+                            isSaved
+                                ? Icons.bookmark_rounded
+                                : Icons.bookmark_border_rounded,
+                          ),
+                    color: const Color(0xFFD4AF7A),
+                  ),
+                ],
+              ),
+              const Spacer(),
+              Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                children: [
+                  _tourMetaChip(
+                    Icons.calendar_today_rounded,
+                    _isVi
+                        ? '${tour.totalDays} ngày ${tour.totalNights} đêm'
+                        : '${tour.totalDays} days ${tour.totalNights} nights',
+                  ),
+                  if (tour.destinations.isNotEmpty)
+                    _tourMetaChip(
+                      Icons.place_rounded,
+                      tour.destinations
+                          .take(2)
+                          .map(_translateProvince)
+                          .join(', '),
+                    ),
+                  if (tour.estimatedCost != null && tour.estimatedCost! > 0)
+                    _tourMetaChip(
+                      Icons.payments_rounded,
+                      _formatTourCost(tour.estimatedCost!),
+                    ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _tourMetaChip(IconData icon, String label) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
+      decoration: BoxDecoration(
+        color: Colors.white.withOpacity(0.07),
+        borderRadius: BorderRadius.circular(999),
+        border: Border.all(color: Colors.white.withOpacity(0.10)),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(icon, color: const Color(0xFFD4AF7A), size: 14),
+          const SizedBox(width: 6),
+          Flexible(
+            child: Text(
+              label,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: const TextStyle(
+                fontFamily: 'Montserrat',
+                fontSize: 11,
+                fontWeight: FontWeight.w700,
+                color: Colors.white,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  IconData _tourVisibilityIcon(String visibility) {
+    switch (visibility.toLowerCase()) {
+      case 'private':
+      case 'hidden':
+        return Icons.lock_rounded;
+      case 'protected':
+      case 'shared':
+        return Icons.groups_rounded;
+      default:
+        return Icons.public_rounded;
+    }
+  }
+
+  String _tourVisibilityLabel(String visibility) {
+    switch (visibility.toLowerCase()) {
+      case 'private':
+      case 'hidden':
+        return _isVi ? 'Riêng tư' : 'Private';
+      case 'protected':
+      case 'shared':
+        return _isVi ? 'Chia sẻ' : 'Shared';
+      default:
+        return _isVi ? 'Công khai' : 'Public';
+    }
+  }
+
+  Widget _buildCreateTourButton(bool isDesktop) {
+    return FloatingActionButton.extended(
+      heroTag: 'create_tour_fab',
+      onPressed: _showCreateTourOptions,
+      backgroundColor: const Color(0xFFD4AF7A),
+      foregroundColor: const Color(0xFF101512),
+      elevation: 10,
+      icon: const Icon(Icons.add_rounded),
+      label: Text(
+        _isVi ? 'Tạo tour' : 'Create tour',
+        style: const TextStyle(
+          fontFamily: 'Montserrat',
+          fontWeight: FontWeight.w900,
+        ),
+      ),
+    );
+  }
+
+  String _formatTourCost(double value) {
+    final amount = value.round().toString().replaceAllMapped(
+          RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'),
+          (match) => '${match[1]}.',
+        );
+    return '$amount đ';
   }
 
   Widget _buildExploreStats() {
@@ -5870,7 +7094,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 child: Stack(
                   clipBehavior: Clip.none,
                   children: [
-                    const Icon(Icons.notifications_none_rounded, color: Colors.white, size: 24),
+                    const Icon(Icons.notifications_none_rounded,
+                        color: Colors.white, size: 24),
                     if (_notifications.any((n) => !n.isRead))
                       Positioned(
                         top: -2,
@@ -6069,10 +7294,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     return FadeTransition(
       opacity: _cardEntrance,
       child: SlideTransition(
-        position: Tween<Offset>(
-          begin: const Offset(0, 0.2),
-          end: Offset.zero,
-        ).animate(_cardEntrance),
+        position: _searchBarSlide,
         child: Padding(
           padding: EdgeInsets.symmetric(
             horizontal: isDesktop ? 50 : 24,
@@ -6103,6 +7325,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 const SizedBox(width: 12),
                 Expanded(
                   child: TextField(
+                    key: const ValueKey<String>('search_text_field'),
                     controller: _searchController,
                     focusNode: _searchFocusNode,
                     onChanged: _onSearchChanged,
@@ -6147,10 +7370,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     color: Colors.white.withOpacity(0.7),
                     size: 22,
                   ),
-                  onPressed: () {
-                    _showMessage(
-                        'Tính năng tìm kiếm bằng giọng nói đang được phát triển');
-                  },
+                  onPressed: _showVoiceSearchDialog,
                   tooltip: 'Tìm kiếm bằng giọng nói',
                   splashRadius: 20,
                   constraints: const BoxConstraints(),
@@ -6558,6 +7778,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Widget _buildCardCarousel(Size size, {bool useSearchResults = false}) {
+    final isDesktop = MediaQuery.of(context).size.width >= 800;
     final destinations =
         useSearchResults ? _searchDestinations : _exploreDestinations;
     final controller =
@@ -6565,7 +7786,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     if (destinations.isEmpty) {
       return Center(
         child: Text(
-          _isVi ? 'Chưa có địa điểm nào được thả tim.' : 'No locations favorited yet.',
+          _isVi
+              ? 'Chưa có địa điểm nào được thả tim.'
+              : 'No locations favorited yet.',
           style: TextStyle(
             fontFamily: 'Montserrat',
             fontSize: 15,
@@ -6633,16 +7856,17 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 );
               },
             ),
-            Positioned(
-              left: 0,
-              right: 0,
-              bottom: 18,
-              child: Center(
-                child: _buildCarouselPageIndicator(
-                  useSearchResults: useSearchResults,
+            if (isDesktop)
+              Positioned(
+                left: 0,
+                right: 0,
+                bottom: MediaQuery.paddingOf(context).bottom + 118,
+                child: Center(
+                  child: _buildCarouselPageIndicator(
+                    useSearchResults: useSearchResults,
+                  ),
                 ),
               ),
-            ),
           ],
         ),
       ),
@@ -6731,8 +7955,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     String heroPrefix = 'card_hero',
   }) {
     final isSaved = _savedNames.contains(dest.name);
-    final isLiked = _likedNames.contains(dest.name);
-    final likeCount = _fakeLikeCountFor(dest, isLiked: isLiked);
     final isBusy = _updatingSavedNames.contains(dest.name);
 
     return Padding(
@@ -6767,37 +7989,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     ),
                     Positioned(
                       top: 14,
-                      left: 14,
-                      child: GestureDetector(
-                        onTap: () => _toggleLike(dest),
-                        child: Container(
-                          width: 42,
-                          height: 42,
-                          decoration: BoxDecoration(
-                            color: Colors.black.withValues(alpha: 0.3),
-                            shape: BoxShape.circle,
-                            border: Border.all(
-                              color: Colors.white.withValues(alpha: 0.2),
-                            ),
-                          ),
-                          child: AnimatedSwitcher(
-                            duration: const Duration(milliseconds: 250),
-                            transitionBuilder: (child, animation) =>
-                                ScaleTransition(scale: animation, child: child),
-                            child: Icon(
-                              isLiked ? Icons.favorite : Icons.favorite_border,
-                              key: ValueKey<bool>(isLiked),
-                              color: isLiked
-                                  ? const Color(0xFFE74C3C)
-                                  : Colors.white,
-                              size: 22,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    Positioned(
-                      top: 62,
                       left: 12,
                       child: Container(
                         padding: const EdgeInsets.symmetric(
@@ -6812,14 +8003,14 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                           ),
                         ),
                         child: Text(
-                          '$likeCount',
+                          dest.category?.trim().isNotEmpty == true
+                              ? dest.category!.trim()
+                              : dest.type,
                           style: TextStyle(
                             fontFamily: 'Montserrat',
                             fontSize: 11,
                             fontWeight: FontWeight.w600,
-                            color: isLiked
-                                ? const Color(0xFFE74C3C)
-                                : Colors.white,
+                            color: Colors.white,
                           ),
                         ),
                       ),
@@ -6899,13 +8090,17 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                               mainAxisSize: MainAxisSize.min,
                               children: [
                                 Container(
-                                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 8, vertical: 4),
                                   decoration: BoxDecoration(
                                     color: dest.type == 'Nhà hàng'
-                                        ? const Color(0xFFE67E22).withValues(alpha: 0.85)
+                                        ? const Color(0xFFE67E22)
+                                            .withValues(alpha: 0.85)
                                         : dest.type == 'Khách sạn'
-                                            ? const Color(0xFF3498DB).withValues(alpha: 0.85)
-                                            : const Color(0xFFB5956A).withValues(alpha: 0.85),
+                                            ? const Color(0xFF3498DB)
+                                                .withValues(alpha: 0.85)
+                                            : const Color(0xFFB5956A)
+                                                .withValues(alpha: 0.85),
                                     borderRadius: BorderRadius.circular(6),
                                   ),
                                   child: Text(
@@ -7004,7 +8199,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   Widget _buildBottomNav() {
     final items = [
       Icons.home_rounded,
-      Icons.search_rounded,
+      Icons.map_rounded,
       Icons.bookmark_rounded,
       Icons.explore_rounded,
       Icons.person_rounded,
@@ -7031,21 +8226,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               children: List.generate(items.length, (i) {
                 final isActive = _navIndex == i;
                 return GestureDetector(
-                  onTap: () async {
-                    if (i == _tabSurvey) {
-                      await _openSurveyForCurrentLayout();
-                    } else {
-                      setState(() {
-                        _navIndex = i;
-                        _savedPlacesInitialTab = 0;
-                      });
-                      if (i == _tabExplore) {
-                        _startAutoPlay();
-                      } else {
-                        _stopAutoPlay();
-                      }
-                    }
-                  },
+                  onTap: () => _showMainTab(i),
                   child: AnimatedContainer(
                     duration: const Duration(milliseconds: 250),
                     padding: const EdgeInsets.all(10),
@@ -7210,7 +8391,8 @@ class _SurveyAiWarmupView extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.black.withOpacity(0.34),
                 borderRadius: BorderRadius.circular(28),
-                border: Border.all(color: Colors.white.withOpacity(0.14), width: 1.2),
+                border: Border.all(
+                    color: Colors.white.withOpacity(0.14), width: 1.2),
               ),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
@@ -7269,6 +8451,245 @@ class _SurveyAiWarmupView extends StatelessWidget {
           Container(color: const Color(0xFF1B2321).withOpacity(0.78)),
           card,
         ],
+      ),
+    );
+  }
+}
+
+class _VoiceSearchDialog extends StatefulWidget {
+  final stt.SpeechToText speech;
+  final bool isVi;
+  final ValueChanged<String> onSubmitted;
+
+  const _VoiceSearchDialog({
+    required this.speech,
+    required this.isVi,
+    required this.onSubmitted,
+  });
+
+  @override
+  State<_VoiceSearchDialog> createState() => _VoiceSearchDialogState();
+}
+
+class _VoiceSearchDialogState extends State<_VoiceSearchDialog> {
+  String _words = '';
+  bool _listening = true;
+  bool _started = false;
+  Timer? _closeTimer;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) {
+        _startListening();
+      }
+    });
+  }
+
+  void _startListening() {
+    if (_started || widget.speech.isListening) return;
+    _started = true;
+    widget.speech.listen(
+      localeId: widget.isVi ? 'vi_VN' : 'en_US',
+      onResult: (val) {
+        if (!mounted) return;
+        setState(() {
+          _words = val.recognizedWords;
+          if (val.finalResult) {
+            _listening = false;
+          }
+        });
+        if (val.finalResult) {
+          _scheduleSubmitAndClose();
+        }
+      },
+    );
+  }
+
+  void _scheduleSubmitAndClose() {
+    _closeTimer?.cancel();
+    _closeTimer = Timer(const Duration(milliseconds: 800), () {
+      if (!mounted) return;
+      _submitAndClose();
+    });
+  }
+
+  Future<void> _stopListening() async {
+    if (widget.speech.isListening) {
+      await widget.speech.stop();
+    }
+    if (!mounted) return;
+    setState(() {
+      _listening = false;
+    });
+  }
+
+  void _submitAndClose() {
+    final words = _words.trim();
+    if (words.isNotEmpty) {
+      widget.onSubmitted(words);
+    }
+    Navigator.of(context, rootNavigator: true).maybePop();
+  }
+
+  void _cancelAndClose() {
+    _closeTimer?.cancel();
+    if (widget.speech.isListening) {
+      widget.speech.cancel();
+    }
+    Navigator.of(context, rootNavigator: true).maybePop();
+  }
+
+  @override
+  void dispose() {
+    _closeTimer?.cancel();
+    if (widget.speech.isListening) {
+      widget.speech.cancel();
+    }
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return BackdropFilter(
+      filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
+        body: Center(
+          child: Container(
+            margin: const EdgeInsets.symmetric(horizontal: 32),
+            padding: const EdgeInsets.all(28),
+            decoration: BoxDecoration(
+              color: const Color(0xFF162521).withOpacity(0.9),
+              borderRadius: BorderRadius.circular(28),
+              border: Border.all(color: Colors.white.withOpacity(0.12)),
+              boxShadow: [
+                BoxShadow(
+                  color: const Color(0xFFD4AF7A).withOpacity(0.1),
+                  blurRadius: 24,
+                  spreadRadius: 2,
+                ),
+              ],
+            ),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  widget.isVi ? 'Tìm kiếm bằng giọng nói' : 'Voice Search',
+                  style: const TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+                const SizedBox(height: 32),
+                AnimatedScale(
+                  scale: _listening ? 1.08 : 1,
+                  duration: const Duration(milliseconds: 250),
+                  curve: Curves.easeOutCubic,
+                  child: Container(
+                    width: 80,
+                    height: 80,
+                    decoration: BoxDecoration(
+                      color: _listening
+                          ? const Color(0xFFD4AF7A).withOpacity(0.2)
+                          : Colors.white.withOpacity(0.06),
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color: _listening
+                            ? const Color(0xFFD4AF7A)
+                            : Colors.white24,
+                        width: 2,
+                      ),
+                    ),
+                    child: Icon(
+                      _listening ? Icons.mic_rounded : Icons.mic_off_rounded,
+                      color:
+                          _listening ? const Color(0xFFD4AF7A) : Colors.white54,
+                      size: 36,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 32),
+                Text(
+                  _listening
+                      ? (widget.isVi ? 'Đang lắng nghe...' : 'Listening...')
+                      : (widget.isVi ? 'Đang xử lý...' : 'Processing...'),
+                  style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontSize: 14,
+                    color: Colors.white.withOpacity(0.6),
+                  ),
+                ),
+                const SizedBox(height: 16),
+                Container(
+                  width: double.infinity,
+                  constraints: const BoxConstraints(minHeight: 60),
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: Colors.black26,
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                  child: Text(
+                    _words.isEmpty
+                        ? (widget.isVi ? 'Hãy nói gì đó...' : 'Say something...')
+                        : _words,
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontSize: 15,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 32),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    TextButton(
+                      onPressed: _cancelAndClose,
+                      child: Text(
+                        widget.isVi ? 'Hủy' : 'Cancel',
+                        style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          color: Colors.white.withOpacity(0.5),
+                        ),
+                      ),
+                    ),
+                    if (_listening)
+                      ElevatedButton(
+                        onPressed: _stopListening,
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor:
+                              const Color(0xFFE74C3C).withOpacity(0.2),
+                          foregroundColor: const Color(0xFFE74C3C),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                        ),
+                        child: Text(widget.isVi ? 'Dừng' : 'Stop'),
+                      ),
+                    if (!_listening && _words.trim().isNotEmpty)
+                      ElevatedButton(
+                        onPressed: _submitAndClose,
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color(0xFFD4AF7A),
+                          foregroundColor: Colors.black,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                        ),
+                        child: Text(widget.isVi ? 'Tìm kiếm' : 'Search'),
+                      ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }

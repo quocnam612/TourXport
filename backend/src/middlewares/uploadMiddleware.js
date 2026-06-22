@@ -21,3 +21,35 @@ export const uploadAvatar = multer({
         cb(null, true);
     }
 });
+
+export const uploadReviewImages = multer({
+    storage: multer.memoryStorage(),
+    limits: {
+        fileSize: 10 * 1024 * 1024
+    },
+    fileFilter: (req, file, cb) => {
+        if (!imageMimeTypes.has(file.mimetype)) {
+            const error = new Error('Review images must be JPG, PNG, or WEBP');
+            error.statusCode = 400;
+            return cb(error);
+        }
+
+        cb(null, true);
+    }
+});
+
+export const uploadReportImages = multer({
+    storage: multer.memoryStorage(),
+    limits: {
+        fileSize: 10 * 1024 * 1024
+    },
+    fileFilter: (req, file, cb) => {
+        if (!imageMimeTypes.has(file.mimetype)) {
+            const error = new Error('Report images must be JPG, PNG, or WEBP');
+            error.statusCode = 400;
+            return cb(error);
+        }
+
+        cb(null, true);
+    }
+});
