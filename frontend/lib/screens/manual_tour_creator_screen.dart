@@ -136,7 +136,15 @@ class _ManualTourCreatorScreenState extends State<ManualTourCreatorScreen> {
           'order': index + 1,
           'type': item.type,
           'title': item.titleController.text.trim(),
-          'category': item.categoryController.text.trim(),
+          'category': item.type == 'place'
+              ? (_isVi ? 'Địa điểm' : 'Place')
+              : item.type == 'restaurant'
+                  ? (_isVi ? 'Ăn uống' : 'Dining')
+                  : item.type == 'transport'
+                      ? (_isVi ? 'Di chuyển' : 'Transport')
+                      : item.type == 'hotel'
+                          ? (_isVi ? 'Nghỉ ngơi' : 'Accommodation')
+                          : (_isVi ? 'Khác' : 'Other'),
           'startTime': item.startTimeController.text.trim(),
           'endTime': item.endTimeController.text.trim(),
           'notes': item.notesController.text.trim(),
@@ -602,99 +610,108 @@ class _ManualTourCreatorScreenState extends State<ManualTourCreatorScreen> {
           const SizedBox(height: 10),
           _input(
             controller: item.titleController,
-            label: _isVi ? 'Tên địa điểm hoặc hoạt động' : 'Place or activity name',
+            label: _isVi ? 'Tên hoạt động / địa điểm' : 'Activity / place name',
             icon: Icons.location_on_rounded,
-          ),
-          const SizedBox(height: 10),
-          _input(
-            controller: item.categoryController,
-            label: _isVi ? 'Loại hoạt động (tùy chọn)' : 'Category (optional)',
-            icon: Icons.category_rounded,
-          ),
-          const SizedBox(height: 10),
-          LayoutBuilder(
-            builder: (context, constraints) {
-              final twoColumns = constraints.maxWidth >= 620;
-              final fields = [
-                _input(
-                  controller: item.startTimeController,
-                  label: _isVi ? 'Bắt đầu' : 'Start',
-                  icon: Icons.schedule_rounded,
-                ),
-                _input(
-                  controller: item.endTimeController,
-                  label: _isVi ? 'Kết thúc' : 'End',
-                  icon: Icons.schedule_send_rounded,
-                ),
-                _input(
-                  controller: item.costController,
-                  label: _isVi ? 'Chi phí' : 'Cost',
-                  icon: Icons.payments_rounded,
-                  keyboardType: TextInputType.number,
-                ),
-              ];
-              if (!twoColumns) {
-                return Column(
-                  children: fields
-                      .map((field) => Padding(
-                            padding: const EdgeInsets.only(bottom: 10),
-                            child: field,
-                          ))
-                      .toList(),
-                );
-              }
-              return Row(
-                children: fields
-                    .map((field) => Expanded(
-                          child: Padding(
-                            padding: const EdgeInsets.only(right: 10),
-                            child: field,
-                          ),
-                        ))
-                    .toList(),
-              );
-            },
           ),
           const SizedBox(height: 10),
           LayoutBuilder(
             builder: (context, constraints) {
               final twoColumns = constraints.maxWidth >= 520;
-              final lat = _input(
-                controller: item.latController,
-                label: _isVi ? 'Vĩ độ (tùy chọn)' : 'Latitude (optional)',
-                icon: Icons.my_location_rounded,
-                keyboardType: const TextInputType.numberWithOptions(
-                  decimal: true,
-                  signed: true,
-                ),
+              final startField = _input(
+                controller: item.startTimeController,
+                label: _isVi ? 'Bắt đầu (Thời gian)' : 'Start time',
+                icon: Icons.schedule_rounded,
               );
-              final lng = _input(
-                controller: item.lngController,
-                label: _isVi ? 'Kinh độ (tùy chọn)' : 'Longitude (optional)',
-                icon: Icons.explore_rounded,
-                keyboardType: const TextInputType.numberWithOptions(
-                  decimal: true,
-                  signed: true,
-                ),
+              final endField = _input(
+                controller: item.endTimeController,
+                label: _isVi ? 'Kết thúc (Thời gian)' : 'End time',
+                icon: Icons.schedule_send_rounded,
               );
               if (!twoColumns) {
-                return Column(children: [lat, const SizedBox(height: 10), lng]);
+                return Column(
+                  children: [
+                    startField,
+                    const SizedBox(height: 10),
+                    endField,
+                  ],
+                );
               }
               return Row(
                 children: [
-                  Expanded(child: lat),
+                  Expanded(child: startField),
                   const SizedBox(width: 10),
-                  Expanded(child: lng),
+                  Expanded(child: endField),
                 ],
               );
             },
           ),
           const SizedBox(height: 10),
           _input(
+            controller: item.costController,
+            label: _isVi ? 'Chi phí dự kiến' : 'Estimated cost',
+            icon: Icons.payments_rounded,
+            keyboardType: TextInputType.number,
+          ),
+          const SizedBox(height: 10),
+          _input(
             controller: item.notesController,
-            label: _isVi ? 'Ghi chú hoạt động' : 'Activity note',
+            label: _isVi ? 'Ghi chú' : 'Notes',
             icon: Icons.sticky_note_2_rounded,
             maxLines: 3,
+          ),
+          const SizedBox(height: 10),
+          Theme(
+            data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+            child: ExpansionTile(
+              title: Text(
+                _isVi ? 'Tọa độ GPS (Tùy chọn cho bản đồ)' : 'GPS Coordinates (Optional for map)',
+                style: TextStyle(
+                  fontFamily: 'Montserrat',
+                  color: Colors.white.withOpacity(0.6),
+                  fontSize: 12,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              iconColor: Colors.white.withOpacity(0.6),
+              collapsedIconColor: Colors.white.withOpacity(0.6),
+              tilePadding: EdgeInsets.zero,
+              children: [
+                const SizedBox(height: 6),
+                LayoutBuilder(
+                  builder: (context, constraints) {
+                    final twoColumns = constraints.maxWidth >= 520;
+                    final lat = _input(
+                      controller: item.latController,
+                      label: _isVi ? 'Vĩ độ' : 'Latitude',
+                      icon: Icons.my_location_rounded,
+                      keyboardType: const TextInputType.numberWithOptions(
+                        decimal: true,
+                        signed: true,
+                      ),
+                    );
+                    final lng = _input(
+                      controller: item.lngController,
+                      label: _isVi ? 'Kinh độ' : 'Longitude',
+                      icon: Icons.explore_rounded,
+                      keyboardType: const TextInputType.numberWithOptions(
+                        decimal: true,
+                        signed: true,
+                      ),
+                    );
+                    if (!twoColumns) {
+                      return Column(children: [lat, const SizedBox(height: 10), lng]);
+                    }
+                    return Row(
+                      children: [
+                        Expanded(child: lat),
+                        const SizedBox(width: 10),
+                        Expanded(child: lng),
+                      ],
+                    );
+                  },
+                ),
+              ],
+            ),
           ),
         ],
       ),
@@ -702,11 +719,15 @@ class _ManualTourCreatorScreenState extends State<ManualTourCreatorScreen> {
   }
 
   Widget _itemTypeDropdown(_ManualTourItemDraft item) {
+    // Fallback if item.type is not in the list (e.g. from server data or default config)
+    final allowedValues = ['place', 'restaurant', 'transport', 'hotel', 'other'];
+    final dropdownValue = allowedValues.contains(item.type) ? item.type : 'place';
+
     return DropdownButtonFormField<String>(
-      value: item.type,
+      value: dropdownValue,
       dropdownColor: const Color(0xFF14231F),
       decoration: _inputDecoration(
-        label: _isVi ? 'Nhóm mục' : 'Item type',
+        label: _isVi ? 'Danh mục' : 'Category',
         icon: Icons.segment_rounded,
       ),
       style: const TextStyle(
@@ -715,9 +736,11 @@ class _ManualTourCreatorScreenState extends State<ManualTourCreatorScreen> {
         fontWeight: FontWeight.w700,
       ),
       items: [
-        DropdownMenuItem(value: 'place', child: Text(_isVi ? 'Địa điểm' : 'Place')),
-        DropdownMenuItem(value: 'restaurant', child: Text(_isVi ? 'Nhà hàng' : 'Restaurant')),
-        DropdownMenuItem(value: 'hotel', child: Text(_isVi ? 'Khách sạn' : 'Hotel')),
+        DropdownMenuItem(value: 'place', child: Text(_isVi ? 'Địa điểm' : 'Location')),
+        DropdownMenuItem(value: 'restaurant', child: Text(_isVi ? 'Ăn uống' : 'Dining')),
+        DropdownMenuItem(value: 'transport', child: Text(_isVi ? 'Di chuyển' : 'Transport')),
+        DropdownMenuItem(value: 'hotel', child: Text(_isVi ? 'Nghỉ ngơi' : 'Accommodation')),
+        DropdownMenuItem(value: 'other', child: Text(_isVi ? 'Khác' : 'Other')),
       ],
       onChanged: (value) {
         if (value == null) return;
@@ -864,7 +887,6 @@ class _ManualTourDayDraft {
 class _ManualTourItemDraft {
   String type = 'place';
   final TextEditingController titleController = TextEditingController();
-  final TextEditingController categoryController = TextEditingController();
   final TextEditingController startTimeController = TextEditingController();
   final TextEditingController endTimeController = TextEditingController();
   final TextEditingController costController = TextEditingController();
@@ -874,7 +896,6 @@ class _ManualTourItemDraft {
 
   void dispose() {
     titleController.dispose();
-    categoryController.dispose();
     startTimeController.dispose();
     endTimeController.dispose();
     costController.dispose();
