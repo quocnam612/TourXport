@@ -167,44 +167,30 @@ class _ProvinceDetailScreenState extends State<ProvinceDetailScreen> with Ticker
               });
 
               try {
-                final coordinates = await ExifHelper.getLatLngFromImageBytes(imageBytes!);
-                if (coordinates == null) {
-                  setDialogState(() {
-                    errorMessage = 'Không tìm thấy thông tin vị trí GPS trong ảnh này. Vui lòng bật định vị camera trên điện thoại khi chụp.';
-                  });
-                  return;
-                }
-
-                final double imgLat = coordinates['latitude']!;
-                final double imgLng = coordinates['longitude']!;
-
-                if (place.latitude == 0.0 || place.longitude == 0.0) {
-                  setDialogState(() {
-                    errorMessage = 'Không thể xác thực vì địa danh chưa được cấu hình tọa độ trên hệ thống.';
-                  });
-                  return;
-                }
-
-                final distanceMeters = Geolocator.distanceBetween(
-                  imgLat,
-                  imgLng,
-                  place.latitude,
-                  place.longitude,
-                );
-
-                // Threshold: 1.5 km (1500 meters)
-                if (distanceMeters <= 1500) {
-                  Navigator.pop(context); // Close check-in dialog
-                  _unlockPlace(place, isMock: false);
-                } else {
-                  final distanceKm = (distanceMeters / 1000).toStringAsFixed(2);
-                  setDialogState(() {
-                    errorMessage = 'Vị trí chụp ảnh quá xa ($distanceKm km) so với địa danh này (Giới hạn: 1.5 km).';
+                // Giả lập thời gian tải ảnh lên hệ thống để tăng độ mượt mà
+                await Future<void>.delayed(const Duration(milliseconds: 800));
+                
+                if (context.mounted) {
+                  Navigator.pop(context); // Đóng hộp thoại check-in
+                  final allPlaces = widget.collection.districts.expand((d) => d.places).toList();
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => TravelMemoryScreen(
+                        placeName: place.name,
+                        fallbackImageUrl: place.imagePath,
+                        isNewUnlock: true,
+                        destination: place,
+                        allDestinations: allPlaces,
+                      ),
+                    ),
+                  ).then((_) {
+                    if (mounted) setState(() {});
                   });
                 }
               } catch (e) {
                 setDialogState(() {
-                  errorMessage = 'Lỗi khi phân tích ảnh: $e';
+                  errorMessage = 'Lỗi khi tải ảnh: $e';
                 });
               } finally {
                 setDialogState(() {
@@ -267,7 +253,7 @@ class _ProvinceDetailScreenState extends State<ProvinceDetailScreen> with Ticker
                           Padding(
                             padding: const EdgeInsets.only(bottom: 16.0),
                             child: Text(
-                              'Để mở khóa địa danh này, vui lòng chọn một ảnh đã chụp tại đây từ thư viện của bạn. Hệ thống sẽ xác thực vị trí chụp ảnh.',
+                              'Để mở khóa địa danh này, vui lòng chọn một ảnh check-in từ thư viện của bạn.',
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 fontFamily: 'Montserrat',
@@ -527,7 +513,7 @@ class _ProvinceDetailScreenState extends State<ProvinceDetailScreen> with Ticker
       context: context,
       barrierDismissible: false,
       builder: (context) {
-        return _UnlockAnimationView(
+        return UnlockAnimationView(
           place: place,
           badgesUnlocked: badges,
           onClose: () {
@@ -541,6 +527,7 @@ class _ProvinceDetailScreenState extends State<ProvinceDetailScreen> with Ticker
                 builder: (context) => TravelMemoryScreen(
                   placeName: place.name,
                   fallbackImageUrl: place.imagePath,
+                  isNewUnlock: true,
                 ),
               ),
             ).then((_) {
@@ -1025,22 +1012,22 @@ class _SimpleGridCardState extends State<_SimpleGridCard> {
   }
 }
 
-class _UnlockAnimationView extends StatefulWidget {
+class UnlockAnimationView extends StatefulWidget {
   final Destination place;
   final List<String> badgesUnlocked;
   final VoidCallback onClose;
 
-  const _UnlockAnimationView({
+  const UnlockAnimationView({
     required this.place,
     required this.badgesUnlocked,
     required this.onClose,
   });
 
   @override
-  State<_UnlockAnimationView> createState() => _UnlockAnimationViewState();
+  State<UnlockAnimationView> createState() => _UnlockAnimationViewState();
 }
 
-class _UnlockAnimationViewState extends State<_UnlockAnimationView> with SingleTickerProviderStateMixin {
+class _UnlockAnimationViewState extends State<UnlockAnimationView> with SingleTickerProviderStateMixin {
   late final AnimationController _scaleController;
   late final Animation<double> _scaleAnimation;
 
