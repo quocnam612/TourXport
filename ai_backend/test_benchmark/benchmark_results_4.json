@@ -1,0 +1,909 @@
+{
+  "summary": {
+    "total_questions": 100,
+    "average_score": 69.55,
+    "average_latency_sec": 2.4702
+  },
+  "details": [
+    {
+      "id": 1,
+      "question": "Làm sao để đăng nhập vào ứng dụng TourXport?",
+      "expected_answer": "Bạn nhấn nút 'Đăng nhập' tại màn hình mở đầu, sau đó nhập Email hoặc Số điện thoại cùng với Mật khẩu.",
+      "ai_answer": "Để đăng nhập vào ứng dụng TourXport, bạn hãy làm theo các bước sau:\n\n1. Tại màn hình mở đầu (Landing Page), nhấn nút **\"Đăng nhập\"**.\n2. Chọn phương thức đăng nhập: **Email** hoặc **Số điện thoại**.\n3. Nhập thông tin vào các ô tương ứng và nhập **Mật khẩu**.\n4. Nếu bạn quên mật khẩu, nhấn nút **\"Quên mật khẩu?\"** để khôi phục.\n\nSau khi đăng nhập thành công, bạn sẽ được chuyển thẳng vào **Màn hình chính (Dashboard)**.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về quy trình đăng nhập, bao gồm các bước cụ thể và tùy chọn khôi phục mật khẩu, nhưng vẫn giữ đúng nội dung chính của câu trả lời mong đợi.",
+      "latency_sec": 3.83
+    },
+    {
+      "id": 2,
+      "question": "Tôi quên mật khẩu, phải làm sao?",
+      "expected_answer": "Bạn có thể nhấn nút 'Quên mật khẩu?' trên màn hình đăng nhập để khôi phục mật khẩu.",
+      "ai_answer": "Bạn có thể khôi phục mật khẩu bằng cách làm theo các bước sau:\n\n1. Tại màn hình Đăng nhập, nhấn vào nút **\"Quên mật khẩu?\"**.\n2. Nhập thông tin cần thiết theo hướng dẫn để khôi phục mật khẩu của bạn.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về quy trình khôi phục mật khẩu, nhưng vẫn giữ nguyên ý nghĩa chính của câu trả lời mong đợi. Điểm trừ nhỏ là sự khác biệt về độ dài và chi tiết, nhưng nội dung chính vẫn được truyền đạt đầy đủ.",
+      "latency_sec": 3.07
+    },
+    {
+      "id": 3,
+      "question": "Cách đăng ký tài khoản mới trên TourXport?",
+      "expected_answer": "Từ màn hình Đăng nhập, kéo xuống dưới và chọn 'Chưa có tài khoản? Đăng ký ngay', sau đó điền các thông tin cần thiết và nhấn nút 'Đăng ký'.",
+      "ai_answer": "Để đăng ký tài khoản mới trên TourXport, bạn thực hiện các bước sau:\n\n1. Tại màn hình Đăng nhập, kéo xuống dưới và chọn **\"Chưa có tài khoản? Đăng ký ngay\"**.\n2. Nhập các thông tin cần thiết: **Tên đầy đủ, Email, Số điện thoại, Mật khẩu**.\n3. Đánh dấu tích vào ô **\"Tôi đồng ý với Điều khoản và Chính sách bảo mật\"**.\n4. Nhấn nút **\"Đăng ký\"** để hoàn tất quá trình.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về quy trình đăng ký, bao gồm các bước cụ thể và thông tin cần nhập, nhưng vẫn giữ đúng nội dung chính của câu trả lời mong đợi.",
+      "latency_sec": 3.91
+    },
+    {
+      "id": 4,
+      "question": "Sau khi đăng nhập thành công, tôi sẽ thấy gì?",
+      "expected_answer": "Bạn sẽ được chuyển thẳng vào Màn hình chính (Dashboard).",
+      "ai_answer": "Sau khi đăng nhập thành công, bạn sẽ thấy Màn Hình Chính (Dashboard) với thanh điều hướng ở dưới cùng màn hình. Thanh điều hướng này chứa các Tab chính: Trang Chủ, Bản Đồ, Tạo Lịch Trình, Bộ Sưu Tập, và Cá Nhân.",
+      "score": 85,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về những gì người dùng sẽ thấy sau khi đăng nhập, bao gồm cả thanh điều hướng và các tab chính, nhưng vẫn giữ được ý nghĩa chính là người dùng sẽ thấy Màn hình chính (Dashboard).",
+      "latency_sec": 3.36
+    },
+    {
+      "id": 5,
+      "question": "Màn hình chính của ứng dụng có gì?",
+      "expected_answer": "Màn hình chính có thanh điều hướng chứa các Tab như Trang Chủ, Bản Đồ, Tạo Lịch Trình, Bộ Sưu Tập và Cá Nhân.",
+      "ai_answer": "Màn hình chính của ứng dụng TourXport là trung tâm điều khiển với thanh điều hướng dưới cùng. Các Tab chính bao gồm:\n\n1. **Trang Chủ (Home):** Hiển thị địa điểm nổi bật, khách sạn, nhà hàng gợi ý và thanh tìm kiếm.\n2. **Bản Đồ (Map):** Khám phá địa điểm qua Google Maps.\n3. **Tạo Lịch Trình (Trip / Survey):** Tạo tour tự động bằng AI.\n4. **Bộ Sưu Tập (Saved):** Lưu giữ địa điểm và các Tour đã lưu.\n5. **Cá Nhân (Profile):** Cài đặt tài khoản và bảo mật.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về các Tab trong màn hình chính, nhưng vẫn giữ đúng nội dung và ý nghĩa của câu trả lời mong đợi. Sự khác biệt chủ yếu là ở mức độ chi tiết và cách diễn đạt, nhưng các Tab chính vẫn được đề cập đầy đủ.",
+      "latency_sec": 3.78
+    },
+    {
+      "id": 6,
+      "question": "Làm sao để tạo lịch trình du lịch?",
+      "expected_answer": "Bạn chọn Tab 'Tạo Lịch Trình' trên thanh điều hướng, sau đó điền thông tin trong bài khảo sát và nhấn nút 'Hoàn tất' hoặc 'Tạo lịch trình'.",
+      "ai_answer": "Để tạo lịch trình du lịch, bạn hãy làm theo các bước sau:\n\n1. Từ thanh điều hướng dưới cùng, chọn Tab **Tạo Lịch Trình**.\n2. Điền thông tin trong bài khảo sát với các câu hỏi về:\n   - Địa điểm muốn đến.\n   - Số lượng người tham gia.\n   - Tổng số ngày đi.\n   - Ngân sách dự kiến.\n   - Sở thích cá nhân.\n3. Nhấn nút **\"Hoàn tất\"** hoặc **\"Tạo lịch trình\"**.\n\nSau vài giây, AI sẽ xử lý và tạo ra lịch trình du lịch cho bạn.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp đầy đủ các bước để tạo lịch trình du lịch, bao gồm thông tin chi tiết hơn về các yếu tố cần điền trong bài khảo sát, mặc dù không hoàn toàn giống với câu trả lời mong đợi. Tuy nhiên, ý nghĩa và nội dung chính vẫn được giữ nguyên.",
+      "latency_sec": 3.46
+    },
+    {
+      "id": 7,
+      "question": "Tôi cần cung cấp thông tin gì khi tạo lịch trình?",
+      "expected_answer": "Bạn cần chọn địa điểm muốn đến, số lượng người tham gia, tổng số ngày đi, ngân sách và sở thích.",
+      "ai_answer": "Khi tạo lịch trình, bạn cần điền thông tin trong một bài khảo sát với các mục sau:\n\n1. **Chọn địa điểm muốn đến** (Ví dụ: Đà Lạt, Phú Quốc...).\n2. **Số lượng người tham gia** (Người lớn, Trẻ em), tối đa thường là 5 người.\n3. **Tổng số ngày đi** (Ví dụ: 3 ngày 2 đêm).\n4. **Ngân sách (Budget):** Chọn mức chi tiêu dự kiến (Tiết kiệm, Trung bình, Cao cấp).\n5. **Sở thích:** Chọn các thẻ tag như Nghỉ dưỡng, Ẩm thực, Văn hóa, Phiêu lưu... \n\nSau khi điền xong, nhấn nút **\"Hoàn tất\"** hoặc **\"Tạo lịch trình\"**.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp đầy đủ thông tin cần thiết để tạo lịch trình, bao gồm các yếu tố như địa điểm, số lượng người, số ngày, ngân sách và sở thích. Tuy nhiên, nó có thêm chi tiết về cách điền thông tin và ví dụ cụ thể, điều này không hoàn toàn cần thiết nhưng vẫn phù hợp với câu hỏi.",
+      "latency_sec": 3.99
+    },
+    {
+      "id": 8,
+      "question": "Kết quả lịch trình sẽ được hiển thị ở đâu?",
+      "expected_answer": "Kết quả lịch trình sẽ hiển thị trên màn hình sau vài giây xử lý, cho biết thông tin phân bổ theo từng ngày.",
+      "ai_answer": "Kết quả lịch trình sẽ được hiển thị trên màn hình Kết quả lịch trình (`survey_result_screen.dart`). Màn hình này phân bổ thông tin chuyến đi theo từng ngày.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chính xác về nơi hiển thị kết quả lịch trình và cách phân bổ thông tin, nhưng có thêm chi tiết về tên màn hình, điều này không hoàn toàn cần thiết cho câu hỏi ban đầu.",
+      "latency_sec": 3.96
+    },
+    {
+      "id": 9,
+      "question": "Tôi muốn xem lộ trình di chuyển trên bản đồ thì làm thế nào?",
+      "expected_answer": "Nhấn nút 'Bản đồ' trên màn hình kết quả lịch trình để xem lộ trình di chuyển trên bản đồ.",
+      "ai_answer": "Để xem lộ trình di chuyển trên bản đồ, bạn cần thực hiện các bước sau:\n\n1. Sau khi đã tạo xong lịch trình và đang ở màn hình kết quả lịch trình (`survey_result_screen.dart`).\n2. Tìm và nhấn vào nút **\"Bản đồ\"**. Điều này sẽ chuyển bạn sang màn hình `tour_route_map_screen.dart` để xem lộ trình di chuyển các điểm trên bản đồ.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách xem lộ trình di chuyển trên bản đồ, bao gồm cả việc tạo lịch trình và tên màn hình, nhưng vẫn giữ được ý nghĩa chính của câu trả lời mong đợi.",
+      "latency_sec": 3.76
+    },
+    {
+      "id": 10,
+      "question": "Tôi có thể lưu lịch trình không?",
+      "expected_answer": "Có, bạn hãy nhấn nút 'Lưu lại' trên màn hình kết quả lịch trình để lưu trữ vào tài khoản.",
+      "ai_answer": "Có, bạn có thể lưu lịch trình. Sau khi AI trả về kết quả lịch trình, hãy nhấn nút **\"Lưu lại\" (Save)** để lưu trữ lịch trình này vào tài khoản của bạn. Nếu không lưu, lịch trình sẽ bị mất khi bạn thoát ra.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chính xác về việc lưu lịch trình và hướng dẫn cụ thể, nhưng có thêm chi tiết về việc lịch trình sẽ bị mất nếu không lưu, điều này không có trong câu trả lời mong đợi.",
+      "latency_sec": 3.76
+    },
+    {
+      "id": 11,
+      "question": "Tôi muốn tìm kiếm địa điểm nào đó, phải làm sao?",
+      "expected_answer": "Tại Trang chủ, bạn có thể sử dụng thanh tìm kiếm ở trên cùng để gõ tên địa danh, khách sạn hoặc nhà hàng.",
+      "ai_answer": "Để tìm kiếm một địa điểm, bạn hãy làm theo các bước sau:\n\n1. Mở app TourXport và vào Trang chủ.\n2. Tại trên cùng của Trang chủ, bạn sẽ thấy một thanh tìm kiếm (Search Bar).\n3. Gõ tên địa danh, khách sạn hoặc nhà hàng mà bạn muốn tìm kiếm vào thanh này. \n\nChúc bạn tìm được địa điểm như ý!",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết hơn về cách tìm kiếm địa điểm, bao gồm việc mở ứng dụng và các bước cụ thể. Tuy nhiên, nó không hoàn toàn khớp với câu trả lời mong đợi vì có thêm thông tin về ứng dụng và các bước cụ thể, nhưng vẫn giữ được ý nghĩa chính của việc sử dụng thanh tìm kiếm.",
+      "latency_sec": 2.42
+    },
+    {
+      "id": 12,
+      "question": "Tôi có thể xem chi tiết về một địa điểm không?",
+      "expected_answer": "Có, bạn chỉ cần bấm vào địa điểm bất kỳ để xem hình ảnh, mô tả và các thông tin khác.",
+      "ai_answer": "Được chứ! Để xem chi tiết về một địa điểm, bạn hãy làm theo các bước sau:\n\n1. Mở ứng dụng TourXport và vào Trang chủ.\n2. Sử dụng thanh tìm kiếm ở trên cùng để gõ tên địa danh bạn muốn tìm.\n3. Bấm vào địa điểm đó trong danh sách kết quả.\n4. Tại đây, bạn có thể xem hình ảnh, mô tả và có thể nhấn nút để xem thời tiết hoặc đánh giá (nếu có).",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết về cách xem thông tin địa điểm, bao gồm các bước cụ thể và thông tin bổ sung như thời tiết và đánh giá, mặc dù không hoàn toàn giống với câu trả lời mong đợi nhưng vẫn đáp ứng được yêu cầu của câu hỏi.",
+      "latency_sec": 2.87
+    },
+    {
+      "id": 13,
+      "question": "Có thể lưu địa điểm yêu thích không?",
+      "expected_answer": "Có, bạn chỉ cần nhấn nút 'Thả tim' (Save) để lưu địa điểm yêu thích vào Bộ Sưu Tập.",
+      "ai_answer": "Có, bạn có thể lưu địa điểm yêu thích bằng cách thả tim (Save) cho các khách sạn, nhà hàng hoặc danh lam thắng cảnh. Để xem lại, bạn chuyển sang Tab **Bộ Sưu Tập** ở thanh điều hướng và chọn **Địa điểm đã lưu**.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách lưu địa điểm yêu thích và cách xem lại, nhưng vẫn giữ được ý chính là có thể lưu địa điểm yêu thích bằng cách thả tim. Tuy nhiên, nó không hoàn toàn khớp với câu trả lời mong đợi về việc chỉ nhấn nút 'Thả tim'.",
+      "latency_sec": 2.66
+    },
+    {
+      "id": 14,
+      "question": "Bộ Sưu Tập có chức năng gì?",
+      "expected_answer": "Bộ Sưu Tập lưu giữ các địa điểm và Tour đã lưu của bạn.",
+      "ai_answer": "Bộ Sưu Tập trong ứng dụng TourXport có hai chức năng chính:\n\n1. **Địa điểm đã lưu:** Nơi lưu trữ các khách sạn, nhà hàng, danh lam thắng cảnh mà bạn đã thả tim (Save).\n\n2. **Tour đã lưu:** Nơi lưu trữ các lịch trình mà bạn đã tạo từ AI và bấm \"Lưu lại\". Bạn có thể xem lại chi tiết lộ trình tại đây.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về chức năng của Bộ Sưu Tập, bao gồm cả địa điểm và tour đã lưu, nhưng vẫn giữ đúng ý nghĩa cơ bản của câu trả lời mong đợi. Tuy nhiên, nó không hoàn toàn khớp với câu trả lời mong đợi vì có thêm thông tin chi tiết.",
+      "latency_sec": 2.39
+    },
+    {
+      "id": 15,
+      "question": "Làm sao để viết đánh giá cho một địa điểm?",
+      "expected_answer": "Bạn có thể viết đánh giá cho địa điểm bằng cách truy cập vào màn hình đánh giá và chấm điểm số sao cùng với bình luận văn bản.",
+      "ai_answer": "Để viết đánh giá cho một địa điểm trong ứng dụng TourXport, bạn làm theo các bước sau:\n\n1. Mở ứng dụng và tìm đến địa điểm bạn muốn đánh giá.\n2. Chọn tùy chọn để viết đánh giá (Review).\n3. Trên màn hình viết đánh giá, bạn có thể chấm điểm số sao (từ 1 đến 5 sao) và viết bình luận văn bản của mình.\n4. Hoàn tất và gửi đánh giá của bạn. \n\nĐánh giá của bạn sau đó sẽ hiển thị tại mục đánh giá trong ứng dụng.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết hơn về cách viết đánh giá trong một ứng dụng cụ thể, nhưng vẫn giữ được ý chính về việc chấm điểm và viết bình luận. Tuy nhiên, nó không hoàn toàn khớp với câu trả lời mong đợi vì có thêm thông tin về ứng dụng cụ thể.",
+      "latency_sec": 2.9
+    },
+    {
+      "id": 16,
+      "question": "Tính năng Nhật Ký Du Lịch là gì?",
+      "expected_answer": "Đây là tính năng giúp bạn lưu trữ kỷ niệm bằng cách viết lại cảm nghĩ và tải lên ảnh sau chuyến đi.",
+      "ai_answer": "Tính năng Nhật Ký Du Lịch trong ứng dụng TourXport cho phép bạn lưu trữ kỷ niệm sau chuyến đi. Bạn có thể viết lại cảm nghĩ và tải lên ảnh để ghi nhớ những khoảnh khắc đáng nhớ.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế đã nêu rõ tính năng Nhật Ký Du Lịch cho phép lưu trữ kỷ niệm, viết cảm nghĩ và tải ảnh, tương tự như câu trả lời mong đợi. Tuy nhiên, nó có thêm thông tin về ứng dụng cụ thể, điều này không làm giảm độ chính xác nhưng có thể xem là không cần thiết cho câu hỏi chung.",
+      "latency_sec": 1.94
+    },
+    {
+      "id": 17,
+      "question": "Tôi có thể chỉnh sửa hồ sơ cá nhân không?",
+      "expected_answer": "Có, bạn chuyển sang Tab Cá Nhân và chọn chỉnh sửa hồ sơ để thay đổi ảnh đại diện, tên và số điện thoại.",
+      "ai_answer": "Bạn có thể chỉnh sửa hồ sơ cá nhân bằng cách vào Tab Cá Nhân ở góc phải dưới cùng màn hình, sau đó chọn mục Cài Đặt Chung và nhấn vào Chỉnh sửa hồ sơ để thay đổi ảnh đại diện, tên hoặc số điện thoại.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chính xác về cách chỉnh sửa hồ sơ cá nhân, nhưng có sự khác biệt nhỏ về cách diễn đạt và chi tiết về vị trí của Tab Cá Nhân. Tuy nhiên, nội dung chính vẫn được truyền đạt đầy đủ.",
+      "latency_sec": 1.91
+    },
+    {
+      "id": 18,
+      "question": "Làm sao để đổi ngôn ngữ giao diện ứng dụng?",
+      "expected_answer": "Bạn vào phần cài đặt ngôn ngữ trong Tab Cá Nhân để chuyển đổi giữa Tiếng Việt và English.",
+      "ai_answer": "Để đổi ngôn ngữ giao diện ứng dụng, bạn hãy làm theo các bước sau:\n\n1. Chuyển sang Tab Cá Nhân ở góc phải dưới cùng màn hình.\n2. Vào phần **Cài Đặt Chung**.\n3. Chọn **Ngôn ngữ**.\n4. Chọn ngôn ngữ bạn muốn sử dụng (Tiếng Việt hoặc English).",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết hơn về cách đổi ngôn ngữ, mặc dù không hoàn toàn giống với câu trả lời mong đợi. Tuy nhiên, nó vẫn truyền đạt đúng thông tin cần thiết và cách thực hiện.",
+      "latency_sec": 2.35
+    },
+    {
+      "id": 19,
+      "question": "Có thể bật/tắt thông báo không?",
+      "expected_answer": "Có, bạn có thể vào cài đặt thông báo trong Tab Cá Nhân để bật hoặc tắt các loại thông báo.",
+      "ai_answer": "Có thể. Để bật/tắt thông báo, bạn vào Tab Cá Nhân ở góc phải dưới cùng màn hình, chọn **Cài Đặt Chung**, sau đó vào mục **Thông báo**. Tại đây, bạn có thể điều chỉnh bật/tắt các loại thông báo theo ý muốn.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách bật/tắt thông báo, nhưng vẫn giữ nguyên ý nghĩa chính của câu trả lời mong đợi. Sự khác biệt nhỏ về cách diễn đạt không làm thay đổi nội dung cốt lõi.",
+      "latency_sec": 2.64
+    },
+    {
+      "id": 20,
+      "question": "Làm sao để bảo mật tài khoản của tôi?",
+      "expected_answer": "Bạn có thể thiết lập Mã PIN trong cài đặt bảo mật để khóa ứng dụng, bảo vệ thông tin cá nhân.",
+      "ai_answer": "Để bảo mật tài khoản của bạn trên TourXport, bạn có thể thiết lập Mã PIN. Thực hiện theo các bước sau:\n\n1. Mở ứng dụng TourXport và chuyển đến Tab Cá Nhân (Profile) ở góc phải dưới cùng.\n2. Chọn mục Bảo Mật.\n3. Thiết lập Mã PIN để khóa ứng dụng và tăng cường tính riêng tư cho các lịch trình cá nhân của bạn.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết về cách thiết lập Mã PIN trong ứng dụng cụ thể, phù hợp với yêu cầu bảo mật tài khoản. Tuy nhiên, nó không đề cập đến việc bảo vệ thông tin cá nhân một cách tổng quát như trong câu trả lời mong đợi.",
+      "latency_sec": 2.61
+    },
+    {
+      "id": 21,
+      "question": "Có hỗ trợ FAQ không?",
+      "expected_answer": "Có, bạn có thể tìm thấy các câu hỏi thường gặp trong Tab Trợ Giúp & Hỗ Trợ.",
+      "ai_answer": "Xin lỗi, hiện tại tôi không có thông tin cụ thể về tính năng FAQ trong ứng dụng TourXport. Vui lòng kiểm tra trong app hoặc trên trang web chính thức của TourXport để biết thêm chi tiết.",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không cung cấp thông tin về việc có hỗ trợ FAQ hay không, mà chỉ đề cập đến việc không có thông tin cụ thể, điều này không đáp ứng được yêu cầu của câu hỏi.",
+      "latency_sec": 2.1
+    },
+    {
+      "id": 22,
+      "question": "Làm sao để trò chuyện với trợ lý AI?",
+      "expected_answer": "Tại màn hình Trợ giúp, nhấn vào nút 'Bắt đầu trò chuyện' để kết nối trực tiếp với Trợ lý ảo AI.",
+      "ai_answer": "Hiện tại, tôi không có thông tin cụ thể về tính năng trò chuyện với trợ lý AI trong ứng dụng TourXport. Vui lòng kiểm tra lại tài liệu hướng dẫn sử dụng hoặc liên hệ với bộ phận hỗ trợ của ứng dụng để được trợ giúp chi tiết hơn.",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không cung cấp thông tin cụ thể về cách trò chuyện với trợ lý AI như câu trả lời mong đợi, mà chỉ đề xuất kiểm tra tài liệu hoặc liên hệ hỗ trợ, do đó độ chính xác thấp.",
+      "latency_sec": 4.16
+    },
+    {
+      "id": 23,
+      "question": "Có thể xem thời tiết tại địa điểm không?",
+      "expected_answer": "Có, bạn có thể xem thông tin thời tiết khi truy cập chi tiết địa điểm.",
+      "ai_answer": "Xin lỗi, hiện tại tôi không có thông tin về tính năng xem thời tiết trong ứng dụng TourXport. Bạn có thể kiểm tra trong ứng dụng để biết thêm chi tiết.",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không đáp ứng được yêu cầu của câu hỏi, vì nó không xác nhận khả năng xem thời tiết tại địa điểm mà còn từ chối thông tin cụ thể về tính năng này.",
+      "latency_sec": 1.74
+    },
+    {
+      "id": 24,
+      "question": "Tôi có thể xem lịch sử các đánh giá đã viết không?",
+      "expected_answer": "Có, các đánh giá bạn đã viết sẽ hiển thị tại màn hình đánh giá của ứng dụng.",
+      "ai_answer": "Hiện tại, tài liệu hướng dẫn không đề cập đến việc xem lịch sử các đánh giá đã viết. Bạn có thể kiểm tra trực tiếp trong ứng dụng để xác nhận tính năng này.",
+      "score": 40,
+      "reason": "Câu trả lời thực tế không cung cấp thông tin rõ ràng về việc có thể xem lịch sử đánh giá hay không, mà chỉ nói rằng tài liệu không đề cập đến điều này. Điều này làm giảm độ chính xác so với câu trả lời mong đợi.",
+      "latency_sec": 2.15
+    },
+    {
+      "id": 25,
+      "question": "Làm sao để xem địa điểm đã lưu?",
+      "expected_answer": "Bạn vào Tab Bộ Sưu Tập để xem các địa điểm và Tour mà bạn đã lưu.",
+      "ai_answer": "Để xem địa điểm đã lưu, bạn làm theo các bước sau:\n\n1. Chuyển sang Tab **Bộ Sưu Tập** ở thanh điều hướng dưới cùng.\n2. Trong mục **Địa điểm đã lưu**, bạn sẽ thấy danh sách các khách sạn, nhà hàng, và danh lam thắng cảnh mà bạn đã thả tim (Save).",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách xem địa điểm đã lưu, bao gồm các bước cụ thể và loại địa điểm có thể thấy, nhưng vẫn giữ nguyên ý nghĩa chính của câu trả lời mong đợi.",
+      "latency_sec": 2.68
+    },
+    {
+      "id": 26,
+      "question": "Tôi muốn chỉnh sửa lịch trình đã lưu, phải làm sao?",
+      "expected_answer": "Hiện tại, tính năng chỉnh sửa lịch trình chưa được hỗ trợ. Bạn sẽ cần tạo một lịch trình mới.",
+      "ai_answer": "Xin lỗi, hiện tại ứng dụng TourXport chưa hỗ trợ tính năng chỉnh sửa lịch trình đã lưu. Bạn có thể tạo một lịch trình mới nếu muốn thay đổi.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp thông tin tương tự như câu trả lời mong đợi, nhưng có thêm chi tiết về ứng dụng cụ thể. Nội dung chính vẫn giữ nguyên, chỉ khác về cách diễn đạt và thông tin bổ sung.",
+      "latency_sec": 2.14
+    },
+    {
+      "id": 27,
+      "question": "Có cách nào gợi ý lịch trình du lịch không?",
+      "expected_answer": "Có, bạn có thể sử dụng tính năng Tạo Lịch Trình để AI gợi ý lịch trình dựa trên sở thích của bạn.",
+      "ai_answer": "Bạn có thể sử dụng tính năng \"Tạo Lịch Trình Thông Minh\" trong ứng dụng TourXport để tự động gợi ý lịch trình du lịch. Dưới đây là cách thực hiện:\n\n1. Từ thanh điều hướng dưới cùng, chọn Tab **Tạo Lịch Trình**.\n2. Điền thông tin vào bài khảo sát:\n   - Chọn địa điểm muốn đến.\n   - Số lượng người tham gia.\n   - Tổng số ngày đi.\n   - Ngân sách dự kiến.\n   - Sở thích cá nhân.\n3. Nhấn nút **\"Hoàn tất\"** hoặc **\"Tạo lịch trình\"**.\n\nSau vài giây, AI sẽ trả về kết quả lịch trình hoàn chỉnh cho bạn!",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết về cách sử dụng một ứng dụng cụ thể để tạo lịch trình, điều này bổ sung cho câu trả lời mong đợi. Tuy nhiên, nó không hoàn toàn khớp với ý nghĩa tổng quát của câu trả lời mong đợi, vì nó không chỉ đơn thuần là gợi ý mà còn hướng dẫn cụ thể về cách thực hiện.",
+      "latency_sec": 3.42
+    },
+    {
+      "id": 28,
+      "question": "Số lượng người tham gia tối đa khi tạo lịch trình là bao nhiêu?",
+      "expected_answer": "Số lượng người tham gia tối đa thường là 5 người.",
+      "ai_answer": "Số lượng người tham gia tối đa khi tạo lịch trình là 5 người.",
+      "score": 100,
+      "reason": "Câu trả lời thực tế hoàn toàn trùng khớp với câu trả lời mong đợi về nội dung và ý nghĩa, chỉ khác nhau ở cách diễn đạt nhưng vẫn truyền đạt thông tin chính xác.",
+      "latency_sec": 1.73
+    },
+    {
+      "id": 29,
+      "question": "Tôi có thể chọn ngân sách cho lịch trình không?",
+      "expected_answer": "Có, bạn có thể chọn ngân sách dự kiến khi điền khảo sát trong tính năng Tạo Lịch Trình.",
+      "ai_answer": "Có, bạn có thể chọn ngân sách cho lịch trình khi làm khảo sát. Trong bước điền thông tin, hãy chọn mức chi tiêu dự kiến của bạn: Tiết kiệm, Trung bình hoặc Cao cấp.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách chọn ngân sách, nhưng vẫn giữ nguyên ý nghĩa chính của câu trả lời mong đợi.",
+      "latency_sec": 2.11
+    },
+    {
+      "id": 30,
+      "question": "Có thể chọn ngày đi không?",
+      "expected_answer": "Có, bạn có thể chọn tổng số ngày đi khi thực hiện khảo sát để tạo lịch trình.",
+      "ai_answer": "Được! Trong ứng dụng TourXport, bạn có thể chọn ngày đi cho chuyến du lịch của mình. Hãy làm theo các bước sau:\n\n1. Mở ứng dụng TourXport.\n2. Tìm kiếm tour du lịch bạn quan tâm.\n3. Trong phần chi tiết tour, bạn sẽ thấy tùy chọn để chọn ngày khởi hành.\n4. Chọn ngày mong muốn từ lịch.\n5. Xác nhận lựa chọn của bạn.\n\nChúc bạn có một chuyến đi thú vị!",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết về cách chọn ngày đi trong ứng dụng TourXport, phù hợp với câu hỏi. Tuy nhiên, nó không nhắc đến việc khảo sát như trong câu trả lời mong đợi, dẫn đến điểm số không hoàn toàn tối đa.",
+      "latency_sec": 3.09
+    },
+    {
+      "id": 31,
+      "question": "Làm sao để xóa lịch trình đã lưu?",
+      "expected_answer": "Hiện tại, tính năng xóa lịch trình chưa được hỗ trợ. Bạn sẽ không thể xóa lịch trình đã lưu.",
+      "ai_answer": "Xin lỗi, hiện tại tài liệu không cung cấp thông tin về cách xóa lịch trình đã lưu trong ứng dụng TourXport. Bạn có thể kiểm tra lại trong ứng dụng hoặc liên hệ bộ phận hỗ trợ kỹ thuật của TourXport để được giúp đỡ.",
+      "score": 60,
+      "reason": "Câu trả lời thực tế không trực tiếp trả lời câu hỏi về việc xóa lịch trình đã lưu, mà chỉ nói rằng không có thông tin trong tài liệu và gợi ý liên hệ bộ phận hỗ trợ. Tuy nhiên, nó cũng ngụ ý rằng tính năng này có thể không khả dụng, nhưng không rõ ràng như câu trả lời mong đợi.",
+      "latency_sec": 2.67
+    },
+    {
+      "id": 32,
+      "question": "Làm thế nào để tạo một lịch trình với nhiều địa điểm?",
+      "expected_answer": "Bạn có thể nhập địa điểm mong muốn vào khảo sát và AI sẽ tự động tạo lịch trình cho bạn.",
+      "ai_answer": "Hiện tại, tính năng tạo lịch trình chỉ hỗ trợ chọn một địa điểm du lịch duy nhất. Bạn có thể chọn địa điểm mong muốn từ danh sách khi làm khảo sát. Nếu bạn muốn đi nhiều địa điểm, bạn cần tạo các lịch trình riêng cho từng địa điểm.",
+      "score": 40,
+      "reason": "Câu trả lời thực tế không đáp ứng được yêu cầu tạo lịch trình với nhiều địa điểm, mà chỉ nói về việc hỗ trợ một địa điểm duy nhất. Điều này làm giảm độ chính xác so với câu trả lời mong đợi.",
+      "latency_sec": 2.78
+    },
+    {
+      "id": 33,
+      "question": "Có thể xem các địa điểm nổi bật ở đâu?",
+      "expected_answer": "Bạn có thể xem các địa điểm nổi bật tại Tab Trang Chủ của ứng dụng.",
+      "ai_answer": "Bạn có thể xem các địa điểm nổi bật bằng cách sử dụng thanh tìm kiếm ở trên cùng của Trang chủ. Chỉ cần gõ tên địa danh để tìm kiếm và xem chi tiết các địa điểm nổi bật.",
+      "score": 85,
+      "reason": "Câu trả lời thực tế cung cấp thông tin bổ sung về cách tìm kiếm địa điểm nổi bật, nhưng không nhấn mạnh rằng chúng có thể được xem tại Tab Trang Chủ như trong câu trả lời mong đợi.",
+      "latency_sec": 2.54
+    },
+    {
+      "id": 34,
+      "question": "Tôi có thể tìm kiếm theo loại địa điểm không?",
+      "expected_answer": "Có, bạn có thể gõ tên loại địa điểm vào thanh tìm kiếm để tìm kiếm cụ thể hơn.",
+      "ai_answer": "Hiện tại, bạn chỉ có thể tìm kiếm theo tên địa danh, khách sạn hoặc nhà hàng bằng thanh tìm kiếm ở trang chủ.",
+      "score": 70,
+      "reason": "Câu trả lời thực tế đề cập đến việc tìm kiếm theo tên địa danh, khách sạn hoặc nhà hàng, nhưng không hoàn toàn khớp với câu trả lời mong đợi về việc tìm kiếm theo loại địa điểm một cách tổng quát hơn. Tuy nhiên, nó vẫn cung cấp thông tin hữu ích về cách tìm kiếm cụ thể trên trang chủ.",
+      "latency_sec": 2.16
+    },
+    {
+      "id": 35,
+      "question": "Có thể tìm kiếm các khách sạn không?",
+      "expected_answer": "Có, bạn chỉ cần gõ tên khách sạn vào thanh tìm kiếm tại Trang chủ.",
+      "ai_answer": "Bạn có thể tìm kiếm khách sạn bằng cách sử dụng thanh tìm kiếm (Search Bar) ở trên cùng tại Trang chủ của ứng dụng. Chỉ cần gõ tên khách sạn bạn muốn tìm kiếm.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp thông tin tương tự như câu trả lời mong đợi, nhưng có thêm chi tiết về vị trí của thanh tìm kiếm và cách sử dụng nó. Điều này làm cho câu trả lời thực tế chính xác và đầy đủ hơn, nhưng vẫn giữ nguyên ý nghĩa chính của câu hỏi.",
+      "latency_sec": 2.45
+    },
+    {
+      "id": 36,
+      "question": "Điều gì xảy ra sau khi nhấn nút 'Hoàn tất' trong khảo sát?",
+      "expected_answer": "Sau khi nhấn nút 'Hoàn tất', AI sẽ xử lý và trả về kết quả lịch trình cho bạn.",
+      "ai_answer": "Sau khi nhấn nút 'Hoàn tất' trong khảo sát, AI sẽ xử lý và trả về kết quả lịch trình. Màn hình kết quả sẽ hiển thị thông tin phân bổ theo từng ngày, như đi đâu, ăn gì, ngủ ở đâu.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về kết quả sau khi nhấn nút 'Hoàn tất', nhưng vẫn giữ được ý chính là AI sẽ xử lý và trả về kết quả lịch trình. Sự khác biệt chủ yếu nằm ở mức độ chi tiết.",
+      "latency_sec": 2.27
+    },
+    {
+      "id": 37,
+      "question": "Làm sao để xem thông tin về tỉnh/thành phố?",
+      "expected_answer": "Bạn có thể truy cập vào màn hình chi tiết tỉnh/thành phố để xem tổng quan văn hóa và các địa điểm nổi tiếng.",
+      "ai_answer": "Để xem thông tin về tỉnh/thành phố trên TourXport, bạn làm theo các bước sau:\n\n1. Mở ứng dụng và tìm đến mục Tìm kiếm trên Trang chủ.\n2. Nhập tên tỉnh/thành phố bạn muốn tìm vào thanh tìm kiếm (Search Bar).\n3. Chọn tỉnh/thành phố từ danh sách kết quả.\n4. Bạn sẽ được chuyển đến trang chi tiết tỉnh/thành, nơi hiển thị tổng quan về văn hóa, đặc sản và các địa điểm nổi tiếng.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết về cách xem thông tin tỉnh/thành phố, bao gồm cả việc truy cập vào trang chi tiết với thông tin văn hóa và địa điểm nổi tiếng, phù hợp với câu trả lời mong đợi. Tuy nhiên, nó có phần chi tiết hơn và không hoàn toàn giống với cách diễn đạt của câu trả lời mong đợi.",
+      "latency_sec": 2.6
+    },
+    {
+      "id": 38,
+      "question": "Có thể tìm kiếm các nhà hàng không?",
+      "expected_answer": "Có, bạn có thể gõ tên nhà hàng vào thanh tìm kiếm để tìm kiếm.",
+      "ai_answer": "Có, bạn có thể tìm kiếm nhà hàng bằng cách sử dụng thanh tìm kiếm (Search Bar) ở trên cùng của Trang chủ. Hãy gõ tên nhà hàng mà bạn muốn tìm.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chính xác về việc tìm kiếm nhà hàng và bổ sung thêm chi tiết về vị trí của thanh tìm kiếm, tuy nhiên không hoàn toàn giống với câu trả lời mong đợi.",
+      "latency_sec": 2.32
+    },
+    {
+      "id": 39,
+      "question": "Tôi có thể thay đổi ảnh đại diện của mình không?",
+      "expected_answer": "Có, bạn có thể thay đổi ảnh đại diện trong phần chỉnh sửa hồ sơ tại Tab Cá Nhân.",
+      "ai_answer": "Có, bạn có thể thay đổi ảnh đại diện. Hãy làm theo các bước sau:\n\n1. Chuyển sang Tab Cá Nhân ở góc phải dưới cùng màn hình.\n2. Chọn \"Chỉnh sửa hồ sơ\".\n3. Tại đây, bạn có thể thay đổi ảnh đại diện của mình.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách thay đổi ảnh đại diện, bao gồm các bước cụ thể, nhưng vẫn giữ nguyên ý nghĩa chính của câu trả lời mong đợi.",
+      "latency_sec": 2.46
+    },
+    {
+      "id": 40,
+      "question": "Làm sao để biết các khuyến mãi hay thông tin mới?",
+      "expected_answer": "Bạn có thể bật thông báo trong cài đặt để nhận thông báo về các khuyến mãi và thông tin mới.",
+      "ai_answer": "Bạn có thể kiểm tra các khuyến mãi và thông tin mới nhất trên ứng dụng TourXport bằng cách:\n\n1. Mở ứng dụng TourXport trên điện thoại của bạn.\n2. Truy cập vào mục \"Khuyến mãi\" hoặc \"Thông báo\" trên giao diện chính của ứng dụng.\n3. Tại đây, bạn sẽ thấy danh sách các khuyến mãi và cập nhật mới nhất.\n\nHy vọng bạn tìm được thông tin hữu ích!",
+      "score": 70,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết về cách kiểm tra khuyến mãi trên ứng dụng cụ thể, nhưng không đề cập đến việc bật thông báo trong cài đặt như trong câu trả lời mong đợi. Tuy nhiên, nó vẫn liên quan đến việc nhận thông tin mới, vì vậy điểm số không thấp hơn 70.",
+      "latency_sec": 2.74
+    },
+    {
+      "id": 41,
+      "question": "Có hỗ trợ cho người dùng không nói tiếng Việt không?",
+      "expected_answer": "Có, ứng dụng hỗ trợ ngôn ngữ English để phục vụ cho người dùng quốc tế.",
+      "ai_answer": "Xin lỗi, hiện tại tôi không có thông tin cụ thể về việc hỗ trợ ngôn ngữ khác ngoài tiếng Việt trong ứng dụng TourXport. Bạn có thể kiểm tra trong phần cài đặt ngôn ngữ của ứng dụng để biết thêm chi tiết hoặc liên hệ bộ phận hỗ trợ khách hàng của TourXport để được giúp đỡ.",
+      "score": 30,
+      "reason": "Câu trả lời thực tế không cung cấp thông tin rõ ràng về việc hỗ trợ ngôn ngữ khác ngoài tiếng Việt, mà chỉ đề cập đến việc không có thông tin cụ thể. Điều này không đáp ứng được yêu cầu của câu hỏi về việc có hỗ trợ cho người dùng không nói tiếng Việt hay không.",
+      "latency_sec": 2.35
+    },
+    {
+      "id": 42,
+      "question": "Có thể thêm ảnh vào Nhật Ký Du Lịch không?",
+      "expected_answer": "Có, bạn có thể tải lên ảnh khi viết lại cảm nghĩ trong Nhật Ký Du Lịch.",
+      "ai_answer": "Có, bạn có thể thêm ảnh vào Nhật Ký Du Lịch trên TourXport. Tính năng này cho phép bạn viết lại cảm nghĩ và upload ảnh sau chuyến đi của mình.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chính xác về việc thêm ảnh vào Nhật Ký Du Lịch và bổ sung thêm thông tin về nền tảng cụ thể (TourXport), tuy nhiên không nhắc đến việc viết lại cảm nghĩ một cách rõ ràng như trong câu trả lời mong đợi.",
+      "latency_sec": 2.41
+    },
+    {
+      "id": 43,
+      "question": "Có thể xem các đánh giá của người khác không?",
+      "expected_answer": "Có, bạn có thể xem các đánh giá của người khác tại mục đánh giá của địa điểm.",
+      "ai_answer": "Có, bạn có thể xem các đánh giá của người khác tại màn hình đánh giá (`app_reviews_screen.dart`).",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chính xác về việc xem đánh giá của người khác, nhưng có thêm chi tiết về màn hình cụ thể, điều này không hoàn toàn cần thiết cho câu hỏi. Tuy nhiên, ý nghĩa chính vẫn được giữ nguyên.",
+      "latency_sec": 2.03
+    },
+    {
+      "id": 44,
+      "question": "Có thể nhấn Lưu lại mà không cần xem kết quả không?",
+      "expected_answer": "Không, bạn cần xem kết quả lịch trình trước khi nhấn nút 'Lưu lại'.",
+      "ai_answer": "Không, bạn cần xem kết quả lịch trình trước khi có thể nhấn \"Lưu lại\".",
+      "score": 100,
+      "reason": "Câu trả lời thực tế hoàn toàn trùng khớp về nội dung và ý nghĩa với câu trả lời mong đợi, chỉ khác nhau ở cách diễn đạt một chút nhưng vẫn truyền đạt thông điệp chính xác.",
+      "latency_sec": 1.89
+    },
+    {
+      "id": 45,
+      "question": "Mỗi lần tạo lịch trình có mất phí không?",
+      "expected_answer": "Không, tính năng tạo lịch trình hoàn toàn miễn phí.",
+      "ai_answer": "Xin lỗi, mình không có thông tin về việc tạo lịch trình có mất phí hay không từ tài liệu hướng dẫn sử dụng. Bạn có thể kiểm tra trực tiếp trên ứng dụng hoặc liên hệ với dịch vụ hỗ trợ khách hàng của TourXport để biết thêm chi tiết.",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không cung cấp thông tin rõ ràng về việc tạo lịch trình có mất phí hay không, mà chỉ đề xuất người dùng kiểm tra thêm thông tin, điều này không đáp ứng được câu hỏi của người dùng.",
+      "latency_sec": 2.1
+    },
+    {
+      "id": 46,
+      "question": "Có thể tạo nhiều lịch trình cùng một lúc không?",
+      "expected_answer": "Có, bạn có thể tạo nhiều lịch trình khác nhau một cách độc lập.",
+      "ai_answer": "Theo hướng dẫn sử dụng, bạn không thể tạo nhiều lịch trình cùng một lúc. Bạn cần hoàn thành và lưu lại từng lịch trình trước khi tạo lịch trình mới.",
+      "score": 0,
+      "reason": "Câu trả lời thực tế hoàn toàn trái ngược với câu trả lời mong đợi, không chỉ khác nhau về nội dung mà còn về ý nghĩa, vì nó khẳng định rằng không thể tạo nhiều lịch trình cùng một lúc.",
+      "latency_sec": 2.33
+    },
+    {
+      "id": 47,
+      "question": "Có thể xem các đánh giá riêng lẻ cho từng địa điểm không?",
+      "expected_answer": "Có, bạn có thể truy cập vào chi tiết từng địa điểm để xem các đánh giá riêng lẻ.",
+      "ai_answer": "Có, bạn có thể xem các đánh giá riêng lẻ cho từng địa điểm trong ứng dụng TourXport tại màn hình `app_reviews_screen.dart`. Ở đây, các đánh giá được hiển thị cùng với điểm số sao và bình luận văn bản từ người dùng khác.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách xem đánh giá riêng lẻ, bao gồm tên màn hình và thông tin bổ sung về điểm số và bình luận, nhưng vẫn giữ được ý nghĩa chính của câu trả lời mong đợi.",
+      "latency_sec": 2.03
+    },
+    {
+      "id": 48,
+      "question": "Tôi muốn chia sẻ lịch trình với bạn bè, có được không?",
+      "expected_answer": "Hiện tại, ứng dụng không hỗ trợ chức năng chia sẻ lịch trình.",
+      "ai_answer": "Xin lỗi, hiện tại tôi không có thông tin cụ thể về tính năng chia sẻ lịch trình trong app TourXport. Bạn có thể kiểm tra trong ứng dụng hoặc tài liệu hướng dẫn sử dụng để biết thêm chi tiết.",
+      "score": 70,
+      "reason": "Câu trả lời thực tế không trực tiếp xác nhận khả năng chia sẻ lịch trình mà chỉ đề cập đến việc không có thông tin cụ thể, điều này làm giảm độ chính xác so với câu trả lời mong đợi.",
+      "latency_sec": 1.86
+    },
+    {
+      "id": 49,
+      "question": "Có thể xem lịch sử tìm kiếm không?",
+      "expected_answer": "Hiện tại, ứng dụng không hỗ trợ xem lịch sử tìm kiếm.",
+      "ai_answer": "Xin lỗi, hiện tại tôi không có thông tin về việc TourXport có tính năng xem lịch sử tìm kiếm hay không. Vui lòng kiểm tra trong ứng dụng hoặc tài liệu hướng dẫn kèm theo để biết thêm chi tiết.",
+      "score": 50,
+      "reason": "Câu trả lời thực tế không trực tiếp trả lời câu hỏi về việc có thể xem lịch sử tìm kiếm hay không, mà chỉ đề cập đến việc không có thông tin cụ thể và khuyên người dùng kiểm tra tài liệu. Điều này làm giảm độ chính xác so với câu trả lời mong đợi.",
+      "latency_sec": 1.91
+    },
+    {
+      "id": 50,
+      "question": "Tôi có thể thay đổi mật khẩu không?",
+      "expected_answer": "Hiện tại, tính năng thay đổi mật khẩu chưa được hỗ trợ trong ứng dụng.",
+      "ai_answer": "Hiện tại, trong tài liệu hướng dẫn không có thông tin về tính năng thay đổi mật khẩu. Bạn có thể sử dụng tính năng **\"Quên mật khẩu?\"** tại màn hình đăng nhập để thiết lập lại mật khẩu mới.",
+      "score": 70,
+      "reason": "Câu trả lời thực tế không trực tiếp xác nhận việc có thể thay đổi mật khẩu hay không, mà chỉ đề cập đến việc thiết lập lại mật khẩu thông qua tính năng 'Quên mật khẩu?'. Điều này không hoàn toàn phù hợp với câu trả lời mong đợi, nhưng vẫn cung cấp thông tin hữu ích liên quan đến vấn đề mật khẩu.",
+      "latency_sec": 2.35
+    },
+    {
+      "id": 51,
+      "question": "Tôi có thể xóa tài khoản không?",
+      "expected_answer": "Hiện tại, tính năng xóa tài khoản chưa được hỗ trợ.",
+      "ai_answer": "Rất tiếc, hiện tại tôi không có thông tin cụ thể về việc xóa tài khoản trong ứng dụng TourXport. Bạn nên kiểm tra phần cài đặt tài khoản trong ứng dụng hoặc liên hệ với bộ phận hỗ trợ khách hàng của TourXport để được trợ giúp chi tiết.",
+      "score": 60,
+      "reason": "Câu trả lời thực tế không trực tiếp trả lời câu hỏi về việc xóa tài khoản mà chỉ đề cập đến việc không có thông tin cụ thể và khuyên người dùng kiểm tra cài đặt hoặc liên hệ hỗ trợ. Điều này không hoàn toàn phù hợp với câu trả lời mong đợi, nhưng vẫn cung cấp thông tin hữu ích.",
+      "latency_sec": 2.29
+    },
+    {
+      "id": 52,
+      "question": "Có thể chỉnh sửa đánh giá đã viết không?",
+      "expected_answer": "Hiện tại, tính năng chỉnh sửa đánh giá chưa được hỗ trợ.",
+      "ai_answer": "Hiện tại, tài liệu không đề cập đến tính năng chỉnh sửa đánh giá đã viết. Bạn có thể thử kiểm tra trong ứng dụng để biết thêm thông tin chi tiết.",
+      "score": 70,
+      "reason": "Câu trả lời thực tế không trực tiếp xác nhận rằng tính năng chỉnh sửa đánh giá chưa được hỗ trợ, mà chỉ nói rằng tài liệu không đề cập đến điều này. Tuy nhiên, nó vẫn cung cấp thông tin hữu ích về việc kiểm tra trong ứng dụng, nhưng không hoàn toàn trùng khớp với câu trả lời mong đợi.",
+      "latency_sec": 2.02
+    },
+    {
+      "id": 53,
+      "question": "Làm sao để làm mới thông tin trong ứng dụng?",
+      "expected_answer": "Bạn có thể tắt và khởi động lại ứng dụng để làm mới thông tin.",
+      "ai_answer": "Xin lỗi, hiện tại tôi không có thông tin chi tiết về cách làm mới thông tin trong ứng dụng TourXport. Bạn vui lòng kiểm tra phần cài đặt hoặc hướng dẫn sử dụng trong ứng dụng để biết thêm chi tiết nhé!",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không cung cấp thông tin cụ thể về cách làm mới thông tin trong ứng dụng, mà chỉ gợi ý kiểm tra cài đặt hoặc hướng dẫn sử dụng, không đáp ứng được yêu cầu của câu hỏi.",
+      "latency_sec": 2.25
+    },
+    {
+      "id": 54,
+      "question": "Có hỗ trợ tìm kiếm các tour du lịch không?",
+      "expected_answer": "Đúng vậy, bạn có thể tìm kiếm các tour du lịch trong phần Bộ Sưu Tập.",
+      "ai_answer": "Hiện tại, ứng dụng TourXport không hỗ trợ tìm kiếm các tour du lịch. Bạn có thể sử dụng tính năng Tạo Lịch Trình Thông Minh để tự động tạo ra một chuyến đi dựa trên sở thích của mình. Hoặc bạn có thể tìm kiếm địa danh, khách sạn, và nhà hàng thông qua thanh tìm kiếm trên trang chủ.",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không xác nhận việc hỗ trợ tìm kiếm tour du lịch mà còn cho biết rằng ứng dụng không hỗ trợ tính năng này, điều này hoàn toàn trái ngược với câu trả lời mong đợi.",
+      "latency_sec": 2.14
+    },
+    {
+      "id": 55,
+      "question": "Tôi có thể để lại phản hồi cho ứng dụng không?",
+      "expected_answer": "Hiện tại, ứng dụng không hỗ trợ tính năng gửi phản hồi.",
+      "ai_answer": "Xin lỗi, hiện tại tôi không có thông tin cụ thể về tính năng để lại phản hồi trên ứng dụng TourXport. Bạn có thể kiểm tra trong phần cài đặt hoặc thông tin ứng dụng để xem có mục phản hồi nào không.",
+      "score": 60,
+      "reason": "Câu trả lời thực tế không trực tiếp xác nhận việc ứng dụng có hỗ trợ tính năng gửi phản hồi hay không, mà chỉ gợi ý người dùng kiểm tra trong phần cài đặt. Điều này không hoàn toàn phù hợp với câu trả lời mong đợi, nhưng vẫn cung cấp thông tin hữu ích.",
+      "latency_sec": 1.88
+    },
+    {
+      "id": 56,
+      "question": "Tôi có thể thay đổi ngôn ngữ trong lúc sử dụng không?",
+      "expected_answer": "Bạn cần vào phần cài đặt ngôn ngữ để thay đổi ngôn ngữ, không thể thay đổi trực tiếp trong khi sử dụng.",
+      "ai_answer": "Có, bạn có thể thay đổi ngôn ngữ trong lúc sử dụng. Để thực hiện, hãy làm theo các bước sau:\n\n1. Chuyển sang Tab Cá Nhân (Profile) ở góc phải dưới cùng màn hình.\n2. Chọn mục **Ngôn ngữ**.\n3. Chọn ngôn ngữ bạn muốn sử dụng (Tiếng Việt / English).",
+      "score": 0,
+      "reason": "Câu trả lời thực tế hoàn toàn trái ngược với câu trả lời mong đợi, cho rằng người dùng có thể thay đổi ngôn ngữ trong khi sử dụng, trong khi câu trả lời mong đợi khẳng định rằng điều này không thể thực hiện được.",
+      "latency_sec": 2.47
+    },
+    {
+      "id": 57,
+      "question": "Có thể xem thông tin liên lạc của địa điểm không?",
+      "expected_answer": "Có, thông tin liên lạc sẽ hiển thị trong chi tiết địa điểm khi bạn truy cập.",
+      "ai_answer": "Xin lỗi, hiện tại ứng dụng TourXport không hỗ trợ tính năng xem thông tin liên lạc của địa điểm. Bạn có thể tìm kiếm và xem chi tiết về hình ảnh, mô tả và đánh giá của địa điểm đó.",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không đáp ứng được yêu cầu của câu hỏi, vì nó khẳng định rằng không thể xem thông tin liên lạc, trong khi câu trả lời mong đợi lại cho biết rằng thông tin này có thể được xem. Mặc dù có thông tin bổ sung về các tính năng khác, nhưng điều này không liên quan đến câu hỏi chính.",
+      "latency_sec": 2.21
+    },
+    {
+      "id": 58,
+      "question": "Tôi có thể tìm kiếm địa điểm theo khu vực không?",
+      "expected_answer": "Có, bạn có thể tìm kiếm theo tên khu vực trong thanh tìm kiếm.",
+      "ai_answer": "Có, bạn có thể tìm kiếm địa điểm theo khu vực bằng cách sử dụng thanh tìm kiếm (Search Bar) ở trên cùng của Trang chủ. Bạn chỉ cần gõ tên địa danh, khách sạn hoặc nhà hàng mà bạn muốn tìm.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách tìm kiếm địa điểm theo khu vực, nhưng vẫn giữ nguyên ý nghĩa chính của câu trả lời mong đợi.",
+      "latency_sec": 2.15
+    },
+    {
+      "id": 59,
+      "question": "Có thể xem bản đồ offline không?",
+      "expected_answer": "Hiện tại, ứng dụng không hỗ trợ xem bản đồ offline.",
+      "ai_answer": "Xin lỗi, hiện tại tôi không có thông tin cụ thể về tính năng xem bản đồ offline trong ứng dụng TourXport. Vui lòng kiểm tra lại trong ứng dụng hoặc liên hệ với bộ phận hỗ trợ của TourXport để biết thêm chi tiết.",
+      "score": 40,
+      "reason": "Câu trả lời thực tế không trực tiếp xác nhận khả năng xem bản đồ offline mà chỉ đề cập đến việc không có thông tin cụ thể, do đó không đáp ứng được yêu cầu của câu hỏi.",
+      "latency_sec": 2.35
+    },
+    {
+      "id": 60,
+      "question": "Có thể xem địa điểm gần nhất không?",
+      "expected_answer": "Có, bạn có thể xem địa điểm gần nhất thông qua tính năng Bản Đồ.",
+      "ai_answer": "Xin lỗi, hiện tại TourXport chưa hỗ trợ tính năng xem địa điểm gần nhất. Bạn có thể tìm kiếm địa danh, khách sạn hoặc nhà hàng bằng cách sử dụng thanh tìm kiếm trên Trang chủ.",
+      "score": 30,
+      "reason": "Câu trả lời thực tế không đáp ứng yêu cầu của câu hỏi về việc xem địa điểm gần nhất, mà thay vào đó thông báo rằng tính năng này không được hỗ trợ. Điều này làm giảm độ chính xác của câu trả lời.",
+      "latency_sec": 1.97
+    },
+    {
+      "id": 61,
+      "question": "Có thể tìm kiếm theo phong cách du lịch không?",
+      "expected_answer": "Có, bạn có thể chọn các thẻ tag sở thích khác nhau trong khảo sát để tìm kiếm phong cách du lịch.",
+      "ai_answer": "Xin lỗi, hiện tại bạn chỉ có thể tìm kiếm theo tên địa danh, khách sạn hoặc nhà hàng trong ứng dụng TourXport.",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không đề cập đến việc tìm kiếm theo phong cách du lịch mà chỉ nói về việc tìm kiếm theo tên địa danh, khách sạn hoặc nhà hàng, do đó không đáp ứng được yêu cầu của câu hỏi.",
+      "latency_sec": 1.73
+    },
+    {
+      "id": 62,
+      "question": "Có hỗ trợ đăng nhập bằng Facebook không?",
+      "expected_answer": "Hiện tại, ứng dụng chỉ hỗ trợ đăng nhập qua Email hoặc Số điện thoại.",
+      "ai_answer": "Xin lỗi, hiện tại ứng dụng TourXport chỉ hỗ trợ đăng nhập qua Email hoặc Số điện thoại.",
+      "score": 100,
+      "reason": "Câu trả lời thực tế hoàn toàn phù hợp với câu trả lời mong đợi, cung cấp thông tin chính xác về việc không hỗ trợ đăng nhập bằng Facebook và chỉ hỗ trợ đăng nhập qua Email hoặc Số điện thoại.",
+      "latency_sec": 1.85
+    },
+    {
+      "id": 63,
+      "question": "Có thể tìm kiếm địa điểm theo giá không?",
+      "expected_answer": "Hiện tại, ứng dụng không hỗ trợ tìm kiếm theo giá địa điểm.",
+      "ai_answer": "Hiện tại, ứng dụng TourXport chỉ hỗ trợ tìm kiếm theo tên địa danh, khách sạn hoặc nhà hàng qua thanh tìm kiếm trên Trang chủ. Không có tính năng tìm kiếm theo giá.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách tìm kiếm trong ứng dụng, nhưng vẫn xác nhận rằng không có tính năng tìm kiếm theo giá, phù hợp với câu trả lời mong đợi.",
+      "latency_sec": 1.82
+    },
+    {
+      "id": 64,
+      "question": "Có thể tìm kiếm các tour theo ngày không?",
+      "expected_answer": "Hiện tại, ứng dụng không hỗ trợ tìm kiếm các tour theo ngày cụ thể.",
+      "ai_answer": "Xin lỗi, hiện tại trong tài liệu hướng dẫn không có thông tin về tính năng tìm kiếm các tour theo ngày trong ứng dụng TourXport. Nếu bạn cần hỗ trợ về các tính năng khác, vui lòng cho tôi biết!",
+      "score": 70,
+      "reason": "Câu trả lời thực tế không trực tiếp xác nhận rằng ứng dụng không hỗ trợ tìm kiếm tour theo ngày, mà chỉ nói rằng không có thông tin trong tài liệu hướng dẫn. Tuy nhiên, nó vẫn đề cập đến việc không có tính năng này, nên điểm số không thấp hơn 70.",
+      "latency_sec": 2.14
+    },
+    {
+      "id": 65,
+      "question": "Có hỗ trợ chọn nhiều sở thích không?",
+      "expected_answer": "Có, bạn có thể chọn nhiều sở thích khác nhau trong khảo sát để tạo lịch trình.",
+      "ai_answer": "Rất tiếc, tôi không có thông tin cụ thể về tính năng chọn nhiều sở thích trong ứng dụng TourXport. Bạn có thể kiểm tra trực tiếp trong ứng dụng hoặc liên hệ với bộ phận hỗ trợ của TourXport để biết thêm chi tiết.",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không cung cấp thông tin về việc có hỗ trợ chọn nhiều sở thích hay không, mà chỉ đề cập đến việc không có thông tin cụ thể và khuyên người dùng kiểm tra trong ứng dụng hoặc liên hệ với bộ phận hỗ trợ. Điều này không đáp ứng được yêu cầu của câu hỏi.",
+      "latency_sec": 2.6
+    },
+    {
+      "id": 66,
+      "question": "Có thể lưu lịch trình vào điện thoại không?",
+      "expected_answer": "Hiện tại, ứng dụng không hỗ trợ lưu lịch trình vào điện thoại.",
+      "ai_answer": "Xin lỗi, hiện tại ứng dụng TourXport chỉ hỗ trợ lưu lịch trình vào tài khoản của bạn trong ứng dụng. Bạn có thể nhấn nút **\"Lưu lại\"** trên màn hình kết quả lịch trình để lưu trữ vào tài khoản.",
+      "score": 70,
+      "reason": "Câu trả lời thực tế không trực tiếp trả lời câu hỏi về việc lưu lịch trình vào điện thoại, mà chỉ đề cập đến việc lưu vào tài khoản trong ứng dụng. Tuy nhiên, nó vẫn cung cấp thông tin hữu ích về cách lưu trữ lịch trình, nhưng không hoàn toàn phù hợp với câu trả lời mong đợi.",
+      "latency_sec": 2.49
+    },
+    {
+      "id": 67,
+      "question": "Có thể thêm ghi chú vào lịch trình không?",
+      "expected_answer": "Hiện tại, ứng dụng không hỗ trợ thêm ghi chú vào lịch trình.",
+      "ai_answer": "Hiện tại, theo tài liệu hướng dẫn sử dụng, TourXport chưa hỗ trợ tính năng thêm ghi chú vào lịch trình.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin tương tự như câu trả lời mong đợi, nhưng có thêm chi tiết về 'TourXport' và 'tài liệu hướng dẫn sử dụng', điều này làm cho câu trả lời chính xác hơn nhưng không hoàn toàn giống với câu trả lời mong đợi.",
+      "latency_sec": 2.18
+    },
+    {
+      "id": 68,
+      "question": "Có thể tìm kiếm theo tình trạng thời tiết không?",
+      "expected_answer": "Hiện tại, ứng dụng không hỗ trợ tìm kiếm địa điểm theo tình trạng thời tiết.",
+      "ai_answer": "Xin lỗi, hiện tại tôi không có thông tin về tính năng tìm kiếm theo tình trạng thời tiết trong ứng dụng TourXport. Nếu bạn cần thêm thông tin hoặc có câu hỏi khác về các tính năng trong app, hãy cho tôi biết!",
+      "score": 60,
+      "reason": "Câu trả lời thực tế không trực tiếp xác nhận việc không hỗ trợ tìm kiếm theo tình trạng thời tiết, mà chỉ nói rằng không có thông tin về tính năng này. Điều này làm giảm độ chính xác so với câu trả lời mong đợi.",
+      "latency_sec": 1.98
+    },
+    {
+      "id": 69,
+      "question": "Có thể tạo lịch trình cho nhóm không?",
+      "expected_answer": "Có, bạn có thể tạo lịch trình cho nhóm bằng cách nhập số lượng người trong khảo sát.",
+      "ai_answer": "Có, bạn có thể tạo lịch trình cho nhóm bằng cách làm theo các bước sau:\n\n1. Từ thanh điều hướng dưới cùng, chọn Tab **Tạo Lịch Trình**.\n2. Điền thông tin vào bài khảo sát, trong đó bạn cần nhập số lượng người tham gia, bao gồm cả người lớn và trẻ em (tối đa 5 người).\n3. Nhấn nút **\"Hoàn tất\"** hoặc **\"Tạo lịch trình\"** để hoàn thiện.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách tạo lịch trình cho nhóm, bao gồm các bước cụ thể, nhưng vẫn giữ nguyên ý nghĩa chính là có thể tạo lịch trình cho nhóm bằng cách nhập số lượng người. Tuy nhiên, nó không hoàn toàn khớp với câu trả lời mong đợi về việc chỉ cần nhập số lượng người trong khảo sát.",
+      "latency_sec": 3.09
+    },
+    {
+      "id": 70,
+      "question": "Có thể thấy danh sách các địa điểm đã tìm kiếm không?",
+      "expected_answer": "Hiện tại, ứng dụng không hỗ trợ xem danh sách các địa điểm đã tìm kiếm.",
+      "ai_answer": "Hiện tại, ứng dụng TourXport không hỗ trợ tính năng xem lại danh sách các địa điểm đã tìm kiếm. Bạn có thể sử dụng thanh tìm kiếm trên Trang chủ để tìm kiếm lại địa điểm mong muốn.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế xác nhận rằng ứng dụng không hỗ trợ xem danh sách các địa điểm đã tìm kiếm, nhưng bổ sung thêm thông tin về việc sử dụng thanh tìm kiếm, điều này không hoàn toàn nằm trong yêu cầu của câu hỏi ban đầu.",
+      "latency_sec": 2.25
+    },
+    {
+      "id": 71,
+      "question": "Có thể xem lại lịch trình đã tạo không?",
+      "expected_answer": "Có, bạn có thể xem lại lịch trình đã tạo trong Bộ Sưu Tập.",
+      "ai_answer": "Xin lỗi, hiện tại trong tài liệu hướng dẫn không có thông tin về việc xem lại lịch trình đã tạo. Bạn có thể lưu lại lịch trình sau khi tạo để tránh bị mất khi thoát ra.",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không cung cấp thông tin về việc có thể xem lại lịch trình đã tạo, mà chỉ nói rằng không có thông tin trong tài liệu hướng dẫn. Điều này không đáp ứng được yêu cầu của câu hỏi.",
+      "latency_sec": 2.15
+    },
+    {
+      "id": 72,
+      "question": "Có thể tìm kiếm các địa điểm ít người biết không?",
+      "expected_answer": "Có, bạn có thể tìm kiếm bằng cách gõ tên địa điểm cụ thể trong thanh tìm kiếm.",
+      "ai_answer": "Để tìm kiếm các địa điểm, bạn có thể sử dụng thanh tìm kiếm (Search Bar) ở trên cùng của Trang chủ. Nhập tên địa danh mà bạn muốn tìm kiếm, dù là địa điểm nổi tiếng hay ít người biết, đều có thể tìm thấy nếu có trong cơ sở dữ liệu của app.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách tìm kiếm địa điểm, bao gồm cả việc sử dụng thanh tìm kiếm và nhấn mạnh rằng cả địa điểm nổi tiếng và ít người biết đều có thể tìm thấy. Tuy nhiên, nó không hoàn toàn khớp với câu trả lời mong đợi vì có thêm thông tin về cơ sở dữ liệu của ứng dụng.",
+      "latency_sec": 2.32
+    },
+    {
+      "id": 73,
+      "question": "Có hỗ trợ cho người dùng khuyết tật không?",
+      "expected_answer": "Hiện tại, ứng dụng không có thông tin hỗ trợ đặc biệt cho người dùng khuyết tật.",
+      "ai_answer": "Xin lỗi, hiện tại tôi không có thông tin cụ thể về hỗ trợ cho người dùng khuyết tật trong ứng dụng TourXport. Bạn có thể kiểm tra mục \"Trợ giúp\" hoặc \"Cài đặt\" trong ứng dụng để tìm thêm thông tin chi tiết hoặc liên hệ trực tiếp với đội ngũ hỗ trợ của TourXport.",
+      "score": 70,
+      "reason": "Câu trả lời thực tế không trực tiếp xác nhận việc không có hỗ trợ cho người dùng khuyết tật mà chỉ nói rằng không có thông tin cụ thể, đồng thời gợi ý người dùng kiểm tra thêm. Điều này làm giảm độ chính xác so với câu trả lời mong đợi.",
+      "latency_sec": 2.34
+    },
+    {
+      "id": 74,
+      "question": "Có thể lưu lại kỷ niệm cùng với ảnh không?",
+      "expected_answer": "Có, bạn có thể lưu lại kỷ niệm cùng với ảnh trong Nhật Ký Du Lịch.",
+      "ai_answer": "Có, bạn có thể lưu lại kỷ niệm cùng với ảnh trong tính năng Nhật Ký Du Lịch. Truy cập vào `travel_memory_screen.dart` để viết lại cảm nghĩ và up ảnh sau chuyến đi.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách lưu lại kỷ niệm cùng với ảnh, nhưng vẫn giữ nguyên ý nghĩa chính của câu trả lời mong đợi.",
+      "latency_sec": 2.09
+    },
+    {
+      "id": 75,
+      "question": "Có thể xem các điểm đến nổi bật tại một tỉnh không?",
+      "expected_answer": "Có, bạn có thể xem các điểm đến nổi bật khi truy cập vào chi tiết tỉnh/thành phố.",
+      "ai_answer": "Có thể! Để xem các điểm đến nổi bật tại một tỉnh, bạn hãy làm theo các bước sau:\n\n1. Tại Trang chủ, sử dụng thanh tìm kiếm để nhập tên tỉnh mà bạn quan tâm.\n2. Chọn tỉnh từ danh sách kết quả tìm kiếm.\n3. Trên màn hình chi tiết Tỉnh/Thành, bạn sẽ thấy tổng quan văn hóa, đặc sản và các địa điểm nổi tiếng thuộc tỉnh đó.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách xem các điểm đến nổi bật tại một tỉnh, mặc dù không hoàn toàn giống với câu trả lời mong đợi. Tuy nhiên, nó vẫn đáp ứng đúng yêu cầu của câu hỏi và bổ sung thêm hướng dẫn cụ thể.",
+      "latency_sec": 2.4
+    },
+    {
+      "id": 76,
+      "question": "Có thể xem đánh giá của những người nổi tiếng không?",
+      "expected_answer": "Hiện tại, ứng dụng không hỗ trợ xem đánh giá của những người nổi tiếng.",
+      "ai_answer": "Xin lỗi, tôi không có thông tin về tính năng này trong ứng dụng TourXport. Bạn có thể kiểm tra trong ứng dụng hoặc liên hệ với bộ phận hỗ trợ khách hàng của TourXport để biết thêm chi tiết.",
+      "score": 50,
+      "reason": "Câu trả lời thực tế không trực tiếp trả lời câu hỏi về việc xem đánh giá của những người nổi tiếng, mà chỉ đề cập đến việc không có thông tin cụ thể trong ứng dụng. Mặc dù có một phần liên quan đến việc kiểm tra trong ứng dụng, nhưng không rõ ràng về việc đánh giá của người nổi tiếng có được hỗ trợ hay không.",
+      "latency_sec": 2.13
+    },
+    {
+      "id": 77,
+      "question": "Có thể tìm kiếm các địa điểm văn hóa không?",
+      "expected_answer": "Có, bạn có thể tìm kiếm các địa điểm văn hóa bằng cách gõ từ khóa vào thanh tìm kiếm.",
+      "ai_answer": "Có thể! Bạn hãy sử dụng thanh tìm kiếm (Search Bar) ở trên cùng của Trang chủ để gõ tên địa danh hoặc từ khóa liên quan đến địa điểm văn hóa mà bạn muốn tìm kiếm.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách tìm kiếm địa điểm văn hóa, nhưng vẫn giữ nguyên ý nghĩa chính của câu trả lời mong đợi. Sự khác biệt chủ yếu nằm ở mức độ chi tiết và cách diễn đạt.",
+      "latency_sec": 2.14
+    },
+    {
+      "id": 78,
+      "question": "Có thể xem các tour đã lưu không?",
+      "expected_answer": "Có, bạn có thể xem lại các tour đã lưu trong Tab Bộ Sưu Tập.",
+      "ai_answer": "Để xem các tour đã lưu, bạn hãy làm theo các bước sau:\n\n1. Từ thanh điều hướng dưới cùng, chọn Tab **Bộ Sưu Tập**.\n2. Trong mục **Tour đã lưu**, bạn sẽ thấy danh sách các lịch trình mà bạn đã tạo từ AI và bấm \"Lưu lại\".\n3. Nhấn vào từng tour để xem lại chi tiết lộ trình.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết về cách xem các tour đã lưu, bao gồm các bước cụ thể, nhưng không hoàn toàn khớp với câu trả lời mong đợi vì thiếu phần tóm tắt ngắn gọn. Tuy nhiên, nội dung vẫn đúng và đầy đủ.",
+      "latency_sec": 2.27
+    },
+    {
+      "id": 79,
+      "question": "Có thể xem thông tin về các nhà hàng tại địa điểm không?",
+      "expected_answer": "Có, bạn có thể xem thông tin về các nhà hàng trong chi tiết địa điểm.",
+      "ai_answer": "Có thể! Để xem thông tin về các nhà hàng tại địa điểm, bạn làm như sau:\n\n1. Tại Trang chủ, sử dụng thanh tìm kiếm ở trên cùng.\n2. Nhập tên địa danh mà bạn quan tâm.\n3. Bấm vào địa điểm trong danh sách kết quả tìm kiếm.\n4. Xem chi tiết về địa điểm, bao gồm thông tin về các nhà hàng nếu có.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết về cách xem thông tin nhà hàng tại địa điểm, mặc dù không hoàn toàn giống với câu trả lời mong đợi nhưng vẫn đúng về nội dung và ý nghĩa.",
+      "latency_sec": 2.7
+    },
+    {
+      "id": 80,
+      "question": "Có thể tìm kiếm theo đặc sản không?",
+      "expected_answer": "Hiện tại, ứng dụng không hỗ trợ tìm kiếm theo đặc sản.",
+      "ai_answer": "Rất tiếc, bạn chỉ có thể tìm kiếm theo tên địa danh, khách sạn hoặc nhà hàng. Không hỗ trợ tìm kiếm theo đặc sản.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin rõ ràng về việc không hỗ trợ tìm kiếm theo đặc sản, mặc dù có thêm thông tin về các tùy chọn tìm kiếm khác. Điều này vẫn giữ nguyên ý nghĩa của câu trả lời mong đợi.",
+      "latency_sec": 1.89
+    },
+    {
+      "id": 81,
+      "question": "Có thể xem lịch trình theo ngày không?",
+      "expected_answer": "Có, bạn có thể xem lịch trình phân bổ theo từng ngày sau khi tạo lịch trình.",
+      "ai_answer": "Có, sau khi bạn tạo lịch trình hoàn tất, AI sẽ trả về kết quả lịch trình với thông tin phân bổ theo từng ngày. Bạn có thể xem chi tiết từng ngày, ví dụ: Ngày 1 đi đâu, trưa ăn gì, tối nghỉ ở đâu.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về việc xem lịch trình theo ngày, nhưng vẫn giữ nguyên ý nghĩa chính của câu trả lời mong đợi. Sự khác biệt chủ yếu nằm ở mức độ chi tiết.",
+      "latency_sec": 2.38
+    },
+    {
+      "id": 82,
+      "question": "Có thể tạo lịch trình cho chuyến đi nước ngoài không?",
+      "expected_answer": "Có, bạn có thể tạo lịch trình cho chuyến đi nước ngoài bằng cách nhập địa điểm phù hợp.",
+      "ai_answer": "Xin lỗi, hiện tại ứng dụng TourXport chỉ hỗ trợ tạo lịch trình cho các địa điểm trong nước.",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không đáp ứng được yêu cầu của câu hỏi về việc tạo lịch trình cho chuyến đi nước ngoài, mà chỉ nói về việc hỗ trợ cho các địa điểm trong nước, dẫn đến sự không phù hợp lớn về nội dung.",
+      "latency_sec": 1.79
+    },
+    {
+      "id": 83,
+      "question": "Có thể tìm kiếm theo tên người không?",
+      "expected_answer": "Hiện tại, ứng dụng không hỗ trợ tìm kiếm theo tên người.",
+      "ai_answer": "Xin lỗi, hiện tại tôi không có thông tin cụ thể về tính năng tìm kiếm theo tên người trong ứng dụng TourXport. Bạn có thể kiểm tra trong ứng dụng hoặc liên hệ với bộ phận hỗ trợ khách hàng của TourXport để được giúp đỡ thêm.",
+      "score": 60,
+      "reason": "Câu trả lời thực tế không trực tiếp xác nhận rằng ứng dụng không hỗ trợ tìm kiếm theo tên người, mà chỉ đề xuất kiểm tra trong ứng dụng hoặc liên hệ với bộ phận hỗ trợ. Điều này làm giảm độ chính xác so với câu trả lời mong đợi.",
+      "latency_sec": 1.99
+    },
+    {
+      "id": 84,
+      "question": "Có thể xem các địa điểm đã lưu theo danh mục không?",
+      "expected_answer": "Có, bạn có thể xem các địa điểm đã lưu theo danh mục trong Bộ Sưu Tập.",
+      "ai_answer": "Có, bạn có thể xem các địa điểm đã lưu trong mục **Địa điểm đã lưu**. Để làm điều này, hãy chuyển sang Tab **Bộ Sưu Tập** ở thanh điều hướng và chọn **Địa điểm đã lưu**. Tại đây, bạn sẽ thấy các khách sạn, nhà hàng và danh lam thắng cảnh mà bạn đã thả tim (Save).",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách xem các địa điểm đã lưu, nhưng không nhắc đến việc phân loại theo danh mục như trong câu trả lời mong đợi. Tuy nhiên, ý nghĩa chính vẫn được giữ nguyên.",
+      "latency_sec": 2.45
+    },
+    {
+      "id": 85,
+      "question": "Có thể tìm kiếm theo thời gian không?",
+      "expected_answer": "Hiện tại, ứng dụng không hỗ trợ tìm kiếm theo thời gian cụ thể.",
+      "ai_answer": "Xin lỗi, hiện tại tôi không có thông tin cụ thể về tính năng tìm kiếm theo thời gian trong ứng dụng TourXport. Bạn có thể kiểm tra trực tiếp trên ứng dụng hoặc liên hệ với bộ phận hỗ trợ của TourXport để biết thêm chi tiết.",
+      "score": 50,
+      "reason": "Câu trả lời thực tế không trực tiếp xác nhận khả năng tìm kiếm theo thời gian mà chỉ đề xuất kiểm tra ứng dụng hoặc liên hệ hỗ trợ, do đó không đáp ứng đầy đủ nội dung mong đợi.",
+      "latency_sec": 2.38
+    },
+    {
+      "id": 86,
+      "question": "Có thể xem địa điểm theo phong cách không?",
+      "expected_answer": "Có, bạn có thể chọn phong cách du lịch thông qua các thẻ tag trong khảo sát.",
+      "ai_answer": "Hiện tại trong ứng dụng TourXport, bạn có thể tìm kiếm và xem chi tiết địa điểm theo tên, nhưng không có tính năng xem địa điểm theo phong cách. Bạn có thể sử dụng thanh tìm kiếm để tìm kiếm các địa điểm cụ thể, khách sạn hoặc nhà hàng.",
+      "score": 30,
+      "reason": "Câu trả lời thực tế không đáp ứng được yêu cầu về việc xem địa điểm theo phong cách, mà chỉ đề cập đến việc tìm kiếm theo tên mà không có thông tin về phong cách du lịch. Điều này làm giảm độ chính xác của câu trả lời.",
+      "latency_sec": 2.33
+    },
+    {
+      "id": 87,
+      "question": "Có thể tìm kiếm theo đánh giá không?",
+      "expected_answer": "Hiện tại, ứng dụng không hỗ trợ tìm kiếm địa điểm theo đánh giá.",
+      "ai_answer": "Hiện tại, ứng dụng TourXport không hỗ trợ tính năng tìm kiếm theo đánh giá. Bạn có thể viết đánh giá cho các địa điểm và xem đánh giá của người khác, nhưng không thể tìm kiếm theo tiêu chí này.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về ứng dụng TourXport, nhưng vẫn giữ nguyên ý nghĩa chính là không hỗ trợ tìm kiếm theo đánh giá. Điểm trừ là sự bổ sung thông tin không cần thiết có thể làm giảm độ chính xác so với câu trả lời mong đợi.",
+      "latency_sec": 2.2
+    },
+    {
+      "id": 88,
+      "question": "Có thể xem các hình ảnh của địa điểm không?",
+      "expected_answer": "Có, bạn có thể xem hình ảnh của địa điểm trong chi tiết địa điểm khi truy cập.",
+      "ai_answer": "Xin lỗi, hiện tại mình không có thông tin cụ thể về tính năng xem hình ảnh của địa điểm trong ứng dụng TourXport. Bạn có thể kiểm tra trực tiếp trong app hoặc liên hệ với bộ phận hỗ trợ khách hàng của TourXport để biết thêm chi tiết.",
+      "score": 30,
+      "reason": "Câu trả lời thực tế không trực tiếp trả lời câu hỏi về việc có thể xem hình ảnh của địa điểm hay không, mà chỉ cung cấp thông tin về việc không có thông tin cụ thể và gợi ý kiểm tra trong ứng dụng hoặc liên hệ hỗ trợ. Điều này làm giảm độ chính xác của câu trả lời.",
+      "latency_sec": 2.13
+    },
+    {
+      "id": 89,
+      "question": "Có thể xem thông tin về các sự kiện tại địa điểm không?",
+      "expected_answer": "Hiện tại, ứng dụng không hỗ trợ xem thông tin về các sự kiện tại địa điểm.",
+      "ai_answer": "Xin lỗi, hiện tại tôi không có thông tin cụ thể về việc xem sự kiện tại các địa điểm trong ứng dụng TourXport. Bạn có thể kiểm tra trực tiếp trên app hoặc hỏi thêm thông tin từ bộ phận hỗ trợ khách hàng của TourXport.",
+      "score": 70,
+      "reason": "Câu trả lời thực tế không trực tiếp xác nhận rằng ứng dụng không hỗ trợ xem thông tin về sự kiện, mà chỉ nói rằng không có thông tin cụ thể và gợi ý kiểm tra trên app hoặc hỏi bộ phận hỗ trợ. Điều này làm giảm độ chính xác so với câu trả lời mong đợi.",
+      "latency_sec": 2.21
+    },
+    {
+      "id": 90,
+      "question": "Có thể tìm kiếm theo loại hình du lịch không?",
+      "expected_answer": "Có, bạn có thể tìm kiếm địa điểm theo loại hình du lịch thông qua các thẻ tag.",
+      "ai_answer": "Hiện tại, bạn chỉ có thể tìm kiếm theo tên địa danh, khách sạn hoặc nhà hàng thông qua thanh tìm kiếm trên Trang chủ. Không có tính năng tìm kiếm theo loại hình du lịch.",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không đề cập đến khả năng tìm kiếm theo loại hình du lịch mà chỉ nói về việc tìm kiếm theo tên địa danh, khách sạn hoặc nhà hàng, hoàn toàn trái ngược với câu trả lời mong đợi.",
+      "latency_sec": 2.14
+    },
+    {
+      "id": 91,
+      "question": "Có thể lưu lại các tour nổi bật không?",
+      "expected_answer": "Có, bạn có thể lưu lại các tour nổi bật vào Bộ Sưu Tập.",
+      "ai_answer": "Bạn có thể lưu lại các lịch trình (tour) mà bạn đã tạo từ AI. Khi AI tạo ra lịch trình xong, hãy nhấn nút **\"Lưu lại\"** trên màn hình kết quả lịch trình để lưu trữ vào tài khoản của bạn. Nếu không lưu lại, lịch trình sẽ bị mất khi bạn thoát ra. Bạn có thể xem lại các lịch trình đã lưu trong Tab **Bộ Sưu Tập**.",
+      "score": 85,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết về cách lưu các tour nổi bật, bao gồm hướng dẫn cụ thể và nhấn mạnh tầm quan trọng của việc lưu trữ. Mặc dù không sử dụng từ 'Bộ Sưu Tập' ngay lập tức, nhưng nó vẫn truyền đạt ý nghĩa tương tự và có liên quan đến câu hỏi ban đầu.",
+      "latency_sec": 2.39
+    },
+    {
+      "id": 92,
+      "question": "Có thể tìm kiếm theo bộ phim không?",
+      "expected_answer": "Hiện tại, ứng dụng không hỗ trợ tìm kiếm theo bộ phim.",
+      "ai_answer": "Xin lỗi, theo như tài liệu hướng dẫn mà tôi có, ứng dụng TourXport không hỗ trợ tìm kiếm theo bộ phim. Nếu bạn cần thêm thông tin về các tính năng khác của ứng dụng, hãy cho tôi biết nhé!",
+      "score": 90,
+      "reason": "Câu trả lời thực tế đã cung cấp thông tin chính xác rằng ứng dụng không hỗ trợ tìm kiếm theo bộ phim, nhưng có thêm chi tiết về tài liệu hướng dẫn và mời người dùng hỏi thêm, điều này không hoàn toàn cần thiết cho câu hỏi ban đầu.",
+      "latency_sec": 2.04
+    },
+    {
+      "id": 93,
+      "question": "Có thể tìm kiếm theo tên món ăn không?",
+      "expected_answer": "Hiện tại, ứng dụng không hỗ trợ tìm kiếm theo tên món ăn.",
+      "ai_answer": "Xin lỗi, mình không có thông tin về việc TourXport có tính năng tìm kiếm theo tên món ăn hay không. Vui lòng kiểm tra trong app hoặc tài liệu hướng dẫn của TourXport để biết thêm chi tiết.",
+      "score": 40,
+      "reason": "Câu trả lời thực tế không trực tiếp trả lời câu hỏi về việc tìm kiếm theo tên món ăn, mà chỉ đề cập đến việc không có thông tin cụ thể và khuyên người dùng kiểm tra tài liệu. Điều này không đáp ứng được yêu cầu của câu hỏi.",
+      "latency_sec": 2.08
+    },
+    {
+      "id": 94,
+      "question": "Có thể xem địa điểm theo bậc sao không?",
+      "expected_answer": "Có, bạn có thể xem địa điểm theo bậc sao trong mục đánh giá của từng địa điểm.",
+      "ai_answer": "Xin lỗi, hiện tại ứng dụng TourXport chưa hỗ trợ tính năng xem địa điểm theo bậc sao. Bạn có thể tìm kiếm địa điểm và xem chi tiết từng địa điểm, bao gồm hình ảnh và mô tả.",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không đáp ứng được yêu cầu của câu hỏi về việc xem địa điểm theo bậc sao, mà lại thông báo rằng tính năng này không có. Điều này làm giảm độ chính xác của câu trả lời.",
+      "latency_sec": 3.63
+    },
+    {
+      "id": 95,
+      "question": "Có thể tìm kiếm theo độ tuổi không?",
+      "expected_answer": "Hiện tại, ứng dụng không hỗ trợ tìm kiếm theo độ tuổi.",
+      "ai_answer": "Xin lỗi, hiện tại tôi không có thông tin về tính năng tìm kiếm theo độ tuổi trên ứng dụng TourXport. Bạn có thể thử kiểm tra trong ứng dụng hoặc liên hệ với bộ phận hỗ trợ khách hàng của TourXport để biết thêm chi tiết.",
+      "score": 60,
+      "reason": "Câu trả lời thực tế không trực tiếp xác nhận rằng ứng dụng không hỗ trợ tìm kiếm theo độ tuổi, mà chỉ nói rằng không có thông tin cụ thể. Điều này làm giảm độ chính xác so với câu trả lời mong đợi.",
+      "latency_sec": 2.2
+    },
+    {
+      "id": 96,
+      "question": "Có thể tìm kiếm theo giới tính không?",
+      "expected_answer": "Hiện tại, ứng dụng không hỗ trợ tìm kiếm theo giới tính.",
+      "ai_answer": "Xin lỗi, tôi không có thông tin về tính năng tìm kiếm theo giới tính trong ứng dụng TourXport. Bạn cần thêm thông tin khác về ứng dụng không?",
+      "score": 50,
+      "reason": "Câu trả lời thực tế không trực tiếp trả lời câu hỏi về việc tìm kiếm theo giới tính, mà chỉ nói rằng không có thông tin về tính năng này, dẫn đến sự không rõ ràng và thiếu chính xác so với câu trả lời mong đợi.",
+      "latency_sec": 2.15
+    },
+    {
+      "id": 97,
+      "question": "Có thể tạo lịch trình cho gia đình không?",
+      "expected_answer": "Có, bạn có thể tạo lịch trình cho gia đình bằng cách nhập số lượng người trong khảo sát.",
+      "ai_answer": "Có, bạn có thể tạo lịch trình cho gia đình bằng cách sử dụng tính năng Tạo Lịch Trình Thông Minh. \n\n- **Bước 1:** Chọn Tab **Tạo Lịch Trình** từ thanh điều hướng dưới cùng.\n- **Bước 2:** Điền thông tin trong bài khảo sát, bao gồm địa điểm muốn đến, số lượng người tham gia (người lớn và trẻ em), số ngày đi, ngân sách và sở thích.\n- **Bước 3:** Nhấn **\"Hoàn tất\"** hoặc **\"Tạo lịch trình\"** để hoàn tất quá trình. \n\nChúc bạn có một chuyến đi thú vị cùng gia đình!",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách tạo lịch trình cho gia đình, bao gồm các bước cụ thể, nhưng vẫn giữ được ý nghĩa chính là có thể tạo lịch trình cho gia đình. Tuy nhiên, nó không nhấn mạnh việc nhập số lượng người trong khảo sát như trong câu trả lời mong đợi.",
+      "latency_sec": 5.25
+    },
+    {
+      "id": 98,
+      "question": "Có thể tìm kiếm theo chi tiết không?",
+      "expected_answer": "Hiện tại, ứng dụng không hỗ trợ tìm kiếm theo chi tiết.",
+      "ai_answer": "Trong ứng dụng TourXport, bạn có thể tìm kiếm theo tên địa danh, khách sạn hoặc nhà hàng bằng cách sử dụng thanh tìm kiếm (Search Bar) ở trên cùng của Trang chủ. Tuy nhiên, bạn không thể tìm kiếm theo chi tiết cụ thể khác.",
+      "score": 70,
+      "reason": "Câu trả lời thực tế cung cấp thông tin về cách tìm kiếm trong ứng dụng, nhưng không nêu rõ rằng ứng dụng không hỗ trợ tìm kiếm theo chi tiết, mà chỉ đề cập đến việc không thể tìm kiếm theo chi tiết cụ thể khác. Điều này làm giảm độ chính xác so với câu trả lời mong đợi.",
+      "latency_sec": 1.97
+    },
+    {
+      "id": 99,
+      "question": "Có thể tìm kiếm theo sở thích không?",
+      "expected_answer": "Có, bạn có thể chọn sở thích trong khảo sát để tìm kiếm lịch trình phù hợp.",
+      "ai_answer": "Xin lỗi, hiện tại tôi không có thông tin cụ thể về tính năng tìm kiếm theo sở thích trong ứng dụng TourXport. Bạn có thể kiểm tra trong ứng dụng để biết thêm chi tiết hoặc hỏi thêm thông tin về các tính năng cụ thể khác mà bạn quan tâm.",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không đề cập đến khả năng tìm kiếm theo sở thích mà chỉ nói về việc không có thông tin cụ thể, do đó không đáp ứng được yêu cầu của câu hỏi.",
+      "latency_sec": 1.94
+    },
+    {
+      "id": 100,
+      "question": "Có thể xem đánh giá từ những người dùng khác không?",
+      "expected_answer": "Có, bạn có thể xem đánh giá từ những người dùng khác trong mục đánh giá của từng địa điểm.",
+      "ai_answer": "Có, bạn có thể xem đánh giá từ những người dùng khác tại màn hình `app_reviews_screen.dart` trong ứng dụng TourXport.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin cụ thể về vị trí xem đánh giá trong ứng dụng, mặc dù không đề cập đến 'mục đánh giá của từng địa điểm' như trong câu trả lời mong đợi. Tuy nhiên, ý nghĩa chính vẫn được giữ nguyên.",
+      "latency_sec": 1.94
+    }
+  ]
+}
