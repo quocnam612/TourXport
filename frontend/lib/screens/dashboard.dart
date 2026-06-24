@@ -19,6 +19,7 @@ import 'package:permission_handler/permission_handler.dart';
 import 'package:speech_to_text/speech_to_text.dart' as stt;
 import 'help_support_screen.dart';
 import 'language_settings_screen.dart';
+import 'manual_tour_creator_screen.dart';
 import 'notification_settings_screen.dart';
 import 'phone_settings_screen.dart';
 import 'security_settings_screen.dart';
@@ -690,9 +691,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         return;
       }
       if (_navIndex == _tabSurvey && widget.initialScheduleMode == 'manual') {
-        _updateScheduleSubRoute('/tours/manual');
-        _fetchCommunityTours();
-        _showManualTourUnavailableMessage();
+        _openManualTourCreator();
         return;
       }
       if (_navIndex == _tabSurvey && widget.initialScheduleMode == 'history') {
@@ -2195,16 +2194,42 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     return result;
   }
 
-  void _showManualTourUnavailableMessage() {
-    _showMessage(_isVi
-        ? 'Tạo lịch trình thủ công đang được phát triển'
-        : 'Manual itinerary creation is in development');
-  }
-
-  void _openManualTourCreator() {
+  Future<void> _openManualTourCreator() async {
     _showMainTab(_tabSurvey);
     _updateScheduleSubRoute('/tours/manual', replace: false);
-    _showManualTourUnavailableMessage();
+    if (widget.authToken == null || widget.authToken!.trim().isEmpty) {
+      _showMessage(_isVi
+          ? 'Bạn cần đăng nhập để tạo lịch trình thủ công'
+          : 'You need to sign in to create a manual itinerary');
+      _updateTabRoute(_tabSurvey);
+      return;
+    }
+
+    _stopAutoPlay();
+    final data = await Navigator.of(context).push<Map<String, dynamic>>(
+      MaterialPageRoute(
+        builder: (_) => ManualTourCreatorScreen(authToken: widget.authToken),
+      ),
+    );
+    _startAutoPlay();
+    _updateTabRoute(_tabSurvey);
+
+    if (!mounted || data == null || data.isEmpty) {
+      _fetchCommunityTours();
+      return;
+    }
+
+    _showMessage(_isVi ? 'Đã tạo lịch trình thủ công' : 'Manual itinerary created');
+    await _fetchCreatedTourHistory();
+
+    final tour = SavedTour.fromJson(data);
+    if (tour.id.isNotEmpty) {
+      setState(() {
+        _showScheduleAiSurvey = false;
+        _showScheduleHistory = true;
+      });
+      await _openCreatedTourHistoryDetail(tour);
+    }
   }
 
   Future<Object?> _openSurveyScreen() {

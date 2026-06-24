@@ -548,6 +548,76 @@ const normalizeTourItem = (item) => ({
     source: normalizeTourSource(item.source)
 });
 
+const parseTourCostValue = (value) => {
+    const number = Number(value);
+    return Number.isFinite(number) && number >= 0 ? number : null;
+};
+
+const normalizeTourCost = (cost) => {
+    if (cost == null || cost === '') {
+        return null;
+    }
+
+    if (typeof cost === 'number' || typeof cost === 'string') {
+        const amount = parseTourCostValue(cost);
+        return amount === null
+            ? null
+            : {
+                min: amount,
+                max: amount,
+                currency: 'VND',
+                note: null
+            };
+    }
+
+    const min = parseTourCostValue(cost.min ?? cost.amount ?? cost.total);
+    const max = parseTourCostValue(cost.max ?? cost.amount ?? cost.total);
+    if (min === null && max === null) {
+        return null;
+    }
+
+    return {
+        min,
+        max,
+        currency: cost.currency || 'VND',
+        note: cost.note || null
+    };
+};
+
+const sumTourCosts = (items) => {
+    const values = items
+        .map((item) => item.estimatedCost?.max ?? item.estimatedCost?.min)
+        .filter((value) => Number.isFinite(Number(value)));
+
+    if (values.length === 0) {
+        return null;
+    }
+
+    const total = values.reduce((sum, value) => sum + Number(value), 0);
+    return {
+        min: total,
+        max: total,
+        currency: 'VND',
+        note: null
+    };
+};
+
+const normalizeManualTourItem = (item, index) => normalizeTourItem({
+    order: Number.isInteger(Number(item.order)) && Number(item.order) > 0
+        ? Number(item.order)
+        : index + 1,
+    checked: false,
+    type: item.type || 'place',
+    title: String(item.title || '').trim(),
+    category: item.category ? String(item.category).trim() : null,
+    startTime: item.startTime ? String(item.startTime).trim() : null,
+    endTime: item.endTime ? String(item.endTime).trim() : null,
+    notes: item.notes ? String(item.notes).trim() : null,
+    estimatedCost: normalizeTourCost(item.estimatedCost),
+    location: item.location,
+    source: item.source || { provider: 'websearch' }
+});
+
 const coordinatesFromTourItems = (items) => {
     return items
         .map((item) => item.location?.coordinates)
@@ -616,6 +686,90 @@ export const normalizeTourPayloadFromAI = async (aiTour, userId, routeService) =
         estimatedCost: aiTour.estimatedCost,
         days,
         ai: aiTour.ai
+    };
+};
+
+export const normalizeTourPayloadFromManual = async (manualTour, userId, routeService) => {
+    const transportMode = manualTour.preferences?.transportMode || 'auto';
+
+    const days = await Promise.all((manualTour.days || []).map(async (day, dayIndex) => {
+        const items = (day.items || [])
+            .map(normalizeManualTourItem)
+            .sort((a, b) => a.order - b.order);
+        const routes = await buildDayRoutesSafely(items, routeService, { transportMode });
+        const distanceMeters = Array.isArray(routes)
+            ? routes.reduce((sum, route) => sum + (route.distanceMeters || 0), 0)
+            : 0;
+        const bbox = routeService.calculateBbox([
+            ...coordinatesFromTourItems(items),
+            ...coordinatesFromTourRoutes(routes)
+        ]);
+
+        return {
+            dayNumber: Number.isInteger(Number(day.dayNumber)) && Number(day.dayNumber) > 0
+                ? Number(day.dayNumber)
+                : dayIndex + 1,
+            date: day.date || null,
+            title: day.title ? String(day.title).trim() : `Day ${dayIndex + 1}`,
+            summary: day.summary ? String(day.summary).trim() : null,
+            distanceMeters,
+            bbox,
+            items,
+            routes
+        };
+    }));
+
+    const allCoordinates = days.flatMap((day) => [
+        ...coordinatesFromTourItems(day.items || []),
+        ...coordinatesFromTourRoutes(day.routes || [])
+    ]);
+    const allItems = days.flatMap((day) => day.items || []);
+    const estimatedCost = normalizeTourCost(manualTour.estimatedCost) || sumTourCosts(allItems);
+    const totalDays = days.length;
+
+    return {
+        userId,
+        title: String(manualTour.title || '').trim(),
+        destinations: Array.isArray(manualTour.destinations)
+            ? manualTour.destinations.map((destination) => String(destination).trim()).filter(Boolean)
+            : [],
+        visibility: manualTour.visibility || 'private',
+        totalDays,
+        totalNights: Number.isInteger(Number(manualTour.totalNights)) && Number(manualTour.totalNights) >= 0
+            ? Number(manualTour.totalNights)
+            : Math.max(totalDays - 1, 0),
+        totalDistanceMeters: days.reduce((sum, day) => sum + (day.distanceMeters || 0), 0),
+        bbox: routeService.calculateBbox(allCoordinates),
+        travelers: {
+            adults: Number.isInteger(Number(manualTour.travelers?.adults)) && Number(manualTour.travelers.adults) > 0
+                ? Number(manualTour.travelers.adults)
+                : 1,
+            children: Number.isInteger(Number(manualTour.travelers?.children)) && Number(manualTour.travelers.children) >= 0
+                ? Number(manualTour.travelers.children)
+                : 0
+        },
+        preferences: {
+            budgetLevel: Number.isFinite(Number(manualTour.preferences?.budgetLevel))
+                ? Number(manualTour.preferences.budgetLevel)
+                : estimatedCost?.max || 0,
+            interests: Array.isArray(manualTour.preferences?.interests)
+                ? manualTour.preferences.interests.map((interest) => String(interest).trim()).filter(Boolean)
+                : [],
+            transportMode,
+            pace: manualTour.preferences?.pace || 'balanced'
+        },
+        estimatedCost,
+        days,
+        ai: {
+            generatedBy: null,
+            model: null,
+            embeddingModel: null,
+            retrieval: {
+                strategy: null,
+                index: null,
+                topK: null
+            }
+        }
     };
 };
 
@@ -734,5 +888,6 @@ export default {
     buildTourListFilter,
     buildTourSort,
     normalizeTourPayloadFromAI,
+    normalizeTourPayloadFromManual,
     removeProtectedTourFields
 };

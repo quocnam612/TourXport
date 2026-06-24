@@ -3,15 +3,22 @@ import 'package:flutter/material.dart';
 import '../models/passport_models.dart';
 import '../services/passport_service.dart';
 import '../models/destination.dart';
+import 'province_detail_screen.dart';
 
 class TravelMemoryScreen extends StatefulWidget {
   final String placeName;
   final String fallbackImageUrl;
+  final bool isNewUnlock;
+  final Destination? destination;
+  final List<Destination>? allDestinations;
 
   const TravelMemoryScreen({
     super.key,
     required this.placeName,
     required this.fallbackImageUrl,
+    this.isNewUnlock = false,
+    this.destination,
+    this.allDestinations,
   });
 
   @override
@@ -34,6 +41,7 @@ class _TravelMemoryScreenState extends State<TravelMemoryScreen> {
   @override
   void initState() {
     super.initState();
+    _isEditing = widget.isNewUnlock;
     final m = PassportService.instance.getMemory(widget.placeName);
     if (m != null) {
       _memory = m;
@@ -42,25 +50,25 @@ class _TravelMemoryScreenState extends State<TravelMemoryScreen> {
         destinationId: '',
         destinationName: widget.placeName,
         date: _formattedToday(),
-        tourTitle: 'Tự do khám phá',
-        durationHours: 2.0,
-        durationDays: 3,
-        durationNights: 2,
+        tourTitle: '',
+        durationHours: 1.0,
+        durationDays: 1,
+        durationNights: 0,
         photoCount: 0,
-        note: 'Hãy viết cảm nghĩ của bạn về chuyến đi này...',
+        note: '',
         rating: 5.0,
         photoUrl: widget.fallbackImageUrl,
       );
     }
 
-    _noteController = TextEditingController(text: _memory.note);
-    _tourController = TextEditingController(text: _memory.tourTitle);
+    _noteController = TextEditingController(text: widget.isNewUnlock ? '' : _memory.note);
+    _tourController = TextEditingController(text: widget.isNewUnlock ? '' : _memory.tourTitle);
     _dateController = TextEditingController(text: _memory.date);
-    _rating = _memory.rating;
+    _rating = widget.isNewUnlock ? 5.0 : _memory.rating;
     _photoCount = _memory.photoCount;
     _durationHours = _memory.durationHours;
-    _durationDays = _memory.durationDays;
-    _durationNights = _memory.durationNights;
+    _durationDays = widget.isNewUnlock ? 1 : _memory.durationDays;
+    _durationNights = widget.isNewUnlock ? 0 : _memory.durationNights;
   }
 
   String _formattedToday() {
@@ -78,7 +86,7 @@ class _TravelMemoryScreenState extends State<TravelMemoryScreen> {
 
   Future<void> _save() async {
     final updated = TravelMemory(
-      destinationId: _memory.destinationId,
+      destinationId: _memory.destinationId.isNotEmpty ? _memory.destinationId : (widget.destination?.id ?? ''),
       destinationName: _memory.destinationName,
       date: _dateController.text.trim(),
       tourTitle: _tourController.text.trim(),
@@ -91,26 +99,90 @@ class _TravelMemoryScreenState extends State<TravelMemoryScreen> {
       photoUrl: _memory.photoUrl.isNotEmpty ? _memory.photoUrl : widget.fallbackImageUrl,
     );
 
-    await PassportService.instance.saveMemory(widget.placeName, updated);
-    setState(() {
-      _memory = updated;
-      _isEditing = false;
-    });
-    
-    if (mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Đã lưu kỷ niệm hành trình!'),
-          backgroundColor: Color(0xFF2D6A4F),
-        ),
+    final wasUnlocked = PassportService.instance.isUnlocked(widget.placeName);
+
+    if (!wasUnlocked && widget.destination != null) {
+      // 1. Thực hiện check-in để mở khóa chính thức trên hệ thống
+      final result = await PassportService.instance.checkIn(
+        widget.destination!,
+        allDestinations: widget.allDestinations ?? [],
       );
+
+      // 2. Ghi đè nhật ký trống bằng dữ liệu người dùng tự chỉnh sửa
+      await PassportService.instance.saveMemory(widget.placeName, updated);
+
+      if (mounted) {
+        final List<String> badges = List<String>.from(result['badgesUnlocked'] ?? []);
+        
+        // 3. Hiển thị hộp thoại chúc mừng mở khóa thành công giống province_detail_screen
+        showDialog(
+          context: context,
+          barrierDismissible: false,
+          builder: (context) {
+            return UnlockAnimationView(
+              place: widget.destination!,
+              badgesUnlocked: badges,
+              onClose: () {
+                Navigator.pop(context); // Đóng dialog chúc mừng
+                setState(() {
+                  _memory = updated;
+                  _isEditing = false;
+                });
+              },
+            );
+          },
+        );
+      }
+    } else {
+      // Đã mở khóa trước đó: lưu chỉnh sửa bình thường
+      await PassportService.instance.saveMemory(widget.placeName, updated);
+      setState(() {
+        _memory = updated;
+        _isEditing = false;
+      });
+
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Đã lưu kỷ niệm hành trình!'),
+            backgroundColor: Color(0xFF2D6A4F),
+          ),
+        );
+      }
     }
+  }
+
+  Widget _badgePill(String label, Color color) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+      decoration: BoxDecoration(
+        color: color.withOpacity(0.12),
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(color: color.withOpacity(0.3), width: 1),
+      ),
+      child: Text(
+        label,
+        maxLines: 1,
+        overflow: TextOverflow.ellipsis,
+        style: TextStyle(
+          fontFamily: 'Montserrat',
+          fontSize: 10,
+          fontWeight: FontWeight.bold,
+          color: color,
+        ),
+      ),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     final imgUrl = _memory.photoUrl.isNotEmpty ? _memory.photoUrl : widget.fallbackImageUrl;
     final isDesktop = MediaQuery.of(context).size.width >= 800;
+
+    final unlockedList = PassportService.instance.getUnlockedNames().toList();
+    final indexInPassport = unlockedList.contains(widget.placeName)
+        ? (unlockedList.indexOf(widget.placeName) + 1)
+        : (unlockedList.length + 1);
 
     return Scaffold(
       backgroundColor: const Color(0xFF0C1412),
@@ -141,15 +213,20 @@ class _TravelMemoryScreenState extends State<TravelMemoryScreen> {
             IconButton(
               icon: const Icon(Icons.close_rounded, color: Colors.white70),
               onPressed: () {
-                setState(() {
-                  _noteController.text = _memory.note;
-                  _tourController.text = _memory.tourTitle;
-                  _dateController.text = _memory.date;
-                  _rating = _memory.rating;
-                  _photoCount = _memory.photoCount;
-                  _durationHours = _memory.durationHours;
-                  _isEditing = false;
-                });
+                final isUnlocked = PassportService.instance.isUnlocked(widget.placeName);
+                if (!isUnlocked) {
+                  Navigator.pop(context, true);
+                } else {
+                  setState(() {
+                    _noteController.text = _memory.note;
+                    _tourController.text = _memory.tourTitle;
+                    _dateController.text = _memory.date;
+                    _rating = _memory.rating;
+                    _photoCount = _memory.photoCount;
+                    _durationHours = _memory.durationHours;
+                    _isEditing = false;
+                  });
+                }
               },
             ),
             IconButton(
@@ -277,118 +354,94 @@ class _TravelMemoryScreenState extends State<TravelMemoryScreen> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            // 3-Column stats row (Strava / Wrapped style)
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
-                                _buildStatItem(
-                                  icon: Icons.calendar_today_rounded,
-                                  label: 'Ngày khám phá',
-                                  child: _isEditing
-                                      ? SizedBox(
-                                          width: 100,
-                                          child: TextField(
-                                            controller: _dateController,
-                                            style: const TextStyle(fontFamily: 'Montserrat', fontSize: 13, color: Colors.white),
-                                            decoration: const InputDecoration(isDense: true, border: InputBorder.none),
+                                // Cột 1: Ngày khám phá
+                                Expanded(
+                                  child: _buildStatItem(
+                                    icon: Icons.calendar_today_rounded,
+                                    label: 'Ngày khám phá',
+                                    child: _isEditing
+                                        ? SizedBox(
+                                            width: 90,
+                                            child: TextField(
+                                              controller: _dateController,
+                                              textAlign: TextAlign.center,
+                                              style: const TextStyle(fontFamily: 'Montserrat', fontSize: 12, color: Colors.white, fontWeight: FontWeight.bold),
+                                              decoration: const InputDecoration(
+                                                isDense: true,
+                                                contentPadding: EdgeInsets.symmetric(vertical: 4),
+                                                enabledBorder: UnderlineInputBorder(borderSide: BorderSide(color: Colors.white30)),
+                                                focusedBorder: UnderlineInputBorder(borderSide: BorderSide(color: Color(0xFFD4AF7A))),
+                                              ),
+                                            ),
+                                          )
+                                        : Text(
+                                            _memory.date,
+                                            style: const TextStyle(fontFamily: 'Montserrat', fontSize: 13, fontWeight: FontWeight.bold, color: Colors.white),
                                           ),
-                                        )
-                                      : Text(
-                                          _memory.date,
-                                          style: const TextStyle(fontFamily: 'Montserrat', fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),
-                                        ),
+                                  ),
                                 ),
-                                _buildStatItem(
-                                  icon: Icons.camera_alt_rounded,
-                                  label: 'Số ảnh chụp',
-                                  child: _isEditing
-                                      ? Row(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: [
-                                            IconButton(
-                                              icon: const Icon(Icons.remove, color: Colors.white54, size: 16),
-                                              onPressed: () {
-                                                if (_photoCount > 0) setState(() => _photoCount--);
-                                              },
-                                              constraints: const BoxConstraints(),
-                                              padding: EdgeInsets.zero,
-                                            ),
-                                            Text('$_photoCount', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-                                            IconButton(
-                                              icon: const Icon(Icons.add, color: Colors.white54, size: 16),
-                                              onPressed: () => setState(() => _photoCount++),
-                                              constraints: const BoxConstraints(),
-                                              padding: EdgeInsets.zero,
-                                            ),
-                                          ],
-                                        )
-                                      : Text(
-                                          '${_memory.photoCount} ảnh',
-                                          style: const TextStyle(fontFamily: 'Montserrat', fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),
-                                        ),
+                                // Cột 2: Đã khám phá
+                                Expanded(
+                                  child: _buildStatItem(
+                                    icon: Icons.explore_rounded,
+                                    label: 'Đã khám phá',
+                                    child: Text(
+                                      'Hành trình #${indexInPassport}',
+                                      style: const TextStyle(
+                                        fontFamily: 'Montserrat',
+                                        fontSize: 13,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ),
                                 ),
-                                _buildStatItem(
-                                  icon: Icons.timer_rounded,
-                                  label: 'Thời gian đi',
-                                  child: _isEditing
-                                      ? Row(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: [
-                                            IconButton(
-                                              icon: const Icon(Icons.remove, color: Colors.white54, size: 14),
-                                              onPressed: () {
-                                                if (_durationDays > 1) {
-                                                  setState(() {
-                                                    _durationDays--;
-                                                    if (_durationNights >= _durationDays) {
-                                                      _durationNights = (_durationDays - 1).clamp(0, 99);
-                                                    }
-                                                  });
-                                                }
-                                              },
-                                              constraints: const BoxConstraints(),
-                                              padding: EdgeInsets.zero,
-                                            ),
-                                            Text('${_durationDays}N', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 12)),
-                                            IconButton(
-                                              icon: const Icon(Icons.add, color: Colors.white54, size: 14),
-                                              onPressed: () {
-                                                setState(() {
-                                                  _durationDays++;
-                                                  _durationNights = _durationDays - 1;
-                                                });
-                                              },
-                                              constraints: const BoxConstraints(),
-                                              padding: EdgeInsets.zero,
-                                            ),
-                                            const SizedBox(width: 4),
-                                            IconButton(
-                                              icon: const Icon(Icons.remove, color: Colors.white54, size: 14),
-                                              onPressed: () {
-                                                if (_durationNights > 0) {
-                                                  setState(() => _durationNights--);
-                                                }
-                                              },
-                                              constraints: const BoxConstraints(),
-                                              padding: EdgeInsets.zero,
-                                            ),
-                                            Text('${_durationNights}Đ', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 12)),
-                                            IconButton(
-                                              icon: const Icon(Icons.add, color: Colors.white54, size: 14),
-                                              onPressed: () {
-                                                if (_durationNights < _durationDays) {
-                                                  setState(() => _durationNights++);
-                                                }
-                                              },
-                                              constraints: const BoxConstraints(),
-                                              padding: EdgeInsets.zero,
-                                            ),
-                                          ],
-                                        )
-                                      : Text(
-                                          '${_memory.durationDays} ngày ${_memory.durationNights} đêm',
-                                          style: const TextStyle(fontFamily: 'Montserrat', fontSize: 11, fontWeight: FontWeight.bold, color: Colors.white),
-                                        ),
+                                // Cột 3: Đánh giá
+                                Expanded(
+                                  child: _buildStatItem(
+                                    icon: Icons.star_rounded,
+                                    label: 'Đánh giá',
+                                    child: _isEditing
+                                        ? Row(
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            mainAxisSize: MainAxisSize.min,
+                                            children: List.generate(5, (index) {
+                                              final starVal = index + 1;
+                                              return GestureDetector(
+                                                onTap: () => setState(() => _rating = starVal.toDouble()),
+                                                child: Padding(
+                                                  padding: const EdgeInsets.symmetric(horizontal: 1.0),
+                                                  child: Icon(
+                                                    Icons.star_rounded,
+                                                    color: _rating >= starVal
+                                                        ? const Color(0xFFD4AF7A)
+                                                        : Colors.white24,
+                                                    size: 14,
+                                                  ),
+                                                ),
+                                              );
+                                            }),
+                                          )
+                                        : Row(
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            mainAxisSize: MainAxisSize.min,
+                                            children: [
+                                              const Icon(
+                                                Icons.star_rounded,
+                                                color: Color(0xFFD4AF7A),
+                                                size: 14,
+                                              ),
+                                              const SizedBox(width: 3),
+                                              Text(
+                                                '${_rating.toStringAsFixed(1)}',
+                                                style: const TextStyle(fontFamily: 'Montserrat', fontSize: 13, fontWeight: FontWeight.bold, color: Colors.white),
+                                              ),
+                                            ],
+                                          ),
+                                  ),
                                 ),
                               ],
                             ),
@@ -398,109 +451,9 @@ class _TravelMemoryScreenState extends State<TravelMemoryScreen> {
                               child: Divider(color: Colors.white12),
                             ),
 
-                            // Tour Name
-                            const Text(
-                              'TOUR ĐÃ THAM GIA',
-                              style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 10,
-                                fontWeight: FontWeight.w800,
-                                color: Colors.white38,
-                                letterSpacing: 1.5,
-                              ),
-                            ),
-                            const SizedBox(height: 6),
-                            _isEditing
-                                ? TextField(
-                                    controller: _tourController,
-                                    style: const TextStyle(fontFamily: 'Montserrat', fontSize: 15, color: Colors.white, fontWeight: FontWeight.bold),
-                                    decoration: InputDecoration(
-                                      hintText: 'Nhập tên tour hành trình...',
-                                      hintStyle: TextStyle(color: Colors.white.withOpacity(0.3)),
-                                      isDense: true,
-                                      enabledBorder: const UnderlineInputBorder(borderSide: BorderSide(color: Colors.white24)),
-                                      focusedBorder: const UnderlineInputBorder(borderSide: BorderSide(color: Color(0xFFD4AF7A))),
-                                    ),
-                                  )
-                                : Text(
-                                    _memory.tourTitle,
-                                    style: const TextStyle(
-                                      fontFamily: 'Montserrat',
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      color: Color(0xFFD4AF7A),
-                                    ),
-                                  ),
-                            
-                            const SizedBox(height: 24),
-
-                            // Rating Section
-                            Row(
-                              children: [
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    const Text(
-                                      'ĐÁNH GIÁ CHUYẾN ĐI',
-                                      style: TextStyle(
-                                        fontFamily: 'Montserrat',
-                                        fontSize: 10,
-                                        fontWeight: FontWeight.w800,
-                                        color: Colors.white38,
-                                        letterSpacing: 1.5,
-                                      ),
-                                    ),
-                                    const SizedBox(height: 6),
-                                    _isEditing
-                                        ? Row(
-                                            children: List.generate(5, (index) {
-                                              final starVal = index + 1;
-                                              return GestureDetector(
-                                                onTap: () => setState(() => _rating = starVal.toDouble()),
-                                                child: Icon(
-                                                  Icons.star_rounded,
-                                                  color: _rating >= starVal
-                                                      ? const Color(0xFFD4AF7A)
-                                                      : Colors.white24,
-                                                  size: 28,
-                                                ),
-                                              );
-                                            }),
-                                          )
-                                        : Row(
-                                            children: [
-                                              ...List.generate(5, (index) {
-                                                final starVal = index + 1;
-                                                return Icon(
-                                                  Icons.star_rounded,
-                                                  color: _memory.rating >= starVal
-                                                      ? const Color(0xFFD4AF7A)
-                                                      : Colors.white12,
-                                                  size: 20,
-                                                );
-                                              }),
-                                              const SizedBox(width: 8),
-                                              Text(
-                                                '${_memory.rating}/5.0',
-                                                style: const TextStyle(
-                                                  fontFamily: 'Montserrat',
-                                                  fontSize: 13,
-                                                  fontWeight: FontWeight.bold,
-                                                  color: Colors.white70,
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                  ],
-                                ),
-                              ],
-                            ),
-
-                            const SizedBox(height: 24),
-
                             // Personal Notes (Diary notes)
                             const Text(
-                              'GHI CHÚ CÁ NHÂN',
+                              'CẢM NHẬN VỀ CHUYẾN ĐI',
                               style: TextStyle(
                                 fontFamily: 'Montserrat',
                                 fontSize: 10,

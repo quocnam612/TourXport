@@ -180,6 +180,72 @@ export const validateTourCreatePayload = (payload) => {
     return null;
 };
 
+export const validateManualTourCreatePayload = (payload) => {
+    if (!payload || typeof payload !== 'object') {
+        return 'Tour payload is required';
+    }
+
+    if (typeof payload.title !== 'string' || payload.title.trim().length === 0) {
+        return 'title must be a non-empty string';
+    }
+
+    if (payload.title.trim().length > 160) {
+        return 'title must be less than or equal to 160 characters';
+    }
+
+    if (payload.visibility && !['private', 'public'].includes(payload.visibility)) {
+        return 'visibility must be private or public';
+    }
+
+    if (payload.totalNights !== undefined && payload.totalNights !== null) {
+        const totalNights = parseNumber(payload.totalNights);
+        if (totalNights === undefined || totalNights < 0 || !Number.isInteger(totalNights)) {
+            return 'totalNights must be an integer greater than or equal to 0';
+        }
+        if (totalNights > MAX_TOUR_NIGHTS) {
+            return `totalNights must be less than or equal to ${MAX_TOUR_NIGHTS}`;
+        }
+    }
+
+    if (!Array.isArray(payload.days) || payload.days.length === 0) {
+        return 'days must contain at least one day';
+    }
+
+    if (payload.days.length > MAX_TOUR_DAYS) {
+        return `days must contain less than or equal to ${MAX_TOUR_DAYS} days`;
+    }
+
+    for (const [dayIndex, day] of payload.days.entries()) {
+        if (!day || typeof day !== 'object') {
+            return `days[${dayIndex}] must be an object`;
+        }
+
+        if (!Array.isArray(day.items) || day.items.length === 0) {
+            return `days[${dayIndex}].items must contain at least one item`;
+        }
+
+        for (const [itemIndex, item] of day.items.entries()) {
+            if (!item || typeof item !== 'object') {
+                return `days[${dayIndex}].items[${itemIndex}] must be an object`;
+            }
+
+            if (typeof item.title !== 'string' || item.title.trim().length === 0) {
+                return `days[${dayIndex}].items[${itemIndex}].title must be a non-empty string`;
+            }
+
+            if (item.type && !['place', 'restaurant', 'hotel'].includes(item.type)) {
+                return `days[${dayIndex}].items[${itemIndex}].type must be place, restaurant, or hotel`;
+            }
+
+            if (!isValidGeoCoordinates(item.location?.coordinates)) {
+                return `days[${dayIndex}].items[${itemIndex}].location.coordinates must be [longitude, latitude]`;
+            }
+        }
+    }
+
+    return null;
+};
+
 export const validateTourUpdatePayload = (payload) => {
     if (!payload || Object.keys(payload).length === 0) {
         return 'No fields provided for update';
@@ -212,5 +278,6 @@ export default {
     validateLocationListQuery,
     validateTourListQuery,
     validateTourCreatePayload,
+    validateManualTourCreatePayload,
     validateTourUpdatePayload
 };
