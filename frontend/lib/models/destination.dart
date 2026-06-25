@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
 
 const String destinationPlaceholderPath = 'assets/images/placeholder.png';
@@ -192,6 +193,29 @@ class Destination {
           ),
         ),
       );
+    }
+
+    if (path.startsWith('data:image/') && path.contains('base64,')) {
+      try {
+        final base64String = path.split('base64,')[1];
+        final bytes = base64.decode(base64String);
+        return Image.memory(
+          bytes,
+          fit: fit,
+          width: width,
+          height: height,
+          errorBuilder: (_, __, ___) => Container(
+            color: const Color(0xFF2A4A3E),
+            width: width,
+            height: height,
+            child: const Center(
+              child: Icon(Icons.broken_image, color: Colors.white38, size: 40),
+            ),
+          ),
+        );
+      } catch (e) {
+        // Fallback
+      }
     }
 
     if (path.startsWith('http://') || path.startsWith('https://')) {

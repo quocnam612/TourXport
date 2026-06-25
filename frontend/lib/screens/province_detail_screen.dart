@@ -1,10 +1,12 @@
 import 'dart:ui';
+import 'dart:convert';
 import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:image_picker/image_picker.dart';
 import '../models/province_collection.dart';
 import '../models/destination.dart';
+import '../models/passport_models.dart';
 import '../services/passport_service.dart';
 import '../utils/exif_helper.dart';
 import 'place_detail.dart';
@@ -118,8 +120,8 @@ class _ProvinceDetailScreenState extends State<ProvinceDetailScreen> with Ticker
   }
 
   void _showCheckInDialog(Destination place) {
-    XFile? selectedImage;
-    List<int>? imageBytes;
+    List<XFile> selectedImages = [];
+    List<List<int>> imagesBytesList = [];
     String? errorMessage;
     bool isPickingImage = false;
     bool isVerifying = false;
@@ -129,7 +131,7 @@ class _ProvinceDetailScreenState extends State<ProvinceDetailScreen> with Ticker
       builder: (context) {
         return StatefulBuilder(
           builder: (context, setDialogState) {
-            Future<void> pickImage() async {
+            Future<void> pickImages() async {
               if (isPickingImage || isVerifying) return;
               setDialogState(() {
                 isPickingImage = true;
@@ -137,15 +139,18 @@ class _ProvinceDetailScreenState extends State<ProvinceDetailScreen> with Ticker
               });
               try {
                 final picker = ImagePicker();
-                final XFile? image = await picker.pickImage(
-                  source: ImageSource.gallery,
+                final List<XFile> images = await picker.pickMultiImage(
                   imageQuality: 90,
                 );
-                if (image != null) {
-                  final bytes = await image.readAsBytes();
+                if (images.isNotEmpty) {
+                  final List<List<int>> bytesList = [];
+                  for (var img in images) {
+                    final bytes = await img.readAsBytes();
+                    bytesList.add(bytes);
+                  }
                   setDialogState(() {
-                    selectedImage = image;
-                    imageBytes = bytes;
+                    selectedImages.addAll(images);
+                    imagesBytesList.addAll(bytesList);
                   });
                 }
               } catch (e) {
@@ -160,33 +165,81 @@ class _ProvinceDetailScreenState extends State<ProvinceDetailScreen> with Ticker
             }
 
             Future<void> verifyImageGps() async {
-              if (selectedImage == null || imageBytes == null || isVerifying) return;
+              if (isVerifying) return;
               setDialogState(() {
                 isVerifying = true;
                 errorMessage = null;
               });
 
               try {
-                // Giả lập thời gian tải ảnh lên hệ thống để tăng độ mượt mà
+                // Giả lập thời gian tải ảnh lên hệ thống
                 await Future<void>.delayed(const Duration(milliseconds: 800));
-                
+
+                final List<String> base64Photos = imagesBytesList.map((bytes) {
+                  return 'data:image/png;base64,${base64.encode(bytes)}';
+                }).toList();
+
+                final allPlaces = widget.collection.districts.expand((d) => d.places).toList();
+                final result = await PassportService.instance.checkIn(
+                  place,
+                  allDestinations: allPlaces,
+                );
+
+                if (base64Photos.isNotEmpty) {
+                  final existingMemory = PassportService.instance.getMemory(place.name);
+                  if (existingMemory != null) {
+                    final updatedMemory = TravelMemory(
+                      destinationId: existingMemory.destinationId,
+                      destinationName: existingMemory.destinationName,
+                      date: existingMemory.date,
+                      tourTitle: existingMemory.tourTitle,
+                      durationHours: existingMemory.durationHours,
+                      durationDays: existingMemory.durationDays,
+                      durationNights: existingMemory.durationNights,
+                      photoCount: base64Photos.length,
+                      note: existingMemory.note,
+                      rating: existingMemory.rating,
+                      photoUrl: base64Photos.first,
+                      photoUrls: base64Photos,
+                    );
+                    await PassportService.instance.saveMemory(place.name, updatedMemory);
+                  }
+                }
+
                 if (context.mounted) {
                   Navigator.pop(context); // Đóng hộp thoại check-in
-                  final allPlaces = widget.collection.districts.expand((d) => d.places).toList();
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => TravelMemoryScreen(
-                        placeName: place.name,
-                        fallbackImageUrl: place.imagePath,
-                        isNewUnlock: true,
-                        destination: place,
-                        allDestinations: allPlaces,
-                      ),
-                    ),
-                  ).then((_) {
-                    if (mounted) setState(() {});
-                  });
+
+                  final List<String> badges = List<String>.from(result['badgesUnlocked'] ?? []);
+
+                  // Hiển thị hộp thoại chúc mừng mở khóa thành công giống province_detail_screen
+                  showDialog(
+                    context: context,
+                    barrierDismissible: false,
+                    builder: (context) {
+                      return UnlockAnimationView(
+                        place: place,
+                        badgesUnlocked: badges,
+                        onClose: () {
+                          Navigator.pop(context); // Đóng dialog chúc mừng
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => TravelMemoryScreen(
+                                placeName: place.name,
+                                fallbackImageUrl: place.imagePath,
+                                isNewUnlock: true,
+                                destination: place,
+                                allDestinations: allPlaces,
+                                initialPhotos: base64Photos,
+                              ),
+                            ),
+                          ).then((_) {
+                            if (mounted) setState(() {});
+                          });
+                        },
+                      );
+                    },
+                  );
                 }
               } catch (e) {
                 setDialogState(() {
@@ -248,26 +301,10 @@ class _ProvinceDetailScreenState extends State<ProvinceDetailScreen> with Ticker
                         ),
                         const SizedBox(height: 20),
 
-                        // Guidelines or explanation text
-                        if (selectedImage == null)
-                          Padding(
-                            padding: const EdgeInsets.only(bottom: 16.0),
-                            child: Text(
-                              'Để mở khóa địa danh này, vui lòng chọn một ảnh check-in từ thư viện của bạn.',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 12,
-                                color: Colors.white.withOpacity(0.6),
-                                height: 1.4,
-                              ),
-                            ),
-                          ),
-
                         // Image Selection Area
-                        if (selectedImage == null)
+                        if (selectedImages.isEmpty)
                           InkWell(
-                            onTap: pickImage,
+                            onTap: pickImages,
                             borderRadius: BorderRadius.circular(16),
                             child: Container(
                               height: 140,
@@ -319,50 +356,90 @@ class _ProvinceDetailScreenState extends State<ProvinceDetailScreen> with Ticker
                             ),
                           )
                         else
-                          // Preview container
-                          Stack(
+                          // Preview collection horizontal list
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Container(
-                                height: 160,
-                                width: double.infinity,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(16),
-                                  border: Border.all(
-                                    color: const Color(0xFFD4AF7A).withOpacity(0.3),
-                                    width: 1.5,
-                                  ),
-                                ),
-                                child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(14.5),
-                                  child: Image.memory(
-                                    Uint8List.fromList(imageBytes!),
-                                    fit: BoxFit.cover,
-                                  ),
+                              Text(
+                                'Ảnh đã chọn (${selectedImages.length})',
+                                style: const TextStyle(
+                                  fontFamily: 'Montserrat',
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.bold,
+                                  color: Color(0xFFD4AF7A),
                                 ),
                               ),
-                              Positioned(
-                                top: 8,
-                                right: 8,
-                                child: GestureDetector(
-                                  onTap: () {
-                                    setDialogState(() {
-                                      selectedImage = null;
-                                      imageBytes = null;
-                                      errorMessage = null;
-                                    });
+                              const SizedBox(height: 10),
+                              SizedBox(
+                                height: 120,
+                                child: ListView.builder(
+                                  scrollDirection: Axis.horizontal,
+                                  itemCount: selectedImages.length + 1,
+                                  itemBuilder: (context, index) {
+                                    if (index == selectedImages.length) {
+                                      // Add more button
+                                      return GestureDetector(
+                                        onTap: pickImages,
+                                        child: Container(
+                                          width: 90,
+                                          margin: const EdgeInsets.only(right: 8),
+                                          decoration: BoxDecoration(
+                                            color: Colors.white.withOpacity(0.04),
+                                            borderRadius: BorderRadius.circular(12),
+                                            border: Border.all(
+                                              color: const Color(0xFFD4AF7A).withOpacity(0.4),
+                                            ),
+                                          ),
+                                          child: const Icon(
+                                            Icons.add_photo_alternate_rounded,
+                                            color: Color(0xFFD4AF7A),
+                                            size: 24,
+                                          ),
+                                        ),
+                                      );
+                                    }
+
+                                    return Container(
+                                      width: 90,
+                                      margin: const EdgeInsets.only(right: 8),
+                                      child: Stack(
+                                        fit: StackFit.expand,
+                                        children: [
+                                          ClipRRect(
+                                            borderRadius: BorderRadius.circular(12),
+                                            child: Image.memory(
+                                              Uint8List.fromList(imagesBytesList[index]),
+                                              fit: BoxFit.cover,
+                                            ),
+                                          ),
+                                          Positioned(
+                                            top: 4,
+                                            right: 4,
+                                            child: GestureDetector(
+                                              onTap: () {
+                                                setDialogState(() {
+                                                  selectedImages.removeAt(index);
+                                                  imagesBytesList.removeAt(index);
+                                                });
+                                              },
+                                              child: Container(
+                                                padding: const EdgeInsets.all(4),
+                                                decoration: const BoxDecoration(
+                                                  color: Colors.black54,
+                                                  shape: BoxShape.circle,
+                                                ),
+                                                child: const Icon(
+                                                  Icons.close_rounded,
+                                                  color: Colors.white,
+                                                  size: 12,
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    );
                                   },
-                                  child: Container(
-                                    padding: const EdgeInsets.all(6),
-                                    decoration: BoxDecoration(
-                                      color: Colors.black.withOpacity(0.6),
-                                      shape: BoxShape.circle,
-                                    ),
-                                    child: const Icon(
-                                      Icons.close_rounded,
-                                      color: Colors.white,
-                                      size: 16,
-                                    ),
-                                  ),
                                 ),
                               ),
                             ],
@@ -406,66 +483,40 @@ class _ProvinceDetailScreenState extends State<ProvinceDetailScreen> with Ticker
                         const SizedBox(height: 24),
 
                         // Action buttons
-                        if (selectedImage == null)
-                          ElevatedButton(
-                            onPressed: pickImage,
-                            style: ElevatedButton.styleFrom(
-                              backgroundColor: const Color(0xFFD4AF7A),
-                              foregroundColor: Colors.black,
-                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-                              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
-                              minimumSize: const Size(double.infinity, 50),
-                            ),
-                            child: const Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Icon(Icons.photo_library_rounded, size: 18),
-                                SizedBox(width: 8),
-                                Text(
-                                  'Tải ảnh lên',
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat',
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          )
-                        else
-                          ElevatedButton(
-                            onPressed: isVerifying ? null : verifyImageGps,
-                            style: ElevatedButton.styleFrom(
-                              backgroundColor: const Color(0xFF2D6A4F),
-                              foregroundColor: Colors.white,
-                              disabledBackgroundColor: const Color(0xFF2D6A4F).withOpacity(0.3),
-                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-                              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
-                              minimumSize: const Size(double.infinity, 50),
-                            ),
-                            child: isVerifying
-                                ? const SizedBox(
-                                    width: 20,
-                                    height: 20,
-                                    child: CircularProgressIndicator(
-                                      strokeWidth: 2,
-                                      valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
-                                    ),
-                                  )
-                                : const Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Icon(Icons.check_circle_outline_rounded, size: 18, color: Colors.white),
-                                      SizedBox(width: 8),
-                                      Text(
-                                        'Duyệt ảnh',
-                                        style: TextStyle(
-                                          fontFamily: 'Montserrat',
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
+                        ElevatedButton(
+                          onPressed: isVerifying ? null : verifyImageGps,
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: const Color(0xFF2D6A4F),
+                            foregroundColor: Colors.white,
+                            disabledBackgroundColor: const Color(0xFF2D6A4F).withOpacity(0.3),
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
+                            minimumSize: const Size(double.infinity, 50),
                           ),
+                          child: isVerifying
+                              ? const SizedBox(
+                                  width: 20,
+                                  height: 20,
+                                  child: CircularProgressIndicator(
+                                    strokeWidth: 2,
+                                    valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                                  ),
+                                )
+                              : const Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Icon(Icons.check_circle_outline_rounded, size: 18, color: Colors.white),
+                                    SizedBox(width: 8),
+                                    Text(
+                                      'Duyệt ảnh',
+                                      style: TextStyle(
+                                        fontFamily: 'Montserrat',
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                        ),
                         const SizedBox(height: 12),
                         // Cancel/Close button
                         TextButton(
@@ -494,50 +545,7 @@ class _ProvinceDetailScreenState extends State<ProvinceDetailScreen> with Ticker
     );
   }
 
-  Future<void> _unlockPlace(Destination place, {required bool isMock}) async {
-    final result = await PassportService.instance.checkIn(
-      place,
-      allDestinations: widget.collection.districts.expand((d) => d.places).toList(),
-    );
 
-    if (result['success'] == true && mounted) {
-      final List<String> badges = List<String>.from(result['badgesUnlocked'] ?? []);
-
-      // Trigger standard beautiful unlock congratulation dialog
-      _showUnlockSuccessAnimationDialog(place, badges);
-    }
-  }
-
-  void _showUnlockSuccessAnimationDialog(Destination place, List<String> badges) {
-    showDialog(
-      context: context,
-      barrierDismissible: false,
-      builder: (context) {
-        return UnlockAnimationView(
-          place: place,
-          badgesUnlocked: badges,
-          onClose: () {
-            Navigator.pop(context); // close dialogue
-            setState(() {}); // refresh detail screen grid
-            
-            // Navigate directly to Travel Memory diary creation
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => TravelMemoryScreen(
-                  placeName: place.name,
-                  fallbackImageUrl: place.imagePath,
-                  isNewUnlock: true,
-                ),
-              ),
-            ).then((_) {
-              if (mounted) setState(() {});
-            });
-          },
-        );
-      },
-    );
-  }
 
   Widget _paginationArrow({
     required IconData icon,
