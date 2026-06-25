@@ -1,0 +1,909 @@
+{
+  "summary": {
+    "total_questions": 100,
+    "average_score": 54.45,
+    "average_latency_sec": 1.8559
+  },
+  "details": [
+    {
+      "id": 1,
+      "question": "Làm sao tôi có thể đăng ký tài khoản?",
+      "expected_answer": "Bạn vào trang đăng ký, điền thông tin cần thiết và nhấn nút 'Đăng ký'.",
+      "ai_answer": "Để đăng ký tài khoản trên ứng dụng TourXport, bạn hãy làm theo các bước sau:\n\n1. Mở ứng dụng TourXport.\n2. Chọn tùy chọn \"Đăng ký\".\n3. Nhập thông tin yêu cầu như tên, email, và mật khẩu.\n4. Nhấn \"Xác nhận\" để hoàn tất quá trình đăng ký.\n\nSau khi đăng ký, bạn có thể đăng nhập và tận hưởng các tính năng cá nhân hóa nhé! 🎉 Nếu cần thêm trợ giúp, đừng ngần ngại hỏi mình nhé! 😊",
+      "score": 80,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về quy trình đăng ký tài khoản, nhưng không hoàn toàn khớp với câu trả lời mong đợi, vì nó không chỉ đơn giản là hướng dẫn vào trang đăng ký và nhấn nút 'Đăng ký'.",
+      "latency_sec": 3.5
+    },
+    {
+      "id": 2,
+      "question": "Tôi quên mật khẩu, làm sao để lấy lại?",
+      "expected_answer": "Bạn nhấn vào 'Quên mật khẩu?' trên trang đăng nhập và làm theo hướng dẫn để đặt lại mật khẩu.",
+      "ai_answer": "Không sao cả! Bạn có thể lấy lại mật khẩu của mình bằng cách làm theo các bước sau:\n\n1. Mở ứng dụng TourXport.\n2. Trên màn hình đăng nhập, chọn \"Quên mật khẩu?\".\n3. Nhập địa chỉ email bạn đã đăng ký.\n4. Kiểm tra email của bạn để nhận hướng dẫn khôi phục mật khẩu.\n\nNếu bạn cần thêm trợ giúp, hãy cho mình biết nhé! 😊",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết để lấy lại mật khẩu, bao gồm các bước cụ thể và thông tin về việc kiểm tra email. Tuy nhiên, nó không hoàn toàn khớp với câu trả lời mong đợi vì có thêm thông tin về ứng dụng và không chỉ đơn giản là nhấn vào 'Quên mật khẩu?'.",
+      "latency_sec": 3.2
+    },
+    {
+      "id": 3,
+      "question": "Có thể cài mã PIN ở đâu?",
+      "expected_answer": "Bạn vào phần cài đặt tài khoản và chọn 'Cài đặt mã PIN'.",
+      "ai_answer": "Bạn có thể cài đặt mã PIN bảo mật trong phần \"Cài đặt Profile\". Để làm điều này, hãy thực hiện các bước sau:\n\n1. Đăng nhập vào ứng dụng TourXport.\n2. Vào phần \"Cài đặt Profile\".\n3. Tìm và chọn tùy chọn \"Thiết lập mã PIN bảo mật\".\n4. Nhập mã PIN mà bạn muốn cài đặt.\n\nChúc bạn cài đặt thành công! Nếu cần thêm trợ giúp, hãy cho mình biết nhé! 😊🔒",
+      "score": 80,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách cài đặt mã PIN, nhưng không hoàn toàn khớp với câu trả lời mong đợi về vị trí cụ thể trong cài đặt. Tuy nhiên, ý nghĩa chính vẫn được truyền đạt rõ ràng.",
+      "latency_sec": 3.31
+    },
+    {
+      "id": 4,
+      "question": "Ứng dụng hỗ trợ ngôn ngữ nào?",
+      "expected_answer": "Ứng dụng hỗ trợ tiếng Việt, tiếng Anh và một số ngôn ngữ khác.",
+      "ai_answer": "Ứng dụng TourXport hỗ trợ nhiều ngôn ngữ khác nhau! Bạn có thể dễ dàng thay đổi ngôn ngữ trong cài đặt profile của mình. Nếu cần trợ giúp thêm, hãy cho mình biết nhé! 😊🌍",
+      "score": 60,
+      "reason": "Câu trả lời thực tế không nêu rõ các ngôn ngữ cụ thể mà ứng dụng hỗ trợ, chỉ đề cập đến việc hỗ trợ nhiều ngôn ngữ khác nhau. Điều này không hoàn toàn đáp ứng được yêu cầu của câu hỏi về các ngôn ngữ cụ thể như tiếng Việt và tiếng Anh.",
+      "latency_sec": 3.08
+    },
+    {
+      "id": 5,
+      "question": "Tôi có thể nhận thông báo qua đâu?",
+      "expected_answer": "Bạn có thể nhận thông báo qua thông báo đẩy trên ứng dụng và email đã đăng ký.",
+      "ai_answer": "Bạn có thể nhận thông báo qua ứng dụng TourXport! Để bật/tắt thông báo, bạn vào phần cài đặt Profile trong ứng dụng. Chúc bạn có những trải nghiệm tuyệt vời! 📲✨",
+      "score": 70,
+      "reason": "Câu trả lời thực tế đề cập đến việc nhận thông báo qua ứng dụng, nhưng không nhắc đến email như trong câu trả lời mong đợi. Tuy nhiên, nó vẫn cung cấp thông tin hữu ích về cách bật/tắt thông báo trong ứng dụng, do đó điểm số không thấp hơn 70.",
+      "latency_sec": 2.43
+    },
+    {
+      "id": 6,
+      "question": "Làm sao để xem danh sách tỉnh?",
+      "expected_answer": "Bạn vào mục 'Khám phá' và chọn 'Danh sách tỉnh' để xem.",
+      "ai_answer": "Để xem danh sách các tỉnh thành trong ứng dụng TourXport, bạn có thể thực hiện theo các bước sau:\n\n1. Mở ứng dụng TourXport.\n2. Truy cập vào phần \"Khám phá địa điểm\".\n3. Chọn \"Điểm đến\" để xem thông tin chi tiết về các tỉnh thành.\n\nChúc bạn có những trải nghiệm thú vị! 🌍✨",
+      "score": 80,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách xem danh sách tỉnh, nhưng không hoàn toàn khớp với câu trả lời mong đợi. Nó đề cập đến ứng dụng cụ thể và các bước chi tiết, nhưng không sử dụng cụm từ 'Danh sách tỉnh' như trong câu trả lời mong đợi.",
+      "latency_sec": 3.02
+    },
+    {
+      "id": 7,
+      "question": "Làm sao để tìm khách sạn?",
+      "expected_answer": "Vào mục 'Khám phá', chọn 'Khách sạn' và sử dụng bộ lọc để tìm kiếm.",
+      "ai_answer": "Để tìm khách sạn trên ứng dụng TourXport, bạn hãy làm theo các bước sau:\n\n1. **Đăng nhập vào ứng dụng**: Nếu chưa có tài khoản, hãy đăng ký nhé!\n2. **Chọn mục \"Khám phá địa điểm\"**: Tại đây, bạn có thể xem thông tin chi tiết về các tỉnh thành và địa danh.\n3. **Tìm kiếm khách sạn**: Trong phần thông tin tỉnh thành, bạn sẽ thấy danh sách các khách sạn nổi bật.\n4. **Xem chi tiết**: Nhấn vào tên khách sạn để biết thêm thông tin cụ thể như dịch vụ, đánh giá, và hình ảnh.\n\nChúc bạn tìm được khách sạn ưng ý cho chuyến đi của mình! 🏨✨",
+      "score": 80,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách tìm khách sạn, nhưng không hoàn toàn khớp với câu trả lời mong đợi, vì nó không chỉ đơn giản là vào mục 'Khám phá' và chọn 'Khách sạn', mà còn có thêm các bước khác như đăng nhập và xem thông tin tỉnh thành.",
+      "latency_sec": 4.66
+    },
+    {
+      "id": 8,
+      "question": "Có thể xem thời tiết ở đâu?",
+      "expected_answer": "Bạn vào mục 'Khám phá' và chọn 'Thời tiết' để theo dõi.",
+      "ai_answer": "Bạn có thể xem thời tiết ngay tại địa điểm bằng cách sử dụng tính năng Tiện ích trong ứng dụng TourXport. Chỉ cần vào phần khám phá địa điểm và tra cứu thời tiết, bạn sẽ có thông tin chi tiết về điều kiện thời tiết tại đó! 🌤️✨ Chúc bạn có những chuyến đi thú vị!",
+      "score": 70,
+      "reason": "Câu trả lời thực tế cung cấp thông tin về cách xem thời tiết nhưng không hoàn toàn khớp với câu trả lời mong đợi. Nó đề cập đến một ứng dụng cụ thể và cách sử dụng tính năng của nó, trong khi câu trả lời mong đợi chỉ đơn giản là hướng dẫn vào mục 'Khám phá' và chọn 'Thời tiết'. Tuy nhiên, ý nghĩa chính vẫn được truyền đạt.",
+      "latency_sec": 3.33
+    },
+    {
+      "id": 9,
+      "question": "Làm sao để xem bản đồ?",
+      "expected_answer": "Bạn vào phần 'Khám phá' và chọn 'Bản đồ' để xem.",
+      "ai_answer": "Để xem bản đồ trong ứng dụng TourXport, bạn làm theo các bước sau:\n\n1. Mở ứng dụng TourXport.\n2. Đi đến mục \"Khám phá địa điểm\".\n3. Chọn \"Tiện ích\" và tìm tùy chọn \"Bản đồ\".\n\nTại đây, bạn sẽ thấy bản đồ tương tác trực quan giúp bạn dễ dàng tìm kiếm các địa điểm thú vị! 🗺️😊 Chúc bạn có những trải nghiệm tuyệt vời!",
+      "score": 70,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách xem bản đồ trong ứng dụng cụ thể, nhưng không hoàn toàn khớp với câu trả lời mong đợi, vì nó không chỉ rõ cách vào phần 'Bản đồ' mà thay vào đó là hướng dẫn qua nhiều bước khác nhau.",
+      "latency_sec": 3.12
+    },
+    {
+      "id": 10,
+      "question": "Tôi muốn tạo tour thông minh, bắt đầu từ đâu?",
+      "expected_answer": "Bắt đầu bằng cách vào mục 'Tour' và hoàn thành khảo sát tạo tour.",
+      "ai_answer": "Chào bạn! Để tạo tour thông minh trên ứng dụng TourXport, bạn hãy làm theo các bước sau:\n\n1. **Đăng nhập vào tài khoản** của bạn (nếu chưa đăng nhập).\n2. Tìm và chọn **tính năng \"Tạo Tour thông minh\"** trong menu.\n3. **Làm bài khảo sát ngắn** về sở thích, ngân sách và thời gian của bạn.\n4. Ứng dụng sẽ tự động **sinh ra một lịch trình chi tiết** cho bạn.\n\nChúc bạn có một chuyến đi thú vị với tour thông minh! 🚀✨",
+      "score": 80,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về quy trình tạo tour thông minh, bao gồm các bước cụ thể và thêm thông tin về ứng dụng. Tuy nhiên, nó không hoàn toàn trùng khớp với câu trả lời mong đợi, vì câu trả lời mong đợi chỉ đề cập đến việc vào mục 'Tour' và hoàn thành khảo sát, trong khi câu trả lời thực tế có thêm các bước khác như đăng nhập và chọn tính năng. Do đó, điểm số không đạt 100.",
+      "latency_sec": 3.57
+    },
+    {
+      "id": 11,
+      "question": "Làm sao để xem lộ trình tour?",
+      "expected_answer": "Vào phần 'Tour' và chọn tour mà bạn muốn xem lộ trình.",
+      "ai_answer": "Để xem lộ trình tour trên ứng dụng TourXport, bạn làm theo các bước sau:\n\n1. **Đăng nhập vào tài khoản** của bạn.\n2. Vào phần **Lên lịch trình**.\n3. Chọn **Quản lý Tour** để xem chi tiết lộ trình của chuyến đi.\n\nChúc bạn có trải nghiệm thú vị với TourXport! 🌏✨",
+      "score": 70,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách xem lộ trình tour, nhưng không hoàn toàn khớp với câu trả lời mong đợi, vì nó không đề cập đến phần 'Tour' mà chỉ nói về 'Lên lịch trình' và 'Quản lý Tour'.",
+      "latency_sec": 1.99
+    },
+    {
+      "id": 12,
+      "question": "Có thể lưu tour không?",
+      "expected_answer": "Có, bạn có thể lưu tour bằng cách nhấn nút 'Lưu' trong phần lộ trình.",
+      "ai_answer": "Có chứ! Bạn có thể lưu trữ các địa điểm và Tour yêu thích để xem lại sau trong phần \"Bộ sưu tập\" của ứng dụng. Để lưu tour, hãy tạo một tour thông minh và sau đó chọn lưu lại nhé! 🌟",
+      "score": 80,
+      "reason": "Câu trả lời thực tế cung cấp thông tin về việc lưu tour nhưng không nhắc đến nút 'Lưu' trong phần lộ trình như trong câu trả lời mong đợi. Tuy nhiên, nó vẫn truyền đạt ý nghĩa chính là có thể lưu tour và cách thực hiện, vì vậy điểm số cao hơn mức trung bình.",
+      "latency_sec": 1.26
+    },
+    {
+      "id": 13,
+      "question": "Làm sao để lưu địa điểm yêu thích?",
+      "expected_answer": "Trong phần thông tin địa điểm, bạn nhấn nút 'Lưu' để thêm vào danh sách yêu thích.",
+      "ai_answer": "Để lưu địa điểm yêu thích trên ứng dụng TourXport, bạn làm theo các bước sau:\n\n1. **Khám phá địa điểm**: Vào phần khám phá để tìm kiếm địa điểm mà bạn muốn lưu.\n2. **Chọn địa điểm**: Nhấn vào địa điểm đó để xem thông tin chi tiết.\n3. **Lưu trữ**: Tìm nút \"Lưu\" hoặc \"Save\" và nhấn vào đó.\n\nVậy là địa điểm đã được lưu vào bộ sưu tập của bạn! Bạn có thể xem lại bất cứ lúc nào. Chúc bạn có những trải nghiệm thú vị! 🌟",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết về cách lưu địa điểm yêu thích, bao gồm các bước cụ thể, mặc dù không hoàn toàn giống với câu trả lời mong đợi. Tuy nhiên, nó vẫn truyền đạt đúng ý nghĩa và nội dung cần thiết để thực hiện hành động lưu địa điểm.",
+      "latency_sec": 2.49
+    },
+    {
+      "id": 14,
+      "question": "Tôi có thể viết đánh giá địa điểm ở đâu?",
+      "expected_answer": "Bạn vào trang thông tin địa điểm và tìm phần 'Viết đánh giá'.",
+      "ai_answer": "Bạn có thể viết đánh giá cho các địa điểm như khách sạn, nhà hàng, và địa danh ngay trong ứng dụng TourXport! 🌟 \n\nĐể thực hiện điều này, bạn chỉ cần làm theo các bước sau:\n\n1. **Khám phá địa điểm**: Tìm kiếm và chọn địa điểm mà bạn muốn đánh giá.\n2. **Chọn mục Đánh giá**: Tìm phần đánh giá (Review) trên trang thông tin của địa điểm đó.\n3. **Viết nhận xét**: Nhập ý kiến của bạn và cho điểm (nếu có).\n4. **Gửi đánh giá**: Nhấn nút gửi để chia sẻ đánh giá của bạn!\n\nChúc bạn có những đánh giá thú vị! 😄✍️",
+      "score": 80,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết về cách viết đánh giá, nhưng không hoàn toàn trùng khớp với câu trả lời mong đợi, vì nó không chỉ rõ rằng người dùng cần vào trang thông tin địa điểm mà chỉ đề cập đến việc tìm kiếm địa điểm trong ứng dụng. Tuy nhiên, nó vẫn đáp ứng được yêu cầu của câu hỏi.",
+      "latency_sec": 2.42
+    },
+    {
+      "id": 15,
+      "question": "Có thể chỉnh sửa đánh giá đã viết không?",
+      "expected_answer": "Có, bạn có thể chỉnh sửa đánh giá của mình trong mục 'Đánh giá của tôi'.",
+      "ai_answer": "Xin lỗi, hiện tại ứng dụng TourXport không hỗ trợ chỉnh sửa đánh giá đã viết. Bạn có thể viết một đánh giá mới nếu muốn thay đổi ý kiến! 😊 Nếu cần thêm thông tin gì khác, cứ hỏi mình nhé!",
+      "score": 30,
+      "reason": "Câu trả lời thực tế không đồng ý với câu trả lời mong đợi, cho rằng không thể chỉnh sửa đánh giá, trong khi câu trả lời mong đợi khẳng định có thể chỉnh sửa. Mặc dù có thông tin bổ sung về việc viết đánh giá mới, nhưng nội dung chính không trùng khớp.",
+      "latency_sec": 1.13
+    },
+    {
+      "id": 16,
+      "question": "Làm sao để viết nhật ký kỷ niệm?",
+      "expected_answer": "Vào mục 'Cộng đồng' và chọn 'Viết nhật ký kỷ niệm' để bắt đầu.",
+      "ai_answer": "Để viết nhật ký du lịch (Travel Memory) trên ứng dụng TourXport, bạn thực hiện theo các bước sau:\n\n1. **Đăng nhập vào tài khoản** của bạn.\n2. **Chọn tính năng \"Nhật ký du lịch\"** trong menu chính.\n3. **Nhấn vào nút \"Thêm mới\"** để bắt đầu ghi lại kỷ niệm chuyến đi của bạn.\n4. **Nhập nội dung** mà bạn muốn chia sẻ, có thể là cảm xúc, trải nghiệm và những khoảnh khắc đáng nhớ.\n5. **Lưu lại** để bảo quản kỷ niệm của bạn.\n\nChúc bạn có những kỷ niệm tuyệt vời và nhiều điều thú vị để viết nhé! ✈️📖",
+      "score": 60,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết về cách viết nhật ký du lịch trên một ứng dụng cụ thể, nhưng không hoàn toàn trùng khớp với câu trả lời mong đợi, vì nó không chỉ rõ cách viết nhật ký kỷ niệm mà còn tập trung vào một ứng dụng cụ thể và loại nhật ký cụ thể (du lịch).",
+      "latency_sec": 2.42
+    },
+    {
+      "id": 17,
+      "question": "Tôi có thể xem nhật ký kỷ niệm của người khác không?",
+      "expected_answer": "Có, bạn có thể xem nhật ký của người khác trong mục 'Cộng đồng'.",
+      "ai_answer": "Xin lỗi, nhưng ứng dụng TourXport không có tính năng cho phép xem nhật ký kỷ niệm của người khác. Bạn chỉ có thể lưu giữ kỷ niệm chuyến đi của riêng mình trong phần Nhật ký du lịch (Travel Memory) nhé! 😊 Nếu bạn cần thêm thông tin khác, hãy cho mình biết!",
+      "score": 0,
+      "reason": "Câu trả lời thực tế hoàn toàn trái ngược với câu trả lời mong đợi, vì nó khẳng định rằng không thể xem nhật ký của người khác, trong khi câu trả lời mong đợi cho rằng có thể xem nhật ký trong mục 'Cộng đồng'.",
+      "latency_sec": 2.04
+    },
+    {
+      "id": 18,
+      "question": "Làm sao để thay đổi ngôn ngữ ứng dụng?",
+      "expected_answer": "Bạn vào phần cài đặt và chọn ngôn ngữ mong muốn từ danh sách.",
+      "ai_answer": "Để thay đổi ngôn ngữ ứng dụng TourXport, bạn làm theo các bước sau:\n\n1. Đăng nhập vào tài khoản của bạn.\n2. Vào phần Cài đặt Profile.\n3. Tìm tùy chọn \"Đổi ngôn ngữ\" và chọn ngôn ngữ bạn mong muốn.\n\nVậy là xong! Bạn đã thay đổi ngôn ngữ thành công 🎉. Nếu cần thêm hỗ trợ, mình ở đây giúp đỡ nhé! 😊",
+      "score": 80,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn cụ thể hơn về cách thay đổi ngôn ngữ trong ứng dụng, nhưng không hoàn toàn khớp với câu trả lời mong đợi vì có thêm bước đăng nhập và chi tiết về ứng dụng cụ thể. Tuy nhiên, ý nghĩa chính vẫn được truyền đạt.",
+      "latency_sec": 1.83
+    },
+    {
+      "id": 19,
+      "question": "Có cần đăng nhập để sử dụng ứng dụng không?",
+      "expected_answer": "Bạn có thể sử dụng một số chức năng mà không cần đăng nhập, nhưng đăng nhập sẽ giúp bạn lưu trữ thông tin.",
+      "ai_answer": "Có, bạn cần đăng ký hoặc đăng nhập để sử dụng ứng dụng TourXport. Việc này là bắt buộc để cá nhân hóa trải nghiệm của bạn. Hãy bắt đầu bằng cách tạo tài khoản hoặc đăng nhập nhé! 😊",
+      "score": 60,
+      "reason": "Câu trả lời thực tế đề cập đến việc cần đăng nhập để sử dụng ứng dụng, nhưng không nhấn mạnh rằng một số chức năng có thể sử dụng mà không cần đăng nhập, như trong câu trả lời mong đợi. Điều này làm giảm độ chính xác của câu trả lời.",
+      "latency_sec": 1.55
+    },
+    {
+      "id": 20,
+      "question": "Ứng dụng này có miễn phí không?",
+      "expected_answer": "Ứng dụng hoàn toàn miễn phí tải về và sử dụng.",
+      "ai_answer": "Chào bạn! Ứng dụng TourXport hoàn toàn miễn phí để tải và sử dụng. Bạn chỉ cần đăng ký tài khoản để tận hưởng các tính năng cá nhân hóa. Nếu bạn cần thêm thông tin gì, hãy cho mình biết nhé! 😊",
+      "score": 95,
+      "reason": "Câu trả lời thực tế xác nhận rằng ứng dụng là miễn phí để tải và sử dụng, nhưng có thêm thông tin về việc cần đăng ký tài khoản, điều này không có trong câu trả lời mong đợi. Tuy nhiên, nội dung chính vẫn đúng và rõ ràng.",
+      "latency_sec": 1.15
+    },
+    {
+      "id": 21,
+      "question": "Có thể tìm kiếm địa điểm trên bản đồ không?",
+      "expected_answer": "Có, bạn có thể sử dụng chức năng tìm kiếm trên bản đồ.",
+      "ai_answer": "Có chứ! Bạn có thể sử dụng tính năng bản đồ tương tác để tìm kiếm địa điểm. 🌍\n\nĐể làm điều này, hãy làm theo các bước sau:\n1. Mở ứng dụng TourXport.\n2. Chọn mục \"Khám phá địa điểm\".\n3. Nhấn vào \"Tiện ích\" và chọn bản đồ.\n4. Tìm kiếm địa điểm bạn muốn khám phá trên bản đồ.\n\nChúc bạn có những trải nghiệm thú vị! 🎉",
+      "score": 85,
+      "reason": "Câu trả lời thực tế xác nhận khả năng tìm kiếm địa điểm trên bản đồ và cung cấp hướng dẫn chi tiết, mặc dù không hoàn toàn giống với câu trả lời mong đợi. Tuy nhiên, nó vẫn giữ được ý nghĩa chính và cung cấp thông tin bổ sung hữu ích.",
+      "latency_sec": 1.6
+    },
+    {
+      "id": 22,
+      "question": "Làm sao để nhận thông báo khuyến mãi?",
+      "expected_answer": "Bạn cần bật thông báo trong cài đặt tài khoản để nhận thông báo khuyến mãi.",
+      "ai_answer": "Để nhận thông báo khuyến mãi trên ứng dụng TourXport, bạn cần bật tính năng thông báo. Dưới đây là các bước thực hiện:\n\n1. Đăng nhập vào tài khoản của bạn.\n2. Vào phần \"Cài đặt Profile\".\n3. Tìm và bật tùy chọn \"Thông báo\".\n\nSau khi hoàn tất, bạn sẽ nhận được thông báo về các khuyến mãi hấp dẫn từ ứng dụng! 🎉 Nếu cần thêm trợ giúp, hãy cho tôi biết nhé! 😊",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách nhận thông báo khuyến mãi, bao gồm các bước cụ thể, nhưng vẫn giữ được ý nghĩa chính là cần bật thông báo trong cài đặt tài khoản. Tuy nhiên, nó không hoàn toàn khớp với câu trả lời mong đợi vì có thêm thông tin không cần thiết.",
+      "latency_sec": 1.74
+    },
+    {
+      "id": 23,
+      "question": "Tôi có thể tìm kiếm nhà hàng ở đâu?",
+      "expected_answer": "Vào mục 'Khám phá', chọn 'Nhà hàng' và sử dụng bộ lọc tìm kiếm.",
+      "ai_answer": "Bạn có thể tìm kiếm nhà hàng trong phần \"Khám phá địa điểm\" của ứng dụng TourXport! 🌟 \n\nChỉ cần làm theo các bước sau:\n1. Mở ứng dụng và đăng nhập vào tài khoản của bạn.\n2. Chọn mục \"Điểm đến\".\n3. Tìm kiếm thông tin về các nhà hàng nổi bật trong khu vực bạn muốn khám phá. \n\nChúc bạn tìm được những món ăn ngon miệng! 🍽️😊",
+      "score": 70,
+      "reason": "Câu trả lời thực tế cung cấp thông tin về việc tìm kiếm nhà hàng trong ứng dụng cụ thể, nhưng không hoàn toàn khớp với các bước và mục cụ thể như trong câu trả lời mong đợi. Tuy nhiên, nó vẫn đáp ứng được yêu cầu tìm kiếm nhà hàng.",
+      "latency_sec": 1.67
+    },
+    {
+      "id": 24,
+      "question": "Làm sao để chia sẻ địa điểm tôi yêu thích?",
+      "expected_answer": "Bạn có thể chia sẻ địa điểm thông qua nút chia sẻ trên trang thông tin địa điểm.",
+      "ai_answer": "Để chia sẻ địa điểm yêu thích của bạn trên TourXport, bạn có thể thực hiện các bước sau:\n\n1. **Lưu trữ địa điểm**: Đầu tiên, hãy lưu trữ địa điểm bạn yêu thích vào bộ sưu tập của mình bằng cách chọn \"Save\" khi xem thông tin địa điểm.\n\n2. **Chia sẻ thông tin**: Sau khi đã lưu, bạn có thể tìm địa điểm trong bộ sưu tập của mình và chọn tùy chọn chia sẻ (nếu có). \n\nĐừng quên chia sẻ niềm vui du lịch với bạn bè nhé! 🌍✨",
+      "score": 80,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết về cách chia sẻ địa điểm yêu thích, mặc dù không hoàn toàn khớp với câu trả lời mong đợi. Tuy nhiên, nó vẫn truyền đạt được ý chính về việc chia sẻ địa điểm thông qua các bước cụ thể.",
+      "latency_sec": 2.15
+    },
+    {
+      "id": 25,
+      "question": "Tôi có thể tạo nhiều tour cùng lúc không?",
+      "expected_answer": "Có, bạn có thể tạo nhiều tour khác nhau và lưu chúng.",
+      "ai_answer": "Rất tiếc, ứng dụng TourXport hiện tại chỉ cho phép bạn tạo một tour tại một thời điểm. Tuy nhiên, bạn có thể lưu trữ các địa điểm và tour yêu thích trong bộ sưu tập để xem lại và tạo thêm tour khác sau nhé! 😊 Nếu bạn cần hỗ trợ gì thêm, cứ hỏi mình nhé!",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không đáp ứng được câu hỏi về khả năng tạo nhiều tour cùng lúc, mà lại khẳng định rằng chỉ có thể tạo một tour tại một thời điểm, điều này hoàn toàn trái ngược với câu trả lời mong đợi.",
+      "latency_sec": 1.37
+    },
+    {
+      "id": 26,
+      "question": "Có thể xem lịch sử hoạt động của tôi không?",
+      "expected_answer": "Có, bạn vào phần 'Tài khoản' và chọn 'Lịch sử hoạt động'.",
+      "ai_answer": "Rất tiếc, hiện tại ứng dụng TourXport không hỗ trợ tính năng xem lịch sử hoạt động của người dùng. Tuy nhiên, bạn có thể lưu trữ các địa điểm và tour yêu thích trong bộ sưu tập để dễ dàng truy cập lại sau! Nếu cần thêm bất kỳ trợ giúp nào khác, cứ cho mình biết nhé! 😊✈️",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không cung cấp thông tin về việc xem lịch sử hoạt động, mà thay vào đó thông báo rằng tính năng này không có sẵn. Điều này không đáp ứng được yêu cầu của câu hỏi.",
+      "latency_sec": 1.3
+    },
+    {
+      "id": 27,
+      "question": "Tôi muốn xóa tài khoản, làm sao làm được?",
+      "expected_answer": "Bạn vào phần cài đặt tài khoản và chọn 'Xóa tài khoản'.",
+      "ai_answer": "Chào bạn! Hiện tại, ứng dụng TourXport không cung cấp tính năng xóa tài khoản trực tiếp trong app. Bạn có thể liên hệ với bộ phận hỗ trợ khách hàng của chúng tôi để được hướng dẫn cụ thể nhé! 😊 Nếu bạn cần thêm thông tin hay hỗ trợ gì khác, hãy cho tôi biết nhé!",
+      "score": 60,
+      "reason": "Câu trả lời thực tế không cung cấp hướng dẫn cụ thể để xóa tài khoản như câu trả lời mong đợi, nhưng vẫn đề cập đến việc liên hệ với bộ phận hỗ trợ, điều này có thể giúp người dùng giải quyết vấn đề của họ.",
+      "latency_sec": 1.33
+    },
+    {
+      "id": 28,
+      "question": "Có thể xem thời gian mở cửa của địa điểm không?",
+      "expected_answer": "Có, thông tin về thời gian mở cửa thường có trong trang thông tin của địa điểm.",
+      "ai_answer": "Xin lỗi, hiện tại ứng dụng TourXport không cung cấp thông tin về thời gian mở cửa của các địa điểm. Tuy nhiên, bạn có thể khám phá thông tin chi tiết về các tỉnh thành, địa danh, khách sạn và nhà hàng nổi bật trong phần \"Điểm đến\". Nếu có thắc mắc nào khác, mình luôn sẵn sàng giúp đỡ! 😊",
+      "score": 30,
+      "reason": "Câu trả lời thực tế không cung cấp thông tin về thời gian mở cửa của địa điểm, mà chỉ nói rằng ứng dụng không có thông tin này. Điều này không đáp ứng được yêu cầu của câu hỏi, mặc dù có một số thông tin liên quan đến việc khám phá địa điểm.",
+      "latency_sec": 1.46
+    },
+    {
+      "id": 29,
+      "question": "Làm sao để đánh giá một tour?",
+      "expected_answer": "Bạn vào phần 'Tour của tôi', chọn tour mà bạn đã tham gia và nhấn 'Đánh giá'.",
+      "ai_answer": "Để đánh giá một tour trên ứng dụng TourXport, bạn làm theo các bước sau:\n\n1. **Đăng nhập** vào tài khoản của bạn.\n2. **Tìm kiếm** tour mà bạn muốn đánh giá trong mục Quản lý Tour.\n3. **Chọn tour** và tìm phần đánh giá (Review).\n4. **Viết nhận xét** của bạn về tour đó, có thể chia sẻ cảm nhận và điểm số.\n5. **Gửi** đánh giá của bạn!\n\nChúc bạn có những trải nghiệm thú vị và chia sẻ nhiều kỷ niệm đẹp! 😊",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết hơn về cách đánh giá một tour, bao gồm các bước cụ thể và thông tin bổ sung, nhưng vẫn giữ được ý nghĩa chính của câu trả lời mong đợi.",
+      "latency_sec": 1.82
+    },
+    {
+      "id": 30,
+      "question": "Có thể tìm hiểu thêm về địa điểm không?",
+      "expected_answer": "Bạn có thể đọc thêm thông tin trong trang thông tin địa điểm.",
+      "ai_answer": "Chắc chắn rồi! Bạn có thể khám phá thông tin chi tiết về các tỉnh thành, địa danh, khách sạn và nhà hàng nổi bật trong ứng dụng TourXport. Để bắt đầu, hãy làm theo các bước sau:\n\n1. Mở ứng dụng TourXport.\n2. Vào phần \"Khám phá địa điểm\".\n3. Chọn \"Điểm đến\" để xem thông tin mà bạn cần.\n\nNgoài ra, bạn còn có thể sử dụng tính năng bản đồ tương tác và tra cứu thời tiết ngay tại địa điểm nữa đấy! 🌍☀️ Nếu bạn cần thêm thông tin, hãy cho mình biết nhé!",
+      "score": 80,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết và hướng dẫn cụ thể về cách tìm hiểu địa điểm, mặc dù không hoàn toàn giống với câu trả lời mong đợi. Tuy nhiên, nó vẫn đáp ứng được yêu cầu tìm hiểu thêm về địa điểm.",
+      "latency_sec": 1.84
+    },
+    {
+      "id": 31,
+      "question": "Ứng dụng có hỗ trợ đặt phòng khách sạn không?",
+      "expected_answer": "Hiện tại, ứng dụng không hỗ trợ đặt phòng trực tiếp nhưng bạn có thể tìm kiếm thông tin.",
+      "ai_answer": "Xin lỗi, nhưng ứng dụng TourXport không hỗ trợ đặt phòng khách sạn. Tuy nhiên, bạn có thể khám phá thông tin chi tiết về các khách sạn nổi bật trong phần \"Điểm đến\". Nếu cần thêm thông tin về các tính năng khác, mình rất vui lòng hỗ trợ! 😊",
+      "score": 90,
+      "reason": "Câu trả lời thực tế xác nhận rằng ứng dụng không hỗ trợ đặt phòng khách sạn, tương tự như câu trả lời mong đợi. Tuy nhiên, nó cung cấp thêm thông tin về việc tìm kiếm thông tin chi tiết về khách sạn, điều này không hoàn toàn nằm trong câu trả lời mong đợi nhưng vẫn liên quan đến câu hỏi.",
+      "latency_sec": 1.29
+    },
+    {
+      "id": 32,
+      "question": "Có thể xem đánh giá của người khác ở đâu?",
+      "expected_answer": "Trong trang thông tin địa điểm, bạn có thể xem tất cả các đánh giá của người dùng khác.",
+      "ai_answer": "Bạn có thể xem đánh giá của người khác bằng cách vào phần \"Đánh giá (Review)\" trong ứng dụng TourXport. Tại đây, bạn sẽ thấy nhận xét về khách sạn, nhà hàng và địa danh mà người dùng đã chia sẻ. Hãy khám phá và tìm kiếm những thông tin hữu ích cho chuyến đi của bạn nhé! 😊",
+      "score": 80,
+      "reason": "Câu trả lời thực tế cung cấp thông tin cụ thể về cách xem đánh giá trong ứng dụng TourXport, mặc dù không nhắc đến 'trang thông tin địa điểm' như trong câu trả lời mong đợi. Tuy nhiên, nó vẫn truyền đạt ý nghĩa chính là có thể xem đánh giá của người khác.",
+      "latency_sec": 1.37
+    },
+    {
+      "id": 33,
+      "question": "Tôi có thể báo cáo địa điểm không chính xác không?",
+      "expected_answer": "Có, bạn có thể báo cáo thông qua nút 'Báo cáo' trong trang thông tin địa điểm.",
+      "ai_answer": "Xin lỗi, hiện tại ứng dụng TourXport không có tính năng báo cáo địa điểm không chính xác. Tuy nhiên, bạn có thể viết đánh giá (Review) cho địa điểm đó để chia sẻ ý kiến của mình. Nếu bạn cần hỗ trợ gì thêm, hãy cho tôi biết nhé! 😊",
+      "score": 30,
+      "reason": "Câu trả lời thực tế không cung cấp thông tin về khả năng báo cáo địa điểm không chính xác, mà chỉ đề cập đến việc viết đánh giá. Điều này không đáp ứng đúng yêu cầu của câu hỏi.",
+      "latency_sec": 1.21
+    },
+    {
+      "id": 34,
+      "question": "Có bao nhiêu loại hình dịch vụ trong ứng dụng?",
+      "expected_answer": "Ứng dụng cung cấp dịch vụ tìm kiếm địa điểm, tour, đánh giá và viết nhật ký.",
+      "ai_answer": "Trong ứng dụng TourXport, bạn có thể khám phá nhiều loại hình dịch vụ như:\n\n1. **Điểm đến**: Thông tin chi tiết về các tỉnh thành, địa danh, khách sạn và nhà hàng nổi bật.\n2. **Tiện ích**: Bản đồ tương tác và tra cứu thời tiết ngay tại địa điểm.\n3. **Lên lịch trình**: Tạo Tour thông minh, quản lý Tour và lưu trữ các địa điểm yêu thích.\n4. **Tương tác & Cộng đồng**: Đánh giá các địa điểm và lưu giữ kỷ niệm chuyến đi.\n\nHãy tận dụng các dịch vụ này để có trải nghiệm du lịch tuyệt vời nhé! 🌍✈️",
+      "score": 70,
+      "reason": "Câu trả lời thực tế liệt kê nhiều loại hình dịch vụ trong ứng dụng, nhưng không hoàn toàn trùng khớp với câu trả lời mong đợi, vì nó không chỉ đề cập đến dịch vụ tìm kiếm địa điểm, tour, đánh giá và viết nhật ký mà còn bao gồm nhiều dịch vụ khác. Tuy nhiên, nó vẫn cung cấp thông tin hữu ích và liên quan đến câu hỏi.",
+      "latency_sec": 1.9
+    },
+    {
+      "id": 35,
+      "question": "Làm sao để tìm kiếm tour?",
+      "expected_answer": "Bạn vào mục 'Tour' và sử dụng bộ lọc để tìm kiếm tour theo sở thích.",
+      "ai_answer": "Để tìm kiếm tour trên ứng dụng TourXport, bạn hãy làm theo các bước sau:\n\n1. **Đăng nhập** vào tài khoản của bạn (nếu chưa đăng nhập).\n2. Vào phần **Lên lịch trình**.\n3. Chọn **Tạo Tour thông minh**.\n4. Làm một bài khảo sát ngắn về sở thích, ngân sách và thời gian của bạn.\n5. Ứng dụng sẽ tự động sinh ra một lịch trình tour chi tiết cho bạn! 🎉\n\nChúc bạn tìm được tour ưng ý! Nếu cần thêm trợ giúp, đừng ngần ngại hỏi nhé! 😊",
+      "score": 70,
+      "reason": "Câu trả lời thực tế cung cấp một quy trình chi tiết để tìm kiếm tour trên một ứng dụng cụ thể, nhưng không hoàn toàn khớp với câu trả lời mong đợi, vì nó không chỉ ra việc sử dụng bộ lọc mà chỉ tập trung vào việc tạo tour thông minh.",
+      "latency_sec": 1.83
+    },
+    {
+      "id": 36,
+      "question": "Làm sao để đánh giá một việc làm?",
+      "expected_answer": "Hiện tại, ứng dụng không có mục đánh giá việc làm.",
+      "ai_answer": "Xin lỗi, nhưng mình chỉ có thể giúp bạn với các tính năng của ứng dụng TourXport. Nếu bạn cần biết cách đánh giá khách sạn, nhà hàng hoặc địa danh trong app, mình rất vui được hướng dẫn! 😊",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không đề cập đến việc đánh giá một việc làm mà chỉ nói về các tính năng khác của ứng dụng, không liên quan đến câu hỏi ban đầu.",
+      "latency_sec": 1.11
+    },
+    {
+      "id": 37,
+      "question": "Có thể tìm kiếm tour theo khu vực không?",
+      "expected_answer": "Có, bạn có thể lọc tour theo từng khu vực trong phần tìm kiếm.",
+      "ai_answer": "Chào bạn! 😊 Hiện tại, trong ứng dụng TourXport, bạn có thể tạo tour thông minh bằng cách làm một bài khảo sát về sở thích, ngân sách và thời gian. Ứng dụng sẽ tự động sinh ra một lịch trình chi tiết cho bạn. Tuy nhiên, tính năng tìm kiếm tour theo khu vực cụ thể chưa được hỗ trợ. \n\nNếu bạn cần thêm thông tin về địa điểm hoặc muốn khám phá các tỉnh thành, hãy cho mình biết nhé! 🗺️✨",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không đáp ứng được yêu cầu tìm kiếm tour theo khu vực, mà còn thông tin về một tính năng khác không liên quan. Điều này làm giảm độ chính xác của câu trả lời.",
+      "latency_sec": 1.63
+    },
+    {
+      "id": 38,
+      "question": "Làm sao để biết thời gian dự kiến cho tour?",
+      "expected_answer": "Thông tin về thời gian dự kiến sẽ được hiển thị trong lộ trình tour.",
+      "ai_answer": "Để biết thời gian dự kiến cho tour của bạn, hãy làm theo các bước sau:\n\n1. **Tạo Tour thông minh**: Vào tính năng \"Lên lịch trình\" trong ứng dụng.\n2. **Thực hiện khảo sát**: Trả lời bài khảo sát ngắn về sở thích, ngân sách và thời gian.\n3. **Xem lịch trình**: Sau khi hoàn thành khảo sát, ứng dụng sẽ tự động sinh ra một lịch trình chi tiết, bao gồm thời gian dự kiến cho từng điểm đến.\n\nChúc bạn có một chuyến đi thú vị! 🌍✨",
+      "score": 70,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết về cách xác định thời gian dự kiến cho tour, nhưng không trực tiếp đề cập đến việc thông tin này sẽ được hiển thị trong lộ trình tour như câu trả lời mong đợi. Tuy nhiên, nó vẫn liên quan đến câu hỏi và cung cấp hướng dẫn hữu ích.",
+      "latency_sec": 2.13
+    },
+    {
+      "id": 39,
+      "question": "Tôi có thể tìm kiếm địa điểm gần tôi không?",
+      "expected_answer": "Có, bạn có thể sử dụng tính năng 'Địa điểm gần tôi' trong mục 'Khám phá'.",
+      "ai_answer": "Có chứ! Bạn có thể sử dụng tính năng \"Khám phá địa điểm\" trong ứng dụng TourXport để xem thông tin về các địa danh, khách sạn và nhà hàng nổi bật gần bạn. Hãy mở ứng dụng, vào phần điểm đến và bạn sẽ thấy thông tin chi tiết ngay nhé! 🗺️✨",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách tìm kiếm địa điểm gần người dùng, nhưng không hoàn toàn khớp với câu trả lời mong đợi về tính năng cụ thể. Tuy nhiên, ý nghĩa chính vẫn được truyền đạt rõ ràng.",
+      "latency_sec": 1.53
+    },
+    {
+      "id": 40,
+      "question": "Tôi có thể xem các tour được đề xuất không?",
+      "expected_answer": "Có, ứng dụng sẽ đề xuất các tour dựa trên sở thích của bạn.",
+      "ai_answer": "Chào bạn! 🌟 Để xem các tour được đề xuất, bạn có thể sử dụng tính năng \"Tạo Tour thông minh\" trong ứng dụng. Dưới đây là hướng dẫn từng bước:\n\n1. **Đăng nhập vào tài khoản** của bạn. (Nếu chưa có tài khoản, hãy đăng ký nhé!)\n2. **Chọn tính năng \"Tạo Tour thông minh\"**.\n3. **Điền vào bài khảo sát ngắn** về sở thích, ngân sách, và thời gian của bạn.\n4. Ứng dụng sẽ **tự động sinh ra một lịch trình chi tiết** cho bạn!\n\nSau đó, bạn có thể xem và lưu trữ các tour yêu thích. Chúc bạn có những trải nghiệm thú vị! 🗺️✨",
+      "score": 85,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết về cách xem các tour được đề xuất, bao gồm các bước cụ thể, nhưng không trực tiếp xác nhận rằng ứng dụng sẽ đề xuất tour dựa trên sở thích của người dùng như trong câu trả lời mong đợi.",
+      "latency_sec": 2.53
+    },
+    {
+      "id": 41,
+      "question": "Có thể lưu nhật ký kỷ niệm không?",
+      "expected_answer": "Có, bạn có thể lưu nhật ký kỷ niệm của mình trong mục 'Cộng đồng'.",
+      "ai_answer": "Có chứ! Bạn có thể lưu giữ kỷ niệm chuyến đi thông qua tính năng \"Nhật ký du lịch\" (Travel Memory) trong ứng dụng TourXport. 📝✨ Chỉ cần vào phần tương tác và cộng đồng, bạn sẽ tìm thấy tùy chọn để ghi lại những khoảnh khắc đáng nhớ của mình! Chúc bạn có những kỷ niệm tuyệt vời! 🎉",
+      "score": 80,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách lưu nhật ký kỷ niệm, nhưng không hoàn toàn khớp với câu trả lời mong đợi về việc lưu trong mục 'Cộng đồng'. Tuy nhiên, nó vẫn đáp ứng được yêu cầu của câu hỏi.",
+      "latency_sec": 1.95
+    },
+    {
+      "id": 42,
+      "question": "Làm sao để nhận phản hồi về đánh giá của tôi?",
+      "expected_answer": "Bạn sẽ nhận thông báo khi có phản hồi về đánh giá của mình.",
+      "ai_answer": "Hiện tại, ứng dụng TourXport không hỗ trợ chức năng nhận phản hồi về đánh giá của bạn. Tuy nhiên, bạn có thể viết nhận xét cho khách sạn, nhà hàng hoặc địa danh mà bạn đã trải nghiệm. Nếu có bất kỳ thông tin nào mới, hãy theo dõi các cập nhật từ ứng dụng nhé! 😊",
+      "score": 30,
+      "reason": "Câu trả lời thực tế không đáp ứng được yêu cầu về việc nhận phản hồi, mà lại thông báo rằng không có chức năng này. Mặc dù có thông tin bổ sung về việc viết nhận xét, nhưng nó không liên quan trực tiếp đến câu hỏi ban đầu.",
+      "latency_sec": 1.79
+    },
+    {
+      "id": 43,
+      "question": "Có thể chỉnh sửa nhật ký kỷ niệm không?",
+      "expected_answer": "Có, bạn có thể chỉnh sửa nhật ký kỷ niệm đã viết trong mục 'Cộng đồng'.",
+      "ai_answer": "Xin lỗi, hiện tại ứng dụng TourXport không hỗ trợ chỉnh sửa nhật ký kỷ niệm (Travel Memory) sau khi đã lưu. Bạn có thể tạo một nhật ký mới nếu cần! 😊 Nếu bạn cần thêm thông tin hoặc hỗ trợ gì khác, cứ hỏi mình nhé!",
+      "score": 30,
+      "reason": "Câu trả lời thực tế không đồng ý với khả năng chỉnh sửa nhật ký kỷ niệm, mà lại khẳng định rằng ứng dụng không hỗ trợ tính năng này, dẫn đến sự khác biệt lớn về nội dung và ý nghĩa so với câu trả lời mong đợi.",
+      "latency_sec": 1.62
+    },
+    {
+      "id": 44,
+      "question": "Làm sao để xem tin tức du lịch?",
+      "expected_answer": "Bạn có thể xem tin tức trong phần 'Cộng đồng' hoặc trang chủ.",
+      "ai_answer": "Xin lỗi, nhưng ứng dụng TourXport không có tính năng xem tin tức du lịch. Tuy nhiên, bạn có thể khám phá các điểm đến, địa danh và tiện ích khác trong app! 😊 Nếu cần hướng dẫn về các tính năng khác, hãy cho mình biết nhé!",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không cung cấp thông tin về cách xem tin tức du lịch, mà chỉ nói rằng ứng dụng không có tính năng này. Điều này không đáp ứng được yêu cầu của câu hỏi.",
+      "latency_sec": 1.39
+    },
+    {
+      "id": 45,
+      "question": "Có thể theo dõi người dùng khác không?",
+      "expected_answer": "Có, bạn có thể theo dõi người dùng khác từ trang hồ sơ của họ.",
+      "ai_answer": "Xin lỗi, nhưng ứng dụng TourXport không hỗ trợ tính năng theo dõi người dùng khác. Tuy nhiên, bạn có thể tương tác với cộng đồng thông qua việc đánh giá khách sạn, nhà hàng và chia sẻ nhật ký du lịch của mình! 😊 Nếu cần thêm thông tin nào khác, hãy cho tôi biết nhé!",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không đáp ứng được câu hỏi về việc theo dõi người dùng khác, mà thay vào đó cung cấp thông tin về các tính năng khác của ứng dụng. Điều này làm giảm độ chính xác của câu trả lời.",
+      "latency_sec": 1.55
+    },
+    {
+      "id": 46,
+      "question": "Làm sao để xóa đánh giá của tôi?",
+      "expected_answer": "Bạn vào phần 'Đánh giá của tôi', chọn đánh giá cần xóa và nhấn 'Xóa'.",
+      "ai_answer": "Hiện tại, ứng dụng TourXport không hỗ trợ tính năng xóa đánh giá đã viết. Tuy nhiên, bạn có thể chỉnh sửa lại đánh giá của mình nếu cần. Nếu bạn cần thêm thông tin hoặc hỗ trợ, hãy cho tôi biết nhé! 😊",
+      "score": 40,
+      "reason": "Câu trả lời thực tế không cung cấp cách xóa đánh giá như mong đợi, mà chỉ thông báo rằng không thể xóa và đề xuất chỉnh sửa. Điều này không đáp ứng đúng yêu cầu của câu hỏi.",
+      "latency_sec": 1.25
+    },
+    {
+      "id": 47,
+      "question": "Tôi có thể khám phá các sự kiện địa phương không?",
+      "expected_answer": "Có, bạn có thể tìm kiếm các sự kiện trong mục 'Khám phá'.",
+      "ai_answer": "Xin lỗi, hiện tại ứng dụng TourXport không có tính năng khám phá các sự kiện địa phương. Tuy nhiên, bạn có thể xem thông tin chi tiết về các tỉnh thành và địa danh nổi bật trong mục \"Khám phá địa điểm\". Nếu có câu hỏi nào khác về tính năng của app, hãy cho tôi biết nhé! 😊",
+      "score": 30,
+      "reason": "Câu trả lời thực tế không đáp ứng được yêu cầu khám phá các sự kiện địa phương mà người dùng đã hỏi. Mặc dù có thông tin về các địa điểm, nhưng không có thông tin cụ thể về sự kiện, dẫn đến sự không phù hợp với câu trả lời mong đợi.",
+      "latency_sec": 1.43
+    },
+    {
+      "id": 48,
+      "question": "Có thể tạo tour theo nhóm không?",
+      "expected_answer": "Có, bạn có thể tạo tour cho nhóm bạn bè trong phần 'Tour'.",
+      "ai_answer": "Hiện tại, ứng dụng TourXport chưa hỗ trợ tính năng tạo tour theo nhóm. Tuy nhiên, bạn có thể tạo tour thông minh cá nhân và chia sẻ lịch trình với bạn bè hoặc gia đình sau khi hoàn thành. Nếu bạn cần hỗ trợ thêm về cách tạo tour, hãy cho mình biết nhé! 😊✈️",
+      "score": 30,
+      "reason": "Câu trả lời thực tế không đáp ứng được yêu cầu về việc tạo tour theo nhóm, mà chỉ đề cập đến việc tạo tour cá nhân và chia sẻ, không phù hợp với câu hỏi ban đầu.",
+      "latency_sec": 1.29
+    },
+    {
+      "id": 49,
+      "question": "Tôi cần làm gì nếu gặp lỗi trong ứng dụng?",
+      "expected_answer": "Bạn có thể báo lỗi qua mục 'Hỗ trợ' trong ứng dụng.",
+      "ai_answer": "Chào bạn! 😊 Nếu gặp lỗi trong ứng dụng TourXport, bạn có thể thử các bước sau:\n\n1. **Khởi động lại ứng dụng**: Đôi khi, việc thoát ra và mở lại ứng dụng có thể khắc phục lỗi nhỏ.\n2. **Cập nhật ứng dụng**: Kiểm tra xem có bản cập nhật nào cho ứng dụng không và cài đặt nếu có.\n3. **Kiểm tra kết nối Internet**: Đảm bảo bạn có kết nối mạng ổn định.\n4. **Liên hệ hỗ trợ**: Nếu lỗi vẫn tiếp diễn, bạn có thể tìm kiếm thông tin hỗ trợ trong ứng dụng hoặc trên trang web chính thức của TourXport.\n\nHy vọng bạn sẽ sớm khắc phục được sự cố! Nếu cần thêm trợ giúp, hãy cho mình biết nhé! 🌟",
+      "score": 70,
+      "reason": "Câu trả lời thực tế cung cấp nhiều thông tin hữu ích hơn so với câu trả lời mong đợi, nhưng không trực tiếp đề cập đến việc báo lỗi qua mục 'Hỗ trợ' trong ứng dụng như đã yêu cầu. Tuy nhiên, nó vẫn giữ được ý nghĩa chung về việc tìm kiếm sự hỗ trợ khi gặp lỗi.",
+      "latency_sec": 2.45
+    },
+    {
+      "id": 50,
+      "question": "Có thể thay đổi địa chỉ email không?",
+      "expected_answer": "Có, bạn vào phần cài đặt tài khoản để thay đổi địa chỉ email.",
+      "ai_answer": "Hiện tại, ứng dụng TourXport không cho phép thay đổi địa chỉ email sau khi đã đăng ký. Nếu bạn cần hỗ trợ thêm, hãy liên hệ với đội ngũ hỗ trợ của chúng tôi nhé! 😊",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không đáp ứng được yêu cầu của câu hỏi về việc thay đổi địa chỉ email, mà lại thông báo rằng không thể thay đổi. Điều này hoàn toàn trái ngược với câu trả lời mong đợi, dẫn đến điểm số thấp.",
+      "latency_sec": 1.1
+    },
+    {
+      "id": 51,
+      "question": "Làm sao để xem các địa điểm nổi bật?",
+      "expected_answer": "Bạn có thể xem địa điểm nổi bật trong phần 'Khám phá'.",
+      "ai_answer": "Để xem các địa điểm nổi bật trong ứng dụng TourXport, bạn làm theo các bước sau:\n\n1. Mở ứng dụng TourXport.\n2. Chọn mục **Khám phá địa điểm**.\n3. Nhấn vào **Điểm đến** để xem thông tin chi tiết về các tỉnh thành, địa danh, khách sạn và nhà hàng nổi bật.\n\nChúc bạn có những khám phá thú vị! 🌍✨",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách xem các địa điểm nổi bật, bao gồm tên ứng dụng và các bước cụ thể, nhưng không hoàn toàn khớp với câu trả lời mong đợi vì nó không chỉ đơn giản là 'phần Khám phá' mà còn có thêm các bước hướng dẫn cụ thể.",
+      "latency_sec": 1.85
+    },
+    {
+      "id": 52,
+      "question": "Có thể chia sẻ tour với bạn bè không?",
+      "expected_answer": "Có, bạn có thể chia sẻ tour thông qua nút chia sẻ trong phần tour.",
+      "ai_answer": "Hiện tại, ứng dụng TourXport không có tính năng chia sẻ tour trực tiếp với bạn bè. Tuy nhiên, bạn có thể lưu trữ (Save) các địa điểm và tour yêu thích vào bộ sưu tập của mình để dễ dàng xem lại sau! Nếu bạn cần thêm thông tin về cách sử dụng tính năng này, hãy cho mình biết nhé! 😊",
+      "score": 30,
+      "reason": "Câu trả lời thực tế không đáp ứng được yêu cầu chia sẻ tour với bạn bè, mà chỉ đề cập đến việc lưu trữ các địa điểm và tour yêu thích. Điều này làm giảm độ chính xác của câu trả lời so với câu trả lời mong đợi.",
+      "latency_sec": 1.49
+    },
+    {
+      "id": 53,
+      "question": "Tôi có thể đặt lịch trình cho tour không?",
+      "expected_answer": "Có, bạn có thể lập lịch trình cho tour trong phần 'Lập kế hoạch'.",
+      "ai_answer": "Chắc chắn rồi! 🎉 Bạn có thể tạo lịch trình cho tour bằng tính năng \"Tạo Tour thông minh\". Dưới đây là cách thực hiện:\n\n1. Mở ứng dụng TourXport.\n2. Chọn tính năng \"Lên lịch trình\".\n3. Làm một bài khảo sát ngắn (Survey) về sở thích, ngân sách và thời gian của bạn.\n4. Ứng dụng sẽ tự động sinh ra một lịch trình chi tiết cho bạn!\n\nThật đơn giản phải không? Nếu bạn cần thêm trợ giúp, hãy cho tôi biết nhé! 🌍✨",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách lập lịch trình cho tour, mặc dù không sử dụng cụm từ 'Lập kế hoạch' như trong câu trả lời mong đợi. Tuy nhiên, nó vẫn trả lời đúng câu hỏi và hướng dẫn cụ thể cho người dùng.",
+      "latency_sec": 2.23
+    },
+    {
+      "id": 54,
+      "question": "Có thể tìm kiếm theo loại địa điểm không?",
+      "expected_answer": "Có, bạn có thể lọc theo loại địa điểm như khách sạn, nhà hàng, v.v.",
+      "ai_answer": "Có chứ! Bạn có thể khám phá các địa điểm theo loại như tỉnh thành, địa danh, khách sạn và nhà hàng nổi bật trong ứng dụng TourXport. Chỉ cần vào phần \"Điểm đến\" để xem thông tin chi tiết nhé! 🗺️✨ Nếu bạn cần hỗ trợ thêm, cứ hỏi mình nhé!",
+      "score": 90,
+      "reason": "Câu trả lời thực tế xác nhận rằng có thể tìm kiếm theo loại địa điểm và cung cấp thêm thông tin chi tiết về cách thực hiện, mặc dù không hoàn toàn giống với câu trả lời mong đợi nhưng vẫn giữ được ý nghĩa chính.",
+      "latency_sec": 1.47
+    },
+    {
+      "id": 55,
+      "question": "Có thể xem hình ảnh của địa điểm không?",
+      "expected_answer": "Có, hình ảnh sẽ được hiển thị trong trang thông tin địa điểm.",
+      "ai_answer": "Hiện tại, ứng dụng TourXport không hỗ trợ xem hình ảnh của địa điểm. Tuy nhiên, bạn có thể tìm hiểu thông tin chi tiết về các tỉnh thành, địa danh, khách sạn và nhà hàng nổi bật trong phần Khám phá địa điểm! Nếu bạn cần thêm thông tin, hãy cho mình biết nhé! 😊",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không đáp ứng yêu cầu về việc có thể xem hình ảnh của địa điểm, mà lại thông báo rằng ứng dụng không hỗ trợ tính năng này. Điều này hoàn toàn trái ngược với câu trả lời mong đợi.",
+      "latency_sec": 1.46
+    },
+    {
+      "id": 56,
+      "question": "Tôi có thể đánh dấu địa điểm đã đến không?",
+      "expected_answer": "Có, bạn có thể đánh dấu địa điểm đã đến trong nhật ký kỷ niệm.",
+      "ai_answer": "Xin lỗi, hiện tại ứng dụng TourXport không hỗ trợ tính năng đánh dấu địa điểm đã đến. Tuy nhiên, bạn có thể lưu trữ các địa điểm và Tour yêu thích trong bộ sưu tập để xem lại sau! 🗂️✨ Nếu cần thêm thông tin, hãy cho tôi biết nhé!",
+      "score": 30,
+      "reason": "Câu trả lời thực tế không đáp ứng yêu cầu đánh dấu địa điểm đã đến mà thay vào đó cung cấp thông tin về tính năng khác, dẫn đến sự khác biệt lớn về nội dung và ý nghĩa so với câu trả lời mong đợi.",
+      "latency_sec": 1.36
+    },
+    {
+      "id": 57,
+      "question": "Làm sao để báo cáo vấn đề trong ứng dụng?",
+      "expected_answer": "Bạn có thể báo cáo vấn đề qua mục 'Hỗ trợ' trong ứng dụng.",
+      "ai_answer": "Xin lỗi, nhưng trong tài liệu hướng dẫn sử dụng của TourXport không đề cập đến tính năng báo cáo vấn đề trong ứng dụng. Nếu bạn gặp khó khăn, hãy thử kiểm tra lại các cài đặt hoặc liên hệ với bộ phận hỗ trợ khách hàng của chúng tôi nhé! 😊",
+      "score": 30,
+      "reason": "Câu trả lời thực tế không cung cấp thông tin cụ thể về cách báo cáo vấn đề trong ứng dụng, mà chỉ đề cập đến việc không có thông tin trong tài liệu và gợi ý liên hệ với bộ phận hỗ trợ. Điều này không đáp ứng được yêu cầu của câu hỏi.",
+      "latency_sec": 1.36
+    },
+    {
+      "id": 58,
+      "question": "Có thể thêm nhiều địa điểm vào tour không?",
+      "expected_answer": "Có, bạn có thể thêm nhiều địa điểm vào tour trong phần lộ trình.",
+      "ai_answer": "Chào bạn! 🌟 Trong ứng dụng TourXport, bạn có thể tạo một tour thông minh bằng cách làm một bài khảo sát về sở thích, ngân sách và thời gian. Sau khi hoàn thành, ứng dụng sẽ tự động sinh ra một lịch trình chi tiết cho bạn. \n\nTuy nhiên, nếu bạn muốn thêm nhiều địa điểm vào tour đã tạo, bạn có thể lưu trữ các địa điểm yêu thích vào bộ sưu tập để xem lại sau. 🗺️\n\nNếu bạn cần thêm thông tin nào khác, hãy cho mình biết nhé! 😊",
+      "score": 50,
+      "reason": "Câu trả lời thực tế không trực tiếp trả lời câu hỏi về việc thêm nhiều địa điểm vào tour, mà chỉ đề cập đến việc lưu trữ địa điểm yêu thích. Mặc dù có thông tin liên quan đến việc tạo tour, nhưng không rõ ràng về khả năng thêm địa điểm vào tour hiện tại.",
+      "latency_sec": 2.01
+    },
+    {
+      "id": 59,
+      "question": "Tôi có thể tìm hiểu về văn hóa địa phương không?",
+      "expected_answer": "Có, bạn có thể tìm hiểu trong phần thông tin địa điểm.",
+      "ai_answer": "Xin chào! Hiện tại, ứng dụng TourXport không có tính năng cụ thể để tìm hiểu về văn hóa địa phương. Tuy nhiên, bạn có thể khám phá thông tin chi tiết về các địa danh, khách sạn và nhà hàng nổi bật tại điểm đến, từ đó có thể tìm hiểu thêm về văn hóa của địa phương đó. 🗺️\n\nNếu bạn cần thêm thông tin gì khác, đừng ngần ngại hỏi nhé! 😊",
+      "score": 70,
+      "reason": "Câu trả lời thực tế không trực tiếp xác nhận khả năng tìm hiểu về văn hóa địa phương như câu trả lời mong đợi, nhưng vẫn cung cấp thông tin hữu ích về cách khám phá văn hóa thông qua các địa danh và dịch vụ khác. Tuy nhiên, nó thiếu sự rõ ràng và cụ thể như trong câu trả lời mong đợi.",
+      "latency_sec": 1.65
+    },
+    {
+      "id": 60,
+      "question": "Có thể xem các hoạt động giải trí tại địa điểm không?",
+      "expected_answer": "Có, các hoạt động giải trí sẽ được liệt kê trong trang thông tin địa điểm.",
+      "ai_answer": "Chào bạn! Hiện tại, ứng dụng TourXport không có tính năng xem trực tiếp các hoạt động giải trí cụ thể tại địa điểm. Tuy nhiên, bạn có thể khám phá thông tin chi tiết về các địa danh, khách sạn và nhà hàng nổi bật trong phần \"Điểm đến\". 🗺️\n\nNếu bạn cần thêm thông tin nào khác, hãy cho mình biết nhé! 😊",
+      "score": 30,
+      "reason": "Câu trả lời thực tế không đáp ứng được yêu cầu của câu hỏi về việc xem các hoạt động giải trí tại địa điểm, mà chỉ đề cập đến thông tin về địa danh, khách sạn và nhà hàng mà không có thông tin cụ thể về hoạt động giải trí.",
+      "latency_sec": 1.59
+    },
+    {
+      "id": 61,
+      "question": "Làm sao để điều chỉnh địa điểm trong tour?",
+      "expected_answer": "Bạn có thể chỉnh sửa địa điểm trong phần lộ trình tour.",
+      "ai_answer": "Để điều chỉnh địa điểm trong tour, bạn hãy làm theo các bước sau:\n\n1. Mở ứng dụng TourXport và đăng nhập vào tài khoản của bạn.\n2. Vào phần \"Quản lý Tour\" trong menu chính.\n3. Chọn tour mà bạn muốn điều chỉnh.\n4. Tại đây, bạn có thể thêm, sửa hoặc xóa các địa điểm trong lịch trình của mình.\n5. Lưu lại thay đổi sau khi hoàn tất.\n\nNếu bạn cần thêm thông tin, đừng ngần ngại hỏi nhé! 😊🏖️",
+      "score": 80,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết về cách điều chỉnh địa điểm trong tour, mặc dù không hoàn toàn giống với câu trả lời mong đợi. Tuy nhiên, nó vẫn đáp ứng được yêu cầu của câu hỏi và cung cấp thông tin hữu ích hơn.",
+      "latency_sec": 1.96
+    },
+    {
+      "id": 62,
+      "question": "Có thể tìm kiếm theo giá cả không?",
+      "expected_answer": "Có, bạn có thể lọc kết quả tìm kiếm theo mức giá.",
+      "ai_answer": "Chào bạn! Hiện tại, ứng dụng TourXport không có tính năng tìm kiếm theo giá cả. Tuy nhiên, bạn có thể tạo Tour thông minh bằng cách làm một bài khảo sát ngắn về sở thích, ngân sách và thời gian. Ứng dụng sẽ tự động sinh ra một lịch trình chi tiết phù hợp với bạn! 🌟\n\nNếu cần thêm thông tin nào khác, đừng ngần ngại hỏi nhé! 😊",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không đáp ứng được câu hỏi về việc tìm kiếm theo giá cả, mà lại cung cấp thông tin về một tính năng khác không liên quan. Điều này làm giảm độ chính xác của câu trả lời.",
+      "latency_sec": 1.56
+    },
+    {
+      "id": 63,
+      "question": "Có thể xem các đánh giá gần đây không?",
+      "expected_answer": "Có, các đánh giá gần đây sẽ hiển thị trong trang thông tin địa điểm.",
+      "ai_answer": "Chào bạn! 😊 Bạn có thể xem các đánh giá gần đây cho khách sạn, nhà hàng hoặc địa danh bằng cách thực hiện các bước sau:\n\n1. Mở ứng dụng TourXport.\n2. Tìm kiếm địa điểm mà bạn quan tâm.\n3. Cuộn xuống phần đánh giá (Review) để xem nhận xét mới nhất từ người dùng khác.\n\nChúc bạn tìm được thông tin hữu ích! Nếu cần thêm trợ giúp, hãy cho mình biết nhé! 🌟",
+      "score": 80,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết về cách xem đánh giá gần đây, mặc dù không hoàn toàn khớp với câu trả lời mong đợi. Tuy nhiên, nó vẫn đáp ứng được yêu cầu của câu hỏi và cung cấp hướng dẫn cụ thể cho người dùng.",
+      "latency_sec": 1.65
+    },
+    {
+      "id": 64,
+      "question": "Làm sao để nhận tư vấn du lịch?",
+      "expected_answer": "Bạn có thể gửi yêu cầu tư vấn qua mục 'Hỗ trợ'.",
+      "ai_answer": "Hiện tại, ứng dụng TourXport không có tính năng tư vấn du lịch trực tiếp. Tuy nhiên, bạn có thể sử dụng tính năng \"Tạo Tour thông minh\" để nhận lịch trình du lịch phù hợp với sở thích và ngân sách của mình. 🗺️\n\nDưới đây là cách thực hiện:\n\n1. Mở ứng dụng và đăng nhập vào tài khoản của bạn.\n2. Tìm đến tính năng \"Lên lịch trình\".\n3. Chọn \"Tạo Tour thông minh\" và làm bài khảo sát ngắn về sở thích, ngân sách, thời gian.\n4. Ứng dụng sẽ tự động tạo ra lịch trình chi tiết cho bạn! 🎉\n\nNếu có thắc mắc nào khác, hãy cho mình biết nhé! 😊",
+      "score": 60,
+      "reason": "Câu trả lời thực tế không trực tiếp trả lời câu hỏi về cách nhận tư vấn du lịch mà thay vào đó cung cấp thông tin về một tính năng khác trong ứng dụng. Mặc dù có thông tin hữu ích, nhưng nó không hoàn toàn phù hợp với yêu cầu tư vấn du lịch như trong câu trả lời mong đợi.",
+      "latency_sec": 2.27
+    },
+    {
+      "id": 65,
+      "question": "Tôi có thể tìm kiếm địa điểm theo thời gian không?",
+      "expected_answer": "Có, bạn có thể lọc theo thời gian trong phần tìm kiếm.",
+      "ai_answer": "Chào bạn! 🥳 Trong ứng dụng TourXport, bạn không thể tìm kiếm địa điểm theo thời gian cụ thể. Tuy nhiên, bạn có thể khám phá thông tin chi tiết về các tỉnh thành, địa danh, khách sạn và nhà hàng nổi bật. Nếu cần trợ giúp về việc lên lịch trình hoặc khám phá địa điểm, hãy cho tôi biết nhé! 🌍✨",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không đáp ứng được yêu cầu của câu hỏi, vì nó khẳng định rằng không thể tìm kiếm địa điểm theo thời gian, trong khi câu trả lời mong đợi lại cho rằng có thể lọc theo thời gian. Điều này dẫn đến sự khác biệt lớn về nội dung và ý nghĩa.",
+      "latency_sec": 1.4
+    },
+    {
+      "id": 66,
+      "question": "Có thể lưu các đánh giá không?",
+      "expected_answer": "Có, bạn có thể lưu các đánh giá và xem lại trong phần 'Đánh giá của tôi'.",
+      "ai_answer": "Chào bạn! 😊 Hiện tại, ứng dụng TourXport cho phép bạn viết đánh giá (Review) cho khách sạn, nhà hàng và địa danh, nhưng không hỗ trợ lưu trữ các đánh giá đó. Bạn có thể ghi lại cảm nhận của mình và chia sẻ cho cộng đồng, nhưng không có tính năng lưu lại đánh giá. Nếu cần thêm thông tin gì khác, cứ hỏi mình nhé! 🌍✨",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không đáp ứng được yêu cầu lưu trữ đánh giá, mà chỉ nói về việc viết và chia sẻ đánh giá mà không có tính năng lưu. Điều này hoàn toàn trái ngược với câu trả lời mong đợi.",
+      "latency_sec": 1.72
+    },
+    {
+      "id": 67,
+      "question": "Có thể tạo tài khoản doanh nghiệp không?",
+      "expected_answer": "Hiện tại ứng dụng chỉ hỗ trợ tài khoản cá nhân.",
+      "ai_answer": "Rất tiếc, hiện tại ứng dụng TourXport chỉ hỗ trợ đăng ký tài khoản cá nhân. Bạn có thể tạo tài khoản cá nhân để sử dụng tất cả các tính năng của ứng dụng. Nếu cần hướng dẫn đăng ký tài khoản, mình sẵn sàng giúp bạn! 😊",
+      "score": 90,
+      "reason": "Câu trả lời thực tế xác nhận rằng ứng dụng chỉ hỗ trợ tài khoản cá nhân, phù hợp với câu trả lời mong đợi. Tuy nhiên, nó có thêm thông tin về việc hỗ trợ hướng dẫn đăng ký, làm cho câu trả lời trở nên chi tiết hơn nhưng không hoàn toàn giống với câu trả lời mong đợi.",
+      "latency_sec": 1.32
+    },
+    {
+      "id": 68,
+      "question": "Có thể tìm kiếm theo thời tiết không?",
+      "expected_answer": "Có, bạn có thể tìm kiếm các địa điểm dựa trên thời tiết.",
+      "ai_answer": "Có chứ! 🌤️ Bạn có thể tra cứu thời tiết ngay tại địa điểm bạn muốn khám phá trong ứng dụng TourXport. Để làm điều này, bạn chỉ cần vào phần \"Khám phá địa điểm\" và chọn tiện ích thời tiết. Chúc bạn có những chuyến đi thú vị! ✈️",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết về cách tìm kiếm theo thời tiết trong một ứng dụng cụ thể, mặc dù không hoàn toàn giống với câu trả lời mong đợi, nhưng vẫn truyền đạt ý nghĩa chính xác rằng có thể tìm kiếm theo thời tiết.",
+      "latency_sec": 1.37
+    },
+    {
+      "id": 69,
+      "question": "Có thể thêm hình ảnh vào nhật ký không?",
+      "expected_answer": "Có, bạn có thể thêm hình ảnh vào nhật ký kỷ niệm.",
+      "ai_answer": "Xin lỗi, hiện tại tính năng lưu giữ kỷ niệm trong Nhật ký du lịch (Travel Memory) của TourXport không hỗ trợ thêm hình ảnh. Bạn có thể viết nhận xét và lưu giữ kỷ niệm chuyến đi dưới dạng văn bản. Nếu có câu hỏi nào khác, mình sẵn sàng giúp đỡ nhé! 😊",
+      "score": 0,
+      "reason": "Câu trả lời thực tế hoàn toàn trái ngược với câu trả lời mong đợi, vì nó khẳng định rằng không thể thêm hình ảnh vào nhật ký, trong khi câu trả lời mong đợi lại cho rằng có thể.",
+      "latency_sec": 1.55
+    },
+    {
+      "id": 70,
+      "question": "Có thể tìm kiếm theo đánh giá không?",
+      "expected_answer": "Có, bạn có thể lọc các địa điểm theo đánh giá của người dùng.",
+      "ai_answer": "Hiện tại, ứng dụng TourXport không hỗ trợ tính năng tìm kiếm theo đánh giá. Tuy nhiên, bạn có thể viết nhận xét (Review) cho các khách sạn, nhà hàng và địa danh để chia sẻ kinh nghiệm của mình với cộng đồng! 😊 Nếu cần thêm thông tin về cách sử dụng tính năng này, hãy cho mình biết nhé!",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không đáp ứng được câu hỏi về việc tìm kiếm theo đánh giá, mà chỉ đề cập đến việc viết nhận xét. Điều này làm cho nội dung không liên quan đến yêu cầu tìm kiếm theo đánh giá.",
+      "latency_sec": 1.48
+    },
+    {
+      "id": 71,
+      "question": "Có thể biết về các tour nổi bật không?",
+      "expected_answer": "Có, các tour nổi bật sẽ hiển thị trong phần 'Tour'.",
+      "ai_answer": "Chào bạn! 🌟 Trong ứng dụng TourXport, bạn có thể khám phá các tour nổi bật bằng cách sử dụng tính năng \"Tạo Tour thông minh\". Để thực hiện điều này, bạn chỉ cần làm theo các bước sau:\n\n1. **Đăng nhập vào ứng dụng** (nếu chưa có tài khoản, hãy đăng ký nhé!).\n2. **Chọn tính năng \"Lên lịch trình\"**.\n3. **Thực hiện khảo sát ngắn** về sở thích, ngân sách và thời gian của bạn.\n4. **Xem các lịch trình chi tiết** mà ứng dụng tự động sinh ra cho bạn.\n\nNgoài ra, bạn cũng có thể lưu lại các địa điểm và tour yêu thích trong mục \"Bộ sưu tập\" để xem lại sau. Chúc bạn có những chuyến đi thú vị! 🗺️✨",
+      "score": 70,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết về cách khám phá các tour nổi bật trong ứng dụng, nhưng không trực tiếp trả lời câu hỏi về việc có thể biết về các tour nổi bật hay không. Nó đi sâu vào quy trình sử dụng ứng dụng mà không đề cập đến việc các tour nổi bật sẽ hiển thị trong phần 'Tour' như trong câu trả lời mong đợi.",
+      "latency_sec": 2.58
+    },
+    {
+      "id": 72,
+      "question": "Có thể thấy đánh giá của người dùng khác không?",
+      "expected_answer": "Có, bạn có thể xem đánh giá của người dùng khác trong trang địa điểm.",
+      "ai_answer": "Có chứ! Bạn có thể xem đánh giá của người dùng khác cho các khách sạn, nhà hàng và địa danh. Để làm điều này, bạn chỉ cần truy cập vào trang thông tin của địa điểm mà bạn quan tâm. Tại đó, bạn sẽ thấy các đánh giá và nhận xét từ những người đã trải nghiệm. Thật dễ dàng phải không nào? 😊✨",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách xem đánh giá của người dùng khác, nhưng vẫn giữ được ý chính là có thể xem đánh giá trong trang địa điểm. Sự khác biệt chủ yếu nằm ở mức độ chi tiết và cách diễn đạt.",
+      "latency_sec": 1.6
+    },
+    {
+      "id": 73,
+      "question": "Làm sao để tạo nhóm du lịch?",
+      "expected_answer": "Bạn có thể tạo nhóm du lịch trong phần 'Tour' và mời bạn bè tham gia.",
+      "ai_answer": "Xin lỗi, hiện tại ứng dụng TourXport chưa hỗ trợ tính năng tạo nhóm du lịch. Tuy nhiên, bạn có thể sử dụng các tính năng khác như tạo Tour thông minh để lên lịch trình cho chuyến đi của mình! Nếu bạn cần giúp đỡ về điều gì khác, hãy cho mình biết nhé! 😊✈️",
+      "score": 30,
+      "reason": "Câu trả lời thực tế không đáp ứng yêu cầu tạo nhóm du lịch mà chỉ thông báo về việc không hỗ trợ tính năng này. Nó không cung cấp thông tin cụ thể về cách tạo nhóm như trong câu trả lời mong đợi.",
+      "latency_sec": 1.59
+    },
+    {
+      "id": 74,
+      "question": "Có thể tìm kiếm theo khoảng cách không?",
+      "expected_answer": "Có, bạn có thể lọc kết quả tìm kiếm theo khoảng cách từ vị trí hiện tại.",
+      "ai_answer": "Hiện tại, ứng dụng TourXport không hỗ trợ tìm kiếm theo khoảng cách. Tuy nhiên, bạn có thể sử dụng bản đồ tương tác (Map) để xem các địa điểm gần bạn. Hãy thử khám phá nhé! 🌍✨",
+      "score": 30,
+      "reason": "Câu trả lời thực tế không đáp ứng yêu cầu tìm kiếm theo khoảng cách mà người dùng mong đợi, mà chỉ đề cập đến việc sử dụng bản đồ tương tác mà không cung cấp thông tin về khả năng lọc kết quả tìm kiếm theo khoảng cách.",
+      "latency_sec": 1.14
+    },
+    {
+      "id": 75,
+      "question": "Có thể tải hình ảnh từ điện thoại lên không?",
+      "expected_answer": "Có, bạn có thể tải hình ảnh từ điện thoại lên khi viết nhật ký kỷ niệm.",
+      "ai_answer": "Xin lỗi, nhưng ứng dụng TourXport hiện tại không hỗ trợ tính năng tải hình ảnh từ điện thoại lên. 😊 Tuy nhiên, bạn có thể sử dụng các tính năng khác như lưu trữ địa điểm và tour yêu thích hoặc viết nhận xét cho khách sạn và nhà hàng. Nếu bạn cần hướng dẫn về các tính năng này, mình sẵn sàng giúp đỡ! 🌟",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không đáp ứng được câu hỏi về việc tải hình ảnh từ điện thoại lên, mà lại thông báo rằng tính năng này không được hỗ trợ. Điều này hoàn toàn trái ngược với câu trả lời mong đợi, dẫn đến điểm số thấp.",
+      "latency_sec": 2.53
+    },
+    {
+      "id": 76,
+      "question": "Có thể tìm kiếm theo địa điểm đã lưu không?",
+      "expected_answer": "Có, bạn có thể tìm kiếm các địa điểm đã lưu trong mục 'Địa điểm yêu thích'.",
+      "ai_answer": "Chào bạn! 😊 Hiện tại, bạn có thể lưu trữ các địa điểm và Tour yêu thích vào Bộ sưu tập. Tuy nhiên, ứng dụng không hỗ trợ chức năng tìm kiếm trực tiếp theo địa điểm đã lưu. Bạn có thể truy cập vào Bộ sưu tập để xem lại những địa điểm đã lưu của mình. Nếu bạn cần thêm hỗ trợ, hãy cho mình biết nhé! 🌟",
+      "score": 60,
+      "reason": "Câu trả lời thực tế cung cấp thông tin về việc lưu trữ địa điểm nhưng không xác nhận khả năng tìm kiếm theo địa điểm đã lưu, điều này không hoàn toàn phù hợp với câu trả lời mong đợi.",
+      "latency_sec": 1.57
+    },
+    {
+      "id": 77,
+      "question": "Có thể biết thông tin về địa điểm không?",
+      "expected_answer": "Có, thông tin chi tiết về địa điểm sẽ hiển thị trong trang thông tin.",
+      "ai_answer": "Chắc chắn rồi! Bạn có thể xem thông tin chi tiết về các tỉnh thành, địa danh, khách sạn và nhà hàng nổi bật thông qua tính năng \"Khám phá địa điểm\" trong ứng dụng TourXport. 🌍\n\nĐể làm điều này, bạn chỉ cần:\n1. Mở ứng dụng TourXport.\n2. Chọn mục \"Khám phá địa điểm\".\n3. Tìm kiếm và chọn địa điểm bạn muốn biết thêm thông tin.\n\nChúc bạn có những trải nghiệm thú vị! 🗺️✨",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết về cách truy cập thông tin địa điểm, mặc dù không hoàn toàn giống với câu trả lời mong đợi. Tuy nhiên, nó vẫn đáp ứng được yêu cầu của câu hỏi và mở rộng thêm thông tin hữu ích cho người dùng.",
+      "latency_sec": 1.97
+    },
+    {
+      "id": 78,
+      "question": "Có thể xem các chương trình khuyến mãi không?",
+      "expected_answer": "Có, bạn có thể xem các chương trình khuyến mãi trong phần 'Khuyến mãi'.",
+      "ai_answer": "Xin lỗi, nhưng ứng dụng TourXport không có tính năng xem các chương trình khuyến mãi. Tuy nhiên, bạn có thể khám phá địa điểm, lên lịch trình và tìm hiểu thông tin về các điểm đến trong ứng dụng! Nếu cần hướng dẫn cụ thể về các tính năng, hãy cho mình biết nhé! 😊✈️",
+      "score": 0,
+      "reason": "Câu trả lời thực tế không đáp ứng yêu cầu của câu hỏi về việc xem các chương trình khuyến mãi, mà lại thông báo rằng không có tính năng này trong ứng dụng, hoàn toàn trái ngược với câu trả lời mong đợi.",
+      "latency_sec": 1.57
+    },
+    {
+      "id": 79,
+      "question": "Làm sao để tìm kiếm theo tên địa điểm?",
+      "expected_answer": "Bạn có thể sử dụng thanh tìm kiếm để nhập tên địa điểm.",
+      "ai_answer": "Để tìm kiếm theo tên địa điểm trong ứng dụng TourXport, bạn chỉ cần làm theo các bước sau:\n\n1. **Mở ứng dụng TourXport**.\n2. **Chọn mục \"Khám phá địa điểm\"**.\n3. **Nhập tên địa điểm** bạn muốn tìm vào ô tìm kiếm.\n4. **Nhấn vào kết quả** để xem thông tin chi tiết về địa điểm đó.\n\nChúc bạn tìm được những địa điểm thú vị! 🌍✨",
+      "score": 80,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách tìm kiếm theo tên địa điểm, nhưng không hoàn toàn khớp với câu trả lời mong đợi, vì nó không chỉ đơn giản là sử dụng thanh tìm kiếm mà còn bao gồm các bước cụ thể trong ứng dụng TourXport.",
+      "latency_sec": 1.76
+    },
+    {
+      "id": 80,
+      "question": "Có thể xem các hoạt động ngoài trời không?",
+      "expected_answer": "Có, các hoạt động ngoài trời sẽ được liệt kê trong thông tin địa điểm.",
+      "ai_answer": "Hiện tại, ứng dụng TourXport không có tính năng riêng để xem các hoạt động ngoài trời. Tuy nhiên, bạn có thể khám phá các địa điểm nổi bật và thông tin chi tiết về các tỉnh thành, địa danh trong mục Khám phá địa điểm. Từ đó, bạn có thể tự lên kế hoạch cho các hoạt động ngoài trời mà mình thích! 🌳🏞️ \n\nNếu cần thêm thông tin, hãy cho mình biết nhé! 😊",
+      "score": 70,
+      "reason": "Câu trả lời thực tế không trực tiếp xác nhận việc có thể xem các hoạt động ngoài trời, mà chỉ đề cập đến việc khám phá địa điểm và tự lên kế hoạch. Điều này không hoàn toàn phù hợp với câu trả lời mong đợi, nhưng vẫn cung cấp thông tin hữu ích liên quan đến hoạt động ngoài trời.",
+      "latency_sec": 1.69
+    },
+    {
+      "id": 81,
+      "question": "Có thể chia sẻ nhật ký kỷ niệm không?",
+      "expected_answer": "Có, bạn có thể chia sẻ nhật ký kỷ niệm của mình với bạn bè.",
+      "ai_answer": "Xin lỗi, nhưng hiện tại tính năng chia sẻ nhật ký kỷ niệm (Travel Memory) chưa được hỗ trợ trong ứng dụng TourXport. Bạn có thể lưu giữ kỷ niệm chuyến đi của mình và xem lại bất cứ lúc nào trong app! Nếu cần thêm thông tin nào khác, hãy cho mình biết nhé! 😊✈️",
+      "score": 30,
+      "reason": "Câu trả lời thực tế không đáp ứng được yêu cầu chia sẻ nhật ký kỷ niệm mà người dùng mong muốn, mà chỉ thông báo rằng tính năng này chưa được hỗ trợ. Điều này làm giảm độ chính xác của câu trả lời so với câu trả lời mong đợi.",
+      "latency_sec": 1.57
+    },
+    {
+      "id": 82,
+      "question": "Có thể khóa tài khoản tạm thời không?",
+      "expected_answer": "Hiện tại ứng dụng không hỗ trợ tính năng khóa tài khoản tạm thời.",
+      "ai_answer": "Xin lỗi, hiện tại ứng dụng TourXport không hỗ trợ tính năng khóa tài khoản tạm thời. Bạn có thể thay đổi mã PIN bảo mật trong phần cài đặt để tăng cường bảo mật cho tài khoản của mình nhé! Nếu cần hỗ trợ thêm, mình luôn sẵn sàng giúp đỡ! 😊",
+      "score": 90,
+      "reason": "Câu trả lời thực tế đã đề cập đến việc ứng dụng không hỗ trợ tính năng khóa tài khoản tạm thời, nhưng cũng bổ sung thêm thông tin về việc thay đổi mã PIN bảo mật, điều này không nằm trong câu trả lời mong đợi. Tuy nhiên, nội dung chính vẫn đúng và liên quan đến câu hỏi.",
+      "latency_sec": 1.36
+    },
+    {
+      "id": 83,
+      "question": "Có thể tìm kiếm theo mùa không?",
+      "expected_answer": "Có, bạn có thể tìm kiếm theo mùa trong phần 'Khám phá'.",
+      "ai_answer": "Xin lỗi, hiện tại ứng dụng TourXport chưa hỗ trợ tìm kiếm theo mùa. Tuy nhiên, bạn có thể khám phá các địa điểm và hoạt động theo sở thích của mình! Nếu bạn cần hướng dẫn về cách tìm kiếm địa điểm hoặc lên lịch trình, hãy cho mình biết nhé! 🌍😊",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không đáp ứng yêu cầu tìm kiếm theo mùa mà còn thông báo rằng tính năng này không có sẵn, do đó không phù hợp với câu trả lời mong đợi.",
+      "latency_sec": 1.5
+    },
+    {
+      "id": 84,
+      "question": "Có thể tìm hiểu về ẩm thực địa phương không?",
+      "expected_answer": "Có, bạn có thể tìm hiểu trong trang thông tin nhà hàng.",
+      "ai_answer": "Chắc chắn rồi! 🍽️ Trong ứng dụng TourXport, bạn có thể khám phá thông tin về các nhà hàng nổi bật và ẩm thực địa phương tại từng điểm đến. Để tìm hiểu, bạn làm theo các bước sau:\n\n1. Mở ứng dụng TourXport.\n2. Chọn mục \"Khám phá địa điểm\".\n3. Nhấn vào \"Điểm đến\" để xem thông tin về các tỉnh thành và địa danh.\n4. Trong phần thông tin chi tiết, bạn sẽ tìm thấy danh sách các nhà hàng và món ăn đặc trưng tại khu vực đó.\n\nChúc bạn có những trải nghiệm ẩm thực thật tuyệt vời! 🍜🥡",
+      "score": 80,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách tìm hiểu ẩm thực địa phương thông qua một ứng dụng cụ thể, mặc dù không hoàn toàn khớp với câu trả lời mong đợi nhưng vẫn đáp ứng được yêu cầu tìm hiểu về ẩm thực địa phương.",
+      "latency_sec": 2.9
+    },
+    {
+      "id": 85,
+      "question": "Có thể tìm kiếm địa điểm theo danh mục không?",
+      "expected_answer": "Có, bạn có thể lọc theo danh mục trong mục 'Khám phá'.",
+      "ai_answer": "Chào bạn! 😊 Trong ứng dụng TourXport, bạn có thể khám phá thông tin chi tiết về các tỉnh thành, địa danh, khách sạn và nhà hàng nổi bật. Tuy nhiên, hiện tại ứng dụng không hỗ trợ tìm kiếm theo danh mục cụ thể. Bạn có thể xem thông tin địa điểm trong phần \"Khám phá địa điểm\". Nếu cần thêm trợ giúp, hãy cho mình biết nhé! 🌍✨",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không xác nhận khả năng tìm kiếm theo danh mục, mà ngược lại, cho biết ứng dụng không hỗ trợ tính năng này, hoàn toàn trái ngược với câu trả lời mong đợi.",
+      "latency_sec": 1.9
+    },
+    {
+      "id": 86,
+      "question": "Có thể chia sẻ địa điểm qua mạng xã hội không?",
+      "expected_answer": "Có, bạn có thể chia sẻ địa điểm thông qua các nút chia sẻ mạng xã hội.",
+      "ai_answer": "Xin lỗi, hiện tại ứng dụng TourXport không hỗ trợ chức năng chia sẻ địa điểm qua mạng xã hội. Nhưng bạn có thể lưu trữ các địa điểm yêu thích trong \"Bộ sưu tập\" để xem lại sau nhé! 😊",
+      "score": 30,
+      "reason": "Câu trả lời thực tế không đáp ứng được câu hỏi về khả năng chia sẻ địa điểm qua mạng xã hội, mà thay vào đó lại thông báo rằng ứng dụng không hỗ trợ chức năng này. Điều này làm cho nội dung không trùng khớp với câu trả lời mong đợi.",
+      "latency_sec": 1.74
+    },
+    {
+      "id": 87,
+      "question": "Có thể tìm kiếm địa điểm theo mức độ phổ biến không?",
+      "expected_answer": "Có, bạn có thể lọc theo mức độ phổ biến trong kết quả tìm kiếm.",
+      "ai_answer": "Hiện tại, ứng dụng TourXport không hỗ trợ tìm kiếm địa điểm theo mức độ phổ biến. Tuy nhiên, bạn có thể khám phá thông tin chi tiết về các tỉnh thành, địa danh, khách sạn và nhà hàng nổi bật trong phần \"Điểm đến\". 🗺️✨ Nếu bạn cần thêm thông tin, hãy cho mình biết nhé!",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không đáp ứng yêu cầu của câu hỏi về việc tìm kiếm địa điểm theo mức độ phổ biến, mà lại thông báo rằng ứng dụng không hỗ trợ tính năng này. Điều này làm cho nội dung không trùng khớp với câu trả lời mong đợi.",
+      "latency_sec": 1.82
+    },
+    {
+      "id": 88,
+      "question": "Có thể xem lịch sử tìm kiếm không?",
+      "expected_answer": "Có, bạn có thể xem lịch sử tìm kiếm trong phần cài đặt.",
+      "ai_answer": "Rất tiếc, ứng dụng TourXport hiện tại không có tính năng xem lịch sử tìm kiếm. Tuy nhiên, bạn có thể lưu trữ các địa điểm và Tour yêu thích trong bộ sưu tập để xem lại sau. Nếu bạn cần thêm thông tin gì khác, hãy cho mình biết nhé! 😊",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không đáp ứng được yêu cầu về việc xem lịch sử tìm kiếm, mà thay vào đó cung cấp thông tin về tính năng khác không liên quan. Điều này làm giảm độ chính xác của câu trả lời.",
+      "latency_sec": 1.48
+    },
+    {
+      "id": 89,
+      "question": "Có thể xem các đánh giá cũ không?",
+      "expected_answer": "Có, bạn có thể xem các đánh giá cũ trong trang thông tin địa điểm.",
+      "ai_answer": "Bạn có thể xem các đánh giá cũ bằng cách vào phần Tương tác & Cộng đồng trong ứng dụng. Tại đây, bạn có thể tìm kiếm và xem các nhận xét về khách sạn, nhà hàng, và địa danh mà bạn quan tâm. Hãy khám phá và tìm hiểu những trải nghiệm của người khác nhé! 😊✨",
+      "score": 80,
+      "reason": "Câu trả lời thực tế cung cấp thông tin về cách xem đánh giá cũ, nhưng không nhắc đến 'trang thông tin địa điểm' như trong câu trả lời mong đợi. Tuy nhiên, nó vẫn truyền đạt ý nghĩa chính là có thể xem các đánh giá cũ.",
+      "latency_sec": 1.6
+    },
+    {
+      "id": 90,
+      "question": "Có thể xem danh sách bạn bè trong ứng dụng không?",
+      "expected_answer": "Có, bạn có thể xem danh sách bạn bè trong phần 'Cộng đồng'.",
+      "ai_answer": "Xin lỗi, nhưng ứng dụng TourXport không có tính năng xem danh sách bạn bè. Tuy nhiên, bạn có thể tương tác với cộng đồng qua việc đánh giá (Review) và lưu giữ kỷ niệm chuyến đi trong Nhật ký du lịch (Travel Memory). Nếu bạn cần thêm thông tin gì khác về ứng dụng, đừng ngần ngại hỏi nhé! 😊",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không đáp ứng được yêu cầu về việc xem danh sách bạn bè, mà còn thông báo rằng tính năng này không có trong ứng dụng. Điều này hoàn toàn trái ngược với câu trả lời mong đợi, dẫn đến điểm số thấp.",
+      "latency_sec": 1.73
+    },
+    {
+      "id": 91,
+      "question": "Có thể tìm kiếm theo độ tuổi không?",
+      "expected_answer": "Ứng dụng không hỗ trợ tìm kiếm theo độ tuổi.",
+      "ai_answer": "Xin lỗi, hiện tại ứng dụng TourXport không hỗ trợ tính năng tìm kiếm theo độ tuổi. Tuy nhiên, bạn có thể khám phá các địa điểm, khách sạn và nhà hàng phù hợp với sở thích và ngân sách của mình thông qua tính năng \"Khám phá địa điểm\" nhé! Nếu cần thêm thông tin, hãy cho mình biết! 😊",
+      "score": 70,
+      "reason": "Câu trả lời thực tế xác nhận rằng ứng dụng không hỗ trợ tìm kiếm theo độ tuổi, nhưng cung cấp thêm thông tin về các tính năng khác của ứng dụng, điều này không hoàn toàn phù hợp với câu trả lời mong đợi.",
+      "latency_sec": 1.54
+    },
+    {
+      "id": 92,
+      "question": "Có thể tham gia các hoạt động ngoại khóa không?",
+      "expected_answer": "Có, bạn có thể tìm kiếm các hoạt động ngoại khóa trong mục 'Khám phá'.",
+      "ai_answer": "Xin lỗi, nhưng ứng dụng TourXport không có tính năng liên quan đến hoạt động ngoại khóa. Tuy nhiên, bạn có thể khám phá các địa điểm và lên lịch trình cho chuyến đi của mình! Nếu cần giúp đỡ về các tính năng của ứng dụng, hãy cho mình biết nhé! 😊",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không đáp ứng được câu hỏi về việc tham gia các hoạt động ngoại khóa, mà chỉ đề cập đến các tính năng khác của ứng dụng. Điều này làm giảm độ chính xác của câu trả lời.",
+      "latency_sec": 1.56
+    },
+    {
+      "id": 93,
+      "question": "Có thể xem video về địa điểm không?",
+      "expected_answer": "Có, video sẽ được hiển thị trong trang thông tin địa điểm nếu có.",
+      "ai_answer": "Xin lỗi, nhưng hiện tại ứng dụng TourXport không hỗ trợ xem video về địa điểm. Tuy nhiên, bạn có thể khám phá thông tin chi tiết về các tỉnh thành, địa danh, khách sạn và nhà hàng nổi bật thông qua tính năng \"Điểm đến\"! Nếu cần hỗ trợ gì thêm, hãy cho mình biết nhé! 😊",
+      "score": 30,
+      "reason": "Câu trả lời thực tế không đáp ứng được câu hỏi về việc có thể xem video hay không, mà lại thông báo rằng ứng dụng không hỗ trợ tính năng này. Điều này làm giảm độ chính xác của câu trả lời so với câu trả lời mong đợi.",
+      "latency_sec": 1.5
+    },
+    {
+      "id": 94,
+      "question": "Có thể nhận thông báo liên quan đến tour không?",
+      "expected_answer": "Có, bạn sẽ nhận thông báo liên quan đến tour mà bạn đã tham gia.",
+      "ai_answer": "Có chứ! Bạn có thể bật thông báo trong phần cài đặt Profile của ứng dụng TourXport. Để làm điều này, hãy làm theo các bước sau:\n\n1. Đăng nhập vào tài khoản của bạn.\n2. Vào phần Cài đặt Profile.\n3. Tìm tùy chọn bật/tắt thông báo và chọn bật thông báo.\n\nKhi đã bật thông báo, bạn sẽ nhận được thông tin liên quan đến tour và các cập nhật hữu ích khác! 🎉 Nếu cần thêm hỗ trợ, hãy cho mình biết nhé!",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết về cách nhận thông báo liên quan đến tour, mặc dù không hoàn toàn giống với câu trả lời mong đợi. Tuy nhiên, nó vẫn đáp ứng được yêu cầu của câu hỏi và bổ sung thêm hướng dẫn cụ thể, điều này làm tăng giá trị của câu trả lời.",
+      "latency_sec": 2.01
+    },
+    {
+      "id": 95,
+      "question": "Có thể tạo sự kiện riêng không?",
+      "expected_answer": "Hiện tại, ứng dụng không hỗ trợ chức năng tạo sự kiện riêng.",
+      "ai_answer": "Xin lỗi, nhưng ứng dụng TourXport không hỗ trợ tính năng tạo sự kiện riêng. Tuy nhiên, bạn có thể sử dụng tính năng \"Lên lịch trình\" để tạo một tour thông minh dựa trên sở thích của mình! Nếu bạn cần hướng dẫn về cách tạo tour, hãy cho mình biết nhé! 😊✈️",
+      "score": 70,
+      "reason": "Câu trả lời thực tế xác nhận rằng ứng dụng không hỗ trợ chức năng tạo sự kiện riêng, nhưng bổ sung thêm thông tin về tính năng khác có thể sử dụng, điều này làm cho câu trả lời không hoàn toàn trùng khớp với câu trả lời mong đợi.",
+      "latency_sec": 1.54
+    },
+    {
+      "id": 96,
+      "question": "Có thể tìm kiếm theo mục tiêu du lịch không?",
+      "expected_answer": "Có, bạn có thể tìm kiếm theo mục tiêu du lịch trong phần 'Khám phá'.",
+      "ai_answer": "Hiện tại, ứng dụng TourXport không hỗ trợ tìm kiếm theo mục tiêu du lịch cụ thể. Tuy nhiên, bạn có thể tạo Tour thông minh bằng cách làm một bài khảo sát ngắn về sở thích, ngân sách và thời gian của mình. Ứng dụng sẽ tự động sinh ra một lịch trình chi tiết cho bạn! 🌟\n\nNếu cần thêm hướng dẫn về cách tạo Tour, cứ hỏi mình nhé! 😊",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không đáp ứng yêu cầu tìm kiếm theo mục tiêu du lịch mà lại nói về việc tạo Tour thông minh, không liên quan đến câu hỏi ban đầu.",
+      "latency_sec": 1.66
+    },
+    {
+      "id": 97,
+      "question": "Có thể tìm kiếm địa điểm theo độ khó không?",
+      "expected_answer": "Có, bạn có thể lọc kết quả theo độ khó trong phần tìm kiếm.",
+      "ai_answer": "Xin lỗi, nhưng ứng dụng TourXport không hỗ trợ tìm kiếm địa điểm theo độ khó. Tuy nhiên, bạn có thể khám phá thông tin chi tiết về các tỉnh thành, địa danh, khách sạn và nhà hàng nổi bật trong phần \"Khám phá địa điểm\". Nếu cần thêm hướng dẫn, mình rất vui lòng giúp đỡ! 😊✨",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không đáp ứng yêu cầu tìm kiếm địa điểm theo độ khó, mà lại thông báo rằng ứng dụng không hỗ trợ tính năng này. Điều này hoàn toàn trái ngược với câu trả lời mong đợi, dẫn đến điểm số thấp.",
+      "latency_sec": 2.0
+    },
+    {
+      "id": 98,
+      "question": "Có thể lưu tour vào lịch không?",
+      "expected_answer": "Có, bạn có thể lưu tour vào ứng dụng lịch trên điện thoại.",
+      "ai_answer": "Chào bạn! Hiện tại, ứng dụng TourXport không hỗ trợ lưu tour vào lịch. Tuy nhiên, bạn có thể sử dụng tính năng \"Bộ sưu tập\" để lưu trữ các địa điểm và tour yêu thích để xem lại sau. \n\nNếu bạn cần thêm thông tin hay hướng dẫn nào khác, hãy cho mình biết nhé! 😊✈️",
+      "score": 40,
+      "reason": "Câu trả lời thực tế không đáp ứng được yêu cầu lưu tour vào lịch, mà chỉ đề cập đến tính năng khác là 'Bộ sưu tập'. Điều này làm cho câu trả lời không chính xác so với câu trả lời mong đợi.",
+      "latency_sec": 1.63
+    },
+    {
+      "id": 99,
+      "question": "Có thể xem thời gian bảo trì không?",
+      "expected_answer": "Thông tin về thời gian bảo trì sẽ được thông báo trên ứng dụng.",
+      "ai_answer": "Xin lỗi, nhưng hiện tại ứng dụng TourXport không có tính năng xem thời gian bảo trì. Bạn có thể sử dụng các tính năng khác như khám phá địa điểm hoặc lên lịch trình cho chuyến đi của mình. Nếu cần giúp đỡ, hãy cho tôi biết nhé! 😊",
+      "score": 40,
+      "reason": "Câu trả lời thực tế không cung cấp thông tin về thời gian bảo trì như mong đợi, mà chỉ nói rằng ứng dụng không có tính năng này. Mặc dù có thông tin về các tính năng khác, nhưng không đáp ứng yêu cầu chính của câu hỏi.",
+      "latency_sec": 1.58
+    },
+    {
+      "id": 100,
+      "question": "Tôi cần làm gì để góp ý cho ứng dụng?",
+      "expected_answer": "Bạn có thể gửi góp ý qua mục 'Phản hồi' trong ứng dụng.",
+      "ai_answer": "Chào bạn! Hiện tại, ứng dụng TourXport không có tính năng trực tiếp để gửi góp ý. Tuy nhiên, bạn có thể viết nhận xét (Review) cho các địa điểm, khách sạn, hoặc nhà hàng mà bạn đã trải nghiệm. Những ý kiến của bạn sẽ giúp cải thiện chất lượng dịch vụ! 😊\n\nNếu bạn có góp ý cụ thể về ứng dụng, bạn có thể gửi qua các kênh hỗ trợ của chúng tôi. Cảm ơn bạn đã đồng hành cùng TourXport! 🌟",
+      "score": 60,
+      "reason": "Câu trả lời thực tế không cung cấp thông tin trực tiếp về việc gửi góp ý qua mục 'Phản hồi' trong ứng dụng như câu trả lời mong đợi, nhưng vẫn đề cập đến việc gửi ý kiến qua các kênh hỗ trợ, điều này có liên quan đến việc góp ý cho ứng dụng.",
+      "latency_sec": 2.09
+    }
+  ]
+}

@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "question": "Làm thế nào để đăng nhập vào ứng dụng TourXport?",
+    "expected_answer": "Tại màn hình mở đầu (Landing Page), nhấn nút 'Đăng nhập'. Bạn có thể đăng nhập qua Email hoặc Số điện thoại bằng cách nhập thông tin vào các ô tương ứng và nhập Mật khẩu."
+  },
+  {
+    "id": 2,
+    "question": "Tôi quên mật khẩu, làm thế nào để khôi phục?",
+    "expected_answer": "Nếu quên mật khẩu, bạn có thể nhấn nút 'Quên mật khẩu?' trên màn hình đăng nhập để khôi phục."
+  },
+  {
+    "id": 3,
+    "question": "Làm sao để đăng ký tài khoản mới trên TourXport?",
+    "expected_answer": "Từ màn hình Đăng nhập, kéo xuống dưới và chọn 'Chưa có tài khoản? Đăng ký ngay'. Cung cấp các thông tin cần thiết và đánh dấu tích vào ô 'Tôi đồng ý với Điều khoản và Chính sách bảo mật', sau đó nhấn nút 'Đăng ký'."
+  },
+  {
+    "id": 4,
+    "question": "Sau khi đăng nhập thành công, tôi sẽ được đưa đến đâu?",
+    "expected_answer": "Sau khi đăng nhập thành công, bạn sẽ được chuyển thẳng vào Màn hình chính (Dashboard)."
+  },
+  {
+    "id": 5,
+    "question": "Các tab chính trên thanh điều hướng của TourXport là gì?",
+    "expected_answer": "Các tab chính trên thanh điều hướng gồm Trang Chủ, Bản Đồ, Tạo Lịch Trình, Bộ Sưu Tập và Cá Nhân."
+  },
+  {
+    "id": 6,
+    "question": "Tab Trang Chủ trên ứng dụng TourXport có chức năng gì?",
+    "expected_answer": "Tab Trang Chủ hiển thị các địa điểm nổi bật, khách sạn, nhà hàng gợi ý và thanh tìm kiếm."
+  },
+  {
+    "id": 7,
+    "question": "Làm thế nào để khám phá địa điểm qua bản đồ trong TourXport?",
+    "expected_answer": "Bạn có thể chọn tab Bản Đồ trên thanh điều hướng để khám phá địa điểm trực quan qua Google Maps."
+  },
+  {
+    "id": 8,
+    "question": "Làm sao để tạo lịch trình tự động bằng AI trên TourXport?",
+    "expected_answer": "Chọn Tab Tạo Lịch Trình ở thanh điều hướng, điền thông tin vào khảo sát và nhấn nút 'Hoàn tất' hoặc 'Tạo lịch trình' để sử dụng tính năng AI tạo tour tự động."
+  },
+  {
+    "id": 9,
+    "question": "Tôi có thể lưu trữ các địa điểm yêu thích ở đâu trong TourXport?",
+    "expected_answer": "Bạn có thể lưu trữ các địa điểm yêu thích trong Tab Bộ Sưu Tập, nơi có mục Địa điểm đã lưu."
+  },
+  {
+    "id": 10,
+    "question": "Làm thế nào để xem lại các tour đã lưu trên TourXport?",
+    "expected_answer": "Chuyển sang Tab Bộ Sưu Tập ở thanh điều hướng và chọn mục Tour đã lưu để xem lại chi tiết lộ trình."
+  },
+  {
+    "id": 11,
+    "question": "Tôi có thể tìm kiếm địa điểm nào trong ứng dụng TourXport?",
+    "expected_answer": "Tại Trang chủ, có thể sử dụng thanh tìm kiếm ở trên cùng để tìm kiếm địa danh, khách sạn hoặc nhà hàng."
+  },
+  {
+    "id": 12,
+    "question": "Làm sao để xem chi tiết một địa điểm trong TourXport?",
+    "expected_answer": "Khi bấm vào một địa điểm bất kỳ, bạn có thể xem hình ảnh, mô tả, nút xem thời tiết và nút Đánh giá."
+  },
+  {
+    "id": 13,
+    "question": "Làm thế nào để viết đánh giá cho một địa điểm trên TourXport?",
+    "expected_answer": "Bạn có thể viết đánh giá cho các địa điểm bằng cách truy cập create_review_screen.dart và để lại bình luận cùng điểm số sao."
+  },
+  {
+    "id": 14,
+    "question": "Tôi muốn thay đổi ảnh đại diện, làm thế nào?",
+    "expected_answer": "Chuyển sang Tab Cá Nhân, vào mục Chỉnh sửa hồ sơ để thay đổi ảnh đại diện."
+  },
+  {
+    "id": 15,
+    "question": "TourXport có hỗ trợ ngôn ngữ nào?",
+    "expected_answer": "TourXport hỗ trợ đổi ngôn ngữ giao diện giữa Tiếng Việt và English."
+  },
+  {
+    "id": 16,
+    "question": "Làm thế nào để bật/tắt thông báo trong TourXport?",
+    "expected_answer": "Chuyển sang Tab Cá Nhân và vào mục Thông báo để bật/tắt các loại thông báo."
+  },
+  {
+    "id": 17,
+    "question": "Làm sao để thiết lập mã PIN cho ứng dụng TourXport?",
+    "expected_answer": "Bạn có thể thiết lập Mã PIN bằng cách vào phần Bảo Mật trong Tab Cá Nhân để tăng cường tính riêng tư."
+  },
+  {
+    "id": 18,
+    "question": "Tôi có thể tìm sự trợ giúp ở đâu trong TourXport?",
+    "expected_answer": "Chuyển sang Tab Cá Nhân và vào mục Trợ Giúp & Hỗ Trợ để tìm FAQ hoặc trò chuyện với AI."
+  },
+  {
+    "id": 19,
+    "question": "Làm thế nào để viết nhật ký du lịch trên TourXport?",
+    "expected_answer": "Sử dụng tính năng Nhật Ký Du Lịch để viết lại cảm nghĩ và up ảnh sau chuyến đi từ travel_memory_screen.dart."
+  },
+  {
+    "id": 20,
+    "question": "Làm sao để xem lộ trình di chuyển trên bản đồ?",
+    "expected_answer": "Sau khi tạo lịch trình, bạn có thể nhấn nút 'Bản đồ' để xem lộ trình di chuyển các điểm trên bản đồ."
+  },
+  {
+    "id": 21,
+    "question": "Tôi muốn lưu lại lịch trình đã tạo, làm thế nào?",
+    "expected_answer": "Sau khi xem kết quả lịch trình, nhấn nút 'Lưu lại' để lưu trữ lịch trình này vào tài khoản."
+  },
+  {
+    "id": 22,
+    "question": "Có thể chọn bao nhiêu người tham gia khi tạo lịch trình?",
+    "expected_answer": "Bạn có thể chọn số lượng người tham gia là Người lớn và Trẻ em, với mức tối đa thường là 5 người."
+  },
+  {
+    "id": 23,
+    "question": "Tôi có thể chọn các sở thích nào khi tạo lịch trình?",
+    "expected_answer": "Bạn có thể chọn các thẻ tag như Nghỉ dưỡng, Ẩm thực, Văn hóa, Phiêu lưu khi tạo lịch trình."
+  },
+  {
+    "id": 24,
+    "question": "Làm thế nào để chọn ngày đi và số ngày đi khi tạo lịch trình?",
+    "expected_answer": "Trong bài khảo sát tạo lịch trình, bạn có thể chọn Tổng số ngày đi, ví dụ: 3 ngày 2 đêm."
+  },
+  {
+    "id": 25,
+    "question": "Làm sao để chọn ngân sách khi tạo lịch trình?",
+    "expected_answer": "Chọn mức chi tiêu dự kiến (Tiết kiệm, Trung bình, Cao cấp) trong phần Ngân sách của khảo sát."
+  },
+  {
+    "id": 26,
+    "question": "Có thể xem các điểm nổi bật của tỉnh/thành nào đó không?",
+    "expected_answer": "Có thể xem tổng quan văn hóa, đặc sản và các địa điểm nổi tiếng thuộc tỉnh đó từ chi tiết Tỉnh/Thành (province_detail_screen.dart)."
+  },
+  {
+    "id": 27,
+    "question": "Làm sao để bắt đầu trò chuyện với AI trợ lý ảo?",
+    "expected_answer": "Tại màn hình Trợ giúp trong Tab Cá Nhân, nhấn nút 'Bắt đầu trò chuyện' để được kết nối với Trợ lý ảo AI."
+  },
+  {
+    "id": 28,
+    "question": "Tôi có thể xem chi tiết lộ trình một tour đã lưu bằng cách nào?",
+    "expected_answer": "Vào Tab Bộ Sưu Tập, chọn mục Tour đã lưu và bấm vào tour muốn xem để xem lại chi tiết lộ trình."
+  },
+  {
+    "id": 29,
+    "question": "Làm thế nào để xem đánh giá của các địa điểm trong TourXport?",
+    "expected_answer": "Trong chi tiết địa điểm, bạn có thể xem các đánh giá tại app_reviews_screen.dart."
+  },
+  {
+    "id": 30,
+    "question": "Tôi cần làm gì để lưu một địa điểm vào Bộ Sưu Tập?",
+    "expected_answer": "Tại chi tiết địa điểm, nhấn nút 'Thả tim' hoặc 'Save' để lưu địa điểm vào Bộ Sưu Tập."
+  },
+  {
+    "id": 31,
+    "question": "Có thể chọn địa điểm nào khi bắt đầu tạo lịch trình?",
+    "expected_answer": "Trong phần khảo sát tạo lịch trình, bạn có thể chọn các địa điểm muốn đến như Đà Lạt, Phú Quốc..."
+  },
+  {
+    "id": 32,
+    "question": "Làm thế nào để chỉnh sửa hồ sơ cá nhân của tôi?",
+    "expected_answer": "Chuyển sang Tab Cá Nhân, sau đó vào mục Chỉnh sửa hồ sơ để thay đổi thông tin cá nhân."
+  },
+  {
+    "id": 33,
+    "question": "Tôi muốn lưu lại kỷ niệm du lịch, tính năng nào hỗ trợ điều này?",
+    "expected_answer": "Sử dụng tính năng Nhật Ký Du Lịch trong travel_memory_screen.dart để lưu trữ kỷ niệm du lịch."
+  },
+  {
+    "id": 34,
+    "question": "TourXport có cung cấp thông tin về thời tiết của địa điểm không?",
+    "expected_answer": "Trong chi tiết địa điểm, có nút xem thời tiết nếu thông tin thời tiết có sẵn."
+  },
+  {
+    "id": 35,
+    "question": "Làm sao để tìm kiếm nhà hàng trên TourXport?",
+    "expected_answer": "Trên Trang chủ, sử dụng thanh tìm kiếm để gõ tên nhà hàng bạn muốn tìm."
+  },
+  {
+    "id": 36,
+    "question": "Tôi có thể xem hình ảnh của địa điểm trên TourXport không?",
+    "expected_answer": "Trong chi tiết địa điểm, bạn có thể xem hình ảnh kèm theo mô tả chi tiết về địa điểm đó."
+  },
+  {
+    "id": 37,
+    "question": "Làm thế nào để biết về các khách sạn nổi bật trong một khu vực?",
+    "expected_answer": "Trên Tab Trang Chủ, bạn có thể xem các khách sạn nổi bật được gợi ý."
+  },
+  {
+    "id": 38,
+    "question": "Tôi có thể xem lộ trình chi tiết theo từng ngày trong lịch trình không?",
+    "expected_answer": "Kết quả lịch trình sẽ hiển thị thông tin phân bổ theo từng ngày như Day 1, Day 2..., cùng với các hoạt động cụ thể."
+  },
+  {
+    "id": 39,
+    "question": "Làm sao để chọn mức độ chi tiêu khi tạo lịch trình?",
+    "expected_answer": "Trong khảo sát tạo lịch trình, chọn Ngân sách và chọn mức chi tiêu dự kiến (Tiết kiệm, Trung bình, Cao cấp)."
+  },
+  {
+    "id": 40,
+    "question": "Có thể xem tổng quan văn hóa của một tỉnh không?",
+    "expected_answer": "Có thể xem tổng quan văn hóa của một tỉnh trong chi tiết Tỉnh/Thành (province_detail_screen.dart)."
+  },
+  {
+    "id": 41,
+    "question": "Làm thế nào để chuyển đổi giữa các ngôn ngữ trong ứng dụng?",
+    "expected_answer": "Chuyển sang Tab Cá Nhân và vào mục Ngôn ngữ để đổi ngôn ngữ giao diện."
+  },
+  {
+    "id": 42,
+    "question": "Tôi có thể xem thời tiết của một địa điểm từ đâu?",
+    "expected_answer": "Trong chi tiết địa điểm, có nút xem thời tiết nếu thông tin thời tiết có sẵn."
+  },
+  {
+    "id": 43,
+    "question": "Làm sao để thay đổi số điện thoại trong hồ sơ cá nhân?",
+    "expected_answer": "Vào Tab Cá Nhân, chọn Chỉnh sửa hồ sơ để thay đổi số điện thoại."
+  },
+  {
+    "id": 44,
+    "question": "Làm thế nào để chấm điểm và viết đánh giá cho một địa điểm?",
+    "expected_answer": "Vào create_review_screen.dart, chấm điểm số sao (1 đến 5 sao) và để lại bình luận văn bản để viết đánh giá."
+  },
+  {
+    "id": 45,
+    "question": "Làm sao để xem một tour đã lưu trong Bộ Sưu Tập?",
+    "expected_answer": "Chuyển sang Tab Bộ Sưu Tập, chọn mục Tour đã lưu và bấm vào tour để xem chi tiết."
+  },
+  {
+    "id": 46,
+    "question": "Tôi muốn tắt thông báo khuyến mãi, làm thế nào?",
+    "expected_answer": "Vào Tab Cá Nhân, chọn Thông báo và tắt thông báo khuyến mãi."
+  },
+  {
+    "id": 47,
+    "question": "Làm thế nào để bắt đầu một bài khảo sát tạo lịch trình?",
+    "expected_answer": "Chọn Tab Tạo Lịch Trình ở thanh điều hướng để bắt đầu một bài khảo sát và điền thông tin cần thiết."
+  },
+  {
+    "id": 48,
+    "question": "Tôi có thể lưu lại cảm nghĩ sau chuyến đi ở đâu?",
+    "expected_answer": "Bạn có thể viết lại cảm nghĩ sau chuyến đi trong Nhật Ký Du Lịch (travel_memory_screen.dart)."
+  },
+  {
+    "id": 49,
+    "question": "Làm thế nào để tìm kiếm một địa danh nổi tiếng?",
+    "expected_answer": "Sử dụng thanh tìm kiếm trên Trang chủ để gõ tên địa danh nổi tiếng mà bạn muốn tìm kiếm."
+  },
+  {
+    "id": 50,
+    "question": "Làm sao để lưu một tour vào tài khoản của tôi?",
+    "expected_answer": "Sau khi tạo lịch trình, nhấn nút 'Lưu lại' trên màn hình kết quả để lưu tour vào tài khoản."
+  },
+  {
+    "id": 51,
+    "question": "Tôi muốn xem thông tin thời tiết của một địa điểm, làm cách nào?",
+    "expected_answer": "Trong chi tiết địa điểm, bấm vào nút xem thời tiết để xem thông tin thời tiết nếu có sẵn."
+  },
+  {
+    "id": 52,
+    "question": "Làm thế nào để xem các địa điểm đã lưu trong Bộ Sưu Tập?",
+    "expected_answer": "Chọn Tab Bộ Sưu Tập và vào mục Địa điểm đã lưu để xem các địa điểm bạn đã thả tim."
+  },
+  {
+    "id": 53,
+    "question": "Tôi muốn biết về các đặc sản của một tỉnh, làm sao để xem?",
+    "expected_answer": "Bạn có thể xem đặc sản của một tỉnh trong chi tiết Tỉnh/Thành (province_detail_screen.dart)."
+  },
+  {
+    "id": 54,
+    "question": "Làm sao để lưu một địa điểm yêu thích?",
+    "expected_answer": "Trong chi tiết địa điểm, nhấn nút 'Thả tim' hoặc 'Save' để lưu địa điểm vào Bộ Sưu Tập."
+  },
+  {
+    "id": 55,
+    "question": "Tôi quên mật khẩu, có thể khôi phục như thế nào?",
+    "expected_answer": "Nhấn nút 'Quên mật khẩu?' trên màn hình đăng nhập để khôi phục mật khẩu."
+  },
+  {
+    "id": 56,
+    "question": "Làm thế nào để xem các hoạt động cụ thể theo từng ngày trong lịch trình?",
+    "expected_answer": "Kết quả lịch trình sẽ hiển thị thông tin phân bổ theo từng ngày như Day 1, Day 2..., cùng với các hoạt động cụ thể."
+  },
+  {
+    "id": 57,
+    "question": "Có thể xem chi tiết về văn hóa của một địa danh nổi tiếng không?",
+    "expected_answer": "Có thể xem chi tiết về văn hóa của một địa danh trong chi tiết Tỉnh/Thành (province_detail_screen.dart)."
+  },
+  {
+    "id": 58,
+    "question": "Tôi có thể thay đổi mật khẩu từ đâu?",
+    "expected_answer": "Hiện tại tài liệu hướng dẫn không đề cập đến tính năng thay đổi mật khẩu từ bên trong ứng dụng. Bạn chỉ có thể dùng tính năng Quên mật khẩu ở ngoài màn hình đăng nhập hoặc cài Mã PIN bảo mật."
+  },
+  {
+    "id": 59,
+    "question": "Làm sao để tìm kiếm một khách sạn trong TourXport?",
+    "expected_answer": "Trên Trang chủ, sử dụng thanh tìm kiếm để gõ tên khách sạn bạn muốn tìm."
+  },
+  {
+    "id": 60,
+    "question": "Làm thế nào để xem lại các địa điểm nổi bật trong một tỉnh?",
+    "expected_answer": "Xem lại các địa điểm nổi bật trong chi tiết Tỉnh/Thành (province_detail_screen.dart)."
+  },
+  {
+    "id": 61,
+    "question": "Tôi có thể tùy chỉnh thông báo trong ứng dụng như thế nào?",
+    "expected_answer": "Chuyển sang Tab Cá Nhân và vào mục Thông báo để bật/tắt các loại thông báo theo ý muốn."
+  },
+  {
+    "id": 62,
+    "question": "Có thể chia sẻ cảm nghĩ và ảnh sau chuyến đi ở đâu?",
+    "expected_answer": "Bạn có thể chia sẻ cảm nghĩ và ảnh sau chuyến đi trong Nhật Ký Du Lịch (travel_memory_screen.dart)."
+  },
+  {
+    "id": 63,
+    "question": "Làm thế nào để thêm một người bạn vào lịch trình của tôi?",
+    "expected_answer": "Trong phần khảo sát tạo lịch trình, bạn có thể chọn số lượng người tham gia, bao gồm người lớn và trẻ em."
+  },
+  {
+    "id": 64,
+    "question": "Làm sao để biết về các khách sạn gợi ý trong khu vực?",
+    "expected_answer": "Trên Tab Trang Chủ, bạn có thể xem các khách sạn gợi ý trong khu vực."
+  },
+  {
+    "id": 65,
+    "question": "Tôi muốn xem các đánh giá của một địa điểm, làm thế nào?",
+    "expected_answer": "Trong chi tiết địa điểm, bạn có thể xem các đánh giá tại app_reviews_screen.dart."
+  },
+  {
+    "id": 66,
+    "question": "Làm thế nào để tạo mã PIN để bảo mật ứng dụng?",
+    "expected_answer": "Bạn có thể thiết lập Mã PIN trong phần Bảo Mật từ Tab Cá Nhân để bảo mật ứng dụng."
+  },
+  {
+    "id": 67,
+    "question": "Tôi muốn xem tổng quan về văn hóa của một khu vực, làm thế nào?",
+    "expected_answer": "Xem tổng quan về văn hóa của một khu vực trong chi tiết Tỉnh/Thành (province_detail_screen.dart)."
+  },
+  {
+    "id": 68,
+    "question": "Làm sao để lưu lại các địa điểm yêu thích?",
+    "expected_answer": "Nhấn nút 'Thả tim' hoặc 'Save' trong chi tiết địa điểm để lưu lại địa điểm yêu thích."
+  },
+  {
+    "id": 69,
+    "question": "Làm thế nào để ghi lại cảm nghĩ sau một chuyến đi?",
+    "expected_answer": "Sử dụng tính năng Nhật Ký Du Lịch để ghi lại cảm nghĩ sau chuyến đi trong travel_memory_screen.dart."
+  },
+  {
+    "id": 70,
+    "question": "Tôi có thể tìm kiếm nhà hàng nổi tiếng không?",
+    "expected_answer": "Sử dụng thanh tìm kiếm trên Trang chủ để gõ tên nhà hàng nổi tiếng mà bạn muốn tìm kiếm."
+  },
+  {
+    "id": 71,
+    "question": "Làm sao để lưu trữ một tour đã tạo?",
+    "expected_answer": "Sau khi tạo lịch trình, nhấn nút 'Lưu lại' để lưu trữ tour này vào tài khoản của bạn."
+  },
+  {
+    "id": 72,
+    "question": "Tôi muốn xem thời tiết của một địa điểm, làm thế nào?",
+    "expected_answer": "Trong chi tiết địa điểm, bấm vào nút xem thời tiết để xem thông tin thời tiết nếu có sẵn."
+  },
+  {
+    "id": 73,
+    "question": "Làm thế nào để xem lại một tour đã lưu?",
+    "expected_answer": "Chuyển sang Tab Bộ Sưu Tập, chọn mục Tour đã lưu và bấm vào tour để xem lại chi tiết."
+  },
+  {
+    "id": 74,
+    "question": "Làm sao để tìm kiếm một địa điểm nổi bật?",
+    "expected_answer": "Sử dụng thanh tìm kiếm trên Trang chủ để gõ tên địa điểm nổi bật mà bạn muốn tìm kiếm."
+  },
+  {
+    "id": 75,
+    "question": "Tôi muốn tùy chỉnh ngôn ngữ trong ứng dụng, làm thế nào?",
+    "expected_answer": "Chuyển sang Tab Cá Nhân và vào mục Ngôn ngữ để tùy chỉnh ngôn ngữ giao diện."
+  },
+  {
+    "id": 76,
+    "question": "Làm thế nào để thêm ảnh vào nhật ký du lịch của tôi?",
+    "expected_answer": "Trong Nhật Ký Du Lịch (travel_memory_screen.dart), bạn có thể thêm ảnh cùng với cảm nghĩ về chuyến đi."
+  },
+  {
+    "id": 77,
+    "question": "Tôi có thể tìm kiếm khách sạn ở đâu?",
+    "expected_answer": "Trên Trang chủ, sử dụng thanh tìm kiếm để gõ tên khách sạn bạn muốn tìm."
+  },
+  {
+    "id": 78,
+    "question": "Làm sao để giữ một địa điểm vào Bộ Sưu Tập?",
+    "expected_answer": "Nhấn nút 'Thả tim' hoặc 'Save' trong chi tiết địa điểm để lưu địa điểm vào Bộ Sưu Tập."
+  },
+  {
+    "id": 79,
+    "question": "Làm thế nào để viết đánh giá cho một địa điểm?",
+    "expected_answer": "Vào create_review_screen.dart để viết đánh giá, chấm điểm và để lại bình luận văn bản cho địa điểm."
+  },
+  {
+    "id": 80,
+    "question": "Tôi muốn tìm kiếm một nhà hàng nổi tiếng, làm thế nào?",
+    "expected_answer": "Sử dụng thanh tìm kiếm trên Trang chủ để gõ tên nhà hàng nổi tiếng mà bạn muốn tìm."
+  },
+  {
+    "id": 81,
+    "question": "Làm sao để xem thông tin về văn hóa của một địa danh?",
+    "expected_answer": "Xem thông tin về văn hóa của một địa danh trong chi tiết Tỉnh/Thành (province_detail_screen.dart)."
+  },
+  {
+    "id": 82,
+    "question": "Tôi muốn thay đổi ngôn ngữ trong ứng dụng, làm thế nào?",
+    "expected_answer": "Chuyển sang Tab Cá Nhân và vào mục Ngôn ngữ để thay đổi ngôn ngữ giao diện."
+  },
+  {
+    "id": 83,
+    "question": "Làm thế nào để tìm kiếm một địa danh nổi tiếng trong ứng dụng?",
+    "expected_answer": "Trên Trang chủ, sử dụng thanh tìm kiếm để gõ tên địa danh nổi tiếng mà bạn muốn tìm kiếm."
+  },
+  {
+    "id": 84,
+    "question": "Tôi có thể tìm kiếm khách sạn nổi bật ở đâu?",
+    "expected_answer": "Trên Tab Trang Chủ, bạn có thể xem các khách sạn nổi bật được gợi ý."
+  },
+  {
+    "id": 85,
+    "question": "Làm sao để lưu lại một địa điểm yêu thích?",
+    "expected_answer": "Nhấn nút 'Thả tim' hoặc 'Save' trong chi tiết địa điểm để lưu lại địa điểm yêu thích."
+  },
+  {
+    "id": 86,
+    "question": "Tôi muốn viết nhật ký về chuyến đi của mình, làm thế nào?",
+    "expected_answer": "Sử dụng tính năng Nhật Ký Du Lịch để viết lại cảm nghĩ về chuyến đi trong travel_memory_screen.dart."
+  },
+  {
+    "id": 87,
+    "question": "Làm thế nào để xem lại các đánh giá của một địa điểm?",
+    "expected_answer": "Trong chi tiết địa điểm, bạn có thể xem các đánh giá tại app_reviews_screen.dart."
+  },
+  {
+    "id": 88,
+    "question": "Tôi muốn tìm kiếm địa danh nổi tiếng, làm sao?",
+    "expected_answer": "Sử dụng thanh tìm kiếm trên Trang chủ để gõ tên địa danh nổi tiếng mà bạn muốn tìm kiếm."
+  },
+  {
+    "id": 89,
+    "question": "Làm sao để lưu một tour đã tạo vào tài khoản?",
+    "expected_answer": "Sau khi tạo lịch trình, nhấn nút 'Lưu lại' để lưu tour vào tài khoản của bạn."
+  },
+  {
+    "id": 90,
+    "question": "Tôi có thể xem thông tin thời tiết của một địa điểm từ đâu?",
+    "expected_answer": "Trong chi tiết địa điểm, bấm vào nút xem thời tiết để xem thông tin thời tiết nếu có sẵn."
+  },
+  {
+    "id": 91,
+    "question": "Làm thế nào để xem tổng quan về văn hóa của một tỉnh?",
+    "expected_answer": "Xem tổng quan văn hóa của một tỉnh trong chi tiết Tỉnh/Thành (province_detail_screen.dart)."
+  },
+  {
+    "id": 92,
+    "question": "Tôi muốn tùy chỉnh ngôn ngữ trong ứng dụng, làm thế nào?",
+    "expected_answer": "Chuyển sang Tab Cá Nhân và vào mục Ngôn ngữ để tùy chỉnh ngôn ngữ giao diện."
+  },
+  {
+    "id": 93,
+    "question": "Làm sao để thêm ảnh vào nhật ký du lịch của tôi?",
+    "expected_answer": "Trong Nhật Ký Du Lịch (travel_memory_screen.dart), bạn có thể thêm ảnh cùng với cảm nghĩ về chuyến đi."
+  },
+  {
+    "id": 94,
+    "question": "Tôi muốn tìm kiếm khách sạn ở đâu?",
+    "expected_answer": "Trên Trang chủ, sử dụng thanh tìm kiếm để gõ tên khách sạn bạn muốn tìm."
+  },
+  {
+    "id": 95,
+    "question": "Làm sao để giữ một địa điểm vào Bộ Sưu Tập?",
+    "expected_answer": "Nhấn nút 'Thả tim' hoặc 'Save' trong chi tiết địa điểm để lưu địa điểm vào Bộ Sưu Tập."
+  },
+  {
+    "id": 96,
+    "question": "Làm thế nào để viết đánh giá cho một địa điểm?",
+    "expected_answer": "Vào create_review_screen.dart để viết đánh giá, chấm điểm và để lại bình luận văn bản cho địa điểm."
+  },
+  {
+    "id": 97,
+    "question": "Tôi muốn tìm kiếm một nhà hàng nổi tiếng, làm thế nào?",
+    "expected_answer": "Sử dụng thanh tìm kiếm trên Trang chủ để gõ tên nhà hàng nổi tiếng mà bạn muốn tìm."
+  },
+  {
+    "id": 98,
+    "question": "Làm sao để xem thông tin về văn hóa của một địa danh?",
+    "expected_answer": "Xem thông tin về văn hóa của một địa danh trong chi tiết Tỉnh/Thành (province_detail_screen.dart)."
+  },
+  {
+    "id": 99,
+    "question": "Tôi muốn thay đổi ngôn ngữ trong ứng dụng, làm thế nào?",
+    "expected_answer": "Chuyển sang Tab Cá Nhân và vào mục Ngôn ngữ để thay đổi ngôn ngữ giao diện."
+  },
+  {
+    "id": 100,
+    "question": "Làm thế nào để tìm kiếm một địa danh nổi tiếng trong ứng dụng?",
+    "expected_answer": "Trên Trang chủ, sử dụng thanh tìm kiếm để gõ tên địa danh nổi tiếng mà bạn muốn tìm kiếm."
+  }
+]

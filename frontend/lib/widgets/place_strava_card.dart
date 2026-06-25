@@ -272,22 +272,7 @@ class PlaceStravaCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    // Route line decoration (Strava style)
-                    if (isVisited)
-                      Container(
-                        margin: const EdgeInsets.only(bottom: 12),
-                        height: 3,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(2),
-                          gradient: const LinearGradient(
-                            colors: [
-                              Color(0xFFFF6B35),
-                              Color(0xFFFC4C02),
-                              Color(0xFFFF6B35),
-                            ],
-                          ),
-                        ),
-                      ),
+
 
                     // Place name
                     Text(

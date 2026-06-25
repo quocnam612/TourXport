@@ -1,10 +1,10 @@
-from motor.motor_asyncio import AsyncIOMotorClient
+from pymongo import AsyncMongoClient
 from src.core.config import settings
 
 # NOTE: Trien khai sau giai doan POC
 
 class Database:
-    client: AsyncIOMotorClient = None
+    client: AsyncMongoClient = None
 
 # Singleton instance
 db = Database()

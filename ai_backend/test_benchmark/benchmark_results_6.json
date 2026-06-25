@@ -1,0 +1,909 @@
+{
+  "summary": {
+    "total_questions": 100,
+    "average_score": 89.25,
+    "average_latency_sec": 2.8703
+  },
+  "details": [
+    {
+      "id": 1,
+      "question": "Làm thế nào để đăng nhập vào ứng dụng TourXport?",
+      "expected_answer": "Tại màn hình mở đầu (Landing Page), nhấn nút 'Đăng nhập'. Bạn có thể đăng nhập qua Email hoặc Số điện thoại bằng cách nhập thông tin vào các ô tương ứng và nhập Mật khẩu.",
+      "ai_answer": "Để đăng nhập vào ứng dụng TourXport, bạn thực hiện theo các bước sau:\n\n1. Tại màn hình mở đầu (Landing Page), nhấn nút **\"Đăng nhập\"**.\n2. Chọn phương thức đăng nhập: **Email** hoặc **Số điện thoại**.\n3. Nhập thông tin vào ô tương ứng và nhập **Mật khẩu**.\n4. Nếu quên mật khẩu, bạn có thể nhấn nút **\"Quên mật khẩu?\"** để khôi phục.\n5. Sau khi nhập đầy đủ thông tin, bạn sẽ được chuyển thẳng vào **Màn hình chính (Dashboard)** sau khi đăng nhập thành công.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp đầy đủ các bước để đăng nhập vào ứng dụng TourXport, bao gồm cả thông tin về việc khôi phục mật khẩu và chuyển đến màn hình chính, mặc dù không cần thiết cho câu hỏi. Tuy nhiên, nó vẫn giữ được nội dung chính và ý nghĩa của câu trả lời mong đợi.",
+      "latency_sec": 4.74
+    },
+    {
+      "id": 2,
+      "question": "Tôi quên mật khẩu, làm thế nào để khôi phục?",
+      "expected_answer": "Nếu quên mật khẩu, bạn có thể nhấn nút 'Quên mật khẩu?' trên màn hình đăng nhập để khôi phục.",
+      "ai_answer": "Bạn có thể khôi phục mật khẩu bằng cách sau:\n\n1. Tại màn hình mở đầu (Landing Page), nhấn nút **\"Đăng nhập\"**.\n2. Chọn **\"Quên mật khẩu?\"**.\n3. Làm theo hướng dẫn để khôi phục mật khẩu của bạn.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết hơn về quy trình khôi phục mật khẩu, mặc dù vẫn giữ được ý nghĩa chính của câu trả lời mong đợi. Tuy nhiên, nó không hoàn toàn khớp với cách diễn đạt ngắn gọn trong câu trả lời mong đợi.",
+      "latency_sec": 3.53
+    },
+    {
+      "id": 3,
+      "question": "Làm sao để đăng ký tài khoản mới trên TourXport?",
+      "expected_answer": "Từ màn hình Đăng nhập, kéo xuống dưới và chọn 'Chưa có tài khoản? Đăng ký ngay'. Cung cấp các thông tin cần thiết và đánh dấu tích vào ô 'Tôi đồng ý với Điều khoản và Chính sách bảo mật', sau đó nhấn nút 'Đăng ký'.",
+      "ai_answer": "Để đăng ký tài khoản mới trên TourXport, bạn hãy làm theo các bước sau:\n\n1. Tại màn hình Đăng nhập, kéo xuống dưới và chọn **\"Chưa có tài khoản? Đăng ký ngay\"**.\n2. Điền các thông tin cần thiết: **Tên đầy đủ, Email, Số điện thoại, Mật khẩu**.\n3. Đánh dấu tích vào ô **\"Tôi đồng ý với Điều khoản và Chính sách bảo mật\"**.\n4. Nhấn nút **\"Đăng ký\"** để hoàn tất.\n\nChúc bạn có trải nghiệm tuyệt vời với TourXport!",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp đầy đủ các bước cần thiết để đăng ký tài khoản mới trên TourXport, bao gồm thông tin cần điền. Tuy nhiên, nó có thêm một lời chúc ở cuối, không có trong câu trả lời mong đợi, nhưng không làm giảm độ chính xác của nội dung chính.",
+      "latency_sec": 3.85
+    },
+    {
+      "id": 4,
+      "question": "Sau khi đăng nhập thành công, tôi sẽ được đưa đến đâu?",
+      "expected_answer": "Sau khi đăng nhập thành công, bạn sẽ được chuyển thẳng vào Màn hình chính (Dashboard).",
+      "ai_answer": "Sau khi đăng nhập thành công, bạn sẽ được đưa đến Màn Hình Chính (Dashboard), nơi có thể thấy các Tab chính ở thanh điều hướng dưới cùng.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chính xác về việc người dùng sẽ được đưa đến Màn Hình Chính (Dashboard) sau khi đăng nhập, nhưng có thêm chi tiết về các Tab chính ở thanh điều hướng, điều này không hoàn toàn cần thiết cho câu hỏi ban đầu.",
+      "latency_sec": 3.13
+    },
+    {
+      "id": 5,
+      "question": "Các tab chính trên thanh điều hướng của TourXport là gì?",
+      "expected_answer": "Các tab chính trên thanh điều hướng gồm Trang Chủ, Bản Đồ, Tạo Lịch Trình, Bộ Sưu Tập và Cá Nhân.",
+      "ai_answer": "Các tab chính trên thanh điều hướng của TourXport bao gồm: \n\n1. Trang Chủ (Home)\n2. Bản Đồ (Map)\n3. Tạo Lịch Trình (Trip / Survey)\n4. Bộ Sưu Tập (Saved)\n5. Cá Nhân (Profile)",
+      "score": 95,
+      "reason": "Câu trả lời thực tế liệt kê đúng các tab chính trên thanh điều hướng của TourXport, nhưng có thêm thông tin chi tiết về tên tiếng Anh của các tab, điều này không làm thay đổi nội dung chính. Tuy nhiên, sự khác biệt nhỏ trong cách diễn đạt có thể làm giảm điểm số một chút.",
+      "latency_sec": 3.7
+    },
+    {
+      "id": 6,
+      "question": "Tab Trang Chủ trên ứng dụng TourXport có chức năng gì?",
+      "expected_answer": "Tab Trang Chủ hiển thị các địa điểm nổi bật, khách sạn, nhà hàng gợi ý và thanh tìm kiếm.",
+      "ai_answer": "Tab Trang Chủ trên ứng dụng TourXport hiển thị các địa điểm nổi bật, khách sạn, nhà hàng gợi ý và có thanh tìm kiếm để bạn dễ dàng khám phá thêm thông tin.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp thông tin tương tự như câu trả lời mong đợi, nhưng có thêm chi tiết về việc 'dễ dàng khám phá thêm thông tin', điều này không làm thay đổi ý nghĩa chính của câu trả lời.",
+      "latency_sec": 3.79
+    },
+    {
+      "id": 7,
+      "question": "Làm thế nào để khám phá địa điểm qua bản đồ trong TourXport?",
+      "expected_answer": "Bạn có thể chọn tab Bản Đồ trên thanh điều hướng để khám phá địa điểm trực quan qua Google Maps.",
+      "ai_answer": "Để khám phá địa điểm qua bản đồ trong TourXport, bạn hãy làm theo các bước sau:\n\n1. Mở ứng dụng TourXport.\n2. Chuyển đến Tab **Bản Đồ (Map)** ở thanh điều hướng dưới cùng màn hình.\n3. Tại đây, bạn có thể trực quan khám phá các địa điểm thông qua Google Maps.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách khám phá địa điểm qua bản đồ trong TourXport, bao gồm các bước cụ thể. Tuy nhiên, nó không hoàn toàn khớp với câu trả lời mong đợi vì có thêm thông tin về việc mở ứng dụng và vị trí của tab Bản Đồ.",
+      "latency_sec": 4.44
+    },
+    {
+      "id": 8,
+      "question": "Làm sao để tạo lịch trình tự động bằng AI trên TourXport?",
+      "expected_answer": "Chọn Tab Tạo Lịch Trình ở thanh điều hướng, điền thông tin vào khảo sát và nhấn nút 'Hoàn tất' hoặc 'Tạo lịch trình' để sử dụng tính năng AI tạo tour tự động.",
+      "ai_answer": "Để tạo lịch trình tự động bằng AI trên TourXport, bạn làm theo các bước sau:\n\n1. Từ thanh điều hướng dưới cùng, chọn Tab **Tạo Lịch Trình**.\n2. Điền thông tin vào bài khảo sát với các câu hỏi như:\n   - Chọn địa điểm muốn đến.\n   - Số lượng người tham gia.\n   - Tổng số ngày đi.\n   - Ngân sách dự kiến.\n   - Sở thích cá nhân.\n3. Nhấn nút **\"Hoàn tất\"** hoặc **\"Tạo lịch trình\"** để hoàn tất quá trình.",
+      "score": 100,
+      "reason": "Câu trả lời thực tế cung cấp đầy đủ các bước cần thiết để tạo lịch trình tự động bằng AI trên TourXport, bao gồm việc chọn tab, điền thông tin khảo sát và nhấn nút hoàn tất, hoàn toàn khớp với nội dung mong đợi.",
+      "latency_sec": 4.12
+    },
+    {
+      "id": 9,
+      "question": "Tôi có thể lưu trữ các địa điểm yêu thích ở đâu trong TourXport?",
+      "expected_answer": "Bạn có thể lưu trữ các địa điểm yêu thích trong Tab Bộ Sưu Tập, nơi có mục Địa điểm đã lưu.",
+      "ai_answer": "Bạn có thể lưu trữ các địa điểm yêu thích trong Tab **Bộ Sưu Tập** ở thanh điều hướng. Tại đây, bạn sẽ tìm thấy mục **Địa điểm đã lưu**, nơi chứa các khách sạn, nhà hàng và danh lam thắng cảnh mà bạn đã thả tim (Save).",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách lưu trữ địa điểm yêu thích, bao gồm cả các loại địa điểm cụ thể như khách sạn, nhà hàng và danh lam thắng cảnh, nhưng vẫn giữ nguyên ý nghĩa chính của câu trả lời mong đợi.",
+      "latency_sec": 4.35
+    },
+    {
+      "id": 10,
+      "question": "Làm thế nào để xem lại các tour đã lưu trên TourXport?",
+      "expected_answer": "Chuyển sang Tab Bộ Sưu Tập ở thanh điều hướng và chọn mục Tour đã lưu để xem lại chi tiết lộ trình.",
+      "ai_answer": "Xin lỗi, theo tài liệu hướng dẫn hiện tại, tôi không có thông tin về cách xem lại các tour đã lưu trên ứng dụng TourXport.",
+      "score": 0,
+      "reason": "Câu trả lời thực tế không cung cấp thông tin nào liên quan đến cách xem lại các tour đã lưu, hoàn toàn không đáp ứng yêu cầu của câu hỏi.",
+      "latency_sec": 2.96
+    },
+    {
+      "id": 11,
+      "question": "Tôi có thể tìm kiếm địa điểm nào trong ứng dụng TourXport?",
+      "expected_answer": "Tại Trang chủ, có thể sử dụng thanh tìm kiếm ở trên cùng để tìm kiếm địa danh, khách sạn hoặc nhà hàng.",
+      "ai_answer": "Bạn có thể tìm kiếm địa danh, khách sạn hoặc nhà hàng bằng cách sử dụng thanh tìm kiếm (Search Bar) ở trên cùng của Trang chủ trong ứng dụng TourXport.",
+      "score": 100,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chính xác và đầy đủ về cách tìm kiếm địa điểm trong ứng dụng TourXport, tương tự như câu trả lời mong đợi.",
+      "latency_sec": 2.75
+    },
+    {
+      "id": 12,
+      "question": "Làm sao để xem chi tiết một địa điểm trong TourXport?",
+      "expected_answer": "Khi bấm vào một địa điểm bất kỳ, bạn có thể xem hình ảnh, mô tả, nút xem thời tiết và nút Đánh giá.",
+      "ai_answer": "Để xem chi tiết một địa điểm trong TourXport, bạn thực hiện các bước sau:\n\n1. Trên Trang chủ, sử dụng thanh tìm kiếm (Search Bar) ở trên cùng để gõ tên địa điểm bạn muốn tìm.\n2. Chọn địa điểm từ danh sách kết quả tìm kiếm.\n3. Khi bấm vào địa điểm, bạn sẽ xem được hình ảnh, mô tả, nút xem thời tiết (nếu có), và nút **Đánh giá (Review)**.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách tìm kiếm địa điểm, nhưng vẫn giữ được các yếu tố chính như hình ảnh, mô tả, nút xem thời tiết và nút đánh giá. Tuy nhiên, nó có thêm bước tìm kiếm mà không có trong câu trả lời mong đợi.",
+      "latency_sec": 3.74
+    },
+    {
+      "id": 13,
+      "question": "Làm thế nào để viết đánh giá cho một địa điểm trên TourXport?",
+      "expected_answer": "Bạn có thể viết đánh giá cho các địa điểm bằng cách truy cập create_review_screen.dart và để lại bình luận cùng điểm số sao.",
+      "ai_answer": "Để viết đánh giá cho một địa điểm trên TourXport, bạn có thể làm theo các bước sau:\n\n1. Mở ứng dụng TourXport và truy cập vào trang địa điểm mà bạn muốn đánh giá.\n2. Tìm và chọn tùy chọn để viết đánh giá (thường nằm trong phần thông tin địa điểm).\n3. Tại màn hình viết đánh giá (`create_review_screen.dart`), bạn có thể chấm điểm số sao (từ 1 đến 5 sao).\n4. Viết bình luận của bạn về địa điểm đó.\n5. Hoàn tất và gửi đánh giá của bạn.\n\nĐánh giá của bạn sẽ được hiển thị trong phần đánh giá của ứng dụng (`app_reviews_screen.dart`).",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết hơn về cách viết đánh giá, bao gồm các bước cụ thể và thông tin về nơi hiển thị đánh giá, mặc dù không hoàn toàn khớp với câu trả lời mong đợi nhưng vẫn truyền đạt đúng nội dung và ý nghĩa.",
+      "latency_sec": 3.92
+    },
+    {
+      "id": 14,
+      "question": "Tôi muốn thay đổi ảnh đại diện, làm thế nào?",
+      "expected_answer": "Chuyển sang Tab Cá Nhân, vào mục Chỉnh sửa hồ sơ để thay đổi ảnh đại diện.",
+      "ai_answer": "Để thay đổi ảnh đại diện, bạn làm theo các bước sau:\n\n1. Mở ứng dụng TourXport và chuyển sang Tab Cá Nhân ở góc phải dưới cùng màn hình.\n2. Nhấn vào mục **Chỉnh sửa hồ sơ**.\n3. Tại đây, bạn có thể thay đổi ảnh đại diện của mình.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp đầy đủ các bước cần thiết để thay đổi ảnh đại diện, bao gồm việc mở ứng dụng và vị trí của Tab Cá Nhân. Tuy nhiên, nó có thêm chi tiết về ứng dụng cụ thể (TourXport) mà không có trong câu trả lời mong đợi, điều này có thể làm cho câu trả lời không hoàn toàn khớp với mong đợi nhưng vẫn rất chính xác và hữu ích.",
+      "latency_sec": 4.48
+    },
+    {
+      "id": 15,
+      "question": "TourXport có hỗ trợ ngôn ngữ nào?",
+      "expected_answer": "TourXport hỗ trợ đổi ngôn ngữ giao diện giữa Tiếng Việt và English.",
+      "ai_answer": "TourXport hỗ trợ hai ngôn ngữ: Tiếng Việt và English. Bạn có thể thay đổi ngôn ngữ giao diện trong phần Cài Đặt Ngôn Ngữ.",
+      "score": 100,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chính xác về các ngôn ngữ mà TourXport hỗ trợ, đồng thời bổ sung thêm thông tin về cách thay đổi ngôn ngữ giao diện, phù hợp với câu trả lời mong đợi.",
+      "latency_sec": 4.77
+    },
+    {
+      "id": 16,
+      "question": "Làm thế nào để bật/tắt thông báo trong TourXport?",
+      "expected_answer": "Chuyển sang Tab Cá Nhân và vào mục Thông báo để bật/tắt các loại thông báo.",
+      "ai_answer": "Để bật/tắt thông báo trong TourXport, bạn làm như sau:\n\n1. Chuyển sang Tab Cá Nhân (Profile) ở góc phải dưới cùng màn hình.\n2. Chọn phần **Thông báo**.\n3. Tại đây, bạn có thể bật hoặc tắt các loại thông báo như thông báo tin nhắn, khuyến mãi...",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết hơn về cách bật/tắt thông báo, bao gồm cả vị trí và các loại thông báo cụ thể, nhưng vẫn giữ nguyên nội dung chính của câu trả lời mong đợi.",
+      "latency_sec": 4.77
+    },
+    {
+      "id": 17,
+      "question": "Làm sao để thiết lập mã PIN cho ứng dụng TourXport?",
+      "expected_answer": "Bạn có thể thiết lập Mã PIN bằng cách vào phần Bảo Mật trong Tab Cá Nhân để tăng cường tính riêng tư.",
+      "ai_answer": "Để thiết lập mã PIN cho ứng dụng TourXport, bạn làm theo các bước sau:\n\n1. Mở ứng dụng và chuyển sang Tab Cá Nhân (Profile) ở góc phải dưới cùng màn hình.\n2. Chọn mục Bảo Mật.\n3. Tại đây, bạn có thể thiết lập mã PIN để khóa ứng dụng.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết về cách thiết lập mã PIN, bao gồm các bước cụ thể, nhưng không nhấn mạnh vào việc tăng cường tính riêng tư như trong câu trả lời mong đợi.",
+      "latency_sec": 3.99
+    },
+    {
+      "id": 18,
+      "question": "Tôi có thể tìm sự trợ giúp ở đâu trong TourXport?",
+      "expected_answer": "Chuyển sang Tab Cá Nhân và vào mục Trợ Giúp & Hỗ Trợ để tìm FAQ hoặc trò chuyện với AI.",
+      "ai_answer": "Bạn có thể tìm sự trợ giúp trong TourXport bằng cách chuyển đến Tab Cá Nhân, sau đó chọn mục \"Trợ Giúp & Hỗ Trợ\". Tại đây, bạn có thể xem **FAQ** hoặc nhấn vào nút **\"Bắt đầu trò chuyện\"** để kết nối với Trợ lý ảo AI.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chính xác về cách tìm sự trợ giúp trong TourXport, nhưng có thêm chi tiết về việc nhấn vào nút 'Bắt đầu trò chuyện', điều này không có trong câu trả lời mong đợi. Tuy nhiên, nội dung và ý nghĩa vẫn rất gần gũi.",
+      "latency_sec": 3.92
+    },
+    {
+      "id": 19,
+      "question": "Làm thế nào để viết nhật ký du lịch trên TourXport?",
+      "expected_answer": "Sử dụng tính năng Nhật Ký Du Lịch để viết lại cảm nghĩ và up ảnh sau chuyến đi từ travel_memory_screen.dart.",
+      "ai_answer": "Để viết nhật ký du lịch trên TourXport, bạn làm theo các bước sau:\n\n1. Mở ứng dụng TourXport.\n2. Điều hướng đến mục \"Nhật Ký Du Lịch\" (`travel_memory_screen.dart`).\n3. Tại đây, bạn có thể viết lại cảm nghĩ và tải lên ảnh từ chuyến đi của mình.\n\nChúc bạn có những kỷ niệm đẹp và thú vị!",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết về cách viết nhật ký du lịch trên TourXport, bao gồm việc điều hướng đến mục 'Nhật Ký Du Lịch' và tải lên ảnh, nhưng không nhắc đến việc sử dụng tính năng cụ thể như trong câu trả lời mong đợi.",
+      "latency_sec": 4.35
+    },
+    {
+      "id": 20,
+      "question": "Làm sao để xem lộ trình di chuyển trên bản đồ?",
+      "expected_answer": "Sau khi tạo lịch trình, bạn có thể nhấn nút 'Bản đồ' để xem lộ trình di chuyển các điểm trên bản đồ.",
+      "ai_answer": "Để xem lộ trình di chuyển trên bản đồ, bạn làm theo các bước sau:\n\n1. Sau khi tạo xong lịch trình, màn hình kết quả lịch trình sẽ hiện ra.\n2. Nhấn vào nút **\"Bản đồ\"**. Nút này sẽ chuyển bạn sang màn hình `tour_route_map_screen.dart` để xem lộ trình di chuyển các điểm trên bản đồ.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách xem lộ trình di chuyển trên bản đồ, bao gồm cả việc chuyển sang màn hình cụ thể, nhưng vẫn giữ được ý nghĩa chính của câu trả lời mong đợi.",
+      "latency_sec": 5.31
+    },
+    {
+      "id": 21,
+      "question": "Tôi muốn lưu lại lịch trình đã tạo, làm thế nào?",
+      "expected_answer": "Sau khi xem kết quả lịch trình, nhấn nút 'Lưu lại' để lưu trữ lịch trình này vào tài khoản.",
+      "ai_answer": "Để lưu lại lịch trình đã tạo, bạn hãy nhấn vào nút **\"Lưu lại\" (Save)** trên màn hình kết quả lịch trình. Điều này sẽ lưu trữ lịch trình vào tài khoản của bạn.",
+      "score": 100,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chính xác và đầy đủ về cách lưu lại lịch trình, tương đồng với câu trả lời mong đợi.",
+      "latency_sec": 2.96
+    },
+    {
+      "id": 22,
+      "question": "Có thể chọn bao nhiêu người tham gia khi tạo lịch trình?",
+      "expected_answer": "Bạn có thể chọn số lượng người tham gia là Người lớn và Trẻ em, với mức tối đa thường là 5 người.",
+      "ai_answer": "Khi tạo lịch trình, bạn có thể chọn tối đa 5 người tham gia, bao gồm cả người lớn và trẻ em.",
+      "score": 100,
+      "reason": "Câu trả lời thực tế hoàn toàn phù hợp với câu trả lời mong đợi, cung cấp thông tin chính xác về số lượng người tham gia và phân loại họ thành người lớn và trẻ em.",
+      "latency_sec": 1.81
+    },
+    {
+      "id": 23,
+      "question": "Tôi có thể chọn các sở thích nào khi tạo lịch trình?",
+      "expected_answer": "Bạn có thể chọn các thẻ tag như Nghỉ dưỡng, Ẩm thực, Văn hóa, Phiêu lưu khi tạo lịch trình.",
+      "ai_answer": "Khi tạo lịch trình, bạn có thể chọn các sở thích như Nghỉ dưỡng, Ẩm thực, Văn hóa, và Phiêu lưu.",
+      "score": 100,
+      "reason": "Câu trả lời thực tế hoàn toàn trùng khớp với câu trả lời mong đợi về nội dung và ý nghĩa, chỉ khác nhau ở cách diễn đạt nhưng vẫn truyền đạt thông tin chính xác.",
+      "latency_sec": 2.15
+    },
+    {
+      "id": 24,
+      "question": "Làm thế nào để chọn ngày đi và số ngày đi khi tạo lịch trình?",
+      "expected_answer": "Trong bài khảo sát tạo lịch trình, bạn có thể chọn Tổng số ngày đi, ví dụ: 3 ngày 2 đêm.",
+      "ai_answer": "Để chọn ngày đi và số ngày đi khi tạo lịch trình, bạn hãy làm theo các bước sau:\n\n1. Từ thanh điều hướng dưới cùng, chọn Tab **Tạo Lịch Trình**.\n2. Trong phần khảo sát, bạn sẽ thấy tùy chọn để chọn **tổng số ngày đi**, ví dụ: 3 ngày 2 đêm.\n3. Điền thông tin cần thiết khác và nhấn nút **\"Hoàn tất\"** hoặc **\"Tạo lịch trình\"** để hoàn tất.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách chọn ngày đi và số ngày đi, bao gồm các bước cụ thể, nhưng vẫn giữ được ý chính về việc chọn tổng số ngày đi như trong câu trả lời mong đợi.",
+      "latency_sec": 2.59
+    },
+    {
+      "id": 25,
+      "question": "Làm sao để chọn ngân sách khi tạo lịch trình?",
+      "expected_answer": "Chọn mức chi tiêu dự kiến (Tiết kiệm, Trung bình, Cao cấp) trong phần Ngân sách của khảo sát.",
+      "ai_answer": "Để chọn ngân sách khi tạo lịch trình, bạn hãy làm theo các bước sau:\n\n1. Từ thanh điều hướng dưới cùng, chọn Tab **Tạo Lịch Trình**.\n2. Trong bài khảo sát, bạn sẽ thấy một mục để chọn ngân sách (Budget).\n3. Chọn mức chi tiêu dự kiến phù hợp với bạn: Tiết kiệm, Trung bình hoặc Cao cấp.\n4. Sau khi điền các thông tin khác, nhấn nút **\"Hoàn tất\"** hoặc **\"Tạo lịch trình\"**.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế đã cung cấp thông tin chi tiết hơn về quy trình chọn ngân sách, bao gồm các bước cụ thể, nhưng vẫn giữ được nội dung chính là chọn mức chi tiêu dự kiến trong phần ngân sách. Tuy nhiên, nó có phần dài dòng hơn so với câu trả lời mong đợi.",
+      "latency_sec": 2.71
+    },
+    {
+      "id": 26,
+      "question": "Có thể xem các điểm nổi bật của tỉnh/thành nào đó không?",
+      "expected_answer": "Có thể xem tổng quan văn hóa, đặc sản và các địa điểm nổi tiếng thuộc tỉnh đó từ chi tiết Tỉnh/Thành (province_detail_screen.dart).",
+      "ai_answer": "Có thể! Để xem các điểm nổi bật của một tỉnh/thành, bạn hãy làm theo các bước sau:\n\n1. Truy cập vào Trang chủ của ứng dụng.\n2. Sử dụng thanh tìm kiếm ở trên cùng để nhập tên tỉnh/thành mà bạn quan tâm.\n3. Khi tìm thấy, nhấn vào tên tỉnh/thành đó để xem chi tiết.\n4. Trang chi tiết sẽ hiển thị tổng quan về văn hóa, đặc sản và các địa điểm nổi tiếng của tỉnh/thành đó.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết để xem các điểm nổi bật của tỉnh/thành, bao gồm thông tin về văn hóa, đặc sản và địa điểm nổi tiếng, tương tự như câu trả lời mong đợi. Tuy nhiên, nó không nhắc đến cụ thể 'tỉnh_detail_screen.dart', nên điểm số không đạt 100.",
+      "latency_sec": 2.59
+    },
+    {
+      "id": 27,
+      "question": "Làm sao để bắt đầu trò chuyện với AI trợ lý ảo?",
+      "expected_answer": "Tại màn hình Trợ giúp trong Tab Cá Nhân, nhấn nút 'Bắt đầu trò chuyện' để được kết nối với Trợ lý ảo AI.",
+      "ai_answer": "Để bắt đầu trò chuyện với AI trợ lý ảo, bạn hãy làm theo các bước sau:\n\n1. Chuyển sang Tab Cá Nhân (Profile) ở góc phải dưới cùng màn hình.\n2. Chọn mục **Trợ Giúp & Hỗ Trợ**.\n3. Nhấn vào nút **\"Bắt đầu trò chuyện\"** (hoặc \"Start chat\" kèm icon hình bong bóng chat).\n\nSau đó, bạn sẽ được kết nối trực tiếp với Trợ lý ảo AI.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết hơn về cách bắt đầu trò chuyện với AI trợ lý ảo, bao gồm các bước cụ thể và thông tin bổ sung, nhưng vẫn giữ được ý nghĩa chính của câu trả lời mong đợi.",
+      "latency_sec": 2.5
+    },
+    {
+      "id": 28,
+      "question": "Tôi có thể xem chi tiết lộ trình một tour đã lưu bằng cách nào?",
+      "expected_answer": "Vào Tab Bộ Sưu Tập, chọn mục Tour đã lưu và bấm vào tour muốn xem để xem lại chi tiết lộ trình.",
+      "ai_answer": "Bạn có thể xem chi tiết lộ trình một tour đã lưu bằng cách sau:\n\n1. Chuyển sang Tab **Bộ Sưu Tập** ở thanh điều hướng.\n2. Tại đây, chọn mục **Tour đã lưu**.\n3. Chọn tour bạn muốn xem để hiển thị chi tiết lộ trình.",
+      "score": 100,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết và chính xác tương tự như câu trả lời mong đợi, bao gồm các bước cụ thể để xem chi tiết lộ trình của tour đã lưu.",
+      "latency_sec": 4.91
+    },
+    {
+      "id": 29,
+      "question": "Làm thế nào để xem đánh giá của các địa điểm trong TourXport?",
+      "expected_answer": "Trong chi tiết địa điểm, bạn có thể xem các đánh giá tại app_reviews_screen.dart.",
+      "ai_answer": "Để xem đánh giá của các địa điểm trong TourXport, bạn hãy truy cập vào màn hình hiển thị đánh giá tại `app_reviews_screen.dart`. Ở đây, bạn sẽ thấy các đánh giá bao gồm điểm số sao và bình luận từ người dùng khác.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chính xác về cách xem đánh giá, nhưng có thêm chi tiết về điểm số sao và bình luận, làm cho nó phong phú hơn so với câu trả lời mong đợi.",
+      "latency_sec": 2.26
+    },
+    {
+      "id": 30,
+      "question": "Tôi cần làm gì để lưu một địa điểm vào Bộ Sưu Tập?",
+      "expected_answer": "Tại chi tiết địa điểm, nhấn nút 'Thả tim' hoặc 'Save' để lưu địa điểm vào Bộ Sưu Tập.",
+      "ai_answer": "Để lưu một địa điểm vào Bộ Sưu Tập, bạn làm theo các bước sau:\n\n1. Tìm kiếm và chọn địa điểm bạn quan tâm.\n2. Trong trang chi tiết của địa điểm, tìm và bấm vào biểu tượng hình trái tim (Save) để lưu địa điểm đó vào Bộ Sưu Tập của bạn.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về quy trình lưu địa điểm, nhưng vẫn giữ đúng ý nghĩa và nội dung chính của câu trả lời mong đợi. Điểm trừ là có thêm bước tìm kiếm và chọn địa điểm, không hoàn toàn khớp với câu trả lời mong đợi.",
+      "latency_sec": 2.58
+    },
+    {
+      "id": 31,
+      "question": "Có thể chọn địa điểm nào khi bắt đầu tạo lịch trình?",
+      "expected_answer": "Trong phần khảo sát tạo lịch trình, bạn có thể chọn các địa điểm muốn đến như Đà Lạt, Phú Quốc...",
+      "ai_answer": "Khi bắt đầu tạo lịch trình, bạn có thể chọn địa điểm như Đà Lạt, Phú Quốc và nhiều nơi khác. Hãy làm theo các bước trong mục Tạo Lịch Trình để hoàn thành khảo sát và chọn địa điểm mong muốn.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chính xác về việc chọn địa điểm khi tạo lịch trình, nhưng có thêm chi tiết về các bước thực hiện, điều này không hoàn toàn cần thiết cho câu hỏi ban đầu.",
+      "latency_sec": 4.36
+    },
+    {
+      "id": 32,
+      "question": "Làm thế nào để chỉnh sửa hồ sơ cá nhân của tôi?",
+      "expected_answer": "Chuyển sang Tab Cá Nhân, sau đó vào mục Chỉnh sửa hồ sơ để thay đổi thông tin cá nhân.",
+      "ai_answer": "Để chỉnh sửa hồ sơ cá nhân của bạn, hãy làm theo các bước sau:\n\n1. Mở ứng dụng TourXport.\n2. Chuyển sang Tab Cá Nhân (Profile) ở góc phải dưới cùng màn hình.\n3. Chọn \"Chỉnh sửa hồ sơ\".\n4. Tại đây, bạn có thể thay đổi ảnh đại diện, tên và số điện thoại.\n5. Lưu lại thay đổi sau khi đã chỉnh sửa xong.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách chỉnh sửa hồ sơ cá nhân, bao gồm các bước cụ thể và các thông tin có thể thay đổi, nhưng vẫn giữ được ý nghĩa chính của câu trả lời mong đợi.",
+      "latency_sec": 2.48
+    },
+    {
+      "id": 33,
+      "question": "Tôi muốn lưu lại kỷ niệm du lịch, tính năng nào hỗ trợ điều này?",
+      "expected_answer": "Sử dụng tính năng Nhật Ký Du Lịch trong travel_memory_screen.dart để lưu trữ kỷ niệm du lịch.",
+      "ai_answer": "Bạn có thể sử dụng tính năng \"Nhật Ký Du Lịch\" để lưu lại kỷ niệm du lịch của mình. Tại đây, bạn có thể viết cảm nghĩ và up ảnh sau chuyến đi. Hãy tìm đến phần `travel_memory_screen.dart` trong ứng dụng để bắt đầu lưu giữ kỷ niệm nhé!",
+      "score": 95,
+      "reason": "Câu trả lời thực tế đã cung cấp thông tin chính xác về tính năng 'Nhật Ký Du Lịch' và hướng dẫn người dùng đến phần 'travel_memory_screen.dart', tuy nhiên có thêm chi tiết về việc viết cảm nghĩ và up ảnh, làm cho câu trả lời phong phú hơn nhưng không hoàn toàn giống với câu trả lời mong đợi.",
+      "latency_sec": 2.11
+    },
+    {
+      "id": 34,
+      "question": "TourXport có cung cấp thông tin về thời tiết của địa điểm không?",
+      "expected_answer": "Trong chi tiết địa điểm, có nút xem thời tiết nếu thông tin thời tiết có sẵn.",
+      "ai_answer": "Có, trong ứng dụng TourXport, khi bạn bấm vào một địa điểm bất kỳ, bạn có thể xem thông tin thời tiết bằng cách nhấn vào nút xem thời tiết (nếu có) trong phần chi tiết địa điểm.",
+      "score": 100,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chính xác và đầy đủ về việc xem thông tin thời tiết trong ứng dụng TourXport, tương đồng với câu trả lời mong đợi.",
+      "latency_sec": 1.99
+    },
+    {
+      "id": 35,
+      "question": "Làm sao để tìm kiếm nhà hàng trên TourXport?",
+      "expected_answer": "Trên Trang chủ, sử dụng thanh tìm kiếm để gõ tên nhà hàng bạn muốn tìm.",
+      "ai_answer": "Để tìm kiếm nhà hàng trên TourXport, bạn làm như sau:\n\n1. Mở ứng dụng TourXport và đảm bảo bạn đang ở Trang chủ.\n2. Nhìn lên phía trên cùng, bạn sẽ thấy thanh tìm kiếm (Search Bar).\n3. Gõ tên nhà hàng mà bạn muốn tìm kiếm vào thanh tìm kiếm đó.\n4. Nhấn Enter hoặc biểu tượng tìm kiếm để xem kết quả.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết hơn về cách tìm kiếm nhà hàng trên TourXport, bao gồm các bước cụ thể, nhưng vẫn giữ được ý nghĩa chính của câu trả lời mong đợi.",
+      "latency_sec": 2.27
+    },
+    {
+      "id": 36,
+      "question": "Tôi có thể xem hình ảnh của địa điểm trên TourXport không?",
+      "expected_answer": "Trong chi tiết địa điểm, bạn có thể xem hình ảnh kèm theo mô tả chi tiết về địa điểm đó.",
+      "ai_answer": "Có, bạn có thể xem hình ảnh của địa điểm trên TourXport. Khi bạn bấm vào một địa điểm bất kỳ trong danh sách tìm kiếm hoặc trên bản đồ, bạn sẽ thấy hình ảnh cùng với mô tả chi tiết về địa điểm đó.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế xác nhận rằng người dùng có thể xem hình ảnh của địa điểm trên TourXport và bổ sung thêm thông tin về cách thức thực hiện điều đó, tuy nhiên không nhắc đến việc có mô tả chi tiết như trong câu trả lời mong đợi.",
+      "latency_sec": 2.17
+    },
+    {
+      "id": 37,
+      "question": "Làm thế nào để biết về các khách sạn nổi bật trong một khu vực?",
+      "expected_answer": "Trên Tab Trang Chủ, bạn có thể xem các khách sạn nổi bật được gợi ý.",
+      "ai_answer": "Để biết về các khách sạn nổi bật trong một khu vực trên app TourXport, bạn có thể làm theo các bước sau:\n\n1. Tại Trang chủ, sử dụng thanh tìm kiếm (Search Bar) ở trên cùng.\n2. Nhập tên khu vực mà bạn quan tâm.\n3. Xem danh sách kết quả và chọn khách sạn bạn muốn tìm hiểu thêm để xem chi tiết.",
+      "score": 80,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách tìm kiếm khách sạn nổi bật, mặc dù không hoàn toàn khớp với câu trả lời mong đợi nhưng vẫn đáp ứng được yêu cầu của câu hỏi.",
+      "latency_sec": 2.17
+    },
+    {
+      "id": 38,
+      "question": "Tôi có thể xem lộ trình chi tiết theo từng ngày trong lịch trình không?",
+      "expected_answer": "Kết quả lịch trình sẽ hiển thị thông tin phân bổ theo từng ngày như Day 1, Day 2..., cùng với các hoạt động cụ thể.",
+      "ai_answer": "Có, sau khi bạn hoàn tất khảo sát và AI tạo ra lịch trình, màn hình kết quả sẽ hiển thị thông tin phân bổ theo từng ngày, bao gồm buổi sáng đi đâu, trưa ăn gì, tối ngủ khách sạn nào.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết về lộ trình theo từng ngày, bao gồm các hoạt động cụ thể, nhưng có thêm thông tin về thời gian trong ngày (buổi sáng, trưa, tối) mà không có trong câu trả lời mong đợi. Điều này làm cho câu trả lời thực tế chính xác và đầy đủ hơn, nhưng vẫn giữ được ý nghĩa chính của câu hỏi.",
+      "latency_sec": 2.76
+    },
+    {
+      "id": 39,
+      "question": "Làm sao để chọn mức độ chi tiêu khi tạo lịch trình?",
+      "expected_answer": "Trong khảo sát tạo lịch trình, chọn Ngân sách và chọn mức chi tiêu dự kiến (Tiết kiệm, Trung bình, Cao cấp).",
+      "ai_answer": "Để chọn mức độ chi tiêu khi tạo lịch trình, bạn làm theo các bước sau:\n\n1. Từ thanh điều hướng dưới cùng, chọn Tab **Tạo Lịch Trình**.\n2. Tại bài khảo sát, điền thông tin theo yêu cầu.\n3. Tìm đến phần **Ngân sách (Budget)** và chọn mức chi tiêu dự kiến: Tiết kiệm, Trung bình, hoặc Cao cấp.\n4. Nhấn nút **\"Hoàn tất\"** hoặc **\"Tạo lịch trình\"** để hoàn tất.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết về cách chọn mức độ chi tiêu, bao gồm các bước cụ thể và nhấn mạnh vào phần ngân sách, phù hợp với câu trả lời mong đợi. Tuy nhiên, nó có thêm thông tin về các bước thực hiện mà không có trong câu trả lời mong đợi, nên không hoàn toàn trùng khớp.",
+      "latency_sec": 2.74
+    },
+    {
+      "id": 40,
+      "question": "Có thể xem tổng quan văn hóa của một tỉnh không?",
+      "expected_answer": "Có thể xem tổng quan văn hóa của một tỉnh trong chi tiết Tỉnh/Thành (province_detail_screen.dart).",
+      "ai_answer": "Được chứ! Để xem tổng quan văn hóa của một tỉnh trong app TourXport, bạn thực hiện theo các bước sau:\n\n1. Tại Trang chủ, sử dụng thanh tìm kiếm để tìm tỉnh bạn quan tâm.\n2. Nhấn vào tên tỉnh trong kết quả tìm kiếm.\n3. Tại màn hình chi tiết Tỉnh/Thành, bạn sẽ thấy phần tổng quan về văn hóa, đặc sản và các địa điểm nổi tiếng của tỉnh đó.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết về cách xem tổng quan văn hóa của một tỉnh trong ứng dụng, mặc dù không hoàn toàn giống với câu trả lời mong đợi nhưng vẫn truyền đạt được ý nghĩa và nội dung chính xác về việc xem tổng quan văn hóa trong màn hình chi tiết Tỉnh/Thành.",
+      "latency_sec": 2.26
+    },
+    {
+      "id": 41,
+      "question": "Làm thế nào để chuyển đổi giữa các ngôn ngữ trong ứng dụng?",
+      "expected_answer": "Chuyển sang Tab Cá Nhân và vào mục Ngôn ngữ để đổi ngôn ngữ giao diện.",
+      "ai_answer": "Để chuyển đổi ngôn ngữ trong ứng dụng TourXport, bạn thực hiện các bước sau:\n\n1. Mở ứng dụng và chuyển sang Tab Cá Nhân ở góc phải dưới cùng của màn hình.\n2. Chọn mục \"Ngôn ngữ\".\n3. Chọn ngôn ngữ bạn muốn sử dụng (Tiếng Việt hoặc English).\n\nNgôn ngữ giao diện của ứng dụng sẽ được cập nhật ngay lập tức.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách chuyển đổi ngôn ngữ, bao gồm các bước cụ thể và lựa chọn ngôn ngữ, nhưng vẫn giữ đúng ý nghĩa của câu trả lời mong đợi. Tuy nhiên, nó có phần dài hơn và không hoàn toàn giống với câu trả lời mong đợi.",
+      "latency_sec": 2.1
+    },
+    {
+      "id": 42,
+      "question": "Tôi có thể xem thời tiết của một địa điểm từ đâu?",
+      "expected_answer": "Trong chi tiết địa điểm, có nút xem thời tiết nếu thông tin thời tiết có sẵn.",
+      "ai_answer": "Bạn có thể xem thời tiết của một địa điểm bằng cách bấm vào địa điểm đó trên Trang chủ để vào trang chi tiết địa điểm. Nếu có sẵn, sẽ có nút xem thời tiết để bạn kiểm tra.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết về cách xem thời tiết, tương tự như câu trả lời mong đợi, nhưng có thêm một số thông tin về việc bấm vào địa điểm trên Trang chủ, làm cho nó chính xác hơn một chút.",
+      "latency_sec": 2.09
+    },
+    {
+      "id": 43,
+      "question": "Làm sao để thay đổi số điện thoại trong hồ sơ cá nhân?",
+      "expected_answer": "Vào Tab Cá Nhân, chọn Chỉnh sửa hồ sơ để thay đổi số điện thoại.",
+      "ai_answer": "Để thay đổi số điện thoại trong hồ sơ cá nhân, bạn làm theo các bước sau:\n\n1. Mở ứng dụng TourXport và chuyển sang Tab Cá Nhân (Profile) ở góc phải dưới cùng màn hình.\n2. Chọn mục \"Chỉnh sửa hồ sơ.\"\n3. Tại đây, bạn có thể thay đổi số điện thoại của mình.\n4. Lưu lại các thay đổi.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết hơn về cách thay đổi số điện thoại, bao gồm các bước cụ thể và tên ứng dụng, nhưng vẫn giữ được ý nghĩa chính của câu trả lời mong đợi.",
+      "latency_sec": 2.21
+    },
+    {
+      "id": 44,
+      "question": "Làm thế nào để chấm điểm và viết đánh giá cho một địa điểm?",
+      "expected_answer": "Vào create_review_screen.dart, chấm điểm số sao (1 đến 5 sao) và để lại bình luận văn bản để viết đánh giá.",
+      "ai_answer": "Để chấm điểm và viết đánh giá cho một địa điểm trong TourXport, bạn làm theo các bước sau:\n\n1. Mở app TourXport và tìm đến địa điểm bạn muốn đánh giá.\n2. Chọn tùy chọn để viết đánh giá (review).\n3. Chấm điểm bằng cách chọn số sao từ 1 đến 5.\n4. Nhập bình luận văn bản của bạn về địa điểm.\n5. Gửi đánh giá.\n\nĐánh giá của bạn sẽ được hiển thị trong phần đánh giá của ứng dụng.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết về cách chấm điểm và viết đánh giá cho một địa điểm, bao gồm các bước cụ thể và thông tin về ứng dụng TourXport. Mặc dù không đề cập đến 'create_review_screen.dart', nhưng vẫn truyền đạt đúng nội dung và ý nghĩa của việc chấm điểm và viết đánh giá.",
+      "latency_sec": 2.68
+    },
+    {
+      "id": 45,
+      "question": "Làm sao để xem một tour đã lưu trong Bộ Sưu Tập?",
+      "expected_answer": "Chuyển sang Tab Bộ Sưu Tập, chọn mục Tour đã lưu và bấm vào tour để xem chi tiết.",
+      "ai_answer": "Để xem một tour đã lưu trong Bộ Sưu Tập, bạn làm theo các bước sau:\n\n1. Chuyển sang Tab **Bộ Sưu Tập** ở thanh điều hướng.\n2. Chọn mục **Tour đã lưu**.\n3. Bấm vào tour mà bạn muốn xem để xem lại chi tiết lộ trình.",
+      "score": 100,
+      "reason": "Câu trả lời thực tế cung cấp đầy đủ các bước cần thiết để xem một tour đã lưu trong Bộ Sưu Tập, hoàn toàn trùng khớp với nội dung và ý nghĩa của câu trả lời mong đợi.",
+      "latency_sec": 2.2
+    },
+    {
+      "id": 46,
+      "question": "Tôi muốn tắt thông báo khuyến mãi, làm thế nào?",
+      "expected_answer": "Vào Tab Cá Nhân, chọn Thông báo và tắt thông báo khuyến mãi.",
+      "ai_answer": "Để tắt thông báo khuyến mãi, bạn làm theo các bước sau:\n\n1. Chuyển sang tab Cá Nhân (Profile) ở góc phải dưới cùng màn hình.\n2. Chọn mục **Thông báo** (`notification_settings_screen.dart`).\n3. Tại đây, bạn có thể tắt thông báo khuyến mãi.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết hơn về cách tắt thông báo khuyến mãi, bao gồm cả vị trí và tên của tab, nhưng không hoàn toàn khớp với câu trả lời mong đợi về mặt ngữ nghĩa. Tuy nhiên, nội dung chính vẫn được truyền đạt đầy đủ.",
+      "latency_sec": 2.92
+    },
+    {
+      "id": 47,
+      "question": "Làm thế nào để bắt đầu một bài khảo sát tạo lịch trình?",
+      "expected_answer": "Chọn Tab Tạo Lịch Trình ở thanh điều hướng để bắt đầu một bài khảo sát và điền thông tin cần thiết.",
+      "ai_answer": "Để bắt đầu một bài khảo sát tạo lịch trình, hãy làm theo các bước sau:\n\n1. Từ thanh điều hướng dưới cùng, chọn Tab **Tạo Lịch Trình**.\n2. Ứng dụng sẽ hiển thị một bài khảo sát với các câu hỏi để bạn điền thông tin.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về quy trình bắt đầu bài khảo sát, nhưng vẫn giữ nguyên ý nghĩa chính của câu trả lời mong đợi. Sự khác biệt nhỏ về cách diễn đạt không làm thay đổi nội dung cốt lõi.",
+      "latency_sec": 2.21
+    },
+    {
+      "id": 48,
+      "question": "Tôi có thể lưu lại cảm nghĩ sau chuyến đi ở đâu?",
+      "expected_answer": "Bạn có thể viết lại cảm nghĩ sau chuyến đi trong Nhật Ký Du Lịch (travel_memory_screen.dart).",
+      "ai_answer": "Bạn có thể lưu lại cảm nghĩ sau chuyến đi trong tính năng \"Nhật Ký Du Lịch\". Bạn chỉ cần vào `travel_memory_screen.dart` để viết lại cảm nghĩ và tải lên ảnh.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chính xác về việc lưu lại cảm nghĩ trong 'Nhật Ký Du Lịch' và hướng dẫn cụ thể về việc vào 'travel_memory_screen.dart', nhưng có thêm thông tin về việc tải lên ảnh, điều này không có trong câu trả lời mong đợi.",
+      "latency_sec": 2.15
+    },
+    {
+      "id": 49,
+      "question": "Làm thế nào để tìm kiếm một địa danh nổi tiếng?",
+      "expected_answer": "Sử dụng thanh tìm kiếm trên Trang chủ để gõ tên địa danh nổi tiếng mà bạn muốn tìm kiếm.",
+      "ai_answer": "Để tìm kiếm một địa danh nổi tiếng trong TourXport, bạn hãy làm theo các bước sau:\n\n1. Vào Trang chủ của ứng dụng.\n2. Sử dụng thanh tìm kiếm (Search Bar) ở trên cùng.\n3. Gõ tên địa danh bạn muốn tìm.\n\nỨng dụng sẽ hiển thị kết quả liên quan để bạn lựa chọn và xem chi tiết.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết hơn về cách tìm kiếm địa danh nổi tiếng, bao gồm việc vào ứng dụng và các bước cụ thể, nhưng vẫn giữ được ý nghĩa chính của câu trả lời mong đợi.",
+      "latency_sec": 2.35
+    },
+    {
+      "id": 50,
+      "question": "Làm sao để lưu một tour vào tài khoản của tôi?",
+      "expected_answer": "Sau khi tạo lịch trình, nhấn nút 'Lưu lại' trên màn hình kết quả để lưu tour vào tài khoản.",
+      "ai_answer": "Để lưu một tour vào tài khoản của bạn, sau khi AI đã trả về kết quả lịch trình, bạn hãy nhấn vào nút **\"Lưu lại\" (Save)** trên màn hình kết quả. Điều này sẽ đảm bảo lịch trình của bạn được lưu trữ và không bị mất khi thoát ra khỏi ứng dụng.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chính xác về cách lưu tour, nhưng có thêm chi tiết về việc đảm bảo lịch trình không bị mất, điều này không có trong câu trả lời mong đợi. Tuy nhiên, nội dung chính vẫn trùng khớp.",
+      "latency_sec": 2.28
+    },
+    {
+      "id": 51,
+      "question": "Tôi muốn xem thông tin thời tiết của một địa điểm, làm cách nào?",
+      "expected_answer": "Trong chi tiết địa điểm, bấm vào nút xem thời tiết để xem thông tin thời tiết nếu có sẵn.",
+      "ai_answer": "Để xem thông tin thời tiết của một địa điểm trên ứng dụng TourXport, bạn thực hiện các bước sau:\n\n1. Tại Trang chủ, sử dụng thanh tìm kiếm để gõ tên địa điểm bạn muốn xem.\n2. Chọn địa điểm từ danh sách kết quả tìm kiếm.\n3. Trong trang chi tiết địa điểm, bạn sẽ thấy nút **xem thời tiết** (nếu có). Nhấn vào đó để xem thông tin thời tiết của địa điểm.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết hơn về cách xem thông tin thời tiết, bao gồm các bước cụ thể để tìm kiếm địa điểm, trong khi câu trả lời mong đợi chỉ đề cập đến việc bấm nút xem thời tiết. Tuy nhiên, cả hai đều hướng đến cùng một mục tiêu là xem thông tin thời tiết.",
+      "latency_sec": 2.14
+    },
+    {
+      "id": 52,
+      "question": "Làm thế nào để xem các địa điểm đã lưu trong Bộ Sưu Tập?",
+      "expected_answer": "Chọn Tab Bộ Sưu Tập và vào mục Địa điểm đã lưu để xem các địa điểm bạn đã thả tim.",
+      "ai_answer": "Để xem các địa điểm đã lưu trong Bộ Sưu Tập, bạn thực hiện các bước sau:\n\n1. Chuyển sang Tab **Bộ Sưu Tập** ở thanh điều hướng.\n2. Tại đây, chọn mục **Địa điểm đã lưu** để xem các khách sạn, nhà hàng, danh lam thắng cảnh mà bạn đã lưu lại.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách xem các địa điểm đã lưu, bao gồm cả việc liệt kê các loại địa điểm cụ thể như khách sạn, nhà hàng và danh lam thắng cảnh. Tuy nhiên, nó vẫn giữ nguyên ý nghĩa chính của câu trả lời mong đợi, vì vậy điểm số cao được đưa ra.",
+      "latency_sec": 2.12
+    },
+    {
+      "id": 53,
+      "question": "Tôi muốn biết về các đặc sản của một tỉnh, làm sao để xem?",
+      "expected_answer": "Bạn có thể xem đặc sản của một tỉnh trong chi tiết Tỉnh/Thành (province_detail_screen.dart).",
+      "ai_answer": "Để xem các đặc sản của một tỉnh, bạn hãy làm theo các bước sau:\n\n1. Truy cập vào Trang chủ của ứng dụng TourXport.\n2. Sử dụng thanh tìm kiếm ở trên cùng để gõ tên tỉnh mà bạn quan tâm.\n3. Chọn tỉnh từ kết quả tìm kiếm.\n4. Trong màn hình chi tiết của tỉnh, bạn sẽ thấy tổng quan về văn hóa, đặc sản và các địa điểm nổi tiếng của tỉnh đó.",
+      "score": 80,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết để xem đặc sản của một tỉnh, mặc dù không đề cập đến 'province_detail_screen.dart' như trong câu trả lời mong đợi. Tuy nhiên, nó vẫn đáp ứng được yêu cầu của câu hỏi.",
+      "latency_sec": 2.36
+    },
+    {
+      "id": 54,
+      "question": "Làm sao để lưu một địa điểm yêu thích?",
+      "expected_answer": "Trong chi tiết địa điểm, nhấn nút 'Thả tim' hoặc 'Save' để lưu địa điểm vào Bộ Sưu Tập.",
+      "ai_answer": "Để lưu một địa điểm yêu thích trên ứng dụng TourXport, bạn chỉ cần:\n\n1. Tìm kiếm và chọn địa điểm bạn quan tâm từ Trang chủ.\n2. Tại trang chi tiết của địa điểm đó, tìm và bấm vào biểu tượng hình trái tim (Save) để lưu địa điểm vào Bộ Sưu Tập của bạn.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách lưu địa điểm yêu thích, bao gồm cả việc tìm kiếm và chọn địa điểm trước khi lưu, nhưng vẫn giữ được ý nghĩa chính của câu trả lời mong đợi.",
+      "latency_sec": 2.53
+    },
+    {
+      "id": 55,
+      "question": "Tôi quên mật khẩu, có thể khôi phục như thế nào?",
+      "expected_answer": "Nhấn nút 'Quên mật khẩu?' trên màn hình đăng nhập để khôi phục mật khẩu.",
+      "ai_answer": "Để khôi phục mật khẩu, bạn hãy làm theo các bước sau:\n\n1. Tại màn hình Đăng nhập, nhấn nút **\"Quên mật khẩu?\"**.\n2. Làm theo hướng dẫn để đặt lại mật khẩu của bạn.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chính xác về cách khôi phục mật khẩu, nhưng có thêm chi tiết về việc làm theo hướng dẫn, điều này không hoàn toàn cần thiết cho câu hỏi. Tuy nhiên, nội dung chính vẫn đúng và rõ ràng.",
+      "latency_sec": 2.36
+    },
+    {
+      "id": 56,
+      "question": "Làm thế nào để xem các hoạt động cụ thể theo từng ngày trong lịch trình?",
+      "expected_answer": "Kết quả lịch trình sẽ hiển thị thông tin phân bổ theo từng ngày như Day 1, Day 2..., cùng với các hoạt động cụ thể.",
+      "ai_answer": "Để xem các hoạt động cụ thể theo từng ngày trong lịch trình, bạn hãy làm theo các bước sau:\n\n1. Sau khi hoàn tất khảo sát và tạo lịch trình, AI sẽ hiển thị **Kết quả lịch trình**.\n2. Trên màn hình kết quả, bạn sẽ thấy thông tin được phân bổ theo từng ngày (ví dụ: Day 1, Day 2...).\n3. Từng ngày sẽ hiển thị chi tiết các hoạt động như buổi sáng đi đâu, trưa ăn gì, tối nghỉ ở đâu. \n\nBạn có thể xem chi tiết từng ngày để biết các hoạt động cụ thể trong chuyến đi của mình.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết về cách xem các hoạt động theo từng ngày, bao gồm cả việc hiển thị kết quả lịch trình và các hoạt động cụ thể. Mặc dù có thêm thông tin so với câu trả lời mong đợi, nhưng vẫn giữ đúng nội dung và ý nghĩa chính.",
+      "latency_sec": 2.71
+    },
+    {
+      "id": 57,
+      "question": "Có thể xem chi tiết về văn hóa của một địa danh nổi tiếng không?",
+      "expected_answer": "Có thể xem chi tiết về văn hóa của một địa danh trong chi tiết Tỉnh/Thành (province_detail_screen.dart).",
+      "ai_answer": "Để xem chi tiết về văn hóa của một địa danh nổi tiếng, bạn có thể thực hiện như sau:\n\n1. Trên Trang chủ, sử dụng thanh tìm kiếm để gõ tên địa danh bạn quan tâm.\n2. Bấm vào địa danh từ kết quả tìm kiếm.\n3. Tại màn hình chi tiết của địa danh (`place_detail.dart`), bạn sẽ thấy thông tin về văn hóa, hình ảnh và các mô tả liên quan.\n\nNếu bạn muốn xem tổng quan về văn hóa của một tỉnh, bạn có thể tìm kiếm tên tỉnh và vào mục chi tiết Tỉnh/Thành (`province_detail_screen.dart`).",
+      "score": 85,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết về cách xem văn hóa của một địa danh nổi tiếng, bao gồm các bước cụ thể. Mặc dù không hoàn toàn giống với câu trả lời mong đợi, nhưng nó vẫn đề cập đến việc xem thông tin văn hóa trong chi tiết Tỉnh/Thành, do đó có sự liên quan và độ chính xác cao.",
+      "latency_sec": 2.72
+    },
+    {
+      "id": 58,
+      "question": "Tôi có thể thay đổi mật khẩu từ đâu?",
+      "expected_answer": "Hiện tại tài liệu hướng dẫn không đề cập đến tính năng thay đổi mật khẩu từ bên trong ứng dụng. Bạn chỉ có thể dùng tính năng Quên mật khẩu ở ngoài màn hình đăng nhập hoặc cài Mã PIN bảo mật.",
+      "ai_answer": "Xin lỗi, hiện tại tài liệu không có thông tin cụ thể về việc thay đổi mật khẩu trên TourXport. Tuy nhiên, bạn có thể thử tìm kiếm tùy chọn này trong phần Cài Đặt Cá Nhân (Profile & Settings) hoặc mục Bảo Mật.",
+      "score": 80,
+      "reason": "Câu trả lời thực tế cung cấp thông tin về việc không có hướng dẫn cụ thể và gợi ý tìm kiếm trong phần Cài Đặt Cá Nhân hoặc Bảo Mật, điều này tương tự với câu trả lời mong đợi nhưng không đề cập đến tính năng Quên mật khẩu hay Mã PIN bảo mật, dẫn đến điểm số không hoàn toàn cao.",
+      "latency_sec": 2.21
+    },
+    {
+      "id": 59,
+      "question": "Làm sao để tìm kiếm một khách sạn trong TourXport?",
+      "expected_answer": "Trên Trang chủ, sử dụng thanh tìm kiếm để gõ tên khách sạn bạn muốn tìm.",
+      "ai_answer": "Để tìm kiếm một khách sạn trong TourXport, bạn làm theo các bước sau:\n\n1. Mở ứng dụng TourXport và đến Trang chủ.\n2. Tìm thanh tìm kiếm (Search Bar) ở phía trên cùng.\n3. Gõ tên khách sạn mà bạn muốn tìm kiếm.\n4. Nhấn Enter hoặc biểu tượng tìm kiếm để xem kết quả.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết hơn về cách tìm kiếm khách sạn, bao gồm các bước cụ thể, nhưng vẫn giữ được ý chính là sử dụng thanh tìm kiếm trên Trang chủ để gõ tên khách sạn. Tuy nhiên, nó không hoàn toàn khớp với câu trả lời mong đợi vì có thêm thông tin không cần thiết.",
+      "latency_sec": 2.49
+    },
+    {
+      "id": 60,
+      "question": "Làm thế nào để xem lại các địa điểm nổi bật trong một tỉnh?",
+      "expected_answer": "Xem lại các địa điểm nổi bật trong chi tiết Tỉnh/Thành (province_detail_screen.dart).",
+      "ai_answer": "Để xem lại các địa điểm nổi bật trong một tỉnh, bạn có thể làm như sau:\n\n1. Sử dụng thanh tìm kiếm trên Trang chủ để tìm tên tỉnh bạn quan tâm.\n2. Nhấp vào kết quả tìm kiếm của tỉnh đó.\n3. Trong màn hình chi tiết tỉnh/thành, bạn sẽ thấy tổng quan về văn hóa, đặc sản và các địa điểm nổi tiếng thuộc tỉnh đó.",
+      "score": 80,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết về cách xem lại các địa điểm nổi bật trong một tỉnh, mặc dù không đề cập trực tiếp đến 'province_detail_screen.dart' như trong câu trả lời mong đợi. Tuy nhiên, nó vẫn truyền đạt được ý nghĩa và nội dung cần thiết.",
+      "latency_sec": 2.58
+    },
+    {
+      "id": 61,
+      "question": "Tôi có thể tùy chỉnh thông báo trong ứng dụng như thế nào?",
+      "expected_answer": "Chuyển sang Tab Cá Nhân và vào mục Thông báo để bật/tắt các loại thông báo theo ý muốn.",
+      "ai_answer": "Bạn có thể tùy chỉnh thông báo trong ứng dụng TourXport như sau:\n\n1. Mở ứng dụng và chuyển sang Tab Cá Nhân ở góc phải dưới cùng màn hình.\n2. Chọn **Cài Đặt Chung**.\n3. Nhấn vào **Thông báo**.\n4. Tại đây, bạn có thể bật/tắt các loại thông báo như thông báo tin nhắn, khuyến mãi...",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết hơn về cách tùy chỉnh thông báo, mặc dù không hoàn toàn khớp với câu trả lời mong đợi. Tuy nhiên, nó vẫn đúng về nội dung và ý nghĩa, chỉ khác về cách trình bày và thông tin bổ sung.",
+      "latency_sec": 4.39
+    },
+    {
+      "id": 62,
+      "question": "Có thể chia sẻ cảm nghĩ và ảnh sau chuyến đi ở đâu?",
+      "expected_answer": "Bạn có thể chia sẻ cảm nghĩ và ảnh sau chuyến đi trong Nhật Ký Du Lịch (travel_memory_screen.dart).",
+      "ai_answer": "Bạn có thể chia sẻ cảm nghĩ và ảnh sau chuyến đi trong mục \"Nhật Ký Du Lịch\" (`travel_memory_screen.dart`) của ứng dụng TourXport.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin tương tự như câu trả lời mong đợi, nhưng có thêm chi tiết về ứng dụng TourXport, điều này làm cho câu trả lời chính xác hơn một chút so với mong đợi.",
+      "latency_sec": 2.15
+    },
+    {
+      "id": 63,
+      "question": "Làm thế nào để thêm một người bạn vào lịch trình của tôi?",
+      "expected_answer": "Trong phần khảo sát tạo lịch trình, bạn có thể chọn số lượng người tham gia, bao gồm người lớn và trẻ em.",
+      "ai_answer": "Rất tiếc, hiện tại ứng dụng TourXport chưa hỗ trợ tính năng thêm người bạn vào lịch trình. Bạn có thể tự tạo lịch trình mới và chia sẻ thông tin với bạn bè nếu cần.",
+      "score": 20,
+      "reason": "Câu trả lời thực tế không cung cấp thông tin về cách thêm người bạn vào lịch trình mà chỉ nói rằng tính năng này không có, do đó không đáp ứng được yêu cầu của câu hỏi.",
+      "latency_sec": 2.33
+    },
+    {
+      "id": 64,
+      "question": "Làm sao để biết về các khách sạn gợi ý trong khu vực?",
+      "expected_answer": "Trên Tab Trang Chủ, bạn có thể xem các khách sạn gợi ý trong khu vực.",
+      "ai_answer": "Để tìm hiểu về các khách sạn trong khu vực, bạn có thể làm như sau:\n\n1. Mở ứng dụng TourXport và chọn Trang chủ.\n2. Sử dụng thanh tìm kiếm ở trên cùng để gõ tên địa danh bạn quan tâm.\n3. Khi danh sách kết quả hiện ra, bạn có thể chọn một địa điểm để xem chi tiết, bao gồm các khách sạn gợi ý trong khu vực đó.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách tìm kiếm khách sạn gợi ý, mặc dù không hoàn toàn giống với câu trả lời mong đợi. Tuy nhiên, nó vẫn đáp ứng được yêu cầu của câu hỏi và hướng dẫn người dùng cách thực hiện.",
+      "latency_sec": 2.2
+    },
+    {
+      "id": 65,
+      "question": "Tôi muốn xem các đánh giá của một địa điểm, làm thế nào?",
+      "expected_answer": "Trong chi tiết địa điểm, bạn có thể xem các đánh giá tại app_reviews_screen.dart.",
+      "ai_answer": "Để xem các đánh giá của một địa điểm, bạn có thể truy cập vào màn hình đánh giá ứng dụng, cụ thể là `app_reviews_screen.dart`, nơi hiển thị tất cả các đánh giá đã được viết cho địa điểm đó.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chính xác về việc xem đánh giá, nhưng có thêm một số chi tiết về việc 'hiển thị tất cả các đánh giá đã được viết', điều này không có trong câu trả lời mong đợi. Tuy nhiên, ý nghĩa và nội dung chính vẫn trùng khớp.",
+      "latency_sec": 1.89
+    },
+    {
+      "id": 66,
+      "question": "Làm thế nào để tạo mã PIN để bảo mật ứng dụng?",
+      "expected_answer": "Bạn có thể thiết lập Mã PIN trong phần Bảo Mật từ Tab Cá Nhân để bảo mật ứng dụng.",
+      "ai_answer": "Để tạo mã PIN bảo mật cho ứng dụng TourXport, bạn hãy làm theo các bước sau:\n\n1. Chuyển sang Tab Cá Nhân (Profile) ở góc phải dưới cùng màn hình.\n2. Chọn mục Bảo Mật.\n3. Tại đây, bạn có thể thiết lập Mã PIN để khóa ứng dụng.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết về cách tạo mã PIN, bao gồm các bước cụ thể, mặc dù không hoàn toàn giống với câu trả lời mong đợi. Tuy nhiên, nó vẫn truyền đạt đúng ý nghĩa và nội dung cần thiết để bảo mật ứng dụng.",
+      "latency_sec": 2.6
+    },
+    {
+      "id": 67,
+      "question": "Tôi muốn xem tổng quan về văn hóa của một khu vực, làm thế nào?",
+      "expected_answer": "Xem tổng quan về văn hóa của một khu vực trong chi tiết Tỉnh/Thành (province_detail_screen.dart).",
+      "ai_answer": "Để xem tổng quan về văn hóa của một khu vực, bạn hãy làm theo các bước sau:\n\n1. Tại Trang chủ, sử dụng thanh tìm kiếm để gõ tên tỉnh/thành bạn quan tâm.\n2. Nhấn vào kết quả tìm kiếm phù hợp để vào màn hình chi tiết tỉnh/thành.\n3. Tại đây, bạn sẽ thấy thông tin tổng quan về văn hóa, đặc sản và các địa điểm nổi tiếng của khu vực đó.",
+      "score": 80,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết để xem tổng quan về văn hóa của một khu vực, mặc dù không đề cập đến 'province_detail_screen.dart' như trong câu trả lời mong đợi. Tuy nhiên, nội dung vẫn phù hợp với yêu cầu của câu hỏi.",
+      "latency_sec": 2.4
+    },
+    {
+      "id": 68,
+      "question": "Làm sao để lưu lại các địa điểm yêu thích?",
+      "expected_answer": "Nhấn nút 'Thả tim' hoặc 'Save' trong chi tiết địa điểm để lưu lại địa điểm yêu thích.",
+      "ai_answer": "Để lưu lại các địa điểm yêu thích, bạn hãy làm theo các bước sau:\n\n1. Tìm kiếm và chọn địa điểm bạn quan tâm từ Trang chủ.\n2. Trong chi tiết địa điểm, bấm vào biểu tượng **thả tim (Save)**.\n\nĐịa điểm sẽ được lưu trong mục **Địa điểm đã lưu** ở Tab **Bộ Sưu Tập**.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách lưu địa điểm yêu thích, bao gồm các bước cụ thể và nơi lưu trữ, nhưng vẫn giữ được ý nghĩa chính của câu trả lời mong đợi.",
+      "latency_sec": 3.32
+    },
+    {
+      "id": 69,
+      "question": "Làm thế nào để ghi lại cảm nghĩ sau một chuyến đi?",
+      "expected_answer": "Sử dụng tính năng Nhật Ký Du Lịch để ghi lại cảm nghĩ sau chuyến đi trong travel_memory_screen.dart.",
+      "ai_answer": "Để ghi lại cảm nghĩ sau một chuyến đi trên ứng dụng TourXport, bạn có thể sử dụng tính năng Nhật Ký Du Lịch. Dưới đây là cách thực hiện:\n\n1. Mở ứng dụng TourXport và truy cập vào màn hình \"Nhật Ký Du Lịch\" (`travel_memory_screen.dart`).\n2. Viết lại cảm nghĩ của bạn về chuyến đi.\n3. Bạn có thể tải lên ảnh để minh họa cho kỷ niệm của mình.\n4. Lưu lại nhật ký để hoàn tất.\n\nHy vọng bạn sẽ có những kỷ niệm đẹp để lưu giữ!",
+      "score": 90,
+      "reason": "Câu trả lời thực tế đã cung cấp thông tin chi tiết về cách ghi lại cảm nghĩ sau chuyến đi, bao gồm việc sử dụng tính năng Nhật Ký Du Lịch và hướng dẫn cụ thể. Tuy nhiên, nó không hoàn toàn khớp với câu trả lời mong đợi vì có thêm thông tin về ứng dụng TourXport và các bước thực hiện, nhưng vẫn giữ được ý nghĩa chính của câu hỏi.",
+      "latency_sec": 2.43
+    },
+    {
+      "id": 70,
+      "question": "Tôi có thể tìm kiếm nhà hàng nổi tiếng không?",
+      "expected_answer": "Sử dụng thanh tìm kiếm trên Trang chủ để gõ tên nhà hàng nổi tiếng mà bạn muốn tìm kiếm.",
+      "ai_answer": "Được chứ! Để tìm kiếm nhà hàng nổi tiếng, bạn làm như sau:\n\n1. Mở ứng dụng TourXport và vào Trang chủ.\n2. Tại thanh tìm kiếm (Search Bar) ở trên cùng, gõ tên nhà hàng bạn muốn tìm.\n\nBạn sẽ thấy các kết quả liên quan xuất hiện.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn cụ thể để tìm kiếm nhà hàng nổi tiếng, tương tự như câu trả lời mong đợi. Tuy nhiên, nó có thêm thông tin về ứng dụng TourXport, điều này không hoàn toàn cần thiết và có thể làm lệch hướng câu hỏi ban đầu.",
+      "latency_sec": 1.98
+    },
+    {
+      "id": 71,
+      "question": "Làm sao để lưu trữ một tour đã tạo?",
+      "expected_answer": "Sau khi tạo lịch trình, nhấn nút 'Lưu lại' để lưu trữ tour này vào tài khoản của bạn.",
+      "ai_answer": "Để lưu trữ một tour đã tạo, sau khi AI trả về kết quả lịch trình, bạn hãy nhấn nút **\"Lưu lại\" (Save)** trên màn hình kết quả. Điều này sẽ lưu trữ lịch trình vào tài khoản của bạn. Nếu không lưu, lịch trình sẽ bị mất khi bạn thoát khỏi màn hình.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách lưu trữ tour, bao gồm cả cảnh báo về việc mất lịch trình nếu không lưu. Tuy nhiên, nó không hoàn toàn khớp với câu trả lời mong đợi vì có thêm thông tin không cần thiết.",
+      "latency_sec": 2.63
+    },
+    {
+      "id": 72,
+      "question": "Tôi muốn xem thời tiết của một địa điểm, làm thế nào?",
+      "expected_answer": "Trong chi tiết địa điểm, bấm vào nút xem thời tiết để xem thông tin thời tiết nếu có sẵn.",
+      "ai_answer": "Để xem thời tiết của một địa điểm trong TourXport, bạn hãy thực hiện các bước sau:\n\n1. Tìm kiếm địa điểm bằng cách gõ tên vào thanh tìm kiếm (Search Bar) trên Trang chủ.\n2. Chọn địa điểm bạn quan tâm từ danh sách kết quả.\n3. Trong trang chi tiết địa điểm, bạn sẽ thấy nút xem thời tiết (nếu có). Bấm vào đó để xem thông tin thời tiết của địa điểm.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết hơn về cách xem thời tiết, bao gồm các bước cụ thể để tìm kiếm địa điểm, trong khi câu trả lời mong đợi chỉ đề cập đến việc bấm nút xem thời tiết. Tuy nhiên, cả hai đều hướng đến cùng một mục tiêu là xem thông tin thời tiết.",
+      "latency_sec": 3.54
+    },
+    {
+      "id": 73,
+      "question": "Làm thế nào để xem lại một tour đã lưu?",
+      "expected_answer": "Chuyển sang Tab Bộ Sưu Tập, chọn mục Tour đã lưu và bấm vào tour để xem lại chi tiết.",
+      "ai_answer": "Để xem lại một tour đã lưu, bạn hãy làm theo các bước sau:\n\n1. Chuyển sang Tab **Bộ Sưu Tập** ở thanh điều hướng dưới cùng.\n2. Tìm mục **Tour đã lưu**.\n3. Chọn tour bạn muốn xem để xem lại chi tiết lộ trình.",
+      "score": 100,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết và chính xác về cách xem lại một tour đã lưu, hoàn toàn phù hợp với câu trả lời mong đợi.",
+      "latency_sec": 2.07
+    },
+    {
+      "id": 74,
+      "question": "Làm sao để tìm kiếm một địa điểm nổi bật?",
+      "expected_answer": "Sử dụng thanh tìm kiếm trên Trang chủ để gõ tên địa điểm nổi bật mà bạn muốn tìm kiếm.",
+      "ai_answer": "Để tìm kiếm một địa điểm nổi bật, bạn làm như sau:\n\n1. Mở ứng dụng TourXport và truy cập Trang chủ.\n2. Sử dụng thanh tìm kiếm (Search Bar) ở trên cùng.\n3. Nhập tên địa danh, khách sạn hoặc nhà hàng mà bạn muốn tìm kiếm.\n4. Xem kết quả và bấm vào địa điểm để xem chi tiết.",
+      "score": 85,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết hơn về cách tìm kiếm địa điểm nổi bật, bao gồm việc mở ứng dụng và các bước cụ thể. Tuy nhiên, nó không hoàn toàn khớp với câu trả lời mong đợi vì có thêm thông tin không cần thiết và không chỉ rõ 'địa điểm nổi bật' như trong câu hỏi.",
+      "latency_sec": 2.27
+    },
+    {
+      "id": 75,
+      "question": "Tôi muốn tùy chỉnh ngôn ngữ trong ứng dụng, làm thế nào?",
+      "expected_answer": "Chuyển sang Tab Cá Nhân và vào mục Ngôn ngữ để tùy chỉnh ngôn ngữ giao diện.",
+      "ai_answer": "Để tùy chỉnh ngôn ngữ trong ứng dụng TourXport, bạn thực hiện các bước sau:\n\n1. Mở ứng dụng và chuyển sang Tab Cá Nhân ở góc phải dưới cùng màn hình.\n2. Chọn mục **Ngôn ngữ**.\n3. Tại đây, bạn có thể chọn ngôn ngữ giao diện là Tiếng Việt hoặc English.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết và chính xác về cách tùy chỉnh ngôn ngữ trong ứng dụng, bao gồm cả việc chỉ định ngôn ngữ cụ thể. Tuy nhiên, nó có thêm thông tin về ngôn ngữ cụ thể mà không có trong câu trả lời mong đợi, nên điểm số không đạt 100.",
+      "latency_sec": 2.01
+    },
+    {
+      "id": 76,
+      "question": "Làm thế nào để thêm ảnh vào nhật ký du lịch của tôi?",
+      "expected_answer": "Trong Nhật Ký Du Lịch (travel_memory_screen.dart), bạn có thể thêm ảnh cùng với cảm nghĩ về chuyến đi.",
+      "ai_answer": "Để thêm ảnh vào nhật ký du lịch của bạn trên TourXport, bạn hãy làm theo các bước sau:\n\n1. Mở ứng dụng và điều hướng đến `Nhật Ký Du Lịch`.\n2. Chọn mục bạn muốn thêm ảnh hoặc tạo một mục mới.\n3. Sử dụng tính năng thêm ảnh để tải ảnh từ thư viện hoặc chụp ảnh mới.\n4. Sau khi thêm ảnh, bạn có thể viết cảm nghĩ và lưu lại kỷ niệm của mình.\n\nChúc bạn có những kỷ niệm đẹp!",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết về cách thêm ảnh vào nhật ký du lịch, mặc dù không đề cập đến 'travel_memory_screen.dart' như trong câu trả lời mong đợi. Tuy nhiên, nội dung vẫn đầy đủ và chính xác về quy trình thực hiện.",
+      "latency_sec": 2.83
+    },
+    {
+      "id": 77,
+      "question": "Tôi có thể tìm kiếm khách sạn ở đâu?",
+      "expected_answer": "Trên Trang chủ, sử dụng thanh tìm kiếm để gõ tên khách sạn bạn muốn tìm.",
+      "ai_answer": "Bạn có thể tìm kiếm khách sạn bằng cách sử dụng thanh tìm kiếm (Search Bar) ở trên cùng của Trang chủ trong ứng dụng TourXport. Chỉ cần gõ tên khách sạn mà bạn muốn tìm.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách tìm kiếm khách sạn, bao gồm việc sử dụng ứng dụng cụ thể (TourXport) và vị trí của thanh tìm kiếm. Tuy nhiên, nó vẫn giữ được ý nghĩa chính của câu trả lời mong đợi, vì vậy điểm số cao nhưng không hoàn toàn trùng khớp.",
+      "latency_sec": 1.74
+    },
+    {
+      "id": 78,
+      "question": "Làm sao để giữ một địa điểm vào Bộ Sưu Tập?",
+      "expected_answer": "Nhấn nút 'Thả tim' hoặc 'Save' trong chi tiết địa điểm để lưu địa điểm vào Bộ Sưu Tập.",
+      "ai_answer": "Để giữ một địa điểm vào Bộ Sưu Tập, bạn chỉ cần làm theo các bước sau:\n\n1. Tìm kiếm và chọn địa điểm bạn muốn lưu.\n2. Tại trang chi tiết địa điểm, bạn sẽ thấy biểu tượng hình trái tim (Save).\n3. Bấm vào biểu tượng đó để lưu địa điểm vào mục **Địa điểm đã lưu** trong Bộ Sưu Tập.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết về cách lưu địa điểm vào Bộ Sưu Tập, bao gồm các bước cụ thể và mô tả biểu tượng, tuy nhiên không sử dụng cụm từ 'Thả tim' mà chỉ đề cập đến 'hình trái tim'. Điều này vẫn giữ nguyên ý nghĩa và nội dung chính của câu trả lời mong đợi.",
+      "latency_sec": 5.09
+    },
+    {
+      "id": 79,
+      "question": "Làm thế nào để viết đánh giá cho một địa điểm?",
+      "expected_answer": "Vào create_review_screen.dart để viết đánh giá, chấm điểm và để lại bình luận văn bản cho địa điểm.",
+      "ai_answer": "Để viết đánh giá cho một địa điểm trong ứng dụng TourXport, bạn làm theo các bước sau:\n\n1. Mở màn hình viết đánh giá (`create_review_screen.dart`).\n2. Chọn số sao từ 1 đến 5 để chấm điểm cho địa điểm.\n3. Viết bình luận văn bản của bạn về địa điểm đó.\n4. Lưu đánh giá của bạn. \n\nĐánh giá của bạn sẽ được hiển thị tại màn hình `app_reviews_screen.dart`.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết và rõ ràng về cách viết đánh giá cho một địa điểm, bao gồm các bước cụ thể và thông tin bổ sung về việc hiển thị đánh giá. Tuy nhiên, nó có phần mở rộng hơn so với câu trả lời mong đợi, nhưng vẫn giữ đúng nội dung chính.",
+      "latency_sec": 2.42
+    },
+    {
+      "id": 80,
+      "question": "Tôi muốn tìm kiếm một nhà hàng nổi tiếng, làm thế nào?",
+      "expected_answer": "Sử dụng thanh tìm kiếm trên Trang chủ để gõ tên nhà hàng nổi tiếng mà bạn muốn tìm.",
+      "ai_answer": "Bạn có thể tìm kiếm nhà hàng nổi tiếng bằng cách sau:\n\n1. Mở ứng dụng TourXport.\n2. Trên Trang chủ, tìm thanh tìm kiếm (Search Bar) ở phía trên cùng.\n3. Gõ tên nhà hàng hoặc loại hình nhà hàng bạn muốn tìm kiếm.\n4. Xem kết quả và chọn nhà hàng để xem chi tiết.",
+      "score": 85,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết hơn về cách tìm kiếm nhà hàng nổi tiếng, bao gồm việc mở ứng dụng và các bước cụ thể. Tuy nhiên, nó không hoàn toàn khớp với câu trả lời mong đợi vì có thêm thông tin không cần thiết và không chỉ rõ việc sử dụng thanh tìm kiếm trên Trang chủ như trong câu trả lời mong đợi.",
+      "latency_sec": 2.31
+    },
+    {
+      "id": 81,
+      "question": "Làm sao để xem thông tin về văn hóa của một địa danh?",
+      "expected_answer": "Xem thông tin về văn hóa của một địa danh trong chi tiết Tỉnh/Thành (province_detail_screen.dart).",
+      "ai_answer": "Để xem thông tin về văn hóa của một địa danh, bạn cần:\n\n1. Tìm kiếm hoặc chọn địa danh đó trên Trang chủ.\n2. Khi đã vào chi tiết địa điểm, bạn có thể tìm thông tin văn hóa trong phần Chi tiết Tỉnh/Thành (`province_detail_screen.dart`), nơi hiển thị tổng quan văn hóa của tỉnh hoặc thành phố đó.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn cụ thể để xem thông tin văn hóa của một địa danh, bao gồm việc tìm kiếm và truy cập vào phần chi tiết. Tuy nhiên, nó không hoàn toàn giống với câu trả lời mong đợi vì có thêm bước tìm kiếm và không chỉ rõ là trong chi tiết Tỉnh/Thành mà còn nhấn mạnh vào việc vào chi tiết địa điểm.",
+      "latency_sec": 4.85
+    },
+    {
+      "id": 82,
+      "question": "Tôi muốn thay đổi ngôn ngữ trong ứng dụng, làm thế nào?",
+      "expected_answer": "Chuyển sang Tab Cá Nhân và vào mục Ngôn ngữ để thay đổi ngôn ngữ giao diện.",
+      "ai_answer": "Để thay đổi ngôn ngữ trong ứng dụng TourXport, bạn hãy làm theo các bước sau:\n\n1. Chuyển sang Tab Cá Nhân (Profile) ở góc phải dưới cùng màn hình.\n2. Chọn mục **Cài Đặt Chung**.\n3. Nhấn vào **Ngôn ngữ** để chọn ngôn ngữ bạn muốn (Tiếng Việt hoặc English).",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết hơn về cách thay đổi ngôn ngữ, bao gồm các bước cụ thể và lựa chọn ngôn ngữ, nhưng không hoàn toàn khớp với câu trả lời mong đợi vì có thêm thông tin về 'Cài Đặt Chung'.",
+      "latency_sec": 2.18
+    },
+    {
+      "id": 83,
+      "question": "Làm thế nào để tìm kiếm một địa danh nổi tiếng trong ứng dụng?",
+      "expected_answer": "Trên Trang chủ, sử dụng thanh tìm kiếm để gõ tên địa danh nổi tiếng mà bạn muốn tìm kiếm.",
+      "ai_answer": "Để tìm kiếm một địa danh nổi tiếng trong ứng dụng TourXport, bạn hãy làm theo các bước sau:\n\n1. Mở ứng dụng TourXport và truy cập vào Trang chủ.\n2. Tại trên cùng của Trang chủ, bạn sẽ thấy thanh tìm kiếm (Search Bar).\n3. Gõ tên địa danh bạn muốn tìm kiếm vào thanh tìm kiếm.\n4. Xem kết quả và chọn địa danh để xem chi tiết.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách tìm kiếm địa danh nổi tiếng, bao gồm tên ứng dụng và các bước cụ thể, nhưng vẫn giữ được ý nghĩa chính của câu trả lời mong đợi.",
+      "latency_sec": 2.55
+    },
+    {
+      "id": 84,
+      "question": "Tôi có thể tìm kiếm khách sạn nổi bật ở đâu?",
+      "expected_answer": "Trên Tab Trang Chủ, bạn có thể xem các khách sạn nổi bật được gợi ý.",
+      "ai_answer": "Bạn có thể tìm kiếm khách sạn nổi bật bằng cách làm theo các bước sau:\n\n1. Mở ứng dụng TourXport.\n2. Tại Trang chủ, sử dụng thanh tìm kiếm (Search Bar) ở trên cùng.\n3. Gõ tên khách sạn hoặc từ khóa liên quan để tìm kiếm.\n\nChúc bạn tìm được khách sạn ưng ý!",
+      "score": 70,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết về cách tìm kiếm khách sạn nổi bật, nhưng không hoàn toàn khớp với câu trả lời mong đợi, vì nó không chỉ ra rằng khách sạn nổi bật có thể được xem trên Tab Trang Chủ mà còn thêm các bước cụ thể khác.",
+      "latency_sec": 2.17
+    },
+    {
+      "id": 85,
+      "question": "Làm sao để lưu lại một địa điểm yêu thích?",
+      "expected_answer": "Nhấn nút 'Thả tim' hoặc 'Save' trong chi tiết địa điểm để lưu lại địa điểm yêu thích.",
+      "ai_answer": "Để lưu lại một địa điểm yêu thích trên ứng dụng TourXport, bạn hãy làm theo các bước sau:\n\n1. Tìm kiếm hoặc duyệt địa điểm bạn quan tâm.\n2. Khi xem chi tiết của địa điểm, hãy tìm biểu tượng **trái tim** hoặc **Save** và bấm vào đó.\n\nSau khi lưu, địa điểm này sẽ xuất hiện trong mục **Địa điểm đã lưu** trong Tab **Bộ Sưu Tập**.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách lưu địa điểm yêu thích, bao gồm các bước cụ thể và thông tin về nơi lưu trữ địa điểm, nhưng vẫn giữ được ý nghĩa chính của câu trả lời mong đợi.",
+      "latency_sec": 2.48
+    },
+    {
+      "id": 86,
+      "question": "Tôi muốn viết nhật ký về chuyến đi của mình, làm thế nào?",
+      "expected_answer": "Sử dụng tính năng Nhật Ký Du Lịch để viết lại cảm nghĩ về chuyến đi trong travel_memory_screen.dart.",
+      "ai_answer": "Để viết nhật ký về chuyến đi của bạn trên ứng dụng TourXport, bạn hãy làm theo các bước sau:\n\n1. Mở ứng dụng và đi đến mục \"Nhật Ký Du Lịch\".\n2. Tại đây, bạn có thể viết lại cảm nghĩ và đính kèm ảnh từ chuyến đi của mình.\n3. Lưu lại để hoàn tất việc ghi nhật ký.\n\nChúc bạn có những kỷ niệm tuyệt vời!",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn cụ thể để viết nhật ký về chuyến đi, tương tự như câu trả lời mong đợi. Tuy nhiên, nó không đề cập đến 'travel_memory_screen.dart', mà thay vào đó là 'ứng dụng TourXport', nên có sự khác biệt nhỏ về nội dung.",
+      "latency_sec": 3.01
+    },
+    {
+      "id": 87,
+      "question": "Làm thế nào để xem lại các đánh giá của một địa điểm?",
+      "expected_answer": "Trong chi tiết địa điểm, bạn có thể xem các đánh giá tại app_reviews_screen.dart.",
+      "ai_answer": "Để xem lại các đánh giá của một địa điểm, bạn có thể truy cập vào `app_reviews_screen.dart` trong ứng dụng TourXport. Tại đây, bạn sẽ thấy các đánh giá với điểm số sao và bình luận từ người dùng khác.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách xem đánh giá, bao gồm tên ứng dụng và mô tả về các đánh giá, nhưng vẫn giữ được ý nghĩa chính của câu trả lời mong đợi.",
+      "latency_sec": 1.91
+    },
+    {
+      "id": 88,
+      "question": "Tôi muốn tìm kiếm địa danh nổi tiếng, làm sao?",
+      "expected_answer": "Sử dụng thanh tìm kiếm trên Trang chủ để gõ tên địa danh nổi tiếng mà bạn muốn tìm kiếm.",
+      "ai_answer": "Để tìm kiếm địa danh nổi tiếng trên TourXport, bạn hãy làm theo các bước sau:\n\n1. Mở ứng dụng TourXport và đảm bảo bạn đang ở Trang chủ.\n2. Tìm thanh tìm kiếm (Search Bar) ở phía trên cùng của màn hình.\n3. Nhập tên địa danh bạn muốn tìm kiếm vào thanh tìm kiếm.\n4. Xem kết quả và chọn địa danh bạn quan tâm để xem chi tiết.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết hơn về cách tìm kiếm địa danh nổi tiếng, bao gồm việc mở ứng dụng và các bước cụ thể. Tuy nhiên, nó không hoàn toàn khớp với câu trả lời mong đợi vì có thêm thông tin về ứng dụng TourXport và các bước cụ thể.",
+      "latency_sec": 2.41
+    },
+    {
+      "id": 89,
+      "question": "Làm sao để lưu một tour đã tạo vào tài khoản?",
+      "expected_answer": "Sau khi tạo lịch trình, nhấn nút 'Lưu lại' để lưu tour vào tài khoản của bạn.",
+      "ai_answer": "Để lưu một tour đã tạo vào tài khoản, sau khi AI trả về kết quả lịch trình, bạn hãy nhấn nút **\"Lưu lại\" (Save)** trên màn hình kết quả lịch trình. Điều này sẽ lưu trữ lịch trình vào tài khoản của bạn.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách lưu tour, bao gồm việc nhấn nút 'Lưu lại' và nhấn mạnh rằng điều này sẽ lưu trữ lịch trình vào tài khoản. Tuy nhiên, nó không hoàn toàn khớp với câu trả lời mong đợi vì có thêm thông tin về kết quả lịch trình.",
+      "latency_sec": 2.05
+    },
+    {
+      "id": 90,
+      "question": "Tôi có thể xem thông tin thời tiết của một địa điểm từ đâu?",
+      "expected_answer": "Trong chi tiết địa điểm, bấm vào nút xem thời tiết để xem thông tin thời tiết nếu có sẵn.",
+      "ai_answer": "Bạn có thể xem thông tin thời tiết của một địa điểm bằng cách bấm vào địa điểm đó để xem chi tiết. Trong phần chi tiết địa điểm, sẽ có nút xem thời tiết nếu thông tin này có sẵn.",
+      "score": 95,
+      "reason": "Câu trả lời thực tế cung cấp thông tin tương tự như câu trả lời mong đợi, nhưng có sự khác biệt nhỏ trong cách diễn đạt. Cả hai đều chỉ ra rằng người dùng cần bấm vào địa điểm để xem thông tin thời tiết, nhưng câu trả lời thực tế diễn đạt rõ ràng hơn về việc có nút xem thời tiết trong phần chi tiết.",
+      "latency_sec": 2.04
+    },
+    {
+      "id": 91,
+      "question": "Làm thế nào để xem tổng quan về văn hóa của một tỉnh?",
+      "expected_answer": "Xem tổng quan văn hóa của một tỉnh trong chi tiết Tỉnh/Thành (province_detail_screen.dart).",
+      "ai_answer": "Để xem tổng quan về văn hóa của một tỉnh trong ứng dụng TourXport, bạn làm theo các bước sau:\n\n1. Tìm kiếm tên tỉnh bạn quan tâm trên thanh tìm kiếm ở Trang chủ.\n2. Bấm vào tên tỉnh trong kết quả tìm kiếm.\n3. Bạn sẽ được chuyển đến màn hình chi tiết tỉnh (province_detail_screen.dart), nơi hiển thị tổng quan về văn hóa, đặc sản và các địa điểm nổi tiếng của tỉnh đó.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết để xem tổng quan văn hóa của một tỉnh, bao gồm việc tìm kiếm và truy cập vào màn hình chi tiết. Tuy nhiên, nó không hoàn toàn khớp với câu trả lời mong đợi vì có thêm thông tin về đặc sản và địa điểm nổi tiếng, nhưng vẫn giữ được ý nghĩa chính.",
+      "latency_sec": 2.59
+    },
+    {
+      "id": 92,
+      "question": "Tôi muốn tùy chỉnh ngôn ngữ trong ứng dụng, làm thế nào?",
+      "expected_answer": "Chuyển sang Tab Cá Nhân và vào mục Ngôn ngữ để tùy chỉnh ngôn ngữ giao diện.",
+      "ai_answer": "Để tùy chỉnh ngôn ngữ trong ứng dụng, bạn làm theo các bước sau:\n\n1. Chuyển sang Tab Cá Nhân (Profile) ở góc phải dưới cùng màn hình.\n2. Chọn mục **Cài Đặt Chung**.\n3. Nhấn vào **Ngôn ngữ**.\n4. Chọn ngôn ngữ bạn muốn sử dụng (Tiếng Việt / English).",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết hơn so với câu trả lời mong đợi, nhưng vẫn giữ đúng nội dung chính là chuyển đến Tab Cá Nhân và điều chỉnh ngôn ngữ. Tuy nhiên, nó có thêm bước 'Cài Đặt Chung' mà không có trong câu trả lời mong đợi, nên không đạt điểm tối đa.",
+      "latency_sec": 2.11
+    },
+    {
+      "id": 93,
+      "question": "Làm sao để thêm ảnh vào nhật ký du lịch của tôi?",
+      "expected_answer": "Trong Nhật Ký Du Lịch (travel_memory_screen.dart), bạn có thể thêm ảnh cùng với cảm nghĩ về chuyến đi.",
+      "ai_answer": "Để thêm ảnh vào nhật ký du lịch của bạn:\n\n1. Mở ứng dụng TourXport và đi đến mục Nhật Ký Du Lịch.\n2. Tìm và chọn mục mà bạn muốn thêm ảnh.\n3. Sử dụng tùy chọn tải lên ảnh để chọn ảnh từ thiết bị của bạn.\n4. Lưu lại các thay đổi. \n\nChúc bạn tạo nhật ký du lịch đầy ý nghĩa!",
+      "score": 80,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết về cách thêm ảnh vào nhật ký du lịch, mặc dù không đề cập đến việc thêm cảm nghĩ như trong câu trả lời mong đợi. Tuy nhiên, nội dung vẫn liên quan và hữu ích cho người dùng.",
+      "latency_sec": 2.31
+    },
+    {
+      "id": 94,
+      "question": "Tôi muốn tìm kiếm khách sạn ở đâu?",
+      "expected_answer": "Trên Trang chủ, sử dụng thanh tìm kiếm để gõ tên khách sạn bạn muốn tìm.",
+      "ai_answer": "Bạn có thể tìm kiếm khách sạn bằng cách sau:\n\n1. Mở ứng dụng TourXport.\n2. Tại Trang chủ, tìm thanh tìm kiếm (Search Bar) ở trên cùng.\n3. Nhập tên khách sạn hoặc địa danh bạn muốn tìm kiếm.\n\nChúc bạn tìm được khách sạn ưng ý!",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách tìm kiếm khách sạn, bao gồm việc mở ứng dụng và vị trí của thanh tìm kiếm, nhưng vẫn giữ được ý nghĩa chính của câu trả lời mong đợi.",
+      "latency_sec": 1.98
+    },
+    {
+      "id": 95,
+      "question": "Làm sao để giữ một địa điểm vào Bộ Sưu Tập?",
+      "expected_answer": "Nhấn nút 'Thả tim' hoặc 'Save' trong chi tiết địa điểm để lưu địa điểm vào Bộ Sưu Tập.",
+      "ai_answer": "Để lưu một địa điểm vào Bộ Sưu Tập, bạn thực hiện các bước sau:\n\n1. Tìm kiếm và chọn địa điểm bạn muốn lưu.\n2. Tại trang chi tiết của địa điểm, bấm vào biểu tượng trái tim (Save).\n\nĐịa điểm sẽ được lưu vào phần **Địa điểm đã lưu** trong Tab **Bộ Sưu Tập**.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách lưu địa điểm, bao gồm các bước cụ thể và thông tin về nơi lưu trữ. Tuy nhiên, nó không hoàn toàn khớp với câu trả lời mong đợi vì có thêm thông tin không cần thiết và không sử dụng cụm từ 'Thả tim'.",
+      "latency_sec": 4.35
+    },
+    {
+      "id": 96,
+      "question": "Làm thế nào để viết đánh giá cho một địa điểm?",
+      "expected_answer": "Vào create_review_screen.dart để viết đánh giá, chấm điểm và để lại bình luận văn bản cho địa điểm.",
+      "ai_answer": "Để viết đánh giá cho một địa điểm trên TourXport, bạn làm theo các bước sau:\n\n1. Mở ứng dụng TourXport và chọn địa điểm bạn muốn đánh giá.\n2. Truy cập vào màn hình viết đánh giá (`create_review_screen.dart`).\n3. Chấm điểm địa điểm từ 1 đến 5 sao.\n4. Viết bình luận văn bản của bạn.\n5. Lưu lại đánh giá của bạn.\n\nĐánh giá của bạn sẽ được hiển thị tại màn hình `app_reviews_screen.dart`.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết hơn về cách viết đánh giá, bao gồm các bước cụ thể và thông tin về việc đánh giá sẽ được hiển thị ở đâu, mặc dù không hoàn toàn giống với câu trả lời mong đợi nhưng vẫn giữ nguyên ý nghĩa chính.",
+      "latency_sec": 3.11
+    },
+    {
+      "id": 97,
+      "question": "Tôi muốn tìm kiếm một nhà hàng nổi tiếng, làm thế nào?",
+      "expected_answer": "Sử dụng thanh tìm kiếm trên Trang chủ để gõ tên nhà hàng nổi tiếng mà bạn muốn tìm.",
+      "ai_answer": "Để tìm kiếm một nhà hàng nổi tiếng trên TourXport, bạn hãy làm theo các bước sau:\n\n1. Mở ứng dụng và truy cập vào Trang chủ.\n2. Sử dụng thanh tìm kiếm (Search Bar) ở trên cùng.\n3. Gõ tên nhà hàng bạn muốn tìm hoặc nhập từ khóa liên quan.\n4. Nhấn Enter để xem kết quả và chi tiết nhà hàng.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết hơn về cách tìm kiếm nhà hàng nổi tiếng, bao gồm các bước cụ thể, nhưng vẫn giữ được ý nghĩa chính của câu trả lời mong đợi. Tuy nhiên, nó không hoàn toàn khớp với câu trả lời mong đợi vì có thêm thông tin và hướng dẫn chi tiết.",
+      "latency_sec": 2.59
+    },
+    {
+      "id": 98,
+      "question": "Làm sao để xem thông tin về văn hóa của một địa danh?",
+      "expected_answer": "Xem thông tin về văn hóa của một địa danh trong chi tiết Tỉnh/Thành (province_detail_screen.dart).",
+      "ai_answer": "Để xem thông tin về văn hóa của một địa danh, bạn làm theo các bước sau:\n\n1. Tại Trang chủ, sử dụng thanh tìm kiếm ở trên cùng để tìm tên địa danh hoặc tỉnh/thành phố mà bạn quan tâm.\n2. Bấm vào kết quả tương ứng với địa danh bạn muốn xem.\n3. Trong phần Chi tiết Tỉnh/Thành, bạn sẽ thấy thông tin tổng quan về văn hóa cùng với các đặc sản và địa điểm nổi tiếng thuộc tỉnh đó.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết để xem thông tin về văn hóa của một địa danh, mặc dù không nhắc đến cụ thể 'province_detail_screen.dart', nhưng vẫn truyền đạt đúng ý nghĩa và nội dung cần thiết để người dùng thực hiện việc tìm kiếm thông tin văn hóa.",
+      "latency_sec": 2.82
+    },
+    {
+      "id": 99,
+      "question": "Tôi muốn thay đổi ngôn ngữ trong ứng dụng, làm thế nào?",
+      "expected_answer": "Chuyển sang Tab Cá Nhân và vào mục Ngôn ngữ để thay đổi ngôn ngữ giao diện.",
+      "ai_answer": "Để thay đổi ngôn ngữ trong ứng dụng TourXport, bạn hãy làm theo các bước sau:\n\n1. Chuyển sang Tab Cá Nhân (Profile) ở góc phải dưới cùng màn hình.\n2. Chọn mục **Ngôn ngữ**.\n3. Chọn ngôn ngữ bạn muốn sử dụng (Tiếng Việt hoặc English).\n\nHy vọng hướng dẫn này giúp bạn!",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp thông tin chi tiết hơn về cách thay đổi ngôn ngữ, bao gồm các bước cụ thể và lựa chọn ngôn ngữ, nhưng vẫn giữ được ý nghĩa chính của câu trả lời mong đợi.",
+      "latency_sec": 2.99
+    },
+    {
+      "id": 100,
+      "question": "Làm thế nào để tìm kiếm một địa danh nổi tiếng trong ứng dụng?",
+      "expected_answer": "Trên Trang chủ, sử dụng thanh tìm kiếm để gõ tên địa danh nổi tiếng mà bạn muốn tìm kiếm.",
+      "ai_answer": "Để tìm kiếm một địa danh nổi tiếng trong ứng dụng TourXport, bạn thực hiện như sau:\n\n1. Mở ứng dụng và đảm bảo bạn đang ở Trang chủ.\n2. Tìm thanh tìm kiếm (Search Bar) ở phần trên cùng của màn hình.\n3. Nhập tên địa danh bạn muốn tìm kiếm vào thanh tìm kiếm.\n4. Xem kết quả hiển thị và chọn địa điểm mong muốn để xem chi tiết.",
+      "score": 90,
+      "reason": "Câu trả lời thực tế cung cấp hướng dẫn chi tiết hơn về cách tìm kiếm địa danh nổi tiếng, bao gồm việc mở ứng dụng và các bước cụ thể, nhưng vẫn giữ được ý chính của câu trả lời mong đợi. Tuy nhiên, nó không hoàn toàn khớp với câu trả lời mong đợi vì có thêm thông tin không cần thiết.",
+      "latency_sec": 3.54
+    }
+  ]
+}

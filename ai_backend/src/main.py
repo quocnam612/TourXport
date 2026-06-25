@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
-from motor.motor_asyncio import AsyncIOMotorClient
+from pymongo import AsyncMongoClient
 
 from src.core.config import settings
 from src.dependencies.database import db
@@ -16,7 +16,7 @@ async def lifespan(app: FastAPI):
     # --- KHI SERVER START ---
     print("Đang khởi động hệ thống...")
     try:
-        db.client = AsyncIOMotorClient(settings.mongo_uri)
+        db.client = AsyncMongoClient(settings.mongo_uri)
         print("Đã kết nối MongoDB.")
     except Exception as e:
         print(f"Lỗi kết nối MongoDB: {e}")

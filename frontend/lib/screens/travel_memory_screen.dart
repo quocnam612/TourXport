@@ -1,17 +1,28 @@
 import 'dart:ui';
+import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 import '../models/passport_models.dart';
 import '../services/passport_service.dart';
 import '../models/destination.dart';
+import 'province_detail_screen.dart';
 
 class TravelMemoryScreen extends StatefulWidget {
   final String placeName;
   final String fallbackImageUrl;
+  final bool isNewUnlock;
+  final Destination? destination;
+  final List<Destination>? allDestinations;
+  final List<String>? initialPhotos;
 
   const TravelMemoryScreen({
     super.key,
     required this.placeName,
     required this.fallbackImageUrl,
+    this.isNewUnlock = false,
+    this.destination,
+    this.allDestinations,
+    this.initialPhotos,
   });
 
   @override
@@ -26,7 +37,7 @@ class _TravelMemoryScreenState extends State<TravelMemoryScreen> {
   late TextEditingController _tourController;
   late TextEditingController _dateController;
   late double _rating;
-  late int _photoCount;
+  late List<String> _photoUrls;
   late double _durationHours;
   late int _durationDays;
   late int _durationNights;
@@ -34,33 +45,44 @@ class _TravelMemoryScreenState extends State<TravelMemoryScreen> {
   @override
   void initState() {
     super.initState();
+    _isEditing = widget.isNewUnlock;
     final m = PassportService.instance.getMemory(widget.placeName);
+    List<String> startingUrls = [];
     if (m != null) {
       _memory = m;
+      startingUrls = List<String>.from(m.photoUrls);
+      if (startingUrls.isEmpty &&
+          m.photoUrl.isNotEmpty &&
+          m.photoUrl != widget.fallbackImageUrl &&
+          !m.photoUrl.startsWith('assets/')) {
+        startingUrls.add(m.photoUrl);
+      }
     } else {
       _memory = TravelMemory(
         destinationId: '',
         destinationName: widget.placeName,
         date: _formattedToday(),
-        tourTitle: 'Tự do khám phá',
-        durationHours: 2.0,
-        durationDays: 3,
-        durationNights: 2,
+        tourTitle: '',
+        durationHours: 1.0,
+        durationDays: 1,
+        durationNights: 0,
         photoCount: 0,
-        note: 'Hãy viết cảm nghĩ của bạn về chuyến đi này...',
+        note: '',
         rating: 5.0,
         photoUrl: widget.fallbackImageUrl,
+        photoUrls: widget.initialPhotos ?? [],
       );
+      startingUrls = List<String>.from(widget.initialPhotos ?? []);
     }
 
-    _noteController = TextEditingController(text: _memory.note);
-    _tourController = TextEditingController(text: _memory.tourTitle);
+    _noteController = TextEditingController(text: widget.isNewUnlock ? '' : _memory.note);
+    _tourController = TextEditingController(text: widget.isNewUnlock ? '' : _memory.tourTitle);
     _dateController = TextEditingController(text: _memory.date);
-    _rating = _memory.rating;
-    _photoCount = _memory.photoCount;
+    _rating = widget.isNewUnlock ? 5.0 : _memory.rating;
+    _photoUrls = startingUrls;
     _durationHours = _memory.durationHours;
-    _durationDays = _memory.durationDays;
-    _durationNights = _memory.durationNights;
+    _durationDays = widget.isNewUnlock ? 1 : _memory.durationDays;
+    _durationNights = widget.isNewUnlock ? 0 : _memory.durationNights;
   }
 
   String _formattedToday() {
@@ -76,41 +98,477 @@ class _TravelMemoryScreenState extends State<TravelMemoryScreen> {
     super.dispose();
   }
 
+  Future<void> _pickMorePhotos() async {
+    try {
+      final picker = ImagePicker();
+      final List<XFile> images = await picker.pickMultiImage(
+        imageQuality: 90,
+      );
+      if (images.isNotEmpty) {
+        for (var img in images) {
+          final bytes = await img.readAsBytes();
+          final base64Str = 'data:image/png;base64,${base64.encode(bytes)}';
+          setState(() {
+            _photoUrls.add(base64Str);
+          });
+        }
+      }
+    } catch (e) {
+      debugPrint('Error picking extra photos: $e');
+    }
+  }
+
   Future<void> _save() async {
     final updated = TravelMemory(
-      destinationId: _memory.destinationId,
+      destinationId: _memory.destinationId.isNotEmpty ? _memory.destinationId : (widget.destination?.id ?? ''),
       destinationName: _memory.destinationName,
       date: _dateController.text.trim(),
       tourTitle: _tourController.text.trim(),
       durationHours: _durationHours,
       durationDays: _durationDays,
       durationNights: _durationNights,
-      photoCount: _photoCount,
+      photoCount: _photoUrls.length,
       note: _noteController.text.trim(),
       rating: _rating,
-      photoUrl: _memory.photoUrl.isNotEmpty ? _memory.photoUrl : widget.fallbackImageUrl,
+      photoUrl: _photoUrls.isNotEmpty ? _photoUrls.first : widget.fallbackImageUrl,
+      photoUrls: _photoUrls,
     );
 
-    await PassportService.instance.saveMemory(widget.placeName, updated);
-    setState(() {
-      _memory = updated;
-      _isEditing = false;
-    });
-    
-    if (mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Đã lưu kỷ niệm hành trình!'),
-          backgroundColor: Color(0xFF2D6A4F),
+    final wasUnlocked = PassportService.instance.isUnlocked(widget.placeName);
+
+    if (!wasUnlocked && widget.destination != null) {
+      // 1. Thực hiện check-in để mở khóa chính thức trên hệ thống
+      final result = await PassportService.instance.checkIn(
+        widget.destination!,
+        allDestinations: widget.allDestinations ?? [],
+      );
+
+      // 2. Ghi đè nhật ký trống bằng dữ liệu người dùng tự chỉnh sửa
+      await PassportService.instance.saveMemory(widget.placeName, updated);
+
+      if (mounted) {
+        final List<String> badges = List<String>.from(result['badgesUnlocked'] ?? []);
+        
+        // 3. Hiển thị hộp thoại chúc mừng mở khóa thành công giống province_detail_screen
+        showDialog(
+          context: context,
+          barrierDismissible: false,
+          builder: (context) {
+            return UnlockAnimationView(
+              place: widget.destination!,
+              badgesUnlocked: badges,
+              onClose: () {
+                Navigator.pop(context); // Đóng dialog chúc mừng
+                setState(() {
+                  _memory = updated;
+                  _isEditing = false;
+                });
+              },
+            );
+          },
+        );
+      }
+    } else {
+      // Đã mở khóa trước đó: lưu chỉnh sửa bình thường
+      await PassportService.instance.saveMemory(widget.placeName, updated);
+      setState(() {
+        _memory = updated;
+        _isEditing = false;
+      });
+
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Đã lưu kỷ niệm hành trình!'),
+            backgroundColor: Color(0xFF2D6A4F),
+          ),
+        );
+      }
+    }
+  }
+
+  Widget _buildPhotoCollection(bool isEditing) {
+    if (_photoUrls.isEmpty) {
+      return Container(
+        height: 180,
+        margin: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+        child: GestureDetector(
+          onTap: _pickMorePhotos,
+          child: Container(
+            width: double.infinity,
+            decoration: BoxDecoration(
+              color: Colors.white.withOpacity(0.02),
+              borderRadius: BorderRadius.circular(20),
+              border: Border.all(
+                color: const Color(0xFFD4AF7A).withOpacity(0.3),
+                width: 1.5,
+              ),
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.add_a_photo_rounded,
+                  color: const Color(0xFFD4AF7A).withOpacity(0.8),
+                  size: 40,
+                ),
+                const SizedBox(height: 12),
+                Text(
+                  'Chưa có ảnh hành trình',
+                  style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white.withOpacity(0.8),
+                  ),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  'Nhấp để chọn ảnh từ thư viện',
+                  style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontSize: 11,
+                    color: Colors.white.withOpacity(0.4),
+                  ),
+                ),
+              ],
+            ),
+          ),
         ),
       );
     }
+
+    return Container(
+      height: 200,
+      margin: const EdgeInsets.only(bottom: 12),
+      child: Stack(
+        fit: StackFit.expand,
+        children: [
+          Positioned.fill(
+            child: Opacity(
+              opacity: 0.15,
+              child: ClipRRect(
+                borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
+                child: Destination.buildImage(_photoUrls.first, fit: BoxFit.cover),
+              ),
+            ),
+          ),
+          ListView.builder(
+            scrollDirection: Axis.horizontal,
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+            physics: const BouncingScrollPhysics(),
+            itemCount: _photoUrls.length + (isEditing ? 1 : 0),
+            itemBuilder: (context, index) {
+              if (isEditing && index == _photoUrls.length) {
+                return GestureDetector(
+                  onTap: _pickMorePhotos,
+                  child: Container(
+                    width: 150,
+                    margin: const EdgeInsets.only(right: 12),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.04),
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(
+                        color: const Color(0xFFD4AF7A).withOpacity(0.3),
+                        width: 1.5,
+                      ),
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Icon(
+                          Icons.add_photo_alternate_rounded,
+                          color: Color(0xFFD4AF7A),
+                          size: 32,
+                        ),
+                        const SizedBox(height: 8),
+                        Text(
+                          'Thêm ảnh',
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white.withOpacity(0.6),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                );
+              }
+
+              final photo = _photoUrls[index];
+
+              return Container(
+                width: 200,
+                margin: const EdgeInsets.only(right: 16),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.4),
+                      blurRadius: 8,
+                      offset: const Offset(0, 4),
+                    ),
+                  ],
+                ),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Stack(
+                    fit: StackFit.expand,
+                    children: [
+                      Destination.buildImage(photo, fit: BoxFit.cover),
+                      if (isEditing)
+                        Positioned(
+                          top: 8,
+                          right: 8,
+                          child: GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                _photoUrls.removeAt(index);
+                              });
+                            },
+                            child: Container(
+                              padding: const EdgeInsets.all(4),
+                              decoration: const BoxDecoration(
+                                color: Colors.black54,
+                                shape: BoxShape.circle,
+                              ),
+                              child: const Icon(
+                                Icons.close_rounded,
+                                color: Colors.white,
+                                size: 16,
+                              ),
+                            ),
+                          ),
+                        ),
+                      Positioned(
+                        bottom: 10,
+                        left: 10,
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          decoration: BoxDecoration(
+                            color: Colors.black54,
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Text(
+                            'Ảnh #${index + 1}',
+                            style: const TextStyle(
+                              fontFamily: 'Montserrat',
+                              fontSize: 10,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white70,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              );
+            },
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildHorizontalInfoCard(int indexInPassport) {
+    final mainImage = _photoUrls.isNotEmpty ? _photoUrls.first : '';
+
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: const Color(0xFF13221E).withOpacity(0.7),
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: const Color(0xFFD4AF7A).withOpacity(0.3), width: 1),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.2),
+            blurRadius: 10,
+            offset: const Offset(0, 4),
+          ),
+        ],
+      ),
+      child: Row(
+        children: [
+          Container(
+            width: 60,
+            height: 60,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: Colors.white.withOpacity(0.04),
+              border: Border.all(color: const Color(0xFFD4AF7A), width: 2),
+              boxShadow: [
+                BoxShadow(
+                  color: const Color(0xFFD4AF7A).withOpacity(0.2),
+                  blurRadius: 8,
+                ),
+              ],
+            ),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(30),
+              child: mainImage.isNotEmpty
+                  ? Destination.buildImage(mainImage, fit: BoxFit.cover)
+                  : Icon(
+                      Icons.image_outlined,
+                      color: const Color(0xFFD4AF7A).withOpacity(0.6),
+                      size: 24,
+                    ),
+            ),
+          ),
+          const SizedBox(width: 16),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Row(
+                  children: [
+                    const Icon(Icons.calendar_today_rounded, color: Color(0xFFD4AF7A), size: 14),
+                    const SizedBox(width: 8),
+                    const Text(
+                      'Ngày khám phá: ',
+                      style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 11,
+                        color: Colors.white60,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    Expanded(
+                      child: _isEditing
+                          ? SizedBox(
+                              height: 24,
+                              child: TextField(
+                                controller: _dateController,
+                                style: const TextStyle(
+                                  fontFamily: 'Montserrat',
+                                  fontSize: 12,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                                decoration: const InputDecoration(
+                                  isDense: true,
+                                  contentPadding: EdgeInsets.zero,
+                                  border: InputBorder.none,
+                                  focusedBorder: UnderlineInputBorder(
+                                    borderSide: BorderSide(color: Color(0xFFD4AF7A)),
+                                  ),
+                                ),
+                              ),
+                            )
+                          : Text(
+                              _memory.date,
+                              style: const TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 12,
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 6),
+                Row(
+                  children: [
+                    const Icon(Icons.explore_rounded, color: Color(0xFFD4AF7A), size: 14),
+                    const SizedBox(width: 8),
+                    const Text(
+                      'Hành trình: ',
+                      style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 11,
+                        color: Colors.white60,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    Text(
+                      '#$indexInPassport',
+                      style: const TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 12,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 6),
+                Row(
+                  children: [
+                    const Icon(Icons.star_rounded, color: Color(0xFFD4AF7A), size: 14),
+                    const SizedBox(width: 8),
+                    const Text(
+                      'Đánh giá: ',
+                      style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 11,
+                        color: Colors.white60,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    _isEditing
+                        ? Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: List.generate(5, (index) {
+                              final starVal = index + 1;
+                              return GestureDetector(
+                                onTap: () => setState(() => _rating = starVal.toDouble()),
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 1.0),
+                                  child: Icon(
+                                    Icons.star_rounded,
+                                    color: _rating >= starVal
+                                        ? const Color(0xFFD4AF7A)
+                                        : Colors.white24,
+                                    size: 14,
+                                  ),
+                                ),
+                              );
+                            }),
+                          )
+                        : Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              const Icon(
+                                Icons.star_rounded,
+                                color: Color(0xFFD4AF7A),
+                                size: 12,
+                              ),
+                              const SizedBox(width: 3),
+                              Text(
+                                _rating.toStringAsFixed(1),
+                                style: const TextStyle(
+                                  fontFamily: 'Montserrat',
+                                  fontSize: 12,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
+                          ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
-    final imgUrl = _memory.photoUrl.isNotEmpty ? _memory.photoUrl : widget.fallbackImageUrl;
+    final mainImage = _photoUrls.isNotEmpty ? _photoUrls.first : '';
     final isDesktop = MediaQuery.of(context).size.width >= 800;
+
+    final unlockedList = PassportService.instance.getUnlockedNames().toList();
+    final indexInPassport = unlockedList.contains(widget.placeName)
+        ? (unlockedList.indexOf(widget.placeName) + 1)
+        : (unlockedList.length + 1);
 
     return Scaffold(
       backgroundColor: const Color(0xFF0C1412),
@@ -141,15 +599,20 @@ class _TravelMemoryScreenState extends State<TravelMemoryScreen> {
             IconButton(
               icon: const Icon(Icons.close_rounded, color: Colors.white70),
               onPressed: () {
-                setState(() {
-                  _noteController.text = _memory.note;
-                  _tourController.text = _memory.tourTitle;
-                  _dateController.text = _memory.date;
-                  _rating = _memory.rating;
-                  _photoCount = _memory.photoCount;
-                  _durationHours = _memory.durationHours;
-                  _isEditing = false;
-                });
+                final isUnlocked = PassportService.instance.isUnlocked(widget.placeName);
+                if (!isUnlocked) {
+                  Navigator.pop(context, true);
+                } else {
+                  setState(() {
+                    _noteController.text = _memory.note;
+                    _tourController.text = _memory.tourTitle;
+                    _dateController.text = _memory.date;
+                    _rating = _memory.rating;
+                    _photoUrls = List<String>.from(_memory.photoUrls);
+                    _durationHours = _memory.durationHours;
+                    _isEditing = false;
+                  });
+                }
               },
             ),
             IconButton(
@@ -163,12 +626,11 @@ class _TravelMemoryScreenState extends State<TravelMemoryScreen> {
         fit: StackFit.expand,
         children: [
           // Background blurring
-          if (imgUrl.isNotEmpty)
+          if (mainImage.isNotEmpty)
             Positioned.fill(
-              child: Image.network(
-                imgUrl,
+              child: Destination.buildImage(
+                mainImage,
                 fit: BoxFit.cover,
-                errorBuilder: (_, __, ___) => Container(color: const Color(0xFF0E1A17)),
               ),
             ),
           Positioned.fill(
@@ -202,305 +664,70 @@ class _TravelMemoryScreenState extends State<TravelMemoryScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      // Photo Header
-                      SizedBox(
-                        height: 240,
-                        width: double.infinity,
-                        child: Stack(
-                          fit: StackFit.expand,
+                      // Place Title & Exploration Badge Header
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(24, 24, 24, 8),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            imgUrl.isNotEmpty
-                                ? Destination.buildImage(imgUrl, fit: BoxFit.cover)
-                                : Container(color: const Color(0xFF1B2E29)),
-                            Container(
-                              decoration: BoxDecoration(
-                                gradient: LinearGradient(
-                                  begin: Alignment.topCenter,
-                                  end: Alignment.bottomCenter,
-                                  colors: [
-                                    Colors.transparent,
-                                    const Color(0xFF070E0D).withOpacity(0.95),
-                                  ],
+                            Row(
+                              children: [
+                                const Icon(
+                                  Icons.check_circle_rounded,
+                                  color: Color(0xFF2D6A4F),
+                                  size: 20,
                                 ),
-                              ),
+                                const SizedBox(width: 8),
+                                Text(
+                                  'Đã khám phá'.toUpperCase(),
+                                  style: const TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.w900,
+                                    color: Color(0xFFD4AF7A),
+                                    letterSpacing: 2.0,
+                                  ),
+                                ),
+                              ],
                             ),
-                            Positioned(
-                              left: 20,
-                              bottom: 16,
-                              right: 20,
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Row(
-                                    children: [
-                                      const Icon(
-                                        Icons.check_circle_rounded,
-                                        color: Color(0xFF2D6A4F),
-                                        size: 20,
-                                      ),
-                                      const SizedBox(width: 8),
-                                      Text(
-                                        'Đã khám phá'.toUpperCase(),
-                                        style: const TextStyle(
-                                          fontFamily: 'Montserrat',
-                                          fontSize: 11,
-                                          fontWeight: FontWeight.w900,
-                                          color: Color(0xFFD4AF7A),
-                                          letterSpacing: 2.0,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 6),
-                                  Text(
-                                    widget.placeName,
-                                    maxLines: 2,
-                                    overflow: TextOverflow.ellipsis,
-                                    style: const TextStyle(
-                                      fontFamily: 'Montserrat',
-                                      fontSize: 26,
-                                      fontWeight: FontWeight.w900,
-                                      color: Colors.white,
-                                      letterSpacing: -0.5,
-                                    ),
-                                  ),
-                                ],
+                            const SizedBox(height: 8),
+                            Text(
+                              widget.placeName,
+                              style: const TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 26,
+                                fontWeight: FontWeight.w900,
+                                color: Colors.white,
+                                letterSpacing: -0.5,
                               ),
                             ),
                           ],
                         ),
                       ),
 
-                      // Memory stats / details
+                      // Image Collection Slider with stack effects
+                      _buildPhotoCollection(_isEditing),
+
+                      // Horizontal Info Card (compact horizontal card with Exploration Date, Journey #, and Rating)
                       Padding(
-                        padding: const EdgeInsets.all(24),
+                        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                        child: _buildHorizontalInfoCard(indexInPassport),
+                      ),
+
+                      // Memory notes / details
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            // 3-Column stats row (Strava / Wrapped style)
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: [
-                                _buildStatItem(
-                                  icon: Icons.calendar_today_rounded,
-                                  label: 'Ngày khám phá',
-                                  child: _isEditing
-                                      ? SizedBox(
-                                          width: 100,
-                                          child: TextField(
-                                            controller: _dateController,
-                                            style: const TextStyle(fontFamily: 'Montserrat', fontSize: 13, color: Colors.white),
-                                            decoration: const InputDecoration(isDense: true, border: InputBorder.none),
-                                          ),
-                                        )
-                                      : Text(
-                                          _memory.date,
-                                          style: const TextStyle(fontFamily: 'Montserrat', fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),
-                                        ),
-                                ),
-                                _buildStatItem(
-                                  icon: Icons.camera_alt_rounded,
-                                  label: 'Số ảnh chụp',
-                                  child: _isEditing
-                                      ? Row(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: [
-                                            IconButton(
-                                              icon: const Icon(Icons.remove, color: Colors.white54, size: 16),
-                                              onPressed: () {
-                                                if (_photoCount > 0) setState(() => _photoCount--);
-                                              },
-                                              constraints: const BoxConstraints(),
-                                              padding: EdgeInsets.zero,
-                                            ),
-                                            Text('$_photoCount', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-                                            IconButton(
-                                              icon: const Icon(Icons.add, color: Colors.white54, size: 16),
-                                              onPressed: () => setState(() => _photoCount++),
-                                              constraints: const BoxConstraints(),
-                                              padding: EdgeInsets.zero,
-                                            ),
-                                          ],
-                                        )
-                                      : Text(
-                                          '${_memory.photoCount} ảnh',
-                                          style: const TextStyle(fontFamily: 'Montserrat', fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),
-                                        ),
-                                ),
-                                _buildStatItem(
-                                  icon: Icons.timer_rounded,
-                                  label: 'Thời gian đi',
-                                  child: _isEditing
-                                      ? Row(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: [
-                                            IconButton(
-                                              icon: const Icon(Icons.remove, color: Colors.white54, size: 14),
-                                              onPressed: () {
-                                                if (_durationDays > 1) {
-                                                  setState(() {
-                                                    _durationDays--;
-                                                    if (_durationNights >= _durationDays) {
-                                                      _durationNights = (_durationDays - 1).clamp(0, 99);
-                                                    }
-                                                  });
-                                                }
-                                              },
-                                              constraints: const BoxConstraints(),
-                                              padding: EdgeInsets.zero,
-                                            ),
-                                            Text('${_durationDays}N', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 12)),
-                                            IconButton(
-                                              icon: const Icon(Icons.add, color: Colors.white54, size: 14),
-                                              onPressed: () {
-                                                setState(() {
-                                                  _durationDays++;
-                                                  _durationNights = _durationDays - 1;
-                                                });
-                                              },
-                                              constraints: const BoxConstraints(),
-                                              padding: EdgeInsets.zero,
-                                            ),
-                                            const SizedBox(width: 4),
-                                            IconButton(
-                                              icon: const Icon(Icons.remove, color: Colors.white54, size: 14),
-                                              onPressed: () {
-                                                if (_durationNights > 0) {
-                                                  setState(() => _durationNights--);
-                                                }
-                                              },
-                                              constraints: const BoxConstraints(),
-                                              padding: EdgeInsets.zero,
-                                            ),
-                                            Text('${_durationNights}Đ', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 12)),
-                                            IconButton(
-                                              icon: const Icon(Icons.add, color: Colors.white54, size: 14),
-                                              onPressed: () {
-                                                if (_durationNights < _durationDays) {
-                                                  setState(() => _durationNights++);
-                                                }
-                                              },
-                                              constraints: const BoxConstraints(),
-                                              padding: EdgeInsets.zero,
-                                            ),
-                                          ],
-                                        )
-                                      : Text(
-                                          '${_memory.durationDays} ngày ${_memory.durationNights} đêm',
-                                          style: const TextStyle(fontFamily: 'Montserrat', fontSize: 11, fontWeight: FontWeight.bold, color: Colors.white),
-                                        ),
-                                ),
-                              ],
-                            ),
-                            
                             const Padding(
-                              padding: EdgeInsets.symmetric(vertical: 20),
+                              padding: EdgeInsets.symmetric(vertical: 12),
                               child: Divider(color: Colors.white12),
                             ),
 
-                            // Tour Name
-                            const Text(
-                              'TOUR ĐÃ THAM GIA',
-                              style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 10,
-                                fontWeight: FontWeight.w800,
-                                color: Colors.white38,
-                                letterSpacing: 1.5,
-                              ),
-                            ),
-                            const SizedBox(height: 6),
-                            _isEditing
-                                ? TextField(
-                                    controller: _tourController,
-                                    style: const TextStyle(fontFamily: 'Montserrat', fontSize: 15, color: Colors.white, fontWeight: FontWeight.bold),
-                                    decoration: InputDecoration(
-                                      hintText: 'Nhập tên tour hành trình...',
-                                      hintStyle: TextStyle(color: Colors.white.withOpacity(0.3)),
-                                      isDense: true,
-                                      enabledBorder: const UnderlineInputBorder(borderSide: BorderSide(color: Colors.white24)),
-                                      focusedBorder: const UnderlineInputBorder(borderSide: BorderSide(color: Color(0xFFD4AF7A))),
-                                    ),
-                                  )
-                                : Text(
-                                    _memory.tourTitle,
-                                    style: const TextStyle(
-                                      fontFamily: 'Montserrat',
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      color: Color(0xFFD4AF7A),
-                                    ),
-                                  ),
-                            
-                            const SizedBox(height: 24),
-
-                            // Rating Section
-                            Row(
-                              children: [
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    const Text(
-                                      'ĐÁNH GIÁ CHUYẾN ĐI',
-                                      style: TextStyle(
-                                        fontFamily: 'Montserrat',
-                                        fontSize: 10,
-                                        fontWeight: FontWeight.w800,
-                                        color: Colors.white38,
-                                        letterSpacing: 1.5,
-                                      ),
-                                    ),
-                                    const SizedBox(height: 6),
-                                    _isEditing
-                                        ? Row(
-                                            children: List.generate(5, (index) {
-                                              final starVal = index + 1;
-                                              return GestureDetector(
-                                                onTap: () => setState(() => _rating = starVal.toDouble()),
-                                                child: Icon(
-                                                  Icons.star_rounded,
-                                                  color: _rating >= starVal
-                                                      ? const Color(0xFFD4AF7A)
-                                                      : Colors.white24,
-                                                  size: 28,
-                                                ),
-                                              );
-                                            }),
-                                          )
-                                        : Row(
-                                            children: [
-                                              ...List.generate(5, (index) {
-                                                final starVal = index + 1;
-                                                return Icon(
-                                                  Icons.star_rounded,
-                                                  color: _memory.rating >= starVal
-                                                      ? const Color(0xFFD4AF7A)
-                                                      : Colors.white12,
-                                                  size: 20,
-                                                );
-                                              }),
-                                              const SizedBox(width: 8),
-                                              Text(
-                                                '${_memory.rating}/5.0',
-                                                style: const TextStyle(
-                                                  fontFamily: 'Montserrat',
-                                                  fontSize: 13,
-                                                  fontWeight: FontWeight.bold,
-                                                  color: Colors.white70,
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                  ],
-                                ),
-                              ],
-                            ),
-
-                            const SizedBox(height: 24),
-
                             // Personal Notes (Diary notes)
                             const Text(
-                              'GHI CHÚ CÁ NHÂN',
+                              'CẢM NHẬN VỀ CHUYẾN ĐI',
                               style: TextStyle(
                                 fontFamily: 'Montserrat',
                                 fontSize: 10,
@@ -550,31 +777,6 @@ class _TravelMemoryScreenState extends State<TravelMemoryScreen> {
           ),
         ],
       ),
-    );
-  }
-
-  Widget _buildStatItem({
-    required IconData icon,
-    required String label,
-    required Widget child,
-  }) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Icon(icon, color: const Color(0xFFD4AF7A), size: 22),
-        const SizedBox(height: 8),
-        Text(
-          label,
-          style: const TextStyle(
-            fontFamily: 'Montserrat',
-            fontSize: 9,
-            fontWeight: FontWeight.w600,
-            color: Colors.white38,
-          ),
-        ),
-        const SizedBox(height: 6),
-        child,
-      ],
     );
   }
 }
