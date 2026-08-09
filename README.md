@@ -180,7 +180,7 @@ DISCORD_CLIENT_ID=your_discord_client_id
 DISCORD_CLIENT_SECRET=your_discord_client_secret
 ```
 
-Optional integrations:
+Optional integrations :
 
 - Cloudinary keys are used for uploaded/profile media workflows.
 - RapidAPI keys are used by crawler utilities.
